@@ -308,7 +308,7 @@
     data "Boosts" ""
     data "StatsFunctorContext" "OnCreate;OnStatusApplied;OnStatusRemoved"
     data "Conditions" ""
-    data "StatsFunctors" "IF(CharacterLevelGreaterThan(2,GetOwner(context.Source)) and not CharacterLevelGreaterThan(5,GetOwner(context.Source))):ApplyStatus(GOON_NPC_BARBARIAN_WILDHEART_LEVEL_3,100,-1);IF(CharacterLevelGreaterThan(5,GetOwner(context.Source)) and not CharacterLevelGreaterThan(8,GetOwner(context.Source))):ApplyStatus(GOON_NPC_BARBARIAN_WILDHEART_LEVEL_6,100,-1);IF(CharacterLevelGreaterThan(8,GetOwner(context.Source)) and not CharacterLevelGreaterThan(9,GetOwner(context.Source))):ApplyStatus(GOON_NPC_BARBARIAN_WILDHEART_LEVEL_9,100,-1);IF(CharacterLevelGreaterThan(9,GetOwner(context.Source))):ApplyStatus(GOON_NPC_BARBARIAN_WILDHEART_LEVEL_10,100,-1)"
+    data "StatsFunctors" "IF(CharacterLevelGreaterThan(2,GetOwner(context.Source)) and not CharacterLevelGreaterThan(7,GetOwner(context.Source))):ApplyStatus(GOON_NPC_BARBARIAN_WILDHEART_LEVEL_3,100,-1);IF(CharacterLevelGreaterThan(7,GetOwner(context.Source))):ApplyStatus(GOON_NPC_BARBARIAN_WILDHEART_LEVEL_8,100,-1)"
 
 // Template
     new entry "GOON_NPC_BARBARIAN_WILDHEART_PROGRESSION_TEMPLATE"
@@ -326,4 +326,12 @@
     using "GOON_NPC_BARBARIAN_WILDHEART_PROGRESSION_TEMPLATE"
     data "StackPriority" "3"
     data "Passives" ""
+    data "Boosts" "UnlockSpell(Shout_SpeakWithAnimals_Barbarian)"
+
+        new entry "GOON_NPC_BARBARIAN_WILDHEART_LEVEL_8"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_BARBARIAN_WILDHEART_PROGRESSION_TEMPLATE"
+    data "StackPriority" "8"
+    data "Passives" "LandsStride_DifficultTerrain;LandsStride_Surfaces;LandsStride_Advantage"
     data "Boosts" "UnlockSpell(Shout_SpeakWithAnimals_Barbarian)"
