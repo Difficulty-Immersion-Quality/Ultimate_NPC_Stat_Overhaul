@@ -47,15 +47,6 @@ data "Description" "hd5818987ga072g4e8dgb314g97ab96f230cd"
 data "Boosts" "Proficiency(SimpleWeapons);Proficiency(MartialWeapons)"
 data "Icon" "Spell_Abjuration_WardingBond"
 
-// ==================================== Bard ====================================
-
-new entry "CX_Bard_Boost"
-type "PassiveData"
-data "DisplayName" "h54aa6df3g3e46g4c2cg85bdga5d196c4f97e"
-data "Description" "h97a23da3gd2c1g4b07gb187g9f8696856259"
-data "Icon" "Action_Bard_GrantBardicInspiration"
-data "Boosts" ""
-
 // ==================================== Cleric ====================================
 
 new entry "CX_Cleric_Boost"
