@@ -31,7 +31,7 @@ using "Shout_Rage_Frenzy"
 // data "CombatAIOverrideSpell" "Shout_Rage_Frenzy_AI"
 data "CombatAIOverrideSpell" ""
 // data "RequirementConditions" "not HasStatus('RAGE_FRENZY') and not HasStatus('CALM_EMOTIONS')"
-data "RequirementConditions" "not HasStats('SG_Rage') and not HasStatus('CALM_EMOTIONS')"
+data "RequirementConditions" "not HasStatus('SG_Rage') and not HasStatus('CALM_EMOTIONS')"
 
 // Wild Magic
 new entry "Shout_Rage_WildMagic"
@@ -47,7 +47,7 @@ using "Shout_Rage_WildMagic"
 // data "CombatAIOverrideSpell" "Shout_Rage_WildMagic_AI"
 data "CombatAIOverrideSpell" ""
 // data "RequirementConditions" "not HasStatus('RAGE') and not HasStatus('CALM_EMOTIONS')"
-data "RequirementConditions" "not HasStats('SG_Rage') and not HasStatus('CALM_EMOTIONS')"
+data "RequirementConditions" "not HasStatus('SG_Rage') and not HasStatus('CALM_EMOTIONS')"
 
 // Wildheart - Bear
 new entry "Shout_Rage_Totem_Bear"
@@ -63,7 +63,7 @@ using "Shout_Rage_Totem_Bear"
 // data "CombatAIOverrideSpell" "Shout_Rage_Totem_Bear_AI"
 data "CombatAIOverrideSpell" ""
 // data "RequirementConditions" "not HasStatus('RAGE_TOTEM_BEAR') and not HasStatus('CALM_EMOTIONS')"
-data "RequirementConditions" "not HasStats('SG_Rage') and not HasStatus('CALM_EMOTIONS')"
+data "RequirementConditions" "not HasStatus('SG_Rage') and not HasStatus('CALM_EMOTIONS')"
 
 // Wildheart - Eagle
 new entry "Shout_Rage_Totem_Eagle"
@@ -79,7 +79,7 @@ using "Shout_Rage_Totem_Eagle"
 // data "CombatAIOverrideSpell" "Shout_Rage_Totem_Eagle_AI"
 data "CombatAIOverrideSpell" ""
 // data "RequirementConditions" "not HasStatus('RAGE_TOTEM_EAGLE') and not HasStatus('CALM_EMOTIONS')"
-data "RequirementConditions" "not HasStats('SG_Rage') and not HasStatus('CALM_EMOTIONS')"
+data "RequirementConditions" "not HasStatus('SG_Rage') and not HasStatus('CALM_EMOTIONS')"
 
 // Wildheart - Elf
 new entry "Shout_Rage_Totem_Elk"
@@ -95,7 +95,7 @@ using "Shout_Rage_Totem_Elk"
 // data "CombatAIOverrideSpell" "Shout_Rage_Totem_Elk_AI"
 data "CombatAIOverrideSpell" ""
 // data "RequirementConditions" "not HasStatus('RAGE_TOTEM_ELK') and not HasStatus('CALM_EMOTIONS')"
-data "RequirementConditions" "not HasStats('SG_Rage') and not HasStatus('CALM_EMOTIONS')"
+data "RequirementConditions" "not HasStatus('SG_Rage') and not HasStatus('CALM_EMOTIONS')"
 
 // Wildheart - Tiger
 new entry "Shout_Rage_Totem_Tiger"
@@ -111,7 +111,7 @@ using "Shout_Rage_Totem_Tiger"
 // data "CombatAIOverrideSpell" "Shout_Rage_Totem_Tiger_AI"
 data "CombatAIOverrideSpell" ""
 // data "RequirementConditions" "not HasStatus('RAGE_TOTEM_TIGER') and not HasStatus('CALM_EMOTIONS')"
-data "RequirementConditions" "not HasStats('SG_Rage') and not HasStatus('CALM_EMOTIONS')"
+data "RequirementConditions" "not HasStatus('SG_Rage') and not HasStatus('CALM_EMOTIONS')"
 
 // Wildheart - Wolf
 new entry "Shout_Rage_Totem_Wolf"
@@ -127,7 +127,7 @@ using "Shout_Rage_Totem_Wolf"
 // data "CombatAIOverrideSpell" "Shout_Rage_Totem_Wolf_AI"
 data "CombatAIOverrideSpell" ""
 // data "RequirementConditions" "not HasStatus('RAGE_TOTEM_WOLF') and not HasStatus('CALM_EMOTIONS')"
-data "RequirementConditions" "not HasStats('SG_Rage') and not HasStatus('CALM_EMOTIONS')"
+data "RequirementConditions" "not HasStatus('SG_Rage') and not HasStatus('CALM_EMOTIONS')"
 
 // ==================================== Barbarian - Intimidating Presence ====================================
 
@@ -164,6 +164,22 @@ data "CombatAIOverrideSpell" ""
 // data "UseCosts" "ActionPoint:1"
 data "UseCosts" "BonusActionPoint:1"
 data "Cooldown" "OncePerCombat"
+
+// ==================================== Bard - Bardic Inspiration ====================================
+
+new entry "Target_BardicInspiration"
+type "SpellData"
+data "SpellType" "Target"
+using "Target_BardicInspiration"
+data "CombatAIOverrideSpell" "Target_BardicInspiration_AI"
+
+new entry "Target_BardicInspiration_AI"
+type "SpellData"
+data "SpellType" "Shout"
+using "Target_BardicInspiration"
+// data "CombatAIOverrideSpell" "Target_BardicInspiration_AI"
+data "CombatAIOverrideSpell" ""
+data "RequirementConditions" "not HasPassive('CombatInspiration')"
 
 // ==================================== Druid - Fungal Infestation resource passives ====================================
 
