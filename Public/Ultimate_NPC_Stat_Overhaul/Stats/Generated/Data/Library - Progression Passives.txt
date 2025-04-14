@@ -38,12 +38,6 @@ using "Goon_NPC_Progressions_Template"
 // Class Progressions: Barbarian
 data "DisplayName" "he67b6a65g03fcg431dga01cg0f2685168030;1"
 
-new entry "Goon_Bard_NPC_Progressions"
-type "PassiveData"
-using "Goon_NPC_Progressions_Template"
-// Class Progressions: Bard
-data "DisplayName" "h3b2a32d0gf5bdg4994g8a0agbc545ff76f16;1"
-
 new entry "Goon_Cleric_NPC_Progressions"
 type "PassiveData"
 using "Goon_NPC_Progressions_Template"

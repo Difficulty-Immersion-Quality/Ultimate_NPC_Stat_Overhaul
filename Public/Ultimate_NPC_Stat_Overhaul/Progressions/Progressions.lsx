@@ -253,7 +253,7 @@
                     <attribute id="Level" type="uint8" value="3"/>
                     <attribute id="Name" type="LSString" value="SwordsCollege"/>
                     <attribute id="ProgressionType" type="uint8" value="1"/>
-                    <attribute id="Selectors" type="LSString" value="SelectPassives(11f3b209-eb13-42d2-9fec-46dfc68fe619,1,FightingStyle);AddSpells(246ad664-1a53-4d42-8a5e-0ed5cda6af62)"/>
+                    <attribute id="Selectors" type="LSString" value="SelectPassives(11f3b209-eb13-42d2-9fec-46dfc68fe619,1,FightingStyle)"/>
                     <attribute id="TableUUID" type="guid" value="68f61c89-be48-41aa-acb6-2f3bd15303c7"/>
                     <attribute id="UUID" type="guid" value="647925f6-a7de-44a8-834c-1bc6e496921a"/>
                 </node> 
@@ -347,7 +347,7 @@
                     <attribute id="Level" type="uint8" value="9"/>
                     <attribute id="Name" type="LSString" value="NPC_Bard"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
-                    <attribute id="Selectors" type="LSString" value="SelectSpells(bd71fffb-e4d2-4233-9a31-13d43fba36e3,1,1,BardSpells)"/>
+                    <!-- <attribute id="Selectors" type="LSString" value="SelectSpells(bd71fffb-e4d2-4233-9a31-13d43fba36e3,1,1,BardSpells)"/> -->
                     <attribute id="TableUUID" type="guid" value="cbe5059f-7a9f-4b98-be6a-07c9cd8e02c2"/>
                     <attribute id="UUID" type="guid" value="f83acf43-cacb-4003-84fc-62c80f05ac3c"/>
                 </node>

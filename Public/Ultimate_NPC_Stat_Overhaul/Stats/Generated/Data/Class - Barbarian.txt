@@ -3,8 +3,8 @@
     new entry "Goon_Barbarian_NPC_Progressions"
     type "PassiveData"
     using "Goon_NPC_Progressions_Template"
-    // Class Progressions: Barbarian
     data "DisplayName" "he67b6a65g03fcg431dga01cg0f2685168030;1"
+    data "Description" "h59b5144dgff16g41edg9da8gc79e81e92b69;1"
 
 // ==================================== Combat Extender and Progression Stat Entries ====================================
 
@@ -12,9 +12,9 @@
     new entry "CX_Barbarian_Boost"
     type "PassiveData"
     // data "DisplayName" "h21ea4ac1gf6ffg42cbg94aeg9281460855d6"
-    data "DisplayName" "h80bfa73fg650cg4f93g9fcag07342fa68ece"
+    data "DisplayName" "h80bfa73fg650cg4f93g9fcag07342fa68ece;1"
     // data "Description" "h3d91a6e9ged6ag4203gb90ag7b0741a15eee"
-    data "Description" "h59b5144dgff16g41edg9da8gc79e81e92b69"
+    data "Description" "h59b5144dgff16g41edg9da8gc79e81e92b69;1"
     // data "Icon" "Action_Barbarian_DivingStrike"
     data "Icon" "Action_Barbarian_Rage"
     // data "Boosts" "UnlockInterrupt(Interrupt_RecklessAttack)"
@@ -197,12 +197,12 @@
     data "Passives" ""
     data "Boosts" ""
 
-// ==================================== Berserker ====================================
+// ==================================== Subclass: Berserker ====================================
 
     new entry "CX_Barbarian_Berserker_Boost"
     type "PassiveData"
-    data "DisplayName" "h7fb10ed8gcd0ag4e02g909fg5a9433f5cebc"
-    data "Description" "h28f5bbd1ge7ddg492egb781gbf7d0d1b0be7"
+    data "DisplayName" "h7fb10ed8gcd0ag4e02g909fg5a9433f5cebc;1"
+    data "Description" "h28f5bbd1ge7ddg492egb781gbf7d0d1b0be7;1"
     data "Icon" "Action_Barbarian_Frenzy"
     data "Boosts" ""
     data "StatsFunctorContext" "OnCreate;OnStatusApplied;OnStatusRemoved"
@@ -244,12 +244,12 @@
     data "Passives" "RageFrenzyUnlock;MindlessRage"
     data "Boosts" "UnlockSpell(Target_FrenziedStrike);UnlockSpell(Throw_FrenziedThrow);UnlockSpell(Target_IntimidatingPresence)"
 
-// ==================================== Wild Magic ====================================
+// ==================================== Subclass: Wild Magic ====================================
 
     new entry "CX_Barbarian_WildMagic_Boost"
     type "PassiveData"
-    data "DisplayName" "h3b4ca2edgd773g4765ga420gf434555cc1f1"
-    data "Description" "h344dfc77g19d4g4999g87a7g6b27338790d7"
+    data "DisplayName" "h3b4ca2edgd773g4765ga420gf434555cc1f1;1"
+    data "Description" "h344dfc77g19d4g4999g87a7g6b27338790d7;1"
     data "Icon" "Action_Barbarian_Rage_WildMagic"
     data "Boosts" ""
     data "StatsFunctorContext" "OnCreate;OnStatusApplied;OnStatusRemoved"
@@ -298,13 +298,13 @@
     data "Passives" "WildMagicRage;Unstable_Backlash"
     data "Boosts" "UnlockSpell(Shout_MagicAwareness);UnlockSpell(Target_BolsteringMagic_Boost);UnlockSpell(Target_BolsteringMagic_SpellSlot1);UnlockSpell(Target_BolsteringMagic_SpellSlot2);UnlockSpell(Target_BolsteringMagic_SpellSlot3)"
 
-// ==================================== Wildheart ====================================
+// ==================================== Subclass: Wildheart ====================================
 
     new entry "CX_Barbarian_Wildheart_Boost"
     type "PassiveData"
-    data "DisplayName" "h3b4ca2edgd773g4765ga420gf434555cc1f1"
-    data "Description" "h344dfc77g19d4g4999g87a7g6b27338790d7"
-    data "Icon" "Action_Barbarian_Rage_WildMagic"
+    data "DisplayName" "h82cb0f16ge6cag4cf4g9c66ge7ef33e1a7d5;1"
+    data "Description" "h33314de8gff58g4bc1g8d6cg8acef2820de6;1"
+    data "Icon" "PassiveFeature_AspectOfTheBeast_Wolf"
     data "Boosts" ""
     data "StatsFunctorContext" "OnCreate;OnStatusApplied;OnStatusRemoved"
     data "Conditions" ""
@@ -328,7 +328,7 @@
     data "Passives" ""
     data "Boosts" "UnlockSpell(Shout_SpeakWithAnimals_Barbarian)"
 
-        new entry "GOON_NPC_BARBARIAN_WILDHEART_LEVEL_8"
+    new entry "GOON_NPC_BARBARIAN_WILDHEART_LEVEL_8"
     type "StatusData"
     data "StatusType" "BOOST"
     using "GOON_NPC_BARBARIAN_WILDHEART_PROGRESSION_TEMPLATE"
