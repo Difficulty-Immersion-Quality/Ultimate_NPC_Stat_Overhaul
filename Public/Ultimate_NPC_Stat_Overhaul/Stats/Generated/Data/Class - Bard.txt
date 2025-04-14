@@ -5,6 +5,8 @@
     using "Goon_NPC_Progressions_Template"
     data "DisplayName" "h3b2a32d0gf5bdg4994g8a0agbc545ff76f16;1"
     data "Description" "h01fa41a8g0349g4d61gac86g3475d0e98ded;1"
+    data "Properties" "Highlighted"
+    data "Icon" "GenericIcon_Intent_Buff"
 
 // ==================================== Combat Extender and Progression Stat Entries ====================================
 
