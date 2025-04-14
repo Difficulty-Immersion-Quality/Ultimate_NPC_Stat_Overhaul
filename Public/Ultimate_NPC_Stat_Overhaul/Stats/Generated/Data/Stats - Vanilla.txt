@@ -2578,12 +2578,14 @@ using "CHA_Bandit_HalfElf_Melee"
 // data "Passives" "FeyAncestry;Darkvision;DarknessRules"
 data "Passives" "CX_Fighter_Boost;CX_Fighter_BattleMaster_Boost;CX_Martial_Boost;FeyAncestry;HumanMilitia;AttackOfOpportunity;Darkvision;DarknessRules"
 
-// Barth - Adventurer travelling with Aradin Beno
+// Barth - Adventurer travelling with Aradin Beno (Why bro got no progs)
 new entry "DEN_Adventurer_Melee"
 type "Character"
 using "DEN_Adventurer_Melee"
 // data "Passives" "FeyAncestry;AttackOfOpportunity;Darkvision;DarknessRules"
 data "Passives" "CX_Fighter_Boost;CX_Fighter_BattleMaster_Boost;CX_Martial_Boost;FeyAncestry;HumanMilitia;AttackOfOpportunity;Darkvision;DarknessRules"
+// data "Progressions" ""
+data "Progressions" "0e6da493-5a37-423b-8c28-629462b22faa"
 
 // Watchman
 new entry "END_CityWatchMelee_HalfElf"
@@ -3824,6 +3826,30 @@ type "Character"
 using "CHA_BanditInterior_Human_Melee"
 // data "Passives" "DarknessRules"
 data "Passives" "CX_Rogue_Boost;CX_Martial_Boost;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules"
+
+// Aradin Beno - Aradin's mercenary crew (His proprietary progressions are pointless and not worth filling in when we can just make him a Fighter and give the act 3 boosts via stats)
+new entry "DEN_Adventurer_Leader"
+type "Character"
+using "DEN_Adventurer_Leader"
+// data "Passives" "AttackOfOpportunity;DarknessRules"
+data "Passives" "CX_Fighter_Boost;CX_Fighter_BattleMaster_Boost;CX_Martial_Boost;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules;Goon_Aradin_Boost"
+// data "Progressions" "9eaa6333-f907-4c16-aa48-cf6d46c1b351"
+data "Progressions" "0e6da493-5a37-423b-8c28-629462b22faa"
+
+    new entry "Goon_Aradin_Boost"
+    type "PassiveData"
+    data "Properties" "IsHidden"
+    data "StatsFunctorContext" "OnCreate;OnStatusApplied;OnStatusRemoved"
+    data "StatsFunctors" "IF(CharacterLevelGreaterThan(7,GetOwner(context.Source))):ApplyStatus(GOON_ARADIN_BOOST,100,-1)"
+
+    new entry "GOON_ARADIN_BOOST"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    data "RemoveEvents" "OnStatusApplied;OnStatusRemoved"
+    data "StackId" "GOON_ARADIN_BOOST"
+    data "StackType" "Ignore"
+    data "RemoveConditions" "not HasPassive('Goon_Aradin_Boost')"
+    data "Boosts" "ActionResource(SuperiorityDie,4,0);Ability(Strength,3);Ability(Constitution,2)"
 
 // Watchman
 new entry "END_CityWatchMelee_Human"
