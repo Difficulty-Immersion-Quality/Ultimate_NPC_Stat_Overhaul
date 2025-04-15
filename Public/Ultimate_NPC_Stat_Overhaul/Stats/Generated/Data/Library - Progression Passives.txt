@@ -32,18 +32,6 @@ data "DisplayName" "h19a9f0e8g94bcg4f42g9fa2g6d4b95bc6e2e;1"
 
 // ==================================== Main class progressions ====================================
 
-new entry "Goon_Barbarian_NPC_Progressions"
-type "PassiveData"
-using "Goon_NPC_Progressions_Template"
-// Class Progressions: Barbarian
-data "DisplayName" "he67b6a65g03fcg431dga01cg0f2685168030;1"
-
-new entry "Goon_Cleric_NPC_Progressions"
-type "PassiveData"
-using "Goon_NPC_Progressions_Template"
-// Class Progressions: Cleric
-data "DisplayName" "he6acc5c5gd23bg4c8dgb60cg3de3da611c9f;1"
-
 new entry "Goon_Druid_NPC_Progressions"
 type "PassiveData"
 using "Goon_NPC_Progressions_Template"

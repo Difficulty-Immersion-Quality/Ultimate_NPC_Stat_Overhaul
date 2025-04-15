@@ -9,7 +9,6 @@
 <!-- Progressions -->
 	<content contentuid="h22e51f36g68a9g4b6aga433g694b75975e4d" version="1">This character is using class progressions.</content>
 
-	<content contentuid="he6acc5c5gd23bg4c8dgb60cg3de3da611c9f" version="1">! Cleric - Class Progressions</content>
 	<content contentuid="h215206fcg60f6g4af5g94f2gd3c61fc2399b" version="1">! Druid - Class Progressions</content>
 	<content contentuid="h6d12a72egfab9g4f45gae31g5d4491dd2b6b" version="1">! Fighter - Class Progressions</content>
 	<content contentuid="h5f6db4dfgb3b4g4289g937bg039af3d0b1f8" version="1">! Monk - Class Progressions</content>
@@ -57,19 +56,26 @@
 
 <!-- Bard Passives -->
 	<content contentuid="h3b2a32d0gf5bdg4994g8a0agbc545ff76f16" version="1">! Bard - Class Progressions</content>
-	<content contentuid="h01fa41a8g0349g4d61gac86g3475d0e98ded" version="1">A character who harnesses their fury to punish foes. They possess Barbarian progressions, and gain the &lt;LSTag Type="Passive" Tooltip="CX_Bard_Boost"&gt;! CX Boost: Bard&lt;/LSTag&gt; passive.</content>
+	<content contentuid="h01fa41a8g0349g4d61gac86g3475d0e98ded" version="1">A character with a versatile skillset, who blends artistry, trickery, and spellcraft. They possess Bard progressions, and gain the &lt;LSTag Type="Passive" Tooltip="CX_Bard_Boost"&gt;! CX Boost: Bard&lt;/LSTag&gt; passive.</content>
 
-	<content contentuid="h54aa6df3g3e46g4c2cg85bdga5d196c4f97e" version="1">! CX Boost: Bard Boost</content>
+	<content contentuid="h54aa6df3g3e46g4c2cg85bdga5d196c4f97e" version="1">! CX Boost: Bard</content>
 	<content contentuid="h97a23da3gd2c1g4b07gb187g9f8696856259" version="1">A character with a versatile skillset, who blends artistry, trickery, and spellcraft. They gain Bard progressions in addition to boosts from configuration.&lt;br&gt;&lt;br&gt;If this character does not have the &lt;LSTag Type="Passive" Tooltip="Goon_Bard_NPC_Progressions"&gt;! Class: Bard&lt;/LSTag&gt; passive, then this passive has either been added externally, not by Ultimate NPC Stat Overhaul, or the character does not have class progressions assigned as expected. In cases where you would expect a character to have certain progressions, but they do not, you should let us know on the Ultimate NPC Stat Overhaul mod page so it can be looked at.</content>
 
 	<content contentuid="h3bcbbd77gfc41g49ebga568g0cbf6a43e9ed" version="1">! Subclass: College of Lore Bard</content>
-	<content contentuid="hc1899b1fgf6aag44c7g8ec9ga7ed8d2cd3b0" version="1">A Bard who blends magic, wit, and scholarship into a versatile and unpredictable force. They gain College of Lore Barbarian progressions in addition to boosts from configuration.</content>
+	<content contentuid="hc1899b1fgf6aag44c7g8ec9ga7ed8d2cd3b0" version="1">A Bard who blends magic, wit, and scholarship into a versatile and unpredictable force. They gain College of Lore Bard progressions in addition to boosts from configuration.</content>
 
 	<content contentuid="hc5b127ccg619cg4af7gad38g0947e697dafc" version="1">! Subclass: College of Swords Bard</content>
-	<content contentuid="h431b9944g0440g4d3dga526ge6efea533b59" version="1">A Bard who turns combat into performance, striking with style, speed, and precision. They gain College of Swords Barbarian progressions in addition to boosts from configuration.</content>
+	<content contentuid="h431b9944g0440g4d3dga526ge6efea533b59" version="1">A Bard who turns combat into performance, striking with style, speed, and precision. They gain College of Swords Bard progressions in addition to boosts from configuration.</content>
 
 	<content contentuid="h16d07619gbb01g405eg814ag230fd0f825e1" version="1">! Subclass: College of Valor Bard</content>
-	<content contentuid="h826a180fg0121g4072ga12bg5e051e7bff11" version="1">A Bard who inspires bravery and leads with blade and song in the heart of battle. They gain College of Valor Barbarian progressions in addition to boosts from configuration.</content>
+	<content contentuid="h826a180fg0121g4072ga12bg5e051e7bff11" version="1">A Bard who inspires bravery and leads with blade and song in the heart of battle. They gain College of Valor Bard progressions in addition to boosts from configuration.</content>
+
+<!-- CX Cleric Passives -->
+	<content contentuid="he6acc5c5gd23bg4c8dgb60cg3de3da611c9f" version="1">! Cleric - Class Progressions</content>
+	<content contentuid="hdc223953g447cg47f5gada1g3d26f4158e54" version="1">A character of faith, channeling divine magic both to aid and harm. They possess Cleric progressions, and gain the &lt;LSTag Type="Passive" Tooltip="CX_Cleric_Boost"&gt;! CX Boost: Cleric&lt;/LSTag&gt; passive.</content>
+
+	<content contentuid="hf9960aa3g25a4g44e7ga5d6g3f7f254ec53b" version="1">! CX Boost: Cleric</content>
+	<content contentuid="hacdccdb0ge6c6g454bga598g6df082810262" version="1">A character of faith, channeling divine magic both to aid and harm. They gain Cleric boosts from configuration.&lt;br&gt;&lt;br&gt;If this character does not have the &lt;LSTag Type="Passive" Tooltip="Goon_Cleric_NPC_Progressions"&gt;! Class: Cleric&lt;/LSTag&gt; passive, then this passive has either been added externally, not by Ultimate NPC Stat Overhaul, or the character does not have class progressions assigned as expected. In cases where you would expect a character to have certain progressions, but they do not, you should let us know on the Ultimate NPC Stat Overhaul mod page so it can be looked at.</content>
 
 <!-- CX Druid Passives -->
 	<content contentuid="he38308dag9418g482fg8ca1g980cc98ff64a" version="1">Combat Extender: Druid Boost</content>
@@ -80,10 +86,6 @@
 
 	<content contentuid="h407e27feg0d73g483dgbed5gb58542ff0cca" version="1">Combat Extender: Circle of the Spores Druid Boost</content>
 	<content contentuid="h5872faaag78ffg4f03g99cbgcda17b06d423" version="1">A Druid who uses fungal growth and decay to augment themselves and harm their foes. They gain Circle of the Spores subclass boosts from configuration.</content>
-
-<!-- CX Cleric Passives -->
-	<content contentuid="hf9960aa3g25a4g44e7ga5d6g3f7f254ec53b" version="1">Combat Extender: Cleric Boost</content>
-	<content contentuid="hacdccdb0ge6c6g454bga598g6df082810262" version="1">A character of faith, channeling divine magic both to aid and harm. They gain Cleric boosts from configuration.</content>
 
 <!-- CX Fighter Passives -->
 	<content contentuid="h9bbf1a66g5136g4de6gb0f1g8e48e853d2ad" version="1">Combat Extender: Fighter Boost</content>
