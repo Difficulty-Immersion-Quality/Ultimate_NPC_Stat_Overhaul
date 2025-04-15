@@ -2,7 +2,6 @@
 
     new entry "Goon_Barbarian_NPC_Progressions"
     type "PassiveData"
-    using "Goon_NPC_Progressions_Template"
     data "DisplayName" "he67b6a65g03fcg431dga01cg0f2685168030;1"
     data "Description" "h59b5144dgff16g41edg9da8gc79e81e92b69;1"
     data "Properties" "Highlighted"

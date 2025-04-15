@@ -47,18 +47,6 @@ data "Description" "hd5818987ga072g4e8dgb314g97ab96f230cd"
 data "Boosts" "Proficiency(SimpleWeapons);Proficiency(MartialWeapons)"
 data "Icon" "Spell_Abjuration_WardingBond"
 
-// ==================================== Cleric ====================================
-
-new entry "CX_Cleric_Boost"
-type "PassiveData"
-// data "DisplayName" "hd78bde2fg5767g458eg822fg0684c68cc601"
-data "DisplayName" "hf9960aa3g25a4g44e7ga5d6g3f7f254ec53b"
-// data "Description" "hc0870e25gdc4dg4f41g9aa3g5d5c4f17c9c1"
-data "Description" "hacdccdb0ge6c6g454bga598g6df082810262"
-// data "Icon" "Action_DivineIntervention_Weapon"
-data "Icon" "Action_DivineIntervention_Attack"
-data "Boosts" ""
-
 // ==================================== Druid ====================================
 
 new entry "CX_Druid_Boost"
