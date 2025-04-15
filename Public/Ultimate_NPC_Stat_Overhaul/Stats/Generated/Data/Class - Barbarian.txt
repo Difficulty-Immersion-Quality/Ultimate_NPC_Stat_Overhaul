@@ -44,7 +44,7 @@
     using "GOON_NPC_BARBARIAN_PROGRESSION_TEMPLATE"
     data "StackPriority" "1"
     data "Passives" "RageUnlock;UnarmouredDefence_Barbarian;Rage_Armour_Message;Rage_NoHeavyArmour_VFX;CX_Martial_Boost"
-    data "Boosts" "ProficiencyBonus(SavingThrow,Strength);ProficiencyBonus(SavingThrow,Constitution);Proficiency(LightArmor);Proficiency(MediumArmor);Proficiency(Shields);Proficiency(SimpleWeapons);Proficiency(MartialWeapons);ActionResource(Rage,2,0)"
+    data "Boosts" "Tag(BARBARIAN);ProficiencyBonus(SavingThrow,Strength);ProficiencyBonus(SavingThrow,Constitution);Proficiency(LightArmor);Proficiency(MediumArmor);Proficiency(Shields);Proficiency(SimpleWeapons);Proficiency(MartialWeapons);ActionResource(Rage,2,0)"
 
     new entry "GOON_NPC_BARBARIAN_LEVEL_2"
     type "StatusData"
@@ -52,7 +52,7 @@
     using "GOON_NPC_BARBARIAN_PROGRESSION_TEMPLATE"
     data "StackPriority" "2"
     data "Passives" "RageUnlock;UnarmouredDefence_Barbarian;Rage_Armour_Message;Rage_NoHeavyArmour_VFX;CX_Martial_Boost;DangerSense;RecklessAttack"
-    data "Boosts" "ProficiencyBonus(SavingThrow,Strength);ProficiencyBonus(SavingThrow,Constitution);Proficiency(LightArmor);Proficiency(MediumArmor);Proficiency(Shields);Proficiency(SimpleWeapons);Proficiency(MartialWeapons);ActionResource(Rage,2,0)"
+    data "Boosts" "Tag(BARBARIAN);ProficiencyBonus(SavingThrow,Strength);ProficiencyBonus(SavingThrow,Constitution);Proficiency(LightArmor);Proficiency(MediumArmor);Proficiency(Shields);Proficiency(SimpleWeapons);Proficiency(MartialWeapons);ActionResource(Rage,2,0)"
 
     new entry "GOON_NPC_BARBARIAN_LEVEL_3"
     type "StatusData"
@@ -60,7 +60,7 @@
     using "GOON_NPC_BARBARIAN_PROGRESSION_TEMPLATE"
     data "StackPriority" "3"
     data "Passives" "RageUnlock;UnarmouredDefence_Barbarian;Rage_Armour_Message;Rage_NoHeavyArmour_VFX;CX_Martial_Boost;DangerSense;RecklessAttack"
-    data "Boosts" "ProficiencyBonus(SavingThrow,Strength);ProficiencyBonus(SavingThrow,Constitution);Proficiency(LightArmor);Proficiency(MediumArmor);Proficiency(Shields);Proficiency(SimpleWeapons);Proficiency(MartialWeapons);ActionResource(Rage,3,0)"
+    data "Boosts" "Tag(BARBARIAN);ProficiencyBonus(SavingThrow,Strength);ProficiencyBonus(SavingThrow,Constitution);Proficiency(LightArmor);Proficiency(MediumArmor);Proficiency(Shields);Proficiency(SimpleWeapons);Proficiency(MartialWeapons);ActionResource(Rage,3,0)"
 
     new entry "GOON_NPC_BARBARIAN_LEVEL_4"
     type "StatusData"
@@ -68,7 +68,7 @@
     using "GOON_NPC_BARBARIAN_PROGRESSION_TEMPLATE"
     data "StackPriority" "4"
     data "Passives" "RageUnlock;UnarmouredDefence_Barbarian;Rage_Armour_Message;Rage_NoHeavyArmour_VFX;CX_Martial_Boost;DangerSense;RecklessAttack"
-    data "Boosts" "ProficiencyBonus(SavingThrow,Strength);ProficiencyBonus(SavingThrow,Constitution);Proficiency(LightArmor);Proficiency(MediumArmor);Proficiency(Shields);Proficiency(SimpleWeapons);Proficiency(MartialWeapons);ActionResource(Rage,3,0)"
+    data "Boosts" "Tag(BARBARIAN);ProficiencyBonus(SavingThrow,Strength);ProficiencyBonus(SavingThrow,Constitution);Proficiency(LightArmor);Proficiency(MediumArmor);Proficiency(Shields);Proficiency(SimpleWeapons);Proficiency(MartialWeapons);ActionResource(Rage,3,0)"
 
     new entry "GOON_NPC_BARBARIAN_LEVEL_5"
     type "StatusData"
@@ -76,7 +76,7 @@
     using "GOON_NPC_BARBARIAN_PROGRESSION_TEMPLATE"
     data "StackPriority" "5"
     data "Passives" "RageUnlock;UnarmouredDefence_Barbarian;Rage_Armour_Message;Rage_NoHeavyArmour_VFX;CX_Martial_Boost;DangerSense;RecklessAttack;ExtraAttack;FastMovement"
-    data "Boosts" "ProficiencyBonus(SavingThrow,Strength);ProficiencyBonus(SavingThrow,Constitution);Proficiency(LightArmor);Proficiency(MediumArmor);Proficiency(Shields);Proficiency(SimpleWeapons);Proficiency(MartialWeapons);ActionResource(Rage,3,0)"
+    data "Boosts" "Tag(BARBARIAN);ProficiencyBonus(SavingThrow,Strength);ProficiencyBonus(SavingThrow,Constitution);Proficiency(LightArmor);Proficiency(MediumArmor);Proficiency(Shields);Proficiency(SimpleWeapons);Proficiency(MartialWeapons);ActionResource(Rage,3,0)"
 
     new entry "GOON_NPC_BARBARIAN_LEVEL_6"
     type "StatusData"
@@ -84,7 +84,7 @@
     using "GOON_NPC_BARBARIAN_PROGRESSION_TEMPLATE"
     data "StackPriority" "6"
     data "Passives" "RageUnlock;UnarmouredDefence_Barbarian;Rage_Armour_Message;Rage_NoHeavyArmour_VFX;CX_Martial_Boost;DangerSense;RecklessAttack;ExtraAttack;FastMovement"
-    data "Boosts" "ProficiencyBonus(SavingThrow,Strength);ProficiencyBonus(SavingThrow,Constitution);Proficiency(LightArmor);Proficiency(MediumArmor);Proficiency(Shields);Proficiency(SimpleWeapons);Proficiency(MartialWeapons);ActionResource(Rage,4,0)"
+    data "Boosts" "Tag(BARBARIAN);ProficiencyBonus(SavingThrow,Strength);ProficiencyBonus(SavingThrow,Constitution);Proficiency(LightArmor);Proficiency(MediumArmor);Proficiency(Shields);Proficiency(SimpleWeapons);Proficiency(MartialWeapons);ActionResource(Rage,4,0)"
 
     new entry "GOON_NPC_BARBARIAN_LEVEL_7"
     type "StatusData"
@@ -92,7 +92,7 @@
     using "GOON_NPC_BARBARIAN_PROGRESSION_TEMPLATE"
     data "StackPriority" "7"
     data "Passives" "RageUnlock;UnarmouredDefence_Barbarian;Rage_Armour_Message;Rage_NoHeavyArmour_VFX;CX_Martial_Boost;DangerSense;RecklessAttack;ExtraAttack;FastMovement;FeralInstinct"
-    data "Boosts" "ProficiencyBonus(SavingThrow,Strength);ProficiencyBonus(SavingThrow,Constitution);Proficiency(LightArmor);Proficiency(MediumArmor);Proficiency(Shields);Proficiency(SimpleWeapons);Proficiency(MartialWeapons);ActionResource(Rage,4,0)"
+    data "Boosts" "Tag(BARBARIAN);ProficiencyBonus(SavingThrow,Strength);ProficiencyBonus(SavingThrow,Constitution);Proficiency(LightArmor);Proficiency(MediumArmor);Proficiency(Shields);Proficiency(SimpleWeapons);Proficiency(MartialWeapons);ActionResource(Rage,4,0)"
 
     new entry "GOON_NPC_BARBARIAN_LEVEL_8"
     type "StatusData"
@@ -100,7 +100,7 @@
     using "GOON_NPC_BARBARIAN_PROGRESSION_TEMPLATE"
     data "StackPriority" "8"
     data "Passives" "RageUnlock;UnarmouredDefence_Barbarian;Rage_Armour_Message;Rage_NoHeavyArmour_VFX;CX_Martial_Boost;DangerSense;RecklessAttack;ExtraAttack;FastMovement;FeralInstinct"
-    data "Boosts" "ProficiencyBonus(SavingThrow,Strength);ProficiencyBonus(SavingThrow,Constitution);Proficiency(LightArmor);Proficiency(MediumArmor);Proficiency(Shields);Proficiency(SimpleWeapons);Proficiency(MartialWeapons);ActionResource(Rage,4,0)"
+    data "Boosts" "Tag(BARBARIAN);ProficiencyBonus(SavingThrow,Strength);ProficiencyBonus(SavingThrow,Constitution);Proficiency(LightArmor);Proficiency(MediumArmor);Proficiency(Shields);Proficiency(SimpleWeapons);Proficiency(MartialWeapons);ActionResource(Rage,4,0)"
 
     new entry "GOON_NPC_BARBARIAN_LEVEL_9"
     type "StatusData"
@@ -108,7 +108,7 @@
     using "GOON_NPC_BARBARIAN_PROGRESSION_TEMPLATE"
     data "StackPriority" "9"
     data "Passives" "RageUnlock;UnarmouredDefence_Barbarian;Rage_Armour_Message;Rage_NoHeavyArmour_VFX;CX_Martial_Boost;DangerSense;RecklessAttack;ExtraAttack;FastMovement;FeralInstinct;BrutalCritical"
-    data "Boosts" "ProficiencyBonus(SavingThrow,Strength);ProficiencyBonus(SavingThrow,Constitution);Proficiency(LightArmor);Proficiency(MediumArmor);Proficiency(Shields);Proficiency(SimpleWeapons);Proficiency(MartialWeapons);ActionResource(Rage,4,0)"
+    data "Boosts" "Tag(BARBARIAN);ProficiencyBonus(SavingThrow,Strength);ProficiencyBonus(SavingThrow,Constitution);Proficiency(LightArmor);Proficiency(MediumArmor);Proficiency(Shields);Proficiency(SimpleWeapons);Proficiency(MartialWeapons);ActionResource(Rage,4,0)"
 
     new entry "GOON_NPC_BARBARIAN_LEVEL_10"
     type "StatusData"
@@ -116,7 +116,7 @@
     using "GOON_NPC_BARBARIAN_PROGRESSION_TEMPLATE"
     data "StackPriority" "10"
     data "Passives" "RageUnlock;UnarmouredDefence_Barbarian;Rage_Armour_Message;Rage_NoHeavyArmour_VFX;CX_Martial_Boost;DangerSense;RecklessAttack;ExtraAttack;FastMovement;FeralInstinct;BrutalCritical"
-    data "Boosts" "ProficiencyBonus(SavingThrow,Strength);ProficiencyBonus(SavingThrow,Constitution);Proficiency(LightArmor);Proficiency(MediumArmor);Proficiency(Shields);Proficiency(SimpleWeapons);Proficiency(MartialWeapons);ActionResource(Rage,4,0)"
+    data "Boosts" "Tag(BARBARIAN);ProficiencyBonus(SavingThrow,Strength);ProficiencyBonus(SavingThrow,Constitution);Proficiency(LightArmor);Proficiency(MediumArmor);Proficiency(Shields);Proficiency(SimpleWeapons);Proficiency(MartialWeapons);ActionResource(Rage,4,0)"
 
     new entry "GOON_NPC_BARBARIAN_LEVEL_11"
     type "StatusData"
@@ -124,7 +124,7 @@
     using "GOON_NPC_BARBARIAN_PROGRESSION_TEMPLATE"
     data "StackPriority" "11"
     data "Passives" "RageUnlock;UnarmouredDefence_Barbarian;Rage_Armour_Message;Rage_NoHeavyArmour_VFX;CX_Martial_Boost;DangerSense;RecklessAttack;ExtraAttack;FastMovement;FeralInstinct;BrutalCritical;RelentlessRage"
-    data "Boosts" "ProficiencyBonus(SavingThrow,Strength);ProficiencyBonus(SavingThrow,Constitution);Proficiency(LightArmor);Proficiency(MediumArmor);Proficiency(Shields);Proficiency(SimpleWeapons);Proficiency(MartialWeapons);ActionResource(Rage,4,0)"
+    data "Boosts" "Tag(BARBARIAN);ProficiencyBonus(SavingThrow,Strength);ProficiencyBonus(SavingThrow,Constitution);Proficiency(LightArmor);Proficiency(MediumArmor);Proficiency(Shields);Proficiency(SimpleWeapons);Proficiency(MartialWeapons);ActionResource(Rage,4,0)"
 
     new entry "GOON_NPC_BARBARIAN_LEVEL_12"
     type "StatusData"
@@ -132,7 +132,7 @@
     using "GOON_NPC_BARBARIAN_PROGRESSION_TEMPLATE"
     data "StackPriority" "12"
     data "Passives" "RageUnlock;UnarmouredDefence_Barbarian;Rage_Armour_Message;Rage_NoHeavyArmour_VFX;CX_Martial_Boost;DangerSense;RecklessAttack;ExtraAttack;FastMovement;FeralInstinct;BrutalCritical;RelentlessRage"
-    data "Boosts" "ProficiencyBonus(SavingThrow,Strength);ProficiencyBonus(SavingThrow,Constitution);Proficiency(LightArmor);Proficiency(MediumArmor);Proficiency(Shields);Proficiency(SimpleWeapons);Proficiency(MartialWeapons);ActionResource(Rage,5,0)"
+    data "Boosts" "Tag(BARBARIAN);ProficiencyBonus(SavingThrow,Strength);ProficiencyBonus(SavingThrow,Constitution);Proficiency(LightArmor);Proficiency(MediumArmor);Proficiency(Shields);Proficiency(SimpleWeapons);Proficiency(MartialWeapons);ActionResource(Rage,5,0)"
 
 // Expansion levels 13-20
     new entry "GOON_NPC_BARBARIAN_LEVEL_13"

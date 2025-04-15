@@ -7,7 +7,7 @@
             <!-- BARBARIAN -->
                 <node id="Progression">
                     <!-- <attribute id="Boosts" type="LSString" value="ActionResource(Rage,2,0);ProficiencyBonus(SavingThrow,Strength);ProficiencyBonus(SavingThrow,Constitution);"/> -->
-                    <attribute id="Boosts" type="LSString" value="ProficiencyBonus(SavingThrow,Strength);ProficiencyBonus(SavingThrow,Constitution);Proficiency(LightArmor);Proficiency(MediumArmor);Proficiency(Shields);Proficiency(SimpleWeapons);Proficiency(MartialWeapons);ActionResource(Rage,2,0)"/>
+                    <attribute id="Boosts" type="LSString" value="Tag(BARBARIAN);ProficiencyBonus(SavingThrow,Strength);ProficiencyBonus(SavingThrow,Constitution);Proficiency(LightArmor);Proficiency(MediumArmor);Proficiency(Shields);Proficiency(SimpleWeapons);Proficiency(MartialWeapons);ActionResource(Rage,2,0)"/>
                     <attribute id="Level" type="uint8" value="1"/>
                     <attribute id="Name" type="LSString" value="NPC_Barbarian"/>
                     <!-- <attribute id="PassivesAdded" type="LSString" value="UnarmouredDefence_Barbarian"/> -->
@@ -381,6 +381,7 @@
                 </node>
             <!-- CLERIC -->
                 <node id="Progression">
+                    <!-- <attribute id="Boosts" type="LSString" value="ActionResource(SpellSlot,2,1);ProficiencyBonus(SavingThrow,Wisdom);ProficiencyBonus(SavingThrow,Charisma)"/> -->
                     <attribute id="Boosts" type="LSString" value="ActionResource(SpellSlot,2,1);ProficiencyBonus(SavingThrow,Wisdom);ProficiencyBonus(SavingThrow,Charisma)"/>
                     <attribute id="Level" type="uint8" value="1"/>
                     <attribute id="Name" type="LSString" value="NPC_Cleric"/>
