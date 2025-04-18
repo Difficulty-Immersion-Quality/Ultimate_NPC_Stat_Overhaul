@@ -229,6 +229,23 @@
     data "Passives" "CuttingWords"
     data "Boosts" ""
 
+    // <node id="Progression">
+    //     <attribute id="Level" type="uint8" value="3"/>
+    //     <attribute id="Name" type="LSString" value="LoreCollege"/>
+    //     <attribute id="PassivesAdded" type="LSString" value="CuttingWords"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="Selectors" type="LSString" value="SelectSkills(ed664663-93b9-4070-a54b-3c7b19c0e7b4,3)"/>
+    //     <attribute id="TableUUID" type="guid" value="36e6ea13-317e-4e6e-ac63-fe6d50e9f014"/>
+    //     <attribute id="UUID" type="guid" value="a951662b-afb5-4eae-abcf-ec4a501ac6df"/>
+
+    // <node id="Progression">
+    //     <attribute id="Level" type="uint8" value="6"/>
+    //     <attribute id="Name" type="LSString" value="LoreCollege"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="Selectors" type="LSString" value="SelectSpells(175ceed7-5a53-4f48-823c-41c4f72d18ae,2,0,BardMagicalSecrets)"/>
+    //     <attribute id="TableUUID" type="guid" value="36e6ea13-317e-4e6e-ac63-fe6d50e9f014"/>
+    //     <attribute id="UUID" type="guid" value="8ddbdfce-20ff-452e-b945-6b5f6f0c7e78"/>
+
 // ==================================== Subclass: College of Swords ====================================
 
     new entry "CX_Bard_Swords_Boost"
@@ -260,6 +277,15 @@ data "Icon" "Action_SlashingFlourish_Melee"
     data "Passives" ""
     data "Boosts" "Proficiency(MediumArmor);Proficiency(Scimitars);UnlockSpell(Zone_BladeFlourish_Slashing);UnlockSpell(Target_BladeFlourish_Defensive);UnlockSpell(Projectile_BladeFlourish_Defensive);UnlockSpell(Target_BladeFlourish_Mobile);UnlockSpell(Projectile_BladeFlourish_Mobile);UnlockSpell(Projectile_BladeFlourish_Slashing)"
 
+    // <node id="Progression">
+    //     <attribute id="Boosts" type="LSString" value="Proficiency(MediumArmor);Proficiency(Scimitars)"/>
+    //     <attribute id="Level" type="uint8" value="3"/>
+    //     <attribute id="Name" type="LSString" value="SwordsCollege"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="Selectors" type="LSString" value="SelectPassives(11f3b209-eb13-42d2-9fec-46dfc68fe619,1,FightingStyle);AddSpells(246ad664-1a53-4d42-8a5e-0ed5cda6af62)"/>
+    //     <attribute id="TableUUID" type="guid" value="68f61c89-be48-41aa-acb6-2f3bd15303c7"/>
+    //     <attribute id="UUID" type="guid" value="647925f6-a7de-44a8-834c-1bc6e496921a"/>
+
     new entry "GOON_NPC_BARD_SWORDS_LEVEL_6"
     type "StatusData"
     data "StatusType" "BOOST"
@@ -267,6 +293,14 @@ data "Icon" "Action_SlashingFlourish_Melee"
     data "StackPriority" "6"
     data "Passives" "ExtraAttack"
     data "Boosts" "Proficiency(MediumArmor);Proficiency(Scimitars);UnlockSpell(Zone_BladeFlourish_Slashing);UnlockSpell(Target_BladeFlourish_Defensive);UnlockSpell(Projectile_BladeFlourish_Defensive);UnlockSpell(Target_BladeFlourish_Mobile);UnlockSpell(Projectile_BladeFlourish_Mobile);UnlockSpell(Projectile_BladeFlourish_Slashing)"
+
+    // <node id="Progression">
+    //     <attribute id="Level" type="uint8" value="6"/>
+    //     <attribute id="Name" type="LSString" value="SwordsCollege"/>
+    //     <attribute id="PassivesAdded" type="LSString" value="ExtraAttack"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="TableUUID" type="guid" value="68f61c89-be48-41aa-acb6-2f3bd15303c7"/>
+    //     <attribute id="UUID" type="guid" value="b5a994cc-e76a-4e55-b2d7-ac8ec665c2f1"/>
 
 // ==================================== Subclass: College of Valor ====================================
 
@@ -299,6 +333,16 @@ data "Icon" "Action_SlashingFlourish_Melee"
     data "Passives" "CombatInspiration"
     data "Boosts" "Proficiency(MediumArmor);Proficiency(Shields);Proficiency(MartialWeapons)"
 
+    // <node id="Progression">
+    //     <attribute id="Boosts" type="LSString" value="Proficiency(MediumArmor);Proficiency(Shields);Proficiency(MartialWeapons)"/>
+    //     <attribute id="Level" type="uint8" value="3"/>
+    //     <attribute id="Name" type="LSString" value="ValorCollege"/>
+    //     <attribute id="PassivesAdded" type="LSString" value="CombatInspiration"/>
+    //     <attribute id="PassivesRemoved" type="LSString" value="BardicInspiration"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="TableUUID" type="guid" value="d58a305f-3ccf-440c-b069-2abd9235ac03"/>
+    //     <attribute id="UUID" type="guid" value="517fc6b8-bdf4-4687-a7fc-9d94b559f787"/>
+
     new entry "GOON_NPC_BARD_VALOR_LEVEL_6"
     type "StatusData"
     data "StatusType" "BOOST"
@@ -306,3 +350,11 @@ data "Icon" "Action_SlashingFlourish_Melee"
     data "StackPriority" "6"
     data "Passives" "CombatInspiration;ExtraAttack"
     data "Boosts" "Proficiency(MediumArmor);Proficiency(Shields);Proficiency(MartialWeapons)"
+
+    // <node id="Progression">
+    //     <attribute id="Level" type="uint8" value="6"/>
+    //     <attribute id="Name" type="LSString" value="ValorCollege"/>
+    //     <attribute id="PassivesAdded" type="LSString" value="ExtraAttack"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="TableUUID" type="guid" value="d58a305f-3ccf-440c-b069-2abd9235ac03"/>
+    //     <attribute id="UUID" type="guid" value="eb3a178a-03d1-4300-bdaa-129656a5536c"/>

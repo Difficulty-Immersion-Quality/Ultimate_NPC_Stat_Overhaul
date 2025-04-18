@@ -77,6 +77,10 @@
 	<content contentuid="hf9960aa3g25a4g44e7ga5d6g3f7f254ec53b" version="1">! CX Boost: Cleric</content>
 	<content contentuid="hacdccdb0ge6c6g454bga598g6df082810262" version="1">A character of faith, channeling divine magic both to aid and harm. They gain Cleric boosts from configuration.&lt;br&gt;&lt;br&gt;If this character does not have the &lt;LSTag Type="Passive" Tooltip="Goon_Cleric_NPC_Progressions"&gt;! Class: Cleric&lt;/LSTag&gt; passive, then this passive has either been added externally, not by Ultimate NPC Stat Overhaul, or the character does not have class progressions assigned as expected. In cases where you would expect a character to have certain progressions, but they do not, you should let us know on the Ultimate NPC Stat Overhaul mod page so it can be looked at.</content>
 
+	<content contentuid="h278a7582gf5efg402cg8e4egc63dad62527f" version="1">! Subclass: Knowledge Domain Cleric</content>
+	<content contentuid="h2200694egbef8g46b6g9d00g4c4b395248fa" version="1">A Cleric who seeks the wisdom of the gods, using knowledge to enlighten and defend. They gain Knowledge Domain Cleric progressions in addition to boosts from configuration.</content>
+
+
 <!-- CX Druid Passives -->
 	<content contentuid="he38308dag9418g482fg8ca1g980cc98ff64a" version="1">Combat Extender: Druid Boost</content>
 	<content contentuid="hc19cb29fgce35g4253g810fge4b35ebb2168" version="1">A character who commands the forces of nature, shaping the world with primal magic. They gain Druid boosts from configuration.</content>

@@ -229,6 +229,16 @@
     data "Passives" "RageFrenzyUnlock"
     data "Boosts" "UnlockSpell(Target_FrenziedStrike);UnlockSpell(Throw_FrenziedThrow)"
 
+    // <node id="Progression">
+    //     <attribute id="Level" type="uint8" value="3"/>
+    //     <attribute id="Name" type="LSString" value="BerserkerPath"/>
+    //     <attribute id="PassivesAdded" type="LSString" value="RageFrenzyUnlock"/>
+    //     <attribute id="PassivesRemoved" type="LSString" value="RageUnlock"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="Selectors" type="LSString" value="AddSpells(17803035-4762-4143-8f2f-1143d47e4f40)"/>
+    //     <attribute id="TableUUID" type="guid" value="b2a03b63-809f-4df9-a179-bf5b899082ef"/>
+    //     <attribute id="UUID" type="guid" value="5ce67263-04f2-4ede-b30a-2eb962d828f2"/>
+
     new entry "GOON_NPC_BARBARIAN_BERSERKER_LEVEL_6"
     type "StatusData"
     data "StatusType" "BOOST"
@@ -237,6 +247,14 @@
     data "Passives" "RageFrenzyUnlock;MindlessRage"
     data "Boosts" "UnlockSpell(Target_FrenziedStrike);UnlockSpell(Throw_FrenziedThrow)"
 
+    // <node id="Progression">
+    //     <attribute id="Level" type="uint8" value="6"/>
+    //     <attribute id="Name" type="LSString" value="BerserkerPath"/>
+    //     <attribute id="PassivesAdded" type="LSString" value="MindlessRage"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="TableUUID" type="guid" value="b2a03b63-809f-4df9-a179-bf5b899082ef"/>
+    //     <attribute id="UUID" type="guid" value="27a1114c-3f84-4f47-8544-865e91db8d0f"/>
+
     new entry "GOON_NPC_BARBARIAN_BERSERKER_LEVEL_10"
     type "StatusData"
     data "StatusType" "BOOST"
@@ -244,6 +262,14 @@
     data "StackPriority" "10"
     data "Passives" "RageFrenzyUnlock;MindlessRage"
     data "Boosts" "UnlockSpell(Target_FrenziedStrike);UnlockSpell(Throw_FrenziedThrow);UnlockSpell(Target_IntimidatingPresence)"
+
+    // <node id="Progression">
+    //     <attribute id="Level" type="uint8" value="10"/>
+    //     <attribute id="Name" type="LSString" value="BerserkerPath"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="Selectors" type="LSString" value="AddSpells(38191b4b-743a-4d82-800b-c0903baece24)"/>
+    //     <attribute id="TableUUID" type="guid" value="b2a03b63-809f-4df9-a179-bf5b899082ef"/>
+    //     <attribute id="UUID" type="guid" value="ad9a37aa-bc2d-4024-9b5f-5aaf330cb25c"/>
 
 // ==================================== Subclass: Wild Magic ====================================
 
@@ -275,6 +301,16 @@
     data "Passives" "WildMagicRage"
     data "Boosts" "UnlockSpell(Shout_MagicAwareness)"
 
+    // <node id="Progression">
+    //     <attribute id="Level" type="uint8" value="3"/>
+    //     <attribute id="Name" type="LSString" value="WildMagicPath"/>
+    //     <attribute id="PassivesAdded" type="LSString" value="WildMagicRage"/>
+    //     <attribute id="PassivesRemoved" type="LSString" value="RageUnlock"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="Selectors" type="LSString" value="AddSpells(6a27ea3e-ed94-4d90-9a27-109a902dd049)"/>
+    //     <attribute id="TableUUID" type="guid" value="7d5237b0-9ac6-4344-8171-43fa2f553e2f"/>
+    //     <attribute id="UUID" type="guid" value="9026e0b6-52a7-46b9-a318-d85b6a2a81c5"/>
+
     new entry "GOON_NPC_BARBARIAN_WILDMAGIC_LEVEL_6"
     type "StatusData"
     data "StatusType" "BOOST"
@@ -282,6 +318,14 @@
     data "StackPriority" "6"
     data "Passives" "WildMagicRage"
     data "Boosts" "UnlockSpell(Shout_MagicAwareness);UnlockSpell(Target_BolsteringMagic_Boost);UnlockSpell(Target_BolsteringMagic_SpellSlot1);UnlockSpell(Target_BolsteringMagic_SpellSlot2)"
+
+    // <node id="Progression">
+    //     <attribute id="Level" type="uint8" value="6"/>
+    //     <attribute id="Name" type="LSString" value="WildMagicPath"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="Selectors" type="LSString" value="AddSpells(9e604f0f-ec60-402d-b8c8-7707a1caefd8)"/>
+    //     <attribute id="TableUUID" type="guid" value="7d5237b0-9ac6-4344-8171-43fa2f553e2f"/>
+    //     <attribute id="UUID" type="guid" value="7509026b-0ea3-40cb-a106-95977a40a3b7"/>
 
     new entry "GOON_NPC_BARBARIAN_WILDMAGIC_LEVEL_9"
     type "StatusData"
@@ -291,6 +335,14 @@
     data "Passives" "WildMagicRage"
     data "Boosts" "UnlockSpell(Shout_MagicAwareness);UnlockSpell(Target_BolsteringMagic_Boost);UnlockSpell(Target_BolsteringMagic_SpellSlot1);UnlockSpell(Target_BolsteringMagic_SpellSlot2);UnlockSpell(Target_BolsteringMagic_SpellSlot3)"
 
+    // <node id="Progression">
+    //     <attribute id="Level" type="uint8" value="9"/>
+    //     <attribute id="Name" type="LSString" value="WildMagicPath"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="Selectors" type="LSString" value="AddSpells(4e7b517a-2eca-4463-99a6-a5ffa5036216)"/>
+    //     <attribute id="TableUUID" type="guid" value="7d5237b0-9ac6-4344-8171-43fa2f553e2f"/>
+    //     <attribute id="UUID" type="guid" value="c6894048-1489-406d-b601-e3c8c96f4e42"/>
+
     new entry "GOON_NPC_BARBARIAN_WILDMAGIC_LEVEL_10"
     type "StatusData"
     data "StatusType" "BOOST"
@@ -299,7 +351,16 @@
     data "Passives" "WildMagicRage;Unstable_Backlash"
     data "Boosts" "UnlockSpell(Shout_MagicAwareness);UnlockSpell(Target_BolsteringMagic_Boost);UnlockSpell(Target_BolsteringMagic_SpellSlot1);UnlockSpell(Target_BolsteringMagic_SpellSlot2);UnlockSpell(Target_BolsteringMagic_SpellSlot3)"
 
+    // <node id="Progression">
+    //     <attribute id="Level" type="uint8" value="10"/>
+    //     <attribute id="Name" type="LSString" value="WildMagicPath"/>
+    //     <attribute id="PassivesAdded" type="LSString" value="Unstable_Backlash"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="TableUUID" type="guid" value="7d5237b0-9ac6-4344-8171-43fa2f553e2f"/>
+    //     <attribute id="UUID" type="guid" value="3782ea9f-917b-4823-ba34-b619c76a4429"/>
+
 // ==================================== Subclass: Wildheart ====================================
+// TODO: The Aspects at level 6 and 10 are placeholders until it can be randomised via SE roulette
 
     new entry "CX_Barbarian_Wildheart_Boost"
     type "PassiveData"
@@ -309,7 +370,7 @@
     data "Boosts" ""
     data "StatsFunctorContext" "OnCreate;OnStatusApplied;OnStatusRemoved"
     data "Conditions" ""
-    data "StatsFunctors" "IF(CharacterLevelGreaterThan(2,GetOwner(context.Source)) and not CharacterLevelGreaterThan(7,GetOwner(context.Source))):ApplyStatus(GOON_NPC_BARBARIAN_WILDHEART_LEVEL_3,100,-1);IF(CharacterLevelGreaterThan(7,GetOwner(context.Source))):ApplyStatus(GOON_NPC_BARBARIAN_WILDHEART_LEVEL_8,100,-1)"
+    data "StatsFunctors" "IF(CharacterLevelGreaterThan(2,GetOwner(context.Source)) and not CharacterLevelGreaterThan(7,GetOwner(context.Source))):ApplyStatus(GOON_NPC_BARBARIAN_WILDHEART_LEVEL_3,100,-1);IF(CharacterLevelGreaterThan(7,GetOwner(context.Source)) and not CharacterLevelGreaterThan(9,GetOwner(context.Source))):ApplyStatus(GOON_NPC_BARBARIAN_WILDHEART_LEVEL_8,100,-1);IF(CharacterLevelGreaterThan(9,GetOwner(context.Source))):ApplyStatus(GOON_NPC_BARBARIAN_WILDHEART_LEVEL_10,100,-1)"
 
 // Template
     new entry "GOON_NPC_BARBARIAN_WILDHEART_PROGRESSION_TEMPLATE"
@@ -329,10 +390,62 @@
     data "Passives" ""
     data "Boosts" "UnlockSpell(Shout_SpeakWithAnimals_Barbarian)"
 
+    // <node id="Progression">
+    //     <attribute id="Level" type="uint8" value="3"/>
+    //     <attribute id="Name" type="LSString" value="TotemWarriorPath"/>
+    //     <attribute id="PassivesRemoved" type="LSString" value="RageUnlock"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="Selectors" type="LSString" value="AddSpells(4acd9ef6-719d-4248-90ae-0cb66da87c6a);SelectPassives(7f7340a0-faf3-4122-bd3f-37a5434dd6cf,1,TotemWarriorPassive)"/>
+    //     <attribute id="TableUUID" type="guid" value="48f1760f-86e7-401c-ad52-633fffbae49e"/>
+    //     <attribute id="UUID" type="guid" value="42329ce3-0fb3-43a3-a0b4-79584c6877e7"/>
+
+    new entry "GOON_NPC_BARBARIAN_WILDHEART_LEVEL_6"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_BARBARIAN_WILDHEART_PROGRESSION_TEMPLATE"
+    data "StackPriority" "6"
+    data "Passives" "AspectOfTheBeast_Elk"
+    data "Boosts" "UnlockSpell(Shout_SpeakWithAnimals_Barbarian)"
+
+    // </node>
+    // <node id="Progression">
+    //     <attribute id="Level" type="uint8" value="6"/>
+    //     <attribute id="Name" type="LSString" value="TotemWarriorPath"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="Selectors" type="LSString" value="SelectPassives(fb9ea4a2-a1ce-4242-a893-84a088ac1145,1,AspectOfTheBeast)"/>
+    //     <attribute id="TableUUID" type="guid" value="48f1760f-86e7-401c-ad52-633fffbae49e"/>
+    //     <attribute id="UUID" type="guid" value="0b05af61-85e4-4183-8422-6c8ced307d7a"/>
+
     new entry "GOON_NPC_BARBARIAN_WILDHEART_LEVEL_8"
     type "StatusData"
     data "StatusType" "BOOST"
     using "GOON_NPC_BARBARIAN_WILDHEART_PROGRESSION_TEMPLATE"
     data "StackPriority" "8"
-    data "Passives" "LandsStride_DifficultTerrain;LandsStride_Surfaces;LandsStride_Advantage"
+    data "Passives" "AspectOfTheBeast_Elk;LandsStride_DifficultTerrain;LandsStride_Surfaces;LandsStride_Advantage"
     data "Boosts" "UnlockSpell(Shout_SpeakWithAnimals_Barbarian)"
+
+    // <node id="Progression">
+    //     <attribute id="Level" type="uint8" value="8"/>
+    //     <attribute id="Name" type="LSString" value="TotemWarriorPath"/>
+    //     <attribute id="PassivesAdded" type="LSString" value="LandsStride_DifficultTerrain;LandsStride_Surfaces;LandsStride_Advantage"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="Selectors" type="LSString" value="ReplacePassives(7f7340a0-faf3-4122-bd3f-37a5434dd6cf,1,TotemWarriorPassiveReplace)"/>
+    //     <attribute id="TableUUID" type="guid" value="48f1760f-86e7-401c-ad52-633fffbae49e"/>
+    //     <attribute id="UUID" type="guid" value="6de45010-ac1e-420d-ab84-31146c14dada"/>
+
+    new entry "GOON_NPC_BARBARIAN_WILDHEART_LEVEL_10"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_BARBARIAN_WILDHEART_PROGRESSION_TEMPLATE"
+    data "StackPriority" "10"
+    data "Passives" "AspectOfTheBeast_Elk;LandsStride_DifficultTerrain;LandsStride_Surfaces;LandsStride_Advantage;AspectOfTheBeast_Bear"
+    data "Boosts" "UnlockSpell(Shout_SpeakWithAnimals_Barbarian)"
+
+    // </node>
+    // <node id="Progression">
+    //     <attribute id="Level" type="uint8" value="10"/>
+    //     <attribute id="Name" type="LSString" value="TotemWarriorPath"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="Selectors" type="LSString" value="SelectPassives(fb9ea4a2-a1ce-4242-a893-84a088ac1145,1,AspectOfTheBeast)"/>
+    //     <attribute id="TableUUID" type="guid" value="48f1760f-86e7-401c-ad52-633fffbae49e"/>
+    //     <attribute id="UUID" type="guid" value="8013e565-55a5-4847-8ebc-e2971e25151e"/>

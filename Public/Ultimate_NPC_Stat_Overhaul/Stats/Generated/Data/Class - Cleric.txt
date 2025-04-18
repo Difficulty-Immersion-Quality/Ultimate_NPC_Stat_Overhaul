@@ -198,17 +198,17 @@
     data "Passives" ""
     data "Boosts" ""
 
-// ==================================== Subclass 1 ====================================
+// ==================================== Subclass: Knowledge Domain ====================================
 
-    new entry "CX_Something_Something_Boost"
+    new entry "CX_Cleric_Knowledge_Boost"
     type "PassiveData"
-    data "DisplayName" ""
-    data "Description" ""
-    data "Icon" ""
+    data "DisplayName" "h278a7582gf5efg402cg8e4egc63dad62527f;1"
+    data "Description" "h2200694egbef8g46b6g9d00g4c4b395248fa;1"
+    data "Icon" "PassiveFeature_BlessingsOfKnowledge"
     data "Boosts" ""
     data "StatsFunctorContext" "OnCreate;OnStatusApplied;OnStatusRemoved"
     data "Conditions" ""
-    data "StatsFunctors" "IF(CharacterLevelGreaterThan(2,GetOwner(context.Source)) and not CharacterLevelGreaterThan(5,GetOwner(context.Source))):ApplyStatus(GOON_NPC_SOMETHING_SOMETHING_LEVEL_3,100,-1);IF(CharacterLevelGreaterThan(5,GetOwner(context.Source)) and not CharacterLevelGreaterThan(9,GetOwner(context.Source))):ApplyStatus(GOON_NPC_SOMETHING_SOMETHING_LEVEL_6,100,-1);IF(CharacterLevelGreaterThan(9,GetOwner(context.Source))):ApplyStatus(GOON_NPC_SOMETHING_SOMETHING_LEVEL_10,100,-1)"
+    data "StatsFunctors" "IF(not CharacterLevelGreaterThan(2,GetOwner(context.Source))):ApplyStatus(GOON_NPC_CLERIC_KNOWLEDGE_LEVEL_1,100,-1);IF(CharacterLevelGreaterThan(1,GetOwner(context.Source)) and not CharacterLevelGreaterThan(2,GetOwner(context.Source))):ApplyStatus(GOON_NPC_CLERIC_KNOWLEDGE_LEVEL_2,100,-1);IF(CharacterLevelGreaterThan(2,GetOwner(context.Source)) and not CharacterLevelGreaterThan(4,GetOwner(context.Source))):ApplyStatus(GOON_NPC_CLERIC_KNOWLEDGE_LEVEL_3,100,-1);IF(CharacterLevelGreaterThan(4,GetOwner(context.Source)) and not CharacterLevelGreaterThan(5,GetOwner(context.Source))):ApplyStatus(GOON_NPC_CLERIC_KNOWLEDGE_LEVEL_5,100,-1);IF(CharacterLevelGreaterThan(5,GetOwner(context.Source)) and not CharacterLevelGreaterThan(6,GetOwner(context.Source))):ApplyStatus(GOON_NPC_CLERIC_KNOWLEDGE_LEVEL_6,100,-1);IF(CharacterLevelGreaterThan(6,GetOwner(context.Source)) and not CharacterLevelGreaterThan(7,GetOwner(context.Source))):ApplyStatus(GOON_NPC_CLERIC_KNOWLEDGE_LEVEL_7,100,-1);IF(CharacterLevelGreaterThan(7,GetOwner(context.Source)) and not CharacterLevelGreaterThan(8,GetOwner(context.Source))):ApplyStatus(GOON_NPC_CLERIC_KNOWLEDGE_LEVEL_8,100,-1);IF(CharacterLevelGreaterThan(8,GetOwner(context.Source))):ApplyStatus(GOON_NPC_CLERIC_KNOWLEDGE_LEVEL_9,100,-1)"
 
 // Template
     new entry "GOON_NPC_SOMETHING_SOMETHING_PROGRESSION_TEMPLATE"
@@ -218,29 +218,135 @@
     data "RemoveEvents" "OnStatusApplied;OnStatusRemoved"
     data "StackId" "GOON_NPC_SOMETHING_SOMETHING_PROGRESSION_TEMPLATE"
     data "StackType" "Ignore"
-    data "RemoveConditions" "not HasPassive('CX_Something_Something_Boost')"
+    data "RemoveConditions" "not HasPassive('CX_Cleric_Knowledge_Boost')"
 
 // Progression statuses
-    new entry "GOON_NPC_SOMETHING_SOMETHING_LEVEL_3"
+
+    // <node id="Progression">
+    //     <attribute id="Level" type="uint8" value="1"/>
+    //     <attribute id="Name" type="LSString" value="KnowledgeDomain"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="Selectors" type="LSString" value="AddSpells(6c7083cd-e957-449d-a652-33dfbd9785e6,ClericKnowledgeDomainSpells,,,AlwaysPrepared);SelectSkillsExpertise(b0b9bc80-8468-4a53-b9ca-6d9146f23801,2,false)"/>
+    //     <attribute id="TableUUID" type="guid" value="4709e126-1b45-4baf-93a2-be66ed4487d2"/>
+    //     <attribute id="UUID" type="guid" value="2a780e20-d5a7-436e-9331-433ee8847db8"/>
+
+    new entry "GOON_NPC_CLERIC_KNOWLEDGE_LEVEL_1"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_SOMETHING_SOMETHING_PROGRESSION_TEMPLATE"
+    data "StackPriority" "1"
+    data "Passives" ""
+    data "Boosts" "UnlockSpell(Target_Command_Container);UnlockSpell(Target_Sleep)"
+
+    // <node id="Progression">
+    //     <attribute id="Level" type="uint8" value="2"/>
+    //     <attribute id="Name" type="LSString" value="KnowledgeDomain"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="Selectors" type="LSString" value="AddSpells(7ba90f2b-5e5f-410f-a61d-1ffdf3876790,,,,AlwaysPrepared)"/>
+    //     <attribute id="TableUUID" type="guid" value="4709e126-1b45-4baf-93a2-be66ed4487d2"/>
+    //     <attribute id="UUID" type="guid" value="3cab05e3-fcf7-44fb-a503-73eb23fd4de3"/>
+
+    new entry "GOON_NPC_CLERIC_KNOWLEDGE_LEVEL_2"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_SOMETHING_SOMETHING_PROGRESSION_TEMPLATE"
+    data "StackPriority" "2"
+    data "Passives" ""
+    data "Boosts" "UnlockSpell(Target_Command_Container);UnlockSpell(Target_Sleep)UnlockSpell(Shout_KnowledgeOfTheAges)"
+
+    // <node id="Progression">
+    //     <attribute id="Level" type="uint8" value="3"/>
+    //     <attribute id="Name" type="LSString" value="KnowledgeDomain"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="Selectors" type="LSString" value="AddSpells(2fbc1acc-ea80-4b61-9bed-e5e7dd50ad16,ClericKnowledgeDomainSpells,,,AlwaysPrepared)"/>
+    //     <attribute id="TableUUID" type="guid" value="4709e126-1b45-4baf-93a2-be66ed4487d2"/>
+    //     <attribute id="UUID" type="guid" value="8072ab7b-1371-4acf-aaf5-9f95c7a5a51a"/>
+
+    new entry "GOON_NPC_CLERIC_KNOWLEDGE_LEVEL_3"
     type "StatusData"
     data "StatusType" "BOOST"
     using "GOON_NPC_SOMETHING_SOMETHING_PROGRESSION_TEMPLATE"
     data "StackPriority" "3"
     data "Passives" ""
-    data "Boosts" ""
+    data "Boosts" "UnlockSpell(Target_Command_Container);UnlockSpell(Target_Sleep)UnlockSpell(Shout_KnowledgeOfTheAges);UnlockSpell(Target_CalmEmotions);UnlockSpell(Target_HoldPerson)"
 
-    new entry "GOON_NPC_SOMETHING_SOMETHING_LEVEL_6"
+    // <node id="Progression">
+    //     <attribute id="Level" type="uint8" value="5"/>
+    //     <attribute id="Name" type="LSString" value="KnowledgeDomain"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="Selectors" type="LSString" value="AddSpells(1ff2f87b-4570-4553-a5fa-f7b1cab557fc,ClericKnowledgeDomainSpells,,,AlwaysPrepared)"/>
+    //     <attribute id="TableUUID" type="guid" value="4709e126-1b45-4baf-93a2-be66ed4487d2"/>
+    //     <attribute id="UUID" type="guid" value="0d8952a8-7ea3-4516-9b77-78d8662b6c9a"/>
+
+    new entry "GOON_NPC_CLERIC_KNOWLEDGE_LEVEL_5"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_SOMETHING_SOMETHING_PROGRESSION_TEMPLATE"
+    data "StackPriority" "5"
+    data "Passives" ""
+    data "Boosts" "UnlockSpell(Target_Command_Container);UnlockSpell(Target_Sleep)UnlockSpell(Shout_KnowledgeOfTheAges);UnlockSpell(Target_CalmEmotions);UnlockSpell(Target_HoldPerson);UnlockSpell(Target_SpeakWithDead);UnlockSpell(Target_Slow)"
+
+    // <node id="Progression">
+    // <attribute id="Level" type="uint8" value="6"/>
+    // <attribute id="Name" type="LSString" value="KnowledgeDomain"/>
+    // <attribute id="ProgressionType" type="uint8" value="1"/>
+    // <attribute id="Selectors" type="LSString" value="AddSpells(480101e7-1fcf-4f02-b6b5-71af428daaa4,,,,AlwaysPrepared))"/>
+    // <attribute id="TableUUID" type="guid" value="4709e126-1b45-4baf-93a2-be66ed4487d2"/>
+    // <attribute id="UUID" type="guid" value="eb145ae3-d65e-4a8e-b041-4c34aa1bb199"/>
+
+    new entry "GOON_NPC_CLERIC_KNOWLEDGE_LEVEL_6"
     type "StatusData"
     data "StatusType" "BOOST"
     using "GOON_NPC_SOMETHING_SOMETHING_PROGRESSION_TEMPLATE"
     data "StackPriority" "6"
     data "Passives" ""
-    data "Boosts" ""
+    data "Boosts" "UnlockSpell(Target_Command_Container);UnlockSpell(Target_Sleep)UnlockSpell(Shout_KnowledgeOfTheAges);UnlockSpell(Target_CalmEmotions);UnlockSpell(Target_HoldPerson);UnlockSpell(Target_SpeakWithDead);UnlockSpell(Target_Slow);UnlockSpell(Shout_ReadThoughts);UnlockSpell(Shout_SpeakWithAnimals_KnowledgeCleric)"
 
-    new entry "GOON_NPC_SOMETHING_SOMETHING_LEVEL_10"
+    // <node id="Progression">
+    //     <attribute id="Level" type="uint8" value="7"/>
+    //     <attribute id="Name" type="LSString" value="KnowledgeDomain"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="Selectors" type="LSString" value="AddSpells(46b54ac1-7add-4ef3-8610-558aee8c4dda,ClericKnowledgeDomainSpells,,,AlwaysPrepared)"/>
+    //     <attribute id="TableUUID" type="guid" value="4709e126-1b45-4baf-93a2-be66ed4487d2"/>
+    //     <attribute id="UUID" type="guid" value="b6fe729a-a8df-4081-8121-5855bf7128e9"/>
+
+    new entry "GOON_NPC_CLERIC_KNOWLEDGE_LEVEL_7"
     type "StatusData"
     data "StatusType" "BOOST"
     using "GOON_NPC_SOMETHING_SOMETHING_PROGRESSION_TEMPLATE"
-    data "StackPriority" "10"
+    data "StackPriority" "7"
     data "Passives" ""
-    data "Boosts" ""
+    data "Boosts" "UnlockSpell(Target_Command_Container);UnlockSpell(Target_Sleep)UnlockSpell(Shout_KnowledgeOfTheAges);UnlockSpell(Target_CalmEmotions);UnlockSpell(Target_HoldPerson);UnlockSpell(Target_SpeakWithDead);UnlockSpell(Target_Slow);UnlockSpell(Shout_ReadThoughts);UnlockSpell(Shout_SpeakWithAnimals_KnowledgeCleric);UnlockSpell(Target_Confusion);UnlockSpell(Target_ResilientSphere)"
+
+    // <node id="Progression">
+    //     <attribute id="Level" type="uint8" value="8"/>
+    //     <attribute id="Name" type="LSString" value="KnowledgeDomain"/>
+    //     <attribute id="PassivesAdded" type="LSString" value="PotentSpellcasting"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="TableUUID" type="guid" value="4709e126-1b45-4baf-93a2-be66ed4487d2"/>
+    //     <attribute id="UUID" type="guid" value="8424b93e-7546-4c9e-ab2d-e26fa7ccf7c5"/>
+
+    new entry "GOON_NPC_CLERIC_KNOWLEDGE_LEVEL_8"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_SOMETHING_SOMETHING_PROGRESSION_TEMPLATE"
+    data "StackPriority" "8"
+    data "Passives" "PotentSpellcasting"
+    data "Boosts" "UnlockSpell(Target_Command_Container);UnlockSpell(Target_Sleep)UnlockSpell(Shout_KnowledgeOfTheAges);UnlockSpell(Target_CalmEmotions);UnlockSpell(Target_HoldPerson);UnlockSpell(Target_SpeakWithDead);UnlockSpell(Target_Slow);UnlockSpell(Shout_ReadThoughts);UnlockSpell(Shout_SpeakWithAnimals_KnowledgeCleric);UnlockSpell(Target_Confusion);UnlockSpell(Target_ResilientSphere)"
+
+    // <node id="Progression">
+    //     <attribute id="Level" type="uint8" value="9"/>
+    //     <attribute id="Name" type="LSString" value="KnowledgeDomain"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="Selectors" type="LSString" value="AddSpells(db3bbbe0-01cc-4e35-8186-0c6757182ec4,ClericKnowledgeDomainSpells,,,AlwaysPrepared)"/>
+    //     <attribute id="TableUUID" type="guid" value="4709e126-1b45-4baf-93a2-be66ed4487d2"/>
+    //     <attribute id="UUID" type="guid" value="aa87cb08-6669-4ee8-9b17-e3f977c2c3b2"/>
+
+    new entry "GOON_NPC_CLERIC_KNOWLEDGE_LEVEL_9"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_SOMETHING_SOMETHING_PROGRESSION_TEMPLATE"
+    data "StackPriority" "9"
+    data "Passives" "PotentSpellcasting"
+    data "Boosts" "UnlockSpell(Target_Command_Container);UnlockSpell(Target_Sleep)UnlockSpell(Shout_KnowledgeOfTheAges);UnlockSpell(Target_CalmEmotions);UnlockSpell(Target_HoldPerson);UnlockSpell(Target_SpeakWithDead);UnlockSpell(Target_Slow);UnlockSpell(Shout_ReadThoughts);UnlockSpell(Shout_SpeakWithAnimals_KnowledgeCleric);UnlockSpell(Target_Confusion);UnlockSpell(Target_ResilientSphere);UnlockSpell(Target_DominatePerson);UnlockSpell(Throw_Telekinesis)"
+
