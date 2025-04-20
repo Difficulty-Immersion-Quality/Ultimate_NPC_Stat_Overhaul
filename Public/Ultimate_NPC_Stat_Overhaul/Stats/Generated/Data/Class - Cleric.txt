@@ -355,6 +355,160 @@
     //     <attribute id="TableUUID" type="guid" value="9b56beb6-2a68-42a4-b81b-7a890a1b6b99"/>
     //     <attribute id="UUID" type="guid" value="b3a95e65-8ba5-4e32-ba5a-6e2c745c237a"/>
 
+// ==================================== Subclass: Light Domain ====================================
+
+    new entry "CX_Cleric_Light_Boost"
+    type "PassiveData"
+    data "DisplayName" "h5fbe0f2aga700g4580g838agda89ef533a5e;1"
+    data "Description" "he27e3486g5c7bg4607gbae0g2917f0be7c5e;1"
+    data "Icon" "PassiveAction_WardingFlare"
+    data "Boosts" ""
+    data "StatsFunctorContext" "OnCreate;OnStatusApplied;OnStatusRemoved"
+    data "Conditions" ""
+    data "StatsFunctors" "IF(not CharacterLevelGreaterThan(2,GetOwner(context.Source))):ApplyStatus(GOON_NPC_CLERIC_LIGHT_LEVEL_1,100,-1);IF(CharacterLevelGreaterThan(1,GetOwner(context.Source)) and not CharacterLevelGreaterThan(2,GetOwner(context.Source))):ApplyStatus(GOON_NPC_CLERIC_LIGHT_LEVEL_2,100,-1);IF(CharacterLevelGreaterThan(2,GetOwner(context.Source)) and not CharacterLevelGreaterThan(4,GetOwner(context.Source))):ApplyStatus(GOON_NPC_CLERIC_LIGHT_LEVEL_3,100,-1);IF(CharacterLevelGreaterThan(4,GetOwner(context.Source)) and not CharacterLevelGreaterThan(5,GetOwner(context.Source))):ApplyStatus(GOON_NPC_CLERIC_LIGHT_LEVEL_5,100,-1);IF(CharacterLevelGreaterThan(5,GetOwner(context.Source)) and not CharacterLevelGreaterThan(6,GetOwner(context.Source))):ApplyStatus(GOON_NPC_CLERIC_LIGHT_LEVEL_6,100,-1);IF(CharacterLevelGreaterThan(6,GetOwner(context.Source)) and not CharacterLevelGreaterThan(7,GetOwner(context.Source))):ApplyStatus(GOON_NPC_CLERIC_LIGHT_LEVEL_7,100,-1);IF(CharacterLevelGreaterThan(7,GetOwner(context.Source)) and not CharacterLevelGreaterThan(8,GetOwner(context.Source))):ApplyStatus(GOON_NPC_CLERIC_LIGHT_LEVEL_8,100,-1);IF(CharacterLevelGreaterThan(8,GetOwner(context.Source))):ApplyStatus(GOON_NPC_CLERIC_LIGHT_LEVEL_9,100,-1)"
+
+// Template
+    new entry "GOON_NPC_CLERIC_LIGHT_PROGRESSION_TEMPLATE"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    data "StatusPropertyFlags" "DisableOverhead;DisableCombatlog;DisablePortraitIndicator;ApplyToDead;IgnoreResting"
+    data "RemoveEvents" "OnStatusApplied;OnStatusRemoved"
+    data "StackId" "GOON_NPC_CLERIC_LIGHT_PROGRESSION_TEMPLATE"
+    data "StackType" "Ignore"
+    data "RemoveConditions" "not HasPassive('CX_Cleric_Light_Boost')"
+
+// Progression statuses
+
+    new entry "GOON_NPC_CLERIC_LIGHT_LEVEL_1"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_CLERIC_LIGHT_PROGRESSION_TEMPLATE"
+    data "StackPriority" "1"
+    data "Passives" "WardingFlare"
+    data "Boosts" "UnlockSpell(Zone_BurningHands);UnlockSpell(Target_FaerieFire);UnlockSpell(Target_Light)"
+
+    // <node id="Progression">
+    //     <attribute id="Level" type="uint8" value="1"/>
+    //     <attribute id="Name" type="LSString" value="LightDomain"/>
+    //     <attribute id="PassivesAdded" type="LSString" value="WardingFlare"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="Selectors" type="LSString" value="AddSpells(e2464518-2484-436e-9153-864c9dd05a7d,ClericLightDomainSpells,,,AlwaysPrepared)"/>
+    //     <attribute id="TableUUID" type="guid" value="6ec6caad-2dfa-4661-8edd-5c4eca0e044c"/>
+    //     <attribute id="UUID" type="guid" value="18b60150-3f77-4f5d-9c67-b25c3b7ce404"/>
+
+    new entry "GOON_NPC_CLERIC_LIGHT_LEVEL_2"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_CLERIC_LIGHT_PROGRESSION_TEMPLATE"
+    data "StackPriority" "2"
+    data "Passives" "WardingFlare"
+    data "Boosts" "UnlockSpell(Zone_BurningHands);UnlockSpell(Target_FaerieFire);UnlockSpell(Target_Light);UnlockSpell(Shout_RadianceOfTheDawn)"
+
+    // <node id="Progression">
+    //     <attribute id="Level" type="uint8" value="2"/>
+    //     <attribute id="Name" type="LSString" value="LightDomain"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="Selectors" type="LSString" value="AddSpells(a322dbfe-69d0-421a-819a-4317b6c87a3b,,,,AlwaysPrepared)"/>
+    //     <attribute id="TableUUID" type="guid" value="6ec6caad-2dfa-4661-8edd-5c4eca0e044c"/>
+    //     <attribute id="UUID" type="guid" value="7f63932d-64bd-4a70-b1d0-0e6728c1888e"/>
+
+    new entry "GOON_NPC_CLERIC_LIGHT_LEVEL_3"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_CLERIC_LIGHT_PROGRESSION_TEMPLATE"
+    data "StackPriority" "3"
+    data "Passives" "WardingFlare"
+    data "Boosts" "UnlockSpell(Zone_BurningHands);UnlockSpell(Target_FaerieFire);UnlockSpell(Target_Light);UnlockSpell(Shout_RadianceOfTheDawn);UnlockSpell(Target_FlamingSphere);UnlockSpell(Projectile_ScorchingRay)"
+
+    // <node id="Progression">
+    //     <attribute id="AllowImprovement" type="bool" value="false"/>
+    //     <attribute id="Level" type="uint8" value="3"/>
+    //     <attribute id="Name" type="LSString" value="LightDomain"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="Selectors" type="LSString" value="AddSpells(31037493-7a57-4dce-9412-4689c010199c,ClericLightDomainSpells,,,AlwaysPrepared)"/>
+    //     <attribute id="TableUUID" type="guid" value="6ec6caad-2dfa-4661-8edd-5c4eca0e044c"/>
+    //     <attribute id="UUID" type="guid" value="21725b6d-71f5-4df9-b828-b31bb20794cd"/>
+
+    new entry "GOON_NPC_CLERIC_LIGHT_LEVEL_5"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_CLERIC_LIGHT_PROGRESSION_TEMPLATE"
+    data "StackPriority" "5"
+    data "Passives" "WardingFlare"
+    data "Boosts" "UnlockSpell(Zone_BurningHands);UnlockSpell(Target_FaerieFire);UnlockSpell(Target_Light);UnlockSpell(Shout_RadianceOfTheDawn);UnlockSpell(Target_FlamingSphere);UnlockSpell(Projectile_ScorchingRay);UnlockSpell(Target_Daylight_Container);UnlockSpell(Projectile_Fireball)"
+
+    // <node id="Progression">
+    //     <attribute id="Level" type="uint8" value="5"/>
+    //     <attribute id="Name" type="LSString" value="LightDomain"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="Selectors" type="LSString" value="AddSpells(1a50d25a-27b5-4789-b2d6-532fac4437c6,ClericLightDomainSpells,,,AlwaysPrepared)"/>
+    //     <attribute id="TableUUID" type="guid" value="6ec6caad-2dfa-4661-8edd-5c4eca0e044c"/>
+    //     <attribute id="UUID" type="guid" value="caf6d4b9-4233-4d67-af18-3a4ba3ea9996"/>
+
+    new entry "GOON_NPC_CLERIC_LIGHT_LEVEL_6"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_CLERIC_LIGHT_PROGRESSION_TEMPLATE"
+    data "StackPriority" "6"
+    data "Passives" "WardingFlare;WardingFlare_Improved"
+    data "Boosts" "UnlockSpell(Zone_BurningHands);UnlockSpell(Target_FaerieFire);UnlockSpell(Target_Light);UnlockSpell(Shout_RadianceOfTheDawn);UnlockSpell(Target_FlamingSphere);UnlockSpell(Projectile_ScorchingRay);UnlockSpell(Target_Daylight_Container);UnlockSpell(Projectile_Fireball)"
+
+    // <node id="Progression">
+    //     <attribute id="Level" type="uint8" value="6"/>
+    //     <attribute id="Name" type="LSString" value="LightDomain"/>
+    //     <attribute id="PassivesAdded" type="LSString" value="WardingFlare_Improved"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="TableUUID" type="guid" value="6ec6caad-2dfa-4661-8edd-5c4eca0e044c"/>
+    //     <attribute id="UUID" type="guid" value="cc33557e-32ab-4cb9-82cb-d313ad38574e"/>
+
+    new entry "GOON_NPC_CLERIC_LIGHT_LEVEL_7"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_CLERIC_LIGHT_PROGRESSION_TEMPLATE"
+    data "StackPriority" "7"
+    data "Passives" "WardingFlare;WardingFlare_Improved"
+    data "Boosts" "UnlockSpell(Zone_BurningHands);UnlockSpell(Target_FaerieFire);UnlockSpell(Target_Light);UnlockSpell(Shout_RadianceOfTheDawn);UnlockSpell(Target_FlamingSphere);UnlockSpell(Projectile_ScorchingRay);UnlockSpell(Target_Daylight_Container);UnlockSpell(Projectile_Fireball);UnlockSpell(Target_GuardianOfFaith);UnlockSpell(Wall_WallOfFire)"
+
+    // <node id="Progression">
+    //     <attribute id="Level" type="uint8" value="7"/>
+    //     <attribute id="Name" type="LSString" value="LightDomain"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="Selectors" type="LSString" value="AddSpells(41ded14f-d752-42c0-8405-be0e7b0f2177,ClericLightDomainSpells,,,AlwaysPrepared)"/>
+    //     <attribute id="TableUUID" type="guid" value="6ec6caad-2dfa-4661-8edd-5c4eca0e044c"/>
+    //     <attribute id="UUID" type="guid" value="1fe99c00-3bd1-476f-865b-c121617d7d6b"/>
+
+    new entry "GOON_NPC_CLERIC_LIGHT_LEVEL_8"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_CLERIC_LIGHT_PROGRESSION_TEMPLATE"
+    data "StackPriority" "8"
+    data "Passives" "WardingFlare;WardingFlare_Improved;PotentSpellcasting"
+    data "Boosts" "UnlockSpell(Zone_BurningHands);UnlockSpell(Target_FaerieFire);UnlockSpell(Target_Light);UnlockSpell(Shout_RadianceOfTheDawn);UnlockSpell(Target_FlamingSphere);UnlockSpell(Projectile_ScorchingRay);UnlockSpell(Target_Daylight_Container);UnlockSpell(Projectile_Fireball);UnlockSpell(Target_GuardianOfFaith);UnlockSpell(Wall_WallOfFire)"
+
+    // <node id="Progression">
+    //     <attribute id="Level" type="uint8" value="8"/>
+    //     <attribute id="Name" type="LSString" value="LightDomain"/>
+    //     <attribute id="PassivesAdded" type="LSString" value="PotentSpellcasting"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="TableUUID" type="guid" value="6ec6caad-2dfa-4661-8edd-5c4eca0e044c"/>
+    //     <attribute id="UUID" type="guid" value="c993dc9e-df2b-4cc9-857c-49b17982b56e"/>
+
+    new entry "GOON_NPC_CLERIC_LIGHT_LEVEL_9"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_CLERIC_LIGHT_PROGRESSION_TEMPLATE"
+    data "StackPriority" "9"
+    data "Passives" "WardingFlare;WardingFlare_Improved;PotentSpellcasting"
+    data "Boosts" "UnlockSpell(Zone_BurningHands);UnlockSpell(Target_FaerieFire);UnlockSpell(Target_Light);UnlockSpell(Shout_RadianceOfTheDawn);UnlockSpell(Target_FlamingSphere);UnlockSpell(Projectile_ScorchingRay);UnlockSpell(Target_Daylight_Container);UnlockSpell(Projectile_Fireball);UnlockSpell(Target_GuardianOfFaith);UnlockSpell(Wall_WallOfFire);UnlockSpell(Target_FlameStrike);UnlockSpell(Shout_DestructiveWave)"
+
+    // <node id="Progression">
+    //     <attribute id="Level" type="uint8" value="9"/>
+    //     <attribute id="Name" type="LSString" value="LightDomain"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="Selectors" type="LSString" value="AddSpells(5675d0b3-8a2c-4658-bfe3-42abbc0bdcfd,ClericLightDomainSpells,,,AlwaysPrepared)"/>
+    //     <attribute id="TableUUID" type="guid" value="6ec6caad-2dfa-4661-8edd-5c4eca0e044c"/>
+    //     <attribute id="UUID" type="guid" value="00479bc3-396b-4738-9ccf-f00d7087374f"/>
+
 // ==================================== Subclass: Knowledge Domain ====================================
 
     new entry "CX_Cleric_Knowledge_Boost"
