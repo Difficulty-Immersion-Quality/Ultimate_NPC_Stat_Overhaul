@@ -100,11 +100,14 @@
 	<content contentuid="hc19cb29fgce35g4253g810fge4b35ebb2168" version="1">A character who commands the forces of nature, shaping the world with primal magic. They gain Druid boosts from configuration.</content>
 
 	<!-- Druid Subclasses -->
-	<content contentuid="hb7785d94g8723g45b8gb252g11f0270642c1" version="1">! Druid Subclass: Circle of the Moon Druid</content>
-	<content contentuid="h654778cegbf88g49adgb407gcb0cc8299dc0" version="1">A Druid who specializes in Wild Shaping into massive beasts or even primal elementals. They gain Circle of the Moon subclass boosts from configuration.</content>
+	<content contentuid="h0319b960g4892g4420gb4a0gdb82a83aef42" version="1">! Druid Subclass: Circle of the Land</content>
+	<content contentuid="h5e05e75cgb6feg48f9gada3g4e13802f3dd9" version="1">A Druid who draws deep power from the land itself, shaped by the terrain they call home. They gain Circle of the Land Druid progressions in addition to boosts from configuration.</content>
+
+	<content contentuid="hb7785d94g8723g45b8gb252g11f0270642c1" version="1">! Druid Subclass: Circle of the Moon</content>
+	<content contentuid="h654778cegbf88g49adgb407gcb0cc8299dc0" version="1">A Druid who specializes in Wild Shaping into massive beasts or even primal elementals. They gain Circle of the Moon Druid progressions in addition to boosts from configuration.</content>
 
 	<content contentuid="h407e27feg0d73g483dgbed5gb58542ff0cca" version="1">! Druid Subclass: Circle of the Spores</content>
-	<content contentuid="h5872faaag78ffg4f03g99cbgcda17b06d423" version="1">A Druid who uses fungal growth and decay to augment themselves and harm their foes. They gain Circle of the Spores subclass boosts from configuration.</content>
+	<content contentuid="h5872faaag78ffg4f03g99cbgcda17b06d423" version="1">A Druid who uses fungal growth and decay to augment themselves and harm their foes. They gain Circle of the Spores Druid progressions in addition to boosts from configuration.</content>
 
 <!-- FIGHTER -->
 	<content contentuid="h6d12a72egfab9g4f45gae31g5d4491dd2b6b" version="1">! Class: Fighter</content>
