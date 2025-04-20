@@ -815,3 +815,158 @@
     //     <attribute id="Selectors" type="LSString" value="AddSpells(f5609f93-a17c-456c-a7bb-3b4203bb2eea,ClericNatureDomainSpells,,,AlwaysPrepared)"/>
     //     <attribute id="TableUUID" type="guid" value="c668b65d-2848-4feb-981f-eb54cc5ceb15"/>
     //     <attribute id="UUID" type="guid" value="82cbf414-345f-4e1c-9ebb-ba9d49f52fa2"/>
+
+// ==================================== Subclass: Tempest Domain ====================================
+
+    new entry "CX_Cleric_Tempest_Boost"
+    type "PassiveData"
+    data "DisplayName" "heeb1062dgec43g432agb19bg5826d981e329;1"
+    data "Description" "h6fd8cc08g71adg4648gb7f3g7f8c1bc471d4;1"
+    data "Icon" "PassiveFeature_Generic_Nature"
+    data "Boosts" ""
+    data "StatsFunctorContext" "OnCreate;OnStatusApplied;OnStatusRemoved"
+    data "Conditions" ""
+    data "StatsFunctors" "IF(not CharacterLevelGreaterThan(2,GetOwner(context.Source))):ApplyStatus(GOON_NPC_CLERIC_TEMPEST_LEVEL_1,100,-1);IF(CharacterLevelGreaterThan(1,GetOwner(context.Source)) and not CharacterLevelGreaterThan(2,GetOwner(context.Source))):ApplyStatus(GOON_NPC_CLERIC_TEMPEST_LEVEL_2,100,-1);IF(CharacterLevelGreaterThan(2,GetOwner(context.Source)) and not CharacterLevelGreaterThan(4,GetOwner(context.Source))):ApplyStatus(GOON_NPC_CLERIC_TEMPEST_LEVEL_3,100,-1);IF(CharacterLevelGreaterThan(4,GetOwner(context.Source)) and not CharacterLevelGreaterThan(5,GetOwner(context.Source))):ApplyStatus(GOON_NPC_CLERIC_TEMPEST_LEVEL_5,100,-1);IF(CharacterLevelGreaterThan(5,GetOwner(context.Source)) and not CharacterLevelGreaterThan(6,GetOwner(context.Source))):ApplyStatus(GOON_NPC_CLERIC_TEMPEST_LEVEL_6,100,-1);IF(CharacterLevelGreaterThan(6,GetOwner(context.Source)) and not CharacterLevelGreaterThan(7,GetOwner(context.Source))):ApplyStatus(GOON_NPC_CLERIC_TEMPEST_LEVEL_7,100,-1);IF(CharacterLevelGreaterThan(7,GetOwner(context.Source)) and not CharacterLevelGreaterThan(8,GetOwner(context.Source))):ApplyStatus(GOON_NPC_CLERIC_TEMPEST_LEVEL_8,100,-1);IF(CharacterLevelGreaterThan(8,GetOwner(context.Source))):ApplyStatus(GOON_NPC_CLERIC_TEMPEST_LEVEL_9,100,-1)"
+
+// Template
+    new entry "GOON_NPC_CLERIC_TEMPEST_PROGRESSION_TEMPLATE"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    data "StatusPropertyFlags" "DisableOverhead;DisableCombatlog;DisablePortraitIndicator;ApplyToDead;IgnoreResting"
+    data "RemoveEvents" "OnStatusApplied;OnStatusRemoved"
+    data "StackId" "GOON_NPC_CLERIC_TEMPEST_PROGRESSION_TEMPLATE"
+    data "StackType" "Ignore"
+    data "RemoveConditions" "not HasPassive('CX_Cleric_Tempest_Boost')"
+
+// Progression statuses
+
+    new entry "GOON_NPC_CLERIC_TEMPEST_LEVEL_1"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_CLERIC_TEMPEST_PROGRESSION_TEMPLATE"
+    data "StackPriority" "1"
+    data "Passives" "WrathOfTheStorm"
+    data "Boosts" "Proficiency(HeavyArmor);Proficiency(MartialWeapons);UnlockSpell(Zone_Thunderwave);UnlockSpell(Target_FogCloud)"
+
+    // <node id="Progression">
+    //     <attribute id="Boosts" type="LSString" value="Proficiency(HeavyArmor);Proficiency(MartialWeapons)"/>
+    //     <attribute id="Level" type="uint8" value="1"/>
+    //     <attribute id="Name" type="LSString" value="TempestDomain"/>
+    //     <attribute id="PassivesAdded" type="LSString" value="WrathOfTheStorm"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="Selectors" type="LSString" value="AddSpells(0888d55d-6382-4149-9b62-90a9579b0ec4,ClericTempestDomainSpells,,,AlwaysPrepared)"/>
+    //     <attribute id="TableUUID" type="guid" value="0630b55b-36f4-41d2-aacc-28e99d6ae252"/>
+    //     <attribute id="UUID" type="guid" value="6634d63a-07a6-4a4b-95cd-96852396dc39"/>
+
+    new entry "GOON_NPC_CLERIC_TEMPEST_LEVEL_2"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_CLERIC_TEMPEST_PROGRESSION_TEMPLATE"
+    data "StackPriority" "2"
+    data "Passives" "WrathOfTheStorm;DestructiveWrath"
+    data "Boosts" "Proficiency(HeavyArmor);Proficiency(MartialWeapons);UnlockSpell(Zone_Thunderwave);UnlockSpell(Target_FogCloud)"
+
+    // <node id="Progression">
+    //     <attribute id="Level" type="uint8" value="2"/>
+    //     <attribute id="Name" type="LSString" value="TempestDomain"/>
+    //     <attribute id="PassivesAdded" type="LSString" value="DestructiveWrath"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="TableUUID" type="guid" value="0630b55b-36f4-41d2-aacc-28e99d6ae252"/>
+    //     <attribute id="UUID" type="guid" value="31ea2386-5ade-467d-9be4-33ce599ccec2"/>
+
+    new entry "GOON_NPC_CLERIC_TEMPEST_LEVEL_3"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_CLERIC_TEMPEST_PROGRESSION_TEMPLATE"
+    data "StackPriority" "3"
+    data "Passives" "WrathOfTheStorm;DestructiveWrath"
+    data "Boosts" "Proficiency(HeavyArmor);Proficiency(MartialWeapons);UnlockSpell(Zone_Thunderwave);UnlockSpell(Target_FogCloud);UnlockSpell(Target_Shatter);UnlockSpell(Zone_GustOfWind)"
+
+    // <node id="Progression">
+    //     <attribute id="Level" type="uint8" value="3"/>
+    //     <attribute id="Name" type="LSString" value="TempestDomain"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="Selectors" type="LSString" value="AddSpells(a05bd5e7-c815-4db7-9a21-66dc08d03e44,ClericTempestDomainSpells,,,AlwaysPrepared)"/>
+    //     <attribute id="TableUUID" type="guid" value="0630b55b-36f4-41d2-aacc-28e99d6ae252"/>
+    //     <attribute id="UUID" type="guid" value="9328822b-9140-401d-9273-cb1a4998c068"/>
+
+    new entry "GOON_NPC_CLERIC_TEMPEST_LEVEL_5"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_CLERIC_TEMPEST_PROGRESSION_TEMPLATE"
+    data "StackPriority" "5"
+    data "Passives" "WrathOfTheStorm;DestructiveWrath"
+    data "Boosts" "Proficiency(HeavyArmor);Proficiency(MartialWeapons);UnlockSpell(Zone_Thunderwave);UnlockSpell(Target_FogCloud);UnlockSpell(Target_Shatter);UnlockSpell(Zone_GustOfWind);UnlockSpell(Target_CallLightning);UnlockSpell(Target_SleetStorm)"
+
+    // <node id="Progression">
+    //     <attribute id="Level" type="uint8" value="5"/>
+    //     <attribute id="Name" type="LSString" value="TempestDomain"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="Selectors" type="LSString" value="AddSpells(4bac4d53-69e6-4f7d-b935-cd38ca8c938d,ClericTempestDomainSpells,,,AlwaysPrepared)"/>
+    //     <attribute id="TableUUID" type="guid" value="0630b55b-36f4-41d2-aacc-28e99d6ae252"/>
+    //     <attribute id="UUID" type="guid" value="df047bb5-2337-4e0b-b50b-78d5b84fc6c4"/>
+
+    new entry "GOON_NPC_CLERIC_TEMPEST_LEVEL_6"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_CLERIC_TEMPEST_PROGRESSION_TEMPLATE"
+    data "StackPriority" "6"
+    data "Passives" "WrathOfTheStorm;DestructiveWrath;ThunderboltStrike"
+    data "Boosts" "Proficiency(HeavyArmor);Proficiency(MartialWeapons);UnlockSpell(Zone_Thunderwave);UnlockSpell(Target_FogCloud);UnlockSpell(Target_Shatter);UnlockSpell(Zone_GustOfWind);UnlockSpell(Target_CallLightning);UnlockSpell(Target_SleetStorm)"
+
+    // <node id="Progression">
+    //     <attribute id="Level" type="uint8" value="6"/>
+    //     <attribute id="Name" type="LSString" value="TempestDomain"/>
+    //     <attribute id="PassivesAdded" type="LSString" value="ThunderboltStrike"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="TableUUID" type="guid" value="0630b55b-36f4-41d2-aacc-28e99d6ae252"/>
+    //     <attribute id="UUID" type="guid" value="8ab0f5be-f584-4877-a4f8-4fd5487c6592"/>
+
+    new entry "GOON_NPC_CLERIC_TEMPEST_LEVEL_7"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_CLERIC_TEMPEST_PROGRESSION_TEMPLATE"
+    data "StackPriority" "7"
+    data "Passives" "WrathOfTheStorm;DestructiveWrath;ThunderboltStrike"
+    data "Boosts" "Proficiency(HeavyArmor);Proficiency(MartialWeapons);UnlockSpell(Zone_Thunderwave);UnlockSpell(Target_FogCloud);UnlockSpell(Target_Shatter);UnlockSpell(Zone_GustOfWind);UnlockSpell(Target_CallLightning);UnlockSpell(Target_SleetStorm)"
+
+    // <node id="Progression">
+    //     <attribute id="Level" type="uint8" value="7"/>
+    //     <attribute id="Name" type="LSString" value="TempestDomain"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="Selectors" type="LSString" value="AddSpells(fc1fa4ea-8294-4f3b-9df9-f5d64e528093,ClericTempestDomainSpells,,,AlwaysPrepared)"/>
+    //     <attribute id="TableUUID" type="guid" value="0630b55b-36f4-41d2-aacc-28e99d6ae252"/>
+    //     <attribute id="UUID" type="guid" value="51f4518f-5691-4fbf-8421-d2f31a0160e0"/>
+
+    new entry "GOON_NPC_CLERIC_TEMPEST_LEVEL_8"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_CLERIC_TEMPEST_PROGRESSION_TEMPLATE"
+    data "StackPriority" "8"
+    data "Passives" "WrathOfTheStorm;DestructiveWrath;ThunderboltStrike;Divine_Strike_Tempest_Toggle"
+    data "Boosts" "Proficiency(HeavyArmor);Proficiency(MartialWeapons);UnlockSpell(Zone_Thunderwave);UnlockSpell(Target_FogCloud);UnlockSpell(Target_Shatter);UnlockSpell(Zone_GustOfWind);UnlockSpell(Target_CallLightning);UnlockSpell(Target_SleetStorm);UnlockSpell(Target_DivineStrike_Tempest_Container)"
+
+    // <node id="Progression">
+    //     <attribute id="Level" type="uint8" value="8"/>
+    //     <attribute id="Name" type="LSString" value="TempestDomain"/>
+    //     <attribute id="PassivesAdded" type="LSString" value="Divine_Strike_Tempest_Toggle"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="Selectors" type="LSString" value="AddSpells(06bb8fc7-f335-4c13-82a1-0fb63ebf5c35,,,,AlwaysPrepared)"/>
+    //     <attribute id="TableUUID" type="guid" value="0630b55b-36f4-41d2-aacc-28e99d6ae252"/>
+    //     <attribute id="UUID" type="guid" value="cf1e11e2-5561-49b7-9c6a-83edffcd0f09"/>
+
+    new entry "GOON_NPC_CLERIC_TEMPEST_LEVEL_9"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_CLERIC_TEMPEST_PROGRESSION_TEMPLATE"
+    data "StackPriority" "9"
+    data "Passives" "WrathOfTheStorm;DestructiveWrath;ThunderboltStrike;Divine_Strike_Tempest_Toggle"
+    data "Boosts" "Proficiency(HeavyArmor);Proficiency(MartialWeapons);UnlockSpell(Zone_Thunderwave);UnlockSpell(Target_FogCloud);UnlockSpell(Target_Shatter);UnlockSpell(Zone_GustOfWind);UnlockSpell(Target_CallLightning);UnlockSpell(Target_SleetStorm);UnlockSpell(Target_DivineStrike_Tempest_Container);UnlockSpell(Shout_DestructiveWave);UnlockSpell(Target_InsectPlague)"
+
+    // <node id="Progression">
+    //     <attribute id="Level" type="uint8" value="9"/>
+    //     <attribute id="Name" type="LSString" value="TempestDomain"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="Selectors" type="LSString" value="AddSpells(87d05f19-7198-424a-93ac-cf222ca25fc7,ClericTempestDomainSpells,,,AlwaysPrepared)"/>
+    //     <attribute id="TableUUID" type="guid" value="0630b55b-36f4-41d2-aacc-28e99d6ae252"/>
+    //     <attribute id="UUID" type="guid" value="1e4d3a2f-e712-4135-bc6a-569c169ea15f"/>
