@@ -200,8 +200,6 @@
 
 // ==================================== Subclass: Life Domain ====================================
 
-// ==================================== Subclass: Knowledge Domain ====================================
-
     new entry "CX_Cleric_Life_Boost"
     type "PassiveData"
     data "DisplayName" "he573d2b7gbb53g4996gb795g1623ccf40749;1"
