@@ -660,3 +660,158 @@
     //     <attribute id="Selectors" type="LSString" value="AddSpells(db3bbbe0-01cc-4e35-8186-0c6757182ec4,ClericKnowledgeDomainSpells,,,AlwaysPrepared)"/>
     //     <attribute id="TableUUID" type="guid" value="4709e126-1b45-4baf-93a2-be66ed4487d2"/>
     //     <attribute id="UUID" type="guid" value="aa87cb08-6669-4ee8-9b17-e3f977c2c3b2"/>
+
+// ==================================== Subclass: Nature Domain ====================================
+
+    new entry "CX_Cleric_Nature_Boost"
+    type "PassiveData"
+    data "DisplayName" "h69a14dafg72a7g4111g80d1g8c2b698b9925;1"
+    data "Description" "h26f0b85fg6ca4g48aeg9123g7343f28aefd3;1"
+    data "Icon" "PassiveFeature_Generic_Nature"
+    data "Boosts" ""
+    data "StatsFunctorContext" "OnCreate;OnStatusApplied;OnStatusRemoved"
+    data "Conditions" ""
+    data "StatsFunctors" "IF(not CharacterLevelGreaterThan(2,GetOwner(context.Source))):ApplyStatus(GOON_NPC_CLERIC_NATURE_LEVEL_1,100,-1);IF(CharacterLevelGreaterThan(1,GetOwner(context.Source)) and not CharacterLevelGreaterThan(2,GetOwner(context.Source))):ApplyStatus(GOON_NPC_CLERIC_NATURE_LEVEL_2,100,-1);IF(CharacterLevelGreaterThan(2,GetOwner(context.Source)) and not CharacterLevelGreaterThan(4,GetOwner(context.Source))):ApplyStatus(GOON_NPC_CLERIC_NATURE_LEVEL_3,100,-1);IF(CharacterLevelGreaterThan(4,GetOwner(context.Source)) and not CharacterLevelGreaterThan(5,GetOwner(context.Source))):ApplyStatus(GOON_NPC_CLERIC_NATURE_LEVEL_5,100,-1);IF(CharacterLevelGreaterThan(5,GetOwner(context.Source)) and not CharacterLevelGreaterThan(6,GetOwner(context.Source))):ApplyStatus(GOON_NPC_CLERIC_NATURE_LEVEL_6,100,-1);IF(CharacterLevelGreaterThan(6,GetOwner(context.Source)) and not CharacterLevelGreaterThan(7,GetOwner(context.Source))):ApplyStatus(GOON_NPC_CLERIC_NATURE_LEVEL_7,100,-1);IF(CharacterLevelGreaterThan(7,GetOwner(context.Source)) and not CharacterLevelGreaterThan(8,GetOwner(context.Source))):ApplyStatus(GOON_NPC_CLERIC_NATURE_LEVEL_8,100,-1);IF(CharacterLevelGreaterThan(8,GetOwner(context.Source))):ApplyStatus(GOON_NPC_CLERIC_NATURE_LEVEL_9,100,-1)"
+
+// Template
+    new entry "GOON_NPC_CLERIC_NATURE_PROGRESSION_TEMPLATE"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    data "StatusPropertyFlags" "DisableOverhead;DisableCombatlog;DisablePortraitIndicator;ApplyToDead;IgnoreResting"
+    data "RemoveEvents" "OnStatusApplied;OnStatusRemoved"
+    data "StackId" "GOON_NPC_CLERIC_NATURE_PROGRESSION_TEMPLATE"
+    data "StackType" "Ignore"
+    data "RemoveConditions" "not HasPassive('CX_Cleric_Nature_Boost')"
+
+// Progression statuses
+
+    new entry "GOON_NPC_CLERIC_NATURE_LEVEL_1"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_CLERIC_NATURE_PROGRESSION_TEMPLATE"
+    data "StackPriority" "1"
+    data "Passives" "AcolyteOfNature"
+    data "Boosts" "Proficiency(HeavyArmor);UnlockSpell(Shout_SpeakWithAnimals);UnlockSpell(Target_AnimalFriendship)"
+
+    // <node id="Progression">
+    //     <attribute id="Boosts" type="LSString" value="Proficiency(HeavyArmor)"/>
+    //     <attribute id="Level" type="uint8" value="1"/>
+    //     <attribute id="Name" type="LSString" value="NatureDomain"/>
+    //     <attribute id="PassivesAdded" type="LSString" value="AcolyteOfNature"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="Selectors" type="LSString" value="SelectSkills(889d3b97-5975-4c1c-bcc3-925521935a65,1);SelectSpells(b8faf12f-ca42-45c0-84f8-6951b526182a,1,0,,,,AlwaysPrepared);AddSpells(cba2f112-697f-4611-ae1d-758bf25ab3fd,ClericNatureDomainSpells,,,AlwaysPrepared)"/>
+    //     <attribute id="TableUUID" type="guid" value="c668b65d-2848-4feb-981f-eb54cc5ceb15"/>
+    //     <attribute id="UUID" type="guid" value="9c544341-fc87-446d-b77d-0b6948eeb0f3"/>
+
+    new entry "GOON_NPC_CLERIC_NATURE_LEVEL_2"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_CLERIC_NATURE_PROGRESSION_TEMPLATE"
+    data "StackPriority" "2"
+    data "Passives" "AcolyteOfNature"
+    data "Boosts" "Proficiency(HeavyArmor);UnlockSpell(Shout_SpeakWithAnimals);UnlockSpell(Target_AnimalFriendship)"
+
+    // <node id="Progression">
+    //     <attribute id="Level" type="uint8" value="2"/>
+    //     <attribute id="Name" type="LSString" value="NatureDomain"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="Selectors" type="LSString" value="AddSpells(28a930af-d2a0-4411-8018-c1b95d5d2f23,,,,AlwaysPrepared)"/>
+    //     <attribute id="TableUUID" type="guid" value="c668b65d-2848-4feb-981f-eb54cc5ceb15"/>
+    //     <attribute id="UUID" type="guid" value="80a0e447-ec7f-45c0-af51-0002b8fd1662"/>
+
+    new entry "GOON_NPC_CLERIC_NATURE_LEVEL_3"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_CLERIC_NATURE_PROGRESSION_TEMPLATE"
+    data "StackPriority" "3"
+    data "Passives" "AcolyteOfNature"
+    data "Boosts" "Proficiency(HeavyArmor);UnlockSpell(Shout_SpeakWithAnimals);UnlockSpell(Target_AnimalFriendship);UnlockSpell(Target_SpikeGrowth);UnlockSpell(Target_Barkskin)"
+
+    // <node id="Progression">
+    //     <attribute id="Level" type="uint8" value="3"/>
+    //     <attribute id="Name" type="LSString" value="NatureDomain"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="Selectors" type="LSString" value="AddSpells(dd2b48a8-3e62-435e-8107-0d48f51dc555,ClericNatureDomainSpells,,,AlwaysPrepared)"/>
+    //     <attribute id="TableUUID" type="guid" value="c668b65d-2848-4feb-981f-eb54cc5ceb15"/>
+    //     <attribute id="UUID" type="guid" value="3cfbe3e0-47ef-4f5d-8bd4-d7fac84903d2"/>
+
+    new entry "GOON_NPC_CLERIC_NATURE_LEVEL_5"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_CLERIC_NATURE_PROGRESSION_TEMPLATE"
+    data "StackPriority" "5"
+    data "Passives" "AcolyteOfNature"
+    data "Boosts" "Proficiency(HeavyArmor);UnlockSpell(Shout_SpeakWithAnimals);UnlockSpell(Target_AnimalFriendship);UnlockSpell(Target_SpikeGrowth);UnlockSpell(Target_Barkskin)"
+
+    // <node id="Progression">
+    //     <attribute id="Level" type="uint8" value="5"/>
+    //     <attribute id="Name" type="LSString" value="NatureDomain"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="Selectors" type="LSString" value="AddSpells(90e89ac3-c805-4214-a73e-817c366ba8b2,ClericNatureDomainSpells,,,AlwaysPrepared)"/>
+    //     <attribute id="TableUUID" type="guid" value="c668b65d-2848-4feb-981f-eb54cc5ceb15"/>
+    //     <attribute id="UUID" type="guid" value="6d1b973f-1f6f-45e8-9e22-1b50241b8f17"/>
+
+    new entry "GOON_NPC_CLERIC_NATURE_LEVEL_6"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_CLERIC_NATURE_PROGRESSION_TEMPLATE"
+    data "StackPriority" "6"
+    data "Passives" "AcolyteOfNature;DampenElements"
+    data "Boosts" "Proficiency(HeavyArmor);UnlockSpell(Shout_SpeakWithAnimals);UnlockSpell(Target_AnimalFriendship);UnlockSpell(Target_SpikeGrowth);UnlockSpell(Target_Barkskin)"
+
+    // <node id="Progression">
+    //     <attribute id="Level" type="uint8" value="6"/>
+    //     <attribute id="Name" type="LSString" value="NatureDomain"/>
+    //     <attribute id="PassivesAdded" type="LSString" value="DampenElements"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="TableUUID" type="guid" value="c668b65d-2848-4feb-981f-eb54cc5ceb15"/>
+    //     <attribute id="UUID" type="guid" value="72e1fb77-6745-4457-b64c-8c4686cc8999"/>
+
+    new entry "GOON_NPC_CLERIC_NATURE_LEVEL_7"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_CLERIC_NATURE_PROGRESSION_TEMPLATE"
+    data "StackPriority" "7"
+    data "Passives" "AcolyteOfNature;DampenElements"
+    data "Boosts" "Proficiency(HeavyArmor);UnlockSpell(Shout_SpeakWithAnimals);UnlockSpell(Target_AnimalFriendship);UnlockSpell(Target_SpikeGrowth);UnlockSpell(Target_Barkskin);UnlockSpell(Target_DominateBeast);UnlockSpell(Target_GraspingVine)"
+
+    // <node id="Progression">
+    //     <attribute id="Level" type="uint8" value="7"/>
+    //     <attribute id="Name" type="LSString" value="NatureDomain"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="Selectors" type="LSString" value="AddSpells(cc45c1a8-ec0c-4da9-9d65-0e2ef36558d8,ClericNatureDomainSpells,,,AlwaysPrepared)"/>
+    //     <attribute id="TableUUID" type="guid" value="c668b65d-2848-4feb-981f-eb54cc5ceb15"/>
+    //     <attribute id="UUID" type="guid" value="ddba6768-5c17-4853-b241-e2020a2d18b2"/>
+
+    new entry "GOON_NPC_CLERIC_NATURE_LEVEL_8"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_CLERIC_NATURE_PROGRESSION_TEMPLATE"
+    data "StackPriority" "8"
+    data "Passives" "AcolyteOfNature;DampenElements;Divine_Strike_Nature_Toggle"
+    data "Boosts" "Proficiency(HeavyArmor);UnlockSpell(Shout_SpeakWithAnimals);UnlockSpell(Target_AnimalFriendship);UnlockSpell(Target_SpikeGrowth);UnlockSpell(Target_Barkskin);UnlockSpell(Target_DominateBeast);UnlockSpell(Target_GraspingVine);UnlockSpell(Target_DivineStrike_Nature_Container)"
+
+    // <node id="Progression">
+    //     <attribute id="Level" type="uint8" value="8"/>
+    //     <attribute id="Name" type="LSString" value="NatureDomain"/>
+    //     <attribute id="PassivesAdded" type="LSString" value="Divine_Strike_Nature_Toggle"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="Selectors" type="LSString" value="AddSpells(eee6250e-b75a-4012-a3da-e6452a53ed8b,,,,AlwaysPrepared)"/>
+    //     <attribute id="TableUUID" type="guid" value="c668b65d-2848-4feb-981f-eb54cc5ceb15"/>
+    //     <attribute id="UUID" type="guid" value="f5a8a6b4-8514-494d-bbe8-2a0196dc8efa"/>
+
+    new entry "GOON_NPC_CLERIC_NATURE_LEVEL_9"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_CLERIC_NATURE_PROGRESSION_TEMPLATE"
+    data "StackPriority" "9"
+    data "Passives" "AcolyteOfNature;DampenElements;Divine_Strike_Nature_Toggle"
+    data "Boosts" "Proficiency(HeavyArmor);UnlockSpell(Shout_SpeakWithAnimals);UnlockSpell(Target_AnimalFriendship);UnlockSpell(Target_SpikeGrowth);UnlockSpell(Target_Barkskin);UnlockSpell(Target_DominateBeast);UnlockSpell(Target_GraspingVine);UnlockSpell(Target_DivineStrike_Nature_Container);UnlockSpell(Target_InsectPlague);UnlockSpell(Wall_WallOfStone)"
+
+    // <node id="Progression">
+    //     <attribute id="Level" type="uint8" value="9"/>
+    //     <attribute id="Name" type="LSString" value="NatureDomain"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="Selectors" type="LSString" value="AddSpells(f5609f93-a17c-456c-a7bb-3b4203bb2eea,ClericNatureDomainSpells,,,AlwaysPrepared)"/>
+    //     <attribute id="TableUUID" type="guid" value="c668b65d-2848-4feb-981f-eb54cc5ceb15"/>
+    //     <attribute id="UUID" type="guid" value="82cbf414-345f-4e1c-9ebb-ba9d49f52fa2"/>
