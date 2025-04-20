@@ -822,7 +822,7 @@
     type "PassiveData"
     data "DisplayName" "heeb1062dgec43g432agb19bg5826d981e329;1"
     data "Description" "h6fd8cc08g71adg4648gb7f3g7f8c1bc471d4;1"
-    data "Icon" "PassiveFeature_Generic_Nature"
+    data "Icon" "PassiveFeature_WrathOfTheStorm_Thunder"
     data "Boosts" ""
     data "StatsFunctorContext" "OnCreate;OnStatusApplied;OnStatusRemoved"
     data "Conditions" ""
@@ -970,3 +970,156 @@
     //     <attribute id="Selectors" type="LSString" value="AddSpells(87d05f19-7198-424a-93ac-cf222ca25fc7,ClericTempestDomainSpells,,,AlwaysPrepared)"/>
     //     <attribute id="TableUUID" type="guid" value="0630b55b-36f4-41d2-aacc-28e99d6ae252"/>
     //     <attribute id="UUID" type="guid" value="1e4d3a2f-e712-4135-bc6a-569c169ea15f"/>
+
+// ==================================== Subclass: Trickery Domain ====================================
+
+    new entry "CX_Cleric_Trickery_Boost"
+    type "PassiveData"
+    data "DisplayName" "h62ef7e5dg444dg4771ga160g2efbe9caa201;1"
+    data "Description" "h4a2efd9egffa1g447eg9519g59d2e559fc5e;1"
+    data "Icon" "Action_Cleric_BlessingOfTheTrickster"
+    data "Boosts" ""
+    data "StatsFunctorContext" "OnCreate;OnStatusApplied;OnStatusRemoved"
+    data "Conditions" ""
+    data "StatsFunctors" "IF(not CharacterLevelGreaterThan(2,GetOwner(context.Source))):ApplyStatus(GOON_NPC_CLERIC_TRICKERY_LEVEL_1,100,-1);IF(CharacterLevelGreaterThan(1,GetOwner(context.Source)) and not CharacterLevelGreaterThan(2,GetOwner(context.Source))):ApplyStatus(GOON_NPC_CLERIC_TRICKERY_LEVEL_2,100,-1);IF(CharacterLevelGreaterThan(2,GetOwner(context.Source)) and not CharacterLevelGreaterThan(4,GetOwner(context.Source))):ApplyStatus(GOON_NPC_CLERIC_TRICKERY_LEVEL_3,100,-1);IF(CharacterLevelGreaterThan(4,GetOwner(context.Source)) and not CharacterLevelGreaterThan(5,GetOwner(context.Source))):ApplyStatus(GOON_NPC_CLERIC_TRICKERY_LEVEL_5,100,-1);IF(CharacterLevelGreaterThan(5,GetOwner(context.Source)) and not CharacterLevelGreaterThan(6,GetOwner(context.Source))):ApplyStatus(GOON_NPC_CLERIC_TRICKERY_LEVEL_6,100,-1);IF(CharacterLevelGreaterThan(6,GetOwner(context.Source)) and not CharacterLevelGreaterThan(7,GetOwner(context.Source))):ApplyStatus(GOON_NPC_CLERIC_TRICKERY_LEVEL_7,100,-1);IF(CharacterLevelGreaterThan(7,GetOwner(context.Source)) and not CharacterLevelGreaterThan(8,GetOwner(context.Source))):ApplyStatus(GOON_NPC_CLERIC_TRICKERY_LEVEL_8,100,-1);IF(CharacterLevelGreaterThan(8,GetOwner(context.Source))):ApplyStatus(GOON_NPC_CLERIC_TRICKERY_LEVEL_9,100,-1)"
+
+// Template
+    new entry "GOON_NPC_CLERIC_TRICKERY_PROGRESSION_TEMPLATE"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    data "StatusPropertyFlags" "DisableOverhead;DisableCombatlog;DisablePortraitIndicator;ApplyToDead;IgnoreResting"
+    data "RemoveEvents" "OnStatusApplied;OnStatusRemoved"
+    data "StackId" "GOON_NPC_CLERIC_TRICKERY_PROGRESSION_TEMPLATE"
+    data "StackType" "Ignore"
+    data "RemoveConditions" "not HasPassive('CX_Cleric_Trickery_Boost')"
+
+// Progression statuses
+
+    new entry "GOON_NPC_CLERIC_TRICKERY_LEVEL_1"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_CLERIC_TRICKERY_PROGRESSION_TEMPLATE"
+    data "StackPriority" "1"
+    data "Passives" ""
+    data "Boosts" "UnlockSpell(Target_BlessingOfTheTrickster);UnlockSpell(Target_CharmPerson);UnlockSpell(Shout_DisguiseSelf)"
+
+    // <node id="Progression">
+    //     <attribute id="Level" type="uint8" value="1"/>
+    //     <attribute id="Name" type="LSString" value="TrickeryDomain"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="Selectors" type="LSString" value="AddSpells(98ef625f-d127-4fc3-8e37-37a4b27e6393,ClericTrickeryDomainSpells,,,AlwaysPrepared)"/>
+    //     <attribute id="TableUUID" type="guid" value="044e4e07-6980-479f-80e5-3c4a84e691d1"/>
+    //     <attribute id="UUID" type="guid" value="97ba481e-13d2-4a8c-8503-e1b146c21b7b"/>
+
+    new entry "GOON_NPC_CLERIC_TRICKERY_LEVEL_2"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_CLERIC_TRICKERY_PROGRESSION_TEMPLATE"
+    data "StackPriority" "2"
+    data "Passives" ""
+    data "Boosts" "UnlockSpell(Target_BlessingOfTheTrickster);UnlockSpell(Target_CharmPerson);UnlockSpell(Shout_DisguiseSelf);UnlockSpell(Target_InvokeDuplicity)"
+
+    // <node id="Progression">
+    //     <attribute id="Level" type="uint8" value="2"/>
+    //     <attribute id="Name" type="LSString" value="TrickeryDomain"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="Selectors" type="LSString" value="AddSpells(c35cb4e6-2690-4e1f-bd89-69f4f69ae818,,,,AlwaysPrepared)"/>
+    //     <attribute id="TableUUID" type="guid" value="044e4e07-6980-479f-80e5-3c4a84e691d1"/>
+    //     <attribute id="UUID" type="guid" value="87609f34-d8c7-4ca6-88b3-6f2692286e44"/>
+
+    new entry "GOON_NPC_CLERIC_TRICKERY_LEVEL_3"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_CLERIC_TRICKERY_PROGRESSION_TEMPLATE"
+    data "StackPriority" "3"
+    data "Passives" ""
+    data "Boosts" "UnlockSpell(Target_BlessingOfTheTrickster);UnlockSpell(Target_CharmPerson);UnlockSpell(Shout_DisguiseSelf);UnlockSpell(Target_InvokeDuplicity)"
+
+    // <node id="Progression">
+    //     <attribute id="Level" type="uint8" value="3"/>
+    //     <attribute id="Name" type="LSString" value="TrickeryDomain"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="Selectors" type="LSString" value="AddSpells(9f603ac8-2e51-4ce9-b924-c8093148bdf5,ClericTrickeryDomainSpells,,,AlwaysPrepared)"/>
+    //     <attribute id="TableUUID" type="guid" value="044e4e07-6980-479f-80e5-3c4a84e691d1"/>
+    //     <attribute id="UUID" type="guid" value="90dafea8-c773-4dfa-b0c8-da4789122a0f"/>
+
+    new entry "GOON_NPC_CLERIC_TRICKERY_LEVEL_5"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_CLERIC_TRICKERY_PROGRESSION_TEMPLATE"
+    data "StackPriority" "5"
+    data "Passives" ""
+    data "Boosts" "UnlockSpell(Target_BlessingOfTheTrickster);UnlockSpell(Target_CharmPerson);UnlockSpell(Shout_DisguiseSelf);UnlockSpell(Target_InvokeDuplicity);UnlockSpell(Target_BestowCurse);UnlockSpell(Zone_Fear)"
+
+    // <node id="Progression">
+    //     <attribute id="Level" type="uint8" value="5"/>
+    //     <attribute id="Name" type="LSString" value="TrickeryDomain"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="Selectors" type="LSString" value="AddSpells(8a9faf7a-aacf-43f4-a0dd-5ea7e72449f3,ClericTrickeryDomainSpells,,,AlwaysPrepared)"/>
+    //     <attribute id="TableUUID" type="guid" value="044e4e07-6980-479f-80e5-3c4a84e691d1"/>
+    //     <attribute id="UUID" type="guid" value="76b362f3-11f2-47a0-949e-6147d0fde794"/>
+
+    new entry "GOON_NPC_CLERIC_TRICKERY_LEVEL_6"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_CLERIC_TRICKERY_PROGRESSION_TEMPLATE"
+    data "StackPriority" "6"
+    data "Passives" ""
+    data "Boosts" "UnlockSpell(Target_BlessingOfTheTrickster);UnlockSpell(Target_CharmPerson);UnlockSpell(Shout_DisguiseSelf);UnlockSpell(Target_InvokeDuplicity);UnlockSpell(Target_BestowCurse);UnlockSpell(Zone_Fear);UnlockSpell(Shout_CloakOfShadows)"
+
+    // <node id="Progression">
+    //     <attribute id="Level" type="uint8" value="6"/>
+    //     <attribute id="Name" type="LSString" value="TrickeryDomain"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="Selectors" type="LSString" value="AddSpells(90acd47f-3475-4c85-99ea-7fd503591be4,,,,AlwaysPrepared)"/>
+    //     <attribute id="TableUUID" type="guid" value="044e4e07-6980-479f-80e5-3c4a84e691d1"/>
+    //     <attribute id="UUID" type="guid" value="7424ee22-a365-427e-be2f-40cd8b316ac1"/>
+
+    new entry "GOON_NPC_CLERIC_TRICKERY_LEVEL_7"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_CLERIC_TRICKERY_PROGRESSION_TEMPLATE"
+    data "StackPriority" "7"
+    data "Passives" ""
+    data "Boosts" "UnlockSpell(Target_BlessingOfTheTrickster);UnlockSpell(Target_CharmPerson);UnlockSpell(Shout_DisguiseSelf);UnlockSpell(Target_InvokeDuplicity);UnlockSpell(Target_BestowCurse);UnlockSpell(Zone_Fear);UnlockSpell(Shout_CloakOfShadows);UnlockSpell(Target_Polymorph);UnlockSpell(Teleportation_DimensionDoor)"
+
+    // <node id="Progression">
+    //     <attribute id="Level" type="uint8" value="7"/>
+    //     <attribute id="Name" type="LSString" value="TrickeryDomain"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="Selectors" type="LSString" value="AddSpells(18e97e4a-d97b-4595-af80-8eb43766386e,ClericTrickeryDomainSpells,,,AlwaysPrepared)"/>
+    //     <attribute id="TableUUID" type="guid" value="044e4e07-6980-479f-80e5-3c4a84e691d1"/>
+    //     <attribute id="UUID" type="guid" value="63a5476b-4e9e-45bd-97fd-9a88d46b9588"/>
+
+    new entry "GOON_NPC_CLERIC_TRICKERY_LEVEL_8"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_CLERIC_TRICKERY_PROGRESSION_TEMPLATE"
+    data "StackPriority" "8"
+    data "Passives" "Divine_Strike_Trickery_Toggle"
+    data "Boosts" "UnlockSpell(Target_BlessingOfTheTrickster);UnlockSpell(Target_CharmPerson);UnlockSpell(Shout_DisguiseSelf);UnlockSpell(Target_InvokeDuplicity);UnlockSpell(Target_BestowCurse);UnlockSpell(Zone_Fear);UnlockSpell(Shout_CloakOfShadows);UnlockSpell(Target_Polymorph);UnlockSpell(Teleportation_DimensionDoor);UnlockSpell(Target_DivineStrike_Trickery_Container)"
+
+    // <node id="Progression">
+    //     <attribute id="Level" type="uint8" value="8"/>
+    //     <attribute id="Name" type="LSString" value="TrickeryDomain"/>
+    //     <attribute id="PassivesAdded" type="LSString" value="Divine_Strike_Trickery_Toggle"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="Selectors" type="LSString" value="AddSpells(b5f88a1e-931f-4851-b86c-875f756b7313,,,,AlwaysPrepared)"/>
+    //     <attribute id="TableUUID" type="guid" value="044e4e07-6980-479f-80e5-3c4a84e691d1"/>
+    //     <attribute id="UUID" type="guid" value="f39b339b-e367-403b-b33e-8191eb8363e0"/>
+
+    new entry "GOON_NPC_CLERIC_TRICKERY_LEVEL_9"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_CLERIC_TRICKERY_PROGRESSION_TEMPLATE"
+    data "StackPriority" "9"
+    data "Passives" "Divine_Strike_Trickery_Toggle"
+    data "Boosts" "UnlockSpell(Target_BlessingOfTheTrickster);UnlockSpell(Target_CharmPerson);UnlockSpell(Shout_DisguiseSelf);UnlockSpell(Target_InvokeDuplicity);UnlockSpell(Target_BestowCurse);UnlockSpell(Zone_Fear);UnlockSpell(Shout_CloakOfShadows);UnlockSpell(Target_Polymorph);UnlockSpell(Teleportation_DimensionDoor);UnlockSpell(Target_DivineStrike_Trickery_Container);UnlockSpell(Target_DominatePerson);UnlockSpell(Target_Seeming)"
+
+    // <node id="Progression">
+    //     <attribute id="Level" type="uint8" value="9"/>
+    //     <attribute id="Name" type="LSString" value="TrickeryDomain"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="Selectors" type="LSString" value="AddSpells(154b461e-23c2-4147-97fd-b7892f031a50,ClericTrickeryDomainSpells,,,AlwaysPrepared)"/>
+    //     <attribute id="TableUUID" type="guid" value="044e4e07-6980-479f-80e5-3c4a84e691d1"/>
+    //     <attribute id="UUID" type="guid" value="5eff9cd1-2376-452a-bb09-93a6aa8ee8d0"/>
