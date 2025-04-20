@@ -32,12 +32,6 @@ data "DisplayName" "h19a9f0e8g94bcg4f42g9fa2g6d4b95bc6e2e;1"
 
 // ==================================== Main class progressions ====================================
 
-new entry "Goon_Druid_NPC_Progressions"
-type "PassiveData"
-using "Goon_NPC_Progressions_Template"
-// Class Progressions: Druid
-data "DisplayName" "h215206fcg60f6g4af5g94f2gd3c61fc2399b;1"
-
 new entry "Goon_Fighter_NPC_Progressions"
 type "PassiveData"
 using "Goon_NPC_Progressions_Template"

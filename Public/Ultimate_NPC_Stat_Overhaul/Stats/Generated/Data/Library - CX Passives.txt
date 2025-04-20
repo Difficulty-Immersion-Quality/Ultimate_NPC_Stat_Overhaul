@@ -47,29 +47,6 @@ data "Description" "hd5818987ga072g4e8dgb314g97ab96f230cd"
 data "Boosts" "Proficiency(SimpleWeapons);Proficiency(MartialWeapons)"
 data "Icon" "Spell_Abjuration_WardingBond"
 
-// ==================================== Druid ====================================
-
-new entry "CX_Druid_Boost"
-type "PassiveData"
-data "DisplayName" "he38308dag9418g482fg8ca1g980cc98ff64a"
-data "Description" "hc19cb29fgce35g4253g810fge4b35ebb2168"
-data "Icon" "Action_Barbarian_Rage"
-data "Boosts" ""
-
-new entry "CX_Druid_Moon_Boost"
-type "PassiveData"
-data "DisplayName" "hb7785d94g8723g45b8gb252g11f0270642c1"
-data "Description" "h654778cegbf88g49adgb407gcb0cc8299dc0"
-data "Icon" "Skill_Druid_WildShape"
-data "Boosts" ""
-
-new entry "CX_Druid_Spores_Boost"
-type "PassiveData"
-data "DisplayName" "h407e27feg0d73g483dgbed5gb58542ff0cca"
-data "Description" "h5872faaag78ffg4f03g99cbgcda17b06d423"
-data "Icon" "Action_SymbioticEntity"
-data "Boosts" ""
-
 // ==================================== Fighter ====================================
 
 new entry "CX_Fighter_Boost"
