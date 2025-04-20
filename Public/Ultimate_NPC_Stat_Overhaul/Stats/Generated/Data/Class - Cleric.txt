@@ -198,6 +198,163 @@
     data "Passives" ""
     data "Boosts" ""
 
+// ==================================== Subclass: Life Domain ====================================
+
+// ==================================== Subclass: Knowledge Domain ====================================
+
+    new entry "CX_Cleric_Life_Boost"
+    type "PassiveData"
+    data "DisplayName" "he573d2b7gbb53g4996gb795g1623ccf40749;1"
+    data "Description" "h748bb452ge0bbg4d70gb473g5f16915c5a1c;1"
+    data "Icon" "PassiveFeature_DiscipleOfLife"
+    data "Boosts" ""
+    data "StatsFunctorContext" "OnCreate;OnStatusApplied;OnStatusRemoved"
+    data "Conditions" ""
+    data "StatsFunctors" "IF(not CharacterLevelGreaterThan(2,GetOwner(context.Source))):ApplyStatus(GOON_NPC_CLERIC_LIFE_LEVEL_1,100,-1);IF(CharacterLevelGreaterThan(1,GetOwner(context.Source)) and not CharacterLevelGreaterThan(2,GetOwner(context.Source))):ApplyStatus(GOON_NPC_CLERIC_LIFE_LEVEL_2,100,-1);IF(CharacterLevelGreaterThan(2,GetOwner(context.Source)) and not CharacterLevelGreaterThan(4,GetOwner(context.Source))):ApplyStatus(GOON_NPC_CLERIC_LIFE_LEVEL_3,100,-1);IF(CharacterLevelGreaterThan(4,GetOwner(context.Source)) and not CharacterLevelGreaterThan(5,GetOwner(context.Source))):ApplyStatus(GOON_NPC_CLERIC_LIFE_LEVEL_5,100,-1);IF(CharacterLevelGreaterThan(5,GetOwner(context.Source)) and not CharacterLevelGreaterThan(6,GetOwner(context.Source))):ApplyStatus(GOON_NPC_CLERIC_LIFE_LEVEL_6,100,-1);IF(CharacterLevelGreaterThan(6,GetOwner(context.Source)) and not CharacterLevelGreaterThan(7,GetOwner(context.Source))):ApplyStatus(GOON_NPC_CLERIC_LIFE_LEVEL_7,100,-1);IF(CharacterLevelGreaterThan(7,GetOwner(context.Source)) and not CharacterLevelGreaterThan(8,GetOwner(context.Source))):ApplyStatus(GOON_NPC_CLERIC_LIFE_LEVEL_8,100,-1);IF(CharacterLevelGreaterThan(8,GetOwner(context.Source))):ApplyStatus(GOON_NPC_CLERIC_LIFE_LEVEL_9,100,-1)"
+
+// Template
+    new entry "GOON_NPC_CLERIC_LIFE_PROGRESSION_TEMPLATE"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    data "StatusPropertyFlags" "DisableOverhead;DisableCombatlog;DisablePortraitIndicator;ApplyToDead;IgnoreResting"
+    data "RemoveEvents" "OnStatusApplied;OnStatusRemoved"
+    data "StackId" "GOON_NPC_CLERIC_LIFE_PROGRESSION_TEMPLATE"
+    data "StackType" "Ignore"
+    data "RemoveConditions" "not HasPassive('CX_Cleric_Life_Boost')"
+
+// Progression statuses
+
+    new entry "GOON_NPC_CLERIC_LIFE_LEVEL_1"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_CLERIC_LIFE_PROGRESSION_TEMPLATE"
+    data "StackPriority" "1"
+    data "Passives" "DiscipleOfLife"
+    data "Boosts" "UnlockSpell(Target_CureWounds);UnlockSpell(Target_Bless)"
+
+    // <node id="Progression">
+    //     <attribute id="Boosts" type="LSString" value="Proficiency(HeavyArmor)"/>
+    //     <attribute id="Level" type="uint8" value="1"/>
+    //     <attribute id="Name" type="LSString" value="LifeDomain"/>
+    //     <attribute id="PassivesAdded" type="LSString" value="DiscipleOfLife"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="Selectors" type="LSString" value="AddSpells(26ffbe70-23c6-4918-9e6a-a3e556a9d355,ClericLifeDomainSpells,,,AlwaysPrepared)"/>
+    //     <attribute id="TableUUID" type="guid" value="9b56beb6-2a68-42a4-b81b-7a890a1b6b99"/>
+    //     <attribute id="UUID" type="guid" value="87f501ae-c909-4f30-852b-98bdc72c0248"/>
+
+    new entry "GOON_NPC_CLERIC_LIFE_LEVEL_2"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_CLERIC_LIFE_PROGRESSION_TEMPLATE"
+    data "StackPriority" "2"
+    data "Passives" "DiscipleOfLife"
+    data "Boosts" "UnlockSpell(Target_CureWounds);UnlockSpell(Target_Bless);UnlockSpell(Shout_PreserveLife)"
+
+    // <node id="Progression">
+    //     <attribute id="Level" type="uint8" value="2"/>
+    //     <attribute id="Name" type="LSString" value="LifeDomain"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="Selectors" type="LSString" value="AddSpells(36795b9e-f712-44a4-9c0f-eda1e78df9ab,,,,AlwaysPrepared)"/>
+    //     <attribute id="TableUUID" type="guid" value="9b56beb6-2a68-42a4-b81b-7a890a1b6b99"/>
+    //     <attribute id="UUID" type="guid" value="1aa8a001-f56c-4b99-800f-27fc12f8ebe8"/>
+
+    new entry "GOON_NPC_CLERIC_LIFE_LEVEL_3"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_CLERIC_LIFE_PROGRESSION_TEMPLATE"
+    data "StackPriority" "3"
+    data "Passives" "DiscipleOfLife"
+    data "Boosts" "UnlockSpell(Target_CureWounds);UnlockSpell(Target_Bless);UnlockSpell(Shout_PreserveLife);UnlockSpell(Shout_Aid);UnlockSpell(Target_LesserRestoration)"
+
+    // <node id="Progression">
+    //     <attribute id="Level" type="uint8" value="3"/>
+    //     <attribute id="Name" type="LSString" value="LifeDomain"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="Selectors" type="LSString" value="AddSpells(bbaf0bab-b0b3-44c9-a567-304e35c063c9,ClericLifeDomainSpells,,,AlwaysPrepared)"/>
+    //     <attribute id="TableUUID" type="guid" value="9b56beb6-2a68-42a4-b81b-7a890a1b6b99"/>
+    //     <attribute id="UUID" type="guid" value="8355f4fe-7d7f-4132-8d57-7ca17e3c4ab4"/>
+
+    new entry "GOON_NPC_CLERIC_LIFE_LEVEL_5"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_CLERIC_LIFE_PROGRESSION_TEMPLATE"
+    data "StackPriority" "5"
+    data "Passives" "DiscipleOfLife"
+    data "Boosts" "UnlockSpell(Target_CureWounds);UnlockSpell(Target_Bless);UnlockSpell(Shout_PreserveLife);UnlockSpell(Shout_Aid);UnlockSpell(Target_LesserRestoration);UnlockSpell(Teleportation_Revivify);UnlockSpell(Shout_BeaconOfHope)"
+
+    // <node id="Progression">
+    //     <attribute id="Level" type="uint8" value="5"/>
+    //     <attribute id="Name" type="LSString" value="LifeDomain"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="Selectors" type="LSString" value="AddSpells(a9ff6ed3-050e-4963-b37b-c083285d6214,ClericLifeDomainSpells,,,AlwaysPrepared)"/>
+    //     <attribute id="TableUUID" type="guid" value="9b56beb6-2a68-42a4-b81b-7a890a1b6b99"/>
+    //     <attribute id="UUID" type="guid" value="dc935315-0534-4629-a7b4-41c67dd2b246"/>
+
+    new entry "GOON_NPC_CLERIC_LIFE_LEVEL_6"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_CLERIC_LIFE_PROGRESSION_TEMPLATE"
+    data "StackPriority" "6"
+    data "Passives" "DiscipleOfLife;BlessedHealer"
+    data "Boosts" "UnlockSpell(Target_CureWounds);UnlockSpell(Target_Bless);UnlockSpell(Shout_PreserveLife);UnlockSpell(Shout_Aid);UnlockSpell(Target_LesserRestoration);UnlockSpell(Teleportation_Revivify);UnlockSpell(Shout_BeaconOfHope)"
+
+    // <node id="Progression">
+    //     <attribute id="Level" type="uint8" value="6"/>
+    //     <attribute id="Name" type="LSString" value="LifeDomain"/>
+    //     <attribute id="PassivesAdded" type="LSString" value="BlessedHealer"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="TableUUID" type="guid" value="9b56beb6-2a68-42a4-b81b-7a890a1b6b99"/>
+    //     <attribute id="UUID" type="guid" value="101c6e81-6e76-4d3f-9f96-6640e2e62a36"/>
+
+    new entry "GOON_NPC_CLERIC_LIFE_LEVEL_7"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_CLERIC_LIFE_PROGRESSION_TEMPLATE"
+    data "StackPriority" "7"
+    data "Passives" "DiscipleOfLife;BlessedHealer"
+    data "Boosts" "UnlockSpell(Target_CureWounds);UnlockSpell(Target_Bless);UnlockSpell(Shout_PreserveLife);UnlockSpell(Shout_Aid);UnlockSpell(Target_LesserRestoration);UnlockSpell(Teleportation_Revivify);UnlockSpell(Shout_BeaconOfHope);UnlockSpell(Target_DeathWard);UnlockSpell(Target_GuardianOfFaith)"
+
+    // <node id="Progression">
+    //     <attribute id="Level" type="uint8" value="7"/>
+    //     <attribute id="Name" type="LSString" value="LifeDomain"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="Selectors" type="LSString" value="AddSpells(28d41365-bc69-437a-a968-cac8f3b4b2c6,ClericLifeDomainSpells,,,AlwaysPrepared)"/>
+    //     <attribute id="TableUUID" type="guid" value="9b56beb6-2a68-42a4-b81b-7a890a1b6b99"/>
+    //     <attribute id="UUID" type="guid" value="13eecc52-a474-444c-b77c-52e5cd7eceb0"/>
+
+    new entry "GOON_NPC_CLERIC_LIFE_LEVEL_8"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_CLERIC_LIFE_PROGRESSION_TEMPLATE"
+    data "StackPriority" "8"
+    data "Passives" "DiscipleOfLife;BlessedHealer;Divine_Strike_Life_Toggle"
+    data "Boosts" "UnlockSpell(Target_CureWounds);UnlockSpell(Target_Bless);UnlockSpell(Shout_PreserveLife);UnlockSpell(Shout_Aid);UnlockSpell(Target_LesserRestoration);UnlockSpell(Teleportation_Revivify);UnlockSpell(Shout_BeaconOfHope);UnlockSpell(Target_DeathWard);UnlockSpell(Target_GuardianOfFaith);UnlockSpell(Target_DivineStrike_Life_Container)"
+
+    // <node id="Progression">
+    //     <attribute id="Level" type="uint8" value="8"/>
+    //     <attribute id="Name" type="LSString" value="LifeDomain"/>
+    //     <attribute id="PassivesAdded" type="LSString" value="Divine_Strike_Life_Toggle"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="Selectors" type="LSString" value="AddSpells(bbdd7836-8c4f-4f41-aaf7-acb16e7fc91d,,,,AlwaysPrepared)"/>
+    //     <attribute id="TableUUID" type="guid" value="9b56beb6-2a68-42a4-b81b-7a890a1b6b99"/>
+    //     <attribute id="UUID" type="guid" value="20ce2664-ba58-4291-be05-dca5b2c4293d"/>
+
+    new entry "GOON_NPC_CLERIC_LIFE_LEVEL_9"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_CLERIC_LIFE_PROGRESSION_TEMPLATE"
+    data "StackPriority" "9"
+    data "Passives" "DiscipleOfLife;BlessedHealer;Divine_Strike_Life_Toggle"
+    data "Boosts" "UnlockSpell(Target_CureWounds);UnlockSpell(Target_Bless);UnlockSpell(Shout_PreserveLife);UnlockSpell(Shout_Aid);UnlockSpell(Target_LesserRestoration);UnlockSpell(Teleportation_Revivify);UnlockSpell(Shout_BeaconOfHope);UnlockSpell(Target_DeathWard);UnlockSpell(Target_GuardianOfFaith);UnlockSpell(Target_DivineStrike_Life_Container);UnlockSpell(Target_CureWounds_Mass);UnlockSpell(Target_GreaterRestoration)"
+
+    // <node id="Progression">
+    //     <attribute id="Level" type="uint8" value="9"/>
+    //     <attribute id="Name" type="LSString" value="LifeDomain"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="Selectors" type="LSString" value="AddSpells(1b8b6282-c1f2-4095-89ab-aaefdf234317,ClericLifeDomainSpells,,,AlwaysPrepared)"/>
+    //     <attribute id="TableUUID" type="guid" value="9b56beb6-2a68-42a4-b81b-7a890a1b6b99"/>
+    //     <attribute id="UUID" type="guid" value="b3a95e65-8ba5-4e32-ba5a-6e2c745c237a"/>
+
 // ==================================== Subclass: Knowledge Domain ====================================
 
     new entry "CX_Cleric_Knowledge_Boost"
@@ -211,16 +368,24 @@
     data "StatsFunctors" "IF(not CharacterLevelGreaterThan(2,GetOwner(context.Source))):ApplyStatus(GOON_NPC_CLERIC_KNOWLEDGE_LEVEL_1,100,-1);IF(CharacterLevelGreaterThan(1,GetOwner(context.Source)) and not CharacterLevelGreaterThan(2,GetOwner(context.Source))):ApplyStatus(GOON_NPC_CLERIC_KNOWLEDGE_LEVEL_2,100,-1);IF(CharacterLevelGreaterThan(2,GetOwner(context.Source)) and not CharacterLevelGreaterThan(4,GetOwner(context.Source))):ApplyStatus(GOON_NPC_CLERIC_KNOWLEDGE_LEVEL_3,100,-1);IF(CharacterLevelGreaterThan(4,GetOwner(context.Source)) and not CharacterLevelGreaterThan(5,GetOwner(context.Source))):ApplyStatus(GOON_NPC_CLERIC_KNOWLEDGE_LEVEL_5,100,-1);IF(CharacterLevelGreaterThan(5,GetOwner(context.Source)) and not CharacterLevelGreaterThan(6,GetOwner(context.Source))):ApplyStatus(GOON_NPC_CLERIC_KNOWLEDGE_LEVEL_6,100,-1);IF(CharacterLevelGreaterThan(6,GetOwner(context.Source)) and not CharacterLevelGreaterThan(7,GetOwner(context.Source))):ApplyStatus(GOON_NPC_CLERIC_KNOWLEDGE_LEVEL_7,100,-1);IF(CharacterLevelGreaterThan(7,GetOwner(context.Source)) and not CharacterLevelGreaterThan(8,GetOwner(context.Source))):ApplyStatus(GOON_NPC_CLERIC_KNOWLEDGE_LEVEL_8,100,-1);IF(CharacterLevelGreaterThan(8,GetOwner(context.Source))):ApplyStatus(GOON_NPC_CLERIC_KNOWLEDGE_LEVEL_9,100,-1)"
 
 // Template
-    new entry "GOON_NPC_SOMETHING_SOMETHING_PROGRESSION_TEMPLATE"
+    new entry "GOON_NPC_CLERIC_KNOWLEDGE_PROGRESSION_TEMPLATE"
     type "StatusData"
     data "StatusType" "BOOST"
     data "StatusPropertyFlags" "DisableOverhead;DisableCombatlog;DisablePortraitIndicator;ApplyToDead;IgnoreResting"
     data "RemoveEvents" "OnStatusApplied;OnStatusRemoved"
-    data "StackId" "GOON_NPC_SOMETHING_SOMETHING_PROGRESSION_TEMPLATE"
+    data "StackId" "GOON_NPC_CLERIC_KNOWLEDGE_PROGRESSION_TEMPLATE"
     data "StackType" "Ignore"
     data "RemoveConditions" "not HasPassive('CX_Cleric_Knowledge_Boost')"
 
 // Progression statuses
+
+    new entry "GOON_NPC_CLERIC_KNOWLEDGE_LEVEL_1"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_CLERIC_KNOWLEDGE_PROGRESSION_TEMPLATE"
+    data "StackPriority" "1"
+    data "Passives" ""
+    data "Boosts" "UnlockSpell(Target_Command_Container);UnlockSpell(Target_Sleep)"
 
     // <node id="Progression">
     //     <attribute id="Level" type="uint8" value="1"/>
@@ -230,13 +395,13 @@
     //     <attribute id="TableUUID" type="guid" value="4709e126-1b45-4baf-93a2-be66ed4487d2"/>
     //     <attribute id="UUID" type="guid" value="2a780e20-d5a7-436e-9331-433ee8847db8"/>
 
-    new entry "GOON_NPC_CLERIC_KNOWLEDGE_LEVEL_1"
+    new entry "GOON_NPC_CLERIC_KNOWLEDGE_LEVEL_2"
     type "StatusData"
     data "StatusType" "BOOST"
-    using "GOON_NPC_SOMETHING_SOMETHING_PROGRESSION_TEMPLATE"
-    data "StackPriority" "1"
+    using "GOON_NPC_CLERIC_KNOWLEDGE_PROGRESSION_TEMPLATE"
+    data "StackPriority" "2"
     data "Passives" ""
-    data "Boosts" "UnlockSpell(Target_Command_Container);UnlockSpell(Target_Sleep)"
+    data "Boosts" "UnlockSpell(Target_Command_Container);UnlockSpell(Target_Sleep);UnlockSpell(Shout_KnowledgeOfTheAges)"
 
     // <node id="Progression">
     //     <attribute id="Level" type="uint8" value="2"/>
@@ -246,13 +411,13 @@
     //     <attribute id="TableUUID" type="guid" value="4709e126-1b45-4baf-93a2-be66ed4487d2"/>
     //     <attribute id="UUID" type="guid" value="3cab05e3-fcf7-44fb-a503-73eb23fd4de3"/>
 
-    new entry "GOON_NPC_CLERIC_KNOWLEDGE_LEVEL_2"
+    new entry "GOON_NPC_CLERIC_KNOWLEDGE_LEVEL_3"
     type "StatusData"
     data "StatusType" "BOOST"
-    using "GOON_NPC_SOMETHING_SOMETHING_PROGRESSION_TEMPLATE"
-    data "StackPriority" "2"
+    using "GOON_NPC_CLERIC_KNOWLEDGE_PROGRESSION_TEMPLATE"
+    data "StackPriority" "3"
     data "Passives" ""
-    data "Boosts" "UnlockSpell(Target_Command_Container);UnlockSpell(Target_Sleep)UnlockSpell(Shout_KnowledgeOfTheAges)"
+    data "Boosts" "UnlockSpell(Target_Command_Container);UnlockSpell(Target_Sleep);UnlockSpell(Shout_KnowledgeOfTheAges);UnlockSpell(Target_CalmEmotions);UnlockSpell(Target_HoldPerson)"
 
     // <node id="Progression">
     //     <attribute id="Level" type="uint8" value="3"/>
@@ -262,13 +427,13 @@
     //     <attribute id="TableUUID" type="guid" value="4709e126-1b45-4baf-93a2-be66ed4487d2"/>
     //     <attribute id="UUID" type="guid" value="8072ab7b-1371-4acf-aaf5-9f95c7a5a51a"/>
 
-    new entry "GOON_NPC_CLERIC_KNOWLEDGE_LEVEL_3"
+    new entry "GOON_NPC_CLERIC_KNOWLEDGE_LEVEL_5"
     type "StatusData"
     data "StatusType" "BOOST"
-    using "GOON_NPC_SOMETHING_SOMETHING_PROGRESSION_TEMPLATE"
-    data "StackPriority" "3"
+    using "GOON_NPC_CLERIC_KNOWLEDGE_PROGRESSION_TEMPLATE"
+    data "StackPriority" "5"
     data "Passives" ""
-    data "Boosts" "UnlockSpell(Target_Command_Container);UnlockSpell(Target_Sleep)UnlockSpell(Shout_KnowledgeOfTheAges);UnlockSpell(Target_CalmEmotions);UnlockSpell(Target_HoldPerson)"
+    data "Boosts" "UnlockSpell(Target_Command_Container);UnlockSpell(Target_Sleep);UnlockSpell(Shout_KnowledgeOfTheAges);UnlockSpell(Target_CalmEmotions);UnlockSpell(Target_HoldPerson);UnlockSpell(Target_SpeakWithDead);UnlockSpell(Target_Slow)"
 
     // <node id="Progression">
     //     <attribute id="Level" type="uint8" value="5"/>
@@ -278,13 +443,13 @@
     //     <attribute id="TableUUID" type="guid" value="4709e126-1b45-4baf-93a2-be66ed4487d2"/>
     //     <attribute id="UUID" type="guid" value="0d8952a8-7ea3-4516-9b77-78d8662b6c9a"/>
 
-    new entry "GOON_NPC_CLERIC_KNOWLEDGE_LEVEL_5"
+    new entry "GOON_NPC_CLERIC_KNOWLEDGE_LEVEL_6"
     type "StatusData"
     data "StatusType" "BOOST"
-    using "GOON_NPC_SOMETHING_SOMETHING_PROGRESSION_TEMPLATE"
-    data "StackPriority" "5"
+    using "GOON_NPC_CLERIC_KNOWLEDGE_PROGRESSION_TEMPLATE"
+    data "StackPriority" "6"
     data "Passives" ""
-    data "Boosts" "UnlockSpell(Target_Command_Container);UnlockSpell(Target_Sleep)UnlockSpell(Shout_KnowledgeOfTheAges);UnlockSpell(Target_CalmEmotions);UnlockSpell(Target_HoldPerson);UnlockSpell(Target_SpeakWithDead);UnlockSpell(Target_Slow)"
+    data "Boosts" "UnlockSpell(Target_Command_Container);UnlockSpell(Target_Sleep);UnlockSpell(Shout_KnowledgeOfTheAges);UnlockSpell(Target_CalmEmotions);UnlockSpell(Target_HoldPerson);UnlockSpell(Target_SpeakWithDead);UnlockSpell(Target_Slow);UnlockSpell(Shout_ReadThoughts);UnlockSpell(Shout_SpeakWithAnimals_KnowledgeCleric)"
 
     // <node id="Progression">
     // <attribute id="Level" type="uint8" value="6"/>
@@ -294,13 +459,13 @@
     // <attribute id="TableUUID" type="guid" value="4709e126-1b45-4baf-93a2-be66ed4487d2"/>
     // <attribute id="UUID" type="guid" value="eb145ae3-d65e-4a8e-b041-4c34aa1bb199"/>
 
-    new entry "GOON_NPC_CLERIC_KNOWLEDGE_LEVEL_6"
+    new entry "GOON_NPC_CLERIC_KNOWLEDGE_LEVEL_7"
     type "StatusData"
     data "StatusType" "BOOST"
-    using "GOON_NPC_SOMETHING_SOMETHING_PROGRESSION_TEMPLATE"
-    data "StackPriority" "6"
+    using "GOON_NPC_CLERIC_KNOWLEDGE_PROGRESSION_TEMPLATE"
+    data "StackPriority" "7"
     data "Passives" ""
-    data "Boosts" "UnlockSpell(Target_Command_Container);UnlockSpell(Target_Sleep)UnlockSpell(Shout_KnowledgeOfTheAges);UnlockSpell(Target_CalmEmotions);UnlockSpell(Target_HoldPerson);UnlockSpell(Target_SpeakWithDead);UnlockSpell(Target_Slow);UnlockSpell(Shout_ReadThoughts);UnlockSpell(Shout_SpeakWithAnimals_KnowledgeCleric)"
+    data "Boosts" "UnlockSpell(Target_Command_Container);UnlockSpell(Target_Sleep);UnlockSpell(Shout_KnowledgeOfTheAges);UnlockSpell(Target_CalmEmotions);UnlockSpell(Target_HoldPerson);UnlockSpell(Target_SpeakWithDead);UnlockSpell(Target_Slow);UnlockSpell(Shout_ReadThoughts);UnlockSpell(Shout_SpeakWithAnimals_KnowledgeCleric);UnlockSpell(Target_Confusion);UnlockSpell(Target_ResilientSphere)"
 
     // <node id="Progression">
     //     <attribute id="Level" type="uint8" value="7"/>
@@ -310,13 +475,13 @@
     //     <attribute id="TableUUID" type="guid" value="4709e126-1b45-4baf-93a2-be66ed4487d2"/>
     //     <attribute id="UUID" type="guid" value="b6fe729a-a8df-4081-8121-5855bf7128e9"/>
 
-    new entry "GOON_NPC_CLERIC_KNOWLEDGE_LEVEL_7"
+    new entry "GOON_NPC_CLERIC_KNOWLEDGE_LEVEL_8"
     type "StatusData"
     data "StatusType" "BOOST"
-    using "GOON_NPC_SOMETHING_SOMETHING_PROGRESSION_TEMPLATE"
-    data "StackPriority" "7"
-    data "Passives" ""
-    data "Boosts" "UnlockSpell(Target_Command_Container);UnlockSpell(Target_Sleep)UnlockSpell(Shout_KnowledgeOfTheAges);UnlockSpell(Target_CalmEmotions);UnlockSpell(Target_HoldPerson);UnlockSpell(Target_SpeakWithDead);UnlockSpell(Target_Slow);UnlockSpell(Shout_ReadThoughts);UnlockSpell(Shout_SpeakWithAnimals_KnowledgeCleric);UnlockSpell(Target_Confusion);UnlockSpell(Target_ResilientSphere)"
+    using "GOON_NPC_CLERIC_KNOWLEDGE_PROGRESSION_TEMPLATE"
+    data "StackPriority" "8"
+    data "Passives" "PotentSpellcasting"
+    data "Boosts" "UnlockSpell(Target_Command_Container);UnlockSpell(Target_Sleep);UnlockSpell(Shout_KnowledgeOfTheAges);UnlockSpell(Target_CalmEmotions);UnlockSpell(Target_HoldPerson);UnlockSpell(Target_SpeakWithDead);UnlockSpell(Target_Slow);UnlockSpell(Shout_ReadThoughts);UnlockSpell(Shout_SpeakWithAnimals_KnowledgeCleric);UnlockSpell(Target_Confusion);UnlockSpell(Target_ResilientSphere)"
 
     // <node id="Progression">
     //     <attribute id="Level" type="uint8" value="8"/>
@@ -326,13 +491,13 @@
     //     <attribute id="TableUUID" type="guid" value="4709e126-1b45-4baf-93a2-be66ed4487d2"/>
     //     <attribute id="UUID" type="guid" value="8424b93e-7546-4c9e-ab2d-e26fa7ccf7c5"/>
 
-    new entry "GOON_NPC_CLERIC_KNOWLEDGE_LEVEL_8"
+    new entry "GOON_NPC_CLERIC_KNOWLEDGE_LEVEL_9"
     type "StatusData"
     data "StatusType" "BOOST"
-    using "GOON_NPC_SOMETHING_SOMETHING_PROGRESSION_TEMPLATE"
-    data "StackPriority" "8"
+    using "GOON_NPC_CLERIC_KNOWLEDGE_PROGRESSION_TEMPLATE"
+    data "StackPriority" "9"
     data "Passives" "PotentSpellcasting"
-    data "Boosts" "UnlockSpell(Target_Command_Container);UnlockSpell(Target_Sleep)UnlockSpell(Shout_KnowledgeOfTheAges);UnlockSpell(Target_CalmEmotions);UnlockSpell(Target_HoldPerson);UnlockSpell(Target_SpeakWithDead);UnlockSpell(Target_Slow);UnlockSpell(Shout_ReadThoughts);UnlockSpell(Shout_SpeakWithAnimals_KnowledgeCleric);UnlockSpell(Target_Confusion);UnlockSpell(Target_ResilientSphere)"
+    data "Boosts" "UnlockSpell(Target_Command_Container);UnlockSpell(Target_Sleep);UnlockSpell(Shout_KnowledgeOfTheAges);UnlockSpell(Target_CalmEmotions);UnlockSpell(Target_HoldPerson);UnlockSpell(Target_SpeakWithDead);UnlockSpell(Target_Slow);UnlockSpell(Shout_ReadThoughts);UnlockSpell(Shout_SpeakWithAnimals_KnowledgeCleric);UnlockSpell(Target_Confusion);UnlockSpell(Target_ResilientSphere);UnlockSpell(Target_DominatePerson);UnlockSpell(Throw_Telekinesis)"
 
     // <node id="Progression">
     //     <attribute id="Level" type="uint8" value="9"/>
@@ -341,12 +506,3 @@
     //     <attribute id="Selectors" type="LSString" value="AddSpells(db3bbbe0-01cc-4e35-8186-0c6757182ec4,ClericKnowledgeDomainSpells,,,AlwaysPrepared)"/>
     //     <attribute id="TableUUID" type="guid" value="4709e126-1b45-4baf-93a2-be66ed4487d2"/>
     //     <attribute id="UUID" type="guid" value="aa87cb08-6669-4ee8-9b17-e3f977c2c3b2"/>
-
-    new entry "GOON_NPC_CLERIC_KNOWLEDGE_LEVEL_9"
-    type "StatusData"
-    data "StatusType" "BOOST"
-    using "GOON_NPC_SOMETHING_SOMETHING_PROGRESSION_TEMPLATE"
-    data "StackPriority" "9"
-    data "Passives" "PotentSpellcasting"
-    data "Boosts" "UnlockSpell(Target_Command_Container);UnlockSpell(Target_Sleep)UnlockSpell(Shout_KnowledgeOfTheAges);UnlockSpell(Target_CalmEmotions);UnlockSpell(Target_HoldPerson);UnlockSpell(Target_SpeakWithDead);UnlockSpell(Target_Slow);UnlockSpell(Shout_ReadThoughts);UnlockSpell(Shout_SpeakWithAnimals_KnowledgeCleric);UnlockSpell(Target_Confusion);UnlockSpell(Target_ResilientSphere);UnlockSpell(Target_DominatePerson);UnlockSpell(Throw_Telekinesis)"
-
