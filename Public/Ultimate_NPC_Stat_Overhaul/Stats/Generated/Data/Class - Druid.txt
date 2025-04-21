@@ -34,12 +34,30 @@
     data "RemoveConditions" "not HasPassive('CX_Druid_Boost') or HasStatus('Goon_Druid_NPC_Progressions')"
 
 // Progression statuses
+    new entry "GOON_NPC_DRUID_LEVEL_1_MULTICLASS"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_DRUID_PROGRESSION_TEMPLATE"
+    data "StackPriority" "1"
+    data "Passives" "UnlockedSpellSlotLevel1;CX_Magic_Boost"
+    data "Boosts" "Tag(DRUID);Proficiency(LightArmor);Proficiency(MediumArmor);Proficiency(Shields)"
+
+    // <node id="Progression">
+    //     <attribute id="Boosts" type="LSString" value="Proficiency(LightArmor);Proficiency(MediumArmor);Proficiency(Shields)"/>
+    //     <attribute id="IsMulticlass" type="bool" value="true"/>
+    //     <attribute id="Level" type="uint8" value="1"/>
+    //     <attribute id="Name" type="LSString" value="Druid"/>
+    //     <attribute id="ProgressionType" type="uint8" value="0"/>
+    //     <attribute id="Selectors" type="LSString" value="SelectSpells(b8faf12f-ca42-45c0-84f8-6951b526182a,2,0,,,,AlwaysPrepared);AddSpells(2cd54137-2fe5-4100-aad3-df64735a8145)"/>
+    //     <attribute id="TableUUID" type="guid" value="6e7b7bad-e122-4679-8b3c-8f8987a9d466"/>
+    //     <attribute id="UUID" type="guid" value="a13110fc-3555-4b33-9b8a-47f70586f567"/>
+
     new entry "GOON_NPC_DRUID_LEVEL_1"
     type "StatusData"
     data "StatusType" "BOOST"
     using "GOON_NPC_DRUID_PROGRESSION_TEMPLATE"
     data "StackPriority" "1"
-    data "Passives" "UnlockedSpellSlotLevel1"
+    data "Passives" "UnlockedSpellSlotLevel1;CX_Magic_Boost"
     data "Boosts" "Tag(DRUID);ActionResource(SpellSlot,2,1);ProficiencyBonus(SavingThrow,Wisdom);ProficiencyBonus(SavingThrow,Intelligence);Proficiency(LightArmor);Proficiency(MediumArmor);Proficiency(Shields);Proficiency(Clubs);Proficiency(Daggers);Proficiency(Javelins);Proficiency(Maces);Proficiency(Quarterstaffs);Proficiency(Scimitars);Proficiency(Sickles);Proficiency(Spears)"
 
     new entry "GOON_NPC_DRUID_LEVEL_2"

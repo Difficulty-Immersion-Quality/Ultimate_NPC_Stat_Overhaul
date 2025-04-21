@@ -37,12 +37,30 @@
     data "RemoveConditions" "not HasPassive('CX_Bard_Boost') or HasStatus('Goon_Bard_NPC_Progressions')"
 
 // Progression statuses
+    new entry "GOON_NPC_BARD_LEVEL_1_MULTICLASS"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_BARD_PROGRESSION_TEMPLATE"
+    data "StackPriority" "1"
+    data "Passives" "BardicInspiration;BardSpellcasting;UnlockedSpellSlotLevel1;CX_Magic_Boost"
+    data "Boosts" "Tag(BARD);ActionResource(BardicInspiration,3,0,d6);Proficiency(LightArmor);Proficiency(MusicalInstrument);Attribute(UseMusicalInstrumentForCasting)"
+
+    // <node id="Progression">
+    //     <attribute id="Boosts" type="LSString" value="Proficiency(Shields);Proficiency(SimpleWeapons);Proficiency(MartialWeapons);ActionResource(Rage,2,0)"/>
+    //     <attribute id="IsMulticlass" type="bool" value="true"/>
+    //     <attribute id="Level" type="uint8" value="1"/>
+    //     <attribute id="Name" type="LSString" value="Barbarian"/>
+    //     <attribute id="PassivesAdded" type="LSString" value="RageUnlock;UnarmouredDefence_Barbarian;Rage_Armour_Message;Rage_NoHeavyArmour_VFX"/>
+    //     <attribute id="ProgressionType" type="uint8" value="0"/>
+    //     <attribute id="TableUUID" type="guid" value="60bbcc97-5381-4898-bc15-908c072895de"/>
+    //     <attribute id="UUID" type="guid" value="2dc1015e-6fd9-48aa-923e-eecaf72a83f1"/>
+
     new entry "GOON_NPC_BARD_LEVEL_1"
     type "StatusData"
     data "StatusType" "BOOST"
     using "GOON_NPC_BARD_PROGRESSION_TEMPLATE"
     data "StackPriority" "1"
-    data "Passives" "BardicInspiration;BardSpellcasting;UnlockedSpellSlotLevel1"
+    data "Passives" "BardicInspiration;BardSpellcasting;UnlockedSpellSlotLevel1;CX_Magic_Boost"
     data "Boosts" "Tag(BARD);ActionResource(SpellSlot,2,1);ActionResource(BardicInspiration,3,0,d6);ProficiencyBonus(SavingThrow,Dexterity);ProficiencyBonus(SavingThrow,Charisma);Proficiency(LightArmor);Proficiency(SimpleWeapons);Proficiency(HandCrossbows);Proficiency(Longswords);Proficiency(Rapiers);Proficiency(Shortswords);Proficiency(MusicalInstrument);Attribute(UseMusicalInstrumentForCasting)"
 
     new entry "GOON_NPC_BARD_LEVEL_2"
