@@ -111,7 +111,7 @@
                     <attribute id="Level" type="uint8" value="1"/>
                     <attribute id="Name" type="LSString" value="NPC_Bard"/>
                     <!-- <attribute id="PassivesAdded" type="LSString" value="BardicInspiration;BardSpellcasting"/> -->
-                    <attribute id="PassivesAdded" type="LSString" value="BardicInspiration;BardSpellcasting;UnlockedSpellSlotLevel1;Goon_Bard_NPC_Progressions"/>
+                    <attribute id="PassivesAdded" type="LSString" value="BardicInspiration;BardSpellcasting;UnlockedSpellSlotLevel1;Goon_Bard_NPC_Progressions;CX_Bard_Boost;CX_Magic_Boost"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
                     <!-- <attribute id="Selectors" type="LSString" value="SelectSkills(ed664663-93b9-4070-a54b-3c7b19c0e7b4,3);SelectSpells(61f79a30-2cac-4a7a-b5fe-50c89d307dd6,2,0,BardCantrip,,,AlwaysPrepared);SelectSpells(dcb45167-86bd-4297-9b9d-c295be51af5b,4,0,BardSpells);SelectEquipment(aab8c5b5-eacf-4867-8e5f-bd4de3a9132e,1,BardInstrument);SelectAbilityBonus(b9149c8e-52c8-46e5-9cb6-fc39301c05fe,AbilityBonus,2,1)"/> -->
                     <attribute id="TableUUID" type="guid" value="cbe5059f-7a9f-4b98-be6a-07c9cd8e02c2"/>
@@ -235,7 +235,7 @@
                     <attribute id="Level" type="uint8" value="1"/>
                     <attribute id="Name" type="LSString" value="NPC_Cleric"/>
                     <!-- <attribute id="PassivesAdded" type="LSString" value=""/> -->
-                    <attribute id="PassivesAdded" type="LSString" value="DomainSpells;UnlockedSpellSlotLevel1;Goon_Cleric_NPC_Progressions"/>
+                    <attribute id="PassivesAdded" type="LSString" value="DomainSpells;UnlockedSpellSlotLevel1;Goon_Cleric_NPC_Progressions;CX_Cleric_Boost;CX_Magic_Boost"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
                     <!-- <attribute id="Selectors" type="LSString" value="SelectSkills(6cb9d731-a518-46f0-b20e-9e2bf18e6acd,2);SelectSpells(2f43a103-5bf1-4534-b14f-663decc0c525,3,0,,,,AlwaysPrepared);AddSpells(269d1a3b-eed8-4131-8901-a562238f5289);SelectAbilityBonus(b9149c8e-52c8-46e5-9cb6-fc39301c05fe,AbilityBonus,2,1)"/> -->
                     <attribute id="TableUUID" type="guid" value="36c3f8de-3293-4d7b-92bc-ceb3c569244b"/>
@@ -348,7 +348,7 @@
                     <attribute id="Level" type="uint8" value="1"/>
                     <attribute id="Name" type="LSString" value="NPC_Druid"/>
                     <!-- <attribute id="PassivesAdded" type="LSString" value=""/> -->
-                    <attribute id="PassivesAdded" type="LSString" value="UnlockedSpellSlotLevel1;Goon_Druid_NPC_Progressions"/>
+                    <attribute id="PassivesAdded" type="LSString" value="UnlockedSpellSlotLevel1;Goon_Druid_NPC_Progressions;CX_Druid_Boost;CX_Magic_Boost"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
                     <!-- <attribute id="Selectors" type="LSString" value="SelectSkills(a3e28a89-3c36-4516-a1ed-c8061ba7f166,2);SelectSpells(b8faf12f-ca42-45c0-84f8-6951b526182a,2,0,,,,AlwaysPrepared);AddSpells(2cd54137-2fe5-4100-aad3-df64735a8145);SelectAbilityBonus(b9149c8e-52c8-46e5-9cb6-fc39301c05fe,AbilityBonus,2,1)"/> -->
                     <attribute id="TableUUID" type="guid" value="7e76da16-650c-4a6e-85b0-f9e23a7f5a60"/>
