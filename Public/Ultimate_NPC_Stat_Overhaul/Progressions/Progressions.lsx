@@ -1722,7 +1722,7 @@
                     <attribute id="Level" type="uint8" value="1"/>
                     <attribute id="Name" type="LSString" value="NPC_FlamingFist_Melee_Cleric"/>
                     <!-- <attribute id="PassivesAdded" type="LSString" value=""/> -->
-                    <attribute id="PassivesAdded" type="LSString" value="Goon_Flaming_Fist_Melee_Cleric_NPC_Progressions"/>
+                    <attribute id="PassivesAdded" type="LSString" value="Goon_Flaming_Fist_Melee_Cleric_NPC_Progressions;Goon_NPC_Cleric_Life_Flaming_Fist;Goon_NPC_Cleric_Light_Flaming_Fist;Goon_NPC_Cleric_Knowledge_Flaming_Fist;Goon_NPC_Cleric_Nature_Flaming_Fist;Goon_NPC_Cleric_Tempest_Flaming_Fist;Goon_NPC_Cleric_Trickery_Flaming_Fist;Goon_NPC_Cleric_War_Flaming_Fist"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
                     <attribute id="TableUUID" type="guid" value="70c3eb7e-383f-11ed-a261-0242ac120002"/>
                     <attribute id="UUID" type="guid" value="84187594-9a5e-4607-beaa-bedbe0d5390a"/>
