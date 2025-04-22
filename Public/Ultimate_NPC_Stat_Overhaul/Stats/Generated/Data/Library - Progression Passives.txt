@@ -18,12 +18,6 @@ using "Goon_NPC_Progressions_Template"
 // Class Progressions: Flaming Fist Ranger
 data "DisplayName" "he50c053cg4e2dg479fg88c9g0d84fed9bde6;1"
 
-new entry "Goon_Flaming_Fist_Melee_Cleric_NPC_Progressions"
-type "PassiveData"
-using "Goon_NPC_Progressions_Template"
-// Class Progressions: Flaming Fist Cleric
-data "DisplayName" "h07007e35g6fbdg444fga1c2gf8dfc9258269;1"
-
 new entry "Goon_Flaming_Fist_Melee_Caster_NPC_Progressions"
 type "PassiveData"
 using "Goon_NPC_Progressions_Template"
