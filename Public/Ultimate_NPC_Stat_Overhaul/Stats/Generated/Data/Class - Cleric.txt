@@ -20,11 +20,8 @@
     data "Icon" "Action_DivineIntervention_Attack"
     data "Boosts" ""
     data "StatsFunctorContext" "OnCreate;OnStatusApplied;OnStatusRemoved"
-    data "Conditions" "(not HasPassive('Goon_Cleric_NPC_Progressions'))"
-    data "StatsFunctors" "IF(not CharacterLevelGreaterThan(1,GetOwner(context.Source))):ApplyStatus(GOON_NPC_CLERIC_LEVEL_1,100,-1);IF(CharacterLevelGreaterThan(1,GetOwner(context.Source)) and not CharacterLevelGreaterThan(2,GetOwner(context.Source))):ApplyStatus(GOON_NPC_CLERIC_LEVEL_2,100,-1);IF(CharacterLevelGreaterThan(2,GetOwner(context.Source)) and not CharacterLevelGreaterThan(3,GetOwner(context.Source))):ApplyStatus(GOON_NPC_CLERIC_LEVEL_3,100,-1);IF(CharacterLevelGreaterThan(3,GetOwner(context.Source)) and not CharacterLevelGreaterThan(4,GetOwner(context.Source))):ApplyStatus(GOON_NPC_CLERIC_LEVEL_4,100,-1);IF(CharacterLevelGreaterThan(4,GetOwner(context.Source)) and not CharacterLevelGreaterThan(5,GetOwner(context.Source))):ApplyStatus(GOON_NPC_CLERIC_LEVEL_5,100,-1);IF(CharacterLevelGreaterThan(5,GetOwner(context.Source)) and not CharacterLevelGreaterThan(6,GetOwner(context.Source))):ApplyStatus(GOON_NPC_CLERIC_LEVEL_6,100,-1);IF(CharacterLevelGreaterThan(6,GetOwner(context.Source)) and not CharacterLevelGreaterThan(7,GetOwner(context.Source))):ApplyStatus(GOON_NPC_CLERIC_LEVEL_7,100,-1);IF(CharacterLevelGreaterThan(7,GetOwner(context.Source)) and not CharacterLevelGreaterThan(8,GetOwner(context.Source))):ApplyStatus(GOON_NPC_CLERIC_LEVEL_8,100,-1);IF(CharacterLevelGreaterThan(8,GetOwner(context.Source)) and not CharacterLevelGreaterThan(9,GetOwner(context.Source))):ApplyStatus(GOON_NPC_CLERIC_LEVEL_9,100,-1);IF(CharacterLevelGreaterThan(9,GetOwner(context.Source)) and not CharacterLevelGreaterThan(10,GetOwner(context.Source))):ApplyStatus(GOON_NPC_CLERIC_LEVEL_10,100,-1);IF(CharacterLevelGreaterThan(10,GetOwner(context.Source)) and not CharacterLevelGreaterThan(11,GetOwner(context.Source))):ApplyStatus(GOON_NPC_CLERIC_LEVEL_11,100,-1);IF(CharacterLevelGreaterThan(11,GetOwner(context.Source))):ApplyStatus(GOON_NPC_CLERIC_LEVEL_12,100,-1)"
-
-    //  and not CharacterLevelGreaterThan(12,GetOwner(context.Source))
-    // ;IF(CharacterLevelGreaterThan(12,GetOwner(context.Source)) and not CharacterLevelGreaterThan(13,GetOwner(context.Source))):ApplyStatus(GOON_NPC_CLERIC_LEVEL_13,100,-1);IF(CharacterLevelGreaterThan(13,GetOwner(context.Source)) and not CharacterLevelGreaterThan(14,GetOwner(context.Source))):ApplyStatus(GOON_NPC_CLERIC_LEVEL_14,100,-1);IF(CharacterLevelGreaterThan(14,GetOwner(context.Source)) and not CharacterLevelGreaterThan(15,GetOwner(context.Source))):ApplyStatus(GOON_NPC_CLERIC_LEVEL_15,100,-1);IF(CharacterLevelGreaterThan(15,GetOwner(context.Source)) and not CharacterLevelGreaterThan(16,GetOwner(context.Source))):ApplyStatus(GOON_NPC_CLERIC_LEVEL_16,100,-1);IF(CharacterLevelGreaterThan(16,GetOwner(context.Source)) and not CharacterLevelGreaterThan(17,GetOwner(context.Source))):ApplyStatus(GOON_NPC_CLERIC_LEVEL_17,100,-1);IF(CharacterLevelGreaterThan(17,GetOwner(context.Source)) and not CharacterLevelGreaterThan(18,GetOwner(context.Source))):ApplyStatus(GOON_NPC_CLERIC_LEVEL_18,100,-1);IF(CharacterLevelGreaterThan(18,GetOwner(context.Source)) and not CharacterLevelGreaterThan(19,GetOwner(context.Source))):ApplyStatus(GOON_NPC_CLERIC_LEVEL_19,100,-1);IF(CharacterLevelGreaterThan(19,GetOwner(context.Source))):ApplyStatus(GOON_NPC_CLERIC_LEVEL_20,100,-1)
+    data "Conditions" "(not HasPassive('Goon_Cleric_NPC_Progressions') and not HasPassive('Goon_Flaming_Fist_Melee_Cleric_NPC_Progressions'))"
+    data "StatsFunctors" "IF(not CharacterLevelGreaterThan(1,GetOwner(context.Source))):ApplyStatus(GOON_NPC_CLERIC_LVL_1,100,-1);IF(CharacterLevelGreaterThan(1,GetOwner(context.Source)) and not CharacterLevelGreaterThan(2,GetOwner(context.Source))):ApplyStatus(GOON_NPC_CLERIC_LVL_2,100,-1);IF(CharacterLevelGreaterThan(2,GetOwner(context.Source)) and not CharacterLevelGreaterThan(3,GetOwner(context.Source))):ApplyStatus(GOON_NPC_CLERIC_LVL_3,100,-1);IF(CharacterLevelGreaterThan(3,GetOwner(context.Source)) and not CharacterLevelGreaterThan(4,GetOwner(context.Source))):ApplyStatus(GOON_NPC_CLERIC_LVL_4,100,-1);IF(CharacterLevelGreaterThan(4,GetOwner(context.Source)) and not CharacterLevelGreaterThan(5,GetOwner(context.Source))):ApplyStatus(GOON_NPC_CLERIC_LVL_5,100,-1);IF(CharacterLevelGreaterThan(5,GetOwner(context.Source)) and not CharacterLevelGreaterThan(6,GetOwner(context.Source))):ApplyStatus(GOON_NPC_CLERIC_LVL_6,100,-1);IF(CharacterLevelGreaterThan(6,GetOwner(context.Source)) and not CharacterLevelGreaterThan(7,GetOwner(context.Source))):ApplyStatus(GOON_NPC_CLERIC_LVL_7,100,-1);IF(CharacterLevelGreaterThan(7,GetOwner(context.Source)) and not CharacterLevelGreaterThan(8,GetOwner(context.Source))):ApplyStatus(GOON_NPC_CLERIC_LVL_8,100,-1);IF(CharacterLevelGreaterThan(8,GetOwner(context.Source)) and not CharacterLevelGreaterThan(9,GetOwner(context.Source))):ApplyStatus(GOON_NPC_CLERIC_LVL_9,100,-1);IF(CharacterLevelGreaterThan(9,GetOwner(context.Source)) and not CharacterLevelGreaterThan(10,GetOwner(context.Source))):ApplyStatus(GOON_NPC_CLERIC_LVL_10,100,-1);IF(CharacterLevelGreaterThan(10,GetOwner(context.Source)) and not CharacterLevelGreaterThan(11,GetOwner(context.Source))):ApplyStatus(GOON_NPC_CLERIC_LVL_11,100,-1);IF(CharacterLevelGreaterThan(11,GetOwner(context.Source)) and not CharacterLevelGreaterThan(12,GetOwner(context.Source))):ApplyStatus(GOON_NPC_CLERIC_LVL_12,100,-1);IF(CharacterLevelGreaterThan(12,GetOwner(context.Source)) and not CharacterLevelGreaterThan(13,GetOwner(context.Source))):ApplyStatus(GOON_NPC_CLERIC_LVL_13,100,-1);IF(CharacterLevelGreaterThan(13,GetOwner(context.Source)) and not CharacterLevelGreaterThan(14,GetOwner(context.Source))):ApplyStatus(GOON_NPC_CLERIC_LVL_14,100,-1);IF(CharacterLevelGreaterThan(14,GetOwner(context.Source)) and not CharacterLevelGreaterThan(15,GetOwner(context.Source))):ApplyStatus(GOON_NPC_CLERIC_LVL_15,100,-1);IF(CharacterLevelGreaterThan(15,GetOwner(context.Source)) and not CharacterLevelGreaterThan(16,GetOwner(context.Source))):ApplyStatus(GOON_NPC_CLERIC_LVL_16,100,-1);IF(CharacterLevelGreaterThan(16,GetOwner(context.Source)) and not CharacterLevelGreaterThan(17,GetOwner(context.Source))):ApplyStatus(GOON_NPC_CLERIC_LVL_17,100,-1);IF(CharacterLevelGreaterThan(17,GetOwner(context.Source)) and not CharacterLevelGreaterThan(18,GetOwner(context.Source))):ApplyStatus(GOON_NPC_CLERIC_LVL_18,100,-1);IF(CharacterLevelGreaterThan(18,GetOwner(context.Source)) and not CharacterLevelGreaterThan(19,GetOwner(context.Source))):ApplyStatus(GOON_NPC_CLERIC_LVL_19,100,-1);IF(CharacterLevelGreaterThan(19,GetOwner(context.Source))):ApplyStatus(GOON_NPC_CLERIC_LVL_20,100,-1)"
 
 // Template
     new entry "GOON_NPC_CLERIC_PROGRESSION_TEMPLATE"
@@ -37,7 +34,7 @@
     data "RemoveConditions" "not HasPassive('CX_Cleric_Boost') or HasStatus('Goon_Cleric_NPC_Progressions')"
 
 // Progression statuses
-    new entry "GOON_NPC_CLERIC_LEVEL_1_MULTICLASS"
+    new entry "GOON_NPC_CLERIC_LVL_1_MULTICLASS"
     type "StatusData"
     data "StatusType" "BOOST"
     using "GOON_NPC_CLERIC_PROGRESSION_TEMPLATE"
@@ -56,7 +53,7 @@
     //     <attribute id="TableUUID" type="guid" value="64474b62-b4f5-46b3-b94a-c676c6da3116"/>
     //     <attribute id="UUID" type="guid" value="366cde9c-db0c-43ce-a49c-fb140e084b3c"/>
 
-    new entry "GOON_NPC_CLERIC_LEVEL_1"
+    new entry "GOON_NPC_CLERIC_LVL_1"
     type "StatusData"
     data "StatusType" "BOOST"
     using "GOON_NPC_CLERIC_PROGRESSION_TEMPLATE"
@@ -64,7 +61,7 @@
     data "Passives" "DomainSpells;UnlockedSpellSlotLevel1;CX_Magic_Boost"
     data "Boosts" "Tag(CLERIC);ActionResource(SpellSlot,2,1);ProficiencyBonus(SavingThrow,Wisdom);ProficiencyBonus(SavingThrow,Charisma);Proficiency(LightArmor);Proficiency(MediumArmor);Proficiency(Shields);Proficiency(SimpleWeapons);Proficiency(Morningstars);Proficiency(Flails)"
 
-    new entry "GOON_NPC_CLERIC_LEVEL_2"
+    new entry "GOON_NPC_CLERIC_LVL_2"
     type "StatusData"
     data "StatusType" "BOOST"
     using "GOON_NPC_CLERIC_PROGRESSION_TEMPLATE"
@@ -72,7 +69,7 @@
     data "Passives" "DomainSpells;UnlockedSpellSlotLevel1"
     data "Boosts" "Tag(CLERIC);ActionResource(SpellSlot,3,1);ProficiencyBonus(SavingThrow,Wisdom);ProficiencyBonus(SavingThrow,Charisma);Proficiency(LightArmor);Proficiency(MediumArmor);Proficiency(Shields);Proficiency(SimpleWeapons);Proficiency(Morningstars);Proficiency(Flails);UnlockSpell(Shout_TurnUndead);ActionResource(ChannelDivinity,1,0)"
 
-    new entry "GOON_NPC_CLERIC_LEVEL_3"
+    new entry "GOON_NPC_CLERIC_LVL_3"
     type "StatusData"
     data "StatusType" "BOOST"
     using "GOON_NPC_CLERIC_PROGRESSION_TEMPLATE"
@@ -80,7 +77,7 @@
     data "Passives" "DomainSpells;UnlockedSpellSlotLevel1;UnlockedSpellSlotLevel2"
     data "Boosts" "Tag(CLERIC);ActionResource(SpellSlot,4,1);ProficiencyBonus(SavingThrow,Wisdom);ProficiencyBonus(SavingThrow,Charisma);Proficiency(LightArmor);Proficiency(MediumArmor);Proficiency(Shields);Proficiency(SimpleWeapons);Proficiency(Morningstars);Proficiency(Flails);UnlockSpell(Shout_TurnUndead);ActionResource(ChannelDivinity,1,0);ActionResource(SpellSlot,2,2)"
 
-    new entry "GOON_NPC_CLERIC_LEVEL_4"
+    new entry "GOON_NPC_CLERIC_LVL_4"
     type "StatusData"
     data "StatusType" "BOOST"
     using "GOON_NPC_CLERIC_PROGRESSION_TEMPLATE"
@@ -88,7 +85,7 @@
     data "Passives" "DomainSpells;UnlockedSpellSlotLevel1;UnlockedSpellSlotLevel2"
     data "Boosts" "Tag(CLERIC);ActionResource(SpellSlot,4,1);ProficiencyBonus(SavingThrow,Wisdom);ProficiencyBonus(SavingThrow,Charisma);Proficiency(LightArmor);Proficiency(MediumArmor);Proficiency(Shields);Proficiency(SimpleWeapons);Proficiency(Morningstars);Proficiency(Flails);UnlockSpell(Shout_TurnUndead);ActionResource(ChannelDivinity,1,0);ActionResource(SpellSlot,3,2)"
 
-    new entry "GOON_NPC_CLERIC_LEVEL_5"
+    new entry "GOON_NPC_CLERIC_LVL_5"
     type "StatusData"
     data "StatusType" "BOOST"
     using "GOON_NPC_CLERIC_PROGRESSION_TEMPLATE"
@@ -96,7 +93,7 @@
     data "Passives" "DomainSpells;UnlockedSpellSlotLevel1;UnlockedSpellSlotLevel2;DestroyUndead;UnlockedSpellSlotLevel3"
     data "Boosts" "Tag(CLERIC);ActionResource(SpellSlot,4,1);ProficiencyBonus(SavingThrow,Wisdom);ProficiencyBonus(SavingThrow,Charisma);Proficiency(LightArmor);Proficiency(MediumArmor);Proficiency(Shields);Proficiency(SimpleWeapons);Proficiency(Morningstars);Proficiency(Flails);UnlockSpell(Shout_TurnUndead);ActionResource(ChannelDivinity,1,0);ActionResource(SpellSlot,3,2);ActionResource(SpellSlot,2,3)"
 
-    new entry "GOON_NPC_CLERIC_LEVEL_6"
+    new entry "GOON_NPC_CLERIC_LVL_6"
     type "StatusData"
     data "StatusType" "BOOST"
     using "GOON_NPC_CLERIC_PROGRESSION_TEMPLATE"
@@ -104,7 +101,7 @@
     data "Passives" "DomainSpells;UnlockedSpellSlotLevel1;UnlockedSpellSlotLevel2;DestroyUndead;UnlockedSpellSlotLevel3"
     data "Boosts" "Tag(CLERIC);ActionResource(SpellSlot,4,1);ProficiencyBonus(SavingThrow,Wisdom);ProficiencyBonus(SavingThrow,Charisma);Proficiency(LightArmor);Proficiency(MediumArmor);Proficiency(Shields);Proficiency(SimpleWeapons);Proficiency(Morningstars);Proficiency(Flails);UnlockSpell(Shout_TurnUndead);ActionResource(ChannelDivinity,2,0);ActionResource(SpellSlot,3,2);ActionResource(SpellSlot,3,3)"
 
-    new entry "GOON_NPC_CLERIC_LEVEL_7"
+    new entry "GOON_NPC_CLERIC_LVL_7"
     type "StatusData"
     data "StatusType" "BOOST"
     using "GOON_NPC_CLERIC_PROGRESSION_TEMPLATE"
@@ -112,7 +109,7 @@
     data "Passives" "DomainSpells;UnlockedSpellSlotLevel1;UnlockedSpellSlotLevel2;DestroyUndead;UnlockedSpellSlotLevel3"
     data "Boosts" "Tag(CLERIC);ActionResource(SpellSlot,4,1);ProficiencyBonus(SavingThrow,Wisdom);ProficiencyBonus(SavingThrow,Charisma);Proficiency(LightArmor);Proficiency(MediumArmor);Proficiency(Shields);Proficiency(SimpleWeapons);Proficiency(Morningstars);Proficiency(Flails);UnlockSpell(Shout_TurnUndead);ActionResource(ChannelDivinity,2,0);ActionResource(SpellSlot,3,2);ActionResource(SpellSlot,3,3);ActionResource(SpellSlot,1,4)"
 
-    new entry "GOON_NPC_CLERIC_LEVEL_8"
+    new entry "GOON_NPC_CLERIC_LVL_8"
     type "StatusData"
     data "StatusType" "BOOST"
     using "GOON_NPC_CLERIC_PROGRESSION_TEMPLATE"
@@ -120,7 +117,7 @@
     data "Passives" "DomainSpells;UnlockedSpellSlotLevel1;UnlockedSpellSlotLevel2;DestroyUndead;UnlockedSpellSlotLevel3"
     data "Boosts" "Tag(CLERIC);ActionResource(SpellSlot,4,1);ProficiencyBonus(SavingThrow,Wisdom);ProficiencyBonus(SavingThrow,Charisma);Proficiency(LightArmor);Proficiency(MediumArmor);Proficiency(Shields);Proficiency(SimpleWeapons);Proficiency(Morningstars);Proficiency(Flails);UnlockSpell(Shout_TurnUndead);ActionResource(ChannelDivinity,2,0);ActionResource(SpellSlot,3,2);ActionResource(SpellSlot,3,3);ActionResource(SpellSlot,2,4)"
 
-    new entry "GOON_NPC_CLERIC_LEVEL_9"
+    new entry "GOON_NPC_CLERIC_LVL_9"
     type "StatusData"
     data "StatusType" "BOOST"
     using "GOON_NPC_CLERIC_PROGRESSION_TEMPLATE"
@@ -128,7 +125,7 @@
     data "Passives" "DomainSpells;UnlockedSpellSlotLevel1;UnlockedSpellSlotLevel2;DestroyUndead;UnlockedSpellSlotLevel3"
     data "Boosts" "Tag(CLERIC);ActionResource(SpellSlot,4,1);ProficiencyBonus(SavingThrow,Wisdom);ProficiencyBonus(SavingThrow,Charisma);Proficiency(LightArmor);Proficiency(MediumArmor);Proficiency(Shields);Proficiency(SimpleWeapons);Proficiency(Morningstars);Proficiency(Flails);UnlockSpell(Shout_TurnUndead);ActionResource(ChannelDivinity,2,0);ActionResource(SpellSlot,3,2);ActionResource(SpellSlot,3,3);ActionResource(SpellSlot,3,4);ActionResource(SpellSlot,1,5)"
 
-    new entry "GOON_NPC_CLERIC_LEVEL_10"
+    new entry "GOON_NPC_CLERIC_LVL_10"
     type "StatusData"
     data "StatusType" "BOOST"
     using "GOON_NPC_CLERIC_PROGRESSION_TEMPLATE"
@@ -136,7 +133,7 @@
     data "Passives" "DomainSpells;UnlockedSpellSlotLevel1;UnlockedSpellSlotLevel2;DestroyUndead;UnlockedSpellSlotLevel3;DivineIntervention"
     data "Boosts" "Tag(CLERIC);ActionResource(SpellSlot,4,1);ProficiencyBonus(SavingThrow,Wisdom);ProficiencyBonus(SavingThrow,Charisma);Proficiency(LightArmor);Proficiency(MediumArmor);Proficiency(Shields);Proficiency(SimpleWeapons);Proficiency(Morningstars);Proficiency(Flails);UnlockSpell(Shout_TurnUndead);ActionResource(ChannelDivinity,2,0);ActionResource(SpellSlot,3,2);ActionResource(SpellSlot,3,3);ActionResource(SpellSlot,3,4);ActionResource(SpellSlot,2,5)"
 
-    new entry "GOON_NPC_CLERIC_LEVEL_11"
+    new entry "GOON_NPC_CLERIC_LVL_11"
     type "StatusData"
     data "StatusType" "BOOST"
     using "GOON_NPC_CLERIC_PROGRESSION_TEMPLATE"
@@ -144,7 +141,7 @@
     data "Passives" "DomainSpells;UnlockedSpellSlotLevel1;UnlockedSpellSlotLevel2;DestroyUndead;UnlockedSpellSlotLevel3;DivineIntervention"
     data "Boosts" "Tag(CLERIC);ActionResource(SpellSlot,4,1);ProficiencyBonus(SavingThrow,Wisdom);ProficiencyBonus(SavingThrow,Charisma);Proficiency(LightArmor);Proficiency(MediumArmor);Proficiency(Shields);Proficiency(SimpleWeapons);Proficiency(Morningstars);Proficiency(Flails);UnlockSpell(Shout_TurnUndead);ActionResource(ChannelDivinity,2,0);ActionResource(SpellSlot,3,2);ActionResource(SpellSlot,3,3);ActionResource(SpellSlot,3,4);ActionResource(SpellSlot,2,5);ActionResource(SpellSlot,1,6)"
 
-    new entry "GOON_NPC_CLERIC_LEVEL_12"
+    new entry "GOON_NPC_CLERIC_LVL_12"
     type "StatusData"
     data "StatusType" "BOOST"
     using "GOON_NPC_CLERIC_PROGRESSION_TEMPLATE"
@@ -153,69 +150,53 @@
     data "Boosts" "Tag(CLERIC);ActionResource(SpellSlot,4,1);ProficiencyBonus(SavingThrow,Wisdom);ProficiencyBonus(SavingThrow,Charisma);Proficiency(LightArmor);Proficiency(MediumArmor);Proficiency(Shields);Proficiency(SimpleWeapons);Proficiency(Morningstars);Proficiency(Flails);UnlockSpell(Shout_TurnUndead);ActionResource(ChannelDivinity,2,0);ActionResource(SpellSlot,3,2);ActionResource(SpellSlot,3,3);ActionResource(SpellSlot,3,4);ActionResource(SpellSlot,2,5);ActionResource(SpellSlot,1,6)"
 
 // Expansion levels 13-20
-    new entry "GOON_NPC_CLERIC_LEVEL_13"
+    new entry "GOON_NPC_CLERIC_LVL_13"
     type "StatusData"
     data "StatusType" "BOOST"
-    using "GOON_NPC_CLERIC_PROGRESSION_TEMPLATE"
+    using "GOON_NPC_CLERIC_LVL_12"
     data "StackPriority" "13"
-    data "Passives" ""
-    data "Boosts" ""
 
-    new entry "GOON_NPC_CLERIC_LEVEL_14"
+    new entry "GOON_NPC_CLERIC_LVL_14"
     type "StatusData"
     data "StatusType" "BOOST"
-    using "GOON_NPC_CLERIC_PROGRESSION_TEMPLATE"
+    using "GOON_NPC_CLERIC_LVL_12"
     data "StackPriority" "14"
-    data "Passives" ""
-    data "Boosts" ""
 
-    new entry "GOON_NPC_CLERIC_LEVEL_15"
+    new entry "GOON_NPC_CLERIC_LVL_15"
     type "StatusData"
     data "StatusType" "BOOST"
-    using "GOON_NPC_CLERIC_PROGRESSION_TEMPLATE"
+    using "GOON_NPC_CLERIC_LVL_12"
     data "StackPriority" "15"
-    data "Passives" ""
-    data "Boosts" ""
 
-    new entry "GOON_NPC_CLERIC_LEVEL_16"
+    new entry "GOON_NPC_CLERIC_LVL_16"
     type "StatusData"
     data "StatusType" "BOOST"
-    using "GOON_NPC_CLERIC_PROGRESSION_TEMPLATE"
+    using "GOON_NPC_CLERIC_LVL_12"
     data "StackPriority" "16"
-    data "Passives" ""
-    data "Boosts" ""
 
-    new entry "GOON_NPC_CLERIC_LEVEL_17"
+    new entry "GOON_NPC_CLERIC_LVL_17"
     type "StatusData"
     data "StatusType" "BOOST"
-    using "GOON_NPC_CLERIC_PROGRESSION_TEMPLATE"
+    using "GOON_NPC_CLERIC_LVL_12"
     data "StackPriority" "17"
-    data "Passives" ""
-    data "Boosts" ""
 
-    new entry "GOON_NPC_CLERIC_LEVEL_18"
+    new entry "GOON_NPC_CLERIC_LVL_18"
     type "StatusData"
     data "StatusType" "BOOST"
-    using "GOON_NPC_CLERIC_PROGRESSION_TEMPLATE"
+    using "GOON_NPC_CLERIC_LVL_12"
     data "StackPriority" "18"
-    data "Passives" ""
-    data "Boosts" ""
 
-    new entry "GOON_NPC_CLERIC_LEVEL_19"
+    new entry "GOON_NPC_CLERIC_LVL_19"
     type "StatusData"
     data "StatusType" "BOOST"
-    using "GOON_NPC_CLERIC_PROGRESSION_TEMPLATE"
+    using "GOON_NPC_CLERIC_LVL_12"
     data "StackPriority" "19"
-    data "Passives" ""
-    data "Boosts" ""
 
-    new entry "GOON_NPC_CLERIC_LEVEL_20"
+    new entry "GOON_NPC_CLERIC_LVL_20"
     type "StatusData"
     data "StatusType" "BOOST"
-    using "GOON_NPC_CLERIC_PROGRESSION_TEMPLATE"
+    using "GOON_NPC_CLERIC_LVL_12"
     data "StackPriority" "20"
-    data "Passives" ""
-    data "Boosts" ""
 
 // ==================================== Subclass: Life Domain ====================================
 
@@ -227,7 +208,25 @@
     data "Boosts" ""
     data "StatsFunctorContext" "OnCreate;OnStatusApplied;OnStatusRemoved"
     data "Conditions" ""
-    data "StatsFunctors" "IF(not CharacterLevelGreaterThan(2,GetOwner(context.Source))):ApplyStatus(GOON_NPC_CLERIC_LIFE_LEVEL_1,100,-1);IF(CharacterLevelGreaterThan(1,GetOwner(context.Source)) and not CharacterLevelGreaterThan(2,GetOwner(context.Source))):ApplyStatus(GOON_NPC_CLERIC_LIFE_LEVEL_2,100,-1);IF(CharacterLevelGreaterThan(2,GetOwner(context.Source)) and not CharacterLevelGreaterThan(4,GetOwner(context.Source))):ApplyStatus(GOON_NPC_CLERIC_LIFE_LEVEL_3,100,-1);IF(CharacterLevelGreaterThan(4,GetOwner(context.Source)) and not CharacterLevelGreaterThan(5,GetOwner(context.Source))):ApplyStatus(GOON_NPC_CLERIC_LIFE_LEVEL_5,100,-1);IF(CharacterLevelGreaterThan(5,GetOwner(context.Source)) and not CharacterLevelGreaterThan(6,GetOwner(context.Source))):ApplyStatus(GOON_NPC_CLERIC_LIFE_LEVEL_6,100,-1);IF(CharacterLevelGreaterThan(6,GetOwner(context.Source)) and not CharacterLevelGreaterThan(7,GetOwner(context.Source))):ApplyStatus(GOON_NPC_CLERIC_LIFE_LEVEL_7,100,-1);IF(CharacterLevelGreaterThan(7,GetOwner(context.Source)) and not CharacterLevelGreaterThan(8,GetOwner(context.Source))):ApplyStatus(GOON_NPC_CLERIC_LIFE_LEVEL_8,100,-1);IF(CharacterLevelGreaterThan(8,GetOwner(context.Source))):ApplyStatus(GOON_NPC_CLERIC_LIFE_LEVEL_9,100,-1)"
+    data "StatsFunctors" "IF(HasPassive('Goon_Flaming_Fist_Melee_Cleric_NPC_Progressions')):ApplyStatus(GOON_NPC_CLERIC_LIFE_FLAMING_FIST_TECHNICAL,100,-1);IF(not ClassLevelHigherOrEqualThan(2,'NPC_CLERIC') or HasStatus('GOON_NPC_SOMETHING_LVL_1')):ApplyStatus(GOON_NPC_CLERIC_LIFE_LVL_1,100,-1);IF(ClassLevelHigherOrEqualThan(2,'NPC_CLERIC') and not ClassLevelHigherOrEqualThan(3,'NPC_CLERIC') or HasStatus('GOON_NPC_SOMETHING_LVL_2')):ApplyStatus(GOON_NPC_CLERIC_LIFE_LVL_2,100,-1);IF(ClassLevelHigherOrEqualThan(3,'NPC_CLERIC') and not ClassLevelHigherOrEqualThan(4,'NPC_CLERIC') or HasStatus('GOON_NPC_SOMETHING_LVL_3')):ApplyStatus(GOON_NPC_CLERIC_LIFE_LVL_3,100,-1);IF(ClassLevelHigherOrEqualThan(4,'NPC_CLERIC') and not ClassLevelHigherOrEqualThan(5,'NPC_CLERIC') or HasStatus('GOON_NPC_SOMETHING_LVL_4')):ApplyStatus(GOON_NPC_CLERIC_LIFE_LVL_4,100,-1);IF(ClassLevelHigherOrEqualThan(5,'NPC_CLERIC') and not ClassLevelHigherOrEqualThan(6,'NPC_CLERIC') or HasStatus('GOON_NPC_SOMETHING_LVL_5')):ApplyStatus(GOON_NPC_CLERIC_LIFE_LVL_5,100,-1);IF(ClassLevelHigherOrEqualThan(6,'NPC_CLERIC') and not ClassLevelHigherOrEqualThan(7,'NPC_CLERIC') or HasStatus('GOON_NPC_SOMETHING_LVL_6')):ApplyStatus(GOON_NPC_CLERIC_LIFE_LVL_6,100,-1);IF(ClassLevelHigherOrEqualThan(7,'NPC_CLERIC') and not ClassLevelHigherOrEqualThan(8,'NPC_CLERIC') or HasStatus('GOON_NPC_SOMETHING_LVL_7')):ApplyStatus(GOON_NPC_CLERIC_LIFE_LVL_7,100,-1);IF(ClassLevelHigherOrEqualThan(8,'NPC_CLERIC') and not ClassLevelHigherOrEqualThan(9,'NPC_CLERIC') or HasStatus('GOON_NPC_SOMETHING_LVL_8')):ApplyStatus(GOON_NPC_CLERIC_LIFE_LVL_8,100,-1);IF(ClassLevelHigherOrEqualThan(9,'NPC_CLERIC') and not ClassLevelHigherOrEqualThan(10,'NPC_CLERIC') or HasStatus('GOON_NPC_SOMETHING_LVL_9')):ApplyStatus(GOON_NPC_CLERIC_LIFE_LVL_9,100,-1);IF(ClassLevelHigherOrEqualThan(10,'NPC_CLERIC') and not ClassLevelHigherOrEqualThan(11,'NPC_CLERIC') or HasStatus('GOON_NPC_SOMETHING_LVL_10')):ApplyStatus(GOON_NPC_CLERIC_LIFE_LVL_10,100,-1);IF(ClassLevelHigherOrEqualThan(11,'NPC_CLERIC') and not ClassLevelHigherOrEqualThan(12,'NPC_CLERIC') or HasStatus('GOON_NPC_SOMETHING_LVL_11')):ApplyStatus(GOON_NPC_CLERIC_LIFE_LVL_11,100,-1);IF(ClassLevelHigherOrEqualThan(12,'NPC_CLERIC') and not ClassLevelHigherOrEqualThan(13,'NPC_CLERIC') or HasStatus('GOON_NPC_SOMETHING_LVL_12')):ApplyStatus(GOON_NPC_CLERIC_LIFE_LVL_12,100,-1);IF(ClassLevelHigherOrEqualThan(13,'NPC_CLERIC') and not ClassLevelHigherOrEqualThan(14,'NPC_CLERIC') or HasStatus('GOON_NPC_SOMETHING_LVL_13')):ApplyStatus(GOON_NPC_CLERIC_LIFE_LVL_13,100,-1);IF(ClassLevelHigherOrEqualThan(14,'NPC_CLERIC') and not ClassLevelHigherOrEqualThan(15,'NPC_CLERIC') or HasStatus('GOON_NPC_SOMETHING_LVL_14')):ApplyStatus(GOON_NPC_CLERIC_LIFE_LVL_14,100,-1);IF(ClassLevelHigherOrEqualThan(15,'NPC_CLERIC') and not ClassLevelHigherOrEqualThan(16,'NPC_CLERIC') or HasStatus('GOON_NPC_SOMETHING_LVL_15')):ApplyStatus(GOON_NPC_CLERIC_LIFE_LVL_15,100,-1);IF(ClassLevelHigherOrEqualThan(16,'NPC_CLERIC') and not ClassLevelHigherOrEqualThan(17,'NPC_CLERIC') or HasStatus('GOON_NPC_SOMETHING_LVL_16')):ApplyStatus(GOON_NPC_CLERIC_LIFE_LVL_16,100,-1);IF(ClassLevelHigherOrEqualThan(17,'NPC_CLERIC') and not ClassLevelHigherOrEqualThan(18,'NPC_CLERIC') or HasStatus('GOON_NPC_SOMETHING_LVL_17')):ApplyStatus(GOON_NPC_CLERIC_LIFE_LVL_17,100,-1);IF(ClassLevelHigherOrEqualThan(18,'NPC_CLERIC') and not ClassLevelHigherOrEqualThan(19,'NPC_CLERIC') or HasStatus('GOON_NPC_SOMETHING_LVL_18')):ApplyStatus(GOON_NPC_CLERIC_LIFE_LVL_18,100,-1);IF(ClassLevelHigherOrEqualThan(19,'NPC_CLERIC') and not ClassLevelHigherOrEqualThan(20,'NPC_CLERIC') or HasStatus('GOON_NPC_SOMETHING_LVL_19')):ApplyStatus(GOON_NPC_CLERIC_LIFE_LVL_19,100,-1);IF(ClassLevelHigherOrEqualThan(20,'NPC_CLERIC') or HasStatus('GOON_NPC_SOMETHING_LVL_20')):ApplyStatus(GOON_NPC_CLERIC_LIFE_LVL_20,100,-1)"
+
+// Flaming Fist stuff *If applicable*
+    new entry "GOON_NPC_CLERIC_LIFE_FLAMING_FIST_TECHNICAL"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    data "StatusPropertyFlags" "DisableOverhead;DisableCombatlog;DisablePortraitIndicator;ApplyToDead;IgnoreResting"
+    data "RemoveEvents" "OnStatusApplied;OnStatusRemoved"
+    data "StackId" "GOON_NPC_CLERIC_LIFE_FLAMING_FIST_TECHNICAL"
+    data "StackType" "Ignore"
+    data "RemoveConditions" "not HasPassive('Goon_Flaming_Fist_Melee_Cleric_NPC_Progressions')"
+    data "Passives" "Goon_NPC_Cleric_Life_Flaming_Fist"
+
+    new entry "Goon_NPC_Cleric_Life_Flaming_Fist"
+    type "PassiveData"
+    data "Properties" "IsHidden"
+    data "StatsFunctorContext" "OnCreate;OnStatusApplied;OnStatusRemoved"
+    data "Conditions" "HasPassive('Goon_Flaming_Fist_Melee_Cleric_NPC_Progressions')"
+    data "StatsFunctors" "IF(not ClassLevelHigherOrEqualThan(2,'NPC_FlamingFist_Melee_Cleric')):ApplyStatus(GOON_NPC_CLERIC_LIFE_LVL_1,100,-1);IF(ClassLevelHigherOrEqualThan(2,'NPC_FlamingFist_Melee_Cleric') and not ClassLevelHigherOrEqualThan(3,'NPC_FlamingFist_Melee_Cleric')):ApplyStatus(GOON_NPC_CLERIC_LIFE_LVL_2,100,-1);IF(ClassLevelHigherOrEqualThan(3,'NPC_FlamingFist_Melee_Cleric') and not ClassLevelHigherOrEqualThan(4,'NPC_FlamingFist_Melee_Cleric')):ApplyStatus(GOON_NPC_CLERIC_LIFE_LVL_3,100,-1);IF(ClassLevelHigherOrEqualThan(4,'NPC_FlamingFist_Melee_Cleric') and not ClassLevelHigherOrEqualThan(5,'NPC_FlamingFist_Melee_Cleric')):ApplyStatus(GOON_NPC_CLERIC_LIFE_LVL_4,100,-1);IF(ClassLevelHigherOrEqualThan(5,'NPC_FlamingFist_Melee_Cleric') and not ClassLevelHigherOrEqualThan(6,'NPC_FlamingFist_Melee_Cleric')):ApplyStatus(GOON_NPC_CLERIC_LIFE_LVL_5,100,-1);IF(ClassLevelHigherOrEqualThan(6,'NPC_FlamingFist_Melee_Cleric') and not ClassLevelHigherOrEqualThan(7,'NPC_FlamingFist_Melee_Cleric')):ApplyStatus(GOON_NPC_CLERIC_LIFE_LVL_6,100,-1);IF(ClassLevelHigherOrEqualThan(7,'NPC_FlamingFist_Melee_Cleric') and not ClassLevelHigherOrEqualThan(8,'NPC_FlamingFist_Melee_Cleric')):ApplyStatus(GOON_NPC_CLERIC_LIFE_LVL_7,100,-1);IF(ClassLevelHigherOrEqualThan(8,'NPC_FlamingFist_Melee_Cleric') and not ClassLevelHigherOrEqualThan(9,'NPC_FlamingFist_Melee_Cleric')):ApplyStatus(GOON_NPC_CLERIC_LIFE_LVL_8,100,-1);IF(ClassLevelHigherOrEqualThan(9,'NPC_FlamingFist_Melee_Cleric') and not ClassLevelHigherOrEqualThan(10,'NPC_FlamingFist_Melee_Cleric')):ApplyStatus(GOON_NPC_CLERIC_LIFE_LVL_9,100,-1);IF(ClassLevelHigherOrEqualThan(10,'NPC_FlamingFist_Melee_Cleric') and not ClassLevelHigherOrEqualThan(11,'NPC_FlamingFist_Melee_Cleric')):ApplyStatus(GOON_NPC_CLERIC_LIFE_LVL_10,100,-1);IF(ClassLevelHigherOrEqualThan(11,'NPC_FlamingFist_Melee_Cleric') and not ClassLevelHigherOrEqualThan(12,'NPC_FlamingFist_Melee_Cleric')):ApplyStatus(GOON_NPC_CLERIC_LIFE_LVL_11,100,-1);IF(ClassLevelHigherOrEqualThan(12,'NPC_FlamingFist_Melee_Cleric') and not ClassLevelHigherOrEqualThan(13,'NPC_FlamingFist_Melee_Cleric')):ApplyStatus(GOON_NPC_CLERIC_LIFE_LVL_12,100,-1);IF(ClassLevelHigherOrEqualThan(13,'NPC_FlamingFist_Melee_Cleric') and not ClassLevelHigherOrEqualThan(14,'NPC_FlamingFist_Melee_Cleric')):ApplyStatus(GOON_NPC_CLERIC_LIFE_LVL_13,100,-1);IF(ClassLevelHigherOrEqualThan(14,'NPC_FlamingFist_Melee_Cleric') and not ClassLevelHigherOrEqualThan(15,'NPC_FlamingFist_Melee_Cleric')):ApplyStatus(GOON_NPC_CLERIC_LIFE_LVL_14,100,-1);IF(ClassLevelHigherOrEqualThan(15,'NPC_FlamingFist_Melee_Cleric') and not ClassLevelHigherOrEqualThan(16,'NPC_FlamingFist_Melee_Cleric')):ApplyStatus(GOON_NPC_CLERIC_LIFE_LVL_15,100,-1);IF(ClassLevelHigherOrEqualThan(16,'NPC_FlamingFist_Melee_Cleric') and not ClassLevelHigherOrEqualThan(17,'NPC_FlamingFist_Melee_Cleric')):ApplyStatus(GOON_NPC_CLERIC_LIFE_LVL_16,100,-1);IF(ClassLevelHigherOrEqualThan(17,'NPC_FlamingFist_Melee_Cleric') and not ClassLevelHigherOrEqualThan(18,'NPC_FlamingFist_Melee_Cleric')):ApplyStatus(GOON_NPC_CLERIC_LIFE_LVL_17,100,-1);IF(ClassLevelHigherOrEqualThan(18,'NPC_FlamingFist_Melee_Cleric') and not ClassLevelHigherOrEqualThan(19,'NPC_FlamingFist_Melee_Cleric')):ApplyStatus(GOON_NPC_CLERIC_LIFE_LVL_18,100,-1);IF(ClassLevelHigherOrEqualThan(19,'NPC_FlamingFist_Melee_Cleric') and not ClassLevelHigherOrEqualThan(20,'NPC_FlamingFist_Melee_Cleric')):ApplyStatus(GOON_NPC_CLERIC_LIFE_LVL_19,100,-1);IF(ClassLevelHigherOrEqualThan(20,'NPC_FlamingFist_Melee_Cleric')):ApplyStatus(GOON_NPC_CLERIC_LIFE_LVL_20,100,-1)"
 
 // Template
     new entry "GOON_NPC_CLERIC_LIFE_PROGRESSION_TEMPLATE"
@@ -241,7 +240,7 @@
 
 // Progression statuses
 
-    new entry "GOON_NPC_CLERIC_LIFE_LEVEL_1"
+    new entry "GOON_NPC_CLERIC_LIFE_LVL_1"
     type "StatusData"
     data "StatusType" "BOOST"
     using "GOON_NPC_CLERIC_LIFE_PROGRESSION_TEMPLATE"
@@ -259,7 +258,7 @@
     //     <attribute id="TableUUID" type="guid" value="9b56beb6-2a68-42a4-b81b-7a890a1b6b99"/>
     //     <attribute id="UUID" type="guid" value="87f501ae-c909-4f30-852b-98bdc72c0248"/>
 
-    new entry "GOON_NPC_CLERIC_LIFE_LEVEL_2"
+    new entry "GOON_NPC_CLERIC_LIFE_LVL_2"
     type "StatusData"
     data "StatusType" "BOOST"
     using "GOON_NPC_CLERIC_LIFE_PROGRESSION_TEMPLATE"
@@ -275,7 +274,7 @@
     //     <attribute id="TableUUID" type="guid" value="9b56beb6-2a68-42a4-b81b-7a890a1b6b99"/>
     //     <attribute id="UUID" type="guid" value="1aa8a001-f56c-4b99-800f-27fc12f8ebe8"/>
 
-    new entry "GOON_NPC_CLERIC_LIFE_LEVEL_3"
+    new entry "GOON_NPC_CLERIC_LIFE_LVL_3"
     type "StatusData"
     data "StatusType" "BOOST"
     using "GOON_NPC_CLERIC_LIFE_PROGRESSION_TEMPLATE"
@@ -291,7 +290,13 @@
     //     <attribute id="TableUUID" type="guid" value="9b56beb6-2a68-42a4-b81b-7a890a1b6b99"/>
     //     <attribute id="UUID" type="guid" value="8355f4fe-7d7f-4132-8d57-7ca17e3c4ab4"/>
 
-    new entry "GOON_NPC_CLERIC_LIFE_LEVEL_5"
+    new entry "GOON_NPC_CLERIC_LIFE_LVL_4"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_CLERIC_LIFE_LVL_3"
+    data "StackPriority" "4"
+
+    new entry "GOON_NPC_CLERIC_LIFE_LVL_5"
     type "StatusData"
     data "StatusType" "BOOST"
     using "GOON_NPC_CLERIC_LIFE_PROGRESSION_TEMPLATE"
@@ -307,7 +312,7 @@
     //     <attribute id="TableUUID" type="guid" value="9b56beb6-2a68-42a4-b81b-7a890a1b6b99"/>
     //     <attribute id="UUID" type="guid" value="dc935315-0534-4629-a7b4-41c67dd2b246"/>
 
-    new entry "GOON_NPC_CLERIC_LIFE_LEVEL_6"
+    new entry "GOON_NPC_CLERIC_LIFE_LVL_6"
     type "StatusData"
     data "StatusType" "BOOST"
     using "GOON_NPC_CLERIC_LIFE_PROGRESSION_TEMPLATE"
@@ -323,7 +328,7 @@
     //     <attribute id="TableUUID" type="guid" value="9b56beb6-2a68-42a4-b81b-7a890a1b6b99"/>
     //     <attribute id="UUID" type="guid" value="101c6e81-6e76-4d3f-9f96-6640e2e62a36"/>
 
-    new entry "GOON_NPC_CLERIC_LIFE_LEVEL_7"
+    new entry "GOON_NPC_CLERIC_LIFE_LVL_7"
     type "StatusData"
     data "StatusType" "BOOST"
     using "GOON_NPC_CLERIC_LIFE_PROGRESSION_TEMPLATE"
@@ -339,7 +344,7 @@
     //     <attribute id="TableUUID" type="guid" value="9b56beb6-2a68-42a4-b81b-7a890a1b6b99"/>
     //     <attribute id="UUID" type="guid" value="13eecc52-a474-444c-b77c-52e5cd7eceb0"/>
 
-    new entry "GOON_NPC_CLERIC_LIFE_LEVEL_8"
+    new entry "GOON_NPC_CLERIC_LIFE_LVL_8"
     type "StatusData"
     data "StatusType" "BOOST"
     using "GOON_NPC_CLERIC_LIFE_PROGRESSION_TEMPLATE"
@@ -356,7 +361,7 @@
     //     <attribute id="TableUUID" type="guid" value="9b56beb6-2a68-42a4-b81b-7a890a1b6b99"/>
     //     <attribute id="UUID" type="guid" value="20ce2664-ba58-4291-be05-dca5b2c4293d"/>
 
-    new entry "GOON_NPC_CLERIC_LIFE_LEVEL_9"
+    new entry "GOON_NPC_CLERIC_LIFE_LVL_9"
     type "StatusData"
     data "StatusType" "BOOST"
     using "GOON_NPC_CLERIC_LIFE_PROGRESSION_TEMPLATE"
@@ -372,6 +377,73 @@
     //     <attribute id="TableUUID" type="guid" value="9b56beb6-2a68-42a4-b81b-7a890a1b6b99"/>
     //     <attribute id="UUID" type="guid" value="b3a95e65-8ba5-4e32-ba5a-6e2c745c237a"/>
 
+    new entry "GOON_NPC_CLERIC_LIFE_LVL_10"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_CLERIC_LIFE_LVL_9"
+    data "StackPriority" "10"
+
+        new entry "GOON_NPC_CLERIC_LIFE_LVL_11"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_CLERIC_LIFE_LVL_9"
+    data "StackPriority" "11"
+
+    new entry "GOON_NPC_CLERIC_LIFE_LVL_12"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_CLERIC_LIFE_LVL_9"
+    data "StackPriority" "12"
+
+// Expansion levels 13-20
+    new entry "GOON_NPC_CLERIC_LIFE_LVL_13"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_CLERIC_LIFE_LVL_12"
+    data "StackPriority" "13"
+    
+    new entry "GOON_NPC_CLERIC_LIFE_LVL_14"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_CLERIC_LIFE_LVL_12"
+    data "StackPriority" "14"
+    
+    new entry "GOON_NPC_CLERIC_LIFE_LVL_15"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_CLERIC_LIFE_LVL_12"
+    data "StackPriority" "15"
+    
+    new entry "GOON_NPC_CLERIC_LIFE_LVL_16"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_CLERIC_LIFE_LVL_12"
+    data "StackPriority" "16"
+    
+    new entry "GOON_NPC_CLERIC_LIFE_LVL_17"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_CLERIC_LIFE_LVL_12"
+    data "StackPriority" "17"
+    
+    new entry "GOON_NPC_CLERIC_LIFE_LVL_18"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_CLERIC_LIFE_LVL_12"
+    data "StackPriority" "18"
+    
+    new entry "GOON_NPC_CLERIC_LIFE_LVL_19"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_CLERIC_LIFE_LVL_12"
+    data "StackPriority" "19"
+    
+    new entry "GOON_NPC_CLERIC_LIFE_LVL_20"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_CLERIC_LIFE_LVL_12"
+    data "StackPriority" "20"
+
 // ==================================== Subclass: Light Domain ====================================
 
     new entry "CX_Cleric_Light_Boost"
@@ -382,7 +454,25 @@
     data "Boosts" ""
     data "StatsFunctorContext" "OnCreate;OnStatusApplied;OnStatusRemoved"
     data "Conditions" ""
-    data "StatsFunctors" "IF(not CharacterLevelGreaterThan(2,GetOwner(context.Source))):ApplyStatus(GOON_NPC_CLERIC_LIGHT_LEVEL_1,100,-1);IF(CharacterLevelGreaterThan(1,GetOwner(context.Source)) and not CharacterLevelGreaterThan(2,GetOwner(context.Source))):ApplyStatus(GOON_NPC_CLERIC_LIGHT_LEVEL_2,100,-1);IF(CharacterLevelGreaterThan(2,GetOwner(context.Source)) and not CharacterLevelGreaterThan(4,GetOwner(context.Source))):ApplyStatus(GOON_NPC_CLERIC_LIGHT_LEVEL_3,100,-1);IF(CharacterLevelGreaterThan(4,GetOwner(context.Source)) and not CharacterLevelGreaterThan(5,GetOwner(context.Source))):ApplyStatus(GOON_NPC_CLERIC_LIGHT_LEVEL_5,100,-1);IF(CharacterLevelGreaterThan(5,GetOwner(context.Source)) and not CharacterLevelGreaterThan(6,GetOwner(context.Source))):ApplyStatus(GOON_NPC_CLERIC_LIGHT_LEVEL_6,100,-1);IF(CharacterLevelGreaterThan(6,GetOwner(context.Source)) and not CharacterLevelGreaterThan(7,GetOwner(context.Source))):ApplyStatus(GOON_NPC_CLERIC_LIGHT_LEVEL_7,100,-1);IF(CharacterLevelGreaterThan(7,GetOwner(context.Source)) and not CharacterLevelGreaterThan(8,GetOwner(context.Source))):ApplyStatus(GOON_NPC_CLERIC_LIGHT_LEVEL_8,100,-1);IF(CharacterLevelGreaterThan(8,GetOwner(context.Source))):ApplyStatus(GOON_NPC_CLERIC_LIGHT_LEVEL_9,100,-1)"
+    data "StatsFunctors" "IF(HasPassive('Goon_Flaming_Fist_Cleric_NPC_Progressions')):ApplyStatus(GOON_NPC_CLERIC_LIGHT_FLAMING_FIST_TECHNICAL,100,-1);IF(not ClassLevelHigherOrEqualThan(2,'NPC_CLERIC') or HasStatus('GOON_NPC_CLERIC_LVL_1')):ApplyStatus(GOON_NPC_CLERIC_LIGHT_LVL_1,100,-1);IF(ClassLevelHigherOrEqualThan(2,'NPC_CLERIC') and not ClassLevelHigherOrEqualThan(3,'NPC_CLERIC') or HasStatus('GOON_NPC_CLERIC_LVL_2')):ApplyStatus(GOON_NPC_CLERIC_LIGHT_LVL_2,100,-1);IF(ClassLevelHigherOrEqualThan(3,'NPC_CLERIC') and not ClassLevelHigherOrEqualThan(4,'NPC_CLERIC') or HasStatus('GOON_NPC_CLERIC_LVL_3')):ApplyStatus(GOON_NPC_CLERIC_LIGHT_LVL_3,100,-1);IF(ClassLevelHigherOrEqualThan(4,'NPC_CLERIC') and not ClassLevelHigherOrEqualThan(5,'NPC_CLERIC') or HasStatus('GOON_NPC_CLERIC_LVL_4')):ApplyStatus(GOON_NPC_CLERIC_LIGHT_LVL_4,100,-1);IF(ClassLevelHigherOrEqualThan(5,'NPC_CLERIC') and not ClassLevelHigherOrEqualThan(6,'NPC_CLERIC') or HasStatus('GOON_NPC_CLERIC_LVL_5')):ApplyStatus(GOON_NPC_CLERIC_LIGHT_LVL_5,100,-1);IF(ClassLevelHigherOrEqualThan(6,'NPC_CLERIC') and not ClassLevelHigherOrEqualThan(7,'NPC_CLERIC') or HasStatus('GOON_NPC_CLERIC_LVL_6')):ApplyStatus(GOON_NPC_CLERIC_LIGHT_LVL_6,100,-1);IF(ClassLevelHigherOrEqualThan(7,'NPC_CLERIC') and not ClassLevelHigherOrEqualThan(8,'NPC_CLERIC') or HasStatus('GOON_NPC_CLERIC_LVL_7')):ApplyStatus(GOON_NPC_CLERIC_LIGHT_LVL_7,100,-1);IF(ClassLevelHigherOrEqualThan(8,'NPC_CLERIC') and not ClassLevelHigherOrEqualThan(9,'NPC_CLERIC') or HasStatus('GOON_NPC_CLERIC_LVL_8')):ApplyStatus(GOON_NPC_CLERIC_LIGHT_LVL_8,100,-1);IF(ClassLevelHigherOrEqualThan(9,'NPC_CLERIC') and not ClassLevelHigherOrEqualThan(10,'NPC_CLERIC') or HasStatus('GOON_NPC_CLERIC_LVL_9')):ApplyStatus(GOON_NPC_CLERIC_LIGHT_LVL_9,100,-1);IF(ClassLevelHigherOrEqualThan(10,'NPC_CLERIC') and not ClassLevelHigherOrEqualThan(11,'NPC_CLERIC') or HasStatus('GOON_NPC_CLERIC_LVL_10')):ApplyStatus(GOON_NPC_CLERIC_LIGHT_LVL_10,100,-1);IF(ClassLevelHigherOrEqualThan(11,'NPC_CLERIC') and not ClassLevelHigherOrEqualThan(12,'NPC_CLERIC') or HasStatus('GOON_NPC_CLERIC_LVL_11')):ApplyStatus(GOON_NPC_CLERIC_LIGHT_LVL_11,100,-1);IF(ClassLevelHigherOrEqualThan(12,'NPC_CLERIC') and not ClassLevelHigherOrEqualThan(13,'NPC_CLERIC') or HasStatus('GOON_NPC_CLERIC_LVL_12')):ApplyStatus(GOON_NPC_CLERIC_LIGHT_LVL_12,100,-1);IF(ClassLevelHigherOrEqualThan(13,'NPC_CLERIC') and not ClassLevelHigherOrEqualThan(14,'NPC_CLERIC') or HasStatus('GOON_NPC_CLERIC_LVL_13')):ApplyStatus(GOON_NPC_CLERIC_LIGHT_LVL_13,100,-1);IF(ClassLevelHigherOrEqualThan(14,'NPC_CLERIC') and not ClassLevelHigherOrEqualThan(15,'NPC_CLERIC') or HasStatus('GOON_NPC_CLERIC_LVL_14')):ApplyStatus(GOON_NPC_CLERIC_LIGHT_LVL_14,100,-1);IF(ClassLevelHigherOrEqualThan(15,'NPC_CLERIC') and not ClassLevelHigherOrEqualThan(16,'NPC_CLERIC') or HasStatus('GOON_NPC_CLERIC_LVL_15')):ApplyStatus(GOON_NPC_CLERIC_LIGHT_LVL_15,100,-1);IF(ClassLevelHigherOrEqualThan(16,'NPC_CLERIC') and not ClassLevelHigherOrEqualThan(17,'NPC_CLERIC') or HasStatus('GOON_NPC_CLERIC_LVL_16')):ApplyStatus(GOON_NPC_CLERIC_LIGHT_LVL_16,100,-1);IF(ClassLevelHigherOrEqualThan(17,'NPC_CLERIC') and not ClassLevelHigherOrEqualThan(18,'NPC_CLERIC') or HasStatus('GOON_NPC_CLERIC_LVL_17')):ApplyStatus(GOON_NPC_CLERIC_LIGHT_LVL_17,100,-1);IF(ClassLevelHigherOrEqualThan(18,'NPC_CLERIC') and not ClassLevelHigherOrEqualThan(19,'NPC_CLERIC') or HasStatus('GOON_NPC_CLERIC_LVL_18')):ApplyStatus(GOON_NPC_CLERIC_LIGHT_LVL_18,100,-1);IF(ClassLevelHigherOrEqualThan(19,'NPC_CLERIC') and not ClassLevelHigherOrEqualThan(20,'NPC_CLERIC') or HasStatus('GOON_NPC_CLERIC_LVL_19')):ApplyStatus(GOON_NPC_CLERIC_LIGHT_LVL_19,100,-1);IF(ClassLevelHigherOrEqualThan(20,'NPC_CLERIC') or HasStatus('GOON_NPC_CLERIC_LVL_20')):ApplyStatus(GOON_NPC_CLERIC_LIGHT_LVL_20,100,-1)"
+
+// Flaming Fist stuff *If applicable*
+    new entry "GOON_NPC_CLERIC_LIGHT_FLAMING_FIST_TECHNICAL"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    data "StatusPropertyFlags" "DisableOverhead;DisableCombatlog;DisablePortraitIndicator;ApplyToDead;IgnoreResting"
+    data "RemoveEvents" "OnStatusApplied;OnStatusRemoved"
+    data "StackId" "GOON_NPC_CLERIC_LIGHT_FLAMING_FIST_TECHNICAL"
+    data "StackType" "Ignore"
+    data "RemoveConditions" "not HasPassive('Goon_Flaming_Fist_Something_NPC_Progressions')"
+    data "Passives" "Goon_NPC_Cleric_Light_Flaming_Fist"
+
+    new entry "Goon_NPC_Cleric_Light_Flaming_Fist"
+    type "PassiveData"
+    data "Properties" "IsHidden"
+    data "StatsFunctorContext" "OnCreate;OnStatusApplied;OnStatusRemoved"
+    data "Conditions" "HasPassive('Goon_Flaming_Fist_Something_NPC_Progressions')"
+    data "StatsFunctors" "IF(not ClassLevelHigherOrEqualThan(2,'NPC_FlamingFist_Melee_Cleric')):ApplyStatus(GOON_NPC_CLERIC_LIGHT_LVL_1,100,-1);IF(ClassLevelHigherOrEqualThan(2,'NPC_FlamingFist_Melee_Cleric') and not ClassLevelHigherOrEqualThan(3,'NPC_FlamingFist_Melee_Cleric')):ApplyStatus(GOON_NPC_CLERIC_LIGHT_LVL_2,100,-1);IF(ClassLevelHigherOrEqualThan(3,'NPC_FlamingFist_Melee_Cleric') and not ClassLevelHigherOrEqualThan(4,'NPC_FlamingFist_Melee_Cleric')):ApplyStatus(GOON_NPC_CLERIC_LIGHT_LVL_3,100,-1);IF(ClassLevelHigherOrEqualThan(4,'NPC_FlamingFist_Melee_Cleric') and not ClassLevelHigherOrEqualThan(5,'NPC_FlamingFist_Melee_Cleric')):ApplyStatus(GOON_NPC_CLERIC_LIGHT_LVL_4,100,-1);IF(ClassLevelHigherOrEqualThan(5,'NPC_FlamingFist_Melee_Cleric') and not ClassLevelHigherOrEqualThan(6,'NPC_FlamingFist_Melee_Cleric')):ApplyStatus(GOON_NPC_CLERIC_LIGHT_LVL_5,100,-1);IF(ClassLevelHigherOrEqualThan(6,'NPC_FlamingFist_Melee_Cleric') and not ClassLevelHigherOrEqualThan(7,'NPC_FlamingFist_Melee_Cleric')):ApplyStatus(GOON_NPC_CLERIC_LIGHT_LVL_6,100,-1);IF(ClassLevelHigherOrEqualThan(7,'NPC_FlamingFist_Melee_Cleric') and not ClassLevelHigherOrEqualThan(8,'NPC_FlamingFist_Melee_Cleric')):ApplyStatus(GOON_NPC_CLERIC_LIGHT_LVL_7,100,-1);IF(ClassLevelHigherOrEqualThan(8,'NPC_FlamingFist_Melee_Cleric') and not ClassLevelHigherOrEqualThan(9,'NPC_FlamingFist_Melee_Cleric')):ApplyStatus(GOON_NPC_CLERIC_LIGHT_LVL_8,100,-1);IF(ClassLevelHigherOrEqualThan(9,'NPC_FlamingFist_Melee_Cleric') and not ClassLevelHigherOrEqualThan(10,'NPC_FlamingFist_Melee_Cleric')):ApplyStatus(GOON_NPC_CLERIC_LIGHT_LVL_9,100,-1);IF(ClassLevelHigherOrEqualThan(10,'NPC_FlamingFist_Melee_Cleric') and not ClassLevelHigherOrEqualThan(11,'NPC_FlamingFist_Melee_Cleric')):ApplyStatus(GOON_NPC_CLERIC_LIGHT_LVL_10,100,-1);IF(ClassLevelHigherOrEqualThan(11,'NPC_FlamingFist_Melee_Cleric') and not ClassLevelHigherOrEqualThan(12,'NPC_FlamingFist_Melee_Cleric')):ApplyStatus(GOON_NPC_CLERIC_LIGHT_LVL_11,100,-1);IF(ClassLevelHigherOrEqualThan(12,'NPC_FlamingFist_Melee_Cleric') and not ClassLevelHigherOrEqualThan(13,'NPC_FlamingFist_Melee_Cleric')):ApplyStatus(GOON_NPC_CLERIC_LIGHT_LVL_12,100,-1);IF(ClassLevelHigherOrEqualThan(13,'NPC_FlamingFist_Melee_Cleric') and not ClassLevelHigherOrEqualThan(14,'NPC_FlamingFist_Melee_Cleric')):ApplyStatus(GOON_NPC_CLERIC_LIGHT_LVL_13,100,-1);IF(ClassLevelHigherOrEqualThan(14,'NPC_FlamingFist_Melee_Cleric') and not ClassLevelHigherOrEqualThan(15,'NPC_FlamingFist_Melee_Cleric')):ApplyStatus(GOON_NPC_CLERIC_LIGHT_LVL_14,100,-1);IF(ClassLevelHigherOrEqualThan(15,'NPC_FlamingFist_Melee_Cleric') and not ClassLevelHigherOrEqualThan(16,'NPC_FlamingFist_Melee_Cleric')):ApplyStatus(GOON_NPC_CLERIC_LIGHT_LVL_15,100,-1);IF(ClassLevelHigherOrEqualThan(16,'NPC_FlamingFist_Melee_Cleric') and not ClassLevelHigherOrEqualThan(17,'NPC_FlamingFist_Melee_Cleric')):ApplyStatus(GOON_NPC_CLERIC_LIGHT_LVL_16,100,-1);IF(ClassLevelHigherOrEqualThan(17,'NPC_FlamingFist_Melee_Cleric') and not ClassLevelHigherOrEqualThan(18,'NPC_FlamingFist_Melee_Cleric')):ApplyStatus(GOON_NPC_CLERIC_LIGHT_LVL_17,100,-1);IF(ClassLevelHigherOrEqualThan(18,'NPC_FlamingFist_Melee_Cleric') and not ClassLevelHigherOrEqualThan(19,'NPC_FlamingFist_Melee_Cleric')):ApplyStatus(GOON_NPC_CLERIC_LIGHT_LVL_18,100,-1);IF(ClassLevelHigherOrEqualThan(19,'NPC_FlamingFist_Melee_Cleric') and not ClassLevelHigherOrEqualThan(20,'NPC_FlamingFist_Melee_Cleric')):ApplyStatus(GOON_NPC_CLERIC_LIGHT_LVL_19,100,-1);IF(ClassLevelHigherOrEqualThan(20,'NPC_FlamingFist_Melee_Cleric')):ApplyStatus(GOON_NPC_CLERIC_LIGHT_LVL_20,100,-1)"
 
 // Template
     new entry "GOON_NPC_CLERIC_LIGHT_PROGRESSION_TEMPLATE"
@@ -396,7 +486,7 @@
 
 // Progression statuses
 
-    new entry "GOON_NPC_CLERIC_LIGHT_LEVEL_1"
+    new entry "GOON_NPC_CLERIC_LIGHT_LVL_1"
     type "StatusData"
     data "StatusType" "BOOST"
     using "GOON_NPC_CLERIC_LIGHT_PROGRESSION_TEMPLATE"
@@ -413,7 +503,7 @@
     //     <attribute id="TableUUID" type="guid" value="6ec6caad-2dfa-4661-8edd-5c4eca0e044c"/>
     //     <attribute id="UUID" type="guid" value="18b60150-3f77-4f5d-9c67-b25c3b7ce404"/>
 
-    new entry "GOON_NPC_CLERIC_LIGHT_LEVEL_2"
+    new entry "GOON_NPC_CLERIC_LIGHT_LVL_2"
     type "StatusData"
     data "StatusType" "BOOST"
     using "GOON_NPC_CLERIC_LIGHT_PROGRESSION_TEMPLATE"
@@ -429,7 +519,7 @@
     //     <attribute id="TableUUID" type="guid" value="6ec6caad-2dfa-4661-8edd-5c4eca0e044c"/>
     //     <attribute id="UUID" type="guid" value="7f63932d-64bd-4a70-b1d0-0e6728c1888e"/>
 
-    new entry "GOON_NPC_CLERIC_LIGHT_LEVEL_3"
+    new entry "GOON_NPC_CLERIC_LIGHT_LVL_3"
     type "StatusData"
     data "StatusType" "BOOST"
     using "GOON_NPC_CLERIC_LIGHT_PROGRESSION_TEMPLATE"
@@ -446,7 +536,13 @@
     //     <attribute id="TableUUID" type="guid" value="6ec6caad-2dfa-4661-8edd-5c4eca0e044c"/>
     //     <attribute id="UUID" type="guid" value="21725b6d-71f5-4df9-b828-b31bb20794cd"/>
 
-    new entry "GOON_NPC_CLERIC_LIGHT_LEVEL_5"
+    new entry "GOON_NPC_CLERIC_LIGHT_LVL_4"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_CLERIC_LIGHT_LVL_3"
+    data "StackPriority" "4"
+
+    new entry "GOON_NPC_CLERIC_LIGHT_LVL_5"
     type "StatusData"
     data "StatusType" "BOOST"
     using "GOON_NPC_CLERIC_LIGHT_PROGRESSION_TEMPLATE"
@@ -462,7 +558,7 @@
     //     <attribute id="TableUUID" type="guid" value="6ec6caad-2dfa-4661-8edd-5c4eca0e044c"/>
     //     <attribute id="UUID" type="guid" value="caf6d4b9-4233-4d67-af18-3a4ba3ea9996"/>
 
-    new entry "GOON_NPC_CLERIC_LIGHT_LEVEL_6"
+    new entry "GOON_NPC_CLERIC_LIGHT_LVL_6"
     type "StatusData"
     data "StatusType" "BOOST"
     using "GOON_NPC_CLERIC_LIGHT_PROGRESSION_TEMPLATE"
@@ -478,7 +574,7 @@
     //     <attribute id="TableUUID" type="guid" value="6ec6caad-2dfa-4661-8edd-5c4eca0e044c"/>
     //     <attribute id="UUID" type="guid" value="cc33557e-32ab-4cb9-82cb-d313ad38574e"/>
 
-    new entry "GOON_NPC_CLERIC_LIGHT_LEVEL_7"
+    new entry "GOON_NPC_CLERIC_LIGHT_LVL_7"
     type "StatusData"
     data "StatusType" "BOOST"
     using "GOON_NPC_CLERIC_LIGHT_PROGRESSION_TEMPLATE"
@@ -494,7 +590,7 @@
     //     <attribute id="TableUUID" type="guid" value="6ec6caad-2dfa-4661-8edd-5c4eca0e044c"/>
     //     <attribute id="UUID" type="guid" value="1fe99c00-3bd1-476f-865b-c121617d7d6b"/>
 
-    new entry "GOON_NPC_CLERIC_LIGHT_LEVEL_8"
+    new entry "GOON_NPC_CLERIC_LIGHT_LVL_8"
     type "StatusData"
     data "StatusType" "BOOST"
     using "GOON_NPC_CLERIC_LIGHT_PROGRESSION_TEMPLATE"
@@ -510,7 +606,7 @@
     //     <attribute id="TableUUID" type="guid" value="6ec6caad-2dfa-4661-8edd-5c4eca0e044c"/>
     //     <attribute id="UUID" type="guid" value="c993dc9e-df2b-4cc9-857c-49b17982b56e"/>
 
-    new entry "GOON_NPC_CLERIC_LIGHT_LEVEL_9"
+    new entry "GOON_NPC_CLERIC_LIGHT_LVL_9"
     type "StatusData"
     data "StatusType" "BOOST"
     using "GOON_NPC_CLERIC_LIGHT_PROGRESSION_TEMPLATE"
@@ -525,6 +621,73 @@
     //     <attribute id="Selectors" type="LSString" value="AddSpells(5675d0b3-8a2c-4658-bfe3-42abbc0bdcfd,ClericLightDomainSpells,,,AlwaysPrepared)"/>
     //     <attribute id="TableUUID" type="guid" value="6ec6caad-2dfa-4661-8edd-5c4eca0e044c"/>
     //     <attribute id="UUID" type="guid" value="00479bc3-396b-4738-9ccf-f00d7087374f"/>
+
+    new entry "GOON_NPC_CLERIC_LIGHT_LVL_10"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_CLERIC_LIGHT_LVL_9"
+    data "StackPriority" "10"
+
+    new entry "GOON_NPC_CLERIC_LIGHT_LVL_11"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_CLERIC_LIGHT_LVL_9"
+    data "StackPriority" "11"
+
+    new entry "GOON_NPC_CLERIC_LIGHT_LVL_12"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_CLERIC_LIGHT_LVL_9"
+    data "StackPriority" "12"
+
+// Expansion levels 13-20
+    new entry "GOON_NPC_CLERIC_LIGHT_LVL_13"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_CLERIC_LIGHT_LVL_12"
+    data "StackPriority" "13"
+    
+    new entry "GOON_NPC_CLERIC_LIGHT_LVL_14"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_CLERIC_LIGHT_LVL_12"
+    data "StackPriority" "14"
+    
+    new entry "GOON_NPC_CLERIC_LIGHT_LVL_15"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_CLERIC_LIGHT_LVL_12"
+    data "StackPriority" "15"
+    
+    new entry "GOON_NPC_CLERIC_LIGHT_LVL_16"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_CLERIC_LIGHT_LVL_12"
+    data "StackPriority" "16"
+    
+    new entry "GOON_NPC_CLERIC_LIGHT_LVL_17"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_CLERIC_LIGHT_LVL_12"
+    data "StackPriority" "17"
+    
+    new entry "GOON_NPC_CLERIC_LIGHT_LVL_18"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_CLERIC_LIGHT_LVL_12"
+    data "StackPriority" "18"
+    
+    new entry "GOON_NPC_CLERIC_LIGHT_LVL_19"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_CLERIC_LIGHT_LVL_12"
+    data "StackPriority" "19"
+    
+    new entry "GOON_NPC_CLERIC_LIGHT_LVL_20"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_CLERIC_LIGHT_LVL_12"
+    data "StackPriority" "20"
 
 // ==================================== Subclass: Knowledge Domain ====================================
 
