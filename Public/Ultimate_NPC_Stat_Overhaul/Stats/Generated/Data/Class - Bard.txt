@@ -21,10 +21,7 @@
     // data "Boosts" ""
     data "StatsFunctorContext" "OnCreate;OnStatusApplied;OnStatusRemoved"
     data "Conditions" "(not HasPassive('Goon_Bard_NPC_Progressions'))"
-    data "StatsFunctors" "IF(not CharacterLevelGreaterThan(1,GetOwner(context.Source))):ApplyStatus(GOON_NPC_BARD_LEVEL_1,100,-1);IF(CharacterLevelGreaterThan(1,GetOwner(context.Source)) and not CharacterLevelGreaterThan(2,GetOwner(context.Source))):ApplyStatus(GOON_NPC_BARD_LEVEL_2,100,-1);IF(CharacterLevelGreaterThan(2,GetOwner(context.Source)) and not CharacterLevelGreaterThan(3,GetOwner(context.Source))):ApplyStatus(GOON_NPC_BARD_LEVEL_3,100,-1);IF(CharacterLevelGreaterThan(3,GetOwner(context.Source)) and not CharacterLevelGreaterThan(4,GetOwner(context.Source))):ApplyStatus(GOON_NPC_BARD_LEVEL_4,100,-1);IF(CharacterLevelGreaterThan(4,GetOwner(context.Source)) and not CharacterLevelGreaterThan(5,GetOwner(context.Source))):ApplyStatus(GOON_NPC_BARD_LEVEL_5,100,-1);IF(CharacterLevelGreaterThan(5,GetOwner(context.Source)) and not CharacterLevelGreaterThan(6,GetOwner(context.Source))):ApplyStatus(GOON_NPC_BARD_LEVEL_6,100,-1);IF(CharacterLevelGreaterThan(6,GetOwner(context.Source)) and not CharacterLevelGreaterThan(7,GetOwner(context.Source))):ApplyStatus(GOON_NPC_BARD_LEVEL_7,100,-1);IF(CharacterLevelGreaterThan(7,GetOwner(context.Source)) and not CharacterLevelGreaterThan(8,GetOwner(context.Source))):ApplyStatus(GOON_NPC_BARD_LEVEL_8,100,-1);IF(CharacterLevelGreaterThan(8,GetOwner(context.Source)) and not CharacterLevelGreaterThan(9,GetOwner(context.Source))):ApplyStatus(GOON_NPC_BARD_LEVEL_9,100,-1);IF(CharacterLevelGreaterThan(9,GetOwner(context.Source)) and not CharacterLevelGreaterThan(10,GetOwner(context.Source))):ApplyStatus(GOON_NPC_BARD_LEVEL_10,100,-1);IF(CharacterLevelGreaterThan(10,GetOwner(context.Source)) and not CharacterLevelGreaterThan(11,GetOwner(context.Source))):ApplyStatus(GOON_NPC_BARD_LEVEL_11,100,-1);IF(CharacterLevelGreaterThan(11,GetOwner(context.Source))):ApplyStatus(GOON_NPC_BARD_LEVEL_12,100,-1)"
-
-    //  and not CharacterLevelGreaterThan(12,GetOwner(context.Source))
-    // ;IF(CharacterLevelGreaterThan(12,GetOwner(context.Source)) and not CharacterLevelGreaterThan(13,GetOwner(context.Source))):ApplyStatus(GOON_NPC_BARD_LEVEL_13,100,-1);IF(CharacterLevelGreaterThan(13,GetOwner(context.Source)) and not CharacterLevelGreaterThan(14,GetOwner(context.Source))):ApplyStatus(GOON_NPC_BARD_LEVEL_14,100,-1);IF(CharacterLevelGreaterThan(14,GetOwner(context.Source)) and not CharacterLevelGreaterThan(15,GetOwner(context.Source))):ApplyStatus(GOON_NPC_BARD_LEVEL_15,100,-1);IF(CharacterLevelGreaterThan(15,GetOwner(context.Source)) and not CharacterLevelGreaterThan(16,GetOwner(context.Source))):ApplyStatus(GOON_NPC_BARD_LEVEL_16,100,-1);IF(CharacterLevelGreaterThan(16,GetOwner(context.Source)) and not CharacterLevelGreaterThan(17,GetOwner(context.Source))):ApplyStatus(GOON_NPC_BARD_LEVEL_17,100,-1);IF(CharacterLevelGreaterThan(17,GetOwner(context.Source)) and not CharacterLevelGreaterThan(18,GetOwner(context.Source))):ApplyStatus(GOON_NPC_BARD_LEVEL_18,100,-1);IF(CharacterLevelGreaterThan(18,GetOwner(context.Source)) and not CharacterLevelGreaterThan(19,GetOwner(context.Source))):ApplyStatus(GOON_NPC_BARD_LEVEL_19,100,-1);IF(CharacterLevelGreaterThan(19,GetOwner(context.Source))):ApplyStatus(GOON_NPC_BARD_LEVEL_20,100,-1)
+    data "StatsFunctors" "IF(not CharacterLevelGreaterThan(1,GetOwner(context.Source))):ApplyStatus(GOON_NPC_BARD_LVL_1,100,-1);IF(CharacterLevelGreaterThan(1,GetOwner(context.Source)) and not CharacterLevelGreaterThan(2,GetOwner(context.Source))):ApplyStatus(GOON_NPC_BARD_LVL_2,100,-1);IF(CharacterLevelGreaterThan(2,GetOwner(context.Source)) and not CharacterLevelGreaterThan(3,GetOwner(context.Source))):ApplyStatus(GOON_NPC_BARD_LVL_3,100,-1);IF(CharacterLevelGreaterThan(3,GetOwner(context.Source)) and not CharacterLevelGreaterThan(4,GetOwner(context.Source))):ApplyStatus(GOON_NPC_BARD_LVL_4,100,-1);IF(CharacterLevelGreaterThan(4,GetOwner(context.Source)) and not CharacterLevelGreaterThan(5,GetOwner(context.Source))):ApplyStatus(GOON_NPC_BARD_LVL_5,100,-1);IF(CharacterLevelGreaterThan(5,GetOwner(context.Source)) and not CharacterLevelGreaterThan(6,GetOwner(context.Source))):ApplyStatus(GOON_NPC_BARD_LVL_6,100,-1);IF(CharacterLevelGreaterThan(6,GetOwner(context.Source)) and not CharacterLevelGreaterThan(7,GetOwner(context.Source))):ApplyStatus(GOON_NPC_BARD_LVL_7,100,-1);IF(CharacterLevelGreaterThan(7,GetOwner(context.Source)) and not CharacterLevelGreaterThan(8,GetOwner(context.Source))):ApplyStatus(GOON_NPC_BARD_LVL_8,100,-1);IF(CharacterLevelGreaterThan(8,GetOwner(context.Source)) and not CharacterLevelGreaterThan(9,GetOwner(context.Source))):ApplyStatus(GOON_NPC_BARD_LVL_9,100,-1);IF(CharacterLevelGreaterThan(9,GetOwner(context.Source)) and not CharacterLevelGreaterThan(10,GetOwner(context.Source))):ApplyStatus(GOON_NPC_BARD_LVL_10,100,-1);IF(CharacterLevelGreaterThan(10,GetOwner(context.Source)) and not CharacterLevelGreaterThan(11,GetOwner(context.Source))):ApplyStatus(GOON_NPC_BARD_LVL_11,100,-1);IF(CharacterLevelGreaterThan(11,GetOwner(context.Source)) and not CharacterLevelGreaterThan(12,GetOwner(context.Source))):ApplyStatus(GOON_NPC_BARD_LVL_12,100,-1);IF(CharacterLevelGreaterThan(12,GetOwner(context.Source)) and not CharacterLevelGreaterThan(13,GetOwner(context.Source))):ApplyStatus(GOON_NPC_BARD_LVL_13,100,-1);IF(CharacterLevelGreaterThan(13,GetOwner(context.Source)) and not CharacterLevelGreaterThan(14,GetOwner(context.Source))):ApplyStatus(GOON_NPC_BARD_LVL_14,100,-1);IF(CharacterLevelGreaterThan(14,GetOwner(context.Source)) and not CharacterLevelGreaterThan(15,GetOwner(context.Source))):ApplyStatus(GOON_NPC_BARD_LVL_15,100,-1);IF(CharacterLevelGreaterThan(15,GetOwner(context.Source)) and not CharacterLevelGreaterThan(16,GetOwner(context.Source))):ApplyStatus(GOON_NPC_BARD_LVL_16,100,-1);IF(CharacterLevelGreaterThan(16,GetOwner(context.Source)) and not CharacterLevelGreaterThan(17,GetOwner(context.Source))):ApplyStatus(GOON_NPC_BARD_LVL_17,100,-1);IF(CharacterLevelGreaterThan(17,GetOwner(context.Source)) and not CharacterLevelGreaterThan(18,GetOwner(context.Source))):ApplyStatus(GOON_NPC_BARD_LVL_18,100,-1);IF(CharacterLevelGreaterThan(18,GetOwner(context.Source)) and not CharacterLevelGreaterThan(19,GetOwner(context.Source))):ApplyStatus(GOON_NPC_BARD_LVL_19,100,-1);IF(CharacterLevelGreaterThan(19,GetOwner(context.Source))):ApplyStatus(GOON_NPC_BARD_LVL_20,100,-1)"
 
 // Template
     new entry "GOON_NPC_BARD_PROGRESSION_TEMPLATE"
@@ -37,7 +34,7 @@
     data "RemoveConditions" "not HasPassive('CX_Bard_Boost') or HasStatus('Goon_Bard_NPC_Progressions')"
 
 // Progression statuses
-    new entry "GOON_NPC_BARD_LEVEL_1_MULTICLASS"
+    new entry "GOON_NPC_BARD_LVL_1_MULTICLASS"
     type "StatusData"
     data "StatusType" "BOOST"
     using "GOON_NPC_BARD_PROGRESSION_TEMPLATE"
@@ -55,7 +52,7 @@
     //     <attribute id="TableUUID" type="guid" value="60bbcc97-5381-4898-bc15-908c072895de"/>
     //     <attribute id="UUID" type="guid" value="2dc1015e-6fd9-48aa-923e-eecaf72a83f1"/>
 
-    new entry "GOON_NPC_BARD_LEVEL_1"
+    new entry "GOON_NPC_BARD_LVL_1"
     type "StatusData"
     data "StatusType" "BOOST"
     using "GOON_NPC_BARD_PROGRESSION_TEMPLATE"
@@ -63,7 +60,7 @@
     data "Passives" "BardicInspiration;BardSpellcasting;UnlockedSpellSlotLevel1;CX_Magic_Boost"
     data "Boosts" "Tag(BARD);ActionResource(SpellSlot,2,1);ActionResource(BardicInspiration,3,0,d6);ProficiencyBonus(SavingThrow,Dexterity);ProficiencyBonus(SavingThrow,Charisma);Proficiency(LightArmor);Proficiency(SimpleWeapons);Proficiency(HandCrossbows);Proficiency(Longswords);Proficiency(Rapiers);Proficiency(Shortswords);Proficiency(MusicalInstrument);Attribute(UseMusicalInstrumentForCasting)"
 
-    new entry "GOON_NPC_BARD_LEVEL_2"
+    new entry "GOON_NPC_BARD_LVL_2"
     type "StatusData"
     data "StatusType" "BOOST"
     using "GOON_NPC_BARD_PROGRESSION_TEMPLATE"
@@ -71,7 +68,7 @@
     data "Passives" "BardicInspiration;BardSpellcasting;UnlockedSpellSlotLevel1;JackOfAllTrades"
     data "Boosts" "Tag(BARD);ActionResource(SpellSlot,3,1);ActionResource(BardicInspiration,3,0,d6);ProficiencyBonus(SavingThrow,Dexterity);ProficiencyBonus(SavingThrow,Charisma);Proficiency(LightArmor);Proficiency(SimpleWeapons);Proficiency(HandCrossbows);Proficiency(Longswords);Proficiency(Rapiers);Proficiency(Shortswords);Proficiency(MusicalInstrument);Attribute(UseMusicalInstrumentForCasting);UnlockSpell(Shout_SongOfRest)"
 
-    new entry "GOON_NPC_BARD_LEVEL_3"
+    new entry "GOON_NPC_BARD_LVL_3"
     type "StatusData"
     data "StatusType" "BOOST"
     using "GOON_NPC_BARD_PROGRESSION_TEMPLATE"
@@ -79,7 +76,7 @@
     data "Passives" "BardicInspiration;BardSpellcasting;UnlockedSpellSlotLevel1;JackOfAllTrades;UnlockedSpellSlotLevel2"
     data "Boosts" "Tag(BARD);ActionResource(SpellSlot,4,1);ActionResource(BardicInspiration,3,0,d6);ProficiencyBonus(SavingThrow,Dexterity);ProficiencyBonus(SavingThrow,Charisma);Proficiency(LightArmor);Proficiency(SimpleWeapons);Proficiency(HandCrossbows);Proficiency(Longswords);Proficiency(Rapiers);Proficiency(Shortswords);Proficiency(MusicalInstrument);Attribute(UseMusicalInstrumentForCasting);UnlockSpell(Shout_SongOfRest);ActionResource(SpellSlot,2,2)"
 
-    new entry "GOON_NPC_BARD_LEVEL_4"
+    new entry "GOON_NPC_BARD_LVL_4"
     type "StatusData"
     data "StatusType" "BOOST"
     using "GOON_NPC_BARD_PROGRESSION_TEMPLATE"
@@ -87,7 +84,7 @@
     data "Passives" "BardicInspiration;BardSpellcasting;UnlockedSpellSlotLevel1;JackOfAllTrades;UnlockedSpellSlotLevel2"
     data "Boosts" "Tag(BARD);ActionResource(SpellSlot,4,1);ActionResource(BardicInspiration,3,0,d6);ProficiencyBonus(SavingThrow,Dexterity);ProficiencyBonus(SavingThrow,Charisma);Proficiency(LightArmor);Proficiency(SimpleWeapons);Proficiency(HandCrossbows);Proficiency(Longswords);Proficiency(Rapiers);Proficiency(Shortswords);Proficiency(MusicalInstrument);Attribute(UseMusicalInstrumentForCasting);UnlockSpell(Shout_SongOfRest);ActionResource(SpellSlot,3,2)"
 
-    new entry "GOON_NPC_BARD_LEVEL_5"
+    new entry "GOON_NPC_BARD_LVL_5"
     type "StatusData"
     data "StatusType" "BOOST"
     using "GOON_NPC_BARD_PROGRESSION_TEMPLATE"
@@ -95,7 +92,7 @@
     data "Passives" "BardicInspiration;BardSpellcasting;UnlockedSpellSlotLevel1;JackOfAllTrades;UnlockedSpellSlotLevel2;FontOfInspiration;BardicInspiration_d8;UnlockedSpellSlotLevel3"
     data "Boosts" "Tag(BARD);ActionResource(SpellSlot,4,1);ActionResource(BardicInspiration,3,0,d6);ProficiencyBonus(SavingThrow,Dexterity);ProficiencyBonus(SavingThrow,Charisma);Proficiency(LightArmor);Proficiency(SimpleWeapons);Proficiency(HandCrossbows);Proficiency(Longswords);Proficiency(Rapiers);Proficiency(Shortswords);Proficiency(MusicalInstrument);Attribute(UseMusicalInstrumentForCasting);UnlockSpell(Shout_SongOfRest);ActionResource(SpellSlot,3,2);ActionResource(SpellSlot,2,3)"
 
-    new entry "GOON_NPC_BARD_LEVEL_6"
+    new entry "GOON_NPC_BARD_LVL_6"
     type "StatusData"
     data "StatusType" "BOOST"
     using "GOON_NPC_BARD_PROGRESSION_TEMPLATE"
@@ -103,7 +100,7 @@
     data "Passives" "BardicInspiration;BardSpellcasting;UnlockedSpellSlotLevel1;JackOfAllTrades;UnlockedSpellSlotLevel2;FontOfInspiration;BardicInspiration_d8;UnlockedSpellSlotLevel3"
     data "Boosts" "Tag(BARD);ActionResource(SpellSlot,4,1);ActionResource(BardicInspiration,3,0,d6);ProficiencyBonus(SavingThrow,Dexterity);ProficiencyBonus(SavingThrow,Charisma);Proficiency(LightArmor);Proficiency(SimpleWeapons);Proficiency(HandCrossbows);Proficiency(Longswords);Proficiency(Rapiers);Proficiency(Shortswords);Proficiency(MusicalInstrument);Attribute(UseMusicalInstrumentForCasting);UnlockSpell(Shout_SongOfRest);ActionResource(SpellSlot,3,2);ActionResource(SpellSlot,3,3);UnlockSpell(Target_Countercharm)"
 
-    new entry "GOON_NPC_BARD_LEVEL_7"
+    new entry "GOON_NPC_BARD_LVL_7"
     type "StatusData"
     data "StatusType" "BOOST"
     using "GOON_NPC_BARD_PROGRESSION_TEMPLATE"
@@ -111,7 +108,7 @@
     data "Passives" "BardicInspiration;BardSpellcasting;UnlockedSpellSlotLevel1;JackOfAllTrades;UnlockedSpellSlotLevel2;FontOfInspiration;BardicInspiration_d8;UnlockedSpellSlotLevel3"
     data "Boosts" "Tag(BARD);ActionResource(SpellSlot,4,1);ActionResource(BardicInspiration,3,0,d6);ProficiencyBonus(SavingThrow,Dexterity);ProficiencyBonus(SavingThrow,Charisma);Proficiency(LightArmor);Proficiency(SimpleWeapons);Proficiency(HandCrossbows);Proficiency(Longswords);Proficiency(Rapiers);Proficiency(Shortswords);Proficiency(MusicalInstrument);Attribute(UseMusicalInstrumentForCasting);UnlockSpell(Shout_SongOfRest);ActionResource(SpellSlot,3,2);ActionResource(SpellSlot,3,3);UnlockSpell(Target_Countercharm);ActionResource(SpellSlot,1,4)"
 
-    new entry "GOON_NPC_BARD_LEVEL_8"
+    new entry "GOON_NPC_BARD_LVL_8"
     type "StatusData"
     data "StatusType" "BOOST"
     using "GOON_NPC_BARD_PROGRESSION_TEMPLATE"
@@ -119,7 +116,7 @@
     data "Passives" "BardicInspiration;BardSpellcasting;UnlockedSpellSlotLevel1;JackOfAllTrades;UnlockedSpellSlotLevel2;FontOfInspiration;BardicInspiration_d8;UnlockedSpellSlotLevel3"
     data "Boosts" "Tag(BARD);ActionResource(SpellSlot,4,1);ActionResource(BardicInspiration,3,0,d6);ProficiencyBonus(SavingThrow,Dexterity);ProficiencyBonus(SavingThrow,Charisma);Proficiency(LightArmor);Proficiency(SimpleWeapons);Proficiency(HandCrossbows);Proficiency(Longswords);Proficiency(Rapiers);Proficiency(Shortswords);Proficiency(MusicalInstrument);Attribute(UseMusicalInstrumentForCasting);UnlockSpell(Shout_SongOfRest);ActionResource(SpellSlot,3,2);ActionResource(SpellSlot,3,3);UnlockSpell(Target_Countercharm);ActionResource(SpellSlot,2,4);ActionResource(BardicInspiration,1,0)"
 
-    new entry "GOON_NPC_BARD_LEVEL_9"
+    new entry "GOON_NPC_BARD_LVL_9"
     type "StatusData"
     data "StatusType" "BOOST"
     using "GOON_NPC_BARD_PROGRESSION_TEMPLATE"
@@ -127,7 +124,7 @@
     data "Passives" "BardicInspiration;BardSpellcasting;UnlockedSpellSlotLevel1;JackOfAllTrades;UnlockedSpellSlotLevel2;FontOfInspiration;BardicInspiration_d8;UnlockedSpellSlotLevel3"
     data "Boosts" "Tag(BARD);ActionResource(SpellSlot,4,1);ActionResource(BardicInspiration,3,0,d6);ProficiencyBonus(SavingThrow,Dexterity);ProficiencyBonus(SavingThrow,Charisma);Proficiency(LightArmor);Proficiency(SimpleWeapons);Proficiency(HandCrossbows);Proficiency(Longswords);Proficiency(Rapiers);Proficiency(Shortswords);Proficiency(MusicalInstrument);Attribute(UseMusicalInstrumentForCasting);UnlockSpell(Shout_SongOfRest);ActionResource(SpellSlot,3,2);ActionResource(SpellSlot,3,3);UnlockSpell(Target_Countercharm);ActionResource(SpellSlot,3,4);ActionResource(BardicInspiration,1,0);ActionResource(SpellSlot,1,5)"
 
-    new entry "GOON_NPC_BARD_LEVEL_10"
+    new entry "GOON_NPC_BARD_LVL_10"
     type "StatusData"
     data "StatusType" "BOOST"
     using "GOON_NPC_BARD_PROGRESSION_TEMPLATE"
@@ -135,7 +132,7 @@
     data "Passives" "BardicInspiration;BardSpellcasting;UnlockedSpellSlotLevel1;JackOfAllTrades;UnlockedSpellSlotLevel2;FontOfInspiration;BardicInspiration_d8;UnlockedSpellSlotLevel3;BardicInspiration_d10"
     data "Boosts" "Tag(BARD);ActionResource(SpellSlot,4,1);ActionResource(BardicInspiration,3,0,d6);ProficiencyBonus(SavingThrow,Dexterity);ProficiencyBonus(SavingThrow,Charisma);Proficiency(LightArmor);Proficiency(SimpleWeapons);Proficiency(HandCrossbows);Proficiency(Longswords);Proficiency(Rapiers);Proficiency(Shortswords);Proficiency(MusicalInstrument);Attribute(UseMusicalInstrumentForCasting);UnlockSpell(Shout_SongOfRest);ActionResource(SpellSlot,3,2);ActionResource(SpellSlot,3,3);UnlockSpell(Target_Countercharm);ActionResource(SpellSlot,3,4);ActionResource(BardicInspiration,1,0);ActionResource(SpellSlot,2,5)"
 
-    new entry "GOON_NPC_BARD_LEVEL_11"
+    new entry "GOON_NPC_BARD_LVL_11"
     type "StatusData"
     data "StatusType" "BOOST"
     using "GOON_NPC_BARD_PROGRESSION_TEMPLATE"
@@ -143,7 +140,7 @@
     data "Passives" "BardicInspiration;BardSpellcasting;UnlockedSpellSlotLevel1;JackOfAllTrades;UnlockedSpellSlotLevel2;FontOfInspiration;BardicInspiration_d8;UnlockedSpellSlotLevel3;BardicInspiration_d10"
     data "Boosts" "Tag(BARD);ActionResource(SpellSlot,4,1);ActionResource(BardicInspiration,3,0,d6);ProficiencyBonus(SavingThrow,Dexterity);ProficiencyBonus(SavingThrow,Charisma);Proficiency(LightArmor);Proficiency(SimpleWeapons);Proficiency(HandCrossbows);Proficiency(Longswords);Proficiency(Rapiers);Proficiency(Shortswords);Proficiency(MusicalInstrument);Attribute(UseMusicalInstrumentForCasting);UnlockSpell(Shout_SongOfRest);ActionResource(SpellSlot,3,2);ActionResource(SpellSlot,3,3);UnlockSpell(Target_Countercharm);ActionResource(SpellSlot,3,4);ActionResource(BardicInspiration,1,0);ActionResource(SpellSlot,2,5);ActionResource(SpellSlot,1,6)"
 
-    new entry "GOON_NPC_BARD_LEVEL_12"
+    new entry "GOON_NPC_BARD_LVL_12"
     type "StatusData"
     data "StatusType" "BOOST"
     using "GOON_NPC_BARD_PROGRESSION_TEMPLATE"
@@ -152,69 +149,53 @@
     data "Boosts" "Tag(BARD);ActionResource(SpellSlot,4,1);ActionResource(BardicInspiration,3,0,d6);ProficiencyBonus(SavingThrow,Dexterity);ProficiencyBonus(SavingThrow,Charisma);Proficiency(LightArmor);Proficiency(SimpleWeapons);Proficiency(HandCrossbows);Proficiency(Longswords);Proficiency(Rapiers);Proficiency(Shortswords);Proficiency(MusicalInstrument);Attribute(UseMusicalInstrumentForCasting);UnlockSpell(Shout_SongOfRest);ActionResource(SpellSlot,3,2);ActionResource(SpellSlot,3,3);UnlockSpell(Target_Countercharm);ActionResource(SpellSlot,3,4);ActionResource(BardicInspiration,1,0);ActionResource(SpellSlot,2,5);ActionResource(SpellSlot,1,6)"
 
 // Expansion levels 13-20
-    new entry "GOON_NPC_BARD_LEVEL_13"
+    new entry "GOON_NPC_BARD_LVL_13"
     type "StatusData"
     data "StatusType" "BOOST"
-    using "GOON_NPC_BARD_PROGRESSION_TEMPLATE"
+    using "GOON_NPC_BARD_LVL_12"
     data "StackPriority" "13"
-    data "Passives" ""
-    data "Boosts" ""
 
-    new entry "GOON_NPC_BARD_LEVEL_14"
+    new entry "GOON_NPC_BARD_LVL_14"
     type "StatusData"
     data "StatusType" "BOOST"
-    using "GOON_NPC_BARD_PROGRESSION_TEMPLATE"
+    using "GOON_NPC_BARD_LVL_12"
     data "StackPriority" "14"
-    data "Passives" ""
-    data "Boosts" ""
 
-    new entry "GOON_NPC_BARD_LEVEL_15"
+    new entry "GOON_NPC_BARD_LVL_15"
     type "StatusData"
     data "StatusType" "BOOST"
-    using "GOON_NPC_BARD_PROGRESSION_TEMPLATE"
+    using "GOON_NPC_BARD_LVL_12"
     data "StackPriority" "15"
-    data "Passives" ""
-    data "Boosts" ""
 
-    new entry "GOON_NPC_BARD_LEVEL_16"
+    new entry "GOON_NPC_BARD_LVL_16"
     type "StatusData"
     data "StatusType" "BOOST"
-    using "GOON_NPC_BARD_PROGRESSION_TEMPLATE"
+    using "GOON_NPC_BARD_LVL_12"
     data "StackPriority" "16"
-    data "Passives" ""
-    data "Boosts" ""
 
-    new entry "GOON_NPC_BARD_LEVEL_17"
+    new entry "GOON_NPC_BARD_LVL_17"
     type "StatusData"
     data "StatusType" "BOOST"
-    using "GOON_NPC_BARD_PROGRESSION_TEMPLATE"
+    using "GOON_NPC_BARD_LVL_12"
     data "StackPriority" "17"
-    data "Passives" ""
-    data "Boosts" ""
 
-    new entry "GOON_NPC_BARD_LEVEL_18"
+    new entry "GOON_NPC_BARD_LVL_18"
     type "StatusData"
     data "StatusType" "BOOST"
-    using "GOON_NPC_BARD_PROGRESSION_TEMPLATE"
+    using "GOON_NPC_BARD_LVL_12"
     data "StackPriority" "18"
-    data "Passives" ""
-    data "Boosts" ""
 
-    new entry "GOON_NPC_BARD_LEVEL_19"
+    new entry "GOON_NPC_BARD_LVL_19"
     type "StatusData"
     data "StatusType" "BOOST"
-    using "GOON_NPC_BARD_PROGRESSION_TEMPLATE"
+    using "GOON_NPC_BARD_LVL_12"
     data "StackPriority" "19"
-    data "Passives" ""
-    data "Boosts" ""
 
-    new entry "GOON_NPC_BARD_LEVEL_20"
+    new entry "GOON_NPC_BARD_LVL_20"
     type "StatusData"
     data "StatusType" "BOOST"
-    using "GOON_NPC_BARD_PROGRESSION_TEMPLATE"
+    using "GOON_NPC_BARD_LVL_12"
     data "StackPriority" "20"
-    data "Passives" ""
-    data "Boosts" ""
 
 // ==================================== Subclass: College of Lore ====================================
 
