@@ -211,7 +211,7 @@
     data "Boosts" ""
     data "StatsFunctorContext" "OnCreate;OnStatusApplied;OnStatusRemoved"
     data "Conditions" ""
-    data "StatsFunctors" "IF(CharacterLevelGreaterThan(2,GetOwner(context.Source)) and not CharacterLevelGreaterThan(5,GetOwner(context.Source))):ApplyStatus(GOON_NPC_BARBARIAN_BERSERKER_LEVEL_3,100,-1);IF(CharacterLevelGreaterThan(5,GetOwner(context.Source)) and not CharacterLevelGreaterThan(9,GetOwner(context.Source))):ApplyStatus(GOON_NPC_BARBARIAN_BERSERKER_LEVEL_6,100,-1);IF(CharacterLevelGreaterThan(9,GetOwner(context.Source))):ApplyStatus(GOON_NPC_BARBARIAN_BERSERKER_LEVEL_10,100,-1)"
+    data "StatsFunctors" "IF(not ClassLevelHigherOrEqualThan(2,'NPC_BARBARIAN') or HasStatus('GOON_NPC_BARBARIAN_LVL_1')):ApplyStatus(GOON_NPC_BARBARIAN_BERSERKER_LVL_1,100,-1);IF(ClassLevelHigherOrEqualThan(2,'NPC_BARBARIAN') and not ClassLevelHigherOrEqualThan(3,'NPC_BARBARIAN') or HasStatus('GOON_NPC_BARBARIAN_LVL_2')):ApplyStatus(GOON_NPC_BARBARIAN_BERSERKER_LVL_2,100,-1);IF(ClassLevelHigherOrEqualThan(3,'NPC_BARBARIAN') and not ClassLevelHigherOrEqualThan(4,'NPC_BARBARIAN') or HasStatus('GOON_NPC_BARBARIAN_LVL_3')):ApplyStatus(GOON_NPC_BARBARIAN_BERSERKER_LVL_3,100,-1);IF(ClassLevelHigherOrEqualThan(4,'NPC_BARBARIAN') and not ClassLevelHigherOrEqualThan(5,'NPC_BARBARIAN') or HasStatus('GOON_NPC_BARBARIAN_LVL_4')):ApplyStatus(GOON_NPC_BARBARIAN_BERSERKER_LVL_4,100,-1);IF(ClassLevelHigherOrEqualThan(5,'NPC_BARBARIAN') and not ClassLevelHigherOrEqualThan(6,'NPC_BARBARIAN') or HasStatus('GOON_NPC_BARBARIAN_LVL_5')):ApplyStatus(GOON_NPC_BARBARIAN_BERSERKER_LVL_5,100,-1);IF(ClassLevelHigherOrEqualThan(6,'NPC_BARBARIAN') and not ClassLevelHigherOrEqualThan(7,'NPC_BARBARIAN') or HasStatus('GOON_NPC_BARBARIAN_LVL_6')):ApplyStatus(GOON_NPC_BARBARIAN_BERSERKER_LVL_6,100,-1);IF(ClassLevelHigherOrEqualThan(7,'NPC_BARBARIAN') and not ClassLevelHigherOrEqualThan(8,'NPC_BARBARIAN') or HasStatus('GOON_NPC_BARBARIAN_LVL_7')):ApplyStatus(GOON_NPC_BARBARIAN_BERSERKER_LVL_7,100,-1);IF(ClassLevelHigherOrEqualThan(8,'NPC_BARBARIAN') and not ClassLevelHigherOrEqualThan(9,'NPC_BARBARIAN') or HasStatus('GOON_NPC_BARBARIAN_LVL_8')):ApplyStatus(GOON_NPC_BARBARIAN_BERSERKER_LVL_8,100,-1);IF(ClassLevelHigherOrEqualThan(9,'NPC_BARBARIAN') and not ClassLevelHigherOrEqualThan(10,'NPC_BARBARIAN') or HasStatus('GOON_NPC_BARBARIAN_LVL_9')):ApplyStatus(GOON_NPC_BARBARIAN_BERSERKER_LVL_9,100,-1);IF(ClassLevelHigherOrEqualThan(10,'NPC_BARBARIAN') and not ClassLevelHigherOrEqualThan(11,'NPC_BARBARIAN') or HasStatus('GOON_NPC_BARBARIAN_LVL_10')):ApplyStatus(GOON_NPC_BARBARIAN_BERSERKER_LVL_10,100,-1);IF(ClassLevelHigherOrEqualThan(11,'NPC_BARBARIAN') and not ClassLevelHigherOrEqualThan(12,'NPC_BARBARIAN') or HasStatus('GOON_NPC_BARBARIAN_LVL_11')):ApplyStatus(GOON_NPC_BARBARIAN_BERSERKER_LVL_11,100,-1);IF(ClassLevelHigherOrEqualThan(12,'NPC_BARBARIAN') and not ClassLevelHigherOrEqualThan(13,'NPC_BARBARIAN') or HasStatus('GOON_NPC_BARBARIAN_LVL_12')):ApplyStatus(GOON_NPC_BARBARIAN_BERSERKER_LVL_12,100,-1);IF(ClassLevelHigherOrEqualThan(13,'NPC_BARBARIAN') and not ClassLevelHigherOrEqualThan(14,'NPC_BARBARIAN') or HasStatus('GOON_NPC_BARBARIAN_LVL_13')):ApplyStatus(GOON_NPC_BARBARIAN_BERSERKER_LVL_13,100,-1);IF(ClassLevelHigherOrEqualThan(14,'NPC_BARBARIAN') and not ClassLevelHigherOrEqualThan(15,'NPC_BARBARIAN') or HasStatus('GOON_NPC_BARBARIAN_LVL_14')):ApplyStatus(GOON_NPC_BARBARIAN_BERSERKER_LVL_14,100,-1);IF(ClassLevelHigherOrEqualThan(15,'NPC_BARBARIAN') and not ClassLevelHigherOrEqualThan(16,'NPC_BARBARIAN') or HasStatus('GOON_NPC_BARBARIAN_LVL_15')):ApplyStatus(GOON_NPC_BARBARIAN_BERSERKER_LVL_15,100,-1);IF(ClassLevelHigherOrEqualThan(16,'NPC_BARBARIAN') and not ClassLevelHigherOrEqualThan(17,'NPC_BARBARIAN') or HasStatus('GOON_NPC_BARBARIAN_LVL_16')):ApplyStatus(GOON_NPC_BARBARIAN_BERSERKER_LVL_16,100,-1);IF(ClassLevelHigherOrEqualThan(17,'NPC_BARBARIAN') and not ClassLevelHigherOrEqualThan(18,'NPC_BARBARIAN') or HasStatus('GOON_NPC_BARBARIAN_LVL_17')):ApplyStatus(GOON_NPC_BARBARIAN_BERSERKER_LVL_17,100,-1);IF(ClassLevelHigherOrEqualThan(18,'NPC_BARBARIAN') and not ClassLevelHigherOrEqualThan(19,'NPC_BARBARIAN') or HasStatus('GOON_NPC_BARBARIAN_LVL_18')):ApplyStatus(GOON_NPC_BARBARIAN_BERSERKER_LVL_18,100,-1);IF(ClassLevelHigherOrEqualThan(19,'NPC_BARBARIAN') and not ClassLevelHigherOrEqualThan(20,'NPC_BARBARIAN') or HasStatus('GOON_NPC_BARBARIAN_LVL_19')):ApplyStatus(GOON_NPC_BARBARIAN_BERSERKER_LVL_19,100,-1);IF(ClassLevelHigherOrEqualThan(20,'NPC_BARBARIAN') or HasStatus('GOON_NPC_BARBARIAN_LVL_20')):ApplyStatus(GOON_NPC_BARBARIAN_BERSERKER_LVL_20,100,-1)"
 
 // Template
     new entry "GOON_NPC_BARBARIAN_BERSERKER_PROGRESSION_TEMPLATE"
@@ -224,7 +224,19 @@
     data "RemoveConditions" "not HasPassive('CX_Barbarian_Berserker_Boost')"
 
 // Progression statuses
-    new entry "GOON_NPC_BARBARIAN_BERSERKER_LEVEL_3"
+    new entry "GOON_NPC_BARBARIAN_BERSERKER_LVL_1"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_BARBARIAN_BERSERKER_PROGRESSION_TEMPLATE"
+    data "StackPriority" "1"
+
+    new entry "GOON_NPC_BARBARIAN_BERSERKER_LVL_2"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_BARBARIAN_BERSERKER_PROGRESSION_TEMPLATE"
+    data "StackPriority" "2"
+
+    new entry "GOON_NPC_BARBARIAN_BERSERKER_LVL_3"
     type "StatusData"
     data "StatusType" "BOOST"
     using "GOON_NPC_BARBARIAN_BERSERKER_PROGRESSION_TEMPLATE"
@@ -242,7 +254,19 @@
     //     <attribute id="TableUUID" type="guid" value="b2a03b63-809f-4df9-a179-bf5b899082ef"/>
     //     <attribute id="UUID" type="guid" value="5ce67263-04f2-4ede-b30a-2eb962d828f2"/>
 
-    new entry "GOON_NPC_BARBARIAN_BERSERKER_LEVEL_6"
+    new entry "GOON_NPC_BARBARIAN_BERSERKER_LVL_4"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_BARBARIAN_BERSERKER_LVL_3"
+    data "StackPriority" "4"
+
+    new entry "GOON_NPC_BARBARIAN_BERSERKER_LVL_5"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_BARBARIAN_BERSERKER_LVL_3"
+    data "StackPriority" "5"
+
+    new entry "GOON_NPC_BARBARIAN_BERSERKER_LVL_6"
     type "StatusData"
     data "StatusType" "BOOST"
     using "GOON_NPC_BARBARIAN_BERSERKER_PROGRESSION_TEMPLATE"
@@ -258,7 +282,25 @@
     //     <attribute id="TableUUID" type="guid" value="b2a03b63-809f-4df9-a179-bf5b899082ef"/>
     //     <attribute id="UUID" type="guid" value="27a1114c-3f84-4f47-8544-865e91db8d0f"/>
 
-    new entry "GOON_NPC_BARBARIAN_BERSERKER_LEVEL_10"
+    new entry "GOON_NPC_BARBARIAN_BERSERKER_LVL_7"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_BARBARIAN_BERSERKER_LVL_6"
+    data "StackPriority" "7"
+
+    new entry "GOON_NPC_BARBARIAN_BERSERKER_LVL_8"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_BARBARIAN_BERSERKER_LVL_6"
+    data "StackPriority" "8"
+
+    new entry "GOON_NPC_BARBARIAN_BERSERKER_LVL_9"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_BARBARIAN_BERSERKER_LVL_6"
+    data "StackPriority" "9"
+
+    new entry "GOON_NPC_BARBARIAN_BERSERKER_LVL_10"
     type "StatusData"
     data "StatusType" "BOOST"
     using "GOON_NPC_BARBARIAN_BERSERKER_PROGRESSION_TEMPLATE"
@@ -274,6 +316,77 @@
     //     <attribute id="TableUUID" type="guid" value="b2a03b63-809f-4df9-a179-bf5b899082ef"/>
     //     <attribute id="UUID" type="guid" value="ad9a37aa-bc2d-4024-9b5f-5aaf330cb25c"/>
 
+    new entry "GOON_NPC_BARBARIAN_BERSERKER_LVL_11"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_BARBARIAN_BERSERKER_LVL_10"
+    data "StackPriority" "11"
+
+    new entry "GOON_NPC_BARBARIAN_BERSERKER_LVL_12"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_BARBARIAN_BERSERKER_LVL_10"
+    data "StackPriority" "12"
+
+// Expansion levels 13-20
+    new entry "GOON_NPC_BARBARIAN_BERSERKER_LVL_13"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_BARBARIAN_BERSERKER_LVL_10"
+    data "StackPriority" "13"
+    
+    new entry "GOON_NPC_BARBARIAN_BERSERKER_LVL_14"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_BARBARIAN_BERSERKER_PROGRESSION_TEMPLATE"
+    data "StackPriority" "14"
+    data "Passives" "RageFrenzyUnlock;MindlessRage;Retaliation"
+    data "Boosts" "UnlockSpell(Target_FrenziedStrike);UnlockSpell(Throw_FrenziedThrow);UnlockSpell(Target_IntimidatingPresence)"
+
+    // <node id="Progression">
+    //     <attribute id="Level" type="uint8" value="14"/>
+    //     <attribute id="Name" type="LSString" value="BerserkerPath"/>
+    //     <attribute id="PassivesAdded" type="LSString" value="Retaliation"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="TableUUID" type="guid" value="b2a03b63-809f-4df9-a179-bf5b899082ef"/>
+    //     <attribute id="UUID" type="guid" value="8ada3c48-5334-43ba-ac36-ce78c79d21d2"/>
+    
+    new entry "GOON_NPC_BARBARIAN_BERSERKER_LVL_15"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_BARBARIAN_BERSERKER_LVL_14"
+    data "StackPriority" "15"
+    
+    new entry "GOON_NPC_BARBARIAN_BERSERKER_LVL_16"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_BARBARIAN_BERSERKER_LVL_14"
+    data "StackPriority" "16"
+    
+    new entry "GOON_NPC_BARBARIAN_BERSERKER_LVL_17"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_BARBARIAN_BERSERKER_LVL_14"
+    data "StackPriority" "17"
+    
+    new entry "GOON_NPC_BARBARIAN_BERSERKER_LVL_18"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_BARBARIAN_BERSERKER_LVL_14"
+    data "StackPriority" "18"
+    
+    new entry "GOON_NPC_BARBARIAN_BERSERKER_LVL_19"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_BARBARIAN_BERSERKER_LVL_14"
+    data "StackPriority" "19"
+    
+    new entry "GOON_NPC_BARBARIAN_BERSERKER_LVL_20"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_BARBARIAN_BERSERKER_LVL_14"
+    data "StackPriority" "20"
+
 // ==================================== Subclass: Wild Magic ====================================
 
     new entry "CX_Barbarian_WildMagic_Boost"
@@ -284,7 +397,7 @@
     data "Boosts" ""
     data "StatsFunctorContext" "OnCreate;OnStatusApplied;OnStatusRemoved"
     data "Conditions" ""
-    data "StatsFunctors" "IF(CharacterLevelGreaterThan(2,GetOwner(context.Source)) and not CharacterLevelGreaterThan(5,GetOwner(context.Source))):ApplyStatus(GOON_NPC_BARBARIAN_WILDMAGIC_LEVEL_3,100,-1);IF(CharacterLevelGreaterThan(5,GetOwner(context.Source)) and not CharacterLevelGreaterThan(8,GetOwner(context.Source))):ApplyStatus(GOON_NPC_BARBARIAN_WILDMAGIC_LEVEL_6,100,-1);IF(CharacterLevelGreaterThan(8,GetOwner(context.Source)) and not CharacterLevelGreaterThan(9,GetOwner(context.Source))):ApplyStatus(GOON_NPC_BARBARIAN_WILDMAGIC_LEVEL_9,100,-1);IF(CharacterLevelGreaterThan(9,GetOwner(context.Source))):ApplyStatus(GOON_NPC_BARBARIAN_WILDMAGIC_LEVEL_10,100,-1)"
+    data "StatsFunctors" "IF(not ClassLevelHigherOrEqualThan(2,'NPC_BARBARIAN') or HasStatus('GOON_NPC_BARBARIAN_LVL_1')):ApplyStatus(GOON_NPC_BARBARIAN_WILDMAGIC_LVL_1,100,-1);IF(ClassLevelHigherOrEqualThan(2,'NPC_BARBARIAN') and not ClassLevelHigherOrEqualThan(3,'NPC_BARBARIAN') or HasStatus('GOON_NPC_BARBARIAN_LVL_2')):ApplyStatus(GOON_NPC_BARBARIAN_WILDMAGIC_LVL_2,100,-1);IF(ClassLevelHigherOrEqualThan(3,'NPC_BARBARIAN') and not ClassLevelHigherOrEqualThan(4,'NPC_BARBARIAN') or HasStatus('GOON_NPC_BARBARIAN_LVL_3')):ApplyStatus(GOON_NPC_BARBARIAN_WILDMAGIC_LVL_3,100,-1);IF(ClassLevelHigherOrEqualThan(4,'NPC_BARBARIAN') and not ClassLevelHigherOrEqualThan(5,'NPC_BARBARIAN') or HasStatus('GOON_NPC_BARBARIAN_LVL_4')):ApplyStatus(GOON_NPC_BARBARIAN_WILDMAGIC_LVL_4,100,-1);IF(ClassLevelHigherOrEqualThan(5,'NPC_BARBARIAN') and not ClassLevelHigherOrEqualThan(6,'NPC_BARBARIAN') or HasStatus('GOON_NPC_BARBARIAN_LVL_5')):ApplyStatus(GOON_NPC_BARBARIAN_WILDMAGIC_LVL_5,100,-1);IF(ClassLevelHigherOrEqualThan(6,'NPC_BARBARIAN') and not ClassLevelHigherOrEqualThan(7,'NPC_BARBARIAN') or HasStatus('GOON_NPC_BARBARIAN_LVL_6')):ApplyStatus(GOON_NPC_BARBARIAN_WILDMAGIC_LVL_6,100,-1);IF(ClassLevelHigherOrEqualThan(7,'NPC_BARBARIAN') and not ClassLevelHigherOrEqualThan(8,'NPC_BARBARIAN') or HasStatus('GOON_NPC_BARBARIAN_LVL_7')):ApplyStatus(GOON_NPC_BARBARIAN_WILDMAGIC_LVL_7,100,-1);IF(ClassLevelHigherOrEqualThan(8,'NPC_BARBARIAN') and not ClassLevelHigherOrEqualThan(9,'NPC_BARBARIAN') or HasStatus('GOON_NPC_BARBARIAN_LVL_8')):ApplyStatus(GOON_NPC_BARBARIAN_WILDMAGIC_LVL_8,100,-1);IF(ClassLevelHigherOrEqualThan(9,'NPC_BARBARIAN') and not ClassLevelHigherOrEqualThan(10,'NPC_BARBARIAN') or HasStatus('GOON_NPC_BARBARIAN_LVL_9')):ApplyStatus(GOON_NPC_BARBARIAN_WILDMAGIC_LVL_9,100,-1);IF(ClassLevelHigherOrEqualThan(10,'NPC_BARBARIAN') and not ClassLevelHigherOrEqualThan(11,'NPC_BARBARIAN') or HasStatus('GOON_NPC_BARBARIAN_LVL_10')):ApplyStatus(GOON_NPC_BARBARIAN_WILDMAGIC_LVL_10,100,-1);IF(ClassLevelHigherOrEqualThan(11,'NPC_BARBARIAN') and not ClassLevelHigherOrEqualThan(12,'NPC_BARBARIAN') or HasStatus('GOON_NPC_BARBARIAN_LVL_11')):ApplyStatus(GOON_NPC_BARBARIAN_WILDMAGIC_LVL_11,100,-1);IF(ClassLevelHigherOrEqualThan(12,'NPC_BARBARIAN') and not ClassLevelHigherOrEqualThan(13,'NPC_BARBARIAN') or HasStatus('GOON_NPC_BARBARIAN_LVL_12')):ApplyStatus(GOON_NPC_BARBARIAN_WILDMAGIC_LVL_12,100,-1);IF(ClassLevelHigherOrEqualThan(13,'NPC_BARBARIAN') and not ClassLevelHigherOrEqualThan(14,'NPC_BARBARIAN') or HasStatus('GOON_NPC_BARBARIAN_LVL_13')):ApplyStatus(GOON_NPC_BARBARIAN_WILDMAGIC_LVL_13,100,-1);IF(ClassLevelHigherOrEqualThan(14,'NPC_BARBARIAN') and not ClassLevelHigherOrEqualThan(15,'NPC_BARBARIAN') or HasStatus('GOON_NPC_BARBARIAN_LVL_14')):ApplyStatus(GOON_NPC_BARBARIAN_WILDMAGIC_LVL_14,100,-1);IF(ClassLevelHigherOrEqualThan(15,'NPC_BARBARIAN') and not ClassLevelHigherOrEqualThan(16,'NPC_BARBARIAN') or HasStatus('GOON_NPC_BARBARIAN_LVL_15')):ApplyStatus(GOON_NPC_BARBARIAN_WILDMAGIC_LVL_15,100,-1);IF(ClassLevelHigherOrEqualThan(16,'NPC_BARBARIAN') and not ClassLevelHigherOrEqualThan(17,'NPC_BARBARIAN') or HasStatus('GOON_NPC_BARBARIAN_LVL_16')):ApplyStatus(GOON_NPC_BARBARIAN_WILDMAGIC_LVL_16,100,-1);IF(ClassLevelHigherOrEqualThan(17,'NPC_BARBARIAN') and not ClassLevelHigherOrEqualThan(18,'NPC_BARBARIAN') or HasStatus('GOON_NPC_BARBARIAN_LVL_17')):ApplyStatus(GOON_NPC_BARBARIAN_WILDMAGIC_LVL_17,100,-1);IF(ClassLevelHigherOrEqualThan(18,'NPC_BARBARIAN') and not ClassLevelHigherOrEqualThan(19,'NPC_BARBARIAN') or HasStatus('GOON_NPC_BARBARIAN_LVL_18')):ApplyStatus(GOON_NPC_BARBARIAN_WILDMAGIC_LVL_18,100,-1);IF(ClassLevelHigherOrEqualThan(19,'NPC_BARBARIAN') and not ClassLevelHigherOrEqualThan(20,'NPC_BARBARIAN') or HasStatus('GOON_NPC_BARBARIAN_LVL_19')):ApplyStatus(GOON_NPC_BARBARIAN_WILDMAGIC_LVL_19,100,-1);IF(ClassLevelHigherOrEqualThan(20,'NPC_BARBARIAN') or HasStatus('GOON_NPC_BARBARIAN_LVL_20')):ApplyStatus(GOON_NPC_BARBARIAN_WILDMAGIC_LVL_20,100,-1)"
 
 // Template
     new entry "GOON_NPC_BARBARIAN_WILDMAGIC_PROGRESSION_TEMPLATE"
@@ -296,7 +409,19 @@
     data "RemoveConditions" "not HasPassive('CX_Barbarian_WildMagic_Boost')"
 
 // Progression statuses
-    new entry "GOON_NPC_BARBARIAN_WILDMAGIC_LEVEL_3"
+    new entry "GOON_NPC_BARBARIAN_WILDMAGIC_LVL_1"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_BARBARIAN_WILDMAGIC_PROGRESSION_TEMPLATE"
+    data "StackPriority" "1"
+
+    new entry "GOON_NPC_BARBARIAN_WILDMAGIC_LVL_2"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_BARBARIAN_WILDMAGIC_PROGRESSION_TEMPLATE"
+    data "StackPriority" "2"
+
+    new entry "GOON_NPC_BARBARIAN_WILDMAGIC_LVL_3"
     type "StatusData"
     data "StatusType" "BOOST"
     using "GOON_NPC_BARBARIAN_WILDMAGIC_PROGRESSION_TEMPLATE"
@@ -314,7 +439,19 @@
     //     <attribute id="TableUUID" type="guid" value="7d5237b0-9ac6-4344-8171-43fa2f553e2f"/>
     //     <attribute id="UUID" type="guid" value="9026e0b6-52a7-46b9-a318-d85b6a2a81c5"/>
 
-    new entry "GOON_NPC_BARBARIAN_WILDMAGIC_LEVEL_6"
+    new entry "GOON_NPC_BARBARIAN_WILDMAGIC_LVL_4"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_BARBARIAN_WILDMAGIC_LVL_3"
+    data "StackPriority" "4"
+
+    new entry "GOON_NPC_BARBARIAN_WILDMAGIC_LVL_5"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_BARBARIAN_WILDMAGIC_LVL_3"
+    data "StackPriority" "5"
+
+    new entry "GOON_NPC_BARBARIAN_WILDMAGIC_LVL_6"
     type "StatusData"
     data "StatusType" "BOOST"
     using "GOON_NPC_BARBARIAN_WILDMAGIC_PROGRESSION_TEMPLATE"
@@ -330,7 +467,19 @@
     //     <attribute id="TableUUID" type="guid" value="7d5237b0-9ac6-4344-8171-43fa2f553e2f"/>
     //     <attribute id="UUID" type="guid" value="7509026b-0ea3-40cb-a106-95977a40a3b7"/>
 
-    new entry "GOON_NPC_BARBARIAN_WILDMAGIC_LEVEL_9"
+    new entry "GOON_NPC_BARBARIAN_WILDMAGIC_LVL_7"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_BARBARIAN_WILDMAGIC_LVL_6"
+    data "StackPriority" "7"
+
+    new entry "GOON_NPC_BARBARIAN_WILDMAGIC_LVL_8"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_BARBARIAN_WILDMAGIC_LVL_6"
+    data "StackPriority" "8"
+
+    new entry "GOON_NPC_BARBARIAN_WILDMAGIC_LVL_9"
     type "StatusData"
     data "StatusType" "BOOST"
     using "GOON_NPC_BARBARIAN_WILDMAGIC_PROGRESSION_TEMPLATE"
@@ -346,7 +495,7 @@
     //     <attribute id="TableUUID" type="guid" value="7d5237b0-9ac6-4344-8171-43fa2f553e2f"/>
     //     <attribute id="UUID" type="guid" value="c6894048-1489-406d-b601-e3c8c96f4e42"/>
 
-    new entry "GOON_NPC_BARBARIAN_WILDMAGIC_LEVEL_10"
+    new entry "GOON_NPC_BARBARIAN_WILDMAGIC_LVL_10"
     type "StatusData"
     data "StatusType" "BOOST"
     using "GOON_NPC_BARBARIAN_WILDMAGIC_PROGRESSION_TEMPLATE"
@@ -362,9 +511,71 @@
     //     <attribute id="TableUUID" type="guid" value="7d5237b0-9ac6-4344-8171-43fa2f553e2f"/>
     //     <attribute id="UUID" type="guid" value="3782ea9f-917b-4823-ba34-b619c76a4429"/>
 
+    new entry "GOON_NPC_BARBARIAN_WILDMAGIC_LVL_11"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_BARBARIAN_WILDMAGIC_LVL_10"
+    data "StackPriority" "11"
+
+    new entry "GOON_NPC_BARBARIAN_WILDMAGIC_LVL_12"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_BARBARIAN_WILDMAGIC_LVL_10"
+    data "StackPriority" "12"
+
+// Expansion levels 13-20
+    new entry "GOON_NPC_BARBARIAN_WILDMAGIC_LVL_13"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_BARBARIAN_WILDMAGIC_LVL_10"
+    data "StackPriority" "13"
+    
+    new entry "GOON_NPC_BARBARIAN_WILDMAGIC_LVL_14"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_BARBARIAN_WILDMAGIC_LVL_10"
+    data "StackPriority" "14"
+    
+    new entry "GOON_NPC_BARBARIAN_WILDMAGIC_LVL_15"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_BARBARIAN_WILDMAGIC_LVL_10"
+    data "StackPriority" "15"
+    
+    new entry "GOON_NPC_BARBARIAN_WILDMAGIC_LVL_16"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_BARBARIAN_WILDMAGIC_LVL_10"
+    data "StackPriority" "16"
+    
+    new entry "GOON_NPC_BARBARIAN_WILDMAGIC_LVL_17"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_BARBARIAN_WILDMAGIC_LVL_10"
+    data "StackPriority" "17"
+    
+    new entry "GOON_NPC_BARBARIAN_WILDMAGIC_LVL_18"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_BARBARIAN_WILDMAGIC_LVL_10"
+    data "StackPriority" "18"
+    
+    new entry "GOON_NPC_BARBARIAN_WILDMAGIC_LVL_19"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_BARBARIAN_WILDMAGIC_LVL_10"
+    data "StackPriority" "19"
+    
+    new entry "GOON_NPC_BARBARIAN_WILDMAGIC_LVL_20"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_BARBARIAN_WILDMAGIC_LVL_10"
+    data "StackPriority" "20"
+
 // ==================================== Subclass: Wildheart ====================================
 // TODO: The Aspects at level 6 and 10 are placeholders until it can be randomised via SE roulette
 // TODO: This also applies to the "TotemSpirit_Wolf" pasive.
+// TODO: And TotemicAttunement_Bear at level 14
 
     new entry "CX_Barbarian_Wildheart_Boost"
     type "PassiveData"
@@ -374,7 +585,7 @@
     data "Boosts" ""
     data "StatsFunctorContext" "OnCreate;OnStatusApplied;OnStatusRemoved"
     data "Conditions" ""
-    data "StatsFunctors" "IF(CharacterLevelGreaterThan(2,GetOwner(context.Source)) and not CharacterLevelGreaterThan(5,GetOwner(context.Source))):ApplyStatus(GOON_NPC_BARBARIAN_WILDHEART_LEVEL_3,100,-1);IF(CharacterLevelGreaterThan(5,GetOwner(context.Source)) and not CharacterLevelGreaterThan(7,GetOwner(context.Source))):ApplyStatus(GOON_NPC_BARBARIAN_WILDHEART_LEVEL_6,100,-1);IF(CharacterLevelGreaterThan(7,GetOwner(context.Source)) and not CharacterLevelGreaterThan(9,GetOwner(context.Source))):ApplyStatus(GOON_NPC_BARBARIAN_WILDHEART_LEVEL_8,100,-1);IF(CharacterLevelGreaterThan(9,GetOwner(context.Source))):ApplyStatus(GOON_NPC_BARBARIAN_WILDHEART_LEVEL_10,100,-1)"
+    data "StatsFunctors" "IF(not ClassLevelHigherOrEqualThan(2,'NPC_BARBARIAN') or HasStatus('GOON_NPC_BARBARIAN_LVL_1')):ApplyStatus(GOON_NPC_BARBARIAN_WILDHEART_LVL_1,100,-1);IF(ClassLevelHigherOrEqualThan(2,'NPC_BARBARIAN') and not ClassLevelHigherOrEqualThan(3,'NPC_BARBARIAN') or HasStatus('GOON_NPC_BARBARIAN_LVL_2')):ApplyStatus(GOON_NPC_BARBARIAN_WILDHEART_LVL_2,100,-1);IF(ClassLevelHigherOrEqualThan(3,'NPC_BARBARIAN') and not ClassLevelHigherOrEqualThan(4,'NPC_BARBARIAN') or HasStatus('GOON_NPC_BARBARIAN_LVL_3')):ApplyStatus(GOON_NPC_BARBARIAN_WILDHEART_LVL_3,100,-1);IF(ClassLevelHigherOrEqualThan(4,'NPC_BARBARIAN') and not ClassLevelHigherOrEqualThan(5,'NPC_BARBARIAN') or HasStatus('GOON_NPC_BARBARIAN_LVL_4')):ApplyStatus(GOON_NPC_BARBARIAN_WILDHEART_LVL_4,100,-1);IF(ClassLevelHigherOrEqualThan(5,'NPC_BARBARIAN') and not ClassLevelHigherOrEqualThan(6,'NPC_BARBARIAN') or HasStatus('GOON_NPC_BARBARIAN_LVL_5')):ApplyStatus(GOON_NPC_BARBARIAN_WILDHEART_LVL_5,100,-1);IF(ClassLevelHigherOrEqualThan(6,'NPC_BARBARIAN') and not ClassLevelHigherOrEqualThan(7,'NPC_BARBARIAN') or HasStatus('GOON_NPC_BARBARIAN_LVL_6')):ApplyStatus(GOON_NPC_BARBARIAN_WILDHEART_LVL_6,100,-1);IF(ClassLevelHigherOrEqualThan(7,'NPC_BARBARIAN') and not ClassLevelHigherOrEqualThan(8,'NPC_BARBARIAN') or HasStatus('GOON_NPC_BARBARIAN_LVL_7')):ApplyStatus(GOON_NPC_BARBARIAN_WILDHEART_LVL_7,100,-1);IF(ClassLevelHigherOrEqualThan(8,'NPC_BARBARIAN') and not ClassLevelHigherOrEqualThan(9,'NPC_BARBARIAN') or HasStatus('GOON_NPC_BARBARIAN_LVL_8')):ApplyStatus(GOON_NPC_BARBARIAN_WILDHEART_LVL_8,100,-1);IF(ClassLevelHigherOrEqualThan(9,'NPC_BARBARIAN') and not ClassLevelHigherOrEqualThan(10,'NPC_BARBARIAN') or HasStatus('GOON_NPC_BARBARIAN_LVL_9')):ApplyStatus(GOON_NPC_BARBARIAN_WILDHEART_LVL_9,100,-1);IF(ClassLevelHigherOrEqualThan(10,'NPC_BARBARIAN') and not ClassLevelHigherOrEqualThan(11,'NPC_BARBARIAN') or HasStatus('GOON_NPC_BARBARIAN_LVL_10')):ApplyStatus(GOON_NPC_BARBARIAN_WILDHEART_LVL_10,100,-1);IF(ClassLevelHigherOrEqualThan(11,'NPC_BARBARIAN') and not ClassLevelHigherOrEqualThan(12,'NPC_BARBARIAN') or HasStatus('GOON_NPC_BARBARIAN_LVL_11')):ApplyStatus(GOON_NPC_BARBARIAN_WILDHEART_LVL_11,100,-1);IF(ClassLevelHigherOrEqualThan(12,'NPC_BARBARIAN') and not ClassLevelHigherOrEqualThan(13,'NPC_BARBARIAN') or HasStatus('GOON_NPC_BARBARIAN_LVL_12')):ApplyStatus(GOON_NPC_BARBARIAN_WILDHEART_LVL_12,100,-1);IF(ClassLevelHigherOrEqualThan(13,'NPC_BARBARIAN') and not ClassLevelHigherOrEqualThan(14,'NPC_BARBARIAN') or HasStatus('GOON_NPC_BARBARIAN_LVL_13')):ApplyStatus(GOON_NPC_BARBARIAN_WILDHEART_LVL_13,100,-1);IF(ClassLevelHigherOrEqualThan(14,'NPC_BARBARIAN') and not ClassLevelHigherOrEqualThan(15,'NPC_BARBARIAN') or HasStatus('GOON_NPC_BARBARIAN_LVL_14')):ApplyStatus(GOON_NPC_BARBARIAN_WILDHEART_LVL_14,100,-1);IF(ClassLevelHigherOrEqualThan(15,'NPC_BARBARIAN') and not ClassLevelHigherOrEqualThan(16,'NPC_BARBARIAN') or HasStatus('GOON_NPC_BARBARIAN_LVL_15')):ApplyStatus(GOON_NPC_BARBARIAN_WILDHEART_LVL_15,100,-1);IF(ClassLevelHigherOrEqualThan(16,'NPC_BARBARIAN') and not ClassLevelHigherOrEqualThan(17,'NPC_BARBARIAN') or HasStatus('GOON_NPC_BARBARIAN_LVL_16')):ApplyStatus(GOON_NPC_BARBARIAN_WILDHEART_LVL_16,100,-1);IF(ClassLevelHigherOrEqualThan(17,'NPC_BARBARIAN') and not ClassLevelHigherOrEqualThan(18,'NPC_BARBARIAN') or HasStatus('GOON_NPC_BARBARIAN_LVL_17')):ApplyStatus(GOON_NPC_BARBARIAN_WILDHEART_LVL_17,100,-1);IF(ClassLevelHigherOrEqualThan(18,'NPC_BARBARIAN') and not ClassLevelHigherOrEqualThan(19,'NPC_BARBARIAN') or HasStatus('GOON_NPC_BARBARIAN_LVL_18')):ApplyStatus(GOON_NPC_BARBARIAN_WILDHEART_LVL_18,100,-1);IF(ClassLevelHigherOrEqualThan(19,'NPC_BARBARIAN') and not ClassLevelHigherOrEqualThan(20,'NPC_BARBARIAN') or HasStatus('GOON_NPC_BARBARIAN_LVL_19')):ApplyStatus(GOON_NPC_BARBARIAN_WILDHEART_LVL_19,100,-1);IF(ClassLevelHigherOrEqualThan(20,'NPC_BARBARIAN') or HasStatus('GOON_NPC_BARBARIAN_LVL_20')):ApplyStatus(GOON_NPC_BARBARIAN_WILDHEART_LVL_20,100,-1)"
 
 // Template
     new entry "GOON_NPC_BARBARIAN_WILDHEART_PROGRESSION_TEMPLATE"
@@ -386,7 +597,19 @@
     data "RemoveConditions" "not HasPassive('CX_Barbarian_Wildheart_Boost')"
 
 // Progression statuses
-    new entry "GOON_NPC_BARBARIAN_WILDHEART_LEVEL_3"
+    new entry "GOON_NPC_BARBARIAN_WILDHEART_LVL_1"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_BARBARIAN_WILDHEART_PROGRESSION_TEMPLATE"
+    data "StackPriority" "1"
+
+    new entry "GOON_NPC_BARBARIAN_WILDHEART_LVL_2"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_BARBARIAN_WILDHEART_PROGRESSION_TEMPLATE"
+    data "StackPriority" "2"
+
+    new entry "GOON_NPC_BARBARIAN_WILDHEART_LVL_3"
     type "StatusData"
     data "StatusType" "BOOST"
     using "GOON_NPC_BARBARIAN_WILDHEART_PROGRESSION_TEMPLATE"
@@ -403,7 +626,19 @@
     //     <attribute id="TableUUID" type="guid" value="48f1760f-86e7-401c-ad52-633fffbae49e"/>
     //     <attribute id="UUID" type="guid" value="42329ce3-0fb3-43a3-a0b4-79584c6877e7"/>
 
-    new entry "GOON_NPC_BARBARIAN_WILDHEART_LEVEL_6"
+    new entry "GOON_NPC_BARBARIAN_WILDHEART_LVL_4"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_BARBARIAN_WILDHEART_LVL_3"
+    data "StackPriority" "4"
+
+    new entry "GOON_NPC_BARBARIAN_WILDHEART_LVL_5"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_BARBARIAN_WILDHEART_LVL_3"
+    data "StackPriority" "5"
+
+    new entry "GOON_NPC_BARBARIAN_WILDHEART_LVL_6"
     type "StatusData"
     data "StatusType" "BOOST"
     using "GOON_NPC_BARBARIAN_WILDHEART_PROGRESSION_TEMPLATE"
@@ -420,7 +655,13 @@
     //     <attribute id="TableUUID" type="guid" value="48f1760f-86e7-401c-ad52-633fffbae49e"/>
     //     <attribute id="UUID" type="guid" value="0b05af61-85e4-4183-8422-6c8ced307d7a"/>
 
-    new entry "GOON_NPC_BARBARIAN_WILDHEART_LEVEL_8"
+    new entry "GOON_NPC_BARBARIAN_WILDHEART_LVL_7"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_BARBARIAN_WILDHEART_LVL_6"
+    data "StackPriority" "7"
+
+    new entry "GOON_NPC_BARBARIAN_WILDHEART_LVL_8"
     type "StatusData"
     data "StatusType" "BOOST"
     using "GOON_NPC_BARBARIAN_WILDHEART_PROGRESSION_TEMPLATE"
@@ -437,7 +678,13 @@
     //     <attribute id="TableUUID" type="guid" value="48f1760f-86e7-401c-ad52-633fffbae49e"/>
     //     <attribute id="UUID" type="guid" value="6de45010-ac1e-420d-ab84-31146c14dada"/>
 
-    new entry "GOON_NPC_BARBARIAN_WILDHEART_LEVEL_10"
+    new entry "GOON_NPC_BARBARIAN_WILDHEART_LVL_9"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_BARBARIAN_WILDHEART_LVL_8"
+    data "StackPriority" "9"
+
+    new entry "GOON_NPC_BARBARIAN_WILDHEART_LVL_10"
     type "StatusData"
     data "StatusType" "BOOST"
     using "GOON_NPC_BARBARIAN_WILDHEART_PROGRESSION_TEMPLATE"
@@ -453,3 +700,74 @@
     //     <attribute id="Selectors" type="LSString" value="SelectPassives(fb9ea4a2-a1ce-4242-a893-84a088ac1145,1,AspectOfTheBeast)"/>
     //     <attribute id="TableUUID" type="guid" value="48f1760f-86e7-401c-ad52-633fffbae49e"/>
     //     <attribute id="UUID" type="guid" value="8013e565-55a5-4847-8ebc-e2971e25151e"/>
+
+    new entry "GOON_NPC_BARBARIAN_WILDHEART_LVL_11"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_BARBARIAN_WILDHEART_LVL_10"
+    data "StackPriority" "11"
+
+    new entry "GOON_NPC_BARBARIAN_WILDHEART_LVL_12"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_BARBARIAN_WILDHEART_LVL_10"
+    data "StackPriority" "12"
+
+// Expansion levels 13-20
+    new entry "GOON_NPC_BARBARIAN_WILDHEART_LVL_13"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_BARBARIAN_WILDHEART_LVL_10"
+    data "StackPriority" "13"
+
+    new entry "GOON_NPC_BARBARIAN_WILDHEART_LVL_14"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_BARBARIAN_WILDHEART_LVL_10"
+    data "StackPriority" "14"
+    data "Passives" "TotemSpirit_Wolf;AspectOfTheBeast_Elk;LandsStride_DifficultTerrain;LandsStride_Surfaces;LandsStride_Advantage;AspectOfTheBeast_Bear;TotemicAttunement_Bear"
+    data "Boosts" "UnlockSpell(Shout_SpeakWithAnimals_Barbarian)"
+
+    // <node id="Progression">
+    //     <attribute id="Level" type="uint8" value="14"/>
+    //     <attribute id="Name" type="LSString" value="TotemWarriorPath"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="Selectors" type="LSString" value="SelectPassives(abd6bab4-a202-4f6b-85cd-d30db7839096,1,TotemicAttunement)"/>
+    //     <attribute id="TableUUID" type="guid" value="48f1760f-86e7-401c-ad52-633fffbae49e"/>
+    //     <attribute id="UUID" type="guid" value="1acc0dc9-11c0-460d-b686-b4faf326aaf6"/>
+
+    new entry "GOON_NPC_BARBARIAN_WILDHEART_LVL_15"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_BARBARIAN_WILDHEART_LVL_14"
+    data "StackPriority" "15"
+    
+    new entry "GOON_NPC_BARBARIAN_WILDHEART_LVL_16"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_BARBARIAN_WILDHEART_LVL_14"
+    data "StackPriority" "16"
+    
+    new entry "GOON_NPC_BARBARIAN_WILDHEART_LVL_17"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_BARBARIAN_WILDHEART_LVL_14"
+    data "StackPriority" "17"
+    
+    new entry "GOON_NPC_BARBARIAN_WILDHEART_LVL_18"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_BARBARIAN_WILDHEART_LVL_14"
+    data "StackPriority" "18"
+    
+    new entry "GOON_NPC_BARBARIAN_WILDHEART_LVL_19"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_BARBARIAN_WILDHEART_LVL_14"
+    data "StackPriority" "19"
+    
+    new entry "GOON_NPC_BARBARIAN_WILDHEART_LVL_20"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_BARBARIAN_WILDHEART_LVL_14"
+    data "StackPriority" "20"
