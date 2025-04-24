@@ -185,7 +185,7 @@
     data "StatusType" "BOOST"
     using "GOON_NPC_DRUID_PROGRESSION_TEMPLATE"
     data "StackPriority" "18"
-    data "Passives" "UnlockedSpellSlotLevel1;CX_Magic_Boost;UnlockedSpellSlotLevel2;UnlockedSpellSlotLevel3;WildStrike;WildStrike_2"
+    data "Passives" "UnlockedSpellSlotLevel1;CX_Magic_Boost;UnlockedSpellSlotLevel2;UnlockedSpellSlotLevel3;WildStrike;WildStrike_2;BeastSpells;BeastSpells_2;BeastSpells_3"
     data "Boosts" "Tag(DRUID);ActionResource(SpellSlot,4,1);ProficiencyBonus(SavingThrow,Wisdom);ProficiencyBonus(SavingThrow,Intelligence);Proficiency(LightArmor);Proficiency(MediumArmor);Proficiency(Shields);Proficiency(Clubs);Proficiency(Daggers);Proficiency(Javelins);Proficiency(Maces);Proficiency(Quarterstaffs);Proficiency(Scimitars);Proficiency(Sickles);Proficiency(Spears);ActionResource(SpellSlot,3,2);ActionResource(SpellSlot,3,3);ActionResource(SpellSlot,3,4);ActionResource(SpellSlot,3,5);ActionResource(SpellSlot,1,6);ActionResource(SpellSlot,1,7);ActionResource(SpellSlot,1,8);ActionResource(SpellSlot,1,9)"
 
     new entry "GOON_NPC_DRUID_LVL_19"
@@ -193,7 +193,7 @@
     data "StatusType" "BOOST"
     using "GOON_NPC_DRUID_PROGRESSION_TEMPLATE"
     data "StackPriority" "19"
-    data "Passives" "UnlockedSpellSlotLevel1;CX_Magic_Boost;UnlockedSpellSlotLevel2;UnlockedSpellSlotLevel3;WildStrike;WildStrike_2"
+    data "Passives" "UnlockedSpellSlotLevel1;CX_Magic_Boost;UnlockedSpellSlotLevel2;UnlockedSpellSlotLevel3;WildStrike;WildStrike_2;BeastSpells;BeastSpells_2;BeastSpells_3"
     data "Boosts" "Tag(DRUID);ActionResource(SpellSlot,4,1);ProficiencyBonus(SavingThrow,Wisdom);ProficiencyBonus(SavingThrow,Intelligence);Proficiency(LightArmor);Proficiency(MediumArmor);Proficiency(Shields);Proficiency(Clubs);Proficiency(Daggers);Proficiency(Javelins);Proficiency(Maces);Proficiency(Quarterstaffs);Proficiency(Scimitars);Proficiency(Sickles);Proficiency(Spears);ActionResource(SpellSlot,3,2);ActionResource(SpellSlot,3,3);ActionResource(SpellSlot,3,4);ActionResource(SpellSlot,3,5);ActionResource(SpellSlot,2,6);ActionResource(SpellSlot,1,7);ActionResource(SpellSlot,1,8);ActionResource(SpellSlot,1,9)"
 
     new entry "GOON_NPC_DRUID_LVL_20"
@@ -201,7 +201,7 @@
     data "StatusType" "BOOST"
     using "GOON_NPC_DRUID_PROGRESSION_TEMPLATE"
     data "StackPriority" "20"
-    data "Passives" "UnlockedSpellSlotLevel1;CX_Magic_Boost;UnlockedSpellSlotLevel2;UnlockedSpellSlotLevel3;WildStrike;WildStrike_2"
+    data "Passives" "UnlockedSpellSlotLevel1;CX_Magic_Boost;UnlockedSpellSlotLevel2;UnlockedSpellSlotLevel3;WildStrike;WildStrike_2;BeastSpells;BeastSpells_2;BeastSpells_3;Archdruid"
     data "Boosts" "Tag(DRUID);ActionResource(SpellSlot,4,1);ProficiencyBonus(SavingThrow,Wisdom);ProficiencyBonus(SavingThrow,Intelligence);Proficiency(LightArmor);Proficiency(MediumArmor);Proficiency(Shields);Proficiency(Clubs);Proficiency(Daggers);Proficiency(Javelins);Proficiency(Maces);Proficiency(Quarterstaffs);Proficiency(Scimitars);Proficiency(Sickles);Proficiency(Spears);ActionResource(SpellSlot,3,2);ActionResource(SpellSlot,3,3);ActionResource(SpellSlot,3,4);ActionResource(SpellSlot,3,5);ActionResource(SpellSlot,2,6);ActionResource(SpellSlot,2,7);ActionResource(SpellSlot,1,8);ActionResource(SpellSlot,1,9);ActionResourceReplenishTypeOverride(WildShape,Turn)"
 
 // ==================================== Subclass: Circle of the Land ====================================
