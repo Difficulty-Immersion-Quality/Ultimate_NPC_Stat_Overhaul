@@ -406,49 +406,70 @@
     new entry "GOON_NPC_CLERIC_LIFE_LVL_13"
     type "StatusData"
     data "StatusType" "BOOST"
-    using "GOON_NPC_CLERIC_LIFE_LVL_12"
+    using "GOON_NPC_CLERIC_LIFE_LVL_9"
     data "StackPriority" "13"
     
     new entry "GOON_NPC_CLERIC_LIFE_LVL_14"
     type "StatusData"
     data "StatusType" "BOOST"
-    using "GOON_NPC_CLERIC_LIFE_LVL_12"
+    using "GOON_NPC_CLERIC_LIFE_PROGRESSION_TEMPLATE"
     data "StackPriority" "14"
+    data "Passives" "DiscipleOfLife;BlessedHealer;Divine_Strike_Life_Toggle_2;Divine_Strike_Life_WeaponAttack"
+    data "Boosts" "UnlockSpell(Target_CureWounds,AddChildren);UnlockSpell(Target_Bless,AddChildren);UnlockSpell(Shout_PreserveLife);UnlockSpell(Shout_Aid,AddChildren);UnlockSpell(Target_LesserRestoration,AddChildren);UnlockSpell(Teleportation_Revivify,AddChildren);UnlockSpell(Shout_BeaconOfHope,AddChildren);UnlockSpell(Target_DeathWard,AddChildren);UnlockSpell(Target_GuardianOfFaith,AddChildren);UnlockSpell(Target_DivineStrike_Life_Container);UnlockSpell(Target_CureWounds_Mass,AddChildren);UnlockSpell(Target_GreaterRestoration,AddChildren)"
+
+    // <node id="Progression">
+    //     <attribute id="Level" type="uint8" value="14"/>
+    //     <attribute id="Name" type="LSString" value="LifeDomain"/>
+    //     <attribute id="PassivesAdded" type="LSString" value="Divine_Strike_Life_Toggle_2;Divine_Strike_Life_WeaponAttack"/>
+    //     <attribute id="PassivesRemoved" type="LSString" value="Divine_Strike_Life_Toggle"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="TableUUID" type="guid" value="9b56beb6-2a68-42a4-b81b-7a890a1b6b99"/>
+    //     <attribute id="UUID" type="guid" value="b49aec61-75ab-4ae2-9d77-02f237391289"/>
     
     new entry "GOON_NPC_CLERIC_LIFE_LVL_15"
     type "StatusData"
     data "StatusType" "BOOST"
-    using "GOON_NPC_CLERIC_LIFE_LVL_12"
+    using "GOON_NPC_CLERIC_LIFE_LVL_14"
     data "StackPriority" "15"
     
     new entry "GOON_NPC_CLERIC_LIFE_LVL_16"
     type "StatusData"
     data "StatusType" "BOOST"
-    using "GOON_NPC_CLERIC_LIFE_LVL_12"
+    using "GOON_NPC_CLERIC_LIFE_LVL_14"
     data "StackPriority" "16"
     
     new entry "GOON_NPC_CLERIC_LIFE_LVL_17"
     type "StatusData"
     data "StatusType" "BOOST"
-    using "GOON_NPC_CLERIC_LIFE_LVL_12"
+    using "GOON_NPC_CLERIC_LIFE_PROGRESSION_TEMPLATE"
     data "StackPriority" "17"
+    data "Passives" "DiscipleOfLife;BlessedHealer;Divine_Strike_Life_Toggle_2;Divine_Strike_Life_WeaponAttack;SupremeHealing"
+    data "Boosts" "UnlockSpell(Target_CureWounds,AddChildren);UnlockSpell(Target_Bless,AddChildren);UnlockSpell(Shout_PreserveLife);UnlockSpell(Shout_Aid,AddChildren);UnlockSpell(Target_LesserRestoration,AddChildren);UnlockSpell(Teleportation_Revivify,AddChildren);UnlockSpell(Shout_BeaconOfHope,AddChildren);UnlockSpell(Target_DeathWard,AddChildren);UnlockSpell(Target_GuardianOfFaith,AddChildren);UnlockSpell(Target_DivineStrike_Life_Container);UnlockSpell(Target_CureWounds_Mass,AddChildren);UnlockSpell(Target_GreaterRestoration,AddChildren)"
+
+    // <node id="Progression">
+    //     <attribute id="Level" type="uint8" value="17"/>
+    //     <attribute id="Name" type="LSString" value="LifeDomain"/>
+    //     <attribute id="PassivesAdded" type="LSString" value="SupremeHealing"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="TableUUID" type="guid" value="9b56beb6-2a68-42a4-b81b-7a890a1b6b99"/>
+    //     <attribute id="UUID" type="guid" value="80e76435-223e-483e-8bef-ad4418835ea1"/>
     
     new entry "GOON_NPC_CLERIC_LIFE_LVL_18"
     type "StatusData"
     data "StatusType" "BOOST"
-    using "GOON_NPC_CLERIC_LIFE_LVL_12"
+    using "GOON_NPC_CLERIC_LIFE_LVL_17"
     data "StackPriority" "18"
     
     new entry "GOON_NPC_CLERIC_LIFE_LVL_19"
     type "StatusData"
     data "StatusType" "BOOST"
-    using "GOON_NPC_CLERIC_LIFE_LVL_12"
+    using "GOON_NPC_CLERIC_LIFE_LVL_17"
     data "StackPriority" "19"
     
     new entry "GOON_NPC_CLERIC_LIFE_LVL_20"
     type "StatusData"
     data "StatusType" "BOOST"
-    using "GOON_NPC_CLERIC_LIFE_LVL_12"
+    using "GOON_NPC_CLERIC_LIFE_LVL_17"
     data "StackPriority" "20"
 
 // ==================================== Subclass: Light Domain ====================================
@@ -641,49 +662,59 @@
     new entry "GOON_NPC_CLERIC_LIGHT_LVL_13"
     type "StatusData"
     data "StatusType" "BOOST"
-    using "GOON_NPC_CLERIC_LIGHT_LVL_12"
+    using "GOON_NPC_CLERIC_LIGHT_LVL_9"
     data "StackPriority" "13"
     
     new entry "GOON_NPC_CLERIC_LIGHT_LVL_14"
     type "StatusData"
     data "StatusType" "BOOST"
-    using "GOON_NPC_CLERIC_LIGHT_LVL_12"
+    using "GOON_NPC_CLERIC_LIGHT_LVL_9"
     data "StackPriority" "14"
     
     new entry "GOON_NPC_CLERIC_LIGHT_LVL_15"
     type "StatusData"
     data "StatusType" "BOOST"
-    using "GOON_NPC_CLERIC_LIGHT_LVL_12"
+    using "GOON_NPC_CLERIC_LIGHT_LVL_9"
     data "StackPriority" "15"
     
     new entry "GOON_NPC_CLERIC_LIGHT_LVL_16"
     type "StatusData"
     data "StatusType" "BOOST"
-    using "GOON_NPC_CLERIC_LIGHT_LVL_12"
+    using "GOON_NPC_CLERIC_LIGHT_LVL_9"
     data "StackPriority" "16"
     
     new entry "GOON_NPC_CLERIC_LIGHT_LVL_17"
     type "StatusData"
     data "StatusType" "BOOST"
-    using "GOON_NPC_CLERIC_LIGHT_LVL_12"
+    using "GOON_NPC_CLERIC_LIGHT_PROGRESSION_TEMPLATE"
     data "StackPriority" "17"
+    data "Passives" "WardingFlare;WardingFlare_Improved;PotentSpellcasting;CoronaOfLight"
+    data "Boosts" "UnlockSpell(Zone_BurningHands,AddChildren);UnlockSpell(Target_FaerieFire,AddChildren);UnlockSpell(Target_Light,AddChildren);UnlockSpell(Shout_RadianceOfTheDawn);UnlockSpell(Target_FlamingSphere,AddChildren);UnlockSpell(Projectile_ScorchingRay,AddChildren);UnlockSpell(Target_Daylight_Container,AddChildren);UnlockSpell(Projectile_Fireball,AddChildren);UnlockSpell(Target_GuardianOfFaith,AddChildren);UnlockSpell(Wall_WallOfFire,AddChildren);UnlockSpell(Target_FlameStrike,AddChildren);UnlockSpell(Shout_DestructiveWave,AddChildren)"
     
+    // <node id="Progression">
+    //     <attribute id="Level" type="uint8" value="17"/>
+    //     <attribute id="Name" type="LSString" value="LightDomain"/>
+    //     <attribute id="PassivesAdded" type="LSString" value="CoronaOfLight"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="TableUUID" type="guid" value="6ec6caad-2dfa-4661-8edd-5c4eca0e044c"/>
+    //     <attribute id="UUID" type="guid" value="aa7b1579-12dc-49da-82b9-637bff181845"/>
+
     new entry "GOON_NPC_CLERIC_LIGHT_LVL_18"
     type "StatusData"
     data "StatusType" "BOOST"
-    using "GOON_NPC_CLERIC_LIGHT_LVL_12"
+    using "GOON_NPC_CLERIC_LIGHT_LVL_17"
     data "StackPriority" "18"
     
     new entry "GOON_NPC_CLERIC_LIGHT_LVL_19"
     type "StatusData"
     data "StatusType" "BOOST"
-    using "GOON_NPC_CLERIC_LIGHT_LVL_12"
+    using "GOON_NPC_CLERIC_LIGHT_LVL_17"
     data "StackPriority" "19"
     
     new entry "GOON_NPC_CLERIC_LIGHT_LVL_20"
     type "StatusData"
     data "StatusType" "BOOST"
-    using "GOON_NPC_CLERIC_LIGHT_LVL_12"
+    using "GOON_NPC_CLERIC_LIGHT_LVL_17"
     data "StackPriority" "20"
 
 // ==================================== Subclass: Knowledge Domain ====================================
@@ -874,49 +905,49 @@
     new entry "GOON_NPC_CLERIC_KNOWLEDGE_LVL_13"
     type "StatusData"
     data "StatusType" "BOOST"
-    using "GOON_NPC_CLERIC_KNOWLEDGE_LVL_12"
+    using "GOON_NPC_CLERIC_KNOWLEDGE_LVL_9"
     data "StackPriority" "13"
     
     new entry "GOON_NPC_CLERIC_KNOWLEDGE_LVL_14"
     type "StatusData"
     data "StatusType" "BOOST"
-    using "GOON_NPC_CLERIC_KNOWLEDGE_LVL_12"
+    using "GOON_NPC_CLERIC_KNOWLEDGE_LVL_9"
     data "StackPriority" "14"
     
     new entry "GOON_NPC_CLERIC_KNOWLEDGE_LVL_15"
     type "StatusData"
     data "StatusType" "BOOST"
-    using "GOON_NPC_CLERIC_KNOWLEDGE_LVL_12"
+    using "GOON_NPC_CLERIC_KNOWLEDGE_LVL_9"
     data "StackPriority" "15"
     
     new entry "GOON_NPC_CLERIC_KNOWLEDGE_LVL_16"
     type "StatusData"
     data "StatusType" "BOOST"
-    using "GOON_NPC_CLERIC_KNOWLEDGE_LVL_12"
+    using "GOON_NPC_CLERIC_KNOWLEDGE_LVL_9"
     data "StackPriority" "16"
     
     new entry "GOON_NPC_CLERIC_KNOWLEDGE_LVL_17"
     type "StatusData"
     data "StatusType" "BOOST"
-    using "GOON_NPC_CLERIC_KNOWLEDGE_LVL_12"
+    using "GOON_NPC_CLERIC_KNOWLEDGE_LVL_9"
     data "StackPriority" "17"
     
     new entry "GOON_NPC_CLERIC_KNOWLEDGE_LVL_18"
     type "StatusData"
     data "StatusType" "BOOST"
-    using "GOON_NPC_CLERIC_KNOWLEDGE_LVL_12"
+    using "GOON_NPC_CLERIC_KNOWLEDGE_LVL_9"
     data "StackPriority" "18"
     
     new entry "GOON_NPC_CLERIC_KNOWLEDGE_LVL_19"
     type "StatusData"
     data "StatusType" "BOOST"
-    using "GOON_NPC_CLERIC_KNOWLEDGE_LVL_12"
+    using "GOON_NPC_CLERIC_KNOWLEDGE_LVL_9"
     data "StackPriority" "19"
     
     new entry "GOON_NPC_CLERIC_KNOWLEDGE_LVL_20"
     type "StatusData"
     data "StatusType" "BOOST"
-    using "GOON_NPC_CLERIC_KNOWLEDGE_LVL_12"
+    using "GOON_NPC_CLERIC_KNOWLEDGE_LVL_9"
     data "StackPriority" "20"
 
 // ==================================== Subclass: Nature Domain ====================================
@@ -1110,49 +1141,49 @@
     new entry "GOON_NPC_CLERIC_NATURE_LVL_13"
     type "StatusData"
     data "StatusType" "BOOST"
-    using "GOON_NPC_CLERIC_NATURE_LVL_12"
+    using "GOON_NPC_CLERIC_NATURE_LVL_9"
     data "StackPriority" "13"
     
     new entry "GOON_NPC_CLERIC_NATURE_LVL_14"
     type "StatusData"
     data "StatusType" "BOOST"
-    using "GOON_NPC_CLERIC_NATURE_LVL_12"
+    using "GOON_NPC_CLERIC_NATURE_LVL_9"
     data "StackPriority" "14"
     
     new entry "GOON_NPC_CLERIC_NATURE_LVL_15"
     type "StatusData"
     data "StatusType" "BOOST"
-    using "GOON_NPC_CLERIC_NATURE_LVL_12"
+    using "GOON_NPC_CLERIC_NATURE_LVL_9"
     data "StackPriority" "15"
     
     new entry "GOON_NPC_CLERIC_NATURE_LVL_16"
     type "StatusData"
     data "StatusType" "BOOST"
-    using "GOON_NPC_CLERIC_NATURE_LVL_12"
+    using "GOON_NPC_CLERIC_NATURE_LVL_9"
     data "StackPriority" "16"
     
     new entry "GOON_NPC_CLERIC_NATURE_LVL_17"
     type "StatusData"
     data "StatusType" "BOOST"
-    using "GOON_NPC_CLERIC_NATURE_LVL_12"
+    using "GOON_NPC_CLERIC_NATURE_LVL_9"
     data "StackPriority" "17"
     
     new entry "GOON_NPC_CLERIC_NATURE_LVL_18"
     type "StatusData"
     data "StatusType" "BOOST"
-    using "GOON_NPC_CLERIC_NATURE_LVL_12"
+    using "GOON_NPC_CLERIC_NATURE_LVL_9"
     data "StackPriority" "18"
     
     new entry "GOON_NPC_CLERIC_NATURE_LVL_19"
     type "StatusData"
     data "StatusType" "BOOST"
-    using "GOON_NPC_CLERIC_NATURE_LVL_12"
+    using "GOON_NPC_CLERIC_NATURE_LVL_9"
     data "StackPriority" "19"
     
     new entry "GOON_NPC_CLERIC_NATURE_LVL_20"
     type "StatusData"
     data "StatusType" "BOOST"
-    using "GOON_NPC_CLERIC_NATURE_LVL_12"
+    using "GOON_NPC_CLERIC_NATURE_LVL_9"
     data "StackPriority" "20"
 
 // ==================================== Subclass: Tempest Domain ====================================
@@ -1346,49 +1377,70 @@
     new entry "GOON_NPC_CLERIC_TEMPEST_LVL_13"
     type "StatusData"
     data "StatusType" "BOOST"
-    using "GOON_NPC_CLERIC_TEMPEST_LVL_12"
+    using "GOON_NPC_CLERIC_TEMPEST_LVL_9"
     data "StackPriority" "13"
     
     new entry "GOON_NPC_CLERIC_TEMPEST_LVL_14"
     type "StatusData"
     data "StatusType" "BOOST"
-    using "GOON_NPC_CLERIC_TEMPEST_LVL_12"
+    using "GOON_NPC_CLERIC_TEMPEST_PROGRESSION_TEMPLATE"
     data "StackPriority" "14"
+    data "Passives" "WrathOfTheStorm;DestructiveWrath;ThunderboltStrike;Divine_Strike_Tempest_Toggle_2;Divine_Strike_Tempest_WeaponAttack"
+    data "Boosts" "Proficiency(HeavyArmor);Proficiency(MartialWeapons);UnlockSpell(Zone_Thunderwave,AddChildren);UnlockSpell(Target_FogCloud,AddChildren);UnlockSpell(Target_Shatter,AddChildren);UnlockSpell(Zone_GustOfWind,AddChildren);UnlockSpell(Target_CallLightning,AddChildren);UnlockSpell(Target_SleetStorm,AddChildren);UnlockSpell(Target_DivineStrike_Tempest_Container);UnlockSpell(Shout_DestructiveWave,AddChildren);UnlockSpell(Target_InsectPlague,AddChildren)"
     
+    // <node id="Progression">
+    //     <attribute id="Level" type="uint8" value="14"/>
+    //     <attribute id="Name" type="LSString" value="TempestDomain"/>
+    //     <attribute id="PassivesAdded" type="LSString" value="Divine_Strike_Tempest_Toggle_2;Divine_Strike_Tempest_WeaponAttack"/>
+    //     <attribute id="PassivesRemoved" type="LSString" value="Divine_Strike_Tempest_Toggle"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="TableUUID" type="guid" value="0630b55b-36f4-41d2-aacc-28e99d6ae252"/>
+    //     <attribute id="UUID" type="guid" value="9ece65de-501f-4dcf-9681-396a7c8de86a"/>
+
     new entry "GOON_NPC_CLERIC_TEMPEST_LVL_15"
     type "StatusData"
     data "StatusType" "BOOST"
-    using "GOON_NPC_CLERIC_TEMPEST_LVL_12"
+    using "GOON_NPC_CLERIC_TEMPEST_LVL_14"
     data "StackPriority" "15"
     
     new entry "GOON_NPC_CLERIC_TEMPEST_LVL_16"
     type "StatusData"
     data "StatusType" "BOOST"
-    using "GOON_NPC_CLERIC_TEMPEST_LVL_12"
+    using "GOON_NPC_CLERIC_TEMPEST_LVL_14"
     data "StackPriority" "16"
     
     new entry "GOON_NPC_CLERIC_TEMPEST_LVL_17"
     type "StatusData"
     data "StatusType" "BOOST"
-    using "GOON_NPC_CLERIC_TEMPEST_LVL_12"
+    using "GOON_NPC_CLERIC_TEMPEST_PROGRESSION_TEMPLATE"
     data "StackPriority" "17"
+    data "Passives" "WrathOfTheStorm;DestructiveWrath;ThunderboltStrike;Divine_Strike_Tempest_Toggle_2;Divine_Strike_Tempest_WeaponAttack;Stormborn"
+    data "Boosts" "Proficiency(HeavyArmor);Proficiency(MartialWeapons);UnlockSpell(Zone_Thunderwave,AddChildren);UnlockSpell(Target_FogCloud,AddChildren);UnlockSpell(Target_Shatter,AddChildren);UnlockSpell(Zone_GustOfWind,AddChildren);UnlockSpell(Target_CallLightning,AddChildren);UnlockSpell(Target_SleetStorm,AddChildren);UnlockSpell(Target_DivineStrike_Tempest_Container);UnlockSpell(Shout_DestructiveWave,AddChildren);UnlockSpell(Target_InsectPlague,AddChildren)"
     
+    // <node id="Progression">
+    //     <attribute id="Level" type="uint8" value="17"/>
+    //     <attribute id="Name" type="LSString" value="TempestDomain"/>
+    //     <attribute id="PassivesAdded" type="LSString" value="Stormborn"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="TableUUID" type="guid" value="0630b55b-36f4-41d2-aacc-28e99d6ae252"/>
+    //     <attribute id="UUID" type="guid" value="3e608f15-bfc6-44cc-bc5b-822e1a34d38c"/>
+
     new entry "GOON_NPC_CLERIC_TEMPEST_LVL_18"
     type "StatusData"
     data "StatusType" "BOOST"
-    using "GOON_NPC_CLERIC_TEMPEST_LVL_12"
+    using "GOON_NPC_CLERIC_TEMPEST_LVL_17"
     data "StackPriority" "18"
     
     new entry "GOON_NPC_CLERIC_TEMPEST_LVL_19"
     type "StatusData"
     data "StatusType" "BOOST"
-    using "GOON_NPC_CLERIC_TEMPEST_LVL_12"
+    using "GOON_NPC_CLERIC_TEMPEST_LVL_17"
     data "StackPriority" "19"
     
     new entry "GOON_NPC_CLERIC_TEMPEST_LVL_20"
     type "StatusData"
     data "StatusType" "BOOST"
-    using "GOON_NPC_CLERIC_TEMPEST_LVL_12"
+    using "GOON_NPC_CLERIC_TEMPEST_LVL_17"
     data "StackPriority" "20"
 
 // ==================================== Subclass: Trickery Domain ====================================
@@ -1580,49 +1632,70 @@
     new entry "GOON_NPC_CLERIC_TRICKERY_LVL_13"
     type "StatusData"
     data "StatusType" "BOOST"
-    using "GOON_NPC_CLERIC_TRICKERY_LVL_12"
+    using "GOON_NPC_CLERIC_TRICKERY_LVL_9"
     data "StackPriority" "13"
     
     new entry "GOON_NPC_CLERIC_TRICKERY_LVL_14"
     type "StatusData"
     data "StatusType" "BOOST"
-    using "GOON_NPC_CLERIC_TRICKERY_LVL_12"
+    using "GOON_NPC_CLERIC_TRICKERY_PROGRESSION_TEMPLATE"
     data "StackPriority" "14"
+    data "Passives" "Divine_Strike_Trickery_Toggle_2;Divine_Strike_Trickery_WeaponAttack"
+    data "Boosts" "UnlockSpell(Target_Bless,AddChildreningOfTheTrickster);UnlockSpell(Target_CharmPerson,AddChildren);UnlockSpell(Shout_DisguiseSelf,AddChildren);UnlockSpell(Target_InvokeDuplicity);UnlockSpell(Target_BestowCurse,AddChildren);UnlockSpell(Zone_Fear,AddChildren);UnlockSpell(Shout_CloakOfShadows);UnlockSpell(Target_Polymorph,AddChildren);UnlockSpell(Teleportation_DimensionDoor,AddChildren);UnlockSpell(Target_DivineStrike_Trickery_Container);UnlockSpell(Target_DominatePerson,AddChildren);UnlockSpell(Target_Seeming,AddChildren)"
     
+    // <node id="Progression">
+    //     <attribute id="Level" type="uint8" value="14"/>
+    //     <attribute id="Name" type="LSString" value="TrickeryDomain"/>
+    //     <attribute id="PassivesAdded" type="LSString" value="Divine_Strike_Trickery_Toggle_2;Divine_Strike_Trickery_WeaponAttack"/>
+    //     <attribute id="PassivesRemoved" type="LSString" value="Divine_Strike_Trickery_Toggle"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="TableUUID" type="guid" value="044e4e07-6980-479f-80e5-3c4a84e691d1"/>
+    //     <attribute id="UUID" type="guid" value="5a6afeef-0c49-4d50-90ae-adeacb45d8c8"/>
+
     new entry "GOON_NPC_CLERIC_TRICKERY_LVL_15"
     type "StatusData"
     data "StatusType" "BOOST"
-    using "GOON_NPC_CLERIC_TRICKERY_LVL_12"
+    using "GOON_NPC_CLERIC_TRICKERY_LVL_14"
     data "StackPriority" "15"
     
     new entry "GOON_NPC_CLERIC_TRICKERY_LVL_16"
     type "StatusData"
     data "StatusType" "BOOST"
-    using "GOON_NPC_CLERIC_TRICKERY_LVL_12"
+    using "GOON_NPC_CLERIC_TRICKERY_LVL_14"
     data "StackPriority" "16"
     
     new entry "GOON_NPC_CLERIC_TRICKERY_LVL_17"
     type "StatusData"
     data "StatusType" "BOOST"
-    using "GOON_NPC_CLERIC_TRICKERY_LVL_12"
+    using "GOON_NPC_CLERIC_TRICKERY_PROGRESSION_TEMPLATE"
     data "StackPriority" "17"
+    data "Passives" "Divine_Strike_Trickery_Toggle_2;Divine_Strike_Trickery_WeaponAttack;ImprovedDuplicity"
+    data "Boosts" "UnlockSpell(Target_Bless,AddChildreningOfTheTrickster);UnlockSpell(Target_CharmPerson,AddChildren);UnlockSpell(Shout_DisguiseSelf,AddChildren);UnlockSpell(Target_InvokeDuplicity);UnlockSpell(Target_BestowCurse,AddChildren);UnlockSpell(Zone_Fear,AddChildren);UnlockSpell(Shout_CloakOfShadows);UnlockSpell(Target_Polymorph,AddChildren);UnlockSpell(Teleportation_DimensionDoor,AddChildren);UnlockSpell(Target_DivineStrike_Trickery_Container);UnlockSpell(Target_DominatePerson,AddChildren);UnlockSpell(Target_Seeming,AddChildren)"
     
+    // <node id="Progression">
+    //     <attribute id="Level" type="uint8" value="17"/>
+    //     <attribute id="Name" type="LSString" value="TrickeryDomain"/>
+    //     <attribute id="PassivesAdded" type="LSString" value="ImprovedDuplicity"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="TableUUID" type="guid" value="044e4e07-6980-479f-80e5-3c4a84e691d1"/>
+    //     <attribute id="UUID" type="guid" value="d1e3e805-0cb0-4280-9489-ae05b3bf83dd"/>
+
     new entry "GOON_NPC_CLERIC_TRICKERY_LVL_18"
     type "StatusData"
     data "StatusType" "BOOST"
-    using "GOON_NPC_CLERIC_TRICKERY_LVL_12"
+    using "GOON_NPC_CLERIC_TRICKERY_LVL_17"
     data "StackPriority" "18"
     
     new entry "GOON_NPC_CLERIC_TRICKERY_LVL_19"
     type "StatusData"
     data "StatusType" "BOOST"
-    using "GOON_NPC_CLERIC_TRICKERY_LVL_12"
+    using "GOON_NPC_CLERIC_TRICKERY_LVL_17"
     data "StackPriority" "19"
     
     new entry "GOON_NPC_CLERIC_TRICKERY_LVL_20"
     type "StatusData"
     data "StatusType" "BOOST"
-    using "GOON_NPC_CLERIC_TRICKERY_LVL_12"
+    using "GOON_NPC_CLERIC_TRICKERY_LVL_17"
     data "StackPriority" "20"
 
 // ==================================== Subclass: War Domain ====================================
@@ -1828,47 +1901,68 @@
     new entry "GOON_NPC_CLERIC_WAR_LVL_13"
     type "StatusData"
     data "StatusType" "BOOST"
-    using "GOON_NPC_CLERIC_WAR_LVL_12"
+    using "GOON_NPC_CLERIC_WAR_LVL_11"
     data "StackPriority" "13"
     
     new entry "GOON_NPC_CLERIC_WAR_LVL_14"
     type "StatusData"
     data "StatusType" "BOOST"
-    using "GOON_NPC_CLERIC_WAR_LVL_12"
+    using "GOON_NPC_CLERIC_WAR_PROGRESSION_TEMPLATE"
     data "StackPriority" "14"
+    data "Passives" "WarPriest;WarGodsBlessing;Divine_Strike_War_Toggle_2;Divine_Strike_War_WeaponAttack"
+    data "Boosts" "UnlockSpell(Shout_DivineFavor,AddChildren);UnlockSpell(Target_ShieldOfFaith,AddChildren);UnlockSpell(Shout_GuidedStrike,AddChildren);UnlockSpell(Target_MagicWeapon,AddChildren);UnlockSpell(Target_SpiritualWeapon,AddChildren);ActionResource(WarPriestActionPoint,2,0);UnlockSpell(Shout_SpiritGuardians,AddChildren);UnlockSpell(Shout_CrusadersMantle,AddChildren);UnlockSpell(Target_Stoneskin,AddChildren);UnlockSpell(Target_FreedomOfMovement,AddChildren);UnlockSpell(Target_DivineStrike_War_Container);UnlockSpell(Target_FlameStrike,AddChildren);UnlockSpell(Target_HoldMonster,AddChildren)"
     
+    // <node id="Progression">
+    //     <attribute id="Level" type="uint8" value="14"/>
+    //     <attribute id="Name" type="LSString" value="WarDomain"/>
+    //     <attribute id="PassivesAdded" type="LSString" value="Divine_Strike_War_Toggle_2;Divine_Strike_War_WeaponAttack"/>
+    //     <attribute id="PassivesRemoved" type="LSString" value="Divine_Strike_War_Toggle"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="TableUUID" type="guid" value="8f6048bc-47b8-49fa-956a-8a364807f6ec"/>
+    //     <attribute id="UUID" type="guid" value="163a9b1f-9e09-47d9-9099-5cd1b64ae46d"/>
+
     new entry "GOON_NPC_CLERIC_WAR_LVL_15"
     type "StatusData"
     data "StatusType" "BOOST"
-    using "GOON_NPC_CLERIC_WAR_LVL_12"
+    using "GOON_NPC_CLERIC_WAR_LVL_14"
     data "StackPriority" "15"
     
     new entry "GOON_NPC_CLERIC_WAR_LVL_16"
     type "StatusData"
     data "StatusType" "BOOST"
-    using "GOON_NPC_CLERIC_WAR_LVL_12"
+    using "GOON_NPC_CLERIC_WAR_LVL_14"
     data "StackPriority" "16"
     
     new entry "GOON_NPC_CLERIC_WAR_LVL_17"
     type "StatusData"
     data "StatusType" "BOOST"
-    using "GOON_NPC_CLERIC_WAR_LVL_12"
+    using "GOON_NPC_CLERIC_WAR_PROGRESSION_TEMPLATE"
     data "StackPriority" "17"
+    data "Passives" "WarPriest;WarGodsBlessing;Divine_Strike_War_Toggle_2;Divine_Strike_War_WeaponAttack;AvatarOfBattle"
+    data "Boosts" "UnlockSpell(Shout_DivineFavor,AddChildren);UnlockSpell(Target_ShieldOfFaith,AddChildren);UnlockSpell(Shout_GuidedStrike,AddChildren);UnlockSpell(Target_MagicWeapon,AddChildren);UnlockSpell(Target_SpiritualWeapon,AddChildren);ActionResource(WarPriestActionPoint,2,0);UnlockSpell(Shout_SpiritGuardians,AddChildren);UnlockSpell(Shout_CrusadersMantle,AddChildren);UnlockSpell(Target_Stoneskin,AddChildren);UnlockSpell(Target_FreedomOfMovement,AddChildren);UnlockSpell(Target_DivineStrike_War_Container);UnlockSpell(Target_FlameStrike,AddChildren);UnlockSpell(Target_HoldMonster,AddChildren)"
+
+    // <node id="Progression">
+    //     <attribute id="Level" type="uint8" value="17"/>
+    //     <attribute id="Name" type="LSString" value="WarDomain"/>
+    //     <attribute id="PassivesAdded" type="LSString" value="AvatarOfBattle"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="TableUUID" type="guid" value="8f6048bc-47b8-49fa-956a-8a364807f6ec"/>
+    //     <attribute id="UUID" type="guid" value="fc8bd75b-6aa1-4685-a083-63f33853ac3f"/>
     
     new entry "GOON_NPC_CLERIC_WAR_LVL_18"
     type "StatusData"
     data "StatusType" "BOOST"
-    using "GOON_NPC_CLERIC_WAR_LVL_12"
+    using "GOON_NPC_CLERIC_WAR_LVL_17"
     data "StackPriority" "18"
     
     new entry "GOON_NPC_CLERIC_WAR_LVL_19"
     type "StatusData"
     data "StatusType" "BOOST"
-    using "GOON_NPC_CLERIC_WAR_LVL_12"
+    using "GOON_NPC_CLERIC_WAR_LVL_17"
     data "StackPriority" "19"
     
     new entry "GOON_NPC_CLERIC_WAR_LVL_20"
     type "StatusData"
     data "StatusType" "BOOST"
-    using "GOON_NPC_CLERIC_WAR_LVL_12"
+    using "GOON_NPC_CLERIC_WAR_LVL_17"
     data "StackPriority" "20"
