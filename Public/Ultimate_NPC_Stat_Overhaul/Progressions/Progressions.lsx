@@ -228,6 +228,79 @@
                     <attribute id="TableUUID" type="guid" value="cbe5059f-7a9f-4b98-be6a-07c9cd8e02c2"/>
                     <attribute id="UUID" type="guid" value="2ab89404-3a46-4cdf-92b1-6c40abf634ca"/>
                 </node>
+                <!-- BARD: EXPANSION 13-20 -->
+                <node id="Progression">
+                    <attribute id="Boosts" type="LSString" value="ActionResource(SpellSlot,1,7)"/>
+                    <attribute id="Level" type="uint8" value="13"/>
+                    <attribute id="Name" type="LSString" value="NPC_Bard"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <!-- <attribute id="Selectors" type="LSString" value="SelectSpells(f923e058-b1d9-4b02-98ef-9daaa82a71b6,1,1,BardSpells)"/> -->
+                    <attribute id="TableUUID" type="guid" value="cbe5059f-7a9f-4b98-be6a-07c9cd8e02c2"/>
+                    <attribute id="UUID" type="guid" value="b7f7b601-e02f-4029-823e-d0dd8692b11d"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="14"/>
+                    <attribute id="Name" type="LSString" value="NPC_Bard"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <!-- <attribute id="Selectors" type="LSString" value="SelectSpells(95f80109-32b7-43f8-a99a-7ee2286a993a,2,1,BardMagicalSecrets)"/> -->
+                    <attribute id="TableUUID" type="guid" value="cbe5059f-7a9f-4b98-be6a-07c9cd8e02c2"/>
+                    <attribute id="UUID" type="guid" value="9b06b939-d1cd-4994-b060-7b66bfec52e3"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Boosts" type="LSString" value="ActionResource(SpellSlot,1,8)"/>
+                    <attribute id="Level" type="uint8" value="15"/>
+                    <attribute id="Name" type="LSString" value="NPC_Bard"/>
+                    <attribute id="PassivesAdded" type="LSString" value="BardicInspiration_d12"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <!-- <attribute id="Selectors" type="LSString" value="SelectSpells(073c09e5-ccb9-4153-a210-001225a30cbb,1,1,BardSpells)"/> -->
+                    <attribute id="TableUUID" type="guid" value="cbe5059f-7a9f-4b98-be6a-07c9cd8e02c2"/>
+                    <attribute id="UUID" type="guid" value="5b6cdde3-4162-47f0-acf4-e6fcdd446708"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="16"/>
+                    <attribute id="Name" type="LSString" value="NPC_Bard"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <!-- <attribute id="Selectors" type="LSString" value="SelectSpells(073c09e5-ccb9-4153-a210-001225a30cbb,0,1,BardSpells)"/> -->
+                    <attribute id="TableUUID" type="guid" value="cbe5059f-7a9f-4b98-be6a-07c9cd8e02c2"/>
+                    <attribute id="UUID" type="guid" value="6378dda3-2065-4394-8566-4522835d15f9"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Boosts" type="LSString" value="ActionResource(SpellSlot,1,9)"/>
+                    <attribute id="Level" type="uint8" value="17"/>
+                    <attribute id="Name" type="LSString" value="NPC_Bard"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <!-- <attribute id="Selectors" type="LSString" value="SelectSpells(2bbd99d0-21b4-41cc-836e-e386a96fc8e6,1,1,BardSpells)"/> -->
+                    <attribute id="TableUUID" type="guid" value="cbe5059f-7a9f-4b98-be6a-07c9cd8e02c2"/>
+                    <attribute id="UUID" type="guid" value="326fc52e-df5d-4842-a2dc-b86e62e583c1"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Boosts" type="LSString" value="ActionResource(SpellSlot,1,5)"/>
+                    <attribute id="Level" type="uint8" value="18"/>
+                    <attribute id="Name" type="LSString" value="NPC_Bard"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <!-- <attribute id="Selectors" type="LSString" value="SelectSpells(cd83187f-c886-45c2-be81-34083981f240,2,0,BardMagicalSecrets);SelectSpells(2bbd99d0-21b4-41cc-836e-e386a96fc8e6,0,1,BardSpells)"/> -->
+                    <attribute id="TableUUID" type="guid" value="cbe5059f-7a9f-4b98-be6a-07c9cd8e02c2"/>
+                    <attribute id="UUID" type="guid" value="b0e6f7ed-f00d-4f07-b8d8-0f8706183f99"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Boosts" type="LSString" value="ActionResource(SpellSlot,1,6)"/>
+                    <attribute id="Level" type="uint8" value="19"/>
+                    <attribute id="Name" type="LSString" value="NPC_Bard"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <!-- <attribute id="Selectors" type="LSString" value="SelectSpells(2bbd99d0-21b4-41cc-836e-e386a96fc8e6,0,1,BardSpells)"/> -->
+                    <attribute id="TableUUID" type="guid" value="cbe5059f-7a9f-4b98-be6a-07c9cd8e02c2"/>
+                    <attribute id="UUID" type="guid" value="1fc0307d-5c8c-4a84-9062-4c7a3c9d1f87"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Boosts" type="LSString" value="ActionResource(SpellSlot,1,7)"/>
+                    <attribute id="Level" type="uint8" value="20"/>
+                    <attribute id="Name" type="LSString" value="NPC_Bard"/>
+                    <attribute id="PassivesAdded" type="LSString" value="SuperiorInspiration"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <!-- <attribute id="Selectors" type="LSString" value="SelectSpells(2bbd99d0-21b4-41cc-836e-e386a96fc8e6,0,1,BardSpells)"/> -->
+                    <attribute id="TableUUID" type="guid" value="cbe5059f-7a9f-4b98-be6a-07c9cd8e02c2"/>
+                    <attribute id="UUID" type="guid" value="0f2763af-9288-4dc1-9436-70ae8becd579"/>
+                </node>
             <!-- CLERIC -->
                 <node id="Progression">
                     <!-- <attribute id="Boosts" type="LSString" value="ActionResource(SpellSlot,2,1);ProficiencyBonus(SavingThrow,Wisdom);ProficiencyBonus(SavingThrow,Charisma)"/> -->
@@ -755,7 +828,6 @@
                     <attribute id="UUID" type="guid" value="019f2052-6818-4030-8c5e-ddc70027a133"/>
                 </node>
                 <node id="Progression">
-                    <attribute id="AllowImprovement" type="bool" value="true"/>
                     <attribute id="Boosts" type="LSString" value="ActionResource(KiPoint,1,0)"/>
                     <attribute id="Level" type="uint8" value="16"/>
                     <attribute id="Name" type="LSString" value="NPC_Monk"/>
@@ -782,7 +854,6 @@
                     <attribute id="UUID" type="guid" value="c767ce84-e2f2-41c2-a982-a4a4d7e7af3f"/>
                 </node>
                 <node id="Progression">
-                    <attribute id="AllowImprovement" type="bool" value="true"/>
                     <attribute id="Boosts" type="LSString" value="ActionResource(KiPoint,1,0)"/>
                     <attribute id="Level" type="uint8" value="19"/>
                     <attribute id="Name" type="LSString" value="NPC_Monk"/>
