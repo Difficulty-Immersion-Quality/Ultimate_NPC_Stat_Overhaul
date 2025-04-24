@@ -104,6 +104,72 @@
                     <attribute id="TableUUID" type="guid" value="56db8107-e04c-4fe3-94f3-fd4acd44cd4a"/>
                     <attribute id="UUID" type="guid" value="de09d648-138e-4f99-945b-f93c149f9d60"/>
                 </node>
+                <!-- BARBARIAN: EXPANSION 13-20 -->
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="13"/>
+                    <attribute id="Name" type="LSString" value="NPC_Barbarian"/>
+                    <attribute id="PassivesAdded" type="LSString" value="BrutalCritical_2"/>
+                    <attribute id="PassivesRemoved" type="LSString" value="BrutalCritical"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="56db8107-e04c-4fe3-94f3-fd4acd44cd4a"/>
+                    <attribute id="UUID" type="guid" value="b5ee6c2a-dab1-435c-8c07-c74f245a310e"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="14"/>
+                    <attribute id="Name" type="LSString" value="NPC_Barbarian"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="56db8107-e04c-4fe3-94f3-fd4acd44cd4a"/>
+                    <attribute id="UUID" type="guid" value="71e48f48-732e-45f0-89fe-4c4238ab9263"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="15"/>
+                    <attribute id="Name" type="LSString" value="NPC_Barbarian"/>
+                    <attribute id="PassivesAdded" type="LSString" value="PersistentRage"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="56db8107-e04c-4fe3-94f3-fd4acd44cd4a"/>
+                    <attribute id="UUID" type="guid" value="627d8df9-d8a0-4fda-8c39-00d91dcb3c66"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="16"/>
+                    <attribute id="Name" type="LSString" value="NPC_Barbarian"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="56db8107-e04c-4fe3-94f3-fd4acd44cd4a"/>
+                    <attribute id="UUID" type="guid" value="22915833-c754-465f-866d-97e00bbf6e33"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Boosts" type="LSString" value="ActionResource(Rage,1,0)"/>
+                    <attribute id="Level" type="uint8" value="17"/>
+                    <attribute id="Name" type="LSString" value="NPC_Barbarian"/>
+                    <attribute id="PassivesAdded" type="LSString" value="BrutalCritical_3"/>
+                    <attribute id="PassivesRemoved" type="LSString" value="BrutalCritical_2"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="56db8107-e04c-4fe3-94f3-fd4acd44cd4a"/>
+                    <attribute id="UUID" type="guid" value="700c4c62-0381-480c-835f-fe6afcf66a6f"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="18"/>
+                    <attribute id="Name" type="LSString" value="NPC_Barbarian"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="PassivesAdded" type="LSString" value="IndomitableMight"/>
+                    <attribute id="TableUUID" type="guid" value="56db8107-e04c-4fe3-94f3-fd4acd44cd4a"/>
+                    <attribute id="UUID" type="guid" value="7a195762-1176-4964-a7da-f3a5b94f706b"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="19"/>
+                    <attribute id="Name" type="LSString" value="NPC_Barbarian"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="56db8107-e04c-4fe3-94f3-fd4acd44cd4a"/>
+                    <attribute id="UUID" type="guid" value="cdb32330-e9a9-497e-bcb5-b6665ca11660"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Boosts" type="LSString" value="ActionResourceReplenishTypeOverride(Rage,Turn)"/>
+                    <attribute id="Level" type="uint8" value="20"/>
+                    <attribute id="Name" type="LSString" value="NPC_Barbarian"/>
+                    <attribute id="PassivesAdded" type="LSString" value="PrimalChampion"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="56db8107-e04c-4fe3-94f3-fd4acd44cd4a"/>
+                    <attribute id="UUID" type="guid" value="a603c924-c5d3-414d-99fd-d0e81898bd43"/>
+                </node>
             <!-- BARD -->
                 <node id="Progression">
                     <!-- Slightly different to player Boosts, which does not have a tag and does not specify die size for BardicInspiration -->
