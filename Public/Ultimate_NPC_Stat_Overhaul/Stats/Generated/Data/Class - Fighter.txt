@@ -1,0 +1,191 @@
+// ==================================== Main class progression passive ====================================
+
+    new entry "Goon_Fighter_NPC_Progressions"
+    type "PassiveData"
+    data "DisplayName" "h6d12a72egfab9g4f45gae31g5d4491dd2b6b;1"
+    data "Description" "h5e48ac49gaae0g4a00g8c47g03b6fca54a3c;1"
+    data "Properties" "Highlighted"
+    data "Icon" "GenericIcon_Intent_Buff"
+
+// ==================================== Combat Extender and Progression Stat Entries ====================================
+
+// Main passive
+    new entry "CX_Fighter_Boost"
+    type "PassiveData"
+    // data "DisplayName" "hd382954ege821g4920gb1c0g588794653928"
+    data "DisplayName" "h9bbf1a66g5136g4de6gb0f1g8e48e853d2ad;1"
+    // data "Description" "h914310b1ga5dbg4fcdg9123g9980b7508d4e"
+    data "Description" "hbf3404a9g766dg4d85gbf2egca83383094c6;1"
+    // data "DescriptionParams" "4"
+    // data "Icon" "Action_CommandersStrike"
+    data "Icon" "Skill_Fighter_ActionSurge"
+    data "StatsFunctorContext" "OnCreate;OnStatusApplied;OnStatusRemoved"
+    data "Conditions" "(not HasPassive('Goon_Fighter_NPC_Progressions'))"
+    data "StatsFunctors" "IF(not CharacterLevelGreaterThan(1,GetOwner(context.Source))):ApplyStatus(GOON_NPC_FIGHTER_LVL_1,100,-1);IF(CharacterLevelGreaterThan(1,GetOwner(context.Source)) and not CharacterLevelGreaterThan(2,GetOwner(context.Source))):ApplyStatus(GOON_NPC_FIGHTER_LVL_2,100,-1);IF(CharacterLevelGreaterThan(2,GetOwner(context.Source)) and not CharacterLevelGreaterThan(3,GetOwner(context.Source))):ApplyStatus(GOON_NPC_FIGHTER_LVL_3,100,-1);IF(CharacterLevelGreaterThan(3,GetOwner(context.Source)) and not CharacterLevelGreaterThan(4,GetOwner(context.Source))):ApplyStatus(GOON_NPC_FIGHTER_LVL_4,100,-1);IF(CharacterLevelGreaterThan(4,GetOwner(context.Source)) and not CharacterLevelGreaterThan(5,GetOwner(context.Source))):ApplyStatus(GOON_NPC_FIGHTER_LVL_5,100,-1);IF(CharacterLevelGreaterThan(5,GetOwner(context.Source)) and not CharacterLevelGreaterThan(6,GetOwner(context.Source))):ApplyStatus(GOON_NPC_FIGHTER_LVL_6,100,-1);IF(CharacterLevelGreaterThan(6,GetOwner(context.Source)) and not CharacterLevelGreaterThan(7,GetOwner(context.Source))):ApplyStatus(GOON_NPC_FIGHTER_LVL_7,100,-1);IF(CharacterLevelGreaterThan(7,GetOwner(context.Source)) and not CharacterLevelGreaterThan(8,GetOwner(context.Source))):ApplyStatus(GOON_NPC_FIGHTER_LVL_8,100,-1);IF(CharacterLevelGreaterThan(8,GetOwner(context.Source)) and not CharacterLevelGreaterThan(9,GetOwner(context.Source))):ApplyStatus(GOON_NPC_FIGHTER_LVL_9,100,-1);IF(CharacterLevelGreaterThan(9,GetOwner(context.Source)) and not CharacterLevelGreaterThan(10,GetOwner(context.Source))):ApplyStatus(GOON_NPC_FIGHTER_LVL_10,100,-1);IF(CharacterLevelGreaterThan(10,GetOwner(context.Source)) and not CharacterLevelGreaterThan(11,GetOwner(context.Source))):ApplyStatus(GOON_NPC_FIGHTER_LVL_11,100,-1);IF(CharacterLevelGreaterThan(11,GetOwner(context.Source)) and not CharacterLevelGreaterThan(12,GetOwner(context.Source))):ApplyStatus(GOON_NPC_FIGHTER_LVL_12,100,-1);IF(CharacterLevelGreaterThan(12,GetOwner(context.Source)) and not CharacterLevelGreaterThan(13,GetOwner(context.Source))):ApplyStatus(GOON_NPC_FIGHTER_LVL_13,100,-1);IF(CharacterLevelGreaterThan(13,GetOwner(context.Source)) and not CharacterLevelGreaterThan(14,GetOwner(context.Source))):ApplyStatus(GOON_NPC_FIGHTER_LVL_14,100,-1);IF(CharacterLevelGreaterThan(14,GetOwner(context.Source)) and not CharacterLevelGreaterThan(15,GetOwner(context.Source))):ApplyStatus(GOON_NPC_FIGHTER_LVL_15,100,-1);IF(CharacterLevelGreaterThan(15,GetOwner(context.Source)) and not CharacterLevelGreaterThan(16,GetOwner(context.Source))):ApplyStatus(GOON_NPC_FIGHTER_LVL_16,100,-1);IF(CharacterLevelGreaterThan(16,GetOwner(context.Source)) and not CharacterLevelGreaterThan(17,GetOwner(context.Source))):ApplyStatus(GOON_NPC_FIGHTER_LVL_17,100,-1);IF(CharacterLevelGreaterThan(17,GetOwner(context.Source)) and not CharacterLevelGreaterThan(18,GetOwner(context.Source))):ApplyStatus(GOON_NPC_FIGHTER_LVL_18,100,-1);IF(CharacterLevelGreaterThan(18,GetOwner(context.Source)) and not CharacterLevelGreaterThan(19,GetOwner(context.Source))):ApplyStatus(GOON_NPC_FIGHTER_LVL_19,100,-1);IF(CharacterLevelGreaterThan(19,GetOwner(context.Source))):ApplyStatus(GOON_NPC_FIGHTER_LVL_20,100,-1)"
+
+// Template
+    new entry "GOON_NPC_FIGHTER_PROGRESSION_TEMPLATE"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    data "StatusPropertyFlags" "DisableOverhead;DisableCombatlog;DisablePortraitIndicator;ApplyToDead;IgnoreResting"
+    data "RemoveEvents" "OnStatusApplied;OnStatusRemoved"
+    data "StackId" "GOON_NPC_FIGHTER_PROGRESSION_TEMPLATE"
+    data "StackType" "Ignore"
+    data "RemoveConditions" "not HasPassive('CX_Fighter_Boost') or HasStatus('Goon_Fighter_NPC_Progressions')"
+
+// Progression statuses
+    new entry "GOON_NPC_FIGHTER_LVL_1_MULTICLASS"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_FIGHTER_PROGRESSION_TEMPLATE"
+    data "StackPriority" "1"
+    data "Passives" "CX_Martial_Boost"
+    data "Boosts" "Proficiency(LightArmor);Proficiency(MediumArmor);Proficiency(Shields);Proficiency(SimpleWeapons);Proficiency(MartialWeapons);UnlockSpell(Shout_SecondWind)"
+
+    // <node id="Progression">
+    // <attribute id="AllowImprovement" type="bool" value="false"/>
+    // <attribute id="Boosts" type="LSString" value="Proficiency(LightArmor);Proficiency(MediumArmor);Proficiency(Shields);Proficiency(SimpleWeapons);Proficiency(MartialWeapons)"/>
+    // <attribute id="IsMulticlass" type="bool" value="true"/>
+    // <attribute id="Level" type="uint8" value="1"/>
+    // <attribute id="Name" type="LSString" value="Fighter"/>
+    // <attribute id="ProgressionType" type="uint8" value="0"/>
+    // <attribute id="Selectors" type="LSString" value="AddSpells(9e32fc2b-ce4f-47aa-b113-25cbdc025123);SelectPassives(da3203d8-750a-4de1-b8eb-1eccfccddf46,1,FightingStyle)"/>
+    // <attribute id="TableUUID" type="guid" value="ba4e707e-4bbd-4630-963b-ce2f2947f971"/>
+    // <attribute id="UUID" type="guid" value="b29977d4-b81a-4794-9f4f-badd7cc23f6b"/>
+
+    new entry "GOON_NPC_FIGHTER_LVL_1"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_FIGHTER_PROGRESSION_TEMPLATE"
+    data "StackPriority" "1"
+    data "Passives" "CX_Martial_Boost"
+    data "Boosts" "Tag(FIGHTER);ProficiencyBonus(SavingThrow,Strength);ProficiencyBonus(SavingThrow,Constitution);Proficiency(LightArmor);Proficiency(MediumArmor);Proficiency(HeavyArmor);Proficiency(Shields);Proficiency(SimpleWeapons);Proficiency(MartialWeapons);UnlockSpell(Shout_SecondWind)"
+
+    new entry "GOON_NPC_FIGHTER_LVL_2"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_FIGHTER_PROGRESSION_TEMPLATE"
+    data "StackPriority" "2"
+    data "Passives" "CX_Martial_Boost"
+    data "Boosts" "Tag(FIGHTER);ProficiencyBonus(SavingThrow,Strength);ProficiencyBonus(SavingThrow,Constitution);Proficiency(LightArmor);Proficiency(MediumArmor);Proficiency(HeavyArmor);Proficiency(Shields);Proficiency(SimpleWeapons);Proficiency(MartialWeapons);UnlockSpell(Shout_SecondWind);UnlockSpell(Shout_ActionSurge)"
+
+    new entry "GOON_NPC_FIGHTER_LVL_3"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_FIGHTER_LVL_2"
+    data "StackPriority" "3"
+
+    new entry "GOON_NPC_FIGHTER_LVL_4"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_FIGHTER_LVL_2"
+    data "StackPriority" "4"
+
+    new entry "GOON_NPC_FIGHTER_LVL_5"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_FIGHTER_PROGRESSION_TEMPLATE"
+    data "StackPriority" "5"
+    data "Passives" "CX_Martial_Boost;ExtraAttack"
+    data "Boosts" "Tag(FIGHTER);ProficiencyBonus(SavingThrow,Strength);ProficiencyBonus(SavingThrow,Constitution);Proficiency(LightArmor);Proficiency(MediumArmor);Proficiency(HeavyArmor);Proficiency(Shields);Proficiency(SimpleWeapons);Proficiency(MartialWeapons);UnlockSpell(Shout_SecondWind);UnlockSpell(Shout_ActionSurge)"
+
+    new entry "GOON_NPC_FIGHTER_LVL_6"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_FIGHTER_LVL_5"
+    data "StackPriority" "6"
+
+    new entry "GOON_NPC_FIGHTER_LVL_7"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_FIGHTER_LVL_5"
+    data "StackPriority" "7"
+
+    new entry "GOON_NPC_FIGHTER_LVL_8"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_FIGHTER_LVL_5"
+    data "StackPriority" "8"
+
+    new entry "GOON_NPC_FIGHTER_LVL_9"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_FIGHTER_PROGRESSION_TEMPLATE"
+    data "StackPriority" "9"
+    data "Passives" "CX_Martial_Boost;ExtraAttack;Indomitable"
+    data "Boosts" "Tag(FIGHTER);ProficiencyBonus(SavingThrow,Strength);ProficiencyBonus(SavingThrow,Constitution);Proficiency(LightArmor);Proficiency(MediumArmor);Proficiency(HeavyArmor);Proficiency(Shields);Proficiency(SimpleWeapons);Proficiency(MartialWeapons);UnlockSpell(Shout_SecondWind);UnlockSpell(Shout_ActionSurge)"
+
+    new entry "GOON_NPC_FIGHTER_LVL_10"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_FIGHTER_LVL_9"
+    data "StackPriority" "10"
+
+    new entry "GOON_NPC_FIGHTER_LVL_11"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_FIGHTER_PROGRESSION_TEMPLATE"
+    data "StackPriority" "11"
+    data "Passives" "CX_Martial_Boost;Indomitable;ExtraAttack_2"
+    data "Boosts" "Tag(FIGHTER);ProficiencyBonus(SavingThrow,Strength);ProficiencyBonus(SavingThrow,Constitution);Proficiency(LightArmor);Proficiency(MediumArmor);Proficiency(HeavyArmor);Proficiency(Shields);Proficiency(SimpleWeapons);Proficiency(MartialWeapons);UnlockSpell(Shout_SecondWind);UnlockSpell(Shout_ActionSurge)"
+
+    new entry "GOON_NPC_FIGHTER_LVL_12"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_FIGHTER_LVL_11"
+    data "StackPriority" "12"
+
+// Expansion levels 13-20
+    new entry "GOON_NPC_FIGHTER_LVL_13"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_FIGHTER_PROGRESSION_TEMPLATE"
+    data "StackPriority" "13"
+    data "Passives" "CX_Martial_Boost;ExtraAttack_2;Indomitable_2"
+    data "Boosts" "Tag(FIGHTER);ProficiencyBonus(SavingThrow,Strength);ProficiencyBonus(SavingThrow,Constitution);Proficiency(LightArmor);Proficiency(MediumArmor);Proficiency(HeavyArmor);Proficiency(Shields);Proficiency(SimpleWeapons);Proficiency(MartialWeapons);UnlockSpell(Shout_SecondWind);UnlockSpell(Shout_ActionSurge);ActionResource(Interrupt_Indomitable,2,0)"
+
+    new entry "GOON_NPC_FIGHTER_LVL_14"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_FIGHTER_LVL_13"
+    data "StackPriority" "14"
+
+    new entry "GOON_NPC_FIGHTER_LVL_15"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_FIGHTER_LVL_13"
+    data "StackPriority" "15"
+
+    new entry "GOON_NPC_FIGHTER_LVL_16"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_FIGHTER_LVL_13"
+    data "StackPriority" "16"
+
+    new entry "GOON_NPC_FIGHTER_LVL_17"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_FIGHTER_PROGRESSION_TEMPLATE"
+    data "StackPriority" "17"
+    data "Passives" "CX_Martial_Boost;ExtraAttack_2;Indomitable_3"
+    data "Boosts" "Tag(FIGHTER);ProficiencyBonus(SavingThrow,Strength);ProficiencyBonus(SavingThrow,Constitution);Proficiency(LightArmor);Proficiency(MediumArmor);Proficiency(HeavyArmor);Proficiency(Shields);Proficiency(SimpleWeapons);Proficiency(MartialWeapons);UnlockSpell(Shout_SecondWind);UnlockSpell(Shout_ActionSurge);ActionResource(Interrupt_Indomitable,3,0);ActionResource(ActionSurgeCharge,1,0)"
+
+    new entry "GOON_NPC_FIGHTER_LVL_18"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_FIGHTER_LVL_17"
+    data "StackPriority" "18"
+
+    new entry "GOON_NPC_FIGHTER_LVL_19"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_FIGHTER_LVL_17"
+    data "StackPriority" "19"
+
+    new entry "GOON_NPC_FIGHTER_LVL_20"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_FIGHTER_PROGRESSION_TEMPLATE"
+    data "StackPriority" "20"
+    data "Passives" "CX_Martial_Boost;Indomitable_3;ExtraAttack_3"
+    data "Boosts" "Tag(FIGHTER);ProficiencyBonus(SavingThrow,Strength);ProficiencyBonus(SavingThrow,Constitution);Proficiency(LightArmor);Proficiency(MediumArmor);Proficiency(HeavyArmor);Proficiency(Shields);Proficiency(SimpleWeapons);Proficiency(MartialWeapons);UnlockSpell(Shout_SecondWind);UnlockSpell(Shout_ActionSurge);ActionResource(Interrupt_Indomitable,3,0);ActionResource(ActionSurgeCharge,1,0)"

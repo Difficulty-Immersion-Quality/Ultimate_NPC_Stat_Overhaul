@@ -49,16 +49,6 @@ data "Icon" "Spell_Abjuration_WardingBond"
 
 // ==================================== Fighter ====================================
 
-new entry "CX_Fighter_Boost"
-type "PassiveData"
-// data "DisplayName" "hd382954ege821g4920gb1c0g588794653928"
-data "DisplayName" "h9bbf1a66g5136g4de6gb0f1g8e48e853d2ad;1"
-// data "Description" "h914310b1ga5dbg4fcdg9123g9980b7508d4e"
-data "Description" "hbf3404a9g766dg4d85gbf2egca83383094c6;1"
-// data "DescriptionParams" "4"
-// data "Icon" "Action_CommandersStrike"
-data "Icon" "Skill_Fighter_ActionSurge"
-
 new entry "CX_Fighter_BattleMaster_Boost"
 type "PassiveData"
 data "DisplayName" "hefce9befgc089g4b04g9393g1ec534347dea;1"

@@ -36,7 +36,7 @@
     new entry "GOON_NPC_SOMETHING_LVL_1_MULTICLASS"
     type "StatusData"
     data "StatusType" "BOOST"
-    using "GOON_NPC_SOMETHING_SOMETHING_PROGRESSION_TEMPLATE"
+    using "GOON_NPC_SOMETHING_PROGRESSION_TEMPLATE"
     data "StackPriority" "1"
     data "Passives" ""
     data "Boosts" ""

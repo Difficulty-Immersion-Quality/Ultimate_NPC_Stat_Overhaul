@@ -111,7 +111,7 @@
 
 <!-- FIGHTER -->
 	<content contentuid="h6d12a72egfab9g4f45gae31g5d4491dd2b6b" version="1">! Class: Fighter</content>
-	<content contentuid="" version="1">A character who has mastered weapons and tactics, excelling in martial combat. They possess Fighter progressions, and gain the &lt;LSTag Type="Passive" Tooltip="CX_Druid_Boost"&gt;! CX Boost: Druid&lt;/LSTag&gt; passive.</content>
+	<content contentuid="h5e48ac49gaae0g4a00g8c47g03b6fca54a3c" version="1">A character who has mastered weapons and tactics, excelling in martial combat. They possess Fighter progressions, and gain the &lt;LSTag Type="Passive" Tooltip="CX_Druid_Boost"&gt;! CX Boost: Druid&lt;/LSTag&gt; passive.</content>
 
 	<content contentuid="h9bbf1a66g5136g4de6gb0f1g8e48e853d2ad" version="1">! CX Boost: Fighter Boost</content>
 	<content contentuid="hbf3404a9g766dg4d85gbf2egca83383094c6" version="1">A character who has mastered weapons and tactics, excelling in martial combat. They gain Fighter boosts from configuration.</content>

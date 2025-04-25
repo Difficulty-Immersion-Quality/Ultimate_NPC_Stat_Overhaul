@@ -769,7 +769,7 @@
             <!-- FIGHTER -->
                 <node id="Progression">
                     <!-- <attribute id="Boosts" type="LSString" value="ProficiencyBonus(SavingThrow,Strength);ProficiencyBonus(SavingThrow,Constitution)"/> -->
-                    <attribute id="Boosts" type="LSString" value="Tag(FIGHTER);ProficiencyBonus(SavingThrow,Strength);ProficiencyBonus(SavingThrow,Constitution);Proficiency(LightArmor);Proficiency(MediumArmor);Proficiency(HeavyArmor);Proficiency(Shields);Proficiency(SimpleWeapons);Proficiency(MartialWeapons)"/>
+                    <attribute id="Boosts" type="LSString" value="Tag(FIGHTER);ProficiencyBonus(SavingThrow,Strength);ProficiencyBonus(SavingThrow,Constitution);Proficiency(LightArmor);Proficiency(MediumArmor);Proficiency(HeavyArmor);Proficiency(Shields);Proficiency(SimpleWeapons);Proficiency(MartialWeapons);UnlockSpell(Shout_SecondWind)"/>
                     <attribute id="Level" type="uint8" value="1"/>
                     <attribute id="Name" type="LSString" value="NPC_Fighter"/>
                     <!-- <attribute id="PassivesAdded" type="LSString" value=""/> -->
