@@ -768,12 +768,14 @@
                 </node>
             <!-- FIGHTER -->
                 <node id="Progression">
-                    <attribute id="Boosts" type="LSString" value="ProficiencyBonus(SavingThrow,Strength);ProficiencyBonus(SavingThrow,Constitution)"/>
+                    <!-- <attribute id="Boosts" type="LSString" value="ProficiencyBonus(SavingThrow,Strength);ProficiencyBonus(SavingThrow,Constitution)"/> -->
+                    <attribute id="Boosts" type="LSString" value="Tag(FIGHTER);ProficiencyBonus(SavingThrow,Strength);ProficiencyBonus(SavingThrow,Constitution);Proficiency(LightArmor);Proficiency(MediumArmor);Proficiency(HeavyArmor);Proficiency(Shields);Proficiency(SimpleWeapons);Proficiency(MartialWeapons)"/>
                     <attribute id="Level" type="uint8" value="1"/>
                     <attribute id="Name" type="LSString" value="NPC_Fighter"/>
                     <!-- <attribute id="PassivesAdded" type="LSString" value=""/> -->
-                    <attribute id="PassivesAdded" type="LSString" value="Goon_Fighter_NPC_Progressions"/>
+                    <attribute id="PassivesAdded" type="LSString" value="Goon_Fighter_NPC_Progressions;CX_Martial_Boost"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <!-- <attribute id="Selectors" type="LSString" value="SelectSkills(6a4f8598-3a17-42d1-beac-d7ced582bafa,2);AddSpells(9e32fc2b-ce4f-47aa-b113-25cbdc025123);SelectPassives(da3203d8-750a-4de1-b8eb-1eccfccddf46,1,FightingStyle);SelectAbilityBonus(b9149c8e-52c8-46e5-9cb6-fc39301c05fe,AbilityBonus,2,1)"/> -->
                     <attribute id="TableUUID" type="guid" value="0e6da493-5a37-423b-8c28-629462b22faa"/>
                     <attribute id="UUID" type="guid" value="7d5877f0-e973-4a7a-b8d8-423fecadebb4"/>
                 </node>
@@ -783,6 +785,7 @@
                     <attribute id="Level" type="uint8" value="2"/>
                     <attribute id="Name" type="LSString" value="NPC_Fighter"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <!-- <attribute id="Selectors" type="LSString" value="AddSpells(964e765d-5881-463e-b1b0-4fc6b8035aa8)"/> -->
                     <attribute id="TableUUID" type="guid" value="0e6da493-5a37-423b-8c28-629462b22faa"/>
                     <attribute id="UUID" type="guid" value="8568b134-eb2c-44ec-bbb5-c1bf6f36ea52"/>
                 </node>
@@ -794,7 +797,6 @@
                     <attribute id="UUID" type="guid" value="b22c77d4-8d9a-4849-9027-03ddb2ca0685"/>
                 </node>
                 <node id="Progression">
-                    <!-- TODO: Roulette an appropriate feat? -->
                     <attribute id="Level" type="uint8" value="4"/>
                     <attribute id="Name" type="LSString" value="NPC_Fighter"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
@@ -810,7 +812,6 @@
                     <attribute id="UUID" type="guid" value="59f63529-f78d-4e36-b65c-dbb06c81ce1a"/>
                 </node>
                 <node id="Progression">
-                    <!-- TODO: Roulette an appropriate feat? -->
                     <attribute id="Level" type="uint8" value="6"/>
                     <attribute id="Name" type="LSString" value="NPC_Fighter"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
@@ -825,7 +826,6 @@
                     <attribute id="UUID" type="guid" value="a6d24127-ff64-47e5-aeea-26cdfef6470a"/>
                 </node>
                 <node id="Progression">
-                    <!-- TODO: Roulette an appropriate feat? -->
                     <attribute id="Level" type="uint8" value="8"/>
                     <attribute id="Name" type="LSString" value="NPC_Fighter"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
@@ -857,6 +857,8 @@
                 <node id="Progression">
                     <attribute id="Level" type="uint8" value="9"/>
                     <attribute id="Name" type="LSString" value="NPC_Fighter"/>
+                    <!-- <attribute id="PassivesAdded" type="LSString" value=""/> -->
+                    <attribute id="PassivesAdded" type="LSString" value="Indomitable"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
                     <attribute id="TableUUID" type="guid" value="0e6da493-5a37-423b-8c28-629462b22faa"/>
                     <attribute id="UUID" type="guid" value="f201a28f-e09c-4615-8d6f-6378ce7d5b5d"/>
@@ -878,12 +880,80 @@
                     <attribute id="UUID" type="guid" value="c6c838b3-66f4-4e53-ab1d-01df3f628c53"/>
                 </node>
                 <node id="Progression">
-                    <!-- TODO: Roulette an appropriate feat? -->
                     <attribute id="Level" type="uint8" value="12"/>
                     <attribute id="Name" type="LSString" value="NPC_Fighter"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
                     <attribute id="TableUUID" type="guid" value="0e6da493-5a37-423b-8c28-629462b22faa"/>
                     <attribute id="UUID" type="guid" value="8bbfc231-4f3c-43ae-81a5-5914c9ff00bb"/>
+                </node>
+                <!-- FIGHTER: Expansion 13-20 -->
+                    <node id="Progression">
+                    <attribute id="Boosts" type="LSString" value="ActionResource(Interrupt_Indomitable,2,0)"/>
+                    <attribute id="Level" type="uint8" value="13"/>
+                    <attribute id="Name" type="LSString" value="NPC_Fighter"/>
+                    <attribute id="PassivesAdded" type="LSString" value="Indomitable_2"/>
+                    <attribute id="PassivesRemoved" type="LSString" value="Indomitable"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="0e6da493-5a37-423b-8c28-629462b22faa"/>
+                    <attribute id="UUID" type="guid" value="6249edcc-a017-48b4-a307-4e78642472f8"/>
+                </node>
+                <node id="Progression">
+                    <!-- <attribute id="AllowImprovement" type="bool" value="true"/> -->
+                    <attribute id="Level" type="uint8" value="14"/>
+                    <attribute id="Name" type="LSString" value="NPC_Fighter"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="0e6da493-5a37-423b-8c28-629462b22faa"/>
+                    <attribute id="UUID" type="guid" value="193a9fea-ae5a-411d-8f02-b29da1b2dd92"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="15"/>
+                    <attribute id="Name" type="LSString" value="NPC_Fighter"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="0e6da493-5a37-423b-8c28-629462b22faa"/>
+                    <attribute id="UUID" type="guid" value="97708dc9-63c6-4023-83ba-1e24a0e12cb9"/>
+                </node>
+                <node id="Progression">
+                    <!-- <attribute id="AllowImprovement" type="bool" value="true"/> -->
+                    <attribute id="Level" type="uint8" value="16"/>
+                    <attribute id="Name" type="LSString" value="NPC_Fighter"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="Selectors" type="LSString" value=""/>
+                    <attribute id="TableUUID" type="guid" value="0e6da493-5a37-423b-8c28-629462b22faa"/>
+                    <attribute id="UUID" type="guid" value="648e24ef-64c3-4802-a96c-5325b3518b63"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Boosts" type="LSString" value="ActionResource(ActionSurgeCharge,1,0);ActionResource(Interrupt_Indomitable,1,0)"/>
+                    <attribute id="Level" type="uint8" value="17"/>
+                    <attribute id="Name" type="LSString" value="NPC_Fighter"/>
+                    <attribute id="PassivesAdded" type="LSString" value="Indomitable_3"/>
+                    <attribute id="PassivesRemoved" type="LSString" value="Indomitable_2"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="0e6da493-5a37-423b-8c28-629462b22faa"/>
+                    <attribute id="UUID" type="guid" value="5e2ce961-1122-48ab-a6cb-d8779a8df0c8"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="18"/>
+                    <attribute id="Name" type="LSString" value="NPC_Fighter"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="0e6da493-5a37-423b-8c28-629462b22faa"/>
+                    <attribute id="UUID" type="guid" value="1f30e9c1-0c09-4c38-8976-437356d1037f"/>
+                </node>
+                <node id="Progression">
+                    <!-- <attribute id="AllowImprovement" type="bool" value="true"/> -->
+                    <attribute id="Level" type="uint8" value="19"/>
+                    <attribute id="Name" type="LSString" value="NPC_Fighter"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="0e6da493-5a37-423b-8c28-629462b22faa"/>
+                    <attribute id="UUID" type="guid" value="9bf6ef0f-4b0b-4a6b-83eb-3d04f17b2200"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="20"/>
+                    <attribute id="Name" type="LSString" value="NPC_Fighter"/>
+                    <attribute id="PassivesAdded" type="LSString" value="ExtraAttack_3"/>
+                    <attribute id="PassivesRemoved" type="LSString" value="ExtraAttack_2"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="0e6da493-5a37-423b-8c28-629462b22faa"/>
+                    <attribute id="UUID" type="guid" value="2694f4dd-3ec6-419f-8aa8-b84e89068dbb"/>
                 </node>
             <!-- MONK -->
                 <node id="Progression">
