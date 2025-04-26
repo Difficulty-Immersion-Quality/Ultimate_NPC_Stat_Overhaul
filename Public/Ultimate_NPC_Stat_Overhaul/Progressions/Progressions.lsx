@@ -1767,7 +1767,7 @@
                     <attribute id="Level" type="uint8" value="1"/>
                     <attribute id="Name" type="LSString" value="NPC_FlamingFist_Melee_Attacker"/>
                     <!-- <attribute id="PassivesAdded" type="LSString" value=""/> -->
-                    <attribute id="PassivesAdded" type="LSString" value="Goon_Flaming_Fist_Melee_Attacker_NPC_Progressions"/>
+                    <attribute id="PassivesAdded" type="LSString" value="Goon_Flaming_Fist_Melee_Attacker_NPC_Progressions;Goon_NPC_Fighter_BattleMaster_Flaming_Fist_Melee_Attacker;Goon_NPC_Fighter_EldritchKnight_Flaming_Fist_Melee_Attacker;Goon_NPC_Fighter_Champion_Flaming_Fist_Melee_Attacker"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
                     <attribute id="TableUUID" type="guid" value="51d47904-383f-11ed-a261-0242ac120002"/>
                     <attribute id="UUID" type="guid" value="4f5c0abd-6611-4303-893b-8d3230323632"/>
@@ -1870,7 +1870,7 @@
                     <attribute id="Level" type="uint8" value="1"/>
                     <attribute id="Name" type="LSString" value="NPC_FlamingFist_Melee_Defender"/>
                     <!-- <attribute id="PassivesAdded" type="LSString" value=""/> -->
-                    <attribute id="PassivesAdded" type="LSString" value="Goon_Flaming_Fist_Melee_Defender_NPC_Progressions"/>
+                    <attribute id="PassivesAdded" type="LSString" value="Goon_Flaming_Fist_Melee_Defender_NPC_Progressions;Goon_NPC_Fighter_BattleMaster_Flaming_Fist_Melee_Defender;Goon_NPC_Fighter_EldritchKnight_Flaming_Fist_Melee_Defender;Goon_NPC_Fighter_Champion_Flaming_Fist_Melee_Defender"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
                     <attribute id="TableUUID" type="guid" value="5885fa7a-383f-11ed-a261-0242ac120002"/>
                     <attribute id="UUID" type="guid" value="d64a3faf-db6c-4f09-b462-fd881e55f00c"/>

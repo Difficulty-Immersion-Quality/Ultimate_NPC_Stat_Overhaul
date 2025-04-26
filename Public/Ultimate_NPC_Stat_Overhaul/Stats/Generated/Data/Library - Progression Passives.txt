@@ -1,17 +1,5 @@
 // ==================================== Flaming Fist progressions ====================================
 
-new entry "Goon_Flaming_Fist_Melee_Attacker_NPC_Progressions"
-type "PassiveData"
-using "Goon_NPC_Progressions_Template"
-// Class Progressions: Flaming Fist Melee Attacker
-data "DisplayName" "he9867dbag731dg4a5bg9830g1f6373160874;1"
-
-new entry "Goon_Flaming_Fist_Melee_Defender_NPC_Progressions"
-type "PassiveData"
-using "Goon_NPC_Progressions_Template"
-// Class Progressions: Flaming Fist Melee Defender
-data "DisplayName" "h908ea70fgf333g4ec0ga7a6g8a7e92ff10ad;1"
-
 new entry "Goon_Flaming_Fist_Melee_Ranger_NPC_Progressions"
 type "PassiveData"
 using "Goon_NPC_Progressions_Template"

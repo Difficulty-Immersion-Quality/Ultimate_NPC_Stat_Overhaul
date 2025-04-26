@@ -204,7 +204,7 @@
     data "Passives" ""
     data "Boosts" ""
 
-// ==================================== Subclass ====================================
+// ==================================== Subclass: Something ====================================
 
     new entry "CX_Something_Something_Boost"
     type "PassiveData"

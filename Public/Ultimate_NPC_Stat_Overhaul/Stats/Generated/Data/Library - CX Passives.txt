@@ -49,13 +49,6 @@ data "Icon" "Spell_Abjuration_WardingBond"
 
 // ==================================== Fighter ====================================
 
-new entry "CX_Fighter_BattleMaster_Boost"
-type "PassiveData"
-data "DisplayName" "hefce9befgc089g4b04g9393g1ec534347dea;1"
-data "Description" "hdbe7301eg8093g461fgaa19g99bf294c1819;1"
-data "Icon" "Action_GoadingAttack_Melee"
-data "Boosts" "ActionResource(SuperiorityDie,4,0)"
-
 // Using EK progression from chizfreak's Eldritch Knight Plus mod
 new entry "CX_Fighter_EldritchKnight_Boost"
 type "PassiveData"
