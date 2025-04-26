@@ -205,6 +205,9 @@
     data "Boosts" "Tag(FIGHTER);ProficiencyBonus(SavingThrow,Strength);ProficiencyBonus(SavingThrow,Constitution);Proficiency(LightArmor);Proficiency(MediumArmor);Proficiency(HeavyArmor);Proficiency(Shields);Proficiency(SimpleWeapons);Proficiency(MartialWeapons);UnlockSpell(Shout_SecondWind);UnlockSpell(Shout_ActionSurge);ActionResource(Interrupt_Indomitable,3,0);ActionResource(ActionSurgeCharge,1,0)"
 
 // ==================================== Subclass: Battle Master ====================================
+// TODO: Defined the Maneuvers instead of roulette, below are not in use
+// UnlockSpell(CommanderStrike_Maneuver);UnlockSpell(EvasiveFootwork);UnlockSpell(FeintingAttack);UnlockSpell(ManeuveringAttack);UnlockSpell(PrecisionAttack);UnlockSpell(PushingAttack);UnlockSpell(Rally);
+
 
     new entry "CX_Fighter_BattleMaster_Boost"
     type "PassiveData"
@@ -271,8 +274,6 @@
     //     <attribute id="Selectors" type="LSString" value="SelectPassives(e51a2ef5-3663-43f9-8e74-5e28520323f1,3,Maneuvers)"/>
     //     <attribute id="TableUUID" type="guid" value="69eb2e41-0317-46d7-a6b6-3593de1a5220"/>
     //     <attribute id="UUID" type="guid" value="01115231-fa37-4cd2-b750-5f282c8ab667"/>
-
-UnlockSpell(CommanderStrike_Maneuver);UnlockSpell(EvasiveFootwork);UnlockSpell(FeintingAttack);UnlockSpell(ManeuveringAttack);UnlockSpell(PrecisionAttack);UnlockSpell(PushingAttack);UnlockSpell(Rally);
 
     new entry "GOON_NPC_FIGHTER_BATTLEMASTER_LVL_4"
     type "StatusData"
@@ -420,3 +421,356 @@ UnlockSpell(CommanderStrike_Maneuver);UnlockSpell(EvasiveFootwork);UnlockSpell(F
     data "StatusType" "BOOST"
     using "GOON_NPC_FIGHTER_BATTLEMASTER_LVL_18"
     data "StackPriority" "20"
+
+// ==================================== Subclass: Eldritch Knight ====================================
+// TODO: Give them literally any spells
+
+    new entry "CX_Fighter_EldritchKnight_Boost"
+    type "PassiveData"
+    data "DisplayName" "h56b56a6ag0de5g45e9g8845g97dae05491b3;1"
+    data "Description" "h5c580e8ag700cg4159gbc2dg145ea47b7f8b;1"
+    data "Icon" "PassiveFeature_EldritchStrike"
+    data "Boosts" ""
+    data "StatsFunctorContext" "OnCreate;OnStatusApplied;OnStatusRemoved"
+    data "Conditions" ""
+    data "StatsFunctors" "IF(not ClassLevelHigherOrEqualThan(2,'NPC_FIGHTER') or HasStatus('GOON_NPC_FIGHTER_LVL_1')):ApplyStatus(GOON_NPC_FIGHTER_ELDRITCHKNIGHT_LVL_1,100,-1);IF(ClassLevelHigherOrEqualThan(2,'NPC_FIGHTER') and not ClassLevelHigherOrEqualThan(3,'NPC_FIGHTER') or HasStatus('GOON_NPC_FIGHTER_LVL_2')):ApplyStatus(GOON_NPC_FIGHTER_ELDRITCHKNIGHT_LVL_2,100,-1);IF(ClassLevelHigherOrEqualThan(3,'NPC_FIGHTER') and not ClassLevelHigherOrEqualThan(4,'NPC_FIGHTER') or HasStatus('GOON_NPC_FIGHTER_LVL_3')):ApplyStatus(GOON_NPC_FIGHTER_ELDRITCHKNIGHT_LVL_3,100,-1);IF(ClassLevelHigherOrEqualThan(4,'NPC_FIGHTER') and not ClassLevelHigherOrEqualThan(5,'NPC_FIGHTER') or HasStatus('GOON_NPC_FIGHTER_LVL_4')):ApplyStatus(GOON_NPC_FIGHTER_ELDRITCHKNIGHT_LVL_4,100,-1);IF(ClassLevelHigherOrEqualThan(5,'NPC_FIGHTER') and not ClassLevelHigherOrEqualThan(6,'NPC_FIGHTER') or HasStatus('GOON_NPC_FIGHTER_LVL_5')):ApplyStatus(GOON_NPC_FIGHTER_ELDRITCHKNIGHT_LVL_5,100,-1);IF(ClassLevelHigherOrEqualThan(6,'NPC_FIGHTER') and not ClassLevelHigherOrEqualThan(7,'NPC_FIGHTER') or HasStatus('GOON_NPC_FIGHTER_LVL_6')):ApplyStatus(GOON_NPC_FIGHTER_ELDRITCHKNIGHT_LVL_6,100,-1);IF(ClassLevelHigherOrEqualThan(7,'NPC_FIGHTER') and not ClassLevelHigherOrEqualThan(8,'NPC_FIGHTER') or HasStatus('GOON_NPC_FIGHTER_LVL_7')):ApplyStatus(GOON_NPC_FIGHTER_ELDRITCHKNIGHT_LVL_7,100,-1);IF(ClassLevelHigherOrEqualThan(8,'NPC_FIGHTER') and not ClassLevelHigherOrEqualThan(9,'NPC_FIGHTER') or HasStatus('GOON_NPC_FIGHTER_LVL_8')):ApplyStatus(GOON_NPC_FIGHTER_ELDRITCHKNIGHT_LVL_8,100,-1);IF(ClassLevelHigherOrEqualThan(9,'NPC_FIGHTER') and not ClassLevelHigherOrEqualThan(10,'NPC_FIGHTER') or HasStatus('GOON_NPC_FIGHTER_LVL_9')):ApplyStatus(GOON_NPC_FIGHTER_ELDRITCHKNIGHT_LVL_9,100,-1);IF(ClassLevelHigherOrEqualThan(10,'NPC_FIGHTER') and not ClassLevelHigherOrEqualThan(11,'NPC_FIGHTER') or HasStatus('GOON_NPC_FIGHTER_LVL_10')):ApplyStatus(GOON_NPC_FIGHTER_ELDRITCHKNIGHT_LVL_10,100,-1);IF(ClassLevelHigherOrEqualThan(11,'NPC_FIGHTER') and not ClassLevelHigherOrEqualThan(12,'NPC_FIGHTER') or HasStatus('GOON_NPC_FIGHTER_LVL_11')):ApplyStatus(GOON_NPC_FIGHTER_ELDRITCHKNIGHT_LVL_11,100,-1);IF(ClassLevelHigherOrEqualThan(12,'NPC_FIGHTER') and not ClassLevelHigherOrEqualThan(13,'NPC_FIGHTER') or HasStatus('GOON_NPC_FIGHTER_LVL_12')):ApplyStatus(GOON_NPC_FIGHTER_ELDRITCHKNIGHT_LVL_12,100,-1);IF(ClassLevelHigherOrEqualThan(13,'NPC_FIGHTER') and not ClassLevelHigherOrEqualThan(14,'NPC_FIGHTER') or HasStatus('GOON_NPC_FIGHTER_LVL_13')):ApplyStatus(GOON_NPC_FIGHTER_ELDRITCHKNIGHT_LVL_13,100,-1);IF(ClassLevelHigherOrEqualThan(14,'NPC_FIGHTER') and not ClassLevelHigherOrEqualThan(15,'NPC_FIGHTER') or HasStatus('GOON_NPC_FIGHTER_LVL_14')):ApplyStatus(GOON_NPC_FIGHTER_ELDRITCHKNIGHT_LVL_14,100,-1);IF(ClassLevelHigherOrEqualThan(15,'NPC_FIGHTER') and not ClassLevelHigherOrEqualThan(16,'NPC_FIGHTER') or HasStatus('GOON_NPC_FIGHTER_LVL_15')):ApplyStatus(GOON_NPC_FIGHTER_ELDRITCHKNIGHT_LVL_15,100,-1);IF(ClassLevelHigherOrEqualThan(16,'NPC_FIGHTER') and not ClassLevelHigherOrEqualThan(17,'NPC_FIGHTER') or HasStatus('GOON_NPC_FIGHTER_LVL_16')):ApplyStatus(GOON_NPC_FIGHTER_ELDRITCHKNIGHT_LVL_16,100,-1);IF(ClassLevelHigherOrEqualThan(17,'NPC_FIGHTER') and not ClassLevelHigherOrEqualThan(18,'NPC_FIGHTER') or HasStatus('GOON_NPC_FIGHTER_LVL_17')):ApplyStatus(GOON_NPC_FIGHTER_ELDRITCHKNIGHT_LVL_17,100,-1);IF(ClassLevelHigherOrEqualThan(18,'NPC_FIGHTER') and not ClassLevelHigherOrEqualThan(19,'NPC_FIGHTER') or HasStatus('GOON_NPC_FIGHTER_LVL_18')):ApplyStatus(GOON_NPC_FIGHTER_ELDRITCHKNIGHT_LVL_18,100,-1);IF(ClassLevelHigherOrEqualThan(19,'NPC_FIGHTER') and not ClassLevelHigherOrEqualThan(20,'NPC_FIGHTER') or HasStatus('GOON_NPC_FIGHTER_LVL_19')):ApplyStatus(GOON_NPC_FIGHTER_ELDRITCHKNIGHT_LVL_19,100,-1);IF(ClassLevelHigherOrEqualThan(20,'NPC_FIGHTER') or HasStatus('GOON_NPC_FIGHTER_LVL_20')):ApplyStatus(GOON_NPC_FIGHTER_ELDRITCHKNIGHT_LVL_20,100,-1)"
+
+// Flaming Fist stuff *If applicable*
+    new entry "Goon_NPC_Fighter_EldritchKnight_Flaming_Fist_Melee_Attacker"
+    type "PassiveData"
+    data "Properties" "IsHidden"
+    data "StatsFunctorContext" "OnCreate;OnStatusApplied;OnStatusRemoved"
+    data "Conditions" "HasPassive('CX_Fighter_EldritchKnight_Boost')"
+    data "StatsFunctors" "IF(not ClassLevelHigherOrEqualThan(2,'NPC_FlamingFist_Melee_Attacker')):ApplyStatus(GOON_NPC_FIGHTER_ELDRITCHKNIGHT_LVL_1,100,-1);IF(ClassLevelHigherOrEqualThan(2,'NPC_FlamingFist_Melee_Attacker') and not ClassLevelHigherOrEqualThan(3,'NPC_FlamingFist_Melee_Attacker')):ApplyStatus(GOON_NPC_FIGHTER_ELDRITCHKNIGHT_LVL_2,100,-1);IF(ClassLevelHigherOrEqualThan(3,'NPC_FlamingFist_Melee_Attacker') and not ClassLevelHigherOrEqualThan(4,'NPC_FlamingFist_Melee_Attacker')):ApplyStatus(GOON_NPC_FIGHTER_ELDRITCHKNIGHT_LVL_3,100,-1);IF(ClassLevelHigherOrEqualThan(4,'NPC_FlamingFist_Melee_Attacker') and not ClassLevelHigherOrEqualThan(5,'NPC_FlamingFist_Melee_Attacker')):ApplyStatus(GOON_NPC_FIGHTER_ELDRITCHKNIGHT_LVL_4,100,-1);IF(ClassLevelHigherOrEqualThan(5,'NPC_FlamingFist_Melee_Attacker') and not ClassLevelHigherOrEqualThan(6,'NPC_FlamingFist_Melee_Attacker')):ApplyStatus(GOON_NPC_FIGHTER_ELDRITCHKNIGHT_LVL_5,100,-1);IF(ClassLevelHigherOrEqualThan(6,'NPC_FlamingFist_Melee_Attacker') and not ClassLevelHigherOrEqualThan(7,'NPC_FlamingFist_Melee_Attacker')):ApplyStatus(GOON_NPC_FIGHTER_ELDRITCHKNIGHT_LVL_6,100,-1);IF(ClassLevelHigherOrEqualThan(7,'NPC_FlamingFist_Melee_Attacker') and not ClassLevelHigherOrEqualThan(8,'NPC_FlamingFist_Melee_Attacker')):ApplyStatus(GOON_NPC_FIGHTER_ELDRITCHKNIGHT_LVL_7,100,-1);IF(ClassLevelHigherOrEqualThan(8,'NPC_FlamingFist_Melee_Attacker') and not ClassLevelHigherOrEqualThan(9,'NPC_FlamingFist_Melee_Attacker')):ApplyStatus(GOON_NPC_FIGHTER_ELDRITCHKNIGHT_LVL_8,100,-1);IF(ClassLevelHigherOrEqualThan(9,'NPC_FlamingFist_Melee_Attacker') and not ClassLevelHigherOrEqualThan(10,'NPC_FlamingFist_Melee_Attacker')):ApplyStatus(GOON_NPC_FIGHTER_ELDRITCHKNIGHT_LVL_9,100,-1);IF(ClassLevelHigherOrEqualThan(10,'NPC_FlamingFist_Melee_Attacker') and not ClassLevelHigherOrEqualThan(11,'NPC_FlamingFist_Melee_Attacker')):ApplyStatus(GOON_NPC_FIGHTER_ELDRITCHKNIGHT_LVL_10,100,-1);IF(ClassLevelHigherOrEqualThan(11,'NPC_FlamingFist_Melee_Attacker') and not ClassLevelHigherOrEqualThan(12,'NPC_FlamingFist_Melee_Attacker')):ApplyStatus(GOON_NPC_FIGHTER_ELDRITCHKNIGHT_LVL_11,100,-1);IF(ClassLevelHigherOrEqualThan(12,'NPC_FlamingFist_Melee_Attacker') and not ClassLevelHigherOrEqualThan(13,'NPC_FlamingFist_Melee_Attacker')):ApplyStatus(GOON_NPC_FIGHTER_ELDRITCHKNIGHT_LVL_12,100,-1);IF(ClassLevelHigherOrEqualThan(13,'NPC_FlamingFist_Melee_Attacker') and not ClassLevelHigherOrEqualThan(14,'NPC_FlamingFist_Melee_Attacker')):ApplyStatus(GOON_NPC_FIGHTER_ELDRITCHKNIGHT_LVL_13,100,-1);IF(ClassLevelHigherOrEqualThan(14,'NPC_FlamingFist_Melee_Attacker') and not ClassLevelHigherOrEqualThan(15,'NPC_FlamingFist_Melee_Attacker')):ApplyStatus(GOON_NPC_FIGHTER_ELDRITCHKNIGHT_LVL_14,100,-1);IF(ClassLevelHigherOrEqualThan(15,'NPC_FlamingFist_Melee_Attacker') and not ClassLevelHigherOrEqualThan(16,'NPC_FlamingFist_Melee_Attacker')):ApplyStatus(GOON_NPC_FIGHTER_ELDRITCHKNIGHT_LVL_15,100,-1);IF(ClassLevelHigherOrEqualThan(16,'NPC_FlamingFist_Melee_Attacker') and not ClassLevelHigherOrEqualThan(17,'NPC_FlamingFist_Melee_Attacker')):ApplyStatus(GOON_NPC_FIGHTER_ELDRITCHKNIGHT_LVL_16,100,-1);IF(ClassLevelHigherOrEqualThan(17,'NPC_FlamingFist_Melee_Attacker') and not ClassLevelHigherOrEqualThan(18,'NPC_FlamingFist_Melee_Attacker')):ApplyStatus(GOON_NPC_FIGHTER_ELDRITCHKNIGHT_LVL_17,100,-1);IF(ClassLevelHigherOrEqualThan(18,'NPC_FlamingFist_Melee_Attacker') and not ClassLevelHigherOrEqualThan(19,'NPC_FlamingFist_Melee_Attacker')):ApplyStatus(GOON_NPC_FIGHTER_ELDRITCHKNIGHT_LVL_18,100,-1);IF(ClassLevelHigherOrEqualThan(19,'NPC_FlamingFist_Melee_Attacker') and not ClassLevelHigherOrEqualThan(20,'NPC_FlamingFist_Melee_Attacker')):ApplyStatus(GOON_NPC_FIGHTER_ELDRITCHKNIGHT_LVL_19,100,-1);IF(ClassLevelHigherOrEqualThan(20,'NPC_FlamingFist_Melee_Attacker')):ApplyStatus(GOON_NPC_FIGHTER_ELDRITCHKNIGHT_LVL_20,100,-1)"
+
+    new entry "Goon_NPC_Fighter_EldritchKnight_Flaming_Fist_Melee_Defender"
+    type "PassiveData"
+    data "Properties" "IsHidden"
+    data "StatsFunctorContext" "OnCreate;OnStatusApplied;OnStatusRemoved"
+    data "Conditions" "HasPassive('CX_Fighter_EldritchKnight_Boost')"
+    data "StatsFunctors" "IF(not ClassLevelHigherOrEqualThan(2,'NPC_FlamingFist_Melee_Defender')):ApplyStatus(GOON_NPC_FIGHTER_ELDRITCHKNIGHT_LVL_1,100,-1);IF(ClassLevelHigherOrEqualThan(2,'NPC_FlamingFist_Melee_Defender') and not ClassLevelHigherOrEqualThan(3,'NPC_FlamingFist_Melee_Defender')):ApplyStatus(GOON_NPC_FIGHTER_ELDRITCHKNIGHT_LVL_2,100,-1);IF(ClassLevelHigherOrEqualThan(3,'NPC_FlamingFist_Melee_Defender') and not ClassLevelHigherOrEqualThan(4,'NPC_FlamingFist_Melee_Defender')):ApplyStatus(GOON_NPC_FIGHTER_ELDRITCHKNIGHT_LVL_3,100,-1);IF(ClassLevelHigherOrEqualThan(4,'NPC_FlamingFist_Melee_Defender') and not ClassLevelHigherOrEqualThan(5,'NPC_FlamingFist_Melee_Defender')):ApplyStatus(GOON_NPC_FIGHTER_ELDRITCHKNIGHT_LVL_4,100,-1);IF(ClassLevelHigherOrEqualThan(5,'NPC_FlamingFist_Melee_Defender') and not ClassLevelHigherOrEqualThan(6,'NPC_FlamingFist_Melee_Defender')):ApplyStatus(GOON_NPC_FIGHTER_ELDRITCHKNIGHT_LVL_5,100,-1);IF(ClassLevelHigherOrEqualThan(6,'NPC_FlamingFist_Melee_Defender') and not ClassLevelHigherOrEqualThan(7,'NPC_FlamingFist_Melee_Defender')):ApplyStatus(GOON_NPC_FIGHTER_ELDRITCHKNIGHT_LVL_6,100,-1);IF(ClassLevelHigherOrEqualThan(7,'NPC_FlamingFist_Melee_Defender') and not ClassLevelHigherOrEqualThan(8,'NPC_FlamingFist_Melee_Defender')):ApplyStatus(GOON_NPC_FIGHTER_ELDRITCHKNIGHT_LVL_7,100,-1);IF(ClassLevelHigherOrEqualThan(8,'NPC_FlamingFist_Melee_Defender') and not ClassLevelHigherOrEqualThan(9,'NPC_FlamingFist_Melee_Defender')):ApplyStatus(GOON_NPC_FIGHTER_ELDRITCHKNIGHT_LVL_8,100,-1);IF(ClassLevelHigherOrEqualThan(9,'NPC_FlamingFist_Melee_Defender') and not ClassLevelHigherOrEqualThan(10,'NPC_FlamingFist_Melee_Defender')):ApplyStatus(GOON_NPC_FIGHTER_ELDRITCHKNIGHT_LVL_9,100,-1);IF(ClassLevelHigherOrEqualThan(10,'NPC_FlamingFist_Melee_Defender') and not ClassLevelHigherOrEqualThan(11,'NPC_FlamingFist_Melee_Defender')):ApplyStatus(GOON_NPC_FIGHTER_ELDRITCHKNIGHT_LVL_10,100,-1);IF(ClassLevelHigherOrEqualThan(11,'NPC_FlamingFist_Melee_Defender') and not ClassLevelHigherOrEqualThan(12,'NPC_FlamingFist_Melee_Defender')):ApplyStatus(GOON_NPC_FIGHTER_ELDRITCHKNIGHT_LVL_11,100,-1);IF(ClassLevelHigherOrEqualThan(12,'NPC_FlamingFist_Melee_Defender') and not ClassLevelHigherOrEqualThan(13,'NPC_FlamingFist_Melee_Defender')):ApplyStatus(GOON_NPC_FIGHTER_ELDRITCHKNIGHT_LVL_12,100,-1);IF(ClassLevelHigherOrEqualThan(13,'NPC_FlamingFist_Melee_Defender') and not ClassLevelHigherOrEqualThan(14,'NPC_FlamingFist_Melee_Defender')):ApplyStatus(GOON_NPC_FIGHTER_ELDRITCHKNIGHT_LVL_13,100,-1);IF(ClassLevelHigherOrEqualThan(14,'NPC_FlamingFist_Melee_Defender') and not ClassLevelHigherOrEqualThan(15,'NPC_FlamingFist_Melee_Defender')):ApplyStatus(GOON_NPC_FIGHTER_ELDRITCHKNIGHT_LVL_14,100,-1);IF(ClassLevelHigherOrEqualThan(15,'NPC_FlamingFist_Melee_Defender') and not ClassLevelHigherOrEqualThan(16,'NPC_FlamingFist_Melee_Defender')):ApplyStatus(GOON_NPC_FIGHTER_ELDRITCHKNIGHT_LVL_15,100,-1);IF(ClassLevelHigherOrEqualThan(16,'NPC_FlamingFist_Melee_Defender') and not ClassLevelHigherOrEqualThan(17,'NPC_FlamingFist_Melee_Defender')):ApplyStatus(GOON_NPC_FIGHTER_ELDRITCHKNIGHT_LVL_16,100,-1);IF(ClassLevelHigherOrEqualThan(17,'NPC_FlamingFist_Melee_Defender') and not ClassLevelHigherOrEqualThan(18,'NPC_FlamingFist_Melee_Defender')):ApplyStatus(GOON_NPC_FIGHTER_ELDRITCHKNIGHT_LVL_17,100,-1);IF(ClassLevelHigherOrEqualThan(18,'NPC_FlamingFist_Melee_Defender') and not ClassLevelHigherOrEqualThan(19,'NPC_FlamingFist_Melee_Defender')):ApplyStatus(GOON_NPC_FIGHTER_ELDRITCHKNIGHT_LVL_18,100,-1);IF(ClassLevelHigherOrEqualThan(19,'NPC_FlamingFist_Melee_Defender') and not ClassLevelHigherOrEqualThan(20,'NPC_FlamingFist_Melee_Defender')):ApplyStatus(GOON_NPC_FIGHTER_ELDRITCHKNIGHT_LVL_19,100,-1);IF(ClassLevelHigherOrEqualThan(20,'NPC_FlamingFist_Melee_Defender')):ApplyStatus(GOON_NPC_FIGHTER_ELDRITCHKNIGHT_LVL_20,100,-1)"
+
+// Template
+    new entry "GOON_NPC_FIGHTER_ELDRITCHKNIGHT_PROGRESSION_TEMPLATE"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    data "StatusPropertyFlags" "DisableOverhead;DisableCombatlog;DisablePortraitIndicator;ApplyToDead;IgnoreResting"
+    data "RemoveEvents" "OnStatusApplied;OnStatusRemoved"
+    data "StackId" "GOON_NPC_FIGHTER_ELDRITCHKNIGHT_PROGRESSION_TEMPLATE"
+    data "StackType" "Ignore"
+    data "RemoveConditions" "not HasPassive('CX_Fighter_EldritchKnight_Boost')"
+
+// Progression statuses
+    new entry "GOON_NPC_FIGHTER_ELDRITCHKNIGHT_LVL_1"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_FIGHTER_ELDRITCHKNIGHT_PROGRESSION_TEMPLATE"
+    data "StackPriority" "1"
+
+    new entry "GOON_NPC_FIGHTER_ELDRITCHKNIGHT_LVL_2"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_FIGHTER_ELDRITCHKNIGHT_PROGRESSION_TEMPLATE"
+    data "StackPriority" "2"
+
+    new entry "GOON_NPC_FIGHTER_ELDRITCHKNIGHT_LVL_3"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_FIGHTER_ELDRITCHKNIGHT_PROGRESSION_TEMPLATE"
+    data "StackPriority" "3"
+    data "Passives" "UnlockedSpellSlotLevel1"
+    data "Boosts" "ActionResource(SpellSlot,2,1);UnlockSpell(Shout_WeaponBond)"
+
+    // <node id="Progression">
+    //     <attribute id="Boosts" type="LSString" value="ActionResource(SpellSlot,2,1)"/>
+    //     <attribute id="Level" type="uint8" value="3"/>
+    //     <attribute id="Name" type="LSString" value="EldritchKnight"/>
+    //     <attribute id="PassivesAdded" type="LSString" value="UnlockedSpellSlotLevel1"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="Selectors" type="LSString" value="AddSpells(42c2f7ed-8d06-4347-a912-01172a0e318b,,,,AlwaysPrepared);SelectSpells(3cae2e56-9871-4cef-bba6-96845ea765fa,2,0,,,,AlwaysPrepared);SelectSpells(32aeba85-13bd-4a6f-8e06-cd4447b746d8,2,0,EldritchKnightAbjEvo);SelectSpells(11f331b0-e8b7-473b-9d1f-19e8e4178d7d,1,0,EldritchKnightAny)"/>
+    //     <attribute id="TableUUID" type="guid" value="2db3f02e-dfa9-4235-b9bd-28a89bf41435"/>
+    //     <attribute id="UUID" type="guid" value="77ef26e6-6872-4f9c-82eb-a0640a49030d"/>
+
+    new entry "GOON_NPC_FIGHTER_ELDRITCHKNIGHT_LVL_4"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_FIGHTER_ELDRITCHKNIGHT_PROGRESSION_TEMPLATE"
+    data "StackPriority" "4"
+    data "Passives" "UnlockedSpellSlotLevel1"
+    data "Boosts" "ActionResource(SpellSlot,3,1);UnlockSpell(Shout_WeaponBond)"
+
+    // <node id="Progression">
+    //     <attribute id="Boosts" type="LSString" value="ActionResource(SpellSlot,1,1)"/>
+    //     <attribute id="Level" type="uint8" value="4"/>
+    //     <attribute id="Name" type="LSString" value="EldritchKnight"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="Selectors" type="LSString" value="SelectSpells(32aeba85-13bd-4a6f-8e06-cd4447b746d8,1,0,EldritchKnightAbjEvo);SelectSpells(11f331b0-e8b7-473b-9d1f-19e8e4178d7d,0,1,EldritchKnightAny)"/>
+    //     <attribute id="TableUUID" type="guid" value="2db3f02e-dfa9-4235-b9bd-28a89bf41435"/>
+    //     <attribute id="UUID" type="guid" value="6300c505-0bb1-4c73-9565-ab155bec4e1f"/>
+
+    new entry "GOON_NPC_FIGHTER_ELDRITCHKNIGHT_LVL_5"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_FIGHTER_ELDRITCHKNIGHT_PROGRESSION_TEMPLATE"
+    data "StackPriority" "5"
+    data "Passives" "UnlockedSpellSlotLevel1"
+    data "Boosts" "ActionResource(SpellSlot,3,1);UnlockSpell(Shout_WeaponBond)"
+
+    // <node id="Progression">
+    //     <attribute id="Level" type="uint8" value="5"/>
+    //     <attribute id="Name" type="LSString" value="EldritchKnight"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="Selectors" type="LSString" value="SelectSpells(11f331b0-e8b7-473b-9d1f-19e8e4178d7d,0,1,EldritchKnightAny)"/>
+    //     <attribute id="TableUUID" type="guid" value="2db3f02e-dfa9-4235-b9bd-28a89bf41435"/>
+    //     <attribute id="UUID" type="guid" value="56bf6e19-7b63-456d-b696-ee47ead4f24a"/>
+
+    new entry "GOON_NPC_FIGHTER_ELDRITCHKNIGHT_LVL_6"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_FIGHTER_ELDRITCHKNIGHT_PROGRESSION_TEMPLATE"
+    data "StackPriority" "6"
+    data "Passives" "UnlockedSpellSlotLevel1"
+    data "Boosts" "ActionResource(SpellSlot,3,1);UnlockSpell(Shout_WeaponBond)"
+
+    // <node id="Progression">
+    //     <attribute id="Level" type="uint8" value="6"/>
+    //     <attribute id="Name" type="LSString" value="EldritchKnight"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="Selectors" type="LSString" value="SelectSpells(11f331b0-e8b7-473b-9d1f-19e8e4178d7d,0,1,EldritchKnightAny)"/>
+    //     <attribute id="TableUUID" type="guid" value="2db3f02e-dfa9-4235-b9bd-28a89bf41435"/>
+    //     <attribute id="UUID" type="guid" value="f5e62d8b-dbbe-4d5d-a3ea-dbcde877b727"/>
+
+    new entry "GOON_NPC_FIGHTER_ELDRITCHKNIGHT_LVL_7"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_FIGHTER_ELDRITCHKNIGHT_PROGRESSION_TEMPLATE"
+    data "StackPriority" "7"
+    data "Passives" "UnlockedSpellSlotLevel1;WarMagic;UnlockedSpellSlotLevel2"
+    data "Boosts" "ActionResource(SpellSlot,4,1);UnlockSpell(Shout_WeaponBond);ActionResource(SpellSlot,2,2)"
+
+    // <node id="Progression">
+    //     <attribute id="Boosts" type="LSString" value="ActionResource(SpellSlot,1,1);ActionResource(SpellSlot,2,2)"/>
+    //     <attribute id="Level" type="uint8" value="7"/>
+    //     <attribute id="Name" type="LSString" value="EldritchKnight"/>
+    //     <attribute id="PassivesAdded" type="LSString" value="WarMagic;UnlockedSpellSlotLevel2"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="Selectors" type="LSString" value="SelectSpells(4a86443c-6a21-4b8d-b1bf-55a99e021354,2,0,EldritchKnightAbjEvo);SelectSpells(11f331b0-e8b7-473b-9d1f-19e8e4178d7d,0,1,EldritchKnightAny)"/>
+    //     <attribute id="TableUUID" type="guid" value="2db3f02e-dfa9-4235-b9bd-28a89bf41435"/>
+    //     <attribute id="UUID" type="guid" value="6b099a1b-dd6c-4b6a-a0b5-70fa86dbe6d3"/>
+
+    new entry "GOON_NPC_FIGHTER_ELDRITCHKNIGHT_LVL_8"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_FIGHTER_ELDRITCHKNIGHT_PROGRESSION_TEMPLATE"
+    data "StackPriority" "8"
+    data "Passives" "UnlockedSpellSlotLevel1;WarMagic;UnlockedSpellSlotLevel2"
+    data "Boosts" "ActionResource(SpellSlot,4,1);UnlockSpell(Shout_WeaponBond);ActionResource(SpellSlot,2,2)"
+
+    // <node id="Progression">
+    //     <attribute id="Level" type="uint8" value="8"/>
+    //     <attribute id="Name" type="LSString" value="EldritchKnight"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="Selectors" type="LSString" value="SelectSpells(80c6b070-c3a6-4864-84ca-e78626784eb4,1,1,EldritchKnightAny)"/>
+    //     <attribute id="TableUUID" type="guid" value="2db3f02e-dfa9-4235-b9bd-28a89bf41435"/>
+    //     <attribute id="UUID" type="guid" value="9604e657-2475-4a0f-9c75-4a9314269b2c"/>
+
+    new entry "GOON_NPC_FIGHTER_ELDRITCHKNIGHT_LVL_9"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_FIGHTER_ELDRITCHKNIGHT_PROGRESSION_TEMPLATE"
+    data "StackPriority" "9"
+    data "Passives" "UnlockedSpellSlotLevel1;WarMagic;UnlockedSpellSlotLevel2"
+    data "Boosts" "ActionResource(SpellSlot,4,1);UnlockSpell(Shout_WeaponBond);ActionResource(SpellSlot,2,2)"
+
+    // <node id="Progression">
+    //     <attribute id="Level" type="uint8" value="9"/>
+    //     <attribute id="Name" type="LSString" value="EldritchKnight"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="Selectors" type="LSString" value="SelectSpells(80c6b070-c3a6-4864-84ca-e78626784eb4,0,1,EldritchKnightAny)"/>
+    //     <attribute id="TableUUID" type="guid" value="2db3f02e-dfa9-4235-b9bd-28a89bf41435"/>
+    //     <attribute id="UUID" type="guid" value="e1f144e6-b72d-4904-818b-ae77c4244205"/>
+
+    new entry "GOON_NPC_FIGHTER_ELDRITCHKNIGHT_LVL_10"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_FIGHTER_ELDRITCHKNIGHT_PROGRESSION_TEMPLATE"
+    data "StackPriority" "10"
+    data "Passives" "UnlockedSpellSlotLevel1;WarMagic;UnlockedSpellSlotLevel2;EldritchStrike"
+    data "Boosts" "ActionResource(SpellSlot,4,1);UnlockSpell(Shout_WeaponBond);ActionResource(SpellSlot,3,2)"
+
+    // <node id="Progression">
+    //     <attribute id="Boosts" type="LSString" value="ActionResource(SpellSlot,1,2)"/>
+    //     <attribute id="Level" type="uint8" value="10"/>
+    //     <attribute id="Name" type="LSString" value="EldritchKnight"/>
+    //     <attribute id="PassivesAdded" type="LSString" value="EldritchStrike"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="Selectors" type="LSString" value="SelectSpells(3cae2e56-9871-4cef-bba6-96845ea765fa,1,0,,,,AlwaysPrepared);SelectSpells(4a86443c-6a21-4b8d-b1bf-55a99e021354,1,0,EldritchKnightAbjEvo);SelectSpells(80c6b070-c3a6-4864-84ca-e78626784eb4,0,1,EldritchKnightAny)"/>
+    //     <attribute id="TableUUID" type="guid" value="2db3f02e-dfa9-4235-b9bd-28a89bf41435"/>
+    //     <attribute id="UUID" type="guid" value="af0ea1d7-6a82-4c63-92c0-495c46914514"/>
+
+    new entry "GOON_NPC_FIGHTER_ELDRITCHKNIGHT_LVL_11"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_FIGHTER_ELDRITCHKNIGHT_PROGRESSION_TEMPLATE"
+    data "StackPriority" "11"
+    data "Passives" "UnlockedSpellSlotLevel1;WarMagic;UnlockedSpellSlotLevel2;EldritchStrike"
+    data "Boosts" "ActionResource(SpellSlot,4,1);UnlockSpell(Shout_WeaponBond);ActionResource(SpellSlot,3,2)"
+
+    // <node id="Progression">
+    //     <attribute id="Level" type="uint8" value="11"/>
+    //     <attribute id="Name" type="LSString" value="EldritchKnight"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="Selectors" type="LSString" value="SelectSpells(4a86443c-6a21-4b8d-b1bf-55a99e021354,1,0,EldritchKnightAbjEvo);SelectSpells(80c6b070-c3a6-4864-84ca-e78626784eb4,0,1,EldritchKnightAny)"/>
+    //     <attribute id="TableUUID" type="guid" value="2db3f02e-dfa9-4235-b9bd-28a89bf41435"/>
+    //     <attribute id="UUID" type="guid" value="d393b47c-629b-4c26-a857-741f9ef2eff2"/>
+
+    new entry "GOON_NPC_FIGHTER_ELDRITCHKNIGHT_LVL_12"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_FIGHTER_ELDRITCHKNIGHT_PROGRESSION_TEMPLATE"
+    data "StackPriority" "12"
+    data "Passives" "UnlockedSpellSlotLevel1;WarMagic;UnlockedSpellSlotLevel2;EldritchStrike"
+    data "Boosts" "ActionResource(SpellSlot,4,1);UnlockSpell(Shout_WeaponBond);ActionResource(SpellSlot,3,2)"
+
+    // <node id="Progression">
+    //     <attribute id="Level" type="uint8" value="12"/>
+    //     <attribute id="Name" type="LSString" value="EldritchKnight"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="Selectors" type="LSString" value="SelectSpells(80c6b070-c3a6-4864-84ca-e78626784eb4,0,1,EldritchKnightAny)"/>
+    //     <attribute id="TableUUID" type="guid" value="2db3f02e-dfa9-4235-b9bd-28a89bf41435"/>
+    //     <attribute id="UUID" type="guid" value="3a32caaa-ad37-4374-9130-17b81d8262f6"/>
+
+// Expansion levels 13-20
+    new entry "GOON_NPC_FIGHTER_ELDRITCHKNIGHT_LVL_13"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_FIGHTER_ELDRITCHKNIGHT_PROGRESSION_TEMPLATE"
+    data "StackPriority" "13"
+    data "Passives" "UnlockedSpellSlotLevel1;WarMagic;UnlockedSpellSlotLevel2;EldritchStrike;UnlockedSpellSlotLevel3"
+    data "Boosts" "ActionResource(SpellSlot,4,1);UnlockSpell(Shout_WeaponBond);ActionResource(SpellSlot,3,2);ActionResource(SpellSlot,2,3)"
+
+    // <node id="Progression">
+    //     <attribute id="Boosts" type="LSString" value="ActionResource(SpellSlot,2,3)"/>
+    //     <attribute id="Level" type="uint8" value="13"/>
+    //     <attribute id="Name" type="LSString" value="EldritchKnight"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="Selectors" type="LSString" value="SelectSpells(9ca503db-0e4b-4325-b1eb-e2f794a075d6,1,1,EldritchKnightAbjEvo)"/>
+    //     <attribute id="TableUUID" type="guid" value="2db3f02e-dfa9-4235-b9bd-28a89bf41435"/>
+    //     <attribute id="UUID" type="guid" value="f2a6dc02-58e8-4450-91c1-f8937ab77391"/>
+    
+    new entry "GOON_NPC_FIGHTER_ELDRITCHKNIGHT_LVL_14"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_FIGHTER_ELDRITCHKNIGHT_PROGRESSION_TEMPLATE"
+    data "StackPriority" "14"
+    data "Passives" "UnlockedSpellSlotLevel1;WarMagic;UnlockedSpellSlotLevel2;EldritchStrike;UnlockedSpellSlotLevel3"
+    data "Boosts" "ActionResource(SpellSlot,4,1);UnlockSpell(Shout_WeaponBond);ActionResource(SpellSlot,3,2);ActionResource(SpellSlot,2,3)"
+
+    // <node id="Progression">
+    //     <attribute id="Level" type="uint8" value="14"/>
+    //     <attribute id="Name" type="LSString" value="EldritchKnight"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="Selectors" type="LSString" value="SelectSpells(22755771-ca11-49f4-b772-13d8b8fecd93,1,1,EldritchKnightAny)"/>
+    //     <attribute id="TableUUID" type="guid" value="2db3f02e-dfa9-4235-b9bd-28a89bf41435"/>
+    //     <attribute id="UUID" type="guid" value="5b6c3c53-cc63-4a37-853c-4adf021e196b"/>
+    
+    new entry "GOON_NPC_FIGHTER_ELDRITCHKNIGHT_LVL_15"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_FIGHTER_ELDRITCHKNIGHT_PROGRESSION_TEMPLATE"
+    data "StackPriority" "15"
+    data "Passives" "UnlockedSpellSlotLevel1;WarMagic;UnlockedSpellSlotLevel2;EldritchStrike;UnlockedSpellSlotLevel3;ArcaneCharge"
+    data "Boosts" "ActionResource(SpellSlot,4,1);UnlockSpell(Shout_WeaponBond);ActionResource(SpellSlot,3,2);ActionResource(SpellSlot,2,3)"
+    
+    // <node id="Progression">
+    //     <attribute id="Level" type="uint8" value="15"/>
+    //     <attribute id="Name" type="LSString" value="EldritchKnight"/>
+    //     <attribute id="PassivesAdded" type="LSString" value="ArcaneCharge"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="Selectors" type="LSString" value="SelectSpells(9ca503db-0e4b-4325-b1eb-e2f794a075d6,0,1,EldritchKnightAbjEvo)"/>
+    //     <attribute id="TableUUID" type="guid" value="2db3f02e-dfa9-4235-b9bd-28a89bf41435"/>
+    //     <attribute id="UUID" type="guid" value="327dac29-ac1c-4427-b205-b21b9e5c71fc"/>
+
+    new entry "GOON_NPC_FIGHTER_ELDRITCHKNIGHT_LVL_16"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_FIGHTER_ELDRITCHKNIGHT_PROGRESSION_TEMPLATE"
+    data "StackPriority" "16"
+    data "Passives" "UnlockedSpellSlotLevel1;WarMagic;UnlockedSpellSlotLevel2;EldritchStrike;UnlockedSpellSlotLevel3;ArcaneCharge"
+    data "Boosts" "ActionResource(SpellSlot,4,1);UnlockSpell(Shout_WeaponBond);ActionResource(SpellSlot,3,2);ActionResource(SpellSlot,3,3)"
+    
+    // <node id="Progression">
+    //     <attribute id="Boosts" type="LSString" value="ActionResource(SpellSlot,1,3)"/>
+    //     <attribute id="Level" type="uint8" value="16"/>
+    //     <attribute id="Name" type="LSString" value="EldritchKnight"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="Selectors" type="LSString" value="SelectSpells(9ca503db-0e4b-4325-b1eb-e2f794a075d6,0,1,EldritchKnightAbjEvo)"/>
+    //     <attribute id="TableUUID" type="guid" value="2db3f02e-dfa9-4235-b9bd-28a89bf41435"/>
+    //     <attribute id="UUID" type="guid" value="3f4e9ded-d563-4256-b301-9c83dbf19c8b"/>
+
+    new entry "GOON_NPC_FIGHTER_ELDRITCHKNIGHT_LVL_17"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_FIGHTER_ELDRITCHKNIGHT_PROGRESSION_TEMPLATE"
+    data "StackPriority" "17"
+    data "Passives" "UnlockedSpellSlotLevel1;WarMagic;UnlockedSpellSlotLevel2;EldritchStrike;UnlockedSpellSlotLevel3;ArcaneCharge"
+    data "Boosts" "ActionResource(SpellSlot,4,1);UnlockSpell(Shout_WeaponBond);ActionResource(SpellSlot,3,2);ActionResource(SpellSlot,3,3)"
+    
+    // <node id="Progression">
+    //     <attribute id="Level" type="uint8" value="17"/>
+    //     <attribute id="Name" type="LSString" value="EldritchKnight"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="Selectors" type="LSString" value="SelectSpells(9ca503db-0e4b-4325-b1eb-e2f794a075d6,0,1,EldritchKnightAbjEvo)"/>
+    //     <attribute id="TableUUID" type="guid" value="2db3f02e-dfa9-4235-b9bd-28a89bf41435"/>
+    //     <attribute id="UUID" type="guid" value="f632e3b2-a116-470b-a276-648df25ccf70"/>
+
+    new entry "GOON_NPC_FIGHTER_ELDRITCHKNIGHT_LVL_18"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_FIGHTER_ELDRITCHKNIGHT_PROGRESSION_TEMPLATE"
+    data "StackPriority" "18"
+    data "Passives" "UnlockedSpellSlotLevel1;UnlockedSpellSlotLevel2;EldritchStrike;UnlockedSpellSlotLevel3;ArcaneCharge;ImprovedWarMagic"
+    data "Boosts" "ActionResource(SpellSlot,4,1);UnlockSpell(Shout_WeaponBond);ActionResource(SpellSlot,3,2);ActionResource(SpellSlot,3,3)"
+
+    // <node id="Progression">
+    //     <attribute id="Level" type="uint8" value="18"/>
+    //     <attribute id="Name" type="LSString" value="EldritchKnight"/>
+    //     <attribute id="PassivesAdded" type="LSString" value="ImprovedWarMagic"/>
+    //     <attribute id="PassivesRemoved" type="LSString" value="WarMagic"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="Selectors" type="LSString" value="SelectSpells(9ca503db-0e4b-4325-b1eb-e2f794a075d6,0,1,EldritchKnightAbjEvo)"/>
+    //     <attribute id="TableUUID" type="guid" value="2db3f02e-dfa9-4235-b9bd-28a89bf41435"/>
+    //     <attribute id="UUID" type="guid" value="41573256-04b6-409e-b780-aa7dd3ae9d56"/>
+    
+    new entry "GOON_NPC_FIGHTER_ELDRITCHKNIGHT_LVL_19"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_FIGHTER_ELDRITCHKNIGHT_PROGRESSION_TEMPLATE"
+    data "StackPriority" "19"
+    data "Passives" "UnlockedSpellSlotLevel1;UnlockedSpellSlotLevel2;EldritchStrike;UnlockedSpellSlotLevel3;ArcaneCharge;ImprovedWarMagic"
+    data "Boosts" "ActionResource(SpellSlot,4,1);UnlockSpell(Shout_WeaponBond);ActionResource(SpellSlot,3,2);ActionResource(SpellSlot,3,3);ActionResource(SpellSlot,1,4)"
+
+    // <node id="Progression">
+    //     <attribute id="Boosts" type="LSString" value="ActionResource(SpellSlot,1,4)"/>
+    //     <attribute id="Level" type="uint8" value="19"/>
+    //     <attribute id="Name" type="LSString" value="EldritchKnight"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="Selectors" type="LSString" value="SelectSpells(5798e5a8-da36-40bc-acf5-2b736cf607a2,1,1,EldritchKnightAbjEvo)"/>
+    //     <attribute id="TableUUID" type="guid" value="2db3f02e-dfa9-4235-b9bd-28a89bf41435"/>
+    //     <attribute id="UUID" type="guid" value="ed52aeca-1466-406b-90ea-22a9ff3810da"/>
+
+    new entry "GOON_NPC_FIGHTER_ELDRITCHKNIGHT_LVL_20"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_FIGHTER_ELDRITCHKNIGHT_PROGRESSION_TEMPLATE"
+    data "StackPriority" "20"
+    data "Passives" "UnlockedSpellSlotLevel1;UnlockedSpellSlotLevel2;EldritchStrike;UnlockedSpellSlotLevel3;ArcaneCharge;ImprovedWarMagic"
+    data "Boosts" "ActionResource(SpellSlot,4,1);UnlockSpell(Shout_WeaponBond);ActionResource(SpellSlot,3,2);ActionResource(SpellSlot,3,3);ActionResource(SpellSlot,1,4)"
+
+    // <node id="Progression">
+    //     <attribute id="Level" type="uint8" value="20"/>
+    //     <attribute id="Name" type="LSString" value="EldritchKnight"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="Selectors" type="LSString" value="SelectSpells(820b1220-0385-426d-ae15-458dc8a6f5c0,1,1,EldritchKnightAny)"/>
+    //     <attribute id="TableUUID" type="guid" value="2db3f02e-dfa9-4235-b9bd-28a89bf41435"/>
+    //     <attribute id="UUID" type="guid" value="073dc7e1-dc55-40db-8159-e6c92e936104"/>

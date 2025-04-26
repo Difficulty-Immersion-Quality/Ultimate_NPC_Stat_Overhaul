@@ -49,14 +49,6 @@ data "Icon" "Spell_Abjuration_WardingBond"
 
 // ==================================== Fighter ====================================
 
-// Using EK progression from chizfreak's Eldritch Knight Plus mod
-new entry "CX_Fighter_EldritchKnight_Boost"
-type "PassiveData"
-data "DisplayName" "h56b56a6ag0de5g45e9g8845g97dae05491b3;1"
-data "Description" "h5c580e8ag700cg4159gbc2dg145ea47b7f8b;1"
-data "Icon" "PassiveFeature_EldritchStrike"
-data "Boosts" ""
-
 new entry "CX_Fighter_Champion_Boost"
 type "PassiveData"
 data "DisplayName" ""
