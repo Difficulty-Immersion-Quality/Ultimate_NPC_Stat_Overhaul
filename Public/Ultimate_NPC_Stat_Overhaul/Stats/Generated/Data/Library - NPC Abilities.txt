@@ -262,3 +262,22 @@ data "StatusPropertyFlags" "DisableOverhead;DisableCombatlog;DisablePortraitIndi
 data "Boosts" "ActionResource(FungalInfestationCharge,5,1)"
 data "RemoveConditions" "not HasPassive('ARP_FungalInfestation_1_5')"
 data "RemoveEvents" "OnTurn;OnStatusApplied;OnStatusRemoved"
+
+// ==================================== Druid - Eldritch Knight Bound Weapon ====================================
+
+new entry "Shout_WeaponBond"
+type "SpellData"
+data "SpellType" "Shout"
+using "Shout_WeaponBond"
+data "CombatAIOverrideSpell" "Shout_WeaponBond_AI"
+
+new entry "Shout_WeaponBond_AI"
+type "SpellData"
+data "SpellType" "Shout"
+using "Shout_WeaponBond"
+// data "CombatAIOverrideSpell" "Shout_WeaponBond_AI"
+data "CombatAIOverrideSpell" ""
+// data "UseCosts" "ActionPoint:1"
+data "UseCosts" ""
+// data "Requirements" "!Combat"
+data "Requirements" "not HasStatus('WEAPON_BOND',GetActiveWeapon())"
