@@ -263,7 +263,7 @@ data "Boosts" "ActionResource(FungalInfestationCharge,5,1)"
 data "RemoveConditions" "not HasPassive('ARP_FungalInfestation_1_5')"
 data "RemoveEvents" "OnTurn;OnStatusApplied;OnStatusRemoved"
 
-// ==================================== Druid - Eldritch Knight Bound Weapon ====================================
+// ==================================== Fighter - Eldritch Knight Bound Weapon ====================================
 
 new entry "Shout_WeaponBond"
 type "SpellData"
