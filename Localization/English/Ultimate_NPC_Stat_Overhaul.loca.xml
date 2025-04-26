@@ -97,7 +97,7 @@
 	<content contentuid="h7073005agdd34g494fga7d5g2cf3a7748479" version="1">A character who commands the forces of nature, shaping the world with primal magic. They possess Druid progressions, and gain the &lt;LSTag Type="Passive" Tooltip="CX_Druid_Boost"&gt;! CX Boost: Druid&lt;/LSTag&gt; passive.</content>
 
 	<content contentuid="he38308dag9418g482fg8ca1g980cc98ff64a" version="1">! CX Boost: Druid Boost</content>
-	<content contentuid="hc19cb29fgce35g4253g810fge4b35ebb2168" version="1">A character who commands the forces of nature, shaping the world with primal magic. They gain Druid boosts from configuration.</content>
+	<content contentuid="hc19cb29fgce35g4253g810fge4b35ebb2168" version="1">A character who commands the forces of nature, shaping the world with primal magic. They gain Druid boosts from configuration.&lt;br&gt;&lt;br&gt;If this character does not have the &lt;LSTag Type="Passive" Tooltip="Goon_Druid_NPC_Progressions"&gt;! Class: Druid&lt;/LSTag&gt; passive, then this passive has either been added externally, not by Ultimate NPC Stat Overhaul, or the character does not have class assigned as expected. In cases where you would expect a character to have certain progressions, but they do not, you should let us know on the Ultimate NPC Stat Overhaul mod page so it can be looked at.</content></content>
 
 	<!-- Druid Subclasses -->
 	<content contentuid="h0319b960g4892g4420gb4a0gdb82a83aef42" version="1">! Druid Subclass: Circle of the Land</content>
@@ -111,17 +111,20 @@
 
 <!-- FIGHTER -->
 	<content contentuid="h6d12a72egfab9g4f45gae31g5d4491dd2b6b" version="1">! Class: Fighter</content>
-	<content contentuid="h5e48ac49gaae0g4a00g8c47g03b6fca54a3c" version="1">A character who has mastered weapons and tactics, excelling in martial combat. They possess Fighter progressions, and gain the &lt;LSTag Type="Passive" Tooltip="CX_Druid_Boost"&gt;! CX Boost: Druid&lt;/LSTag&gt; passive.</content>
+	<content contentuid="h5e48ac49gaae0g4a00g8c47g03b6fca54a3c" version="1">A character who has mastered weapons and tactics, excelling in martial combat. They possess Fighter progressions, and gain the &lt;LSTag Type="Passive" Tooltip="CX_Fighter_Boost"&gt;! CX Boost: Fighter&lt;/LSTag&gt; passive.</content>
 
 	<content contentuid="h9bbf1a66g5136g4de6gb0f1g8e48e853d2ad" version="1">! CX Boost: Fighter Boost</content>
-	<content contentuid="hbf3404a9g766dg4d85gbf2egca83383094c6" version="1">A character who has mastered weapons and tactics, excelling in martial combat. They gain Fighter boosts from configuration.</content>
+	<content contentuid="hbf3404a9g766dg4d85gbf2egca83383094c6" version="1">A character who has mastered weapons and tactics, excelling in martial combat. They gain Fighter boosts from configuration.&lt;br&gt;&lt;br&gt;If this character does not have the &lt;LSTag Type="Passive" Tooltip="Goon_Fighter_NPC_Progressions"&gt;! Class: Fighter&lt;/LSTag&gt; passive, then this passive has either been added externally, not by Ultimate NPC Stat Overhaul, or the character does not have class assigned as expected. In cases where you would expect a character to have certain progressions, but they do not, you should let us know on the Ultimate NPC Stat Overhaul mod page so it can be looked at.</content>
 
 	<!-- Fighter Subclasses -->
 	<content contentuid="hefce9befgc089g4b04g9393g1ec534347dea" version="1">! Subclass: Battle Master Fighter Boost</content>
-	<content contentuid="hdbe7301eg8093g461fgaa19g99bf294c1819" version="1">A paragon of tactical superiority, who can employ a wide array of combat manoeuvres to dominate every fight. They gain Battle Master subclass boosts from configuration.</content>
+	<content contentuid="hdbe7301eg8093g461fgaa19g99bf294c1819" version="1">A paragon of tactical superiority, who can employ a wide array of combat manoeuvres to dominate every fight. They gain Battle Master Fighter progressions in addition to boosts from configuration.</content>
 
 	<content contentuid="h56b56a6ag0de5g45e9g8845g97dae05491b3" version="1">! Subclass: Eldritch Knight Fighter Boost</content>
-	<content contentuid="h5c580e8ag700cg4159gbc2dg145ea47b7f8b" version="1">A warrior of spell and sword who weaves incantations to supplement their martial expertise. They gain Eldritch Knight subclass boosts from configuration.</content>
+	<content contentuid="h5c580e8ag700cg4159gbc2dg145ea47b7f8b" version="1">A warrior of spell and sword who weaves incantations to supplement their martial expertise. They gain Eldritch Knight Fighter progressions in addition to boosts from configuration.</content>
+
+	<content contentuid="haa6f223cg7130g434egb18ag82be10976ef1" version="1">! Subclass: Champion Fighter Boost</content>
+	<content contentuid="hd11661ccgc093g4932gbfd9g2c60088eebb6" version="1">A Fighter who perfects the fundamentals of combat, turning every strike into a display of raw mastery. They gain Champion Fighter progressions in addition to boosts from configuration.</content>
 
 <!-- MONK -->
 	<content contentuid="h5f6db4dfgb3b4g4289g937bg039af3d0b1f8" version="1">! Class: Monk</content>
