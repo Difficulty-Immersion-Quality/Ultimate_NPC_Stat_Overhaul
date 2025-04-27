@@ -46,7 +46,7 @@
     data "StatusType" "BOOST"
     using "GOON_NPC_CLERIC_PROGRESSION_TEMPLATE"
     data "StackPriority" "1"
-    data "Passives" "DomainSpells;UnlockedSpellSlotLevel1;CX_Magic_Boost"
+    data "Passives" "DomainSpells;UnlockedSpellSlotLevel1;CX_Magic_Boost;CX_Magic_Boost"
     data "Boosts" "Tag(CLERIC);Proficiency(LightArmor);Proficiency(MediumArmor);Proficiency(Shields);Proficiency(SimpleWeapons);Proficiency(Morningstars);Proficiency(Flails)"
 
     // <node id="Progression">
@@ -54,7 +54,7 @@
     //     <attribute id="IsMulticlass" type="bool" value="true"/>
     //     <attribute id="Level" type="uint8" value="1"/>
     //     <attribute id="Name" type="LSString" value="Cleric"/>
-    //     <attribute id="PassivesAdded" type="LSString" value="DomainSpells;UnlockedSpellSlotLevel1"/>
+    //     <attribute id="PassivesAdded" type="LSString" value="DomainSpells;UnlockedSpellSlotLevel1;CX_Magic_Boost"/>
     //     <attribute id="ProgressionType" type="uint8" value="0"/>
     //     <attribute id="Selectors" type="LSString" value="SelectSpells(2f43a103-5bf1-4534-b14f-663decc0c525,3,0,,,,AlwaysPrepared);AddSpells(269d1a3b-eed8-4131-8901-a562238f5289)"/>
     //     <attribute id="TableUUID" type="guid" value="64474b62-b4f5-46b3-b94a-c676c6da3116"/>
@@ -65,7 +65,7 @@
     data "StatusType" "BOOST"
     using "GOON_NPC_CLERIC_PROGRESSION_TEMPLATE"
     data "StackPriority" "1"
-    data "Passives" "DomainSpells;UnlockedSpellSlotLevel1;CX_Magic_Boost"
+    data "Passives" "DomainSpells;UnlockedSpellSlotLevel1;CX_Magic_Boost;CX_Magic_Boost"
     data "Boosts" "Tag(CLERIC);ActionResource(SpellSlot,2,1);ProficiencyBonus(SavingThrow,Wisdom);ProficiencyBonus(SavingThrow,Charisma);Proficiency(LightArmor);Proficiency(MediumArmor);Proficiency(Shields);Proficiency(SimpleWeapons);Proficiency(Morningstars);Proficiency(Flails)"
 
     new entry "GOON_NPC_CLERIC_LVL_2"
@@ -73,7 +73,7 @@
     data "StatusType" "BOOST"
     using "GOON_NPC_CLERIC_PROGRESSION_TEMPLATE"
     data "StackPriority" "2"
-    data "Passives" "DomainSpells;UnlockedSpellSlotLevel1"
+    data "Passives" "DomainSpells;UnlockedSpellSlotLevel1;CX_Magic_Boost"
     data "Boosts" "Tag(CLERIC);ActionResource(SpellSlot,3,1);ProficiencyBonus(SavingThrow,Wisdom);ProficiencyBonus(SavingThrow,Charisma);Proficiency(LightArmor);Proficiency(MediumArmor);Proficiency(Shields);Proficiency(SimpleWeapons);Proficiency(Morningstars);Proficiency(Flails);UnlockSpell(Shout_TurnUndead);ActionResource(ChannelDivinity,1,0)"
 
     new entry "GOON_NPC_CLERIC_LVL_3"
@@ -81,7 +81,7 @@
     data "StatusType" "BOOST"
     using "GOON_NPC_CLERIC_PROGRESSION_TEMPLATE"
     data "StackPriority" "3"
-    data "Passives" "DomainSpells;UnlockedSpellSlotLevel1;UnlockedSpellSlotLevel2"
+    data "Passives" "DomainSpells;UnlockedSpellSlotLevel1;CX_Magic_Boost;UnlockedSpellSlotLevel2"
     data "Boosts" "Tag(CLERIC);ActionResource(SpellSlot,4,1);ProficiencyBonus(SavingThrow,Wisdom);ProficiencyBonus(SavingThrow,Charisma);Proficiency(LightArmor);Proficiency(MediumArmor);Proficiency(Shields);Proficiency(SimpleWeapons);Proficiency(Morningstars);Proficiency(Flails);UnlockSpell(Shout_TurnUndead);ActionResource(ChannelDivinity,1,0);ActionResource(SpellSlot,2,2)"
 
     new entry "GOON_NPC_CLERIC_LVL_4"
@@ -89,7 +89,7 @@
     data "StatusType" "BOOST"
     using "GOON_NPC_CLERIC_PROGRESSION_TEMPLATE"
     data "StackPriority" "4"
-    data "Passives" "DomainSpells;UnlockedSpellSlotLevel1;UnlockedSpellSlotLevel2"
+    data "Passives" "DomainSpells;UnlockedSpellSlotLevel1;CX_Magic_Boost;UnlockedSpellSlotLevel2"
     data "Boosts" "Tag(CLERIC);ActionResource(SpellSlot,4,1);ProficiencyBonus(SavingThrow,Wisdom);ProficiencyBonus(SavingThrow,Charisma);Proficiency(LightArmor);Proficiency(MediumArmor);Proficiency(Shields);Proficiency(SimpleWeapons);Proficiency(Morningstars);Proficiency(Flails);UnlockSpell(Shout_TurnUndead);ActionResource(ChannelDivinity,1,0);ActionResource(SpellSlot,3,2)"
 
     new entry "GOON_NPC_CLERIC_LVL_5"
@@ -97,7 +97,7 @@
     data "StatusType" "BOOST"
     using "GOON_NPC_CLERIC_PROGRESSION_TEMPLATE"
     data "StackPriority" "5"
-    data "Passives" "DomainSpells;UnlockedSpellSlotLevel1;UnlockedSpellSlotLevel2;DestroyUndead;UnlockedSpellSlotLevel3"
+    data "Passives" "DomainSpells;UnlockedSpellSlotLevel1;CX_Magic_Boost;UnlockedSpellSlotLevel2;DestroyUndead;UnlockedSpellSlotLevel3"
     data "Boosts" "Tag(CLERIC);ActionResource(SpellSlot,4,1);ProficiencyBonus(SavingThrow,Wisdom);ProficiencyBonus(SavingThrow,Charisma);Proficiency(LightArmor);Proficiency(MediumArmor);Proficiency(Shields);Proficiency(SimpleWeapons);Proficiency(Morningstars);Proficiency(Flails);UnlockSpell(Shout_TurnUndead);ActionResource(ChannelDivinity,1,0);ActionResource(SpellSlot,3,2);ActionResource(SpellSlot,2,3)"
 
     new entry "GOON_NPC_CLERIC_LVL_6"
@@ -105,7 +105,7 @@
     data "StatusType" "BOOST"
     using "GOON_NPC_CLERIC_PROGRESSION_TEMPLATE"
     data "StackPriority" "6"
-    data "Passives" "DomainSpells;UnlockedSpellSlotLevel1;UnlockedSpellSlotLevel2;DestroyUndead;UnlockedSpellSlotLevel3"
+    data "Passives" "DomainSpells;UnlockedSpellSlotLevel1;CX_Magic_Boost;UnlockedSpellSlotLevel2;DestroyUndead;UnlockedSpellSlotLevel3"
     data "Boosts" "Tag(CLERIC);ActionResource(SpellSlot,4,1);ProficiencyBonus(SavingThrow,Wisdom);ProficiencyBonus(SavingThrow,Charisma);Proficiency(LightArmor);Proficiency(MediumArmor);Proficiency(Shields);Proficiency(SimpleWeapons);Proficiency(Morningstars);Proficiency(Flails);UnlockSpell(Shout_TurnUndead);ActionResource(ChannelDivinity,2,0);ActionResource(SpellSlot,3,2);ActionResource(SpellSlot,3,3)"
 
     new entry "GOON_NPC_CLERIC_LVL_7"
@@ -113,7 +113,7 @@
     data "StatusType" "BOOST"
     using "GOON_NPC_CLERIC_PROGRESSION_TEMPLATE"
     data "StackPriority" "7"
-    data "Passives" "DomainSpells;UnlockedSpellSlotLevel1;UnlockedSpellSlotLevel2;DestroyUndead;UnlockedSpellSlotLevel3"
+    data "Passives" "DomainSpells;UnlockedSpellSlotLevel1;CX_Magic_Boost;UnlockedSpellSlotLevel2;DestroyUndead;UnlockedSpellSlotLevel3"
     data "Boosts" "Tag(CLERIC);ActionResource(SpellSlot,4,1);ProficiencyBonus(SavingThrow,Wisdom);ProficiencyBonus(SavingThrow,Charisma);Proficiency(LightArmor);Proficiency(MediumArmor);Proficiency(Shields);Proficiency(SimpleWeapons);Proficiency(Morningstars);Proficiency(Flails);UnlockSpell(Shout_TurnUndead);ActionResource(ChannelDivinity,2,0);ActionResource(SpellSlot,3,2);ActionResource(SpellSlot,3,3);ActionResource(SpellSlot,1,4)"
 
     new entry "GOON_NPC_CLERIC_LVL_8"
@@ -121,7 +121,7 @@
     data "StatusType" "BOOST"
     using "GOON_NPC_CLERIC_PROGRESSION_TEMPLATE"
     data "StackPriority" "8"
-    data "Passives" "DomainSpells;UnlockedSpellSlotLevel1;UnlockedSpellSlotLevel2;DestroyUndead;UnlockedSpellSlotLevel3"
+    data "Passives" "DomainSpells;UnlockedSpellSlotLevel1;CX_Magic_Boost;UnlockedSpellSlotLevel2;DestroyUndead;UnlockedSpellSlotLevel3"
     data "Boosts" "Tag(CLERIC);ActionResource(SpellSlot,4,1);ProficiencyBonus(SavingThrow,Wisdom);ProficiencyBonus(SavingThrow,Charisma);Proficiency(LightArmor);Proficiency(MediumArmor);Proficiency(Shields);Proficiency(SimpleWeapons);Proficiency(Morningstars);Proficiency(Flails);UnlockSpell(Shout_TurnUndead);ActionResource(ChannelDivinity,2,0);ActionResource(SpellSlot,3,2);ActionResource(SpellSlot,3,3);ActionResource(SpellSlot,2,4)"
 
     new entry "GOON_NPC_CLERIC_LVL_9"
@@ -129,7 +129,7 @@
     data "StatusType" "BOOST"
     using "GOON_NPC_CLERIC_PROGRESSION_TEMPLATE"
     data "StackPriority" "9"
-    data "Passives" "DomainSpells;UnlockedSpellSlotLevel1;UnlockedSpellSlotLevel2;DestroyUndead;UnlockedSpellSlotLevel3"
+    data "Passives" "DomainSpells;UnlockedSpellSlotLevel1;CX_Magic_Boost;UnlockedSpellSlotLevel2;DestroyUndead;UnlockedSpellSlotLevel3"
     data "Boosts" "Tag(CLERIC);ActionResource(SpellSlot,4,1);ProficiencyBonus(SavingThrow,Wisdom);ProficiencyBonus(SavingThrow,Charisma);Proficiency(LightArmor);Proficiency(MediumArmor);Proficiency(Shields);Proficiency(SimpleWeapons);Proficiency(Morningstars);Proficiency(Flails);UnlockSpell(Shout_TurnUndead);ActionResource(ChannelDivinity,2,0);ActionResource(SpellSlot,3,2);ActionResource(SpellSlot,3,3);ActionResource(SpellSlot,3,4);ActionResource(SpellSlot,1,5)"
 
     new entry "GOON_NPC_CLERIC_LVL_10"
@@ -137,7 +137,7 @@
     data "StatusType" "BOOST"
     using "GOON_NPC_CLERIC_PROGRESSION_TEMPLATE"
     data "StackPriority" "10"
-    data "Passives" "DomainSpells;UnlockedSpellSlotLevel1;UnlockedSpellSlotLevel2;DestroyUndead;UnlockedSpellSlotLevel3;DivineIntervention"
+    data "Passives" "DomainSpells;UnlockedSpellSlotLevel1;CX_Magic_Boost;UnlockedSpellSlotLevel2;DestroyUndead;UnlockedSpellSlotLevel3;DivineIntervention"
     data "Boosts" "Tag(CLERIC);ActionResource(SpellSlot,4,1);ProficiencyBonus(SavingThrow,Wisdom);ProficiencyBonus(SavingThrow,Charisma);Proficiency(LightArmor);Proficiency(MediumArmor);Proficiency(Shields);Proficiency(SimpleWeapons);Proficiency(Morningstars);Proficiency(Flails);UnlockSpell(Shout_TurnUndead);ActionResource(ChannelDivinity,2,0);ActionResource(SpellSlot,3,2);ActionResource(SpellSlot,3,3);ActionResource(SpellSlot,3,4);ActionResource(SpellSlot,2,5)"
 
     new entry "GOON_NPC_CLERIC_LVL_11"
@@ -145,7 +145,7 @@
     data "StatusType" "BOOST"
     using "GOON_NPC_CLERIC_PROGRESSION_TEMPLATE"
     data "StackPriority" "11"
-    data "Passives" "DomainSpells;UnlockedSpellSlotLevel1;UnlockedSpellSlotLevel2;DestroyUndead;UnlockedSpellSlotLevel3;DivineIntervention"
+    data "Passives" "DomainSpells;UnlockedSpellSlotLevel1;CX_Magic_Boost;UnlockedSpellSlotLevel2;DestroyUndead;UnlockedSpellSlotLevel3;DivineIntervention"
     data "Boosts" "Tag(CLERIC);ActionResource(SpellSlot,4,1);ProficiencyBonus(SavingThrow,Wisdom);ProficiencyBonus(SavingThrow,Charisma);Proficiency(LightArmor);Proficiency(MediumArmor);Proficiency(Shields);Proficiency(SimpleWeapons);Proficiency(Morningstars);Proficiency(Flails);UnlockSpell(Shout_TurnUndead);ActionResource(ChannelDivinity,2,0);ActionResource(SpellSlot,3,2);ActionResource(SpellSlot,3,3);ActionResource(SpellSlot,3,4);ActionResource(SpellSlot,2,5);ActionResource(SpellSlot,1,6)"
 
     new entry "GOON_NPC_CLERIC_LVL_12"
@@ -160,7 +160,7 @@
     data "StatusType" "BOOST"
     using "GOON_NPC_CLERIC_PROGRESSION_TEMPLATE"
     data "StackPriority" "13"
-    data "Passives" "DomainSpells;UnlockedSpellSlotLevel1;UnlockedSpellSlotLevel2;DestroyUndead;UnlockedSpellSlotLevel3;DivineIntervention"
+    data "Passives" "DomainSpells;UnlockedSpellSlotLevel1;CX_Magic_Boost;UnlockedSpellSlotLevel2;DestroyUndead;UnlockedSpellSlotLevel3;DivineIntervention"
     data "Boosts" "Tag(CLERIC);ActionResource(SpellSlot,4,1);ProficiencyBonus(SavingThrow,Wisdom);ProficiencyBonus(SavingThrow,Charisma);Proficiency(LightArmor);Proficiency(MediumArmor);Proficiency(Shields);Proficiency(SimpleWeapons);Proficiency(Morningstars);Proficiency(Flails);UnlockSpell(Shout_TurnUndead);ActionResource(ChannelDivinity,2,0);ActionResource(SpellSlot,3,2);ActionResource(SpellSlot,3,3);ActionResource(SpellSlot,3,4);ActionResource(SpellSlot,2,5);ActionResource(SpellSlot,1,6);ActionResource(SpellSlot,1,7)"
 
     new entry "GOON_NPC_CLERIC_LVL_14"
@@ -174,7 +174,7 @@
     data "StatusType" "BOOST"
     using "GOON_NPC_CLERIC_PROGRESSION_TEMPLATE"
     data "StackPriority" "15"
-    data "Passives" "DomainSpells;UnlockedSpellSlotLevel1;UnlockedSpellSlotLevel2;DestroyUndead;UnlockedSpellSlotLevel3;DivineIntervention"
+    data "Passives" "DomainSpells;UnlockedSpellSlotLevel1;CX_Magic_Boost;UnlockedSpellSlotLevel2;DestroyUndead;UnlockedSpellSlotLevel3;DivineIntervention"
     data "Boosts" "Tag(CLERIC);ActionResource(SpellSlot,4,1);ProficiencyBonus(SavingThrow,Wisdom);ProficiencyBonus(SavingThrow,Charisma);Proficiency(LightArmor);Proficiency(MediumArmor);Proficiency(Shields);Proficiency(SimpleWeapons);Proficiency(Morningstars);Proficiency(Flails);UnlockSpell(Shout_TurnUndead);ActionResource(ChannelDivinity,2,0);ActionResource(SpellSlot,3,2);ActionResource(SpellSlot,3,3);ActionResource(SpellSlot,3,4);ActionResource(SpellSlot,2,5);ActionResource(SpellSlot,1,6);ActionResource(SpellSlot,1,7);ActionResource(SpellSlot,1,8)"
 
     new entry "GOON_NPC_CLERIC_LVL_16"
@@ -188,7 +188,7 @@
     data "StatusType" "BOOST"
     using "GOON_NPC_CLERIC_PROGRESSION_TEMPLATE"
     data "StackPriority" "17"
-    data "Passives" "DomainSpells;UnlockedSpellSlotLevel1;UnlockedSpellSlotLevel2;DestroyUndead;UnlockedSpellSlotLevel3;DivineIntervention"
+    data "Passives" "DomainSpells;UnlockedSpellSlotLevel1;CX_Magic_Boost;UnlockedSpellSlotLevel2;DestroyUndead;UnlockedSpellSlotLevel3;DivineIntervention"
     data "Boosts" "Tag(CLERIC);ActionResource(SpellSlot,4,1);ProficiencyBonus(SavingThrow,Wisdom);ProficiencyBonus(SavingThrow,Charisma);Proficiency(LightArmor);Proficiency(MediumArmor);Proficiency(Shields);Proficiency(SimpleWeapons);Proficiency(Morningstars);Proficiency(Flails);UnlockSpell(Shout_TurnUndead);ActionResource(ChannelDivinity,2,0);ActionResource(SpellSlot,3,2);ActionResource(SpellSlot,3,3);ActionResource(SpellSlot,3,4);ActionResource(SpellSlot,2,5);ActionResource(SpellSlot,1,6);ActionResource(SpellSlot,1,7);ActionResource(SpellSlot,1,8);ActionResource(SpellSlot,1,9)"
 
     new entry "GOON_NPC_CLERIC_LVL_18"
@@ -196,7 +196,7 @@
     data "StatusType" "BOOST"
     using "GOON_NPC_CLERIC_PROGRESSION_TEMPLATE"
     data "StackPriority" "18"
-    data "Passives" "DomainSpells;UnlockedSpellSlotLevel1;UnlockedSpellSlotLevel2;DestroyUndead;UnlockedSpellSlotLevel3;DivineIntervention"
+    data "Passives" "DomainSpells;UnlockedSpellSlotLevel1;CX_Magic_Boost;UnlockedSpellSlotLevel2;DestroyUndead;UnlockedSpellSlotLevel3;DivineIntervention"
     data "Boosts" "Tag(CLERIC);ActionResource(SpellSlot,4,1);ProficiencyBonus(SavingThrow,Wisdom);ProficiencyBonus(SavingThrow,Charisma);Proficiency(LightArmor);Proficiency(MediumArmor);Proficiency(Shields);Proficiency(SimpleWeapons);Proficiency(Morningstars);Proficiency(Flails);UnlockSpell(Shout_TurnUndead);ActionResource(ChannelDivinity,3,0);ActionResource(SpellSlot,3,2);ActionResource(SpellSlot,3,3);ActionResource(SpellSlot,3,4);ActionResource(SpellSlot,3,5);ActionResource(SpellSlot,1,6);ActionResource(SpellSlot,1,7);ActionResource(SpellSlot,1,8);ActionResource(SpellSlot,1,9)"
 
     new entry "GOON_NPC_CLERIC_LVL_19"
@@ -204,7 +204,7 @@
     data "StatusType" "BOOST"
     using "GOON_NPC_CLERIC_PROGRESSION_TEMPLATE"
     data "StackPriority" "19"
-    data "Passives" "DomainSpells;UnlockedSpellSlotLevel1;UnlockedSpellSlotLevel2;DestroyUndead;UnlockedSpellSlotLevel3;DivineIntervention"
+    data "Passives" "DomainSpells;UnlockedSpellSlotLevel1;CX_Magic_Boost;UnlockedSpellSlotLevel2;DestroyUndead;UnlockedSpellSlotLevel3;DivineIntervention"
     data "Boosts" "Tag(CLERIC);ActionResource(SpellSlot,4,1);ProficiencyBonus(SavingThrow,Wisdom);ProficiencyBonus(SavingThrow,Charisma);Proficiency(LightArmor);Proficiency(MediumArmor);Proficiency(Shields);Proficiency(SimpleWeapons);Proficiency(Morningstars);Proficiency(Flails);UnlockSpell(Shout_TurnUndead);ActionResource(ChannelDivinity,3,0);ActionResource(SpellSlot,3,2);ActionResource(SpellSlot,3,3);ActionResource(SpellSlot,3,4);ActionResource(SpellSlot,3,5);ActionResource(SpellSlot,2,6);ActionResource(SpellSlot,1,7);ActionResource(SpellSlot,1,8);ActionResource(SpellSlot,1,9)"
 
     new entry "GOON_NPC_CLERIC_LVL_20"
@@ -212,7 +212,7 @@
     data "StatusType" "BOOST"
     using "GOON_NPC_CLERIC_PROGRESSION_TEMPLATE"
     data "StackPriority" "20"
-    data "Passives" "DomainSpells;UnlockedSpellSlotLevel1;UnlockedSpellSlotLevel2;DestroyUndead;UnlockedSpellSlotLevel3;DivineIntervention;DivineIntervention_Improvement"
+    data "Passives" "DomainSpells;UnlockedSpellSlotLevel1;CX_Magic_Boost;UnlockedSpellSlotLevel2;DestroyUndead;UnlockedSpellSlotLevel3;DivineIntervention;DivineIntervention_Improvement"
     data "Boosts" "Tag(CLERIC);ActionResource(SpellSlot,4,1);ProficiencyBonus(SavingThrow,Wisdom);ProficiencyBonus(SavingThrow,Charisma);Proficiency(LightArmor);Proficiency(MediumArmor);Proficiency(Shields);Proficiency(SimpleWeapons);Proficiency(Morningstars);Proficiency(Flails);UnlockSpell(Shout_TurnUndead);ActionResource(ChannelDivinity,3,0);ActionResource(SpellSlot,3,2);ActionResource(SpellSlot,3,3);ActionResource(SpellSlot,3,4);ActionResource(SpellSlot,3,5);ActionResource(SpellSlot,2,6);ActionResource(SpellSlot,2,7);ActionResource(SpellSlot,1,8);ActionResource(SpellSlot,1,9)"
 
 // ==================================== Subclass: Life Domain ====================================

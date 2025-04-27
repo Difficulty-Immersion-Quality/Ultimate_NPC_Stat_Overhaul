@@ -36,7 +36,7 @@
     data "StatusType" "BOOST"
     using "GOON_NPC_DRUID_PROGRESSION_TEMPLATE"
     data "StackPriority" "1"
-    data "Passives" "UnlockedSpellSlotLevel1;CX_Magic_Boost;CX_Magic_Boost"
+    data "Passives" "UnlockedSpellSlotLevel1;CX_Magic_Boost"
     data "Boosts" "Tag(DRUID);Proficiency(LightArmor);Proficiency(MediumArmor);Proficiency(Shields)"
 
     // <node id="Progression">
@@ -54,7 +54,7 @@
     data "StatusType" "BOOST"
     using "GOON_NPC_DRUID_PROGRESSION_TEMPLATE"
     data "StackPriority" "1"
-    data "Passives" "UnlockedSpellSlotLevel1;CX_Magic_Boost;CX_Magic_Boost"
+    data "Passives" "UnlockedSpellSlotLevel1;CX_Magic_Boost"
     data "Boosts" "Tag(DRUID);ActionResource(SpellSlot,2,1);ProficiencyBonus(SavingThrow,Wisdom);ProficiencyBonus(SavingThrow,Intelligence);Proficiency(LightArmor);Proficiency(MediumArmor);Proficiency(Shields);Proficiency(Clubs);Proficiency(Daggers);Proficiency(Javelins);Proficiency(Maces);Proficiency(Quarterstaffs);Proficiency(Scimitars);Proficiency(Sickles);Proficiency(Spears)"
 
     new entry "GOON_NPC_DRUID_LVL_2"
