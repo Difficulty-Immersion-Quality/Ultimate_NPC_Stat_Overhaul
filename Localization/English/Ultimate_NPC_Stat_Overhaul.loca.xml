@@ -34,7 +34,6 @@
 	<content contentuid="h59b5144dgff16g41edg9da8gc79e81e92b69" version="1">A character who harnesses their fury to punish foes. They gain Barbarian progressions in addition to boosts from configuration.&lt;br&gt;&lt;br&gt;If this character does not have the &lt;LSTag Type="Passive" Tooltip="Goon_Barbarian_NPC_Progressions"&gt;! Class: Barbarian&lt;/LSTag&gt; passive, then this passive has either been added externally, not by Ultimate NPC Stat Overhaul, or the character does not have class assigned as expected. In cases where you would expect a character to have certain progressions, but they do not, you should let us know on the Ultimate NPC Stat Overhaul mod page so it can be looked at.</content>
 
 	<!-- Barbarian Subclasses -->
-
 	<content contentuid="h7fb10ed8gcd0ag4e02g909fg5a9433f5cebc" version="1">! Barbarian Subclass: Berserker</content>
 	<content contentuid="h28f5bbd1ge7ddg492egb781gbf7d0d1b0be7" version="1">A Barbarian who follows a path of untrammelled fury and thrills in the chaos of battle, regardless of their own well-being. They gain Berserker Barbarian progressions in addition to boosts from configuration.</content>
 
@@ -52,7 +51,6 @@
 	<content contentuid="h97a23da3gd2c1g4b07gb187g9f8696856259" version="1">A character with a versatile skillset, who blends artistry, trickery, and spellcraft. They gain Bard progressions in addition to boosts from configuration.&lt;br&gt;&lt;br&gt;If this character does not have the &lt;LSTag Type="Passive" Tooltip="Goon_Bard_NPC_Progressions"&gt;! Class: Bard&lt;/LSTag&gt; passive, then this passive has either been added externally, not by Ultimate NPC Stat Overhaul, or the character does not have class assigned as expected. In cases where you would expect a character to have certain progressions, but they do not, you should let us know on the Ultimate NPC Stat Overhaul mod page so it can be looked at.</content>
 
 	<!-- Bard Subclasses -->
-
 	<content contentuid="h3bcbbd77gfc41g49ebga568g0cbf6a43e9ed" version="1">! Bard Subclass: College of Lore</content>
 	<content contentuid="hc1899b1fgf6aag44c7g8ec9ga7ed8d2cd3b0" version="1">A Bard who blends magic, wit, and scholarship into a versatile and unpredictable force. They gain College of Lore Bard progressions in addition to boosts from configuration.</content>
 
@@ -70,7 +68,6 @@
 	<content contentuid="hacdccdb0ge6c6g454bga598g6df082810262" version="1">A character of faith, channeling divine magic both to aid and harm. They gain Cleric boosts from configuration.&lt;br&gt;&lt;br&gt;If this character does not have the &lt;LSTag Type="Passive" Tooltip="Goon_Cleric_NPC_Progressions"&gt;! Class: Cleric&lt;/LSTag&gt; passive, then this passive has either been added externally, not by Ultimate NPC Stat Overhaul, or the character does not have class assigned as expected. In cases where you would expect a character to have certain progressions, but they do not, you should let us know on the Ultimate NPC Stat Overhaul mod page so it can be looked at.</content>
 
 	<!-- Cleric Subclasses -->
-
 	<content contentuid="he573d2b7gbb53g4996gb795g1623ccf40749" version="1">! Cleric Subclass: Life Domain</content>
 	<content contentuid="h748bb452ge0bbg4d70gb473g5f16915c5a1c" version="1">A Cleric who nurtures and protects, channeling radiant energy to heal and uplift. They gain Life Domain Cleric progressions in addition to boosts from configuration.</content>
 
@@ -97,7 +94,7 @@
 	<content contentuid="h7073005agdd34g494fga7d5g2cf3a7748479" version="1">A character who commands the forces of nature, shaping the world with primal magic. They possess Druid progressions, and gain the &lt;LSTag Type="Passive" Tooltip="CX_Druid_Boost"&gt;! CX Boost: Druid&lt;/LSTag&gt; passive.</content>
 
 	<content contentuid="he38308dag9418g482fg8ca1g980cc98ff64a" version="1">! CX Boost: Druid Boost</content>
-	<content contentuid="hc19cb29fgce35g4253g810fge4b35ebb2168" version="1">A character who commands the forces of nature, shaping the world with primal magic. They gain Druid boosts from configuration.&lt;br&gt;&lt;br&gt;If this character does not have the &lt;LSTag Type="Passive" Tooltip="Goon_Druid_NPC_Progressions"&gt;! Class: Druid&lt;/LSTag&gt; passive, then this passive has either been added externally, not by Ultimate NPC Stat Overhaul, or the character does not have class assigned as expected. In cases where you would expect a character to have certain progressions, but they do not, you should let us know on the Ultimate NPC Stat Overhaul mod page so it can be looked at.</content></content>
+	<content contentuid="hc19cb29fgce35g4253g810fge4b35ebb2168" version="1">A character who commands the forces of nature, shaping the world with primal magic. They gain Druid boosts from configuration.&lt;br&gt;&lt;br&gt;If this character does not have the &lt;LSTag Type="Passive" Tooltip="Goon_Druid_NPC_Progressions"&gt;! Class: Druid&lt;/LSTag&gt; passive, then this passive has either been added externally, not by Ultimate NPC Stat Overhaul, or the character does not have class assigned as expected. In cases where you would expect a character to have certain progressions, but they do not, you should let us know on the Ultimate NPC Stat Overhaul mod page so it can be looked at.</content>
 
 	<!-- Druid Subclasses -->
 	<content contentuid="h0319b960g4892g4420gb4a0gdb82a83aef42" version="1">! Druid Subclass: Circle of the Land</content>
@@ -113,48 +110,51 @@
 	<content contentuid="h6d12a72egfab9g4f45gae31g5d4491dd2b6b" version="1">! Class: Fighter</content>
 	<content contentuid="h5e48ac49gaae0g4a00g8c47g03b6fca54a3c" version="1">A character who has mastered weapons and tactics, excelling in martial combat. They possess Fighter progressions, and gain the &lt;LSTag Type="Passive" Tooltip="CX_Fighter_Boost"&gt;! CX Boost: Fighter&lt;/LSTag&gt; passive.</content>
 
-	<content contentuid="h9bbf1a66g5136g4de6gb0f1g8e48e853d2ad" version="1">! CX Boost: Fighter Boost</content>
+	<content contentuid="h9bbf1a66g5136g4de6gb0f1g8e48e853d2ad" version="1">! CX Boost: Fighter</content>
 	<content contentuid="hbf3404a9g766dg4d85gbf2egca83383094c6" version="1">A character who has mastered weapons and tactics, excelling in martial combat. They gain Fighter boosts from configuration.&lt;br&gt;&lt;br&gt;If this character does not have the &lt;LSTag Type="Passive" Tooltip="Goon_Fighter_NPC_Progressions"&gt;! Class: Fighter&lt;/LSTag&gt; passive, then this passive has either been added externally, not by Ultimate NPC Stat Overhaul, or the character does not have class assigned as expected. In cases where you would expect a character to have certain progressions, but they do not, you should let us know on the Ultimate NPC Stat Overhaul mod page so it can be looked at.</content>
 
 	<!-- Fighter Subclasses -->
-	<content contentuid="hefce9befgc089g4b04g9393g1ec534347dea" version="1">! Subclass: Battle Master Fighter Boost</content>
+	<content contentuid="hefce9befgc089g4b04g9393g1ec534347dea" version="1">! Subclass: Battle Master Fighter</content>
 	<content contentuid="hdbe7301eg8093g461fgaa19g99bf294c1819" version="1">A paragon of tactical superiority, who can employ a wide array of combat manoeuvres to dominate every fight. They gain Battle Master Fighter progressions in addition to boosts from configuration.</content>
 
-	<content contentuid="h56b56a6ag0de5g45e9g8845g97dae05491b3" version="1">! Subclass: Eldritch Knight Fighter Boost</content>
+	<content contentuid="h56b56a6ag0de5g45e9g8845g97dae05491b3" version="1">! Subclass: Eldritch Knight Fighter</content>
 	<content contentuid="h5c580e8ag700cg4159gbc2dg145ea47b7f8b" version="1">A warrior of spell and sword who weaves incantations to supplement their martial expertise. They gain Eldritch Knight Fighter progressions in addition to boosts from configuration.</content>
 
-	<content contentuid="haa6f223cg7130g434egb18ag82be10976ef1" version="1">! Subclass: Champion Fighter Boost</content>
+	<content contentuid="haa6f223cg7130g434egb18ag82be10976ef1" version="1">! Subclass: Champion Fighter</content>
 	<content contentuid="hd11661ccgc093g4932gbfd9g2c60088eebb6" version="1">A Fighter who perfects the fundamentals of combat, turning every strike into a display of raw mastery. They gain Champion Fighter progressions in addition to boosts from configuration.</content>
 
 <!-- MONK -->
 	<content contentuid="h5f6db4dfgb3b4g4289g937bg039af3d0b1f8" version="1">! Class: Monk</content>
-	<content contentuid="" version="1"></content>
+	<content contentuid="h2456c053g4d3fg4c2ag89fag9ea0f0bb2e1d" version="1">A character who disciplines body and spirit, moving with speed, precision, and inner focus. They possess Monk progressions, and gain the &lt;LSTag Type="Passive" Tooltip="CX_Monk_Boost"&gt;! CX Boost: Monk&lt;/LSTag&gt; passive.</content>
 
-	<content contentuid="h39b8a7b9g1718g4ee9ga92cgda8d8ede2808" version="1">! CX Boost: Monk Boost</content>
-	<content contentuid="h705db622g0893g4d79gae8age3f4ebeca536" version="1">A character who has mastered body, mind and the art of combat. They gain Monk boosts from configuration.</content>
+	<content contentuid="h39b8a7b9g1718g4ee9ga92cgda8d8ede2808" version="1">! CX Boost: Monk</content>
+	<content contentuid="h705db622g0893g4d79gae8age3f4ebeca536" version="1">A character who disciplines body and spirit, moving with speed, precision, and inner focus. They gain Monk boosts from configuration.&lt;br&gt;&lt;br&gt;If this character does not have the &lt;LSTag Type="Passive" Tooltip="Goon_Monk_NPC_Progressions"&gt;! Class: Monk&lt;/LSTag&gt; passive, then this passive has either been added externally, not by Ultimate NPC Stat Overhaul, or the character does not have class assigned as expected. In cases where you would expect a character to have certain progressions, but they do not, you should let us know on the Ultimate NPC Stat Overhaul mod page so it can be looked at.</content>
 
 	<!-- Monk Subclasses -->
-	<content contentuid="h07a62781gfb0fg4225g92f8g8ca347236ec5" version="1">! Subclass: Way of the Open Hand Monk Boost</content>
-	<content contentuid="hb571273dga181g4630g98a1g8e7bf5b83102" version="1">A Monk who specializes in unarmed combat. They gain Way of the Open Hand subclass boosts from configuration.</content>	
+	<content contentuid="h9d7e8339ga648g4afeg8e86gc903fd093317" version="1">! Subclass: Way of the Four Elements Monk</content>
+	<content contentuid="hc901b2c6gb064g43d7g899cg1638fa8453b3" version="1">A Monk who uses their ki to bend the elements to their will. They gain Way of the Four Elements Monk progressions in addition to boosts from configuration.</content>
 
-	<content contentuid="h9d7e8339ga648g4afeg8e86gc903fd093317" version="1">! Subclass: Way of the Four Elements Monk Boost</content>
-	<content contentuid="hc901b2c6gb064g43d7g899cg1638fa8453b3" version="1">A Monk who uses their ki to bend the elements to their will. They gain Way of the Four Elements subclass boosts from configuration.</content>
+	<content contentuid="h07a62781gfb0fg4225g92f8g8ca347236ec5" version="1">! Subclass: Way of the Open Hand Monk</content>
+	<content contentuid="hb571273dga181g4630g98a1g8e7bf5b83102" version="1">A Monk who refines each strike into a disciplined force, overwhelming foes with precision. They gain Way of the Open Hand Monk progressions in addition to boosts from configuration.</content>
+
+	<content contentuid="h8caa5dfage0fcg42cbga831gd3ae22c81b70" version="1">! Subclass: Way of Shadow Monk</content>
+	<content contentuid="hb722f782g4bfeg46f5gb73bg2fe9d71151b4" version="1">A Monk who weaves through darkness, mastering stealth, illusion, and swift, unseen strikes. They gain Way of Shadow Monk progressions in addition to boosts from configuration.</content>
 
 <!-- PALADIN -->
 	<content contentuid="hbd9fca0cg8eddg405cga457g81f619e965fe" version="1">! Class: Paladin</content>
 	<content contentuid="" version="1"></content>
 
-	<content contentuid="h100e7a9bg3c26g4035g86d9g0762e657c372" version="1">! CX Boost: Paladin Boost</content>
+	<content contentuid="h100e7a9bg3c26g4035g86d9g0762e657c372" version="1">! CX Boost: Paladin</content>
 	<content contentuid="h5ee949eegd3a6g46dbgbf07g91727440a141" version="1">A character who upholds or neglects a sacred oath, a warrior of divinity or demise. They gain Paladin boosts from configuration.</content>
 
 	<!-- Paladin Subclasses -->
-	<content contentuid="h08fb1797g13bfg412dga764gc3087601ba95" version="1">! Subclass: Oath of Devotion Paladin Boost</content>
+	<content contentuid="h08fb1797g13bfg412dga764gc3087601ba95" version="1">! Subclass: Oath of Devotion Paladin</content>
 	<content contentuid="hd41ebf55g11bfg459egbda2g7af1996ef3cf" version="1">A Paladin who acts with honour and virtue to protect the weak and pursue the greater good. They gain Oath of Devotion subclass boosts from configuration.</content>
 
-	<content contentuid="h63d656a0g451cg4061gbee8g6e0ae8814137" version="1">! Subclass: Oath of Vengeance Paladin Boost</content>
+	<content contentuid="h63d656a0g451cg4061gbee8g6e0ae8814137" version="1">! Subclass: Oath of Vengeance Paladin</content>
 	<content contentuid="hcedd322eg85bdg4ba6gae85gd39a68f4caa0" version="1">A Paladin who set aside their own purity to right wrongs and deliver justice by any means necessary. They gain Oath of Vengeance subclass boosts from configuration.</content>
 
-	<content contentuid="h727a7017g43e3g42f2g90aage79f5e4b6513" version="1">! Subclass: Oathbreaker Paladin Boost</content>
+	<content contentuid="h727a7017g43e3g42f2g90aage79f5e4b6513" version="1">! Subclass: Oathbreaker Paladin</content>
 	<content contentuid="h529feb44gb9e2g445dg988cg1311742dc8bc" version="1">A Paladin who broke their Oath in pursuit of power and ambition. They gain Oathbreaker subclass boosts from configuration.</content>
 
 <!-- RANGER -->
