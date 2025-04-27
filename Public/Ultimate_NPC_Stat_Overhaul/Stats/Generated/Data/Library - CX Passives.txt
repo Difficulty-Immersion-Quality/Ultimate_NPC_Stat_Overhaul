@@ -47,39 +47,6 @@ data "Description" "hd5818987ga072g4e8dgb314g97ab96f230cd;1"
 data "Boosts" "Proficiency(SimpleWeapons);Proficiency(MartialWeapons)"
 data "Icon" "Spell_Abjuration_WardingBond"
 
-// ==================================== Monk ====================================
-
-new entry "CX_Monk_Boost"
-type "PassiveData"
-// data "DisplayName" "hb43ce3d7g6c06g46d0g975agcd1417e98969"
-data "DisplayName" "h39b8a7b9g1718g4ee9ga92cgda8d8ede2808;1"
-// data "Description" "hedca9cd9ga20eg4660gb40cgb4b0000c042d"
-data "Description" "h705db622g0893g4d79gae8age3f4ebeca536;1"
-// data "Icon" "PassiveFeature_PurityOfBody"
-data "Icon" "Action_Monk_FlurryOfBlows"
-data "Boosts" ""
-
-new entry "CX_Monk_FourElements_Boost"
-type "PassiveData"
-data "DisplayName" "h9d7e8339ga648g4afeg8e86gc903fd093317;1"
-data "Description" "hc901b2c6gb064g43d7g899cg1638fa8453b3;1"
-data "Icon" "Action_Monk_FangsOfTheFireSnake"
-data "Boosts" ""
-
-new entry "CX_Monk_OpenHand_Boost"
-type "PassiveData"
-data "DisplayName" "h07a62781gfb0fg4225g92f8g8ca347236ec5;1"
-data "Description" "hb571273dga181g4630g98a1g8e7bf5b83102;1"
-data "Icon" "Action_KiResonation_Punch"
-data "Boosts" ""
-
-new entry "CX_Monk_Shadow_Boost"
-type "PassiveData"
-data "DisplayName" "h8caa5dfage0fcg42cbga831gd3ae22c81b70;1"
-data "Description" "hb722f782g4bfeg46f5gb73bg2fe9d71151b4;1"
-data "Icon" "Action_Hide"
-data "Boosts" ""
-
 // ==================================== Paladin ====================================
 
 new entry "CX_Paladin_Boost"
