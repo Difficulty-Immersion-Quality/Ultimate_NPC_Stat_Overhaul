@@ -429,3 +429,238 @@
     //     <attribute id="ProgressionType" type="uint8" value="1"/>
     //     <attribute id="TableUUID" type="guid" value="b82864a7-b093-4553-a802-e176831029c1"/>
     //     <attribute id="UUID" type="guid" value="063383db-7e0b-4e18-aba2-4fa4507911d5"/>
+
+// ==================================== Subclass: Oath of Devotion ====================================
+
+    new entry "CX_Paladin_Devotion_Boost"
+    type "PassiveData"
+    data "DisplayName" "h08fb1797g13bfg412dga764gc3087601ba95;1"
+    data "Description" "hd41ebf55g11bfg459egbda2g7af1996ef3cf;1"
+    data "Icon" "Action_Paladin_SacredWeapon"
+    data "Boosts" ""
+    data "StatsFunctorContext" "OnCreate;OnStatusApplied;OnStatusRemoved"
+    data "Conditions" ""
+    data "StatsFunctors" "IF(not ClassLevelHigherOrEqualThan(2,'NPC_PALADIN') or HasStatus('GOON_NPC_PALADIN_LVL_1')):ApplyStatus(GOON_NPC_PALADIN_DEVOTION_LVL_1,100,-1);IF(ClassLevelHigherOrEqualThan(2,'NPC_PALADIN') and not ClassLevelHigherOrEqualThan(3,'NPC_PALADIN') or HasStatus('GOON_NPC_PALADIN_LVL_2')):ApplyStatus(GOON_NPC_PALADIN_DEVOTION_LVL_2,100,-1);IF(ClassLevelHigherOrEqualThan(3,'NPC_PALADIN') and not ClassLevelHigherOrEqualThan(4,'NPC_PALADIN') or HasStatus('GOON_NPC_PALADIN_LVL_3')):ApplyStatus(GOON_NPC_PALADIN_DEVOTION_LVL_3,100,-1);IF(ClassLevelHigherOrEqualThan(4,'NPC_PALADIN') and not ClassLevelHigherOrEqualThan(5,'NPC_PALADIN') or HasStatus('GOON_NPC_PALADIN_LVL_4')):ApplyStatus(GOON_NPC_PALADIN_DEVOTION_LVL_4,100,-1);IF(ClassLevelHigherOrEqualThan(5,'NPC_PALADIN') and not ClassLevelHigherOrEqualThan(6,'NPC_PALADIN') or HasStatus('GOON_NPC_PALADIN_LVL_5')):ApplyStatus(GOON_NPC_PALADIN_DEVOTION_LVL_5,100,-1);IF(ClassLevelHigherOrEqualThan(6,'NPC_PALADIN') and not ClassLevelHigherOrEqualThan(7,'NPC_PALADIN') or HasStatus('GOON_NPC_PALADIN_LVL_6')):ApplyStatus(GOON_NPC_PALADIN_DEVOTION_LVL_6,100,-1);IF(ClassLevelHigherOrEqualThan(7,'NPC_PALADIN') and not ClassLevelHigherOrEqualThan(8,'NPC_PALADIN') or HasStatus('GOON_NPC_PALADIN_LVL_7')):ApplyStatus(GOON_NPC_PALADIN_DEVOTION_LVL_7,100,-1);IF(ClassLevelHigherOrEqualThan(8,'NPC_PALADIN') and not ClassLevelHigherOrEqualThan(9,'NPC_PALADIN') or HasStatus('GOON_NPC_PALADIN_LVL_8')):ApplyStatus(GOON_NPC_PALADIN_DEVOTION_LVL_8,100,-1);IF(ClassLevelHigherOrEqualThan(9,'NPC_PALADIN') and not ClassLevelHigherOrEqualThan(10,'NPC_PALADIN') or HasStatus('GOON_NPC_PALADIN_LVL_9')):ApplyStatus(GOON_NPC_PALADIN_DEVOTION_LVL_9,100,-1);IF(ClassLevelHigherOrEqualThan(10,'NPC_PALADIN') and not ClassLevelHigherOrEqualThan(11,'NPC_PALADIN') or HasStatus('GOON_NPC_PALADIN_LVL_10')):ApplyStatus(GOON_NPC_PALADIN_DEVOTION_LVL_10,100,-1);IF(ClassLevelHigherOrEqualThan(11,'NPC_PALADIN') and not ClassLevelHigherOrEqualThan(12,'NPC_PALADIN') or HasStatus('GOON_NPC_PALADIN_LVL_11')):ApplyStatus(GOON_NPC_PALADIN_DEVOTION_LVL_11,100,-1);IF(ClassLevelHigherOrEqualThan(12,'NPC_PALADIN') and not ClassLevelHigherOrEqualThan(13,'NPC_PALADIN') or HasStatus('GOON_NPC_PALADIN_LVL_12')):ApplyStatus(GOON_NPC_PALADIN_DEVOTION_LVL_12,100,-1);IF(ClassLevelHigherOrEqualThan(13,'NPC_PALADIN') and not ClassLevelHigherOrEqualThan(14,'NPC_PALADIN') or HasStatus('GOON_NPC_PALADIN_LVL_13')):ApplyStatus(GOON_NPC_PALADIN_DEVOTION_LVL_13,100,-1);IF(ClassLevelHigherOrEqualThan(14,'NPC_PALADIN') and not ClassLevelHigherOrEqualThan(15,'NPC_PALADIN') or HasStatus('GOON_NPC_PALADIN_LVL_14')):ApplyStatus(GOON_NPC_PALADIN_DEVOTION_LVL_14,100,-1);IF(ClassLevelHigherOrEqualThan(15,'NPC_PALADIN') and not ClassLevelHigherOrEqualThan(16,'NPC_PALADIN') or HasStatus('GOON_NPC_PALADIN_LVL_15')):ApplyStatus(GOON_NPC_PALADIN_DEVOTION_LVL_15,100,-1);IF(ClassLevelHigherOrEqualThan(16,'NPC_PALADIN') and not ClassLevelHigherOrEqualThan(17,'NPC_PALADIN') or HasStatus('GOON_NPC_PALADIN_LVL_16')):ApplyStatus(GOON_NPC_PALADIN_DEVOTION_LVL_16,100,-1);IF(ClassLevelHigherOrEqualThan(17,'NPC_PALADIN') and not ClassLevelHigherOrEqualThan(18,'NPC_PALADIN') or HasStatus('GOON_NPC_PALADIN_LVL_17')):ApplyStatus(GOON_NPC_PALADIN_DEVOTION_LVL_17,100,-1);IF(ClassLevelHigherOrEqualThan(18,'NPC_PALADIN') and not ClassLevelHigherOrEqualThan(19,'NPC_PALADIN') or HasStatus('GOON_NPC_PALADIN_LVL_18')):ApplyStatus(GOON_NPC_PALADIN_DEVOTION_LVL_18,100,-1);IF(ClassLevelHigherOrEqualThan(19,'NPC_PALADIN') and not ClassLevelHigherOrEqualThan(20,'NPC_PALADIN') or HasStatus('GOON_NPC_PALADIN_LVL_19')):ApplyStatus(GOON_NPC_PALADIN_DEVOTION_LVL_19,100,-1);IF(ClassLevelHigherOrEqualThan(20,'NPC_PALADIN') or HasStatus('GOON_NPC_PALADIN_LVL_20')):ApplyStatus(GOON_NPC_PALADIN_DEVOTION_LVL_20,100,-1)"
+
+// Template
+    new entry "GOON_NPC_PALADIN_DEVOTION_PROGRESSION_TEMPLATE"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    data "StatusPropertyFlags" "DisableOverhead;DisableCombatlog;DisablePortraitIndicator;ApplyToDead;IgnoreResting"
+    data "RemoveEvents" "OnStatusApplied;OnStatusRemoved"
+    data "StackId" "GOON_NPC_PALADIN_DEVOTION_PROGRESSION_TEMPLATE"
+    data "StackType" "Ignore"
+    data "RemoveConditions" "not HasPassive('CX_Paladin_Devotion_Boost')"
+
+// Progression statuses
+    new entry "GOON_NPC_PALADIN_DEVOTION_LVL_1"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_PALADIN_DEVOTION_PROGRESSION_TEMPLATE"
+    data "StackPriority" "1"
+    data "Passives" "Oath_Devotion_Tenents"
+    data "Boosts" "UnlockSpell(Target_HolyRebuke,AddChildren)"
+
+    // <node id="Progression">
+    //     <attribute id="Level" type="uint8" value="1"/>
+    //     <attribute id="Name" type="LSString" value="Devotion"/>
+    //     <attribute id="PassivesAdded" type="LSString" value="Oath_Devotion_Tenents"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="Selectors" type="LSString" value="AddSpells(b4220712-15bb-4235-b4a8-9946a9708a9c,,,,AlwaysPrepared)"/>
+    //     <attribute id="TableUUID" type="guid" value="941ca27d-02f7-4f59-bd33-63fa3366134d"/>
+    //     <attribute id="UUID" type="guid" value="394623a5-f829-4295-9efc-3ea14197536a"/>
+
+    new entry "GOON_NPC_PALADIN_DEVOTION_LVL_2"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_PALADIN_DEVOTION_LVL_1"
+    data "StackPriority" "2"
+
+    new entry "GOON_NPC_PALADIN_DEVOTION_LVL_3"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_PALADIN_DEVOTION_PROGRESSION_TEMPLATE"
+    data "StackPriority" "3"
+    data "Passives" "Oath_Devotion_Tenents"
+    data "Boosts" "UnlockSpell(Target_HolyRebuke,AddChildren);UnlockSpell(Shout_SacredWeapon,AddChildren);UnlockSpell(Shout_TurnTheUnholy,AddChildren);UnlockSpell(Target_ProtectionFromEvilAndGood,AddChildren);UnlockSpell(Target_Sanctuary,AddChildren)"
+
+    // <node id="Progression">
+    //     <attribute id="Level" type="uint8" value="3"/>
+    //     <attribute id="Name" type="LSString" value="Devotion"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="Selectors" type="LSString" value="AddSpells(660eb07b-ea07-4ff1-91e7-7ca44694dbe7,OathSpells,,,AlwaysPrepared)"/>
+    //     <attribute id="TableUUID" type="guid" value="941ca27d-02f7-4f59-bd33-63fa3366134d"/>
+    //     <attribute id="UUID" type="guid" value="419d61a5-2e61-4aaa-992a-f113817f607c"/>
+
+    new entry "GOON_NPC_PALADIN_DEVOTION_LVL_4"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_PALADIN_DEVOTION_LVL_3"
+    data "StackPriority" "4"
+
+    new entry "GOON_NPC_PALADIN_DEVOTION_LVL_5"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_PALADIN_DEVOTION_PROGRESSION_TEMPLATE"
+    data "StackPriority" "5"
+    data "Passives" "Oath_Devotion_Tenents"
+    data "Boosts" "UnlockSpell(Target_HolyRebuke,AddChildren);UnlockSpell(Shout_SacredWeapon,AddChildren);UnlockSpell(Shout_TurnTheUnholy,AddChildren);UnlockSpell(Target_ProtectionFromEvilAndGood,AddChildren);UnlockSpell(Target_Sanctuary,AddChildren);UnlockSpell(Target_LesserRestoration,AddChildren);UnlockSpell(Target_Silence,AddChildren)"
+
+    // <node id="Progression">
+    //     <attribute id="Level" type="uint8" value="5"/>
+    //     <attribute id="Name" type="LSString" value="Devotion"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="Selectors" type="LSString" value="AddSpells(a54421d2-c07c-451a-b060-a125696e0ce7,OathSpells,,,AlwaysPrepared)"/>
+    //     <attribute id="TableUUID" type="guid" value="941ca27d-02f7-4f59-bd33-63fa3366134d"/>
+    //     <attribute id="UUID" type="guid" value="df3ddb35-5479-45ee-be32-63d75ca6fd90"/>
+
+    new entry "GOON_NPC_PALADIN_DEVOTION_LVL_6"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_PALADIN_DEVOTION_LVL_5"
+    data "StackPriority" "6"
+
+    new entry "GOON_NPC_PALADIN_DEVOTION_LVL_7"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_PALADIN_DEVOTION_PROGRESSION_TEMPLATE"
+    data "StackPriority" "7"
+    data "Passives" "Oath_Devotion_Tenents;Goon_Aura_of_Devotion_Passive"
+    data "Boosts" "UnlockSpell(Target_HolyRebuke,AddChildren);UnlockSpell(Shout_SacredWeapon,AddChildren);UnlockSpell(Shout_TurnTheUnholy,AddChildren);UnlockSpell(Target_ProtectionFromEvilAndGood,AddChildren);UnlockSpell(Target_Sanctuary,AddChildren);UnlockSpell(Target_LesserRestoration,AddChildren);UnlockSpell(Target_Silence,AddChildren)"
+
+    // <node id="Progression">
+    //     <attribute id="Level" type="uint8" value="7"/>
+    //     <attribute id="Name" type="LSString" value="Devotion"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="Selectors" type="LSString" value="AddSpells(7112a6f2-8100-40e8-a411-75cde8847b36,,,,AlwaysPrepared)"/>
+    //     <attribute id="TableUUID" type="guid" value="941ca27d-02f7-4f59-bd33-63fa3366134d"/>
+    //     <attribute id="UUID" type="guid" value="d70e545b-851e-4e3f-9a61-165123c5fee0"/>
+
+    new entry "GOON_NPC_PALADIN_DEVOTION_LVL_8"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_PALADIN_DEVOTION_LVL_7"
+    data "StackPriority" "8"
+
+    new entry "GOON_NPC_PALADIN_DEVOTION_LVL_9"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_PALADIN_DEVOTION_PROGRESSION_TEMPLATE"
+    data "StackPriority" "9"
+    data "Passives" "Oath_Devotion_Tenents;Goon_Aura_of_Devotion_Passive"
+    data "Boosts" "UnlockSpell(Target_HolyRebuke,AddChildren);UnlockSpell(Shout_SacredWeapon,AddChildren);UnlockSpell(Shout_TurnTheUnholy,AddChildren);UnlockSpell(Target_ProtectionFromEvilAndGood,AddChildren);UnlockSpell(Target_Sanctuary,AddChildren);UnlockSpell(Target_LesserRestoration,AddChildren);UnlockSpell(Target_Silence,AddChildren);UnlockSpell(Shout_BeaconOfHope,AddChildren);UnlockSpell(Target_RemoveCurse,AddChildren)"
+
+    // <node id="Progression">
+    //     <attribute id="Level" type="uint8" value="9"/>
+    //     <attribute id="Name" type="LSString" value="Devotion"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="Selectors" type="LSString" value="AddSpells(99a16aaf-233b-4eb0-82cd-c4abfd2e389f,OathSpells,,,AlwaysPrepared)"/>
+    //     <attribute id="TableUUID" type="guid" value="941ca27d-02f7-4f59-bd33-63fa3366134d"/>
+    //     <attribute id="UUID" type="guid" value="5e9cbd8a-af0f-4ce8-a9ac-cc31d4873c61"/>
+
+    new entry "GOON_NPC_PALADIN_DEVOTION_LVL_10"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_PALADIN_DEVOTION_LVL_9"
+    data "StackPriority" "10"
+
+    new entry "GOON_NPC_PALADIN_DEVOTION_LVL_11"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_PALADIN_DEVOTION_LVL_9"
+    data "StackPriority" "11"
+
+    new entry "GOON_NPC_PALADIN_DEVOTION_LVL_12"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_PALADIN_DEVOTION_LVL_9"
+    data "StackPriority" "12"
+
+// Expansion levels 13-20
+    new entry "GOON_NPC_PALADIN_DEVOTION_LVL_13"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_PALADIN_DEVOTION_PROGRESSION_TEMPLATE"
+    data "StackPriority" "13"
+    data "Passives" "Oath_Devotion_Tenents;Goon_Aura_of_Devotion_Passive"
+    data "Boosts" "UnlockSpell(Target_HolyRebuke,AddChildren);UnlockSpell(Shout_SacredWeapon,AddChildren);UnlockSpell(Shout_TurnTheUnholy,AddChildren);UnlockSpell(Target_ProtectionFromEvilAndGood,AddChildren);UnlockSpell(Target_Sanctuary,AddChildren);UnlockSpell(Target_LesserRestoration,AddChildren);UnlockSpell(Target_Silence,AddChildren);UnlockSpell(Shout_BeaconOfHope,AddChildren);UnlockSpell(Target_RemoveCurse,AddChildren);UnlockSpell(Target_FreedomOfMovement,AddChildren);UnlockSpell(Target_GuardianOfFaith,AddChildren)"
+
+    // <node id="Progression">
+    //     <attribute id="Level" type="uint8" value="13"/>
+    //     <attribute id="Name" type="LSString" value="Devotion"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="Selectors" type="LSString" value="AddSpells(592ad940-48a6-4835-a147-84d0a237b9bf,OathSpells,,,AlwaysPrepared)"/>
+    //     <attribute id="TableUUID" type="guid" value="941ca27d-02f7-4f59-bd33-63fa3366134d"/>
+    //     <attribute id="UUID" type="guid" value="02eccb42-2065-4d09-850a-f60a0db78c20"/>
+    
+    new entry "GOON_NPC_PALADIN_DEVOTION_LVL_14"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_PALADIN_DEVOTION_LVL_13"
+    data "StackPriority" "14"
+    
+    new entry "GOON_NPC_PALADIN_DEVOTION_LVL_15"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_PALADIN_DEVOTION_PROGRESSION_TEMPLATE"
+    data "StackPriority" "15"
+    data "Passives" "Oath_Devotion_Tenents;Goon_Aura_of_Devotion_Passive;PurityOfSpirit"
+    data "Boosts" "UnlockSpell(Target_HolyRebuke,AddChildren);UnlockSpell(Shout_SacredWeapon,AddChildren);UnlockSpell(Shout_TurnTheUnholy,AddChildren);UnlockSpell(Target_ProtectionFromEvilAndGood,AddChildren);UnlockSpell(Target_Sanctuary,AddChildren);UnlockSpell(Target_LesserRestoration,AddChildren);UnlockSpell(Target_Silence,AddChildren);UnlockSpell(Shout_BeaconOfHope,AddChildren);UnlockSpell(Target_RemoveCurse,AddChildren);UnlockSpell(Target_FreedomOfMovement,AddChildren);UnlockSpell(Target_GuardianOfFaith,AddChildren)"
+
+    // <node id="Progression">
+    //     <attribute id="Level" type="uint8" value="15"/>
+    //     <attribute id="Name" type="LSString" value="Devotion"/>
+    //     <attribute id="PassivesAdded" type="LSString" value="PurityOfSpirit"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="TableUUID" type="guid" value="941ca27d-02f7-4f59-bd33-63fa3366134d"/>
+    //     <attribute id="UUID" type="guid" value="bc293ed7-a2e5-428d-bb83-bf009267b4c5"/>
+    
+    new entry "GOON_NPC_PALADIN_DEVOTION_LVL_16"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_PALADIN_DEVOTION_LVL_15"
+    data "StackPriority" "16"
+    
+    new entry "GOON_NPC_PALADIN_DEVOTION_LVL_17"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_PALADIN_DEVOTION_PROGRESSION_TEMPLATE"
+    data "StackPriority" "17"
+    data "Passives" "Oath_Devotion_Tenents;Goon_Aura_of_Devotion_Passive;PurityOfSpirit"
+    data "Boosts" "UnlockSpell(Target_HolyRebuke,AddChildren);UnlockSpell(Shout_SacredWeapon,AddChildren);UnlockSpell(Shout_TurnTheUnholy,AddChildren);UnlockSpell(Target_ProtectionFromEvilAndGood,AddChildren);UnlockSpell(Target_Sanctuary,AddChildren);UnlockSpell(Target_LesserRestoration,AddChildren);UnlockSpell(Target_Silence,AddChildren);UnlockSpell(Shout_BeaconOfHope,AddChildren);UnlockSpell(Target_RemoveCurse,AddChildren);UnlockSpell(Target_FreedomOfMovement,AddChildren);UnlockSpell(Target_GuardianOfFaith,AddChildren);UnlockSpell(Target_FlameStrike,AddChildren);UnlockSpell(Target_GreaterRestoration,AddChildren)"
+
+    // <node id="Progression">
+    //     <attribute id="Level" type="uint8" value="17"/>
+    //     <attribute id="Name" type="LSString" value="Devotion"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="Selectors" type="LSString" value="AddSpells(70ee3e4a-536f-485d-882a-94de6fbf7c65,OathSpells,,,AlwaysPrepared)"/>
+    //     <attribute id="TableUUID" type="guid" value="941ca27d-02f7-4f59-bd33-63fa3366134d"/>
+    //     <attribute id="UUID" type="guid" value="b11ede35-3379-481f-ac42-1c2a5613cd8a"/>
+    
+    new entry "GOON_NPC_PALADIN_DEVOTION_LVL_18"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_PALADIN_DEVOTION_LVL_17"
+    data "StackPriority" "18"
+    
+    new entry "GOON_NPC_PALADIN_DEVOTION_LVL_19"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_PALADIN_DEVOTION_LVL_17"
+    data "StackPriority" "19"
+    
+    new entry "GOON_NPC_PALADIN_DEVOTION_LVL_20"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_PALADIN_DEVOTION_PROGRESSION_TEMPLATE"
+    data "StackPriority" "20"
+    data "Passives" "Oath_Devotion_Tenents;Goon_Aura_of_Devotion_Passive;PurityOfSpirit;HolyNimbus"
+    data "Boosts" "UnlockSpell(Target_HolyRebuke,AddChildren);UnlockSpell(Shout_SacredWeapon,AddChildren);UnlockSpell(Shout_TurnTheUnholy,AddChildren);UnlockSpell(Target_ProtectionFromEvilAndGood,AddChildren);UnlockSpell(Target_Sanctuary,AddChildren);UnlockSpell(Target_LesserRestoration,AddChildren);UnlockSpell(Target_Silence,AddChildren);UnlockSpell(Shout_BeaconOfHope,AddChildren);UnlockSpell(Target_RemoveCurse,AddChildren);UnlockSpell(Target_FreedomOfMovement,AddChildren);UnlockSpell(Target_GuardianOfFaith,AddChildren);UnlockSpell(Target_FlameStrike,AddChildren);UnlockSpell(Target_GreaterRestoration,AddChildren)"
+
+    // <node id="Progression">
+    //     <attribute id="Level" type="uint8" value="20"/>
+    //     <attribute id="Name" type="LSString" value="Devotion"/>
+    //     <attribute id="PassivesAdded" type="LSString" value="HolyNimbus"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="TableUUID" type="guid" value="941ca27d-02f7-4f59-bd33-63fa3366134d"/>
+    //     <attribute id="UUID" type="guid" value="941b3dc9-8657-473a-8138-ce306517f1dd"/>
