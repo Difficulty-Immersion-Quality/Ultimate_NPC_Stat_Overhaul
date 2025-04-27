@@ -958,12 +958,13 @@
             <!-- MONK -->
                 <node id="Progression">
                     <!-- <attribute id="Boosts" type="LSString" value="ProficiencyBonus(SavingThrow,Strength);ProficiencyBonus(SavingThrow,Dexterity);Proficiency(SimpleWeapons);Proficiency(Shortswords)"/> -->
-                    <attribute id="Boosts" type="LSString" value="ProficiencyBonus(SavingThrow,Strength);ProficiencyBonus(SavingThrow,Dexterity);Proficiency(SimpleWeapons);Proficiency(Shortswords);ActionResource(KiPoint,2,0);ProficiencyBonus(Skill,Athletics);ProficiencyBonus(Skill,Acrobatics);ProficiencyBonus(Skill,Religion)"/>
+                    <attribute id="Boosts" type="LSString" value="Tag(MONK);ProficiencyBonus(SavingThrow,Strength);ProficiencyBonus(SavingThrow,Dexterity);Proficiency(SimpleWeapons);Proficiency(Shortswords);ActionResource(KiPoint,2,0)"/>
                     <attribute id="Level" type="uint8" value="1"/>
                     <attribute id="Name" type="LSString" value="NPC_Monk"/>
                     <!-- <attribute id="PassivesAdded" type="LSString" value="UnarmoredDefense_Monk;MartialArts_DextrousUnarmedAttacks;MartialArts_UnarmedDamage;MartialArts_BonusUnarmedStrike"/> -->
-                    <attribute id="PassivesAdded" type="LSString" value="UnarmoredDefense_Monk;MartialArts_DextrousUnarmedAttacks;MartialArts_UnarmedDamage;MartialArts_BonusUnarmedStrike;Monk_SoundSwitch;FlurryOfBlowsUnlock;Goon_Monk_NPC_Progressions"/>
+                    <attribute id="PassivesAdded" type="LSString" value="UnarmoredDefense_Monk;MartialArts_DextrousUnarmedAttacks;MartialArts_UnarmedDamage;MartialArts_BonusUnarmedStrike;Monk_SoundSwitch;FlurryOfBlowsUnlock;Goon_Monk_NPC_Progressions;CX_Monk_Boost;CX_Martial_Boost"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <!-- <attribute id="Selectors" type="LSString" value="SelectSkills(5f1c7177-6e28-4a42-a7a5-cfaf4c31519c,2);SelectAbilityBonus(b9149c8e-52c8-46e5-9cb6-fc39301c05fe,AbilityBonus,2,1)"/> -->
                     <attribute id="TableUUID" type="guid" value="878630d0-136a-4dc9-aa2a-a0a123d3a107"/>
                     <attribute id="UUID" type="guid" value="44a6c6b2-25f1-4248-82e3-3676bfe992a0"/>
                 </node>
@@ -976,11 +977,11 @@
                     <attribute id="PassivesAdded" type="LSString" value="UnarmoredMovement_1;DedicatedWeapon"/>
                     <!-- <attribute id="Selectors" type="LSString" value=""/> -->
                     <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <!-- <attribute id="Selectors" type="LSString" value="AddSpells(2715246d-3375-4766-9a3e-5961efd56748)"/> -->
                     <attribute id="TableUUID" type="guid" value="878630d0-136a-4dc9-aa2a-a0a123d3a107"/>
                     <attribute id="UUID" type="guid" value="80f2f343-fc7a-4346-924b-b119e3354da5"/>
                 </node>
                 <node id="Progression">
-                    <!-- TODO: Roulette a subclass, then unlock its features when appropriate -->
                     <!-- <attribute id="Boosts" type="LSString" value="ActionResource(KiPoint,1,0)"/> -->
                     <attribute id="Boosts" type="LSString" value="ActionResource(KiPoint,1,0);ActionResource(DeflectMissiles_Charge,1,0)"/>
                     <attribute id="Level" type="uint8" value="3"/>
@@ -992,7 +993,7 @@
                     <attribute id="UUID" type="guid" value="45cf151d-5ed6-4b87-835b-6de2cec7601a"/>
                 </node>
                 <node id="Progression">
-                    <!-- TODO: Roulette an appropriate feat? -->
+                    <!-- <attribute id="AllowImprovement" type="bool" value="true"/> -->
                     <attribute id="Boosts" type="LSString" value="ActionResource(KiPoint,1,0)"/>
                     <attribute id="Level" type="uint8" value="4"/>
                     <attribute id="Name" type="LSString" value="NPC_Monk"/>
@@ -1010,6 +1011,7 @@
                     <!-- <attribute id="PassivesAdded" type="LSString" value="ExtraAttack"/> -->
                     <attribute id="PassivesAdded" type="LSString" value="ExtraAttack;FocusedAim"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <!-- <attribute id="Selectors" type="LSString" value="AddSpells(3ba6090a-a8be-4938-82ef-40eba0083441)"/> -->
                     <attribute id="TableUUID" type="guid" value="878630d0-136a-4dc9-aa2a-a0a123d3a107"/>
                     <attribute id="UUID" type="guid" value="ea9647bf-4d05-4dba-aae9-8591b964e02a"/>
                 </node>
@@ -1033,7 +1035,7 @@
                     <attribute id="UUID" type="guid" value="fb7990f2-5f43-4ed6-a9db-35c5a65603ad"/>
                 </node>
                 <node id="Progression">
-                    <!-- TODO: Roulette an appropriate feat? -->
+                    <!-- <attribute id="AllowImprovement" type="bool" value="true"/> -->
                     <attribute id="Boosts" type="LSString" value="ActionResource(KiPoint,1,0)"/>
                     <attribute id="Level" type="uint8" value="8"/>
                     <attribute id="Name" type="LSString" value="NPC_Monk"/>
@@ -1069,7 +1071,7 @@
                     <attribute id="UUID" type="guid" value="79f4fdb0-fa03-4828-8e62-345f66b96c9e"/>
                 </node>
                 <node id="Progression">
-                    <!-- TODO: Roulette an appropriate feat? -->
+                    <!-- <attribute id="AllowImprovement" type="bool" value="true"/> -->
                     <attribute id="Boosts" type="LSString" value="ActionResource(KiPoint,1,0)"/>
                     <attribute id="Level" type="uint8" value="12"/>
                     <attribute id="Name" type="LSString" value="NPC_Monk"/>
@@ -1107,7 +1109,7 @@
                     <attribute id="UUID" type="guid" value="019f2052-6818-4030-8c5e-ddc70027a133"/>
                 </node>
                 <node id="Progression">
-                    <attribute id="AllowImprovement" type="bool" value="true"/>
+                    <!-- <attribute id="AllowImprovement" type="bool" value="true"/> -->
                     <attribute id="Boosts" type="LSString" value="ActionResource(KiPoint,1,0)"/>
                     <attribute id="Level" type="uint8" value="16"/>
                     <attribute id="Name" type="LSString" value="NPC_Monk"/>
@@ -1134,7 +1136,7 @@
                     <attribute id="UUID" type="guid" value="c767ce84-e2f2-41c2-a982-a4a4d7e7af3f"/>
                 </node>
                 <node id="Progression">
-                    <attribute id="AllowImprovement" type="bool" value="true"/>
+                    <!-- <attribute id="AllowImprovement" type="bool" value="true"/> -->
                     <attribute id="Boosts" type="LSString" value="ActionResource(KiPoint,1,0)"/>
                     <attribute id="Level" type="uint8" value="19"/>
                     <attribute id="Name" type="LSString" value="NPC_Monk"/>
