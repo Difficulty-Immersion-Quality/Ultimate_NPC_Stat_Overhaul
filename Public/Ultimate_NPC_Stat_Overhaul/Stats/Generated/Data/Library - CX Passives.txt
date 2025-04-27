@@ -49,13 +49,6 @@ data "Icon" "Spell_Abjuration_WardingBond"
 
 // ==================================== Paladin ====================================
 
-new entry "CX_Paladin_Vengeance_Boost"
-type "PassiveData"
-data "DisplayName" "h63d656a0g451cg4061gbee8g6e0ae8814137;1"
-data "Description" "hcedd322eg85bdg4ba6gae85gd39a68f4caa0;1"
-data "Icon" "Action_Paladin_InquisitorsMight"
-data "Boosts" ""
-
 new entry "CX_Paladin_Oathbreaker_Boost"
 type "PassiveData"
 data "DisplayName" "h727a7017g43e3g42f2g90aage79f5e4b6513;1"
