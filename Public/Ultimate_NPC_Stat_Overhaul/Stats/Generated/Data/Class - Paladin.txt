@@ -193,4 +193,239 @@
     type "StatusData"
     data "StatusType" "BOOST"
     using "GOON_NPC_PALADIN_LVL_19"
-    data "StackPriority" "20"=
+    data "StackPriority" "20"
+
+// ==================================== Subclass: Oath of the Ancients ====================================
+
+    new entry "CX_Paladin_Ancients_Boost"
+    type "PassiveData"
+    data "DisplayName" "he08960f8gf689g41e6gbfc2gec7059617d8c;1"
+    data "Description" "h74725b1fg6ed2g42bcg885eg722d3c8802fe;1"
+    data "Icon" "Action_Paladin_HealingRadiance"
+    data "Boosts" ""
+    data "StatsFunctorContext" "OnCreate;OnStatusApplied;OnStatusRemoved"
+    data "Conditions" ""
+    data "StatsFunctors" "IF(not ClassLevelHigherOrEqualThan(2,'NPC_PALADIN') or HasStatus('GOON_NPC_PALADIN_LVL_1')):ApplyStatus(GOON_NPC_PALADIN_ANCIENTS_LVL_1,100,-1);IF(ClassLevelHigherOrEqualThan(2,'NPC_PALADIN') and not ClassLevelHigherOrEqualThan(3,'NPC_PALADIN') or HasStatus('GOON_NPC_PALADIN_LVL_2')):ApplyStatus(GOON_NPC_PALADIN_ANCIENTS_LVL_2,100,-1);IF(ClassLevelHigherOrEqualThan(3,'NPC_PALADIN') and not ClassLevelHigherOrEqualThan(4,'NPC_PALADIN') or HasStatus('GOON_NPC_PALADIN_LVL_3')):ApplyStatus(GOON_NPC_PALADIN_ANCIENTS_LVL_3,100,-1);IF(ClassLevelHigherOrEqualThan(4,'NPC_PALADIN') and not ClassLevelHigherOrEqualThan(5,'NPC_PALADIN') or HasStatus('GOON_NPC_PALADIN_LVL_4')):ApplyStatus(GOON_NPC_PALADIN_ANCIENTS_LVL_4,100,-1);IF(ClassLevelHigherOrEqualThan(5,'NPC_PALADIN') and not ClassLevelHigherOrEqualThan(6,'NPC_PALADIN') or HasStatus('GOON_NPC_PALADIN_LVL_5')):ApplyStatus(GOON_NPC_PALADIN_ANCIENTS_LVL_5,100,-1);IF(ClassLevelHigherOrEqualThan(6,'NPC_PALADIN') and not ClassLevelHigherOrEqualThan(7,'NPC_PALADIN') or HasStatus('GOON_NPC_PALADIN_LVL_6')):ApplyStatus(GOON_NPC_PALADIN_ANCIENTS_LVL_6,100,-1);IF(ClassLevelHigherOrEqualThan(7,'NPC_PALADIN') and not ClassLevelHigherOrEqualThan(8,'NPC_PALADIN') or HasStatus('GOON_NPC_PALADIN_LVL_7')):ApplyStatus(GOON_NPC_PALADIN_ANCIENTS_LVL_7,100,-1);IF(ClassLevelHigherOrEqualThan(8,'NPC_PALADIN') and not ClassLevelHigherOrEqualThan(9,'NPC_PALADIN') or HasStatus('GOON_NPC_PALADIN_LVL_8')):ApplyStatus(GOON_NPC_PALADIN_ANCIENTS_LVL_8,100,-1);IF(ClassLevelHigherOrEqualThan(9,'NPC_PALADIN') and not ClassLevelHigherOrEqualThan(10,'NPC_PALADIN') or HasStatus('GOON_NPC_PALADIN_LVL_9')):ApplyStatus(GOON_NPC_PALADIN_ANCIENTS_LVL_9,100,-1);IF(ClassLevelHigherOrEqualThan(10,'NPC_PALADIN') and not ClassLevelHigherOrEqualThan(11,'NPC_PALADIN') or HasStatus('GOON_NPC_PALADIN_LVL_10')):ApplyStatus(GOON_NPC_PALADIN_ANCIENTS_LVL_10,100,-1);IF(ClassLevelHigherOrEqualThan(11,'NPC_PALADIN') and not ClassLevelHigherOrEqualThan(12,'NPC_PALADIN') or HasStatus('GOON_NPC_PALADIN_LVL_11')):ApplyStatus(GOON_NPC_PALADIN_ANCIENTS_LVL_11,100,-1);IF(ClassLevelHigherOrEqualThan(12,'NPC_PALADIN') and not ClassLevelHigherOrEqualThan(13,'NPC_PALADIN') or HasStatus('GOON_NPC_PALADIN_LVL_12')):ApplyStatus(GOON_NPC_PALADIN_ANCIENTS_LVL_12,100,-1);IF(ClassLevelHigherOrEqualThan(13,'NPC_PALADIN') and not ClassLevelHigherOrEqualThan(14,'NPC_PALADIN') or HasStatus('GOON_NPC_PALADIN_LVL_13')):ApplyStatus(GOON_NPC_PALADIN_ANCIENTS_LVL_13,100,-1);IF(ClassLevelHigherOrEqualThan(14,'NPC_PALADIN') and not ClassLevelHigherOrEqualThan(15,'NPC_PALADIN') or HasStatus('GOON_NPC_PALADIN_LVL_14')):ApplyStatus(GOON_NPC_PALADIN_ANCIENTS_LVL_14,100,-1);IF(ClassLevelHigherOrEqualThan(15,'NPC_PALADIN') and not ClassLevelHigherOrEqualThan(16,'NPC_PALADIN') or HasStatus('GOON_NPC_PALADIN_LVL_15')):ApplyStatus(GOON_NPC_PALADIN_ANCIENTS_LVL_15,100,-1);IF(ClassLevelHigherOrEqualThan(16,'NPC_PALADIN') and not ClassLevelHigherOrEqualThan(17,'NPC_PALADIN') or HasStatus('GOON_NPC_PALADIN_LVL_16')):ApplyStatus(GOON_NPC_PALADIN_ANCIENTS_LVL_16,100,-1);IF(ClassLevelHigherOrEqualThan(17,'NPC_PALADIN') and not ClassLevelHigherOrEqualThan(18,'NPC_PALADIN') or HasStatus('GOON_NPC_PALADIN_LVL_17')):ApplyStatus(GOON_NPC_PALADIN_ANCIENTS_LVL_17,100,-1);IF(ClassLevelHigherOrEqualThan(18,'NPC_PALADIN') and not ClassLevelHigherOrEqualThan(19,'NPC_PALADIN') or HasStatus('GOON_NPC_PALADIN_LVL_18')):ApplyStatus(GOON_NPC_PALADIN_ANCIENTS_LVL_18,100,-1);IF(ClassLevelHigherOrEqualThan(19,'NPC_PALADIN') and not ClassLevelHigherOrEqualThan(20,'NPC_PALADIN') or HasStatus('GOON_NPC_PALADIN_LVL_19')):ApplyStatus(GOON_NPC_PALADIN_ANCIENTS_LVL_19,100,-1);IF(ClassLevelHigherOrEqualThan(20,'NPC_PALADIN') or HasStatus('GOON_NPC_PALADIN_LVL_20')):ApplyStatus(GOON_NPC_PALADIN_ANCIENTS_LVL_20,100,-1)"
+
+// Template
+    new entry "GOON_NPC_PALADIN_ANCIENTS_PROGRESSION_TEMPLATE"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    data "StatusPropertyFlags" "DisableOverhead;DisableCombatlog;DisablePortraitIndicator;ApplyToDead;IgnoreResting"
+    data "RemoveEvents" "OnStatusApplied;OnStatusRemoved"
+    data "StackId" "GOON_NPC_PALADIN_ANCIENTS_PROGRESSION_TEMPLATE"
+    data "StackType" "Ignore"
+    data "RemoveConditions" "not HasPassive('CX_Paladin_Ancients_Boost')"
+
+// Progression statuses
+    new entry "GOON_NPC_PALADIN_ANCIENTS_LVL_1"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_PALADIN_ANCIENTS_PROGRESSION_TEMPLATE"
+    data "StackPriority" "1"
+    data "Passives" "Oath_Ancients_Tenents"
+    data "Boosts" "UnlockSpell(Shout_HealingRadiance,AddChildren)"
+
+    // <node id="Progression">
+    //     <attribute id="Level" type="uint8" value="1"/>
+    //     <attribute id="Name" type="LSString" value="Ancients"/>
+    //     <attribute id="PassivesAdded" type="LSString" value="Oath_Ancients_Tenents"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="Selectors" type="LSString" value="AddSpells(9e04298e-871d-414d-979a-c05570df603b,,,,AlwaysPrepared)"/>
+    //     <attribute id="TableUUID" type="guid" value="b82864a7-b093-4553-a802-e176831029c1"/>
+    //     <attribute id="UUID" type="guid" value="c5896730-ac3f-4f00-b719-41a1ed82616b"/>
+
+    new entry "GOON_NPC_PALADIN_ANCIENTS_LVL_1"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_PALADIN_ANCIENTS_PROGRESSION_TEMPLATE"
+    data "StackPriority" "2"
+
+    new entry "GOON_NPC_PALADIN_ANCIENTS_LVL_3"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_PALADIN_ANCIENTS_PROGRESSION_TEMPLATE"
+    data "StackPriority" "3"
+    data "Passives" "Oath_Ancients_Tenents"
+    data "Boosts" "UnlockSpell(Shout_HealingRadiance,AddChildren);UnlockSpell(Target_NaturesWrath,AddChildren);UnlockSpell(Shout_TurnTheFaithless,AddChildren);UnlockSpell(Shout_SpeakWithAnimals,AddChildren);UnlockSpell(Projectile_EnsnaringStrike_Container,AddChildren)"
+
+    // <node id="Progression">
+    //     <attribute id="Level" type="uint8" value="3"/>
+    //     <attribute id="Name" type="LSString" value="Ancients"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="Selectors" type="LSString" value="AddSpells(de27ac05-a6d2-4c77-8bc9-1611344f6370,OathSpells,,,AlwaysPrepared)"/>
+    //     <attribute id="TableUUID" type="guid" value="b82864a7-b093-4553-a802-e176831029c1"/>
+    //     <attribute id="UUID" type="guid" value="11c1bab3-90d0-4558-895b-200bca7ec2e3"/>
+
+    new entry "GOON_NPC_PALADIN_ANCIENTS_LVL_4"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_PALADIN_ANCIENTS_LVL_3"
+    data "StackPriority" "4"
+
+    new entry "GOON_NPC_PALADIN_ANCIENTS_LVL_5"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_PALADIN_ANCIENTS_PROGRESSION_TEMPLATE"
+    data "StackPriority" "5"
+    data "Passives" "Oath_Ancients_Tenents"
+    data "Boosts" "UnlockSpell(Shout_HealingRadiance,AddChildren);UnlockSpell(Target_NaturesWrath,AddChildren);UnlockSpell(Shout_TurnTheFaithless,AddChildren);UnlockSpell(Shout_SpeakWithAnimals,AddChildren);UnlockSpell(Projectile_EnsnaringStrike_Container,AddChildren);UnlockSpell(Target_MistyStep,AddChildren);UnlockSpell(Target_Moonbeam,AddChildren)"
+
+    // <node id="Progression">
+    //     <attribute id="Level" type="uint8" value="5"/>
+    //     <attribute id="Name" type="LSString" value="Ancients"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="Selectors" type="LSString" value="AddSpells(0557efcb-f072-45e3-aee0-4f84359e777d,OathSpells,,,AlwaysPrepared)"/>
+    //     <attribute id="TableUUID" type="guid" value="b82864a7-b093-4553-a802-e176831029c1"/>
+    //     <attribute id="UUID" type="guid" value="ccbbcbad-d2b1-4064-a731-81480cf78d9f"/>
+
+    new entry "GOON_NPC_PALADIN_ANCIENTS_LVL_6"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_PALADIN_ANCIENTS_LVL_5"
+    data "StackPriority" "6"
+
+    new entry "GOON_NPC_PALADIN_ANCIENTS_LVL_7"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_PALADIN_ANCIENTS_PROGRESSION_TEMPLATE"
+    data "StackPriority" "7"
+    data "Passives" "Oath_Ancients_Tenents;Goon_Aura_of_Warding_Passive"
+    data "Boosts" "UnlockSpell(Shout_HealingRadiance,AddChildren);UnlockSpell(Target_NaturesWrath,AddChildren);UnlockSpell(Shout_TurnTheFaithless,AddChildren);UnlockSpell(Shout_SpeakWithAnimals,AddChildren);UnlockSpell(Projectile_EnsnaringStrike_Container,AddChildren);UnlockSpell(Target_MistyStep,AddChildren);UnlockSpell(Target_Moonbeam,AddChildren)"
+
+    // <node id="Progression">
+    //     <attribute id="Level" type="uint8" value="7"/>
+    //     <attribute id="Name" type="LSString" value="Ancients"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="Selectors" type="LSString" value="AddSpells(f6e69adb-d2d3-4d38-aca1-639fb38cf0fd,,,,AlwaysPrepared)"/>
+    //     <attribute id="TableUUID" type="guid" value="b82864a7-b093-4553-a802-e176831029c1"/>
+    //     <attribute id="UUID" type="guid" value="2a57202d-4f50-47de-bdca-f5aa7addf1ff"/>
+
+    new entry "GOON_NPC_PALADIN_ANCIENTS_LVL_8"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_PALADIN_ANCIENTS_LVL_7"
+    data "StackPriority" "8"
+
+    new entry "GOON_NPC_PALADIN_ANCIENTS_LVL_9"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_PALADIN_ANCIENTS_PROGRESSION_TEMPLATE"
+    data "StackPriority" "9"
+    data "Passives" "Oath_Ancients_Tenents;Goon_Aura_of_Warding_Passive"
+    data "Boosts" "UnlockSpell(Shout_HealingRadiance,AddChildren);UnlockSpell(Target_NaturesWrath,AddChildren);UnlockSpell(Shout_TurnTheFaithless,AddChildren);UnlockSpell(Shout_SpeakWithAnimals,AddChildren);UnlockSpell(Projectile_EnsnaringStrike_Container,AddChildren);UnlockSpell(Target_MistyStep,AddChildren);UnlockSpell(Target_Moonbeam,AddChildren);UnlockSpell(Target_ProtectionFromEnergy,AddChildren);UnlockSpell(Target_PlantGrowth,AddChildren)"
+
+    // <node id="Progression">
+    //     <attribute id="Level" type="uint8" value="9"/>
+    //     <attribute id="Name" type="LSString" value="Ancients"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="Selectors" type="LSString" value="AddSpells(02c495eb-c79a-445d-804c-628be82b586b,OathSpells,,,AlwaysPrepared)"/>
+    //     <attribute id="TableUUID" type="guid" value="b82864a7-b093-4553-a802-e176831029c1"/>
+    //     <attribute id="UUID" type="guid" value="ed44db42-a704-4717-aed3-7d3672775b36"/>
+
+    new entry "GOON_NPC_PALADIN_ANCIENTS_LVL_10"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_PALADIN_ANCIENTS_LVL_9"
+    data "StackPriority" "10"
+
+    new entry "GOON_NPC_PALADIN_ANCIENTS_LVL_11"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_PALADIN_ANCIENTS_LVL_9"
+    data "StackPriority" "11"
+
+    new entry "GOON_NPC_PALADIN_ANCIENTS_LVL_12"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_PALADIN_ANCIENTS_LVL_9"
+    data "StackPriority" "12"
+
+// Expansion levels 13-20
+    new entry "GOON_NPC_PALADIN_ANCIENTS_LVL_13"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_PALADIN_ANCIENTS_PROGRESSION_TEMPLATE"
+    data "StackPriority" "13"
+    data "Passives" "Oath_Ancients_Tenents;Goon_Aura_of_Warding_Passive"
+    data "Boosts" "UnlockSpell(Shout_HealingRadiance,AddChildren);UnlockSpell(Target_NaturesWrath,AddChildren);UnlockSpell(Shout_TurnTheFaithless,AddChildren);UnlockSpell(Shout_SpeakWithAnimals,AddChildren);UnlockSpell(Projectile_EnsnaringStrike_Container,AddChildren);UnlockSpell(Target_MistyStep,AddChildren);UnlockSpell(Target_Moonbeam,AddChildren);UnlockSpell(Target_ProtectionFromEnergy,AddChildren);UnlockSpell(Target_PlantGrowth,AddChildren);UnlockSpell(Target_IceStorm,AddChildren);UnlockSpell(Target_Stoneskin,AddChildren)"
+
+    // <node id="Progression">
+    //     <attribute id="Level" type="uint8" value="13"/>
+    //     <attribute id="Name" type="LSString" value="Ancients"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="Selectors" type="LSString" value="AddSpells(e119674f-37d0-49f5-8c6e-426f65a254bc,OathSpells,,,AlwaysPrepared)"/>
+    //     <attribute id="TableUUID" type="guid" value="b82864a7-b093-4553-a802-e176831029c1"/>
+    //     <attribute id="UUID" type="guid" value="9000efa3-d897-43fc-a378-cbabc73b36bf"/>
+
+    new entry "GOON_NPC_PALADIN_ANCIENTS_LVL_14"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_PALADIN_ANCIENTS_LVL_13"
+    data "StackPriority" "14"
+    
+    new entry "GOON_NPC_PALADIN_ANCIENTS_LVL_15"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_PALADIN_ANCIENTS_PROGRESSION_TEMPLATE"
+    data "StackPriority" "15"
+    data "Passives" "Oath_Ancients_Tenents;Goon_Aura_of_Warding_Passive;UndyingSentinel"
+    data "Boosts" "UnlockSpell(Shout_HealingRadiance,AddChildren);UnlockSpell(Target_NaturesWrath,AddChildren);UnlockSpell(Shout_TurnTheFaithless,AddChildren);UnlockSpell(Shout_SpeakWithAnimals,AddChildren);UnlockSpell(Projectile_EnsnaringStrike_Container,AddChildren);UnlockSpell(Target_MistyStep,AddChildren);UnlockSpell(Target_Moonbeam,AddChildren);UnlockSpell(Target_ProtectionFromEnergy,AddChildren);UnlockSpell(Target_PlantGrowth,AddChildren);UnlockSpell(Target_IceStorm,AddChildren);UnlockSpell(Target_Stoneskin,AddChildren)"
+
+    // <node id="Progression">
+    //     <attribute id="Level" type="uint8" value="15"/>
+    //     <attribute id="Name" type="LSString" value="Ancients"/>
+    //     <attribute id="PassivesAdded" type="LSString" value="UndyingSentinel"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="TableUUID" type="guid" value="b82864a7-b093-4553-a802-e176831029c1"/>
+    //     <attribute id="UUID" type="guid" value="02de3183-5481-4988-8d00-f2ad177e225b"/>
+    
+    new entry "GOON_NPC_PALADIN_ANCIENTS_LVL_16"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_PALADIN_ANCIENTS_LVL_15"
+    data "StackPriority" "16"
+    
+    new entry "GOON_NPC_PALADIN_ANCIENTS_LVL_17"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_PALADIN_ANCIENTS_PROGRESSION_TEMPLATE"
+    data "StackPriority" "17"
+    data "Passives" "Oath_Ancients_Tenents;Goon_Aura_of_Warding_Passive;UndyingSentinel"
+    data "Boosts" "UnlockSpell(Shout_HealingRadiance,AddChildren);UnlockSpell(Target_NaturesWrath,AddChildren);UnlockSpell(Shout_TurnTheFaithless,AddChildren);UnlockSpell(Shout_SpeakWithAnimals,AddChildren);UnlockSpell(Projectile_EnsnaringStrike_Container,AddChildren);UnlockSpell(Target_MistyStep,AddChildren);UnlockSpell(Target_Moonbeam,AddChildren);UnlockSpell(Target_ProtectionFromEnergy,AddChildren);UnlockSpell(Target_PlantGrowth,AddChildren);UnlockSpell(Target_IceStorm,AddChildren);UnlockSpell(Target_Stoneskin,AddChildren);UnlockSpell(Shout_CommuneWithNature,AddChildren);UnlockSpell(Wall_WallOfStone,AddChildren)"
+
+    // <node id="Progression">
+    //     <attribute id="Level" type="uint8" value="17"/>
+    //     <attribute id="Name" type="LSString" value="Ancients"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="Selectors" type="LSString" value="AddSpells(8c33c86e-e3e4-4ea2-838e-0823bef06061,OathSpells,,,AlwaysPrepared)"/>
+    //     <attribute id="TableUUID" type="guid" value="b82864a7-b093-4553-a802-e176831029c1"/>
+    //     <attribute id="UUID" type="guid" value="17db59cb-5db2-4755-be13-84cf8e367c74"/>
+    
+    new entry "GOON_NPC_PALADIN_ANCIENTS_LVL_18"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_PALADIN_ANCIENTS_LVL_17"
+    data "StackPriority" "18"
+    
+    new entry "GOON_NPC_PALADIN_ANCIENTS_LVL_19"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_PALADIN_ANCIENTS_LVL_17"
+    data "StackPriority" "19"
+    
+    new entry "GOON_NPC_PALADIN_ANCIENTS_LVL_20"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_PALADIN_ANCIENTS_PROGRESSION_TEMPLATE"
+    data "StackPriority" "20"
+    data "Passives" "Oath_Ancients_Tenents;Goon_Aura_of_Warding_Passive;UndyingSentinel;ElderChampion"
+    data "Boosts" "UnlockSpell(Shout_HealingRadiance,AddChildren);UnlockSpell(Target_NaturesWrath,AddChildren);UnlockSpell(Shout_TurnTheFaithless,AddChildren);UnlockSpell(Shout_SpeakWithAnimals,AddChildren);UnlockSpell(Projectile_EnsnaringStrike_Container,AddChildren);UnlockSpell(Target_MistyStep,AddChildren);UnlockSpell(Target_Moonbeam,AddChildren);UnlockSpell(Target_ProtectionFromEnergy,AddChildren);UnlockSpell(Target_PlantGrowth,AddChildren);UnlockSpell(Target_IceStorm,AddChildren);UnlockSpell(Target_Stoneskin,AddChildren);UnlockSpell(Shout_CommuneWithNature,AddChildren);UnlockSpell(Wall_WallOfStone,AddChildren)"
+
+    // <node id="Progression">
+    //     <attribute id="Level" type="uint8" value="20"/>
+    //     <attribute id="Name" type="LSString" value="Ancients"/>
+    //     <attribute id="PassivesAdded" type="LSString" value="ElderChampion"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="TableUUID" type="guid" value="b82864a7-b093-4553-a802-e176831029c1"/>
+    //     <attribute id="UUID" type="guid" value="063383db-7e0b-4e18-aba2-4fa4507911d5"/>

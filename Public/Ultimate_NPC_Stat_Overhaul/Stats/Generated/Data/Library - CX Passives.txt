@@ -49,13 +49,6 @@ data "Icon" "Spell_Abjuration_WardingBond"
 
 // ==================================== Paladin ====================================
 
-new entry "CX_Paladin_Ancients_Boost"
-type "PassiveData"
-data "DisplayName" "he08960f8gf689g41e6gbfc2gec7059617d8c;1"
-data "Description" "h74725b1fg6ed2g42bcg885eg722d3c8802fe;1"
-data "Icon" "Action_Paladin_HealingRadiance"
-data "Boosts" ""
-
 new entry "CX_Paladin_Devotion_Boost"
 type "PassiveData"
 data "DisplayName" "h08fb1797g13bfg412dga764gc3087601ba95;1"
