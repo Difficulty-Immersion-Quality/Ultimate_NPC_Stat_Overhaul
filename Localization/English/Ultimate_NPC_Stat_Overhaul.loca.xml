@@ -142,12 +142,15 @@
 
 <!-- PALADIN -->
 	<content contentuid="hbd9fca0cg8eddg405cga457g81f619e965fe" version="1">! Class: Paladin</content>
-	<content contentuid="" version="1"></content>
+	<content contentuid="h9194b05fgf6fdg4f01ga63aga16a16fed629" version="1">A character who upholds or neglects a sacred oath, a warrior of divinity or demise. They possess Monk progressions, and gain the &lt;LSTag Type="Passive" Tooltip="CX_Paladin_Boost"&gt;! CX Boost: Paladin&lt;/LSTag&gt; passive.</content>
 
 	<content contentuid="h100e7a9bg3c26g4035g86d9g0762e657c372" version="1">! CX Boost: Paladin</content>
-	<content contentuid="h5ee949eegd3a6g46dbgbf07g91727440a141" version="1">A character who upholds or neglects a sacred oath, a warrior of divinity or demise. They gain Paladin boosts from configuration.</content>
+	<content contentuid="h5ee949eegd3a6g46dbgbf07g91727440a141" version="1">A character who upholds or neglects a sacred oath, a warrior of divinity or demise. They gain Paladin boosts from configuration.&lt;br&gt;&lt;br&gt;If this character does not have the &lt;LSTag Type="Passive" Tooltip="Goon_Paladin_NPC_Progressions"&gt;! Class: Paladin&lt;/LSTag&gt; passive, then this passive has either been added externally, not by Ultimate NPC Stat Overhaul, or the character does not have class assigned as expected. In cases where you would expect a character to have certain progressions, but they do not, you should let us know on the Ultimate NPC Stat Overhaul mod page so it can be looked at.</content>
 
 	<!-- Paladin Subclasses -->
+	<content contentuid="he08960f8gf689g41e6gbfc2gec7059617d8c" version="1">! Class: Oath of the Ancients Paladin</content>
+	<content contentuid="h74725b1fg6ed2g42bcg885eg722d3c8802fe" version="1"></content>
+
 	<content contentuid="h08fb1797g13bfg412dga764gc3087601ba95" version="1">! Subclass: Oath of Devotion Paladin</content>
 	<content contentuid="hd41ebf55g11bfg459egbda2g7af1996ef3cf" version="1">A Paladin who acts with honour and virtue to protect the weak and pursue the greater good. They gain Oath of Devotion subclass boosts from configuration.</content>
 

@@ -1155,21 +1155,26 @@
                 </node>
             <!-- PALADIN -->
                 <node id="Progression">
-                    <attribute id="Boosts" type="LSString" value="Tag(PALADIN);ProficiencyBonus(SavingThrow,Wisdom);ProficiencyBonus(SavingThrow,Charisma);Proficiency(LightArmor);Proficiency(MediumArmor);Proficiency(HeavyArmor);Proficiency(Shields);Proficiency(SimpleWeapons);Proficiency(MartialWeapons);ActionResource(LayOnHandsCharge,3,0);ActionResource(ChannelOath,1,0)"/>
+                    <!-- <attribute id="Boosts" type="LSString" value="ProficiencyBonus(SavingThrow,Wisdom);ProficiencyBonus(SavingThrow,Charisma);Proficiency(LightArmor);Proficiency(MediumArmor);Proficiency(HeavyArmor);Proficiency(Shields);Proficiency(SimpleWeapons);Proficiency(MartialWeapons);ActionResource(LayOnHandsCharge,3,0);ActionResource(ChannelOath,1,0)"/> -->
+                    <attribute id="Boosts" type="LSString" value="Tag(PALADIN);ProficiencyBonus(SavingThrow,Wisdom);ProficiencyBonus(SavingThrow,Charisma);Proficiency(LightArmor);Proficiency(MediumArmor);Proficiency(HeavyArmor);Proficiency(Shields);Proficiency(SimpleWeapons);Proficiency(MartialWeapons);ActionResource(LayOnHandsCharge,3,0);ActionResource(ChannelOath,1,0);UnlockSpell(Target_LayOnHands);UnlockSpell(Shout_DivineSense)"/>
                     <attribute id="Level" type="uint8" value="1"/>
                     <attribute id="Name" type="LSString" value="NPC_Paladin"/>
                     <!-- <attribute id="PassivesAdded" type="LSString" value=""/> -->
                     <attribute id="PassivesAdded" type="LSString" value="Goon_Paladin_NPC_Progressions;CX_Paladin_Boost;CX_Martial_Boost"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <!-- <attribute id="Selectors" type="LSString" value="SelectSkills(627af380-2bbb-4a9f-9571-5ec781a6daf4,2);AddSpells(fb407d81-3a05-46f1-9153-0fb27dce95b6,,,,AlwaysPrepared);SelectAbilityBonus(b9149c8e-52c8-46e5-9cb6-fc39301c05fe,AbilityBonus,2,1)"/> -->
                     <attribute id="TableUUID" type="guid" value="8726b2c4-edc0-4905-b82f-60a4baba0733"/>
                     <attribute id="UUID" type="guid" value="ba895540-fb26-4c85-9024-fe15c9a832ec"/>
                 </node>
                 <node id="Progression">
-                    <attribute id="Boosts" type="LSString" value="ActionResource(SpellSlot,2,1);"/>
+                    <!-- <attribute id="Boosts" type="LSString" value="ActionResource(SpellSlot,2,1)"/> -->
+                    <attribute id="Boosts" type="LSString" value="ActionResource(SpellSlot,2,1);UnlockSpell(Target_Smite_Divine);UnlockSpell(Target_Smite_Divine_Unlock);UnlockSpell(Target_Smite_Divine_Critical_Unlock)"/>
                     <attribute id="Level" type="uint8" value="2"/>
                     <attribute id="Name" type="LSString" value="NPC_Paladin"/>
-                    <attribute id="PassivesAdded" type="LSString" value="Smite_Divine_NPC"/>
+                    <!-- <attribute id="PassivesAdded" type="LSString" value="Smite_Divine_NPC"/> -->
+                    <attribute id="PassivesAdded" type="LSString" value="Smite_Divine_NPC;UnlockedSpellSlotLevel1"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <!-- <attribute id="Selectors" type="LSString" value="AddSpells(58aef51d-a46c-44c8-8bed-df90870eb55f,,,,AlwaysPrepared);AddSpells(c6288ac5-c68b-40ed-bbdd-2ff388575831);SelectPassives(f8ebba38-932a-4c64-ae55-3df23e2f60fa,1,FightingStyle)"/> -->
                     <attribute id="TableUUID" type="guid" value="8726b2c4-edc0-4905-b82f-60a4baba0733"/>
                     <attribute id="UUID" type="guid" value="0ba007e2-806a-4198-ad5d-f47045d27be4"/>
                 </node>
@@ -1183,6 +1188,7 @@
                     <attribute id="UUID" type="guid" value="c5c25a3d-e5f0-44a2-9509-d30da893bf12"/>
                 </node>
                 <node id="Progression">
+                    <!-- <attribute id="AllowImprovement" type="bool" value="true"/> -->
                     <attribute id="Boosts" type="LSString" value="ActionResource(LayOnHandsCharge,1,0)"/>
                     <attribute id="Level" type="uint8" value="4"/>
                     <attribute id="Name" type="LSString" value="NPC_Paladin"/>
@@ -1194,19 +1200,25 @@
                     <attribute id="Boosts" type="LSString" value="ActionResource(SpellSlot,1,1);ActionResource(SpellSlot,2,2);"/>
                     <attribute id="Level" type="uint8" value="5"/>
                     <attribute id="Name" type="LSString" value="NPC_Paladin"/>
-                    <attribute id="PassivesAdded" type="LSString" value="ExtraAttack;Smite_Divine_2_NPC"/>
+                    <!-- <attribute id="PassivesAdded" type="LSString" value="ExtraAttack;Smite_Divine_2_NPC"/> -->
+                    <attribute id="PassivesAdded" type="LSString" value="ExtraAttack;Smite_Divine_2_NPC;UnlockedSpellSlotLevel2"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <!-- <attribute id="Selectors" type="LSString" value="AddSpells(c14c9564-1503-47a1-be19-98e77f22ff59)"/> -->
                     <attribute id="TableUUID" type="guid" value="8726b2c4-edc0-4905-b82f-60a4baba0733"/>
                     <attribute id="UUID" type="guid" value="50e571ec-3dfa-4f2a-8f03-2812b29934c7"/>
                 </node>
                 <node id="Progression">
                     <attribute id="Level" type="uint8" value="6"/>
                     <attribute id="Name" type="LSString" value="NPC_Paladin"/>
+                    <!-- <attribute id="PassivesAdded" type="LSString" value=""/> -->
+                    <attribute id="PassivesAdded" type="LSString" value="Goon_Aura_Distribution_Passive"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <!-- <attribute id="Selectors" type="LSString" value="AddSpells(94db914d-95d0-484e-8a02-c0faa9d575a7,,,,AlwaysPrepared)"/> -->
                     <attribute id="TableUUID" type="guid" value="8726b2c4-edc0-4905-b82f-60a4baba0733"/>
                     <attribute id="UUID" type="guid" value="565b2582-7471-4579-91c9-9fb6799f247d"/>
                 </node>
                 <node id="Progression">
+                    <!-- <attribute id="AllowImprovement" type="bool" value="true"/> -->
                     <attribute id="Boosts" type="LSString" value="ActionResource(SpellSlot,1,2);"/>
                     <attribute id="Level" type="uint8" value="7"/>
                     <attribute id="Name" type="LSString" value="NPC_Paladin"/>
@@ -1225,7 +1237,8 @@
                     <attribute id="Boosts" type="LSString" value="ActionResource(SpellSlot,2,3);"/>
                     <attribute id="Level" type="uint8" value="9"/>
                     <attribute id="Name" type="LSString" value="NPC_Paladin"/>
-                    <attribute id="PassivesAdded" type="LSString" value="Smite_Divine_3_NPC"/>
+                    <!-- <attribute id="PassivesAdded" type="LSString" value="Smite_Divine_3_NPC"/> -->
+                    <attribute id="PassivesAdded" type="LSString" value="Smite_Divine_3_NPC;UnlockedSpellSlotLevel3"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
                     <attribute id="TableUUID" type="guid" value="8726b2c4-edc0-4905-b82f-60a4baba0733"/>
                     <attribute id="UUID" type="guid" value="b745470b-32d5-44a2-9989-ae3971a4c814"/>
@@ -1235,6 +1248,7 @@
                     <attribute id="Level" type="uint8" value="10"/>
                     <attribute id="Name" type="LSString" value="NPC_Paladin"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <!-- <attribute id="Selectors" type="LSString" value="AddSpells(da27c6ae-15cf-4441-9115-82dcc282f8cc,,,,AlwaysPrepared)"/> -->
                     <attribute id="TableUUID" type="guid" value="8726b2c4-edc0-4905-b82f-60a4baba0733"/>
                     <attribute id="UUID" type="guid" value="84e0e3fa-c42d-4721-8f0d-2808d4db4bec"/>
                 </node>
@@ -1248,11 +1262,81 @@
                     <attribute id="UUID" type="guid" value="75e45b16-2d98-415c-8e73-9c97a83f8435"/>
                 </node>
                 <node id="Progression">
+                    <!-- <attribute id="AllowImprovement" type="bool" value="true"/> -->
                     <attribute id="Level" type="uint8" value="12"/>
                     <attribute id="Name" type="LSString" value="NPC_Paladin"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
                     <attribute id="TableUUID" type="guid" value="8726b2c4-edc0-4905-b82f-60a4baba0733"/>
                     <attribute id="UUID" type="guid" value="94d4d86c-c35c-488c-9e04-a8532b41fb46"/>
+                </node>
+                <!-- PALADIN: Expansion 13-20 -->
+                <node id="Progression">
+                    <attribute id="Boosts" type="LSString" value="ActionResource(SpellSlot,1,4);ActionResource(LayOnHandsCharge,1,0)"/>
+                    <attribute id="Level" type="uint8" value="13"/>
+                    <attribute id="Name" type="LSString" value="NPC_Paladin"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <!-- <attribute id="Selectors" type="LSString" value="AddSpells(11d0c2a0-41c6-4ec0-98fe-5d987f7e1665)"/> -->
+                    <attribute id="TableUUID" type="guid" value="8726b2c4-edc0-4905-b82f-60a4baba0733"/>
+                    <attribute id="UUID" type="guid" value="92c1ecf9-00cf-4fdb-8309-dc2a54f7f49b"/>
+                </node>
+				<node id="Progression">
+                    <attribute id="Boosts" type="LSString" value="ActionResource(LayOnHandsCharge,1,0)"/>
+                    <attribute id="Level" type="uint8" value="14"/>
+                    <attribute id="Name" type="LSString" value="NPC_Paladin"/>
+                    <attribute id="PassivesAdded" type="LSString" value="CleansingTouch;CleansingTouch_Resource"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="8726b2c4-edc0-4905-b82f-60a4baba0733"/>
+                    <attribute id="UUID" type="guid" value="04f65867-16f6-48b4-aba7-ba9e74d8ee77"/>
+                </node>
+				<node id="Progression">
+                    <attribute id="Boosts" type="LSString" value="ActionResource(SpellSlot,1,4);ActionResource(DivinePowerPoint,1,0);ActionResource(LayOnHandsCharge,1,0)"/>
+                    <attribute id="Level" type="uint8" value="15"/>
+                    <attribute id="Name" type="LSString" value="NPC_Paladin"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="8726b2c4-edc0-4905-b82f-60a4baba0733"/>
+                    <attribute id="UUID" type="guid" value="90527cf7-caba-44be-a89e-1735aa8e3b0f"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="AllowImprovement" type="bool" value="true"/>
+                    <attribute id="Level" type="uint8" value="16"/>
+                    <attribute id="Name" type="LSString" value="NPC_Paladin"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="8726b2c4-edc0-4905-b82f-60a4baba0733"/>
+                    <attribute id="UUID" type="guid" value="66ce000d-e805-407b-b74d-6436633175e1"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Boosts" type="LSString" value="ActionResource(SpellSlot,1,4);ActionResource(SpellSlot,1,5)"/>
+                    <attribute id="Level" type="uint8" value="17"/>
+                    <attribute id="Name" type="LSString" value="NPC_Paladin"/>
+                    <!-- <attribute id="PassivesAdded" type="LSString" value="UnlockedSpellSlotLevel5"/> -->
+                    <attribute id="PassivesAdded" type="LSString" value=""/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <!-- <attribute id="Selectors" type="LSString" value="AddSpells(f351595c-90f7-4804-9e55-18c4d624593c))"/> -->
+                    <attribute id="TableUUID" type="guid" value="8726b2c4-edc0-4905-b82f-60a4baba0733"/>
+                    <attribute id="UUID" type="guid" value="d844c857-6e8d-45c3-b8fc-3e4d3cff3b3c"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="18"/>
+                    <attribute id="Name" type="LSString" value="NPC_Paladin"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="8726b2c4-edc0-4905-b82f-60a4baba0733"/>
+                    <attribute id="UUID" type="guid" value="f64ab563-8f00-431b-af4d-dae64af551f5"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="AllowImprovement" type="bool" value="true"/>
+                    <attribute id="Boosts" type="LSString" value="ActionResource(SpellSlot,1,5)"/>
+                    <attribute id="Level" type="uint8" value="19"/>
+                    <attribute id="Name" type="LSString" value="NPC_Paladin"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="8726b2c4-edc0-4905-b82f-60a4baba0733"/>
+                    <attribute id="UUID" type="guid" value="f2c74f17-dd4e-4eef-93aa-654b01cdad68"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="20"/>
+                    <attribute id="Name" type="LSString" value="NPC_Paladin"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="8726b2c4-edc0-4905-b82f-60a4baba0733"/>
+                    <attribute id="UUID" type="guid" value="bc0b48c3-1cf7-4eea-bc1a-a898b9d55a91"/>
                 </node>
             <!-- RANGER -->
                 <node id="Progression">

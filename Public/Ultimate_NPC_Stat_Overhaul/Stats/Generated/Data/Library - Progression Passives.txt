@@ -14,12 +14,6 @@ data "DisplayName" "h19a9f0e8g94bcg4f42g9fa2g6d4b95bc6e2e;1"
 
 // ==================================== Main class progressions ====================================
 
-new entry "Goon_Paladin_NPC_Progressions"
-type "PassiveData"
-using "Goon_NPC_Progressions_Template"
-// Class Progressions: Paladin
-data "DisplayName" "hbd9fca0cg8eddg405cga457g81f619e965fe;1"
-
 new entry "Goon_Ranger_NPC_Progressions"
 type "PassiveData"
 using "Goon_NPC_Progressions_Template"

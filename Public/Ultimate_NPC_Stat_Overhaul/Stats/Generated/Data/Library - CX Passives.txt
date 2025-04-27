@@ -49,20 +49,10 @@ data "Icon" "Spell_Abjuration_WardingBond"
 
 // ==================================== Paladin ====================================
 
-new entry "CX_Paladin_Boost"
-type "PassiveData"
-// data "DisplayName" "h1517365cgc118g4686g8ecbg2ad846d80053"
-data "DisplayName" "h100e7a9bg3c26g4035g86d9g0762e657c372;1"
-// data "Description" "he95e16a1gc3a2g44a1gbd19g924de26c78c8"
-data "Description" "h5ee949eegd3a6g46dbgbf07g91727440a141;1"
-// data "Icon" "Action_Paladin_InquisitorsMight"
-data "Icon" "PassiveFeature_ImprovedDivineSmite"
-data "Boosts" ""
-
 new entry "CX_Paladin_Ancients_Boost"
 type "PassiveData"
-data "DisplayName" ";1"
-data "Description" ";1"
+data "DisplayName" "he08960f8gf689g41e6gbfc2gec7059617d8c;1"
+data "Description" "h74725b1fg6ed2g42bcg885eg722d3c8802fe;1"
 data "Icon" "Action_Paladin_HealingRadiance"
 data "Boosts" ""
 

@@ -4,7 +4,8 @@
     type "PassiveData"
     data "DisplayName" ""
     data "Description" ""
-    data "Icon" ""
+    data "Properties" "Highlighted"
+    data "Icon" "GenericIcon_Intent_Buff"
 
 // ==================================== Combat Extender and Progression Stat Entries ====================================
 
