@@ -1155,11 +1155,11 @@
                 </node>
             <!-- PALADIN -->
                 <node id="Progression">
-                    <attribute id="Boosts" type="LSString" value="ProficiencyBonus(SavingThrow,Wisdom);ProficiencyBonus(SavingThrow,Charisma);Proficiency(LightArmor);Proficiency(MediumArmor);Proficiency(HeavyArmor);Proficiency(Shields);Proficiency(SimpleWeapons);Proficiency(MartialWeapons);ActionResource(LayOnHandsCharge,3,0);ActionResource(ChannelOath,1,0)"/>
+                    <attribute id="Boosts" type="LSString" value="Tag(PALADIN);ProficiencyBonus(SavingThrow,Wisdom);ProficiencyBonus(SavingThrow,Charisma);Proficiency(LightArmor);Proficiency(MediumArmor);Proficiency(HeavyArmor);Proficiency(Shields);Proficiency(SimpleWeapons);Proficiency(MartialWeapons);ActionResource(LayOnHandsCharge,3,0);ActionResource(ChannelOath,1,0)"/>
                     <attribute id="Level" type="uint8" value="1"/>
                     <attribute id="Name" type="LSString" value="NPC_Paladin"/>
                     <!-- <attribute id="PassivesAdded" type="LSString" value=""/> -->
-                    <attribute id="PassivesAdded" type="LSString" value="Goon_Paladin_NPC_Progressions"/>
+                    <attribute id="PassivesAdded" type="LSString" value="Goon_Paladin_NPC_Progressions;CX_Paladin_Boost;CX_Martial_Boost"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
                     <attribute id="TableUUID" type="guid" value="8726b2c4-edc0-4905-b82f-60a4baba0733"/>
                     <attribute id="UUID" type="guid" value="ba895540-fb26-4c85-9024-fe15c9a832ec"/>
@@ -1256,11 +1256,11 @@
                 </node>
             <!-- RANGER -->
                 <node id="Progression">
-                    <attribute id="Boosts" type="LSString" value="ProficiencyBonus(SavingThrow,Strength);ProficiencyBonus(SavingThrow,Dexterity);Proficiency(LightArmor);Proficiency(MediumArmor);Proficiency(Shields);Proficiency(SimpleWeapons);Proficiency(MartialWeapons)"/>
+                    <attribute id="Boosts" type="LSString" value="Tag(RANGER);ProficiencyBonus(SavingThrow,Strength);ProficiencyBonus(SavingThrow,Dexterity);Proficiency(LightArmor);Proficiency(MediumArmor);Proficiency(Shields);Proficiency(SimpleWeapons);Proficiency(MartialWeapons)"/>
                     <attribute id="Level" type="uint8" value="1"/>
                     <attribute id="Name" type="LSString" value="NPC_Ranger"/>
                     <!-- <attribute id="PassivesAdded" type="LSString" value=""/> -->
-                    <attribute id="PassivesAdded" type="LSString" value="Goon_Ranger_NPC_Progressions"/>
+                    <attribute id="PassivesAdded" type="LSString" value="Goon_Ranger_NPC_Progressions;CX_Ranger_Boost;CX_Martial_Boost"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
                     <attribute id="TableUUID" type="guid" value="f0ede459-8b86-48fd-ac11-4432573566a5"/>
                     <attribute id="UUID" type="guid" value="b75b71bd-5853-4483-ac11-0705382a658a"/>
@@ -1361,11 +1361,11 @@
                 </node>
             <!-- ROGUE -->
                 <node id="Progression">
-                    <attribute id="Boosts" type="LSString" value="ProficiencyBonus(SavingThrow,Dexterity);ProficiencyBonus(SavingThrow,Intelligence);Proficiency(LightArmor);Proficiency(SimpleWeapons);Proficiency(HandCrossbows);Proficiency(Longswords);Proficiency(Rapiers);Proficiency(Shortswords);ActionResource(SneakAttack_Charge,1,0)"/>
+                    <attribute id="Boosts" type="LSString" value="Tag(ROGUE)ProficiencyBonus(SavingThrow,Dexterity);ProficiencyBonus(SavingThrow,Intelligence);Proficiency(LightArmor);Proficiency(SimpleWeapons);Proficiency(HandCrossbows);Proficiency(Longswords);Proficiency(Rapiers);Proficiency(Shortswords);ActionResource(SneakAttack_Charge,1,0)"/>
                     <attribute id="Level" type="uint8" value="1"/>
                     <attribute id="Name" type="LSString" value="NPC_Rogue"/>
                     <!-- <attribute id="PassivesAdded" type="LSString" value=""/> -->
-                    <attribute id="PassivesAdded" type="LSString" value="Goon_Rogue_NPC_Progressions"/>
+                    <attribute id="PassivesAdded" type="LSString" value="Goon_Rogue_NPC_Progressions;CX_Rogue_Boost;CX_Martial_Boost"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
                     <attribute id="TableUUID" type="guid" value="532203c2-7bcb-4162-9a7c-2bb20e227a30"/>
                     <attribute id="UUID" type="guid" value="29a49e37-5c9c-4be1-8665-2aac93d4885c"/>
@@ -1454,9 +1454,9 @@
                 <node id="Progression">
                     <!-- TODO: Roulette a subclass, then unlock its features when appropriate -->
                     <!-- <attribute id="Boosts" type="LSString" value="ActionResource(WarlockSpellSlot,1,1);ProficiencyBonus(SavingThrow,Wisdom);ProficiencyBonus(SavingThrow,Charisma);Proficiency(LightArmor);Proficiency(SimpleWeapons);"/> -->
-                    <attribute id="Boosts" type="LSString" value="ActionResource(WarlockSpellSlot,1,1);ProficiencyBonus(SavingThrow,Wisdom);ProficiencyBonus(SavingThrow,Charisma);Proficiency(LightArmor);Proficiency(SimpleWeapons);ProficiencyBonus(Skill,Arcana);ProficiencyBonus(Skill,Religion)"/>
+                    <attribute id="Boosts" type="LSString" value="Tag(WARLOCK);ActionResource(WarlockSpellSlot,1,1);ProficiencyBonus(SavingThrow,Wisdom);ProficiencyBonus(SavingThrow,Charisma);Proficiency(LightArmor);Proficiency(SimpleWeapons);ProficiencyBonus(Skill,Arcana);ProficiencyBonus(Skill,Religion)"/>
                     <!-- <attribute id="PassivesAdded" type="LSString" value=""/> -->
-                    <attribute id="PassivesAdded" type="LSString" value="Goon_Warlock_NPC_Progressions"/>
+                    <attribute id="PassivesAdded" type="LSString" value="Goon_Warlock_NPC_Progressions;CX_Warlock_Boost;CX_Magic_Boost"/>
                     <attribute id="Level" type="uint8" value="1"/>
                     <attribute id="Name" type="LSString" value="NPC_Warlock"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
@@ -1659,11 +1659,11 @@
             <!-- WIZARD -->
                 <!-- TODO: Wizard progression is literally just spell slots, which is perfect for basic NPCs with CX_Magic_Boost. We create a custom Wizard progression for more respectable NPCS. -->
                 <node id="Progression">
-                    <attribute id="Boosts" type="LSString" value="ActionResource(SpellSlot,2,1);ProficiencyBonus(SavingThrow,Intelligence);ProficiencyBonus(SavingThrow,Wisdom)"/>
+                    <attribute id="Boosts" type="LSString" value="Tag(WIZARD);ActionResource(SpellSlot,2,1);ProficiencyBonus(SavingThrow,Intelligence);ProficiencyBonus(SavingThrow,Wisdom)"/>
                     <attribute id="Level" type="uint8" value="1"/>
                     <attribute id="Name" type="LSString" value="NPC_Wizard"/>
                     <!-- <attribute id="PassivesAdded" type="LSString" value=""/> -->
-                    <attribute id="PassivesAdded" type="LSString" value="Goon_Wizard_NPC_Progressions"/>
+                    <attribute id="PassivesAdded" type="LSString" value="Goon_Wizard_NPC_Progressions;CX_Wizard_Boost;CX_Magic_Boost"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
                     <attribute id="TableUUID" type="guid" value="44bdbc5e-a003-4d61-87f0-5ced20d3804e"/>
                     <attribute id="UUID" type="guid" value="c58ef8c9-45d2-41cf-b3f8-d087153de86a"/>
