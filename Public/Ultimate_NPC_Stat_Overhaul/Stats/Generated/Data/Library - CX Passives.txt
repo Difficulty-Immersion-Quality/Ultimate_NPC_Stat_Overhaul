@@ -47,15 +47,6 @@ data "Description" "hd5818987ga072g4e8dgb314g97ab96f230cd;1"
 data "Boosts" "Proficiency(SimpleWeapons);Proficiency(MartialWeapons)"
 data "Icon" "Spell_Abjuration_WardingBond"
 
-// ==================================== Paladin ====================================
-
-new entry "CX_Paladin_Oathbreaker_Boost"
-type "PassiveData"
-data "DisplayName" "h727a7017g43e3g42f2g90aage79f5e4b6513;1"
-data "Description" "h529feb44gb9e2g445dg988cg1311742dc8bc;1"
-data "Icon" "Action_Paladin_DreadfulAspect"
-data "Boosts" ""
-
 // ==================================== Ranger ====================================
 
 new entry "CX_Ranger_Boost"

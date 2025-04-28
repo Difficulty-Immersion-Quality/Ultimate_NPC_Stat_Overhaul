@@ -899,3 +899,237 @@
     //     <attribute id="ProgressionType" type="uint8" value="1"/>
     //     <attribute id="TableUUID" type="guid" value="f769aa02-1f74-4fb6-b94c-8850143daa20"/>
     //     <attribute id="UUID" type="guid" value="2d99ab4f-26ff-477b-a425-9da6b233ebaf"/>
+
+// ==================================== Subclass: Oathbreaker ====================================
+
+    new entry "CX_Paladin_Oathbreaker_Boost"
+    type "PassiveData"
+    data "DisplayName" "h727a7017g43e3g42f2g90aage79f5e4b6513;1"
+    data "Description" "h529feb44gb9e2g445dg988cg1311742dc8bc;1"
+    data "Icon" "Action_Paladin_DreadfulAspect"
+    data "Boosts" ""
+    data "StatsFunctorContext" "OnCreate;OnStatusApplied;OnStatusRemoved"
+    data "Conditions" ""
+    data "StatsFunctors" "IF(not ClassLevelHigherOrEqualThan(2,'NPC_PALADIN') or HasStatus('GOON_NPC_PALADIN_LVL_1')):ApplyStatus(GOON_NPC_PALADIN_OATHBREAKER_LVL_1,100,-1);IF(ClassLevelHigherOrEqualThan(2,'NPC_PALADIN') and not ClassLevelHigherOrEqualThan(3,'NPC_PALADIN') or HasStatus('GOON_NPC_PALADIN_LVL_2')):ApplyStatus(GOON_NPC_PALADIN_OATHBREAKER_LVL_2,100,-1);IF(ClassLevelHigherOrEqualThan(3,'NPC_PALADIN') and not ClassLevelHigherOrEqualThan(4,'NPC_PALADIN') or HasStatus('GOON_NPC_PALADIN_LVL_3')):ApplyStatus(GOON_NPC_PALADIN_OATHBREAKER_LVL_3,100,-1);IF(ClassLevelHigherOrEqualThan(4,'NPC_PALADIN') and not ClassLevelHigherOrEqualThan(5,'NPC_PALADIN') or HasStatus('GOON_NPC_PALADIN_LVL_4')):ApplyStatus(GOON_NPC_PALADIN_OATHBREAKER_LVL_4,100,-1);IF(ClassLevelHigherOrEqualThan(5,'NPC_PALADIN') and not ClassLevelHigherOrEqualThan(6,'NPC_PALADIN') or HasStatus('GOON_NPC_PALADIN_LVL_5')):ApplyStatus(GOON_NPC_PALADIN_OATHBREAKER_LVL_5,100,-1);IF(ClassLevelHigherOrEqualThan(6,'NPC_PALADIN') and not ClassLevelHigherOrEqualThan(7,'NPC_PALADIN') or HasStatus('GOON_NPC_PALADIN_LVL_6')):ApplyStatus(GOON_NPC_PALADIN_OATHBREAKER_LVL_6,100,-1);IF(ClassLevelHigherOrEqualThan(7,'NPC_PALADIN') and not ClassLevelHigherOrEqualThan(8,'NPC_PALADIN') or HasStatus('GOON_NPC_PALADIN_LVL_7')):ApplyStatus(GOON_NPC_PALADIN_OATHBREAKER_LVL_7,100,-1);IF(ClassLevelHigherOrEqualThan(8,'NPC_PALADIN') and not ClassLevelHigherOrEqualThan(9,'NPC_PALADIN') or HasStatus('GOON_NPC_PALADIN_LVL_8')):ApplyStatus(GOON_NPC_PALADIN_OATHBREAKER_LVL_8,100,-1);IF(ClassLevelHigherOrEqualThan(9,'NPC_PALADIN') and not ClassLevelHigherOrEqualThan(10,'NPC_PALADIN') or HasStatus('GOON_NPC_PALADIN_LVL_9')):ApplyStatus(GOON_NPC_PALADIN_OATHBREAKER_LVL_9,100,-1);IF(ClassLevelHigherOrEqualThan(10,'NPC_PALADIN') and not ClassLevelHigherOrEqualThan(11,'NPC_PALADIN') or HasStatus('GOON_NPC_PALADIN_LVL_10')):ApplyStatus(GOON_NPC_PALADIN_OATHBREAKER_LVL_10,100,-1);IF(ClassLevelHigherOrEqualThan(11,'NPC_PALADIN') and not ClassLevelHigherOrEqualThan(12,'NPC_PALADIN') or HasStatus('GOON_NPC_PALADIN_LVL_11')):ApplyStatus(GOON_NPC_PALADIN_OATHBREAKER_LVL_11,100,-1);IF(ClassLevelHigherOrEqualThan(12,'NPC_PALADIN') and not ClassLevelHigherOrEqualThan(13,'NPC_PALADIN') or HasStatus('GOON_NPC_PALADIN_LVL_12')):ApplyStatus(GOON_NPC_PALADIN_OATHBREAKER_LVL_12,100,-1);IF(ClassLevelHigherOrEqualThan(13,'NPC_PALADIN') and not ClassLevelHigherOrEqualThan(14,'NPC_PALADIN') or HasStatus('GOON_NPC_PALADIN_LVL_13')):ApplyStatus(GOON_NPC_PALADIN_OATHBREAKER_LVL_13,100,-1);IF(ClassLevelHigherOrEqualThan(14,'NPC_PALADIN') and not ClassLevelHigherOrEqualThan(15,'NPC_PALADIN') or HasStatus('GOON_NPC_PALADIN_LVL_14')):ApplyStatus(GOON_NPC_PALADIN_OATHBREAKER_LVL_14,100,-1);IF(ClassLevelHigherOrEqualThan(15,'NPC_PALADIN') and not ClassLevelHigherOrEqualThan(16,'NPC_PALADIN') or HasStatus('GOON_NPC_PALADIN_LVL_15')):ApplyStatus(GOON_NPC_PALADIN_OATHBREAKER_LVL_15,100,-1);IF(ClassLevelHigherOrEqualThan(16,'NPC_PALADIN') and not ClassLevelHigherOrEqualThan(17,'NPC_PALADIN') or HasStatus('GOON_NPC_PALADIN_LVL_16')):ApplyStatus(GOON_NPC_PALADIN_OATHBREAKER_LVL_16,100,-1);IF(ClassLevelHigherOrEqualThan(17,'NPC_PALADIN') and not ClassLevelHigherOrEqualThan(18,'NPC_PALADIN') or HasStatus('GOON_NPC_PALADIN_LVL_17')):ApplyStatus(GOON_NPC_PALADIN_OATHBREAKER_LVL_17,100,-1);IF(ClassLevelHigherOrEqualThan(18,'NPC_PALADIN') and not ClassLevelHigherOrEqualThan(19,'NPC_PALADIN') or HasStatus('GOON_NPC_PALADIN_LVL_18')):ApplyStatus(GOON_NPC_PALADIN_OATHBREAKER_LVL_18,100,-1);IF(ClassLevelHigherOrEqualThan(19,'NPC_PALADIN') and not ClassLevelHigherOrEqualThan(20,'NPC_PALADIN') or HasStatus('GOON_NPC_PALADIN_LVL_19')):ApplyStatus(GOON_NPC_PALADIN_OATHBREAKER_LVL_19,100,-1);IF(ClassLevelHigherOrEqualThan(20,'NPC_PALADIN') or HasStatus('GOON_NPC_PALADIN_LVL_20')):ApplyStatus(GOON_NPC_PALADIN_OATHBREAKER_LVL_20,100,-1)"
+
+// Template
+    new entry "GOON_NPC_PALADIN_OATHBREAKER_PROGRESSION_TEMPLATE"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    data "StatusPropertyFlags" "DisableOverhead;DisableCombatlog;DisablePortraitIndicator;ApplyToDead;IgnoreResting"
+    data "RemoveEvents" "OnStatusApplied;OnStatusRemoved"
+    data "StackId" "GOON_NPC_PALADIN_OATHBREAKER_PROGRESSION_TEMPLATE"
+    data "StackType" "Ignore"
+    data "RemoveConditions" "not HasPassive('CX_Paladin_Oathbreaker_Boost')"
+
+// Progression statuses
+    new entry "GOON_NPC_PALADIN_OATHBREAKER_LVL_1"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_PALADIN_OATHBREAKER_PROGRESSION_TEMPLATE"
+    data "StackPriority" "1"
+    data "Passives" ""
+    data "Boosts" "UnlockSpell(Target_SpitefulSuffering,AddChildren)"
+
+    // <node id="Progression">
+    //     <attribute id="Level" type="uint8" value="1"/>
+    //     <attribute id="Name" type="LSString" value="Oathbreaker"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="Selectors" type="LSString" value="AddSpells(cb1e5aad-26cd-4370-a179-5536bfcc3d47,,,,AlwaysPrepared)"/>
+    //     <attribute id="TableUUID" type="guid" value="f0d6f933-4532-463f-b378-a1e8b0164325"/>
+    //     <attribute id="UUID" type="guid" value="504688df-4b4b-49fc-abdf-ce7af44f70b1"/>
+
+    new entry "GOON_NPC_PALADIN_OATHBREAKER_LVL_2"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_PALADIN_OATHBREAKER_LVL_1"
+    data "StackPriority" "2"
+
+    new entry "GOON_NPC_PALADIN_OATHBREAKER_LVL_3"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_PALADIN_OATHBREAKER_PROGRESSION_TEMPLATE"
+    data "StackPriority" "3"
+    data "Passives" ""
+    data "Boosts" "UnlockSpell(Target_SpitefulSuffering,AddChildren);UnlockSpell(Target_ControlUndead,AddChildren);UnlockSpell(Shout_Dreadful_Aspect,AddChildren);UnlockSpell(Shout_HellishRebuke,AddChildren);UnlockSpell(Target_InflictWounds,AddChildren)"
+
+    // <node id="Progression">
+    //     <attribute id="Level" type="uint8" value="3"/>
+    //     <attribute id="Name" type="LSString" value="Oathbreaker"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="Selectors" type="LSString" value="AddSpells(a59baeac-1be2-40ac-b93c-20eb498b0e0b,OathSpells,,,AlwaysPrepared)"/>
+    //     <attribute id="TableUUID" type="guid" value="f0d6f933-4532-463f-b378-a1e8b0164325"/>
+    //     <attribute id="UUID" type="guid" value="27124c6c-fd7f-4895-b1fc-a04515f2a2ac"/>
+
+    new entry "GOON_NPC_PALADIN_OATHBREAKER_LVL_4"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_PALADIN_OATHBREAKER_LVL_3"
+    data "StackPriority" "4"
+
+    new entry "GOON_NPC_PALADIN_OATHBREAKER_LVL_5"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_PALADIN_OATHBREAKER_PROGRESSION_TEMPLATE"
+    data "StackPriority" "5"
+    data "Passives" ""
+    data "Boosts" "UnlockSpell(Target_SpitefulSuffering,AddChildren);UnlockSpell(Target_ControlUndead,AddChildren);UnlockSpell(Shout_Dreadful_Aspect,AddChildren);UnlockSpell(Shout_HellishRebuke,AddChildren);UnlockSpell(Target_InflictWounds,AddChildren);UnlockSpell(Target_CrownOfMadness,AddChildren);UnlockSpell(Target_Darkness,AddChildren)"
+
+    // <node id="Progression">
+    //     <attribute id="Level" type="uint8" value="5"/>
+    //     <attribute id="Name" type="LSString" value="Oathbreaker"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="Selectors" type="LSString" value="AddSpells(06330a3b-4b76-4cb0-b23d-9041a9a2868a,OathSpells,,,AlwaysPrepared)"/>
+    //     <attribute id="TableUUID" type="guid" value="f0d6f933-4532-463f-b378-a1e8b0164325"/>
+    //     <attribute id="UUID" type="guid" value="65c8e05b-fcdd-456c-b8b9-180b3459c253"/>
+
+    new entry "GOON_NPC_PALADIN_OATHBREAKER_LVL_6"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_PALADIN_OATHBREAKER_LVL_5"
+    data "StackPriority" "6"
+
+    new entry "GOON_NPC_PALADIN_OATHBREAKER_LVL_7"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_PALADIN_OATHBREAKER_PROGRESSION_TEMPLATE"
+    data "StackPriority" "7"
+    data "Passives" "Goon_Aura_of_Hate_Passive"
+    data "Boosts" "UnlockSpell(Target_SpitefulSuffering,AddChildren);UnlockSpell(Target_ControlUndead,AddChildren);UnlockSpell(Shout_Dreadful_Aspect,AddChildren);UnlockSpell(Shout_HellishRebuke,AddChildren);UnlockSpell(Target_InflictWounds,AddChildren);UnlockSpell(Target_CrownOfMadness,AddChildren);UnlockSpell(Target_Darkness,AddChildren)"
+
+    // <node id="Progression">
+    //     <attribute id="Level" type="uint8" value="7"/>
+    //     <attribute id="Name" type="LSString" value="Oathbreaker"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="Selectors" type="LSString" value="AddSpells(20c3ac99-a937-464c-810d-d2f50ba44e6e,,,,AlwaysPrepared)"/>
+    //     <attribute id="TableUUID" type="guid" value="f0d6f933-4532-463f-b378-a1e8b0164325"/>
+    //     <attribute id="UUID" type="guid" value="8d29d7d1-f27f-40d1-b0ef-ed4e71b9551a"/>
+
+    new entry "GOON_NPC_PALADIN_OATHBREAKER_LVL_8"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_PALADIN_OATHBREAKER_LVL_7"
+    data "StackPriority" "8"
+
+    new entry "GOON_NPC_PALADIN_OATHBREAKER_LVL_9"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_PALADIN_OATHBREAKER_PROGRESSION_TEMPLATE"
+    data "StackPriority" "9"
+    data "Passives" "Goon_Aura_of_Hate_Passive"
+    data "Boosts" "UnlockSpell(Target_SpitefulSuffering,AddChildren);UnlockSpell(Target_ControlUndead,AddChildren);UnlockSpell(Shout_Dreadful_Aspect,AddChildren);UnlockSpell(Shout_HellishRebuke,AddChildren);UnlockSpell(Target_InflictWounds,AddChildren);UnlockSpell(Target_CrownOfMadness,AddChildren);UnlockSpell(Target_Darkness,AddChildren);UnlockSpell(Target_BestowCurse,AddChildren);UnlockSpell(Target_AnimateDead,AddChildren)"
+
+    // <node id="Progression">
+    //     <attribute id="Level" type="uint8" value="9"/>
+    //     <attribute id="Name" type="LSString" value="Oathbreaker"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="Selectors" type="LSString" value="AddSpells(dd7c1c98-73ab-4543-a17e-c19e680caaa4,OathSpells,,,AlwaysPrepared)"/>
+    //     <attribute id="TableUUID" type="guid" value="f0d6f933-4532-463f-b378-a1e8b0164325"/>
+    //     <attribute id="UUID" type="guid" value="254264de-ef38-4219-8150-19886af18603"/>
+
+    new entry "GOON_NPC_PALADIN_OATHBREAKER_LVL_10"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_PALADIN_OATHBREAKER_LVL_9"
+    data "StackPriority" "10"
+
+    new entry "GOON_NPC_PALADIN_OATHBREAKER_LVL_11"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_PALADIN_OATHBREAKER_LVL_9"
+    data "StackPriority" "11"
+
+    new entry "GOON_NPC_PALADIN_OATHBREAKER_LVL_12"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_PALADIN_OATHBREAKER_LVL_9"
+    data "StackPriority" "12"
+
+// Expansion levels 13-20
+    new entry "GOON_NPC_PALADIN_OATHBREAKER_LVL_13"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_PALADIN_OATHBREAKER_PROGRESSION_TEMPLATE"
+    data "StackPriority" "13"
+    data "Passives" "Goon_Aura_of_Hate_Passive"
+    data "Boosts" "UnlockSpell(Target_SpitefulSuffering,AddChildren);UnlockSpell(Target_ControlUndead,AddChildren);UnlockSpell(Shout_Dreadful_Aspect,AddChildren);UnlockSpell(Shout_HellishRebuke,AddChildren);UnlockSpell(Target_InflictWounds,AddChildren);UnlockSpell(Target_CrownOfMadness,AddChildren);UnlockSpell(Target_Darkness,AddChildren);UnlockSpell(Target_BestowCurse,AddChildren);UnlockSpell(Target_AnimateDead,AddChildren);UnlockSpell(Target_Blight,AddChildren);UnlockSpell(Target_Confusion,AddChildren)"
+
+    // <node id="Progression">
+    //     <attribute id="Level" type="uint8" value="13"/>
+    //     <attribute id="Name" type="LSString" value="Oathbreaker"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="Selectors" type="LSString" value="AddSpells(243663d7-7662-49bc-83cc-f99284138761,OathSpells,,,AlwaysPrepared)"/>
+    //     <attribute id="TableUUID" type="guid" value="f0d6f933-4532-463f-b378-a1e8b0164325"/>
+    //     <attribute id="UUID" type="guid" value="d6fbe127-1e36-4ee9-b6a8-0e5b2a0e6eba"/>
+    
+    new entry "GOON_NPC_PALADIN_OATHBREAKER_LVL_14"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_PALADIN_OATHBREAKER_LVL_13"
+    data "StackPriority" "14"
+    
+    new entry "GOON_NPC_PALADIN_OATHBREAKER_LVL_15"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_PALADIN_OATHBREAKER_PROGRESSION_TEMPLATE"
+    data "StackPriority" "15"
+    data "Passives" "Goon_Aura_of_Hate_Passive;SupernaturalResistance"
+    data "Boosts" "UnlockSpell(Target_SpitefulSuffering,AddChildren);UnlockSpell(Target_ControlUndead,AddChildren);UnlockSpell(Shout_Dreadful_Aspect,AddChildren);UnlockSpell(Shout_HellishRebuke,AddChildren);UnlockSpell(Target_InflictWounds,AddChildren);UnlockSpell(Target_CrownOfMadness,AddChildren);UnlockSpell(Target_Darkness,AddChildren);UnlockSpell(Target_BestowCurse,AddChildren);UnlockSpell(Target_AnimateDead,AddChildren);UnlockSpell(Target_Blight,AddChildren);UnlockSpell(Target_Confusion,AddChildren)"
+
+    // <node id="Progression">
+    //     <attribute id="Level" type="uint8" value="15"/>
+    //     <attribute id="Name" type="LSString" value="Oathbreaker"/>
+    //     <attribute id="PassivesAdded" type="LSString" value="SupernaturalResistance"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="TableUUID" type="guid" value="f0d6f933-4532-463f-b378-a1e8b0164325"/>
+    //     <attribute id="UUID" type="guid" value="688e1448-a7e3-4509-8b15-361b1df24bc4"/>
+    
+    new entry "GOON_NPC_PALADIN_OATHBREAKER_LVL_16"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_PALADIN_OATHBREAKER_LVL_15"
+    data "StackPriority" "16"
+    
+    new entry "GOON_NPC_PALADIN_OATHBREAKER_LVL_17"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_PALADIN_OATHBREAKER_PROGRESSION_TEMPLATE"
+    data "StackPriority" "17"
+    data "Passives" "Goon_Aura_of_Hate_Passive;SupernaturalResistance"
+    data "Boosts" "UnlockSpell(Target_SpitefulSuffering,AddChildren);UnlockSpell(Target_ControlUndead,AddChildren);UnlockSpell(Shout_Dreadful_Aspect,AddChildren);UnlockSpell(Shout_HellishRebuke,AddChildren);UnlockSpell(Target_InflictWounds,AddChildren);UnlockSpell(Target_CrownOfMadness,AddChildren);UnlockSpell(Target_Darkness,AddChildren);UnlockSpell(Target_BestowCurse,AddChildren);UnlockSpell(Target_AnimateDead,AddChildren);UnlockSpell(Target_Blight,AddChildren);UnlockSpell(Target_Confusion,AddChildren);UnlockSpell(Target_Contagion,AddChildren);UnlockSpell(Target_DominatePerson,AddChildren)"
+
+    // <node id="Progression">
+    //     <attribute id="Level" type="uint8" value="17"/>
+    //     <attribute id="Name" type="LSString" value="Oathbreaker"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="Selectors" type="LSString" value="AddSpells(5054ddf0-e093-4228-8c62-6ed98667c4f7,OathSpells,,,AlwaysPrepared)"/>
+    //     <attribute id="TableUUID" type="guid" value="f0d6f933-4532-463f-b378-a1e8b0164325"/>
+    //     <attribute id="UUID" type="guid" value="3ce5aaee-58bf-4828-9a00-4eea8f20b24e"/>
+    
+    new entry "GOON_NPC_PALADIN_OATHBREAKER_LVL_18"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_PALADIN_OATHBREAKER_LVL_17"
+    data "StackPriority" "18"
+    
+    new entry "GOON_NPC_PALADIN_OATHBREAKER_LVL_19"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_PALADIN_OATHBREAKER_LVL_17"
+    data "StackPriority" "19"
+    
+    new entry "GOON_NPC_PALADIN_OATHBREAKER_LVL_20"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_PALADIN_OATHBREAKER_PROGRESSION_TEMPLATE"
+    data "StackPriority" "20"
+    data "Passives" "Goon_Aura_of_Hate_Passive;SupernaturalResistance;DreadLord"
+    data "Boosts" "UnlockSpell(Target_SpitefulSuffering,AddChildren);UnlockSpell(Target_ControlUndead,AddChildren);UnlockSpell(Shout_Dreadful_Aspect,AddChildren);UnlockSpell(Shout_HellishRebuke,AddChildren);UnlockSpell(Target_InflictWounds,AddChildren);UnlockSpell(Target_CrownOfMadness,AddChildren);UnlockSpell(Target_Darkness,AddChildren);UnlockSpell(Target_BestowCurse,AddChildren);UnlockSpell(Target_AnimateDead,AddChildren);UnlockSpell(Target_Blight,AddChildren);UnlockSpell(Target_Confusion,AddChildren);UnlockSpell(Target_Contagion,AddChildren);UnlockSpell(Target_DominatePerson,AddChildren)"
+
+    // <node id="Progression">
+    //     <attribute id="Level" type="uint8" value="20"/>
+    //     <attribute id="Name" type="LSString" value="Oathbreaker"/>
+    //     <attribute id="PassivesAdded" type="LSString" value="DreadLord"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="TableUUID" type="guid" value="f0d6f933-4532-463f-b378-a1e8b0164325"/>
+    //     <attribute id="UUID" type="guid" value="38367d1e-c35b-4433-9e87-b30556d4ffb6"/>
