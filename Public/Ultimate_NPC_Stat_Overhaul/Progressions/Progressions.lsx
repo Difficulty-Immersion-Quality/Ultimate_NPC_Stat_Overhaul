@@ -1403,8 +1403,7 @@
                     <attribute id="Boosts" type="LSString" value="ActionResource(SpellSlot,1,2);"/>
                     <attribute id="Level" type="uint8" value="7"/>
                     <attribute id="Name" type="LSString" value="NPC_Ranger"/>
-                    <!-- <attribute id="PassivesAdded" type="LSString" value=""/> -->
-                    <attribute id="PassivesAdded" type="LSString" value="UnlockedSpellSlotLevel2"/>
+                    <!-- <attribute id="PassivesAdded" type="LSString" value="UnlockedSpellSlotLevel2"/> -->
                     <attribute id="ProgressionType" type="uint8" value="0"/>
                     <!-- <attribute id="Selectors" type="LSString" value="SelectSpells(e7cfb80a-f5c2-4304-8446-9b00ea6a9814,1,1)"/> -->
                     <attribute id="TableUUID" type="guid" value="f0ede459-8b86-48fd-ac11-4432573566a5"/>
@@ -1459,6 +1458,82 @@
                     <!-- <attribute id="Selectors" type="LSString" value="SelectSpells(9a60f649-7f82-4152-90b1-0499c5c9f3e2,0,1)"/> -->
                     <attribute id="TableUUID" type="guid" value="f0ede459-8b86-48fd-ac11-4432573566a5"/>
                     <attribute id="UUID" type="guid" value="6560a60c-a816-4b1b-b4a5-ad0a5194253a"/>
+                </node>
+                <!-- RANGER: Expansion 13-20 -->
+                <node id="Progression">
+                    <attribute id="Boosts" type="LSString" value="ActionResource(SpellSlot,1,4)"/>
+                    <attribute id="Level" type="uint8" value="13"/>
+                    <attribute id="Name" type="LSString" value="NPC_Ranger"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <!-- <attribute id="Selectors" type="LSString" value="SelectSpells(7022d937-b2e4-4b6e-a3c5-e168f5c00194,1,1)"/> -->
+                    <attribute id="TableUUID" type="guid" value="f0ede459-8b86-48fd-ac11-4432573566a5"/>
+                    <attribute id="UUID" type="guid" value="1b6624e1-d988-4637-a8c4-4f155854d1bc"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="14"/>
+                    <attribute id="Name" type="LSString" value="NPC_Ranger"/>
+                    <attribute id="PassivesAdded" type="LSString" value="Vanish"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <!-- <attribute id="Selectors" type="LSString" value="SelectSpells(7022d937-b2e4-4b6e-a3c5-e168f5c00194,0,1)"/> -->
+                    <attribute id="TableUUID" type="guid" value="f0ede459-8b86-48fd-ac11-4432573566a5"/>
+                    <attribute id="UUID" type="guid" value="7a1325bd-d742-42b4-bef4-a1a61f0107a2"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Boosts" type="LSString" value="ActionResource(SpellSlot,1,4)"/>
+                    <attribute id="Level" type="uint8" value="15"/>
+                    <attribute id="Name" type="LSString" value="NPC_Ranger"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <!-- <attribute id="Selectors" type="LSString" value="SelectSpells(7022d937-b2e4-4b6e-a3c5-e168f5c00194,1,1)"/> -->
+                    <attribute id="TableUUID" type="guid" value="f0ede459-8b86-48fd-ac11-4432573566a5"/>
+                    <attribute id="UUID" type="guid" value="a09e96a9-39a1-4df7-ab1a-455ff95b92cf"/>
+                </node>
+                <node id="Progression">
+                    <!-- <attribute id="AllowImprovement" type="bool" value="true"/> -->
+                    <attribute id="Level" type="uint8" value="16"/>
+                    <attribute id="Name" type="LSString" value="NPC_Ranger"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <!-- <attribute id="Selectors" type="LSString" value="SelectSpells(7022d937-b2e4-4b6e-a3c5-e168f5c00194,0,1)"/> -->
+                    <attribute id="TableUUID" type="guid" value="f0ede459-8b86-48fd-ac11-4432573566a5"/>
+                    <attribute id="UUID" type="guid" value="e96e2532-0243-42f2-b242-4bbdd2012acc"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Boosts" type="LSString" value="ActionResource(SpellSlot,1,4);ActionResource(SpellSlot,1,5)"/>
+                    <attribute id="Level" type="uint8" value="17"/>
+                    <attribute id="Name" type="LSString" value="NPC_Ranger"/>
+                    <!-- <attribute id="PassivesAdded" type="LSString" value="UnlockedSpellSlotLevel5"/> -->
+                    <attribute id="PassivesAdded" type="LSString" value=""/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <!-- <attribute id="Selectors" type="LSString" value="SelectSpells(412d77e1-4aa2-4149-aa0e-c835b8c79f32,1,1)"/> -->
+                    <attribute id="TableUUID" type="guid" value="f0ede459-8b86-48fd-ac11-4432573566a5"/>
+                    <attribute id="UUID" type="guid" value="16531444-364e-4f03-b516-6c054fb57d37"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="18"/>
+                    <attribute id="Name" type="LSString" value="NPC_Ranger"/>
+                    <attribute id="PassivesAdded" type="LSString" value="FeralSenses"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <!-- <attribute id="Selectors" type="LSString" value="SelectSpells(412d77e1-4aa2-4149-aa0e-c835b8c79f32,0,1)"/> -->
+                    <attribute id="TableUUID" type="guid" value="f0ede459-8b86-48fd-ac11-4432573566a5"/>
+                    <attribute id="UUID" type="guid" value="8f3cd1e1-1d19-4864-b321-31c73291843c"/>
+                </node>
+                <node id="Progression">
+                    <!-- <attribute id="AllowImprovement" type="bool" value="true"/> -->
+                    <attribute id="Boosts" type="LSString" value="ActionResource(SpellSlot,1,5)"/>
+                    <attribute id="Level" type="uint8" value="19"/>
+                    <attribute id="Name" type="LSString" value="NPC_Ranger"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <!-- <attribute id="Selectors" type="LSString" value="SelectSpells(412d77e1-4aa2-4149-aa0e-c835b8c79f32,1,1)"/> -->
+                    <attribute id="TableUUID" type="guid" value="f0ede459-8b86-48fd-ac11-4432573566a5"/>
+                    <attribute id="UUID" type="guid" value="53df583b-93ea-4fda-b96e-cd4a7054f209"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="20"/>
+                    <attribute id="Name" type="LSString" value="NPC_Ranger"/>
+                    <attribute id="PassivesAdded" type="LSString" value="FoeSlayer"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <!-- <attribute id="Selectors" type="LSString" value="SelectSpells(412d77e1-4aa2-4149-aa0e-c835b8c79f32,0,1)"/> -->
+                    <attribute id="TableUUID" type="guid" value="f0ede459-8b86-48fd-ac11-4432573566a5"/>
+                    <attribute id="UUID" type="guid" value="99cba482-582f-4451-8e51-722c0e471845"/>
                 </node>
             <!-- ROGUE -->
                 <node id="Progression">
