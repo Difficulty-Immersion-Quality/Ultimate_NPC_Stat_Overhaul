@@ -242,7 +242,7 @@
     using "GOON_NPC_BARBARIAN_BERSERKER_PROGRESSION_TEMPLATE"
     data "StackPriority" "3"
     data "Passives" "RageFrenzyUnlock"
-    data "Boosts" "UnlockSpell(Target_FrenziedStrike);UnlockSpell(Throw_FrenziedThrow)"
+    data "Boosts" "UnlockSpell(Target_FrenziedStrike,AddChildren);UnlockSpell(Throw_FrenziedThrow,AddChildren)"
 
     // <node id="Progression">
     //     <attribute id="Level" type="uint8" value="3"/>
@@ -272,7 +272,7 @@
     using "GOON_NPC_BARBARIAN_BERSERKER_PROGRESSION_TEMPLATE"
     data "StackPriority" "6"
     data "Passives" "RageFrenzyUnlock;MindlessRage"
-    data "Boosts" "UnlockSpell(Target_FrenziedStrike);UnlockSpell(Throw_FrenziedThrow)"
+    data "Boosts" "UnlockSpell(Target_FrenziedStrike,AddChildren);UnlockSpell(Throw_FrenziedThrow,AddChildren)"
 
     // <node id="Progression">
     //     <attribute id="Level" type="uint8" value="6"/>
@@ -306,7 +306,7 @@
     using "GOON_NPC_BARBARIAN_BERSERKER_PROGRESSION_TEMPLATE"
     data "StackPriority" "10"
     data "Passives" "RageFrenzyUnlock;MindlessRage"
-    data "Boosts" "UnlockSpell(Target_FrenziedStrike);UnlockSpell(Throw_FrenziedThrow);UnlockSpell(Target_IntimidatingPresence)"
+    data "Boosts" "UnlockSpell(Target_FrenziedStrike,AddChildren);UnlockSpell(Throw_FrenziedThrow,AddChildren);UnlockSpell(Target_IntimidatingPresence,AddChildren)"
 
     // <node id="Progression">
     //     <attribute id="Level" type="uint8" value="10"/>
@@ -341,7 +341,7 @@
     using "GOON_NPC_BARBARIAN_BERSERKER_PROGRESSION_TEMPLATE"
     data "StackPriority" "14"
     data "Passives" "RageFrenzyUnlock;MindlessRage;Retaliation"
-    data "Boosts" "UnlockSpell(Target_FrenziedStrike);UnlockSpell(Throw_FrenziedThrow);UnlockSpell(Target_IntimidatingPresence)"
+    data "Boosts" "UnlockSpell(Target_FrenziedStrike,AddChildren);UnlockSpell(Throw_FrenziedThrow,AddChildren);UnlockSpell(Target_IntimidatingPresence,AddChildren)"
 
     // <node id="Progression">
     //     <attribute id="Level" type="uint8" value="14"/>
@@ -427,7 +427,7 @@
     using "GOON_NPC_BARBARIAN_WILDMAGIC_PROGRESSION_TEMPLATE"
     data "StackPriority" "3"
     data "Passives" "WildMagicRage"
-    data "Boosts" "UnlockSpell(Shout_MagicAwareness)"
+    data "Boosts" "UnlockSpell(Shout_MagicAwareness,AddChildren)"
 
     // <node id="Progression">
     //     <attribute id="Level" type="uint8" value="3"/>
@@ -457,7 +457,7 @@
     using "GOON_NPC_BARBARIAN_WILDMAGIC_PROGRESSION_TEMPLATE"
     data "StackPriority" "6"
     data "Passives" "WildMagicRage"
-    data "Boosts" "UnlockSpell(Shout_MagicAwareness);UnlockSpell(Target_BolsteringMagic_Boost);UnlockSpell(Target_BolsteringMagic_SpellSlot1);UnlockSpell(Target_BolsteringMagic_SpellSlot2)"
+    data "Boosts" "UnlockSpell(Shout_MagicAwareness,AddChildren);UnlockSpell(Target_BolsteringMagic_Boost,AddChildren);UnlockSpell(Target_BolsteringMagic_SpellSlot1,AddChildren);UnlockSpell(Target_BolsteringMagic_SpellSlot2,AddChildren)"
 
     // <node id="Progression">
     //     <attribute id="Level" type="uint8" value="6"/>
@@ -485,7 +485,7 @@
     using "GOON_NPC_BARBARIAN_WILDMAGIC_PROGRESSION_TEMPLATE"
     data "StackPriority" "9"
     data "Passives" "WildMagicRage"
-    data "Boosts" "UnlockSpell(Shout_MagicAwareness);UnlockSpell(Target_BolsteringMagic_Boost);UnlockSpell(Target_BolsteringMagic_SpellSlot1);UnlockSpell(Target_BolsteringMagic_SpellSlot2);UnlockSpell(Target_BolsteringMagic_SpellSlot3)"
+    data "Boosts" "UnlockSpell(Shout_MagicAwareness,AddChildren);UnlockSpell(Target_BolsteringMagic_Boost,AddChildren);UnlockSpell(Target_BolsteringMagic_SpellSlot1,AddChildren);UnlockSpell(Target_BolsteringMagic_SpellSlot2,AddChildren);UnlockSpell(Target_BolsteringMagic_SpellSlot3,AddChildren)"
 
     // <node id="Progression">
     //     <attribute id="Level" type="uint8" value="9"/>
@@ -501,7 +501,7 @@
     using "GOON_NPC_BARBARIAN_WILDMAGIC_PROGRESSION_TEMPLATE"
     data "StackPriority" "10"
     data "Passives" "WildMagicRage;Unstable_Backlash"
-    data "Boosts" "UnlockSpell(Shout_MagicAwareness);UnlockSpell(Target_BolsteringMagic_Boost);UnlockSpell(Target_BolsteringMagic_SpellSlot1);UnlockSpell(Target_BolsteringMagic_SpellSlot2);UnlockSpell(Target_BolsteringMagic_SpellSlot3)"
+    data "Boosts" "UnlockSpell(Shout_MagicAwareness,AddChildren);UnlockSpell(Target_BolsteringMagic_Boost,AddChildren);UnlockSpell(Target_BolsteringMagic_SpellSlot1,AddChildren);UnlockSpell(Target_BolsteringMagic_SpellSlot2,AddChildren);UnlockSpell(Target_BolsteringMagic_SpellSlot3,AddChildren)"
 
     // <node id="Progression">
     //     <attribute id="Level" type="uint8" value="10"/>
@@ -615,7 +615,7 @@
     using "GOON_NPC_BARBARIAN_WILDHEART_PROGRESSION_TEMPLATE"
     data "StackPriority" "3"
     data "Passives" "TotemSpirit_Wolf"
-    data "Boosts" "UnlockSpell(Shout_SpeakWithAnimals_Barbarian)"
+    data "Boosts" "UnlockSpell(Shout_SpeakWithAnimals_Barbarian,AddChildren)"
 
     // <node id="Progression">
     //     <attribute id="Level" type="uint8" value="3"/>
@@ -644,7 +644,7 @@
     using "GOON_NPC_BARBARIAN_WILDHEART_PROGRESSION_TEMPLATE"
     data "StackPriority" "6"
     data "Passives" "TotemSpirit_Wolf;AspectOfTheBeast_Elk"
-    data "Boosts" "UnlockSpell(Shout_SpeakWithAnimals_Barbarian)"
+    data "Boosts" "UnlockSpell(Shout_SpeakWithAnimals_Barbarian,AddChildren)"
 
     // </node>
     // <node id="Progression">
@@ -667,7 +667,7 @@
     using "GOON_NPC_BARBARIAN_WILDHEART_PROGRESSION_TEMPLATE"
     data "StackPriority" "8"
     data "Passives" "TotemSpirit_Wolf;AspectOfTheBeast_Elk;LandsStride_DifficultTerrain;LandsStride_Surfaces;LandsStride_Advantage"
-    data "Boosts" "UnlockSpell(Shout_SpeakWithAnimals_Barbarian)"
+    data "Boosts" "UnlockSpell(Shout_SpeakWithAnimals_Barbarian,AddChildren)"
 
     // <node id="Progression">
     //     <attribute id="Level" type="uint8" value="8"/>
@@ -690,7 +690,7 @@
     using "GOON_NPC_BARBARIAN_WILDHEART_PROGRESSION_TEMPLATE"
     data "StackPriority" "10"
     data "Passives" "TotemSpirit_Wolf;AspectOfTheBeast_Elk;LandsStride_DifficultTerrain;LandsStride_Surfaces;LandsStride_Advantage;AspectOfTheBeast_Bear"
-    data "Boosts" "UnlockSpell(Shout_SpeakWithAnimals_Barbarian)"
+    data "Boosts" "UnlockSpell(Shout_SpeakWithAnimals_Barbarian,AddChildren)"
 
     // </node>
     // <node id="Progression">
@@ -726,7 +726,7 @@
     using "GOON_NPC_BARBARIAN_WILDHEART_LVL_10"
     data "StackPriority" "14"
     data "Passives" "TotemSpirit_Wolf;AspectOfTheBeast_Elk;LandsStride_DifficultTerrain;LandsStride_Surfaces;LandsStride_Advantage;AspectOfTheBeast_Bear;TotemicAttunement_Bear"
-    data "Boosts" "UnlockSpell(Shout_SpeakWithAnimals_Barbarian)"
+    data "Boosts" "UnlockSpell(Shout_SpeakWithAnimals_Barbarian,AddChildren)"
 
     // <node id="Progression">
     //     <attribute id="Level" type="uint8" value="14"/>
