@@ -281,3 +281,20 @@ data "CombatAIOverrideSpell" ""
 data "UseCosts" ""
 // data "Requirements" "!Combat"
 data "Requirements" "not HasStatus('WEAPON_BOND',GetActiveWeapon())"
+
+// ==================================== Ranger - Companion Summon ====================================
+
+new entry "Target_RangersCompanion"
+type "SpellData"
+data "SpellType" "Target"
+using "Target_RangersCompanion"
+data "CombatAIOverrideSpell" "Target_RangersCompanion_AI"
+
+new entry "Target_RangersCompanion_AI"
+type "SpellData"
+data "SpellType" "Shout"
+using "Target_RangersCompanion"
+// data "CombatAIOverrideSpell" "Target_RangersCompanion_AI"
+data "CombatAIOverrideSpell" ""
+// data "UseCosts" "ActionPoint:1"
+data "UseCosts" ""
