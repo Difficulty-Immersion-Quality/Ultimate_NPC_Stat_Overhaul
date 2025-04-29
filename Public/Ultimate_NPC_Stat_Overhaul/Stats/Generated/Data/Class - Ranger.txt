@@ -3,7 +3,14 @@
     new entry "Goon_Ranger_NPC_Progressions"
     type "PassiveData"
     data "DisplayName" "haf18a871g8e0fg46b0gb05eg2ea8ca538b80;1"
-    data "Description" ""
+    data "Description" "hb866306fgff14g4ea1gbe39g5cab14bea83b"
+    data "Properties" "Highlighted"
+    data "Icon" "GenericIcon_Intent_Buff"
+
+    new entry "Goon_Flaming_Fist_Melee_Ranger_NPC_Progressions"
+    type "PassiveData"
+    data "DisplayName" "he50c053cg4e2dg479fg88c9g0d84fed9bde6;1"
+    data "Description" "hb866306fgff14g4ea1gbe39g5cab14bea83b"
     data "Properties" "Highlighted"
     data "Icon" "GenericIcon_Intent_Buff"
 
@@ -524,4 +531,209 @@
     //     <attribute id="ProgressionType" type="uint8" value="1"/>
     //     <attribute id="TableUUID" type="guid" value="1ba04e99-e329-471d-a656-bbd5a363d7c8"/>
     //     <attribute id="UUID" type="guid" value="4b901127-66ef-4c2f-9ad5-3d491dba1020"/>
+
+// ==================================== Subclass: Gloom Stalker ====================================
+
+    new entry "CX_Ranger_GloomStalker_Boost"
+    type "PassiveData"
+    data "DisplayName" "ha8256510ga98cg4fe1ga6eegff27a115f3b9;1"
+    data "Description" "h6e0579cfgb01dg4402g9faeg65c4c7a21209;1"
+    data "Icon" "Action_DreadAmbusher_Ranged"
+    data "Boosts" ""
+    data "StatsFunctorContext" "OnCreate;OnStatusApplied;OnStatusRemoved"
+    data "Conditions" ""
+    data "StatsFunctors" "IF(not ClassLevelHigherOrEqualThan(2,'NPC_RANGER') or HasStatus('GOON_NPC_RANGER_LVL_1')):ApplyStatus(GOON_NPC_RANGER_GLOOMSTALKER_LVL_1,100,-1);IF(ClassLevelHigherOrEqualThan(2,'NPC_RANGER') and not ClassLevelHigherOrEqualThan(3,'NPC_RANGER') or HasStatus('GOON_NPC_RANGER_LVL_2')):ApplyStatus(GOON_NPC_RANGER_GLOOMSTALKER_LVL_2,100,-1);IF(ClassLevelHigherOrEqualThan(3,'NPC_RANGER') and not ClassLevelHigherOrEqualThan(4,'NPC_RANGER') or HasStatus('GOON_NPC_RANGER_LVL_3')):ApplyStatus(GOON_NPC_RANGER_GLOOMSTALKER_LVL_3,100,-1);IF(ClassLevelHigherOrEqualThan(4,'NPC_RANGER') and not ClassLevelHigherOrEqualThan(5,'NPC_RANGER') or HasStatus('GOON_NPC_RANGER_LVL_4')):ApplyStatus(GOON_NPC_RANGER_GLOOMSTALKER_LVL_4,100,-1);IF(ClassLevelHigherOrEqualThan(5,'NPC_RANGER') and not ClassLevelHigherOrEqualThan(6,'NPC_RANGER') or HasStatus('GOON_NPC_RANGER_LVL_5')):ApplyStatus(GOON_NPC_RANGER_GLOOMSTALKER_LVL_5,100,-1);IF(ClassLevelHigherOrEqualThan(6,'NPC_RANGER') and not ClassLevelHigherOrEqualThan(7,'NPC_RANGER') or HasStatus('GOON_NPC_RANGER_LVL_6')):ApplyStatus(GOON_NPC_RANGER_GLOOMSTALKER_LVL_6,100,-1);IF(ClassLevelHigherOrEqualThan(7,'NPC_RANGER') and not ClassLevelHigherOrEqualThan(8,'NPC_RANGER') or HasStatus('GOON_NPC_RANGER_LVL_7')):ApplyStatus(GOON_NPC_RANGER_GLOOMSTALKER_LVL_7,100,-1);IF(ClassLevelHigherOrEqualThan(8,'NPC_RANGER') and not ClassLevelHigherOrEqualThan(9,'NPC_RANGER') or HasStatus('GOON_NPC_RANGER_LVL_8')):ApplyStatus(GOON_NPC_RANGER_GLOOMSTALKER_LVL_8,100,-1);IF(ClassLevelHigherOrEqualThan(9,'NPC_RANGER') and not ClassLevelHigherOrEqualThan(10,'NPC_RANGER') or HasStatus('GOON_NPC_RANGER_LVL_9')):ApplyStatus(GOON_NPC_RANGER_GLOOMSTALKER_LVL_9,100,-1);IF(ClassLevelHigherOrEqualThan(10,'NPC_RANGER') and not ClassLevelHigherOrEqualThan(11,'NPC_RANGER') or HasStatus('GOON_NPC_RANGER_LVL_10')):ApplyStatus(GOON_NPC_RANGER_GLOOMSTALKER_LVL_10,100,-1);IF(ClassLevelHigherOrEqualThan(11,'NPC_RANGER') and not ClassLevelHigherOrEqualThan(12,'NPC_RANGER') or HasStatus('GOON_NPC_RANGER_LVL_11')):ApplyStatus(GOON_NPC_RANGER_GLOOMSTALKER_LVL_11,100,-1);IF(ClassLevelHigherOrEqualThan(12,'NPC_RANGER') and not ClassLevelHigherOrEqualThan(13,'NPC_RANGER') or HasStatus('GOON_NPC_RANGER_LVL_12')):ApplyStatus(GOON_NPC_RANGER_GLOOMSTALKER_LVL_12,100,-1);IF(ClassLevelHigherOrEqualThan(13,'NPC_RANGER') and not ClassLevelHigherOrEqualThan(14,'NPC_RANGER') or HasStatus('GOON_NPC_RANGER_LVL_13')):ApplyStatus(GOON_NPC_RANGER_GLOOMSTALKER_LVL_13,100,-1);IF(ClassLevelHigherOrEqualThan(14,'NPC_RANGER') and not ClassLevelHigherOrEqualThan(15,'NPC_RANGER') or HasStatus('GOON_NPC_RANGER_LVL_14')):ApplyStatus(GOON_NPC_RANGER_GLOOMSTALKER_LVL_14,100,-1);IF(ClassLevelHigherOrEqualThan(15,'NPC_RANGER') and not ClassLevelHigherOrEqualThan(16,'NPC_RANGER') or HasStatus('GOON_NPC_RANGER_LVL_15')):ApplyStatus(GOON_NPC_RANGER_GLOOMSTALKER_LVL_15,100,-1);IF(ClassLevelHigherOrEqualThan(16,'NPC_RANGER') and not ClassLevelHigherOrEqualThan(17,'NPC_RANGER') or HasStatus('GOON_NPC_RANGER_LVL_16')):ApplyStatus(GOON_NPC_RANGER_GLOOMSTALKER_LVL_16,100,-1);IF(ClassLevelHigherOrEqualThan(17,'NPC_RANGER') and not ClassLevelHigherOrEqualThan(18,'NPC_RANGER') or HasStatus('GOON_NPC_RANGER_LVL_17')):ApplyStatus(GOON_NPC_RANGER_GLOOMSTALKER_LVL_17,100,-1);IF(ClassLevelHigherOrEqualThan(18,'NPC_RANGER') and not ClassLevelHigherOrEqualThan(19,'NPC_RANGER') or HasStatus('GOON_NPC_RANGER_LVL_18')):ApplyStatus(GOON_NPC_RANGER_GLOOMSTALKER_LVL_18,100,-1);IF(ClassLevelHigherOrEqualThan(19,'NPC_RANGER') and not ClassLevelHigherOrEqualThan(20,'NPC_RANGER') or HasStatus('GOON_NPC_RANGER_LVL_19')):ApplyStatus(GOON_NPC_RANGER_GLOOMSTALKER_LVL_19,100,-1);IF(ClassLevelHigherOrEqualThan(20,'NPC_RANGER') or HasStatus('GOON_NPC_RANGER_LVL_20')):ApplyStatus(GOON_NPC_RANGER_GLOOMSTALKER_LVL_20,100,-1)"
+
+// Template
+    new entry "GOON_NPC_RANGER_GLOOMSTALKER_PROGRESSION_TEMPLATE"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    data "StatusPropertyFlags" "DisableOverhead;DisableCombatlog;DisablePortraitIndicator;ApplyToDead;IgnoreResting"
+    data "RemoveEvents" "OnStatusApplied;OnStatusRemoved"
+    data "StackId" "GOON_NPC_RANGER_GLOOMSTALKER_PROGRESSION_TEMPLATE"
+    data "StackType" "Ignore"
+    data "RemoveConditions" "not HasPassive('CX_Ranger_GloomStalker_Boost')"
+
+// Progression statuses
+    new entry "GOON_NPC_SOMETHING_SOMETHING_LVL_1"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_RANGER_GLOOMSTALKER_PROGRESSION_TEMPLATE"
+    data "StackPriority" "1"
+
+    new entry "GOON_NPC_SOMETHING_SOMETHING_LVL_2"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_RANGER_GLOOMSTALKER_PROGRESSION_TEMPLATE"
+    data "StackPriority" "2"
+
+    new entry "GOON_NPC_SOMETHING_SOMETHING_LVL_3"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_RANGER_GLOOMSTALKER_PROGRESSION_TEMPLATE"
+    data "StackPriority" "3"
+    data "Passives" "DreadAmbusher;SuperiorDarkvision"
+    data "Boosts" "UnlockSpell(Shout_Hide_DreadAmbusher,AddChildren);UnlockSpell(Shout_UmbralCloak,AddChildren);UnlockSpell(Shout_DisguiseSelf,AddChildren)"
+
+    // <node id="Progression">
+    //     <attribute id="Level" type="uint8" value="3"/>
+    //     <attribute id="Name" type="LSString" value="GloomStalker"/>
+    //     <attribute id="PassivesAdded" type="LSString" value="DreadAmbusher;SuperiorDarkvision"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="Selectors" type="LSString" value="AddSpells(5ea6abd7-3e02-4e8d-9220-8a400e0019a4,,,,AlwaysPrepared)"/>
+    //     <attribute id="TableUUID" type="guid" value="caa60bb8-8ca3-4871-b034-e10a6bc8ca29"/>
+    //     <attribute id="UUID" type="guid" value="38240899-8a43-43e4-927c-9dd0d2fa0a50"/>
+
+    new entry "GOON_NPC_SOMETHING_SOMETHING_LVL_4"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_SOMETHING_SOMETHING_LVL_3"
+    data "StackPriority" "4"
+
+    new entry "GOON_NPC_SOMETHING_SOMETHING_LVL_5"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_RANGER_GLOOMSTALKER_PROGRESSION_TEMPLATE"
+    data "StackPriority" "5"
+    data "Passives" "DreadAmbusher;SuperiorDarkvision"
+    data "Boosts" "UnlockSpell(Shout_Hide_DreadAmbusher,AddChildren);UnlockSpell(Shout_UmbralCloak,AddChildren);UnlockSpell(Shout_DisguiseSelf,AddChildren);UnlockSpell(Target_MistyStep,AddChildren)"
+
+    // <node id="Progression">
+    //     <attribute id="Level" type="uint8" value="5"/>
+    //     <attribute id="Name" type="LSString" value="GloomStalker"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="Selectors" type="LSString" value="AddSpells(5bb07252-9a62-465a-936f-0ee475b586d1,,,,AlwaysPrepared)"/>
+    //     <attribute id="TableUUID" type="guid" value="caa60bb8-8ca3-4871-b034-e10a6bc8ca29"/>
+    //     <attribute id="UUID" type="guid" value="0593eba5-10a2-42a7-a5be-260cae52b0e0"/>
+
+    new entry "GOON_NPC_SOMETHING_SOMETHING_LVL_6"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_SOMETHING_SOMETHING_LVL_5"
+    data "StackPriority" "6"
+
+    new entry "GOON_NPC_SOMETHING_SOMETHING_LVL_7"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_RANGER_GLOOMSTALKER_PROGRESSION_TEMPLATE"
+    data "StackPriority" "7"
+    data "Passives" "DreadAmbusher;SuperiorDarkvision;IronMind"
+    data "Boosts" "UnlockSpell(Shout_Hide_DreadAmbusher,AddChildren);UnlockSpell(Shout_UmbralCloak,AddChildren);UnlockSpell(Shout_DisguiseSelf,AddChildren);UnlockSpell(Target_MistyStep,AddChildren)"
+
+    // <node id="Progression">
+    //     <attribute id="Level" type="uint8" value="7"/>
+    //     <attribute id="Name" type="LSString" value="GloomStalker"/>
+    //     <attribute id="PassivesAdded" type="LSString" value="IronMind"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="TableUUID" type="guid" value="caa60bb8-8ca3-4871-b034-e10a6bc8ca29"/>
+    //     <attribute id="UUID" type="guid" value="c785c564-4676-4ad0-adf9-ea3d80caceb2"/>
+
+    new entry "GOON_NPC_SOMETHING_SOMETHING_LVL_8"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_SOMETHING_SOMETHING_LVL_7"
+    data "StackPriority" "8"
+
+    new entry "GOON_NPC_SOMETHING_SOMETHING_LVL_9"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_RANGER_GLOOMSTALKER_PROGRESSION_TEMPLATE"
+    data "StackPriority" "9"
+    data "Passives" "DreadAmbusher;SuperiorDarkvision;IronMind"
+    data "Boosts" "UnlockSpell(Shout_Hide_DreadAmbusher,AddChildren);UnlockSpell(Shout_UmbralCloak,AddChildren);UnlockSpell(Shout_DisguiseSelf,AddChildren);UnlockSpell(Target_MistyStep,AddChildren);UnlockSpell(Zone_Fear,AddChildren)"
+
+    // <node id="Progression">
+    //     <attribute id="Level" type="uint8" value="9"/>
+    //     <attribute id="Name" type="LSString" value="GloomStalker"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="Selectors" type="LSString" value="AddSpells(4a23c3c3-e6f7-48a4-a883-8ac2f6a2c97a,,,,AlwaysPrepared)"/>
+    //     <attribute id="TableUUID" type="guid" value="caa60bb8-8ca3-4871-b034-e10a6bc8ca29"/>
+    //     <attribute id="UUID" type="guid" value="ccba51a3-43e9-4c4c-83cf-f33ccbf8fb93"/>
+
+    new entry "GOON_NPC_SOMETHING_SOMETHING_LVL_10"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_SOMETHING_SOMETHING_LVL_9"
+    data "StackPriority" "10"
+
+    new entry "GOON_NPC_SOMETHING_SOMETHING_LVL_11"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_RANGER_GLOOMSTALKER_PROGRESSION_TEMPLATE"
+    data "StackPriority" "11"
+    data "Passives" "DreadAmbusher;SuperiorDarkvision;IronMind;StalkersFlurry"
+    data "Boosts" "UnlockSpell(Shout_Hide_DreadAmbusher,AddChildren);UnlockSpell(Shout_UmbralCloak,AddChildren);UnlockSpell(Shout_DisguiseSelf,AddChildren);UnlockSpell(Target_MistyStep,AddChildren);UnlockSpell(Zone_Fear,AddChildren)"
+
+    // <node id="Progression">
+    //     <attribute id="Level" type="uint8" value="11"/>
+    //     <attribute id="Name" type="LSString" value="GloomStalker"/>
+    //     <attribute id="PassivesAdded" type="LSString" value="StalkersFlurry"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="TableUUID" type="guid" value="caa60bb8-8ca3-4871-b034-e10a6bc8ca29"/>
+    //     <attribute id="UUID" type="guid" value="9ef95460-d304-459a-8617-d1044fdf8695"/>
+
+    new entry "GOON_NPC_SOMETHING_SOMETHING_LVL_12"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_SOMETHING_SOMETHING_LVL_11"
+    data "StackPriority" "12"
+
+// Expansion levels 13-20
+    new entry "GOON_NPC_SOMETHING_SOMETHING_LVL_13"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_SOMETHING_SOMETHING_LVL_11"
+    data "StackPriority" "13"
+    
+    new entry "GOON_NPC_SOMETHING_SOMETHING_LVL_14"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_SOMETHING_SOMETHING_LVL_11"
+    data "StackPriority" "14"
+    
+    new entry "GOON_NPC_SOMETHING_SOMETHING_LVL_15"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_RANGER_GLOOMSTALKER_PROGRESSION_TEMPLATE"
+    data "StackPriority" "15"
+    data "Passives" "DreadAmbusher;SuperiorDarkvision;IronMind;StalkersFlurry;ShadowyDodge"
+    data "Boosts" "UnlockSpell(Shout_Hide_DreadAmbusher,AddChildren);UnlockSpell(Shout_UmbralCloak,AddChildren);UnlockSpell(Shout_DisguiseSelf,AddChildren);UnlockSpell(Target_MistyStep,AddChildren);UnlockSpell(Zone_Fear,AddChildren)"
+
+    // <node id="Progression">
+    //     <attribute id="Level" type="uint8" value="15"/>
+    //     <attribute id="Name" type="LSString" value="GloomStalker"/>
+    //     <attribute id="PassivesAdded" type="LSString" value="ShadowyDodge"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="TableUUID" type="guid" value="caa60bb8-8ca3-4871-b034-e10a6bc8ca29"/>
+    //     <attribute id="UUID" type="guid" value="ce6518b3-671a-49c6-921b-e1c295572916"/>
+    
+    new entry "GOON_NPC_SOMETHING_SOMETHING_LVL_16"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_SOMETHING_SOMETHING_LVL_15"
+    data "StackPriority" "16"
+    
+    new entry "GOON_NPC_SOMETHING_SOMETHING_LVL_17"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_SOMETHING_SOMETHING_LVL_15"
+    data "StackPriority" "17"
+    
+    new entry "GOON_NPC_SOMETHING_SOMETHING_LVL_18"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_SOMETHING_SOMETHING_LVL_15"
+    data "StackPriority" "18"
+    
+    new entry "GOON_NPC_SOMETHING_SOMETHING_LVL_19"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_SOMETHING_SOMETHING_LVL_15"
+    data "StackPriority" "19"
+    
+    new entry "GOON_NPC_SOMETHING_SOMETHING_LVL_20"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_SOMETHING_SOMETHING_LVL_15"
+    data "StackPriority" "20"
 

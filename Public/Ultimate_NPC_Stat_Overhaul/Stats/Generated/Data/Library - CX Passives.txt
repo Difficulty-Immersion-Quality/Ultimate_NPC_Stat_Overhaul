@@ -49,13 +49,6 @@ data "Icon" "Spell_Abjuration_WardingBond"
 
 // ==================================== Ranger ====================================
 
-new entry "CX_Ranger_GloomStalker_Boost"
-type "PassiveData"
-data "DisplayName" ";1"
-data "Description" ";1"
-data "Icon" "Action_DreadAmbusher_Ranged"
-data "Boosts" ""
-
 new entry "CX_Ranger_Hunter_Boost"
 type "PassiveData"
 data "DisplayName" "h54d41724g9946g4399gadd8gd5aeb1490f44;1"
