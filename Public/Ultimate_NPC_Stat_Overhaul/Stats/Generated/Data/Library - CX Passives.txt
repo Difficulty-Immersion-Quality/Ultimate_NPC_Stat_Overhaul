@@ -47,15 +47,6 @@ data "Description" "hd5818987ga072g4e8dgb314g97ab96f230cd;1"
 data "Boosts" "Proficiency(SimpleWeapons);Proficiency(MartialWeapons)"
 data "Icon" "Spell_Abjuration_WardingBond"
 
-// ==================================== Ranger ====================================
-
-new entry "CX_Ranger_Hunter_Boost"
-type "PassiveData"
-data "DisplayName" "h54d41724g9946g4399gadd8gd5aeb1490f44;1"
-data "Description" "hf1e55b72g2b2cg44fagaa04g147842765b7c;1"
-data "Icon" "Action_Multiattack_Volley"
-data "Boosts" ""
-
 // ==================================== Rogue ====================================
 
 // 3 Sneak Attacks? It's all hardcoded to have only one usable IIRC

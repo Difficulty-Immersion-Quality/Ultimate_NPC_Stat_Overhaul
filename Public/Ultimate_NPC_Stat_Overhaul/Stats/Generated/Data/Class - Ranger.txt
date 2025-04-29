@@ -737,3 +737,187 @@
     using "GOON_NPC_SOMETHING_SOMETHING_LVL_15"
     data "StackPriority" "20"
 
+// ==================================== Subclass: Hunter ====================================
+// TODO: Hordebreaker, EscapeTheHorde and StandAgainstTheTide are placeholder selections
+
+    new entry "CX_Ranger_Hunter_Boost"
+    type "PassiveData"
+    data "DisplayName" "h54d41724g9946g4399gadd8gd5aeb1490f44;1"
+    data "Description" "hf1e55b72g2b2cg44fagaa04g147842765b7c;1"
+    data "Icon" "Action_Multiattack_Volley"
+    data "Boosts" ""
+    data "StatsFunctorContext" "OnCreate;OnStatusApplied;OnStatusRemoved"
+    data "Conditions" ""
+    data "StatsFunctors" "IF(not ClassLevelHigherOrEqualThan(2,'NPC_RANGER') or HasStatus('GOON_NPC_RANGER_LVL_1')):ApplyStatus(GOON_NPC_RANGER_HUNTER_LVL_1,100,-1);IF(ClassLevelHigherOrEqualThan(2,'NPC_RANGER') and not ClassLevelHigherOrEqualThan(3,'NPC_RANGER') or HasStatus('GOON_NPC_RANGER_LVL_2')):ApplyStatus(GOON_NPC_RANGER_HUNTER_LVL_2,100,-1);IF(ClassLevelHigherOrEqualThan(3,'NPC_RANGER') and not ClassLevelHigherOrEqualThan(4,'NPC_RANGER') or HasStatus('GOON_NPC_RANGER_LVL_3')):ApplyStatus(GOON_NPC_RANGER_HUNTER_LVL_3,100,-1);IF(ClassLevelHigherOrEqualThan(4,'NPC_RANGER') and not ClassLevelHigherOrEqualThan(5,'NPC_RANGER') or HasStatus('GOON_NPC_RANGER_LVL_4')):ApplyStatus(GOON_NPC_RANGER_HUNTER_LVL_4,100,-1);IF(ClassLevelHigherOrEqualThan(5,'NPC_RANGER') and not ClassLevelHigherOrEqualThan(6,'NPC_RANGER') or HasStatus('GOON_NPC_RANGER_LVL_5')):ApplyStatus(GOON_NPC_RANGER_HUNTER_LVL_5,100,-1);IF(ClassLevelHigherOrEqualThan(6,'NPC_RANGER') and not ClassLevelHigherOrEqualThan(7,'NPC_RANGER') or HasStatus('GOON_NPC_RANGER_LVL_6')):ApplyStatus(GOON_NPC_RANGER_HUNTER_LVL_6,100,-1);IF(ClassLevelHigherOrEqualThan(7,'NPC_RANGER') and not ClassLevelHigherOrEqualThan(8,'NPC_RANGER') or HasStatus('GOON_NPC_RANGER_LVL_7')):ApplyStatus(GOON_NPC_RANGER_HUNTER_LVL_7,100,-1);IF(ClassLevelHigherOrEqualThan(8,'NPC_RANGER') and not ClassLevelHigherOrEqualThan(9,'NPC_RANGER') or HasStatus('GOON_NPC_RANGER_LVL_8')):ApplyStatus(GOON_NPC_RANGER_HUNTER_LVL_8,100,-1);IF(ClassLevelHigherOrEqualThan(9,'NPC_RANGER') and not ClassLevelHigherOrEqualThan(10,'NPC_RANGER') or HasStatus('GOON_NPC_RANGER_LVL_9')):ApplyStatus(GOON_NPC_RANGER_HUNTER_LVL_9,100,-1);IF(ClassLevelHigherOrEqualThan(10,'NPC_RANGER') and not ClassLevelHigherOrEqualThan(11,'NPC_RANGER') or HasStatus('GOON_NPC_RANGER_LVL_10')):ApplyStatus(GOON_NPC_RANGER_HUNTER_LVL_10,100,-1);IF(ClassLevelHigherOrEqualThan(11,'NPC_RANGER') and not ClassLevelHigherOrEqualThan(12,'NPC_RANGER') or HasStatus('GOON_NPC_RANGER_LVL_11')):ApplyStatus(GOON_NPC_RANGER_HUNTER_LVL_11,100,-1);IF(ClassLevelHigherOrEqualThan(12,'NPC_RANGER') and not ClassLevelHigherOrEqualThan(13,'NPC_RANGER') or HasStatus('GOON_NPC_RANGER_LVL_12')):ApplyStatus(GOON_NPC_RANGER_HUNTER_LVL_12,100,-1);IF(ClassLevelHigherOrEqualThan(13,'NPC_RANGER') and not ClassLevelHigherOrEqualThan(14,'NPC_RANGER') or HasStatus('GOON_NPC_RANGER_LVL_13')):ApplyStatus(GOON_NPC_RANGER_HUNTER_LVL_13,100,-1);IF(ClassLevelHigherOrEqualThan(14,'NPC_RANGER') and not ClassLevelHigherOrEqualThan(15,'NPC_RANGER') or HasStatus('GOON_NPC_RANGER_LVL_14')):ApplyStatus(GOON_NPC_RANGER_HUNTER_LVL_14,100,-1);IF(ClassLevelHigherOrEqualThan(15,'NPC_RANGER') and not ClassLevelHigherOrEqualThan(16,'NPC_RANGER') or HasStatus('GOON_NPC_RANGER_LVL_15')):ApplyStatus(GOON_NPC_RANGER_HUNTER_LVL_15,100,-1);IF(ClassLevelHigherOrEqualThan(16,'NPC_RANGER') and not ClassLevelHigherOrEqualThan(17,'NPC_RANGER') or HasStatus('GOON_NPC_RANGER_LVL_16')):ApplyStatus(GOON_NPC_RANGER_HUNTER_LVL_16,100,-1);IF(ClassLevelHigherOrEqualThan(17,'NPC_RANGER') and not ClassLevelHigherOrEqualThan(18,'NPC_RANGER') or HasStatus('GOON_NPC_RANGER_LVL_17')):ApplyStatus(GOON_NPC_RANGER_HUNTER_LVL_17,100,-1);IF(ClassLevelHigherOrEqualThan(18,'NPC_RANGER') and not ClassLevelHigherOrEqualThan(19,'NPC_RANGER') or HasStatus('GOON_NPC_RANGER_LVL_18')):ApplyStatus(GOON_NPC_RANGER_HUNTER_LVL_18,100,-1);IF(ClassLevelHigherOrEqualThan(19,'NPC_RANGER') and not ClassLevelHigherOrEqualThan(20,'NPC_RANGER') or HasStatus('GOON_NPC_RANGER_LVL_19')):ApplyStatus(GOON_NPC_RANGER_HUNTER_LVL_19,100,-1);IF(ClassLevelHigherOrEqualThan(20,'NPC_RANGER') or HasStatus('GOON_NPC_RANGER_LVL_20')):ApplyStatus(GOON_NPC_RANGER_HUNTER_LVL_20,100,-1)"
+
+// Template
+    new entry "GOON_NPC_RANGER_HUNTER_PROGRESSION_TEMPLATE"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    data "StatusPropertyFlags" "DisableOverhead;DisableCombatlog;DisablePortraitIndicator;ApplyToDead;IgnoreResting"
+    data "RemoveEvents" "OnStatusApplied;OnStatusRemoved"
+    data "StackId" "GOON_NPC_RANGER_HUNTER_PROGRESSION_TEMPLATE"
+    data "StackType" "Ignore"
+    data "RemoveConditions" "not HasPassive('CX_Ranger_Hunter_Boost')"
+
+// Progression statuses
+    new entry "GOON_NPC_RANGER_HUNTER_LVL_1"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_RANGER_HUNTER_PROGRESSION_TEMPLATE"
+    data "StackPriority" "1"
+
+    new entry "GOON_NPC_RANGER_HUNTER_LVL_2"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_RANGER_HUNTER_PROGRESSION_TEMPLATE"
+    data "StackPriority" "2"
+
+    new entry "GOON_NPC_RANGER_HUNTER_LVL_3"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_RANGER_HUNTER_PROGRESSION_TEMPLATE"
+    data "StackPriority" "3"
+    data "Passives" "HordeBreaker"
+    data "Boosts" ""
+
+    // <node id="Progression">
+    //     <attribute id="Level" type="uint8" value="3"/>
+    //     <attribute id="Name" type="LSString" value="Hunter"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="Selectors" type="LSString" value="SelectPassives(26b53d40-13eb-4db6-80f4-bde7bd09c52d,1,HuntersPrey)"/>
+    //     <attribute id="TableUUID" type="guid" value="b19bc1ec-d7ee-4023-9f58-5056fd99be24"/>
+    //     <attribute id="UUID" type="guid" value="c38e8775-d886-49d8-ba53-0b70a9fbe306"/>
+
+    new entry "GOON_NPC_RANGER_HUNTER_LVL_4"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_RANGER_HUNTER_LVL_3"
+    data "StackPriority" "4"
+
+    new entry "GOON_NPC_RANGER_HUNTER_LVL_5"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_RANGER_HUNTER_LVL_3"
+    data "StackPriority" "5"
+
+    new entry "GOON_NPC_RANGER_HUNTER_LVL_6"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_RANGER_HUNTER_LVL_3"
+    data "StackPriority" "6"
+
+    new entry "GOON_NPC_RANGER_HUNTER_LVL_7"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_RANGER_HUNTER_PROGRESSION_TEMPLATE"
+    data "StackPriority" "7"
+    data "Passives" "HordeBreaker;EscapeTheHorde"
+    data "Boosts" ""
+
+    // <node id="Progression">
+    //     <attribute id="Level" type="uint8" value="7"/>
+    //     <attribute id="Name" type="LSString" value="Hunter"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="Selectors" type="LSString" value="SelectPassives(657f1f36-cd2e-4acb-817c-60ec3cac3671,1,DefensiveTactics)"/>
+    //     <attribute id="TableUUID" type="guid" value="b19bc1ec-d7ee-4023-9f58-5056fd99be24"/>
+    //     <attribute id="UUID" type="guid" value="b998b7f5-335a-47d8-b026-438f0ea10b4c"/>
+
+    new entry "GOON_NPC_RANGER_HUNTER_LVL_8"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_RANGER_HUNTER_LVL_7"
+    data "StackPriority" "8"
+
+    new entry "GOON_NPC_RANGER_HUNTER_LVL_9"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_RANGER_HUNTER_LVL_7"
+    data "StackPriority" "9"
+
+    new entry "GOON_NPC_RANGER_HUNTER_LVL_10"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_RANGER_HUNTER_LVL_7"
+    data "StackPriority" "10"
+
+    new entry "GOON_NPC_RANGER_HUNTER_LVL_11"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_RANGER_HUNTER_PROGRESSION_TEMPLATE"
+    data "StackPriority" "11"
+    data "Passives" "HordeBreaker;EscapeTheHorde"
+    data "Boosts" "UnlockSpell(Target_Volley,AddChildren);UnlockSpell(Shout_Whirlwind,AddChildren)"
+
+    // <node id="Progression">
+    //     <attribute id="Level" type="uint8" value="11"/>
+    //     <attribute id="Name" type="LSString" value="Hunter"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="Selectors" type="LSString" value="AddSpells(49cfa35d-94c9-4092-a5c6-337b7f16fd3a)"/>
+    //     <attribute id="TableUUID" type="guid" value="b19bc1ec-d7ee-4023-9f58-5056fd99be24"/>
+    //     <attribute id="UUID" type="guid" value="6b85e5f7-73d9-4a4b-97a6-7fd4d7df0d66"/>
+
+    new entry "GOON_NPC_RANGER_HUNTER_LVL_12"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_RANGER_HUNTER_LVL_11"
+    data "StackPriority" "12"
+
+// Expansion levels 13-20
+    new entry "GOON_NPC_RANGER_HUNTER_LVL_13"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_RANGER_HUNTER_LVL_11"
+    data "StackPriority" "13"
+    
+    new entry "GOON_NPC_RANGER_HUNTER_LVL_14"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_RANGER_HUNTER_LVL_11"
+    data "StackPriority" "14"
+    
+    new entry "GOON_NPC_RANGER_HUNTER_LVL_15"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_RANGER_HUNTER_PROGRESSION_TEMPLATE"
+    data "StackPriority" "15"
+    data "Passives" "HordeBreaker;EscapeTheHorde;StandAgainstTheTide"
+    data "Boosts" "UnlockSpell(Target_Volley,AddChildren);UnlockSpell(Shout_Whirlwind,AddChildren)"
+
+    // <node id="Progression">
+    //     <attribute id="Level" type="uint8" value="15"/>
+    //     <attribute id="Name" type="LSString" value="Hunter"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="Selectors" type="LSString" value="SelectPassives(9ae300f8-94b0-42f2-a106-ac654f64a42a,1,SuperiorHuntersDefense)"/>
+    //     <attribute id="TableUUID" type="guid" value="b19bc1ec-d7ee-4023-9f58-5056fd99be24"/>
+    //     <attribute id="UUID" type="guid" value="b6c4959e-9748-4ec5-9a5d-437d94446618"/>
+    
+    new entry "GOON_NPC_RANGER_HUNTER_LVL_16"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_RANGER_HUNTER_LVL_15"
+    data "StackPriority" "16"
+    
+    new entry "GOON_NPC_RANGER_HUNTER_LVL_17"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_RANGER_HUNTER_LVL_15"
+    data "StackPriority" "17"
+    
+    new entry "GOON_NPC_RANGER_HUNTER_LVL_18"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_RANGER_HUNTER_LVL_15"
+    data "StackPriority" "18"
+    
+    new entry "GOON_NPC_RANGER_HUNTER_LVL_19"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_RANGER_HUNTER_LVL_15"
+    data "StackPriority" "19"
+    
+    new entry "GOON_NPC_RANGER_HUNTER_LVL_20"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_RANGER_HUNTER_LVL_15"
+    data "StackPriority" "20"
