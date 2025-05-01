@@ -2547,7 +2547,7 @@ using "LOW_Sewers_Dragonborn_Red_Evocation_Wizard"
 data "PathInfluence" "BloodElectrified,100;BloodFrozen,30;Lava,700;HolyFire,40;Hellfire,100;PoisonCloud,70;WyvernPoison,70;DrowPoisonCloud,70;PurpleWormPoison,70;SerpentVenom,70;InvisibleGithAcid,70;CloudkillCloud,70;Cloudkill6Cloud,70;MaliceCloud,70;CrawlerMucusCloud,70;WaterElectrified,100;WaterFrozen,30;Web,30;Vines,40;SporeBlackCloud,100;WaterCloudElectrified,40;SporeGreenCloud,40;Acid,30;CausticBrine,40;DarknessCloud,30;FogCloud,30;Mud,30;Oil,30;Poison,30;SpikeGrowth,40;SporePinkCloud,40;StinkingCloud,40"
 // TODO: Custom NPC Sorcerer progressions
 // data "Passives" "AttackOfOpportunity;FeyAncestry;DarknessRules;Darkvision;SunlightSensitivity;DraconicAncestry_Red;DraconicResilience;LOW_GreaseWizard_ElementalAffinity;"
-data "Passives" "CX_Sorcerer_Boost;CX_Magic_Boost;FeyAncestry;HumanMilitia;AttackOfOpportunity;Darkvision;DarknessRules;SunlightSensitivity;DraconicAncestry_Red;DraconicResilience;LOW_GreaseWizard_ElementalAffinity"
+data "Passives" "CX_Sorcerer_BoostCX_Magic_Boost;FeyAncestry;HumanMilitia;AttackOfOpportunity;Darkvision;DarknessRules;SunlightSensitivity;DraconicAncestry_Red;DraconicResilience;LOW_GreaseWizard_ElementalAffinity;Goon_Metamagic_Quickened_NPC;Goon_Metamagic_Heightened_NPC"
 
 // "_HalfElf"
 //  ├─ "HalfElf_Melee"
@@ -3778,7 +3778,7 @@ data "Charisma" "18"
 data "SpellCastingAbility" "Charisma"
 // TODO: Custom NPC Sorcerer progressions
 // data "Passives" "AttackOfOpportunity;DarknessRules"
-data "Passives" "CX_Sorcerer_Boost;CX_Magic_Boost;CX_Spells_L5;CX_Spells_L5C;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules"
+data "Passives" "CX_Sorcerer_Boost;CX_Magic_Boost;CX_Spells_L5;CX_Spells_L5C;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules;Goon_Metamagic_Careful_NPC;Goon_Metamagic_Heightened_NPC"
 
 // Blunt Skuncher - Envoys of the Stone Lord (GOAT name)
 new entry "WYR_SmugglersCave_Human_Caster"
@@ -5656,7 +5656,7 @@ new entry "KillerReplica_Sorcerer"
 type "Character"
 using "KillerReplica_Sorcerer"
 // data "Passives" "TAD_PsionicDominance;Evasion;Metamagic_Heightened;Metamagic_Subtle;AttackOfOpportunity;DarknessRules"
-data "Passives" "CX_Sorcerer_Boost;CX_Magic_Boost;AttackOfOpportunity;DarknessRules;TAD_PsionicDominance;Evasion;Metamagic_Heightened;Metamagic_Subtle"
+data "Passives" "CX_Sorcerer_Boost;CX_Magic_Boost;AttackOfOpportunity;DarknessRules;TAD_PsionicDominance;Evasion;Goon_Metamagic_Heightened_NPC;Goon_Metamagic_Subtle_NPC"
 
 new entry "KillerReplica_Warlock"
 type "Character"
