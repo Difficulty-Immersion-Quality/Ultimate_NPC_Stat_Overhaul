@@ -621,33 +621,41 @@ using "FlamingFist_Dwarf_Caster"
 // data "Passives" "Dwarf_DwarvenResilience;AttackOfOpportunity;Darkvision;DarknessRules"
 data "Passives" "CX_Wizard_Boost;CX_Wizard_Evocation_Boost;CX_Magic_Boost;CX_Spells_L1;CX_Spells_L1C;Dwarf_DwarvenResilience;AttackOfOpportunity;Darkvision;DarknessRules"
 
-// Flaming Fist Healer
+// Flaming Fist Healer (Progressions swapped from "NPC_FlamingFist_Melee_Cleric" to "NPC_Cleric", proprietary progression boosts added via stats)
 new entry "FlamingFist_Dwarf_Cleric"
 type "Character"
 using "FlamingFist_Dwarf_Cleric"
 // data "Passives" "Dwarf_DwarvenResilience;AttackOfOpportunity;Darkvision;DarknessRules"
-data "Passives" "CX_Cleric_Boost;CX_Magic_Boost;Dwarf_DwarvenResilience;AttackOfOpportunity;Darkvision;DarknessRules"
+data "Passives" "CX_Cleric_Boost;CX_Magic_Boost;Dwarf_DwarvenResilience;AttackOfOpportunity;Darkvision;DarknessRules;Goon_NPC_Flaming_Fist_Boosts;FightingStyle_Protection"
+// data "Progressions" "70c3eb7e-383f-11ed-a261-0242ac120002"
+data "Progressions" "36c3f8de-3293-4d7b-92bc-ceb3c569244b"
 
-// Flaming Fist Guisarmier
+// Flaming Fist Guisarmier (Progressions swapped from "NPC_FlamingFist_Melee_Attacker" to "NPC_Fighter", proprietary progression boosts added via stats)
 new entry "FlamingFist_Dwarf_Melee_Attacker"
 type "Character"
 using "FlamingFist_Dwarf_Melee_Attacker"
 // data "Passives" "Dwarf_DwarvenResilience;AttackOfOpportunity;Darkvision;DarknessRules"
-data "Passives" "CX_Fighter_Boost;CX_Fighter_BattleMaster_Boost;CX_Martial_Boost;Dwarf_DwarvenResilience;AttackOfOpportunity;Darkvision;DarknessRules"
+data "Passives" "CX_Fighter_Boost;CX_Fighter_BattleMaster_Boost;CX_Martial_Boost;Dwarf_DwarvenResilience;AttackOfOpportunity;Darkvision;DarknessRules;Goon_NPC_Flaming_Fist_Boosts;FightingStyle_GreatWeaponFighting;PhalanxFormation_Duergar;Riposte"
+// data "Progressions" "51d47904-383f-11ed-a261-0242ac120002"
+data "Progressions" "0e6da493-5a37-423b-8c28-629462b22faa"
 
-// Flaming Fist Protector
+// Flaming Fist Protector (Progressions swapped from "NPC_FlamingFist_Melee_Defender" to "NPC_Fighter", proprietary progression boosts added via stats)
 new entry "FlamingFist_Dwarf_Melee_Defender"
 type "Character"
 using "FlamingFist_Dwarf_Melee_Defender"
 // data "Passives" "Dwarf_DwarvenResilience;AttackOfOpportunity;Darkvision;DarknessRules"
-data "Passives" "CX_Fighter_Boost;CX_Fighter_BattleMaster_Boost;CX_Martial_Boost;Dwarf_DwarvenResilience;AttackOfOpportunity;Darkvision;DarknessRules"
+data "Passives" "CX_Fighter_Boost;CX_Fighter_BattleMaster_Boost;CX_Martial_Boost;Dwarf_DwarvenResilience;AttackOfOpportunity;Darkvision;DarknessRules;Goon_NPC_Flaming_Fist_Boosts;FightingStyle_Protection"
+// data "Progressions" "5885fa7a-383f-11ed-a261-0242ac120002"
+data "Progressions" "0e6da493-5a37-423b-8c28-629462b22faa"
 
-// Fist (Just "Fist"?!)
+// Fist (Just "Fist"?!) (Progressions swapped from "NPC_FlamingFist_Melee_Ranger" to "NPC_Ranger", proprietary progression boosts added via stats)
 new entry "FlamingFist_Dwarf_Ranger"
 type "Character"
 using "FlamingFist_Dwarf_Ranger"
 // data "Passives" "Dwarf_DwarvenResilience;AttackOfOpportunity;Darkvision;DarknessRules"
-data "Passives" "CX_Ranger_Boost;CX_Ranger_Hunter_Boost;CX_Martial_Boost;Dwarf_DwarvenResilience;AttackOfOpportunity;Darkvision;DarknessRules"
+data "Passives" "CX_Ranger_Boost;CX_Ranger_Hunter_Boost;CX_Martial_Boost;Dwarf_DwarvenResilience;AttackOfOpportunity;Darkvision;DarknessRules;Goon_NPC_Flaming_Fist_Boosts;FightingStyle_Archery;CrossbowExpert_PointBlank"
+// data "Progressions" "6cae475a-383f-11ed-a261-0242ac120002"
+data "Progressions" "f0ede459-8b86-48fd-ac11-4432573566a5"
 
 // "_Dwarf"
 //  ├─ "MOO_AcolyteOfTheAbsolute_Dwarf"
@@ -1234,30 +1242,41 @@ using "FlamingFist_Elf_Caster"
 // data "Passives" "FeyAncestry;AttackOfOpportunity;DarknessRules;Darkvision"
 data "Passives" "CX_Wizard_Boost;CX_Wizard_Evocation_Boost;CX_Magic_Boost;CX_Spells_L1;CX_Spells_L1C;FeyAncestry;AttackOfOpportunity;DarknessRules;Darkvision"
 
+// Flaming Fist Healer (Progressions swapped from "NPC_FlamingFist_Melee_Cleric" to "NPC_Cleric", proprietary progression boosts added via stats)
 new entry "FlamingFist_Elf_Cleric"
 type "Character"
 using "FlamingFist_Elf_Cleric"
 // data "Passives" "FeyAncestry;AttackOfOpportunity;DarknessRules;Darkvision"
-data "Passives" "CX_Cleric_Boost;CX_Magic_Boost;FeyAncestry;AttackOfOpportunity;DarknessRules;Darkvision"
+data "Passives" "CX_Cleric_Boost;CX_Magic_Boost;FeyAncestry;AttackOfOpportunity;DarknessRules;Darkvision;Goon_NPC_Flaming_Fist_Boosts;FightingStyle_Protection"
+// data "Progressions" "70c3eb7e-383f-11ed-a261-0242ac120002"
+data "Progressions" "36c3f8de-3293-4d7b-92bc-ceb3c569244b"
 
-// Fist Serrik - Flaming Fist
+// Fist Serrik - Flaming Fist (Progressions swapped from "NPC_FlamingFist_Melee_Attacker" to "NPC_Fighter", proprietary progression boosts added via stats)
 new entry "FlamingFist_Elf_Melee_Attacker"
 type "Character"
 using "FlamingFist_Elf_Melee_Attacker"
 // data "Passives" "FeyAncestry;AttackOfOpportunity;DarknessRules;Darkvision"
-data "Passives" "CX_Fighter_Boost;CX_Fighter_BattleMaster_Boost;CX_Martial_Boost;FeyAncestry;AttackOfOpportunity;DarknessRules;Darkvision"
+data "Passives" "CX_Fighter_Boost;CX_Fighter_BattleMaster_Boost;CX_Martial_Boost;FeyAncestry;AttackOfOpportunity;DarknessRules;Darkvision;Goon_NPC_Flaming_Fist_Boosts;FightingStyle_GreatWeaponFighting;PhalanxFormation_Duergar;Riposte"
+// data "Progressions" "51d47904-383f-11ed-a261-0242ac120002"
+data "Progressions" "0e6da493-5a37-423b-8c28-629462b22faa"
 
+// (Progressions swapped from "NPC_FlamingFist_Melee_Defender" to "NPC_Fighter", proprietary progression boosts added via stats)
 new entry "FlamingFist_Elf_Melee_Defender"
 type "Character"
 using "FlamingFist_Elf_Melee_Defender"
 // data "Passives" "FeyAncestry;AttackOfOpportunity;DarknessRules;Darkvision"
-data "Passives" "CX_Fighter_Boost;CX_Fighter_BattleMaster_Boost;CX_Martial_Boost;FeyAncestry;AttackOfOpportunity;DarknessRules;Darkvision"
+data "Passives" "CX_Fighter_Boost;CX_Fighter_BattleMaster_Boost;CX_Martial_Boost;FeyAncestry;AttackOfOpportunity;DarknessRules;Darkvision;Goon_NPC_Flaming_Fist_Boosts;FightingStyle_Protection"
+// data "Progressions" "5885fa7a-383f-11ed-a261-0242ac120002"
+data "Progressions" "0e6da493-5a37-423b-8c28-629462b22faa"
 
+// (Progressions swapped from "NPC_FlamingFist_Melee_Ranger" to "NPC_Ranger", proprietary progression boosts added via stats)
 new entry "FlamingFist_Elf_Ranger"
 type "Character"
 using "FlamingFist_Elf_Ranger"
 // data "Passives" "FeyAncestry;AttackOfOpportunity;DarknessRules;Darkvision"
-data "Passives" "CX_Ranger_Boost;CX_Ranger_Hunter_Boost;CX_Martial_Boost;FeyAncestry;AttackOfOpportunity;DarknessRules;Darkvision"
+data "Passives" "CX_Ranger_Boost;CX_Ranger_Hunter_Boost;CX_Martial_Boost;FeyAncestry;AttackOfOpportunity;DarknessRules;Darkvision;Goon_NPC_Flaming_Fist_Boosts;FightingStyle_Archery;CrossbowExpert_PointBlank"
+// data "Progressions" "6cae475a-383f-11ed-a261-0242ac120002"
+data "Progressions" "f0ede459-8b86-48fd-ac11-4432573566a5"
 
 // "_Elf"
 //  ├─ "MOO_AcolyteOfTheAbsolute_Elf"
@@ -1887,37 +1906,52 @@ using "FlamingFist_Gnome_Caster"
 // data "Passives" "Gnome_Cunning;Gnome_Speed;AttackOfOpportunity;DarknessRules;Darkvision"
 data "Passives" "CX_Wizard_Boost;CX_Wizard_Evocation_Boost;CX_Magic_Boost;CX_Spells_L1;CX_Spells_L1C;Gnome_Cunning;Gnome_Speed;AttackOfOpportunity;DarknessRules;Darkvision"
 
-// Manip Edenosa - Flaming Fist, Cult of the Absolute
+// Manip Edenosa - Flaming Fist, Cult of the Absolute (Progressions swapped from "NPC_FlamingFist_Melee_Cleric" to "NPC_Cleric", proprietary progression boosts added via stats))
 new entry "FlamingFist_Gnome_Cleric"
 type "Character"
 using "FlamingFist_Gnome_Cleric"
 // data "Passives" "Gnome_Cunning;Gnome_Speed;AttackOfOpportunity;DarknessRules;Darkvision"
-data "Passives" "CX_Cleric_Boost;CX_Magic_Boost;CX_Martial_Boost;Gnome_Cunning;Gnome_Speed;AttackOfOpportunity;DarknessRules;Darkvision"
+data "Passives" "CX_Cleric_Boost;CX_Magic_Boost;CX_Martial_Boost;Gnome_Cunning;Gnome_Speed;AttackOfOpportunity;DarknessRules;Darkvision;Goon_NPC_Flaming_Fist_Boosts;FightingStyle_Protection"
+// data "Progressions" "70c3eb7e-383f-11ed-a261-0242ac120002"
+data "Progressions" "36c3f8de-3293-4d7b-92bc-ceb3c569244b"
 
+// (Progressions swapped from "NPC_FlamingFist_Melee_Attacker" to "NPC_Fighter", proprietary progression boosts added via stats)
 new entry "FlamingFist_Gnome_Melee_Attacker"
 type "Character"
 using "FlamingFist_Gnome_Melee_Attacker"
 // data "Passives" "Gnome_Cunning;Gnome_Speed;AttackOfOpportunity;DarknessRules;Darkvision"
-data "Passives" "CX_Fighter_Boost;CX_Fighter_BattleMaster_Boost;CX_Martial_Boost;Gnome_Cunning;Gnome_Speed;AttackOfOpportunity;DarknessRules;Darkvision"
+data "Passives" "CX_Fighter_Boost;CX_Fighter_BattleMaster_Boost;CX_Martial_Boost;Gnome_Cunning;Gnome_Speed;AttackOfOpportunity;DarknessRules;Darkvision;Goon_NPC_Flaming_Fist_Boosts;FightingStyle_GreatWeaponFighting;PhalanxFormation_Duergar;Riposte"
+// data "Progressions" "51d47904-383f-11ed-a261-0242ac120002"
+data "Progressions" "0e6da493-5a37-423b-8c28-629462b22faa"
 
+// (Progressions swapped from "NPC_FlamingFist_Melee_Defender" to "NPC_Fighter", proprietary progression boosts added via stats)
 new entry "FlamingFist_Gnome_Melee_Defender"
 type "Character"
 using "FlamingFist_Gnome_Melee_Defender"
 // data "Passives" "Gnome_Cunning;Gnome_Speed;AttackOfOpportunity;DarknessRules;Darkvision"
-data "Passives" "CX_Fighter_Boost;CX_Fighter_BattleMaster_Boost;CX_Martial_Boost;Gnome_Cunning;Gnome_Speed;AttackOfOpportunity;DarknessRules;Darkvision"
+data "Passives" "CX_Fighter_Boost;CX_Fighter_BattleMaster_Boost;CX_Martial_Boost;Gnome_Cunning;Gnome_Speed;AttackOfOpportunity;DarknessRules;Darkvision;Goon_NPC_Flaming_Fist_Boosts;FightingStyle_Protection"
+// data "Progressions" "5885fa7a-383f-11ed-a261-0242ac120002"
+data "Progressions" "0e6da493-5a37-423b-8c28-629462b22faa"
 
-// Gauntlet Devella Fountainhead - Constable of the Flaming Fist
+// Gauntlet Devella Fountainhead - Constable of the Flaming Fist (Turn her into a proper Paladin)
 new entry "LOW_DevellaFountainHead"
 type "Character"
 using "LOW_DevellaFountainHead"
+// data "DefaultBoosts" "ActionResource(SpellSlot,4,1);ActionResource(SpellSlot,3,2);ActionResource(SpellSlot,3,3);ActionResource(ChannelOath,1,0);"
+data "DefaultBoosts" ""
 // data "Passives" "AttackOfOpportunity;DarknessRules;Darkvision;Gnome_Cunning;Gnome_Speed;ImprovedDivineSmite"
-data "Passives" "CX_Paladin_Boost;CX_Paladin_Devotion_Boost;CX_Martial_Boost;Gnome_Cunning;Gnome_Speed;AttackOfOpportunity;DarknessRules;Darkvision;ImprovedDivineSmite"
+data "Passives" "CX_Paladin_Boost;CX_Paladin_Devotion_Boost;CX_Martial_Boost;Gnome_Cunning;Gnome_Speed;AttackOfOpportunity;DarknessRules;Darkvision;ImprovedDivineSmite;Goon_NPC_Flaming_Fist_Boosts;FightingStyle_GreatWeaponFighting"
+// data "Progressions" "5885fa7a-383f-11ed-a261-0242ac120002"
+data "Progressions" "8726b2c4-edc0-4905-b82f-60a4baba0733"
 
+// (Progressions swapped from "NPC_FlamingFist_Melee_Ranger" to "NPC_Ranger", proprietary progression boosts added via stats)
 new entry "FlamingFist_Gnome_Ranger"
 type "Character"
 using "FlamingFist_Gnome_Ranger"
 // data "Passives" "Gnome_Cunning;Gnome_Speed;AttackOfOpportunity;DarknessRules;Darkvision"
-data "Passives" "CX_Ranger_Boost;CX_Ranger_Hunter_Boost;CX_Martial_Boost;Gnome_Cunning;Gnome_Speed;AttackOfOpportunity;DarknessRules;Darkvision"
+data "Passives" "CX_Ranger_Boost;CX_Ranger_Hunter_Boost;CX_Martial_Boost;Gnome_Cunning;Gnome_Speed;AttackOfOpportunity;DarknessRules;Darkvision;Goon_NPC_Flaming_Fist_Boosts;FightingStyle_Archery;CrossbowExpert_PointBlank"
+// data "Progressions" "6cae475a-383f-11ed-a261-0242ac120002"
+data "Progressions" "f0ede459-8b86-48fd-ac11-4432573566a5"
 
 // "_Gnome"
 //  ├─ "Gnome_Caster"
@@ -2457,29 +2491,41 @@ using "FlamingFist_HalfElf_Caster"
 // data "Passives" "FeyAncestry;AttackOfOpportunity;Darkvision;DarknessRules"
 data "Passives" "CX_Wizard_Boost;CX_Wizard_Evocation_Boost;CX_Wizard_Evocation_Boost;CX_Magic_Boost;CX_Spells_L1;CX_Spells_L1C;FeyAncestry;HumanMilitia;AttackOfOpportunity;Darkvision;DarknessRules"
 
+// (Progressions swapped from "NPC_FlamingFist_Melee_Cleric" to "NPC_Cleric", proprietary progression boosts added via stats)
 new entry "FlamingFist_HalfElf_Cleric"
 type "Character"
 using "FlamingFist_HalfElf_Cleric"
 // data "Passives" "FeyAncestry;AttackOfOpportunity;Darkvision;DarknessRules"
-data "Passives" "CX_Cleric_Boost;CX_Magic_Boost;FeyAncestry;HumanMilitia;AttackOfOpportunity;Darkvision;DarknessRules"
+data "Passives" "CX_Cleric_Boost;CX_Magic_Boost;FeyAncestry;HumanMilitia;AttackOfOpportunity;Darkvision;DarknessRules;Goon_NPC_Flaming_Fist_Boosts;FightingStyle_Protection"
+// data "Progressions" "70c3eb7e-383f-11ed-a261-0242ac120002"
+data "Progressions" "36c3f8de-3293-4d7b-92bc-ceb3c569244b"
 
+// (Progressions swapped from "NPC_FlamingFist_Melee_Attacker" to "NPC_Fighter", proprietary progression boosts added via stats)
 new entry "FlamingFist_HalfElf_Melee_Attacker"
 type "Character"
 using "FlamingFist_HalfElf_Melee_Attacker"
 // data "Passives" "FeyAncestry;AttackOfOpportunity;Darkvision;DarknessRules"
-data "Passives" "CX_Fighter_Boost;CX_Fighter_BattleMaster_Boost;CX_Martial_Boost;FeyAncestry;HumanMilitia;AttackOfOpportunity;Darkvision;DarknessRules"
+data "Passives" "CX_Fighter_Boost;CX_Fighter_BattleMaster_Boost;CX_Martial_Boost;FeyAncestry;HumanMilitia;AttackOfOpportunity;Darkvision;DarknessRules;Goon_NPC_Flaming_Fist_Boosts;FightingStyle_GreatWeaponFighting;PhalanxFormation_Duergar;Riposte"
+// data "Progressions" "51d47904-383f-11ed-a261-0242ac120002"
+data "Progressions" "0e6da493-5a37-423b-8c28-629462b22faa"
 
+// (Progressions swapped from "NPC_FlamingFist_Melee_Defender" to "NPC_Fighter", proprietary progression boosts added via stats)
 new entry "FlamingFist_HalfElf_Melee_Defender"
 type "Character"
 using "FlamingFist_HalfElf_Melee_Defender"
 // data "Passives" "FeyAncestry;AttackOfOpportunity;Darkvision;DarknessRules"
-data "Passives" "CX_Fighter_Boost;CX_Fighter_BattleMaster_Boost;CX_Martial_Boost;FeyAncestry;HumanMilitia;AttackOfOpportunity;Darkvision;DarknessRules"
+data "Passives" "CX_Fighter_Boost;CX_Fighter_BattleMaster_Boost;CX_Martial_Boost;FeyAncestry;HumanMilitia;AttackOfOpportunity;Darkvision;DarknessRules;Goon_NPC_Flaming_Fist_Boosts;FightingStyle_Protection"
+// data "Progressions" "5885fa7a-383f-11ed-a261-0242ac120002"
+data "Progressions" "0e6da493-5a37-423b-8c28-629462b22faa"
 
+// (Progressions swapped from "NPC_FlamingFist_Melee_Ranger" to "NPC_Ranger", proprietary progression boosts added via stats)
 new entry "FlamingFist_HalfElf_Ranger"
 type "Character"
 using "FlamingFist_HalfElf_Ranger"
 // data "Passives" "FeyAncestry;AttackOfOpportunity;Darkvision;DarknessRules"
-data "Passives" "CX_Ranger_Boost;CX_Ranger_Hunter_Boost;CX_Martial_Boost;FeyAncestry;HumanMilitia;AttackOfOpportunity;Darkvision;DarknessRules"
+data "Passives" "CX_Ranger_Boost;CX_Ranger_Hunter_Boost;CX_Martial_Boost;FeyAncestry;HumanMilitia;AttackOfOpportunity;Darkvision;DarknessRules;Goon_NPC_Flaming_Fist_Boosts;FightingStyle_Archery;CrossbowExpert_PointBlank"
+// data "Progressions" "6cae475a-383f-11ed-a261-0242ac120002"
+data "Progressions" "f0ede459-8b86-48fd-ac11-4432573566a5"
 
 // "_HalfElf"
 //  ├─ "HalfElf_Caster"
@@ -2999,30 +3045,41 @@ using "FlamingFist_Halfling_Caster"
 // data "Passives" "Halfling_Lucky;Halfling_Brave;AttackOfOpportunity;DarknessRules"
 data "Passives" "CX_Wizard_Boost;CX_Wizard_Evocation_Boost;CX_Magic_Boost;CX_Spells_L1;CX_Spells_L1C;Halfling_Lucky;Halfling_Brave;AttackOfOpportunity;DarknessRules"
 
+// (Progressions swapped from "NPC_FlamingFist_Melee_Cleric" to "NPC_Cleric", proprietary progression boosts added via stats)
 new entry "FlamingFist_Halfling_Cleric"
 type "Character"
 using "FlamingFist_Halfling_Cleric"
 // data "Passives" "Halfling_Lucky;Halfling_Brave;AttackOfOpportunity;DarknessRules"
-data "Passives" "CX_Cleric_Boost;CX_Magic_Boost;Halfling_Lucky;Halfling_Brave;AttackOfOpportunity;DarknessRules"
+data "Passives" "CX_Cleric_Boost;CX_Magic_Boost;Halfling_Lucky;Halfling_Brave;AttackOfOpportunity;DarknessRules;Goon_NPC_Flaming_Fist_Boosts;FightingStyle_Protection"
+// data "Progressions" "70c3eb7e-383f-11ed-a261-0242ac120002"
+data "Progressions" "36c3f8de-3293-4d7b-92bc-ceb3c569244b"
 
-// Fist Fernhollow - Flaming Fist
+// Fist Fernhollow - Flaming Fist (Progressions swapped from "NPC_FlamingFist_Melee_Attacker" to "NPC_Fighter", proprietary progression boosts added via stats)
 new entry "FlamingFist_Halfling_Melee_Attacker"
 type "Character"
 using "FlamingFist_Halfling_Melee_Attacker"
 // data "Passives" "Halfling_Lucky;Halfling_Brave;AttackOfOpportunity;DarknessRules"
-data "Passives" "CX_Fighter_Boost;CX_Fighter_BattleMaster_Boost;CX_Martial_Boost;Halfling_Lucky;Halfling_Brave;AttackOfOpportunity;DarknessRules"
+data "Passives" "CX_Fighter_Boost;CX_Fighter_BattleMaster_Boost;CX_Martial_Boost;Halfling_Lucky;Halfling_Brave;AttackOfOpportunity;DarknessRules;Goon_NPC_Flaming_Fist_Boosts;FightingStyle_GreatWeaponFighting;PhalanxFormation_Duergar;Riposte"
+// data "Progressions" "51d47904-383f-11ed-a261-0242ac120002"
+data "Progressions" "0e6da493-5a37-423b-8c28-629462b22faa"
 
+// (Progressions swapped from "NPC_FlamingFist_Melee_Defender" to "NPC_Fighter", proprietary progression boosts added via stats)
 new entry "FlamingFist_Halfling_Melee_Defender"
 type "Character"
 using "FlamingFist_Halfling_Melee_Defender"
 // data "Passives" "Halfling_Lucky;Halfling_Brave;AttackOfOpportunity;DarknessRules"
-data "Passives" "CX_Fighter_Boost;CX_Fighter_BattleMaster_Boost;CX_Martial_Boost;Halfling_Lucky;Halfling_Brave;AttackOfOpportunity;DarknessRules"
+data "Passives" "CX_Fighter_Boost;CX_Fighter_BattleMaster_Boost;CX_Martial_Boost;Halfling_Lucky;Halfling_Brave;AttackOfOpportunity;DarknessRules;Goon_NPC_Flaming_Fist_Boosts;FightingStyle_Protection"
+// data "Progressions" "5885fa7a-383f-11ed-a261-0242ac120002"
+data "Progressions" "0e6da493-5a37-423b-8c28-629462b22faa"
 
+// (Progressions swapped from "NPC_FlamingFist_Melee_Ranger" to "NPC_Ranger", proprietary progression boosts added via stats)
 new entry "FlamingFist_Halfling_Ranger"
 type "Character"
 using "FlamingFist_Halfling_Ranger"
 // data "Passives" "Halfling_Lucky;Halfling_Brave;AttackOfOpportunity;DarknessRules"
-data "Passives" "CX_Ranger_Boost;CX_Ranger_Hunter_Boost;CX_Martial_Boost;Halfling_Lucky;Halfling_Brave;AttackOfOpportunity;DarknessRules"
+data "Passives" "CX_Ranger_Boost;CX_Ranger_Hunter_Boost;CX_Martial_Boost;Halfling_Lucky;Halfling_Brave;AttackOfOpportunity;DarknessRules;Goon_NPC_Flaming_Fist_Boosts;FightingStyle_Archery;CrossbowExpert_PointBlank"
+// data "Progressions" "6cae475a-383f-11ed-a261-0242ac120002"
+data "Progressions" "f0ede459-8b86-48fd-ac11-4432573566a5"
 
 // "_Halfling"
 //  ├─ "Halfling_Bard"
@@ -3405,12 +3462,14 @@ using "FlamingFist_Human_Caster"
 // data "Passives" "AttackOfOpportunity;DarknessRules"
 data "Passives" "CX_Wizard_Boost;CX_Wizard_Evocation_Boost;CX_Magic_Boost;CX_Spells_L1;CX_Spells_L1C;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules"
 
-// Flaming Fist Healer
+// Flaming Fist Healer (Progressions swapped from "NPC_FlamingFist_Melee_Cleric" to "NPC_Cleric", proprietary progression boosts added via stats)
 new entry "FlamingFist_Human_Cleric"
 type "Character"
 using "FlamingFist_Human_Cleric"
 // data "Passives" "AttackOfOpportunity;DarknessRules"
-data "Passives" "CX_Cleric_Boost;CX_Magic_Boost;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules"
+data "Passives" "CX_Cleric_Boost;CX_Magic_Boost;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules;Goon_NPC_Flaming_Fist_Boosts;FightingStyle_Protection"
+// data "Progressions" "70c3eb7e-383f-11ed-a261-0242ac120002"
+data "Progressions" "36c3f8de-3293-4d7b-92bc-ceb3c569244b"
 
 // Flaming Fist Guisarmier
 new entry "FlamingFist_Human_Melee_Attacker"
@@ -3419,26 +3478,32 @@ using "FlamingFist_Human_Melee_Attacker"
 // data "Passives" "AttackOfOpportunity;DarknessRules"
 data "Passives" "CX_Fighter_Boost;CX_Fighter_BattleMaster_Boost;CX_Martial_Boost;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules"
 
-// Liara Portyr - Commander of the Flaming Fist Headquarters, Flaming Fist
+// Liara Portyr - Commander of the Flaming Fist Headquarters, Flaming Fist (Progressions swapped from "NPC_FlamingFist_Melee_Attacker" to "NPC_Fighter", proprietary progression boosts added via stats)
 new entry "LOW_LiaraPortyr"
 type "Character"
 using "LOW_LiaraPortyr"
 // data "Passives" "AttackOfOpportunity;DarknessRules;LOW_LiaraPortyr_Brave"
-data "Passives" "CX_Fighter_Boost;CX_Fighter_BattleMaster_Boost;CX_Martial_Boost;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules;LOW_LiaraPortyr_Brave"
+data "Passives" "CX_Fighter_Boost;CX_Fighter_BattleMaster_Boost;CX_Martial_Boost;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules;LOW_LiaraPortyr_Brave;Goon_NPC_Flaming_Fist_Boosts;FightingStyle_GreatWeaponFighting;PhalanxFormation_Duergar;Riposte"
+// data "Progressions" "51d47904-383f-11ed-a261-0242ac120002"
+data "Progressions" "0e6da493-5a37-423b-8c28-629462b22faa"
 
-// Flaming Fist Protector
+// Flaming Fist Protector (Progressions swapped from "NPC_FlamingFist_Melee_Defender" to "NPC_Fighter", proprietary progression boosts added via stats)
 new entry "FlamingFist_Human_Melee_Defender"
 type "Character"
 using "FlamingFist_Human_Melee_Defender"
 // data "Passives" "AttackOfOpportunity;DarknessRules"
-data "Passives" "CX_Fighter_Boost;CX_Fighter_BattleMaster_Boost;CX_Martial_Boost;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules"
+data "Passives" "CX_Fighter_Boost;CX_Fighter_BattleMaster_Boost;CX_Martial_Boost;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules;Goon_NPC_Flaming_Fist_Boosts;FightingStyle_Protection"
+// data "Progressions" "5885fa7a-383f-11ed-a261-0242ac120002"
+data "Progressions" "0e6da493-5a37-423b-8c28-629462b22faa"
 
-// Flaming Fist Archer
+// Flaming Fist Archer (Progressions swapped from "NPC_FlamingFist_Melee_Ranger" to "NPC_Ranger", proprietary progression boosts added via stats)
 new entry "FlamingFist_Human_Ranger"
 type "Character"
 using "FlamingFist_Human_Ranger"
 // data "Passives" "AttackOfOpportunity;DarknessRules"
-data "Passives" "CX_Ranger_Boost;CX_Ranger_Hunter_Boost;CX_Martial_Boost;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules"
+data "Passives" "CX_Ranger_Boost;CX_Ranger_Hunter_Boost;CX_Martial_Boost;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules;Goon_NPC_Flaming_Fist_Boosts;FightingStyle_Archery;CrossbowExpert_PointBlank"
+// data "Progressions" "6cae475a-383f-11ed-a261-0242ac120002"
+data "Progressions" "f0ede459-8b86-48fd-ac11-4432573566a5"
 
 // "_Human"
 //  ├─ "Human_Caster"
@@ -3739,6 +3804,7 @@ using "SCE_FlamingFist_Human_Caster"
 // data "Passives" "AttackOfOpportunity;DarknessRules"
 data "Passives" "CX_Wizard_Boost;CX_Wizard_Evocation_Boost;CX_Magic_Boost;CX_Spells_L2;CX_Spells_L3;CX_Spells_L4;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules"
 
+// (Swapped from "NPC_Wizard" to "NPC_Cleric")
 new entry "SCL_SeluneCleric"
 type "Character"
 using "SCL_SeluneCleric"
@@ -4852,30 +4918,41 @@ using "FlamingFist_Tiefling_Caster"
 // data "Passives" "Tiefling_HellishResistance;AttackOfOpportunity;DarknessRules;Darkvision"
 data "Passives" "CX_Wizard_Boost;CX_Wizard_Evocation_Boost;CX_Magic_Boost;CX_Spells_L1;CX_Spells_L1C;Tiefling_HellishResistance;AttackOfOpportunity;DarknessRules;Darkvision"
 
+// (Progressions swapped from "NPC_FlamingFist_Melee_Cleric" to "NPC_Cleric", proprietary progression boosts added via stats)
 new entry "FlamingFist_Tiefling_Cleric"
 type "Character"
 using "FlamingFist_Tiefling_Cleric"
 // data "Passives" "Tiefling_HellishResistance;AttackOfOpportunity;DarknessRules;Darkvision"
-data "Passives" "CX_Cleric_Boost;CX_Magic_Boost;Tiefling_HellishResistance;AttackOfOpportunity;DarknessRules;Darkvision"
+data "Passives" "CX_Cleric_Boost;CX_Magic_Boost;Tiefling_HellishResistance;AttackOfOpportunity;DarknessRules;Darkvision;Goon_NPC_Flaming_Fist_Boosts;FightingStyle_Protection"
+// data "Progressions" "70c3eb7e-383f-11ed-a261-0242ac120002"
+data "Progressions" "36c3f8de-3293-4d7b-92bc-ceb3c569244b"
 
+// (Progressions swapped from "NPC_FlamingFist_Melee_Attacker" to "NPC_Fighter", proprietary progression boosts added via stats)
 new entry "FlamingFist_Tiefling_Melee_Attacker"
 type "Character"
 using "FlamingFist_Tiefling_Melee_Attacker"
 // data "Passives" "Tiefling_HellishResistance;AttackOfOpportunity;DarknessRules;Darkvision"
-data "Passives" "CX_Fighter_Boost;CX_Fighter_BattleMaster_Boost;CX_Martial_Boost;Tiefling_HellishResistance;AttackOfOpportunity;DarknessRules;Darkvision"
+data "Passives" "CX_Fighter_Boost;CX_Fighter_BattleMaster_Boost;CX_Martial_Boost;Tiefling_HellishResistance;AttackOfOpportunity;DarknessRules;Darkvision;Goon_NPC_Flaming_Fist_Boosts;FightingStyle_GreatWeaponFighting;PhalanxFormation_Duergar;Riposte"
+// data "Progressions" "51d47904-383f-11ed-a261-0242ac120002"
+data "Progressions" "0e6da493-5a37-423b-8c28-629462b22faa"
 
-// Fist Larys - Flaming Fist (the only entry here that's actually used)
+// Fist Larys - Flaming Fist (Progressions swapped from "NPC_FlamingFist_Melee_Defender" to "NPC_Fighter", proprietary progression boosts added via stats)
 new entry "FlamingFist_Tiefling_Melee_Defender"
 type "Character"
 using "FlamingFist_Tiefling_Melee_Defender"
 // data "Passives" "Tiefling_HellishResistance;AttackOfOpportunity;DarknessRules;Darkvision"
-data "Passives" "CX_Fighter_Boost;CX_Fighter_BattleMaster_Boost;CX_Martial_Boost;Tiefling_HellishResistance;AttackOfOpportunity;DarknessRules;Darkvision"
+data "Passives" "CX_Fighter_Boost;CX_Fighter_BattleMaster_Boost;CX_Martial_Boost;Tiefling_HellishResistance;AttackOfOpportunity;DarknessRules;Darkvision;Goon_NPC_Flaming_Fist_Boosts;FightingStyle_Protection"
+// data "Progressions" "5885fa7a-383f-11ed-a261-0242ac120002"
+data "Progressions" "0e6da493-5a37-423b-8c28-629462b22faa"
 
+// (Progressions swapped from "NPC_FlamingFist_Melee_Ranger" to "NPC_Ranger", proprietary progression boosts added via stats)
 new entry "FlamingFist_Tiefling_Ranger"
 type "Character"
 using "FlamingFist_Tiefling_Ranger"
 // data "Passives" "Tiefling_HellishResistance;AttackOfOpportunity;DarknessRules;Darkvision"
-data "Passives" "CX_Ranger_Boost;CX_Ranger_Hunter_Boost;CX_Martial_Boost;Tiefling_HellishResistance;AttackOfOpportunity;DarknessRules;Darkvision"
+data "Passives" "CX_Ranger_Boost;CX_Ranger_Hunter_Boost;CX_Martial_Boost;Tiefling_HellishResistance;AttackOfOpportunity;DarknessRules;Darkvision;Goon_NPC_Flaming_Fist_Boosts;FightingStyle_Archery;CrossbowExpert_PointBlank"
+// data "Progressions" "6cae475a-383f-11ed-a261-0242ac120002"
+data "Progressions" "f0ede459-8b86-48fd-ac11-4432573566a5"
 
 // "_Tiefling"
 //  ├─ "MOO_AcolyteOfTheAbsolute_Dragonborn"    --- Unused

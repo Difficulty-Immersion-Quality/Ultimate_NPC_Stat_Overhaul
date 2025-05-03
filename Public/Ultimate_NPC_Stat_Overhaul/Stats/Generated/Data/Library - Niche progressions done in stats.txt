@@ -53,7 +53,7 @@
     using "GOON_NPC_FLAMING_FIST_BOOSTS_TEMPLATE"
     data "StackPriority" "2"
     data "Passives" ""
-    data "Boosts" "IF(ClassLevelHigherOrEqualThan(2,'NPC_Fighter')):IncreaseMaxHP(7);IF(ClassLevelHigherOrEqualThan(2,'NPC_Cleric') or ClassLevelHigherOrEqualThan(2,'NPC_Ranger')):IncreaseMaxHP(6)"
+    data "Boosts" "IF(ClassLevelHigherOrEqualThan(2,'NPC_Fighter') or ClassLevelHigherOrEqualThan(2,'NPC_Paladin')):IncreaseMaxHP(7);IF(ClassLevelHigherOrEqualThan(2,'NPC_Cleric') or ClassLevelHigherOrEqualThan(2,'NPC_Ranger')):IncreaseMaxHP(6)"
 
     new entry "GOON_NPC_FLAMING_FIST_BOOSTS_LVL_3"
     type "StatusData"
@@ -61,7 +61,7 @@
     using "GOON_NPC_FLAMING_FIST_BOOSTS_TEMPLATE"
     data "StackPriority" "3"
     data "Passives" ""
-    data "Boosts" "IF(ClassLevelHigherOrEqualThan(3,'NPC_Fighter')):IncreaseMaxHP(14);IF(ClassLevelHigherOrEqualThan(3,'NPC_Cleric') or ClassLevelHigherOrEqualThan(3,'NPC_Ranger')):IncreaseMaxHP(12)"
+    data "Boosts" "IF(ClassLevelHigherOrEqualThan(3,'NPC_Fighter') or ClassLevelHigherOrEqualThan(3,'NPC_Paladin')):IncreaseMaxHP(14);IF(ClassLevelHigherOrEqualThan(3,'NPC_Cleric') or ClassLevelHigherOrEqualThan(3,'NPC_Ranger')):IncreaseMaxHP(12)"
 
     new entry "GOON_NPC_FLAMING_FIST_BOOSTS_LVL_4"
     type "StatusData"
@@ -69,7 +69,7 @@
     using "GOON_NPC_FLAMING_FIST_BOOSTS_TEMPLATE"
     data "StackPriority" "4"
     data "Passives" ""
-    data "Boosts" "IF(ClassLevelHigherOrEqualThan(4,'NPC_Fighter')):IncreaseMaxHP(21);IF(ClassLevelHigherOrEqualThan(4,'NPC_Cleric') or ClassLevelHigherOrEqualThan(4,'NPC_Ranger')):IncreaseMaxHP(18);IF(ClassLevelHigherOrEqualThan(4,'NPC_Fighter')):Ability(Strength,1);IF(ClassLevelHigherOrEqualThan(4,'NPC_Fighter')):Ability(Constitution,1)"
+    data "Boosts" "IF(ClassLevelHigherOrEqualThan(4,'NPC_Fighter') or ClassLevelHigherOrEqualThan(4,'NPC_Paladin')):IncreaseMaxHP(21);IF(ClassLevelHigherOrEqualThan(4,'NPC_Cleric') or ClassLevelHigherOrEqualThan(4,'NPC_Ranger')):IncreaseMaxHP(18);IF(ClassLevelHigherOrEqualThan(4,'NPC_Fighter') or ClassLevelHigherOrEqualThan(4,'NPC_Paladin')):Ability(Strength,1);IF(ClassLevelHigherOrEqualThan(4,'NPC_Fighter') or ClassLevelHigherOrEqualThan(4,'NPC_Paladin')):Ability(Constitution,1)"
 
     new entry "GOON_NPC_FLAMING_FIST_BOOSTS_LVL_5"
     type "StatusData"
@@ -77,7 +77,7 @@
     using "GOON_NPC_FLAMING_FIST_BOOSTS_TEMPLATE"
     data "StackPriority" "5"
     data "Passives" ""
-    data "Boosts" "IF(ClassLevelHigherOrEqualThan(5,'NPC_Fighter')):IncreaseMaxHP(28);IF(ClassLevelHigherOrEqualThan(5,'NPC_Cleric') or ClassLevelHigherOrEqualThan(5,'NPC_Ranger')):IncreaseMaxHP(24);IF(ClassLevelHigherOrEqualThan(4,'NPC_Fighter')):Ability(Strength,1);IF(ClassLevelHigherOrEqualThan(4,'NPC_Fighter')):Ability(Constitution,1)"
+    data "Boosts" "IF(ClassLevelHigherOrEqualThan(5,'NPC_Fighter') or ClassLevelHigherOrEqualThan(5,'NPC_Paladin')):IncreaseMaxHP(28);IF(ClassLevelHigherOrEqualThan(5,'NPC_Cleric') or ClassLevelHigherOrEqualThan(5,'NPC_Ranger')):IncreaseMaxHP(24);IF(ClassLevelHigherOrEqualThan(4,'NPC_Fighter') or ClassLevelHigherOrEqualThan(4,'NPC_Paladin')):Ability(Strength,1);IF(ClassLevelHigherOrEqualThan(4,'NPC_Fighter') or ClassLevelHigherOrEqualThan(4,'NPC_Paladin')):Ability(Constitution,1)"
 
     new entry "GOON_NPC_FLAMING_FIST_BOOSTS_LVL_6"
     type "StatusData"
@@ -85,7 +85,7 @@
     using "GOON_NPC_FLAMING_FIST_BOOSTS_TEMPLATE"
     data "StackPriority" "6"
     data "Passives" ""
-    data "Boosts" "IF(ClassLevelHigherOrEqualThan(6,'NPC_Fighter')):IncreaseMaxHP(35);IF(ClassLevelHigherOrEqualThan(6,'NPC_Cleric') or ClassLevelHigherOrEqualThan(6,'NPC_Ranger')):IncreaseMaxHP(30);IF(ClassLevelHigherOrEqualThan(6,'NPC_Fighter')):Ability(Strength,2);IF(ClassLevelHigherOrEqualThan(6,'NPC_Fighter')):Ability(Constitution,2)"
+    data "Boosts" "IF(ClassLevelHigherOrEqualThan(6,'NPC_Fighter') or ClassLevelHigherOrEqualThan(6,'NPC_Paladin')):IncreaseMaxHP(35);IF(ClassLevelHigherOrEqualThan(6,'NPC_Cleric') or ClassLevelHigherOrEqualThan(6,'NPC_Ranger')):IncreaseMaxHP(30);IF(ClassLevelHigherOrEqualThan(6,'NPC_Fighter') or ClassLevelHigherOrEqualThan(6,'NPC_Paladin')):Ability(Strength,2);IF(ClassLevelHigherOrEqualThan(6,'NPC_Fighter') or ClassLevelHigherOrEqualThan(6,'NPC_Paladin')):Ability(Constitution,2)"
 
     new entry "GOON_NPC_FLAMING_FIST_BOOSTS_LVL_7"
     type "StatusData"
@@ -93,7 +93,7 @@
     using "GOON_NPC_FLAMING_FIST_BOOSTS_TEMPLATE"
     data "StackPriority" "7"
     data "Passives" ""
-    data "Boosts" "IF(ClassLevelHigherOrEqualThan(7,'NPC_Fighter')):IncreaseMaxHP(42);IF(ClassLevelHigherOrEqualThan(7,'NPC_Cleric') or ClassLevelHigherOrEqualThan(7,'NPC_Ranger')):IncreaseMaxHP(36);IF(ClassLevelHigherOrEqualThan(6,'NPC_Fighter')):Ability(Strength,2);IF(ClassLevelHigherOrEqualThan(6,'NPC_Fighter')):Ability(Constitution,2)"
+    data "Boosts" "IF(ClassLevelHigherOrEqualThan(7,'NPC_Fighter') or ClassLevelHigherOrEqualThan(7,'NPC_Paladin')):IncreaseMaxHP(42);IF(ClassLevelHigherOrEqualThan(7,'NPC_Cleric') or ClassLevelHigherOrEqualThan(7,'NPC_Ranger')):IncreaseMaxHP(36);IF(ClassLevelHigherOrEqualThan(6,'NPC_Fighter') or ClassLevelHigherOrEqualThan(6,'NPC_Paladin')):Ability(Strength,2);IF(ClassLevelHigherOrEqualThan(6,'NPC_Fighter') or ClassLevelHigherOrEqualThan(6,'NPC_Paladin')):Ability(Constitution,2)"
 
     new entry "GOON_NPC_FLAMING_FIST_BOOSTS_LVL_8"
     type "StatusData"
@@ -101,7 +101,7 @@
     using "GOON_NPC_FLAMING_FIST_BOOSTS_TEMPLATE"
     data "StackPriority" "8"
     data "Passives" ""
-    data "Boosts" "IF(ClassLevelHigherOrEqualThan(8,'NPC_Fighter')):IncreaseMaxHP(49);IF(ClassLevelHigherOrEqualThan(8,'NPC_Cleric') or ClassLevelHigherOrEqualThan(8,'NPC_Ranger')):IncreaseMaxHP(42);IF(ClassLevelHigherOrEqualThan(8,'NPC_Fighter')):Ability(Strength,3);IF(ClassLevelHigherOrEqualThan(8,'NPC_Fighter')):Ability(Constitution,3);IF(ClassLevelHigherOrEqualThan(8,'NPC_Ranger')):Ability(Dexterity,3);IF(ClassLevelHigherOrEqualThan(8,'NPC_Ranger')):Ability(Constitution,1)"
+    data "Boosts" "IF(ClassLevelHigherOrEqualThan(8,'NPC_Fighter') or ClassLevelHigherOrEqualThan(8,'NPC_Paladin')):IncreaseMaxHP(49);IF(ClassLevelHigherOrEqualThan(8,'NPC_Cleric') or ClassLevelHigherOrEqualThan(8,'NPC_Ranger')):IncreaseMaxHP(42);IF(ClassLevelHigherOrEqualThan(8,'NPC_Fighter') or ClassLevelHigherOrEqualThan(8,'NPC_Paladin')):Ability(Strength,3);IF(ClassLevelHigherOrEqualThan(8,'NPC_Fighter') or ClassLevelHigherOrEqualThan(8,'NPC_Paladin')):Ability(Constitution,3);IF(ClassLevelHigherOrEqualThan(8,'NPC_Ranger')):Ability(Dexterity,3);IF(ClassLevelHigherOrEqualThan(8,'NPC_Ranger')):Ability(Constitution,1)"
 
     new entry "GOON_NPC_FLAMING_FIST_BOOSTS_LVL_9"
     type "StatusData"
@@ -109,7 +109,7 @@
     using "GOON_NPC_FLAMING_FIST_BOOSTS_TEMPLATE"
     data "StackPriority" "9"
     data "Passives" ""
-    data "Boosts" "IF(ClassLevelHigherOrEqualThan(9,'NPC_Fighter')):IncreaseMaxHP(56);IF(ClassLevelHigherOrEqualThan(9,'NPC_Cleric') or ClassLevelHigherOrEqualThan(9,'NPC_Ranger')):IncreaseMaxHP(48);IF(ClassLevelHigherOrEqualThan(8,'NPC_Fighter')):Ability(Strength,3);IF(ClassLevelHigherOrEqualThan(8,'NPC_Fighter')):Ability(Constitution,3);IF(ClassLevelHigherOrEqualThan(8,'NPC_Ranger')):Ability(Dexterity,3);IF(ClassLevelHigherOrEqualThan(8,'NPC_Ranger')):Ability(Constitution,1)"
+    data "Boosts" "IF(ClassLevelHigherOrEqualThan(9,'NPC_Fighter') or ClassLevelHigherOrEqualThan(9,'NPC_Paladin')):IncreaseMaxHP(56);IF(ClassLevelHigherOrEqualThan(9,'NPC_Cleric') or ClassLevelHigherOrEqualThan(9,'NPC_Ranger')):IncreaseMaxHP(48);IF(ClassLevelHigherOrEqualThan(8,'NPC_Fighter') or ClassLevelHigherOrEqualThan(8,'NPC_Paladin')):Ability(Strength,3);IF(ClassLevelHigherOrEqualThan(8,'NPC_Fighter') or ClassLevelHigherOrEqualThan(8,'NPC_Paladin')):Ability(Constitution,3);IF(ClassLevelHigherOrEqualThan(8,'NPC_Ranger')):Ability(Dexterity,3);IF(ClassLevelHigherOrEqualThan(8,'NPC_Ranger')):Ability(Constitution,1)"
 
     new entry "GOON_NPC_FLAMING_FIST_BOOSTS_LVL_10"
     type "StatusData"
@@ -117,7 +117,7 @@
     using "GOON_NPC_FLAMING_FIST_BOOSTS_TEMPLATE"
     data "StackPriority" "10"
     data "Passives" ""
-    data "Boosts" "IF(ClassLevelHigherOrEqualThan(10,'NPC_Fighter')):IncreaseMaxHP(63);IF(ClassLevelHigherOrEqualThan(10,'NPC_Cleric') or ClassLevelHigherOrEqualThan(10,'NPC_Ranger')):IncreaseMaxHP(54);IF(ClassLevelHigherOrEqualThan(8,'NPC_Fighter')):Ability(Strength,3);IF(ClassLevelHigherOrEqualThan(8,'NPC_Fighter')):Ability(Constitution,3);IF(ClassLevelHigherOrEqualThan(8,'NPC_Ranger')):Ability(Dexterity,3);IF(ClassLevelHigherOrEqualThan(8,'NPC_Ranger')):Ability(Constitution,1)"
+    data "Boosts" "IF(ClassLevelHigherOrEqualThan(10,'NPC_Fighter') or ClassLevelHigherOrEqualThan(10,'NPC_Paladin')):IncreaseMaxHP(63);IF(ClassLevelHigherOrEqualThan(10,'NPC_Cleric') or ClassLevelHigherOrEqualThan(10,'NPC_Ranger')):IncreaseMaxHP(54);IF(ClassLevelHigherOrEqualThan(8,'NPC_Fighter') or ClassLevelHigherOrEqualThan(8,'NPC_Paladin')):Ability(Strength,3);IF(ClassLevelHigherOrEqualThan(8,'NPC_Fighter') or ClassLevelHigherOrEqualThan(8,'NPC_Paladin')):Ability(Constitution,3);IF(ClassLevelHigherOrEqualThan(8,'NPC_Ranger')):Ability(Dexterity,3);IF(ClassLevelHigherOrEqualThan(8,'NPC_Ranger')):Ability(Constitution,1)"
 
     new entry "GOON_NPC_FLAMING_FIST_BOOSTS_LVL_11"
     type "StatusData"
@@ -125,7 +125,7 @@
     using "GOON_NPC_FLAMING_FIST_BOOSTS_TEMPLATE"
     data "StackPriority" "11"
     data "Passives" ""
-    data "Boosts" "IF(ClassLevelHigherOrEqualThan(11,'NPC_Fighter')):IncreaseMaxHP(70);IF(ClassLevelHigherOrEqualThan(11,'NPC_Cleric') or ClassLevelHigherOrEqualThan(11,'NPC_Ranger')):IncreaseMaxHP(60);IF(ClassLevelHigherOrEqualThan(8,'NPC_Fighter')):Ability(Strength,3);IF(ClassLevelHigherOrEqualThan(8,'NPC_Fighter')):Ability(Constitution,3);IF(ClassLevelHigherOrEqualThan(8,'NPC_Ranger')):Ability(Dexterity,3);IF(ClassLevelHigherOrEqualThan(8,'NPC_Ranger')):Ability(Constitution,1)"
+    data "Boosts" "IF(ClassLevelHigherOrEqualThan(11,'NPC_Fighter') or ClassLevelHigherOrEqualThan(11,'NPC_Paladin')):IncreaseMaxHP(70);IF(ClassLevelHigherOrEqualThan(11,'NPC_Cleric') or ClassLevelHigherOrEqualThan(11,'NPC_Ranger')):IncreaseMaxHP(60);IF(ClassLevelHigherOrEqualThan(8,'NPC_Fighter') or ClassLevelHigherOrEqualThan(8,'NPC_Paladin')):Ability(Strength,3);IF(ClassLevelHigherOrEqualThan(8,'NPC_Fighter') or ClassLevelHigherOrEqualThan(8,'NPC_Paladin')):Ability(Constitution,3);IF(ClassLevelHigherOrEqualThan(8,'NPC_Ranger')):Ability(Dexterity,3);IF(ClassLevelHigherOrEqualThan(8,'NPC_Ranger')):Ability(Constitution,1)"
 
     new entry "GOON_NPC_FLAMING_FIST_BOOSTS_LVL_12"
     type "StatusData"
@@ -133,7 +133,7 @@
     using "GOON_NPC_FLAMING_FIST_BOOSTS_TEMPLATE"
     data "StackPriority" "12"
     data "Passives" ""
-    data "Boosts" "IF(ClassLevelHigherOrEqualThan(12,'NPC_Fighter')):IncreaseMaxHP(77);IF(ClassLevelHigherOrEqualThan(12,'NPC_Cleric') or ClassLevelHigherOrEqualThan(12,'NPC_Ranger')):IncreaseMaxHP(66);IF(ClassLevelHigherOrEqualThan(8,'NPC_Fighter')):Ability(Strength,3);IF(ClassLevelHigherOrEqualThan(8,'NPC_Fighter')):Ability(Constitution,3);IF(ClassLevelHigherOrEqualThan(8,'NPC_Ranger')):Ability(Dexterity,3);IF(ClassLevelHigherOrEqualThan(8,'NPC_Ranger')):Ability(Constitution,1)"
+    data "Boosts" "IF(ClassLevelHigherOrEqualThan(12,'NPC_Fighter') or ClassLevelHigherOrEqualThan(12,'NPC_Paladin')):IncreaseMaxHP(77);IF(ClassLevelHigherOrEqualThan(12,'NPC_Cleric') or ClassLevelHigherOrEqualThan(12,'NPC_Ranger')):IncreaseMaxHP(66);IF(ClassLevelHigherOrEqualThan(8,'NPC_Fighter') or ClassLevelHigherOrEqualThan(8,'NPC_Paladin')):Ability(Strength,3);IF(ClassLevelHigherOrEqualThan(8,'NPC_Fighter') or ClassLevelHigherOrEqualThan(8,'NPC_Paladin')):Ability(Constitution,3);IF(ClassLevelHigherOrEqualThan(8,'NPC_Ranger')):Ability(Dexterity,3);IF(ClassLevelHigherOrEqualThan(8,'NPC_Ranger')):Ability(Constitution,1)"
 
     new entry "GOON_NPC_FLAMING_FIST_BOOSTS_LVL_13"
     type "StatusData"
@@ -141,7 +141,7 @@
     using "GOON_NPC_FLAMING_FIST_BOOSTS_TEMPLATE"
     data "StackPriority" "13"
     data "Passives" ""
-    data "Boosts" "IF(ClassLevelHigherOrEqualThan(13,'NPC_Fighter')):IncreaseMaxHP(84);IF(ClassLevelHigherOrEqualThan(13,'NPC_Cleric') or ClassLevelHigherOrEqualThan(13,'NPC_Ranger')):IncreaseMaxHP(72);IF(ClassLevelHigherOrEqualThan(8,'NPC_Fighter')):Ability(Strength,3);IF(ClassLevelHigherOrEqualThan(8,'NPC_Fighter')):Ability(Constitution,3);IF(ClassLevelHigherOrEqualThan(8,'NPC_Ranger')):Ability(Dexterity,3);IF(ClassLevelHigherOrEqualThan(8,'NPC_Ranger')):Ability(Constitution,1)"
+    data "Boosts" "IF(ClassLevelHigherOrEqualThan(13,'NPC_Fighter') or ClassLevelHigherOrEqualThan(13,'NPC_Paladin')):IncreaseMaxHP(84);IF(ClassLevelHigherOrEqualThan(13,'NPC_Cleric') or ClassLevelHigherOrEqualThan(13,'NPC_Ranger')):IncreaseMaxHP(72);IF(ClassLevelHigherOrEqualThan(8,'NPC_Fighter') or ClassLevelHigherOrEqualThan(8,'NPC_Paladin')):Ability(Strength,3);IF(ClassLevelHigherOrEqualThan(8,'NPC_Fighter') or ClassLevelHigherOrEqualThan(8,'NPC_Paladin')):Ability(Constitution,3);IF(ClassLevelHigherOrEqualThan(8,'NPC_Ranger')):Ability(Dexterity,3);IF(ClassLevelHigherOrEqualThan(8,'NPC_Ranger')):Ability(Constitution,1)"
 
     new entry "GOON_NPC_FLAMING_FIST_BOOSTS_LVL_14"
     type "StatusData"
@@ -149,7 +149,7 @@
     using "GOON_NPC_FLAMING_FIST_BOOSTS_TEMPLATE"
     data "StackPriority" "14"
     data "Passives" ""
-    data "Boosts" "IF(ClassLevelHigherOrEqualThan(14,'NPC_Fighter')):IncreaseMaxHP(91);IF(ClassLevelHigherOrEqualThan(14,'NPC_Cleric') or ClassLevelHigherOrEqualThan(14,'NPC_Ranger')):IncreaseMaxHP(78);IF(ClassLevelHigherOrEqualThan(8,'NPC_Fighter')):Ability(Strength,3);IF(ClassLevelHigherOrEqualThan(8,'NPC_Fighter')):Ability(Constitution,3);IF(ClassLevelHigherOrEqualThan(8,'NPC_Ranger')):Ability(Dexterity,3);IF(ClassLevelHigherOrEqualThan(8,'NPC_Ranger')):Ability(Constitution,1)"
+    data "Boosts" "IF(ClassLevelHigherOrEqualThan(14,'NPC_Fighter') or ClassLevelHigherOrEqualThan(14,'NPC_Paladin')):IncreaseMaxHP(91);IF(ClassLevelHigherOrEqualThan(14,'NPC_Cleric') or ClassLevelHigherOrEqualThan(14,'NPC_Ranger')):IncreaseMaxHP(78);IF(ClassLevelHigherOrEqualThan(8,'NPC_Fighter') or ClassLevelHigherOrEqualThan(8,'NPC_Paladin')):Ability(Strength,3);IF(ClassLevelHigherOrEqualThan(8,'NPC_Fighter') or ClassLevelHigherOrEqualThan(8,'NPC_Paladin')):Ability(Constitution,3);IF(ClassLevelHigherOrEqualThan(8,'NPC_Ranger')):Ability(Dexterity,3);IF(ClassLevelHigherOrEqualThan(8,'NPC_Ranger')):Ability(Constitution,1)"
 
     new entry "GOON_NPC_FLAMING_FIST_BOOSTS_LVL_15"
     type "StatusData"
@@ -157,7 +157,7 @@
     using "GOON_NPC_FLAMING_FIST_BOOSTS_TEMPLATE"
     data "StackPriority" "15"
     data "Passives" ""
-    data "Boosts" "IF(ClassLevelHigherOrEqualThan(15,'NPC_Fighter')):IncreaseMaxHP(98);IF(ClassLevelHigherOrEqualThan(15,'NPC_Cleric') or ClassLevelHigherOrEqualThan(15,'NPC_Ranger')):IncreaseMaxHP(84);IF(ClassLevelHigherOrEqualThan(8,'NPC_Fighter')):Ability(Strength,3);IF(ClassLevelHigherOrEqualThan(8,'NPC_Fighter')):Ability(Constitution,3);IF(ClassLevelHigherOrEqualThan(8,'NPC_Ranger')):Ability(Dexterity,3);IF(ClassLevelHigherOrEqualThan(8,'NPC_Ranger')):Ability(Constitution,1)"
+    data "Boosts" "IF(ClassLevelHigherOrEqualThan(15,'NPC_Fighter') or ClassLevelHigherOrEqualThan(15,'NPC_Paladin')):IncreaseMaxHP(98);IF(ClassLevelHigherOrEqualThan(15,'NPC_Cleric') or ClassLevelHigherOrEqualThan(15,'NPC_Ranger')):IncreaseMaxHP(84);IF(ClassLevelHigherOrEqualThan(8,'NPC_Fighter') or ClassLevelHigherOrEqualThan(8,'NPC_Paladin')):Ability(Strength,3);IF(ClassLevelHigherOrEqualThan(8,'NPC_Fighter') or ClassLevelHigherOrEqualThan(8,'NPC_Paladin')):Ability(Constitution,3);IF(ClassLevelHigherOrEqualThan(8,'NPC_Ranger')):Ability(Dexterity,3);IF(ClassLevelHigherOrEqualThan(8,'NPC_Ranger')):Ability(Constitution,1)"
 
     new entry "GOON_NPC_FLAMING_FIST_BOOSTS_LVL_16"
     type "StatusData"
@@ -165,7 +165,7 @@
     using "GOON_NPC_FLAMING_FIST_BOOSTS_TEMPLATE"
     data "StackPriority" "16"
     data "Passives" ""
-    data "Boosts" "IF(ClassLevelHigherOrEqualThan(16,'NPC_Fighter')):IncreaseMaxHP(105);IF(ClassLevelHigherOrEqualThan(16,'NPC_Cleric') or ClassLevelHigherOrEqualThan(16,'NPC_Ranger')):IncreaseMaxHP(90);IF(ClassLevelHigherOrEqualThan(8,'NPC_Fighter')):Ability(Strength,3);IF(ClassLevelHigherOrEqualThan(8,'NPC_Fighter')):Ability(Constitution,3);IF(ClassLevelHigherOrEqualThan(8,'NPC_Ranger')):Ability(Dexterity,3);IF(ClassLevelHigherOrEqualThan(8,'NPC_Ranger')):Ability(Constitution,1)"
+    data "Boosts" "IF(ClassLevelHigherOrEqualThan(16,'NPC_Fighter') or ClassLevelHigherOrEqualThan(16,'NPC_Paladin')):IncreaseMaxHP(105);IF(ClassLevelHigherOrEqualThan(16,'NPC_Cleric') or ClassLevelHigherOrEqualThan(16,'NPC_Ranger')):IncreaseMaxHP(90);IF(ClassLevelHigherOrEqualThan(8,'NPC_Fighter') or ClassLevelHigherOrEqualThan(8,'NPC_Paladin')):Ability(Strength,3);IF(ClassLevelHigherOrEqualThan(8,'NPC_Fighter') or ClassLevelHigherOrEqualThan(8,'NPC_Paladin')):Ability(Constitution,3);IF(ClassLevelHigherOrEqualThan(8,'NPC_Ranger')):Ability(Dexterity,3);IF(ClassLevelHigherOrEqualThan(8,'NPC_Ranger')):Ability(Constitution,1)"
 
     new entry "GOON_NPC_FLAMING_FIST_BOOSTS_LVL_17"
     type "StatusData"
@@ -173,7 +173,7 @@
     using "GOON_NPC_FLAMING_FIST_BOOSTS_TEMPLATE"
     data "StackPriority" "17"
     data "Passives" ""
-    data "Boosts" "IF(ClassLevelHigherOrEqualThan(17,'NPC_Fighter')):IncreaseMaxHP(112);IF(ClassLevelHigherOrEqualThan(17,'NPC_Cleric') or ClassLevelHigherOrEqualThan(17,'NPC_Ranger')):IncreaseMaxHP(96);IF(ClassLevelHigherOrEqualThan(8,'NPC_Fighter')):Ability(Strength,3);IF(ClassLevelHigherOrEqualThan(8,'NPC_Fighter')):Ability(Constitution,3);IF(ClassLevelHigherOrEqualThan(8,'NPC_Ranger')):Ability(Dexterity,3);IF(ClassLevelHigherOrEqualThan(8,'NPC_Ranger')):Ability(Constitution,1)"
+    data "Boosts" "IF(ClassLevelHigherOrEqualThan(17,'NPC_Fighter') or ClassLevelHigherOrEqualThan(17,'NPC_Paladin')):IncreaseMaxHP(112);IF(ClassLevelHigherOrEqualThan(17,'NPC_Cleric') or ClassLevelHigherOrEqualThan(17,'NPC_Ranger')):IncreaseMaxHP(96);IF(ClassLevelHigherOrEqualThan(8,'NPC_Fighter') or ClassLevelHigherOrEqualThan(8,'NPC_Paladin')):Ability(Strength,3);IF(ClassLevelHigherOrEqualThan(8,'NPC_Fighter') or ClassLevelHigherOrEqualThan(8,'NPC_Paladin')):Ability(Constitution,3);IF(ClassLevelHigherOrEqualThan(8,'NPC_Ranger')):Ability(Dexterity,3);IF(ClassLevelHigherOrEqualThan(8,'NPC_Ranger')):Ability(Constitution,1)"
 
     new entry "GOON_NPC_FLAMING_FIST_BOOSTS_LVL_18"
     type "StatusData"
@@ -181,7 +181,7 @@
     using "GOON_NPC_FLAMING_FIST_BOOSTS_TEMPLATE"
     data "StackPriority" "18"
     data "Passives" ""
-    data "Boosts" "IF(ClassLevelHigherOrEqualThan(18,'NPC_Fighter')):IncreaseMaxHP(119);IF(ClassLevelHigherOrEqualThan(18,'NPC_Cleric') or ClassLevelHigherOrEqualThan(18,'NPC_Ranger')):IncreaseMaxHP(102);IF(ClassLevelHigherOrEqualThan(8,'NPC_Fighter')):Ability(Strength,3);IF(ClassLevelHigherOrEqualThan(8,'NPC_Fighter')):Ability(Constitution,3);IF(ClassLevelHigherOrEqualThan(8,'NPC_Ranger')):Ability(Dexterity,3);IF(ClassLevelHigherOrEqualThan(8,'NPC_Ranger')):Ability(Constitution,1)"
+    data "Boosts" "IF(ClassLevelHigherOrEqualThan(18,'NPC_Fighter') or ClassLevelHigherOrEqualThan(18,'NPC_Paladin')):IncreaseMaxHP(119);IF(ClassLevelHigherOrEqualThan(18,'NPC_Cleric') or ClassLevelHigherOrEqualThan(18,'NPC_Ranger')):IncreaseMaxHP(102);IF(ClassLevelHigherOrEqualThan(8,'NPC_Fighter') or ClassLevelHigherOrEqualThan(8,'NPC_Paladin')):Ability(Strength,3);IF(ClassLevelHigherOrEqualThan(8,'NPC_Fighter') or ClassLevelHigherOrEqualThan(8,'NPC_Paladin')):Ability(Constitution,3);IF(ClassLevelHigherOrEqualThan(8,'NPC_Ranger')):Ability(Dexterity,3);IF(ClassLevelHigherOrEqualThan(8,'NPC_Ranger')):Ability(Constitution,1)"
 
     new entry "GOON_NPC_FLAMING_FIST_BOOSTS_LVL_19"
     type "StatusData"
@@ -189,7 +189,7 @@
     using "GOON_NPC_FLAMING_FIST_BOOSTS_TEMPLATE"
     data "StackPriority" "19"
     data "Passives" ""
-    data "Boosts" "IF(ClassLevelHigherOrEqualThan(19,'NPC_Fighter')):IncreaseMaxHP(126);IF(ClassLevelHigherOrEqualThan(19,'NPC_Cleric') or ClassLevelHigherOrEqualThan(19,'NPC_Ranger')):IncreaseMaxHP(108);IF(ClassLevelHigherOrEqualThan(8,'NPC_Fighter')):Ability(Strength,3);IF(ClassLevelHigherOrEqualThan(8,'NPC_Fighter')):Ability(Constitution,3);IF(ClassLevelHigherOrEqualThan(8,'NPC_Ranger')):Ability(Dexterity,3);IF(ClassLevelHigherOrEqualThan(8,'NPC_Ranger')):Ability(Constitution,1)"
+    data "Boosts" "IF(ClassLevelHigherOrEqualThan(19,'NPC_Fighter') or ClassLevelHigherOrEqualThan(19,'NPC_Paladin')):IncreaseMaxHP(126);IF(ClassLevelHigherOrEqualThan(19,'NPC_Cleric') or ClassLevelHigherOrEqualThan(19,'NPC_Ranger')):IncreaseMaxHP(108);IF(ClassLevelHigherOrEqualThan(8,'NPC_Fighter') or ClassLevelHigherOrEqualThan(8,'NPC_Paladin')):Ability(Strength,3);IF(ClassLevelHigherOrEqualThan(8,'NPC_Fighter') or ClassLevelHigherOrEqualThan(8,'NPC_Paladin')):Ability(Constitution,3);IF(ClassLevelHigherOrEqualThan(8,'NPC_Ranger')):Ability(Dexterity,3);IF(ClassLevelHigherOrEqualThan(8,'NPC_Ranger')):Ability(Constitution,1)"
 
     new entry "GOON_NPC_FLAMING_FIST_BOOSTS_LVL_20"
     type "StatusData"
@@ -197,7 +197,7 @@
     using "GOON_NPC_FLAMING_FIST_BOOSTS_TEMPLATE"
     data "StackPriority" "20"
     data "Passives" ""
-    data "Boosts" "IF(ClassLevelHigherOrEqualThan(20,'NPC_Fighter')):IncreaseMaxHP(133);IF(ClassLevelHigherOrEqualThan(20,'NPC_Cleric') or ClassLevelHigherOrEqualThan(20,'NPC_Ranger')):IncreaseMaxHP(114);IF(ClassLevelHigherOrEqualThan(8,'NPC_Fighter')):Ability(Strength,3);IF(ClassLevelHigherOrEqualThan(8,'NPC_Fighter')):Ability(Constitution,3);IF(ClassLevelHigherOrEqualThan(8,'NPC_Ranger')):Ability(Dexterity,3);IF(ClassLevelHigherOrEqualThan(8,'NPC_Ranger')):Ability(Constitution,1)"
+    data "Boosts" "IF(ClassLevelHigherOrEqualThan(20,'NPC_Fighter') or ClassLevelHigherOrEqualThan(20,'NPC_Paladin')):IncreaseMaxHP(133);IF(ClassLevelHigherOrEqualThan(20,'NPC_Cleric') or ClassLevelHigherOrEqualThan(20,'NPC_Ranger')):IncreaseMaxHP(114);IF(ClassLevelHigherOrEqualThan(8,'NPC_Fighter') or ClassLevelHigherOrEqualThan(8,'NPC_Paladin')):Ability(Strength,3);IF(ClassLevelHigherOrEqualThan(8,'NPC_Fighter') or ClassLevelHigherOrEqualThan(8,'NPC_Paladin')):Ability(Constitution,3);IF(ClassLevelHigherOrEqualThan(8,'NPC_Ranger')):Ability(Dexterity,3);IF(ClassLevelHigherOrEqualThan(8,'NPC_Ranger')):Ability(Constitution,1)"
 
 // ==================================== "NPC_Halsin" ====================================
 
