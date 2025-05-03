@@ -3180,16 +3180,18 @@ using "DEN_ShadowDruid_Melee"
 // data "Passives" "Halfling_Lucky;Halfling_Brave;AttackOfOpportunity;DarknessRules"
 data "Passives" "CX_Druid_Boost;CX_Druid_Spores_Boost;CX_Magic_Boost;CX_Martial_Boost;Halfling_Lucky;Halfling_Brave;AttackOfOpportunity;DarknessRules"
 
-// Roah Moonglow (Lucretia of the Zhentarim) - Zhentarim
+// Roah Moonglow (Lucretia of the Zhentarim) - Zhentarim (Make her a proper Bard, add proprietary boosts via stats.)
 new entry "GOB_Quartermaster"
 type "Character"
 using "GOB_Quartermaster"
-// data "Charisma" "14" - Increase her Charisma because her vanilla Charisma score is pretty low - if she's given actual Bard skills then they'll be pretty shit with 14 Charisma
-data "Charisma" "18"
+// data "Charisma" "14"
+data "Charisma" "16"
 // data "SpellCastingAbility" "Intelligence"
 data "SpellCastingAbility" "Charisma"
 // data "Passives" "Alert;Halfling_Lucky;Halfling_Brave;AttackOfOpportunity;DarknessRules"
-data "Passives" "CX_Bard_Boost;CX_Magic_Boost;Halfling_Lucky;Halfling_Brave;AttackOfOpportunity;DarknessRules;Alert"
+data "Passives" "CX_Bard_Boost;CX_Magic_Boost;Halfling_Lucky;Halfling_Brave;AttackOfOpportunity;DarknessRules;Alert;Goon_RoahMoonglow_Boost"
+// data "Progressions" "2c3411ae-806b-11ed-a1eb-0242ac120002"
+data "Progressions" "cbe5059f-7a9f-4b98-be6a-07c9cd8e02c2"
 
 new entry "Halfling_Cleric"
 type "Character"

@@ -202,3 +202,19 @@
 // ==================================== "NPC_Halsin" ====================================
 
 // ==================================== "NPC_RoahMoonglow" ====================================
+
+    new entry "Goon_RoahMoonglow_Boost"
+    type "PassiveData"
+    data "Properties" "IsHidden"
+    data "StatsFunctorContext" "OnCreate;OnStatusApplied;OnStatusRemoved"
+    data "StatsFunctors" "IF(CharacterLevelGreaterThan(4,GetOwner(context.Source))):ApplyStatus(GOON_ROAHMOONGLOW_BOOST,100,-1)"
+
+    new entry "GOON_ROAHMOONGLOW_BOOST"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    data "StatusPropertyFlags" "DisableOverhead;DisableCombatlog;DisablePortraitIndicator;ApplyToDead;IgnoreResting"
+    data "RemoveEvents" "OnStatusApplied;OnStatusRemoved"
+    data "StackId" "GOON_ROAHMOONGLOW_BOOST"
+    data "StackType" "Ignore"
+    data "RemoveConditions" "not HasPassive('Goon_RoahMoonglow_Boost')"
+    data "Boosts" "Ability(Dexterity,2);Ability(Charisma,2);IncreaseMaxHP(32)"
