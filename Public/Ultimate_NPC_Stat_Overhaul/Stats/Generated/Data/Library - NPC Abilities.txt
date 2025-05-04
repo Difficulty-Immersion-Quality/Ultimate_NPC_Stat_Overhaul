@@ -177,9 +177,13 @@ new entry "Target_BardicInspiration_AI"
 type "SpellData"
 data "SpellType" "Shout"
 using "Target_BardicInspiration"
+// data "SpellProperties" "IF(not ClassLevelHigherOrEqualThan(5,'Bard')):ApplyStatus(BARDIC_INSPIRATION,100, -1);IF(ClassLevelHigherOrEqualThan(5,'Bard') and not ClassLevelHigherOrEqualThan(10,'Bard')):ApplyStatus(BARDIC_INSPIRATION_D8,100, -1);IF(ClassLevelHigherOrEqualThan(10,'Bard')):ApplyStatus(BARDIC_INSPIRATION_D10,100, -1);AI_ONLY:ApplyStatus(AI_HELPER_BARDIC_INSPIRATION,100,3)"
+data "SpellProperties" "IF(not ClassLevelHigherOrEqualThan(5,'NPC_Bard')):ApplyStatus(BARDIC_INSPIRATION,100, -1);IF(ClassLevelHigherOrEqualThan(5,'NPC_Bard') and not ClassLevelHigherOrEqualThan(10,'NPC_Bard') or HasStatus('GOON_NPC_BARD_LVL_5') or HasStatus('GOON_NPC_BARD_LVL_6') or HasStatus('GOON_NPC_BARD_LVL_7') or HasStatus('GOON_NPC_BARD_LVL_8') or HasStatus('GOON_NPC_BARD_LVL_9')):ApplyStatus(BARDIC_INSPIRATION_D8,100, -1);IF(ClassLevelHigherOrEqualThan(10,'NPC_Bard') and not ClassLevelHigherOrEqualThan(15,'NPC_Bard') or HasStatus('GOON_NPC_BARD_LVL_10') or HasStatus('GOON_NPC_BARD_LVL_11') or HasStatus('GOON_NPC_BARD_LVL_12') or HasStatus('GOON_NPC_BARD_LVL_13') or HasStatus('GOON_NPC_BARD_LVL_14')):ApplyStatus(BARDIC_INSPIRATION_D10,100, -1);IF(ClassLevelHigherOrEqualThan(15,'NPC_Bard') or HasStatus('GOON_NPC_BARD_LVL_15') or HasStatus('GOON_NPC_BARD_LVL_16') or HasStatus('GOON_NPC_BARD_LVL_17') or HasStatus('GOON_NPC_BARD_LVL_18') or HasStatus('GOON_NPC_BARD_LVL_19') or HasStatus('GOON_NPC_BARD_LVL_20')):ApplyStatus(BARDIC_INSPIRATION_D12,100, -1);AI_ONLY:ApplyStatus(AI_HELPER_BARDIC_INSPIRATION,100,3)"
+// data "TargetConditions" "Character() and not Enemy() and not Self() and not (HasStatus('BARDIC_INSPIRATION') or HasStatus('BARDIC_INSPIRATION_D8') or HasStatus('BARDIC_INSPIRATION_COMBAT') or HasStatus('BARDIC_INSPIRATION_COMBAT_D8'))"
+data "TargetConditions" "Character() and not Enemy() and not Self() and not (HasStatus('BARDIC_INSPIRATION') or HasStatus('BARDIC_INSPIRATION_D8') or HasStatus('BARDIC_INSPIRATION_D10') or HasStatus('BARDIC_INSPIRATION_D12') or HasStatus('BARDIC_INSPIRATION_COMBAT') or HasStatus('BARDIC_INSPIRATION_COMBAT_D8') or HasStatus('BARDIC_INSPIRATION_COMBAT_D10') or HasStatus('BARDIC_INSPIRATION_COMBAT_D12'))"
+data "RequirementConditions" "not HasPassive('CombatInspiration')"
 // data "CombatAIOverrideSpell" "Target_BardicInspiration_AI"
 data "CombatAIOverrideSpell" ""
-data "RequirementConditions" "not HasPassive('CombatInspiration')"
 
 // ==================================== Druid - Fungal Infestation resource passives ====================================
 
@@ -280,7 +284,9 @@ data "CombatAIOverrideSpell" ""
 // data "UseCosts" "ActionPoint:1"
 data "UseCosts" ""
 // data "Requirements" "!Combat"
-data "Requirements" "not HasStatus('WEAPON_BOND',GetActiveWeapon())"
+data "Requirements" ""
+// data "RequirementConditions" "not Unarmed()"
+data "RequirementConditions" "not Unarmed() and not HasStatus('WEAPON_BOND', GetActiveWeapon())"
 
 // ==================================== Ranger - Companion Summon ====================================
 

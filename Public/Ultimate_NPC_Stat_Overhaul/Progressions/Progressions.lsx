@@ -175,7 +175,8 @@
             <!-- BARD -->
                 <node id="Progression">
                     <!-- Slightly different to player Boosts, which does not have a tag and does not specify die size for BardicInspiration -->
-                    <attribute id="Boosts" type="LSString" value="Tag(BARD);ActionResource(SpellSlot,2,1);ActionResource(BardicInspiration,3,0,d6);ProficiencyBonus(SavingThrow,Dexterity);ProficiencyBonus(SavingThrow,Charisma);Proficiency(LightArmor);Proficiency(SimpleWeapons);Proficiency(HandCrossbows);Proficiency(Longswords);Proficiency(Rapiers);Proficiency(Shortswords);Proficiency(MusicalInstrument);Attribute(UseMusicalInstrumentForCasting)"/>
+                    <!-- <attribute id="Boosts" type="LSString" value="Tag(BARD);ActionResource(SpellSlot,2,1);ActionResource(BardicInspiration,3,0,d6);ProficiencyBonus(SavingThrow,Dexterity);ProficiencyBonus(SavingThrow,Charisma);Proficiency(LightArmor);Proficiency(SimpleWeapons);Proficiency(HandCrossbows);Proficiency(Longswords);Proficiency(Rapiers);Proficiency(Shortswords);Proficiency(MusicalInstrument);Attribute(UseMusicalInstrumentForCasting)"/> -->
+                    <attribute id="Boosts" type="LSString" value="Tag(BARD);ActionResource(SpellSlot,2,1);ActionResource(BardicInspiration,3,0);ProficiencyBonus(SavingThrow,Dexterity);ProficiencyBonus(SavingThrow,Charisma);Proficiency(LightArmor);Proficiency(SimpleWeapons);Proficiency(HandCrossbows);Proficiency(Longswords);Proficiency(Rapiers);Proficiency(Shortswords);Proficiency(MusicalInstrument);Attribute(UseMusicalInstrumentForCasting)"/>
                     <attribute id="Level" type="uint8" value="1"/>
                     <attribute id="Name" type="LSString" value="NPC_Bard"/>
                     <!-- <attribute id="PassivesAdded" type="LSString" value="BardicInspiration;BardSpellcasting"/> -->
@@ -220,7 +221,8 @@
                     <attribute id="UUID" type="guid" value="fe7d2be7-a48e-4b4c-b8bb-5fad54861fdc"/>
                 </node>
                 <node id="Progression">
-                    <attribute id="Boosts" type="LSString" value="ActionResource(SpellSlot,2,3)"/>
+                    <!-- <attribute id="Boosts" type="LSString" value="ActionResource(SpellSlot,2,3)"/> -->
+                    <attribute id="Boosts" type="LSString" value="ActionResource(BardicInspiration,1,0);ActionResource(SpellSlot,2,3)"/>
                     <attribute id="Level" type="uint8" value="5"/>
                     <attribute id="Name" type="LSString" value="NPC_Bard"/>
                     <!-- <attribute id="PassivesAdded" type="LSString" value=""/> -->
