@@ -1,0 +1,190 @@
+// ==================================== Main class progression passive ====================================
+
+    new entry "Goon_Warlock_NPC_Progressions"
+    type "PassiveData"
+    data "DisplayName" "h286630c6gcd5bg4f56g84edg9ede6b7fc8cb;1"
+    data "Description" "hde5563d5g900eg49abg801ag0de6eed45e6a;1"
+    data "Properties" "Highlighted"
+    data "Icon" "GenericIcon_Intent_Buff"
+
+// ==================================== Combat Extender and Progression Stat Entries ====================================
+
+// Main passive
+    new entry "CX_Warlock_Boost"
+    type "PassiveData"
+    data "DisplayName" "hbeb3c7c1g30ddg4b0ega936g02439e04c829;1"
+    data "Description" "h45452726ge3a8g4311g98adg1853a70ff4a6;1"
+    data "Icon" "Spell_Necromancy_BestowCurse"
+    data "Boosts" ""
+    data "StatsFunctorContext" "OnCreate;OnStatusApplied;OnStatusRemoved"
+    data "Conditions" "(not HasPassive('Goon_Warlock_NPC_Progressions'))"
+    data "StatsFunctors" "IF(not CharacterLevelGreaterThan(1,GetOwner(context.Source))):ApplyStatus(GOON_NPC_WARLOCK_LVL_1,100,-1);IF(CharacterLevelGreaterThan(1,GetOwner(context.Source)) and not CharacterLevelGreaterThan(2,GetOwner(context.Source))):ApplyStatus(GOON_NPC_WARLOCK_LVL_2,100,-1);IF(CharacterLevelGreaterThan(2,GetOwner(context.Source)) and not CharacterLevelGreaterThan(3,GetOwner(context.Source))):ApplyStatus(GOON_NPC_WARLOCK_LVL_3,100,-1);IF(CharacterLevelGreaterThan(3,GetOwner(context.Source)) and not CharacterLevelGreaterThan(4,GetOwner(context.Source))):ApplyStatus(GOON_NPC_WARLOCK_LVL_4,100,-1);IF(CharacterLevelGreaterThan(4,GetOwner(context.Source)) and not CharacterLevelGreaterThan(5,GetOwner(context.Source))):ApplyStatus(GOON_NPC_WARLOCK_LVL_5,100,-1);IF(CharacterLevelGreaterThan(5,GetOwner(context.Source)) and not CharacterLevelGreaterThan(6,GetOwner(context.Source))):ApplyStatus(GOON_NPC_WARLOCK_LVL_6,100,-1);IF(CharacterLevelGreaterThan(6,GetOwner(context.Source)) and not CharacterLevelGreaterThan(7,GetOwner(context.Source))):ApplyStatus(GOON_NPC_WARLOCK_LVL_7,100,-1);IF(CharacterLevelGreaterThan(7,GetOwner(context.Source)) and not CharacterLevelGreaterThan(8,GetOwner(context.Source))):ApplyStatus(GOON_NPC_WARLOCK_LVL_8,100,-1);IF(CharacterLevelGreaterThan(8,GetOwner(context.Source)) and not CharacterLevelGreaterThan(9,GetOwner(context.Source))):ApplyStatus(GOON_NPC_WARLOCK_LVL_9,100,-1);IF(CharacterLevelGreaterThan(9,GetOwner(context.Source)) and not CharacterLevelGreaterThan(10,GetOwner(context.Source))):ApplyStatus(GOON_NPC_WARLOCK_LVL_10,100,-1);IF(CharacterLevelGreaterThan(10,GetOwner(context.Source)) and not CharacterLevelGreaterThan(11,GetOwner(context.Source))):ApplyStatus(GOON_NPC_WARLOCK_LVL_11,100,-1);IF(CharacterLevelGreaterThan(11,GetOwner(context.Source)) and not CharacterLevelGreaterThan(12,GetOwner(context.Source))):ApplyStatus(GOON_NPC_WARLOCK_LVL_12,100,-1);IF(CharacterLevelGreaterThan(12,GetOwner(context.Source)) and not CharacterLevelGreaterThan(13,GetOwner(context.Source))):ApplyStatus(GOON_NPC_WARLOCK_LVL_13,100,-1);IF(CharacterLevelGreaterThan(13,GetOwner(context.Source)) and not CharacterLevelGreaterThan(14,GetOwner(context.Source))):ApplyStatus(GOON_NPC_WARLOCK_LVL_14,100,-1);IF(CharacterLevelGreaterThan(14,GetOwner(context.Source)) and not CharacterLevelGreaterThan(15,GetOwner(context.Source))):ApplyStatus(GOON_NPC_WARLOCK_LVL_15,100,-1);IF(CharacterLevelGreaterThan(15,GetOwner(context.Source)) and not CharacterLevelGreaterThan(16,GetOwner(context.Source))):ApplyStatus(GOON_NPC_WARLOCK_LVL_16,100,-1);IF(CharacterLevelGreaterThan(16,GetOwner(context.Source)) and not CharacterLevelGreaterThan(17,GetOwner(context.Source))):ApplyStatus(GOON_NPC_WARLOCK_LVL_17,100,-1);IF(CharacterLevelGreaterThan(17,GetOwner(context.Source)) and not CharacterLevelGreaterThan(18,GetOwner(context.Source))):ApplyStatus(GOON_NPC_WARLOCK_LVL_18,100,-1);IF(CharacterLevelGreaterThan(18,GetOwner(context.Source)) and not CharacterLevelGreaterThan(19,GetOwner(context.Source))):ApplyStatus(GOON_NPC_WARLOCK_LVL_19,100,-1);IF(CharacterLevelGreaterThan(19,GetOwner(context.Source))):ApplyStatus(GOON_NPC_WARLOCK_LVL_20,100,-1)"
+
+// Template
+    new entry "GOON_NPC_WARLOCK_PROGRESSION_TEMPLATE"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    data "StatusPropertyFlags" "DisableOverhead;DisableCombatlog;DisablePortraitIndicator;ApplyToDead;IgnoreResting"
+    data "RemoveEvents" "OnStatusApplied;OnStatusRemoved"
+    data "StackId" "GOON_NPC_WARLOCK_PROGRESSION_TEMPLATE"
+    data "StackType" "Ignore"
+    data "RemoveConditions" "not HasPassive('CX_Warlock_Boost') or HasPassive('Goon_Warlock_NPC_Progressions')"
+
+// Progression statuses
+    new entry "GOON_NPC_WARLOCK_LVL_1_MULTICLASS"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_WARLOCK_PROGRESSION_TEMPLATE"
+    data "StackPriority" "1"
+    data "Passives" "UnlockedWarlockSpellSlotLevel1;CX_Magic_Boost"
+    data "Boosts" "Tag(WARLOCK);ActionResource(WarlockSpellSlot,1,1);Proficiency(LightArmor);Proficiency(SimpleWeapons)"
+
+    // <node id="Progression">
+    //     <attribute id="Boosts" type="LSString" value="ActionResource(WarlockSpellSlot,1,1);Proficiency(LightArmor);Proficiency(SimpleWeapons)"/>
+    //     <attribute id="IsMulticlass" type="bool" value="true"/>
+    //     <attribute id="Level" type="uint8" value="1"/>
+    //     <attribute id="Name" type="LSString" value="Warlock"/>
+    //     <attribute id="PassivesAdded" type="LSString" value="UnlockedWarlockSpellSlotLevel1"/>
+    //     <attribute id="ProgressionType" type="uint8" value="0"/>
+    //     <attribute id="Selectors" type="LSString" value="SelectSpells(f5c4af9c-5d8d-4526-9057-94a4b243cd40,2,0,,,,AlwaysPrepared)"/>
+    //     <attribute id="TableUUID" type="guid" value="a7a958f1-d858-4021-9fa7-cf87e7d71377"/>
+    //     <attribute id="UUID" type="guid" value="20015e25-8aa9-41bf-b959-aa587ba0aa27"/>
+
+    new entry "GOON_NPC_WARLOCK_LVL_1"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_WARLOCK_PROGRESSION_TEMPLATE"
+    data "StackPriority" "1"
+    data "Passives" "UnlockedWarlockSpellSlotLevel1;CX_Magic_Boost"
+    data "Boosts" "Tag(WARLOCK);ActionResource(WarlockSpellSlot,1,1);ProficiencyBonus(SavingThrow,Wisdom);ProficiencyBonus(SavingThrow,Charisma);Proficiency(LightArmor);Proficiency(SimpleWeapons)"
+
+    new entry "GOON_NPC_WARLOCK_LVL_2"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_WARLOCK_PROGRESSION_TEMPLATE"
+    data "StackPriority" "2"
+    data "Passives" "UnlockedWarlockSpellSlotLevel1;CX_Magic_Boost"
+    data "Boosts" "Tag(WARLOCK);ActionResource(WarlockSpellSlot,2,1);ProficiencyBonus(SavingThrow,Wisdom);ProficiencyBonus(SavingThrow,Charisma);Proficiency(LightArmor);Proficiency(SimpleWeapons)"
+
+    new entry "GOON_NPC_WARLOCK_LVL_3"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_WARLOCK_PROGRESSION_TEMPLATE"
+    data "StackPriority" "3"
+    data "Passives" "UnlockedWarlockSpellSlotLevel1;CX_Magic_Boost;UnlockedWarlockSpellSlotLevel2"
+    data "Boosts" "Tag(WARLOCK);ProficiencyBonus(SavingThrow,Wisdom);ProficiencyBonus(SavingThrow,Charisma);Proficiency(LightArmor);Proficiency(SimpleWeapons);ActionResource(WarlockSpellSlot,2,2);ActionResourceOverride(WarlockSpellSlot,0,1)"
+
+    new entry "GOON_NPC_WARLOCK_LVL_4"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_WARLOCK_LVL_3"
+    data "StackPriority" "4"
+
+    new entry "GOON_NPC_WARLOCK_LVL_5"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_WARLOCK_PROGRESSION_TEMPLATE"
+    data "StackPriority" "5"
+    data "Passives" "UnlockedWarlockSpellSlotLevel1;CX_Magic_Boost;UnlockedWarlockSpellSlotLevel2;ThirstingBlade_Check;ThirstingBlade_Blade;ThirstingBlade_Tome;UnlockedWarlockSpellSlotLevel3"
+    data "Boosts" "Tag(WARLOCK);ProficiencyBonus(SavingThrow,Wisdom);ProficiencyBonus(SavingThrow,Charisma);Proficiency(LightArmor);Proficiency(SimpleWeapons);ActionResourceOverride(WarlockSpellSlot,0,1);ActionResource(WarlockSpellSlot,2,3);ActionResourceOverride(WarlockSpellSlot,0,2)"
+
+    new entry "GOON_NPC_WARLOCK_LVL_6"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_WARLOCK_LVL_5"
+    data "StackPriority" "6"
+
+    new entry "GOON_NPC_WARLOCK_LVL_7"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_WARLOCK_PROGRESSION_TEMPLATE"
+    data "StackPriority" "7"
+    data "Passives" "UnlockedWarlockSpellSlotLevel1;CX_Magic_Boost;UnlockedWarlockSpellSlotLevel2;ThirstingBlade_Check;ThirstingBlade_Blade;ThirstingBlade_Tome;UnlockedWarlockSpellSlotLevel3"
+    data "Boosts" "Tag(WARLOCK);ProficiencyBonus(SavingThrow,Wisdom);ProficiencyBonus(SavingThrow,Charisma);Proficiency(LightArmor);Proficiency(SimpleWeapons);ActionResourceOverride(WarlockSpellSlot,0,1);ActionResourceOverride(WarlockSpellSlot,0,2);ActionResource(WarlockSpellSlot,2,4);ActionResourceOverride(WarlockSpellSlot,0,3)"
+
+    new entry "GOON_NPC_WARLOCK_LVL_8"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_WARLOCK_LVL_7"
+    data "StackPriority" "8"
+
+    new entry "GOON_NPC_WARLOCK_LVL_9"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_WARLOCK_PROGRESSION_TEMPLATE"
+    data "StackPriority" "9"
+    data "Passives" "UnlockedWarlockSpellSlotLevel1;CX_Magic_Boost;UnlockedWarlockSpellSlotLevel2;ThirstingBlade_Check;ThirstingBlade_Blade;ThirstingBlade_Tome;UnlockedWarlockSpellSlotLevel3"
+    data "Boosts" "Tag(WARLOCK);ProficiencyBonus(SavingThrow,Wisdom);ProficiencyBonus(SavingThrow,Charisma);Proficiency(LightArmor);Proficiency(SimpleWeapons);ActionResourceOverride(WarlockSpellSlot,0,1);ActionResourceOverride(WarlockSpellSlot,0,2);ActionResourceOverride(WarlockSpellSlot,0,3);ActionResource(WarlockSpellSlot,2,5);ActionResourceOverride(WarlockSpellSlot,0,4)"
+
+    new entry "GOON_NPC_WARLOCK_LVL_10"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_WARLOCK_LVL_9"
+    data "StackPriority" "10"
+
+    new entry "GOON_NPC_WARLOCK_LVL_11"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_WARLOCK_PROGRESSION_TEMPLATE"
+    data "StackPriority" "11"
+    data "Passives" "UnlockedWarlockSpellSlotLevel1;CX_Magic_Boost;UnlockedWarlockSpellSlotLevel2;ThirstingBlade_Check;ThirstingBlade_Blade;ThirstingBlade_Tome;UnlockedWarlockSpellSlotLevel3"
+    data "Boosts" "Tag(WARLOCK);ProficiencyBonus(SavingThrow,Wisdom);ProficiencyBonus(SavingThrow,Charisma);Proficiency(LightArmor);Proficiency(SimpleWeapons);ActionResourceOverride(WarlockSpellSlot,0,1);ActionResourceOverride(WarlockSpellSlot,0,2);ActionResourceOverride(WarlockSpellSlot,0,3);ActionResource(WarlockSpellSlot,3,5);ActionResourceOverride(WarlockSpellSlot,0,4)"
+
+    new entry "GOON_NPC_WARLOCK_LVL_12"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_WARLOCK_LVL_11"
+    data "StackPriority" "12"
+
+// Expansion levels 13-20
+    new entry "GOON_NPC_WARLOCK_LVL_13"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_WARLOCK_LVL_11"
+    data "StackPriority" "13"
+
+    new entry "GOON_NPC_WARLOCK_LVL_14"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_WARLOCK_LVL_11"
+    data "StackPriority" "14"
+
+    new entry "GOON_NPC_WARLOCK_LVL_15"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_WARLOCK_LVL_11"
+    data "StackPriority" "15"
+
+    new entry "GOON_NPC_WARLOCK_LVL_16"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_WARLOCK_LVL_11"
+    data "StackPriority" "16"
+
+    new entry "GOON_NPC_WARLOCK_LVL_17"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_WARLOCK_PROGRESSION_TEMPLATE"
+    data "StackPriority" "17"
+    data "Passives" "UnlockedWarlockSpellSlotLevel1;CX_Magic_Boost;UnlockedWarlockSpellSlotLevel2;ThirstingBlade_Check;ThirstingBlade_Blade;ThirstingBlade_Tome;UnlockedWarlockSpellSlotLevel3"
+    data "Boosts" "Tag(WARLOCK);ProficiencyBonus(SavingThrow,Wisdom);ProficiencyBonus(SavingThrow,Charisma);Proficiency(LightArmor);Proficiency(SimpleWeapons);ActionResourceOverride(WarlockSpellSlot,0,1);ActionResourceOverride(WarlockSpellSlot,0,2);ActionResourceOverride(WarlockSpellSlot,0,3);ActionResource(WarlockSpellSlot,4,5);ActionResourceOverride(WarlockSpellSlot,0,4)"
+
+    new entry "GOON_NPC_WARLOCK_LVL_18"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_WARLOCK_LVL_17"
+    data "StackPriority" "18"
+
+    new entry "GOON_NPC_WARLOCK_LVL_19"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_WARLOCK_LVL_17"
+    data "StackPriority" "19"
+
+    new entry "GOON_NPC_WARLOCK_LVL_20"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_WARLOCK_PROGRESSION_TEMPLATE"
+    data "StackPriority" "20"
+    data "Passives" "UnlockedWarlockSpellSlotLevel1;CX_Magic_Boost;UnlockedWarlockSpellSlotLevel2;ThirstingBlade_Check;ThirstingBlade_Blade;ThirstingBlade_Tome;UnlockedWarlockSpellSlotLevel3;EldritchMaster"
+    data "Boosts" "Tag(WARLOCK);ProficiencyBonus(SavingThrow,Wisdom);ProficiencyBonus(SavingThrow,Charisma);Proficiency(LightArmor);Proficiency(SimpleWeapons);ActionResourceOverride(WarlockSpellSlot,0,1);ActionResourceOverride(WarlockSpellSlot,0,2);ActionResourceOverride(WarlockSpellSlot,0,3);ActionResource(WarlockSpellSlot,4,5);ActionResourceOverride(WarlockSpellSlot,0,4)"
