@@ -1539,19 +1539,24 @@
                 </node>
             <!-- ROGUE -->
                 <node id="Progression">
+                    <!-- <attribute id="Boosts" type="LSString" value="ProficiencyBonus(SavingThrow,Dexterity);ProficiencyBonus(SavingThrow,Intelligence);Proficiency(LightArmor);Proficiency(SimpleWeapons);Proficiency(HandCrossbows);Proficiency(Longswords);Proficiency(Rapiers);Proficiency(Shortswords);ActionResource(SneakAttack_Charge,1,0)"/> -->
                     <attribute id="Boosts" type="LSString" value="Tag(ROGUE);ProficiencyBonus(SavingThrow,Dexterity);ProficiencyBonus(SavingThrow,Intelligence);Proficiency(LightArmor);Proficiency(SimpleWeapons);Proficiency(HandCrossbows);Proficiency(Longswords);Proficiency(Rapiers);Proficiency(Shortswords);ActionResource(SneakAttack_Charge,1,0)"/>
                     <attribute id="Level" type="uint8" value="1"/>
                     <attribute id="Name" type="LSString" value="NPC_Rogue"/>
                     <!-- <attribute id="PassivesAdded" type="LSString" value=""/> -->
-                    <attribute id="PassivesAdded" type="LSString" value="Goon_Rogue_NPC_Progressions;CX_Rogue_Boost;CX_Martial_Boost"/>
+                    <attribute id="PassivesAdded" type="LSString" value="SneakAttack_Unlock;Goon_Rogue_NPC_Progressions;CX_Rogue_Boost;CX_Martial_Boost"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <!-- <attribute id="Selectors" type="LSString" value="SelectSkills(a1c2b712-2ed6-4e5b-820f-c5db654fe006,4);AddSpells(d84379aa-8bd1-41e5-a21c-242669151fae);SelectSkillsExpertise(f974ebd6-3725-4b90-bb5c-2b647d41615d,2);SelectAbilityBonus(b9149c8e-52c8-46e5-9cb6-fc39301c05fe,AbilityBonus,2,1)"/> -->
                     <attribute id="TableUUID" type="guid" value="532203c2-7bcb-4162-9a7c-2bb20e227a30"/>
                     <attribute id="UUID" type="guid" value="29a49e37-5c9c-4be1-8665-2aac93d4885c"/>
                 </node>
                 <node id="Progression">
+                    <!-- <attribute id="Boosts" type="LSString" value=""/> -->
+                    <attribute id="Boosts" type="LSString" value="UnlockSpell(Shout_Hide_BonusAction,AddChildren);UnlockSpell(Shout_Dash_CunningAction,AddChildren);UnlockSpell(Shout_Disengage_CunningAction,AddChildren)"/>
                     <attribute id="Level" type="uint8" value="2"/>
                     <attribute id="Name" type="LSString" value="NPC_Rogue"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <!-- <attribute id="Selectors" type="LSString" value="AddSpells(2dc120ff-903b-494b-8dc8-38721098ce38)"/> -->
                     <attribute id="TableUUID" type="guid" value="532203c2-7bcb-4162-9a7c-2bb20e227a30"/>
                     <attribute id="UUID" type="guid" value="e9bca992-6ed5-4d35-bf62-d027f0376e28"/>
                 </node>
@@ -1563,6 +1568,7 @@
                     <attribute id="UUID" type="guid" value="2115eaa8-4824-4a3e-807d-569bd8fbe096"/>
                 </node>
                 <node id="Progression">
+                    <!-- <attribute id="AllowImprovement" type="bool" value="true"/> -->
                     <attribute id="Level" type="uint8" value="4"/>
                     <attribute id="Name" type="LSString" value="NPC_Rogue"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
@@ -1581,6 +1587,7 @@
                     <attribute id="Level" type="uint8" value="6"/>
                     <attribute id="Name" type="LSString" value="NPC_Rogue"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <!-- <attribute id="Selectors" type="LSString" value="SelectSkillsExpertise(f974ebd6-3725-4b90-bb5c-2b647d41615d,2,true)"/> -->
                     <attribute id="TableUUID" type="guid" value="532203c2-7bcb-4162-9a7c-2bb20e227a30"/>
                     <attribute id="UUID" type="guid" value="5b5f0abb-aa92-463f-9c39-619a27eb8692"/>
                 </node>
@@ -1593,6 +1600,7 @@
                     <attribute id="UUID" type="guid" value="d902737d-69e3-4760-b55b-15c9fb0302e5"/>
                 </node>
                 <node id="Progression">
+                    <!-- <attribute id="AllowImprovement" type="bool" value="true"/> -->
                     <attribute id="Level" type="uint8" value="8"/>
                     <attribute id="Name" type="LSString" value="NPC_Rogue"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
@@ -1607,6 +1615,7 @@
                     <attribute id="UUID" type="guid" value="f5667ce5-b275-4301-97df-31f3ad67b141"/>
                 </node>
                 <node id="Progression">
+                    <!-- <attribute id="AllowImprovement" type="bool" value="true"/> -->
                     <attribute id="Level" type="uint8" value="10"/>
                     <attribute id="Name" type="LSString" value="NPC_Rogue"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
@@ -1622,15 +1631,79 @@
                     <attribute id="UUID" type="guid" value="01d7ea6a-b5e9-43d0-8a03-f17f9bcf33b2"/>
                 </node>
                 <node id="Progression">
+                    <!-- <attribute id="AllowImprovement" type="bool" value="true"/> -->
                     <attribute id="Level" type="uint8" value="12"/>
                     <attribute id="Name" type="LSString" value="NPC_Rogue"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
                     <attribute id="TableUUID" type="guid" value="532203c2-7bcb-4162-9a7c-2bb20e227a30"/>
                     <attribute id="UUID" type="guid" value="c835f991-6dcb-48bc-8fcb-d711a8c75e2a"/>
                 </node>
+                <!-- ROGUE: Expansion 13-20 -->
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="13"/>
+                    <attribute id="Name" type="LSString" value="Rogue"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="532203c2-7bcb-4162-9a7c-2bb20e227a30"/>
+                    <attribute id="UUID" type="guid" value="1da330b7-978f-4800-857f-f07e043ba22f"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="14"/>
+                    <attribute id="Name" type="LSString" value="Rogue"/>
+                    <attribute id="PassivesAdded" type="LSString" value="Blindsense"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="532203c2-7bcb-4162-9a7c-2bb20e227a30"/>
+                    <attribute id="UUID" type="guid" value="c11bf1c8-7c4b-4d41-9419-67d7d3c27eb2"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Boosts" type="LSString" value="ProficiencyBonus(SavingThrow,Wisdom)"/>
+                    <attribute id="Level" type="uint8" value="15"/>
+                    <attribute id="Name" type="LSString" value="Rogue"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="532203c2-7bcb-4162-9a7c-2bb20e227a30"/>
+                    <attribute id="UUID" type="guid" value="19f42215-d890-4779-a36a-d4d84fea2c53"/>
+                </node>
+                <node id="Progression">
+                    <!-- <attribute id="AllowImprovement" type="bool" value="true"/> -->
+                    <attribute id="Level" type="uint8" value="16"/>
+                    <attribute id="Name" type="LSString" value="Rogue"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="532203c2-7bcb-4162-9a7c-2bb20e227a30"/>
+                    <attribute id="UUID" type="guid" value="aaba3ff1-e7c1-4e98-b4e5-925a4368f558"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="17"/>
+                    <attribute id="Name" type="LSString" value="Rogue"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="532203c2-7bcb-4162-9a7c-2bb20e227a30"/>
+                    <attribute id="UUID" type="guid" value="785b9f0b-940b-4b11-8844-dcc94b1e1f93"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="18"/>
+                    <attribute id="Name" type="LSString" value="Rogue"/>
+                    <attribute id="PassivesAdded" type="LSString" value="Elusive"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="532203c2-7bcb-4162-9a7c-2bb20e227a30"/>
+                    <attribute id="UUID" type="guid" value="330cc116-88c0-4360-afb1-b896ace76d3d"/>
+                </node>
+                <node id="Progression">
+                    <!-- <attribute id="AllowImprovement" type="bool" value="true"/> -->
+                    <attribute id="Level" type="uint8" value="19"/>
+                    <attribute id="Name" type="LSString" value="Rogue"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="532203c2-7bcb-4162-9a7c-2bb20e227a30"/>
+                    <attribute id="UUID" type="guid" value="35de9c27-733d-415f-a50c-838c6e73fb5d"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Boosts" type="LSString" value="ActionResource(StrokeOfLuck,1,0)"/>
+                    <attribute id="Level" type="uint8" value="20"/>
+                    <attribute id="Name" type="LSString" value="Rogue"/>
+                    <attribute id="PassivesAdded" type="LSString" value="StrokeOfLuck;StrokeOfLuck_AbilityCheck"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="532203c2-7bcb-4162-9a7c-2bb20e227a30"/>
+                    <attribute id="UUID" type="guid" value="0c6523de-6c57-41f5-b3a2-29de0b5e5c65"/>
+                </node>
             <!-- WARLOCK -->
                 <node id="Progression">
-                    <!-- TODO: Roulette a subclass, then unlock its features when appropriate -->
                     <!-- <attribute id="Boosts" type="LSString" value="ActionResource(WarlockSpellSlot,1,1);ProficiencyBonus(SavingThrow,Wisdom);ProficiencyBonus(SavingThrow,Charisma);Proficiency(LightArmor);Proficiency(SimpleWeapons);"/> -->
                     <attribute id="Boosts" type="LSString" value="Tag(WARLOCK);ActionResource(WarlockSpellSlot,1,1);ProficiencyBonus(SavingThrow,Wisdom);ProficiencyBonus(SavingThrow,Charisma);Proficiency(LightArmor);Proficiency(SimpleWeapons);ProficiencyBonus(Skill,Arcana);ProficiencyBonus(Skill,Religion)"/>
                     <!-- <attribute id="PassivesAdded" type="LSString" value=""/> -->

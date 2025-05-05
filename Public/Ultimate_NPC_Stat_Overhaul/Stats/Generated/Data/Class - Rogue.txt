@@ -1,0 +1,195 @@
+// ==================================== Main class progression passive ====================================
+
+    new entry "Goon_Rogue_NPC_Progressions"
+    type "PassiveData"
+    data "DisplayName" "h8ac0402fgb1fbg439bgb720g741bc0484c6a;1"
+    data "Description" "hcc37f62dg9011g4af1ga083gbfdfa4b3cdc7;1"
+    data "Properties" "Highlighted"
+    data "Icon" "GenericIcon_Intent_Buff"
+
+// ==================================== Combat Extender and Progression Stat Entries ====================================
+
+// Main passive
+    new entry "CX_Rogue_Boost"
+    type "PassiveData"
+    // data "DisplayName" "h176f5e83g15cdg4c1egb43egfa0a70e44f02"
+    data "DisplayName" "h27b20f1eg064cg46f7ga4b0gcb11492a810b;1"
+    // data "Description" "h171ac933ge2dfg42fdg86cegdc47ca403e79"
+    data "Description" "h42db1062gb882g467fgb8cdgba975ea87ffd;1"
+    // data "Icon" "PassiveFeature_AttackOfOpportunity"
+    data "Icon" "Action_SneakAttack_Melee"
+    // data "Boosts" "ActionResource(SneakAttack_Charge,3,0);UnlockInterrupt(Interrupt_SneakAttack);UnlockInterrupt(Interrupt_SneakAttack_Critical)"
+    data "Boosts" ""
+    data "StatsFunctorContext" "OnCreate;OnStatusApplied;OnStatusRemoved"
+    data "Conditions" "(not HasPassive('Goon_Rogue_NPC_Progressions'))"
+    data "StatsFunctors" "IF(not CharacterLevelGreaterThan(1,GetOwner(context.Source))):ApplyStatus(GOON_NPC_ROGUE_LVL_1,100,-1);IF(CharacterLevelGreaterThan(1,GetOwner(context.Source)) and not CharacterLevelGreaterThan(2,GetOwner(context.Source))):ApplyStatus(GOON_NPC_ROGUE_LVL_2,100,-1);IF(CharacterLevelGreaterThan(2,GetOwner(context.Source)) and not CharacterLevelGreaterThan(3,GetOwner(context.Source))):ApplyStatus(GOON_NPC_ROGUE_LVL_3,100,-1);IF(CharacterLevelGreaterThan(3,GetOwner(context.Source)) and not CharacterLevelGreaterThan(4,GetOwner(context.Source))):ApplyStatus(GOON_NPC_ROGUE_LVL_4,100,-1);IF(CharacterLevelGreaterThan(4,GetOwner(context.Source)) and not CharacterLevelGreaterThan(5,GetOwner(context.Source))):ApplyStatus(GOON_NPC_ROGUE_LVL_5,100,-1);IF(CharacterLevelGreaterThan(5,GetOwner(context.Source)) and not CharacterLevelGreaterThan(6,GetOwner(context.Source))):ApplyStatus(GOON_NPC_ROGUE_LVL_6,100,-1);IF(CharacterLevelGreaterThan(6,GetOwner(context.Source)) and not CharacterLevelGreaterThan(7,GetOwner(context.Source))):ApplyStatus(GOON_NPC_ROGUE_LVL_7,100,-1);IF(CharacterLevelGreaterThan(7,GetOwner(context.Source)) and not CharacterLevelGreaterThan(8,GetOwner(context.Source))):ApplyStatus(GOON_NPC_ROGUE_LVL_8,100,-1);IF(CharacterLevelGreaterThan(8,GetOwner(context.Source)) and not CharacterLevelGreaterThan(9,GetOwner(context.Source))):ApplyStatus(GOON_NPC_ROGUE_LVL_9,100,-1);IF(CharacterLevelGreaterThan(9,GetOwner(context.Source)) and not CharacterLevelGreaterThan(10,GetOwner(context.Source))):ApplyStatus(GOON_NPC_ROGUE_LVL_10,100,-1);IF(CharacterLevelGreaterThan(10,GetOwner(context.Source)) and not CharacterLevelGreaterThan(11,GetOwner(context.Source))):ApplyStatus(GOON_NPC_ROGUE_LVL_11,100,-1);IF(CharacterLevelGreaterThan(11,GetOwner(context.Source)) and not CharacterLevelGreaterThan(12,GetOwner(context.Source))):ApplyStatus(GOON_NPC_ROGUE_LVL_12,100,-1);IF(CharacterLevelGreaterThan(12,GetOwner(context.Source)) and not CharacterLevelGreaterThan(13,GetOwner(context.Source))):ApplyStatus(GOON_NPC_ROGUE_LVL_13,100,-1);IF(CharacterLevelGreaterThan(13,GetOwner(context.Source)) and not CharacterLevelGreaterThan(14,GetOwner(context.Source))):ApplyStatus(GOON_NPC_ROGUE_LVL_14,100,-1);IF(CharacterLevelGreaterThan(14,GetOwner(context.Source)) and not CharacterLevelGreaterThan(15,GetOwner(context.Source))):ApplyStatus(GOON_NPC_ROGUE_LVL_15,100,-1);IF(CharacterLevelGreaterThan(15,GetOwner(context.Source)) and not CharacterLevelGreaterThan(16,GetOwner(context.Source))):ApplyStatus(GOON_NPC_ROGUE_LVL_16,100,-1);IF(CharacterLevelGreaterThan(16,GetOwner(context.Source)) and not CharacterLevelGreaterThan(17,GetOwner(context.Source))):ApplyStatus(GOON_NPC_ROGUE_LVL_17,100,-1);IF(CharacterLevelGreaterThan(17,GetOwner(context.Source)) and not CharacterLevelGreaterThan(18,GetOwner(context.Source))):ApplyStatus(GOON_NPC_ROGUE_LVL_18,100,-1);IF(CharacterLevelGreaterThan(18,GetOwner(context.Source)) and not CharacterLevelGreaterThan(19,GetOwner(context.Source))):ApplyStatus(GOON_NPC_ROGUE_LVL_19,100,-1);IF(CharacterLevelGreaterThan(19,GetOwner(context.Source))):ApplyStatus(GOON_NPC_ROGUE_LVL_20,100,-1)"
+
+// Template
+    new entry "GOON_NPC_ROGUE_PROGRESSION_TEMPLATE"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    data "StatusPropertyFlags" "DisableOverhead;DisableCombatlog;DisablePortraitIndicator;ApplyToDead;IgnoreResting"
+    data "RemoveEvents" "OnStatusApplied;OnStatusRemoved"
+    data "StackId" "GOON_NPC_ROGUE_PROGRESSION_TEMPLATE"
+    data "StackType" "Ignore"
+    data "RemoveConditions" "not HasPassive('CX_Rogue_Boost') or HasStatus('Goon_Rogue_NPC_Progressions')"
+
+// Progression statuses
+    new entry "GOON_NPC_ROGUE_LVL_1_MULTICLASS"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_ROGUE_PROGRESSION_TEMPLATE"
+    data "StackPriority" "1"
+    data "Passives" ""
+    data "Boosts" ""
+
+    // <node id="Progression">
+    //     <attribute id="AllowImprovement" type="bool" value="false"/>
+    //     <attribute id="Boosts" type="LSString" value="Proficiency(LightArmor);ActionResource(SneakAttack_Charge,1,0)"/>
+    //     <attribute id="IsMulticlass" type="bool" value="true"/>
+    //     <attribute id="Level" type="uint8" value="1"/>
+    //     <attribute id="Name" type="LSString" value="Rogue"/>
+    //     <attribute id="PassivesAdded" type="LSString" value="SneakAttack_Unlock"/>
+    //     <attribute id="ProgressionType" type="uint8" value="0"/>
+    //     <attribute id="Selectors" type="LSString" value="SelectSkills(a1c2b712-2ed6-4e5b-820f-c5db654fe006,1);AddSpells(d84379aa-8bd1-41e5-a21c-242669151fae);SelectSkillsExpertise(f974ebd6-3725-4b90-bb5c-2b647d41615d,2)"/>
+    //     <attribute id="TableUUID" type="guid" value="9a44e828-92db-4d6c-acbc-a4f8ef340415"/>
+    //     <attribute id="UUID" type="guid" value="cd3d8b16-37ce-4107-a2e3-e729751c2b1c"/>
+
+    new entry "GOON_NPC_ROGUE_LVL_1"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_ROGUE_PROGRESSION_TEMPLATE"
+    data "StackPriority" "1"
+    data "Passives" "SneakAttack_Unlock;CX_Martial_Boost"
+    data "Boosts" "Tag(ROGUE);ProficiencyBonus(SavingThrow,Dexterity);ProficiencyBonus(SavingThrow,Intelligence);Proficiency(LightArmor);Proficiency(SimpleWeapons);Proficiency(HandCrossbows);Proficiency(Longswords);Proficiency(Rapiers);Proficiency(Shortswords);ActionResource(SneakAttack_Charge,1,0)"
+
+    new entry "GOON_NPC_ROGUE_LVL_2"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_ROGUE_PROGRESSION_TEMPLATE"
+    data "StackPriority" "2"
+    data "Passives" "SneakAttack_Unlock;CX_Martial_Boost"
+    data "Boosts" "Tag(ROGUE);ProficiencyBonus(SavingThrow,Dexterity);ProficiencyBonus(SavingThrow,Intelligence);Proficiency(LightArmor);Proficiency(SimpleWeapons);Proficiency(HandCrossbows);Proficiency(Longswords);Proficiency(Rapiers);Proficiency(Shortswords);ActionResource(SneakAttack_Charge,1,0);UnlockSpell(Shout_Hide_BonusAction,AddChildren);UnlockSpell(Shout_Dash_CunningAction,AddChildren);UnlockSpell(Shout_Disengage_CunningAction,AddChildren)"
+
+    new entry "GOON_NPC_ROGUE_LVL_3"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_ROGUE_LVL_2"
+    data "StackPriority" "3"
+
+    new entry "GOON_NPC_ROGUE_LVL_4"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_ROGUE_LVL_2"
+    data "StackPriority" "4"
+
+    new entry "GOON_NPC_ROGUE_LVL_5"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_ROGUE_PROGRESSION_TEMPLATE"
+    data "StackPriority" "5"
+    data "Passives" "SneakAttack_Unlock;CX_Martial_Boost;UncannyDodge"
+    data "Boosts" "Tag(ROGUE);ProficiencyBonus(SavingThrow,Dexterity);ProficiencyBonus(SavingThrow,Intelligence);Proficiency(LightArmor);Proficiency(SimpleWeapons);Proficiency(HandCrossbows);Proficiency(Longswords);Proficiency(Rapiers);Proficiency(Shortswords);ActionResource(SneakAttack_Charge,1,0);UnlockSpell(Shout_Hide_BonusAction,AddChildren);UnlockSpell(Shout_Dash_CunningAction,AddChildren);UnlockSpell(Shout_Disengage_CunningAction,AddChildren)"
+
+    new entry "GOON_NPC_ROGUE_LVL_6"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_ROGUE_LVL_5"
+    data "StackPriority" "6"
+
+    new entry "GOON_NPC_ROGUE_LVL_7"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_ROGUE_PROGRESSION_TEMPLATE"
+    data "StackPriority" "7"
+    data "Passives" "SneakAttack_Unlock;CX_Martial_Boost;UncannyDodge;Evasion"
+    data "Boosts" "Tag(ROGUE);ProficiencyBonus(SavingThrow,Dexterity);ProficiencyBonus(SavingThrow,Intelligence);Proficiency(LightArmor);Proficiency(SimpleWeapons);Proficiency(HandCrossbows);Proficiency(Longswords);Proficiency(Rapiers);Proficiency(Shortswords);ActionResource(SneakAttack_Charge,1,0);UnlockSpell(Shout_Hide_BonusAction,AddChildren);UnlockSpell(Shout_Dash_CunningAction,AddChildren);UnlockSpell(Shout_Disengage_CunningAction,AddChildren)"
+
+    new entry "GOON_NPC_ROGUE_LVL_8"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_ROGUE_LVL_7"
+    data "StackPriority" "8"
+
+    new entry "GOON_NPC_ROGUE_LVL_9"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_ROGUE_LVL_7"
+    data "StackPriority" "9"
+
+    new entry "GOON_NPC_ROGUE_LVL_10"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_ROGUE_LVL_7"
+    data "StackPriority" "10"
+
+    new entry "GOON_NPC_ROGUE_LVL_11"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_ROGUE_PROGRESSION_TEMPLATE"
+    data "StackPriority" "11"
+    data "Passives" "SneakAttack_Unlock;CX_Martial_Boost;UncannyDodge;Evasion;ReliableTalent"
+    data "Boosts" "Tag(ROGUE);ProficiencyBonus(SavingThrow,Dexterity);ProficiencyBonus(SavingThrow,Intelligence);Proficiency(LightArmor);Proficiency(SimpleWeapons);Proficiency(HandCrossbows);Proficiency(Longswords);Proficiency(Rapiers);Proficiency(Shortswords);ActionResource(SneakAttack_Charge,1,0);UnlockSpell(Shout_Hide_BonusAction,AddChildren);UnlockSpell(Shout_Dash_CunningAction,AddChildren);UnlockSpell(Shout_Disengage_CunningAction,AddChildren)"
+
+    new entry "GOON_NPC_ROGUE_LVL_12"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_ROGUE_LVL_11"
+    data "StackPriority" "12"
+
+// Expansion levels 13-20
+    new entry "GOON_NPC_ROGUE_LVL_13"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_ROGUE_LVL_11"
+    data "StackPriority" "13"
+
+    new entry "GOON_NPC_ROGUE_LVL_14"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_ROGUE_PROGRESSION_TEMPLATE"
+    data "StackPriority" "14"
+    data "Passives" "SneakAttack_Unlock;CX_Martial_Boost;UncannyDodge;Evasion;ReliableTalent;Blindsense"
+    data "Boosts" "Tag(ROGUE);ProficiencyBonus(SavingThrow,Dexterity);ProficiencyBonus(SavingThrow,Intelligence);Proficiency(LightArmor);Proficiency(SimpleWeapons);Proficiency(HandCrossbows);Proficiency(Longswords);Proficiency(Rapiers);Proficiency(Shortswords);ActionResource(SneakAttack_Charge,1,0);UnlockSpell(Shout_Hide_BonusAction,AddChildren);UnlockSpell(Shout_Dash_CunningAction,AddChildren);UnlockSpell(Shout_Disengage_CunningAction,AddChildren)"
+
+    new entry "GOON_NPC_ROGUE_LVL_15"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_ROGUE_PROGRESSION_TEMPLATE"
+    data "StackPriority" "15"
+    data "Passives" "SneakAttack_Unlock;CX_Martial_Boost;UncannyDodge;Evasion;ReliableTalent;Blindsense"
+    data "Boosts" "Tag(ROGUE);ProficiencyBonus(SavingThrow,Dexterity);ProficiencyBonus(SavingThrow,Intelligence);Proficiency(LightArmor);Proficiency(SimpleWeapons);Proficiency(HandCrossbows);Proficiency(Longswords);Proficiency(Rapiers);Proficiency(Shortswords);ActionResource(SneakAttack_Charge,1,0);UnlockSpell(Shout_Hide_BonusAction,AddChildren);UnlockSpell(Shout_Dash_CunningAction,AddChildren);UnlockSpell(Shout_Disengage_CunningAction,AddChildren);ProficiencyBonus(SavingThrow,Wisdom)"
+
+    new entry "GOON_NPC_ROGUE_LVL_16"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_ROGUE_LVL_15"
+    data "StackPriority" "16"
+
+    new entry "GOON_NPC_ROGUE_LVL_17"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_ROGUE_LVL_15"
+    data "StackPriority" "17"
+
+    new entry "GOON_NPC_ROGUE_LVL_18"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_ROGUE_PROGRESSION_TEMPLATE"
+    data "StackPriority" "18"
+    data "Passives" "SneakAttack_Unlock;CX_Martial_Boost;UncannyDodge;Evasion;ReliableTalent;Blindsense;Elusive"
+    data "Boosts" "Tag(ROGUE);ProficiencyBonus(SavingThrow,Dexterity);ProficiencyBonus(SavingThrow,Intelligence);Proficiency(LightArmor);Proficiency(SimpleWeapons);Proficiency(HandCrossbows);Proficiency(Longswords);Proficiency(Rapiers);Proficiency(Shortswords);ActionResource(SneakAttack_Charge,1,0);UnlockSpell(Shout_Hide_BonusAction,AddChildren);UnlockSpell(Shout_Dash_CunningAction,AddChildren);UnlockSpell(Shout_Disengage_CunningAction,AddChildren);ProficiencyBonus(SavingThrow,Wisdom)"
+
+    new entry "GOON_NPC_ROGUE_LVL_19"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_ROGUE_LVL_18"
+    data "StackPriority" "19"
+
+    new entry "GOON_NPC_ROGUE_LVL_20"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_ROGUE_PROGRESSION_TEMPLATE"
+    data "StackPriority" "20"
+    data "Passives" "SneakAttack_Unlock;CX_Martial_Boost;UncannyDodge;Evasion;ReliableTalent;Blindsense;Elusive;StrokeOfLuck;StrokeOfLuck_AbilityCheck"
+    data "Boosts" "Tag(ROGUE);ProficiencyBonus(SavingThrow,Dexterity);ProficiencyBonus(SavingThrow,Intelligence);Proficiency(LightArmor);Proficiency(SimpleWeapons);Proficiency(HandCrossbows);Proficiency(Longswords);Proficiency(Rapiers);Proficiency(Shortswords);ActionResource(SneakAttack_Charge,1,0);UnlockSpell(Shout_Hide_BonusAction,AddChildren);UnlockSpell(Shout_Dash_CunningAction,AddChildren);UnlockSpell(Shout_Disengage_CunningAction,AddChildren);ProficiencyBonus(SavingThrow,Wisdom);ActionResource(StrokeOfLuck,1,0)"

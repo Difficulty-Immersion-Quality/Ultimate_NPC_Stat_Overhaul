@@ -49,18 +49,6 @@ data "Icon" "Spell_Abjuration_WardingBond"
 
 // ==================================== Rogue ====================================
 
-// 3 Sneak Attacks? It's all hardcoded to have only one usable IIRC
-new entry "CX_Rogue_Boost"
-type "PassiveData"
-// data "DisplayName" "h176f5e83g15cdg4c1egb43egfa0a70e44f02"
-data "DisplayName" "h27b20f1eg064cg46f7ga4b0gcb11492a810b;1"
-// data "Description" "h171ac933ge2dfg42fdg86cegdc47ca403e79"
-data "Description" "h42db1062gb882g467fgb8cdgba975ea87ffd;1"
-// data "Icon" "PassiveFeature_AttackOfOpportunity"
-data "Icon" "Action_SneakAttack_Melee"
-// data "Boosts" "ActionResource(SneakAttack_Charge,3,0);UnlockInterrupt(Interrupt_SneakAttack);UnlockInterrupt(Interrupt_SneakAttack_Critical)"
-data "Boosts" "IF(not HasPassive('Goon_Rogue_NPC_Progressions')):ActionResource(SneakAttack_Charge,1,0);UnlockInterrupt(Interrupt_SneakAttack);UnlockInterrupt(Interrupt_SneakAttack_Critical)"
-
 new entry "CX_Rogue_ArcaneTrickster_Boost"
 type "PassiveData"
 data "DisplayName" "h00c83504ge2bcg42cagbe97g0bc5d6eff8b9;1"
