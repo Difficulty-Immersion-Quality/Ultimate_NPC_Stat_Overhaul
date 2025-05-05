@@ -513,3 +513,166 @@
     //     <attribute id="TableUUID" type="guid" value="7205dbe2-5eef-4cd6-ad7f-45b3dc254f78"/>
     //     <attribute id="UUID" type="guid" value="2ad625e0-786b-49ca-bfff-72efa5ad63b0"/>
 
+// ==================================== Subclass: Assassin ====================================
+
+    new entry "CX_Rogue_Assassin_Boost"
+    type "PassiveData"
+    data "DisplayName" "hd110f5cdg6c51g43bdg8555gfd5c8ed9dc43;1"
+    data "Description" "h7cdc4536gc8cdg4c24gad5cg1b97c084f97b;1"
+    data "Icon" "PassiveFeature_Generic_Death"
+    data "Boosts" ""
+    data "StatsFunctorContext" "OnCreate;OnStatusApplied;OnStatusRemoved"
+    data "Conditions" ""
+    data "StatsFunctors" "IF(not ClassLevelHigherOrEqualThan(2,'NPC_ROGUE') or HasStatus('GOON_NPC_ROGUE_LVL_1')):ApplyStatus(GOON_NPC_ROGUE_ASSASSIN_LVL_1,100,-1);IF(ClassLevelHigherOrEqualThan(2,'NPC_ROGUE') and not ClassLevelHigherOrEqualThan(3,'NPC_ROGUE') or HasStatus('GOON_NPC_ROGUE_LVL_2')):ApplyStatus(GOON_NPC_ROGUE_ASSASSIN_LVL_2,100,-1);IF(ClassLevelHigherOrEqualThan(3,'NPC_ROGUE') and not ClassLevelHigherOrEqualThan(4,'NPC_ROGUE') or HasStatus('GOON_NPC_ROGUE_LVL_3')):ApplyStatus(GOON_NPC_ROGUE_ASSASSIN_LVL_3,100,-1);IF(ClassLevelHigherOrEqualThan(4,'NPC_ROGUE') and not ClassLevelHigherOrEqualThan(5,'NPC_ROGUE') or HasStatus('GOON_NPC_ROGUE_LVL_4')):ApplyStatus(GOON_NPC_ROGUE_ASSASSIN_LVL_4,100,-1);IF(ClassLevelHigherOrEqualThan(5,'NPC_ROGUE') and not ClassLevelHigherOrEqualThan(6,'NPC_ROGUE') or HasStatus('GOON_NPC_ROGUE_LVL_5')):ApplyStatus(GOON_NPC_ROGUE_ASSASSIN_LVL_5,100,-1);IF(ClassLevelHigherOrEqualThan(6,'NPC_ROGUE') and not ClassLevelHigherOrEqualThan(7,'NPC_ROGUE') or HasStatus('GOON_NPC_ROGUE_LVL_6')):ApplyStatus(GOON_NPC_ROGUE_ASSASSIN_LVL_6,100,-1);IF(ClassLevelHigherOrEqualThan(7,'NPC_ROGUE') and not ClassLevelHigherOrEqualThan(8,'NPC_ROGUE') or HasStatus('GOON_NPC_ROGUE_LVL_7')):ApplyStatus(GOON_NPC_ROGUE_ASSASSIN_LVL_7,100,-1);IF(ClassLevelHigherOrEqualThan(8,'NPC_ROGUE') and not ClassLevelHigherOrEqualThan(9,'NPC_ROGUE') or HasStatus('GOON_NPC_ROGUE_LVL_8')):ApplyStatus(GOON_NPC_ROGUE_ASSASSIN_LVL_8,100,-1);IF(ClassLevelHigherOrEqualThan(9,'NPC_ROGUE') and not ClassLevelHigherOrEqualThan(10,'NPC_ROGUE') or HasStatus('GOON_NPC_ROGUE_LVL_9')):ApplyStatus(GOON_NPC_ROGUE_ASSASSIN_LVL_9,100,-1);IF(ClassLevelHigherOrEqualThan(10,'NPC_ROGUE') and not ClassLevelHigherOrEqualThan(11,'NPC_ROGUE') or HasStatus('GOON_NPC_ROGUE_LVL_10')):ApplyStatus(GOON_NPC_ROGUE_ASSASSIN_LVL_10,100,-1);IF(ClassLevelHigherOrEqualThan(11,'NPC_ROGUE') and not ClassLevelHigherOrEqualThan(12,'NPC_ROGUE') or HasStatus('GOON_NPC_ROGUE_LVL_11')):ApplyStatus(GOON_NPC_ROGUE_ASSASSIN_LVL_11,100,-1);IF(ClassLevelHigherOrEqualThan(12,'NPC_ROGUE') and not ClassLevelHigherOrEqualThan(13,'NPC_ROGUE') or HasStatus('GOON_NPC_ROGUE_LVL_12')):ApplyStatus(GOON_NPC_ROGUE_ASSASSIN_LVL_12,100,-1);IF(ClassLevelHigherOrEqualThan(13,'NPC_ROGUE') and not ClassLevelHigherOrEqualThan(14,'NPC_ROGUE') or HasStatus('GOON_NPC_ROGUE_LVL_13')):ApplyStatus(GOON_NPC_ROGUE_ASSASSIN_LVL_13,100,-1);IF(ClassLevelHigherOrEqualThan(14,'NPC_ROGUE') and not ClassLevelHigherOrEqualThan(15,'NPC_ROGUE') or HasStatus('GOON_NPC_ROGUE_LVL_14')):ApplyStatus(GOON_NPC_ROGUE_ASSASSIN_LVL_14,100,-1);IF(ClassLevelHigherOrEqualThan(15,'NPC_ROGUE') and not ClassLevelHigherOrEqualThan(16,'NPC_ROGUE') or HasStatus('GOON_NPC_ROGUE_LVL_15')):ApplyStatus(GOON_NPC_ROGUE_ASSASSIN_LVL_15,100,-1);IF(ClassLevelHigherOrEqualThan(16,'NPC_ROGUE') and not ClassLevelHigherOrEqualThan(17,'NPC_ROGUE') or HasStatus('GOON_NPC_ROGUE_LVL_16')):ApplyStatus(GOON_NPC_ROGUE_ASSASSIN_LVL_16,100,-1);IF(ClassLevelHigherOrEqualThan(17,'NPC_ROGUE') and not ClassLevelHigherOrEqualThan(18,'NPC_ROGUE') or HasStatus('GOON_NPC_ROGUE_LVL_17')):ApplyStatus(GOON_NPC_ROGUE_ASSASSIN_LVL_17,100,-1);IF(ClassLevelHigherOrEqualThan(18,'NPC_ROGUE') and not ClassLevelHigherOrEqualThan(19,'NPC_ROGUE') or HasStatus('GOON_NPC_ROGUE_LVL_18')):ApplyStatus(GOON_NPC_ROGUE_ASSASSIN_LVL_18,100,-1);IF(ClassLevelHigherOrEqualThan(19,'NPC_ROGUE') and not ClassLevelHigherOrEqualThan(20,'NPC_ROGUE') or HasStatus('GOON_NPC_ROGUE_LVL_19')):ApplyStatus(GOON_NPC_ROGUE_ASSASSIN_LVL_19,100,-1);IF(ClassLevelHigherOrEqualThan(20,'NPC_ROGUE') or HasStatus('GOON_NPC_ROGUE_LVL_20')):ApplyStatus(GOON_NPC_ROGUE_ASSASSIN_LVL_20,100,-1)"
+
+// Template
+    new entry "GOON_NPC_ROGUE_ASSASSIN_PROGRESSION_TEMPLATE"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    data "StatusPropertyFlags" "DisableOverhead;DisableCombatlog;DisablePortraitIndicator;ApplyToDead;IgnoreResting"
+    data "RemoveEvents" "OnStatusApplied;OnStatusRemoved"
+    data "StackId" "GOON_NPC_ROGUE_ASSASSIN_PROGRESSION_TEMPLATE"
+    data "StackType" "Ignore"
+    data "RemoveConditions" "not HasPassive('CX_Rogue_Assassin_Boost')"
+
+// Progression statuses
+    new entry "GOON_NPC_ROGUE_ASSASSIN_LVL_1"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_ROGUE_ASSASSIN_PROGRESSION_TEMPLATE"
+    data "StackPriority" "1"
+
+    new entry "GOON_NPC_ROGUE_ASSASSIN_LVL_2"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_ROGUE_ASSASSIN_PROGRESSION_TEMPLATE"
+    data "StackPriority" "2"
+
+    new entry "GOON_NPC_ROGUE_ASSASSIN_LVL_3"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_ROGUE_ASSASSIN_PROGRESSION_TEMPLATE"
+    data "StackPriority" "3"
+    data "Passives" "Assassinate_Initiative;Assassinate_Ambush;Assassinate_Resource"
+    data "Boosts" ""
+
+    // <node id="Progression">
+    //     <attribute id="Level" type="uint8" value="3"/>
+    //     <attribute id="Name" type="LSString" value="Assassin"/>
+    //     <attribute id="PassivesAdded" type="LSString" value="Assassinate_Initiative;Assassinate_Ambush;Assassinate_Resource"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="TableUUID" type="guid" value="43c75b78-757b-4875-9932-427bc95278a0"/>
+    //     <attribute id="UUID" type="guid" value="a0d702c1-4286-40be-9ae5-2b8b7954f1f8"/>
+
+    new entry "GOON_NPC_ROGUE_ASSASSIN_LVL_4"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_ROGUE_ASSASSIN_LVL_3"
+    data "StackPriority" "4"
+
+    new entry "GOON_NPC_ROGUE_ASSASSIN_LVL_5"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_ROGUE_ASSASSIN_LVL_3"
+    data "StackPriority" "5"
+
+    new entry "GOON_NPC_ROGUE_ASSASSIN_LVL_6"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_ROGUE_ASSASSIN_LVL_3"
+    data "StackPriority" "6"
+
+    new entry "GOON_NPC_ROGUE_ASSASSIN_LVL_7"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_ROGUE_ASSASSIN_LVL_3"
+    data "StackPriority" "7"
+
+    new entry "GOON_NPC_ROGUE_ASSASSIN_LVL_8"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_ROGUE_ASSASSIN_LVL_3"
+    data "StackPriority" "8"
+
+    new entry "GOON_NPC_ROGUE_ASSASSIN_LVL_9"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_ROGUE_ASSASSIN_PROGRESSION_TEMPLATE"
+    data "StackPriority" "9"
+    data "Passives" "Assassinate_Initiative;Assassinate_Ambush;Assassinate_Resource"
+    data "Boosts" "UnlockSpell(Shout_InfiltrationExpertise,AddChildren)"
+
+    // <node id="Progression">
+    //     <attribute id="Level" type="uint8" value="9"/>
+    //     <attribute id="Name" type="LSString" value="Assassin"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="Selectors" type="LSString" value="AddSpells(fab9f457-4570-472e-95be-ffe5b5aa863d)"/>
+    //     <attribute id="TableUUID" type="guid" value="43c75b78-757b-4875-9932-427bc95278a0"/>
+    //     <attribute id="UUID" type="guid" value="b3ea7f97-4cba-4d03-91cc-ef07993642b9"/>
+
+    new entry "GOON_NPC_ROGUE_ASSASSIN_LVL_10"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_ROGUE_ASSASSIN_LVL_9"
+    data "StackPriority" "10"
+
+    new entry "GOON_NPC_ROGUE_ASSASSIN_LVL_11"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_ROGUE_ASSASSIN_LVL_9"
+    data "StackPriority" "11"
+
+    new entry "GOON_NPC_ROGUE_ASSASSIN_LVL_12"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_ROGUE_ASSASSIN_LVL_9"
+    data "StackPriority" "12"
+
+// Expansion levels 13-20
+    new entry "GOON_NPC_ROGUE_ASSASSIN_LVL_13"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_ROGUE_ASSASSIN_LVL_9"
+    data "StackPriority" "13"
+    
+    new entry "GOON_NPC_ROGUE_ASSASSIN_LVL_14"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_ROGUE_ASSASSIN_LVL_9"
+    data "StackPriority" "14"
+    
+    new entry "GOON_NPC_ROGUE_ASSASSIN_LVL_15"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_ROGUE_ASSASSIN_LVL_9"
+    data "StackPriority" "15"
+    
+    new entry "GOON_NPC_ROGUE_ASSASSIN_LVL_16"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_ROGUE_ASSASSIN_LVL_9"
+    data "StackPriority" "16"
+    
+    new entry "GOON_NPC_ROGUE_ASSASSIN_LVL_17"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_ROGUE_ASSASSIN_LVL_9"
+    data "StackPriority" "17"
+    
+    new entry "GOON_NPC_ROGUE_ASSASSIN_LVL_18"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_ROGUE_ASSASSIN_LVL_9"
+    data "StackPriority" "18"
+    
+    new entry "GOON_NPC_ROGUE_ASSASSIN_LVL_19"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_ROGUE_ASSASSIN_LVL_9"
+    data "StackPriority" "19"
+    
+    new entry "GOON_NPC_ROGUE_ASSASSIN_LVL_20"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_ROGUE_ASSASSIN_LVL_9"
+    data "StackPriority" "20"
