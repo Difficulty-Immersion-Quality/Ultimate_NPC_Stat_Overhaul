@@ -32,7 +32,7 @@
     data "RemoveEvents" "OnStatusApplied;OnStatusRemoved"
     data "StackId" "GOON_NPC_ROGUE_PROGRESSION_TEMPLATE"
     data "StackType" "Ignore"
-    data "RemoveConditions" "not HasPassive('CX_Rogue_Boost') or HasStatus('Goon_Rogue_NPC_Progressions')"
+    data "RemoveConditions" "not HasPassive('CX_Rogue_Boost') or HasPassive('Goon_Rogue_NPC_Progressions')"
 
 // Progression statuses
     new entry "GOON_NPC_ROGUE_LVL_1_MULTICLASS"

@@ -31,7 +31,7 @@
     data "RemoveEvents" "OnStatusApplied;OnStatusRemoved"
     data "StackId" "GOON_NPC_MONK_PROGRESSION_TEMPLATE"
     data "StackType" "Ignore"
-    data "RemoveConditions" "not HasPassive('CX_Monk_Boost') or HasStatus('Goon_Monk_NPC_Progressions')"
+    data "RemoveConditions" "not HasPassive('CX_Monk_Boost') or HasPassive('Goon_Monk_NPC_Progressions')"
 
 // Progression statuses
     new entry "GOON_NPC_MONK_LVL_1_MULTICLASS"

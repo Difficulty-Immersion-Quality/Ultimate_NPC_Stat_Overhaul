@@ -1981,17 +1981,15 @@
                     <attribute id="UUID" type="guid" value="ed4ccf97-4367-45da-a439-3516a968573b"/>
                 </node>
             <!-- FLAMING FIST -->
-                <node id="Progression">
+                <!-- <node id="Progression">
                     <attribute id="Name" type="LSString" value="NPC_FlamingFist"/>
                     <attribute id="UUID" type="guid" value="4a6db4f1-7487-4340-b1dd-08e6258c2b2f"/>
-                </node>
+                </node> -->
             <!-- FLAMING FIST - MELEE ATTACKER -->
-                <node id="Progression">
+                <!-- <node id="Progression">
                     <attribute id="Boosts" type="LSString" value="ProficiencyBonus(SavingThrow,Strength);ProficiencyBonus(SavingThrow,Constitution)"/>
                     <attribute id="Level" type="uint8" value="1"/>
                     <attribute id="Name" type="LSString" value="NPC_FlamingFist_Melee_Attacker"/>
-                    <!-- <attribute id="PassivesAdded" type="LSString" value=""/> -->
-                    <attribute id="PassivesAdded" type="LSString" value="Goon_Flaming_Fist_Melee_Attacker_NPC_Progressions;Goon_NPC_Fighter_BattleMaster_Flaming_Fist_Melee_Attacker;Goon_NPC_Fighter_EldritchKnight_Flaming_Fist_Melee_Attacker;Goon_NPC_Fighter_Champion_Flaming_Fist_Melee_Attacker"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
                     <attribute id="TableUUID" type="guid" value="51d47904-383f-11ed-a261-0242ac120002"/>
                     <attribute id="UUID" type="guid" value="4f5c0abd-6611-4303-893b-8d3230323632"/>
@@ -2087,14 +2085,12 @@
                     <attribute id="ProgressionType" type="uint8" value="0"/>
                     <attribute id="TableUUID" type="guid" value="51d47904-383f-11ed-a261-0242ac120002"/>
                     <attribute id="UUID" type="guid" value="a56ee5ec-e9b8-47ed-83b8-6fbff771a2cc"/>
-                </node>
+                </node> -->
             <!-- FLAMING FIST - MELEE DEFENDER -->
-                <node id="Progression">
+                <!-- <node id="Progression">
                     <attribute id="Boosts" type="LSString" value="ProficiencyBonus(SavingThrow,Strength);ProficiencyBonus(SavingThrow,Constitution)"/>
                     <attribute id="Level" type="uint8" value="1"/>
                     <attribute id="Name" type="LSString" value="NPC_FlamingFist_Melee_Defender"/>
-                    <!-- <attribute id="PassivesAdded" type="LSString" value=""/> -->
-                    <attribute id="PassivesAdded" type="LSString" value="Goon_Flaming_Fist_Melee_Defender_NPC_Progressions;Goon_NPC_Fighter_BattleMaster_Flaming_Fist_Melee_Defender;Goon_NPC_Fighter_EldritchKnight_Flaming_Fist_Melee_Defender;Goon_NPC_Fighter_Champion_Flaming_Fist_Melee_Defender"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
                     <attribute id="TableUUID" type="guid" value="5885fa7a-383f-11ed-a261-0242ac120002"/>
                     <attribute id="UUID" type="guid" value="d64a3faf-db6c-4f09-b462-fd881e55f00c"/>
@@ -2190,14 +2186,12 @@
                     <attribute id="ProgressionType" type="uint8" value="0"/>
                     <attribute id="TableUUID" type="guid" value="5885fa7a-383f-11ed-a261-0242ac120002"/>
                     <attribute id="UUID" type="guid" value="fddd443d-0ee5-4e9a-9512-c70c4f187d06"/>
-                </node>
+                </node> -->
             <!-- FLAMING FIST - MELEE RANGER -->
-                <node id="Progression">
+                <!-- <node id="Progression">
                     <attribute id="Boosts" type="LSString" value="ProficiencyBonus(SavingThrow,Strength);ProficiencyBonus(SavingThrow,Dexterity);Proficiency(LightArmor);Proficiency(MediumArmor);Proficiency(Shields);Proficiency(SimpleWeapons);Proficiency(MartialWeapons)"/>
                     <attribute id="Level" type="uint8" value="1"/>
                     <attribute id="Name" type="LSString" value="NPC_FlamingFist_Melee_Ranger"/>
-                    <!-- <attribute id="PassivesAdded" type="LSString" value=""/> -->
-                    <attribute id="PassivesAdded" type="LSString" value="Goon_Flaming_Fist_Melee_Ranger_NPC_Progressions"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
                     <attribute id="TableUUID" type="guid" value="6cae475a-383f-11ed-a261-0242ac120002"/>
                     <attribute id="UUID" type="guid" value="5fff2494-7cdf-4e6a-8c11-262da9208c5f"/>
@@ -2291,14 +2285,12 @@
                     <attribute id="ProgressionType" type="uint8" value="0"/>
                     <attribute id="TableUUID" type="guid" value="6cae475a-383f-11ed-a261-0242ac120002"/>
                     <attribute id="UUID" type="guid" value="a6759075-588e-4b84-a526-095b70898cdf"/>
-                </node>
+                </node> -->
             <!-- FLAMING FIST - MELEE CLERIC -->
-                <node id="Progression">
+                <!-- <node id="Progression">
                     <attribute id="Boosts" type="LSString" value="ProficiencyBonus(SavingThrow,Wisdom);ProficiencyBonus(SavingThrow,Charisma);ActionResource(SpellSlot,2,1);"/>
                     <attribute id="Level" type="uint8" value="1"/>
                     <attribute id="Name" type="LSString" value="NPC_FlamingFist_Melee_Cleric"/>
-                    <!-- <attribute id="PassivesAdded" type="LSString" value=""/> -->
-                    <attribute id="PassivesAdded" type="LSString" value="Goon_Flaming_Fist_Melee_Cleric_NPC_Progressions;Goon_NPC_Cleric_Life_Flaming_Fist;Goon_NPC_Cleric_Light_Flaming_Fist;Goon_NPC_Cleric_Knowledge_Flaming_Fist;Goon_NPC_Cleric_Nature_Flaming_Fist;Goon_NPC_Cleric_Tempest_Flaming_Fist;Goon_NPC_Cleric_Trickery_Flaming_Fist;Goon_NPC_Cleric_War_Flaming_Fist"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
                     <attribute id="TableUUID" type="guid" value="70c3eb7e-383f-11ed-a261-0242ac120002"/>
                     <attribute id="UUID" type="guid" value="84187594-9a5e-4607-beaa-bedbe0d5390a"/>
@@ -2391,14 +2383,12 @@
                     <attribute id="ProgressionType" type="uint8" value="0"/>
                     <attribute id="TableUUID" type="guid" value="70c3eb7e-383f-11ed-a261-0242ac120002"/>
                     <attribute id="UUID" type="guid" value="e5b8be4a-98a2-4f82-9ea5-27f9296e095c"/>
-                </node>
+                </node> -->
             <!-- FLAMING FIST - MELEE CASTER (Unused?) -->
-                <node id="Progression">
+                <!-- <node id="Progression">
                     <attribute id="Boosts" type="LSString" value="ProficiencyBonus(SavingThrow,Intelligence);ProficiencyBonus(SavingThrow,Wisdom);ActionResource(SpellSlot,2,1)"/>
                     <attribute id="Level" type="uint8" value="1"/>
                     <attribute id="Name" type="LSString" value="NPC_FlamingFist_Melee_Caster"/>
-                    <!-- <attribute id="PassivesAdded" type="LSString" value=""/> -->
-                    <attribute id="PassivesAdded" type="LSString" value="Goon_Flaming_Fist_Melee_Caster_NPC_Progressions"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
                     <attribute id="TableUUID" type="guid" value="7417c0c0-383f-11ed-a261-0242ac120002"/>
                     <attribute id="UUID" type="guid" value="36672dc1-614e-49f3-aa58-2f2dff6fca2a"/>
@@ -2490,9 +2480,9 @@
                     <attribute id="ProgressionType" type="uint8" value="0"/>
                     <attribute id="TableUUID" type="guid" value="7417c0c0-383f-11ed-a261-0242ac120002"/>
                     <attribute id="UUID" type="guid" value="c7576e88-43fd-41d8-a229-cbd9375ba680"/>
-                </node>
+                </node> -->
             <!-- FIGHTER/ROGUE - MULTICLASS (Unused) -->
-                <node id="Progression">
+                <!-- <node id="Progression">
                     <attribute id="Level" type="uint8" value="1"/>
                     <attribute id="Name" type="LSString" value="NPC_Fighter_Rogue"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
@@ -2577,7 +2567,7 @@
                     <attribute id="ProgressionType" type="uint8" value="0"/>
                     <attribute id="TableUUID" type="guid" value="ed2393af-0e4d-4ada-ab99-d389f81285d0"/>
                     <attribute id="UUID" type="guid" value="6b8343e6-4be1-4b62-87e5-2455702dc94d"/>
-                </node>
+                </node> -->
             </children>
         </node>
     </region>

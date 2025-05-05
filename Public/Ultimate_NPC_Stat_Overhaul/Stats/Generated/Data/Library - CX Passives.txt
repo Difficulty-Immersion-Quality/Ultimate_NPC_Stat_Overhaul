@@ -47,29 +47,6 @@ data "Description" "hd5818987ga072g4e8dgb314g97ab96f230cd;1"
 data "Boosts" "Proficiency(SimpleWeapons);Proficiency(MartialWeapons)"
 data "Icon" "Spell_Abjuration_WardingBond"
 
-// ==================================== Rogue ====================================
-
-new entry "CX_Rogue_ArcaneTrickster_Boost"
-type "PassiveData"
-data "DisplayName" "h00c83504ge2bcg42cagbe97g0bc5d6eff8b9;1"
-data "Description" "h0ea642a7g23e1g456fg86d8gd636064d84e2;1"
-data "Icon" "PassiveFeature_ImprovedMinorIllusion"
-data "Boosts" ""
-
-new entry "CX_Rogue_Assassin_Boost"
-type "PassiveData"
-data "DisplayName" "hd110f5cdg6c51g43bdg8555gfd5c8ed9dc43;1"
-data "Description" "h7cdc4536gc8cdg4c24gad5cg1b97c084f97b;1"
-data "Icon" "PassiveFeature_Generic_Death"
-data "Boosts" ""
-
-new entry "CX_Rogue_Thief_Boost"
-type "PassiveData"
-data "DisplayName" "h269458f8gf4aag43b7g8289g6620b62050a8;1"
-data "Description" "h0041fb7egb83fg4399ga1cagc07b3f2bb1b2;1"
-data "Icon" "PassiveFeature_SecondStoryWork_Falling"
-data "Boosts" ""
-
 // ==================================== Sorcerer ====================================
 
 new entry "CX_Sorcerer_Boost"
@@ -101,13 +78,6 @@ data "Icon" "Action_TempestuousMagic"
 data "Boosts" ""
 
 // ==================================== Warlock ====================================
-
-new entry "CX_Warlock_Boost"
-type "PassiveData"
-data "DisplayName" "hbeb3c7c1g30ddg4b0ega936g02439e04c829;1"
-data "Description" "h45452726ge3a8g4311g98adg1853a70ff4a6;1"
-data "Icon" "Spell_Necromancy_BestowCurse"
-data "Boosts" ""
 
 new entry "CX_Warlock_Archfey_Boost"
 type "PassiveData"

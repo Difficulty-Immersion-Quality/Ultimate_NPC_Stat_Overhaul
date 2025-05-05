@@ -1,5 +1,33 @@
 // ==================================== Flaming Fist progressions ====================================
 
+    // new entry "Goon_Flaming_Fist_Melee_Attacker_NPC_Progressions"
+    // type "PassiveData"
+    // data "DisplayName" "he9867dbag731dg4a5bg9830g1f6373160874;1"
+    // data "Description" "h5e48ac49gaae0g4a00g8c47g03b6fca54a3c;1"
+    // data "Properties" "Highlighted"
+    // data "Icon" "GenericIcon_Intent_Buff"
+
+    // new entry "Goon_Flaming_Fist_Melee_Defender_NPC_Progressions"
+    // type "PassiveData"
+    // data "DisplayName" "h908ea70fgf333g4ec0ga7a6g8a7e92ff10ad;1"
+    // data "Description" "h5e48ac49gaae0g4a00g8c47g03b6fca54a3c;1"
+    // data "Properties" "Highlighted"
+    // data "Icon" "GenericIcon_Intent_Buff"
+
+    // new entry "Goon_Flaming_Fist_Melee_Cleric_NPC_Progressions"
+    // type "PassiveData"
+    // data "DisplayName" "h07007e35g6fbdg444fga1c2gf8dfc9258269;1"
+    // data "Description" ""
+    // data "Properties" "Highlighted"
+    // data "Icon" "GenericIcon_Intent_Buff"
+
+    // new entry "Goon_Flaming_Fist_Melee_Ranger_NPC_Progressions"
+    // type "PassiveData"
+    // data "DisplayName" "he50c053cg4e2dg479fg88c9g0d84fed9bde6;1"
+    // data "Description" "hb866306fgff14g4ea1gbe39g5cab14bea83b"
+    // data "Properties" "Highlighted"
+    // data "Icon" "GenericIcon_Intent_Buff"
+
     // new entry "Goon_Flaming_Fist_Melee_Caster_NPC_Progressions"
     // type "PassiveData"
     // data "DisplayName" "h19a9f0e8g94bcg4f42g9fa2g6d4b95bc6e2e;1"
@@ -13,13 +41,6 @@
     type "PassiveData"
     data "DisplayName" "h9987ac52g08b3g40e0gac8eg056b928b8d4b;1"
     data "Description" "h306a8551g3347g4c3dg99a7g5c609daac297;1"
-    data "Properties" "Highlighted"
-    data "Icon" "GenericIcon_Intent_Buff"
-
-    new entry "Goon_Warlock_NPC_Progressions"
-    type "PassiveData"
-    data "DisplayName" "h286630c6gcd5bg4f56g84edg9ede6b7fc8cb;1"
-    data "Description" "hde5563d5g900eg49abg801ag0de6eed45e6a;1"
     data "Properties" "Highlighted"
     data "Icon" "GenericIcon_Intent_Buff"
 
