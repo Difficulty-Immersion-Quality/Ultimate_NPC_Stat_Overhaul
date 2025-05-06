@@ -189,7 +189,7 @@
     data "Passives" "UnlockedWarlockSpellSlotLevel1;CX_Magic_Boost;UnlockedWarlockSpellSlotLevel2;ThirstingBlade_Check;ThirstingBlade_Blade;ThirstingBlade_Tome;UnlockedWarlockSpellSlotLevel3;EldritchMaster"
     data "Boosts" "Tag(WARLOCK);ProficiencyBonus(SavingThrow,Wisdom);ProficiencyBonus(SavingThrow,Charisma);Proficiency(LightArmor);Proficiency(SimpleWeapons);ActionResourceOverride(WarlockSpellSlot,0,1);ActionResourceOverride(WarlockSpellSlot,0,2);ActionResourceOverride(WarlockSpellSlot,0,3);ActionResource(WarlockSpellSlot,4,5);ActionResourceOverride(WarlockSpellSlot,0,4)"
 
-// ==================================== Subclass: Archfey ====================================
+// ==================================== Subclass: The Archfey ====================================
 
     new entry "CX_Warlock_Archfey_Boost"
     type "PassiveData"
@@ -209,7 +209,7 @@
     data "RemoveEvents" "OnStatusApplied;OnStatusRemoved"
     data "StackId" "GOON_NPC_WARLOCK_ARCHFEY_PROGRESSION_TEMPLATE"
     data "StackType" "Ignore"
-    data "RemoveConditions" "not HasPassive('CX_Something_Something_Boost')"
+    data "RemoveConditions" "not HasPassive('CX_Warlock_Archfey_Boost')"
 
 // Progression statuses
     new entry "GOON_NPC_WARLOCK_ARCHFEY_LVL_1"
@@ -428,3 +428,321 @@
     data "StatusType" "BOOST"
     using "GOON_NPC_WARLOCK_ARCHFEY_LVL_10"
     data "StackPriority" "20"
+
+// ==================================== Subclass: The Fiend ====================================
+
+    new entry "CX_Warlock_Fiend_Boost"
+    type "PassiveData"
+    data "DisplayName" "h4f5cf0f7g2308g44f5gb298g50721464a20a;1"
+    data "Description" "h94272a82gf478g4b23g9d87g2f4dbeb70fc8;1"
+    data "Icon" "PassiveFeature_DarkOnesBlessing"
+    data "Boosts" ""
+    data "StatsFunctorContext" "OnCreate;OnStatusApplied;OnStatusRemoved"
+    data "Conditions" ""
+    data "StatsFunctors" "IF(not ClassLevelHigherOrEqualThan(2,'NPC_WARLOCK') or HasStatus('GOON_NPC_WARLOCK_LVL_1')):ApplyStatus(GOON_NPC_WARLOCK_FIEND_LVL_1,100,-1);IF(ClassLevelHigherOrEqualThan(2,'NPC_WARLOCK') and not ClassLevelHigherOrEqualThan(3,'NPC_WARLOCK') or HasStatus('GOON_NPC_WARLOCK_LVL_2')):ApplyStatus(GOON_NPC_WARLOCK_FIEND_LVL_2,100,-1);IF(ClassLevelHigherOrEqualThan(3,'NPC_WARLOCK') and not ClassLevelHigherOrEqualThan(4,'NPC_WARLOCK') or HasStatus('GOON_NPC_WARLOCK_LVL_3')):ApplyStatus(GOON_NPC_WARLOCK_FIEND_LVL_3,100,-1);IF(ClassLevelHigherOrEqualThan(4,'NPC_WARLOCK') and not ClassLevelHigherOrEqualThan(5,'NPC_WARLOCK') or HasStatus('GOON_NPC_WARLOCK_LVL_4')):ApplyStatus(GOON_NPC_WARLOCK_FIEND_LVL_4,100,-1);IF(ClassLevelHigherOrEqualThan(5,'NPC_WARLOCK') and not ClassLevelHigherOrEqualThan(6,'NPC_WARLOCK') or HasStatus('GOON_NPC_WARLOCK_LVL_5')):ApplyStatus(GOON_NPC_WARLOCK_FIEND_LVL_5,100,-1);IF(ClassLevelHigherOrEqualThan(6,'NPC_WARLOCK') and not ClassLevelHigherOrEqualThan(7,'NPC_WARLOCK') or HasStatus('GOON_NPC_WARLOCK_LVL_6')):ApplyStatus(GOON_NPC_WARLOCK_FIEND_LVL_6,100,-1);IF(ClassLevelHigherOrEqualThan(7,'NPC_WARLOCK') and not ClassLevelHigherOrEqualThan(8,'NPC_WARLOCK') or HasStatus('GOON_NPC_WARLOCK_LVL_7')):ApplyStatus(GOON_NPC_WARLOCK_FIEND_LVL_7,100,-1);IF(ClassLevelHigherOrEqualThan(8,'NPC_WARLOCK') and not ClassLevelHigherOrEqualThan(9,'NPC_WARLOCK') or HasStatus('GOON_NPC_WARLOCK_LVL_8')):ApplyStatus(GOON_NPC_WARLOCK_FIEND_LVL_8,100,-1);IF(ClassLevelHigherOrEqualThan(9,'NPC_WARLOCK') and not ClassLevelHigherOrEqualThan(10,'NPC_WARLOCK') or HasStatus('GOON_NPC_WARLOCK_LVL_9')):ApplyStatus(GOON_NPC_WARLOCK_FIEND_LVL_9,100,-1);IF(ClassLevelHigherOrEqualThan(10,'NPC_WARLOCK') and not ClassLevelHigherOrEqualThan(11,'NPC_WARLOCK') or HasStatus('GOON_NPC_WARLOCK_LVL_10')):ApplyStatus(GOON_NPC_WARLOCK_FIEND_LVL_10,100,-1);IF(ClassLevelHigherOrEqualThan(11,'NPC_WARLOCK') and not ClassLevelHigherOrEqualThan(12,'NPC_WARLOCK') or HasStatus('GOON_NPC_WARLOCK_LVL_11')):ApplyStatus(GOON_NPC_WARLOCK_FIEND_LVL_11,100,-1);IF(ClassLevelHigherOrEqualThan(12,'NPC_WARLOCK') and not ClassLevelHigherOrEqualThan(13,'NPC_WARLOCK') or HasStatus('GOON_NPC_WARLOCK_LVL_12')):ApplyStatus(GOON_NPC_WARLOCK_FIEND_LVL_12,100,-1);IF(ClassLevelHigherOrEqualThan(13,'NPC_WARLOCK') and not ClassLevelHigherOrEqualThan(14,'NPC_WARLOCK') or HasStatus('GOON_NPC_WARLOCK_LVL_13')):ApplyStatus(GOON_NPC_WARLOCK_FIEND_LVL_13,100,-1);IF(ClassLevelHigherOrEqualThan(14,'NPC_WARLOCK') and not ClassLevelHigherOrEqualThan(15,'NPC_WARLOCK') or HasStatus('GOON_NPC_WARLOCK_LVL_14')):ApplyStatus(GOON_NPC_WARLOCK_FIEND_LVL_14,100,-1);IF(ClassLevelHigherOrEqualThan(15,'NPC_WARLOCK') and not ClassLevelHigherOrEqualThan(16,'NPC_WARLOCK') or HasStatus('GOON_NPC_WARLOCK_LVL_15')):ApplyStatus(GOON_NPC_WARLOCK_FIEND_LVL_15,100,-1);IF(ClassLevelHigherOrEqualThan(16,'NPC_WARLOCK') and not ClassLevelHigherOrEqualThan(17,'NPC_WARLOCK') or HasStatus('GOON_NPC_WARLOCK_LVL_16')):ApplyStatus(GOON_NPC_WARLOCK_FIEND_LVL_16,100,-1);IF(ClassLevelHigherOrEqualThan(17,'NPC_WARLOCK') and not ClassLevelHigherOrEqualThan(18,'NPC_WARLOCK') or HasStatus('GOON_NPC_WARLOCK_LVL_17')):ApplyStatus(GOON_NPC_WARLOCK_FIEND_LVL_17,100,-1);IF(ClassLevelHigherOrEqualThan(18,'NPC_WARLOCK') and not ClassLevelHigherOrEqualThan(19,'NPC_WARLOCK') or HasStatus('GOON_NPC_WARLOCK_LVL_18')):ApplyStatus(GOON_NPC_WARLOCK_FIEND_LVL_18,100,-1);IF(ClassLevelHigherOrEqualThan(19,'NPC_WARLOCK') and not ClassLevelHigherOrEqualThan(20,'NPC_WARLOCK') or HasStatus('GOON_NPC_WARLOCK_LVL_19')):ApplyStatus(GOON_NPC_WARLOCK_FIEND_LVL_19,100,-1);IF(ClassLevelHigherOrEqualThan(20,'NPC_WARLOCK') or HasStatus('GOON_NPC_WARLOCK_LVL_20')):ApplyStatus(GOON_NPC_WARLOCK_FIEND_LVL_20,100,-1)"
+
+// Template
+    new entry "GOON_NPC_SOMETHING_WARLOCK_FIEND_TEMPLATE"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    data "StatusPropertyFlags" "DisableOverhead;DisableCombatlog;DisablePortraitIndicator;ApplyToDead;IgnoreResting"
+    data "RemoveEvents" "OnStatusApplied;OnStatusRemoved"
+    data "StackId" "GOON_NPC_SOMETHING_WARLOCK_FIEND_TEMPLATE"
+    data "StackType" "Ignore"
+    data "RemoveConditions" "not HasPassive('CX_Warlock_Fiend_Boost')"
+
+// Progression statuses
+    new entry "GOON_NPC_WARLOCK_FIEND_LVL_1"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_SOMETHING_WARLOCK_FIEND_TEMPLATE"
+    data "StackPriority" "1"
+    data "Passives" "DarkOnesBlessing"
+    data "Boosts" ""
+
+    // <node id="Progression">
+    //     <attribute id="Level" type="uint8" value="1"/>
+    //     <attribute id="Name" type="LSString" value="Fiend"/>
+    //     <attribute id="PassivesAdded" type="LSString" value="DarkOnesBlessing"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="Selectors" type="LSString" value="SelectSpells(4823a292-f584-4f7f-8434-6630c72e5411,2,0,,,e9127b70-22b7-42a1-b172-d02f828f260a)"/>
+    //     <attribute id="TableUUID" type="guid" value="2700b42c-3b2f-4fc7-b881-4acc4f0a3a1f"/>
+    //     <attribute id="UUID" type="guid" value="995c4979-50a9-49fe-b7b8-5d026e79464a"/>
+
+    new entry "GOON_NPC_WARLOCK_FIEND_LVL_2"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_WARLOCK_FIEND_LVL_1"
+    data "StackPriority" "2"
+
+    // <node id="Progression">
+    //     <attribute id="Level" type="uint8" value="2"/>
+    //     <attribute id="Name" type="LSString" value="Fiend"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="Selectors" type="LSString" value="SelectSpells(4823a292-f584-4f7f-8434-6630c72e5411,1,2,,,e9127b70-22b7-42a1-b172-d02f828f260a)"/>
+    //     <attribute id="TableUUID" type="guid" value="2700b42c-3b2f-4fc7-b881-4acc4f0a3a1f"/>
+    //     <attribute id="UUID" type="guid" value="9f99f3a6-2fd5-4b6e-8506-a58c8198b1c6"/>
+
+    new entry "GOON_NPC_WARLOCK_FIEND_LVL_3"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_WARLOCK_FIEND_LVL_1"
+    data "StackPriority" "3"
+
+    // <node id="Progression">
+    //     <attribute id="Level" type="uint8" value="3"/>
+    //     <attribute id="Name" type="LSString" value="Fiend"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="Selectors" type="LSString" value="SelectSpells(835aeca7-c64a-4aaa-a25c-143aa14a5cec,1,2,,,e9127b70-22b7-42a1-b172-d02f828f260a)"/>
+    //     <attribute id="TableUUID" type="guid" value="2700b42c-3b2f-4fc7-b881-4acc4f0a3a1f"/>
+    //     <attribute id="UUID" type="guid" value="428e4841-ff37-4b12-afb8-8bb26577a5c9"/>
+
+    new entry "GOON_NPC_WARLOCK_FIEND_LVL_4"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_WARLOCK_FIEND_LVL_1"
+    data "StackPriority" "4"
+
+    // <node id="Progression">
+    //     <attribute id="Level" type="uint8" value="4"/>
+    //     <attribute id="Name" type="LSString" value="Fiend"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="Selectors" type="LSString" value="SelectSpells(f5c4af9c-5d8d-4526-9057-94a4b243cd40,1,0);SelectSpells(835aeca7-c64a-4aaa-a25c-143aa14a5cec,1,2,,,e9127b70-22b7-42a1-b172-d02f828f260a)"/>
+    //     <attribute id="TableUUID" type="guid" value="2700b42c-3b2f-4fc7-b881-4acc4f0a3a1f"/>
+    //     <attribute id="UUID" type="guid" value="4d5939a4-9ec0-4eaa-a154-a3fb7a810fc9"/>
+
+    new entry "GOON_NPC_WARLOCK_FIEND_LVL_5"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_WARLOCK_FIEND_LVL_1"
+    data "StackPriority" "5"
+
+    // <node id="Progression">
+    //     <attribute id="Level" type="uint8" value="5"/>
+    //     <attribute id="Name" type="LSString" value="Fiend"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="Selectors" type="LSString" value="SelectSpells(5dec41aa-f16a-434e-b209-50c07e64e4ed,1,2,,,e9127b70-22b7-42a1-b172-d02f828f260a)"/>
+    //     <attribute id="TableUUID" type="guid" value="2700b42c-3b2f-4fc7-b881-4acc4f0a3a1f"/>
+    //     <attribute id="UUID" type="guid" value="ed8167dc-9bce-4f20-b58d-debd04742131"/>
+
+    new entry "GOON_NPC_WARLOCK_FIEND_LVL_6"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_SOMETHING_WARLOCK_FIEND_TEMPLATE"
+    data "StackPriority" "6"
+    data "Passives" "DarkOnesBlessing;DarkOnesOwnLuck"
+    data "Boosts" ""
+
+    // <node id="Progression">
+    //     <attribute id="Level" type="uint8" value="6"/>
+    //     <attribute id="Name" type="LSString" value="Fiend"/>
+    //     <attribute id="PassivesAdded" type="LSString" value="DarkOnesOwnLuck"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="Selectors" type="LSString" value="SelectSpells(5dec41aa-f16a-434e-b209-50c07e64e4ed,1,2,,,e9127b70-22b7-42a1-b172-d02f828f260a)"/>
+    //     <attribute id="TableUUID" type="guid" value="2700b42c-3b2f-4fc7-b881-4acc4f0a3a1f"/>
+    //     <attribute id="UUID" type="guid" value="b60e9c1c-f226-4628-b022-ebe6a722aaae"/>
+
+    new entry "GOON_NPC_WARLOCK_FIEND_LVL_7"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_WARLOCK_FIEND_LVL_6"
+    data "StackPriority" "7"
+
+    // <node id="Progression">
+    //     <attribute id="Level" type="uint8" value="7"/>
+    //     <attribute id="Name" type="LSString" value="Fiend"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="Selectors" type="LSString" value="SelectSpells(7ad7dbd0-751b-4bcd-8034-53bcc7bfb19d,1,2,,,e9127b70-22b7-42a1-b172-d02f828f260a)"/>
+    //     <attribute id="TableUUID" type="guid" value="2700b42c-3b2f-4fc7-b881-4acc4f0a3a1f"/>
+    //     <attribute id="UUID" type="guid" value="596f0d68-3018-4946-a9d4-f1af39834b4e"/>
+
+    new entry "GOON_NPC_WARLOCK_FIEND_LVL_8"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_WARLOCK_FIEND_LVL_6"
+    data "StackPriority" "8"
+
+    // <node id="Progression">
+    //     <attribute id="Level" type="uint8" value="8"/>
+    //     <attribute id="Name" type="LSString" value="Fiend"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="Selectors" type="LSString" value="SelectSpells(7ad7dbd0-751b-4bcd-8034-53bcc7bfb19d,1,2,,,e9127b70-22b7-42a1-b172-d02f828f260a)"/>
+    //     <attribute id="TableUUID" type="guid" value="2700b42c-3b2f-4fc7-b881-4acc4f0a3a1f"/>
+    //     <attribute id="UUID" type="guid" value="8589f1d3-62aa-4118-bdda-eb2a95499817"/>
+
+    new entry "GOON_NPC_WARLOCK_FIEND_LVL_9"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_WARLOCK_FIEND_LVL_6"
+    data "StackPriority" "9"
+
+    // <node id="Progression">
+    //     <attribute id="Level" type="uint8" value="9"/>
+    //     <attribute id="Name" type="LSString" value="Fiend"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="Selectors" type="LSString" value="SelectSpells(deab57bf-4eec-4085-82f7-87335bce3f5d,1,2,,,e9127b70-22b7-42a1-b172-d02f828f260a)"/>
+    //     <attribute id="TableUUID" type="guid" value="2700b42c-3b2f-4fc7-b881-4acc4f0a3a1f"/>
+    //     <attribute id="UUID" type="guid" value="ea185872-5946-4dd6-9f9f-e75bc6750f61"/>
+
+    new entry "GOON_NPC_WARLOCK_FIEND_LVL_10"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_SOMETHING_WARLOCK_FIEND_TEMPLATE"
+    data "StackPriority" "10"
+    data "Passives" "DarkOnesBlessing;DarkOnesOwnLuck;FiendishResilience"
+    data "Boosts" ""
+
+    // <node id="Progression">
+    //     <attribute id="Level" type="uint8" value="10"/>
+    //     <attribute id="Name" type="LSString" value="Fiend"/>
+    //     <attribute id="PassivesAdded" type="LSString" value="FiendishResilience"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="Selectors" type="LSString" value="SelectSpells(deab57bf-4eec-4085-82f7-87335bce3f5d,1,2,,,e9127b70-22b7-42a1-b172-d02f828f260a)"/>
+    //     <attribute id="TableUUID" type="guid" value="2700b42c-3b2f-4fc7-b881-4acc4f0a3a1f"/>
+    //     <attribute id="UUID" type="guid" value="a9512b52-42bb-4968-9106-aed9f6fac3a9"/>
+
+    new entry "GOON_NPC_WARLOCK_FIEND_LVL_11"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_WARLOCK_FIEND_LVL_10"
+    data "StackPriority" "11"
+
+    // <node id="Progression">
+    //     <attribute id="Level" type="uint8" value="11"/>
+    //     <attribute id="Name" type="LSString" value="Fiend"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="Selectors" type="LSString" value="SelectSpells(deab57bf-4eec-4085-82f7-87335bce3f5d,1,2,,,e9127b70-22b7-42a1-b172-d02f828f260a)"/>
+    //     <attribute id="TableUUID" type="guid" value="2700b42c-3b2f-4fc7-b881-4acc4f0a3a1f"/>
+    //     <attribute id="UUID" type="guid" value="0150379d-ffc3-410e-a5d3-1ef93a9efbed"/>
+
+    new entry "GOON_NPC_WARLOCK_FIEND_LVL_12"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_WARLOCK_FIEND_LVL_10"
+    data "StackPriority" "12"
+
+    // <node id="Progression">
+    //     <attribute id="Level" type="uint8" value="12"/>
+    //     <attribute id="Name" type="LSString" value="Fiend"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="Selectors" type="LSString" value="SelectSpells(deab57bf-4eec-4085-82f7-87335bce3f5d,1,2,,,e9127b70-22b7-42a1-b172-d02f828f260a)"/>
+    //     <attribute id="TableUUID" type="guid" value="2700b42c-3b2f-4fc7-b881-4acc4f0a3a1f"/>
+    //     <attribute id="UUID" type="guid" value="2f79787c-f0f5-4ada-8baf-4a78aaf07236"/>
+
+// Expansion levels 13-20
+    new entry "GOON_NPC_WARLOCK_FIEND_LVL_13"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_WARLOCK_FIEND_LVL_10"
+    data "StackPriority" "13"
+
+    // <node id="Progression">
+    //     <attribute id="Level" type="uint8" value="13"/>
+    //     <attribute id="Name" type="LSString" value="Fiend"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="Selectors" type="LSString" value="SelectSpells(deab57bf-4eec-4085-82f7-87335bce3f5d,1,1,,,e9127b70-22b7-42a1-b172-d02f828f260a)"/>
+    //     <attribute id="TableUUID" type="guid" value="2700b42c-3b2f-4fc7-b881-4acc4f0a3a1f"/>
+    //     <attribute id="UUID" type="guid" value="826a0d6f-5999-404f-97aa-d84e9d5b04d1"/>
+    
+    new entry "GOON_NPC_WARLOCK_FIEND_LVL_14"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_SOMETHING_WARLOCK_FIEND_TEMPLATE"
+    data "StackPriority" "14"
+    data "Passives" "DarkOnesBlessing;DarkOnesOwnLuck;FiendishResilience;HurlThroughHell"
+    data "Boosts" "ActionResource(HurlThroughHell,1,0)"
+
+    // <node id="Progression">
+    //     <attribute id="Boosts" type="LSString" value="ActionResource(HurlThroughHell,1,0)"/>
+    //     <attribute id="Level" type="uint8" value="14"/>
+    //     <attribute id="Name" type="LSString" value="Fiend"/>
+    //     <attribute id="PassivesAdded" type="LSString" value="HurlThroughHell"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="Selectors" type="LSString" value="SelectSpells(deab57bf-4eec-4085-82f7-87335bce3f5d,0,1,,,e9127b70-22b7-42a1-b172-d02f828f260a)"/>
+    //     <attribute id="TableUUID" type="guid" value="2700b42c-3b2f-4fc7-b881-4acc4f0a3a1f"/>
+    //     <attribute id="UUID" type="guid" value="9d58bbac-4250-4b6a-a188-b9a18ba4b521"/>
+    
+    new entry "GOON_NPC_WARLOCK_FIEND_LVL_15"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_WARLOCK_FIEND_LVL_14"
+    data "StackPriority" "15"
+
+    // <node id="Progression">
+    //     <attribute id="Level" type="uint8" value="15"/>
+    //     <attribute id="Name" type="LSString" value="Fiend"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="Selectors" type="LSString" value="SelectSpells(deab57bf-4eec-4085-82f7-87335bce3f5d,1,1,,,e9127b70-22b7-42a1-b172-d02f828f260a)"/>
+    //     <attribute id="TableUUID" type="guid" value="2700b42c-3b2f-4fc7-b881-4acc4f0a3a1f"/>
+    //     <attribute id="UUID" type="guid" value="5e89d5f7-1a68-4f83-90a0-7b186ca47641"/>
+    
+    new entry "GOON_NPC_WARLOCK_FIEND_LVL_16"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_WARLOCK_FIEND_LVL_14"
+    data "StackPriority" "16"
+
+    // <node id="Progression">
+    //     <attribute id="Level" type="uint8" value="16"/>
+    //     <attribute id="Name" type="LSString" value="Fiend"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="Selectors" type="LSString" value="SelectSpells(deab57bf-4eec-4085-82f7-87335bce3f5d,0,1,,,e9127b70-22b7-42a1-b172-d02f828f260a)"/>
+    //     <attribute id="TableUUID" type="guid" value="2700b42c-3b2f-4fc7-b881-4acc4f0a3a1f"/>
+    //     <attribute id="UUID" type="guid" value="5dae7987-cdd0-4c0b-a845-fab1fecd8341"/>
+    
+    new entry "GOON_NPC_WARLOCK_FIEND_LVL_17"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_WARLOCK_FIEND_LVL_14"
+    data "StackPriority" "17"
+
+    // <node id="Progression">
+    //     <attribute id="Level" type="uint8" value="17"/>
+    //     <attribute id="Name" type="LSString" value="Fiend"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="Selectors" type="LSString" value="SelectSpells(deab57bf-4eec-4085-82f7-87335bce3f5d,1,1,,,e9127b70-22b7-42a1-b172-d02f828f260a)"/>
+    //     <attribute id="TableUUID" type="guid" value="2700b42c-3b2f-4fc7-b881-4acc4f0a3a1f"/>
+    //     <attribute id="UUID" type="guid" value="0edbcca8-2c17-4a41-aa2c-d3873b1480cc"/>
+    
+    new entry "GOON_NPC_WARLOCK_FIEND_LVL_18"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_WARLOCK_FIEND_LVL_14"
+    data "StackPriority" "18"
+
+    // <node id="Progression">
+    //     <attribute id="Level" type="uint8" value="18"/>
+    //     <attribute id="Name" type="LSString" value="Fiend"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="Selectors" type="LSString" value="SelectSpells(deab57bf-4eec-4085-82f7-87335bce3f5d,0,1,,,e9127b70-22b7-42a1-b172-d02f828f260a)"/>
+    //     <attribute id="TableUUID" type="guid" value="2700b42c-3b2f-4fc7-b881-4acc4f0a3a1f"/>
+    //     <attribute id="UUID" type="guid" value="8c0896f0-cf84-4112-a016-e91d897e0459"/>
+    
+    new entry "GOON_NPC_WARLOCK_FIEND_LVL_19"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_WARLOCK_FIEND_LVL_14"
+    data "StackPriority" "19"
+
+    // <node id="Progression">
+    //     <attribute id="Level" type="uint8" value="19"/>
+    //     <attribute id="Name" type="LSString" value="Fiend"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="Selectors" type="LSString" value="SelectSpells(deab57bf-4eec-4085-82f7-87335bce3f5d,1,1,,,e9127b70-22b7-42a1-b172-d02f828f260a)"/>
+    //     <attribute id="TableUUID" type="guid" value="2700b42c-3b2f-4fc7-b881-4acc4f0a3a1f"/>
+    //     <attribute id="UUID" type="guid" value="f3c52b19-c7e1-4b4d-98ec-c6d0e084e180"/>
+    
+    new entry "GOON_NPC_WARLOCK_FIEND_LVL_20"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_WARLOCK_FIEND_LVL_14"
+    data "StackPriority" "20"
+
+    // <node id="Progression">
+    //     <attribute id="Level" type="uint8" value="20"/>
+    //     <attribute id="Name" type="LSString" value="Fiend"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="Selectors" type="LSString" value="SelectSpells(deab57bf-4eec-4085-82f7-87335bce3f5d,0,1,,,e9127b70-22b7-42a1-b172-d02f828f260a)"/>
+    //     <attribute id="TableUUID" type="guid" value="2700b42c-3b2f-4fc7-b881-4acc4f0a3a1f"/>
+    //     <attribute id="UUID" type="guid" value="8a32fd74-7866-44b0-ac22-3605af40fe85"/>
+

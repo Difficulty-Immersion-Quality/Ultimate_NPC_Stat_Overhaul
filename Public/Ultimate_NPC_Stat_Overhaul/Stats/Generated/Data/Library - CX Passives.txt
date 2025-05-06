@@ -79,20 +79,6 @@ data "Boosts" ""
 
 // ==================================== Warlock ====================================
 
-new entry "CX_Warlock_Archfey_Boost"
-type "PassiveData"
-data "DisplayName" "h90440882gb237g45d4g9576g39ca5802004e;1"
-data "Description" "h3b6be49cg0492g4d95ga0a2g1350c52c1661;1"
-data "Icon" "Action_FeyPresence"
-data "Boosts" ""
-
-new entry "CX_Warlock_Fiend_Boost"
-type "PassiveData"
-data "DisplayName" "h4f5cf0f7g2308g44f5gb298g50721464a20a;1"
-data "Description" "h94272a82gf478g4b23g9d87g2f4dbeb70fc8;1"
-data "Icon" "PassiveFeature_DarkOnesBlessing"
-data "Boosts" ""
-
 new entry "CX_Warlock_GreatOldOne_Boost"
 type "PassiveData"
 data "DisplayName" "hbd91b70fgdebeg4f12g8bd8g2c0f863d3656;1"
