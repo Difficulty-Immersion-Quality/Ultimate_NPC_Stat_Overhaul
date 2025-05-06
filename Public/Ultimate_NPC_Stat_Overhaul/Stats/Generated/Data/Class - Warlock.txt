@@ -746,3 +746,318 @@
     //     <attribute id="TableUUID" type="guid" value="2700b42c-3b2f-4fc7-b881-4acc4f0a3a1f"/>
     //     <attribute id="UUID" type="guid" value="8a32fd74-7866-44b0-ac22-3605af40fe85"/>
 
+// ==================================== Subclass: The Great Old One ====================================
+
+    new entry "CX_Warlock_GreatOldOne_Boost"
+    type "PassiveData"
+    data "DisplayName" "hbd91b70fgdebeg4f12g8bd8g2c0f863d3656;1"
+    data "Description" "h1843d056gfbaag473eg8a99g0d5bea998fce;1"
+    data "Icon" "PassiveFeature_ClarifiedMortality"
+    data "Boosts" ""
+    data "StatsFunctorContext" "OnCreate;OnStatusApplied;OnStatusRemoved"
+    data "Conditions" ""
+    data "StatsFunctors" "IF(not ClassLevelHigherOrEqualThan(2,'NPC_WARLOCK') or HasStatus('GOON_NPC_WARLOCK_LVL_1')):ApplyStatus(GOON_NPC_WARLOCK_GREATOLDONE_LVL_1,100,-1);IF(ClassLevelHigherOrEqualThan(2,'NPC_WARLOCK') and not ClassLevelHigherOrEqualThan(3,'NPC_WARLOCK') or HasStatus('GOON_NPC_WARLOCK_LVL_2')):ApplyStatus(GOON_NPC_WARLOCK_GREATOLDONE_LVL_2,100,-1);IF(ClassLevelHigherOrEqualThan(3,'NPC_WARLOCK') and not ClassLevelHigherOrEqualThan(4,'NPC_WARLOCK') or HasStatus('GOON_NPC_WARLOCK_LVL_3')):ApplyStatus(GOON_NPC_WARLOCK_GREATOLDONE_LVL_3,100,-1);IF(ClassLevelHigherOrEqualThan(4,'NPC_WARLOCK') and not ClassLevelHigherOrEqualThan(5,'NPC_WARLOCK') or HasStatus('GOON_NPC_WARLOCK_LVL_4')):ApplyStatus(GOON_NPC_WARLOCK_GREATOLDONE_LVL_4,100,-1);IF(ClassLevelHigherOrEqualThan(5,'NPC_WARLOCK') and not ClassLevelHigherOrEqualThan(6,'NPC_WARLOCK') or HasStatus('GOON_NPC_WARLOCK_LVL_5')):ApplyStatus(GOON_NPC_WARLOCK_GREATOLDONE_LVL_5,100,-1);IF(ClassLevelHigherOrEqualThan(6,'NPC_WARLOCK') and not ClassLevelHigherOrEqualThan(7,'NPC_WARLOCK') or HasStatus('GOON_NPC_WARLOCK_LVL_6')):ApplyStatus(GOON_NPC_WARLOCK_GREATOLDONE_LVL_6,100,-1);IF(ClassLevelHigherOrEqualThan(7,'NPC_WARLOCK') and not ClassLevelHigherOrEqualThan(8,'NPC_WARLOCK') or HasStatus('GOON_NPC_WARLOCK_LVL_7')):ApplyStatus(GOON_NPC_WARLOCK_GREATOLDONE_LVL_7,100,-1);IF(ClassLevelHigherOrEqualThan(8,'NPC_WARLOCK') and not ClassLevelHigherOrEqualThan(9,'NPC_WARLOCK') or HasStatus('GOON_NPC_WARLOCK_LVL_8')):ApplyStatus(GOON_NPC_WARLOCK_GREATOLDONE_LVL_8,100,-1);IF(ClassLevelHigherOrEqualThan(9,'NPC_WARLOCK') and not ClassLevelHigherOrEqualThan(10,'NPC_WARLOCK') or HasStatus('GOON_NPC_WARLOCK_LVL_9')):ApplyStatus(GOON_NPC_WARLOCK_GREATOLDONE_LVL_9,100,-1);IF(ClassLevelHigherOrEqualThan(10,'NPC_WARLOCK') and not ClassLevelHigherOrEqualThan(11,'NPC_WARLOCK') or HasStatus('GOON_NPC_WARLOCK_LVL_10')):ApplyStatus(GOON_NPC_WARLOCK_GREATOLDONE_LVL_10,100,-1);IF(ClassLevelHigherOrEqualThan(11,'NPC_WARLOCK') and not ClassLevelHigherOrEqualThan(12,'NPC_WARLOCK') or HasStatus('GOON_NPC_WARLOCK_LVL_11')):ApplyStatus(GOON_NPC_WARLOCK_GREATOLDONE_LVL_11,100,-1);IF(ClassLevelHigherOrEqualThan(12,'NPC_WARLOCK') and not ClassLevelHigherOrEqualThan(13,'NPC_WARLOCK') or HasStatus('GOON_NPC_WARLOCK_LVL_12')):ApplyStatus(GOON_NPC_WARLOCK_GREATOLDONE_LVL_12,100,-1);IF(ClassLevelHigherOrEqualThan(13,'NPC_WARLOCK') and not ClassLevelHigherOrEqualThan(14,'NPC_WARLOCK') or HasStatus('GOON_NPC_WARLOCK_LVL_13')):ApplyStatus(GOON_NPC_WARLOCK_GREATOLDONE_LVL_13,100,-1);IF(ClassLevelHigherOrEqualThan(14,'NPC_WARLOCK') and not ClassLevelHigherOrEqualThan(15,'NPC_WARLOCK') or HasStatus('GOON_NPC_WARLOCK_LVL_14')):ApplyStatus(GOON_NPC_WARLOCK_GREATOLDONE_LVL_14,100,-1);IF(ClassLevelHigherOrEqualThan(15,'NPC_WARLOCK') and not ClassLevelHigherOrEqualThan(16,'NPC_WARLOCK') or HasStatus('GOON_NPC_WARLOCK_LVL_15')):ApplyStatus(GOON_NPC_WARLOCK_GREATOLDONE_LVL_15,100,-1);IF(ClassLevelHigherOrEqualThan(16,'NPC_WARLOCK') and not ClassLevelHigherOrEqualThan(17,'NPC_WARLOCK') or HasStatus('GOON_NPC_WARLOCK_LVL_16')):ApplyStatus(GOON_NPC_WARLOCK_GREATOLDONE_LVL_16,100,-1);IF(ClassLevelHigherOrEqualThan(17,'NPC_WARLOCK') and not ClassLevelHigherOrEqualThan(18,'NPC_WARLOCK') or HasStatus('GOON_NPC_WARLOCK_LVL_17')):ApplyStatus(GOON_NPC_WARLOCK_GREATOLDONE_LVL_17,100,-1);IF(ClassLevelHigherOrEqualThan(18,'NPC_WARLOCK') and not ClassLevelHigherOrEqualThan(19,'NPC_WARLOCK') or HasStatus('GOON_NPC_WARLOCK_LVL_18')):ApplyStatus(GOON_NPC_WARLOCK_GREATOLDONE_LVL_18,100,-1);IF(ClassLevelHigherOrEqualThan(19,'NPC_WARLOCK') and not ClassLevelHigherOrEqualThan(20,'NPC_WARLOCK') or HasStatus('GOON_NPC_WARLOCK_LVL_19')):ApplyStatus(GOON_NPC_WARLOCK_GREATOLDONE_LVL_19,100,-1);IF(ClassLevelHigherOrEqualThan(20,'NPC_WARLOCK') or HasStatus('GOON_NPC_WARLOCK_LVL_20')):ApplyStatus(GOON_NPC_WARLOCK_GREATOLDONE_LVL_20,100,-1)"
+
+// Template
+    new entry "GOON_NPC_WARLOCK_GREATOLDONE_PROGRESSION_TEMPLATE"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    data "StatusPropertyFlags" "DisableOverhead;DisableCombatlog;DisablePortraitIndicator;ApplyToDead;IgnoreResting"
+    data "RemoveEvents" "OnStatusApplied;OnStatusRemoved"
+    data "StackId" "GOON_NPC_WARLOCK_GREATOLDONE_PROGRESSION_TEMPLATE"
+    data "StackType" "Ignore"
+    data "RemoveConditions" "not HasPassive('CX_Warlock_GreatOldOne_Boost')"
+
+// Progression statuses
+    new entry "GOON_NPC_WARLOCK_GREATOLDONE_LVL_1"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_WARLOCK_GREATOLDONE_PROGRESSION_TEMPLATE"
+    data "StackPriority" "1"
+    data "Passives" "ClarifiedMortality"
+    data "Boosts" ""
+
+    // <node id="Progression">
+    //     <attribute id="Level" type="uint8" value="1"/>
+    //     <attribute id="Name" type="LSString" value="GreatOldOne"/>
+    //     <attribute id="PassivesAdded" type="LSString" value="ClarifiedMortality"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="Selectors" type="LSString" value="SelectSpells(65952d48-bb16-4ad7-b173-532182bf7770,2,0,,,e9127b70-22b7-42a1-b172-d02f828f260a)"/>
+    //     <attribute id="TableUUID" type="guid" value="216e779e-3452-466c-933d-fb5723b90802"/>
+    //     <attribute id="UUID" type="guid" value="3081d0f1-32ea-4c33-9350-f423ececc9b8"/>
+
+    new entry "GOON_NPC_WARLOCK_GREATOLDONE_LVL_2"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_WARLOCK_GREATOLDONE_LVL_1"
+    data "StackPriority" "2"
+
+    // <node id="Progression">
+    //     <attribute id="Level" type="uint8" value="2"/>
+    //     <attribute id="Name" type="LSString" value="GreatOldOne"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="Selectors" type="LSString" value="SelectSpells(65952d48-bb16-4ad7-b173-532182bf7770,1,2,,,e9127b70-22b7-42a1-b172-d02f828f260a)"/>
+    //     <attribute id="TableUUID" type="guid" value="216e779e-3452-466c-933d-fb5723b90802"/>
+    //     <attribute id="UUID" type="guid" value="d7209ef3-ac5c-4e16-995f-5c6ffebe49a9"/>
+
+    new entry "GOON_NPC_WARLOCK_GREATOLDONE_LVL_3"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_WARLOCK_GREATOLDONE_LVL_1"
+    data "StackPriority" "3"
+
+    // <node id="Progression">
+    //     <attribute id="Level" type="uint8" value="3"/>
+    //     <attribute id="Name" type="LSString" value="GreatOldOne"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="Selectors" type="LSString" value="SelectSpells(fe101a94-8619-49b2-859d-a68c2c291054,1,2,,,e9127b70-22b7-42a1-b172-d02f828f260a)"/>
+    //     <attribute id="TableUUID" type="guid" value="216e779e-3452-466c-933d-fb5723b90802"/>
+    //     <attribute id="UUID" type="guid" value="e558c8bb-7b5f-4e18-8ca7-4ab167fa0857"/>
+
+    new entry "GOON_NPC_WARLOCK_GREATOLDONE_LVL_4"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_WARLOCK_GREATOLDONE_LVL_1"
+    data "StackPriority" "4"
+
+    // <node id="Progression">
+    //     <attribute id="Level" type="uint8" value="4"/>
+    //     <attribute id="Name" type="LSString" value="GreatOldOne"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="Selectors" type="LSString" value="SelectSpells(f5c4af9c-5d8d-4526-9057-94a4b243cd40,1,0);SelectSpells(fe101a94-8619-49b2-859d-a68c2c291054,1,2,,,e9127b70-22b7-42a1-b172-d02f828f260a)"/>
+    //     <attribute id="TableUUID" type="guid" value="216e779e-3452-466c-933d-fb5723b90802"/>
+    //     <attribute id="UUID" type="guid" value="35f4f40a-528d-4478-9ca0-3c26737913ea"/>
+
+    new entry "GOON_NPC_WARLOCK_GREATOLDONE_LVL_5"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_WARLOCK_GREATOLDONE_LVL_1"
+    data "StackPriority" "5"
+
+    // <node id="Progression">
+    //     <attribute id="Level" type="uint8" value="5"/>
+    //     <attribute id="Name" type="LSString" value="GreatOldOne"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="Selectors" type="LSString" value="SelectSpells(30e9b761-6be0-418e-bb28-5103c00c663b,1,2,,,e9127b70-22b7-42a1-b172-d02f828f260a)"/>
+    //     <attribute id="TableUUID" type="guid" value="216e779e-3452-466c-933d-fb5723b90802"/>
+    //     <attribute id="UUID" type="guid" value="2d1019f4-9315-429a-b89e-125c43562e2c"/>
+
+    new entry "GOON_NPC_WARLOCK_GREATOLDONE_LVL_6"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_WARLOCK_GREATOLDONE_PROGRESSION_TEMPLATE"
+    data "StackPriority" "6"
+    data "Passives" "ClarifiedMortality;EntropicWard"
+    data "Boosts" ""
+
+    // <node id="Progression">
+    //     <attribute id="Level" type="uint8" value="6"/>
+    //     <attribute id="Name" type="LSString" value="GreatOldOne"/>
+    //     <attribute id="PassivesAdded" type="LSString" value="EntropicWard"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="Selectors" type="LSString" value="SelectSpells(30e9b761-6be0-418e-bb28-5103c00c663b,1,2,,,e9127b70-22b7-42a1-b172-d02f828f260a)"/>
+    //     <attribute id="TableUUID" type="guid" value="216e779e-3452-466c-933d-fb5723b90802"/>
+    //     <attribute id="UUID" type="guid" value="1aee77ee-32b0-4102-9eae-9b1ada835bf5"/>
+
+    new entry "GOON_NPC_WARLOCK_GREATOLDONE_LVL_7"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_WARLOCK_GREATOLDONE_LVL_6"
+    data "StackPriority" "7"
+
+    // <node id="Progression">
+    //     <attribute id="Level" type="uint8" value="7"/>
+    //     <attribute id="Name" type="LSString" value="GreatOldOne"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="Selectors" type="LSString" value="SelectSpells(b64e527e-1f97-4125-84f7-78376ab1440b,1,2,,,e9127b70-22b7-42a1-b172-d02f828f260a)"/>
+    //     <attribute id="TableUUID" type="guid" value="216e779e-3452-466c-933d-fb5723b90802"/>
+    //     <attribute id="UUID" type="guid" value="1fce5c31-b851-4e47-8dee-4fc0b5bcd1e6"/>
+
+    new entry "GOON_NPC_WARLOCK_GREATOLDONE_LVL_8"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_WARLOCK_GREATOLDONE_LVL_6"
+    data "StackPriority" "8"
+
+    // <node id="Progression">
+    //     <attribute id="Level" type="uint8" value="8"/>
+    //     <attribute id="Name" type="LSString" value="GreatOldOne"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="Selectors" type="LSString" value="SelectSpells(b64e527e-1f97-4125-84f7-78376ab1440b,1,2,,,e9127b70-22b7-42a1-b172-d02f828f260a)"/>
+    //     <attribute id="TableUUID" type="guid" value="216e779e-3452-466c-933d-fb5723b90802"/>
+    //     <attribute id="UUID" type="guid" value="dab5a860-75e5-4beb-a69d-51b212205bdd"/>
+
+    new entry "GOON_NPC_WARLOCK_GREATOLDONE_LVL_9"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_WARLOCK_GREATOLDONE_LVL_6"
+    data "StackPriority" "9"
+
+    // <node id="Progression">
+    //     <attribute id="Level" type="uint8" value="9"/>
+    //     <attribute id="Name" type="LSString" value="GreatOldOne"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="Selectors" type="LSString" value="SelectSpells(6d2edca9-71a7-4f3f-89f0-fccfff0bdee5,1,2,,,e9127b70-22b7-42a1-b172-d02f828f260a)"/>
+    //     <attribute id="TableUUID" type="guid" value="216e779e-3452-466c-933d-fb5723b90802"/>
+    //     <attribute id="UUID" type="guid" value="c8b25410-3a6e-4682-a242-5587772520c9"/>
+
+    new entry "GOON_NPC_WARLOCK_GREATOLDONE_LVL_10"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_WARLOCK_GREATOLDONE_PROGRESSION_TEMPLATE"
+    data "StackPriority" "10"
+    data "Passives" "ClarifiedMortality;EntropicWard;Thought_Shield_Psychic_Resistance;Thought_Shield_Psychic_Reflection"
+    data "Boosts" ""
+
+    // <node id="Progression">
+    //     <attribute id="Level" type="uint8" value="10"/>
+    //     <attribute id="Name" type="LSString" value="GreatOldOne"/>
+    //     <attribute id="PassivesAdded" type="LSString" value="Thought_Shield_Psychic_Resistance;Thought_Shield_Psychic_Reflection"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="Selectors" type="LSString" value="SelectSpells(6d2edca9-71a7-4f3f-89f0-fccfff0bdee5,1,2,,,e9127b70-22b7-42a1-b172-d02f828f260a)"/>
+    //     <attribute id="TableUUID" type="guid" value="216e779e-3452-466c-933d-fb5723b90802"/>
+    //     <attribute id="UUID" type="guid" value="0bddcd15-58e7-40d2-8b44-8197ea6b540c"/>
+
+    new entry "GOON_NPC_WARLOCK_GREATOLDONE_LVL_11"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_WARLOCK_GREATOLDONE_LVL_10"
+    data "StackPriority" "11"
+
+    // <node id="Progression">
+    //     <attribute id="Level" type="uint8" value="11"/>
+    //     <attribute id="Name" type="LSString" value="GreatOldOne"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="Selectors" type="LSString" value="SelectSpells(6d2edca9-71a7-4f3f-89f0-fccfff0bdee5,1,2,,,e9127b70-22b7-42a1-b172-d02f828f260a)"/>
+    //     <attribute id="TableUUID" type="guid" value="216e779e-3452-466c-933d-fb5723b90802"/>
+    //     <attribute id="UUID" type="guid" value="7ed00edf-f0bd-48f0-926e-d607a00b37ac"/>
+
+    new entry "GOON_NPC_WARLOCK_GREATOLDONE_LVL_12"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_WARLOCK_GREATOLDONE_LVL_10"
+    data "StackPriority" "12"
+
+    // <node id="Progression">
+    //     <attribute id="Level" type="uint8" value="12"/>
+    //     <attribute id="Name" type="LSString" value="GreatOldOne"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="Selectors" type="LSString" value="SelectSpells(6d2edca9-71a7-4f3f-89f0-fccfff0bdee5,1,2,,,e9127b70-22b7-42a1-b172-d02f828f260a)"/>
+    //     <attribute id="TableUUID" type="guid" value="216e779e-3452-466c-933d-fb5723b90802"/>
+    //     <attribute id="UUID" type="guid" value="92212b50-b9fb-4a07-83c9-08fe39d5d0d9"/>
+
+// Expansion levels 13-20
+    new entry "GOON_NPC_WARLOCK_GREATOLDONE_LVL_13"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_WARLOCK_GREATOLDONE_LVL_10"
+    data "StackPriority" "13"
+
+    // <node id="Progression">
+    //     <attribute id="Level" type="uint8" value="13"/>
+    //     <attribute id="Name" type="LSString" value="GreatOldOne"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="Selectors" type="LSString" value="SelectSpells(6d2edca9-71a7-4f3f-89f0-fccfff0bdee5,1,1,,,e9127b70-22b7-42a1-b172-d02f828f260a)"/>
+    //     <attribute id="TableUUID" type="guid" value="216e779e-3452-466c-933d-fb5723b90802"/>
+    //     <attribute id="UUID" type="guid" value="cee84fd6-5220-428c-91ec-45fd13d01446"/>
+    
+    new entry "GOON_NPC_WARLOCK_GREATOLDONE_LVL_14"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_WARLOCK_GREATOLDONE_PROGRESSION_TEMPLATE"
+    data "StackPriority" "14"
+    data "Passives" "ClarifiedMortality;EntropicWard;Thought_Shield_Psychic_Resistance;Thought_Shield_Psychic_Reflection;CreateThrall"
+    data "Boosts" ""
+
+    // <node id="Progression">
+    //     <attribute id="Level" type="uint8" value="14"/>
+    //     <attribute id="Name" type="LSString" value="GreatOldOne"/>
+    //     <attribute id="PassivesAdded" type="LSString" value="CreateThrall"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="Selectors" type="LSString" value="SelectSpells(6d2edca9-71a7-4f3f-89f0-fccfff0bdee5,0,1,,,e9127b70-22b7-42a1-b172-d02f828f260a)"/>
+    //     <attribute id="TableUUID" type="guid" value="216e779e-3452-466c-933d-fb5723b90802"/>
+    //     <attribute id="UUID" type="guid" value="eb075855-eaf5-45f7-be07-0f6087e794f2"/>
+    
+    new entry "GOON_NPC_WARLOCK_GREATOLDONE_LVL_15"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_WARLOCK_GREATOLDONE_LVL_14"
+    data "StackPriority" "15"
+
+    // <node id="Progression">
+    //     <attribute id="Level" type="uint8" value="15"/>
+    //     <attribute id="Name" type="LSString" value="GreatOldOne"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="Selectors" type="LSString" value="SelectSpells(6d2edca9-71a7-4f3f-89f0-fccfff0bdee5,1,1,,,e9127b70-22b7-42a1-b172-d02f828f260a)"/>
+    //     <attribute id="TableUUID" type="guid" value="216e779e-3452-466c-933d-fb5723b90802"/>
+    //     <attribute id="UUID" type="guid" value="74845001-bc89-4529-9365-3f0b0cb51c25"/>
+
+    new entry "GOON_NPC_WARLOCK_GREATOLDONE_LVL_16"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_WARLOCK_GREATOLDONE_LVL_14"
+    data "StackPriority" "16"
+    
+    // <node id="Progression">
+    //     <attribute id="Level" type="uint8" value="16"/>
+    //     <attribute id="Name" type="LSString" value="GreatOldOne"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="Selectors" type="LSString" value="SelectSpells(6d2edca9-71a7-4f3f-89f0-fccfff0bdee5,0,1,,,e9127b70-22b7-42a1-b172-d02f828f260a)"/>
+    //     <attribute id="TableUUID" type="guid" value="216e779e-3452-466c-933d-fb5723b90802"/>
+    //     <attribute id="UUID" type="guid" value="e9098b69-07e4-4e3e-8ded-8bc121de4038"/>
+
+    new entry "GOON_NPC_WARLOCK_GREATOLDONE_LVL_17"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_WARLOCK_GREATOLDONE_LVL_14"
+    data "StackPriority" "17"
+
+    // <node id="Progression">
+    //     <attribute id="Level" type="uint8" value="17"/>
+    //     <attribute id="Name" type="LSString" value="GreatOldOne"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="Selectors" type="LSString" value="SelectSpells(6d2edca9-71a7-4f3f-89f0-fccfff0bdee5,1,1,,,e9127b70-22b7-42a1-b172-d02f828f260a)"/>
+    //     <attribute id="TableUUID" type="guid" value="216e779e-3452-466c-933d-fb5723b90802"/>
+    //     <attribute id="UUID" type="guid" value="44eaa7de-0ad3-456c-a041-6f959b6a1104"/>
+
+    new entry "GOON_NPC_WARLOCK_GREATOLDONE_LVL_18"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_WARLOCK_GREATOLDONE_LVL_14"
+    data "StackPriority" "18"
+
+    // <node id="Progression">
+    //     <attribute id="Level" type="uint8" value="18"/>
+    //     <attribute id="Name" type="LSString" value="GreatOldOne"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="Selectors" type="LSString" value="SelectSpells(6d2edca9-71a7-4f3f-89f0-fccfff0bdee5,0,1,,,e9127b70-22b7-42a1-b172-d02f828f260a)"/>
+    //     <attribute id="TableUUID" type="guid" value="216e779e-3452-466c-933d-fb5723b90802"/>
+    //     <attribute id="UUID" type="guid" value="c9a2c627-a2ae-44f2-b6c4-e9d2488e4b85"/>
+    
+    new entry "GOON_NPC_WARLOCK_GREATOLDONE_LVL_19"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_WARLOCK_GREATOLDONE_LVL_14"
+    data "StackPriority" "19"
+
+    // <node id="Progression">
+    //     <attribute id="Level" type="uint8" value="19"/>
+    //     <attribute id="Name" type="LSString" value="GreatOldOne"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="Selectors" type="LSString" value="SelectSpells(6d2edca9-71a7-4f3f-89f0-fccfff0bdee5,1,1,,,e9127b70-22b7-42a1-b172-d02f828f260a)"/>
+    //     <attribute id="TableUUID" type="guid" value="216e779e-3452-466c-933d-fb5723b90802"/>
+    //     <attribute id="UUID" type="guid" value="59c365a0-d0c6-46e0-bb2f-f39601cacf08"/>
+    
+    new entry "GOON_NPC_WARLOCK_GREATOLDONE_LVL_20"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_WARLOCK_GREATOLDONE_LVL_14"
+    data "StackPriority" "20"
+
+    // <node id="Progression">
+    //     <attribute id="Level" type="uint8" value="20"/>
+    //     <attribute id="Name" type="LSString" value="GreatOldOne"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="Selectors" type="LSString" value="SelectSpells(6d2edca9-71a7-4f3f-89f0-fccfff0bdee5,0,1,,,e9127b70-22b7-42a1-b172-d02f828f260a)"/>
+    //     <attribute id="TableUUID" type="guid" value="216e779e-3452-466c-933d-fb5723b90802"/>
+    //     <attribute id="UUID" type="guid" value="07a2215d-a413-411b-84b0-cbd063462381"/>

@@ -77,15 +77,6 @@ data "Description" "he7ee7064g55bfg4b5bga7a2g0f049b35f91e;1"
 data "Icon" "Action_TempestuousMagic"
 data "Boosts" ""
 
-// ==================================== Warlock ====================================
-
-new entry "CX_Warlock_GreatOldOne_Boost"
-type "PassiveData"
-data "DisplayName" "hbd91b70fgdebeg4f12g8bd8g2c0f863d3656;1"
-data "Description" "h1843d056gfbaag473eg8a99g0d5bea998fce;1"
-data "Icon" "PassiveFeature_ClarifiedMortality"
-data "Boosts" ""
-
 // ==================================== Wizard ====================================
 
 new entry "CX_Wizard_Boost"
