@@ -79,13 +79,6 @@ data "Boosts" ""
 
 // ==================================== Wizard ====================================
 
-new entry "CX_Wizard_Boost"
-type "PassiveData"
-data "DisplayName" "h90218be8gf884g45e3g9024g6747c175e952;1"
-data "Description" "he480cbbbg8bbeg4bb9gb3c2g8929f117fd2b;1"
-data "Icon" "PassiveFeature_ImprovedAbjuration"
-data "Boosts" ""
-
 new entry "CX_Wizard_Abjuration_Boost"
 type "PassiveData"
 data "DisplayName" "h8505ff22gb614g4657g8915g81a1561d0160;1"

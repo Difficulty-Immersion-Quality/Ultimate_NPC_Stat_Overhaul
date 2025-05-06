@@ -1879,19 +1879,20 @@
                     <attribute id="UUID" type="guid" value="a27bdd70-eac9-4bc8-894f-df2b69a111e0"/>
                 </node>
             <!-- WIZARD -->
-                <!-- TODO: Wizard progression is literally just spell slots, which is perfect for basic NPCs with CX_Magic_Boost. We create a custom Wizard progression for more respectable NPCS. -->
                 <node id="Progression">
-                    <attribute id="Boosts" type="LSString" value="Tag(WIZARD);ActionResource(SpellSlot,2,1);ProficiencyBonus(SavingThrow,Intelligence);ProficiencyBonus(SavingThrow,Wisdom)"/>
+                    <!-- <attribute id="Boosts" type="LSString" value="ActionResource(SpellSlot,2,1);ProficiencyBonus(SavingThrow,Intelligence);ProficiencyBonus(SavingThrow,Wisdom)"/> -->
+                    <attribute id="Boosts" type="LSString" value="Tag(WIZARD);ActionResource(SpellSlot,2,1);ProficiencyBonus(SavingThrow,Intelligence);ProficiencyBonus(SavingThrow,Wisdom);Proficiency(Daggers);Proficiency(Quarterstaffs);Proficiency(LightCrossbows);ActionResource(ArcaneRecoveryPoint,1,0);UnlockSpell(Shout_ArcaneRecovery,AddChildren)"/>
                     <attribute id="Level" type="uint8" value="1"/>
                     <attribute id="Name" type="LSString" value="NPC_Wizard"/>
                     <!-- <attribute id="PassivesAdded" type="LSString" value=""/> -->
-                    <attribute id="PassivesAdded" type="LSString" value="Goon_Wizard_NPC_Progressions;CX_Wizard_Boost;CX_Magic_Boost"/>
+                    <attribute id="PassivesAdded" type="LSString" value="Goon_Wizard_NPC_Progressions;CX_Wizard_Boost;CX_Magic_Boost;UnlockedSpellSlotLevel1"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <!-- <attribute id="Selectors" type="LSString" value="SelectSkills(9f3a9f8d-f645-40b5-b36f-fb079b7b805e,2);SelectSpells(3cae2e56-9871-4cef-bba6-96845ea765fa,3,0,,,,AlwaysPrepared);SelectSpells(11f331b0-e8b7-473b-9d1f-19e8e4178d7d,6,0);AddSpells(34c3321d-75ab-4b50-a44d-cbac8705a360,,,,AlwaysPrepared);SelectAbilityBonus(b9149c8e-52c8-46e5-9cb6-fc39301c05fe,AbilityBonus,2,1)"/> -->
                     <attribute id="TableUUID" type="guid" value="44bdbc5e-a003-4d61-87f0-5ced20d3804e"/>
                     <attribute id="UUID" type="guid" value="c58ef8c9-45d2-41cf-b3f8-d087153de86a"/>
                 </node>
                 <node id="Progression">
-                    <attribute id="Boosts" type="LSString" value="ActionResource(SpellSlot,1,1);"/>
+                    <attribute id="Boosts" type="LSString" value="ActionResource(SpellSlot,1,1)"/>
                     <attribute id="Level" type="uint8" value="2"/>
                     <attribute id="Name" type="LSString" value="NPC_Wizard"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
@@ -1899,16 +1900,19 @@
                     <attribute id="UUID" type="guid" value="eb2577a2-1393-4e17-8e75-8e7e2c448c5b"/>
                 </node>
                 <node id="Progression">
-                    <attribute id="Boosts" type="LSString" value="ActionResource(SpellSlot,1,1);ActionResource(SpellSlot,2,2);"/>
+                    <!-- <attribute id="Boosts" type="LSString" value="ActionResource(SpellSlot,1,1);ActionResource(SpellSlot,2,2);"/> -->
+                    <attribute id="Boosts" type="LSString" value="ActionResource(SpellSlot,1,1);ActionResource(SpellSlot,2,2);ActionResource(ArcaneRecoveryPoint,1,0)"/>
                     <attribute id="Level" type="uint8" value="3"/>
                     <attribute id="Name" type="LSString" value="NPC_Wizard"/>
+                    <!-- <attribute id="PassivesAdded" type="LSString" value=""/> -->
+                    <attribute id="PassivesAdded" type="LSString" value="UnlockedSpellSlotLevel2"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
                     <attribute id="TableUUID" type="guid" value="44bdbc5e-a003-4d61-87f0-5ced20d3804e"/>
                     <attribute id="UUID" type="guid" value="8ab7fa9c-6ef0-47e5-92ca-e44a4e4282ce"/>
                 </node>
                 <node id="Progression">
-                    <!-- TODO: Roulette an appropriate feat? -->
-                    <attribute id="Boosts" type="LSString" value="ActionResource(SpellSlot,1,2);"/>
+                    <!-- <attribute id="AllowImprovement" type="bool" value="true"/> -->
+                    <attribute id="Boosts" type="LSString" value="ActionResource(SpellSlot,1,2)"/>
                     <attribute id="Level" type="uint8" value="4"/>
                     <attribute id="Name" type="LSString" value="NPC_Wizard"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
@@ -1916,15 +1920,18 @@
                     <attribute id="UUID" type="guid" value="302b904d-d70b-4bd9-aac7-2520bde2de04"/>
                 </node>
                 <node id="Progression">
-                    <attribute id="Boosts" type="LSString" value="ActionResource(SpellSlot,2,3);"/>
+                    <!-- <attribute id="Boosts" type="LSString" value="ActionResource(SpellSlot,2,3);"/> -->
+                    <attribute id="Boosts" type="LSString" value="ActionResource(SpellSlot,2,3);ActionResource(ArcaneRecoveryPoint,1,0)"/>
                     <attribute id="Level" type="uint8" value="5"/>
                     <attribute id="Name" type="LSString" value="NPC_Wizard"/>
+                    <!-- <attribute id="PassivesAdded" type="LSString" value=""/> -->
+                    <attribute id="PassivesAdded" type="LSString" value="UnlockedSpellSlotLevel3"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
                     <attribute id="TableUUID" type="guid" value="44bdbc5e-a003-4d61-87f0-5ced20d3804e"/>
                     <attribute id="UUID" type="guid" value="e2183af3-db26-4dbf-b253-c87c522ff7ba"/>
                 </node>
                 <node id="Progression">
-                    <attribute id="Boosts" type="LSString" value="ActionResource(SpellSlot,1,3);"/>
+                    <attribute id="Boosts" type="LSString" value="ActionResource(SpellSlot,1,3)"/>
                     <attribute id="Level" type="uint8" value="6"/>
                     <attribute id="Name" type="LSString" value="NPC_Wizard"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
@@ -1932,7 +1939,8 @@
                     <attribute id="UUID" type="guid" value="32257335-9c62-4730-a9ea-4820cce3113c"/>
                 </node>
                 <node id="Progression">
-                    <attribute id="Boosts" type="LSString" value="ActionResource(SpellSlot,1,4);"/>
+                    <!-- <attribute id="Boosts" type="LSString" value="ActionResource(SpellSlot,1,4);"/> -->
+                    <attribute id="Boosts" type="LSString" value="ActionResource(SpellSlot,1,4);ActionResource(ArcaneRecoveryPoint,1,0)"/>
                     <attribute id="Level" type="uint8" value="7"/>
                     <attribute id="Name" type="LSString" value="NPC_Wizard"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
@@ -1940,8 +1948,8 @@
                     <attribute id="UUID" type="guid" value="75f2793c-c17b-4b73-a151-3e749491d391"/>
                 </node>
                 <node id="Progression">
-                    <!-- TODO: Roulette an appropriate feat? -->
-                    <attribute id="Boosts" type="LSString" value="ActionResource(SpellSlot,1,4);"/>
+                    <!-- <attribute id="AllowImprovement" type="bool" value="true"/> -->
+                    <attribute id="Boosts" type="LSString" value="ActionResource(SpellSlot,1,4)"/>
                     <attribute id="Level" type="uint8" value="8"/>
                     <attribute id="Name" type="LSString" value="NPC_Wizard"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
@@ -1949,7 +1957,8 @@
                     <attribute id="UUID" type="guid" value="e98a00b8-1b8e-4135-b9ca-973d0d361262"/>
                 </node>
                 <node id="Progression">
-                    <attribute id="Boosts" type="LSString" value="ActionResource(SpellSlot,1,4);ActionResource(SpellSlot,1,5);"/>
+                    <!-- <attribute id="Boosts" type="LSString" value="ActionResource(SpellSlot,1,4);ActionResource(SpellSlot,1,5);"/> -->
+                    <attribute id="Boosts" type="LSString" value="ActionResource(SpellSlot,1,4);ActionResource(SpellSlot,1,5);ActionResource(ArcaneRecoveryPoint,1,0)"/>
                     <attribute id="Level" type="uint8" value="9"/>
                     <attribute id="Name" type="LSString" value="NPC_Wizard"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
@@ -1957,7 +1966,7 @@
                     <attribute id="UUID" type="guid" value="000ab40d-4e9f-4cd9-8006-48804f68e41f"/>
                 </node>
                 <node id="Progression">
-                    <attribute id="Boosts" type="LSString" value="ActionResource(SpellSlot,1,5);"/>
+                    <attribute id="Boosts" type="LSString" value="ActionResource(SpellSlot,1,5)"/>
                     <attribute id="Level" type="uint8" value="10"/>
                     <attribute id="Name" type="LSString" value="NPC_Wizard"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
@@ -1965,7 +1974,8 @@
                     <attribute id="UUID" type="guid" value="73afeda9-1c50-48af-8991-a22450bb380b"/>
                 </node>
                 <node id="Progression">
-                    <attribute id="Boosts" type="LSString" value="ActionResource(SpellSlot,1,6);"/>
+                    <!-- <attribute id="Boosts" type="LSString" value="ActionResource(SpellSlot,1,6)"/> -->
+                    <attribute id="Boosts" type="LSString" value="ActionResource(SpellSlot,1,6);ActionResource(ArcaneRecoveryPoint,1,0)"/>
                     <attribute id="Level" type="uint8" value="11"/>
                     <attribute id="Name" type="LSString" value="NPC_Wizard"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
@@ -1973,12 +1983,79 @@
                     <attribute id="UUID" type="guid" value="95ea2ab3-165b-4b37-9c60-23a2a4243607"/>
                 </node>
                 <node id="Progression">
-                    <!-- TODO: Roulette an appropriate feat? -->
+                    <!-- <attribute id="AllowImprovement" type="bool" value="true"/> -->
                     <attribute id="Level" type="uint8" value="12"/>
                     <attribute id="Name" type="LSString" value="NPC_Wizard"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
                     <attribute id="TableUUID" type="guid" value="44bdbc5e-a003-4d61-87f0-5ced20d3804e"/>
                     <attribute id="UUID" type="guid" value="ed4ccf97-4367-45da-a439-3516a968573b"/>
+                </node>
+                <!-- WIZARD: EXPANSION 13-20 -->
+                <node id="Progression">
+                    <attribute id="Boosts" type="LSString" value="ActionResource(SpellSlot,1,7);ActionResource(ArcaneRecoveryPoint,1,0)"/>
+                    <attribute id="Level" type="uint8" value="13"/>
+                    <attribute id="Name" type="LSString" value="NPC_Wizard"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="44bdbc5e-a003-4d61-87f0-5ced20d3804e"/>
+                    <attribute id="UUID" type="guid" value="22b18a3f-f296-4202-9c6e-7e1be2de2b08"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="14"/>
+                    <attribute id="Name" type="LSString" value="NPC_Wizard"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="44bdbc5e-a003-4d61-87f0-5ced20d3804e"/>
+                    <attribute id="UUID" type="guid" value="78681185-d63f-4b50-a7ef-0a46b6aa5f5f"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Boosts" type="LSString" value="ActionResource(SpellSlot,1,8);ActionResource(ArcaneRecoveryPoint,1,0)"/>
+                    <attribute id="Level" type="uint8" value="15"/>
+                    <attribute id="Name" type="LSString" value="NPC_Wizard"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="44bdbc5e-a003-4d61-87f0-5ced20d3804e"/>
+                    <attribute id="UUID" type="guid" value="8826c915-7c30-43e2-a2fe-9877a986dcaf"/>
+                </node>
+                <node id="Progression">
+                    <!-- <attribute id="AllowImprovement" type="bool" value="true"/> -->
+                    <attribute id="Level" type="uint8" value="16"/>
+                    <attribute id="Name" type="LSString" value="NPC_Wizard"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="44bdbc5e-a003-4d61-87f0-5ced20d3804e"/>
+                    <attribute id="UUID" type="guid" value="0605b22a-46a9-49d5-946f-e087580471bd"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Boosts" type="LSString" value="ActionResource(SpellSlot,1,9);ActionResource(ArcaneRecoveryPoint,1,0)"/>
+                    <attribute id="Level" type="uint8" value="17"/>
+                    <attribute id="Name" type="LSString" value="NPC_Wizard"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="44bdbc5e-a003-4d61-87f0-5ced20d3804e"/>
+                    <attribute id="UUID" type="guid" value="fa782d21-c1a9-4a60-8f77-2d31e72c07db"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Boosts" type="LSString" value="ActionResource(SpellSlot,1,5);ActionResource(SpellMastery1st,1,0);ActionResource(SpellMastery2nd,1,0)"/>
+                    <attribute id="Level" type="uint8" value="18"/>
+                    <attribute id="Name" type="LSString" value="NPC_Wizard"/>
+                    <attribute id="PassivesAdded" type="LSString" value="SpellMastery;SpellMastery_2;SpellMastery_3;SpellMastery_4;SpellMastery_5;SpellMastery_Toggle"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="44bdbc5e-a003-4d61-87f0-5ced20d3804e"/>
+                    <attribute id="UUID" type="guid" value="0def9a38-3d6f-4af1-82bf-969749213194"/>
+                </node>
+                <node id="Progression">
+                    <!-- <attribute id="AllowImprovement" type="bool" value="true"/> -->
+                    <attribute id="Boosts" type="LSString" value="ActionResource(SpellSlot,1,6);ActionResource(ArcaneRecoveryPoint,1,0)"/>
+                    <attribute id="Level" type="uint8" value="19"/>
+                    <attribute id="Name" type="LSString" value="NPC_Wizard"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="44bdbc5e-a003-4d61-87f0-5ced20d3804e"/>
+                    <attribute id="UUID" type="guid" value="83f84349-de5b-479a-9e3a-153bde7c77a9"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Boosts" type="LSString" value="ActionResource(SpellSlot,1,7)"/>
+                    <attribute id="Level" type="uint8" value="20"/>
+                    <attribute id="Name" type="LSString" value="NPC_Wizard"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <!-- <attribute id="Selectors" type="LSString" value="SelectPassives(ec16c6d2-5316-46e7-9ed6-bedf5d4169b2,2,SignatureSpells)"/> -->
+                    <attribute id="TableUUID" type="guid" value="44bdbc5e-a003-4d61-87f0-5ced20d3804e"/>
+                    <attribute id="UUID" type="guid" value="93a60cc8-801d-4768-a33e-53b67ec2eaa5"/>
                 </node>
             <!-- FLAMING FIST -->
                 <!-- <node id="Progression">

@@ -1,0 +1,207 @@
+// ==================================== Main class progression passive ====================================
+
+    new entry "Goon_Wizard_NPC_Progressions"
+    type "PassiveData"
+    using "Goon_NPC_Progressions_Template"
+    data "DisplayName" "hda3c8533gc225g4f6cgb65fg22e6f4ea9deb;1"
+    data "Description" "h26dbae4dg088dg4ad8ga389gf5246cabdf7e;1"
+    data "Properties" "Highlighted"
+    data "Icon" "GenericIcon_Intent_Buff"
+
+// ==================================== Combat Extender and Progression Stat Entries ====================================
+
+// Main passive
+    new entry "CX_Wizard_Boost"
+    type "PassiveData"
+    data "DisplayName" "h90218be8gf884g45e3g9024g6747c175e952;1"
+    data "Description" "he480cbbbg8bbeg4bb9gb3c2g8929f117fd2b;1"
+    data "Icon" "PassiveFeature_ImprovedAbjuration"
+    data "Boosts" ""
+    data "StatsFunctorContext" "OnCreate;OnStatusApplied;OnStatusRemoved"
+    data "Conditions" "(not HasPassive('Goon_Wizard_NPC_Progressions'))"
+    data "StatsFunctors" "IF(not CharacterLevelGreaterThan(1,GetOwner(context.Source))):ApplyStatus(GOON_NPC_WIZARD_LVL_1,100,-1);IF(CharacterLevelGreaterThan(1,GetOwner(context.Source)) and not CharacterLevelGreaterThan(2,GetOwner(context.Source))):ApplyStatus(GOON_NPC_WIZARD_LVL_2,100,-1);IF(CharacterLevelGreaterThan(2,GetOwner(context.Source)) and not CharacterLevelGreaterThan(3,GetOwner(context.Source))):ApplyStatus(GOON_NPC_WIZARD_LVL_3,100,-1);IF(CharacterLevelGreaterThan(3,GetOwner(context.Source)) and not CharacterLevelGreaterThan(4,GetOwner(context.Source))):ApplyStatus(GOON_NPC_WIZARD_LVL_4,100,-1);IF(CharacterLevelGreaterThan(4,GetOwner(context.Source)) and not CharacterLevelGreaterThan(5,GetOwner(context.Source))):ApplyStatus(GOON_NPC_WIZARD_LVL_5,100,-1);IF(CharacterLevelGreaterThan(5,GetOwner(context.Source)) and not CharacterLevelGreaterThan(6,GetOwner(context.Source))):ApplyStatus(GOON_NPC_WIZARD_LVL_6,100,-1);IF(CharacterLevelGreaterThan(6,GetOwner(context.Source)) and not CharacterLevelGreaterThan(7,GetOwner(context.Source))):ApplyStatus(GOON_NPC_WIZARD_LVL_7,100,-1);IF(CharacterLevelGreaterThan(7,GetOwner(context.Source)) and not CharacterLevelGreaterThan(8,GetOwner(context.Source))):ApplyStatus(GOON_NPC_WIZARD_LVL_8,100,-1);IF(CharacterLevelGreaterThan(8,GetOwner(context.Source)) and not CharacterLevelGreaterThan(9,GetOwner(context.Source))):ApplyStatus(GOON_NPC_WIZARD_LVL_9,100,-1);IF(CharacterLevelGreaterThan(9,GetOwner(context.Source)) and not CharacterLevelGreaterThan(10,GetOwner(context.Source))):ApplyStatus(GOON_NPC_WIZARD_LVL_10,100,-1);IF(CharacterLevelGreaterThan(10,GetOwner(context.Source)) and not CharacterLevelGreaterThan(11,GetOwner(context.Source))):ApplyStatus(GOON_NPC_WIZARD_LVL_11,100,-1);IF(CharacterLevelGreaterThan(11,GetOwner(context.Source)) and not CharacterLevelGreaterThan(12,GetOwner(context.Source))):ApplyStatus(GOON_NPC_WIZARD_LVL_12,100,-1);IF(CharacterLevelGreaterThan(12,GetOwner(context.Source)) and not CharacterLevelGreaterThan(13,GetOwner(context.Source))):ApplyStatus(GOON_NPC_WIZARD_LVL_13,100,-1);IF(CharacterLevelGreaterThan(13,GetOwner(context.Source)) and not CharacterLevelGreaterThan(14,GetOwner(context.Source))):ApplyStatus(GOON_NPC_WIZARD_LVL_14,100,-1);IF(CharacterLevelGreaterThan(14,GetOwner(context.Source)) and not CharacterLevelGreaterThan(15,GetOwner(context.Source))):ApplyStatus(GOON_NPC_WIZARD_LVL_15,100,-1);IF(CharacterLevelGreaterThan(15,GetOwner(context.Source)) and not CharacterLevelGreaterThan(16,GetOwner(context.Source))):ApplyStatus(GOON_NPC_WIZARD_LVL_16,100,-1);IF(CharacterLevelGreaterThan(16,GetOwner(context.Source)) and not CharacterLevelGreaterThan(17,GetOwner(context.Source))):ApplyStatus(GOON_NPC_WIZARD_LVL_17,100,-1);IF(CharacterLevelGreaterThan(17,GetOwner(context.Source)) and not CharacterLevelGreaterThan(18,GetOwner(context.Source))):ApplyStatus(GOON_NPC_WIZARD_LVL_18,100,-1);IF(CharacterLevelGreaterThan(18,GetOwner(context.Source)) and not CharacterLevelGreaterThan(19,GetOwner(context.Source))):ApplyStatus(GOON_NPC_WIZARD_LVL_19,100,-1);IF(CharacterLevelGreaterThan(19,GetOwner(context.Source))):ApplyStatus(GOON_NPC_WIZARD_LVL_20,100,-1)"
+
+// Template
+    new entry "GOON_NPC_WIZARD_PROGRESSION_TEMPLATE"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    data "StatusPropertyFlags" "DisableOverhead;DisableCombatlog;DisablePortraitIndicator;ApplyToDead;IgnoreResting"
+    data "RemoveEvents" "OnStatusApplied;OnStatusRemoved"
+    data "StackId" "GOON_NPC_WIZARD_PROGRESSION_TEMPLATE"
+    data "StackType" "Ignore"
+    data "RemoveConditions" "not HasPassive('CX_Wizard_Boost') or HasPassive('Goon_Wizard_NPC_Progressions')"
+
+// Progression statuses
+    new entry "GOON_NPC_WIZARD_LVL_1_MULTICLASS"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_WIZARD_PROGRESSION_TEMPLATE"
+    data "StackPriority" "1"
+    data "Passives" "UnlockedSpellSlotLevel1"
+    data "Boosts" "ActionResource(ArcaneRecoveryPoint,1,0);UnlockSpell(Shout_ArcaneRecovery,AddChildren)"
+
+    // <node id="Progression">
+    //     <attribute id="Boosts" type="LSString" value="ActionResource(ArcaneRecoveryPoint,1,0)"/>
+    //     <attribute id="IsMulticlass" type="bool" value="true"/>
+    //     <attribute id="Level" type="uint8" value="1"/>
+    //     <attribute id="Name" type="LSString" value="Wizard"/>
+    //     <attribute id="PassivesAdded" type="LSString" value="UnlockedSpellSlotLevel1"/>
+    //     <attribute id="ProgressionType" type="uint8" value="0"/>
+    //     <attribute id="Selectors" type="LSString" value="SelectSpells(3cae2e56-9871-4cef-bba6-96845ea765fa,3,0,,,,AlwaysPrepared);SelectSpells(11f331b0-e8b7-473b-9d1f-19e8e4178d7d,6,0);AddSpells(34c3321d-75ab-4b50-a44d-cbac8705a360,,,,AlwaysPrepared)"/>
+    //     <attribute id="TableUUID" type="guid" value="d18eda7e-4b7d-490d-9952-cd33a3c60479"/>
+    //     <attribute id="UUID" type="guid" value="92744093-a9b4-4df1-9e84-9d0b1dfea91d"/>
+
+    new entry "GOON_NPC_WIZARD_LVL_1"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_WIZARD_PROGRESSION_TEMPLATE"
+    data "StackPriority" "1"
+    data "Passives" "CX_Magic_Boost;UnlockedSpellSlotLevel1"
+    data "Boosts" "Tag(WIZARD);ActionResource(SpellSlot,2,1);ProficiencyBonus(SavingThrow,Intelligence);ProficiencyBonus(SavingThrow,Wisdom);Proficiency(Daggers);Proficiency(Quarterstaffs);Proficiency(LightCrossbows);ActionResource(ArcaneRecoveryPoint,1,0);UnlockSpell(Shout_ArcaneRecovery,AddChildren)"
+
+    new entry "GOON_NPC_WIZARD_LVL_2"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_WIZARD_PROGRESSION_TEMPLATE"
+    data "StackPriority" "2"
+    data "Passives" "CX_Magic_Boost;UnlockedSpellSlotLevel1"
+    data "Boosts" "Tag(WIZARD);ActionResource(SpellSlot,3,1);ProficiencyBonus(SavingThrow,Intelligence);ProficiencyBonus(SavingThrow,Wisdom);Proficiency(Daggers);Proficiency(Quarterstaffs);Proficiency(LightCrossbows);ActionResource(ArcaneRecoveryPoint,1,0);UnlockSpell(Shout_ArcaneRecovery,AddChildren)"
+
+    new entry "GOON_NPC_WIZARD_LVL_3"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_WIZARD_PROGRESSION_TEMPLATE"
+    data "StackPriority" "3"
+    data "Passives" "CX_Magic_Boost;UnlockedSpellSlotLevel1;UnlockedSpellSlotLevel2"
+    data "Boosts" "Tag(WIZARD);ActionResource(SpellSlot,4,1);ProficiencyBonus(SavingThrow,Intelligence);ProficiencyBonus(SavingThrow,Wisdom);Proficiency(Daggers);Proficiency(Quarterstaffs);Proficiency(LightCrossbows);ActionResource(ArcaneRecoveryPoint,2,0);UnlockSpell(Shout_ArcaneRecovery,AddChildren);ActionResource(SpellSlot,2,2)"
+
+    new entry "GOON_NPC_WIZARD_LVL_4"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_WIZARD_PROGRESSION_TEMPLATE"
+    data "StackPriority" "4"
+    data "Passives" "CX_Magic_Boost;UnlockedSpellSlotLevel1;UnlockedSpellSlotLevel2"
+    data "Boosts" "Tag(WIZARD);ActionResource(SpellSlot,4,1);ProficiencyBonus(SavingThrow,Intelligence);ProficiencyBonus(SavingThrow,Wisdom);Proficiency(Daggers);Proficiency(Quarterstaffs);Proficiency(LightCrossbows);ActionResource(ArcaneRecoveryPoint,2,0);UnlockSpell(Shout_ArcaneRecovery,AddChildren);ActionResource(SpellSlot,3,2)"
+
+    new entry "GOON_NPC_WIZARD_LVL_5"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_WIZARD_PROGRESSION_TEMPLATE"
+    data "StackPriority" "5"
+    data "Passives" "CX_Magic_Boost;UnlockedSpellSlotLevel1;UnlockedSpellSlotLevel2;UnlockedSpellSlotLevel3"
+    data "Boosts" "Tag(WIZARD);ActionResource(SpellSlot,4,1);ProficiencyBonus(SavingThrow,Intelligence);ProficiencyBonus(SavingThrow,Wisdom);Proficiency(Daggers);Proficiency(Quarterstaffs);Proficiency(LightCrossbows);ActionResource(ArcaneRecoveryPoint,3,0);UnlockSpell(Shout_ArcaneRecovery,AddChildren);ActionResource(SpellSlot,3,2);ActionResource(SpellSlot,2,3)"
+
+    new entry "GOON_NPC_WIZARD_LVL_6"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_WIZARD_PROGRESSION_TEMPLATE"
+    data "StackPriority" "6"
+    data "Passives" "CX_Magic_Boost;UnlockedSpellSlotLevel1;UnlockedSpellSlotLevel2;UnlockedSpellSlotLevel3"
+    data "Boosts" "Tag(WIZARD);ActionResource(SpellSlot,4,1);ProficiencyBonus(SavingThrow,Intelligence);ProficiencyBonus(SavingThrow,Wisdom);Proficiency(Daggers);Proficiency(Quarterstaffs);Proficiency(LightCrossbows);ActionResource(ArcaneRecoveryPoint,3,0);UnlockSpell(Shout_ArcaneRecovery,AddChildren);ActionResource(SpellSlot,3,2);ActionResource(SpellSlot,3,3)"
+
+    new entry "GOON_NPC_WIZARD_LVL_7"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_WIZARD_PROGRESSION_TEMPLATE"
+    data "StackPriority" "7"
+    data "Passives" "CX_Magic_Boost;UnlockedSpellSlotLevel1;UnlockedSpellSlotLevel2;UnlockedSpellSlotLevel3"
+    data "Boosts" "Tag(WIZARD);ActionResource(SpellSlot,4,1);ProficiencyBonus(SavingThrow,Intelligence);ProficiencyBonus(SavingThrow,Wisdom);Proficiency(Daggers);Proficiency(Quarterstaffs);Proficiency(LightCrossbows);ActionResource(ArcaneRecoveryPoint,4,0);UnlockSpell(Shout_ArcaneRecovery,AddChildren);ActionResource(SpellSlot,3,2);ActionResource(SpellSlot,3,3);ActionResource(SpellSlot,1,4)"
+
+    new entry "GOON_NPC_WIZARD_LVL_8"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_WIZARD_PROGRESSION_TEMPLATE"
+    data "StackPriority" "8"
+    data "Passives" "CX_Magic_Boost;UnlockedSpellSlotLevel1;UnlockedSpellSlotLevel2;UnlockedSpellSlotLevel3"
+    data "Boosts" "Tag(WIZARD);ActionResource(SpellSlot,4,1);ProficiencyBonus(SavingThrow,Intelligence);ProficiencyBonus(SavingThrow,Wisdom);Proficiency(Daggers);Proficiency(Quarterstaffs);Proficiency(LightCrossbows);ActionResource(ArcaneRecoveryPoint,4,0);UnlockSpell(Shout_ArcaneRecovery,AddChildren);ActionResource(SpellSlot,3,2);ActionResource(SpellSlot,3,3);ActionResource(SpellSlot,2,4)"
+
+    new entry "GOON_NPC_WIZARD_LVL_9"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_WIZARD_PROGRESSION_TEMPLATE"
+    data "StackPriority" "9"
+    data "Passives" "CX_Magic_Boost;UnlockedSpellSlotLevel1;UnlockedSpellSlotLevel2;UnlockedSpellSlotLevel3"
+    data "Boosts" "Tag(WIZARD);ActionResource(SpellSlot,4,1);ProficiencyBonus(SavingThrow,Intelligence);ProficiencyBonus(SavingThrow,Wisdom);Proficiency(Daggers);Proficiency(Quarterstaffs);Proficiency(LightCrossbows);ActionResource(ArcaneRecoveryPoint,5,0);UnlockSpell(Shout_ArcaneRecovery,AddChildren);ActionResource(SpellSlot,3,2);ActionResource(SpellSlot,3,3);ActionResource(SpellSlot,3,4);ActionResource(SpellSlot,1,5)"
+
+    new entry "GOON_NPC_WIZARD_LVL_10"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_WIZARD_PROGRESSION_TEMPLATE"
+    data "StackPriority" "10"
+    data "Passives" "CX_Magic_Boost;UnlockedSpellSlotLevel1;UnlockedSpellSlotLevel2;UnlockedSpellSlotLevel3"
+    data "Boosts" "Tag(WIZARD);ActionResource(SpellSlot,4,1);ProficiencyBonus(SavingThrow,Intelligence);ProficiencyBonus(SavingThrow,Wisdom);Proficiency(Daggers);Proficiency(Quarterstaffs);Proficiency(LightCrossbows);ActionResource(ArcaneRecoveryPoint,5,0);UnlockSpell(Shout_ArcaneRecovery,AddChildren);ActionResource(SpellSlot,3,2);ActionResource(SpellSlot,3,3);ActionResource(SpellSlot,3,4);ActionResource(SpellSlot,2,5)"
+
+    new entry "GOON_NPC_WIZARD_LVL_11"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_WIZARD_PROGRESSION_TEMPLATE"
+    data "StackPriority" "11"
+    data "Passives" "CX_Magic_Boost;UnlockedSpellSlotLevel1;UnlockedSpellSlotLevel2;UnlockedSpellSlotLevel3"
+    data "Boosts" "Tag(WIZARD);ActionResource(SpellSlot,4,1);ProficiencyBonus(SavingThrow,Intelligence);ProficiencyBonus(SavingThrow,Wisdom);Proficiency(Daggers);Proficiency(Quarterstaffs);Proficiency(LightCrossbows);ActionResource(ArcaneRecoveryPoint,6,0);UnlockSpell(Shout_ArcaneRecovery,AddChildren);ActionResource(SpellSlot,3,2);ActionResource(SpellSlot,3,3);ActionResource(SpellSlot,3,4);ActionResource(SpellSlot,2,5);ActionResource(SpellSlot,1,6)"
+
+    new entry "GOON_NPC_WIZARD_LVL_12"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_WIZARD_LVL_11"
+    data "StackPriority" "12"
+
+// Expansion levels 13-20
+    new entry "GOON_NPC_WIZARD_LVL_13"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_WIZARD_PROGRESSION_TEMPLATE"
+    data "StackPriority" "13"
+    data "Passives" "CX_Magic_Boost;UnlockedSpellSlotLevel1;UnlockedSpellSlotLevel2;UnlockedSpellSlotLevel3"
+    data "Boosts" "Tag(WIZARD);ActionResource(SpellSlot,4,1);ProficiencyBonus(SavingThrow,Intelligence);ProficiencyBonus(SavingThrow,Wisdom);Proficiency(Daggers);Proficiency(Quarterstaffs);Proficiency(LightCrossbows);ActionResource(ArcaneRecoveryPoint,7,0);UnlockSpell(Shout_ArcaneRecovery,AddChildren);ActionResource(SpellSlot,3,2);ActionResource(SpellSlot,3,3);ActionResource(SpellSlot,3,4);ActionResource(SpellSlot,2,5);ActionResource(SpellSlot,1,6);ActionResource(SpellSlot,1,7)"
+
+    new entry "GOON_NPC_WIZARD_LVL_14"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_WIZARD_LVL_13"
+    data "StackPriority" "14"
+
+    new entry "GOON_NPC_WIZARD_LVL_15"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_WIZARD_PROGRESSION_TEMPLATE"
+    data "StackPriority" "15"
+    data "Passives" "CX_Magic_Boost;UnlockedSpellSlotLevel1;UnlockedSpellSlotLevel2;UnlockedSpellSlotLevel3"
+    data "Boosts" "Tag(WIZARD);ActionResource(SpellSlot,4,1);ProficiencyBonus(SavingThrow,Intelligence);ProficiencyBonus(SavingThrow,Wisdom);Proficiency(Daggers);Proficiency(Quarterstaffs);Proficiency(LightCrossbows);ActionResource(ArcaneRecoveryPoint,8,0);UnlockSpell(Shout_ArcaneRecovery,AddChildren);ActionResource(SpellSlot,3,2);ActionResource(SpellSlot,3,3);ActionResource(SpellSlot,3,4);ActionResource(SpellSlot,2,5);ActionResource(SpellSlot,1,6);ActionResource(SpellSlot,1,7);ActionResource(SpellSlot,1,8)"
+
+    new entry "GOON_NPC_WIZARD_LVL_16"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_WIZARD_LVL_15"
+    data "StackPriority" "16"
+
+    new entry "GOON_NPC_WIZARD_LVL_17"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_WIZARD_PROGRESSION_TEMPLATE"
+    data "StackPriority" "17"
+    data "Passives" "CX_Magic_Boost;UnlockedSpellSlotLevel1;UnlockedSpellSlotLevel2;UnlockedSpellSlotLevel3"
+    data "Boosts" "Tag(WIZARD);ActionResource(SpellSlot,4,1);ProficiencyBonus(SavingThrow,Intelligence);ProficiencyBonus(SavingThrow,Wisdom);Proficiency(Daggers);Proficiency(Quarterstaffs);Proficiency(LightCrossbows);ActionResource(ArcaneRecoveryPoint,9,0);UnlockSpell(Shout_ArcaneRecovery,AddChildren);ActionResource(SpellSlot,3,2);ActionResource(SpellSlot,3,3);ActionResource(SpellSlot,3,4);ActionResource(SpellSlot,2,5);ActionResource(SpellSlot,1,6);ActionResource(SpellSlot,1,7);ActionResource(SpellSlot,1,8);ActionResource(SpellSlot,1,9)"
+
+    new entry "GOON_NPC_WIZARD_LVL_18"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_WIZARD_PROGRESSION_TEMPLATE"
+    data "StackPriority" "18"
+    data "Passives" "CX_Magic_Boost;UnlockedSpellSlotLevel1;UnlockedSpellSlotLevel2;UnlockedSpellSlotLevel3;SpellMastery;SpellMastery_2;SpellMastery_3;SpellMastery_4;SpellMastery_5;SpellMastery_Toggle"
+    data "Boosts" "Tag(WIZARD);ActionResource(SpellSlot,4,1);ProficiencyBonus(SavingThrow,Intelligence);ProficiencyBonus(SavingThrow,Wisdom);Proficiency(Daggers);Proficiency(Quarterstaffs);Proficiency(LightCrossbows);ActionResource(ArcaneRecoveryPoint,9,0);UnlockSpell(Shout_ArcaneRecovery,AddChildren);ActionResource(SpellSlot,3,2);ActionResource(SpellSlot,3,3);ActionResource(SpellSlot,3,4);ActionResource(SpellSlot,3,5);ActionResource(SpellSlot,1,6);ActionResource(SpellSlot,1,7);ActionResource(SpellSlot,1,8);ActionResource(SpellSlot,1,9);ActionResource(SpellMastery1st,1,0);ActionResource(SpellMastery2nd,1,0)"
+
+    new entry "GOON_NPC_WIZARD_LVL_19"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_WIZARD_PROGRESSION_TEMPLATE"
+    data "StackPriority" "19"
+    data "Passives" "CX_Magic_Boost;UnlockedSpellSlotLevel1;UnlockedSpellSlotLevel2;UnlockedSpellSlotLevel3;SpellMastery;SpellMastery_2;SpellMastery_3;SpellMastery_4;SpellMastery_5;SpellMastery_Toggle"
+    data "Boosts" "Tag(WIZARD);ActionResource(SpellSlot,4,1);ProficiencyBonus(SavingThrow,Intelligence);ProficiencyBonus(SavingThrow,Wisdom);Proficiency(Daggers);Proficiency(Quarterstaffs);Proficiency(LightCrossbows);ActionResource(ArcaneRecoveryPoint,10,0);UnlockSpell(Shout_ArcaneRecovery,AddChildren);ActionResource(SpellSlot,3,2);ActionResource(SpellSlot,3,3);ActionResource(SpellSlot,3,4);ActionResource(SpellSlot,3,5);ActionResource(SpellSlot,2,6);ActionResource(SpellSlot,1,7);ActionResource(SpellSlot,1,8);ActionResource(SpellSlot,1,9);ActionResource(SpellMastery1st,1,0);ActionResource(SpellMastery2nd,1,0)"
+
+    new entry "GOON_NPC_WIZARD_LVL_20"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_WIZARD_PROGRESSION_TEMPLATE"
+    data "StackPriority" "20"
+    data "Passives" "CX_Magic_Boost;UnlockedSpellSlotLevel1;UnlockedSpellSlotLevel2;UnlockedSpellSlotLevel3;SpellMastery;SpellMastery_2;SpellMastery_3;SpellMastery_4;SpellMastery_5;SpellMastery_Toggle"
+    data "Boosts" "Tag(WIZARD);ActionResource(SpellSlot,4,1);ProficiencyBonus(SavingThrow,Intelligence);ProficiencyBonus(SavingThrow,Wisdom);Proficiency(Daggers);Proficiency(Quarterstaffs);Proficiency(LightCrossbows);ActionResource(ArcaneRecoveryPoint,10,0);UnlockSpell(Shout_ArcaneRecovery,AddChildren);ActionResource(SpellSlot,3,2);ActionResource(SpellSlot,3,3);ActionResource(SpellSlot,3,4);ActionResource(SpellSlot,3,5);ActionResource(SpellSlot,2,6);ActionResource(SpellSlot,2,7);ActionResource(SpellSlot,1,8);ActionResource(SpellSlot,1,9);ActionResource(SpellMastery1st,1,0);ActionResource(SpellMastery2nd,1,0)"

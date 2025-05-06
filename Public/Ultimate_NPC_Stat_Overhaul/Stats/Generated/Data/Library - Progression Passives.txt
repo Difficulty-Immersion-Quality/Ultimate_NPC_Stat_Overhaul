@@ -43,11 +43,3 @@
     data "Description" "h306a8551g3347g4c3dg99a7g5c609daac297;1"
     data "Properties" "Highlighted"
     data "Icon" "GenericIcon_Intent_Buff"
-
-    new entry "Goon_Wizard_NPC_Progressions"
-    type "PassiveData"
-    using "Goon_NPC_Progressions_Template"
-    data "DisplayName" "hda3c8533gc225g4f6cgb65fg22e6f4ea9deb;1"
-    data "Description" "h26dbae4dg088dg4ad8ga389gf5246cabdf7e;1"
-    data "Properties" "Highlighted"
-    data "Icon" "GenericIcon_Intent_Buff"
