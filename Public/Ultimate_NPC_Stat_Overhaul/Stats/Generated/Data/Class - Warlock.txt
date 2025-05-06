@@ -188,3 +188,243 @@
     data "StackPriority" "20"
     data "Passives" "UnlockedWarlockSpellSlotLevel1;CX_Magic_Boost;UnlockedWarlockSpellSlotLevel2;ThirstingBlade_Check;ThirstingBlade_Blade;ThirstingBlade_Tome;UnlockedWarlockSpellSlotLevel3;EldritchMaster"
     data "Boosts" "Tag(WARLOCK);ProficiencyBonus(SavingThrow,Wisdom);ProficiencyBonus(SavingThrow,Charisma);Proficiency(LightArmor);Proficiency(SimpleWeapons);ActionResourceOverride(WarlockSpellSlot,0,1);ActionResourceOverride(WarlockSpellSlot,0,2);ActionResourceOverride(WarlockSpellSlot,0,3);ActionResource(WarlockSpellSlot,4,5);ActionResourceOverride(WarlockSpellSlot,0,4)"
+
+// ==================================== Subclass: Archfey ====================================
+
+    new entry "CX_Warlock_Archfey_Boost"
+    type "PassiveData"
+    data "DisplayName" "h90440882gb237g45d4g9576g39ca5802004e;1"
+    data "Description" "h3b6be49cg0492g4d95ga0a2g1350c52c1661;1"
+    data "Icon" "Action_FeyPresence"
+    data "Boosts" ""
+    data "StatsFunctorContext" "OnCreate;OnStatusApplied;OnStatusRemoved"
+    data "Conditions" ""
+    data "StatsFunctors" "IF(not ClassLevelHigherOrEqualThan(2,'NPC_WARLOCK') or HasStatus('GOON_NPC_WARLOCK_LVL_1')):ApplyStatus(GOON_NPC_WARLOCK_ARCHFEY_LVL_1,100,-1);IF(ClassLevelHigherOrEqualThan(2,'NPC_WARLOCK') and not ClassLevelHigherOrEqualThan(3,'NPC_WARLOCK') or HasStatus('GOON_NPC_WARLOCK_LVL_2')):ApplyStatus(GOON_NPC_WARLOCK_ARCHFEY_LVL_2,100,-1);IF(ClassLevelHigherOrEqualThan(3,'NPC_WARLOCK') and not ClassLevelHigherOrEqualThan(4,'NPC_WARLOCK') or HasStatus('GOON_NPC_WARLOCK_LVL_3')):ApplyStatus(GOON_NPC_WARLOCK_ARCHFEY_LVL_3,100,-1);IF(ClassLevelHigherOrEqualThan(4,'NPC_WARLOCK') and not ClassLevelHigherOrEqualThan(5,'NPC_WARLOCK') or HasStatus('GOON_NPC_WARLOCK_LVL_4')):ApplyStatus(GOON_NPC_WARLOCK_ARCHFEY_LVL_4,100,-1);IF(ClassLevelHigherOrEqualThan(5,'NPC_WARLOCK') and not ClassLevelHigherOrEqualThan(6,'NPC_WARLOCK') or HasStatus('GOON_NPC_WARLOCK_LVL_5')):ApplyStatus(GOON_NPC_WARLOCK_ARCHFEY_LVL_5,100,-1);IF(ClassLevelHigherOrEqualThan(6,'NPC_WARLOCK') and not ClassLevelHigherOrEqualThan(7,'NPC_WARLOCK') or HasStatus('GOON_NPC_WARLOCK_LVL_6')):ApplyStatus(GOON_NPC_WARLOCK_ARCHFEY_LVL_6,100,-1);IF(ClassLevelHigherOrEqualThan(7,'NPC_WARLOCK') and not ClassLevelHigherOrEqualThan(8,'NPC_WARLOCK') or HasStatus('GOON_NPC_WARLOCK_LVL_7')):ApplyStatus(GOON_NPC_WARLOCK_ARCHFEY_LVL_7,100,-1);IF(ClassLevelHigherOrEqualThan(8,'NPC_WARLOCK') and not ClassLevelHigherOrEqualThan(9,'NPC_WARLOCK') or HasStatus('GOON_NPC_WARLOCK_LVL_8')):ApplyStatus(GOON_NPC_WARLOCK_ARCHFEY_LVL_8,100,-1);IF(ClassLevelHigherOrEqualThan(9,'NPC_WARLOCK') and not ClassLevelHigherOrEqualThan(10,'NPC_WARLOCK') or HasStatus('GOON_NPC_WARLOCK_LVL_9')):ApplyStatus(GOON_NPC_WARLOCK_ARCHFEY_LVL_9,100,-1);IF(ClassLevelHigherOrEqualThan(10,'NPC_WARLOCK') and not ClassLevelHigherOrEqualThan(11,'NPC_WARLOCK') or HasStatus('GOON_NPC_WARLOCK_LVL_10')):ApplyStatus(GOON_NPC_WARLOCK_ARCHFEY_LVL_10,100,-1);IF(ClassLevelHigherOrEqualThan(11,'NPC_WARLOCK') and not ClassLevelHigherOrEqualThan(12,'NPC_WARLOCK') or HasStatus('GOON_NPC_WARLOCK_LVL_11')):ApplyStatus(GOON_NPC_WARLOCK_ARCHFEY_LVL_11,100,-1);IF(ClassLevelHigherOrEqualThan(12,'NPC_WARLOCK') and not ClassLevelHigherOrEqualThan(13,'NPC_WARLOCK') or HasStatus('GOON_NPC_WARLOCK_LVL_12')):ApplyStatus(GOON_NPC_WARLOCK_ARCHFEY_LVL_12,100,-1);IF(ClassLevelHigherOrEqualThan(13,'NPC_WARLOCK') and not ClassLevelHigherOrEqualThan(14,'NPC_WARLOCK') or HasStatus('GOON_NPC_WARLOCK_LVL_13')):ApplyStatus(GOON_NPC_WARLOCK_ARCHFEY_LVL_13,100,-1);IF(ClassLevelHigherOrEqualThan(14,'NPC_WARLOCK') and not ClassLevelHigherOrEqualThan(15,'NPC_WARLOCK') or HasStatus('GOON_NPC_WARLOCK_LVL_14')):ApplyStatus(GOON_NPC_WARLOCK_ARCHFEY_LVL_14,100,-1);IF(ClassLevelHigherOrEqualThan(15,'NPC_WARLOCK') and not ClassLevelHigherOrEqualThan(16,'NPC_WARLOCK') or HasStatus('GOON_NPC_WARLOCK_LVL_15')):ApplyStatus(GOON_NPC_WARLOCK_ARCHFEY_LVL_15,100,-1);IF(ClassLevelHigherOrEqualThan(16,'NPC_WARLOCK') and not ClassLevelHigherOrEqualThan(17,'NPC_WARLOCK') or HasStatus('GOON_NPC_WARLOCK_LVL_16')):ApplyStatus(GOON_NPC_WARLOCK_ARCHFEY_LVL_16,100,-1);IF(ClassLevelHigherOrEqualThan(17,'NPC_WARLOCK') and not ClassLevelHigherOrEqualThan(18,'NPC_WARLOCK') or HasStatus('GOON_NPC_WARLOCK_LVL_17')):ApplyStatus(GOON_NPC_WARLOCK_ARCHFEY_LVL_17,100,-1);IF(ClassLevelHigherOrEqualThan(18,'NPC_WARLOCK') and not ClassLevelHigherOrEqualThan(19,'NPC_WARLOCK') or HasStatus('GOON_NPC_WARLOCK_LVL_18')):ApplyStatus(GOON_NPC_WARLOCK_ARCHFEY_LVL_18,100,-1);IF(ClassLevelHigherOrEqualThan(19,'NPC_WARLOCK') and not ClassLevelHigherOrEqualThan(20,'NPC_WARLOCK') or HasStatus('GOON_NPC_WARLOCK_LVL_19')):ApplyStatus(GOON_NPC_WARLOCK_ARCHFEY_LVL_19,100,-1);IF(ClassLevelHigherOrEqualThan(20,'NPC_WARLOCK') or HasStatus('GOON_NPC_WARLOCK_LVL_20')):ApplyStatus(GOON_NPC_WARLOCK_ARCHFEY_LVL_20,100,-1)"
+
+// Template
+    new entry "GOON_NPC_WARLOCK_ARCHFEY_PROGRESSION_TEMPLATE"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    data "StatusPropertyFlags" "DisableOverhead;DisableCombatlog;DisablePortraitIndicator;ApplyToDead;IgnoreResting"
+    data "RemoveEvents" "OnStatusApplied;OnStatusRemoved"
+    data "StackId" "GOON_NPC_WARLOCK_ARCHFEY_PROGRESSION_TEMPLATE"
+    data "StackType" "Ignore"
+    data "RemoveConditions" "not HasPassive('CX_Something_Something_Boost')"
+
+// Progression statuses
+    new entry "GOON_NPC_WARLOCK_ARCHFEY_LVL_1"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_WARLOCK_ARCHFEY_PROGRESSION_TEMPLATE"
+    data "StackPriority" "1"
+    data "Passives" ""
+    data "Boosts" "UnlockSpell(Shout_FeyPresence_Container,AddChildren)"
+
+    // <node id="Progression">
+    //     <attribute id="Level" type="uint8" value="1"/>
+    //     <attribute id="Name" type="LSString" value="Archfey"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="Selectors" type="LSString" value="AddSpells(489ff3dd-b93e-4a96-b553-b59c07d5cd6f);SelectSpells(e0099b15-2599-4cba-a54b-b25ae03d6519,2,0,,,e9127b70-22b7-42a1-b172-d02f828f260a)"/>
+    //     <attribute id="TableUUID" type="guid" value="7e1e0190-bd32-4ca6-9623-8adebeba74d4"/>
+    //     <attribute id="UUID" type="guid" value="5085c372-c3b7-4910-85f9-e33be18d7071"/>
+
+    new entry "GOON_NPC_WARLOCK_ARCHFEY_LVL_2"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_WARLOCK_ARCHFEY_LVL_1"
+    data "StackPriority" "2"
+
+    // <node id="Progression">
+    //     <attribute id="Level" type="uint8" value="2"/>
+    //     <attribute id="Name" type="LSString" value="Archfey"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="Selectors" type="LSString" value="SelectSpells(e0099b15-2599-4cba-a54b-b25ae03d6519,1,2,,,e9127b70-22b7-42a1-b172-d02f828f260a)"/>
+    //     <attribute id="TableUUID" type="guid" value="7e1e0190-bd32-4ca6-9623-8adebeba74d4"/>
+    //     <attribute id="UUID" type="guid" value="2e30ddf6-e3d2-4891-8e52-1034bcc613af"/>
+
+    new entry "GOON_NPC_WARLOCK_ARCHFEY_LVL_3"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_WARLOCK_ARCHFEY_LVL_1"
+    data "StackPriority" "3"
+
+    // <node id="Progression">
+    //     <attribute id="Level" type="uint8" value="3"/>
+    //     <attribute id="Name" type="LSString" value="Archfey"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="Selectors" type="LSString" value="SelectSpells(0cc2c8ab-9bbc-43a7-a66d-08e47da4c172,1,2,,,e9127b70-22b7-42a1-b172-d02f828f260a)"/>
+    //     <attribute id="TableUUID" type="guid" value="7e1e0190-bd32-4ca6-9623-8adebeba74d4"/>
+    //     <attribute id="UUID" type="guid" value="3fe3b85e-ed6e-4264-9492-07b69516ba18"/>
+
+    new entry "GOON_NPC_WARLOCK_ARCHFEY_LVL_4"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_WARLOCK_ARCHFEY_LVL_1"
+    data "StackPriority" "4"
+
+    // <node id="Progression">
+    //     <attribute id="Level" type="uint8" value="4"/>
+    //     <attribute id="Name" type="LSString" value="Archfey"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="Selectors" type="LSString" value="SelectSpells(f5c4af9c-5d8d-4526-9057-94a4b243cd40,1,0);SelectSpells(0cc2c8ab-9bbc-43a7-a66d-08e47da4c172,1,2,,,e9127b70-22b7-42a1-b172-d02f828f260a)"/>
+    //     <attribute id="TableUUID" type="guid" value="7e1e0190-bd32-4ca6-9623-8adebeba74d4"/>
+    //     <attribute id="UUID" type="guid" value="0020152c-c246-4ddd-9ba3-2703fac71ec0"/>
+
+    new entry "GOON_NPC_WARLOCK_ARCHFEY_LVL_5"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_WARLOCK_ARCHFEY_LVL_1"
+    data "StackPriority" "5"
+
+    // <node id="Progression">
+    //     <attribute id="Level" type="uint8" value="5"/>
+    //     <attribute id="Name" type="LSString" value="Archfey"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="Selectors" type="LSString" value="SelectSpells(f18ad912-e2f4-47a9-8744-73d6a51c2941,1,2,,,e9127b70-22b7-42a1-b172-d02f828f260a)"/>
+    //     <attribute id="TableUUID" type="guid" value="7e1e0190-bd32-4ca6-9623-8adebeba74d4"/>
+    //     <attribute id="UUID" type="guid" value="716cd777-fbdc-4664-aad9-fbf79d7a41cc"/>
+
+    new entry "GOON_NPC_WARLOCK_ARCHFEY_LVL_6"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_WARLOCK_ARCHFEY_PROGRESSION_TEMPLATE"
+    data "StackPriority" "6"
+    data "Passives" "MistyEscape"
+    data "Boosts" "UnlockSpell(Shout_FeyPresence_Container,AddChildren)"
+
+    // <node id="Progression">
+    //     <attribute id="Level" type="uint8" value="6"/>
+    //     <attribute id="Name" type="LSString" value="Archfey"/>
+    //     <attribute id="PassivesAdded" type="LSString" value="MistyEscape"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="Selectors" type="LSString" value="SelectSpells(f18ad912-e2f4-47a9-8744-73d6a51c2941,1,2,,,e9127b70-22b7-42a1-b172-d02f828f260a)"/>
+    //     <attribute id="TableUUID" type="guid" value="7e1e0190-bd32-4ca6-9623-8adebeba74d4"/>
+    //     <attribute id="UUID" type="guid" value="cf49d47c-f9c8-4f5a-9bec-6b20b773d281"/>
+
+    new entry "GOON_NPC_WARLOCK_ARCHFEY_LVL_7"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_WARLOCK_ARCHFEY_LVL_6"
+    data "StackPriority" "7"
+
+    // <node id="Progression">
+    //     <attribute id="Level" type="uint8" value="7"/>
+    //     <attribute id="Name" type="LSString" value="Archfey"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="Selectors" type="LSString" value="SelectSpells(c3d8a4a5-9dae-4193-8322-a5d1c5b89f47,1,2,,,e9127b70-22b7-42a1-b172-d02f828f260a)"/>
+    //     <attribute id="TableUUID" type="guid" value="7e1e0190-bd32-4ca6-9623-8adebeba74d4"/>
+    //     <attribute id="UUID" type="guid" value="4044ba35-4a26-4bf3-8a73-1f64ba04590c"/>
+
+    new entry "GOON_NPC_WARLOCK_ARCHFEY_LVL_8"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_WARLOCK_ARCHFEY_LVL_6"
+    data "StackPriority" "8"
+
+    // <node id="Progression">
+    //     <attribute id="Level" type="uint8" value="8"/>
+    //     <attribute id="Name" type="LSString" value="Archfey"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="Selectors" type="LSString" value="SelectSpells(c3d8a4a5-9dae-4193-8322-a5d1c5b89f47,1,2,,,e9127b70-22b7-42a1-b172-d02f828f260a)"/>
+    //     <attribute id="TableUUID" type="guid" value="7e1e0190-bd32-4ca6-9623-8adebeba74d4"/>
+    //     <attribute id="UUID" type="guid" value="ff3b5b56-364e-49d0-846f-e0b72ba8119d"/>
+
+    new entry "GOON_NPC_WARLOCK_ARCHFEY_LVL_9"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_WARLOCK_ARCHFEY_LVL_6"
+    data "StackPriority" "9"
+
+    // <node id="Progression">
+    //     <attribute id="Level" type="uint8" value="9"/>
+    //     <attribute id="Name" type="LSString" value="Archfey"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="Selectors" type="LSString" value="SelectSpells(0a9b924f-64fb-4f22-b975-5eeedc99b2fd,1,2,,,e9127b70-22b7-42a1-b172-d02f828f260a)"/>
+    //     <attribute id="TableUUID" type="guid" value="7e1e0190-bd32-4ca6-9623-8adebeba74d4"/>
+    //     <attribute id="UUID" type="guid" value="61694edf-c73a-4204-971f-2e96ccfec1e5"/>
+
+    new entry "GOON_NPC_WARLOCK_ARCHFEY_LVL_10"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_WARLOCK_ARCHFEY_PROGRESSION_TEMPLATE"
+    data "StackPriority" "10"
+    data "Passives" "MistyEscape;BeguilingDefenses"
+    data "Boosts" "UnlockSpell(Shout_FeyPresence_Container,AddChildren)"
+
+    // <node id="Progression">
+    //     <attribute id="Level" type="uint8" value="10"/>
+    //     <attribute id="Name" type="LSString" value="Archfey"/>
+    //     <attribute id="PassivesAdded" type="LSString" value="BeguilingDefenses"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="Selectors" type="LSString" value="SelectSpells(0a9b924f-64fb-4f22-b975-5eeedc99b2fd,1,2,,,e9127b70-22b7-42a1-b172-d02f828f260a)"/>
+    //     <attribute id="TableUUID" type="guid" value="7e1e0190-bd32-4ca6-9623-8adebeba74d4"/>
+    //     <attribute id="UUID" type="guid" value="b729065f-7811-4141-abe6-2468e9af68b7"/>
+
+    new entry "GOON_NPC_WARLOCK_ARCHFEY_LVL_11"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_WARLOCK_ARCHFEY_LVL_10"
+    data "StackPriority" "11"
+
+    new entry "GOON_NPC_WARLOCK_ARCHFEY_LVL_12"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_WARLOCK_ARCHFEY_LVL_10"
+    data "StackPriority" "12"
+
+    // <node id="Progression">
+    //     <attribute id="Level" type="uint8" value="12"/>
+    //     <attribute id="Name" type="LSString" value="Archfey"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="Selectors" type="LSString" value="SelectSpells(0a9b924f-64fb-4f22-b975-5eeedc99b2fd,1,2,,,e9127b70-22b7-42a1-b172-d02f828f260a)"/>
+    //     <attribute id="TableUUID" type="guid" value="7e1e0190-bd32-4ca6-9623-8adebeba74d4"/>
+    //     <attribute id="UUID" type="guid" value="17c18ca0-bf00-4809-ba35-16ef8ca3197b"/>
+
+// Expansion levels 13-20
+    new entry "GOON_NPC_WARLOCK_ARCHFEY_LVL_13"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_WARLOCK_ARCHFEY_LVL_10"
+    data "StackPriority" "13"
+    
+    new entry "GOON_NPC_WARLOCK_ARCHFEY_LVL_14"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_WARLOCK_ARCHFEY_LVL_10"
+    data "StackPriority" "14"
+    
+    new entry "GOON_NPC_WARLOCK_ARCHFEY_LVL_15"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_WARLOCK_ARCHFEY_LVL_10"
+    data "StackPriority" "15"
+    
+    new entry "GOON_NPC_WARLOCK_ARCHFEY_LVL_16"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_WARLOCK_ARCHFEY_LVL_10"
+    data "StackPriority" "16"
+    
+    new entry "GOON_NPC_WARLOCK_ARCHFEY_LVL_17"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_WARLOCK_ARCHFEY_LVL_10"
+    data "StackPriority" "17"
+    
+    new entry "GOON_NPC_WARLOCK_ARCHFEY_LVL_18"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_WARLOCK_ARCHFEY_LVL_10"
+    data "StackPriority" "18"
+    
+    new entry "GOON_NPC_WARLOCK_ARCHFEY_LVL_19"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_WARLOCK_ARCHFEY_LVL_10"
+    data "StackPriority" "19"
+    
+    new entry "GOON_NPC_WARLOCK_ARCHFEY_LVL_20"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_WARLOCK_ARCHFEY_LVL_10"
+    data "StackPriority" "20"
