@@ -79,13 +79,6 @@ data "Boosts" ""
 
 // ==================================== Wizard ====================================
 
-    new entry "CX_Wizard_Conjuration_Boost"
-    type "PassiveData"
-    data "DisplayName" "h805c3f38g7da2g4c54ga216g30bd5086ee8a;1"
-    data "Description" "h23bfbf7eg3e48g409fga9b1gbe367aef1724;1"
-    data "Icon" "Spell_Conjuration_MageHand"
-    data "Boosts" ""
-
     new entry "CX_Wizard_Divination_Boost"
     type "PassiveData"
     data "DisplayName" "hf74dfeecg0aebg47f0gafa1gc189e795b12c;1"
