@@ -548,19 +548,19 @@
     data "RemoveConditions" "not HasPassive('CX_Ranger_GloomStalker_Boost')"
 
 // Progression statuses
-    new entry "GOON_NPC_SOMETHING_SOMETHING_LVL_1"
+    new entry "GOON_NPC_RANGER_GLOOMSTALKER_LVL_1"
     type "StatusData"
     data "StatusType" "BOOST"
     using "GOON_NPC_RANGER_GLOOMSTALKER_PROGRESSION_TEMPLATE"
     data "StackPriority" "1"
 
-    new entry "GOON_NPC_SOMETHING_SOMETHING_LVL_2"
+    new entry "GOON_NPC_RANGER_GLOOMSTALKER_LVL_2"
     type "StatusData"
     data "StatusType" "BOOST"
     using "GOON_NPC_RANGER_GLOOMSTALKER_PROGRESSION_TEMPLATE"
     data "StackPriority" "2"
 
-    new entry "GOON_NPC_SOMETHING_SOMETHING_LVL_3"
+    new entry "GOON_NPC_RANGER_GLOOMSTALKER_LVL_3"
     type "StatusData"
     data "StatusType" "BOOST"
     using "GOON_NPC_RANGER_GLOOMSTALKER_PROGRESSION_TEMPLATE"
@@ -577,13 +577,13 @@
     //     <attribute id="TableUUID" type="guid" value="caa60bb8-8ca3-4871-b034-e10a6bc8ca29"/>
     //     <attribute id="UUID" type="guid" value="38240899-8a43-43e4-927c-9dd0d2fa0a50"/>
 
-    new entry "GOON_NPC_SOMETHING_SOMETHING_LVL_4"
+    new entry "GOON_NPC_RANGER_GLOOMSTALKER_LVL_4"
     type "StatusData"
     data "StatusType" "BOOST"
-    using "GOON_NPC_SOMETHING_SOMETHING_LVL_3"
+    using "GOON_NPC_RANGER_GLOOMSTALKER_LVL_3"
     data "StackPriority" "4"
 
-    new entry "GOON_NPC_SOMETHING_SOMETHING_LVL_5"
+    new entry "GOON_NPC_RANGER_GLOOMSTALKER_LVL_5"
     type "StatusData"
     data "StatusType" "BOOST"
     using "GOON_NPC_RANGER_GLOOMSTALKER_PROGRESSION_TEMPLATE"
@@ -599,13 +599,13 @@
     //     <attribute id="TableUUID" type="guid" value="caa60bb8-8ca3-4871-b034-e10a6bc8ca29"/>
     //     <attribute id="UUID" type="guid" value="0593eba5-10a2-42a7-a5be-260cae52b0e0"/>
 
-    new entry "GOON_NPC_SOMETHING_SOMETHING_LVL_6"
+    new entry "GOON_NPC_RANGER_GLOOMSTALKER_LVL_6"
     type "StatusData"
     data "StatusType" "BOOST"
-    using "GOON_NPC_SOMETHING_SOMETHING_LVL_5"
+    using "GOON_NPC_RANGER_GLOOMSTALKER_LVL_5"
     data "StackPriority" "6"
 
-    new entry "GOON_NPC_SOMETHING_SOMETHING_LVL_7"
+    new entry "GOON_NPC_RANGER_GLOOMSTALKER_LVL_7"
     type "StatusData"
     data "StatusType" "BOOST"
     using "GOON_NPC_RANGER_GLOOMSTALKER_PROGRESSION_TEMPLATE"
@@ -621,13 +621,13 @@
     //     <attribute id="TableUUID" type="guid" value="caa60bb8-8ca3-4871-b034-e10a6bc8ca29"/>
     //     <attribute id="UUID" type="guid" value="c785c564-4676-4ad0-adf9-ea3d80caceb2"/>
 
-    new entry "GOON_NPC_SOMETHING_SOMETHING_LVL_8"
+    new entry "GOON_NPC_RANGER_GLOOMSTALKER_LVL_8"
     type "StatusData"
     data "StatusType" "BOOST"
-    using "GOON_NPC_SOMETHING_SOMETHING_LVL_7"
+    using "GOON_NPC_RANGER_GLOOMSTALKER_LVL_7"
     data "StackPriority" "8"
 
-    new entry "GOON_NPC_SOMETHING_SOMETHING_LVL_9"
+    new entry "GOON_NPC_RANGER_GLOOMSTALKER_LVL_9"
     type "StatusData"
     data "StatusType" "BOOST"
     using "GOON_NPC_RANGER_GLOOMSTALKER_PROGRESSION_TEMPLATE"
@@ -643,13 +643,13 @@
     //     <attribute id="TableUUID" type="guid" value="caa60bb8-8ca3-4871-b034-e10a6bc8ca29"/>
     //     <attribute id="UUID" type="guid" value="ccba51a3-43e9-4c4c-83cf-f33ccbf8fb93"/>
 
-    new entry "GOON_NPC_SOMETHING_SOMETHING_LVL_10"
+    new entry "GOON_NPC_RANGER_GLOOMSTALKER_LVL_10"
     type "StatusData"
     data "StatusType" "BOOST"
-    using "GOON_NPC_SOMETHING_SOMETHING_LVL_9"
+    using "GOON_NPC_RANGER_GLOOMSTALKER_LVL_9"
     data "StackPriority" "10"
 
-    new entry "GOON_NPC_SOMETHING_SOMETHING_LVL_11"
+    new entry "GOON_NPC_RANGER_GLOOMSTALKER_LVL_11"
     type "StatusData"
     data "StatusType" "BOOST"
     using "GOON_NPC_RANGER_GLOOMSTALKER_PROGRESSION_TEMPLATE"
@@ -665,26 +665,26 @@
     //     <attribute id="TableUUID" type="guid" value="caa60bb8-8ca3-4871-b034-e10a6bc8ca29"/>
     //     <attribute id="UUID" type="guid" value="9ef95460-d304-459a-8617-d1044fdf8695"/>
 
-    new entry "GOON_NPC_SOMETHING_SOMETHING_LVL_12"
+    new entry "GOON_NPC_RANGER_GLOOMSTALKER_LVL_12"
     type "StatusData"
     data "StatusType" "BOOST"
-    using "GOON_NPC_SOMETHING_SOMETHING_LVL_11"
+    using "GOON_NPC_RANGER_GLOOMSTALKER_LVL_11"
     data "StackPriority" "12"
 
 // Expansion levels 13-20
-    new entry "GOON_NPC_SOMETHING_SOMETHING_LVL_13"
+    new entry "GOON_NPC_RANGER_GLOOMSTALKER_LVL_13"
     type "StatusData"
     data "StatusType" "BOOST"
-    using "GOON_NPC_SOMETHING_SOMETHING_LVL_11"
+    using "GOON_NPC_RANGER_GLOOMSTALKER_LVL_11"
     data "StackPriority" "13"
     
-    new entry "GOON_NPC_SOMETHING_SOMETHING_LVL_14"
+    new entry "GOON_NPC_RANGER_GLOOMSTALKER_LVL_14"
     type "StatusData"
     data "StatusType" "BOOST"
-    using "GOON_NPC_SOMETHING_SOMETHING_LVL_11"
+    using "GOON_NPC_RANGER_GLOOMSTALKER_LVL_11"
     data "StackPriority" "14"
     
-    new entry "GOON_NPC_SOMETHING_SOMETHING_LVL_15"
+    new entry "GOON_NPC_RANGER_GLOOMSTALKER_LVL_15"
     type "StatusData"
     data "StatusType" "BOOST"
     using "GOON_NPC_RANGER_GLOOMSTALKER_PROGRESSION_TEMPLATE"
@@ -700,34 +700,34 @@
     //     <attribute id="TableUUID" type="guid" value="caa60bb8-8ca3-4871-b034-e10a6bc8ca29"/>
     //     <attribute id="UUID" type="guid" value="ce6518b3-671a-49c6-921b-e1c295572916"/>
     
-    new entry "GOON_NPC_SOMETHING_SOMETHING_LVL_16"
+    new entry "GOON_NPC_RANGER_GLOOMSTALKER_LVL_16"
     type "StatusData"
     data "StatusType" "BOOST"
-    using "GOON_NPC_SOMETHING_SOMETHING_LVL_15"
+    using "GOON_NPC_RANGER_GLOOMSTALKER_LVL_15"
     data "StackPriority" "16"
     
-    new entry "GOON_NPC_SOMETHING_SOMETHING_LVL_17"
+    new entry "GOON_NPC_RANGER_GLOOMSTALKER_LVL_17"
     type "StatusData"
     data "StatusType" "BOOST"
-    using "GOON_NPC_SOMETHING_SOMETHING_LVL_15"
+    using "GOON_NPC_RANGER_GLOOMSTALKER_LVL_15"
     data "StackPriority" "17"
     
-    new entry "GOON_NPC_SOMETHING_SOMETHING_LVL_18"
+    new entry "GOON_NPC_RANGER_GLOOMSTALKER_LVL_18"
     type "StatusData"
     data "StatusType" "BOOST"
-    using "GOON_NPC_SOMETHING_SOMETHING_LVL_15"
+    using "GOON_NPC_RANGER_GLOOMSTALKER_LVL_15"
     data "StackPriority" "18"
     
-    new entry "GOON_NPC_SOMETHING_SOMETHING_LVL_19"
+    new entry "GOON_NPC_RANGER_GLOOMSTALKER_LVL_19"
     type "StatusData"
     data "StatusType" "BOOST"
-    using "GOON_NPC_SOMETHING_SOMETHING_LVL_15"
+    using "GOON_NPC_RANGER_GLOOMSTALKER_LVL_15"
     data "StackPriority" "19"
     
-    new entry "GOON_NPC_SOMETHING_SOMETHING_LVL_20"
+    new entry "GOON_NPC_RANGER_GLOOMSTALKER_LVL_20"
     type "StatusData"
     data "StatusType" "BOOST"
-    using "GOON_NPC_SOMETHING_SOMETHING_LVL_15"
+    using "GOON_NPC_RANGER_GLOOMSTALKER_LVL_15"
     data "StackPriority" "20"
 
 // ==================================== Subclass: Hunter ====================================
