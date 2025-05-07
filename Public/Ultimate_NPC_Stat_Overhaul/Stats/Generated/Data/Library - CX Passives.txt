@@ -79,13 +79,6 @@ data "Boosts" ""
 
 // ==================================== Wizard ====================================
 
-    new entry "CX_Wizard_Divination_Boost"
-    type "PassiveData"
-    data "DisplayName" "hf74dfeecg0aebg47f0gafa1gc189e795b12c;1"
-    data "Description" "he0cc5350g71e6g4b06g9ae0ge266c9976799;1"
-    data "Icon" "PassiveFeature_Portent"
-    data "Boosts" ""
-
     new entry "CX_Wizard_Enchantment_Boost"
     type "PassiveData"
     data "DisplayName" "h7b6c3fa8gcc1dg4993g8592g7674ff050577;1"
