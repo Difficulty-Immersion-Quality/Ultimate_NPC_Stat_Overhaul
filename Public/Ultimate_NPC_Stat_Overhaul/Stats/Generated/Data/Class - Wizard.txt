@@ -1123,3 +1123,308 @@
     //     <attribute id="Selectors" type="LSString" value="SelectSpells(cb123d97-8809-4d71-a0cb-0ecb66177d15,2,0)"/>
     //     <attribute id="TableUUID" type="guid" value="62f7418b-aeca-46e8-8dc8-dd4d4aa632c6"/>
     //     <attribute id="UUID" type="guid" value="e43acc7c-b80a-492f-83d0-40c429affa35"/>
+
+// ==================================== Subclass: Enchantment School ====================================
+
+    new entry "CX_Wizard_Enchantment_Boost"
+    type "PassiveData"
+    data "DisplayName" "h7b6c3fa8gcc1dg4993g8592g7674ff050577;1"
+    data "Description" "h485a0feagcf2dg4617g85c9g97ba638e9e47;1"
+    data "Icon" "Action_HypnoticGaze"
+    data "Boosts" ""
+    data "StatsFunctorContext" "OnCreate;OnStatusApplied;OnStatusRemoved"
+    data "Conditions" ""
+    data "StatsFunctors" "IF(not ClassLevelHigherOrEqualThan(2,'NPC_WIZARD') or HasStatus('GOON_NPC_WIZARD_LVL_1')):ApplyStatus(GOON_NPC_WIZARD_ENCHANTMENT_LVL_1,100,-1);IF(ClassLevelHigherOrEqualThan(2,'NPC_WIZARD') and not ClassLevelHigherOrEqualThan(3,'NPC_WIZARD') or HasStatus('GOON_NPC_WIZARD_LVL_2')):ApplyStatus(GOON_NPC_WIZARD_ENCHANTMENT_LVL_2,100,-1);IF(ClassLevelHigherOrEqualThan(3,'NPC_WIZARD') and not ClassLevelHigherOrEqualThan(4,'NPC_WIZARD') or HasStatus('GOON_NPC_WIZARD_LVL_3')):ApplyStatus(GOON_NPC_WIZARD_ENCHANTMENT_LVL_3,100,-1);IF(ClassLevelHigherOrEqualThan(4,'NPC_WIZARD') and not ClassLevelHigherOrEqualThan(5,'NPC_WIZARD') or HasStatus('GOON_NPC_WIZARD_LVL_4')):ApplyStatus(GOON_NPC_WIZARD_ENCHANTMENT_LVL_4,100,-1);IF(ClassLevelHigherOrEqualThan(5,'NPC_WIZARD') and not ClassLevelHigherOrEqualThan(6,'NPC_WIZARD') or HasStatus('GOON_NPC_WIZARD_LVL_5')):ApplyStatus(GOON_NPC_WIZARD_ENCHANTMENT_LVL_5,100,-1);IF(ClassLevelHigherOrEqualThan(6,'NPC_WIZARD') and not ClassLevelHigherOrEqualThan(7,'NPC_WIZARD') or HasStatus('GOON_NPC_WIZARD_LVL_6')):ApplyStatus(GOON_NPC_WIZARD_ENCHANTMENT_LVL_6,100,-1);IF(ClassLevelHigherOrEqualThan(7,'NPC_WIZARD') and not ClassLevelHigherOrEqualThan(8,'NPC_WIZARD') or HasStatus('GOON_NPC_WIZARD_LVL_7')):ApplyStatus(GOON_NPC_WIZARD_ENCHANTMENT_LVL_7,100,-1);IF(ClassLevelHigherOrEqualThan(8,'NPC_WIZARD') and not ClassLevelHigherOrEqualThan(9,'NPC_WIZARD') or HasStatus('GOON_NPC_WIZARD_LVL_8')):ApplyStatus(GOON_NPC_WIZARD_ENCHANTMENT_LVL_8,100,-1);IF(ClassLevelHigherOrEqualThan(9,'NPC_WIZARD') and not ClassLevelHigherOrEqualThan(10,'NPC_WIZARD') or HasStatus('GOON_NPC_WIZARD_LVL_9')):ApplyStatus(GOON_NPC_WIZARD_ENCHANTMENT_LVL_9,100,-1);IF(ClassLevelHigherOrEqualThan(10,'NPC_WIZARD') and not ClassLevelHigherOrEqualThan(11,'NPC_WIZARD') or HasStatus('GOON_NPC_WIZARD_LVL_10')):ApplyStatus(GOON_NPC_WIZARD_ENCHANTMENT_LVL_10,100,-1);IF(ClassLevelHigherOrEqualThan(11,'NPC_WIZARD') and not ClassLevelHigherOrEqualThan(12,'NPC_WIZARD') or HasStatus('GOON_NPC_WIZARD_LVL_11')):ApplyStatus(GOON_NPC_WIZARD_ENCHANTMENT_LVL_11,100,-1);IF(ClassLevelHigherOrEqualThan(12,'NPC_WIZARD') and not ClassLevelHigherOrEqualThan(13,'NPC_WIZARD') or HasStatus('GOON_NPC_WIZARD_LVL_12')):ApplyStatus(GOON_NPC_WIZARD_ENCHANTMENT_LVL_12,100,-1);IF(ClassLevelHigherOrEqualThan(13,'NPC_WIZARD') and not ClassLevelHigherOrEqualThan(14,'NPC_WIZARD') or HasStatus('GOON_NPC_WIZARD_LVL_13')):ApplyStatus(GOON_NPC_WIZARD_ENCHANTMENT_LVL_13,100,-1);IF(ClassLevelHigherOrEqualThan(14,'NPC_WIZARD') and not ClassLevelHigherOrEqualThan(15,'NPC_WIZARD') or HasStatus('GOON_NPC_WIZARD_LVL_14')):ApplyStatus(GOON_NPC_WIZARD_ENCHANTMENT_LVL_14,100,-1);IF(ClassLevelHigherOrEqualThan(15,'NPC_WIZARD') and not ClassLevelHigherOrEqualThan(16,'NPC_WIZARD') or HasStatus('GOON_NPC_WIZARD_LVL_15')):ApplyStatus(GOON_NPC_WIZARD_ENCHANTMENT_LVL_15,100,-1);IF(ClassLevelHigherOrEqualThan(16,'NPC_WIZARD') and not ClassLevelHigherOrEqualThan(17,'NPC_WIZARD') or HasStatus('GOON_NPC_WIZARD_LVL_16')):ApplyStatus(GOON_NPC_WIZARD_ENCHANTMENT_LVL_16,100,-1);IF(ClassLevelHigherOrEqualThan(17,'NPC_WIZARD') and not ClassLevelHigherOrEqualThan(18,'NPC_WIZARD') or HasStatus('GOON_NPC_WIZARD_LVL_17')):ApplyStatus(GOON_NPC_WIZARD_ENCHANTMENT_LVL_17,100,-1);IF(ClassLevelHigherOrEqualThan(18,'NPC_WIZARD') and not ClassLevelHigherOrEqualThan(19,'NPC_WIZARD') or HasStatus('GOON_NPC_WIZARD_LVL_18')):ApplyStatus(GOON_NPC_WIZARD_ENCHANTMENT_LVL_18,100,-1);IF(ClassLevelHigherOrEqualThan(19,'NPC_WIZARD') and not ClassLevelHigherOrEqualThan(20,'NPC_WIZARD') or HasStatus('GOON_NPC_WIZARD_LVL_19')):ApplyStatus(GOON_NPC_WIZARD_ENCHANTMENT_LVL_19,100,-1);IF(ClassLevelHigherOrEqualThan(20,'NPC_WIZARD') or HasStatus('GOON_NPC_WIZARD_LVL_20')):ApplyStatus(GOON_NPC_WIZARD_ENCHANTMENT_LVL_20,100,-1)"
+
+// Template
+    new entry "GOON_NPC_WIZARD_ENCHANTMENT_PROGRESSION_TEMPLATE"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    data "StatusPropertyFlags" "DisableOverhead;DisableCombatlog;DisablePortraitIndicator;ApplyToDead;IgnoreResting"
+    data "RemoveEvents" "OnStatusApplied;OnStatusRemoved"
+    data "StackId" "GOON_NPC_WIZARD_ENCHANTMENT_PROGRESSION_TEMPLATE"
+    data "StackType" "Ignore"
+    data "RemoveConditions" "not HasPassive('CX_Wizard_Enchantment_Boost')"
+
+// Progression statuses
+    new entry "GOON_NPC_WIZARD_ENCHANTMENT_LVL_1"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_WIZARD_ENCHANTMENT_PROGRESSION_TEMPLATE"
+    data "StackPriority" "1"
+
+    new entry "GOON_NPC_WIZARD_ENCHANTMENT_LVL_2"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_WIZARD_ENCHANTMENT_PROGRESSION_TEMPLATE"
+    data "StackPriority" "2"
+    data "Passives" ""
+    data "Boosts" "Savant(Enchantment);UnlockSpell(Target_HypnoticGaze,AddChildren)"
+
+    // <node id="Progression">
+    //     <attribute id="Boosts" type="LSString" value="Savant(Enchantment)"/>
+    //     <attribute id="Level" type="uint8" value="2"/>
+    //     <attribute id="Name" type="LSString" value="EnchantmentSchool"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="Selectors" type="LSString" value="AddSpells(43fb9c43-ddfa-46ff-a64f-73406dddf4eb,,,,AlwaysPrepared);SelectSpells(11f331b0-e8b7-473b-9d1f-19e8e4178d7d,2,0)"/>
+    //     <attribute id="TableUUID" type="guid" value="1c1d48af-42b7-4fac-a3ce-ca3525f1ccbe"/>
+    //     <attribute id="UUID" type="guid" value="0e988b6b-43d1-4821-84e7-89703320a2c3"/>
+
+    new entry "GOON_NPC_WIZARD_ENCHANTMENT_LVL_3"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_WIZARD_ENCHANTMENT_LVL_2"
+    data "StackPriority" "3"
+
+    // <node id="Progression">
+    //     <attribute id="Level" type="uint8" value="3"/>
+    //     <attribute id="Name" type="LSString" value="EnchantmentSchool"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="Selectors" type="LSString" value="SelectSpells(80c6b070-c3a6-4864-84ca-e78626784eb4,2,0)"/>
+    //     <attribute id="TableUUID" type="guid" value="1c1d48af-42b7-4fac-a3ce-ca3525f1ccbe"/>
+    //     <attribute id="UUID" type="guid" value="33e5bc43-c2a9-4473-8ca6-4210ff5506f9"/>
+
+    new entry "GOON_NPC_WIZARD_ENCHANTMENT_LVL_4"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_WIZARD_ENCHANTMENT_LVL_2"
+    data "StackPriority" "4"
+
+    // <node id="Progression">
+    //     <attribute id="Level" type="uint8" value="4"/>
+    //     <attribute id="Name" type="LSString" value="EnchantmentSchool"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="Selectors" type="LSString" value="SelectSpells(3cae2e56-9871-4cef-bba6-96845ea765fa,1,0,,,,AlwaysPrepared);SelectSpells(80c6b070-c3a6-4864-84ca-e78626784eb4,2,0)"/>
+    //     <attribute id="TableUUID" type="guid" value="1c1d48af-42b7-4fac-a3ce-ca3525f1ccbe"/>
+    //     <attribute id="UUID" type="guid" value="564239bd-2a4e-4b54-a884-8e9a54af9001"/>
+
+    new entry "GOON_NPC_WIZARD_ENCHANTMENT_LVL_5"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_WIZARD_ENCHANTMENT_LVL_2"
+    data "StackPriority" "5"
+
+    // <node id="Progression">
+    //     <attribute id="Level" type="uint8" value="5"/>
+    //     <attribute id="Name" type="LSString" value="EnchantmentSchool"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="Selectors" type="LSString" value="SelectSpells(22755771-ca11-49f4-b772-13d8b8fecd93,2,0)"/>
+    //     <attribute id="TableUUID" type="guid" value="1c1d48af-42b7-4fac-a3ce-ca3525f1ccbe"/>
+    //     <attribute id="UUID" type="guid" value="c3751d51-3158-4503-8c59-ebd0b0103936"/>
+
+    new entry "GOON_NPC_WIZARD_ENCHANTMENT_LVL_6"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_WIZARD_ENCHANTMENT_PROGRESSION_TEMPLATE"
+    data "StackPriority" "6"
+    data "Passives" "InstinctiveCharm"
+    data "Boosts" "Savant(Enchantment);UnlockSpell(Target_HypnoticGaze,AddChildren)"
+
+    // <node id="Progression">
+    //     <attribute id="Level" type="uint8" value="6"/>
+    //     <attribute id="Name" type="LSString" value="EnchantmentSchool"/>
+    //     <attribute id="PassivesAdded" type="LSString" value="InstinctiveCharm"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="Selectors" type="LSString" value="SelectSpells(22755771-ca11-49f4-b772-13d8b8fecd93,2,0)"/>
+    //     <attribute id="TableUUID" type="guid" value="1c1d48af-42b7-4fac-a3ce-ca3525f1ccbe"/>
+    //     <attribute id="UUID" type="guid" value="94de7452-526d-4cd2-836a-a5fdd7620b3c"/>
+
+    new entry "GOON_NPC_WIZARD_ENCHANTMENT_LVL_7"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_WIZARD_ENCHANTMENT_LVL_6"
+    data "StackPriority" "7"
+
+    // <node id="Progression">
+    //     <attribute id="Level" type="uint8" value="7"/>
+    //     <attribute id="Name" type="LSString" value="EnchantmentSchool"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="Selectors" type="LSString" value="SelectSpells(820b1220-0385-426d-ae15-458dc8a6f5c0,2,0)"/>
+    //     <attribute id="TableUUID" type="guid" value="1c1d48af-42b7-4fac-a3ce-ca3525f1ccbe"/>
+    //     <attribute id="UUID" type="guid" value="fc219072-778c-46ef-a02a-7a1f0876bb21"/>
+
+    new entry "GOON_NPC_WIZARD_ENCHANTMENT_LVL_8"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_WIZARD_ENCHANTMENT_LVL_6"
+    data "StackPriority" "8"
+
+    // <node id="Progression">
+    //     <attribute id="Level" type="uint8" value="8"/>
+    //     <attribute id="Name" type="LSString" value="EnchantmentSchool"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="Selectors" type="LSString" value="SelectSpells(820b1220-0385-426d-ae15-458dc8a6f5c0,2,0)"/>
+    //     <attribute id="TableUUID" type="guid" value="1c1d48af-42b7-4fac-a3ce-ca3525f1ccbe"/>
+    //     <attribute id="UUID" type="guid" value="d2c4a931-a7cf-4f93-9b20-d717e7f50a6c"/>
+
+    new entry "GOON_NPC_WIZARD_ENCHANTMENT_LVL_9"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_WIZARD_ENCHANTMENT_LVL_6"
+    data "StackPriority" "9"
+
+    // <node id="Progression">
+    //     <attribute id="Level" type="uint8" value="9"/>
+    //     <attribute id="Name" type="LSString" value="EnchantmentSchool"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="Selectors" type="LSString" value="SelectSpells(f781a25e-d288-43b4-bf5d-3d8d98846687,2,0)"/>
+    //     <attribute id="TableUUID" type="guid" value="1c1d48af-42b7-4fac-a3ce-ca3525f1ccbe"/>
+    //     <attribute id="UUID" type="guid" value="11f14cc2-fb75-4d40-b381-f4ba8a9a3763"/>
+
+    new entry "GOON_NPC_WIZARD_ENCHANTMENT_LVL_10"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_WIZARD_ENCHANTMENT_PROGRESSION_TEMPLATE"
+    data "StackPriority" "10"
+    data "Passives" "InstinctiveCharm;SplitEnchantment"
+    data "Boosts" "Savant(Enchantment);UnlockSpell(Target_HypnoticGaze,AddChildren)"
+
+    // <node id="Progression">
+    //     <attribute id="Level" type="uint8" value="10"/>
+    //     <attribute id="Name" type="LSString" value="EnchantmentSchool"/>
+    //     <attribute id="PassivesAdded" type="LSString" value="SplitEnchantment"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="Selectors" type="LSString" value="SelectSpells(3cae2e56-9871-4cef-bba6-96845ea765fa,1,0,,,,AlwaysPrepared);SelectSpells(f781a25e-d288-43b4-bf5d-3d8d98846687,2,0)"/>
+    //     <attribute id="TableUUID" type="guid" value="1c1d48af-42b7-4fac-a3ce-ca3525f1ccbe"/>
+    //     <attribute id="UUID" type="guid" value="79663a80-517b-4036-b895-4cf75bb4075c"/>
+
+    new entry "GOON_NPC_WIZARD_ENCHANTMENT_LVL_11"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_WIZARD_ENCHANTMENT_LVL_10"
+    data "StackPriority" "11"
+
+    // <node id="Progression">
+    //     <attribute id="Level" type="uint8" value="11"/>
+    //     <attribute id="Name" type="LSString" value="EnchantmentSchool"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="Selectors" type="LSString" value="SelectSpells(bc917f22-7f71-4a25-9a77-7d2f91a96a65,2,0)"/>
+    //     <attribute id="TableUUID" type="guid" value="1c1d48af-42b7-4fac-a3ce-ca3525f1ccbe"/>
+    //     <attribute id="UUID" type="guid" value="edb28052-f162-4a40-a122-0920bbff8663"/>
+
+    new entry "GOON_NPC_WIZARD_ENCHANTMENT_LVL_12"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_WIZARD_ENCHANTMENT_LVL_10"
+    data "StackPriority" "12"
+
+    // <node id="Progression">
+    //     <attribute id="Level" type="uint8" value="12"/>
+    //     <attribute id="Name" type="LSString" value="EnchantmentSchool"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="Selectors" type="LSString" value="SelectSpells(bc917f22-7f71-4a25-9a77-7d2f91a96a65,2,0)"/>
+    //     <attribute id="TableUUID" type="guid" value="1c1d48af-42b7-4fac-a3ce-ca3525f1ccbe"/>
+    //     <attribute id="UUID" type="guid" value="5adc3681-3841-456f-b2a9-c28d9f56df32"/>
+
+// Expansion levels 13-20
+    new entry "GOON_NPC_WIZARD_ENCHANTMENT_LVL_13"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_WIZARD_ENCHANTMENT_LVL_10"
+    data "StackPriority" "13"
+
+    // <node id="Progression">
+    //     <attribute id="Level" type="uint8" value="13"/>
+    //     <attribute id="Name" type="LSString" value="EnchantmentSchool"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="Selectors" type="LSString" value="SelectSpells(dff7917a-0abc-4671-b68f-c03e56212549,2,0)"/>
+    //     <attribute id="TableUUID" type="guid" value="1c1d48af-42b7-4fac-a3ce-ca3525f1ccbe"/>
+    //     <attribute id="UUID" type="guid" value="7a175980-d2d5-4737-a903-058c6e518955"/>
+    
+    new entry "GOON_NPC_WIZARD_ENCHANTMENT_LVL_14"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_WIZARD_ENCHANTMENT_LVL_10"
+    data "StackPriority" "14"
+
+    // <node id="Progression">
+    //     <attribute id="Level" type="uint8" value="14"/>
+    //     <attribute id="Name" type="LSString" value="EnchantmentSchool"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="Selectors" type="LSString" value="SelectSpells(dff7917a-0abc-4671-b68f-c03e56212549,2,0)"/>
+    //     <attribute id="TableUUID" type="guid" value="1c1d48af-42b7-4fac-a3ce-ca3525f1ccbe"/>
+    //     <attribute id="UUID" type="guid" value="0ab2627d-5e46-4822-9ce2-f978b750e7eb"/>
+    
+    new entry "GOON_NPC_WIZARD_ENCHANTMENT_LVL_15"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_WIZARD_ENCHANTMENT_LVL_10"
+    data "StackPriority" "15"
+
+    // <node id="Progression">
+    //     <attribute id="Level" type="uint8" value="15"/>
+    //     <attribute id="Name" type="LSString" value="EnchantmentSchool"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="Selectors" type="LSString" value="SelectSpells(f27a2d0a-0d6c-4c01-98a5-60081abf4807,2,0)"/>
+    //     <attribute id="TableUUID" type="guid" value="1c1d48af-42b7-4fac-a3ce-ca3525f1ccbe"/>
+    //     <attribute id="UUID" type="guid" value="da5add00-9da3-4b30-9962-bd1b8130512a"/>
+    
+    new entry "GOON_NPC_WIZARD_ENCHANTMENT_LVL_16"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_WIZARD_ENCHANTMENT_LVL_10"
+    data "StackPriority" "16"
+
+    // <node id="Progression">
+    //     <attribute id="Level" type="uint8" value="16"/>
+    //     <attribute id="Name" type="LSString" value="EnchantmentSchool"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="Selectors" type="LSString" value="SelectSpells(f27a2d0a-0d6c-4c01-98a5-60081abf4807,2,0)"/>
+    //     <attribute id="TableUUID" type="guid" value="1c1d48af-42b7-4fac-a3ce-ca3525f1ccbe"/>
+    //     <attribute id="UUID" type="guid" value="1c711d16-3f44-4806-b808-781a15461a41"/>
+    
+    new entry "GOON_NPC_WIZARD_ENCHANTMENT_LVL_17"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_WIZARD_ENCHANTMENT_LVL_10"
+    data "StackPriority" "17"
+
+    // <node id="Progression">
+    //     <attribute id="Level" type="uint8" value="17"/>
+    //     <attribute id="Name" type="LSString" value="EnchantmentSchool"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="Selectors" type="LSString" value="SelectSpells(cb123d97-8809-4d71-a0cb-0ecb66177d15,2,0)"/>
+    //     <attribute id="TableUUID" type="guid" value="1c1d48af-42b7-4fac-a3ce-ca3525f1ccbe"/>
+    //     <attribute id="UUID" type="guid" value="529fb0bd-6219-4746-b3d8-bc257dec1c19"/>
+    
+    new entry "GOON_NPC_WIZARD_ENCHANTMENT_LVL_18"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_WIZARD_ENCHANTMENT_LVL_10"
+    data "StackPriority" "18"
+
+    // <node id="Progression">
+    //     <attribute id="Level" type="uint8" value="18"/>
+    //     <attribute id="Name" type="LSString" value="EnchantmentSchool"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="Selectors" type="LSString" value="SelectSpells(cb123d97-8809-4d71-a0cb-0ecb66177d15,2,0)"/>
+    //     <attribute id="TableUUID" type="guid" value="1c1d48af-42b7-4fac-a3ce-ca3525f1ccbe"/>
+    //     <attribute id="UUID" type="guid" value="e90ee050-7aef-403c-9e3c-42c9cd01aacb"/>
+    
+    new entry "GOON_NPC_WIZARD_ENCHANTMENT_LVL_19"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_WIZARD_ENCHANTMENT_LVL_10"
+    data "StackPriority" "19"
+
+    // <node id="Progression">
+    //     <attribute id="Level" type="uint8" value="19"/>
+    //     <attribute id="Name" type="LSString" value="EnchantmentSchool"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="Selectors" type="LSString" value="SelectSpells(cb123d97-8809-4d71-a0cb-0ecb66177d15,2,0)"/>
+    //     <attribute id="TableUUID" type="guid" value="1c1d48af-42b7-4fac-a3ce-ca3525f1ccbe"/>
+    //     <attribute id="UUID" type="guid" value="7c186640-7d69-4bb6-98a0-ea4e5a9a453a"/>
+    
+    new entry "GOON_NPC_WIZARD_ENCHANTMENT_LVL_20"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_WIZARD_ENCHANTMENT_LVL_10"
+    data "StackPriority" "20"
+
+    // <node id="Progression">
+    //     <attribute id="Level" type="uint8" value="20"/>
+    //     <attribute id="Name" type="LSString" value="EnchantmentSchool"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="Selectors" type="LSString" value="SelectSpells(cb123d97-8809-4d71-a0cb-0ecb66177d15,2,0)"/>
+    //     <attribute id="TableUUID" type="guid" value="1c1d48af-42b7-4fac-a3ce-ca3525f1ccbe"/>
+    //     <attribute id="UUID" type="guid" value="5b59e761-d1f5-44a9-8e9b-127eff56df61"/>

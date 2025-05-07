@@ -79,13 +79,6 @@ data "Boosts" ""
 
 // ==================================== Wizard ====================================
 
-    new entry "CX_Wizard_Enchantment_Boost"
-    type "PassiveData"
-    data "DisplayName" "h7b6c3fa8gcc1dg4993g8592g7674ff050577;1"
-    data "Description" "h485a0feagcf2dg4617g85c9g97ba638e9e47;1"
-    data "Icon" "Action_HypnoticGaze"
-    data "Boosts" ""
-
     new entry "CX_Wizard_Evocation_Boost"
     type "PassiveData"
     data "DisplayName" "h6104d86ag1a48g4f23gbf22gda76864a6a14;1"
