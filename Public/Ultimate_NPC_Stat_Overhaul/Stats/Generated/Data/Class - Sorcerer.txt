@@ -1,0 +1,37 @@
+// ==================================== NPC Metamagic Passives ====================================
+
+// Temporary workaround just to add metamagic to NPCs, copying the approach from Utut used in Encounters Overhaul (just making them default toggled on)
+new entry "Goon_Metamagic_Careful_NPC"
+type "PassiveData"
+using "Metamagic_Careful"
+data "Properties" "IsToggled;ToggledDefaultAddToHotbar;MetaMagic;ToggledDefaultOn"
+data "ToggleOnEffect" ""
+data "ToggleOffContext" ""
+
+new entry "Goon_Metamagic_Extended_NPC"
+type "PassiveData"
+using "Metamagic_Extended"
+data "Properties" "IsToggled;ToggledDefaultAddToHotbar;MetaMagic;ToggledDefaultOn"
+data "ToggleOnEffect" ""
+data "ToggleOffContext" ""
+
+new entry "Goon_Metamagic_Quickened_NPC"
+type "PassiveData"
+using "Metamagic_Quickened"
+data "Properties" "IsToggled;ToggledDefaultAddToHotbar;MetaMagic;ToggledDefaultOn"
+data "ToggleOnEffect" ""
+data "ToggleOffContext" ""
+
+new entry "Goon_Metamagic_Heightened_NPC"
+type "PassiveData"
+using "Metamagic_Heightened"
+data "Properties" "IsToggled;ToggledDefaultAddToHotbar;MetaMagic;ToggledDefaultOn"
+data "ToggleOnEffect" ""
+data "ToggleOffContext" ""
+
+new entry "Goon_Metamagic_Subtle_NPC"
+type "PassiveData"
+using "Metamagic_Subtle"
+data "Properties" "IsToggled;ToggledDefaultAddToHotbar;MetaMagic;ToggledDefaultOn"
+data "ToggleOnEffect" ""
+data "ToggleOffContext" ""
