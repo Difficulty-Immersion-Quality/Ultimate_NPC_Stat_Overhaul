@@ -1428,3 +1428,312 @@
     //     <attribute id="Selectors" type="LSString" value="SelectSpells(cb123d97-8809-4d71-a0cb-0ecb66177d15,2,0)"/>
     //     <attribute id="TableUUID" type="guid" value="1c1d48af-42b7-4fac-a3ce-ca3525f1ccbe"/>
     //     <attribute id="UUID" type="guid" value="5b59e761-d1f5-44a9-8e9b-127eff56df61"/>
+
+// ==================================== Subclass: Evocation School ====================================
+
+    new entry "CX_Wizard_Evocation_Boost"
+    type "PassiveData"
+    data "DisplayName" "h6104d86ag1a48g4f23gbf22gda76864a6a14;1"
+    data "Description" "h2fa7fcd1g44dfg4020g867fgbaa7d958bc92;1"
+    data "Icon" "PassiveFeature_SculptSpells"
+    data "Boosts" ""
+    data "StatsFunctorContext" "OnCreate;OnStatusApplied;OnStatusRemoved"
+    data "Conditions" ""
+    data "StatsFunctors" "IF(not ClassLevelHigherOrEqualThan(2,'NPC_WIZARD') or HasStatus('GOON_NPC_WIZARD_LVL_1')):ApplyStatus(GOON_NPC_WIZARD_EVOCATION_LVL_1,100,-1);IF(ClassLevelHigherOrEqualThan(2,'NPC_WIZARD') and not ClassLevelHigherOrEqualThan(3,'NPC_WIZARD') or HasStatus('GOON_NPC_WIZARD_LVL_2')):ApplyStatus(GOON_NPC_WIZARD_EVOCATION_LVL_2,100,-1);IF(ClassLevelHigherOrEqualThan(3,'NPC_WIZARD') and not ClassLevelHigherOrEqualThan(4,'NPC_WIZARD') or HasStatus('GOON_NPC_WIZARD_LVL_3')):ApplyStatus(GOON_NPC_WIZARD_EVOCATION_LVL_3,100,-1);IF(ClassLevelHigherOrEqualThan(4,'NPC_WIZARD') and not ClassLevelHigherOrEqualThan(5,'NPC_WIZARD') or HasStatus('GOON_NPC_WIZARD_LVL_4')):ApplyStatus(GOON_NPC_WIZARD_EVOCATION_LVL_4,100,-1);IF(ClassLevelHigherOrEqualThan(5,'NPC_WIZARD') and not ClassLevelHigherOrEqualThan(6,'NPC_WIZARD') or HasStatus('GOON_NPC_WIZARD_LVL_5')):ApplyStatus(GOON_NPC_WIZARD_EVOCATION_LVL_5,100,-1);IF(ClassLevelHigherOrEqualThan(6,'NPC_WIZARD') and not ClassLevelHigherOrEqualThan(7,'NPC_WIZARD') or HasStatus('GOON_NPC_WIZARD_LVL_6')):ApplyStatus(GOON_NPC_WIZARD_EVOCATION_LVL_6,100,-1);IF(ClassLevelHigherOrEqualThan(7,'NPC_WIZARD') and not ClassLevelHigherOrEqualThan(8,'NPC_WIZARD') or HasStatus('GOON_NPC_WIZARD_LVL_7')):ApplyStatus(GOON_NPC_WIZARD_EVOCATION_LVL_7,100,-1);IF(ClassLevelHigherOrEqualThan(8,'NPC_WIZARD') and not ClassLevelHigherOrEqualThan(9,'NPC_WIZARD') or HasStatus('GOON_NPC_WIZARD_LVL_8')):ApplyStatus(GOON_NPC_WIZARD_EVOCATION_LVL_8,100,-1);IF(ClassLevelHigherOrEqualThan(9,'NPC_WIZARD') and not ClassLevelHigherOrEqualThan(10,'NPC_WIZARD') or HasStatus('GOON_NPC_WIZARD_LVL_9')):ApplyStatus(GOON_NPC_WIZARD_EVOCATION_LVL_9,100,-1);IF(ClassLevelHigherOrEqualThan(10,'NPC_WIZARD') and not ClassLevelHigherOrEqualThan(11,'NPC_WIZARD') or HasStatus('GOON_NPC_WIZARD_LVL_10')):ApplyStatus(GOON_NPC_WIZARD_EVOCATION_LVL_10,100,-1);IF(ClassLevelHigherOrEqualThan(11,'NPC_WIZARD') and not ClassLevelHigherOrEqualThan(12,'NPC_WIZARD') or HasStatus('GOON_NPC_WIZARD_LVL_11')):ApplyStatus(GOON_NPC_WIZARD_EVOCATION_LVL_11,100,-1);IF(ClassLevelHigherOrEqualThan(12,'NPC_WIZARD') and not ClassLevelHigherOrEqualThan(13,'NPC_WIZARD') or HasStatus('GOON_NPC_WIZARD_LVL_12')):ApplyStatus(GOON_NPC_WIZARD_EVOCATION_LVL_12,100,-1);IF(ClassLevelHigherOrEqualThan(13,'NPC_WIZARD') and not ClassLevelHigherOrEqualThan(14,'NPC_WIZARD') or HasStatus('GOON_NPC_WIZARD_LVL_13')):ApplyStatus(GOON_NPC_WIZARD_EVOCATION_LVL_13,100,-1);IF(ClassLevelHigherOrEqualThan(14,'NPC_WIZARD') and not ClassLevelHigherOrEqualThan(15,'NPC_WIZARD') or HasStatus('GOON_NPC_WIZARD_LVL_14')):ApplyStatus(GOON_NPC_WIZARD_EVOCATION_LVL_14,100,-1);IF(ClassLevelHigherOrEqualThan(15,'NPC_WIZARD') and not ClassLevelHigherOrEqualThan(16,'NPC_WIZARD') or HasStatus('GOON_NPC_WIZARD_LVL_15')):ApplyStatus(GOON_NPC_WIZARD_EVOCATION_LVL_15,100,-1);IF(ClassLevelHigherOrEqualThan(16,'NPC_WIZARD') and not ClassLevelHigherOrEqualThan(17,'NPC_WIZARD') or HasStatus('GOON_NPC_WIZARD_LVL_16')):ApplyStatus(GOON_NPC_WIZARD_EVOCATION_LVL_16,100,-1);IF(ClassLevelHigherOrEqualThan(17,'NPC_WIZARD') and not ClassLevelHigherOrEqualThan(18,'NPC_WIZARD') or HasStatus('GOON_NPC_WIZARD_LVL_17')):ApplyStatus(GOON_NPC_WIZARD_EVOCATION_LVL_17,100,-1);IF(ClassLevelHigherOrEqualThan(18,'NPC_WIZARD') and not ClassLevelHigherOrEqualThan(19,'NPC_WIZARD') or HasStatus('GOON_NPC_WIZARD_LVL_18')):ApplyStatus(GOON_NPC_WIZARD_EVOCATION_LVL_18,100,-1);IF(ClassLevelHigherOrEqualThan(19,'NPC_WIZARD') and not ClassLevelHigherOrEqualThan(20,'NPC_WIZARD') or HasStatus('GOON_NPC_WIZARD_LVL_19')):ApplyStatus(GOON_NPC_WIZARD_EVOCATION_LVL_19,100,-1);IF(ClassLevelHigherOrEqualThan(20,'NPC_WIZARD') or HasStatus('GOON_NPC_WIZARD_LVL_20')):ApplyStatus(GOON_NPC_WIZARD_EVOCATION_LVL_20,100,-1)"
+
+// Template
+    new entry "GOON_NPC_WIZARD_EVOCATION_PROGRESSION_TEMPLATE"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    data "StatusPropertyFlags" "DisableOverhead;DisableCombatlog;DisablePortraitIndicator;ApplyToDead;IgnoreResting"
+    data "RemoveEvents" "OnStatusApplied;OnStatusRemoved"
+    data "StackId" "GOON_NPC_WIZARD_EVOCATION_PROGRESSION_TEMPLATE"
+    data "StackType" "Ignore"
+    data "RemoveConditions" "not HasPassive('CX_Wizard_Evocation_Boost')"
+
+// Progression statuses
+    new entry "GOON_NPC_WIZARD_EVOCATION_LVL_1"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_WIZARD_EVOCATION_PROGRESSION_TEMPLATE"
+    data "StackPriority" "1"
+
+    new entry "GOON_NPC_WIZARD_EVOCATION_LVL_2"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_WIZARD_EVOCATION_PROGRESSION_TEMPLATE"
+    data "StackPriority" "2"
+    data "Passives" "SculptSpells"
+    data "Boosts" "Savant(Evocation)"
+
+    // <node id="Progression">
+    //     <attribute id="Boosts" type="LSString" value="Savant(Evocation)"/>
+    //     <attribute id="Level" type="uint8" value="2"/>
+    //     <attribute id="Name" type="LSString" value="EvocationSchool"/>
+    //     <attribute id="PassivesAdded" type="LSString" value="SculptSpells"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="Selectors" type="LSString" value="SelectSpells(11f331b0-e8b7-473b-9d1f-19e8e4178d7d,2,0)"/>
+    //     <attribute id="TableUUID" type="guid" value="953e6528-acd2-48b5-95e7-9d54ad555d39"/>
+    //     <attribute id="UUID" type="guid" value="8c55b8f1-e340-4c35-9171-f677e80e9dc8"/>
+
+    new entry "GOON_NPC_WIZARD_EVOCATION_LVL_3"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_WIZARD_EVOCATION_LVL_2"
+    data "StackPriority" "3"
+
+    // <node id="Progression">
+    //     <attribute id="Level" type="uint8" value="3"/>
+    //     <attribute id="Name" type="LSString" value="EvocationSchool"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="Selectors" type="LSString" value="SelectSpells(80c6b070-c3a6-4864-84ca-e78626784eb4,2,0)"/>
+    //     <attribute id="TableUUID" type="guid" value="953e6528-acd2-48b5-95e7-9d54ad555d39"/>
+    //     <attribute id="UUID" type="guid" value="4d2c81e0-ae58-438b-9778-d1217d11e085"/>
+
+    new entry "GOON_NPC_WIZARD_EVOCATION_LVL_4"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_WIZARD_EVOCATION_LVL_2"
+    data "StackPriority" "4"
+
+    // <node id="Progression">
+    //     <attribute id="Level" type="uint8" value="4"/>
+    //     <attribute id="Name" type="LSString" value="EvocationSchool"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="Selectors" type="LSString" value="SelectSpells(3cae2e56-9871-4cef-bba6-96845ea765fa,1,0,,,,AlwaysPrepared);SelectSpells(80c6b070-c3a6-4864-84ca-e78626784eb4,2,0)"/>
+    //     <attribute id="TableUUID" type="guid" value="953e6528-acd2-48b5-95e7-9d54ad555d39"/>
+    //     <attribute id="UUID" type="guid" value="1f41893c-17b2-4a3d-b01e-714a9545f00e"/>
+
+    new entry "GOON_NPC_WIZARD_EVOCATION_LVL_5"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_WIZARD_EVOCATION_LVL_2"
+    data "StackPriority" "5"
+
+    // <node id="Progression">
+    //     <attribute id="Level" type="uint8" value="5"/>
+    //     <attribute id="Name" type="LSString" value="EvocationSchool"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="Selectors" type="LSString" value="SelectSpells(22755771-ca11-49f4-b772-13d8b8fecd93,2,0)"/>
+    //     <attribute id="TableUUID" type="guid" value="953e6528-acd2-48b5-95e7-9d54ad555d39"/>
+    //     <attribute id="UUID" type="guid" value="bb3681cb-e0f1-4dd5-b1a7-ee15f61395d8"/>
+
+    new entry "GOON_NPC_WIZARD_EVOCATION_LVL_6"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_WIZARD_EVOCATION_PROGRESSION_TEMPLATE"
+    data "StackPriority" "6"
+    data "Passives" "SculptSpells;PotentCantrip"
+    data "Boosts" "Savant(Evocation)"
+
+    // <node id="Progression">
+    //     <attribute id="Level" type="uint8" value="6"/>
+    //     <attribute id="Name" type="LSString" value="EvocationSchool"/>
+    //     <attribute id="PassivesAdded" type="LSString" value="PotentCantrip"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="Selectors" type="LSString" value="SelectSpells(22755771-ca11-49f4-b772-13d8b8fecd93,2,0)"/>
+    //     <attribute id="TableUUID" type="guid" value="953e6528-acd2-48b5-95e7-9d54ad555d39"/>
+    //     <attribute id="UUID" type="guid" value="5d56c038-f48f-419a-8afa-e8898713e89c"/>
+
+    new entry "GOON_NPC_WIZARD_EVOCATION_LVL_7"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_WIZARD_EVOCATION_LVL_6"
+    data "StackPriority" "7"
+
+    // <node id="Progression">
+    //     <attribute id="Level" type="uint8" value="7"/>
+    //     <attribute id="Name" type="LSString" value="EvocationSchool"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="Selectors" type="LSString" value="SelectSpells(820b1220-0385-426d-ae15-458dc8a6f5c0,2,0)"/>
+    //     <attribute id="TableUUID" type="guid" value="953e6528-acd2-48b5-95e7-9d54ad555d39"/>
+    //     <attribute id="UUID" type="guid" value="57ac9d65-9f2c-4cbd-96a1-32dd7d07c5f4"/>
+
+    new entry "GOON_NPC_WIZARD_EVOCATION_LVL_8"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_WIZARD_EVOCATION_LVL_6"
+    data "StackPriority" "8"
+
+    // <node id="Progression">
+    //     <attribute id="Level" type="uint8" value="8"/>
+    //     <attribute id="Name" type="LSString" value="EvocationSchool"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="Selectors" type="LSString" value="SelectSpells(820b1220-0385-426d-ae15-458dc8a6f5c0,2,0)"/>
+    //     <attribute id="TableUUID" type="guid" value="953e6528-acd2-48b5-95e7-9d54ad555d39"/>
+    //     <attribute id="UUID" type="guid" value="2670784c-ccae-499c-a1a0-316bffd69945"/>
+
+    new entry "GOON_NPC_WIZARD_EVOCATION_LVL_9"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_WIZARD_EVOCATION_LVL_6"
+    data "StackPriority" "9"
+
+    // <node id="Progression">
+    //     <attribute id="Level" type="uint8" value="9"/>
+    //     <attribute id="Name" type="LSString" value="EvocationSchool"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="Selectors" type="LSString" value="SelectSpells(f781a25e-d288-43b4-bf5d-3d8d98846687,2,0)"/>
+    //     <attribute id="TableUUID" type="guid" value="953e6528-acd2-48b5-95e7-9d54ad555d39"/>
+    //     <attribute id="UUID" type="guid" value="deb061d4-f798-4d42-8896-17cf5b59e971"/>
+
+    new entry "GOON_NPC_WIZARD_EVOCATION_LVL_10"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_WIZARD_EVOCATION_PROGRESSION_TEMPLATE"
+    data "StackPriority" "10"
+    data "Passives" "SculptSpells;PotentCantrip;EmpoweredEvocation"
+    data "Boosts" "Savant(Evocation)"
+
+    // <node id="Progression">
+    //     <attribute id="Level" type="uint8" value="10"/>
+    //     <attribute id="Name" type="LSString" value="EvocationSchool"/>
+    //     <attribute id="PassivesAdded" type="LSString" value="EmpoweredEvocation"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="Selectors" type="LSString" value="SelectSpells(3cae2e56-9871-4cef-bba6-96845ea765fa,1,0,,,,AlwaysPrepared);SelectSpells(f781a25e-d288-43b4-bf5d-3d8d98846687,2,0)"/>
+    //     <attribute id="TableUUID" type="guid" value="953e6528-acd2-48b5-95e7-9d54ad555d39"/>
+    //     <attribute id="UUID" type="guid" value="b69eec79-c9ea-4637-a8d6-61c0afcff749"/>
+
+    new entry "GOON_NPC_WIZARD_EVOCATION_LVL_11"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_WIZARD_EVOCATION_LVL_10"
+    data "StackPriority" "11"
+
+    // <node id="Progression">
+    //     <attribute id="Level" type="uint8" value="11"/>
+    //     <attribute id="Name" type="LSString" value="EvocationSchool"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="Selectors" type="LSString" value="SelectSpells(bc917f22-7f71-4a25-9a77-7d2f91a96a65,2,0)"/>
+    //     <attribute id="TableUUID" type="guid" value="953e6528-acd2-48b5-95e7-9d54ad555d39"/>
+    //     <attribute id="UUID" type="guid" value="917ec099-7211-44eb-8f39-02a97d292607"/>
+
+    new entry "GOON_NPC_WIZARD_EVOCATION_LVL_12"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_WIZARD_EVOCATION_LVL_10"
+    data "StackPriority" "12"
+
+    // <node id="Progression">
+    //     <attribute id="Level" type="uint8" value="12"/>
+    //     <attribute id="Name" type="LSString" value="EvocationSchool"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="Selectors" type="LSString" value="SelectSpells(bc917f22-7f71-4a25-9a77-7d2f91a96a65,2,0)"/>
+    //     <attribute id="TableUUID" type="guid" value="953e6528-acd2-48b5-95e7-9d54ad555d39"/>
+    //     <attribute id="UUID" type="guid" value="68a85276-6b53-40c7-baf0-70b894590115"/>
+
+// Expansion levels 13-20
+    new entry "GOON_NPC_WIZARD_EVOCATION_LVL_13"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_WIZARD_EVOCATION_LVL_10"
+    data "StackPriority" "13"
+
+    // <node id="Progression">
+    //     <attribute id="Level" type="uint8" value="13"/>
+    //     <attribute id="Name" type="LSString" value="EvocationSchool"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="Selectors" type="LSString" value="SelectSpells(dff7917a-0abc-4671-b68f-c03e56212549,2,0)"/>
+    //     <attribute id="TableUUID" type="guid" value="953e6528-acd2-48b5-95e7-9d54ad555d39"/>
+    //     <attribute id="UUID" type="guid" value="bc557da8-a4da-4472-ae18-7b7205603860"/>
+    
+    new entry "GOON_NPC_WIZARD_EVOCATION_LVL_14"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_WIZARD_EVOCATION_PROGRESSION_TEMPLATE"
+    data "StackPriority" "14"
+    data "Passives" "SculptSpells;PotentCantrip;EmpoweredEvocation;Overchannel"
+    data "Boosts" "Savant(Evocation)"
+
+    // <node id="Progression">
+    //     <attribute id="Level" type="uint8" value="14"/>
+    //     <attribute id="Name" type="LSString" value="EvocationSchool"/>
+    //     <attribute id="PassivesAdded" type="LSString" value="Overchannel"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="Selectors" type="LSString" value="SelectSpells(dff7917a-0abc-4671-b68f-c03e56212549,2,0)"/>
+    //     <attribute id="TableUUID" type="guid" value="953e6528-acd2-48b5-95e7-9d54ad555d39"/>
+    //     <attribute id="UUID" type="guid" value="dec1a059-645a-47c8-aaee-634489894b4e"/>
+    
+    new entry "GOON_NPC_WIZARD_EVOCATION_LVL_15"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_WIZARD_EVOCATION_LVL_14"
+    data "StackPriority" "15"
+
+    // <node id="Progression">
+    //     <attribute id="Level" type="uint8" value="15"/>
+    //     <attribute id="Name" type="LSString" value="EvocationSchool"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="Selectors" type="LSString" value="SelectSpells(f27a2d0a-0d6c-4c01-98a5-60081abf4807,2,0)"/>
+    //     <attribute id="TableUUID" type="guid" value="953e6528-acd2-48b5-95e7-9d54ad555d39"/>
+    //     <attribute id="UUID" type="guid" value="6704ff0f-6754-42f5-9880-340957c26da6"/>
+    
+    new entry "GOON_NPC_WIZARD_EVOCATION_LVL_16"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_WIZARD_EVOCATION_LVL_14"
+    data "StackPriority" "16"
+
+    // <node id="Progression">
+    //     <attribute id="Level" type="uint8" value="16"/>
+    //     <attribute id="Name" type="LSString" value="EvocationSchool"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="Selectors" type="LSString" value="SelectSpells(f27a2d0a-0d6c-4c01-98a5-60081abf4807,2,0)"/>
+    //     <attribute id="TableUUID" type="guid" value="953e6528-acd2-48b5-95e7-9d54ad555d39"/>
+    //     <attribute id="UUID" type="guid" value="ace50412-035e-4717-832d-0e0f18bbb7ac"/>
+    
+    new entry "GOON_NPC_WIZARD_EVOCATION_LVL_17"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_WIZARD_EVOCATION_LVL_14"
+    data "StackPriority" "17"
+
+    // <node id="Progression">
+    //     <attribute id="Level" type="uint8" value="17"/>
+    //     <attribute id="Name" type="LSString" value="EvocationSchool"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="Selectors" type="LSString" value="SelectSpells(cb123d97-8809-4d71-a0cb-0ecb66177d15,2,0)"/>
+    //     <attribute id="TableUUID" type="guid" value="953e6528-acd2-48b5-95e7-9d54ad555d39"/>
+    //     <attribute id="UUID" type="guid" value="3467417f-8b36-460e-8fb2-79d6a434eaa5"/>
+    
+    new entry "GOON_NPC_WIZARD_EVOCATION_LVL_18"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_WIZARD_EVOCATION_LVL_14"
+    data "StackPriority" "18"
+
+    // <node id="Progression">
+    //     <attribute id="Level" type="uint8" value="18"/>
+    //     <attribute id="Name" type="LSString" value="EvocationSchool"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="Selectors" type="LSString" value="SelectSpells(cb123d97-8809-4d71-a0cb-0ecb66177d15,2,0)"/>
+    //     <attribute id="TableUUID" type="guid" value="953e6528-acd2-48b5-95e7-9d54ad555d39"/>
+    //     <attribute id="UUID" type="guid" value="1ac2d091-ff81-42d9-8c32-e422d2a1ddb1"/>
+    
+    new entry "GOON_NPC_WIZARD_EVOCATION_LVL_19"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_WIZARD_EVOCATION_LVL_14"
+    data "StackPriority" "19"
+
+    // <node id="Progression">
+    //     <attribute id="Level" type="uint8" value="19"/>
+    //     <attribute id="Name" type="LSString" value="EvocationSchool"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="Selectors" type="LSString" value="SelectSpells(cb123d97-8809-4d71-a0cb-0ecb66177d15,2,0)"/>
+    //     <attribute id="TableUUID" type="guid" value="953e6528-acd2-48b5-95e7-9d54ad555d39"/>
+    //     <attribute id="UUID" type="guid" value="2aa56d46-d4fc-4559-80ee-bac30af2721c"/>
+    
+    new entry "GOON_NPC_WIZARD_EVOCATION_LVL_20"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_WIZARD_EVOCATION_LVL_14"
+    data "StackPriority" "20"
+
+    // <node id="Progression">
+    //     <attribute id="Level" type="uint8" value="20"/>
+    //     <attribute id="Name" type="LSString" value="EvocationSchool"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="Selectors" type="LSString" value="SelectSpells(cb123d97-8809-4d71-a0cb-0ecb66177d15,2,0)"/>
+    //     <attribute id="TableUUID" type="guid" value="953e6528-acd2-48b5-95e7-9d54ad555d39"/>
+    //     <attribute id="UUID" type="guid" value="ea060716-f1ff-4f90-8df9-57f515366d89"/>
