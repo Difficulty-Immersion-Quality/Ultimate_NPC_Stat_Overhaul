@@ -161,3 +161,28 @@ data "Passives" "CX_Barbarian_Boost;CX_Barbarian_Berserker_Boost;CX_Martial_Boos
 // Giving NPC_Barbarian progression
 // data "Progressions" ""
 data "Progressions" "56db8107-e04c-4fe3-94f3-fd4acd44cd4a"
+
+// Note that this is just using the regular metamagic passives; will need to 
+new entry "Thrall_Sorcerer_ER"
+type "Character"
+using "Thrall_Sorcerer_ER"
+// data "Passives" "TAD_PsionicDominance;Evasion;Metamagic_Heightened;Metamagic_Subtle;AttackOfOpportunity;DarknessRules;"
+data "Passives" "CX_Sorcerer_Boost;CX_Magic_Boost;AttackOfOpportunity;DarknessRules;TAD_PsionicDominance;Evasion;Goon_Metamagic_Heightened_NPC;Goon_Metamagic_Subtle_NPC;"
+
+new entry "Duelist_ER_Act1"
+type "Character"
+using "Duelist_ER_Act1"
+// data "Passives" "AttackOfOpportunity;DarknessRules;Eternal_Duelist_Cheat_1;Eternal_Duelist_ER;Riposte"
+data "Passives" "CX_Martial_Boost;FeyAncestry;AttackOfOpportunity;DarknessRules;Darkvision;Eternal_Duelist_Cheat_1;Eternal_Duelist_ER;Riposte"
+
+new entry "Duelist_ER_Act2"
+type "Character"
+using "Duelist_ER_Act2"
+// data "Passives" "ExtraAttack;AttackOfOpportunity;DarknessRules;Eternal_Duelist_Cheat_2;Eternal_Duelist_ER;Riposte"
+data "Passives" "CX_Martial_Boost;FeyAncestry;AttackOfOpportunity;DarknessRules;Darkvision;Eternal_Duelist_Cheat_2;Eternal_Duelist_ER;Riposte;ExtraAttack"
+
+new entry "Duelist_ER_Act3"
+type "Character"
+using "Duelist_ER_Act3"
+// data "Passives" "ExtraAttack;AttackOfOpportunity;DarknessRules;Eternal_Duelist_Cheat_3;Eternal_Duelist_ER;Riposte"
+data "Passives" "CX_Martial_Boost;FeyAncestry;AttackOfOpportunity;DarknessRules;Darkvision;Eternal_Duelist_Cheat_3;Eternal_Duelist_ER;Riposte;ExtraAttack"
