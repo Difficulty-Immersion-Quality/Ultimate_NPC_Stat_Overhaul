@@ -79,20 +79,6 @@ data "Boosts" ""
 
 // ==================================== Wizard ====================================
 
-    new entry "CX_Wizard_Evocation_Boost"
-    type "PassiveData"
-    data "DisplayName" "h6104d86ag1a48g4f23gbf22gda76864a6a14;1"
-    data "Description" "h2fa7fcd1g44dfg4020g867fgbaa7d958bc92;1"
-    data "Icon" "PassiveFeature_SculptSpells"
-    data "Boosts" ""
-
-    new entry "CX_Wizard_Illusion_Boost"
-    type "PassiveData"
-    data "DisplayName" "h750ad510g0290g4677gb63fgff5f06e8c106;1"
-    data "Description" "h13a1d527g8e69g4243g8f75gd10d9cd1ba4e;1"
-    data "Icon" "PassiveFeature_ImprovedMinorIllusion"
-    data "Boosts" ""
-
     new entry "CX_Wizard_Necromancy_Boost"
     type "PassiveData"
     data "DisplayName" "h46e43d67gf9f1g48f7g8ce0g14ef160309c2;1"
