@@ -69,9 +69,9 @@ Mods[ModTable].RangerSubclassTable = {
 }
 
 Mods[ModTable].RogueSubclassTable = {
-    "CX_Ranger_ArcaneTrickster_Boost",
-    "CX_Ranger_Assassin_Boost",
-    "CX_Ranger_Thief_Boost"
+    "CX_Rogue_ArcaneTrickster_Boost",
+    "CX_Rogue_Assassin_Boost",
+    "CX_Rogue_Thief_Boost"
 }
 
 Mods[ModTable].SorcererSubclassTable = {

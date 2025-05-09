@@ -46,7 +46,7 @@ new entry "EO_DefiledTemple_Trickery_Cleric"
 type "Character"
 using "EO_DefiledTemple_Trickery_Cleric"
 // data "Passives" "LOW_HouseOfGrief_Cultists_Melee;LOW_HouseOfGrief_Cultists_Sight;AttackOfOpportunity;Darkvision;DarknessRules;Darkvision"
-data "Passives" "CX_Cleric_Boost;CX_Magic_Boost;AttackOfOpportunity;Darkvision;DarknessRules;Darkvision;LOW_HouseOfGrief_Cultists_Melee;LOW_HouseOfGrief_Cultists_Sight"
+data "Passives" "CX_Cleric_Boost;CX_Cleric_Trickery_Boost;CX_Magic_Boost;AttackOfOpportunity;Darkvision;DarknessRules;Darkvision;LOW_HouseOfGrief_Cultists_Melee;LOW_HouseOfGrief_Cultists_Sight"
 
 ///////////////////////////////////
 //                               //
@@ -58,7 +58,7 @@ data "Passives" "CX_Cleric_Boost;CX_Magic_Boost;AttackOfOpportunity;Darkvision;D
 new entry "EO_UND_Duergar_Assassin_Rogue"
 type "Character"
 using "EO_UND_Duergar_Assassin_Rogue"
-data "Passives" "CX_Rogue_Boost;CX_Martial_Boost;Dwarf_DwarvenResilience;Duergar_DuergarResilience;SunlightSensitivity;AttackOfOpportunity;SuperiorDarkvision;DarknessRules"
+data "Passives" "CX_Rogue_Boost;CX_Rogue_Assassin_Boost;CX_Martial_Boost;Dwarf_DwarvenResilience;Duergar_DuergarResilience;SunlightSensitivity;AttackOfOpportunity;SuperiorDarkvision;DarknessRules"
 
 // UCL_Ranger;UCL_BeastMaster;UCL_2_FightingStyle_Archery;UCL_Familiar;UCL_Generic_Sharpshooter
 new entry "EO_UND_Beastmaster_Ranger"
@@ -78,14 +78,14 @@ new entry "EO_UND_Duergar_Draconic_Sorcerer"
 type "Character"
 using "EO_UND_Duergar_Draconic_Sorcerer"
 // data "Passives" "UCL_Quickened_Handler;Dwarf_DwarvenResilience;Duergar_DuergarResilience;SunlightSensitivity;AttackOfOpportunity;SuperiorDarkvision;DarknessRules"
-data "Passives" "CX_Sorcerer_Boost;CX_Magic_Boost;CX_Spells_L3;CX_Spells_L4;Dwarf_DwarvenResilience;Duergar_DuergarResilience;SunlightSensitivity;AttackOfOpportunity;SuperiorDarkvision;DarknessRules;UCL_Quickened_Handler"
+data "Passives" "CX_Sorcerer_Boost;CX_Sorcerer_Draconic_Boost;CX_Magic_Boost;CX_Spells_L3;CX_Spells_L4;Dwarf_DwarvenResilience;Duergar_DuergarResilience;SunlightSensitivity;AttackOfOpportunity;SuperiorDarkvision;DarknessRules;UCL_Quickened_Handler"
 
 // UCL_Fighter;UCL_Champion;UCL_1_FightingStyle_GreatWeaponFighting;UCL_Fighter_ActionSurge_Melee;UCL_Fighter_TwoHander
 new entry "EO_UND_Duergar_Champion_Fighter"
 type "Character"
 using "EO_UND_Duergar_Champion_Fighter"
 // data "Passives" "Dwarf_DwarvenResilience;Duergar_DuergarResilience;SunlightSensitivity;AttackOfOpportunity;SuperiorDarkvision;DarknessRules"
-data "Passives" "CX_Fighter_Boost;CX_Martial_Boost;Dwarf_DwarvenResilience;Duergar_DuergarResilience;SunlightSensitivity;AttackOfOpportunity;SuperiorDarkvision;DarknessRules"
+data "Passives" "CX_Fighter_Boost;CX_Fighter_Champion_Boost;CX_Martial_Boost;Dwarf_DwarvenResilience;Duergar_DuergarResilience;SunlightSensitivity;AttackOfOpportunity;SuperiorDarkvision;DarknessRules"
 
 // UCL_Ranger;UCL_GloomStalker;UCL_2_FightingStyle_Archery;UCL_Generic_Dex_Asi
 new entry "EO_UND_Duergar_Gloomstalker_Ranger"
@@ -129,25 +129,26 @@ using "EO_CRE_Moon_Druid"
 data "Passives" "CX_Druid_Boost;CX_Magic_Boost;Tiefling_HellishResistance;AttackOfOpportunity;DarknessRules"
 
 // UCL_Ranger;UCL_Hunter;UCL_2_FightingStyle_Archery;UCL_Generic_CrossbowExpert
+// I think I made these gith originally Fighters to match the vanilla gith archer, but might as well change them to Ranger Hunters to match the actual EO progressions given
 new entry "EO_CRE_GithRaider_Corrupted_Hunter_Ranger"
 type "Character"
 using "EO_CRE_GithRaider_Corrupted_Hunter_Ranger"
 // data "Passives" "AttackOfOpportunity;DarknessRules"
-data "Passives" "CX_Fighter_Boost;CX_Martial_Boost;AttackOfOpportunity;DarknessRules;ExtraAttack;CrossbowExpert_PointBlank;CrossbowExpert_Wounding"
+data "Passives" "CX_Ranger_Boost;CX_Ranger_Hunter_Boost;CX_Martial_Boost;AttackOfOpportunity;DarknessRules;ExtraAttack;CrossbowExpert_PointBlank;CrossbowExpert_Wounding"
 
 // UCL_Ranger;UCL_Hunter;UCL_2_FightingStyle_Archery;UCL_Generic_Sharpshooter
 new entry "EO_CRE_GithRaider_Hunter_Ranger"
 type "Character"
 using "EO_CRE_GithRaider_Hunter_Ranger"
 // data "Passives" "AttackOfOpportunity;DarknessRules"
-data "Passives" "CX_Fighter_Boost;CX_Martial_Boost;AttackOfOpportunity;DarknessRules;ExtraAttack;CrossbowExpert_PointBlank;CrossbowExpert_Wounding"
+data "Passives" "CX_Ranger_Boost;CX_Ranger_Hunter_Boost;CX_Martial_Boost;AttackOfOpportunity;DarknessRules;ExtraAttack;CrossbowExpert_PointBlank;CrossbowExpert_Wounding"
 
 // UCL_Fighter;UCL_BattleMaster;UCL_1_FightingStyle_Archery;UCL_Fighter_ActionSurge_Ranged;UCL_Fighter_Sharpshooter
 new entry "EO_CRE_GithRaider_Battlemaster_Fighter"
 type "Character"
 using "EO_CRE_GithRaider_Battlemaster_Fighter"
 // data "Passives" "AttackOfOpportunity;DarknessRules"
-data "Passives" "CX_Fighter_Boost;CX_Martial_Boost;AttackOfOpportunity;DarknessRules;ExtraAttack;CrossbowExpert_PointBlank;CrossbowExpert_Wounding"
+data "Passives" "CX_Fighter_Boost;CX_Fighter_BattleMaster_Boost;CX_Martial_Boost;AttackOfOpportunity;DarknessRules;ExtraAttack;CrossbowExpert_PointBlank;CrossbowExpert_Wounding"
 
 // UCL_Fighter;UCL_EldritchKnight;UCL_1_FightingStyle_GreatWeaponFighting;UCL_Fighter_ActionSurge_Melee;UCL_Fighter_Warcaster_TwoHand
 new entry "EO_CRE_GithGish_EldritchKnight_Fighter"
@@ -161,14 +162,14 @@ new entry "EO_CRE_GithCaptain_Battlemaster_Fighter"
 type "Character"
 using "EO_CRE_GithCaptain_Battlemaster_Fighter"
 // data "Passives" "AttackOfOpportunity;DarknessRules"
-data "Passives" "CX_Fighter_Boost;CX_Martial_Boost;AttackOfOpportunity;DarknessRules;ExtraAttack;Parry_Githyanki;Parry_Githyanki_EquipTrigger"
+data "Passives" "CX_Fighter_Boost;CX_Fighter_BattleMaster_Boost;CX_Martial_Boost;AttackOfOpportunity;DarknessRules;ExtraAttack;Parry_Githyanki;Parry_Githyanki_EquipTrigger"
 
 // UCL_Cleric;UCL_WarDomain;UCL_Generic_Str_Asi
 new entry "EO_CRE_GithTenant_War_Cleric"
 type "Character"
 using "EO_CRE_GithTenant_War_Cleric"
 // data "Passives" "Parry_Githyanki_EquipTrigger;AttackOfOpportunity;DarknessRules"
-data "Passives" "CX_Fighter_Boost;CX_Martial_Boost;AttackOfOpportunity;DarknessRules;WarMagic_Githyanki;Parry_Githyanki;Parry_Githyanki_EquipTrigger;Surprise_Immunity"
+data "Passives" "CX_Cleric_Boost;CX_Cleric_Trickery_Boost;CX_Martial_Boost;AttackOfOpportunity;DarknessRules;WarMagic_Githyanki;Parry_Githyanki;Parry_Githyanki_EquipTrigger;Surprise_Immunity"
 
 // UCL_Paladin;UCL_Ancients;UCL_2_FightingStyle_GreatWeaponFighting;UCL_Generic_Str_Asi;UCL_Bonus_Hp
 new entry "EO_Lathanders_Image_Ancient_Paladin"
@@ -189,7 +190,7 @@ new entry "EO_Lathander_Guard_Light_Cleric"
 type "Character"
 using "EO_Lathander_Guard_Light_Cleric"
 // data "Passives" "AttackOfOpportunity;HumanMilitia;HumanVersatility;DarknessRules"
-data "Passives" "CX_Cleric_Boost;CX_Magic_Boost;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules"
+data "Passives" "CX_Cleric_Boost;CX_Cleric_Light_Boost;CX_Magic_Boost;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules"
 
 ///////////////////////////////////
 //                               //
@@ -228,14 +229,15 @@ new entry "EO_SCL_Cutlist_War_Cleric"
 type "Character"
 using "EO_SCL_Cutlist_War_Cleric"
 // data "Passives" "UCL_LightInfusedWeapons;TAD_Charm;FeyAncestry;SunlightSensitivity;AttackOfOpportunity;DarknessRules;Darkvision"
-data "Passives" "CX_Cleric_Boost;CX_Magic_Boost;FeyAncestry;SunlightSensitivity;AttackOfOpportunity;DarknessRules;Darkvision;UCL_LightInfusedWeapons;TAD_Charm"
+data "Passives" "CX_Cleric_Boost;CX_Cleric_War_Boost;CX_Magic_Boost;FeyAncestry;SunlightSensitivity;AttackOfOpportunity;DarknessRules;Darkvision;UCL_LightInfusedWeapons;TAD_Charm"
 
 // UCL_Sorcerer;UCL_WildMagic;UCL_Generic_Cha_Asi
+// Like all other Sorcerer subclass boosts, this one currently doesn't exist but putting it here for the future
 new entry "EO_SCL_Cutlist_WildMagic_Sorcerer"
 type "Character"
 using "EO_SCL_Cutlist_WildMagic_Sorcerer"
 // data "Passives" "UCL_Metamagic_Heightened_NPC;TAD_Charm;Halfling_Lucky;Halfling_Brave;AttackOfOpportunity;DarknessRules"
-data "Passives" "CX_Sorcerer_Boost;CX_Magic_Boost;Halfling_Lucky;Halfling_Brave;AttackOfOpportunity;DarknessRules;UCL_Metamagic_Heightened_NPC;TAD_Charm"
+data "Passives" "CX_Sorcerer_Boost;CX_Sorcerer_WildMagic_Boost;CX_Magic_Boost;Halfling_Lucky;Halfling_Brave;AttackOfOpportunity;DarknessRules;UCL_Metamagic_Heightened_NPC;TAD_Charm"
 
 new entry "EO_SCL_Goblin_Melee"
 type "Character"
@@ -254,7 +256,7 @@ new entry "EO_SCL_Harper_Devotion_Paladin"
 type "Character"
 using "EO_SCL_Harper_Devotion_Paladin"
 // data "Passives" "AttackOfOpportunity;Tiefling_HellishResistance;DarknessRules;Darkvision"
-data "Passives" "CX_Paladin_Boost;CX_Paladin_Devotion_Boost;CX_Martial_Boost;Tiefling_HellishResistanceAttackOfOpportunity;DarknessRules;Darkvision"
+data "Passives" "CX_Paladin_Boost;CX_Paladin_Ancients_Boost;CX_Martial_Boost;Tiefling_HellishResistanceAttackOfOpportunity;DarknessRules;Darkvision"
 
 // UCL_Ranger;UCL_BeastMaster;UCL_2_FightingStyle_Archery;UCL_Familiar;UCL_Generic_Sharpshooter
 new entry "EO_SCL_Harper_Beastmaster_Ranger"
@@ -268,7 +270,7 @@ new entry "EO_SCL_Archfey_Warlock"
 type "Character"
 using "EO_SCL_Archfey_Warlock"
 // data "Passives" "HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules"
-data "Passives" "CX_Warlock_Boost;CX_Magic_Boost;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules"
+data "Passives" "CX_Warlock_Boost;CX_Warlock_Archfey_Boost;CX_Magic_Boost;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules"
 
 // UCL_Warlock;UCL_Fathomless;UCL_Familiar;UCL_EldritchBlaster_2;UCL_Generic_Cha_Asi
 new entry "EO_SCL_Fathomless_Warlock"
@@ -303,20 +305,20 @@ new entry "EO_SCL_WingedCommander_Trickery_Cleric"
 type "Character"
 using "EO_SCL_WingedCommander_Trickery_Cleric"
 // data "Passives" "UCL_BrewerPoison_OnCombatStart;Alert;TAD_PsionicBacklash;TAD_LuckOfTheFarRealms;TAD_DrainAbility;TAD_Charm;AttackOfOpportunity;DarknessRules;Darkvision"
-data "Passives" "CX_Cleric_Boost;CX_Magic_Boost;AttackOfOpportunity;DarknessRules;Darkvision;UCL_BrewerPoison_OnCombatStart;Alert;TAD_PsionicBacklash;TAD_LuckOfTheFarRealms;TAD_DrainAbility;TAD_Charm"
+data "Passives" "CX_Cleric_Boost;CX_Cleric_Trickery_Boost;CX_Magic_Boost;AttackOfOpportunity;DarknessRules;Darkvision;UCL_BrewerPoison_OnCombatStart;Alert;TAD_PsionicBacklash;TAD_LuckOfTheFarRealms;TAD_DrainAbility;TAD_Charm"
 
 // UCL_Cleric;UCL_TrickeryDomain;UCL_Warcaster_Wis
 new entry "EO_SCL_WingedCommander_Illusion"
 type "Character"
 using "EO_SCL_WingedCommander_Illusion"
 // data "Passives" "UCL_BrewerPoison_OnCombatStart;AttackOfOpportunity;DarknessRules;Darkvision"
-data "Passives" "CX_Cleric_Boost;CX_Magic_Boost;AttackOfOpportunity;DarknessRules;Darkvision;UCL_BrewerPoison_OnCombatStart;"
+data "Passives" "CX_Cleric_Boost;CX_Cleric_Trickery_Boost;CX_Magic_Boost;AttackOfOpportunity;DarknessRules;Darkvision;UCL_BrewerPoison_OnCombatStart;"
 
 new entry "EO_DarkJusticiar_Ranger"
 type "Character"
 using "EO_DarkJusticiar_Ranger"
 // data "Passives" "FightingStyle_Archery;Sharpshooter_AllIn;Sharpshooter_Bonuses;ExtraAttack;LivingShadow;LOW_HouseOfGrief_Cultists_Sight;SunlightSensitivity;ShadowStealth;AttackOfOpportunity;Darkvision;DarknessRules"
-data "Passives" "CX_Ranger_Boost;CX_Ranger_Hunter_Boost;CX_Martial_Boost;AttackOfOpportunity;Darkvision;DarknessRules;FightingStyle_Archery;Sharpshooter_AllIn;Sharpshooter_Bonuses;ExtraAttack;LivingShadow;LOW_HouseOfGrief_Cultists_Sight;SunlightSensitivity;ShadowStealth"
+data "Passives" "CX_Ranger_Boost;CX_Martial_Boost;AttackOfOpportunity;Darkvision;DarknessRules;FightingStyle_Archery;Sharpshooter_AllIn;Sharpshooter_Bonuses;ExtraAttack;LivingShadow;LOW_HouseOfGrief_Cultists_Sight;SunlightSensitivity;ShadowStealth"
 
 new entry "EO_DarkJusticiar_Boss"
 type "Character"
@@ -343,28 +345,29 @@ new entry "EO_SCL_Bladesinger_Wizard"
 type "Character"
 using "EO_SCL_Bladesinger_Wizard"
 // data "Passives" "UCL_DrowPoison_OnCombatStart;TAD_Charm;FeyAncestry;AttackOfOpportunity;DarknessRules;Darkvision"
-data "Passives" "CX_Wizard_Boost;CX_Wizard_Evocation_Boost;CX_Magic_Boost;FeyAncestry;AttackOfOpportunity;DarknessRules;Darkvision;UCL_DrowPoison_OnCombatStart;TAD_Charm"
+data "Passives" "CX_Wizard_Boost;CX_Magic_Boost;FeyAncestry;AttackOfOpportunity;DarknessRules;Darkvision;UCL_DrowPoison_OnCombatStart;TAD_Charm"
 
 // UCL_Bard;UCL_SwordsCollege;UCL_3_FightingStyle_Dueling;UCL_WarCaster_Cha
 new entry "EO_SCL_Sword_Bard"
 type "Character"
 using "EO_SCL_Sword_Bard"
 // data "Passives" "UCL_SerpentVenom_OnCombatStart;TAD_Charm;FeyAncestry;AttackOfOpportunity;DarknessRules;Darkvision"
-data "Passives" "CX_Bard_Boost;CX_Magic_Boost;FeyAncestry;AttackOfOpportunity;DarknessRules;Darkvision;UCL_SerpentVenom_OnCombatStart;TAD_Charm"
+data "Passives" "CX_Bard_Boost;CX_Bard_Swords_Boost;CX_Magic_Boost;FeyAncestry;AttackOfOpportunity;DarknessRules;Darkvision;UCL_SerpentVenom_OnCombatStart;TAD_Charm"
 
 // UCL_GloomStalker_Assassin;UCL_2_FightingStyle_TwoWeaponFighting;UCL_Generic_Dex_Asi
 new entry "EO_SCL_Bhaal_Gloomstalker_Assassin"
 type "Character"
 using "EO_SCL_Bhaal_Gloomstalker_Assassin"
 // data "Passives" "UCL_FrostOil_OnCombatStart;TAD_Charm;TAD_DrainAbility;MurderHungry;Tiefling_HellishResistance;AttackOfOpportunity;SuperiorDarkvision;DarknessRules"
-data "Passives" "CX_Ranger_Boost;CX_Ranger_Hunter_Boost;CX_Martial_Boost;Tiefling_HellishResistance;AttackOfOpportunity;SuperiorDarkvision;DarknessRules;UCL_FrostOil_OnCombatStart;TAD_Charm;TAD_DrainAbility;MurderHungry"
+data "Passives" "CX_Ranger_Boost;CX_Ranger_GloomStalker_Boost;CX_Martial_Boost;Tiefling_HellishResistance;AttackOfOpportunity;SuperiorDarkvision;DarknessRules;UCL_FrostOil_OnCombatStart;TAD_Charm;TAD_DrainAbility;MurderHungry"
 
 // UCL_Cleric;UCL_DeathDomain;UCL_Warcaster_Wis
+// In the absence of the actual CX_Cleric_Death_Boost passive being implemented, putting War for now as a placeholder since Death is also a relatively martial/melee focused Cleric subclass
 new entry "EO_SCL_Myrkul_Death_Cleric"
 type "Character"
 using "EO_SCL_Myrkul_Death_Cleric"
 // data "Passives" "UCL_FrostOil_OnCombatStart;TAD_DrainAbility;TAD_Charm;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules"
-data "Passives" "CX_Cleric_Boost;CX_Magic_Boost;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules;UCL_FrostOil_OnCombatStart;TAD_DrainAbility;TAD_Charm"
+data "Passives" "CX_Cleric_Boost;CX_Cleric_War_Boost;CX_Magic_Boost;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules;UCL_FrostOil_OnCombatStart;TAD_DrainAbility;TAD_Charm"
 
 // UCL_Artificer;UCL_BattleSmith;UCL_Artificer_Generic_Infusion;UCL_Int_Sharpshooter
 new entry "EO_SCL_Banite_Artificer"
