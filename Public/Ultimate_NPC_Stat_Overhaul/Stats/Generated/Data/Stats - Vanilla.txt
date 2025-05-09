@@ -3667,7 +3667,7 @@ new entry "LOW_Amelyssan"
 type "Character"
 using "LOW_Amelyssan"
 // data "Passives" "Ethereal;TurnResistance;IncorporealMovement;AttackOfOpportunity;DarknessRules;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check;Metamagic_Distant_NPC"
-data "Passives" "CX_Cleric_Boost;CX_Wizard_Boost;CX_Magic_Boost;CX_Spells_L5C;CX_Spells_L6C;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules;SuperiorDarkvision;SunlightSensitivity;Ethereal;TurnResistance;IncorporealMovement;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check;Metamagic_Distant_NPC"
+data "Passives" "CX_Wizard_Boost;CX_Magic_Boost;CX_Spells_L5C;CX_Spells_L6C;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules;SuperiorDarkvision;SunlightSensitivity;Ethereal;TurnResistance;IncorporealMovement;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check;Metamagic_Distant_NPC"
 
 // Thunderstorm Sue - Aradin's mercenary crew (Wizzard)
 new entry "LOW_AradinThug_Wizzard"
