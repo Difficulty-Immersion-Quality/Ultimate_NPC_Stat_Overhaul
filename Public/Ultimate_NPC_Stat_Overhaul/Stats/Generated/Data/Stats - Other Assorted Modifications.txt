@@ -14,8 +14,8 @@
     using "SHA_NightsongResurrection"
     // Blessed with the favour of a goddess, Nightsong cannot be permanently killed. When unconscious, the start of her turn she recovers 1 <LSTag Tooltip="HitPoints">hit point</LSTag>. 
     // data "Description" "h193b7ee8g5a0bg4d44g93dega35d0a6530f8;1"
-    // Blessed with the favour of a goddess, Nightsong cannot be permanently killed. When unconscious, she becomes stabilized.
-    data "Description" "h2b73c5dag0cb8g48c6gacd1g34aeb19446dc;1"
+    // Blessed with the favour of a goddess, Nightsong cannot be permanently killed. When unconscious, Nightsong can regain 1 &lt;LSTag Tooltip="HitPoints"&gt;hit point&lt;/LSTag&gt; if she succeeds a &lt;LSTag Tooltip="Constitution"&gt;Constitution&lt;/LSTag&gt; &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throw&lt;/LSTag&gt; at the beginning of her turn.
+    data "Description" "hb2f5c3eag43a7g4f82g89d8g10640b01212b;1"
 
     new entry "GLO_NIGHTSONGRESURRECTION_DOWNED"
     type "StatusData"
@@ -28,7 +28,9 @@
     new entry "GOON_NIGHTSONGRESURRECTION_TECHNICAL"
     type "StatusData"
     data "StatusType" "DOWNED"
-    data "DisplayName" "hf8ec321dg67a3g4015g8a2bgad190d484a48;1"
-    data "Description" "h2b73c5dag0cb8g48c6gacd1g34aeb19446dc;1"
+    // Child of the Moonmaiden
+    data "DisplayName" "hc929021bg2701g44aegbcf0g19299216768d;2"
+    // Blessed with the favour of a goddess, Nightsong cannot be permanently killed. When unconscious, Nightsong can regain 1 &lt;LSTag Tooltip="HitPoints"&gt;hit point&lt;/LSTag&gt; if she succeeds a &lt;LSTag Tooltip="Constitution"&gt;Constitution&lt;/LSTag&gt; &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throw&lt;/LSTag&gt; at the beginning of her turn.
+    data "Description" "hb2f5c3eag43a7g4f82g89d8g10640b01212b;1"
     data "StatusPropertyFlags" "DisableOverhead;DisableCombatlog;DisablePortraitIndicator"
     data "OnApplyFunctors" "IF(SavingThrow(Ability.Constitution,15)):RegainHitPoints(1)"

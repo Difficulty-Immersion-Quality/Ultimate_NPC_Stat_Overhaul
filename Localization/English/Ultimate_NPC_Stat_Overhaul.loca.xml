@@ -297,7 +297,5 @@
 	<content contentuid="hcb41b89eg4155g44bfg8474g32fb031bdd15" version="1">! CX Boost: Level 6 Spells - Control</content>
 	<content contentuid="hfcd2e6c0g291fg4e62gaaccg48073db379de" version="1">They gain access to spells from configuration.</content>
 <!-- Other -->
-	<content contentuid="h2b73c5dag0cb8g48c6gacd1g34aeb19446dc" version="1">Blessed with the favour of a goddess, Nightsong cannot be permanently killed. When unconscious, she becomes stabilized.</content>
-	<content contentuid="h2b73c5dag0cb8g48c6gacd1g34aeb19446dc" version="1">Blessed by Selûne</content>
-	<content contentuid="h2b73c5dag0cb8g48c6gacd1g34aeb19446dc" version="1">Blessed with the favour of a goddess, Nightsong cannot be permanently killed. At the beginning of her turn while she is downed, Nightsong can regain 1 &lt;LSTag Tooltip="HitPoints"&gt;hit point&lt;/LSTag&gt; if she succeeds a &lt;LSTag Tooltip="Constitution"&gt;Constitution&lt;/LSTag&gt; &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throw&lt;/LSTag&gt;.</content>
+	<content contentuid="hb2f5c3eag43a7g4f82g89d8g10640b01212b" version="1">Blessed with the favour of a goddess, Nightsong cannot be permanently killed. When unconscious, Nightsong can regain 1 &lt;LSTag Tooltip="HitPoints"&gt;hit point&lt;/LSTag&gt; if she succeeds a &lt;LSTag Tooltip="Constitution"&gt;Constitution&lt;/LSTag&gt; &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throw&lt;/LSTag&gt; at the beginning of her turn.</content>
 </contentList>
