@@ -79,13 +79,6 @@ data "Boosts" ""
 
 // ==================================== Wizard ====================================
 
-    new entry "CX_Wizard_Necromancy_Boost"
-    type "PassiveData"
-    data "DisplayName" "h46e43d67gf9f1g48f7g8ce0g14ef160309c2;1"
-    data "Description" "hcffab35fg6567g4cd3ga4eeg568c65b1bbd7;1"
-    data "Icon" "PassiveFeature_UndeadThralls_ExtraSummon"
-    data "Boosts" ""
-
     new entry "CX_Wizard_Transmutation_Boost"
     type "PassiveData"
     data "DisplayName" "hca1ed09eg7eaeg4eebg8073g46e52fa6350f;1"
