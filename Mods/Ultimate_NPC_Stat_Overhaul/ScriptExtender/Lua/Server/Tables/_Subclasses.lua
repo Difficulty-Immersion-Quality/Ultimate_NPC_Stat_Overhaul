@@ -90,7 +90,7 @@ Mods[ModTable].WizardSubclassTable = {
     "CX_Wizard_Enchantment_Boost",
     "CX_Wizard_Evocation_Boost",
     "CX_Wizard_Illusion_Boost",
-    "CX_Wizard_Necromancy_Boost"
+    "CX_Wizard_Necromancy_Boost",
     "CX_Wizard_Transmutation_Boost"
 }
 
