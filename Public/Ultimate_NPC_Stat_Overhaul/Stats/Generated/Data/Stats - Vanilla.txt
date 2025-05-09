@@ -1006,12 +1006,14 @@ using "LOW_HouseOfGrief_Cultist_Caster_Elf"
 // data "Passives" "FeyAncestry;AttackOfOpportunity;DarknessRules;Darkvision;LOW_HouseOfGrief_Cultists_Sight;LOW_HouseOfGrief_Cultists_Melee;"
 data "Passives" "CX_Wizard_Boost;CX_Magic_Boost;CX_Spells_L4;FeyAncestry;AttackOfOpportunity;DarknessRules;Darkvision;LOW_HouseOfGrief_Cultists_Sight;LOW_HouseOfGrief_Cultists_Melee"
 
-// Echo of Illasera - Illasera the Quick, Bhaalspawn
+// Echo of Illasera - Illasera the Quick, Bhaalspawn (Despite being a Fighter/Mage in BG2, and a "caster" in BG3, she was essentially an intro/tutorial enemy and was cut down a lot in original design. Rogue is fitting for both her theme and to add diversity to the echoes, Arcane Trickster because she was a half caster; and she does have a dagger thankfully.)
 new entry "LOW_Illasera"
 type "Character"
 using "LOW_Illasera"
 // data "Passives" "Ethereal;TurnResistance;IncorporealMovement;AttackOfOpportunity;FeyAncestry;DarknessRules;Darkvision;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check;Metamagic_Distant_NPC"
-data "Passives" "CX_Fighter_Boost;CX_Martial_Boost;CX_Magic_Boost;CX_Spells_L4;AttackOfOpportunity;FeyAncestry;DarknessRules;Darkvision;Ethereal;TurnResistance;IncorporealMovement;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check;Metamagic_Distant_NPC"
+data "Passives" "CX_Rogue_ArcaneTrickster_Boost;CX_Spells_L4;AttackOfOpportunity;FeyAncestry;DarknessRules;Darkvision;Ethereal;TurnResistance;IncorporealMovement;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check;Metamagic_Distant_NPC"
+// data "Progressions" "44bdbc5e-a003-4d61-87f0-5ced20d3804e"
+data "Progressions" "532203c2-7bcb-4162-9a7c-2bb20e227a30"
 
 // Klaus - Assistant Sniffer, Circus of the Last Days
 new entry "WYR_Circus_Klaus"
@@ -1155,12 +1157,12 @@ using "SCL_Harper_Elf_Melee"
 // data "Passives" "FeyAncestry;AttackOfOpportunity;DarknessRules;Darkvision"
 data "Passives" "CX_Fighter_Boost;CX_Martial_Boost;FeyAncestry;AttackOfOpportunity;DarknessRules;Darkvision"
 
-// Aylin - The Nightsong, Singer of Sorrows, Sword of the Moonmaiden, Daughter of Selûne
+// Aylin - The Nightsong, Singer of Sorrows, Sword of the Moonmaiden, Daughter of Selûne (Already has Paladin progressions, noice)
 new entry "SHA_Nightsong"
 type "Character"
 using "SHA_Nightsong"
 // data "Passives" "AttackOfOpportunity;DarknessRules;ExtraAttack;"
-data "Passives" "CX_Paladin_Boost;CX_Paladin_Vengeance_Boost;CX_Martial_Boost;AttackOfOpportunity;DarknessRules;ExtraAttack"
+data "Passives" "CX_Paladin_Vengeance_Boost;CX_Martial_Boost;AttackOfOpportunity;DarknessRules;ExtraAttack"
 
 // "_Elf"
 //  ├─ "Elf_Monk"
@@ -3606,36 +3608,41 @@ data "SpellCastingAbility" "Charisma"
 // data "Progressions" "44bdbc5e-a003-4d61-87f0-5ced20d3804e"
 data "Progressions" "51274504-865d-46d1-b6a3-2ec784934a90"
 // data "Passives" "ExtraAttack;GraveMagic;AttackOfOpportunity;DarknessRules"
-data "Passives" "CX_Warlock_Boost;CX_Magic_Boost;CX_Spells_L4;CX_Spells_L2C;CX_Spells_L3C;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules;ExtraAttack;GraveMagic"
+data "Passives" "CX_Spells_L4;CX_Spells_L2C;CX_Spells_L3C;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules;ExtraAttack;GraveMagic"
 
 // Maghtew Budj - Skull Lasher, Cult of Myrkul
 new entry "Human_Cultist_Myrkul_SkullLasher"
 type "Character"
 using "Human_Cultist_Myrkul_SkullLasher"
 // data "Passives" "ExtraAttack;AttackOfOpportunity;DarknessRules"
-data "Passives" "CX_Wizard_Boost;CX_Wizard_Necromancy_Boost;CX_Magic_Boost;CX_Spells_L4;CX_Spells_L3C;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules;ExtraAttack"
+data "Passives" "CX_Wizard_Necromancy_Boost;CX_Spells_L4;CX_Spells_L3C;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules;ExtraAttack"
 
 // While the Umberlee cultists could be given CX_Cleric_Boost, they're meant to use water/ice-based spells. I recommend leaving the Cleric boost off (so they don't just cast regular Cleric spells instead of cold damage spells) and instead giving them a curated passive/spell list to fit their theme.
+
+// Response: Goon here to say I did not do that kekw, but they needed swapping from Wizard progressions anyway, will look again later.
+// They also already have Wisdom as their casting modifier thankfully.
 
 // Umberlee Untaken: Untaken Padulla, Untaken Zastreya, Untaken Fitzy Relma, Untaken Diomira Trellis, Untaken Glone - Church of Umberlee
 new entry "Human_Cultist_Umberlee_Untaken"
 type "Character"
 using "Human_Cultist_Umberlee_Untaken"
 // data "Passives" "ImmuneToWadableWater;AttackOfOpportunity;DarknessRules"
-data "Passives" "CX_Magic_Boost;AttackOfOpportunity;HumanMilitia;HumanVersatility;DarknessRules;ImmuneToWadableWater"
+data "Passives" "CX_Cleric_Tempest_Boost;AttackOfOpportunity;HumanMilitia;HumanVersatility;DarknessRules;ImmuneToWadableWater"
+// data "Progressions" "44bdbc5e-a003-4d61-87f0-5ced20d3804e"
+data "Progressions" "36c3f8de-3293-4d7b-92bc-ceb3c569244b"
 
 // Flood Tide Allandra Grey - Flood Tide Wavemistress of Umberlee, Church of Umberlee
 new entry "Human_Cultist_Umberlee_FloodTide"
 type "Character"
 using "Human_Cultist_Umberlee_FloodTide"
-data "Passives" "CX_Magic_Boost;CX_Martial_Boost;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules;DualWielder_BonusAC;DualWielder_PassiveBonuses;ImmuneToWadableWater;MagicResistance"
+data "Passives" "CX_Cleric_Tempest_Boost;CX_Martial_Boost;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules;DualWielder_BonusAC;DualWielder_PassiveBonuses;ImmuneToWadableWater;MagicResistance"
 
 // Savage Seawind: Seawind Tinsy Ralpp, Seawind Dulse, Seawind Raheni, Seawind Star Stolitti, Holli Dylford, Seawind Flan Hawser, Seawind Slow-Boat Drubella - Church of Umberlee
 new entry "Human_Cultist_Umberlee_SavageSeawind"
 type "Character"
 using "Human_Cultist_Umberlee_SavageSeawind"
 // data "Passives" "Riposte;SavageAttacker;ImmuneToWadableWater;AttackOfOpportunity;DarknessRules"
-data "Passives" "CX_Magic_Boost;CX_Martial_Boost;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules;Riposte;SavageAttacker;ImmuneToWadableWater"
+data "Passives" "CX_Cleric_Tempest_Boost;CX_Martial_Boost;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules;Riposte;SavageAttacker;ImmuneToWadableWater"
 
 // "_Human"
 //  ├─ "Human_Caster"
@@ -3649,7 +3656,7 @@ new entry "Human_Druid"
 type "Character"
 using "Human_Druid"
 // data "Passives" "AttackOfOpportunity;DarknessRules"
-data "Passives" "CX_Druid_Boost;CX_Magic_Boost;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules"
+data "Passives" "HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules"
 
 // "_Human"
 //  ├─ "Human_Caster"
@@ -3662,54 +3669,56 @@ data "Passives" "CX_Druid_Boost;CX_Magic_Boost;HumanMilitia;HumanVersatility;Att
 //  │   ├─ "LOW_Florrick_Fallback"
 //  │   ├─ "LOW_Golbraith"
 
-// Echo of Amelyssan - Bhaalspawn
+// Echo of Amelyssan - Bhaalspawn (Progressions swapped to Cleric from Wizard)
 new entry "LOW_Amelyssan"
 type "Character"
 using "LOW_Amelyssan"
 // data "Passives" "Ethereal;TurnResistance;IncorporealMovement;AttackOfOpportunity;DarknessRules;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check;Metamagic_Distant_NPC"
-data "Passives" "CX_Wizard_Boost;CX_Magic_Boost;CX_Spells_L5C;CX_Spells_L6C;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules;SuperiorDarkvision;SunlightSensitivity;Ethereal;TurnResistance;IncorporealMovement;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check;Metamagic_Distant_NPC"
+data "Passives" "CX_Spells_L5C;CX_Spells_L6C;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules;SuperiorDarkvision;SunlightSensitivity;Ethereal;TurnResistance;IncorporealMovement;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check;Metamagic_Distant_NPC"
+// data "Progressions" "44bdbc5e-a003-4d61-87f0-5ced20d3804e"
+data "Progressions" "36c3f8de-3293-4d7b-92bc-ceb3c569244b"
 
 // Thunderstorm Sue - Aradin's mercenary crew (Wizzard)
 new entry "LOW_AradinThug_Wizzard"
 type "Character"
 using "LOW_AradinThug_Wizzard"
 // data "Passives" "AttackOfOpportunity;DarknessRules"
-data "Passives" "CX_Wizard_Boost;CX_Magic_Boost;CX_Spells_L4;CX_Spells_L4C;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules"
+data "Passives" "CX_Spells_L4;CX_Spells_L4C;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules"
 
 // Reklan - Szarr Palace
 new entry "LOW_CazadorsPalace_GuardTower_Human_Caster"
 type "Character"
 using "LOW_CazadorsPalace_GuardTower_Human_Caster"
 // data "Passives" "AttackOfOpportunity;DarknessRules"
-data "Passives" "CX_Wizard_Boost;CX_Magic_Boost;CX_Spells_L6;CX_Spells_L6C;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules"
+data "Passives" "CX_Spells_L6;CX_Spells_L6C;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules"
 
 // Avery Sonshal, Clerk Tamara - Cult of Bane
 new entry "LOW_FelogyrFireworks_AverySonshal"
 type "Character"
 using "LOW_FelogyrFireworks_AverySonshal"
 // data "Passives" "AttackOfOpportunity;DarknessRules"
-data "Passives" "CX_Wizard_Boost;CX_Magic_Boost;CX_Spells_L5;CX_Spells_L5C;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules"
+data "Passives" "CX_Spells_L5;CX_Spells_L5C;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules"
 
 // Wanda Tullermoor - Retinue under Florrick
 new entry "LOW_FlorrickGoon_Caster"
 type "Character"
 using "LOW_FlorrickGoon_Caster"
 // data "Passives" "AttackOfOpportunity;DarknessRules;WarCaster_Bonuses;WarCaster_OpportunitySpell"
-data "Passives" "CX_Wizard_Boost;CX_Magic_Boost;CX_Spells_L5;CX_Spells_L5C;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules;WarCaster_Bonuses;WarCaster_OpportunitySpell"
+data "Passives" "CX_Spells_L5;CX_Spells_L5C;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules;WarCaster_Bonuses;WarCaster_OpportunitySpell"
 
 // Cordula Eltan - Flaming Fist (Florrick replacement)
 new entry "LOW_Florrick_Fallback"
 type "Character"
 using "LOW_Florrick_Fallback"
 // data "Passives" "AttackOfOpportunity;DarknessRules;ModeratelyArmored"
-data "Passives" "CX_Wizard_Boost;CX_Magic_Boost;CX_Spells_L6;CX_Spells_L6C;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules;ModeratelyArmored"
+data "Passives" "CX_Spells_L6;CX_Spells_L6C;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules;ModeratelyArmored"
 
-// Golbraith Stredivas - retired mind flayer hunter
+// Golbraith Stredivas - retired mind flayer hunter (Fixed subclass, already has Sculpt Spells so might as well be Evocation school)
 new entry "LOW_Golbraith"
 type "Character"
 using "LOW_Golbraith"
 // data "Passives" "AttackOfOpportunity;DarknessRules;Tough;WarCaster_Bonuses;WarCaster_OpportunitySpell;SculptSpells"
-data "Passives" "CX_Wizard_Boost;CX_Magic_Boost;CX_Spells_L6;CX_Spells_L6C;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules;Tough;WarCaster_Bonuses;WarCaster_OpportunitySpell;SculptSpells"
+data "Passives" "CX_Wizard_Evocation_Boost;CX_Spells_L6;CX_Spells_L6C;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules;Tough;WarCaster_Bonuses;WarCaster_OpportunitySpell;SculptSpells"
 
 // "_Human"
 //  ├─ "Human_Caster"
@@ -5325,14 +5334,18 @@ data "Passives" "CX_Fighter_Boost;CX_Martial_Boost;AttackOfOpportunity;DarknessR
 new entry "LOW_DeathKnight"
 type "Character"
 using "LOW_DeathKnight"
+// data "PersonalStatusImmunities" "SG_Poisoned;BLEEDING;SLEEPING;GAPING_WOUND;CHEST_TRAUMA;DAZED;SG_Exhausted;FRIGHTENED"
+data "PersonalStatusImmunities" "SG_Poisoned;BLEEDING;SG_Sleeping;GAPING_WOUND;CHEST_TRAUMA;DAZED;SG_Exhausted;SG_Frightened"
+// data "Progressions" ""
+data "Progressions" "8726b2c4-edc0-4905-b82f-60a4baba0733"
 // data "Passives" "AttackOfOpportunity;DarknessRules;Darkvision;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check;MagicResistance;Parry;ExtraAttack_2;NecroticAttacks_DeathKnight;Riposte;HellfireDamagePierce_Technical"
-data "Passives" "CX_Paladin_Boost;CX_Paladin_Oathbreaker_Boost;CX_Martial_Boost;AttackOfOpportunity;DarknessRules;Darkvision;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check;MagicResistance;Parry;ExtraAttack_2;NecroticAttacks_DeathKnight;Riposte;HellfireDamagePierce_Technical"
+data "Passives" "CX_Paladin_Oathbreaker_Boost;AttackOfOpportunity;DarknessRules;Darkvision;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check;MagicResistance;Parry;ExtraAttack_2;NecroticAttacks_DeathKnight;Riposte;HellfireDamagePierce_Technical"
 
 new entry "LOW_DeathKnight_Weak"
 type "Character"
 using "LOW_DeathKnight_Weak"
 // data "Passives" "AttackOfOpportunity;DarknessRules;Darkvision;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check;MagicResistance;Parry;ExtraAttack;Riposte"
-data "Passives" "CX_Paladin_Boost;CX_Paladin_Oathbreaker_Boost;CX_Martial_Boost;AttackOfOpportunity;DarknessRules;Darkvision;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check;MagicResistance;Parry;ExtraAttack;Riposte"
+data "Passives" "CX_Paladin_Oathbreaker_Boost;AttackOfOpportunity;DarknessRules;Darkvision;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check;MagicResistance;Parry;ExtraAttack;Riposte"
 
 // "_Undead"
 //  ├─ "Skeleton"
@@ -5475,7 +5488,9 @@ new entry "Merregon"
 type "Character"
 using "Merregon"
 // data "Passives" "ExtraAttack;MagicResistance;DevilsSight;AttackOfOpportunity;DarknessRules"
-data "Passives" "CX_Fighter_Boost;CX_Martial_Boost;AttackOfOpportunity;DevilsSight;DarknessRules;MagicResistance;ExtraAttack"
+data "Passives" "AttackOfOpportunity;DevilsSight;DarknessRules;MagicResistance;ExtraAttack"
+// data "Progressions" ""
+data "Progressions" "0e6da493-5a37-423b-8c28-629462b22faa"
 
 new entry "LOW_HouseOfHope_Merregon"
 type "Character"
@@ -5553,16 +5568,24 @@ data "PathInfluence" "BloodElectrified,100;BloodFrozen,30;Lava,700;Fire,40;HolyF
 new entry "Doppelganger"
 type "Character"
 using "Doppelganger"
+// data "DefaultBoosts" "ProficiencyBonus(SavingThrow, Dexterity); BlockRegainHP(Undead;Construct)"
+data "DefaultBoosts" "ProficiencyBonus(SavingThrow, Dexterity);ProficiencyBonus(SavingThrow, Intelligence);BlockRegainHP(Undead;Construct)"
 // data "Progressions" ""
 data "Progressions" "532203c2-7bcb-4162-9a7c-2bb20e227a30"
 // data "Passives" "Multiattack_Doppelganger;AttackOfOpportunity;Darkvision;DarknessRules"
-data "Passives" "CX_Rogue_Boost;CX_Martial_Boost;AttackOfOpportunity;Darkvision;DarknessRules;Multiattack_Doppelganger"
+data "Passives" "CX_Rogue_Assassin_Boost;AttackOfOpportunity;Darkvision;DarknessRules;Multiattack_Doppelganger;LOW_Guildhall_SneakyRiposte"
 
 new entry "Ettercap"
 type "Character"
 using "Ettercap"
 // data "PathInfluence" "BloodElectrified,100;BloodFrozen,30;Lava,700;Fire,40;HolyFire,40;Hellfire,100;PoisonCloud,70;WyvernPoison,70;DrowPoisonCloud,70;PurpleWormPoison,70;SerpentVenom,70;InvisibleGithAcid,70;CloudkillCloud,70;MaliceCloud,70;CrawlerMucusCloud,70;WaterElectrified,100;WaterFrozen,30;Grease,30;Vines,40;SporeBlackCloud,100;WaterCloudElectrified,40;SporeGreenCloud,40;Acid,30;CausticBrine,40;DarknessCloud,30;FogCloud,30;Mud,30;Oil,30;Poison,30;SpikeGrowth,40;SporePinkCloud,40;StinkingCloud,40"
 data "PathInfluence" "BloodElectrified,100;BloodFrozen,30;Lava,700;Fire,40;HolyFire,40;Hellfire,100;PoisonCloud,70;WyvernPoison,70;DrowPoisonCloud,70;PurpleWormPoison,70;SerpentVenom,70;InvisibleGithAcid,70;CloudkillCloud,70;Cloudkill6Cloud,70;MaliceCloud,70;CrawlerMucusCloud,70;WaterElectrified,100;WaterFrozen,30;Grease,30;Vines,40;SporeBlackCloud,100;WaterCloudElectrified,40;SporeGreenCloud,40;Acid,30;CausticBrine,40;DarknessCloud,30;FogCloud,30;Mud,30;Oil,30;Poison,30;SpikeGrowth,40;SporePinkCloud,40;StinkingCloud,40"
+
+new entry "Harpy"
+type "Character"
+using "Harpy"
+// data "Passives" "Multiattack_Harpy;AttackOfOpportunity;DarknessRules"
+data "Passives" "Multiattack_Harpy;AttackOfOpportunity;DarknessRules;Goon_Fall_Damage_Resistance"
 
 new entry "Minotaur"
 type "Character"
@@ -6006,6 +6029,8 @@ new entry "LOW_RamazithsTower_Nightsong_Shard"
 type "Character"
 // using "Deva"
 using "LOW_RamazithsTower_Nightsong_Shard"
+// data "PersonalStatusImmunities" "SG_Charmed;SG_Frightened"
+data "PersonalStatusImmunities" "SG_Charmed;SG_Frightened;SG_DifficultTerrain;SG_Exhausted;SG_Poisoned;SG_Sleeping"
 // data "Passives" "AttackOfOpportunity;DarknessRules;ImmuneToDisarm;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check;MagicResistance;LOW_RamazithsTower_Nightsong_Deva_Interrupt;DivineHealth;"
 data "Passives" "CX_Paladin_Boost;CX_Paladin_Devotion_Boost;CX_Martial_Boost;AttackOfOpportunity;DarknessRules;ImmuneToDisarm;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check;MagicResistance;LOW_RamazithsTower_Nightsong_Deva_Interrupt;DivineHealth"
 
