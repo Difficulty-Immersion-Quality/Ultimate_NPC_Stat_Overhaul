@@ -77,15 +77,6 @@ data "Description" "he7ee7064g55bfg4b5bga7a2g0f049b35f91e;1"
 data "Icon" "Action_TempestuousMagic"
 data "Boosts" ""
 
-// ==================================== Wizard ====================================
-
-    new entry "CX_Wizard_Transmutation_Boost"
-    type "PassiveData"
-    data "DisplayName" "hca1ed09eg7eaeg4eebg8073g46e52fa6350f;1"
-    data "Description" "hab88cc43g1f03g47e1g823bga96d7b5b06cf;1"
-    data "Icon" "PassiveFeature_ExperimentalAlchemy"
-    data "Boosts" ""
-
 // ===================================================== Original CX Spell Passives =====================================================
 
 new entry "CX_Spells_L1"

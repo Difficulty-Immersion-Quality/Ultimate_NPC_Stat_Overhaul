@@ -2348,3 +2348,310 @@
     //     <attribute id="Selectors" type="LSString" value="SelectSpells(cb123d97-8809-4d71-a0cb-0ecb66177d15,2,0)"/>
     //     <attribute id="TableUUID" type="guid" value="47c4579c-ea2c-474d-9667-62edec24e8eb"/>
     //     <attribute id="UUID" type="guid" value="11acff36-558d-456c-8b98-c4ee033a8282"/>
+
+// ==================================== Subclass: Transmutation School ===================
+
+    new entry "CX_Wizard_Transmutation_Boost"
+    type "PassiveData"
+    data "DisplayName" "hca1ed09eg7eaeg4eebg8073g46e52fa6350f;1"
+    data "Description" "hab88cc43g1f03g47e1g823bga96d7b5b06cf;1"
+    data "Icon" "PassiveFeature_ExperimentalAlchemy"
+    data "Boosts" ""
+    data "StatsFunctorContext" "OnCreate;OnStatusApplied;OnStatusRemoved"
+    data "Conditions" ""
+    data "StatsFunctors" "IF(not ClassLevelHigherOrEqualThan(2,'NPC_WIZARD') or HasStatus('GOON_NPC_WIZARD_LVL_1')):ApplyStatus(GOON_NPC_WIZARD_TRANSMUTATION_LVL_1,100,-1);IF(ClassLevelHigherOrEqualThan(2,'NPC_WIZARD') and not ClassLevelHigherOrEqualThan(3,'NPC_WIZARD') or HasStatus('GOON_NPC_WIZARD_LVL_2')):ApplyStatus(GOON_NPC_WIZARD_TRANSMUTATION_LVL_2,100,-1);IF(ClassLevelHigherOrEqualThan(3,'NPC_WIZARD') and not ClassLevelHigherOrEqualThan(4,'NPC_WIZARD') or HasStatus('GOON_NPC_WIZARD_LVL_3')):ApplyStatus(GOON_NPC_WIZARD_TRANSMUTATION_LVL_3,100,-1);IF(ClassLevelHigherOrEqualThan(4,'NPC_WIZARD') and not ClassLevelHigherOrEqualThan(5,'NPC_WIZARD') or HasStatus('GOON_NPC_WIZARD_LVL_4')):ApplyStatus(GOON_NPC_WIZARD_TRANSMUTATION_LVL_4,100,-1);IF(ClassLevelHigherOrEqualThan(5,'NPC_WIZARD') and not ClassLevelHigherOrEqualThan(6,'NPC_WIZARD') or HasStatus('GOON_NPC_WIZARD_LVL_5')):ApplyStatus(GOON_NPC_WIZARD_TRANSMUTATION_LVL_5,100,-1);IF(ClassLevelHigherOrEqualThan(6,'NPC_WIZARD') and not ClassLevelHigherOrEqualThan(7,'NPC_WIZARD') or HasStatus('GOON_NPC_WIZARD_LVL_6')):ApplyStatus(GOON_NPC_WIZARD_TRANSMUTATION_LVL_6,100,-1);IF(ClassLevelHigherOrEqualThan(7,'NPC_WIZARD') and not ClassLevelHigherOrEqualThan(8,'NPC_WIZARD') or HasStatus('GOON_NPC_WIZARD_LVL_7')):ApplyStatus(GOON_NPC_WIZARD_TRANSMUTATION_LVL_7,100,-1);IF(ClassLevelHigherOrEqualThan(8,'NPC_WIZARD') and not ClassLevelHigherOrEqualThan(9,'NPC_WIZARD') or HasStatus('GOON_NPC_WIZARD_LVL_8')):ApplyStatus(GOON_NPC_WIZARD_TRANSMUTATION_LVL_8,100,-1);IF(ClassLevelHigherOrEqualThan(9,'NPC_WIZARD') and not ClassLevelHigherOrEqualThan(10,'NPC_WIZARD') or HasStatus('GOON_NPC_WIZARD_LVL_9')):ApplyStatus(GOON_NPC_WIZARD_TRANSMUTATION_LVL_9,100,-1);IF(ClassLevelHigherOrEqualThan(10,'NPC_WIZARD') and not ClassLevelHigherOrEqualThan(11,'NPC_WIZARD') or HasStatus('GOON_NPC_WIZARD_LVL_10')):ApplyStatus(GOON_NPC_WIZARD_TRANSMUTATION_LVL_10,100,-1);IF(ClassLevelHigherOrEqualThan(11,'NPC_WIZARD') and not ClassLevelHigherOrEqualThan(12,'NPC_WIZARD') or HasStatus('GOON_NPC_WIZARD_LVL_11')):ApplyStatus(GOON_NPC_WIZARD_TRANSMUTATION_LVL_11,100,-1);IF(ClassLevelHigherOrEqualThan(12,'NPC_WIZARD') and not ClassLevelHigherOrEqualThan(13,'NPC_WIZARD') or HasStatus('GOON_NPC_WIZARD_LVL_12')):ApplyStatus(GOON_NPC_WIZARD_TRANSMUTATION_LVL_12,100,-1);IF(ClassLevelHigherOrEqualThan(13,'NPC_WIZARD') and not ClassLevelHigherOrEqualThan(14,'NPC_WIZARD') or HasStatus('GOON_NPC_WIZARD_LVL_13')):ApplyStatus(GOON_NPC_WIZARD_TRANSMUTATION_LVL_13,100,-1);IF(ClassLevelHigherOrEqualThan(14,'NPC_WIZARD') and not ClassLevelHigherOrEqualThan(15,'NPC_WIZARD') or HasStatus('GOON_NPC_WIZARD_LVL_14')):ApplyStatus(GOON_NPC_WIZARD_TRANSMUTATION_LVL_14,100,-1);IF(ClassLevelHigherOrEqualThan(15,'NPC_WIZARD') and not ClassLevelHigherOrEqualThan(16,'NPC_WIZARD') or HasStatus('GOON_NPC_WIZARD_LVL_15')):ApplyStatus(GOON_NPC_WIZARD_TRANSMUTATION_LVL_15,100,-1);IF(ClassLevelHigherOrEqualThan(16,'NPC_WIZARD') and not ClassLevelHigherOrEqualThan(17,'NPC_WIZARD') or HasStatus('GOON_NPC_WIZARD_LVL_16')):ApplyStatus(GOON_NPC_WIZARD_TRANSMUTATION_LVL_16,100,-1);IF(ClassLevelHigherOrEqualThan(17,'NPC_WIZARD') and not ClassLevelHigherOrEqualThan(18,'NPC_WIZARD') or HasStatus('GOON_NPC_WIZARD_LVL_17')):ApplyStatus(GOON_NPC_WIZARD_TRANSMUTATION_LVL_17,100,-1);IF(ClassLevelHigherOrEqualThan(18,'NPC_WIZARD') and not ClassLevelHigherOrEqualThan(19,'NPC_WIZARD') or HasStatus('GOON_NPC_WIZARD_LVL_18')):ApplyStatus(GOON_NPC_WIZARD_TRANSMUTATION_LVL_18,100,-1);IF(ClassLevelHigherOrEqualThan(19,'NPC_WIZARD') and not ClassLevelHigherOrEqualThan(20,'NPC_WIZARD') or HasStatus('GOON_NPC_WIZARD_LVL_19')):ApplyStatus(GOON_NPC_WIZARD_TRANSMUTATION_LVL_19,100,-1);IF(ClassLevelHigherOrEqualThan(20,'NPC_WIZARD') or HasStatus('GOON_NPC_WIZARD_LVL_20')):ApplyStatus(GOON_NPC_WIZARD_TRANSMUTATION_LVL_20,100,-1)"
+
+// Template
+    new entry "GOON_NPC_WIZARD_TRANSMUTATION_PROGRESSION_TEMPLATE"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    data "StatusPropertyFlags" "DisableOverhead;DisableCombatlog;DisablePortraitIndicator;ApplyToDead;IgnoreResting"
+    data "RemoveEvents" "OnStatusApplied;OnStatusRemoved"
+    data "StackId" "GOON_NPC_WIZARD_TRANSMUTATION_PROGRESSION_TEMPLATE"
+    data "StackType" "Ignore"
+    data "RemoveConditions" "not HasPassive('CX_Wizard_Transmutation_Boost')"
+
+// Progression statuses
+    new entry "GOON_NPC_WIZARD_TRANSMUTATION_LVL_1"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_WIZARD_TRANSMUTATION_PROGRESSION_TEMPLATE"
+    data "StackPriority" "1"
+
+    new entry "GOON_NPC_WIZARD_TRANSMUTATION_LVL_2"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_WIZARD_TRANSMUTATION_PROGRESSION_TEMPLATE"
+    data "StackPriority" "2"
+    data "Passives" "ExperimentalAlchemy"
+    data "Boosts" "Savant(Transmutation)"
+
+    // <node id="Progression">
+    //     <attribute id="Boosts" type="LSString" value="Savant(Transmutation)"/>
+    //     <attribute id="Level" type="uint8" value="2"/>
+    //     <attribute id="Name" type="LSString" value="TransmutationSchool"/>
+    //     <attribute id="PassivesAdded" type="LSString" value="ExperimentalAlchemy"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="Selectors" type="LSString" value="SelectSpells(11f331b0-e8b7-473b-9d1f-19e8e4178d7d,2,0)"/>
+    //     <attribute id="TableUUID" type="guid" value="0bf3a1fe-f4e0-4bd3-aa97-ceec14afa407"/>
+    //     <attribute id="UUID" type="guid" value="de2a9945-7c62-444b-a61d-a8e8fe09fefd"/>
+
+    new entry "GOON_NPC_WIZARD_TRANSMUTATION_LVL_3"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_WIZARD_TRANSMUTATION_LVL_2"
+    data "StackPriority" "3"
+
+    // <node id="Progression">
+    //     <attribute id="Level" type="uint8" value="3"/>
+    //     <attribute id="Name" type="LSString" value="TransmutationSchool"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="Selectors" type="LSString" value="SelectSpells(80c6b070-c3a6-4864-84ca-e78626784eb4,2,0)"/>
+    //     <attribute id="TableUUID" type="guid" value="0bf3a1fe-f4e0-4bd3-aa97-ceec14afa407"/>
+    //     <attribute id="UUID" type="guid" value="e09afe3e-ed6e-4bbd-b2a6-157501f14f64"/>
+
+    new entry "GOON_NPC_WIZARD_TRANSMUTATION_LVL_4"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_WIZARD_TRANSMUTATION_LVL_2"
+    data "StackPriority" "4"
+
+    // <node id="Progression">
+    //     <attribute id="Level" type="uint8" value="4"/>
+    //     <attribute id="Name" type="LSString" value="TransmutationSchool"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="Selectors" type="LSString" value="SelectSpells(3cae2e56-9871-4cef-bba6-96845ea765fa,1,0,,,,AlwaysPrepared);SelectSpells(80c6b070-c3a6-4864-84ca-e78626784eb4,2,0)"/>
+    //     <attribute id="TableUUID" type="guid" value="0bf3a1fe-f4e0-4bd3-aa97-ceec14afa407"/>
+    //     <attribute id="UUID" type="guid" value="6433e2f2-2558-43e5-a045-35bd054ed813"/>
+
+    new entry "GOON_NPC_WIZARD_TRANSMUTATION_LVL_5"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_WIZARD_TRANSMUTATION_LVL_2"
+    data "StackPriority" "5"
+
+    // <node id="Progression">
+    //     <attribute id="Level" type="uint8" value="5"/>
+    //     <attribute id="Name" type="LSString" value="TransmutationSchool"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="Selectors" type="LSString" value="SelectSpells(22755771-ca11-49f4-b772-13d8b8fecd93,2,0)"/>
+    //     <attribute id="TableUUID" type="guid" value="0bf3a1fe-f4e0-4bd3-aa97-ceec14afa407"/>
+    //     <attribute id="UUID" type="guid" value="bff8ab45-108c-43e4-8ee1-75843b6f6653"/>
+
+    new entry "GOON_NPC_WIZARD_TRANSMUTATION_LVL_6"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_WIZARD_TRANSMUTATION_PROGRESSION_TEMPLATE"
+    data "StackPriority" "6"
+    data "Passives" "ExperimentalAlchemy;TransmutationStone;TransmutationStone_Activation"
+    data "Boosts" "Savant(Transmutation)"
+
+    // <node id="Progression">
+    //     <attribute id="Level" type="uint8" value="6"/>
+    //     <attribute id="Name" type="LSString" value="TransmutationSchool"/>
+    //     <attribute id="PassivesAdded" type="LSString" value="TransmutationStone;TransmutationStone_Activation"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="Selectors" type="LSString" value="SelectSpells(22755771-ca11-49f4-b772-13d8b8fecd93,2,0)"/>
+    //     <attribute id="TableUUID" type="guid" value="0bf3a1fe-f4e0-4bd3-aa97-ceec14afa407"/>
+    //     <attribute id="UUID" type="guid" value="e61eb8a5-b9b3-45b8-a97c-ef3767f7df7c"/>
+
+    new entry "GOON_NPC_WIZARD_TRANSMUTATION_LVL_7"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_WIZARD_TRANSMUTATION_LVL_6"
+    data "StackPriority" "7"
+
+    // <node id="Progression">
+    //     <attribute id="Level" type="uint8" value="7"/>
+    //     <attribute id="Name" type="LSString" value="TransmutationSchool"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="Selectors" type="LSString" value="SelectSpells(820b1220-0385-426d-ae15-458dc8a6f5c0,2,0)"/>
+    //     <attribute id="TableUUID" type="guid" value="0bf3a1fe-f4e0-4bd3-aa97-ceec14afa407"/>
+    //     <attribute id="UUID" type="guid" value="8643b32e-1e85-4e06-8a19-4bfce4988311"/>
+
+    new entry "GOON_NPC_WIZARD_TRANSMUTATION_LVL_8"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_WIZARD_TRANSMUTATION_LVL_6"
+    data "StackPriority" "8"
+
+    // <node id="Progression">
+    //     <attribute id="Level" type="uint8" value="8"/>
+    //     <attribute id="Name" type="LSString" value="TransmutationSchool"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="Selectors" type="LSString" value="SelectSpells(820b1220-0385-426d-ae15-458dc8a6f5c0,2,0)"/>
+    //     <attribute id="TableUUID" type="guid" value="0bf3a1fe-f4e0-4bd3-aa97-ceec14afa407"/>
+    //     <attribute id="UUID" type="guid" value="ccfd6014-d203-4ef2-8183-481ef0cc9a23"/>
+
+    new entry "GOON_NPC_WIZARD_TRANSMUTATION_LVL_9"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_WIZARD_TRANSMUTATION_LVL_6"
+    data "StackPriority" "9"
+
+    // <node id="Progression">
+    //     <attribute id="Level" type="uint8" value="9"/>
+    //     <attribute id="Name" type="LSString" value="TransmutationSchool"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="Selectors" type="LSString" value="SelectSpells(f781a25e-d288-43b4-bf5d-3d8d98846687,2,0)"/>
+    //     <attribute id="TableUUID" type="guid" value="0bf3a1fe-f4e0-4bd3-aa97-ceec14afa407"/>
+    //     <attribute id="UUID" type="guid" value="f7445184-3721-411c-8e27-b5448b034e55"/>
+
+    new entry "GOON_NPC_WIZARD_TRANSMUTATION_LVL_10"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_WIZARD_TRANSMUTATION_PROGRESSION_TEMPLATE"
+    data "StackPriority" "10"
+    data "Passives" "ExperimentalAlchemy;TransmutationStone;TransmutationStone_Activation;Shapechanger"
+    data "Boosts" "Savant(Transmutation)"
+
+    // <node id="Progression">
+    //     <attribute id="Level" type="uint8" value="10"/>
+    //     <attribute id="Name" type="LSString" value="TransmutationSchool"/>
+    //     <attribute id="PassivesAdded" type="LSString" value="Shapechanger"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="Selectors" type="LSString" value="SelectSpells(3cae2e56-9871-4cef-bba6-96845ea765fa,1,0,,,,AlwaysPrepared);SelectSpells(f781a25e-d288-43b4-bf5d-3d8d98846687,2,0)"/>
+    //     <attribute id="TableUUID" type="guid" value="0bf3a1fe-f4e0-4bd3-aa97-ceec14afa407"/>
+    //     <attribute id="UUID" type="guid" value="92ae1f67-47f5-4a2b-9462-98deb19da1c2"/>
+
+    new entry "GOON_NPC_WIZARD_TRANSMUTATION_LVL_11"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_WIZARD_TRANSMUTATION_LVL_10"
+    data "StackPriority" "11"
+
+    // <node id="Progression">
+    //     <attribute id="Level" type="uint8" value="11"/>
+    //     <attribute id="Name" type="LSString" value="TransmutationSchool"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="Selectors" type="LSString" value="SelectSpells(bc917f22-7f71-4a25-9a77-7d2f91a96a65,2,0)"/>
+    //     <attribute id="TableUUID" type="guid" value="0bf3a1fe-f4e0-4bd3-aa97-ceec14afa407"/>
+    //     <attribute id="UUID" type="guid" value="36de2141-de2c-4917-a8b6-404695da2b91"/>
+
+    new entry "GOON_NPC_WIZARD_TRANSMUTATION_LVL_12"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_WIZARD_TRANSMUTATION_LVL_10"
+    data "StackPriority" "12"
+
+    // <node id="Progression">
+    //     <attribute id="Level" type="uint8" value="12"/>
+    //     <attribute id="Name" type="LSString" value="TransmutationSchool"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="Selectors" type="LSString" value="SelectSpells(bc917f22-7f71-4a25-9a77-7d2f91a96a65,2,0)"/>
+    //     <attribute id="TableUUID" type="guid" value="0bf3a1fe-f4e0-4bd3-aa97-ceec14afa407"/>
+    //     <attribute id="UUID" type="guid" value="a536b75f-727b-40f7-9873-524233c34e64"/>
+
+// Expansion levels 13-20
+    new entry "GOON_NPC_WIZARD_TRANSMUTATION_LVL_13"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_WIZARD_TRANSMUTATION_LVL_10"
+    data "StackPriority" "13"
+
+    // <node id="Progression">
+    //     <attribute id="Level" type="uint8" value="13"/>
+    //     <attribute id="Name" type="LSString" value="TransmutationSchool"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="Selectors" type="LSString" value="SelectSpells(f27a2d0a-0d6c-4c01-98a5-60081abf4807,2,0)"/>
+    //     <attribute id="TableUUID" type="guid" value="0bf3a1fe-f4e0-4bd3-aa97-ceec14afa407"/>
+    //     <attribute id="UUID" type="guid" value="2c468fd8-d9e6-47ff-b5aa-61607793fa0e"/>
+    
+    new entry "GOON_NPC_WIZARD_TRANSMUTATION_LVL_14"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_WIZARD_TRANSMUTATION_LVL_10"
+    data "StackPriority" "14"
+
+    // <node id="Progression">
+    //     <attribute id="Level" type="uint8" value="14"/>
+    //     <attribute id="Name" type="LSString" value="TransmutationSchool"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="Selectors" type="LSString" value="SelectSpells(f27a2d0a-0d6c-4c01-98a5-60081abf4807,2,0)"/>
+    //     <attribute id="TableUUID" type="guid" value="0bf3a1fe-f4e0-4bd3-aa97-ceec14afa407"/>
+    //     <attribute id="UUID" type="guid" value="beb95352-20d1-4faa-9a4d-e7f1f9a94f42"/>
+    
+    new entry "GOON_NPC_WIZARD_TRANSMUTATION_LVL_15"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_WIZARD_TRANSMUTATION_LVL_10"
+    data "StackPriority" "15"
+
+    // <node id="Progression">
+    //     <attribute id="Level" type="uint8" value="15"/>
+    //     <attribute id="Name" type="LSString" value="TransmutationSchool"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="Selectors" type="LSString" value="SelectSpells(f27a2d0a-0d6c-4c01-98a5-60081abf4807,2,0)"/>
+    //     <attribute id="TableUUID" type="guid" value="0bf3a1fe-f4e0-4bd3-aa97-ceec14afa407"/>
+    //     <attribute id="UUID" type="guid" value="614d2827-a4d8-4264-8413-6440f40f342f"/>
+    
+    new entry "GOON_NPC_WIZARD_TRANSMUTATION_LVL_16"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_WIZARD_TRANSMUTATION_LVL_10"
+    data "StackPriority" "16"
+
+    // <node id="Progression">
+    //     <attribute id="Level" type="uint8" value="16"/>
+    //     <attribute id="Name" type="LSString" value="TransmutationSchool"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="Selectors" type="LSString" value="SelectSpells(f27a2d0a-0d6c-4c01-98a5-60081abf4807,2,0)"/>
+    //     <attribute id="TableUUID" type="guid" value="0bf3a1fe-f4e0-4bd3-aa97-ceec14afa407"/>
+    //     <attribute id="UUID" type="guid" value="950706bc-4c8f-4479-a3c7-8cc97a6c8914"/>
+    
+    new entry "GOON_NPC_WIZARD_TRANSMUTATION_LVL_17"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_WIZARD_TRANSMUTATION_LVL_10"
+    data "StackPriority" "17"
+
+    // <node id="Progression">
+    //     <attribute id="Level" type="uint8" value="17"/>
+    //     <attribute id="Name" type="LSString" value="TransmutationSchool"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="Selectors" type="LSString" value="SelectSpells(cb123d97-8809-4d71-a0cb-0ecb66177d15,2,0)"/>
+    //     <attribute id="TableUUID" type="guid" value="0bf3a1fe-f4e0-4bd3-aa97-ceec14afa407"/>
+    //     <attribute id="UUID" type="guid" value="e46d00f2-bdf8-4a34-898c-ab71d72e7a67"/>
+    
+    new entry "GOON_NPC_WIZARD_TRANSMUTATION_LVL_18"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_WIZARD_TRANSMUTATION_LVL_10"
+    data "StackPriority" "18"
+
+    // <node id="Progression">
+    //     <attribute id="Level" type="uint8" value="18"/>
+    //     <attribute id="Name" type="LSString" value="TransmutationSchool"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="Selectors" type="LSString" value="SelectSpells(cb123d97-8809-4d71-a0cb-0ecb66177d15,2,0)"/>
+    //     <attribute id="TableUUID" type="guid" value="0bf3a1fe-f4e0-4bd3-aa97-ceec14afa407"/>
+    //     <attribute id="UUID" type="guid" value="84a44d16-b989-4f11-b397-accf3bcec0ef"/>
+    
+    new entry "GOON_NPC_WIZARD_TRANSMUTATION_LVL_19"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_WIZARD_TRANSMUTATION_LVL_10"
+    data "StackPriority" "19"
+
+    // <node id="Progression">
+    //     <attribute id="Level" type="uint8" value="19"/>
+    //     <attribute id="Name" type="LSString" value="TransmutationSchool"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="Selectors" type="LSString" value="SelectSpells(cb123d97-8809-4d71-a0cb-0ecb66177d15,2,0)"/>
+    //     <attribute id="TableUUID" type="guid" value="0bf3a1fe-f4e0-4bd3-aa97-ceec14afa407"/>
+    //     <attribute id="UUID" type="guid" value="dab1c849-e24c-4ce4-8a66-acf5d3c487b2"/>
+    
+    new entry "GOON_NPC_WIZARD_TRANSMUTATION_LVL_20"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_NPC_WIZARD_TRANSMUTATION_LVL_10"
+    data "StackPriority" "20"
+
+    // <node id="Progression">
+    //     <attribute id="Level" type="uint8" value="20"/>
+    //     <attribute id="Name" type="LSString" value="TransmutationSchool"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="Selectors" type="LSString" value="SelectSpells(cb123d97-8809-4d71-a0cb-0ecb66177d15,2,0)"/>
+    //     <attribute id="TableUUID" type="guid" value="0bf3a1fe-f4e0-4bd3-aa97-ceec14afa407"/>
+    //     <attribute id="UUID" type="guid" value="d4482e0e-b5ba-4bf6-a3ec-21823a107af1"/>
+
