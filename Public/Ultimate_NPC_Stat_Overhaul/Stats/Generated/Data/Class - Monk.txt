@@ -254,7 +254,7 @@
     data "StatusType" "BOOST"
     using "GOON_NPC_MONK_FOURELEMENTS_PROGRESSION_TEMPLATE"
     data "StackPriority" "3"
-    data "Passives" ""
+    data "Passives" "CX_Magic_Boost"
     data "Boosts" "UnlockSpell(Shout_HarmonyOfFireAndWater,AddChildren)"
 
     // <node id="Progression">
@@ -268,10 +268,8 @@
     new entry "GOON_NPC_MONK_FOURELEMENTS_LVL_4"
     type "StatusData"
     data "StatusType" "BOOST"
-    using "GOON_NPC_MONK_FOURELEMENTS_PROGRESSION_TEMPLATE"
+    using "GOON_NPC_MONK_FOURELEMENTS_LVL_3"
     data "StackPriority" "4"
-    data "Passives" ""
-    data "Boosts" "UnlockSpell(Shout_HarmonyOfFireAndWater,AddChildren)"
 
     // <node id="Progression">
     //     <attribute id="Level" type="uint8" value="4"/>
@@ -284,10 +282,8 @@
     new entry "GOON_NPC_MONK_FOURELEMENTS_LVL_5"
     type "StatusData"
     data "StatusType" "BOOST"
-    using "GOON_NPC_MONK_FOURELEMENTS_PROGRESSION_TEMPLATE"
+    using "GOON_NPC_MONK_FOURELEMENTS_LVL_3"
     data "StackPriority" "5"
-    data "Passives" ""
-    data "Boosts" "UnlockSpell(Shout_HarmonyOfFireAndWater,AddChildren)"
 
     // <node id="Progression">
     //     <attribute id="Level" type="uint8" value="5"/>
@@ -300,10 +296,8 @@
     new entry "GOON_NPC_MONK_FOURELEMENTS_LVL_6"
     type "StatusData"
     data "StatusType" "BOOST"
-    using "GOON_NPC_MONK_FOURELEMENTS_PROGRESSION_TEMPLATE"
+    using "GOON_NPC_MONK_FOURELEMENTS_LVL_3"
     data "StackPriority" "6"
-    data "Passives" ""
-    data "Boosts" "UnlockSpell(Shout_HarmonyOfFireAndWater,AddChildren)"
 
     // <node id="Progression">
     //     <attribute id="Level" type="uint8" value="6"/>
@@ -316,10 +310,8 @@
     new entry "GOON_NPC_MONK_FOURELEMENTS_LVL_7"
     type "StatusData"
     data "StatusType" "BOOST"
-    using "GOON_NPC_MONK_FOURELEMENTS_PROGRESSION_TEMPLATE"
+    using "GOON_NPC_MONK_FOURELEMENTS_LVL_3"
     data "StackPriority" "7"
-    data "Passives" ""
-    data "Boosts" "UnlockSpell(Shout_HarmonyOfFireAndWater,AddChildren)"
 
     // <node id="Progression">
     //     <attribute id="Level" type="uint8" value="7"/>
@@ -332,10 +324,8 @@
     new entry "GOON_NPC_MONK_FOURELEMENTS_LVL_8"
     type "StatusData"
     data "StatusType" "BOOST"
-    using "GOON_NPC_MONK_FOURELEMENTS_PROGRESSION_TEMPLATE"
+    using "GOON_NPC_MONK_FOURELEMENTS_LVL_3"
     data "StackPriority" "8"
-    data "Passives" ""
-    data "Boosts" "UnlockSpell(Shout_HarmonyOfFireAndWater,AddChildren)"
 
     // <node id="Progression">
     //     <attribute id="Level" type="uint8" value="8"/>
@@ -350,7 +340,7 @@
     data "StatusType" "BOOST"
     using "GOON_NPC_MONK_FOURELEMENTS_PROGRESSION_TEMPLATE"
     data "StackPriority" "9"
-    data "Passives" "ImprovedElementalCasting"
+    data "Passives" "CX_Magic_Boost;ImprovedElementalCasting"
     data "Boosts" "UnlockSpell(Shout_HarmonyOfFireAndWater,AddChildren)"
 
     // <node id="Progression">
@@ -367,7 +357,7 @@
     data "StatusType" "BOOST"
     using "GOON_NPC_MONK_FOURELEMENTS_PROGRESSION_TEMPLATE"
     data "StackPriority" "10"
-    data "Passives" "ImprovedElementalCasting"
+    data "Passives" "CX_Magic_Boost;ImprovedElementalCasting"
     data "Boosts" "UnlockSpell(Shout_HarmonyOfFireAndWater,AddChildren)"
 
     // <node id="Progression">
@@ -383,7 +373,7 @@
     data "StatusType" "BOOST"
     using "GOON_NPC_MONK_FOURELEMENTS_PROGRESSION_TEMPLATE"
     data "StackPriority" "11"
-    data "Passives" "ImprovedElementalCasting"
+    data "Passives" "CX_Magic_Boost;ImprovedElementalCasting"
     data "Boosts" "UnlockSpell(Shout_HarmonyOfFireAndWater,AddChildren)"
 
     // <node id="Progression">
@@ -399,7 +389,7 @@
     data "StatusType" "BOOST"
     using "GOON_NPC_MONK_FOURELEMENTS_PROGRESSION_TEMPLATE"
     data "StackPriority" "12"
-    data "Passives" "ImprovedElementalCasting"
+    data "Passives" "CX_Magic_Boost;ImprovedElementalCasting"
     data "Boosts" "UnlockSpell(Shout_HarmonyOfFireAndWater,AddChildren)"
 
     // <node id="Progression">
@@ -416,7 +406,7 @@
     data "StatusType" "BOOST"
     using "GOON_NPC_MONK_FOURELEMENTS_PROGRESSION_TEMPLATE"
     data "StackPriority" "13"
-    data "Passives" "ImprovedElementalCasting"
+    data "Passives" "CX_Magic_Boost;ImprovedElementalCasting"
     data "Boosts" "UnlockSpell(Shout_HarmonyOfFireAndWater,AddChildren)"
 
     // <node id="Progression">
@@ -432,7 +422,7 @@
     data "StatusType" "BOOST"
     using "GOON_NPC_MONK_FOURELEMENTS_PROGRESSION_TEMPLATE"
     data "StackPriority" "14"
-    data "Passives" "ImprovedElementalCasting"
+    data "Passives" "CX_Magic_Boost;ImprovedElementalCasting"
     data "Boosts" "UnlockSpell(Shout_HarmonyOfFireAndWater,AddChildren)"
 
     // <node id="Progression">
@@ -448,7 +438,7 @@
     data "StatusType" "BOOST"
     using "GOON_NPC_MONK_FOURELEMENTS_PROGRESSION_TEMPLATE"
     data "StackPriority" "15"
-    data "Passives" "ImprovedElementalCasting"
+    data "Passives" "CX_Magic_Boost;ImprovedElementalCasting"
     data "Boosts" "UnlockSpell(Shout_HarmonyOfFireAndWater,AddChildren)"
 
     // <node id="Progression">
@@ -464,7 +454,7 @@
     data "StatusType" "BOOST"
     using "GOON_NPC_MONK_FOURELEMENTS_PROGRESSION_TEMPLATE"
     data "StackPriority" "16"
-    data "Passives" "ImprovedElementalCasting"
+    data "Passives" "CX_Magic_Boost;ImprovedElementalCasting"
     data "Boosts" "UnlockSpell(Shout_HarmonyOfFireAndWater,AddChildren)"
 
     // <node id="Progression">
@@ -480,7 +470,7 @@
     data "StatusType" "BOOST"
     using "GOON_NPC_MONK_FOURELEMENTS_PROGRESSION_TEMPLATE"
     data "StackPriority" "17"
-    data "Passives" "ImprovedElementalCasting"
+    data "Passives" "CX_Magic_Boost;ImprovedElementalCasting"
     data "Boosts" "UnlockSpell(Shout_HarmonyOfFireAndWater,AddChildren)"
 
     // <node id="Progression">
@@ -496,7 +486,7 @@
     data "StatusType" "BOOST"
     using "GOON_NPC_MONK_FOURELEMENTS_PROGRESSION_TEMPLATE"
     data "StackPriority" "18"
-    data "Passives" "ImprovedElementalCasting"
+    data "Passives" "CX_Magic_Boost;ImprovedElementalCasting"
     data "Boosts" "UnlockSpell(Shout_HarmonyOfFireAndWater,AddChildren)"
 
     // <node id="Progression">
@@ -512,7 +502,7 @@
     data "StatusType" "BOOST"
     using "GOON_NPC_MONK_FOURELEMENTS_PROGRESSION_TEMPLATE"
     data "StackPriority" "19"
-    data "Passives" "ImprovedElementalCasting"
+    data "Passives" "CX_Magic_Boost;ImprovedElementalCasting"
     data "Boosts" "UnlockSpell(Shout_HarmonyOfFireAndWater,AddChildren)"
 
     // <node id="Progression">
@@ -528,7 +518,7 @@
     data "StatusType" "BOOST"
     using "GOON_NPC_MONK_FOURELEMENTS_PROGRESSION_TEMPLATE"
     data "StackPriority" "20"
-    data "Passives" "ImprovedElementalCasting"
+    data "Passives" "CX_Magic_Boost;ImprovedElementalCasting"
     data "Boosts" "UnlockSpell(Shout_HarmonyOfFireAndWater,AddChildren)"
 
     // <node id="Progression">

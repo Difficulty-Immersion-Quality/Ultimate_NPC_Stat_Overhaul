@@ -49,7 +49,7 @@
     data "StatusType" "BOOST"
     using "GOON_NPC_PALADIN_PROGRESSION_TEMPLATE"
     data "StackPriority" "1"
-    data "Passives" "CX_Martial_Boost"
+    data "Passives" "CX_Magic_Boost;CX_Martial_Boost"
     data "Boosts" "Tag(PALADIN);ProficiencyBonus(SavingThrow,Wisdom);ProficiencyBonus(SavingThrow,Charisma);Proficiency(LightArmor);Proficiency(MediumArmor);Proficiency(HeavyArmor);Proficiency(Shields);Proficiency(SimpleWeapons);Proficiency(MartialWeapons);ActionResource(LayOnHandsCharge,3,0);ActionResource(ChannelOath,1,0);UnlockSpell(Target_LayOnHands,AddChildren);UnlockSpell(Shout_DivineSense,AddChildren)"
 
     new entry "GOON_NPC_PALADIN_LVL_2"
@@ -57,7 +57,7 @@
     data "StatusType" "BOOST"
     using "GOON_NPC_PALADIN_PROGRESSION_TEMPLATE"
     data "StackPriority" "2"
-    data "Passives" "CX_Martial_Boost;Smite_Divine_NPC;UnlockedSpellSlotLevel1"
+    data "Passives" "CX_Magic_Boost;CX_Martial_Boost;Smite_Divine_NPC;UnlockedSpellSlotLevel1"
     data "Boosts" "Tag(PALADIN);ProficiencyBonus(SavingThrow,Wisdom);ProficiencyBonus(SavingThrow,Charisma);Proficiency(LightArmor);Proficiency(MediumArmor);Proficiency(HeavyArmor);Proficiency(Shields);Proficiency(SimpleWeapons);Proficiency(MartialWeapons);ActionResource(LayOnHandsCharge,3,0);ActionResource(ChannelOath,1,0);UnlockSpell(Target_LayOnHands,AddChildren);UnlockSpell(Shout_DivineSense,AddChildren);ActionResource(SpellSlot,2,1);UnlockSpell(Target_Smite_Divine,AddChildren);UnlockSpell(Target_Smite_Divine_Unlock,AddChildren);UnlockSpell(Target_Smite_Divine_Critical_Unlock,AddChildren)"
 
     new entry "GOON_NPC_PALADIN_LVL_3"
@@ -65,7 +65,7 @@
     data "StatusType" "BOOST"
     using "GOON_NPC_PALADIN_PROGRESSION_TEMPLATE"
     data "StackPriority" "3"
-    data "Passives" "CX_Martial_Boost;Smite_Divine_NPC;UnlockedSpellSlotLevel1;DivineHealth"
+    data "Passives" "CX_Magic_Boost;CX_Martial_Boost;Smite_Divine_NPC;UnlockedSpellSlotLevel1;DivineHealth"
     data "Boosts" "Tag(PALADIN);ProficiencyBonus(SavingThrow,Wisdom);ProficiencyBonus(SavingThrow,Charisma);Proficiency(LightArmor);Proficiency(MediumArmor);Proficiency(HeavyArmor);Proficiency(Shields);Proficiency(SimpleWeapons);Proficiency(MartialWeapons);ActionResource(LayOnHandsCharge,3,0);ActionResource(ChannelOath,1,0);UnlockSpell(Target_LayOnHands,AddChildren);UnlockSpell(Shout_DivineSense,AddChildren);ActionResource(SpellSlot,3,1);UnlockSpell(Target_Smite_Divine,AddChildren);UnlockSpell(Target_Smite_Divine_Unlock,AddChildren);UnlockSpell(Target_Smite_Divine_Critical_Unlock,AddChildren)"
 
     new entry "GOON_NPC_PALADIN_LVL_4"
@@ -73,7 +73,7 @@
     data "StatusType" "BOOST"
     using "GOON_NPC_PALADIN_PROGRESSION_TEMPLATE"
     data "StackPriority" "4"
-    data "Passives" "CX_Martial_Boost;Smite_Divine_NPC;UnlockedSpellSlotLevel1;DivineHealth"
+    data "Passives" "CX_Magic_Boost;CX_Martial_Boost;Smite_Divine_NPC;UnlockedSpellSlotLevel1;DivineHealth"
     data "Boosts" "Tag(PALADIN);ProficiencyBonus(SavingThrow,Wisdom);ProficiencyBonus(SavingThrow,Charisma);Proficiency(LightArmor);Proficiency(MediumArmor);Proficiency(HeavyArmor);Proficiency(Shields);Proficiency(SimpleWeapons);Proficiency(MartialWeapons);ActionResource(LayOnHandsCharge,4,0);ActionResource(ChannelOath,1,0);UnlockSpell(Target_LayOnHands,AddChildren);UnlockSpell(Shout_DivineSense,AddChildren);ActionResource(SpellSlot,3,1);UnlockSpell(Target_Smite_Divine,AddChildren);UnlockSpell(Target_Smite_Divine_Unlock,AddChildren);UnlockSpell(Target_Smite_Divine_Critical_Unlock,AddChildren)"
 
     new entry "GOON_NPC_PALADIN_LVL_5"
@@ -81,7 +81,7 @@
     data "StatusType" "BOOST"
     using "GOON_NPC_PALADIN_PROGRESSION_TEMPLATE"
     data "StackPriority" "5"
-    data "Passives" "CX_Martial_Boost;Smite_Divine_NPC;UnlockedSpellSlotLevel1;DivineHealth;ExtraAttack;Smite_Divine_2_NPC;UnlockedSpellSlotLevel2"
+    data "Passives" "CX_Magic_Boost;CX_Martial_Boost;Smite_Divine_NPC;UnlockedSpellSlotLevel1;DivineHealth;ExtraAttack;Smite_Divine_2_NPC;UnlockedSpellSlotLevel2"
     data "Boosts" "Tag(PALADIN);ProficiencyBonus(SavingThrow,Wisdom);ProficiencyBonus(SavingThrow,Charisma);Proficiency(LightArmor);Proficiency(MediumArmor);Proficiency(HeavyArmor);Proficiency(Shields);Proficiency(SimpleWeapons);Proficiency(MartialWeapons);ActionResource(LayOnHandsCharge,4,0);ActionResource(ChannelOath,1,0);UnlockSpell(Target_LayOnHands,AddChildren);UnlockSpell(Shout_DivineSense,AddChildren);ActionResource(SpellSlot,4,1);UnlockSpell(Target_Smite_Divine,AddChildren);UnlockSpell(Target_Smite_Divine_Unlock,AddChildren);UnlockSpell(Target_Smite_Divine_Critical_Unlock,AddChildren);ActionResource(SpellSlot,2,2)"
 
     new entry "GOON_NPC_PALADIN_LVL_6"
@@ -89,7 +89,7 @@
     data "StatusType" "BOOST"
     using "GOON_NPC_PALADIN_PROGRESSION_TEMPLATE"
     data "StackPriority" "6"
-    data "Passives" "CX_Martial_Boost;Smite_Divine_NPC;UnlockedSpellSlotLevel1;DivineHealth;ExtraAttack;Smite_Divine_2_NPC;UnlockedSpellSlotLevel2;Goon_Aura_Distribution_Passive"
+    data "Passives" "CX_Magic_Boost;CX_Martial_Boost;Smite_Divine_NPC;UnlockedSpellSlotLevel1;DivineHealth;ExtraAttack;Smite_Divine_2_NPC;UnlockedSpellSlotLevel2;Goon_Aura_Distribution_Passive"
     data "Boosts" "Tag(PALADIN);ProficiencyBonus(SavingThrow,Wisdom);ProficiencyBonus(SavingThrow,Charisma);Proficiency(LightArmor);Proficiency(MediumArmor);Proficiency(HeavyArmor);Proficiency(Shields);Proficiency(SimpleWeapons);Proficiency(MartialWeapons);ActionResource(LayOnHandsCharge,4,0);ActionResource(ChannelOath,1,0);UnlockSpell(Target_LayOnHands,AddChildren);UnlockSpell(Shout_DivineSense,AddChildren);ActionResource(SpellSlot,4,1);UnlockSpell(Target_Smite_Divine,AddChildren);UnlockSpell(Target_Smite_Divine_Unlock,AddChildren);UnlockSpell(Target_Smite_Divine_Critical_Unlock,AddChildren);ActionResource(SpellSlot,2,2)"
 
     new entry "GOON_NPC_PALADIN_LVL_7"
@@ -97,7 +97,7 @@
     data "StatusType" "BOOST"
     using "GOON_NPC_PALADIN_PROGRESSION_TEMPLATE"
     data "StackPriority" "7"
-    data "Passives" "CX_Martial_Boost;Smite_Divine_NPC;UnlockedSpellSlotLevel1;DivineHealth;ExtraAttack;Smite_Divine_2_NPC;UnlockedSpellSlotLevel2;Goon_Aura_Distribution_Passive"
+    data "Passives" "CX_Magic_Boost;CX_Martial_Boost;Smite_Divine_NPC;UnlockedSpellSlotLevel1;DivineHealth;ExtraAttack;Smite_Divine_2_NPC;UnlockedSpellSlotLevel2;Goon_Aura_Distribution_Passive"
     data "Boosts" "Tag(PALADIN);ProficiencyBonus(SavingThrow,Wisdom);ProficiencyBonus(SavingThrow,Charisma);Proficiency(LightArmor);Proficiency(MediumArmor);Proficiency(HeavyArmor);Proficiency(Shields);Proficiency(SimpleWeapons);Proficiency(MartialWeapons);ActionResource(LayOnHandsCharge,4,0);ActionResource(ChannelOath,1,0);UnlockSpell(Target_LayOnHands,AddChildren);UnlockSpell(Shout_DivineSense,AddChildren);ActionResource(SpellSlot,4,1);UnlockSpell(Target_Smite_Divine,AddChildren);UnlockSpell(Target_Smite_Divine_Unlock,AddChildren);UnlockSpell(Target_Smite_Divine_Critical_Unlock,AddChildren);ActionResource(SpellSlot,3,2)"
 
     new entry "GOON_NPC_PALADIN_LVL_8"
@@ -111,7 +111,7 @@
     data "StatusType" "BOOST"
     using "GOON_NPC_PALADIN_PROGRESSION_TEMPLATE"
     data "StackPriority" "9"
-    data "Passives" "CX_Martial_Boost;Smite_Divine_NPC;UnlockedSpellSlotLevel1;DivineHealth;ExtraAttack;Smite_Divine_2_NPC;UnlockedSpellSlotLevel2;Goon_Aura_Distribution_Passive;Smite_Divine_3_NPC;UnlockedSpellSlotLevel3"
+    data "Passives" "CX_Magic_Boost;CX_Martial_Boost;Smite_Divine_NPC;UnlockedSpellSlotLevel1;DivineHealth;ExtraAttack;Smite_Divine_2_NPC;UnlockedSpellSlotLevel2;Goon_Aura_Distribution_Passive;Smite_Divine_3_NPC;UnlockedSpellSlotLevel3"
     data "Boosts" "Tag(PALADIN);ProficiencyBonus(SavingThrow,Wisdom);ProficiencyBonus(SavingThrow,Charisma);Proficiency(LightArmor);Proficiency(MediumArmor);Proficiency(HeavyArmor);Proficiency(Shields);Proficiency(SimpleWeapons);Proficiency(MartialWeapons);ActionResource(LayOnHandsCharge,4,0);ActionResource(ChannelOath,1,0);UnlockSpell(Target_LayOnHands,AddChildren);UnlockSpell(Shout_DivineSense,AddChildren);ActionResource(SpellSlot,4,1);UnlockSpell(Target_Smite_Divine,AddChildren);UnlockSpell(Target_Smite_Divine_Unlock,AddChildren);UnlockSpell(Target_Smite_Divine_Critical_Unlock,AddChildren);ActionResource(SpellSlot,3,2);ActionResource(SpellSlot,2,3)"
 
     new entry "GOON_NPC_PALADIN_LVL_10"
@@ -119,7 +119,7 @@
     data "StatusType" "BOOST"
     using "GOON_NPC_PALADIN_PROGRESSION_TEMPLATE"
     data "StackPriority" "10"
-    data "Passives" "CX_Martial_Boost;Smite_Divine_NPC;UnlockedSpellSlotLevel1;DivineHealth;ExtraAttack;Smite_Divine_2_NPC;UnlockedSpellSlotLevel2;Goon_Aura_Distribution_Passive;Smite_Divine_3_NPC;UnlockedSpellSlotLevel3"
+    data "Passives" "CX_Magic_Boost;CX_Martial_Boost;Smite_Divine_NPC;UnlockedSpellSlotLevel1;DivineHealth;ExtraAttack;Smite_Divine_2_NPC;UnlockedSpellSlotLevel2;Goon_Aura_Distribution_Passive;Smite_Divine_3_NPC;UnlockedSpellSlotLevel3"
     data "Boosts" "Tag(PALADIN);ProficiencyBonus(SavingThrow,Wisdom);ProficiencyBonus(SavingThrow,Charisma);Proficiency(LightArmor);Proficiency(MediumArmor);Proficiency(HeavyArmor);Proficiency(Shields);Proficiency(SimpleWeapons);Proficiency(MartialWeapons);ActionResource(LayOnHandsCharge,5,0);ActionResource(ChannelOath,1,0);UnlockSpell(Target_LayOnHands,AddChildren);UnlockSpell(Shout_DivineSense,AddChildren);ActionResource(SpellSlot,4,1);UnlockSpell(Target_Smite_Divine,AddChildren);UnlockSpell(Target_Smite_Divine_Unlock,AddChildren);UnlockSpell(Target_Smite_Divine_Critical_Unlock,AddChildren);ActionResource(SpellSlot,3,2);ActionResource(SpellSlot,2,3)"
 
     new entry "GOON_NPC_PALADIN_LVL_11"
@@ -127,7 +127,7 @@
     data "StatusType" "BOOST"
     using "GOON_NPC_PALADIN_PROGRESSION_TEMPLATE"
     data "StackPriority" "11"
-    data "Passives" "CX_Martial_Boost;Smite_Divine_NPC;UnlockedSpellSlotLevel1;DivineHealth;ExtraAttack;Smite_Divine_2_NPC;UnlockedSpellSlotLevel2;Goon_Aura_Distribution_Passive;Smite_Divine_3_NPC;UnlockedSpellSlotLevel3;ImprovedDivineSmite"
+    data "Passives" "CX_Magic_Boost;CX_Martial_Boost;Smite_Divine_NPC;UnlockedSpellSlotLevel1;DivineHealth;ExtraAttack;Smite_Divine_2_NPC;UnlockedSpellSlotLevel2;Goon_Aura_Distribution_Passive;Smite_Divine_3_NPC;UnlockedSpellSlotLevel3;ImprovedDivineSmite"
     data "Boosts" "Tag(PALADIN);ProficiencyBonus(SavingThrow,Wisdom);ProficiencyBonus(SavingThrow,Charisma);Proficiency(LightArmor);Proficiency(MediumArmor);Proficiency(HeavyArmor);Proficiency(Shields);Proficiency(SimpleWeapons);Proficiency(MartialWeapons);ActionResource(LayOnHandsCharge,5,0);ActionResource(ChannelOath,1,0);UnlockSpell(Target_LayOnHands,AddChildren);UnlockSpell(Shout_DivineSense,AddChildren);ActionResource(SpellSlot,4,1);UnlockSpell(Target_Smite_Divine,AddChildren);UnlockSpell(Target_Smite_Divine_Unlock,AddChildren);UnlockSpell(Target_Smite_Divine_Critical_Unlock,AddChildren);ActionResource(SpellSlot,3,2);ActionResource(SpellSlot,3,3)"
 
     new entry "GOON_NPC_PALADIN_LVL_12"
@@ -142,7 +142,7 @@
     data "StatusType" "BOOST"
     using "GOON_NPC_PALADIN_PROGRESSION_TEMPLATE"
     data "StackPriority" "13"
-    data "Passives" "CX_Martial_Boost;Smite_Divine_NPC;UnlockedSpellSlotLevel1;DivineHealth;ExtraAttack;Smite_Divine_2_NPC;UnlockedSpellSlotLevel2;Goon_Aura_Distribution_Passive;Smite_Divine_3_NPC;UnlockedSpellSlotLevel3;ImprovedDivineSmite"
+    data "Passives" "CX_Magic_Boost;CX_Martial_Boost;Smite_Divine_NPC;UnlockedSpellSlotLevel1;DivineHealth;ExtraAttack;Smite_Divine_2_NPC;UnlockedSpellSlotLevel2;Goon_Aura_Distribution_Passive;Smite_Divine_3_NPC;UnlockedSpellSlotLevel3;ImprovedDivineSmite"
     data "Boosts" "Tag(PALADIN);ProficiencyBonus(SavingThrow,Wisdom);ProficiencyBonus(SavingThrow,Charisma);Proficiency(LightArmor);Proficiency(MediumArmor);Proficiency(HeavyArmor);Proficiency(Shields);Proficiency(SimpleWeapons);Proficiency(MartialWeapons);ActionResource(LayOnHandsCharge,6,0);ActionResource(ChannelOath,1,0);UnlockSpell(Target_LayOnHands,AddChildren);UnlockSpell(Shout_DivineSense,AddChildren);ActionResource(SpellSlot,4,1);UnlockSpell(Target_Smite_Divine,AddChildren);UnlockSpell(Target_Smite_Divine_Unlock,AddChildren);UnlockSpell(Target_Smite_Divine_Critical_Unlock,AddChildren);ActionResource(SpellSlot,3,2);ActionResource(SpellSlot,3,3);ActionResource(SpellSlot,1,4)"
 
     new entry "GOON_NPC_PALADIN_LVL_14"
@@ -150,7 +150,7 @@
     data "StatusType" "BOOST"
     using "GOON_NPC_PALADIN_PROGRESSION_TEMPLATE"
     data "StackPriority" "14"
-    data "Passives" "CX_Martial_Boost;Smite_Divine_NPC;UnlockedSpellSlotLevel1;DivineHealth;ExtraAttack;Smite_Divine_2_NPC;UnlockedSpellSlotLevel2;Goon_Aura_Distribution_Passive;Smite_Divine_3_NPC;UnlockedSpellSlotLevel3;ImprovedDivineSmite;CleansingTouch;CleansingTouch_Resource"
+    data "Passives" "CX_Magic_Boost;CX_Martial_Boost;Smite_Divine_NPC;UnlockedSpellSlotLevel1;DivineHealth;ExtraAttack;Smite_Divine_2_NPC;UnlockedSpellSlotLevel2;Goon_Aura_Distribution_Passive;Smite_Divine_3_NPC;UnlockedSpellSlotLevel3;ImprovedDivineSmite;CleansingTouch;CleansingTouch_Resource"
     data "Boosts" "Tag(PALADIN);ProficiencyBonus(SavingThrow,Wisdom);ProficiencyBonus(SavingThrow,Charisma);Proficiency(LightArmor);Proficiency(MediumArmor);Proficiency(HeavyArmor);Proficiency(Shields);Proficiency(SimpleWeapons);Proficiency(MartialWeapons);ActionResource(LayOnHandsCharge,7,0);ActionResource(ChannelOath,1,0);UnlockSpell(Target_LayOnHands,AddChildren);UnlockSpell(Shout_DivineSense,AddChildren);ActionResource(SpellSlot,4,1);UnlockSpell(Target_Smite_Divine,AddChildren);UnlockSpell(Target_Smite_Divine_Unlock,AddChildren);UnlockSpell(Target_Smite_Divine_Critical_Unlock,AddChildren);ActionResource(SpellSlot,3,2);ActionResource(SpellSlot,3,3);ActionResource(SpellSlot,1,4)"
 
     new entry "GOON_NPC_PALADIN_LVL_15"
@@ -158,7 +158,7 @@
     data "StatusType" "BOOST"
     using "GOON_NPC_PALADIN_PROGRESSION_TEMPLATE"
     data "StackPriority" "15"
-    data "Passives" "CX_Martial_Boost;Smite_Divine_NPC;UnlockedSpellSlotLevel1;DivineHealth;ExtraAttack;Smite_Divine_2_NPC;UnlockedSpellSlotLevel2;Goon_Aura_Distribution_Passive;Smite_Divine_3_NPC;UnlockedSpellSlotLevel3;ImprovedDivineSmite;CleansingTouch;CleansingTouch_Resource"
+    data "Passives" "CX_Magic_Boost;CX_Martial_Boost;Smite_Divine_NPC;UnlockedSpellSlotLevel1;DivineHealth;ExtraAttack;Smite_Divine_2_NPC;UnlockedSpellSlotLevel2;Goon_Aura_Distribution_Passive;Smite_Divine_3_NPC;UnlockedSpellSlotLevel3;ImprovedDivineSmite;CleansingTouch;CleansingTouch_Resource"
     data "Boosts" "Tag(PALADIN);ProficiencyBonus(SavingThrow,Wisdom);ProficiencyBonus(SavingThrow,Charisma);Proficiency(LightArmor);Proficiency(MediumArmor);Proficiency(HeavyArmor);Proficiency(Shields);Proficiency(SimpleWeapons);Proficiency(MartialWeapons);ActionResource(LayOnHandsCharge,8,0);ActionResource(ChannelOath,1,0);UnlockSpell(Target_LayOnHands,AddChildren);UnlockSpell(Shout_DivineSense,AddChildren);ActionResource(SpellSlot,4,1);UnlockSpell(Target_Smite_Divine,AddChildren);UnlockSpell(Target_Smite_Divine_Unlock,AddChildren);UnlockSpell(Target_Smite_Divine_Critical_Unlock,AddChildren);ActionResource(SpellSlot,3,2);ActionResource(SpellSlot,3,3);ActionResource(SpellSlot,2,4);ActionResource(DivinePowerPoint,1,0)"
 
     new entry "GOON_NPC_PALADIN_LVL_16"
@@ -172,7 +172,7 @@
     data "StatusType" "BOOST"
     using "GOON_NPC_PALADIN_PROGRESSION_TEMPLATE"
     data "StackPriority" "17"
-    data "Passives" "CX_Martial_Boost;Smite_Divine_NPC;UnlockedSpellSlotLevel1;DivineHealth;ExtraAttack;Smite_Divine_2_NPC;UnlockedSpellSlotLevel2;Goon_Aura_Distribution_Passive;Smite_Divine_3_NPC;UnlockedSpellSlotLevel3;ImprovedDivineSmite;CleansingTouch;CleansingTouch_Resource"
+    data "Passives" "CX_Magic_Boost;CX_Martial_Boost;Smite_Divine_NPC;UnlockedSpellSlotLevel1;DivineHealth;ExtraAttack;Smite_Divine_2_NPC;UnlockedSpellSlotLevel2;Goon_Aura_Distribution_Passive;Smite_Divine_3_NPC;UnlockedSpellSlotLevel3;ImprovedDivineSmite;CleansingTouch;CleansingTouch_Resource"
     data "Boosts" "Tag(PALADIN);ProficiencyBonus(SavingThrow,Wisdom);ProficiencyBonus(SavingThrow,Charisma);Proficiency(LightArmor);Proficiency(MediumArmor);Proficiency(HeavyArmor);Proficiency(Shields);Proficiency(SimpleWeapons);Proficiency(MartialWeapons);ActionResource(LayOnHandsCharge,8,0);ActionResource(ChannelOath,1,0);UnlockSpell(Target_LayOnHands,AddChildren);UnlockSpell(Shout_DivineSense,AddChildren);ActionResource(SpellSlot,4,1);UnlockSpell(Target_Smite_Divine,AddChildren);UnlockSpell(Target_Smite_Divine_Unlock,AddChildren);UnlockSpell(Target_Smite_Divine_Critical_Unlock,AddChildren);ActionResource(SpellSlot,3,2);ActionResource(SpellSlot,3,3);ActionResource(SpellSlot,3,4);ActionResource(DivinePowerPoint,1,0);ActionResource(SpellSlot,1,5)"
 
     new entry "GOON_NPC_PALADIN_LVL_18"
@@ -186,7 +186,7 @@
     data "StatusType" "BOOST"
     using "GOON_NPC_PALADIN_PROGRESSION_TEMPLATE"
     data "StackPriority" "19"
-    data "Passives" "CX_Martial_Boost;Smite_Divine_NPC;UnlockedSpellSlotLevel1;DivineHealth;ExtraAttack;Smite_Divine_2_NPC;UnlockedSpellSlotLevel2;Goon_Aura_Distribution_Passive;Smite_Divine_3_NPC;UnlockedSpellSlotLevel3;ImprovedDivineSmite;CleansingTouch;CleansingTouch_Resource"
+    data "Passives" "CX_Magic_Boost;CX_Martial_Boost;Smite_Divine_NPC;UnlockedSpellSlotLevel1;DivineHealth;ExtraAttack;Smite_Divine_2_NPC;UnlockedSpellSlotLevel2;Goon_Aura_Distribution_Passive;Smite_Divine_3_NPC;UnlockedSpellSlotLevel3;ImprovedDivineSmite;CleansingTouch;CleansingTouch_Resource"
     data "Boosts" "Tag(PALADIN);ProficiencyBonus(SavingThrow,Wisdom);ProficiencyBonus(SavingThrow,Charisma);Proficiency(LightArmor);Proficiency(MediumArmor);Proficiency(HeavyArmor);Proficiency(Shields);Proficiency(SimpleWeapons);Proficiency(MartialWeapons);ActionResource(LayOnHandsCharge,8,0);ActionResource(ChannelOath,1,0);UnlockSpell(Target_LayOnHands,AddChildren);UnlockSpell(Shout_DivineSense,AddChildren);ActionResource(SpellSlot,4,1);UnlockSpell(Target_Smite_Divine,AddChildren);UnlockSpell(Target_Smite_Divine_Unlock,AddChildren);UnlockSpell(Target_Smite_Divine_Critical_Unlock,AddChildren);ActionResource(SpellSlot,3,2);ActionResource(SpellSlot,3,3);ActionResource(SpellSlot,3,4);ActionResource(DivinePowerPoint,1,0);ActionResource(SpellSlot,2,5)"
 
     new entry "GOON_NPC_PALADIN_LVL_20"

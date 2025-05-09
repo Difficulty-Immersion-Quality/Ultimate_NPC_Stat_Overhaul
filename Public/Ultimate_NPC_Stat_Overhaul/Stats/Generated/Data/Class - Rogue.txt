@@ -234,7 +234,7 @@
     data "StatusType" "BOOST"
     using "GOON_NPC_ROGUE_ARCANETRICKSTER_PROGRESSION_TEMPLATE"
     data "StackPriority" "3"
-    data "Passives" "MageHandLegerdemain;UnlockedSpellSlotLevel1"
+    data "Passives" "CX_Magic_Boost;MageHandLegerdemain;UnlockedSpellSlotLevel1"
     data "Boosts" "ActionResource(SpellSlot,2,1);UnlockSpell(Target_MageHand,AddChildren)"
 
     // <node id="Progression">
@@ -252,7 +252,7 @@
     data "StatusType" "BOOST"
     using "GOON_NPC_ROGUE_ARCANETRICKSTER_PROGRESSION_TEMPLATE"
     data "StackPriority" "4"
-    data "Passives" "MageHandLegerdemain;UnlockedSpellSlotLevel1"
+    data "Passives" "CX_Magic_Boost;MageHandLegerdemain;UnlockedSpellSlotLevel1"
     data "Boosts" "ActionResource(SpellSlot,3,1);UnlockSpell(Target_MageHand,AddChildren)"
 
     // <node id="Progression">
@@ -297,7 +297,7 @@
     data "StatusType" "BOOST"
     using "GOON_NPC_ROGUE_ARCANETRICKSTER_PROGRESSION_TEMPLATE"
     data "StackPriority" "7"
-    data "Passives" "MageHandLegerdemain;UnlockedSpellSlotLevel1;UnlockedSpellSlotLevel2"
+    data "Passives" "CX_Magic_Boost;MageHandLegerdemain;UnlockedSpellSlotLevel1;UnlockedSpellSlotLevel2"
     data "Boosts" "ActionResource(SpellSlot,4,1);UnlockSpell(Target_MageHand,AddChildren);ActionResource(SpellSlot,2,2)"
 
     // <node id="Progression">
@@ -329,7 +329,7 @@
     data "StatusType" "BOOST"
     using "GOON_NPC_ROGUE_ARCANETRICKSTER_PROGRESSION_TEMPLATE"
     data "StackPriority" "9"
-    data "Passives" "MageHandLegerdemain;UnlockedSpellSlotLevel1;UnlockedSpellSlotLevel2;MagicalAmbush"
+    data "Passives" "CX_Magic_Boost;MageHandLegerdemain;UnlockedSpellSlotLevel1;UnlockedSpellSlotLevel2;MagicalAmbush"
     data "Boosts" "ActionResource(SpellSlot,4,1);UnlockSpell(Target_MageHand,AddChildren);ActionResource(SpellSlot,2,2)"
 
     // <node id="Progression">
@@ -346,7 +346,7 @@
     data "StatusType" "BOOST"
     using "GOON_NPC_ROGUE_ARCANETRICKSTER_PROGRESSION_TEMPLATE"
     data "StackPriority" "10"
-    data "Passives" "MageHandLegerdemain;UnlockedSpellSlotLevel1;UnlockedSpellSlotLevel2;MagicalAmbush"
+    data "Passives" "CX_Magic_Boost;MageHandLegerdemain;UnlockedSpellSlotLevel1;UnlockedSpellSlotLevel2;MagicalAmbush"
     data "Boosts" "ActionResource(SpellSlot,4,1);UnlockSpell(Target_MageHand,AddChildren);ActionResource(SpellSlot,3,2)"
 
     // <node id="Progression">
@@ -392,7 +392,7 @@
     data "StatusType" "BOOST"
     using "GOON_NPC_ROGUE_ARCANETRICKSTER_PROGRESSION_TEMPLATE"
     data "StackPriority" "13"
-    data "Passives" "MageHandLegerdemain;UnlockedSpellSlotLevel1;UnlockedSpellSlotLevel2;MagicalAmbush;VersatileTrickster"
+    data "Passives" "CX_Magic_Boost;MageHandLegerdemain;UnlockedSpellSlotLevel1;UnlockedSpellSlotLevel2;MagicalAmbush;VersatileTrickster"
     data "Boosts" "ActionResource(SpellSlot,4,1);UnlockSpell(Target_MageHand,AddChildren);ActionResource(SpellSlot,3,2);ActionResource(SpellSlot,2,3)"
 
     // <node id="Progression">
@@ -438,7 +438,7 @@
     data "StatusType" "BOOST"
     using "GOON_NPC_ROGUE_ARCANETRICKSTER_PROGRESSION_TEMPLATE"
     data "StackPriority" "16"
-    data "Passives" "MageHandLegerdemain;UnlockedSpellSlotLevel1;UnlockedSpellSlotLevel2;MagicalAmbush;VersatileTrickster"
+    data "Passives" "CX_Magic_Boost;MageHandLegerdemain;UnlockedSpellSlotLevel1;UnlockedSpellSlotLevel2;MagicalAmbush;VersatileTrickster"
     data "Boosts" "ActionResource(SpellSlot,4,1);UnlockSpell(Target_MageHand,AddChildren);ActionResource(SpellSlot,3,2);ActionResource(SpellSlot,3,3)"
     
     // <node id="Progression">
@@ -455,7 +455,7 @@
     data "StatusType" "BOOST"
     using "GOON_NPC_ROGUE_ARCANETRICKSTER_PROGRESSION_TEMPLATE"
     data "StackPriority" "17"
-    data "Passives" "MageHandLegerdemain;UnlockedSpellSlotLevel1;UnlockedSpellSlotLevel2;MagicalAmbush;VersatileTrickster;SpellThief"
+    data "Passives" "CX_Magic_Boost;MageHandLegerdemain;UnlockedSpellSlotLevel1;UnlockedSpellSlotLevel2;MagicalAmbush;VersatileTrickster;SpellThief"
     data "Boosts" "ActionResource(SpellSlot,4,1);UnlockSpell(Target_MageHand,AddChildren);ActionResource(SpellSlot,3,2);ActionResource(SpellSlot,3,3);ActionResource(SpellThiefPoint,1,0)"
 
     // <node id="Progression">
@@ -487,7 +487,7 @@
     data "StatusType" "BOOST"
     using "GOON_NPC_ROGUE_ARCANETRICKSTER_PROGRESSION_TEMPLATE"
     data "StackPriority" "19"
-    data "Passives" "MageHandLegerdemain;UnlockedSpellSlotLevel1;UnlockedSpellSlotLevel2;MagicalAmbush;VersatileTrickster;SpellThief"
+    data "Passives" "CX_Magic_Boost;MageHandLegerdemain;UnlockedSpellSlotLevel1;UnlockedSpellSlotLevel2;MagicalAmbush;VersatileTrickster;SpellThief"
     data "Boosts" "ActionResource(SpellSlot,4,1);UnlockSpell(Target_MageHand,AddChildren);ActionResource(SpellSlot,3,2);ActionResource(SpellSlot,3,3);ActionResource(SpellThiefPoint,1,0);ActionResource(SpellSlot,1,4)"
 
     // <node id="Progression">

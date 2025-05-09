@@ -434,7 +434,7 @@
     data "StatusType" "BOOST"
     using "GOON_NPC_FIGHTER_ELDRITCHKNIGHT_PROGRESSION_TEMPLATE"
     data "StackPriority" "3"
-    data "Passives" "UnlockedSpellSlotLevel1"
+    data "Passives" "CX_Magic_Boost;UnlockedSpellSlotLevel1"
     data "Boosts" "ActionResource(SpellSlot,2,1);UnlockSpell(Shout_WeaponBond,AddChildren)"
 
     // <node id="Progression">
@@ -452,7 +452,7 @@
     data "StatusType" "BOOST"
     using "GOON_NPC_FIGHTER_ELDRITCHKNIGHT_PROGRESSION_TEMPLATE"
     data "StackPriority" "4"
-    data "Passives" "UnlockedSpellSlotLevel1"
+    data "Passives" "CX_Magic_Boost;UnlockedSpellSlotLevel1"
     data "Boosts" "ActionResource(SpellSlot,3,1);UnlockSpell(Shout_WeaponBond,AddChildren)"
 
     // <node id="Progression">
@@ -469,7 +469,7 @@
     data "StatusType" "BOOST"
     using "GOON_NPC_FIGHTER_ELDRITCHKNIGHT_PROGRESSION_TEMPLATE"
     data "StackPriority" "5"
-    data "Passives" "UnlockedSpellSlotLevel1"
+    data "Passives" "CX_Magic_Boost;UnlockedSpellSlotLevel1"
     data "Boosts" "ActionResource(SpellSlot,3,1);UnlockSpell(Shout_WeaponBond,AddChildren)"
 
     // <node id="Progression">
@@ -485,7 +485,7 @@
     data "StatusType" "BOOST"
     using "GOON_NPC_FIGHTER_ELDRITCHKNIGHT_PROGRESSION_TEMPLATE"
     data "StackPriority" "6"
-    data "Passives" "UnlockedSpellSlotLevel1"
+    data "Passives" "CX_Magic_Boost;UnlockedSpellSlotLevel1"
     data "Boosts" "ActionResource(SpellSlot,3,1);UnlockSpell(Shout_WeaponBond,AddChildren)"
 
     // <node id="Progression">
@@ -501,7 +501,7 @@
     data "StatusType" "BOOST"
     using "GOON_NPC_FIGHTER_ELDRITCHKNIGHT_PROGRESSION_TEMPLATE"
     data "StackPriority" "7"
-    data "Passives" "UnlockedSpellSlotLevel1;WarMagic;UnlockedSpellSlotLevel2"
+    data "Passives" "CX_Magic_Boost;UnlockedSpellSlotLevel1;WarMagic;UnlockedSpellSlotLevel2"
     data "Boosts" "ActionResource(SpellSlot,4,1);UnlockSpell(Shout_WeaponBond,AddChildren);ActionResource(SpellSlot,2,2)"
 
     // <node id="Progression">
@@ -519,7 +519,7 @@
     data "StatusType" "BOOST"
     using "GOON_NPC_FIGHTER_ELDRITCHKNIGHT_PROGRESSION_TEMPLATE"
     data "StackPriority" "8"
-    data "Passives" "UnlockedSpellSlotLevel1;WarMagic;UnlockedSpellSlotLevel2"
+    data "Passives" "CX_Magic_Boost;UnlockedSpellSlotLevel1;WarMagic;UnlockedSpellSlotLevel2"
     data "Boosts" "ActionResource(SpellSlot,4,1);UnlockSpell(Shout_WeaponBond,AddChildren);ActionResource(SpellSlot,2,2)"
 
     // <node id="Progression">
@@ -535,7 +535,7 @@
     data "StatusType" "BOOST"
     using "GOON_NPC_FIGHTER_ELDRITCHKNIGHT_PROGRESSION_TEMPLATE"
     data "StackPriority" "9"
-    data "Passives" "UnlockedSpellSlotLevel1;WarMagic;UnlockedSpellSlotLevel2"
+    data "Passives" "CX_Magic_Boost;UnlockedSpellSlotLevel1;WarMagic;UnlockedSpellSlotLevel2"
     data "Boosts" "ActionResource(SpellSlot,4,1);UnlockSpell(Shout_WeaponBond,AddChildren);ActionResource(SpellSlot,2,2)"
 
     // <node id="Progression">
@@ -551,7 +551,7 @@
     data "StatusType" "BOOST"
     using "GOON_NPC_FIGHTER_ELDRITCHKNIGHT_PROGRESSION_TEMPLATE"
     data "StackPriority" "10"
-    data "Passives" "UnlockedSpellSlotLevel1;WarMagic;UnlockedSpellSlotLevel2;EldritchStrike"
+    data "Passives" "CX_Magic_Boost;UnlockedSpellSlotLevel1;WarMagic;UnlockedSpellSlotLevel2;EldritchStrike"
     data "Boosts" "ActionResource(SpellSlot,4,1);UnlockSpell(Shout_WeaponBond,AddChildren);ActionResource(SpellSlot,3,2)"
 
     // <node id="Progression">
@@ -569,7 +569,7 @@
     data "StatusType" "BOOST"
     using "GOON_NPC_FIGHTER_ELDRITCHKNIGHT_PROGRESSION_TEMPLATE"
     data "StackPriority" "11"
-    data "Passives" "UnlockedSpellSlotLevel1;WarMagic;UnlockedSpellSlotLevel2;EldritchStrike"
+    data "Passives" "CX_Magic_Boost;UnlockedSpellSlotLevel1;WarMagic;UnlockedSpellSlotLevel2;EldritchStrike"
     data "Boosts" "ActionResource(SpellSlot,4,1);UnlockSpell(Shout_WeaponBond,AddChildren);ActionResource(SpellSlot,3,2)"
 
     // <node id="Progression">
@@ -585,7 +585,7 @@
     data "StatusType" "BOOST"
     using "GOON_NPC_FIGHTER_ELDRITCHKNIGHT_PROGRESSION_TEMPLATE"
     data "StackPriority" "12"
-    data "Passives" "UnlockedSpellSlotLevel1;WarMagic;UnlockedSpellSlotLevel2;EldritchStrike"
+    data "Passives" "CX_Magic_Boost;UnlockedSpellSlotLevel1;WarMagic;UnlockedSpellSlotLevel2;EldritchStrike"
     data "Boosts" "ActionResource(SpellSlot,4,1);UnlockSpell(Shout_WeaponBond,AddChildren);ActionResource(SpellSlot,3,2)"
 
     // <node id="Progression">
@@ -602,7 +602,7 @@
     data "StatusType" "BOOST"
     using "GOON_NPC_FIGHTER_ELDRITCHKNIGHT_PROGRESSION_TEMPLATE"
     data "StackPriority" "13"
-    data "Passives" "UnlockedSpellSlotLevel1;WarMagic;UnlockedSpellSlotLevel2;EldritchStrike;UnlockedSpellSlotLevel3"
+    data "Passives" "CX_Magic_Boost;UnlockedSpellSlotLevel1;WarMagic;UnlockedSpellSlotLevel2;EldritchStrike;UnlockedSpellSlotLevel3"
     data "Boosts" "ActionResource(SpellSlot,4,1);UnlockSpell(Shout_WeaponBond,AddChildren);ActionResource(SpellSlot,3,2);ActionResource(SpellSlot,2,3)"
 
     // <node id="Progression">
@@ -619,7 +619,7 @@
     data "StatusType" "BOOST"
     using "GOON_NPC_FIGHTER_ELDRITCHKNIGHT_PROGRESSION_TEMPLATE"
     data "StackPriority" "14"
-    data "Passives" "UnlockedSpellSlotLevel1;WarMagic;UnlockedSpellSlotLevel2;EldritchStrike;UnlockedSpellSlotLevel3"
+    data "Passives" "CX_Magic_Boost;UnlockedSpellSlotLevel1;WarMagic;UnlockedSpellSlotLevel2;EldritchStrike;UnlockedSpellSlotLevel3"
     data "Boosts" "ActionResource(SpellSlot,4,1);UnlockSpell(Shout_WeaponBond,AddChildren);ActionResource(SpellSlot,3,2);ActionResource(SpellSlot,2,3)"
 
     // <node id="Progression">
@@ -635,7 +635,7 @@
     data "StatusType" "BOOST"
     using "GOON_NPC_FIGHTER_ELDRITCHKNIGHT_PROGRESSION_TEMPLATE"
     data "StackPriority" "15"
-    data "Passives" "UnlockedSpellSlotLevel1;WarMagic;UnlockedSpellSlotLevel2;EldritchStrike;UnlockedSpellSlotLevel3;ArcaneCharge"
+    data "Passives" "CX_Magic_Boost;UnlockedSpellSlotLevel1;WarMagic;UnlockedSpellSlotLevel2;EldritchStrike;UnlockedSpellSlotLevel3;ArcaneCharge"
     data "Boosts" "ActionResource(SpellSlot,4,1);UnlockSpell(Shout_WeaponBond,AddChildren);ActionResource(SpellSlot,3,2);ActionResource(SpellSlot,2,3)"
     
     // <node id="Progression">
@@ -652,7 +652,7 @@
     data "StatusType" "BOOST"
     using "GOON_NPC_FIGHTER_ELDRITCHKNIGHT_PROGRESSION_TEMPLATE"
     data "StackPriority" "16"
-    data "Passives" "UnlockedSpellSlotLevel1;WarMagic;UnlockedSpellSlotLevel2;EldritchStrike;UnlockedSpellSlotLevel3;ArcaneCharge"
+    data "Passives" "CX_Magic_Boost;UnlockedSpellSlotLevel1;WarMagic;UnlockedSpellSlotLevel2;EldritchStrike;UnlockedSpellSlotLevel3;ArcaneCharge"
     data "Boosts" "ActionResource(SpellSlot,4,1);UnlockSpell(Shout_WeaponBond,AddChildren);ActionResource(SpellSlot,3,2);ActionResource(SpellSlot,3,3)"
     
     // <node id="Progression">
@@ -669,7 +669,7 @@
     data "StatusType" "BOOST"
     using "GOON_NPC_FIGHTER_ELDRITCHKNIGHT_PROGRESSION_TEMPLATE"
     data "StackPriority" "17"
-    data "Passives" "UnlockedSpellSlotLevel1;WarMagic;UnlockedSpellSlotLevel2;EldritchStrike;UnlockedSpellSlotLevel3;ArcaneCharge"
+    data "Passives" "CX_Magic_Boost;UnlockedSpellSlotLevel1;WarMagic;UnlockedSpellSlotLevel2;EldritchStrike;UnlockedSpellSlotLevel3;ArcaneCharge"
     data "Boosts" "ActionResource(SpellSlot,4,1);UnlockSpell(Shout_WeaponBond,AddChildren);ActionResource(SpellSlot,3,2);ActionResource(SpellSlot,3,3)"
     
     // <node id="Progression">
@@ -685,7 +685,7 @@
     data "StatusType" "BOOST"
     using "GOON_NPC_FIGHTER_ELDRITCHKNIGHT_PROGRESSION_TEMPLATE"
     data "StackPriority" "18"
-    data "Passives" "UnlockedSpellSlotLevel1;UnlockedSpellSlotLevel2;EldritchStrike;UnlockedSpellSlotLevel3;ArcaneCharge;ImprovedWarMagic"
+    data "Passives" "CX_Magic_Boost;UnlockedSpellSlotLevel1;UnlockedSpellSlotLevel2;EldritchStrike;UnlockedSpellSlotLevel3;ArcaneCharge;ImprovedWarMagic"
     data "Boosts" "ActionResource(SpellSlot,4,1);UnlockSpell(Shout_WeaponBond,AddChildren);ActionResource(SpellSlot,3,2);ActionResource(SpellSlot,3,3)"
 
     // <node id="Progression">
@@ -703,7 +703,7 @@
     data "StatusType" "BOOST"
     using "GOON_NPC_FIGHTER_ELDRITCHKNIGHT_PROGRESSION_TEMPLATE"
     data "StackPriority" "19"
-    data "Passives" "UnlockedSpellSlotLevel1;UnlockedSpellSlotLevel2;EldritchStrike;UnlockedSpellSlotLevel3;ArcaneCharge;ImprovedWarMagic"
+    data "Passives" "CX_Magic_Boost;UnlockedSpellSlotLevel1;UnlockedSpellSlotLevel2;EldritchStrike;UnlockedSpellSlotLevel3;ArcaneCharge;ImprovedWarMagic"
     data "Boosts" "ActionResource(SpellSlot,4,1);UnlockSpell(Shout_WeaponBond,AddChildren);ActionResource(SpellSlot,3,2);ActionResource(SpellSlot,3,3);ActionResource(SpellSlot,1,4)"
 
     // <node id="Progression">
@@ -720,7 +720,7 @@
     data "StatusType" "BOOST"
     using "GOON_NPC_FIGHTER_ELDRITCHKNIGHT_PROGRESSION_TEMPLATE"
     data "StackPriority" "20"
-    data "Passives" "UnlockedSpellSlotLevel1;UnlockedSpellSlotLevel2;EldritchStrike;UnlockedSpellSlotLevel3;ArcaneCharge;ImprovedWarMagic"
+    data "Passives" "CX_Magic_Boost;UnlockedSpellSlotLevel1;UnlockedSpellSlotLevel2;EldritchStrike;UnlockedSpellSlotLevel3;ArcaneCharge;ImprovedWarMagic"
     data "Boosts" "ActionResource(SpellSlot,4,1);UnlockSpell(Shout_WeaponBond,AddChildren);ActionResource(SpellSlot,3,2);ActionResource(SpellSlot,3,3);ActionResource(SpellSlot,1,4)"
 
     // <node id="Progression">

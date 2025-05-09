@@ -422,7 +422,7 @@
     data "StatusType" "BOOST"
     using "GOON_NPC_BARD_SWORDS_PROGRESSION_TEMPLATE"
     data "StackPriority" "3"
-    data "Passives" ""
+    data "Passives" "CX_Martial_Boost"
     data "Boosts" "Proficiency(MediumArmor);Proficiency(Scimitars);UnlockSpell(Zone_BladeFlourish_Slashing,AddChildren);UnlockSpell(Target_BladeFlourish_Defensive,AddChildren);UnlockSpell(Projectile_BladeFlourish_Defensive,AddChildren);UnlockSpell(Target_BladeFlourish_Mobile,AddChildren);UnlockSpell(Projectile_BladeFlourish_Mobile,AddChildren);UnlockSpell(Projectile_BladeFlourish_Slashing,AddChildren)"
 
     // <node id="Progression">
@@ -451,7 +451,7 @@
     data "StatusType" "BOOST"
     using "GOON_NPC_BARD_SWORDS_PROGRESSION_TEMPLATE"
     data "StackPriority" "6"
-    data "Passives" "ExtraAttack"
+    data "Passives" "CX_Martial_Boost;ExtraAttack"
     data "Boosts" "Proficiency(MediumArmor);Proficiency(Scimitars);UnlockSpell(Zone_BladeFlourish_Slashing,AddChildren);UnlockSpell(Target_BladeFlourish_Defensive,AddChildren);UnlockSpell(Projectile_BladeFlourish_Defensive,AddChildren);UnlockSpell(Target_BladeFlourish_Mobile,AddChildren);UnlockSpell(Projectile_BladeFlourish_Mobile,AddChildren);UnlockSpell(Projectile_BladeFlourish_Slashing,AddChildren)"
 
     // <node id="Progression">
@@ -510,7 +510,7 @@
     data "StatusType" "BOOST"
     using "GOON_NPC_BARD_SWORDS_PROGRESSION_TEMPLATE"
     data "StackPriority" "14"
-    data "Passives" "ExtraAttack;MastersFlourish"
+    data "Passives" "CX_Martial_Boost;ExtraAttack;MastersFlourish"
     data "Boosts" "Proficiency(MediumArmor);Proficiency(Scimitars);UnlockSpell(Zone_BladeFlourish_Slashing,AddChildren);UnlockSpell(Target_BladeFlourish_Defensive,AddChildren);UnlockSpell(Projectile_BladeFlourish_Defensive,AddChildren);UnlockSpell(Target_BladeFlourish_Mobile,AddChildren);UnlockSpell(Projectile_BladeFlourish_Mobile,AddChildren);UnlockSpell(Projectile_BladeFlourish_Slashing,AddChildren)"
 
     // <node id="Progression">
@@ -597,7 +597,7 @@
     data "StatusType" "BOOST"
     using "GOON_NPC_BARD_VALOR_PROGRESSION_TEMPLATE"
     data "StackPriority" "3"
-    data "Passives" "CombatInspiration"
+    data "Passives" "CX_Martial_Boost;CombatInspiration"
     data "Boosts" "Proficiency(MediumArmor);Proficiency(Shields);Proficiency(MartialWeapons)"
 
     // <node id="Progression">
@@ -627,7 +627,7 @@
     data "StatusType" "BOOST"
     using "GOON_NPC_BARD_VALOR_PROGRESSION_TEMPLATE"
     data "StackPriority" "6"
-    data "Passives" "CombatInspiration;ExtraAttack"
+    data "Passives" "CX_Martial_Boost;CombatInspiration;ExtraAttack"
     data "Boosts" "Proficiency(MediumArmor);Proficiency(Shields);Proficiency(MartialWeapons)"
 
     // <node id="Progression">
@@ -686,7 +686,7 @@
     data "StatusType" "BOOST"
     using "GOON_NPC_BARD_VALOR_PROGRESSION_TEMPLATE"
     data "StackPriority" "14"
-    data "Passives" "CombatInspiration;ExtraAttack;BattleMagic"
+    data "Passives" "CX_Martial_Boost;CombatInspiration;ExtraAttack;BattleMagic"
     data "Boosts" "Proficiency(MediumArmor);Proficiency(Shields);Proficiency(MartialWeapons)"
 
     // <node id="Progression">
