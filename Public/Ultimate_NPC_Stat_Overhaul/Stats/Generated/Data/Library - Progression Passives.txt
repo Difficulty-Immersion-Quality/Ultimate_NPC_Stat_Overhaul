@@ -34,12 +34,3 @@
     // data "Description" ""
     // data "Properties" "Highlighted"
     // data "Icon" "GenericIcon_Intent_Buff"
-
-// ==================================== Main class progressions ====================================
-
-    new entry "Goon_Sorcerer_NPC_Progressions"
-    type "PassiveData"
-    data "DisplayName" "h9987ac52g08b3g40e0gac8eg056b928b8d4b;1"
-    data "Description" "h306a8551g3347g4c3dg99a7g5c609daac297;1"
-    data "Properties" "Highlighted"
-    data "Icon" "GenericIcon_Intent_Buff"
