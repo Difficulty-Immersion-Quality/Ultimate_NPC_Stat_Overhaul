@@ -135,19 +135,22 @@ Ext.Osiris.RegisterListener("LevelGameplayStarted", 2, "after", function(level, 
                     local unlockLevel = data.SubclassUnlockLevel or 3
 
                     if charLevel >= unlockLevel then
-                        local hasSubclass = false
-                        for _, subclass in ipairs(data.SubclassTable or {}) do
-                            if Osi.HasPassive(charID, subclass) == 1 then
-                                hasSubclass = true
-                                break
-                            end
-                        end
 
-                        if not hasSubclass then
+                        -- Check if we've already assigned a subclass for this charID
+                        Mods[ModTable].PersistentVars.AssignedSubclasses = Mods[ModTable].PersistentVars.AssignedSubclasses or {}
+                        local assigned = Mods[ModTable].PersistentVars.AssignedSubclasses[charID]
+
+                        if not assigned then
                             local roll = math.random(1, #data.SubclassTable)
                             local selectedSubclass = data.SubclassTable[roll]
+
+                            Mods[ModTable].PersistentVars.AssignedSubclasses[charID] = selectedSubclass
                             Osi.AddPassive(charID, selectedSubclass)
-                            Ext.Utils.Print("[SUBCLASS] Assigned to " .. charID .. ": " .. selectedSubclass)
+                            Ext.Utils.Print("[SUBCLASS] Assigned (new) to " .. charID .. ": " .. selectedSubclass)
+                        elseif Osi.HasPassive(charID, assigned) == 0 then
+                            -- In case the passive was lost (e.g., respec), reapply it
+                            Osi.AddPassive(charID, assigned)
+                            Ext.Utils.Print("[SUBCLASS] Reapplied to " .. charID .. ": " .. assigned)
                         end
                     end
                 end
@@ -155,7 +158,6 @@ Ext.Osiris.RegisterListener("LevelGameplayStarted", 2, "after", function(level, 
         end
     end
 end)
-
 
 -- Debug print to verify initialization
 print("[DEBUG] SubclassTables initialized:", Mods[ModTable].SubclassTables)
