@@ -2250,11 +2250,6 @@
                     <attribute id="TableUUID" type="guid" value="44bdbc5e-a003-4d61-87f0-5ced20d3804e"/>
                     <attribute id="UUID" type="guid" value="93a60cc8-801d-4768-a33e-53b67ec2eaa5"/>
                 </node>
-            <!-- FLAMING FIST -->
-                <!-- <node id="Progression">
-                    <attribute id="Name" type="LSString" value="NPC_FlamingFist"/>
-                    <attribute id="UUID" type="guid" value="4a6db4f1-7487-4340-b1dd-08e6258c2b2f"/>
-                </node> -->
             <!-- FLAMING FIST - MELEE ATTACKER -->
                 <!-- <node id="Progression">
                     <attribute id="Boosts" type="LSString" value="ProficiencyBonus(SavingThrow,Strength);ProficiencyBonus(SavingThrow,Constitution)"/>
@@ -2654,7 +2649,7 @@
                     <attribute id="TableUUID" type="guid" value="70c3eb7e-383f-11ed-a261-0242ac120002"/>
                     <attribute id="UUID" type="guid" value="e5b8be4a-98a2-4f82-9ea5-27f9296e095c"/>
                 </node> -->
-            <!-- FLAMING FIST - MELEE CASTER (Unused?) -->
+            <!-- FLAMING FIST - MELEE CASTER -->
                 <!-- <node id="Progression">
                     <attribute id="Boosts" type="LSString" value="ProficiencyBonus(SavingThrow,Intelligence);ProficiencyBonus(SavingThrow,Wisdom);ActionResource(SpellSlot,2,1)"/>
                     <attribute id="Level" type="uint8" value="1"/>
