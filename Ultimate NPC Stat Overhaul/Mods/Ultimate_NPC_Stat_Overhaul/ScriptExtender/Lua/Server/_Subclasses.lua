@@ -1,3 +1,9 @@
+local ModTable = "Ultimate_NPC_Stat_Overhaul"
+
+if Mods == nil then Mods = {} end
+if Mods[ModTable] == nil then Mods[ModTable] = {} end
+if Mods[ModTable].PersistentVars == nil then Mods[ModTable].PersistentVars = {} end
+
 -- Map all subclass tables to their respective classes
 Mods[ModTable].SubclassTables = {
     Barbarian = BarbarianSubclassTable,
@@ -13,7 +19,6 @@ Mods[ModTable].SubclassTables = {
     Warlock = WarlockSubclassTable,
     Wizard = WizardSubclassTable
 }
-
 Mods[ModTable].SubclassUnlockLevel = {
     Barbarian = 3,
     Bard = 3,
@@ -166,3 +171,48 @@ end
 
 -- Debug print to verify initialization
 print("[DEBUG] SubclassTables initialized:", Mods[ModTable].SubclassTables)
+
+-- Utility stuff
+function GoonPrintAllStoredSubclasses()
+    print("[DEBUG] Printing all stored subclass assignments:")
+    for charGUID, data in pairs(Mods[ModTable].PersistentVars) do
+        print("Character GUID:", charGUID)
+        for key, value in pairs(data) do
+            print(" -", key, "=", value)
+        end
+    end
+end
+
+function GoonResetAllStoredSubclasses()
+    print("[DEBUG] Resetting all stored subclass assignments.")
+    for charGUID, data in pairs(Mods[ModTable].PersistentVars) do
+        for class, _ in pairs(Mods[ModTable].SubclassTables) do
+            local key = "AssignedSubclass_" .. class
+            if data[key] then
+                data[key] = nil
+                print(string.format(" - Cleared %s for %s", key, charGUID))
+            end
+        end
+    end
+end
+
+function GoonResetSubclassForCharacter(charGUID)
+    print(string.format("[DEBUG] Resetting subclass assignments for %s", charGUID))
+    local data = Mods[ModTable].PersistentVars[charGUID]
+    if data then
+        for class, _ in pairs(Mods[ModTable].SubclassTables) do
+            local key = "AssignedSubclass_" .. class
+            if data[key] then
+                data[key] = nil
+                print(string.format(" - Cleared %s", key))
+            end
+        end
+    else
+        print(" - No subclass data found for", charGUID)
+    end
+end
+
+Ext.Osiris.RegisterConsoleCommand("print_subclasses", GoonPrintAllStoredSubclasses)
+Ext.Osiris.RegisterConsoleCommand("reset_subclasses", GoonResetAllStoredSubclasses)
+Ext.Osiris.RegisterConsoleCommand("reset_subclass_for", function(cmd, charGUID) GoonResetSubclassForCharacter(charGUID)
+end)
