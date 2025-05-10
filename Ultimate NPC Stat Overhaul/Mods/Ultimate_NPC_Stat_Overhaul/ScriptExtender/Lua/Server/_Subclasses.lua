@@ -14,6 +14,21 @@ Mods[ModTable].SubclassTables = {
     Wizard = WizardSubclassTable
 }
 
+Mods[ModTable].SubclassUnlockLevel = {
+    Barbarian = 3,
+    Bard = 3,
+    Cleric = 1,
+    Druid = 2,
+    Fighter = 3,
+    Monk = 3,
+    Paladin = 3,
+    Ranger = 3,
+    Rogue = 3,
+    Sorcerer = 1,
+    Warlock = 1,
+    Wizard = 2
+}
+
 Mods[ModTable].BarbarianSubclassTable = {
     "CX_Barbarian_Berserker_Boost",
     "CX_Barbarian_WildMagic_Boost",
@@ -75,6 +90,9 @@ Mods[ModTable].RogueSubclassTable = {
 }
 
 Mods[ModTable].SorcererSubclassTable = {
+    "CX_Sorcerer_DraconicBloodline_Boost",
+    "CX_Sorcerer_WildMagic_Boost",
+    "CX_Sorcerer_StormSorcery_Boost"
 }
 
 Mods[ModTable].WarlockSubclassTable = {
@@ -93,6 +111,56 @@ Mods[ModTable].WizardSubclassTable = {
     "CX_Wizard_Necromancy_Boost",
     "CX_Wizard_Transmutation_Boost"
 }
+
+---@param levelName string
+---@param isEditorMode integer
+function Osi.LevelGameplayStarted(levelName, isEditorMode)
+    for _, character in pairs(Osi["DB_PartyCharacters"]:Get(nil)) do
+        local charGUID = character[1]
+
+        -- Skip dead or invalid characters
+        if Osi.IsDead(charGUID) == 0 and Osi.IsPlayer(charGUID) == 1 then
+            for class, subclassTable in pairs(Mods[ModTable].SubclassTables) do
+                local mainPassive = "CX_" .. class .. "_ClassPassive"  -- Example: "CX_Barbarian_ClassPassive"
+                local storedVarKey = "AssignedSubclass_" .. class
+
+                -- Check if character has the class passive
+                if Osi.HasPassive(charGUID, mainPassive) == 1 then
+                    -- Check level requirement per class
+                    local level = tonumber(Osi.GetLevel(charGUID))
+                    local requiredLevel = Mods[ModTable].SubclassUnlockLevel[class] or 3  -- Default to level 3
+                    if level >= requiredLevel then
+                        -- Check PersistentVars if a subclass is already assigned
+                        local stored = Mods[ModTable].PersistentVars[charGUID] and Mods[ModTable].PersistentVars[charGUID][storedVarKey]
+                        if not stored then
+                            -- Check if any subclass is already applied
+                            local alreadyHasSubclass = false
+                            for _, subclassPassive in ipairs(subclassTable) do
+                                if Osi.HasPassive(charGUID, subclassPassive) == 1 then
+                                    alreadyHasSubclass = true
+                                    break
+                                end
+                            end
+
+                            if not alreadyHasSubclass then
+                                -- Assign a random subclass
+                                local randomIndex = math.random(1, #subclassTable)
+                                local chosenPassive = subclassTable[randomIndex]
+                                Osi.AddPassive(charGUID, chosenPassive, 1)
+
+                                -- Store in persistent vars
+                                Mods[ModTable].PersistentVars[charGUID] = Mods[ModTable].PersistentVars[charGUID] or {}
+                                Mods[ModTable].PersistentVars[charGUID][storedVarKey] = chosenPassive
+
+                                print(string.format("[DEBUG] Assigned subclass '%s' to %s", chosenPassive, charGUID))
+                            end
+                        end
+                    end
+                end
+            end
+        end
+    end
+end
 
 
 
