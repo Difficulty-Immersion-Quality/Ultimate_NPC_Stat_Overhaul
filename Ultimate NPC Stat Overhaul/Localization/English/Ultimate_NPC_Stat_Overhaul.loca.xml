@@ -34,13 +34,13 @@
 	<content contentuid="h59b5144dgff16g41edg9da8gc79e81e92b69" version="1">A character who harnesses their fury to punish foes. They gain Barbarian progressions in addition to boosts from configuration.</content>
 
 	<!-- Barbarian Subclasses -->
-	<content contentuid="h7fb10ed8gcd0ag4e02g909fg5a9433f5cebc" version="1">! Barbarian Subclass: Berserker</content>
+	<content contentuid="h7fb10ed8gcd0ag4e02g909fg5a9433f5cebc" version="1">! Subclass: Berserker Barbarian</content>
 	<content contentuid="h28f5bbd1ge7ddg492egb781gbf7d0d1b0be7" version="1">A Barbarian who follows a path of untrammelled fury and thrills in the chaos of battle, regardless of their own well-being. They gain Berserker Barbarian progressions in addition to boosts from configuration.</content>
 
-	<content contentuid="h3b4ca2edgd773g4765ga420gf434555cc1f1" version="1">! Barbarian Subclass: Wild Magic</content>
+	<content contentuid="h3b4ca2edgd773g4765ga420gf434555cc1f1" version="1">! Subclass: Wild Magic Barbarian</content>
 	<content contentuid="h344dfc77g19d4g4999g87a7g6b27338790d7" version="1">A Barbarian suffused with the wild influence of arcane power waiting to be released. They gain Wild Magic Barbarian progressions in addition to boosts from configuration.</content>
 
-	<content contentuid="h82cb0f16ge6cag4cf4g9c66ge7ef33e1a7d5" version="1">! Barbarian Subclass: Wildheart</content>
+	<content contentuid="h82cb0f16ge6cag4cf4g9c66ge7ef33e1a7d5" version="1">! Subclass: Wildheart Barbarian</content>
 	<content contentuid="h33314de8gff58g4bc1g8d6cg8acef2820de6" version="1">A Barbarian sharing a supernatural bond with nature, channeling the power of beasts. They gain Wildheart Barbarian progressions in addition to boosts from configuration.</content>
 
 <!-- BARD -->
@@ -51,13 +51,13 @@
 	<content contentuid="h97a23da3gd2c1g4b07gb187g9f8696856259" version="1">A character with a versatile skillset, who blends artistry, trickery, and spellcraft. They gain Bard progressions in addition to boosts from configuration.</content>
 
 	<!-- Bard Subclasses -->
-	<content contentuid="h3bcbbd77gfc41g49ebga568g0cbf6a43e9ed" version="1">! Bard Subclass: College of Lore</content>
+	<content contentuid="h3bcbbd77gfc41g49ebga568g0cbf6a43e9ed" version="1">! Subclass: College of Lore Bard</content>
 	<content contentuid="hc1899b1fgf6aag44c7g8ec9ga7ed8d2cd3b0" version="1">A Bard who blends magic, wit, and scholarship into a versatile and unpredictable force. They gain College of Lore Bard progressions in addition to boosts from configuration.</content>
 
-	<content contentuid="hc5b127ccg619cg4af7gad38g0947e697dafc" version="1">! Bard Subclass: College of Swords</content>
+	<content contentuid="hc5b127ccg619cg4af7gad38g0947e697dafc" version="1">! Subclass: College of Swords Bard</content>
 	<content contentuid="h431b9944g0440g4d3dga526ge6efea533b59" version="1">A Bard who turns combat into performance, striking with style, speed, and precision. They gain College of Swords Bard progressions in addition to boosts from configuration.</content>
 
-	<content contentuid="h16d07619gbb01g405eg814ag230fd0f825e1" version="1">! Bard Subclass: College of Valor</content>
+	<content contentuid="h16d07619gbb01g405eg814ag230fd0f825e1" version="1">! Subclass: College of Valor Bard</content>
 	<content contentuid="h826a180fg0121g4072ga12bg5e051e7bff11" version="1">A Bard who inspires bravery and leads with blade and song in the heart of battle. They gain College of Valor Bard progressions in addition to boosts from configuration.</content>
 
 <!-- CLERIC -->
@@ -68,25 +68,25 @@
 	<content contentuid="hacdccdb0ge6c6g454bga598g6df082810262" version="1">A character of faith, channeling divine magic both to aid and harm. They gain Cleric progressions in addition to boosts from configuration.</content>
 
 	<!-- Cleric Subclasses -->
-	<content contentuid="he573d2b7gbb53g4996gb795g1623ccf40749" version="1">! Cleric Subclass: Life Domain</content>
+	<content contentuid="he573d2b7gbb53g4996gb795g1623ccf40749" version="1">! Subclass: Life Domain Cleric</content>
 	<content contentuid="h748bb452ge0bbg4d70gb473g5f16915c5a1c" version="1">A Cleric who nurtures and protects, channeling radiant energy to heal and uplift. They gain Life Domain Cleric progressions in addition to boosts from configuration.</content>
 
-	<content contentuid="h5fbe0f2aga700g4580g838agda89ef533a5e" version="1">! Cleric Subclass: Light Domain</content>
+	<content contentuid="h5fbe0f2aga700g4580g838agda89ef533a5e" version="1">! Subclass: Light Domain Cleric</content>
 	<content contentuid="he27e3486g5c7bg4607gbae0g2917f0be7c5e" version="1">A Cleric who channels searing light to purify, protect, and punish. They gain Light Domain Cleric progressions in addition to boosts from configuration.</content>
 
-	<content contentuid="h278a7582gf5efg402cg8e4egc63dad62527f" version="1">! Cleric Subclass: Knowledge Domain</content>
+	<content contentuid="h278a7582gf5efg402cg8e4egc63dad62527f" version="1">! Subclass: Knowledge Domain Cleric</content>
 	<content contentuid="h2200694egbef8g46b6g9d00g4c4b395248fa" version="1">A Cleric who seeks the wisdom of the gods, using knowledge to enlighten and defend. They gain Knowledge Domain Cleric progressions in addition to boosts from configuration.</content>
 
-	<content contentuid="h69a14dafg72a7g4111g80d1g8c2b698b9925" version="1">! Cleric Subclass: Nature Domain</content>
+	<content contentuid="h69a14dafg72a7g4111g80d1g8c2b698b9925" version="1">! Subclass: Nature Domain Cleric</content>
 	<content contentuid="h26f0b85fg6ca4g48aeg9123g7343f28aefd3" version="1">A Cleric who serves both deity and wilderness, blending divine magic with the rhythms of nature. They gain Nature Domain Cleric progressions in addition to boosts from configuration.</content>
 
-	<content contentuid="heeb1062dgec43g432agb19bg5826d981e329" version="1">! Cleric Subclass: Tempest Domain</content>
+	<content contentuid="heeb1062dgec43g432agb19bg5826d981e329" version="1">! Subclass: Tempest Domain Cleric</content>
 	<content contentuid="h6fd8cc08g71adg4648gb7f3g7f8c1bc471d4" version="1">A Cleric who strikes with tempestuous might, standing at the eye of divine chaos. They gain Tempest Domain Cleric progressions in addition to boosts from configuration.</content>
 
-	<content contentuid="h62ef7e5dg444dg4771ga160g2efbe9caa201" version="1">! Cleric Subclass: Trickery Domain</content>
+	<content contentuid="h62ef7e5dg444dg4771ga160g2efbe9caa201" version="1">! Subclass: Trickery Domain Cleric</content>
 	<content contentuid="h4a2efd9egffa1g447eg9519g59d2e559fc5e" version="1">A Cleric who bends perception and fate, hiding divine purpose behind clever lies. They gain Trickery Domain Cleric progressions in addition to boosts from configuration.</content>
 
-	<content contentuid="h2bb139d2gd9d4g450cgb665ge6980000f6fa" version="1">! Cleric Subclass: War Domain</content>
+	<content contentuid="h2bb139d2gd9d4g450cgb665ge6980000f6fa" version="1">! Subclass: War Domain Cleric</content>
 	<content contentuid="h80a67d37gafe5g46c5g8e35g6a6211f74415" version="1">A Cleric who thrives in battle, calling upon divine might to strike hard and stand firm. They gain War Domain Cleric progressions in addition to boosts from configuration.</content>
 
 <!-- DRUID -->
@@ -97,13 +97,13 @@
 	<content contentuid="hc19cb29fgce35g4253g810fge4b35ebb2168" version="1">A character who commands the forces of nature, shaping the world with primal magic. They gain Druid progressions in addition to boosts from configuration.</content>
 
 	<!-- Druid Subclasses -->
-	<content contentuid="h0319b960g4892g4420gb4a0gdb82a83aef42" version="1">! Druid Subclass: Circle of the Land</content>
+	<content contentuid="h0319b960g4892g4420gb4a0gdb82a83aef42" version="1">! Subclass: Circle of the Land Druid</content>
 	<content contentuid="h5e05e75cgb6feg48f9gada3g4e13802f3dd9" version="1">A Druid who draws deep power from the land itself, shaped by the terrain they call home. They gain Circle of the Land Druid progressions in addition to boosts from configuration.</content>
 
-	<content contentuid="hb7785d94g8723g45b8gb252g11f0270642c1" version="1">! Druid Subclass: Circle of the Moon</content>
+	<content contentuid="hb7785d94g8723g45b8gb252g11f0270642c1" version="1">! Subclass: Circle of the Moon Druid</content>
 	<content contentuid="h654778cegbf88g49adgb407gcb0cc8299dc0" version="1">A Druid who specializes in Wild Shaping into massive beasts or even primal elementals. They gain Circle of the Moon Druid progressions in addition to boosts from configuration.</content>
 
-	<content contentuid="h407e27feg0d73g483dgbed5gb58542ff0cca" version="1">! Druid Subclass: Circle of the Spores</content>
+	<content contentuid="h407e27feg0d73g483dgbed5gb58542ff0cca" version="1">! Subclass: Circle of the Spores Druid</content>
 	<content contentuid="h5872faaag78ffg4f03g99cbgcda17b06d423" version="1">A Druid who uses fungal growth and decay to augment themselves and harm their foes. They gain Circle of the Spores Druid progressions in addition to boosts from configuration.</content>
 
 <!-- FIGHTER -->
@@ -202,13 +202,13 @@
 	<content contentuid="hf8533079gfd16g4590g9754g99a81d9cd95f" version="1">A character with raw arcane power, shaping magic through will alone. They gain Sorcerer progressions in addition to boosts from configuration.</content>
 
 	<!-- Sorcerer Subclasses -->
-	<content contentuid="h14f8ccc9g8bbag4546g9028g5a5c65f8ec0c" version="1">! Class: Draconic Bloodline Sorcerer</content>
+	<content contentuid="h14f8ccc9g8bbag4546g9028g5a5c65f8ec0c" version="1">! Subclass: Draconic Bloodline Sorcerer</content>
 	<content contentuid="h1f8b691fgd951g49a3g8ca1g6cfa70cce02a" version="1">A Sorcerer whose blood carries the legacy of dragons, manifesting in powerful and resilient magic. They gain Draconic Bloodline Sorcerer progressions in addition to boosts from configuration.</content>
 
-	<content contentuid="h87889658gdef3g42aeg9edag5de1784ae854" version="1">! Class: Wild Magic Sorcerer</content>
+	<content contentuid="h87889658gdef3g42aeg9edag5de1784ae854" version="1">! Subclass: Wild Magic Sorcerer</content>
 	<content contentuid="h1077e020g23b7g40e7gaba7ge569d2c18331" version="1">A Sorcerer whose spells sometimes twist reality in strange and unexpected ways. They gain Wild Magic Sorcerer progressions in addition to boosts from configuration.</content>
 
-	<content contentuid="heaf07b0cgbb00g4462g8990g7b40b4ae36c0" version="1">! Class: Storm Sorcery Sorcerer</content>
+	<content contentuid="heaf07b0cgbb00g4462g8990g7b40b4ae36c0" version="1">! Subclass: Storm Sorcery Sorcerer</content>
 	<content contentuid="he7ee7064g55bfg4b5bga7a2g0f049b35f91e" version="1">A Sorcerer whose presence crackles with thunder and fury, a living conduit of the storm's wrath. They gain Storm Sorcery Sorcerer progressions in addition to boosts from configuration.</content>
 
 <!-- WARLOCK -->
