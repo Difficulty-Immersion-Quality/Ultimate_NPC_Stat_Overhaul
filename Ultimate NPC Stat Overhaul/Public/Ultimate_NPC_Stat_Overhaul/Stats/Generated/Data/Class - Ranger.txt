@@ -56,7 +56,7 @@
     data "StatusType" "BOOST"
     using "GOON_NPC_RANGER_PROGRESSION_TEMPLATE"
     data "StackPriority" "1"
-    data "Passives" "CX_Martial_Boost"
+    data "Passives" "CX_Martial_Boost;CX_Magic_Boost"
     data "Boosts" "Tag(RANGER);ProficiencyBonus(SavingThrow,Strength);ProficiencyBonus(SavingThrow,Dexterity);Proficiency(LightArmor);Proficiency(MediumArmor);Proficiency(Shields);Proficiency(SimpleWeapons);Proficiency(MartialWeapons)"
 
     new entry "GOON_NPC_RANGER_LVL_2"
@@ -64,7 +64,7 @@
     data "StatusType" "BOOST"
     using "GOON_NPC_RANGER_PROGRESSION_TEMPLATE"
     data "StackPriority" "2"
-    data "Passives" "CX_Martial_Boost;UnlockedSpellSlotLevel1"
+    data "Passives" "CX_Martial_Boost;CX_Magic_Boost;UnlockedSpellSlotLevel1"
     data "Boosts" "Tag(RANGER);ProficiencyBonus(SavingThrow,Strength);ProficiencyBonus(SavingThrow,Dexterity);Proficiency(LightArmor);Proficiency(MediumArmor);Proficiency(Shields);Proficiency(SimpleWeapons);Proficiency(MartialWeapons);ActionResource(SpellSlot,2,1)"
 
     new entry "GOON_NPC_RANGER_LVL_3"
@@ -72,7 +72,7 @@
     data "StatusType" "BOOST"
     using "GOON_NPC_RANGER_PROGRESSION_TEMPLATE"
     data "StackPriority" "3"
-    data "Passives" "CX_Martial_Boost;UnlockedSpellSlotLevel1"
+    data "Passives" "CX_Martial_Boost;CX_Magic_Boost;UnlockedSpellSlotLevel1"
     data "Boosts" "Tag(RANGER);ProficiencyBonus(SavingThrow,Strength);ProficiencyBonus(SavingThrow,Dexterity);Proficiency(LightArmor);Proficiency(MediumArmor);Proficiency(Shields);Proficiency(SimpleWeapons);Proficiency(MartialWeapons);ActionResource(SpellSlot,3,1)"
 
     new entry "GOON_NPC_RANGER_LVL_4"
@@ -86,7 +86,7 @@
     data "StatusType" "BOOST"
     using "GOON_NPC_RANGER_PROGRESSION_TEMPLATE"
     data "StackPriority" "5"
-    data "Passives" "CX_Martial_Boost;UnlockedSpellSlotLevel1;ExtraAttack;UnlockedSpellSlotLevel2"
+    data "Passives" "CX_Martial_Boost;CX_Magic_Boost;UnlockedSpellSlotLevel1;ExtraAttack;UnlockedSpellSlotLevel2"
     data "Boosts" "Tag(RANGER);ProficiencyBonus(SavingThrow,Strength);ProficiencyBonus(SavingThrow,Dexterity);Proficiency(LightArmor);Proficiency(MediumArmor);Proficiency(Shields);Proficiency(SimpleWeapons);Proficiency(MartialWeapons);ActionResource(SpellSlot,4,1);ActionResource(SpellSlot,2,2)"
 
     new entry "GOON_NPC_RANGER_LVL_6"
@@ -100,7 +100,7 @@
     data "StatusType" "BOOST"
     using "GOON_NPC_RANGER_PROGRESSION_TEMPLATE"
     data "StackPriority" "7"
-    data "Passives" "CX_Martial_Boost;UnlockedSpellSlotLevel1;ExtraAttack;UnlockedSpellSlotLevel2"
+    data "Passives" "CX_Martial_Boost;CX_Magic_Boost;UnlockedSpellSlotLevel1;ExtraAttack;UnlockedSpellSlotLevel2"
     data "Boosts" "Tag(RANGER);ProficiencyBonus(SavingThrow,Strength);ProficiencyBonus(SavingThrow,Dexterity);Proficiency(LightArmor);Proficiency(MediumArmor);Proficiency(Shields);Proficiency(SimpleWeapons);Proficiency(MartialWeapons);ActionResource(SpellSlot,4,1);ActionResource(SpellSlot,3,2)"
 
     new entry "GOON_NPC_RANGER_LVL_8"
@@ -108,7 +108,7 @@
     data "StatusType" "BOOST"
     using "GOON_NPC_RANGER_PROGRESSION_TEMPLATE"
     data "StackPriority" "8"
-    data "Passives" "CX_Martial_Boost;UnlockedSpellSlotLevel1;ExtraAttack;UnlockedSpellSlotLevel2;LandsStride_DifficultTerrain;LandsStride_Surfaces"
+    data "Passives" "CX_Martial_Boost;CX_Magic_Boost;UnlockedSpellSlotLevel1;ExtraAttack;UnlockedSpellSlotLevel2;LandsStride_DifficultTerrain;LandsStride_Surfaces"
     data "Boosts" "Tag(RANGER);ProficiencyBonus(SavingThrow,Strength);ProficiencyBonus(SavingThrow,Dexterity);Proficiency(LightArmor);Proficiency(MediumArmor);Proficiency(Shields);Proficiency(SimpleWeapons);Proficiency(MartialWeapons);ActionResource(SpellSlot,4,1);ActionResource(SpellSlot,3,2)"
 
     new entry "GOON_NPC_RANGER_LVL_9"
@@ -116,7 +116,7 @@
     data "StatusType" "BOOST"
     using "GOON_NPC_RANGER_PROGRESSION_TEMPLATE"
     data "StackPriority" "9"
-    data "Passives" "CX_Martial_Boost;UnlockedSpellSlotLevel1;ExtraAttack;UnlockedSpellSlotLevel2;LandsStride_DifficultTerrain;LandsStride_Surfaces;UnlockedSpellSlotLevel3"
+    data "Passives" "CX_Martial_Boost;CX_Magic_Boost;UnlockedSpellSlotLevel1;ExtraAttack;UnlockedSpellSlotLevel2;LandsStride_DifficultTerrain;LandsStride_Surfaces;UnlockedSpellSlotLevel3"
     data "Boosts" "Tag(RANGER);ProficiencyBonus(SavingThrow,Strength);ProficiencyBonus(SavingThrow,Dexterity);Proficiency(LightArmor);Proficiency(MediumArmor);Proficiency(Shields);Proficiency(SimpleWeapons);Proficiency(MartialWeapons);ActionResource(SpellSlot,4,1);ActionResource(SpellSlot,3,2);ActionResource(SpellSlot,2,3)"
 
     new entry "GOON_NPC_RANGER_LVL_10"
@@ -124,7 +124,7 @@
     data "StatusType" "BOOST"
     using "GOON_NPC_RANGER_PROGRESSION_TEMPLATE"
     data "StackPriority" "10"
-    data "Passives" "CX_Martial_Boost;UnlockedSpellSlotLevel1;ExtraAttack;UnlockedSpellSlotLevel2;LandsStride_DifficultTerrain;LandsStride_Surfaces;UnlockedSpellSlotLevel3"
+    data "Passives" "CX_Martial_Boost;CX_Magic_Boost;UnlockedSpellSlotLevel1;ExtraAttack;UnlockedSpellSlotLevel2;LandsStride_DifficultTerrain;LandsStride_Surfaces;UnlockedSpellSlotLevel3"
     data "Boosts" "Tag(RANGER);ProficiencyBonus(SavingThrow,Strength);ProficiencyBonus(SavingThrow,Dexterity);Proficiency(LightArmor);Proficiency(MediumArmor);Proficiency(Shields);Proficiency(SimpleWeapons);Proficiency(MartialWeapons);ActionResource(SpellSlot,4,1);ActionResource(SpellSlot,3,2);ActionResource(SpellSlot,2,3);UnlockSpell(Shout_HideInPlainSight,AddChildren)"
 
     new entry "GOON_NPC_RANGER_LVL_11"
@@ -132,7 +132,7 @@
     data "StatusType" "BOOST"
     using "GOON_NPC_RANGER_PROGRESSION_TEMPLATE"
     data "StackPriority" "11"
-    data "Passives" "CX_Martial_Boost;UnlockedSpellSlotLevel1;ExtraAttack;UnlockedSpellSlotLevel2;LandsStride_DifficultTerrain;LandsStride_Surfaces;UnlockedSpellSlotLevel3"
+    data "Passives" "CX_Martial_Boost;CX_Magic_Boost;UnlockedSpellSlotLevel1;ExtraAttack;UnlockedSpellSlotLevel2;LandsStride_DifficultTerrain;LandsStride_Surfaces;UnlockedSpellSlotLevel3"
     data "Boosts" "Tag(RANGER);ProficiencyBonus(SavingThrow,Strength);ProficiencyBonus(SavingThrow,Dexterity);Proficiency(LightArmor);Proficiency(MediumArmor);Proficiency(Shields);Proficiency(SimpleWeapons);Proficiency(MartialWeapons);ActionResource(SpellSlot,4,1);ActionResource(SpellSlot,3,2);ActionResource(SpellSlot,3,3);UnlockSpell(Shout_HideInPlainSight,AddChildren)"
 
     new entry "GOON_NPC_RANGER_LVL_12"
@@ -140,7 +140,7 @@
     data "StatusType" "BOOST"
     using "GOON_NPC_RANGER_PROGRESSION_TEMPLATE"
     data "StackPriority" "12"
-    data "Passives" "CX_Martial_Boost;UnlockedSpellSlotLevel1;ExtraAttack;UnlockedSpellSlotLevel2;LandsStride_DifficultTerrain;LandsStride_Surfaces;UnlockedSpellSlotLevel3"
+    data "Passives" "CX_Martial_Boost;CX_Magic_Boost;UnlockedSpellSlotLevel1;ExtraAttack;UnlockedSpellSlotLevel2;LandsStride_DifficultTerrain;LandsStride_Surfaces;UnlockedSpellSlotLevel3"
     data "Boosts" "Tag(RANGER);ProficiencyBonus(SavingThrow,Strength);ProficiencyBonus(SavingThrow,Dexterity);Proficiency(LightArmor);Proficiency(MediumArmor);Proficiency(Shields);Proficiency(SimpleWeapons);Proficiency(MartialWeapons);ActionResource(SpellSlot,4,1);ActionResource(SpellSlot,3,2);ActionResource(SpellSlot,4,3);UnlockSpell(Shout_HideInPlainSight,AddChildren)"
 
 // Expansion levels 13-20
@@ -149,7 +149,7 @@
     data "StatusType" "BOOST"
     using "GOON_NPC_RANGER_PROGRESSION_TEMPLATE"
     data "StackPriority" "13"
-    data "Passives" "CX_Martial_Boost;UnlockedSpellSlotLevel1;ExtraAttack;UnlockedSpellSlotLevel2;LandsStride_DifficultTerrain;LandsStride_Surfaces;UnlockedSpellSlotLevel3"
+    data "Passives" "CX_Martial_Boost;CX_Magic_Boost;UnlockedSpellSlotLevel1;ExtraAttack;UnlockedSpellSlotLevel2;LandsStride_DifficultTerrain;LandsStride_Surfaces;UnlockedSpellSlotLevel3"
     data "Boosts" "Tag(RANGER);ProficiencyBonus(SavingThrow,Strength);ProficiencyBonus(SavingThrow,Dexterity);Proficiency(LightArmor);Proficiency(MediumArmor);Proficiency(Shields);Proficiency(SimpleWeapons);Proficiency(MartialWeapons);ActionResource(SpellSlot,4,1);ActionResource(SpellSlot,3,2);ActionResource(SpellSlot,4,3);UnlockSpell(Shout_HideInPlainSight,AddChildren);ActionResource(SpellSlot,1,4)"
 
     new entry "GOON_NPC_RANGER_LVL_14"
@@ -157,7 +157,7 @@
     data "StatusType" "BOOST"
     using "GOON_NPC_RANGER_PROGRESSION_TEMPLATE"
     data "StackPriority" "14"
-    data "Passives" "CX_Martial_Boost;UnlockedSpellSlotLevel1;ExtraAttack;UnlockedSpellSlotLevel2;LandsStride_DifficultTerrain;LandsStride_Surfaces;UnlockedSpellSlotLevel3;Vanish"
+    data "Passives" "CX_Martial_Boost;CX_Magic_Boost;UnlockedSpellSlotLevel1;ExtraAttack;UnlockedSpellSlotLevel2;LandsStride_DifficultTerrain;LandsStride_Surfaces;UnlockedSpellSlotLevel3;Vanish"
     data "Boosts" "Tag(RANGER);ProficiencyBonus(SavingThrow,Strength);ProficiencyBonus(SavingThrow,Dexterity);Proficiency(LightArmor);Proficiency(MediumArmor);Proficiency(Shields);Proficiency(SimpleWeapons);Proficiency(MartialWeapons);ActionResource(SpellSlot,4,1);ActionResource(SpellSlot,3,2);ActionResource(SpellSlot,4,3);UnlockSpell(Shout_HideInPlainSight,AddChildren);ActionResource(SpellSlot,1,4)"
 
     new entry "GOON_NPC_RANGER_LVL_15"
@@ -165,7 +165,7 @@
     data "StatusType" "BOOST"
     using "GOON_NPC_RANGER_PROGRESSION_TEMPLATE"
     data "StackPriority" "15"
-    data "Passives" "CX_Martial_Boost;UnlockedSpellSlotLevel1;ExtraAttack;UnlockedSpellSlotLevel2;LandsStride_DifficultTerrain;LandsStride_Surfaces;UnlockedSpellSlotLevel3;Vanish"
+    data "Passives" "CX_Martial_Boost;CX_Magic_Boost;UnlockedSpellSlotLevel1;ExtraAttack;UnlockedSpellSlotLevel2;LandsStride_DifficultTerrain;LandsStride_Surfaces;UnlockedSpellSlotLevel3;Vanish"
     data "Boosts" "Tag(RANGER);ProficiencyBonus(SavingThrow,Strength);ProficiencyBonus(SavingThrow,Dexterity);Proficiency(LightArmor);Proficiency(MediumArmor);Proficiency(Shields);Proficiency(SimpleWeapons);Proficiency(MartialWeapons);ActionResource(SpellSlot,4,1);ActionResource(SpellSlot,3,2);ActionResource(SpellSlot,4,3);UnlockSpell(Shout_HideInPlainSight,AddChildren);ActionResource(SpellSlot,2,4)"
 
     new entry "GOON_NPC_RANGER_LVL_16"
@@ -179,7 +179,7 @@
     data "StatusType" "BOOST"
     using "GOON_NPC_RANGER_PROGRESSION_TEMPLATE"
     data "StackPriority" "17"
-    data "Passives" "CX_Martial_Boost;UnlockedSpellSlotLevel1;ExtraAttack;UnlockedSpellSlotLevel2;LandsStride_DifficultTerrain;LandsStride_Surfaces;UnlockedSpellSlotLevel3;Vanish"
+    data "Passives" "CX_Martial_Boost;CX_Magic_Boost;UnlockedSpellSlotLevel1;ExtraAttack;UnlockedSpellSlotLevel2;LandsStride_DifficultTerrain;LandsStride_Surfaces;UnlockedSpellSlotLevel3;Vanish"
     data "Boosts" "Tag(RANGER);ProficiencyBonus(SavingThrow,Strength);ProficiencyBonus(SavingThrow,Dexterity);Proficiency(LightArmor);Proficiency(MediumArmor);Proficiency(Shields);Proficiency(SimpleWeapons);Proficiency(MartialWeapons);ActionResource(SpellSlot,4,1);ActionResource(SpellSlot,3,2);ActionResource(SpellSlot,4,3);UnlockSpell(Shout_HideInPlainSight,AddChildren);ActionResource(SpellSlot,3,4);ActionResource(SpellSlot,1,5)"
 
     new entry "GOON_NPC_RANGER_LVL_18"
@@ -187,7 +187,7 @@
     data "StatusType" "BOOST"
     using "GOON_NPC_RANGER_PROGRESSION_TEMPLATE"
     data "StackPriority" "18"
-    data "Passives" "CX_Martial_Boost;UnlockedSpellSlotLevel1;ExtraAttack;UnlockedSpellSlotLevel2;LandsStride_DifficultTerrain;LandsStride_Surfaces;UnlockedSpellSlotLevel3;Vanish;FeralSenses"
+    data "Passives" "CX_Martial_Boost;CX_Magic_Boost;UnlockedSpellSlotLevel1;ExtraAttack;UnlockedSpellSlotLevel2;LandsStride_DifficultTerrain;LandsStride_Surfaces;UnlockedSpellSlotLevel3;Vanish;FeralSenses"
     data "Boosts" "Tag(RANGER);ProficiencyBonus(SavingThrow,Strength);ProficiencyBonus(SavingThrow,Dexterity);Proficiency(LightArmor);Proficiency(MediumArmor);Proficiency(Shields);Proficiency(SimpleWeapons);Proficiency(MartialWeapons);ActionResource(SpellSlot,4,1);ActionResource(SpellSlot,3,2);ActionResource(SpellSlot,4,3);UnlockSpell(Shout_HideInPlainSight,AddChildren);ActionResource(SpellSlot,3,4);ActionResource(SpellSlot,1,5)"
 
     new entry "GOON_NPC_RANGER_LVL_19"
@@ -195,7 +195,7 @@
     data "StatusType" "BOOST"
     using "GOON_NPC_RANGER_PROGRESSION_TEMPLATE"
     data "StackPriority" "19"
-    data "Passives" "CX_Martial_Boost;UnlockedSpellSlotLevel1;ExtraAttack;UnlockedSpellSlotLevel2;LandsStride_DifficultTerrain;LandsStride_Surfaces;UnlockedSpellSlotLevel3;Vanish;FeralSenses"
+    data "Passives" "CX_Martial_Boost;CX_Magic_Boost;UnlockedSpellSlotLevel1;ExtraAttack;UnlockedSpellSlotLevel2;LandsStride_DifficultTerrain;LandsStride_Surfaces;UnlockedSpellSlotLevel3;Vanish;FeralSenses"
     data "Boosts" "Tag(RANGER);ProficiencyBonus(SavingThrow,Strength);ProficiencyBonus(SavingThrow,Dexterity);Proficiency(LightArmor);Proficiency(MediumArmor);Proficiency(Shields);Proficiency(SimpleWeapons);Proficiency(MartialWeapons);ActionResource(SpellSlot,4,1);ActionResource(SpellSlot,3,2);ActionResource(SpellSlot,4,3);UnlockSpell(Shout_HideInPlainSight,AddChildren);ActionResource(SpellSlot,3,4);ActionResource(SpellSlot,2,5)"
 
     new entry "GOON_NPC_RANGER_LVL_20"
@@ -203,7 +203,7 @@
     data "StatusType" "BOOST"
     using "GOON_NPC_RANGER_PROGRESSION_TEMPLATE"
     data "StackPriority" "20"
-    data "Passives" "CX_Martial_Boost;UnlockedSpellSlotLevel1;ExtraAttack;UnlockedSpellSlotLevel2;LandsStride_DifficultTerrain;LandsStride_Surfaces;UnlockedSpellSlotLevel3;Vanish;FeralSenses;FoeSlayer"
+    data "Passives" "CX_Martial_Boost;CX_Magic_Boost;UnlockedSpellSlotLevel1;ExtraAttack;UnlockedSpellSlotLevel2;LandsStride_DifficultTerrain;LandsStride_Surfaces;UnlockedSpellSlotLevel3;Vanish;FeralSenses;FoeSlayer"
     data "Boosts" "Tag(RANGER);ProficiencyBonus(SavingThrow,Strength);ProficiencyBonus(SavingThrow,Dexterity);Proficiency(LightArmor);Proficiency(MediumArmor);Proficiency(Shields);Proficiency(SimpleWeapons);Proficiency(MartialWeapons);ActionResource(SpellSlot,4,1);ActionResource(SpellSlot,3,2);ActionResource(SpellSlot,4,3);UnlockSpell(Shout_HideInPlainSight,AddChildren);ActionResource(SpellSlot,3,4);ActionResource(SpellSlot,2,5)"
 
 // ==================================== Subclass: Beast Master ====================================
