@@ -15,13 +15,13 @@
 
 <!-- Other Passives -->
 	<content contentuid="h83a9e22egdf4eg4197g9624g6ca6a935f37d" version="1">! CX Boost: Boss</content>
-	<content contentuid="h69e24731g49c5g41dfg875agfff36fa8535b" version="1">A being of large import They gain boss boosts from configuration.</content>
+	<content contentuid="h69e24731g49c5g41dfg875agfff36fa8535b" version="1">A being of large import. They gain boss boosts from configuration.</content>
 
-	<content contentuid="hd1b17909ga0adg44c2ga6c7g6cd26b2fa192" version="1">! CX Boost: Mini-Bosst</content>
+	<content contentuid="hd1b17909ga0adg44c2ga6c7g6cd26b2fa192" version="1">! CX Boost: Mini-Boss</content>
 	<content contentuid="ha444da0ag7d30g4e9fg97d0g393888ffebe6" version="1">A being of some import. They gain mini-boss boosts from configuration.</content>
 	
 	<content contentuid="h2ac56c95gc30cg46e3gba36g4efd11b7884a" version="1">! CX Boost: Martial</content>
-	<content contentuid="hd5818987ga072g4e8dgb314g97ab96f230cd" version="1">A character with experience in martial combat. They gain &lt;LSTag Tooltip="Proficiency"&gt;Proficient&lt;/LSTag&gt; with Martial Weapons, in addition to boosts from configuration.</content>
+	<content contentuid="hd5818987ga072g4e8dgb314g97ab96f230cd" version="1">A character with experience in martial combat. They gain &lt;LSTag Tooltip="Proficiency"&gt;Proficiency&lt;/LSTag&gt; with Martial Weapons, in addition to boosts from configuration.</content>
 
 	<content contentuid="h190c1d80g4bf9g4835ga98egba6610cb8473" version="1">! CX Boost: Magic</content>
 	<content contentuid="he62bca3bg089ag4600gbcc7g67dec88d0ace" version="1">A character with experience in spellcasting. They gain a 30% increase to their spell's range, in addition to boosts from configuration.</content>
@@ -142,7 +142,7 @@
 
 <!-- PALADIN -->
 	<content contentuid="hbd9fca0cg8eddg405cga457g81f619e965fe" version="1">! Class: Paladin</content>
-	<content contentuid="h9194b05fgf6fdg4f01ga63aga16a16fed629" version="1">A character who upholds or neglects a sacred oath, a warrior of divinity or demise. They possess Monk progressions, and gain the &lt;LSTag Type="Passive" Tooltip="CX_Paladin_Boost"&gt;! CX Boost: Paladin&lt;/LSTag&gt; passive.</content>
+	<content contentuid="h9194b05fgf6fdg4f01ga63aga16a16fed629" version="1">A character who upholds or neglects a sacred oath, a warrior of divinity or demise. They possess Paladin progressions, and gain the &lt;LSTag Type="Passive" Tooltip="CX_Paladin_Boost"&gt;! CX Boost: Paladin&lt;/LSTag&gt; passive.</content>
 
 	<content contentuid="h100e7a9bg3c26g4035g86d9g0762e657c372" version="1">! CX Boost: Paladin</content>
 	<content contentuid="h5ee949eegd3a6g46dbgbf07g91727440a141" version="1">A character who upholds or neglects a sacred oath, a warrior of divinity or demise. They gain Paladin progressions in addition to boosts from configuration.</content>
