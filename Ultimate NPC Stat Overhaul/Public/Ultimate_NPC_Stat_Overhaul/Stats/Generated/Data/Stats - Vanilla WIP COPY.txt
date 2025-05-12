@@ -1568,7 +1568,7 @@ new entry "FlamingFist_Gnome_Cleric"
 type "Character"
 using "FlamingFist_Gnome_Cleric"
 // data "Passives" "Gnome_Cunning;Gnome_Speed;AttackOfOpportunity;DarknessRules;Darkvision"
-data "Passives" "CX_Cleric_Boost;CX_Magic_Boost;CX_Martial_Boost;Gnome_Cunning;Gnome_Speed;AttackOfOpportunity;DarknessRules;Darkvision;Goon_NPC_Flaming_Fist_Boosts;FightingStyle_Protection"
+data "Passives" "Gnome_Cunning;Gnome_Speed;AttackOfOpportunity;DarknessRules;Darkvision;Goon_NPC_Flaming_Fist_Boosts;FightingStyle_Protection"
 // data "Progressions" "70c3eb7e-383f-11ed-a261-0242ac120002"
 data "Progressions" "36c3f8de-3293-4d7b-92bc-ceb3c569244b"
 
@@ -1577,7 +1577,7 @@ new entry "FlamingFist_Gnome_Melee_Attacker"
 type "Character"
 using "FlamingFist_Gnome_Melee_Attacker"
 // data "Passives" "Gnome_Cunning;Gnome_Speed;AttackOfOpportunity;DarknessRules;Darkvision"
-data "Passives" "CX_Fighter_Boost;CX_Martial_Boost;Gnome_Cunning;Gnome_Speed;AttackOfOpportunity;DarknessRules;Darkvision;Goon_NPC_Flaming_Fist_Boosts;FightingStyle_GreatWeaponFighting;PhalanxFormation_Duergar;Riposte"
+data "Passives" "Gnome_Cunning;Gnome_Speed;AttackOfOpportunity;DarknessRules;Darkvision;Goon_NPC_Flaming_Fist_Boosts;FightingStyle_GreatWeaponFighting;PhalanxFormation_Duergar;Riposte"
 // data "Progressions" "51d47904-383f-11ed-a261-0242ac120002"
 data "Progressions" "0e6da493-5a37-423b-8c28-629462b22faa"
 
@@ -1586,18 +1586,18 @@ new entry "FlamingFist_Gnome_Melee_Defender"
 type "Character"
 using "FlamingFist_Gnome_Melee_Defender"
 // data "Passives" "Gnome_Cunning;Gnome_Speed;AttackOfOpportunity;DarknessRules;Darkvision"
-data "Passives" "CX_Fighter_Boost;CX_Martial_Boost;Gnome_Cunning;Gnome_Speed;AttackOfOpportunity;DarknessRules;Darkvision;Goon_NPC_Flaming_Fist_Boosts;FightingStyle_Protection"
+data "Passives" "Gnome_Cunning;Gnome_Speed;AttackOfOpportunity;DarknessRules;Darkvision;Goon_NPC_Flaming_Fist_Boosts;FightingStyle_Protection"
 // data "Progressions" "5885fa7a-383f-11ed-a261-0242ac120002"
 data "Progressions" "0e6da493-5a37-423b-8c28-629462b22faa"
 
-// Gauntlet Devella Fountainhead - Constable of the Flaming Fist (Turn her into a proper Paladin)
+// Gauntlet Devella Fountainhead - Constable of the Flaming Fist (Swapped from Fighter progressions to Paladin, Devotion subclass feels right)
 new entry "LOW_DevellaFountainHead"
 type "Character"
 using "LOW_DevellaFountainHead"
 // data "DefaultBoosts" "ActionResource(SpellSlot,4,1);ActionResource(SpellSlot,3,2);ActionResource(SpellSlot,3,3);ActionResource(ChannelOath,1,0);"
 data "DefaultBoosts" ""
 // data "Passives" "AttackOfOpportunity;DarknessRules;Darkvision;Gnome_Cunning;Gnome_Speed;ImprovedDivineSmite"
-data "Passives" "CX_Paladin_Boost;CX_Martial_Boost;Gnome_Cunning;Gnome_Speed;AttackOfOpportunity;DarknessRules;Darkvision;ImprovedDivineSmite;Goon_NPC_Flaming_Fist_Boosts;FightingStyle_GreatWeaponFighting"
+data "Passives" "CX_Paladin_Devotion_Boost;Gnome_Cunning;Gnome_Speed;AttackOfOpportunity;DarknessRules;Darkvision;ImprovedDivineSmite;Goon_NPC_Flaming_Fist_Boosts;FightingStyle_GreatWeaponFighting"
 // data "Progressions" "5885fa7a-383f-11ed-a261-0242ac120002"
 data "Progressions" "8726b2c4-edc0-4905-b82f-60a4baba0733"
 
@@ -1606,51 +1606,33 @@ new entry "FlamingFist_Gnome_Ranger"
 type "Character"
 using "FlamingFist_Gnome_Ranger"
 // data "Passives" "Gnome_Cunning;Gnome_Speed;AttackOfOpportunity;DarknessRules;Darkvision"
-data "Passives" "CX_Ranger_Boost;CX_Martial_Boost;Gnome_Cunning;Gnome_Speed;AttackOfOpportunity;DarknessRules;Darkvision;Goon_NPC_Flaming_Fist_Boosts;FightingStyle_Archery;CrossbowExpert_PointBlank"
+data "Passives" "Gnome_Cunning;Gnome_Speed;AttackOfOpportunity;DarknessRules;Darkvision;Goon_NPC_Flaming_Fist_Boosts;FightingStyle_Archery;CrossbowExpert_PointBlank"
 // data "Progressions" "6cae475a-383f-11ed-a261-0242ac120002"
 data "Progressions" "f0ede459-8b86-48fd-ac11-4432573566a5"
 
 // "_Gnome"
-//  ├─ "Gnome_Caster"
-//  │   ├─ "Gnome_Bard"
-//  │   │   ├─ "WYR_Circus_Gnome_Bard"                  --- Calliope Blingsdorf, Circus of the Last Days
-//  │   │   └─ "WYR_MerchantsHouse_Gnome_Bard"          --- Dimples Backster - The Guild
-//  │   ├─ "Gnome_Druid"
+//  ├─ "Gnome_Caster"                                   --- (Has Wizard progressions)
+//  │   ├─ "Gnome_Bard"                                 --- (Has Bard progressions)
+//  │   │   ├─ "WYR_Circus_Gnome_Bard"                  --- Calliope Blingsdorf, Circus of the Last Days (Inherits Bard progressions)
+//  │   │   └─ "WYR_MerchantsHouse_Gnome_Bard"          --- Dimples Backster - The Guild (Inherits Bard progressions)
+//  │   ├─ "Gnome_Druid"                                --- (Has Druid progressions)
 //  │   │   ├─ "DEN_Tahan"
-//  │   │   └─ "LOW_HarperConfrontation_Druid_Gnome"    --- Harper Sulian - Harpers
+//  │   │   └─ "LOW_HarperConfrontation_Druid_Gnome"    --- Harper Sulian - Harpers (Inherits Druid progressions)
 //  │   ├─ "LOW_HagSurvivor_Gnome_Caster"
 //  │   ├─ "LOW_HouseOfGrief_Cultist_Caster_Gnome"
 //  │   ├─ "MOO_MindTorturer"
 //  │   └─ "UND_KC_Gnome_Deep_Caster"
-//  ├─ "Gnome_Gondian_Caster"
+//  ├─ "Gnome_Gondian_Caster"                           --- Basically all the Gondians (Inherits Wizard progressions)
 //  │   └─ "LOW_SteelWatchFoundry_ZannerToobin"         --- Gondian Zanner Toobin - Church of Gond
 
-new entry "Gnome_Caster"
-type "Character"
-using "Gnome_Caster"
-// data "Passives" "Gnome_Cunning;Gnome_Speed;AttackOfOpportunity;DarknessRules;Darkvision"
-data "Passives" "CX_Magic_Boost;Gnome_Cunning;Gnome_Speed;AttackOfOpportunity;DarknessRules;Darkvision"
-
-new entry "Gnome_Bard"
-type "Character"
-using "Gnome_Bard"
-// data "Passives" "Gnome_Cunning;Gnome_Speed;AttackOfOpportunity;DarknessRules;Darkvision"
-data "Passives" "CX_Bard_Boost;CX_Magic_Boost;Gnome_Cunning;Gnome_Speed;AttackOfOpportunity;DarknessRules;Darkvision"
-
-new entry "Gnome_Druid"
-type "Character"
-using "Gnome_Druid"
-// data "Passives" "Gnome_Cunning;Gnome_Speed;AttackOfOpportunity;DarknessRules;Darkvision"
-data "Passives" "CX_Druid_Boost;CX_Magic_Boost;Gnome_Cunning;Gnome_Speed;AttackOfOpportunity;DarknessRules;Darkvision"
-
-// Tahan - Circle of the Emerald Grove
+// Tahan - Circle of the Emerald Grove (Inherits Druid progressions) (Gnome_Speed added)
 new entry "DEN_Tahan"
 type "Character"
 using "DEN_Tahan"
 // data "Passives" "AttackOfOpportunity;DarknessRules;Darkvision;Gnome_Cunning;AdditionalSpellSlot_Level_2;AdditionalSpellSlot_Level_2;"
-data "Passives" "CX_Druid_Boost;CX_Magic_Boost;Gnome_Cunning;Gnome_Speed;AttackOfOpportunity;DarknessRules;Darkvision;AdditionalSpellSlot_Level_2;AdditionalSpellSlot_Level_2"
+data "Passives" "Gnome_Cunning;Gnome_Speed;AttackOfOpportunity;DarknessRules;Darkvision;AdditionalSpellSlot_Level_2;AdditionalSpellSlot_Level_2"
 
-// Jivin Mizzrym - Member of the Dead Eyes
+// Jivin Mizzrym - Member of the Dead Eyes (Swapped Wizard progressions for Warlock progressions)
 new entry "LOW_HagSurvivor_Gnome_Caster"
 type "Character"
 using "LOW_HagSurvivor_Gnome_Caster"
@@ -1660,178 +1642,102 @@ data "Intelligence" "12"
 data "Charisma" "18"
 // data "SpellCastingAbility" "Intelligence"
 data "SpellCastingAbility" "Charisma"
-// data "Passives" "Gnome_Cunning;Gnome_Speed;AttackOfOpportunity;DarknessRules;Darkvision"
-data "Passives" "CX_Warlock_Boost;CX_Magic_Boost;Gnome_Cunning;Gnome_Speed;AttackOfOpportunity;DarknessRules;Darkvision"
+// data "Progressions" "44bdbc5e-a003-4d61-87f0-5ced20d3804e"
+data "Progressions" "51274504-865d-46d1-a3b6-c72e9384904a"
 
-// Sharran Fidelian
+// Sharran Fidelian (Inherits Wizard progressions)
 new entry "LOW_HouseOfGrief_Cultist_Caster_Gnome"
 type "Character"
 using "LOW_HouseOfGrief_Cultist_Caster_Gnome"
 // data "Passives" "Gnome_Cunning;Gnome_Speed;AttackOfOpportunity;DarknessRules;Darkvision;LOW_HouseOfGrief_Cultists_Sight;LOW_HouseOfGrief_Cultists_Melee;"
-data "Passives" "CX_Fighter_Boost;CX_Martial_Boost;CX_Magic_Boost;CX_Spells_L4;Gnome_Cunning;Gnome_Speed;AttackOfOpportunity;DarknessRules;Darkvision;LOW_HouseOfGrief_Cultists_Sight;LOW_HouseOfGrief_Cultists_Melee"
+data "Passives" "CX_Spells_L4;Gnome_Cunning;Gnome_Speed;AttackOfOpportunity;DarknessRules;Darkvision;LOW_HouseOfGrief_Cultists_Sight;LOW_HouseOfGrief_Cultists_Melee"
 
-// Questioner Jasin, Questioner Sumera - Cult of the Absolute
+// Questioner Jasin, Questioner Sumera - Cult of the Absolute (Swapped Wizard progressions for Warlock progressions, already has Char Spellcasting Ability, fixed racials)
 new entry "MOO_MindTorturer"
 type "Character"
 using "MOO_MindTorturer"
 // data "Passives" "AttackOfOpportunity;DarknessRules;Darkvision;Gnome_Cunning;Gnome_Speed;RepellingBlast;DreadfulWord"
-data "Passives" "CX_Warlock_Boost;CX_Magic_Boost;Gnome_Cunning;Gnome_Speed;DeepGnome_StoneCamouflage;AttackOfOpportunity;SuperiorDarkvision;DarknessRules;RepellingBlast;DreadfulWord"
+data "Passives" "Gnome_Cunning;Gnome_Speed;DeepGnome_StoneCamouflage;AttackOfOpportunity;SuperiorDarkvision;DarknessRules;RepellingBlast;DreadfulWord"
+// data "Progressions" "44bdbc5e-a003-4d61-87f0-5ced20d3804e"
+data "Progressions" "51274504-865d-46d1-a3b6-c72e9384904a"
 
+// (Inherits Wizard progressions, fixed racials)
 new entry "UND_KC_Gnome_Deep_Caster"
 type "Character"
 using "UND_KC_Gnome_Deep_Caster"
 // data "Passives" "Gnome_Cunning;Gnome_Speed;AttackOfOpportunity;DarknessRules;Darkvision"
-data "Passives" "CX_Wizard_Boost;CX_Magic_Boost;Gnome_Cunning;Gnome_Speed;DeepGnome_StoneCamouflage;AttackOfOpportunity;SuperiorDarkvision;DarknessRules"
-
-// Basically all the Gondians
-new entry "Gnome_Gondian_Caster"
-type "Character"
-using "Gnome_Gondian_Caster"
-// data "Passives" "Gnome_Cunning;Gnome_Speed;AttackOfOpportunity;DarknessRules;Darkvision"
-data "Passives" "CX_Wizard_Boost;CX_Magic_Boost;Gnome_Cunning;Gnome_Speed;AttackOfOpportunity;DarknessRules;Darkvision"
+data "Passives" "Gnome_Cunning;Gnome_Speed;DeepGnome_StoneCamouflage;AttackOfOpportunity;SuperiorDarkvision;DarknessRules"
 
 // "_Gnome"
-//  ├─ "Gnome_Melee"
+//  ├─ "Gnome_Melee"                                --- (Inherits Fighter progressions)
 //  │   ├─ "CHA_Bandit_Gnome_Melee"
-//  │   ├─ "Gnome_Cleric"
-//  │   ├─ "HAV_FlamingFist_Gnome_Melee"
-//  │   ├─ "HAV_Harper_Gnome_Melee"
+//  │   ├─ "Gnome_Cleric"                           --- Vicar Humbletoes - Guardian of the Stormshore Tabernacle (Has Cleric progressions)
+//  │   ├─ "HAV_FlamingFist_Gnome_Melee"            --- (Inherits Fighter progressions)
+//  │   ├─ "HAV_Harper_Gnome_Melee"                 --- Harper Essius - Harpers (Inherits Fighter progressions)
 //  │   ├─ "LOW_ArabellaPowers_Brigand_Gnome_Melee" --- Woodchips Grant (dead)
-//  │   ├─ "LOW_AradinThug_Barbarian"
-//  │   ├─ "LOW_HouseOfGrief_Cultist_Melee_Gnome"
-//  │   ├─ "MOO_FlamingFist_Gnome_Melee"
-//  │   └─ "MOO_GnomePrisoner"                      --- Nimble, Nickels - Clan Ironhand
-//  │       └─ "MOO_GnomePrisoner_Leader"
+//  │   ├─ "LOW_AradinThug_Barbarian"               --- Lobo Denysse, Baff Elkhorn, Bearclaw - Aradin's mercenary crew (Has Barbarian progressions)
+//  │   ├─ "LOW_HouseOfGrief_Cultist_Melee_Gnome"   --- Sharran Novice, Garrigan (Inherits Fighter progressions)
+//  │   ├─ "MOO_FlamingFist_Gnome_Melee"            --- Fist Helena - Flaming Fist (Inherits Fighter progressions)
+//  │   └─ "MOO_GnomePrisoner"                      --- Nimble - Clan Ironhand (Inherits Fighter progressions)
+//  │       └─ "MOO_GnomePrisoner_Leader"           --- Wulbren Bongle - Clan Ironhand (Inherits Fighter progressions)
 
-new entry "Gnome_Melee"
-type "Character"
-using "Gnome_Melee"
-// data "Passives" "Gnome_Cunning;Gnome_Speed;AttackOfOpportunity;DarknessRules;Darkvision"
-data "Passives" "CX_Martial_Boost;Gnome_Cunning;Gnome_Speed;AttackOfOpportunity;DarknessRules;Darkvision"
-
-// Gimblebock - Overgrown Ruin Looters
+// Gimblebock - Overgrown Ruin Looters (Inherits Fighter progressions)
 new entry "CHA_Bandit_Gnome_Melee"
 type "Character"
 // using "Gnome_Melee"
 using "CHA_Bandit_Gnome_Melee"
 // data "Passives" "Gnome_Cunning;Gnome_Speed;DarknessRules;Darkvision"
-data "Passives" "CX_Fighter_Boost;CX_Martial_Boost;Gnome_Cunning;Gnome_Speed;AttackOfOpportunity;DarknessRules;Darkvision"
+data "Passives" "Gnome_Cunning;Gnome_Speed;AttackOfOpportunity;DarknessRules;Darkvision"
 
-// Vicar Humbletoes - Guardian of the Stormshore Tabernacle
-new entry "Gnome_Cleric"
-type "Character"
-using "Gnome_Cleric"
-// data "Passives" "Gnome_Cunning;Gnome_Speed;AttackOfOpportunity;DarknessRules;Darkvision"
-data "Passives" "CX_Cleric_Boost;CX_Magic_Boost;Gnome_Cunning;Gnome_Speed;AttackOfOpportunity;DarknessRules;Darkvision"
-
-new entry "HAV_FlamingFist_Gnome_Melee"
-type "Character"
-using "HAV_FlamingFist_Gnome_Melee"
-// data "Passives" "Gnome_Cunning;Gnome_Speed;AttackOfOpportunity;DarknessRules;Darkvision"
-data "Passives" "CX_Fighter_Boost;CX_Martial_Boost;Gnome_Cunning;Gnome_Speed;AttackOfOpportunity;DarknessRules;Darkvision"
-
-// Harper Essius - Harpers
-new entry "HAV_Harper_Gnome_Melee"
-type "Character"
-using "HAV_Harper_Gnome_Melee"
-// data "Passives" "Gnome_Cunning;Gnome_Speed;AttackOfOpportunity;DarknessRules;Darkvision"
-data "Passives" "CX_Fighter_Boost;CX_Martial_Boost;Gnome_Cunning;Gnome_Speed;AttackOfOpportunity;DarknessRules;Darkvision"
-
-// Lobo Denysse, Baff Elkhorn, Bearclaw - Aradin's mercenary crew
-new entry "LOW_AradinThug_Barbarian"
-type "Character"
-using "LOW_AradinThug_Barbarian"
-// data "Passives" "AttackOfOpportunity;DarknessRules;Darkvision;Gnome_Cunning;Gnome_Speed;UnarmouredDefence_Barbarian;BrutalCritical;RelentlessRage"
-data "Passives" "CX_Barbarian_Boost;CX_Martial_Boost;Gnome_Cunning;Gnome_Speed;AttackOfOpportunity;DarknessRules;Darkvision;UnarmouredDefence_Barbarian;BrutalCritical;RelentlessRage"
-
-// Sharran Novice, Garrigan
+// Sharran Novice, Garrigan (Inherits Fighter progressions)
 new entry "LOW_HouseOfGrief_Cultist_Melee_Gnome"
 type "Character"
 using "LOW_HouseOfGrief_Cultist_Melee_Gnome"
 // data "Passives" "Gnome_Cunning;Gnome_Speed;AttackOfOpportunity;DarknessRules;Darkvision;LOW_HouseOfGrief_Cultists_Sight;LOW_HouseOfGrief_Cultists_Melee;"
 data "Passives" "CX_Fighter_Boost;CX_Martial_Boost;Gnome_Cunning;Gnome_Speed;AttackOfOpportunity;DarknessRules;Darkvision;LOW_HouseOfGrief_Cultists_Sight;LOW_HouseOfGrief_Cultists_Melee"
 
-// Fist Helena - Flaming Fist
-new entry "MOO_FlamingFist_Gnome_Melee"
-type "Character"
-using "MOO_FlamingFist_Gnome_Melee"
-// data "Passives" "Gnome_Cunning;Gnome_Speed;AttackOfOpportunity;DarknessRules;Darkvision"
-data "Passives" "CX_Fighter_Boost;CX_Martial_Boost;Gnome_Cunning;Gnome_Speed;AttackOfOpportunity;DarknessRules;Darkvision"
-
 // "_Gnome"
-//  ├─ "Gnome_Monk"
+//  ├─ "Gnome_Monk"                 --- (Has Monk progressions)
 //  │   └─ "LOW_Guildhall_Phase"
 
-new entry "Gnome_Monk"
-type "Character"
-using "Gnome_Monk"
-// data "Passives" "Gnome_Cunning;Gnome_Speed;AttackOfOpportunity;DarknessRules;Darkvision"
-data "Passives" "CX_Monk_Boost;CX_Martial_Boost;Gnome_Cunning;Gnome_Speed;AttackOfOpportunity;DarknessRules;Darkvision"
-
-// Phase - Zhentarim
+// Phase - Zhentarim (Inherits Monk Progressions, definitely Shadow subclass)
 new entry "LOW_Guildhall_Phase"
 type "Character"
 using "LOW_Guildhall_Phase"
 // data "Passives" "FastHands;AttackOfOpportunity;DarknessRules;Darkvision;Gnome_Cunning;Gnome_Speed"
-data "Passives" "CX_Monk_Boost;CX_Martial_Boost;Gnome_Cunning;Gnome_Speed;AttackOfOpportunity;DarknessRules;Darkvision;FastHands"
+data "Passives" "CX_Monk_Shadow_Boost;Gnome_Cunning;Gnome_Speed;AttackOfOpportunity;DarknessRules;Darkvision;FastHands"
 
 // "_Gnome"
-//  ├─ "Gnome_Ranger"
+//  ├─ "Gnome_Ranger"                           --- (Has Ranger progressions)
 //  │   ├─ "CHA_Bandit_Gnome_Ranger"
-//  │   ├─ "DEN_Druids_Gnome_Ranger"
-//  │   ├─ "FOR_Gnome_Cultist_Zariel_Ranger"
-//  │   ├─ "HAV_FlamingFist_Gnome_Ranger"
-//  │   ├─ "LOW_Guildhall_BossFriol"
-//  │   ├─ "MOO_GnomePrisoner_Ranged"
-//  │   └─ "WYR_MessHallBodyguard_08"
+//  │   ├─ "DEN_Druids_Gnome_Ranger"            --- Mino - Circle of the Emerald Grove (Inherits Ranger progressions)
+//  │   ├─ "FOR_Gnome_Cultist_Zariel_Ranger"    --- Buckle (Inherits Ranger progressions)
+//  │   ├─ "HAV_FlamingFist_Gnome_Ranger"       --- Fist Gretta - Flaming Fist (Inherits Ranger progressions)
+//  │   ├─ "LOW_Guildhall_BossFriol"            --- Boss Friol (Has Rogue progressions, not a Ranger)
+//  │   ├─ "MOO_GnomePrisoner_Ranged"           --- Nickels - Clan Ironhand (Inherits Ranger progressions)
+//  │   └─ "WYR_MessHallBodyguard_08"           --- Lord Shattershield's Attendant (Inherits Ranger progressions)
 
-new entry "Gnome_Ranger"
-type "Character"
-using "Gnome_Ranger"
-// data "Passives" "Gnome_Cunning;Gnome_Speed;AttackOfOpportunity;DarknessRules;Darkvision"
-data "Passives" "CX_Ranger_Boost;CX_Martial_Boost;Gnome_Cunning;Gnome_Speed;AttackOfOpportunity;DarknessRules;Darkvision"
-
-// Warryn - Overgrown Ruin Looters
+// Warryn - Overgrown Ruin Looters (Has Rogue progressions, not a Ranger)
 new entry "CHA_Bandit_Gnome_Ranger"
 type "Character"
 using "CHA_Bandit_Gnome_Ranger"
 // data "Passives" "Gnome_Cunning;Gnome_Speed;DarknessRules;Darkvision"
-data "Passives" "CX_Rogue_Boost;CX_Martial_Boost;Gnome_Cunning;Gnome_Speed;AttackOfOpportunity;DarknessRules;Darkvision"
-
-// Mino - Circle of the Emerald Grove
-new entry "DEN_Druids_Gnome_Ranger"
-type "Character"
-using "DEN_Druids_Gnome_Ranger"
-// data "Passives" "Gnome_Cunning;Gnome_Speed;AttackOfOpportunity;DarknessRules;Darkvision"
-data "Passives" "CX_Druid_Boost;CX_Magic_Boost;CX_Ranger_Boost;CX_Ranger_Hunter_Boost;CX_Martial_Boost;Gnome_Cunning;Gnome_Speed;AttackOfOpportunity;DarknessRules;Darkvision"
-
-// Lord Shattershield's Attendant
-new entry "WYR_MessHallBodyguard_08"
-type "Character"
-using "WYR_MessHallBodyguard_08"
-// data "Passives" "AttackOfOpportunity;DarknessRules;Darkvision;Gnome_Cunning;Gnome_Speed;FightingStyle_TwoWeaponFighting;CrossbowExpert_PointBlank"
-data "Passives" "CX_Ranger_Boost;CX_Martial_Boost;Gnome_Cunning;Gnome_Speed;AttackOfOpportunity;DarknessRules;Darkvision;FightingStyle_TwoWeaponFighting;CrossbowExpert_PointBlank"
+data "Passives" "Gnome_Cunning;Gnome_Speed;AttackOfOpportunity;DarknessRules;Darkvision"
 
 // "_Gnome"
-//  ├─ "Gnome_Rogue"
-//  │   ├─ "END_IronHandGrenadier"              --- Ironhand Grenadier (Gather Your Allies summon)
+//  ├─ "Gnome_Rogue"                            --- (Has Rogue progressions)
+//  │   ├─ "END_IronHandGrenadier"              --- Ironhand Grenadier (Gather Your Allies summon) (Inherits Rogue progressions)
 //  │   ├─ "LOW_Guildhall_FishbaitArno"
-//  │   ├─ "LOW_Guildhall_Swarm_Melee_Gnome"
-//  │   ├─ "LOW_Guildhall_Swarm_Ranged_Gnome"
-//  │   └─ "WYR_SmugglersCave_Guild_Gnome"      --- Farlin - Envoy of Nine-Fingers, The Guild
+//  │   ├─ "LOW_Guildhall_Swarm_Melee_Gnome"    --- (Inherits Rogue progressions)
+//  │   ├─ "LOW_Guildhall_Swarm_Ranged_Gnome"   --- (Inherits Rogue progressions)
+//  │   └─ "WYR_SmugglersCave_Guild_Gnome"      --- Farlin - Envoy of Nine-Fingers, The Guild (Inherits Rogue progressions)
 
-new entry "Gnome_Rogue"
-type "Character"
-using "Gnome_Rogue"
-// data "Passives" "Gnome_Cunning;Gnome_Speed;AttackOfOpportunity;DarknessRules;Darkvision"
-data "Passives" "CX_Rogue_Boost;CX_Martial_Boost;Gnome_Cunning;Gnome_Speed;AttackOfOpportunity;DarknessRules;Darkvision"
-
-// Fishbait Arno - Zhentarim
+// Fishbait Arno - Zhentarim (Inherits Rogue progressions, definitely a Thief)
 new entry "LOW_Guildhall_FishbaitArno"
 type "Character"
 using "LOW_Guildhall_FishbaitArno"
 // data "Passives" "FastHands;AttackOfOpportunity;DarknessRules;Darkvision;Gnome_Cunning;Gnome_Speed"
-data "Passives" "CX_Rogue_Boost;CX_Martial_Boost;Gnome_Cunning;Gnome_Speed;AttackOfOpportunity;DarknessRules;Darkvision;FastHands"
+data "Passives" "CX_Rogue_Thief_Boost;Gnome_Cunning;Gnome_Speed;AttackOfOpportunity;DarknessRules;Darkvision;FastHands"
 
 // "_Gnome"
 //  ├─ "MOO_AcolyteOfTheAbsolute_Gnome" --- (Inherits Cleric progressions) 
@@ -1867,47 +1773,35 @@ data "Passives" "Gnome_Cunning;Gnome_Speed;DeepGnome_StoneCamouflage;AttackOfOpp
 
 // "_Gnome"
 //  └─ "_Gnome_Deep"
-//      ├─ "Gnome_Deep_Caster"
+//      ├─ "Gnome_Deep_Caster"                  --- (Has Wizard progressions)
 //      │   ├─ "GLO_HiddenGnome"                --- Philomeen - Clan Ironhand
 //      │   ├─ "LOW_TheLodge_Doctor"
-//      │   └─ "WYR_IronHand_Gnome_Deep_Caster"
-//      ├─ "Gnome_Deep_Melee"
-//      │   └─ "WYR_IronHand_Gnome_Deep_Melee"  --- Hogi Nuners, Gipkins Jared - Clan Ironhand
+//      │   └─ "WYR_IronHand_Gnome_Deep_Caster" --- Dulbers Frint - Clan Ironhand (Inherits Wizard progressions)
+//      ├─ "Gnome_Deep_Melee"                   --- 
+//      │   └─ "WYR_IronHand_Gnome_Deep_Melee"  --- Hogi Nuners, Gipkins Jared - Clan Ironhand (Inherits added Fighter progressions)
 //      └─ "Gnome_Deep_Ranger"
-//          └─ "WYR_IronHand_Gnome_Deep_Ranger" --- Bumpnagel - Clan Ironhand
+//          └─ "WYR_IronHand_Gnome_Deep_Ranger" --- Bumpnagel - Clan Ironhand (Inherits added Ranger progressions)
 
-new entry "Gnome_Deep_Caster"
-type "Character"
-using "Gnome_Deep_Caster"
-// data "Passives" "Gnome_Cunning;Gnome_Speed;DeepGnome_StoneCamouflage;AttackOfOpportunity;SuperiorDarkvision;DarknessRules"
-data "Passives" "CX_Magic_Boost;Gnome_Cunning;Gnome_Speed;DeepGnome_StoneCamouflage;AttackOfOpportunity;SuperiorDarkvision;DarknessRules"
-
-// Doctor Moorcombe - Society of Brilliance
+// Doctor Moorcombe - Society of Brilliance (Inherits Wizard progressions, do be a Necromancer)
 new entry "LOW_TheLodge_Doctor"
 type "Character"
 using "LOW_TheLodge_Doctor"
 // data "Passives" "AttackOfOpportunity;DarknessRules;SuperiorDarkvision;Gnome_Cunning;Gnome_Speed;DeepGnome_StoneCamouflage;GrimHarvest"
-data "Passives" "CX_Wizard_Boost;CX_Magic_Boost;Gnome_Cunning;Gnome_Speed;DeepGnome_StoneCamouflage;AttackOfOpportunity;SuperiorDarkvision;DarknessRules;GrimHarvest"
+data "Passives" "CX_Wizard_Necromancy_Boost;Gnome_Cunning;Gnome_Speed;DeepGnome_StoneCamouflage;AttackOfOpportunity;SuperiorDarkvision;DarknessRules;GrimHarvest"
 
-// Dulbers Frint - Clan Ironhand
-new entry "WYR_IronHand_Gnome_Deep_Caster"
-type "Character"
-using "WYR_IronHand_Gnome_Deep_Caster"
-// data "Passives" "Gnome_Cunning;Gnome_Speed;DeepGnome_StoneCamouflage;AttackOfOpportunity;SuperiorDarkvision;DarknessRules"
-data "Passives" "CX_Wizard_Boost;CX_Magic_Boost;Gnome_Cunning;Gnome_Speed;DeepGnome_StoneCamouflage;AttackOfOpportunity;SuperiorDarkvision;DarknessRules"
-
+// (Added Fighter progressions)
 new entry "Gnome_Deep_Melee"
 type "Character"
 using "Gnome_Deep_Melee"
-// data "Passives" "Gnome_Cunning;Gnome_Speed;DeepGnome_StoneCamouflage;AttackOfOpportunity;SuperiorDarkvision;DarknessRules"
-data "Passives" "CX_Fighter_Boost;CX_Martial_Boost;Gnome_Cunning;Gnome_Speed;DeepGnome_StoneCamouflage;AttackOfOpportunity;SuperiorDarkvision;DarknessRules"
+// data "Progressions" ""
+data "Progressions" "0e6da493-5a37-423b-8c28-629462b22faa"
 
-// Ironshield Fulguro, Fuffi Fuffers - Clan Ironhand
+// Ironshield Fulguro, Fuffi Fuffers - Clan Ironhand (Added Ranger progressions)
 new entry "Gnome_Deep_Ranger"
 type "Character"
 using "Gnome_Deep_Ranger"
-// data "Passives" "Gnome_Cunning;Gnome_Speed;DeepGnome_StoneCamouflage;AttackOfOpportunity;SuperiorDarkvision;DarknessRules"
-data "Passives" "CX_Ranger_Boost;CX_Martial_Boost;Gnome_Cunning;Gnome_Speed;DeepGnome_StoneCamouflage;AttackOfOpportunity;SuperiorDarkvision;DarknessRules"
+// data "Progressions" ""
+data "Progressions" "f0ede459-8b86-48fd-ac11-4432573566a5"
 
 // ==================================== Goblins ====================================
 
