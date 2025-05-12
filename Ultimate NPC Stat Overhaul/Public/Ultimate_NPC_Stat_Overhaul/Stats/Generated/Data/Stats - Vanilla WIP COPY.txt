@@ -167,13 +167,14 @@ data "Passives" "CX_Martial_Boost;AttackOfOpportunity;DarknessRules"
 //  │   │   ├─ "FOR_Bugbear_Demo"               --- Scrawny Bugbear (sleeping in Blighted Village)
 //  │   │   └─ "MOO_BugbearMerchant"
 
+// (Added Barbarian progressions)
 new entry "Bugbear"
 type "Character"
 using "Bugbear"
-// data "Passives" "Brute_Bugbear;AttackOfOpportunity;Darkvision;DarknessRules"
-data "Passives" "CX_Martial_Boost;Brute_Bugbear;AttackOfOpportunity;Darkvision;DarknessRules"
+// data "Progressions" ""
+data "Progressions" "56db8107-e04c-4fe3-94f3-fd4acd44cd4a"
 
-// Hairy Henry - Skull Lasher, Cult of Myrkul (Fighter progressions)
+// Hairy Henry - Skull Lasher, Cult of Myrkul (Added Fighter progressions)
 new entry "Bugbear_Cultist_Myrkul_SkullLasher"
 type "Character"
 using "Bugbear_Cultist_Myrkul_SkullLasher"
@@ -182,7 +183,7 @@ data "Passives" "CX_Fighter_EldritchKnight_Boost;Brute_Bugbear;AttackOfOpportuni
 // data "Progressions" ""
 data "Progressions" "0e6da493-5a37-423b-8c28-629462b22faa"
 
-// Chop - Cult of the Absolute (Rogue progressions)
+// Chop - Cult of the Absolute (Added Rogue progressions)
 new entry "COL_Butcher"
 type "Character"
 using "COL_Butcher"
@@ -191,7 +192,7 @@ data "Passives" "CX_Rogue_Assassin_Boost;Brute_Bugbear;AttackOfOpportunity;Darkv
 // data "Progressions" ""
 data "Progressions" "532203c2-7bcb-4162-9a7c-2bb20e227a30"
 
-// Bugbear Assassin (Rogue progressions)
+// Bugbear Assassin (Added Rogue progressions, Assassin subclass fitting)
 new entry "DEN_BugbearNinja"
 type "Character"
 using "DEN_BugbearNinja"
@@ -200,7 +201,7 @@ data "Passives" "CX_Rogue_Assassin_Boost;Brute_Bugbear;AttackOfOpportunity;Darkv
 // data "Progressions" ""
 data "Progressions" "532203c2-7bcb-4162-9a7c-2bb20e227a30"
 
-// (Barbarian progressions)
+// (Added Barbarian progressions)
 new entry "DEN_BugbearRaider"
 type "Character"
 using "DEN_BugbearRaider"
@@ -209,7 +210,7 @@ data "Passives" "CX_Barbarian_Berserker_Boost;Brute_Bugbear;AttackOfOpportunity;
 // data "Progressions" ""
 data "Progressions" "56db8107-e04c-4fe3-94f3-fd4acd44cd4a"
 
-// Lann Tarv - Armourer to the Absolute, Cult of the Absolute (Paladin progressions)
+// Lann Tarv - Armourer to the Absolute, Cult of the Absolute (Added Paladin progressions, Oathbreaker subclass fitting)
 new entry "MOO_BugbearMerchant"
 type "Character"
 using "MOO_BugbearMerchant"
@@ -245,7 +246,7 @@ data "Progressions" "8726b2c4-edc0-4905-b82f-60a4baba0733"
 //      │   ├─ "WYR_MessHallBodyguard_06"
 //      │   └─ "WYR_Rivington_Armor_Shopkeeper"                 --- Exxvikyap - Gyldro Angleiron's shop assistant
 
-// Gold Dragonborn Fighter (Fighter progressions)
+// Gold Dragonborn Fighter (Added Fighter progressions)
 new entry "Dragonborn_Melee"
 type "Character"
 using "Dragonborn_Melee"
@@ -336,7 +337,7 @@ data "Passives" "Dwarf_DwarvenResilience;AttackOfOpportunity;Darkvision;Darkness
 //  │   │   │   ├─ "LOW_HouseOfGrief_Cultist_Caster_Dwarf"  --- Unused
 //  │   │   │   └─ "LOW_NecromancerStaff"
 
-// Korrilla - Agent of Raphael (Warlock > Wizard progressions)
+// Korrilla - Agent of Raphael (Swapp Wizard progressions for Warlock progressions, Fiend is an obvious subclass choice)
 new entry "GOB_Dwarf_Warlock"
 type "Character"
 using "GOB_Dwarf_Warlock"
@@ -1816,25 +1817,25 @@ data "Progressions" "f0ede459-8b86-48fd-ac11-4432573566a5"
 //  ├─ "Goblin"
 //  ├─ "Goblin_Boss"
 //  │   ├─ "DEN_GoblinCaptain"
-//  │   ├─ "END_GoblinBoss"
-//  │   ├─ "GOB_Goblin_Fezzerk"                     --- Fezzerk - Goblin Boss, Cult of the Absolute
-//  │   └─ "GOB_Warchief"                           --- Crusher - Novice of the Absolute, Cult of the Absolute / Zurga - Goblin Boss, Cult of the Absolute
-//  │       └─ "GOB_DenAttack_Warchief"
-//  │           └─ "GOB_DenAttack_Warchief_Strong"
+//  │   ├─ "END_GoblinBoss"                         --- (Inherits added Fighter progressions)
+//  │   ├─ "GOB_Goblin_Fezzerk"                     --- Fezzerk - Goblin Boss, Cult of the Absolute (Inherits added Fighter progressions)
+//  │   └─ "GOB_Warchief"                           --- Crusher - Novice of the Absolute, Cult of the Absolute / Zurga - Goblin Boss, Cult of the Absolute (Inherits added Fighter progressions)
+//  │       └─ "GOB_DenAttack_Warchief"             --- (Inherits added Fighter progressions)
+//  │           └─ "GOB_DenAttack_Warchief_Strong"  --- (Inherits added Fighter progressions)
 
-// Rozzak - Goblin Boss, Cult of the Absolute
+// Rozzak - Goblin Boss, Cult of the Absolute (Added Fighter progressions)
 new entry "Goblin_Boss"
 type "Character"
 using "Goblin_Boss"
-// data "Passives" "GOB_Boss_RecklessAttack;AttackOfOpportunity;Darkvision;DarknessRules"
-data "Passives" "CX_Fighter_Boost;CX_Martial_Boost;AttackOfOpportunity;Darkvision;DarknessRules;GOB_Boss_RecklessAttack"
+// data "Progressions" ""
+data "Progressions" "0e6da493-5a37-423b-8c28-629462b22faa"
 
-// Za'krug - Goblin Boss, Cult of the Absolute
+// Za'krug - Goblin Boss, Cult of the Absolute (Inherits added Fighter progressions)
 new entry "DEN_GoblinCaptain"
 type "Character"
 using "DEN_GoblinCaptain"
 // data "Passives" "GOB_Boss_RecklessAttack;Darkvision;DarknessRules"
-data "Passives" "CX_Fighter_Boost;CX_Martial_Boost;AttackOfOpportunity;Darkvision;DarknessRules;GOB_Boss_RecklessAttack"
+data "Passives" "AttackOfOpportunity;Darkvision;DarknessRules;GOB_Boss_RecklessAttack"
 
 // "_Goblins"
 //  ├─ "Goblin_Caster"
@@ -1842,32 +1843,47 @@ data "Passives" "CX_Fighter_Boost;CX_Martial_Boost;AttackOfOpportunity;Darkvisio
 //  │   ├─ "GOB_Priestess"
 //  │   └─ "Goblin_Warlock"
 
-// Booyahg Shekt, Dead Goblin Raider, Booyahg Gnat - Novice of the Absolute, Cult of the Absolute / Booyahg Piddle
+// If I'm to hand out proper progressions these goblins need their spellslots removed, otherwise they'll seemingly have infinite spells lol
+
+// Booyahg Shekt, Dead Goblin Raider, Booyahg Gnat - Novice of the Absolute, Cult of the Absolute / Booyahg Piddle (Added Wizard progressions)
 new entry "Goblin_Caster"
 type "Character"
 using "Goblin_Caster"
+// data "DefaultBoosts" "ActionResource(SpellSlot,3,1); BlockRegainHP(Undead;Construct)"
+data "DefaultBoosts" "BlockRegainHP(Undead;Construct)"
 // data "Passives" "AttackOfOpportunity;Darkvision;DarknessRules"
-data "Passives" "CX_Magic_Boost;CX_Spells_L1;CX_Spells_L1C;AttackOfOpportunity;Darkvision;DarknessRules"
+data "Passives" "CX_Spells_L1;CX_Spells_L1C;AttackOfOpportunity;Darkvision;DarknessRules"
+// data "Progressions" ""
+data "Progressions" "44bdbc5e-a003-4d61-87f0-5ced20d3804e"
 
+// (Inherits added Wizard progressions)
 new entry "DEN_Goblin_Mage"
 type "Character"
 using "DEN_Goblin_Mage"
+// data "DefaultBoosts" "ActionResource(SpellSlot,3,1); BlockRegainHP(Undead;Construct)"
+data "DefaultBoosts" "BlockRegainHP(Undead;Construct)"
 // data "Passives" "Darkvision;DarknessRules"
-data "Passives" "CX_Wizard_Boost;CX_Wizard_Evocation_Boost;CX_Magic_Boost;CX_Spells_L1;CX_Spells_L1C;AttackOfOpportunity;Darkvision;DarknessRules"
+data "Passives" "CX_Spells_L1;CX_Spells_L1C;AttackOfOpportunity;Darkvision;DarknessRules"
 
-// True Soul Gut - High Priestess of the Absolute, Cult of the Absolute
+// True Soul Gut - High Priestess of the Absolute, Cult of the Absolute (Swapped Wizard progressions for Cleric progressions, let her keep the inherited spell slots from Goblin_Caster because she's a boss and it may have been intentional design)
 new entry "GOB_Priestess"
 type "Character"
 using "GOB_Priestess"
+// data "DefaultBoosts" "BlockRegainHP(Undead;Construct)"
+data "DefaultBoosts" "ActionResource(SpellSlot,3,1); BlockRegainHP(Undead;Construct)"
 // data "Passives" "AttackOfOpportunity;Darkvision;DarknessRules"
-data "Passives" "CX_Cleric_Boost;CX_Magic_Boost;CX_Spells_L1;CX_Spells_L2;CX_Spells_L2C;AttackOfOpportunity;Darkvision;DarknessRules"
+data "Passives" "CX_Spells_L1;CX_Spells_L2;CX_Spells_L2C;AttackOfOpportunity;Darkvision;DarknessRules"
+// data "Progressions" "44bdbc5e-a003-4d61-87f0-5ced20d3804e"
+data "Progressions" "36c3f8de-3293-4d7b-92bc-ceb3c569244b"
 
-// Goblin Warlock, Warlock Bolt, Warlock Tud, Warlock Gurk, Warlock Greez - Cult of the Absolute
+// Goblin Warlock, Warlock Bolt, Warlock Tud, Warlock Gurk, Warlock Greez - Cult of the Absolute (Added Warlock progressions)
 new entry "Goblin_Warlock"
 type "Character"
 using "Goblin_Warlock"
 // data "Passives" "AttackOfOpportunity;Darkvision;DarknessRules"
-data "Passives" "CX_Warlock_Boost;CX_Magic_Boost;CX_Spells_L1;CX_Spells_L1C;AttackOfOpportunity;Darkvision;DarknessRules"
+data "Passives" "CX_Spells_L1;CX_Spells_L1C;AttackOfOpportunity;Darkvision;DarknessRules"
+// data "Progressions" ""
+data "Progressions" "51274504-865d-46d1-a3b6-c72e9384904a"
 
 // "_Goblins"
 //  ├─ "Goblin_Melee"
@@ -1878,7 +1894,7 @@ data "Passives" "CX_Warlock_Boost;CX_Magic_Boost;CX_Spells_L1;CX_Spells_L1C;Atta
 //  │   ├─ "Goblin_Melee_Strong"
 //  │   │   ├─ "GOB_Butcher"                    
 //  │   │   ├─ "GOB_Goblin_Melee_Strong_Bard"
-//  │   │   └─ "SCL_DriderCaravan_Goblin_Strong"
+//  │   │   └─ "SCL_DriderCaravan_Goblin_Strong"    --- Warrior Gronag
 //  │   └─ "SCL_DriderCaravan_Goblin"
 
 // Lots of gobbos
@@ -1888,97 +1904,140 @@ using "Goblin_Melee"
 // data "Passives" "AttackOfOpportunity;Darkvision;DarknessRules"
 data "Passives" "CX_Martial_Boost;AttackOfOpportunity;Darkvision;DarknessRules"
 
+// (Added Fighter progressions)
+new entry "DEN_Goblin_Melee"
+type "Character"
+using "DEN_Goblin_Melee"
+// data "Passives" "Darkvision;DarknessRules"
+data "Passives" "AttackOfOpportunity;Darkvision;DarknessRules"
+// data "Progressions" ""
+data "Progressions" "0e6da493-5a37-423b-8c28-629462b22faa"
+
+// Goblin Sapper (Inherits CX_Martial_Boost)
 new entry "GOB_GoblinSapper"
 type "Character"
 using "GOB_GoblinSapper"
 // data "PathInfluence" "BloodElectrified,100;BloodFrozen,30;Lava,700;Fire,5;HolyFire,5;Hellfire,5;PoisonCloud,70;CloudkillCloud,70;MaliceCloud,70;CrawlerMucusCloud,70;WaterElectrified,100;WaterFrozen,30;Grease,30;Web,30;Vines,30;SporeBlackCloud,100;WaterCloudElectrified,40;SporeGreenCloud,40;SporePinkCloud,40"
 data "PathInfluence" "BloodElectrified,100;BloodFrozen,30;Lava,700;Fire,5;HolyFire,5;Hellfire,5;PoisonCloud,70;CloudkillCloud,70;Cloudkill6Cloud,70;MaliceCloud,70;CrawlerMucusCloud,70;WaterElectrified,100;WaterFrozen,30;Grease,30;Web,30;Vines,30;SporeBlackCloud,100;WaterCloudElectrified,40;SporeGreenCloud,40;SporePinkCloud,40"
 
-// Devout Cry, Devout Muzul, Devout Mrak, Devout Wasp, Devout Mezzka, Goblin Devout - Novice of the Absolute, Cult of the Absolute
+// Devout Cry, Devout Muzul, Devout Mrak, Devout Wasp, Devout Mezzka, Goblin Devout - Novice of the Absolute, Cult of the Absolute (Added Cleric progressions)
 new entry "Goblin_Cleric"
 type "Character"
 using "Goblin_Cleric"
+// data "DefaultBoosts" "Skill(Stealth, 6); BlockRegainHP(Undead;Construct); ActionResource(SpellSlot,3,1)"
+data "DefaultBoosts" "Skill(Stealth, 6); BlockRegainHP(Undead;Construct)"
 // data "Passives" "AttackOfOpportunity;Darkvision;DarknessRules"
-data "Passives" "CX_Cleric_Boost;CX_Magic_Boost;CX_Spells_L1;AttackOfOpportunity;Darkvision;DarknessRules"
+data "Passives" "CX_Spells_L1;AttackOfOpportunity;Darkvision;DarknessRules"
+// data "Progressions" ""
+data "Progressions" "36c3f8de-3293-4d7b-92bc-ceb3c569244b"
 
+// (Inherits added Cleric progressions)
 new entry "DEN_Goblin_Cleric"
 type "Character"
 using "DEN_Goblin_Cleric"
+// data "DefaultBoosts" "Skill(Stealth, 6); CriticalHit(AttackRoll,Success,Never); ActionResource(SpellSlot,3,1); BlockRegainHP(Undead;Construct)"
+data "DefaultBoosts" "Skill(Stealth, 6); CriticalHit(AttackRoll,Success,Never); BlockRegainHP(Undead;Construct)"
 // data "Passives" "Darkvision;DarknessRules"
-data "Passives" "CX_Cleric_Boost;CX_Magic_Boost;CX_Spells_L1;AttackOfOpportunity;Darkvision;DarknessRules"
+data "Passives" "CX_Spells_L1;AttackOfOpportunity;Darkvision;DarknessRules"
 
-// Warrior Trinzas, Warrior Plagg, Warrior Kramp, Warrior Nrog, Warrior Rua, Warrior Gresh, Lookout Grush, Warrior Bez, Torturer Spike, Warrior Puce, Warrior Druk - Cult of the Absolute
+// Warrior Trinzas, Warrior Plagg, Warrior Kramp, Warrior Nrog, Warrior Rua, Warrior Gresh, Lookout Grush, Warrior Bez, Torturer Spike, Warrior Puce, Warrior Druk - Cult of the Absolute (Added Fighter progressions)
 new entry "Goblin_Melee_Strong"
 type "Character"
 using "Goblin_Melee_Strong"
-// data "Passives" "AttackOfOpportunity;Darkvision;DarknessRules"
-data "Passives" "CX_Fighter_Boost;CX_Martial_Boost;AttackOfOpportunity;Darkvision;DarknessRules"
+// data "Progressions" ""
+data "Progressions" "0e6da493-5a37-423b-8c28-629462b22faa"
 
-// Butcher Vrak - Cult of the Absolute (Also gave "FightingStyle_TwoWeaponFighting" to match Beastmaster Zurk)
+// Butcher Vrak - Cult of the Absolute (Also gave "FightingStyle_TwoWeaponFighting" to match Beastmaster Zurk) (Inherits addded Fighter progressions)
 new entry "GOB_Butcher"
 type "Character"
 using "GOB_Butcher"
 // data "Passives" "AttackOfOpportunity;Darkvision;DarknessRules"
-data "Passives" "CX_Fighter_Boost;CX_Martial_Boost;AttackOfOpportunity;Darkvision;DarknessRules;FightingStyle_TwoWeaponFighting"
+data "Passives" "AttackOfOpportunity;Darkvision;DarknessRules;FightingStyle_TwoWeaponFighting"
 
-// Warrior Sul - Cult of the Absolute (Turning him into a real Bard, except with Martial > Magic boost)
+// Warrior Sul - Cult of the Absolute (Turned into a real Bard, somewhat subjective and for variety because they just have an instrument and proficiency)
 new entry "GOB_Goblin_Melee_Strong_Bard"
 type "Character"
 using "GOB_Goblin_Melee_Strong_Bard"
 // data "Charisma" "8"
 data "Charisma" "14"
-data "Progressions" "cbe5059f-7a9f-4b98-6abe-c9078ecdc202"
 // data "SpellCastingAbility" "Wisdom"
 data "SpellCastingAbility" "Charisma"
 // data "Passives" "AttackOfOpportunity;Darkvision;DarknessRules"
-data "Passives" "CX_Bard_Boost;CX_Martial_Boost;AttackOfOpportunity;Darkvision;DarknessRules"
+data "Passives" "AttackOfOpportunity;Darkvision;DarknessRules"
+// data "Progressions" ""
+data "Progressions" "cbe5059f-7a9f-4b98-be6a-07c9cd8e02c2"
 
-// Brawler Vez - Cult of the Absolute
+// Brawler Vez - Cult of the Absolute (Added Fighter progressions)
 new entry "SCL_DriderCaravan_Goblin"
 type "Character"
 using "SCL_DriderCaravan_Goblin"
-// data "Passives" "AttackOfOpportunity;Darkvision;DarknessRules"
-data "Passives" "CX_Fighter_Boost;CX_Martial_Boost;AttackOfOpportunity;Darkvision;DarknessRules"
+// data "Progressions" ""
+data "Progressions" "0e6da493-5a37-423b-8c28-629462b22faa"
 
 // "_Goblins"
 //  ├─ "Goblin_Ranger"
 //  │   ├─ "DEN_Goblin_Archer"
 //  │   ├─ "GOB_Goblin_Ranger_Bard"
-//  │   └─ "Goblin_Ranger_Strong"                   --- Sharp-Eye Crub, Sharp-Eye Mirg, Sharp-Eye Breg, Sharp-Eye Aggy, Sharp-Eye Roo - Cult of the Absolute
+//  │   └─ "Goblin_Ranger_Strong"
 //  │       ├─ "GOB_BeastMaster"
 //  │       ├─ "GOB_Warchief_Ranger"            
-//  │       └─ "SCL_DriderCaravan_Goblin_Ranger"    --- Sharp-Eye Lora - Cult of the Absolute
-//  └─ "_Goblins_Gustav"
+//  │       └─ "SCL_DriderCaravan_Goblin_Ranger"
+//  └─ "_Goblins_Gustav"                            --- Unused
 
-// Goblin Tracker, Dead Goblin Raider, Tracker Nik-Nuk, Tracker Slice, Sharp-Eye Sneem, Tracker Rindle, Tracker Puli, Tracker Tozad - Cult of the Absolute
+// Goblin Tracker, Dead Goblin Raider, Tracker Nik-Nuk, Tracker Slice, Sharp-Eye Sneem, Tracker Rindle, Tracker Puli, Tracker Tozad - Cult of the Absolute (Added CX_Martial_Boost, these dudes are just full on grunts)
 new entry "Goblin_Ranger"
 type "Character"
 using "Goblin_Ranger"
 // data "Passives" "AttackOfOpportunity;Darkvision;DarknessRules"
-data "Passives" "CX_Ranger_Boost;CX_Martial_Boost;AttackOfOpportunity;Darkvision;DarknessRules"
+data "Passives" "CX_Martial_Boost;AttackOfOpportunity;Darkvision;DarknessRules"
 
-// Beastmaster Zurk - Cult of the Absolute
-new entry "GOB_BeastMaster"
+// Goblin Tracker (Added CX_Martial_Boost, these dudes are just full on grunts)
+new entry "DEN_Goblin_Archer"
 type "Character"
-using "GOB_BeastMaster"
-// data "Passives" "AttackOfOpportunity;Darkvision;DarknessRules;FightingStyle_TwoWeaponFighting"
-data "Passives" "CX_Fighter_Boost;CX_Ranger_Boost;CX_Ranger_BeastMaster_Boost;CX_Martial_Boost;AttackOfOpportunity;Darkvision;DarknessRules;FightingStyle_TwoWeaponFighting"
+using "DEN_Goblin_Archer"
+// data "Passives" "Darkvision;DarknessRules"
+data "Passives" "CX_Martial_Boost;AttackOfOpportunity;Darkvision;DarknessRules"
 
-// Tracker Tak - Cult of the Absolute (Turning her into a real Bard)
+// Tracker Tak - Cult of the Absolute (Turned into a real Bard, somewhat subjective and for variety because they just have an instrument and proficiency)
 new entry "GOB_Goblin_Ranger_Bard"
 type "Character"
 using "GOB_Goblin_Ranger_Bard"
 // data "Charisma" "8"
 data "Charisma" "14"
 // data "Progressions" ""
-data "Progressions" "cbe5059f-7a9f-4b98-6abe-c9078ecdc202"
+data "Progressions" "cbe5059f-7a9f-4b98-be6a-07c9cd8e02c2"
 
-// Sharp-Eye Lora: adding Beast Master subclass
+// Sharp-Eye Crub, Sharp-Eye Mirg, Sharp-Eye Breg, Sharp-Eye Aggy, Sharp-Eye Roo - Cult of the Absolute (Added Ranger progressions, increased Wisdom a bit which the following entries inherit too)
+new entry "Goblin_Ranger_Strong"
+type "Character"
+using "Goblin_Ranger_Strong"
+// data "Wisdom" "8"
+data "Wisdom" "12"
+// data "DefaultBoosts" "Skill(Stealth, 6); BlockRegainHP(Undead;Construct); ActionResource(SpellSlot,2,1)"
+data "DefaultBoosts" "Skill(Stealth, 6); BlockRegainHP(Undead;Construct)"
+// data "Progressions" ""
+data "Progressions" "f0ede459-8b86-48fd-ac11-4432573566a5"
+
+// Beastmaster Zurk - Cult of the Absolute (Inherits Ranger progressions, could go either way as a Fighter or Ranger, but Beastmaster is pretty fitting for a dude summoning animals)
+new entry "GOB_BeastMaster"
+type "Character"
+using "GOB_BeastMaster"
+// data "Passives" "AttackOfOpportunity;Darkvision;DarknessRules;FightingStyle_TwoWeaponFighting"
+data "Passives" "CX_Ranger_BeastMaster_Boost;AttackOfOpportunity;Darkvision;DarknessRules;FightingStyle_TwoWeaponFighting"
+
+// Unused (Inherits Ranger progressions)
+new entry "GOB_Warchief_Ranger"
+type "Character"
+using "GOB_Warchief_Ranger"
+// data "DefaultBoosts" "Skill(Stealth, 6); BlockRegainHP(Undead;Construct); ActionResource(SpellSlot,3,1)"
+data "DefaultBoosts" "Skill(Stealth, 6); BlockRegainHP(Undead;Construct)"
+
+// Sharp-Eye Lora (Inherits Ranger progressions, Beast Master subclass)
 new entry "SCL_DriderCaravan_Goblin_Ranger"
 type "Character"
 using "SCL_DriderCaravan_Goblin_Ranger"
 // data "Passives" "AttackOfOpportunity;Darkvision;DarknessRules"
-data "Passives" "CX_Ranger_Boost;CX_Ranger_BeastMaster_Boost;CX_Martial_Boost;AttackOfOpportunity;Darkvision;DarknessRules"
+data "Passives" "CX_Ranger_BeastMaster_Boost;AttackOfOpportunity;Darkvision;DarknessRules"
 
 // ==================================== Half-Elf ====================================
 
@@ -4369,7 +4428,7 @@ new entry "DEN_Refugees_Tiefling_Bard"
 type "Character"
 using "DEN_Refugees_Tiefling_Bard"
 // data "Progressions" "44bdbc5e-a003-4d61-87f0-5ced20d3804e"
-data "Progressions" "cbe5059f-7a9f-4b98-6abe-c9078ecdc202"
+data "Progressions" "cbe5059f-7a9f-4b98-be6a-07c9cd8e02c2"
 // data "Passives" "Tiefling_HellishResistance;AttackOfOpportunity;DarknessRules;Darkvision"
 data "Passives" "CX_Bard_Boost;CX_Magic_Boost;Tiefling_HellishResistance;AttackOfOpportunity;DarknessRules;Darkvision"
 
