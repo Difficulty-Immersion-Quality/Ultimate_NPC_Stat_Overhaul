@@ -34,12 +34,3 @@
     data "Description" "hb2f5c3eag43a7g4f82g89d8g10640b01212b;1"
     data "StatusPropertyFlags" "DisableOverhead;DisableCombatlog;DisablePortraitIndicator"
     data "OnApplyFunctors" "IF(SavingThrow(Ability.Constitution,15)):RegainHitPoints(1)"
-
-// ==================================== Add a safeguard to the goblin extra attack shit so they don't go crazy if given proper Extra Attack ====================================
-
-new entry "GOB_Boss_RecklessAttack"
-type "PassiveData"
-// using "ExtraAttack"
-using "GOB_Boss_RecklessAttack"
-// data "EnabledConditions" "not Tagged('EXTRA_ATTACK_BLOCKED')"
-data "EnabledConditions" "not Tagged('EXTRA_ATTACK_BLOCKED') and not HasPassive('ExtraAttack') and not HasPassive('ExtraAttack_2')"
