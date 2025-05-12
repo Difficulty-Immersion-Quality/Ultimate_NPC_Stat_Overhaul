@@ -2746,7 +2746,7 @@
                     <attribute id="TableUUID" type="guid" value="7417c0c0-383f-11ed-a261-0242ac120002"/>
                     <attribute id="UUID" type="guid" value="c7576e88-43fd-41d8-a229-cbd9375ba680"/>
                 </node> -->
-            <!-- FIGHTER/ROGUE - MULTICLASS (Unused) -->
+            <!-- FIGHTER/ROGUE - MULTICLASS -->
                 <!-- <node id="Progression">
                     <attribute id="Level" type="uint8" value="1"/>
                     <attribute id="Name" type="LSString" value="NPC_Fighter_Rogue"/>

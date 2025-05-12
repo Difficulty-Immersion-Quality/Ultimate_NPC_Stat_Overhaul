@@ -258,3 +258,30 @@
     data "StackPriority" "11"
     data "Passives" "Evasion;ReliableTalent"
     data "Boosts" "Ability(Dexterity,5);Ability(Charisma,4);IncreaseMaxHP(68);UnlockSpellVariant(SpellId('Target_Bane'),ModifyUseCosts(Add,SorceryPoint,1,0));UnlockSpellVariant(SpellId('Target_FaerieFire'),ModifyUseCosts(Add,SorceryPoint,1,0));ActionResource(BardicInspiration,1,0)"
+
+// ==================================== "NPC_Fighter_Rogue" ====================================
+
+    new entry "Goon_ZenoviaDawg_Boost"
+    type "PassiveData"
+    data "Properties" "IsHidden"
+    data "StatsFunctorContext" "OnCreate;OnStatusApplied;OnStatusRemoved"
+    data "StatsFunctors" "IF(CharacterLevelGreaterThan(7,GetOwner(context.Source))):ApplyStatus(GOON_ZENOVIADAWG_BOOST_LVL_9,100,-1)"
+
+// Template
+    new entry "GOON_ZENOVIADAWG_BOOST_TEMPLATE"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    data "StatusPropertyFlags" "DisableOverhead;DisableCombatlog;DisablePortraitIndicator;ApplyToDead;IgnoreResting"
+    data "RemoveEvents" "OnStatusApplied;OnStatusRemoved"
+    data "StackId" "GOON_ZENOVIADAWG_BOOST"
+    data "StackType" "Ignore"
+    data "RemoveConditions" "not HasPassive('Goon_ZenoviaDawg_Boost')"
+
+// Progression statuses
+    new entry "GOON_ZENOVIADAWG_BOOST_LVL_9"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    using "GOON_ROAHMOONGLOW_BOOST_TEMPLATE"
+    data "StackPriority" "11"
+    data "Passives" "ExtraAttack;SecondStoryWork"
+    data "Boosts" "IncreaseMaxHP(33);Proficiency(LightArmor);Proficiency(MediumArmor);Proficiency(Shields);Proficiency(SimpleWeapons);Proficiency(MartialWeapons);ActionResource(SuperiorityDie,3,0)"
