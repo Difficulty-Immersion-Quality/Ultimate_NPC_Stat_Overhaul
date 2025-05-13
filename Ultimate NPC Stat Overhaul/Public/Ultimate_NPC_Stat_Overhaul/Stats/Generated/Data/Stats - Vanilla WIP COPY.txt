@@ -281,16 +281,18 @@ using "WYR_SmugglersCave_Dragonborn_Ranger"
 data "Passives" "CX_Ranger_Hunter_Boost;AttackOfOpportunity;DarknessRules;DraconicAncestry_Copper;ElementalAffinity_Damage;NaturalExplorer_WastelandWander_Poison;FavoredEnemy_MageBreaker;ColossusSlayer;EscapeTheHorde;SteelWill;MultiattackDefense"
 
 // "_Dragonborn"
-//  ├─ "Dragonborn_Rogue"       --- Unused
+//  ├─ "Dragonborn_Rogue"                           --- Unused
 //  ├─ "MOO_FanaticOfTheAbsolute_Dragonborn"        --- Unused
 //  └─ "MOO_ZealotOfTheAbsolute_Dragonborn"         --- Unused
 
+// (Has Cleric progressions)
 new entry "MOO_FanaticOfTheAbsolute_Dragonborn"
 type "Character"
 using "MOO_FanaticOfTheAbsolute_Dragonborn"
 // data "Passives" "AttackOfOpportunity;DarknessRules"
 data "Passives" "CX_Spells_L4C;AttackOfOpportunity;DarknessRules"
 
+// (Has Paladin progressions)
 new entry "MOO_ZealotOfTheAbsolute_Dragonborn"
 type "Character"
 using "MOO_ZealotOfTheAbsolute_Dragonborn"
@@ -380,7 +382,7 @@ data "Passives" "CX_Wizard_Necromancy_Boost;Dwarf_DwarvenResilience;AttackOfOppo
 //  ├─ "Dwarf_Hill_Cultist_Bane_Fist"
 //  ├─ "Dwarf_Hill_Cultist_Bane_IronConsul"
 
-// Black Gauntlet of Bane - Cult of Bane (Uses Cleric progressions appropriately)
+// Black Gauntlet of Bane - Cult of Bane (Has Cleric progressions, adding War Domain subclass)
 new entry "Dwarf_Hill_Cultist_Bane_BlackGauntlet"
 type "Character"
 using "Dwarf_Hill_Cultist_Bane_BlackGauntlet"
@@ -573,18 +575,18 @@ data "Passives" "Dwarf_DwarvenResilience;AttackOfOpportunity;Darkvision;Darkness
 data "Progressions" "f0ede459-8b86-48fd-ac11-4432573566a5"
 
 // "_Dwarf"
-//  ├─ "MOO_AcolyteOfTheAbsolute_Dwarf" --- Acolyte Daine - Cult of the Absolute (Inherits Cleric progressions)
+//  ├─ "MOO_AcolyteOfTheAbsolute_Dwarf" --- Acolyte Daine - Cult of the Absolute (Has Cleric progressions)
 //  ├─ "MOO_FanaticOfTheAbsolute_Dwarf"
 //  └─ "MOO_ZealotOfTheAbsolute_Dwarf"
 
-// (Inherits Cleric progressions)
+// (Has Cleric progressions)
 new entry "MOO_FanaticOfTheAbsolute_Dwarf"
 type "Character"
 using "MOO_FanaticOfTheAbsolute_Dwarf"
 // data "Passives" "Dwarf_DwarvenResilience;AttackOfOpportunity;Darkvision;DarknessRules"
 data "Passives" "CX_Spells_L4C;Dwarf_DwarvenResilience;AttackOfOpportunity;Darkvision;DarknessRules"
 
-// Zealot Arden, Zealot of the Absolute - Cult of the Absolute (Inherits Paladin progressions)
+// Zealot Arden, Zealot of the Absolute - Cult of the Absolute (Has Paladin progressions)
 new entry "MOO_ZealotOfTheAbsolute_Dwarf"
 type "Character"
 using "MOO_ZealotOfTheAbsolute_Dwarf"
@@ -745,18 +747,18 @@ data "Passives" "Dwarf_DwarvenResilience;Duergar_DuergarResilience;SunlightSensi
 // "_Dwarf"
 //  ├─ "Dwarf_Duergar_Rogue"                --- (Has Rogue progressions)
 //  │   └─ "UND_KC_Duergar_Rogue"           --- Gergerann - Clan Flameshade = "S_UND_DuergarRebelMason_02_6b07558b-09ef-449c-8dd2-b0c2cbe809f1" (Inherits Rogue progressions)
-//  ├─ "MOO_AcolyteOfTheAbsolute_Duergar"   --- Acolyte Belub - Cult of the Absolute (Inherits Cleric progressions) 
+//  ├─ "MOO_AcolyteOfTheAbsolute_Duergar"   --- Acolyte Belub - Cult of the Absolute (Has Cleric progressions) 
 //  ├─ "MOO_FanaticOfTheAbsolute_Duergar"
 //  ├─ "MOO_ZealotOfTheAbsolute_Duergar"
 
-// (Inherits Cleric progressions) 
+// (Has Cleric progressions) 
 new entry "MOO_FanaticOfTheAbsolute_Duergar"
 type "Character"
 using "MOO_FanaticOfTheAbsolute_Duergar"
 // data "Passives" "Dwarf_DwarvenResilience;Duergar_DuergarResilience;SunlightSensitivity;AttackOfOpportunity;SuperiorDarkvision;DarknessRules"
 data "Passives" "CX_Spells_L4C;Dwarf_DwarvenResilience;Duergar_DuergarResilience;SunlightSensitivity;AttackOfOpportunity;SuperiorDarkvision;DarknessRules"
 
-// (Inherits Paladin progressions) 
+// (Has Paladin progressions)
 new entry "MOO_ZealotOfTheAbsolute_Duergar"
 type "Character"
 using "MOO_ZealotOfTheAbsolute_Duergar"
@@ -1013,19 +1015,19 @@ data "Passives" "FeyAncestry;AttackOfOpportunity;DarknessRules;Darkvision;Goon_N
 data "Progressions" "f0ede459-8b86-48fd-ac11-4432573566a5"
 
 // "_Elf"
-//  ├─ "MOO_AcolyteOfTheAbsolute_Elf"   --- Acolyte Kimmeral - Cult of the Absolute (Inherits Cleric progressions) 
+//  ├─ "MOO_AcolyteOfTheAbsolute_Elf"   --- Acolyte Kimmeral - Cult of the Absolute (Has Cleric progressions) 
 //  ├─ "MOO_FanaticOfTheAbsolute_Elf"
 //  ├─ "MOO_ZealotOfTheAbsolute_Elf"
 //  ├─ "SCL_Ketheric"
 
-// Adept of the Absolute (unused?) (Inherits Cleric progressions) 
+// Adept of the Absolute (unused?) (Has Cleric progressions) 
 new entry "MOO_FanaticOfTheAbsolute_Elf"
 type "Character"
 using "MOO_FanaticOfTheAbsolute_Elf"
 // data "Passives" "FeyAncestry;AttackOfOpportunity;DarknessRules;Darkvision"
 data "Passives" "CX_Spells_L4C;FeyAncestry;AttackOfOpportunity;DarknessRules;Darkvision"
 
-// (Inherits Paladin progressions) 
+// (Has Paladin progressions) 
 new entry "MOO_ZealotOfTheAbsolute_Elf"
 type "Character"
 using "MOO_ZealotOfTheAbsolute_Elf"
@@ -1053,18 +1055,18 @@ data "Passives" "CX_Paladin_Oathbreaker_Boost;FeyAncestry;AttackOfOpportunity;Da
 
 // "_Elf"
 //  └─ "_Elf_Wood"
-//      ├─ "MOO_AcolyteOfTheAbsolute_WoodElf"   --- (Inherits Cleric progressions) 
+//      ├─ "MOO_AcolyteOfTheAbsolute_WoodElf"   --- (Has Cleric progressions) 
 //      ├─ "MOO_FanaticOfTheAbsolute_WoodElf"
 //      └─ "MOO_ZealotOfTheAbsolute_WoodElf"
 
-// (Inherits Cleric progressions) 
+// (Has Cleric progressions) 
 new entry "MOO_FanaticOfTheAbsolute_WoodElf"
 type "Character"
 using "MOO_FanaticOfTheAbsolute_WoodElf"
 // data "Passives" "FeyAncestry;AttackOfOpportunity;DarknessRules;Darkvision"
 data "Passives" "CX_Spells_L4C;FeyAncestry;AttackOfOpportunity;DarknessRules;Darkvision"
 
-// (Inherits Paladin progressions) 
+// (Has Paladin progressions) 
 new entry "MOO_ZealotOfTheAbsolute_WoodElf"
 type "Character"
 using "MOO_ZealotOfTheAbsolute_WoodElf"
@@ -1210,18 +1212,18 @@ using "HAG_Masked_Rogue"
 data "Passives" "FeyAncestry;AttackOfOpportunity;DarknessRules;SuperiorDarkvision;SunlightSensitivity;DualWielder_PassiveBonuses"
 
 // "_Elf_Drow"
-//  ├─ "MOO_AcolyteOfTheAbsolute_Drow"  --- (Inherits Cleric progressions) 
+//  ├─ "MOO_AcolyteOfTheAbsolute_Drow"  --- (Has Cleric progressions) 
 //  ├─ "MOO_FanaticOfTheAbsolute_Drow"
 //  └─ "MOO_ZealotOfTheAbsolute_Drow"
 
-// Adept Dorikel, Adept Furek - Cult of the Absolute (Inherits Cleric progressions) 
+// Adept Dorikel, Adept Furek - Cult of the Absolute (Has Cleric progressions) 
 new entry "MOO_FanaticOfTheAbsolute_Drow"
 type "Character"
 using "MOO_FanaticOfTheAbsolute_Drow"
 // data "Passives" "FeyAncestry;SunlightSensitivity;AttackOfOpportunity;DarknessRules;Darkvision"
 data "Passives" "CX_Spells_L4C;FeyAncestry;AttackOfOpportunity;DarknessRules;SuperiorDarkvision;SunlightSensitivity;"
 
-// Zealot Soreni, Zealot Niram, Zealot Rylveth, Zealot Zira - Cult of the Absolute (Inherits Paladin progressions) 
+// Zealot Soreni, Zealot Niram, Zealot Rylveth, Zealot Zira - Cult of the Absolute (Has Paladin progressions) 
 new entry "MOO_ZealotOfTheAbsolute_Drow"
 type "Character"
 using "MOO_ZealotOfTheAbsolute_Drow"
@@ -1741,18 +1743,18 @@ using "LOW_Guildhall_FishbaitArno"
 data "Passives" "CX_Rogue_Thief_Boost;Gnome_Cunning;Gnome_Speed;AttackOfOpportunity;DarknessRules;Darkvision;FastHands"
 
 // "_Gnome"
-//  ├─ "MOO_AcolyteOfTheAbsolute_Gnome" --- (Inherits Cleric progressions) 
+//  ├─ "MOO_AcolyteOfTheAbsolute_Gnome"     --- (Has Cleric progressions) 
 //  ├─ "MOO_FanaticOfTheAbsolute_Gnome"
 //  └─ "MOO_ZealotOfTheAbsolute_Gnome"
 
-// (Inherits Cleric progressions) 
+// (Has Cleric progressions) 
 new entry "MOO_FanaticOfTheAbsolute_Gnome"
 type "Character"
 using "MOO_FanaticOfTheAbsolute_Gnome"
 // data "Passives" "Gnome_Cunning;Gnome_Speed;AttackOfOpportunity;DarknessRules;Darkvision"
 data "Passives" "CX_Spells_L4C;Gnome_Cunning;Gnome_Speed;AttackOfOpportunity;DarknessRules;Darkvision"
 
-// (Inherits Paladin progressions) 
+// (Has Paladin progressions) 
 new entry "MOO_ZealotOfTheAbsolute_Gnome"
 type "Character"
 using "MOO_ZealotOfTheAbsolute_Gnome"
@@ -2322,21 +2324,21 @@ data "Passives" "CX_Fighter_BattleMaster_Boost;FeyAncestry;HumanMilitia;AttackOf
 // data "Progressions" ""
 data "Progressions" "0e6da493-5a37-423b-8c28-629462b22faa"
 
-// (Inherits Cleric progressions) 
+// (Has Cleric progressions) 
 new entry "MOO_AcolyteOfTheAbsolute_HalfElf"
 type "Character"
 using "MOO_AcolyteOfTheAbsolute_HalfElf"
 // data "Passives" "FeyAncestry;AttackOfOpportunity;Darkvision;DarknessRules"
 data "Passives" "FeyAncestry;HumanMilitia;AttackOfOpportunity;Darkvision;DarknessRules"
 
-// Adept Bel - Cult of the Absolute (Inherits Cleric progressions) 
+// Adept Bel - Cult of the Absolute (Has Cleric progressions) 
 new entry "MOO_FanaticOfTheAbsolute_HalfElf"
 type "Character"
 using "MOO_FanaticOfTheAbsolute_HalfElf"
 // data "Passives" "FeyAncestry;AttackOfOpportunity;Darkvision;DarknessRules"
 data "Passives" "CX_Spells_L4C;FeyAncestry;HumanMilitia;AttackOfOpportunity;Darkvision;DarknessRules"
 
-// Zealot Iogar - Cult of the Absolute (Inherits Paladin progressions)
+// Zealot Iogar - Cult of the Absolute (Has Paladin progressions)
 new entry "MOO_ZealotOfTheAbsolute_HalfElf"
 type "Character"
 using "MOO_ZealotOfTheAbsolute_HalfElf"
@@ -2351,209 +2353,182 @@ data "Passives" "CX_Paladin_Oathbreaker_Boost;FeyAncestry;HumanMilitia;AttackOfO
 //  │   ├─ "_HalfOrc"
 //  │   │   └─ "HalfOrc_Commoner"
 
+// (Half Orcs have a more powerful RAW version of Darkvision which is not consistent with the range changes in BG3, NPCs don't appear to have a visible passive)
 new entry "_HalfOrc"
 type "Character"
 using "_HalfOrc"
 // data "Passives" "AttackOfOpportunity;DarknessRules"
-data "Passives" "SavageAttacks;RelentlessEndurance;AttackOfOpportunity;DarknessRules"
+data "Passives" "SavageAttacks;RelentlessEndurance;AttackOfOpportunity;Darkvision;DarknessRules"
+// data "DarkvisionRange" "18"
+data "DarkvisionRange" "9"
 
 // "_HalfOrc"
-//  ├─ "HalfOrc_Caster"
+//  ├─ "HalfOrc_Caster"                                     --- (Has Wizard progressions)
 //  │   ├─ "COL_TadpolingCenter_Prisoner_HalfOrc_Caster"
 //  │   ├─ "LOW_JaheirasEldestSon"
 //  │   ├─ "MOO_Executioner"
 //  │   └─ SCL_DriderCaravan_Kansif"
 
-new entry "HalfOrc_Caster"
-type "Character"
-using "HalfOrc_Caster"
-// data "Passives" "AttackOfOpportunity;DarknessRules"
-data "Passives" "CX_Magic_Boost;SavageAttacks;RelentlessEndurance;AttackOfOpportunity;DarknessRules"
-
-// Manip Shuurga - Flaming Fist
+// Manip Shuurga - Flaming Fist (Inherits Wizard progressions)
 new entry "COL_TadpolingCenter_Prisoner_HalfOrc_Caster"
 type "Character"
 using "HalfOrc_Caster"
 // data "Passives" "AttackOfOpportunity;DarknessRules"
-data "Passives" "CX_Wizard_Boost;CX_Magic_Boost;CX_Spells_L2;CX_Spells_L3;CX_Spells_L3C;SavageAttacks;RelentlessEndurance;AttackOfOpportunity;DarknessRules"
+data "Passives" "CX_Spells_L2;CX_Spells_L3;CX_Spells_L3C;SavageAttacks;RelentlessEndurance;AttackOfOpportunity;Darkvision;DarknessRules"
 
-// Jord - Harpers, Jaheira's Family
+// Jord - Harpers, Jaheira's Family (Has Druid progressions)
 new entry "LOW_JaheirasEldestSon"
 type "Character"
 using "LOW_JaheirasEldestSon"
 // data "Passives" "AttackOfOpportunity;DarknessRules;WildStrike;PrimalStrike;WildStrike_2"
-data "Passives" "CX_Druid_Boost;CX_Magic_Boost;SavageAttacks;RelentlessEndurance;AttackOfOpportunity;DarknessRules;WildStrike;PrimalStrike;WildStrike_2"
+data "Passives" "SavageAttacks;RelentlessEndurance;AttackOfOpportunity;Darkvision;DarknessRules;WildStrike;PrimalStrike;WildStrike_2"
 
-// Disciple Z'rell - Cult of the Absolute (May she one day be cured of her inability to engage in combat, amen)
+// Disciple Z'rell - Cult of the Absolute (Added Warlock progressions, Fiend subclass, removed her generic spell slots)
 new entry "MOO_Executioner"
 type "Character"
 using "MOO_Executioner"
+// data "DefaultBoosts" "ProficiencyBonus(SavingThrow,Constitution); ProficiencyBonus(SavingThrow,Wisdom); ActionResource(SpellSlot,1,1); ActionResource(SpellSlot,1,2); ActionResource(SpellSlot,1,3); ActionResource(SpellSlot,1,4); ActionResource(SpellSlot,1,5); BlockRegainHP(Undead;Construct)"
+data "DefaultBoosts" "ProficiencyBonus(SavingThrow,Constitution); ProficiencyBonus(SavingThrow,Wisdom); BlockRegainHP(Undead;Construct)"
 // data "Passives" "AttackOfOpportunity;DarknessRules;DarkOnesBlessing;AgonizingBlast;TAD_PsionicBacklash"
-data "Passives" "CX_Warlock_Boost;CX_Magic_Boost;SavageAttacks;RelentlessEndurance;AttackOfOpportunity;DarknessRules;DarkOnesBlessing;AgonizingBlast;TAD_PsionicBacklash"
+data "Passives" "CX_Warlock_Fiend_Boost;SavageAttacks;RelentlessEndurance;AttackOfOpportunity;Darkvision;DarknessRules;DarkOnesBlessing;AgonizingBlast;TAD_PsionicBacklash"
 // data "Progressions" ""
 data "Progressions" "51274504-865d-46d1-a3b6-c72e9384904a"
 
-// Kansif - Cult of the Absolute
+// Kansif - Cult of the Absolute (Inherits Wizard progressions, added Evocation subclass)
 new entry "SCL_DriderCaravan_Kansif"
 type "Character"
 using "SCL_DriderCaravan_Kansif"
 // data "Passives" "DarkDevotion;SculptSpells;AttackOfOpportunity;DarknessRules"
-data "Passives" "CX_Wizard_Boost;CX_Magic_Boost;CX_Spells_L1;CX_Spells_L2;CX_Spells_L3;SavageAttacks;RelentlessEndurance;AttackOfOpportunity;DarknessRules;DarkDevotion;SculptSpells"
+data "Passives" "CX_Wizard_Evocation_Boost;CX_Spells_L1;CX_Spells_L2;CX_Spells_L3;SavageAttacks;RelentlessEndurance;AttackOfOpportunity;Darkvision;DarknessRules;DarkDevotion;SculptSpells"
 
 // "_HalfOrc"
-//  ├─ "HalfOrc_Melee"
+//  ├─ "HalfOrc_Melee"                                      --- (Has Fighter progressions)
 //  │   ├─ "END_CityWatchMelee_HalfOrc"
-//  │   ├─ "HalfOrc_Barbarian"
+//  │   ├─ "HalfOrc_Barbarian"                              --- (Has Barbarian progressions)
 //  │   │   ├─ "SCL_DriderCaravan_Bedi"
-//  │   │   └─ TWN_Morgue_ShadowCursed_HalfOrc_Barbarian"   --- Shadow-Cursed Half-Orc
-//  │   ├─ "HalfOrc_Paladin"
-//  │   ├─ "LOW_Bartender_Half_Orc_Melee"
-//  │   ├─ "LOW_BlushingMermaid_Patron_HalfOrc_Melee"       --- Slog
-//  │   ├─ "LOW_GuildSmugglers_Guard_01"
+//  │   │   └─ TWN_Morgue_ShadowCursed_HalfOrc_Barbarian"   --- Shadow-Cursed Half-Orc (Inherits Barbarian progressions)
+//  │   ├─ "HalfOrc_Paladin"                                --- (Has Paladin progressions)
+//  │   ├─ "LOW_Bartender_Half_Orc_Melee"                   --- Unused (Inherits Fighter progressions)
+//  │   ├─ "LOW_BlushingMermaid_Patron_HalfOrc_Melee"       --- Slog (Inherits Fighter progressions)
+//  │   ├─ "LOW_GuildSmugglers_Guard_01"                    --- Galem Meats - The Guild, Big Huido's gang (Inhertis Fighter progressions)
 //  │   ├─ "LOW_HagSurvivor_HalfOrc_Melee"
 //  │   ├─ "LOW_HouseOfHope_HalfOrc_Debtor"
 //  │   ├─ "LOW_Skoona"
 //  │   ├─ "LOW_Undercellar_Entrance_Halforc_Barbarian"
-//  │   ├─ "WYR_Balduran"                                   --- Yeah not my Balduran
+//  │   ├─ "WYR_Balduran"                                   --- Yeah not my Balduran // TODO: wot wot in the butt
 //  │   ├─ "WYR_DanthelonShop_HalfOrc_Melee"
 //  │   ├─ "WYR_Gortash_ManifestationOfTyranny"             
 //  │   ├─ "WYR_MessHallBodyguard_07"
 //  │   └─ WYR_RefugeeCamp_HalfOrc_Melee"                   --- Gronch
 
-new entry "HalfOrc_Melee"
-type "Character"
-using "HalfOrc_Melee"
-// data "Passives" "AttackOfOpportunity;DarknessRules"
-data "Passives" "CX_Martial_Boost;SavageAttacks;RelentlessEndurance;AttackOfOpportunity;DarknessRules"
-
-// Watcher Guardian - The Watch / Watcher Guardian - The Watch (Gather Your Allies summon)
+// Watcher Guardian - The Watch / Watcher Guardian - The Watch (Gather Your Allies summon) (Inherits Fighter progressions)
 new entry "END_CityWatchMelee_HalfOrc"
 type "Character"
 using "END_CityWatchMelee_HalfOrc"
 // data "Passives" "AttackOfOpportunity;DarknessRules;FightingStyle_GreatWeaponFighting;GreatWeaponMaster_BonusAttack;GreatWeaponMaster_BonusDamage"
-data "Passives" "CX_Fighter_Boost;CX_Martial_Boost;SavageAttacks;RelentlessEndurance;AttackOfOpportunity;DarknessRules;FightingStyle_GreatWeaponFighting;GreatWeaponMaster_BonusAttack;GreatWeaponMaster_BonusDamage"
+data "Passives" "SavageAttacks;RelentlessEndurance;AttackOfOpportunity;Darkvision;DarknessRules;FightingStyle_GreatWeaponFighting;GreatWeaponMaster_BonusAttack;GreatWeaponMaster_BonusDamage"
 
-new entry "HalfOrc_Barbarian"
-type "Character"
-using "HalfOrc_Barbarian"
-// data "Passives" "AttackOfOpportunity;DarknessRules"
-data "Passives" "CX_Barbarian_Boost;CX_Martial_Boost;SavageAttacks;RelentlessEndurance;AttackOfOpportunity;DarknessRules"
-
-// Bedi - Cult of the Absolute
+// Bedi - Cult of the Absolute (Inherits Barbarian progressions, added Wildheart subclass)
 new entry "SCL_DriderCaravan_Bedi"
 type "Character"
 using "SCL_DriderCaravan_Bedi"
 // data "Passives" "ExtraAttack;DangerSense;TotemSpirit_Wolf;AttackOfOpportunity;DarknessRules"
-data "Passives" "CX_Barbarian_Boost;CX_Martial_Boost;SavageAttacks;RelentlessEndurance;AttackOfOpportunity;DarknessRules;ExtraAttack;DangerSense;TotemSpirit_Wolf"
+data "Passives" "CX_Barbarian_Wildheart_Boost;SavageAttacks;RelentlessEndurance;AttackOfOpportunity;Darkvision;DarknessRules;ExtraAttack;DangerSense;TotemSpirit_Wolf"
 
-new entry "HalfOrc_Paladin"
-type "Character"
-using "HalfOrc_Paladin"
-// data "Passives" "AttackOfOpportunity;DarknessRules"
-data "Passives" "CX_Paladin_Boost;CX_Martial_Boost;SavageAttacks;RelentlessEndurance;AttackOfOpportunity;DarknessRules"
-
-// Galem Meats - The Guild, Big Huido's gang
-new entry "LOW_GuildSmugglers_Guard_01"
-type "Character"
-using "LOW_GuildSmugglers_Guard_01"
-// data "Passives" "AttackOfOpportunity;DarknessRules"
-data "Passives" "CX_Fighter_Boost;CX_Martial_Boost;SavageAttacks;RelentlessEndurance;AttackOfOpportunity;DarknessRules"
-
-// Ulumpha - member of the Dead Eyes (Supposed to be a Paladin but not reflected in her stat entries, instead given Paladin spells directly in her local character. Made her a proper Paladin.)
+// Ulumpha - member of the Dead Eyes (Replaced Fighter progressions with Paladin)
 new entry "LOW_HagSurvivor_HalfOrc_Melee"
 type "Character"
 using "LOW_HagSurvivor_HalfOrc_Melee"
 // data "Charisma" "10"
 data "Charisma" "14"
+// data "SpellCastingAbility" "Intelligence"
+data "SpellCastingAbility" "Charisma"
 // data "Progressions" "0e6da493-5a37-423b-8c28-629462b22faa"
-data "Progressions" "8726b2c4-edc0-4905-2fb8-a460baba3307"
-// data "Passives" "AttackOfOpportunity;DarknessRules"
-data "Passives" "CX_Paladin_Boost;CX_Paladin_Devotion_Boost;CX_Martial_Boost;SavageAttacks;RelentlessEndurance;AttackOfOpportunity;DarknessRules"
+data "Progressions" "8726b2c4-edc0-4905-b82f-60a4baba0733"
 
-// Shameful Eternal Debtor - House of Hope
+// Shameful Eternal Debtor - House of Hope (No progressions, which is fine, just fixing racials)
 new entry "LOW_HouseOfHope_HalfOrc_Debtor"
 type "Character"
 using "LOW_HouseOfHope_HalfOrc_Debtor"
 // data "Passives" "AttackOfOpportunity;DarknessRules;LOW_EternalDebtors_Explosion"
-data "Passives" "CX_Fighter_Boost;CX_Martial_Boost;SavageAttacks;RelentlessEndurance;AttackOfOpportunity;DarknessRules;LOW_EternalDebtors_Explosion"
+data "Passives" "SavageAttacks;RelentlessEndurance;AttackOfOpportunity;Darkvision;DarknessRules;LOW_EternalDebtors_Explosion"
 
-// Enforcer Skoona - Bouncer at the Elfsong Tavern (She shouldn't have Darkvision unless it's otherwise explained)
-// Keeping the Fighter Battle Master subclass boost to ensure he doesn't get the Fighter EK boost, as he also has Barbarian boosts
+// Enforcer Skoona - Bouncer at the Elfsong Tavern (Inherits Fighter progressions, Battle Master subclass so she doesn't get EK while having Barbarian abilities too)
+// (The only Half-Orc to have the Darkvision passive in vanilla???)
 new entry "LOW_Skoona"
 type "Character"
 using "LOW_Skoona"
 // data "Passives" "AttackOfOpportunity;DarknessRules;FightingStyle_TwoWeaponFighting;Darkvision;RelentlessEndurance;SavageAttacks;ImprovedCritical;DualWielder_BonusAC;DualWielder_PassiveBonuses;FightingStyle_Defense;ExtraAttack_2"
-data "Passives" "CX_Fighter_Boost;CX_Fighter_BattleMaster_Boost;CX_Barbarian_Boost;CX_Martial_Boost;SavageAttacks;RelentlessEndurance;AttackOfOpportunity;DarknessRules;FightingStyle_TwoWeaponFighting;DualWielder_BonusAC;DualWielder_PassiveBonuses;FightingStyle_Defense;ImprovedCritical;ExtraAttack_2"
+data "Passives" "CX_Fighter_BattleMaster_Boost;SavageAttacks;RelentlessEndurance;AttackOfOpportunity;Darkvision;DarknessRules;FightingStyle_TwoWeaponFighting;DualWielder_BonusAC;DualWielder_PassiveBonuses;FightingStyle_Defense;ImprovedCritical;ExtraAttack_2"
 
-// Tusgront - The Guild
+// Tusgront - The Guild (Has Barbarian progressions, added Wildheart subclass)
 new entry "LOW_Undercellar_Entrance_Halforc_Barbarian"
 type "Character"
 using "LOW_Undercellar_Entrance_Halforc_Barbarian"
 // data "Passives" "AttackOfOpportunity;DarknessRules"
-data "Passives" "CX_Barbarian_Boost;CX_Martial_Boost;SavageAttacks;RelentlessEndurance;AttackOfOpportunity;DarknessRules"
+data "Passives" "CX_Barbarian_Wildheart_Boost;SavageAttacks;RelentlessEndurance;AttackOfOpportunity;Darkvision;DarknessRules"
 
-// Manifestation of Tyranny - Gortash summon
+// Somi and Tairn - guards working for Entharl Danthelon in Danthelon's Dancing Axe (Replaced Fighter progressions with Barbarian progressions)
+new entry "WYR_DanthelonShop_HalfOrc_Melee"
+type "Character"
+using "WYR_DanthelonShop_HalfOrc_Melee"
+// data "Progressions" "0e6da493-5a37-423b-8c28-629462b22faa"
+data "Progressions" "56db8107-e04c-4fe3-94f3-fd4acd44cd4a"
+
+// Manifestation of Tyranny - Gortash summon (Doesn't have progressions, leaving it like that and just adding CX_Martial_Boost, has very simple abilities, punching and shoving)
 new entry "WYR_Gortash_ManifestationOfTyranny"
 type "Character"
 using "WYR_Gortash_ManifestationOfTyranny"
 // data "Passives" "AttackOfOpportunity;DarknessRules;Ethereal"
-data "Passives" "CX_Fighter_Boost;CX_Martial_Boost;SavageAttacks;RelentlessEndurance;AttackOfOpportunity;DarknessRules;Ethereal"
+data "Passives" "CX_Martial_Boost;SavageAttacks;RelentlessEndurance;AttackOfOpportunity;Darkvision;DarknessRules;Ethereal"
 
-// Lady Durinbold's Bodyguard
+// Lady Durinbold's Bodyguard (Inherits Fighter progressions, removing her Superiority Dice as she'll get them if recieving Battle Master)
 new entry "WYR_MessHallBodyguard_07"
 type "Character"
 using "WYR_MessHallBodyguard_07"
-// data "Passives" "AttackOfOpportunity;DarknessRules"
-data "Passives" "CX_Fighter_Boost;CX_Martial_Boost;SavageAttacks;RelentlessEndurance;AttackOfOpportunity;DarknessRules"
+// data "ActionResources" "ActionPoint:1;BonusActionPoint:1;Movement:9;ReactionActionPoint:1;SuperiorityDie:5"
+data "ActionResources" "ActionPoint:1;BonusActionPoint:1;Movement:9;ReactionActionPoint:1"
 
 // Rogue, Cleric, and Ranger don't appear to actually be used anywhere
 // "_HalfOrc"
 //  ├─ "HalfOrc_Cleric"
 //  ├─ "HalfOrc_Ranger"
-//  ├─ "HalfOrc_Rogue"
-//  │   ├─ "LOW_Guildhall_Swarm_Melee_HalfOrc"
-//  │   └─ LOW_Guildhall_Swarm_Ranged_HalfOrc"  --- Elliot - The Guild
+//  ├─ "HalfOrc_Rogue"                          --- (Has Rogue progressions)
+//  │   ├─ "LOW_Guildhall_Swarm_Melee_HalfOrc"  --- (Inherits Rogue progressions)
+//  │   └─ LOW_Guildhall_Swarm_Ranged_HalfOrc"  --- Elliot - The Guild (Inherits Rogue progressions)
 
+// (Has Cleric progressions but no Wisdom casting ability)
 new entry "HalfOrc_Cleric"
 type "Character"
 using "HalfOrc_Cleric"
 // data "SpellCastingAbility" "Intelligence"
 data "SpellCastingAbility" "Wisdom"
-// data "Passives" "AttackOfOpportunity;DarknessRules"
-data "Passives" "CX_Cleric_Boost;CX_Magic_Boost;SavageAttacks;RelentlessEndurance;AttackOfOpportunity;DarknessRules"
 
+// (Has Ranger progressions but no Wisdom casting ability)
 new entry "HalfOrc_Ranger"
 type "Character"
 using "HalfOrc_Ranger"
 // data "SpellCastingAbility" "Intelligence"
 data "SpellCastingAbility" "Wisdom"
-// data "Passives" "AttackOfOpportunity;DarknessRules"
-data "Passives" "CX_Ranger_Boost;CX_Martial_Boost;SavageAttacks;RelentlessEndurance;AttackOfOpportunity;DarknessRules"
-
-new entry "HalfOrc_Rogue"
-type "Character"
-using "HalfOrc_Rogue"
-// data "Passives" "AttackOfOpportunity;DarknessRules"
-data "Passives" "CX_Rogue_Boost;CX_Martial_Boost;SavageAttacks;RelentlessEndurance;AttackOfOpportunity;DarknessRules"
 
 // "_HalfOrc"
 //  ├─ "HalfOrc_Cultist_Bane_BlackGauntlet"
 //  ├─ "HalfOrc_Cultist_Bane_Fist"
 //  ├─ "HalfOrc_Cultist_Bane_IronConsul"
 
-// (Uses Cleric progressions appropriately)
+// (Has Cleric progressions, adding War Domain subclass)
 new entry "HalfOrc_Cultist_Bane_BlackGauntlet"
 type "Character"
 using "HalfOrc_Cultist_Bane_BlackGauntlet"
 // data "Passives" "ExtraAttack;Tactical_Discipline;AttackOfOpportunity;DarknessRules"
-data "Passives" "CX_Cleric_War_Boost;SavageAttacks;RelentlessEndurance;AttackOfOpportunity;DarknessRules;ExtraAttack;Tactical_Discipline"
+data "Passives" "CX_Cleric_War_Boost;SavageAttacks;RelentlessEndurance;AttackOfOpportunity;Darkvision;DarknessRules;ExtraAttack;Tactical_Discipline"
 
 // Bagdog - Fist of Bane, Cult of Bane (Added Fighter progressions)
 new entry "HalfOrc_Cultist_Bane_Fist"
 type "Character"
 using "HalfOrc_Cultist_Bane_Fist"
 // data "Passives" "ExtraAttack;Tactical_Discipline;AttackOfOpportunity;DarknessRules"
-data "Passives" "SavageAttacks;RelentlessEndurance;AttackOfOpportunity;DarknessRules;ExtraAttack;Tactical_Discipline"
+data "Passives" "SavageAttacks;RelentlessEndurance;AttackOfOpportunity;Darkvision;DarknessRules;ExtraAttack;Tactical_Discipline"
 // data "Progressions" ""
 data "Progressions" "0e6da493-5a37-423b-8c28-629462b22faa"
 
@@ -2562,35 +2537,28 @@ new entry "HalfOrc_Cultist_Bane_IronConsul"
 type "Character"
 using "HalfOrc_Cultist_Bane_IronConsul"
 // data "Passives" "ExtraAttack;Tactical_Discipline;AttackOfOpportunity;DarknessRules"
-data "Passives" "CX_Fighter_BattleMaster_Boost;SavageAttacks;RelentlessEndurance;AttackOfOpportunity;DarknessRules;ExtraAttack;Tactical_Discipline"
+data "Passives" "CX_Fighter_BattleMaster_Boost;SavageAttacks;RelentlessEndurance;AttackOfOpportunity;Darkvision;DarknessRules;ExtraAttack;Tactical_Discipline"
 // data "Progressions" ""
 data "Progressions" "0e6da493-5a37-423b-8c28-629462b22faa"
 
 // "_HalfOrc"
-//  ├─ "MOO_AcolyteOfTheAbsolute_HalfOrc"
+//  ├─ "MOO_AcolyteOfTheAbsolute_HalfOrc"   --- (Has Cleric progressions) 
 //  ├─ "MOO_FanaticOfTheAbsolute_HalfOrc"
 //  └─ "MOO_ZealotOfTheAbsolute_HalfOrc"
 
-// (Inherits Cleric progressions) 
-new entry "MOO_AcolyteOfTheAbsolute_HalfOrc"
-type "Character"
-using "MOO_AcolyteOfTheAbsolute_HalfOrc"
-// data "Passives" "AttackOfOpportunity;DarknessRules"
-data "Passives" "SavageAttacks;RelentlessEndurance;AttackOfOpportunity;DarknessRules"
-
-// Adept Mola - Cult of the Absolute (Inherits Cleric progressions) 
+// Adept Mola - Cult of the Absolute (Has Cleric progressions) 
 new entry "MOO_FanaticOfTheAbsolute_HalfOrc"
 type "Character"
 using "MOO_FanaticOfTheAbsolute_HalfOrc"
 // data "Passives" "AttackOfOpportunity;DarknessRules"
-data "Passives" "CX_Spells_L4C;SavageAttacks;RelentlessEndurance;AttackOfOpportunity;DarknessRules"
+data "Passives" "CX_Spells_L4C;SavageAttacks;RelentlessEndurance;AttackOfOpportunity;Darkvision;DarknessRules"
 
-// Zealot Nadi, Zealot Munish - Cult of the Absolute (Inherits Paladin progressions) 
+// Zealot Nadi, Zealot Munish - Cult of the Absolute (Has Paladin progressions) 
 new entry "MOO_ZealotOfTheAbsolute_HalfOrc"
 type "Character"
 using "MOO_ZealotOfTheAbsolute_HalfOrc"
 // data "Passives" "AttackOfOpportunity;DarknessRules;FightingStyle_GreatWeaponFighting"
-data "Passives" "CX_Paladin_Oathbreaker_Boost;SavageAttacks;RelentlessEndurance;AttackOfOpportunity;DarknessRules;FightingStyle_GreatWeaponFighting"
+data "Passives" "CX_Paladin_Oathbreaker_Boost;SavageAttacks;RelentlessEndurance;AttackOfOpportunity;Darkvision;DarknessRules;FightingStyle_GreatWeaponFighting"
 
 // ==================================== Halfling ====================================
 
@@ -2878,18 +2846,18 @@ using "Halfling_Rogue"
 data "Passives" "CX_Rogue_Boost;CX_Martial_Boost;Halfling_Lucky;Halfling_Brave;AttackOfOpportunity;DarknessRules"
 
 // "_Halfling"
-//  ├─ "MOO_AcolyteOfTheAbsolute_Halfling"  --- (Inherits Cleric progressions) 
+//  ├─ "MOO_AcolyteOfTheAbsolute_Halfling"  --- (Has Cleric progressions) 
 //  ├─ "MOO_FanaticOfTheAbsolute_Halfling"
 //  └─ "MOO_ZealotOfTheAbsolute_Halfling"
 
-// Adept Ghulen - Cult of the Absolute (Inherits Cleric progressions) 
+// Adept Ghulen - Cult of the Absolute (Has Cleric progressions) 
 new entry "MOO_FanaticOfTheAbsolute_Halfling"
 type "Character"
 using "MOO_FanaticOfTheAbsolute_Halfling"
 // data "Passives" "Halfling_Lucky;Halfling_Brave;AttackOfOpportunity;DarknessRules"
 data "Passives" "CX_Spells_L4C;Halfling_Lucky;Halfling_Brave;AttackOfOpportunity;DarknessRules"
 
-// Zealot Brinn - Cult of the Absolute
+// Zealot Brinn - Cult of the Absolute (Has Paladin progressions)
 new entry "MOO_ZealotOfTheAbsolute_Halfling"
 type "Character"
 using "MOO_ZealotOfTheAbsolute_Halfling"
@@ -4063,7 +4031,7 @@ data "Passives" "CX_Rogue_Boost;CX_Martial_Boost;HumanMilitia;HumanVersatility;A
 //  ├─ "Human_Cultist_Bane_Fist"
 //  ├─ "Human_Cultist_Bane_IronConsul"
 
-// Black Gauntlet Ignur, Black Gauntlet Mohlen, Black Gauntlet of Bane, Black Gauntlet Ifran, Black Gauntlet Ulova, Black Gauntlet Hahns Rives, Black Gauntlet Aischam, Black Gauntlet Uva, Black Gauntlet Melia, Black Gauntlet Numia, Guard Unilda Tiro, Black Gauntlet Stijin, Black Gauntlet Indora Ralston, Black Gauntlet Tamia Holzt - Cult of Bane (Uses Cleric progressions appropriately)
+// Black Gauntlet Ignur, Black Gauntlet Mohlen, Black Gauntlet of Bane, Black Gauntlet Ifran, Black Gauntlet Ulova, Black Gauntlet Hahns Rives, Black Gauntlet Aischam, Black Gauntlet Uva, Black Gauntlet Melia, Black Gauntlet Numia, Guard Unilda Tiro, Black Gauntlet Stijin, Black Gauntlet Indora Ralston, Black Gauntlet Tamia Holzt - Cult of Bane (Has Cleric progressions, adding War Domain subclass)
 new entry "Human_Cultist_Bane_BlackGauntlet"
 type "Character"
 using "Human_Cultist_Bane_BlackGauntlet"
@@ -4093,21 +4061,21 @@ data "Progressions" "0e6da493-5a37-423b-8c28-629462b22faa"
 //  ├─ "MOO_FanaticOfTheAbsolute_Human"
 //  └─ "MOO_ZealotOfTheAbsolute_Human"
 
-// Acolyte Marls - Cult of the Absolute (Inherits Cleric progressions) 
+// Acolyte Marls - Cult of the Absolute (Has Cleric progressions) 
 new entry "MOO_AcolyteOfTheAbsolute_Human"
 type "Character"
 using "MOO_AcolyteOfTheAbsolute_Human"
 // data "Passives" "AttackOfOpportunity;DarknessRules"
 data "Passives" "HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules"
 
-// Adept Merim, Adept Nola, Dead Adept of the Absolute - Cult of the Absolute (Inherits Cleric progressions) 
+// Adept Merim, Adept Nola, Dead Adept of the Absolute - Cult of the Absolute (Has Cleric progressions) 
 new entry "MOO_FanaticOfTheAbsolute_Human"
 type "Character"
 using "MOO_FanaticOfTheAbsolute_Human"
 // data "Passives" "AttackOfOpportunity;DarknessRules"
 data "Passives" "CX_Spells_L4C;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules"
 
-// Zealot of the Absolute, Zealot Renan, Zealot Krizt, Zealot Bennel, Zealot Klen, Zealot Malik, Zealot Falla, Dead Cultist, Dead Zealot of the Absolute - Cult of the Absolute (Inherits Paladin progressions) 
+// Zealot of the Absolute, Zealot Renan, Zealot Krizt, Zealot Bennel, Zealot Klen, Zealot Malik, Zealot Falla, Dead Cultist, Dead Zealot of the Absolute - Cult of the Absolute (Has Paladin progressions) 
 new entry "MOO_ZealotOfTheAbsolute_Human"
 type "Character"
 using "MOO_ZealotOfTheAbsolute_Human"
@@ -4576,18 +4544,18 @@ data "Passives" "CX_Ranger_Boost;CX_Martial_Boost;Tiefling_HellishResistance;Att
 data "Progressions" "f0ede459-8b86-48fd-ac11-4432573566a5"
 
 // "_Tiefling"
-//  ├─ "MOO_AcolyteOfTheAbsolute_Dragonborn"    --- Unused (Inherits Cleric progressions) 
+//  ├─ "MOO_AcolyteOfTheAbsolute_Dragonborn"    --- Unused (Has Cleric progressions) 
 //  ├─ "MOO_FanaticOfTheAbsolute_Tiefling"      --- Unused
 //  ├─ "MOO_ZealotOfTheAbsolute_Tiefling"       --- Unused
 
-// (Inherits Cleric progressions) 
+// (Has Cleric progressions) 
 new entry "MOO_FanaticOfTheAbsolute_Tiefling"
 type "Character"
 using "MOO_FanaticOfTheAbsolute_Tiefling"
 // data "Passives" "Tiefling_HellishResistance;AttackOfOpportunity;DarknessRules;Darkvision"
 data "Passives" "CX_Spells_L4C;Tiefling_HellishResistance;AttackOfOpportunity;DarknessRules;Darkvision"
 
-// (Inherits Paladin progressions) 
+// (Has Paladin progressions) 
 new entry "MOO_ZealotOfTheAbsolute_Tiefling"
 type "Character"
 using "MOO_ZealotOfTheAbsolute_Tiefling"
@@ -5002,7 +4970,7 @@ new entry "LOW_DeathKnight"
 type "Character"
 using "LOW_DeathKnight"
 // data "Progressions" ""
-data "Progressions" "8726b2c4-edc0-4905-2fb8-a460baba3307"
+data "Progressions" "8726b2c4-edc0-4905-b82f-60a4baba0733"
 // data "Passives" "AttackOfOpportunity;DarknessRules;Darkvision;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check;MagicResistance;Parry;ExtraAttack_2;NecroticAttacks_DeathKnight;Riposte;HellfireDamagePierce_Technical"
 data "Passives" "CX_Paladin_Boost;CX_Paladin_Oathbreaker_Boost;CX_Martial_Boost;AttackOfOpportunity;DarknessRules;Darkvision;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check;MagicResistance;Parry;ExtraAttack_2;NecroticAttacks_DeathKnight;Riposte;HellfireDamagePierce_Technical"
 
