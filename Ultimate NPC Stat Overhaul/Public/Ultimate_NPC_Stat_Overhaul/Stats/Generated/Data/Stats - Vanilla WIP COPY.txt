@@ -2604,7 +2604,7 @@ new entry "FlamingFist_Halfling_Cleric"
 type "Character"
 using "FlamingFist_Halfling_Cleric"
 // data "Passives" "Halfling_Lucky;Halfling_Brave;AttackOfOpportunity;DarknessRules"
-data "Passives" "CX_Cleric_Boost;CX_Magic_Boost;Halfling_Lucky;Halfling_Brave;AttackOfOpportunity;DarknessRules;Goon_NPC_Flaming_Fist_Boosts;FightingStyle_Protection"
+data "Passives" "Halfling_Lucky;Halfling_Brave;AttackOfOpportunity;DarknessRules;Goon_NPC_Flaming_Fist_Boosts;FightingStyle_Protection"
 // data "Progressions" "70c3eb7e-383f-11ed-a261-0242ac120002"
 data "Progressions" "36c3f8de-3293-4d7b-92bc-ceb3c569244b"
 
@@ -2613,7 +2613,7 @@ new entry "FlamingFist_Halfling_Melee_Attacker"
 type "Character"
 using "FlamingFist_Halfling_Melee_Attacker"
 // data "Passives" "Halfling_Lucky;Halfling_Brave;AttackOfOpportunity;DarknessRules"
-data "Passives" "CX_Fighter_Boost;CX_Martial_Boost;Halfling_Lucky;Halfling_Brave;AttackOfOpportunity;DarknessRules;Goon_NPC_Flaming_Fist_Boosts;FightingStyle_GreatWeaponFighting;PhalanxFormation_Duergar;Riposte"
+data "Passives" "Halfling_Lucky;Halfling_Brave;AttackOfOpportunity;DarknessRules;Goon_NPC_Flaming_Fist_Boosts;FightingStyle_GreatWeaponFighting;PhalanxFormation_Duergar;Riposte"
 // data "Progressions" "51d47904-383f-11ed-a261-0242ac120002"
 data "Progressions" "0e6da493-5a37-423b-8c28-629462b22faa"
 
@@ -2622,7 +2622,7 @@ new entry "FlamingFist_Halfling_Melee_Defender"
 type "Character"
 using "FlamingFist_Halfling_Melee_Defender"
 // data "Passives" "Halfling_Lucky;Halfling_Brave;AttackOfOpportunity;DarknessRules"
-data "Passives" "CX_Fighter_Boost;CX_Martial_Boost;Halfling_Lucky;Halfling_Brave;AttackOfOpportunity;DarknessRules;Goon_NPC_Flaming_Fist_Boosts;FightingStyle_Protection"
+data "Passives" "Halfling_Lucky;Halfling_Brave;AttackOfOpportunity;DarknessRules;Goon_NPC_Flaming_Fist_Boosts;FightingStyle_Protection"
 // data "Progressions" "5885fa7a-383f-11ed-a261-0242ac120002"
 data "Progressions" "0e6da493-5a37-423b-8c28-629462b22faa"
 
@@ -2631,30 +2631,22 @@ new entry "FlamingFist_Halfling_Ranger"
 type "Character"
 using "FlamingFist_Halfling_Ranger"
 // data "Passives" "Halfling_Lucky;Halfling_Brave;AttackOfOpportunity;DarknessRules"
-data "Passives" "CX_Ranger_Boost;CX_Martial_Boost;Halfling_Lucky;Halfling_Brave;AttackOfOpportunity;DarknessRules;Goon_NPC_Flaming_Fist_Boosts;FightingStyle_Archery;CrossbowExpert_PointBlank"
+data "Passives" "Halfling_Lucky;Halfling_Brave;AttackOfOpportunity;DarknessRules;Goon_NPC_Flaming_Fist_Boosts;FightingStyle_Archery;CrossbowExpert_PointBlank"
 // data "Progressions" "6cae475a-383f-11ed-a261-0242ac120002"
 data "Progressions" "f0ede459-8b86-48fd-ac11-4432573566a5"
 
 // "_Halfling"
-//  ├─ "Halfling_Bard"
-//  │   └─ "WYR_SharessCaress_Halfling_Bard"    --- Monsieur Chapeau
-
-new entry "Halfling_Bard"
-type "Character"
-using "Halfling_Bard"
-// data "Passives" "Halfling_Lucky;Halfling_Brave;AttackOfOpportunity;DarknessRules"
-data "Passives" "CX_Bard_Boost;CX_Magic_Boost;Halfling_Lucky;Halfling_Brave;AttackOfOpportunity;DarknessRules"
-
-// "_Halfling"
-//  ├─ "Halfling_Caster"
+//  ├─ "Halfling_Bard"                                  --- (Has Bard progressions)
+//  │   └─ "WYR_SharessCaress_Halfling_Bard"            --- Monsieur Chapeau (Inherits Bard progressions)
+//  ├─ "Halfling_Caster"                                --- (Has Wizard progressions)
 //  │   ├─ "Halfling_Cultist_Myrkul_SkullLasher"
-//  │   ├─ "Halfling_Druid"
+//  │   ├─ "Halfling_Druid"                             --- (Has Druid progressions)
 //  │   │   ├─ "DEN_Druids_Halfling_Druid"
-//  │   │   │   └─ "DEN_Findal"                         --- Findal - Circle of the Emerald Grove
-//  │   │   ├─ "HAG_Masked_Druid"
+//  │   │   │   └─ "DEN_Findal"
+//  │   │   ├─ "HAG_Masked_Druid"                       --- Mask of Regret (Overgrown Tunnel); Hydrangea Wubb - Anti-Hag Support Group - (Auntie Ethel victim) (Inherits Druid progressions)
 //  │   │   └─ "LOW_HarperConfrontation_Druid_Halfling" --- Harper Freddo - Harpers
-//  │   ├─ "SCL_Harper_Halfling_Caster"
-//  │   │   └─ "SCL_Caravan_Ambusher_Elindale"          --- Harper Elindale - Harpers
+//  │   ├─ "SCL_Harper_Halfling_Caster"                 --- (Inherits Wizard progressions)
+//  │   │   └─ "SCL_Caravan_Ambusher_Elindale"
 //  │   └─ "WYR_MessHallBodyguard_01"
 
 new entry "Halfling_Caster"
@@ -2663,78 +2655,77 @@ using "Halfling_Caster"
 // data "Passives" "Halfling_Lucky;Halfling_Brave;AttackOfOpportunity;DarknessRules"
 data "Passives" "CX_Magic_Boost;Halfling_Lucky;Halfling_Brave;AttackOfOpportunity;DarknessRules"
 
-// Ironfinger - Skull Lasher, Cult of Myrkul (Could also make her a Warlock, but going with a necro Wizard theme for these cultists)
+// Ironfinger - Skull Lasher, Cult of Myrkul (Inherits Wizard progressions, Cahoot felt Necromancy was the vibe)
 new entry "Halfling_Cultist_Myrkul_SkullLasher"
 type "Character"
 using "Halfling_Cultist_Myrkul_SkullLasher"
 // data "Passives" "ExtraAttack;Halfling_Lucky;Halfling_Brave;AttackOfOpportunity;DarknessRules"
-data "Passives" "CX_Wizard_Boost;CX_Wizard_Necromancy_Boost;CX_Magic_Boost;CX_Spells_L4;CX_Spells_L2C;Halfling_Lucky;Halfling_Brave;AttackOfOpportunity;DarknessRules;ExtraAttack"
+data "Passives" "CX_Wizard_Necromancy_Boost;CX_Spells_L4;CX_Spells_L2C;Halfling_Lucky;Halfling_Brave;AttackOfOpportunity;DarknessRules;ExtraAttack"
 
-new entry "Halfling_Druid"
+// Findal - Circle of the Emerald Grove (Inherits Druid progressions, as a pure caster adding Circle of the Land subclass)
+new entry "DEN_Findal"
 type "Character"
-using "Halfling_Druid"
+using "DEN_Findal"
 // data "Passives" "Halfling_Lucky;Halfling_Brave;AttackOfOpportunity;DarknessRules"
-data "Passives" "CX_Druid_Boost;CX_Magic_Boost;Halfling_Lucky;Halfling_Brave;AttackOfOpportunity;DarknessRules"
+data "Passives" "CX_Druid_Land_Boost;Halfling_Lucky;Halfling_Brave;AttackOfOpportunity;DarknessRules"
 
-// Mask of Regret (Overgrown Tunnel); Hydrangea Wubb - Anti-Hag Support Group - (Auntie Ethel victim)
-new entry "HAG_Masked_Druid"
+// Harper Elindale - Harpers (Inherits Wizard progressions)
+new entry "SCL_Caravan_Ambusher_Elindale"
 type "Character"
-using "HAG_Masked_Druid"
-// data "Passives" "AttackOfOpportunity;Halfling_Lucky;Halfling_Brave;DarknessRules;"
-data "Passives" "CX_Druid_Boost;CX_Magic_Boost;Halfling_Lucky;Halfling_Brave;AttackOfOpportunity;DarknessRules"
-
-new entry "SCL_Harper_Halfling_Caster"
-type "Character"
-using "SCL_Harper_Halfling_Caster"
+using "SCL_Caravan_Ambusher_Elindale"
 // data "Passives" "Halfling_Lucky;Halfling_Brave;AttackOfOpportunity;DarknessRules"
-data "Passives" "CX_Wizard_Boost;CX_Magic_Boost;CX_Spells_L1;CX_Spells_L2;CX_Spells_L3;Halfling_Lucky;Halfling_Brave;AttackOfOpportunity;DarknessRules"
+data "Passives" "CX_Spells_L1;CX_Spells_L2;CX_Spells_L3;Halfling_Lucky;Halfling_Brave;AttackOfOpportunity;DarknessRules"
 
-// Lord Shattershield's Bodyguard
+// Lord Shattershield's Bodyguard (Inherits Wizard progressions)
 new entry "WYR_MessHallBodyguard_01"
 type "Character"
 using "WYR_MessHallBodyguard_01"
 // data "Passives" "Halfling_Lucky;Halfling_Brave;AttackOfOpportunity;DarknessRules"
-data "Passives" "CX_Wizard_Boost;CX_Magic_Boost;CX_Spells_L5;CX_Spells_L5C;Halfling_Lucky;Halfling_Brave;AttackOfOpportunity;DarknessRules"
+data "Passives" "CX_Spells_L5;CX_Spells_L5C;Halfling_Lucky;Halfling_Brave;AttackOfOpportunity;DarknessRules"
 
 // "_Halfling"
-//  ├─ "Halfling_Melee"
-//  │   ├─ "DEN_CharmedHalfling"
+//  ├─ "Halfling_Melee"                                             --- (Has Fighter progressions)
+//  │   ├─ "DEN_CharmedHalfling"                                    --- (Inherits Fighter progressions)
 //  │   ├─ "DEN_Druids_Halfling_Melee"
-//  │   ├─ "DEN_MonsterHunter"                                      --- Interesting unused NPC named Spencer that was apparently cut before Early Access
+//  │   ├─ "DEN_MonsterHunter"                                      --- Interesting unused NPC named Spencer that was apparently cut before Early Access (Inherits Fighter progressions)
 //  │   ├─ "DEN_ShadowDruid_Melee"
 //  │   ├─ "GOB_Quartermaster"
-//  │   ├─ "Halfling_Cleric"
-//  │   │   ├─ "WYR_OpenHandTemple_Halfling_Cleric"                 --- Sister Yannis - Church of Ilmater
-//  │   │   │   └─ "WYR_OpenHandTemple_Halfling_Cleric_Sister"
-//  │   │   └─ "WYR_OpenHandTemple_Halfling_Cleric_Novice"          --- Novice Bramble - Church of Ilmater
-//  │   ├─ "LOW_ArabellaPowers_Brigand_Halfling_Melee"              --- Brigand Harrold (Dead)
-//  │   ├─ "LOW_CazadorsPalace_GuardTower_Halfling_Melee"
-//  │   ├─ "LOW_HouseOfGrief_Cultist_Melee_Halfling"
-//  │   ├─ "LOW_HouseOfGrief_Cultist_Sentry_Halfling"
-//  │   ├─ "SCE_FlamingFist_Halfling_Melee"
-//  │   └─ "SCL_Harper_Halfling_Melee"
+//  │   ├─ "Halfling_Cleric"                                        --- (Has Cleric progressions)
+//  │   │   ├─ "WYR_OpenHandTemple_Halfling_Cleric"                 --- Sister Yannis - Church of Ilmater (Inherits Cleric progressions) //TODO: Maybe make these nutsacks Life Domain
+//  │   │   │   └─ "WYR_OpenHandTemple_Halfling_Cleric_Sister"      --- (Inherits Cleric progressions)
+//  │   │   └─ "WYR_OpenHandTemple_Halfling_Cleric_Novice"          --- Novice Bramble - Church of Ilmater (Inherits Cleric progressions)
+//  │   ├─ "LOW_ArabellaPowers_Brigand_Halfling_Melee"              --- Brigand Harrold (Dead) (Inherits Fighter progressions)
+//  │   ├─ "LOW_CazadorsPalace_GuardTower_Halfling_Melee"           --- Jaryd - Szarr Palace (Inherits Fighter progressions)
+//  │   ├─ "LOW_HouseOfGrief_Cultist_Melee_Halfling"                --- Greymask - Church of Shar (Inherits Fighter progressions) //TODO: Add more diversity to Shar nutsacks, throw some rogues in or something
+//  │   ├─ "LOW_HouseOfGrief_Cultist_Sentry_Halfling"               --- Sentry Fredrichk - Church of Shar (Inherits Fighter progressions)
+//  │   ├─ "SCE_FlamingFist_Halfling_Melee"                         --- Flaming Fist - Flaming Fist (Inherits Fighter progressions)
+//  │   └─ "SCL_Harper_Halfling_Melee"                              --- (Inherits Fighter progressions)
 
-new entry "Halfling_Melee"
-type "Character"
-using "Halfling_Melee"
-// data "Passives" "Halfling_Lucky;Halfling_Brave;AttackOfOpportunity;DarknessRules"
-data "Passives" "CX_Martial_Boost;Halfling_Lucky;Halfling_Brave;AttackOfOpportunity;DarknessRules"
-
-// Loic, Arron - Circle of the Emerald Grove
+// Loic, Arron - Circle of the Emerald Grove (Swapped Fighter progressions for Druid progressions, added the Circle of Spores subclass to match their martial nature)
 new entry "DEN_Druids_Halfling_Melee"
 type "Character"
 using "DEN_Druids_Halfling_Melee"
+// data "Intelligence" "12"
+data "Intelligence" "10"
+// data "Wisdom" "10"
+data "Wisdom" "12"
 // data "Passives" "Halfling_Lucky;Halfling_Brave;AttackOfOpportunity;DarknessRules"
-data "Passives" "CX_Druid_Boost;CX_Magic_Boost;CX_Fighter_Boost;CX_Fighter_BattleMaster_Boost;CX_Martial_Boost;Halfling_Lucky;Halfling_Brave;AttackOfOpportunity;DarknessRules"
+data "Passives" "CX_Druid_Spores_Boost;Halfling_Lucky;Halfling_Brave;AttackOfOpportunity;DarknessRules"
+// data "Progressions" "0e6da493-5a37-423b-8c28-629462b22faa"
+data "Progressions" "7e76da16-650c-4a6e-85b0-f9e23a7f5a60"
 
-// Wren - Shadow Druids
+// Wren - Shadow Druids (Inherits Druid progressions, added the Circle of Spores subclass to match their martial nature)
 new entry "DEN_ShadowDruid_Melee"
 type "Character"
 using "DEN_ShadowDruid_Melee"
+// data "Intelligence" "12"
+data "Intelligence" "10"
+// data "Wisdom" "10"
+data "Wisdom" "12"
 // data "Passives" "Halfling_Lucky;Halfling_Brave;AttackOfOpportunity;DarknessRules"
-data "Passives" "CX_Druid_Boost;CX_Druid_Spores_Boost;CX_Magic_Boost;CX_Martial_Boost;Halfling_Lucky;Halfling_Brave;AttackOfOpportunity;DarknessRules"
+data "Passives" "CX_Druid_Spores_Boost;Halfling_Lucky;Halfling_Brave;AttackOfOpportunity;DarknessRules"
 
-// Roah Moonglow (Lucretia of the Zhentarim) - Zhentarim (Make her a proper Bard, add proprietary boosts via stats.)
+// Roah Moonglow (Lucretia of the Zhentarim) - Zhentarim (Swapped out her proprietary progressions for NPC_Bard progressions, add proprietary boosts via stats.)
 new entry "GOB_Quartermaster"
 type "Character"
 using "GOB_Quartermaster"
@@ -2747,103 +2738,39 @@ data "Passives" "CX_Bard_Boost;CX_Magic_Boost;Halfling_Lucky;Halfling_Brave;Atta
 // data "Progressions" "2c3411ae-806b-11ed-a1eb-0242ac120002"
 data "Progressions" "cbe5059f-7a9f-4b98-be6a-07c9cd8e02c2"
 
-new entry "Halfling_Cleric"
-type "Character"
-using "Halfling_Cleric"
-// data "Passives" "Halfling_Lucky;Halfling_Brave;AttackOfOpportunity;DarknessRules"
-data "Passives" "CX_Cleric_Boost;CX_Magic_Boost;Halfling_Lucky;Halfling_Brave;AttackOfOpportunity;DarknessRules"
-
-// Jaryd - Szarr Palace
-new entry "LOW_CazadorsPalace_GuardTower_Halfling_Melee"
-type "Character"
-using "LOW_CazadorsPalace_GuardTower_Halfling_Melee"
-// data "Passives" "Halfling_Lucky;Halfling_Brave;AttackOfOpportunity;DarknessRules"
-data "Passives" "CX_Fighter_Boost;CX_Martial_Boost;Halfling_Lucky;Halfling_Brave;AttackOfOpportunity;DarknessRules"
-
-// Greymask
-new entry "LOW_HouseOfGrief_Cultist_Melee_Halfling"
-type "Character"
-using "LOW_HouseOfGrief_Cultist_Melee_Halfling"
-// data "Passives" "Halfling_Lucky;Halfling_Brave;AttackOfOpportunity;DarknessRules;LOW_HouseOfGrief_Cultists_Sight;LOW_HouseOfGrief_Cultists_Melee;"
-data "Passives" "CX_Cleric_Boost;CX_Magic_Boost;Halfling_Lucky;Halfling_Brave;AttackOfOpportunity;DarknessRules;LOW_HouseOfGrief_Cultists_Sight;LOW_HouseOfGrief_Cultists_Melee;"
-
-// Fredrichk
-new entry "LOW_HouseOfGrief_Cultist_Sentry_Halfling"
-type "Character"
-using "LOW_HouseOfGrief_Cultist_Sentry_Halfling"
-// data "Passives" "Halfling_Lucky;Halfling_Brave;AttackOfOpportunity;DarknessRules;LOW_HouseOfGrief_Cultists_Sight;LOW_HouseOfGrief_Cultists_Melee;"
-data "Passives" "CX_Cleric_Boost;CX_Magic_Boost;Halfling_Lucky;Halfling_Brave;AttackOfOpportunity;DarknessRules;LOW_HouseOfGrief_Cultists_Sight;LOW_HouseOfGrief_Cultists_Melee;"
-
-new entry "SCE_FlamingFist_Halfling_Melee"
-type "Character"
-using "SCE_FlamingFist_Halfling_Melee"
-// data "Passives" "Halfling_Lucky;Halfling_Brave;AttackOfOpportunity;DarknessRules"
-data "Passives" "CX_Fighter_Boost;CX_Martial_Boost;Halfling_Lucky;Halfling_Brave;AttackOfOpportunity;DarknessRules"
-
-new entry "SCL_Harper_Halfling_Melee"
-type "Character"
-using "SCL_Harper_Halfling_Melee"
-// data "Passives" "Halfling_Lucky;Halfling_Brave;AttackOfOpportunity;DarknessRules"
-data "Passives" "CX_Fighter_Boost;CX_Martial_Boost;Halfling_Lucky;Halfling_Brave;AttackOfOpportunity;DarknessRules"
-
 // "_Halfling"
-//  ├─ "Halfling_Ranger"
-//  │   ├─ "DEN_Druids_Halfling_Ranger"
+//  ├─ "Halfling_Ranger"                                --- (Has Ranger progressions)
+//  │   ├─ "DEN_Druids_Halfling_Ranger"                 --- Unused (Inherits Ranger progressions)
 //  │   ├─ "DEN_ShadowDruid_Ranger"
 //  │   │   └─ "DEN_ShadowDruid_Ranger_Strong"
-//  │   ├─ "END_HarperRanger_Halfling"
-//  │   ├─ "FOR_Halfling_Cultist_Zariel_Ranger"
-//  │   ├─ "LOW_Undercellar_Entrance_Halfling_Ranger"
-//  │   ├─ "MOO_GnollMaster"
-//  │   ├─ "MOO_Harper_Halfling_Ranger"
-//  │   ├─ "SCE_FlamingFist_Halfling_Ranger"
-//  │   └─ "WYR_MerchantsHouse_Halfling_Ranger"
+//  │   ├─ "END_HarperRanger_Halfling"                  --- Harper Archer (Gather Your Allies summon) (Inherits Ranger progressions)
+//  │   ├─ "FOR_Halfling_Cultist_Zariel_Ranger"         --- Trynn, Fake Tyr Paladins (Inherits Ranger progressions)
+//  │   ├─ "LOW_Undercellar_Entrance_Halfling_Ranger"   --- Sledge Pettifeet & Don't-Call-Me-Runt - The Guild (Inherits Ranger progressions)
+//  │   ├─ "MOO_GnollMaster"                            --- Linsella - True Soul of the Absolute, Cult of the Absolute (Inherits Ranger progressions)
+//  │   ├─ "MOO_Harper_Halfling_Ranger"                 --- Harper Lanni - Harpers (Inherits Ranger progressions)
+//  │   ├─ "SCE_FlamingFist_Halfling_Ranger"            --- Flaming Fist - Flaming Fist (Inherits Ranger progressions)
+//  │   └─ "WYR_MerchantsHouse_Halfling_Ranger"         --- Scarpers - The Guild (Inherits Ranger progressions)
 
-new entry "Halfling_Ranger"
-type "Character"
-using "Halfling_Ranger"
-// data "Passives" "Halfling_Lucky;Halfling_Brave;AttackOfOpportunity;DarknessRules"
-data "Passives" "CX_Ranger_Boost;CX_Martial_Boost;Halfling_Lucky;Halfling_Brave;AttackOfOpportunity;DarknessRules"
-
-new entry "DEN_Druids_Halfling_Ranger"
-type "Character"
-using "DEN_Druids_Halfling_Ranger"
-// data "Passives" "Halfling_Lucky;Halfling_Brave;AttackOfOpportunity;DarknessRules"
-data "Passives" "CX_Druid_Boost;CX_Magic_Boost;CX_Ranger_Boost;CX_Ranger_Hunter_Boost;CX_Martial_Boost;Halfling_Lucky;Halfling_Brave;AttackOfOpportunity;DarknessRules"
-
-// Pinta - Shadow Druids
+// Pinta - Shadow Druids (Has Druid progressions, added the Circle of Spores subclass to match their martial nature)
 new entry "DEN_ShadowDruid_Ranger"
 type "Character"
 using "DEN_ShadowDruid_Ranger"
 // data "Passives" "Halfling_Lucky;Halfling_Brave;AttackOfOpportunity;DarknessRules"
-data "Passives" "CX_Druid_Boost;CX_Druid_Spores_Boost;CX_Magic_Boost;CX_Ranger_Boost;CX_Ranger_Hunter_Boost;CX_Martial_Boost;Halfling_Lucky;Halfling_Brave;AttackOfOpportunity;DarknessRules"
+data "Passives" "CX_Druid_Spores_Boost;Halfling_Lucky;Halfling_Brave;AttackOfOpportunity;DarknessRules"
 
-// Olodan - Shadow Druids leader
+// Olodan - Shadow Druids leader (Inherits Druid progressions, Circle of the Moon subclass added just to mix them up some)
 new entry "DEN_ShadowDruid_Ranger_Strong"
 type "Character"
 using "DEN_ShadowDruid_Ranger_Strong"
 // data "Passives" "AttackOfOpportunity;Halfling_Lucky;Halfling_Brave;DarknessRules"
-data "Passives" "CX_Druid_Boost;CX_Druid_Spores_Boost;CX_Magic_Boost;CX_Ranger_Boost;CX_Ranger_Hunter_Boost;CX_Martial_Boost;Halfling_Lucky;Halfling_Brave;AttackOfOpportunity;DarknessRules"
-
-// Harper Archer (Gather Your Allies summon)
-new entry "END_HarperRanger_Halfling"
-type "Character"
-using "END_HarperRanger_Halfling"
-// data "Passives" "Halfling_Lucky;Halfling_Brave;AttackOfOpportunity;DarknessRules;FightingStyle_Archery"
-data "Passives" "CX_Ranger_Boost;CX_Martial_Boost;Halfling_Lucky;Halfling_Brave;AttackOfOpportunity;DarknessRules;FightingStyle_Archery"
+data "Passives" "CX_Druid_Moon_Boost;Halfling_Lucky;Halfling_Brave;AttackOfOpportunity;DarknessRules"
 
 // "_Halfling"
-//  ├─ "Halfling_Rogue"
-//  │   ├─ "LOW_GuildSmugglers_Smuggler"                --- Big Huido - The Guild
-//  │   ├─ "LOW_Guildhall_Swarm_Melee_Halfling"         --- Lugarrio - Zhentarim / Three-Piece, Bad Twin Bubbins - The Guild
-//  │   ├─ "LOW_Guildhall_Swarm_Ranged_Halfling"
-//  │   └─ "LOW_Undercellar_Entrance_Halfling_Rogue"    --- Terse Torvalt - The Guild
-
-new entry "Halfling_Rogue"
-type "Character"
-using "Halfling_Rogue"
-// data "Passives" "Halfling_Lucky;Halfling_Brave;AttackOfOpportunity;DarknessRules"
-data "Passives" "CX_Rogue_Boost;CX_Martial_Boost;Halfling_Lucky;Halfling_Brave;AttackOfOpportunity;DarknessRules"
+//  ├─ "Halfling_Rogue"                                 --- (Has Rogue progressions)
+//  │   ├─ "LOW_GuildSmugglers_Smuggler"                --- Big Huido - The Guild (Inherits Rogue progressions)
+//  │   ├─ "LOW_Guildhall_Swarm_Melee_Halfling"         --- Lugarrio - Zhentarim / Three-Piece, Bad Twin Bubbins - The Guild (Inherits Rogue progressions)
+//  │   ├─ "LOW_Guildhall_Swarm_Ranged_Halfling"        --- Unused (Inherits Rogue progressions)
+//  │   └─ "LOW_Undercellar_Entrance_Halfling_Rogue"    --- Terse Torvalt - The Guild (Inherits Rogue progressions)
 
 // "_Halfling"
 //  ├─ "MOO_AcolyteOfTheAbsolute_Halfling"  --- (Has Cleric progressions) 
@@ -3091,7 +3018,7 @@ using "CHA_BanditInterior_Human_Caster"
 // data "Passives" "AttackOfOpportunity;DarknessRules"
 data "Passives" "CX_Wizard_Boost;CX_Magic_Boost;CX_Spells_L1;CX_Spells_L1C;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules"
 
-// Cyrel (one of the Zariel cultists hunting Karlach)
+// Cyrel, Fake Tyr Paladins
 new entry "FOR_Human_Cultist_Zariel_Caster"
 type "Character"
 using "FOR_Human_Cultist_Zariel_Caster"
@@ -3481,7 +3408,7 @@ using "END_CityWatchMelee_Human"
 // data "Passives" "AttackOfOpportunity;DarknessRules;FightingStyle_GreatWeaponFighting;GreatWeaponMaster_BonusAttack;GreatWeaponMaster_BonusDamage"
 data "Passives" "CX_Fighter_Boost;CX_Martial_Boost;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules;FightingStyle_GreatWeaponFighting;GreatWeaponMaster_BonusAttack;GreatWeaponMaster_BonusDamage"
 
-// Anders - Sword of Tyr (He was given increased Charisma but spellcasting ability wasn't changed
+// Anders - Sword of Tyr, Fake Tyr Paladins (He was given increased Charisma but spellcasting ability wasn't changed
 // Note that if using Luma's Encounters Enhanced mod then he gets Oath of Conquest abilities too. Keeping Oathbreaker subclass because it still fits fairly well
 new entry "FOR_Human_Cultist_Zariel_Paladin"
 type "Character"
