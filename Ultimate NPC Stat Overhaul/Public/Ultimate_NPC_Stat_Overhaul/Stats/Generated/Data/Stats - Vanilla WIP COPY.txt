@@ -2798,57 +2798,50 @@ data "Passives" "CX_Paladin_Oathbreaker_Boost;Halfling_Lucky;Halfling_Brave;Atta
 //  │   ├─ "Hobgoblin"
 //  │   │   ├─ "Hobgoblin_Boss"
 //  │   │   │   ├─ "GOB_Hobgoblin_Boss"
-//  │   │   │   └─ "UND_SOB_Hobgoblin"
+//  │   │   │   └─ "UND_SOB_Hobgoblin"  --- Blurg - Society of Brilliance (Has Wizard progressions)
 //  │   │   ├─ "Hobgoblin_Captain"
-//  │   │   ├─ "Hobgoblin_Devastator"
+//  │   │   ├─ "Hobgoblin_Devastator"   --- Devastator Lizabett & Devastator Stropes (Has Wizard progressions) (They're only level 5, so removing "SpellSlot:4:4:3" aint gonna work out for them)
 //  │   │   └─ "LOW_HagSurvivor_Kleid"
 
+// (Hobgoblins have an arbitrarily increased DarvisionRange, making it the same as other humanoids with basic Darkvision for consistency)
 new entry "Hobgoblin"
 type "Character"
 using "Hobgoblin"
+// data "DarkvisionRange" "16"
+data "DarkvisionRange" "9"
 // data "Passives" "MartialAdvantage;AttackOfOpportunity;Darkvision;DarknessRules"
 data "Passives" "CX_Martial_Boost;MartialAdvantage;AttackOfOpportunity;Darkvision;DarknessRules"
 
+// (Added Fighter progressions)
 new entry "Hobgoblin_Boss"
 type "Character"
 using "Hobgoblin_Boss"
-// data "Passives" "MartialAdvantage;AttackOfOpportunity;Darkvision;DarknessRules"
-data "Passives" "CX_Barbarian_Boost;CX_Barbarian_Berserker_Boost;CX_Martial_Boost;MartialAdvantage;AttackOfOpportunity;Darkvision;DarknessRules"
+// data "Progressions" ""
+data "Progressions" "0e6da493-5a37-423b-8c28-629462b22faa"
 
-// Dror Ragzlin - HONOUR MODE INHERITANCE
+// Dror Ragzlin - HONOUR MODE INHERITANCE (Replaced added and inherited Fighter progressions with Barbarian progressions, all subclasses seem on theme enough)
 new entry "GOB_Hobgoblin_Boss"
 type "Character"
 using "GOB_Hobgoblin_Boss"
 // data "Passives" "AttackOfOpportunity;DarknessRules;Darkvision;MartialAdvantage;UnarmouredDefence_Barbarian;"
 // data "Passives" "AttackOfOpportunity;DarknessRules;Darkvision;MartialAdvantage;UnarmouredDefence_Barbarian;LegendaryAction_GOB_Dror;"
-data "Passives" "CX_Barbarian_Boost;CX_Barbarian_Berserker_Boost;CX_Martial_Boost;MartialAdvantage;AttackOfOpportunity;Darkvision;DarknessRules;UnarmouredDefence_Barbarian;LegendaryAction_GOB_Dror"
+data "Passives" "MartialAdvantage;AttackOfOpportunity;Darkvision;DarknessRules;UnarmouredDefence_Barbarian;LegendaryAction_GOB_Dror"
+// data "Progressions" "0e6da493-5a37-423b-8c28-629462b22faa"
+data "Progressions" "56db8107-e04c-4fe3-94f3-fd4acd44cd4a"
 
-// Blurg - Society of Brilliance
-new entry "UND_SOB_Hobgoblin"
-type "Character"
-using "UND_SOB_Hobgoblin"
-// data "Passives" "AttackOfOpportunity;DarknessRules;Darkvision;MartialAdvantage;ExtraAttack"
-data "Passives" "CX_Wizard_Boost;CX_Magic_Boost;MartialAdvantage;AttackOfOpportunity;Darkvision;DarknessRules;ExtraAttack"
-
+// (Added Fighter progressions)
 new entry "Hobgoblin_Captain"
 type "Character"
 using "Hobgoblin_Captain"
-// data "Passives" "AttackOfOpportunity;Darkvision;DarknessRules;MartialAdvantage"
-data "Passives" "CX_Fighter_Boost;CX_Martial_Boost;MartialAdvantage;AttackOfOpportunity;Darkvision;DarknessRules"
+// data "Progressions" ""
+data "Progressions" "0e6da493-5a37-423b-8c28-629462b22faa"
 
-// Devastator Lizabett, Devastator Stropes
-new entry "Hobgoblin_Devastator"
-type "Character"
-using "Hobgoblin_Devastator"
-// data "Passives" "MartialAdvantage;ArmyArcana;AttackOfOpportunity;Darkvision;DarknessRules"
-data "Passives" "CX_Wizard_Boost;CX_Magic_Boost;MartialAdvantage;AttackOfOpportunity;Darkvision;DarknessRules;ArmyArcana"
-
-// Kled (Kleidunn)
+// Kled (Kleidunn) (Added Barbarian progressions)
 new entry "LOW_HagSurvivor_Kleid"
 type "Character"
 using "LOW_HagSurvivor_Kleid"
-// data "Passives" "AttackOfOpportunity;DarknessRules;Darkvision;MartialAdvantage;UnarmouredDefence_Barbarian;"
-data "Passives" "CX_Barbarian_Boost;CX_Martial_Boost;MartialAdvantage;AttackOfOpportunity;Darkvision;DarknessRules;UnarmouredDefence_Barbarian"
+// data "Progressions" ""
+data "Progressions" "56db8107-e04c-4fe3-94f3-fd4acd44cd4a"
 
 // ==================================== Human ====================================
 
