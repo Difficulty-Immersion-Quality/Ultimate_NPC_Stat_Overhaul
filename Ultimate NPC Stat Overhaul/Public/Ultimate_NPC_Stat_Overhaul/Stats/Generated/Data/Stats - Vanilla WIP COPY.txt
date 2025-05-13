@@ -2851,18 +2851,18 @@ data "Progressions" "56db8107-e04c-4fe3-94f3-fd4acd44cd4a"
 //  │   │   ├─ "Human_Child"
 //  │   │   ├─ "Human_Commoner"
 //  │   │   │   ├─ "END_MindFlayerOutBurstCivilian_02"
-//  │   │   │   ├─ "GLO_Bane"                                   --- Not used
+//  │   │   │   ├─ "GLO_Bane"                                   --- Unused
 //  │   │   │   ├─ "GLO_Mizora"
 //  │   │   │   ├─ "GLO_Volo"
-//  │   │   │   ├─ "GOB_Commoner_Demo"
+//  │   │   │   ├─ "GOB_Commoner_Demo"                          --- Unused
 //  │   │   │   ├─ "Human_Commoner_Cowering"
-//  │   │   │   ├─ "Human_Commoner_Crowd"
+//  │   │   │   ├─ "Human_Commoner_Crowd"                       --- Human Citizen
 //  │   │   │   ├─ "LOW_HouseOfHope_Human_Debtor"
 //  │   │   │   ├─ "LOW_IronThrone_Prisoners_Human"             --- Santoria, Ceres Olsin, Marlono Rhandle - Church of Gond
 //  │   │   │   ├─ "TUT_Victim_Human"
-//  │   │   │   ├─ "WYR_Circus_Statue"                          --- (Is this the sculpture of the player?)
+//  │   │   │   ├─ "WYR_Circus_Statue"                          --- Sculpture (not a hooman at all, except it is and they just gave it a petrified status lmao)
 //  │   │   │   ├─ "WYR_DillardPortyr"                          --- Duke Dillard Portyr
-//  │   │   │   ├─ "WYR_FigaroSister_Naaber"
+//  │   │   │   ├─ "WYR_FigaroSister_Naaber"                    --- Naaber (Way worse than my OG Noober, Cohh Carnage made such a hateable character)
 //  │   │   │   └─ "WYR_VampireSpawns_Human"                    --- Unused  
 
 new entry "_Human"
@@ -2871,22 +2871,21 @@ using "_Human"
 // data "Passives" "AttackOfOpportunity;DarknessRules"
 data "Passives" "HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules"
 
-// Mizora - (Don't know why tf she's under Human)
+// Mizora - (Swapped Wizard progressions for custom Sorcerer progressions, Storm Sorcery seems to be most fitting to avoid Draconic) (added Cambion racials)
 new entry "GLO_Mizora"
 type "Character"
 using "GLO_Mizora"
-// TODO: Custom NPC Sorcerer progressions
 // data "Passives" "AttackOfOpportunity;DarknessRules;Metamagic_Quickened;Metamagic_Twinned;Metamagic_Extended;Metamagic_Distant;Metamagic_Heightened;MagicResistance"
-data "Passives" "CX_Sorcerer_Boost;CX_Magic_Boost;FiendishBlessing;AttackOfOpportunity;DarknessRules;Metamagic_Quickened;Metamagic_Twinned;Metamagic_Extended;Metamagic_Distant;Metamagic_Heightened;MagicResistance"
+data "Passives" "FiendishBlessing;AttackOfOpportunity;DarknessRules;Metamagic_Quickened;Metamagic_Twinned;Metamagic_Extended;Metamagic_Distant;Metamagic_Heightened;MagicResistance"
+// data "Progressions" "44bdbc5e-a003-4d61-87f0-5ced20d3804e"
+data "Progressions" "2189a72d-6489-4621-8b2c-85d3e7df2f6f"
 
-// Volo (Volothamp Geddarm) - Procurer of Associates, Stories, and Curios
+// Volo (Volothamp Geddarm) - Procurer of Associates, Stories, and Curios (Added Wizard progressions, more compliant with source material than Bard)
 new entry "GLO_Volo"
 type "Character"
 using "GLO_Volo"
-// data "SpellCastingAbility" "Intelligence"
-data "SpellCastingAbility" "Charisma"
-// data "Passives" "AttackOfOpportunity;DarknessRules"
-data "Passives" "CX_Bard_Boost;CX_Magic_Boost;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules"
+// data "Progressions" ""
+data "Progressions" "44bdbc5e-a003-4d61-87f0-5ced20d3804e"
 
 new entry "Human_Commoner_Cowering"
 type "Character"
@@ -2894,6 +2893,7 @@ using "Human_Commoner_Cowering"
 // data "Passives" "DarknessRules"
 data "Passives" "HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules"
 
+// Petrified Debtor, Eternal Debtors
 new entry "LOW_HouseOfHope_Human_Debtor"
 type "Character"
 using "LOW_HouseOfHope_Human_Debtor"
@@ -2908,13 +2908,6 @@ using "TUT_Victim_Human"
 data "Progressions" "0e6da493-5a37-423b-8c28-629462b22faa"
 // data "Passives" "DarknessRules"
 data "Passives" "HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules"
-
-// Naaber - aspiring adventurer in Figaro's sister's shop who asks you about all the classes and realizes that multiclassing is a thing
-new entry "WYR_FigaroSister_Naaber"
-type "Character"
-using "WYR_FigaroSister_Naaber"
-// data "Passives" "AttackOfOpportunity;DarknessRules"
-data "Passives" "CX_Martial_Boost;CX_Magic_Boost;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules"
 
 // "_Human"
 //  ├─ "FlamingFist_Human"
@@ -2957,7 +2950,7 @@ new entry "FlamingFist_Human_Melee_Attacker"
 type "Character"
 using "FlamingFist_Human_Melee_Attacker"
 // data "Passives" "AttackOfOpportunity;DarknessRules"
-data "Passives" "CX_Fighter_Boost;CX_Martial_Boost;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules"
+data "Passives" "HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules"
 // data "Progressions" "51d47904-383f-11ed-a261-0242ac120002"
 data "Progressions" "0e6da493-5a37-423b-8c28-629462b22faa"
 
@@ -2990,89 +2983,107 @@ data "Passives" "HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules
 data "Progressions" "f0ede459-8b86-48fd-ac11-4432573566a5"
 
 // "_Human"
-//  ├─ "Human_Caster"
+//  ├─ "Human_Caster"                           --- (Has Wizard progressions)
 //  │   ├─ "CHA_BanditInterior_Human_Caster"
 //  │   ├─ "FOR_Human_Cultist_Zariel_Caster"
-//  │   ├─ "FOR_TrueSoul"                       --- Edowin, Brynna - True Soul of the Absolute, Cult of the Absolute
+//  │   ├─ "FOR_TrueSoul"
 //  │   │   └─ "FOR_TrueSoul_Melee"
 //  │   ├─ "GLO_Elminster"                  
 //  │   ├─ "HAV_Harper_Human_Caster"
 
-new entry "Human_Caster"
-type "Character"
-using "Human_Caster"
-// data "Passives" "AttackOfOpportunity;DarknessRules"
-data "Passives" "CX_Magic_Boost;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules"
-
-// Cefrey - Overgrown Ruin Looters
+// Cefrey - Overgrown Ruin Looters (Inherits Wizard progressions)
 new entry "CHA_BanditInterior_Human_Caster"
 type "Character"
 using "CHA_BanditInterior_Human_Caster"
-// data "Passives" "AttackOfOpportunity;DarknessRules"
-data "Passives" "CX_Wizard_Boost;CX_Magic_Boost;CX_Spells_L1;CX_Spells_L1C;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules"
+// data "Passives" "DarknessRules"
+data "Passives" "CX_Spells_L1;CX_Spells_L1C;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules"
 
-// Cyrel, Fake Tyr Paladins
+// Cyrel, Fake Tyr Paladins (Inherits Wizard progressions)
+// Cahoot: Going above what Zehtuka gave her but I think she deserves lvl 2 spells as well due to this supposed to being one of the harder fights in the Wilderness
 new entry "FOR_Human_Cultist_Zariel_Caster"
 type "Character"
 using "FOR_Human_Cultist_Zariel_Caster"
-// Going above what Zehtuka gave her but I think she deserves lvl 2 spells as well due to this supposed to being one of the harder fights in the Wilderness
 // data "Passives" "AttackOfOpportunity;DarknessRules"
-data "Passives" "CX_Wizard_Boost;CX_Magic_Boost;CX_Spells_L1;CX_Spells_L2;CX_Spells_L1C;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules"
+data "Passives" "CX_Spells_L1;CX_Spells_L2;CX_Spells_L1C;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules"
 
-// Andrick - Novice of the Absolute, Cult of the Absolute
+// Edowin, Brynna - True Soul of the Absolute, Cult of the Absolute (Swapped inherited Wizard progressions for Cleric progressions, already has Wisdom casting ability)
+new entry "FOR_TrueSoul"
+type "Character"
+using "FOR_TrueSoul"
+// data "Progressions" "44bdbc5e-a003-4d61-87f0-5ced20d3804e"
+data "Progressions" "36c3f8de-3293-4d7b-92bc-ceb3c569244b"
+
+// Andrick - Novice of the Absolute, Cult of the Absolute (Inherits added Cleric progressions instead of the vanilla inherited Wizard progressions, both are wrong. Added Fighter progressions)
 new entry "FOR_TrueSoul_Melee"
 type "Character"
 using "FOR_TrueSoul_Melee"
-// data "Passives" "AttackOfOpportunity;DarknessRules"
-data "Passives" "CX_Martial_Boost;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules"
+// data "Progressions" "36c3f8de-3293-4d7b-92bc-ceb3c569244b"
+data "Progressions" "0e6da493-5a37-423b-8c28-629462b22faa"
 
-// Elminster Aumar - Sage of Shadowdale (Or rather his simulacrum)
+// Elminster Aumar - Sage of Shadowdale (Or rather his simulacrum) (Added Wizard progressions, added Evocation subclass, he can keep the insane amount of spell slots from ActionResources, he's Elminster)
 new entry "GLO_Elminster"
 type "Character"
 using "GLO_Elminster"
 // data "Passives" "Alert;EmpoweredEvocation;FocusedConjuration;MagicResistance;SpellSniper_Critical;AttackOfOpportunity;DarknessRules"
-data "Passives" "CX_Wizard_Boost;CX_Wizard_Evocation_Boost;CX_Magic_Boost;CX_Spells_L6;CX_Spells_L6C;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules;Alert;EmpoweredEvocation;FocusedConjuration;MagicResistance;SpellSniper_Critical"
+data "Passives" "CX_Wizard_Evocation_Boost;CX_Spells_L6;CX_Spells_L6C;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules;Alert;EmpoweredEvocation;FocusedConjuration;MagicResistance;SpellSniper_Critical"
+// data "Progressions" ""
+data "Progressions" "44bdbc5e-a003-4d61-87f0-5ced20d3804e"
 
-// Harper Mijah - Harpers
+// Harper Mijah - Harpers (Whole entry is a mistake. Swapping inherited Wizard progressions for Ranger progressions, based stat block off "Human_Ranger")
 new entry "HAV_Harper_Human_Caster"
 type "Character"
 using "HAV_Harper_Human_Caster"
-// data "Passives" "AttackOfOpportunity;DarknessRules"
-data "Passives" "CX_Wizard_Boost;CX_Magic_Boost;CX_Spells_L1;CX_Spells_L2;CX_Spells_L3;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules"
+// data "Dexterity" "10"
+data "Dexterity" "16"
+// data "Constitution" "10"
+data "Constitution" "12"
+// data "Intelligence" "16"
+data "Intelligence" "12"
+// data "Wisdom" "12"
+data "Wisdom" "14"
+// data "SpellCastingAbility" "Intelligence"
+data "SpellCastingAbility" "Wisdom"
+// data "Progressions" "44bdbc5e-a003-4d61-87f0-5ced20d3804e"
+data "Progressions" "f0ede459-8b86-48fd-ac11-4432573566a5"
+// data "ArmorType" "Cloth"
+data "ArmorType" "Leather"
+// data "Proficiency Group" "Darts;Daggers;Slings;LightCrossbows;Quarterstaffs"
+data "Proficiency Group" "MediumArmor;LightArmor;Shields;SimpleWeapons;MartialWeapons"
 
 // "_Human"
 //  ├─ "Human_Caster"
-//  │   ├─ "Human_Bard"
+//  │   ├─ "Human_Bard"                         --- (Has Bard progressions)
 //  │   │   ├─ "EPI_DivineBard"
-//  │   │   ├─ "GLO_Oskar"                      --- Oskar Fevras
-//  │   │   ├─ "LOW_Masked_Bard"                --- Mask of Servitude (The Blushing Mermaid) - (Auntie Ethel victim)
-//  │   │   ├─ "WYR_Circus_Viola"               --- Viola Silvertongue - Circus of the Last Days
-//  │   │   └─ "WYR_SharessCaress_Human_Bard"   --- Mamzell Amira
-
-new entry "Human_Bard"
-type "Character"
-using "Human_Bard"
-// data "Passives" "AttackOfOpportunity;DarknessRules"
-data "Passives" "CX_Bard_Boost;CX_Magic_Boost;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules"
+//  │   │   ├─ "GLO_Oskar"
+//  │   │   ├─ "LOW_Masked_Bard"                --- Mask of Servitude (The Blushing Mermaid) - (Auntie Ethel victim) (Inherits Bard progressions)
+//  │   │   ├─ "WYR_Circus_Viola"               --- Viola Silvertongue - Circus of the Last Days (Inherits Bard progressions)
+//  │   │   └─ "WYR_SharessCaress_Human_Bard"   --- Mamzell Amira (Inherits Bard progressions)
 
 // Milil - (minor deity of song)
 new entry "EPI_DivineBard"
 type "Character"
 using "EPI_DivineBard"
 // data "Passives" "AttackOfOpportunity;DarknessRules;ImmutableForm"
-data "Passives" "CX_Bard_Boost;CX_Magic_Boost;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules;ImmutableForm"
+data "Passives" "HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules;ImmutableForm"
+
+// Oskar Fevras (Inherits Bard progressions, added College of Lore subclass as he's clearly not martial in any way)
+new entry "GLO_Oskar"
+type "Character"
+using "Human_Bard"
+// data "Passives" "HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules"
+data "Passives" "CX_Bard_Lore_Boost;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules"
 
 // "_Human"
 //  ├─ "Human_Caster"
 //  │   ├─ "Human_Cultist_Myrkul_MasterOfSouls"
-//  │   │   └─ "MOO_MasterOfSouls"                      --- Mistress of Souls, Willinx Jindlebee, Sarabayle, Duckie Verish - Mistress of Souls, Cult of Myrkul
+//  │   │   └─ "MOO_MasterOfSouls"                      --- Mistress of Souls, Willinx Jindlebee, Sarabayle, Duckie Verish - Mistress of Souls, Cult of Myrkul (Inherits swapped Warlock progressions)
 //  │   ├─ "Human_Cultist_Myrkul_SkullLasher"
 //  │   ├─ "Human_Cultist_Umberlee_Untaken"
 //  │   │   ├─ "Human_Cultist_Umberlee_DarkBreaker"
 //  │   │   ├─ "Human_Cultist_Umberlee_FloodTide"
 //  │   │   └─ "Human_Cultist_Umberlee_SavageSeawind"
 
-// Kressa Bonedaughter, Susdera, Radija - Mistress of Souls, Cult of Myrkul (Make them Warlocks > Wizards)
+// Kressa Bonedaughter, Susdera, Radija - Mistress of Souls, Cult of Myrkul (Wizard progressions swapped for Warlock progressions)
 new entry "Human_Cultist_Myrkul_MasterOfSouls"
 type "Character"
 using "Human_Cultist_Myrkul_MasterOfSouls"
@@ -3087,7 +3098,7 @@ data "Progressions" "51274504-865d-46d1-b6a3-2ec784934a90"
 // data "Passives" "ExtraAttack;GraveMagic;AttackOfOpportunity;DarknessRules"
 data "Passives" "CX_Spells_L4;CX_Spells_L2C;CX_Spells_L3C;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules;ExtraAttack;GraveMagic"
 
-// Maghtew Budj - Skull Lasher, Cult of Myrkul
+// Maghtew Budj - Skull Lasher, Cult of Myrkul (Inherits Wizard progressions, added Necromancy School subclass)
 new entry "Human_Cultist_Myrkul_SkullLasher"
 type "Character"
 using "Human_Cultist_Myrkul_SkullLasher"
@@ -3099,7 +3110,7 @@ data "Passives" "CX_Wizard_Necromancy_Boost;CX_Spells_L4;CX_Spells_L3C;HumanMili
 // Response: Goon here to say I did not do that kekw, but they needed swapping from Wizard progressions anyway, will look again later.
 // They also already have Wisdom as their casting modifier thankfully.
 
-// Umberlee Untaken: Untaken Padulla, Untaken Zastreya, Untaken Fitzy Relma, Untaken Diomira Trellis, Untaken Glone - Church of Umberlee
+// Umberlee Untaken: Untaken Padulla, Untaken Zastreya, Untaken Fitzy Relma, Untaken Diomira Trellis, Untaken Glone - Church of Umberlee (Swapped Wizard progressions to Cleric progressions, they already use Wisdom as their casting ability)
 new entry "Human_Cultist_Umberlee_Untaken"
 type "Character"
 using "Human_Cultist_Umberlee_Untaken"
@@ -3108,13 +3119,13 @@ data "Passives" "CX_Cleric_Tempest_Boost;AttackOfOpportunity;HumanMilitia;HumanV
 // data "Progressions" "44bdbc5e-a003-4d61-87f0-5ced20d3804e"
 data "Progressions" "36c3f8de-3293-4d7b-92bc-ceb3c569244b"
 
-// Flood Tide Allandra Grey - Flood Tide Wavemistress of Umberlee, Church of Umberlee
+// Flood Tide Allandra Grey - Flood Tide Wavemistress of Umberlee, Church of Umberlee (Inherits swapped Cleric progressions, added Martial boost)
 new entry "Human_Cultist_Umberlee_FloodTide"
 type "Character"
 using "Human_Cultist_Umberlee_FloodTide"
 data "Passives" "CX_Cleric_Tempest_Boost;CX_Martial_Boost;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules;DualWielder_BonusAC;DualWielder_PassiveBonuses;ImmuneToWadableWater;MagicResistance"
 
-// Savage Seawind: Seawind Tinsy Ralpp, Seawind Dulse, Seawind Raheni, Seawind Star Stolitti, Holli Dylford, Seawind Flan Hawser, Seawind Slow-Boat Drubella - Church of Umberlee
+// Savage Seawind: Seawind Tinsy Ralpp, Seawind Dulse, Seawind Raheni, Seawind Star Stolitti, Holli Dylford, Seawind Flan Hawser, Seawind Slow-Boat Drubella - Church of Umberlee (Inherits swapped Cleric progressions, added Martial boost)
 new entry "Human_Cultist_Umberlee_SavageSeawind"
 type "Character"
 using "Human_Cultist_Umberlee_SavageSeawind"
@@ -3123,21 +3134,22 @@ data "Passives" "CX_Cleric_Tempest_Boost;CX_Martial_Boost;HumanMilitia;HumanVers
 
 // "_Human"
 //  ├─ "Human_Caster"
-//  │   ├─ "Human_Druid"
-//  │   │   ├─ "DEN_Druids_Human_Druid"     --- Karrik, Elwyn - Circle of the Emerald Grove
-//  │   │   ├─ "HAV_Harper_Human_Druid"     --- Harper Chenti - Harpers
-//  │   │   └─ "Human_Druid_Strong"
-//  │   │       └─ "DEN_Rath"               --- Rath, one of the sane Druids in the Emerald Grove
+//  │   ├─ "Human_Druid"                    --- (Has Druid progressions)
+//  │   │   ├─ "DEN_Druids_Human_Druid"     --- Karrik, Elwyn - Circle of the Emerald Grove (Inherits Druid progressions)
+//  │   │   ├─ "HAV_Harper_Human_Druid"     --- Harper Chenti - Harpers (Inherits Druid progressions)
+//  │   │   └─ "Human_Druid_Strong"         --- (Has Druid progressions)
+//  │   │       └─ "DEN_Rath"
 
-new entry "Human_Druid"
+// Rath - Circle of the Emerald Grove (Inherits Druid progressions, added Circle of the Land subclass because he's heavily kitted toward being a caster)
+new entry "DEN_Rath"
 type "Character"
-using "Human_Druid"
-// data "Passives" "AttackOfOpportunity;DarknessRules"
-data "Passives" "HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules"
+using "DEN_Rath"
+// data "Passives" "HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules"
+data "Passives" "CX_Druid_Land_Boost;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules"
 
 // "_Human"
 //  ├─ "Human_Caster"
-//  │   ├─ "Human_FFist_Caster"                             --- Unused
+//  │   ├─ "Human_FFist_Caster"                             --- Unused (Inherits Wizard progressions)
 //  │   ├─ "LOW_Amelyssan"
 //  │   ├─ "LOW_AradinThug_Wizzard"
 //  │   ├─ "LOW_CazadorsPalace_GuardTower_Human_Caster"
@@ -3146,7 +3158,7 @@ data "Passives" "HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules
 //  │   ├─ "LOW_Florrick_Fallback"
 //  │   ├─ "LOW_Golbraith"
 
-// Echo of Amelyssan - Bhaalspawn (Progressions swapped to Cleric from Wizard)
+// Echo of Amelyssan - Bhaalspawn (Progressions swapped from Wizard to Cleric, SuperiorDarkvision added)
 new entry "LOW_Amelyssan"
 type "Character"
 using "LOW_Amelyssan"
@@ -3155,42 +3167,50 @@ data "Passives" "CX_Spells_L5C;CX_Spells_L6C;HumanMilitia;HumanVersatility;Attac
 // data "Progressions" "44bdbc5e-a003-4d61-87f0-5ced20d3804e"
 data "Progressions" "36c3f8de-3293-4d7b-92bc-ceb3c569244b"
 
-// Thunderstorm Sue - Aradin's mercenary crew (Wizzard)
+// Thunderstorm Sue - Aradin's mercenary crew (Inherits Wizzard progressions)
 new entry "LOW_AradinThug_Wizzard"
 type "Character"
 using "LOW_AradinThug_Wizzard"
 // data "Passives" "AttackOfOpportunity;DarknessRules"
 data "Passives" "CX_Spells_L4;CX_Spells_L4C;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules"
 
-// Reklan - Szarr Palace
+// Reklan - Szarr Palace (Inherits Wizard progressions)
 new entry "LOW_CazadorsPalace_GuardTower_Human_Caster"
 type "Character"
 using "LOW_CazadorsPalace_GuardTower_Human_Caster"
 // data "Passives" "AttackOfOpportunity;DarknessRules"
 data "Passives" "CX_Spells_L6;CX_Spells_L6C;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules"
 
-// Avery Sonshal, Clerk Tamara - Cult of Bane
+// Avery Sonshal, Clerk Tamara - Cult of Bane (Inherits Wizard progressions)
 new entry "LOW_FelogyrFireworks_AverySonshal"
 type "Character"
 using "LOW_FelogyrFireworks_AverySonshal"
 // data "Passives" "AttackOfOpportunity;DarknessRules"
 data "Passives" "CX_Spells_L5;CX_Spells_L5C;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules"
 
-// Wanda Tullermoor - Retinue under Florrick
+// Wanda Tullermoor - Retinue under Florrick (Replacing inherited Wizard progressions with custom Sorcerer progressions, added Storm Sorcery subclass, she just looks kinda gangsta got the dawg in her I dunno we need more Sorcerers)
 new entry "LOW_FlorrickGoon_Caster"
 type "Character"
 using "LOW_FlorrickGoon_Caster"
+// data "Intelligence" "18"
+data "Intelligence" "10"
+// data "Charisma" "10"
+data "Charisma" "18"
+// data "SpellCastingAbility" "Intelligence"
+data "SpellCastingAbility" "Charisma"
 // data "Passives" "AttackOfOpportunity;DarknessRules;WarCaster_Bonuses;WarCaster_OpportunitySpell"
-data "Passives" "CX_Spells_L5;CX_Spells_L5C;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules;WarCaster_Bonuses;WarCaster_OpportunitySpell"
+data "Passives" "CX_Sorcerer_StormSorcery_Boost;CX_Spells_L5;CX_Spells_L5C;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules;WarCaster_Bonuses;WarCaster_OpportunitySpell"
+// data "Progressions" "44bdbc5e-a003-4d61-87f0-5ced20d3804e"
+data "Progressions" "2189a72d-6489-4621-8b2c-85d3e7df2f6f"
 
-// Cordula Eltan - Flaming Fist (Florrick replacement)
+// Cordula Eltan - Flaming Fist (Florrick replacement) (Inherits Wizard progressions)
 new entry "LOW_Florrick_Fallback"
 type "Character"
 using "LOW_Florrick_Fallback"
 // data "Passives" "AttackOfOpportunity;DarknessRules;ModeratelyArmored"
 data "Passives" "CX_Spells_L6;CX_Spells_L6C;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules;ModeratelyArmored"
 
-// Golbraith Stredivas - retired mind flayer hunter (Fixed subclass, already has Sculpt Spells so might as well be Evocation school)
+// Golbraith Stredivas - retired mind flayer hunter (Inherits Wizard progressions, added Evocation School subclass)
 new entry "LOW_Golbraith"
 type "Character"
 using "LOW_Golbraith"
@@ -3201,7 +3221,7 @@ data "Passives" "CX_Wizard_Evocation_Boost;CX_Spells_L6;CX_Spells_L6C;HumanMilit
 //  ├─ "Human_Caster"
 //  │   ├─ "LOW_HagSurvivor_Adrielle"
 //  │   ├─ "LOW_HagSurvivor_Human_Caster"
-//  │   ├─ "LOW_Hardvard"                                   --- Harvard Willoughby - comedian at the Elfsong
+//  │   ├─ "LOW_Hardvard"                                   --- Harvard Willoughby - comedian at the Elfsong (Inherits Wizard progressions)
 //  │   ├─ "LOW_HouseOfGrief_Cultist_Caster_Human"
 //  │   ├─ "LOW_Human_FelogyrFireworks_AlchemichalWorker"
 //  │   ├─ "LOW_RamazithsTower_Lorroakan"
@@ -3209,30 +3229,38 @@ data "Passives" "CX_Wizard_Evocation_Boost;CX_Spells_L6;CX_Spells_L6C;HumanMilit
 //  │   ├─ "LOW_RamazithsTower_PuzzleGuardian"              --- Lorroakan's Projection
 //  │   ├─ "LOW_RamazithsTower_PuzzleGuardian_Punisher"     --- Lorroakan's Projection
 //  │   ├─ "LOW_StormshoreTabernacle_Gods"
-//  │   ├─ "LOW_Tolna"                                      --- Tolna Tome-Monger - merchant in Sorcerous Sundries
+//  │   ├─ "LOW_Tolna"                                      --- Tolna Tome-Monger - merchant in Sorcerous Sundries (Inherits Wizard progressions)
 
-// Adrielle - Cleric of Helm, Anti-Hag Support Group
+// Adrielle - Cleric of Helm, Anti-Hag Support Group (Has Cleric progressions, added War Domain subclass)
 new entry "LOW_HagSurvivor_Adrielle"
 type "Character"
 using "LOW_HagSurvivor_Adrielle"
 // data "Passives" "AttackOfOpportunity;DarknessRules;WarPriest;Guided_Strike;WarGodsBlessing"
-data "Passives" "CX_Cleric_Boost;CX_Magic_Boost;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules;WarPriest;Guided_Strike;WarGodsBlessing"
+data "Passives" "CX_Cleric_War_Boost;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules;WarPriest;Guided_Strike;WarGodsBlessing"
 
-// Aideen Ni Chuirc - Leader of the Dead Eyes
+// Aideen Ni Chuirc - Leader of the Dead Eyes (Swapping inherited Wizard progressions for custom Sorcerer progressions, just to spread more Sorcerers around)
 new entry "LOW_HagSurvivor_Human_Caster"
 type "Character"
 using "LOW_HagSurvivor_Human_Caster"
+// data "Intelligence" "16"
+data "Intelligence" "10"
+// data "Charisma" "10"
+data "Charisma" "16"
+// data "SpellCastingAbility" "Intelligence"
+data "SpellCastingAbility" "Charisma"
 // data "Passives" "AttackOfOpportunity;DarknessRules"
-data "Passives" "CX_Wizard_Boost;CX_Magic_Boost;CX_Spells_L4;CX_Spells_L4C;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules"
+data "Passives" "CX_Spells_L4;CX_Spells_L4C;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules"
+// data "Progressions" "44bdbc5e-a003-4d61-87f0-5ced20d3804e"
+data "Progressions" "2189a72d-6489-4621-8b2c-85d3e7df2f6f"
 
-// Sharran Fidelians: Sharran Fidelian Gydd, Sharran Fidelian Hyrald, Sharran Fidelian Uttermask - Church of Shar
+// Sharran Fidelians: Sharran Fidelian Gydd, Sharran Fidelian Hyrald, Sharran Fidelian Uttermask - Church of Shar (Inherits Wizard progressions)
 new entry "LOW_HouseOfGrief_Cultist_Caster_Human"
 type "Character"
 using "LOW_HouseOfGrief_Cultist_Caster_Human"
 // data "Passives" "AttackOfOpportunity;DarknessRules;LOW_HouseOfGrief_Cultists_Sight;LOW_HouseOfGrief_Cultists_Melee;"
-data "Passives" "CX_Wizard_Boost;CX_Magic_Boost;CX_Spells_L3;CX_Spells_L4;CX_Spells_L3C;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules;LOW_HouseOfGrief_Cultists_Sight;LOW_HouseOfGrief_Cultists_Melee;"
+data "Passives" "CX_Spells_L3;CX_Spells_L4;CX_Spells_L3C;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules;LOW_HouseOfGrief_Cultists_Sight;LOW_HouseOfGrief_Cultists_Melee;"
 
-// Chymist Norffe, Limeburn Spaghwood - Cult of Bane (Given the spell list they possess, and their spooky attire, they make decent Warlock candidates)
+// Chymist Norffe, Limeburn Spaghwood - Cult of Bane (Wizard progressions swapped for Warlock progressions. Given the spell list they possess, and their spooky attire, they make decent Warlock candidates)
 new entry "LOW_Human_FelogyrFireworks_AlchemichalWorker"
 type "Character"
 using "LOW_Human_FelogyrFireworks_AlchemichalWorker"
@@ -3247,12 +3275,12 @@ data "Progressions" "51274504-865d-46d1-b6a3-2ec784934a90"
 // data "Passives" "AttackOfOpportunity;DarknessRules"
 data "Passives" "CX_Warlock_Boost;CX_Magic_Boost;CX_Spells_L3;CX_Spells_L2C;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules"
 
-// Lorroakan
+// Lorroakan (Inherits Wizard progressions, added Evocation School subclass) (Due to his usage of Elemental Retort removing Attack Of Opportunity is wise)
 new entry "LOW_RamazithsTower_Lorroakan"
 type "Character"
 using "LOW_RamazithsTower_Lorroakan"
 // data "Passives" "DarknessRules;LOW_RamazithsTower_ElementalSiphon;LOW_RamazithsTower_ElementalRebuke;SculptSpells;PotentCantrip;EmpoweredEvocation"
-data "Passives" "CX_Wizard_Boost;CX_Wizard_Evocation_Boost;CX_Magic_Boost;CX_Spells_L5;CX_Spells_L6;CX_Spells_L6C;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules;LOW_RamazithsTower_ElementalSiphon;LOW_RamazithsTower_ElementalRebuke;SculptSpells;PotentCantrip;EmpoweredEvocation"
+data "Passives" "CX_Wizard_Evocation_Boost;CX_Spells_L5;CX_Spells_L6;CX_Spells_L6C;HumanMilitia;HumanVersatility;DarknessRules;LOW_RamazithsTower_ElementalSiphon;LOW_RamazithsTower_ElementalRebuke;SculptSpells;PotentCantrip;EmpoweredEvocation"
 
 // God shrines in Stormshore Tabernacle - (Removing inheritance from Human_Caster)
 new entry "LOW_StormshoreTabernacle_Gods"
@@ -3261,33 +3289,32 @@ using "LOW_StormshoreTabernacle_Gods"
 // data "Passives" "AttackOfOpportunity;DarknessRules"
 data "Passives" "AttackOfOpportunity;DarknessRules"
 
-// Sparks Musgravel - The Guild (Guards the Guildhall entrance in the Lower City)
-new entry "LOW_Undercellar_Entrance_Human_Caster"
-type "Character"
-using "LOW_Undercellar_Entrance_Human_Caster"
-// data "Passives" "AttackOfOpportunity;DarknessRules"
-data "Passives" "CX_Wizard_Boost;CX_Magic_Boost;CX_Spells_L5;CX_Spells_L5C;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules"
-
 // "_Human"
 //  ├─ "Human_Caster"
 //  │   ├─ "LOW_Undercellar_Entrance_Human_Caster"
-//  │   ├─ "MOO_TrapRezTarget"                              --- Balthazar summon?
+//  │   ├─ "MOO_TrapRezTarget"                              --- Balthazar's Apprentice & Corpse (Balthazar summon?)
 //  │   ├─ "PLA_Zhent_Recruit_Human_Caster"
 //  │   ├─ "SCE_FlamingFist_Human_Caster"
-//  │   ├─ "SCL_SeluneCleric"                               --- Unused
+//  │   ├─ "SCL_SeluneCleric"
 //  │   ├─ "SHA_Necromancer"
 //  │   ├─ "WYR_Gortash"
 //  │   ├─ "WYR_MessHallBodyguard_09"
 //  │   └─ "WYR_SmugglersCave_Human_Caster"
 //  │       └─ "WYR_SmugglersCave_Human_Caster_2"
 
-// Salazon - Zhentarim (Guy guarding entrance to the Zhentarim hideout beneath Waukeen's Rest)
-// Keeping Evocation boost because his introduction is threatening to blow up the place with fire
+// Sparks Musgravel - The Guild (Guards the Guildhall entrance in the Lower City) (Inherits Wizard progressions)
+new entry "LOW_Undercellar_Entrance_Human_Caster"
+type "Character"
+using "LOW_Undercellar_Entrance_Human_Caster"
+// data "Passives" "AttackOfOpportunity;DarknessRules"
+data "Passives" "CX_Magic_Boost;CX_Spells_L5;CX_Spells_L5C;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules"
+
+// Salazon - Zhentarim (Guy guarding entrance to the Zhentarim hideout beneath Waukeen's Rest) (Inherits Wizard progressions. Cahoot: Keeping Evocation boost because his introduction is threatening to blow up the place with fire)
 new entry "PLA_Zhent_Recruit_Human_Caster"
 type "Character"
 using "PLA_Zhent_Recruit_Human_Caster"
 // data "Passives" "AttackOfOpportunity;DarknessRules"
-data "Passives" "CX_Wizard_Boost;CX_Wizard_Evocation_Boost;CX_Magic_Boost;CX_Spells_L1;CX_Spells_L2;CX_Spells_L3;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules"
+data "Passives" "CX_Wizard_Evocation_Boost;CX_Spells_L1;CX_Spells_L2;CX_Spells_L3;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules"
 
 // Flaming Fist (Inherits Wizard progressions)
 new entry "SCE_FlamingFist_Human_Caster"
@@ -3296,7 +3323,7 @@ using "SCE_FlamingFist_Human_Caster"
 // data "Passives" "AttackOfOpportunity;DarknessRules"
 data "Passives" "CX_Spells_L2;CX_Spells_L3;CX_Spells_L4;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules"
 
-// (Swapped from "NPC_Wizard" to "NPC_Cleric")
+// Unused (Swapped Wizard progressions to Cleric progressions)
 new entry "SCL_SeluneCleric"
 type "Character"
 using "SCL_SeluneCleric"
@@ -3306,25 +3333,27 @@ data "Intelligence" "12"
 data "Wisdom" "16"
 // data "Progressions" "44bdbc5e-a003-4d61-87f0-5ced20d3804e"
 data "Progressions" "36c3f8de-3293-4d7b-92bc-ceb3c569244b"
-// data "Passives" "AttackOfOpportunity;DarknessRules"
-data "Passives" "CX_Wizard_Boost;CX_Magic_Boost;CX_Spells_L1;CX_Spells_L1C;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules"
 
-// Balthazar - Commander of the Reborn Dead - HONOUR MODE INHERITANCE
+// Balthazar - Commander of the Reborn Dead - HONOUR MODE INHERITANCE (Added Wizard progressions, added Necromancy School subclass)
 new entry "SHA_Necromancer"
 type "Character"
 using "SHA_Necromancer"
 // data "Passives" "Alert;GrimHarvest;GraveMagic;TurnResistance;ImmuneToControlUndead;AttackOfOpportunity;DarknessRules"
 // data "Passives" "Alert;GrimHarvest;GraveMagic;TurnResistance;ImmuneToControlUndead;AttackOfOpportunity;DarknessRules;LegendaryAction_SHA_Necromancer_SpectralForm;LegendaryAction_SHA_Necromancer_LandOfTheDead;LegendaryAction_SHA_Necromancer_SpectralForm_Technical"
-data "Passives" "CX_Wizard_Boost;CX_Wizard_Necromancy_Boost;CX_Magic_Boost;CX_Spells_L4;CX_Spells_L5;CX_Spells_L5C;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules;Alert;GrimHarvest;GraveMagic;TurnResistance;ImmuneToControlUndead;LegendaryAction_SHA_Necromancer_SpectralForm;LegendaryAction_SHA_Necromancer_LandOfTheDead;LegendaryAction_SHA_Necromancer_SpectralForm_Technical"
+data "Passives" "CX_Wizard_Necromancy_Boost;CX_Spells_L4;CX_Spells_L5;CX_Spells_L5C;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules;Alert;GrimHarvest;GraveMagic;TurnResistance;ImmuneToControlUndead;LegendaryAction_SHA_Necromancer_SpectralForm;LegendaryAction_SHA_Necromancer_LandOfTheDead;LegendaryAction_SHA_Necromancer_SpectralForm_Technical"
+// data "Progressions" ""
+data "Progressions" "44bdbc5e-a003-4d61-87f0-5ced20d3804e"
 
-// Lord Enver Gortash - Archduke Nominee (Not gonna change his phase 1 stats entry too much either.)
+// Lord Enver Gortash - Archduke Nominee (His legendary/honour mode stuff is not added directly to the character entry) (Swapped Wizard progressions to Rogue progressions, added Arcane Trickster subclass)
 new entry "WYR_Gortash"
 type "Character"
 using "WYR_Gortash"
 // data "Passives" "DarkDevotion;MagicResistance;CrossbowExpert_PointBlank;ImmuneToDisarm;AttackOfOpportunity;DarknessRules;WYR_Gortash_Gortane"
-data "Passives" "CX_Rogue_Boost;CX_Martial_Boost;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules;WYR_Gortash_Gortane;DarkDevotion;MagicResistance;CrossbowExpert_PointBlank;ImmuneToDisarm"
+data "Passives" "CX_Rogue_ArcaneTrickster_Boost;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules;WYR_Gortash_Gortane;DarkDevotion;MagicResistance;CrossbowExpert_PointBlank;ImmuneToDisarm"
+// data "Progressions" "44bdbc5e-a003-4d61-87f0-5ced20d3804e"
+data "Progressions" "532203c2-7bcb-4162-9a7c-2bb20e227a30"
 
-// Lord Portyr's Attendant (This guy is definitely giving Sorcerer vibes)
+// Lord Portyr's Attendant (Swapped from Wizard progressions to Sorcerer progressions, because he has a twirled mustache) //TODO: Don't add metamagic directly to character entries
 new entry "WYR_MessHallBodyguard_09"
 type "Character"
 using "WYR_MessHallBodyguard_09"
@@ -3334,23 +3363,24 @@ data "Intelligence" "10"
 data "Charisma" "18"
 // data "SpellCastingAbility" "Intelligence"
 data "SpellCastingAbility" "Charisma"
-// TODO: Custom NPC Sorcerer progressions
 // data "Passives" "AttackOfOpportunity;DarknessRules"
-data "Passives" "CX_Sorcerer_Boost;CX_Magic_Boost;CX_Spells_L5;CX_Spells_L5C;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules;Goon_Metamagic_Careful_NPC;Goon_Metamagic_Heightened_NPC"
+data "Passives" "CX_Spells_L5;CX_Spells_L5C;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules;Goon_Metamagic_Careful_NPC;Goon_Metamagic_Heightened_NPC"
+// data "Progressions" "44bdbc5e-a003-4d61-87f0-5ced20d3804e"
+data "Progressions" "2189a72d-6489-4621-8b2c-85d3e7df2f6f"
 
-// Blunt Skuncher - Envoys of the Stone Lord (GOAT name)
+// Blunt Skuncher - Envoys of the Stone Lord (GOAT name) (Inherits Wizard progressions, added Evocation School subclass)
 new entry "WYR_SmugglersCave_Human_Caster"
 type "Character"
 using "WYR_SmugglersCave_Human_Caster"
 // data "Passives" "AttackOfOpportunity;DarknessRules;SculptSpells;PotentCantrip"
-data "Passives" "CX_Magic_Boost;CX_Magic_Boost;CX_Spells_L3;CX_Spells_L4;CX_Spells_L4C;CX_Spells_L5;CX_Spells_L5C;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules;SculptSpells;PotentCantrip"
+data "Passives" "CX_Wizard_Evocation_Boost;CX_Spells_L3;CX_Spells_L4;CX_Spells_L4C;CX_Spells_L5;CX_Spells_L5C;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules;SculptSpells;PotentCantrip"
 
-// Charming Latham - The Guild
+// Charming Latham - The Guild (Inherits Wizard progressions, added Evocation School subclass)
 new entry "WYR_SmugglersCave_Human_Caster_2"
 type "Character"
 using "WYR_SmugglersCave_Human_Caster_2"
 // data "Passives" "AttackOfOpportunity;DarknessRules;SculptSpells"
-data "Passives" "CX_Wizard_Boost;CX_Magic_Boost;CX_Spells_L3;CX_Spells_L4;CX_Spells_L4C;CX_Spells_L5;CX_Spells_L5C;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules;SculptSpells"
+data "Passives" "CX_Wizard_Evocation_Boost;CX_Spells_L3;CX_Spells_L4;CX_Spells_L4C;CX_Spells_L5;CX_Spells_L5C;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules;SculptSpells"
 
 // "_Human"
 //  ├─ "Human_Melee"
@@ -3401,7 +3431,7 @@ using "END_CityWatchMelee_Human"
 // data "Passives" "AttackOfOpportunity;DarknessRules;FightingStyle_GreatWeaponFighting;GreatWeaponMaster_BonusAttack;GreatWeaponMaster_BonusDamage"
 data "Passives" "CX_Fighter_Boost;CX_Martial_Boost;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules;FightingStyle_GreatWeaponFighting;GreatWeaponMaster_BonusAttack;GreatWeaponMaster_BonusDamage"
 
-// Anders - Sword of Tyr, Fake Tyr Paladins (He was given increased Charisma but spellcasting ability wasn't changed
+// Anders - Sword of Tyr, Fake Tyr Paladins (Has Paladin progressions but not Charisma for his spellcasting ability despite having higher Charisma)
 // Note that if using Luma's Encounters Enhanced mod then he gets Oath of Conquest abilities too. Keeping Oathbreaker subclass because it still fits fairly well
 new entry "FOR_Human_Cultist_Zariel_Paladin"
 type "Character"
@@ -3409,7 +3439,7 @@ using "FOR_Human_Cultist_Zariel_Paladin"
 // data "SpellCastingAbility" "Intelligence"
 data "SpellCastingAbility" "Charisma"
 // data "Passives" "AttackOfOpportunity;DarknessRules"
-data "Passives" "CX_Paladin_Boost;CX_Paladin_Oathbreaker_Boost;CX_Martial_Boost;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules"
+data "Passives" "CX_Paladin_Oathbreaker_Boost;CX_Martial_Boost;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules"
 
 // Fist Marcus - Agent of the Absolute, Cult of the Absolute
 new entry "HAV_Marcus"
