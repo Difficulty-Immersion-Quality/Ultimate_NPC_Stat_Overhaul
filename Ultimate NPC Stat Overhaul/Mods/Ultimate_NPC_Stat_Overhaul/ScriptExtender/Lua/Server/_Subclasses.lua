@@ -1,10 +1,8 @@
-local ModTable = "Ultimate_NPC_Stat_Overhaul"
+local SubclassData = ModVars.SubclassData or {}
+ModVars.SubclassData = SubclassData
+SubclassData.AssignedSubclasses = SubclassData.AssignedSubclasses or {}
 
-if Mods == nil then Mods = {} end
-if Mods[ModTable] == nil then Mods[ModTable] = {} end
-if Mods[ModTable].PersistentVars == nil then Mods[ModTable].PersistentVars = {} end
-
-Mods[ModTable].ClassData = {
+local ClassData = {
     Barbarian = {
         MainPassive = "CX_Barbarian_Boost",
         SubclassTable = {
@@ -126,50 +124,48 @@ Mods[ModTable].ClassData = {
 }
 
 Ext.Osiris.RegisterListener("LevelGameplayStarted", 2, "after", function(level, _)
+    local assigned = ModVars.AssignedSubclasses or {}
+    ModVars.AssignedSubclasses = assigned
+
     for _, entity in ipairs(Ext.Entity.GetAllEntitiesWithComponent("ServerCharacter")) do
         local charID = entity.Uuid and entity.Uuid.EntityUuid or entity
         if charID then
-            for class, data in pairs(Mods[ModTable].ClassData) do
-                if data.MainPassive and Osi.HasPassive(charID, data.MainPassive) == 1 then
-                    local charLevel = Osi.GetLevel(charID)
-                    local unlockLevel = data.SubclassUnlockLevel or 3
 
-                    if charLevel >= unlockLevel then
-                        Mods[ModTable].PersistentVars.AssignedSubclasses = Mods[ModTable].PersistentVars.AssignedSubclasses or {}
-                        local stored = Mods[ModTable].PersistentVars.AssignedSubclasses[charID]
-                        local charName = Osi.GetDisplayName(charID) or "Unknown"
+        for class, data in pairs(ClassData) do
+            if data.MainPassive and Osi.HasPassive(charID, data.MainPassive) == 1 then
+                local charLevel = Osi.GetLevel(charID)
+                local unlockLevel = data.SubclassUnlockLevel or 3
 
-                        -- Detect the actual subclass passive currently applied
-                        local found
-                        for _, subclass in ipairs(data.SubclassTable) do
-                            if Osi.HasPassive(charID, subclass) == 1 then
-                                found = subclass
-                                break
-                            end
+                if charLevel >= unlockLevel then
+                    local stored = assigned[charID]
+                    local charName = Osi.GetDisplayName(charID) or "Unknown"
+
+                    local found
+                    for _, subclass in ipairs(data.SubclassTable) do
+                        if Osi.HasPassive(charID, subclass) == 1 then
+                            found = subclass
+                            break
                         end
+                    end
 
-                        if stored and found then
-                            if stored ~= found then
-                                -- Mismatch detected — update PersistentVars to match backend
-                                Mods[ModTable].PersistentVars.AssignedSubclasses[charID] = found
-                                Ext.Utils.Print("[SUBCLASS] Mismatch detected for " .. charName .. " (" .. charID .. "). Updated stored subclass to: " .. found)
-                            end
-                        elseif stored and not found then
-                            -- Stored but missing on character — reapply
-                            Osi.AddPassive(charID, stored)
-                            Ext.Utils.Print("[SUBCLASS] Reapplied stored subclass to " .. charName .. " (" .. charID .. "): " .. stored)
-                        elseif not stored and found then
-                            -- Passive present but not stored — store it
-                            Mods[ModTable].PersistentVars.AssignedSubclasses[charID] = found
-                            Ext.Utils.Print("[SUBCLASS] Found subclass on " .. charName .. " (" .. charID .. "), storing: " .. found)
-                        else
-                            -- No stored or found subclass — roll and assign new one
-                            local roll = math.random(1, #data.SubclassTable)
-                            local selectedSubclass = data.SubclassTable[roll]
-                            Mods[ModTable].PersistentVars.AssignedSubclasses[charID] = selectedSubclass
-                            Osi.AddPassive(charID, selectedSubclass)
-                            Ext.Utils.Print("[SUBCLASS] Assigned new subclass to " .. charName .. " (" .. charID .. "): " .. selectedSubclass)
-                        end
+                    if stored and found and stored ~= found then
+                        assigned[charID] = found
+                        Ext.Utils.Print(string.format("[SUBCLASS] Mismatch for %s (%s). Updated stored subclass to: %s", charName, charID, found))
+
+                    elseif stored and not found then
+                        Osi.AddPassive(charID, stored)
+                        Ext.Utils.Print(string.format("[SUBCLASS] Reapplied stored subclass to %s (%s): %s", charName, charID, stored))
+
+                    elseif not stored and found then
+                        assigned[charID] = found
+                        Ext.Utils.Print(string.format("[SUBCLASS] Found subclass on %s (%s), storing: %s", charName, charID, found))
+
+                    elseif not stored and not found then
+                        local roll = math.random(1, #data.SubclassTable)
+                        local selected = data.SubclassTable[roll]
+                        assigned[charID] = selected
+                        Osi.AddPassive(charID, selected)
+                        Ext.Utils.Print(string.format("[SUBCLASS] Assigned new subclass to %s (%s): %s", charName, charID, selected))
                     end
                 end
             end
