@@ -4078,7 +4078,7 @@ data "Progressions" "0e6da493-5a37-423b-8c28-629462b22faa"
 //  │   │       │   ├─ "LOW_KoboldGang_Melee"           --- (Inherits added Rogue progressions)
 //  │   │       │   └─ "WYR_Kobold_Popper"
 //  │   │       └─ "Kobold_Ranger"
-//  │   │           └─ "LOW_KoboldGang_Ranger"          --- Unused?
+//  │   │           └─ "LOW_KoboldGang_Ranger"          --- Unused (Inherits Ranger progressions)
 
 // Koll the Red / Kobold Inventor (There is like 2 in the whole game, with 1 being a trader) (Sorcerer progressions added, Wild Magic subclass added)
 new entry "Kobold_Inventor"
@@ -4109,16 +4109,14 @@ using "LOW_KoboldGangLeader"
 // data "Passives" "PackTactics;SunlightSensitivity;AttackOfOpportunity;Darkvision;DarknessRules;Evasion"
 data "Passives" "CX_Rogue_Thief_Boost;PackTactics;SunlightSensitivity;AttackOfOpportunity;Darkvision;DarknessRules;Evasion"
 
-// Popper - Purveyor of Treats and Trinkets, Circus of the Last Days (Inherited added Rogue replaced swapped for custom Sorcerer progressions, added Wild Magic subclass - all for fun)
+// Popper - Purveyor of Treats and Trinkets, Circus of the Last Days (Inherited added Rogue replaced swapped for Wizard progressios)
 new entry "WYR_Kobold_Popper"
 type "Character"
 using "WYR_Kobold_Popper"
-// data "Charisma" "8"
-data "Charisma" "14"
-// data "Passives" "PackTactics;SunlightSensitivity;AttackOfOpportunity;Darkvision;DarknessRules"
-data "Passives" "CX_Sorcerer_WildMagic_Boost;PackTactics;SunlightSensitivity;AttackOfOpportunity;Darkvision;DarknessRules"
+// data "Intelligence" "8"
+data "Intelligence" "12"
 // data "Progressions" "532203c2-7bcb-4162-9a7c-2bb20e227a30"
-data "Progressions" "2189a72d-6489-4621-8b2c-85d3e7df2f6f"
+data "Progressions" "44bdbc5e-a003-4d61-87f0-5ced20d3804e"
 
 // Kobold Scout (Added Ranger progressions, fixed spellcasting ability)
 new entry "Kobold_Ranger"
