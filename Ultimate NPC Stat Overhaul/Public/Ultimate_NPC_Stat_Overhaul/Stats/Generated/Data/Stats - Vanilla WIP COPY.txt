@@ -2243,8 +2243,8 @@ data "Progressions" "f0ede459-8b86-48fd-ac11-4432573566a5"
 //  ├─ "HalfElf_Melee"
 //  │   ├─ "HalfElf_Cleric"                                 --- (Has Cleric progressions)
 //  │   │   ├─ "HAV_Isobel"
-//  │   │   └─ "LOW_KurwinCoffin_Gravekeeper"               --- Valmorba, Devotee of Kelemvor (Inherits Cleric progressions) // TODO: Make here a Death Domain Cleric
-//  │   │        └─ "WYR_OpenHandTemple_HalfElf_Cleric"     --- Brother Donnick, Church of Ilmater (Inherits Cleric progressions)
+//  │   │   └─ "LOW_KurwinCoffin_Gravekeeper"               --- Valmorba, Devotee of Kelemvor (Inherits Cleric progressions) // TODO: Make her a Death Domain Cleric
+//  │   │        └─ "WYR_OpenHandTemple_HalfElf_Cleric"
 //  │   ├─ "HalfElf_Fighter_Rogue"
 //  │   │   └─ "WYR_MerchantsHouse_HalfElf_Figher_Rogue"
 //  │   ├─ "LOW_FlorrickGoon_Melee" 
@@ -2256,6 +2256,13 @@ type "Character"
 using "HAV_Isobel"
 // data "Passives" "PotentSpellcasting;AttackOfOpportunity;FeyAncestry;DarknessRules;Darkvision"
 data "Passives" "CX_Cleric_Light_Boost;CX_Magic_Boost;FeyAncestry;HumanMilitia;AttackOfOpportunity;Darkvision;DarknessRules;PotentSpellcasting"
+
+// Brother Donnick, Church of Ilmater (Inherits Cleric progressions, added Life Domain Subclass)
+new entry "WYR_OpenHandTemple_HalfElf_Cleric"
+type "Character"
+using "WYR_OpenHandTemple_HalfElf_Cleric"
+// data "Passives" "FeyAncestry;AttackOfOpportunity;Darkvision;DarknessRules"
+data "Passives" "CX_Cleric_Life_Boost;FeyAncestry;HumanMilitia;AttackOfOpportunity;Darkvision;DarknessRules"
 
 // (Swapping from NPC_Fighter_Rogue progressions to Fighter, these are trashy )
 new entry "HalfElf_Fighter_Rogue"
@@ -2691,9 +2698,9 @@ data "Passives" "CX_Spells_L5;CX_Spells_L5C;Halfling_Lucky;Halfling_Brave;Attack
 //  │   ├─ "DEN_ShadowDruid_Melee"
 //  │   ├─ "GOB_Quartermaster"
 //  │   ├─ "Halfling_Cleric"                                        --- (Has Cleric progressions)
-//  │   │   ├─ "WYR_OpenHandTemple_Halfling_Cleric"                 --- Sister Yannis - Church of Ilmater (Inherits Cleric progressions) //TODO: Maybe make these nutsacks Life Domain
-//  │   │   │   └─ "WYR_OpenHandTemple_Halfling_Cleric_Sister"      --- (Inherits Cleric progressions)
-//  │   │   └─ "WYR_OpenHandTemple_Halfling_Cleric_Novice"          --- Novice Bramble - Church of Ilmater (Inherits Cleric progressions)
+//  │   │   ├─ "WYR_OpenHandTemple_Halfling_Cleric"
+//  │   │   │   └─ "WYR_OpenHandTemple_Halfling_Cleric_Sister"      --- (Inherits Cleric progressions and added Life Domain subclass)
+//  │   │   └─ "WYR_OpenHandTemple_Halfling_Cleric_Novice"
 //  │   ├─ "LOW_ArabellaPowers_Brigand_Halfling_Melee"              --- Brigand Harrold (Dead) (Inherits Fighter progressions)
 //  │   ├─ "LOW_CazadorsPalace_GuardTower_Halfling_Melee"           --- Jaryd - Szarr Palace (Inherits Fighter progressions)
 //  │   ├─ "LOW_HouseOfGrief_Cultist_Melee_Halfling"                --- Greymask - Church of Shar (Inherits Fighter progressions) //TODO: Add more diversity to Shar nutsacks, throw some rogues in or something
@@ -2737,6 +2744,20 @@ data "SpellCastingAbility" "Charisma"
 data "Passives" "CX_Bard_Boost;CX_Magic_Boost;Halfling_Lucky;Halfling_Brave;AttackOfOpportunity;DarknessRules;Alert;Goon_RoahMoonglow_Boost"
 // data "Progressions" "2c3411ae-806b-11ed-a1eb-0242ac120002"
 data "Progressions" "cbe5059f-7a9f-4b98-be6a-07c9cd8e02c2"
+
+// Sister Yannis - Church of Ilmater (Inherits Cleric progressions, added Life Domain subclass)
+new entry "WYR_OpenHandTemple_Halfling_Cleric"
+type "Character"
+using "WYR_OpenHandTemple_Halfling_Cleric"
+// data "Passives" "Halfling_Lucky;Halfling_Brave;AttackOfOpportunity;DarknessRules"
+data "Passives" "CX_Cleric_Life_Boost;Halfling_Lucky;Halfling_Brave;AttackOfOpportunity;DarknessRules"
+
+// Novice Bramble - Church of Ilmater (Inherits Cleric progressions, added Life Domain subclass)
+new entry "WYR_OpenHandTemple_Halfling_Cleric_Novice"
+type "Character"
+using "WYR_OpenHandTemple_Halfling_Cleric_Novice"
+// data "Passives" "Halfling_Lucky;Halfling_Brave;AttackOfOpportunity;DarknessRules"
+data "Passives" "CX_Cleric_Life_Boost;Halfling_Lucky;Halfling_Brave;AttackOfOpportunity;DarknessRules"
 
 // "_Halfling"
 //  ├─ "Halfling_Ranger"                                --- (Has Ranger progressions)
@@ -3383,55 +3404,42 @@ using "WYR_SmugglersCave_Human_Caster_2"
 data "Passives" "CX_Wizard_Evocation_Boost;CX_Spells_L3;CX_Spells_L4;CX_Spells_L4C;CX_Spells_L5;CX_Spells_L5C;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules;SculptSpells"
 
 // "_Human"
-//  ├─ "Human_Melee"
+//  ├─ "Human_Melee"                                --- (Has Fighter progressions)
 //  │   ├─ "CHA_Bandit_Human_Melee"
-//  │   │   └─ "CHA_BanditInterior_Human_Melee"
+//  │   │   └─ "CHA_BanditInterior_Human_Melee"     --- Andorn - Overgrown Ruin Looters (Has Rogue progressions)
 //  │   ├─ "DEN_Adventurer_Leader"
 //  │   ├─ "END_CityWatchMelee_Human"
 //  │   ├─ "FOR_Human_Cultist_Zariel_Paladin"
-//  │   ├─ "HAV_FlamingFist_Human_Mart"         --- (M)Art Cullagh
-//  │   ├─ "HAV_FlamingFist_Human_Melee"        --- Fist Ulthred - Flaming Fist
+//  │   ├─ "HAV_FlamingFist_Human_Mart"             --- (M)Art Cullagh (Inherits Fighter progressions)
+//  │   ├─ "HAV_FlamingFist_Human_Melee"            --- Fist Ulthred - Flaming Fist (Inherits Fighter progressions)
 //  │   │   └─ "HAV_Marcus"
-//  │   ├─ "HAV_Harper_Human_Melee"
+//  │   ├─ "HAV_Harper_Human_Melee"                 --- Quartermaster Talli - Harpers (Inherits Fighter progressions)
 //  │   ├─ "HAV_ShadowCursed_Warrior_Human_Melee"
 
-// (Most of these are factions related or Act III and work as Fighter, not just Martial)
-new entry "Human_Melee"
-type "Character"
-using "Human_Melee"
-// data "Passives" "AttackOfOpportunity;DarknessRules"
-data "Passives" "CX_Fighter_Boost;CX_Martial_Boost;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules"
-
+// (Inherits Fighter progressions, fixed racials)
 new entry "CHA_Bandit_Human_Melee"
 type "Character"
 using "CHA_Bandit_Human_Melee"
 // data "Passives" "DarknessRules"
-data "Passives" "CX_Fighter_Boost;CX_Martial_Boost;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules"
+data "Passives" "HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules"
 
-// Andorn - Overgrown Ruin Looters
-new entry "CHA_BanditInterior_Human_Melee"
-type "Character"
-using "CHA_BanditInterior_Human_Melee"
-// data "Passives" "DarknessRules"
-data "Passives" "CX_Rogue_Boost;CX_Martial_Boost;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules"
-
-// Aradin Beno - Aradin's mercenary crew (His proprietary progressions are pointless and not worth filling in when we can just make him a Fighter and give the act 3 boosts via stats)
+// Aradin Beno - Aradin's mercenary crew (Swapped proprietary progressions for Fighter progressions, proprietary boosts added via stats)
 new entry "DEN_Adventurer_Leader"
 type "Character"
 using "DEN_Adventurer_Leader"
 // data "Passives" "AttackOfOpportunity;DarknessRules"
-data "Passives" "CX_Fighter_Boost;CX_Martial_Boost;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules;Goon_Aradin_Boost"
+data "Passives" "HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules;Goon_Aradin_Boost"
 // data "Progressions" "9eaa6333-f907-4c16-aa48-cf6d46c1b351"
 data "Progressions" "0e6da493-5a37-423b-8c28-629462b22faa"
 
-// Watchman
+// Watchman (Inherits Fighter progressions)
 new entry "END_CityWatchMelee_Human"
 type "Character"
 using "END_CityWatchMelee_Human"
 // data "Passives" "AttackOfOpportunity;DarknessRules;FightingStyle_GreatWeaponFighting;GreatWeaponMaster_BonusAttack;GreatWeaponMaster_BonusDamage"
-data "Passives" "CX_Fighter_Boost;CX_Martial_Boost;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules;FightingStyle_GreatWeaponFighting;GreatWeaponMaster_BonusAttack;GreatWeaponMaster_BonusDamage"
+data "Passives" "HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules;FightingStyle_GreatWeaponFighting;GreatWeaponMaster_BonusAttack;GreatWeaponMaster_BonusDamage"
 
-// Anders - Sword of Tyr, Fake Tyr Paladins (Has Paladin progressions but not Charisma for his spellcasting ability despite having higher Charisma)
+// Anders - Sword of Tyr, Fake Tyr Paladins (Has Paladin progressions, but not Charisma for his spellcasting ability despite having higher Charisma)
 // Note that if using Luma's Encounters Enhanced mod then he gets Oath of Conquest abilities too. Keeping Oathbreaker subclass because it still fits fairly well
 new entry "FOR_Human_Cultist_Zariel_Paladin"
 type "Character"
@@ -3439,155 +3447,161 @@ using "FOR_Human_Cultist_Zariel_Paladin"
 // data "SpellCastingAbility" "Intelligence"
 data "SpellCastingAbility" "Charisma"
 // data "Passives" "AttackOfOpportunity;DarknessRules"
-data "Passives" "CX_Paladin_Oathbreaker_Boost;CX_Martial_Boost;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules"
+data "Passives" "CX_Paladin_Oathbreaker_Boost;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules"
 
-// Fist Marcus - Agent of the Absolute, Cult of the Absolute
+// Fist Marcus "Marcus Falgor" - Agent of the Absolute, Cult of the Absolute (Inherits Fighter progressions) (Doesn't have legendary actions or anything despite being a boss)
 new entry "HAV_Marcus"
 type "Character"
 using "HAV_Marcus"
 // data "Passives" "GreatWeaponMaster_BonusAttack;DarkDevotion;FeralInstinct;AttackOfOpportunity;DarknessRules"
-data "Passives" "CX_Fighter_Boost;CX_Martial_Boost;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules;GreatWeaponMaster_BonusAttack;DarkDevotion;FeralInstinct"
+data "Passives" "HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules;GreatWeaponMaster_BonusAttack;DarkDevotion;FeralInstinct"
 
-// Quartermaster Talli - Harpers
-new entry "HAV_Harper_Human_Melee"
-type "Character"
-using "HAV_Harper_Human_Melee"
-// data "Passives" "AttackOfOpportunity;DarknessRules"
-data "Passives" "CX_Fighter_Boost;CX_Martial_Boost;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules"
-
-// Shadow-Cursed Zealot (Halsin portal defense)
+// Shadow-Cursed Zealot (Halsin portal defense) (Swapped from Fighter progressions to Paladin progressions, added Oathbreaker subclass. They are in death what they were in life, highest mental stat is Char.)
 new entry "HAV_ShadowCursed_Warrior_Human_Melee"
 type "Character"
 using "HAV_ShadowCursed_Warrior_Human_Melee"
+// data "SpellCastingAbility" "Intelligence"
+data "SpellCastingAbility" "Charisma"
 // data "Passives" "AttackOfOpportunity;DarknessRules"
-data "Passives" "CX_Paladin_Boost;CX_Martial_Boost;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules"
+data "Passives" "CX_Paladin_Oathbreaker_Boost;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules"
+// data "Progressions" "0e6da493-5a37-423b-8c28-629462b22faa"
+data "Progressions" "8726b2c4-edc0-4905-b82f-60a4baba0733"
 
 // "_Human"
 //  ├─ "Human_Melee"
-//  │   ├─ "Human_Barbarian"
+//  │   ├─ "Human_Barbarian"                            --- (Has Barbarian progressions)
 //  │   │   ├─ "CHA_BanditInterior_Human_Barbarian"     --- Unused
 //  │   │   ├─ "CHA_Bandit_Human_Barbarian"             
 //  │   │   ├─ "LOW_Chasm_Mangle"
-//  │   │   ├─ "LOW_Elfsong_Patron_Human_Barbarian"     --- Bombasto
+//  │   │   ├─ "LOW_Elfsong_Patron_Human_Barbarian"     --- Bombasto - patron of the Elfsong Tavern (Inherits Barbarian progressions)
 //  │   │   ├─ "LOW_Masked_Barbarian"
-//  │   │   ├─ "PLA_Zhent_Recruit_Human_Barbarian"      --- Vol - Zhentarim
+//  │   │   ├─ "PLA_Zhent_Recruit_Human_Barbarian"
 //  │   │   ├─ "WYR_GurHunter_Ulma"
-//  │   │   ├─ "WYR_MerchantsHouse_Human_Barbarian"     --- Gleeful CLong - The Guild
-//  │   │   ├─ "WYR_MessHallBodyguard_05"               --- Lord Jannath's Bodyguard
+//  │   │   ├─ "WYR_MerchantsHouse_Human_Barbarian"     --- Gleeful CLong - The Guild (Inherits Barbarian progressions)
+//  │   │   ├─ "WYR_MessHallBodyguard_05"               --- Lord Jannath's Bodyguard (Inherits Barbarian progressions)
 //  │   │   └─ "WYR_SmugglersCave_Human_Barbarian"
 
-new entry "Human_Barbarian"
-type "Character"
-using "Human_Barbarian"
-// data "Passives" "AttackOfOpportunity;DarknessRules"
-data "Passives" "CX_Barbarian_Boost;CX_Martial_Boost;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules"
-
+// (Inherits Barbarian progressions, fixed racials)
 new entry "CHA_BanditInterior_Human_Barbarian"
 type "Character"
 using "Human_Barbarian"
 // data "Passives" "DarknessRules"
-data "Passives" "CX_Barbarian_Boost;CX_Martial_Boost;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules"
+data "Passives" "HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules"
 
-// Haseid - Overgrown Ruin Looters - purposely not giving him any subclass boosts (especially Berserker) to prevent this fight from being too hard
+// Haseid - Overgrown Ruin Looters (Inherits Barbarian progressions, fixed racials)
 new entry "CHA_Bandit_Human_Barbarian"
 type "Character"
 using "CHA_Bandit_Human_Barbarian"
 // data "Passives" "DarknessRules"
-data "Passives" "CX_Barbarian_Boost;CX_Martial_Boost;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules"
+data "Passives" "HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules"
 
-// Manglin' Abby - Cult of Bhaal (enemy during Bhaalist trial)
+// Manglin' Abby - Cult of Bhaal (enemy during Bhaalist trial) (Inherits Barbarian progressions, added Berserker subclass)
 new entry "LOW_Chasm_Mangle"
 type "Character"
 using "LOW_Chasm_Mangle"
 // data "Passives" "AttackOfOpportunity;LOW_Chasm_Mangle_Pushback;DarknessRules;UnarmouredDefence_Barbarian;DangerSense;FastMovement;RageFrenzyUnlock;"
-data "Passives" "CX_Barbarian_Boost;CX_Martial_Boost;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules;UnarmouredDefence_Barbarian;DangerSense;FastMovement;RageFrenzyUnlock;LOW_Chasm_Mangle_Pushback"
+data "Passives" "CX_Barbarian_Berserker_Boost;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules;UnarmouredDefence_Barbarian;DangerSense;FastMovement;RageFrenzyUnlock;LOW_Chasm_Mangle_Pushback"
 
-// Mask of Vengeance (The Blushing Mermaid) - (Auntie Ethel victim)
-// Keeping le funny Wild Magic stuff associated with hag fight
+// Mask of Vengeance (The Blushing Mermaid) - (Auntie Ethel victim) (Inherits Barbarian progressions, Cahoot added Wild Magic subclass because le funni hag stuff)
 new entry "LOW_Masked_Barbarian"
 type "Character"
 using "LOW_Masked_Barbarian"
 // data "Passives" "AttackOfOpportunity;DarknessRules;HAG_MaskOfVengeance"
-data "Passives" "CX_Barbarian_Boost;CX_Barbarian_WildMagic_Boost;CX_Martial_Boost;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules;HAG_MaskOfVengeance"
+data "Passives" "CX_Barbarian_WildMagic_Boost;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules;HAG_MaskOfVengeance"
 
-// Ulma - Gur Leader, The Gur
+// Vol - Zhentarim (Inherits Barbarian progressions, added Wildheart subclass)
+new entry "PLA_Zhent_Recruit_Human_Barbarian"
+type "Character"
+using "PLA_Zhent_Recruit_Human_Barbarian"
+// data "Passives" "AttackOfOpportunity;DarknessRules"
+data "Passives" "CX_Barbarian_Wildheart_Boost;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules"
+
+// Ulma - Gur Leader, The Gur (Inherits Barbarian progressions, fixed racials)
 new entry "WYR_GurHunter_Ulma"
 type "Character"
 using "WYR_GurHunter_Ulma"
 // data "Passives" "DarknessRules;Scar_Sirocco_Gur;Scar_Fury_Gur;Scar_Eclipse_Gur;AttackOfOpportunity;DarknessRules"
-data "Passives" "CX_Barbarian_Boost;CX_Martial_Boost;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules;Scar_Sirocco_Gur;Scar_Fury_Gur;Scar_Eclipse_Gur"
+data "Passives" "HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules;Scar_Sirocco_Gur;Scar_Fury_Gur;Scar_Eclipse_Gur"
 
-// Shiv Dahlia - Envoys of the Stone Lord
+// Shiv Dahlia - Envoys of the Stone Lord (Inherits Barbarian progressions, added Widlheart subclass)
 new entry "WYR_SmugglersCave_Human_Barbarian"
 type "Character"
 using "WYR_SmugglersCave_Human_Barbarian"
 // data "Passives" "AttackOfOpportunity;DarknessRules;UnarmouredDefence_Barbarian;DangerSense;TotemSpirit_Eagle;FastMovement;AspectOfTheBeast_Wolverine;FeralInstinct"
-data "Passives" "CX_Barbarian_Boost;CX_Martial_Boost;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules;UnarmouredDefence_Barbarian;DangerSense;TotemSpirit_Eagle;FastMovement;AspectOfTheBeast_Wolverine;FeralInstinct"
+data "Passives" "CX_Barbarian_Wildheart_Boost;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules;UnarmouredDefence_Barbarian;DangerSense;TotemSpirit_Eagle;FastMovement;AspectOfTheBeast_Wolverine;FeralInstinct"
 
 // "_Human"
 //  ├─ "Human_Melee"
-//  │   ├─ "Human_Cleric"
-//  │   │   ├─ "FOR_Human_Cultist_Zariel_Cleric"            --- Refugee (Dead)
-//  │   │   ├─ "GOB_PainPriest"                             --- Abdirak (kinky worshipper of Loviatar)
-//  │   │   ├─ "HAV_FlamingFist_Human_Cleric"               --- Fist J'ehlar - Flaming Fist
-//  │   │   ├─ "Human_FFist_Cleric"                         --- Unused
-//  │   │   ├─ "LOW_KelemvorPriestess"                      --- Mortarch Gracie Scyre (manages the graveyard in Lower City)
+//  │   ├─ "Human_Cleric"                                   --- (Has Cleric progressions)
+//  │   │   ├─ "FOR_Human_Cultist_Zariel_Cleric"            --- Refugee (Dead) (Inherits Cleric progressions)
+//  │   │   ├─ "GOB_PainPriest"                             --- Abdirak (kinky worshipper of Loviatar) //TODO: Death Domain for this dude
+//  │   │   ├─ "HAV_FlamingFist_Human_Cleric"
+//  │   │   ├─ "Human_FFist_Cleric"                         --- Unused (Has Cleric progressions)
+//  │   │   ├─ "LOW_KelemvorPriestess"                      --- Mortarch Gracie Scyre (manages the graveyard in Lower City) //TODO: Death Domain for this chick
 //  │   │   ├─ "LOW_Lora"
 //  │   │   ├─ "WYR_GurHunter_Cleric"
-//  │   │   └─ "WYR_OpenHandTemple_Human_Cleric"            --- Sister Rose the Penitent - Church of Ilmater
-//  │   │       └─ "WYR_OpenHandTemple_Human_Cleric_Father" --- Unused
+//  │   │   └─ "WYR_OpenHandTemple_Human_Cleric"
+//  │   │       └─ "WYR_OpenHandTemple_Human_Cleric_Father" --- Father Lorgan (Dead) (Inherits Cleric progressions and the added Life Domain subclass)
 
-new entry "Human_Cleric"
+// Fist J'ehlar - Flaming Fist (Inherits Cleric progressions, added Life Domain subclass because she clearly aint about engaging in combat, stupid ass hoe)
+new entry "HAV_FlamingFist_Human_Cleric"
 type "Character"
-using "Human_Cleric"
+using "HAV_FlamingFist_Human_Cleric"
 // data "Passives" "AttackOfOpportunity;DarknessRules"
-data "Passives" "CX_Cleric_Boost;CX_Magic_Boost;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules"
+data "Passives" "CX_Cleric_Life_Boost;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules"
 
-// Lora Bergauz - Mother of Vanra
+// Lora Bergauz - Mother of Vanra (Inherits Cleric progressions, added Light Domain subclass)
 new entry "LOW_Lora"
 type "Character"
 using "LOW_Lora"
 // data "Passives" "AttackOfOpportunity;DarknessRules;WardingFlare"
-data "Passives" "CX_Cleric_Boost;CX_Magic_Boost;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules;WardingFlare"
+data "Passives" "CX_Cleric_Light_Boost;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules;WardingFlare"
 
-// Katelyn Lerskin - The Gur
+// Katelyn Lerskin - The Gur (Inherits Cleric progressions, added Life Domain subclass)
 new entry "WYR_GurHunter_Cleric"
 type "Character"
 using "WYR_GurHunter_Cleric"
 // data "Passives" "Scar_Agave_Gur;AttackOfOpportunity;DarknessRules"
-data "Passives" "CX_Cleric_Boost;CX_Magic_Boost;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules;Scar_Agave_Gur"
+data "Passives" "CX_Cleric_Life_Boost;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules;Scar_Agave_Gur"
+
+// Sister Rose the Penitent - Church of Ilmater (Inherits Cleric progressions, added Life Domain subclass)
+new entry "WYR_OpenHandTemple_Human_Cleric"
+type "Character"
+using "WYR_OpenHandTemple_Human_Cleric"
+// data "Passives" "AttackOfOpportunity;DarknessRules"
+data "Passives" "CX_Cleric_Life_Boost;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules"
 
 // "_Human"
 //  ├─ "Human_Melee"
-//  │   ├─ "Human_FFist_Soldier"                        --- Unused
-//  │   ├─ "Human_Melee_Strong"
+//  │   ├─ "Human_FFist_Soldier"                        --- Unused (Has Fighter progressions)
+//  │   ├─ "Human_Melee_Strong"                         --- (Inherits Fighter progressions)
 //  │   │   ├─ "CRE_LadyEsther"
 //  │   │   ├─ "LOW_HouseOfGrief_Cultist_Sentry"
 //  │   │   │   └─ "LOW_DoorSentry"
 //  │   │   └─ "WYR_GurHunter_Melee_Strong"
 
-// Lady Esther - Society of Brilliance
+// Lady Esther - Society of Brilliance (Inherits Fighter progressions, fixed racials)
 new entry "CRE_LadyEsther"
 type "Character"
 using "CRE_LadyEsther"
 // data "Passives" "FightingStyle_Dueling;AttackOfOpportunity;DarknessRules"
-data "Passives" "CX_Fighter_Boost;CX_Martial_Boost;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules;FightingStyle_Dueling"
+data "Passives" "HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules;FightingStyle_Dueling"
 
-// Sharran Sentry: Sharran Sentry Imwise, Sharran Sentry Hendly, Sharran Sentry Baxta - Church of Shar
+// Sharran Sentry: Sharran Sentry Imwise, Sharran Sentry Hendly, Sharran Sentry Baxta - Church of Shar (Inherits Fighter progressions, fixed racials)
 new entry "LOW_HouseOfGrief_Cultist_Sentry"
 type "Character"
 using "LOW_HouseOfGrief_Cultist_Sentry"
 // data "Passives" "AttackOfOpportunity;DarknessRules;LOW_HouseOfGrief_Cultists_Sight;LOW_HouseOfGrief_Cultists_Melee;"
-data "Passives" "CX_Fighter_Boost;CX_Martial_Boost;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules;LOW_HouseOfGrief_Cultists_Sight;LOW_HouseOfGrief_Cultists_Melee"
+data "Passives" "HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules;LOW_HouseOfGrief_Cultists_Sight;LOW_HouseOfGrief_Cultists_Melee"
 
-// Morann - Dwarf that's listed as a Human lmao. Would need to change his root template to change his listed race
+// Morann (Inherits Fighter progressions) //TODO: Dwarf that's listed as a Human lmao. Would need to change the root template inherited in his local template to change his listed race
 new entry "LOW_DoorSentry"
 type "Character"
 using "LOW_DoorSentry"
 // data "Passives" "AttackOfOpportunity;DarknessRules;Darkvision;Dwarf_DwarvenResilience;LOW_HouseOfGrief_Cultists_Melee;LOW_HouseOfGrief_Cultists_Sight"
-data "Passives" "CX_Fighter_Boost;CX_Martial_Boost;Dwarf_DwarvenResilience;AttackOfOpportunity;DarknessRules;Darkvision;LOW_HouseOfGrief_Cultists_Melee;LOW_HouseOfGrief_Cultists_Sight"
+data "Passives" "Dwarf_DwarvenResilience;AttackOfOpportunity;DarknessRules;Darkvision;LOW_HouseOfGrief_Cultists_Melee;LOW_HouseOfGrief_Cultists_Sight"
 
-// Pumler Grejit - The Gur / Gur Hunter Captain Saranor (This dude real?)
+// Pumler Grejit - The Gur / Gur Hunter Captain Saranor (This dude real?) (Inherits Fighter progressions, fixed racials)
 new entry "WYR_GurHunter_Melee_Strong"
 type "Character"
 using "WYR_GurHunter_Melee_Strong"
@@ -3596,114 +3610,114 @@ data "Passives" "CX_Fighter_Boost;CX_Martial_Boost;HumanMilitia;HumanVersatility
 
 // "_Human"
 //  ├─ "Human_Melee"
-//  │   ├─ "LOW_ArabellaPowers_Brigand_Human_Melee"     --- Ogreboy Colum (dead)
-//  │   ├─ "LOW_BlushingMermaid_Victim_Human_Melee"     --- Unused
+//  │   ├─ "LOW_ArabellaPowers_Brigand_Human_Melee"     --- Ogreboy Colum (dead) (Inherits Fighter progressions)
+//  │   ├─ "LOW_BlushingMermaid_Victim_Human_Melee"     --- Unused (Inherits Fighter progressions)
 //  │   ├─ "LOW_CountingHouse_Melee_Human"
 //  │   │   └─ "LOW_CountingHouse_Captain_Human"
-//  │   ├─ "LOW_GriefGuard_Human_Melee"                 --- Unused
+//  │   ├─ "LOW_GriefGuard_Human_Melee"                 --- Unused (Inherits Fighter progressions)
 //  │   ├─ "LOW_GuildSmugglers_Guard_03"                --- Jazzy Topps - The Guild
 //  │   ├─ "LOW_Guildhall_GravediggerKarcen"
 //  │   ├─ "LOW_Guildhall_LadyAgue"
 //  │   ├─ "LOW_Guildhall_LadyQuinsy"
-//  │   ├─ "LOW_HagSurvivor_Human_Melee"                --- Maggie Ni Chuirc
+//  │   ├─ "LOW_HagSurvivor_Human_Melee"                --- Maggie Ni Chuirc (Inherits Fighter progressions) //TODO: Eh, maybe make her a Battle Master but it doesn't matter
 //  │   ├─ "LOW_HouseOfGrief_Cultist_Melee_Human"
 //  │   ├─ "LOW_Undercellar_Entrance_Human_Melee"
 //  │   ├─ "LOW_VoicelessPenitent"
 
-// Cashguard Basher Nickelow, Cashguard Basher Karol, Cashguard Taslim, Cashguard Basher Vikki, Cashguard Captain Faril, Cashguard Basher Edvidge, Cashguard Basher Mofty, Cashguard Basher Forstum, Cashguard Basher Humgoole, Cashguard Basher Brammels, Cashguard Dugg - The Counting House (Changed spellcasting ability to Charisma to reflect being a Paladin)
+// Cashguard Basher Nickelow, Cashguard Basher Karol, Cashguard Taslim, Cashguard Basher Vikki, Cashguard Captain Faril, Cashguard Basher Edvidge, Cashguard Basher Mofty, Cashguard Basher Forstum, Cashguard Basher Humgoole, Cashguard Basher Brammels, Cashguard Dugg - The Counting House (Has Paladin progressions, added missing spellcasting ability) //TODO: Oath of the Crown for these dudes
 new entry "LOW_CountingHouse_Melee_Human"
 type "Character"
 using "LOW_CountingHouse_Melee_Human"
 // data "SpellCastingAbility" "Intelligence"
 data "SpellCastingAbility" "Charisma"
 // data "Passives" "AttackOfOpportunity;DarknessRules;Charger"
-data "Passives" "CX_Paladin_Boost;CX_Martial_Boost;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules;Charger"
+data "Passives" "HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules;Charger"
 
-// Cashguard Captain Faril - The Counting House
+// Cashguard Captain Faril - The Counting House (Has Paladin progressions, inherits added missing spellcasting ability) //TODO: Oath of the Crown for these dudes
 new entry "LOW_CountingHouse_Captain_Human"
 type "Character"
 using "LOW_CountingHouse_Captain_Human"
-// data "SpellCastingAbility" "Intelligence"
-data "SpellCastingAbility" "Charisma"
 // data "Passives" "AttackOfOpportunity;DarknessRules;Charger;Tough"
-data "Passives" "CX_Paladin_Boost;CX_Martial_Boost;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules;Charger;Tough"
+data "Passives" "HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules;Charger;Tough"
 
-// Gravedigger Karcen - Zhentarim
+// Gravedigger Karcen - Zhentarim (Inherits Fighter progressions, added Battle Master subclass, removing additional Superiority Dice.)
 new entry "LOW_Guildhall_GravediggerKarcen"
 type "Character"
 using "LOW_Guildhall_GravediggerKarcen"
+// data "ActionResources" "ActionPoint:1;BonusActionPoint:1;Movement:9;ReactionActionPoint:1;SuperiorityDie:4"
+data "ActionResources" "ActionPoint:1;BonusActionPoint:1;Movement:9;ReactionActionPoint:1"
 // data "Passives" "LOW_Guildhall_AdaptableSneakAttacks;GreatWeaponMaster_BonusAttack;AttackOfOpportunity;DarknessRules"
-data "Passives" "CX_Fighter_Boost;CX_Martial_Boost;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules;LOW_Guildhall_AdaptableSneakAttacks;GreatWeaponMaster_BonusAttack"
+data "Passives" "CX_Fighter_BattleMaster_Boost;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules;LOW_Guildhall_AdaptableSneakAttacks;GreatWeaponMaster_BonusAttack"
 
-// Lady Ague - Nine-Fingers' Bodyguard, The Guild
+// Lady Ague - Nine-Fingers' Bodyguard, The Guild (Inherits Fighter progressions, fixed racials)
 new entry "LOW_Guildhall_LadyAgue"
 type "Character"
 using "LOW_Guildhall_LadyAgue"
 // data "Passives" "GreatWeaponMaster_BonusAttack;FightingStyle_Protection;LOW_Guildhall_SneakyRiposte;FastHands;SavageAttacker;AttackOfOpportunity;DarknessRules"
-data "Passives" "CX_Fighter_Boost;CX_Martial_Boost;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules;GreatWeaponMaster_BonusAttack;FightingStyle_Protection;LOW_Guildhall_SneakyRiposte;FastHands;SavageAttacker"
+data "Passives" "HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules;GreatWeaponMaster_BonusAttack;FightingStyle_Protection;LOW_Guildhall_SneakyRiposte;FastHands;SavageAttacker"
 
-// Lady Quinsy - Nine-Fingers' Bodyguard, The Guild
+// Lady Quinsy - Nine-Fingers' Bodyguard, The Guild (Inherits Fighter progressions, fixed racials)
 new entry "LOW_Guildhall_LadyQuinsy"
 type "Character"
 using "LOW_Guildhall_LadyQuinsy"
 // data "Passives" "GreatWeaponMaster_BonusAttack;FightingStyle_Protection;LOW_Guildhall_SneakyRiposte;FastHands;SavageAttacker;AttackOfOpportunity;DarknessRules"
-data "Passives" "CX_Fighter_Boost;CX_Martial_Boost;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules;GreatWeaponMaster_BonusAttack;FightingStyle_Protection;LOW_Guildhall_SneakyRiposte;FastHands;SavageAttacker"
+data "Passives" "HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules;GreatWeaponMaster_BonusAttack;FightingStyle_Protection;LOW_Guildhall_SneakyRiposte;FastHands;SavageAttacker"
 
-// Sharran Novice Monteith, Sharran Novice Tylda - Church of Shar
+// Sharran Novice Monteith, Sharran Novice Tylda - Church of Shar (Inherits Fighter progressions)
 new entry "LOW_HouseOfGrief_Cultist_Melee_Human"
 type "Character"
 using "LOW_HouseOfGrief_Cultist_Melee_Human"
 // data "Passives" "AttackOfOpportunity;DarknessRules;LOW_HouseOfGrief_Cultists_Sight;LOW_HouseOfGrief_Cultists_Melee;"
-data "Passives" "CX_Fighter_Boost;CX_Martial_Boost;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules;LOW_HouseOfGrief_Cultists_Sight;LOW_HouseOfGrief_Cultists_Melee;"
+data "Passives" "HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules;LOW_HouseOfGrief_Cultists_Sight;LOW_HouseOfGrief_Cultists_Melee;"
 
-// Voiceless Penitent Bareki
+// Voiceless Penitent Bareki (Has Paladin progressions, fixed racials)
 new entry "LOW_VoicelessPenitent"
 type "Character"
 using "LOW_VoicelessPenitent"
 // data "SpellCastingAbility" "Intelligence"
 data "SpellCastingAbility" "Charisma"
 // data "Passives" "AttackOfOpportunity;DarknessRules;FightingStyle_Dueling"
-data "Passives" "CX_Paladin_Boost;CX_Martial_Boost;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules;FightingStyle_Dueling"
+data "Passives" "HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules;FightingStyle_Dueling"
 
 // "_Human"
 //  ├─ "Human_Melee"
 //  │   ├─ "LOW_VolosFate_Thugs_Melee_01"
 //  │   ├─ "LOW_VolosFate_Thugs_Melee_02"
 //  │   ├─ "LOW_VolosFate_Thugs_Melee_03"
-//  │   ├─ "MOO_FlamingFist_Human_Melee"                --- Fist Nipawa, Fist Hadenwell - Flaming Fist
-//  │   ├─ "PLA_Zhent_Recruit_Human_Melee"              --- Unused
-//  │   ├─ "SCL_Harper_Human_Melee"                     --- Shadow-Cursed Harper, Dead Harper (Shadow-Cursed Harpers in Reithwin Town Square)
-//  │   ├─ "SCL_Harper_Human_Melee_Strong"              --- Unused
-//  │   │   ├─ "SCL_Caravan_Ambusher_Lassandra"         --- Harper Lassandra - Harpers
+//  │   ├─ "MOO_FlamingFist_Human_Melee"                --- Fist Nipawa, Fist Hadenwell - Flaming Fist (Inherits Fighter progressions)
+//  │   ├─ "PLA_Zhent_Recruit_Human_Melee"              --- Unused (Inherits Fighter progressions)
+//  │   ├─ "SCL_Harper_Human_Melee"                     --- Shadow-Cursed Harper, Dead Harper (Shadow-Cursed Harpers in Reithwin Town Square) (Inherits Fighter progressions)
+//  │   ├─ "SCL_Harper_Human_Melee_Strong"              --- Unused (Inherits Fighter progressions)
+//  │   │   ├─ "SCL_Caravan_Ambusher_Lassandra"         --- Harper Lassandra - Harpers (Inherits Fighter progressions)
 //  │   │   └─ "SCL_Caravan_Ambusher_Skywin"
-//  │   ├─ "TWN_Morgue_ShadowCursed_Human_Melee"        --- Shadow-Cursed Human
-//  │   ├─ "WYR_Circus_Human_Melee"                     --- Unused
+//  │   ├─ "TWN_Morgue_ShadowCursed_Human_Melee"        --- Shadow-Cursed Human (Inherits Fighter progressions)
+//  │   ├─ "WYR_Circus_Human_Melee"                     --- Unused (Inherits Fighter progressions)
 //  │   ├─ "WYR_GurHunter_Melee_Mirage"
 //  │   │   └─ "WYR_GurHunter_Melee_DarkThirst"
-//  │   └─ "WYR_SharessCaress_Human_Melee"              --- Hoots Hooligan - Bartender at Sharess' Caress
+//  │   └─ "WYR_SharessCaress_Human_Melee"              --- Hoots Hooligan - Bartender at Sharess' Caress (Inherits Fighter progressions)
 
-// Ruffian Ormo - Churg Elvek's mob
+// Ruffian Ormo - Churg Elvek's mob (Inherits Fighter progressions, fixed racials)
 new entry "LOW_VolosFate_Thugs_Melee_01"
 type "Character"
 using "LOW_VolosFate_Thugs_Melee_01"
 // data "Passives" "Riposte;AttackOfOpportunity;DarknessRules"
-data "Passives" "CX_Fighter_Boost;CX_Martial_Boost;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules;Riposte"
+data "Passives" "HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules;Riposte"
 
-// Antinia the Goon - Churg Elvek's mob
+// Antinia the Goon - Churg Elvek's mob (Inherits Fighter progressions, fixed racials)
 new entry "LOW_VolosFate_Thugs_Melee_02"
 type "Character"
 using "LOW_VolosFate_Thugs_Melee_02"
 // data "Passives" "FightingStyle_TwoWeaponFighting;DualWielder_PassiveBonuses;AttackOfOpportunity;DarknessRules"
-data "Passives" "CX_Fighter_Boost;CX_Martial_Boost;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules;FightingStyle_TwoWeaponFighting;DualWielder_PassiveBonuses"
+data "Passives" "HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules;FightingStyle_TwoWeaponFighting;DualWielder_PassiveBonuses"
 
-// Imprudence - Churg Elvek's mob
+// Imprudence - Churg Elvek's mob (Inherits Fighter progressions, fixed racials)
 new entry "LOW_VolosFate_Thugs_Melee_03"
 type "Character"
 using "LOW_VolosFate_Thugs_Melee_03"
 // data "Passives" "Overwhelm;AttackOfOpportunity;DarknessRules"
 data "Passives" "CX_Fighter_Boost;CX_Martial_Boost;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules;Overwhelm"
 
-// Skywin - Harpers (This stat block is completely fucked in vanilla lol. Elf Ranger with Human Fighter stats. Using stats for HAV_Harper_Elf_Ranger as partial reference for her
+// Skywin - Harpers (This stat block is completely fucked in vanilla lol. Elf Ranger with Human Fighter stats. Using stats for HAV_Harper_Elf_Ranger as partial reference for her)
 new entry "SCL_Caravan_Ambusher_Skywin"
 type "Character"
 using "SCL_Caravan_Ambusher_Skywin"
@@ -3722,33 +3736,33 @@ data "Progressions" "f0ede459-8b86-48fd-11ac-32443557a566"
 // data "ArmorType" "ScaleMail"
 data "ArmorType" "Leather"
 // data "Passives" "AttackOfOpportunity;DarknessRules"
-data "Passives" "CX_Ranger_Boost;CX_Martial_Boost;FeyAncestry;AttackOfOpportunity;DarknessRules;Darkvision"
+data "Passives" "FeyAncestry;AttackOfOpportunity;DarknessRules;Darkvision"
 
-// Cassivora Dophir - The Gur / Gur Hunter Warrior (Gather Your Allies summon)
+// Cassivora Dophir - The Gur / Gur Hunter Warrior (Gather Your Allies summon) (Inherits Fighter progressions, fixed racials)
 new entry "WYR_GurHunter_Melee_Mirage"
 type "Character"
 using "WYR_GurHunter_Melee_Mirage"
 // data "Passives" "Scar_Mirage_Gur;AttackOfOpportunity;DarknessRules"
-data "Passives" "CX_Fighter_Boost;CX_Martial_Boost;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules;Scar_Mirage_Gur"
+data "Passives" "HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules;Scar_Mirage_Gur"
 
-// Godfrey Mordels - The Gur / Gur Hunter Warrior (Gather Your Allies summon)
+// Godfrey Mordels - The Gur / Gur Hunter Warrior (Gather Your Allies summon) (Inherits Fighter progressions, fixed racials)
 new entry "WYR_GurHunter_Melee_DarkThirst"
 type "Character"
 using "WYR_GurHunter_Melee_DarkThirst"
 // data "Passives" "Scar_Thirst_Gur;AttackOfOpportunity;DarknessRules"
-data "Passives" "CX_Fighter_Boost;CX_Martial_Boost;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRulesScar_Thirst_Gur"
+data "Passives" "HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules;Scar_Thirst_Gur"
 
 // "_Human"
-//  ├─ "Human_Ranger"
+//  ├─ "Human_Ranger"                                   --- (Has Ranger progressions)
 //  │   ├─ "CHA_Bandit_Human_Ranger"                
 //  │   │   └─ "CHA_BanditInterior_Human_Ranger"
-//  │   ├─ "CRA_MindflayerThrall_Ranger_Human"          -- Unused
+//  │   ├─ "CRA_MindflayerThrall_Ranger_Human"
 //  │   ├─ "DEN_Adventurer_Ranged"
 //  │   ├─ "HAG_GurHunter"
-//  │   ├─ "HAG_Masked_Ranger"
-//  │   ├─ "HAV_FlamingFist_Human_Ranger"
-//  │   ├─ "HAV_Harper_Human_Ranger"
-//  │   ├─ "Human_FFist_Ranger"
+//  │   ├─ "HAG_Masked_Ranger"                          --- Mask of Terror - Overgrown Tunnel (Auntie Ethel victim) (Inherits Ranger progressions)
+//  │   ├─ "HAV_FlamingFist_Human_Ranger"               --- Fist Rahir - Flaming Fist (Inherits Ranger progressions)
+//  │   ├─ "HAV_Harper_Human_Ranger"                    --- Harper Antony - Harpers (Inherits Ranger progressions)
+//  │   ├─ "Human_FFist_Ranger"                         --- Flaming Fist Jacek - Flaming Fist (Dead) (Has Ranger progressions)
 //  │   ├─ "LOW_AradinThug_Ranger"
 
 new entry "Human_Ranger"
@@ -3757,88 +3771,92 @@ using "Human_Ranger"
 // data "Passives" "AttackOfOpportunity;DarknessRules"
 data "Passives" "CX_Ranger_Boost;CX_Martial_Boost;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules"
 
-// Unused
+// Unused (Inherits Ranger progressions, fixed racials)
 new entry "CHA_Bandit_Human_Ranger"
 type "Character"
 using "CHA_Bandit_Human_Ranger"
 // data "Passives" "DarknessRules"
-data "Passives" "CX_Ranger_Boost;CX_Martial_Boost;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules"
+data "Passives" "HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules"
 
-// Mari, Barton - Overgrown Ruin Looters (These guys are Rogues named as Rangers)
+// Mari, Barton - Overgrown Ruin Looters (Has Rogue progressions, fixed racials)
 new entry "CHA_BanditInterior_Human_Ranger"
 type "Character"
 using "CHA_BanditInterior_Human_Ranger"
 // data "Passives" "DarknessRules"
-data "Passives" "CX_Rogue_Boost;CX_Martial_Boost;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules"
+data "Passives" "HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules"
 
+// Unused (Inherits Ranger progressions, fixed racials)
 new entry "CRA_MindflayerThrall_Ranger_Human"
 type "Character"
 using "CRA_MindflayerThrall_Ranger_Human"
 // data "Passives" "DarknessRules"
-data "Passives" "CX_Ranger_Boost;CX_Martial_Boost;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules"
+data "Passives" "HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules"
 
-// Remira - Adventurer travelling with Aradin (Why did they remove the _Base passives and NPC_Ranger progression from her?)
+// Remira - Adventurer travelling with Aradin (Added Ranger progressions and racials) (Why did they remove the _Base passives and NPC_Ranger progression from her?)
+// (Increased her HP a touch so she doesn't just get run down and one turned by the Goblin captain, hopefully)
 new entry "DEN_Adventurer_Ranged"
 type "Character"
 using "DEN_Adventurer_Ranged"
+// data "Vitality" "18"
+data "Vitality" "22"
 // data "Passives" ""
-data "Passives" "CX_Ranger_Boost;CX_Martial_Boost;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules"
+data "Passives" "HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules"
 // data "Progressions" ""
 data "Progressions" "f0ede459-8b86-48fd-ac11-4432573566a5"
 
-// Gandrel - The Gur
+// Gandrel - The Gur (Has Ranger progressions, fixed racials)
 new entry "HAG_GurHunter"
 type "Character"
 using "HAG_GurHunter"
 // data "Passives" "Scar_Fury_Gur;AttackOfOpportunity;DarknessRules"
-data "Passives" "CX_Ranger_Boost;CX_Martial_Boost;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules;Scar_Fury_Gur"
+data "Passives" "HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules;Scar_Fury_Gur"
 
-// Quivers Antinnia - Aradin's mercenary crew
+// Quivers Antinnia - Aradin's mercenary crew (Inherits Ranger progressions, fixed racials)
 new entry "LOW_AradinThug_Ranger"
 type "Character"
 using "LOW_AradinThug_Ranger"
 // data "Passives" "AttackOfOpportunity;DarknessRules;FightingStyle_Archery;ExtraAttack"
-data "Passives" "CX_Ranger_Boost;CX_Martial_Boost;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules;FightingStyle_Archery;ExtraAttack"
+data "Passives" "HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules;FightingStyle_Archery;ExtraAttack"
 
 // "_Human"
 //  ├─ "Human_Ranger"
-//  │   ├─ "LOW_CountingHouse_Ranged_Human"
-//  │   ├─ "LOW_GriefGuard_Human_Ranger"                --- Unused
-//  │   ├─ "LOW_GuildSmugglers_Guard_02"                --- Lo Blank - The Guild, Big Huido's gang
+//  │   ├─ "LOW_CountingHouse_Ranged_Human"             --- (Inherits Ranger progressions)
+//  │   ├─ "LOW_GriefGuard_Human_Ranger"                --- Unused (Inherits Ranger progressions)
+//  │   ├─ "LOW_GuildSmugglers_Guard_02"                --- Lo Blank - The Guild, Big Huido's gang (Inherits Ranger progressions)
 //  │   ├─ "LOW_VolosFate_Thugs_Ranged_01"
-//  │   ├─ "MOO_Harper_Human_Ranger"                    --- Harper Grenywald - Harpers
-//  │   ├─ "PLA_GnollCave_ZhentRanger_Weak"             --- Olly - Zhentarim (lol imagine getting specifically labelled weak)
-//  │   ├─ "PLA_Zhent_Recruit_Human_Ranger"             --- Brem, Bellar, Karad, Garias, Jarg, Zarys - Zhentarim (Most of the Zhents in the hideout under Waukeen's Rest)
-//  │   ├─ "SCL_Harper_Human_Ranger"                    --- Harper Meygan, Harper Yonas - Harpers / Shadow-Cursed Harper (in Reithwin Town Square)
-//  │   │   ├─ "LOW_HarperConfrontation_Ranger_Human"   --- Harper Glist - Harpers
-//  │   │   └─ "SCL_Caravan_Ambusher_Manus"             --- Harper Manus - Harpers
-//  │   ├─ "WYR_Flophouse_Human_Ranger"                 --- Adventurer Drim
+//  │   ├─ "MOO_Harper_Human_Ranger"                    --- Harper Grenywald - Harpers (Inherits Ranger progressions)
+//  │   ├─ "PLA_GnollCave_ZhentRanger_Weak"             --- Olly - Zhentarim (lol imagine getting specifically labelled weak) (Inherits Ranger progressions)
+//  │   ├─ "PLA_Zhent_Recruit_Human_Ranger"             --- Brem, Bellar, Karad, Garias, Jarg, Zarys - Zhentarim (Most of the Zhents in the hideout under Waukeen's Rest) (Inherits Ranger progressions)
+//  │   ├─ "SCL_Harper_Human_Ranger"                    --- Harper Meygan, Harper Yonas - Harpers / Shadow-Cursed Harper (in Reithwin Town Square) (Inherits Ranger progressions)
+//  │   │   ├─ "LOW_HarperConfrontation_Ranger_Human"   --- Harper Glist - Harpers (Inherits Ranger progressions)
+//  │   │   └─ "SCL_Caravan_Ambusher_Manus"             --- Harper Manus - Harpers (Inherits Ranger progressions)
+//  │   ├─ "WYR_Flophouse_Human_Ranger"                 --- Adventurer Drim - guest of Fraygo's Flophouse (Inherits Ranger progressions)
 //  │   ├─ "WYR_GurHunter_Ranged"
-//  │   └─ "WYR_Posthouse_Human_Ranger"
+//  │   └─ "WYR_Posthouse_Human_Ranger"                 --- Angry Mar'hyah (Inherits Ranger progressions)
 
 // Counting House Artillerists
 new entry "LOW_CountingHouse_Ranged_Human"
 type "Character"
 using "LOW_CountingHouse_Ranged_Human"
 // data "Passives" "AttackOfOpportunity;DarknessRules;Mobile_PassiveBonuses;Mobile_CounterAttackOfOpportunity;Mobile_DashAcrossDifficultTerrain"
-data "Passives" "CX_Ranger_Boost;CX_Martial_Boost;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules;Mobile_PassiveBonuses;Mobile_CounterAttackOfOpportunity;Mobile_DashAcrossDifficultTerrain"
+data "Passives" "HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules;Mobile_PassiveBonuses;Mobile_CounterAttackOfOpportunity;Mobile_DashAcrossDifficultTerrain"
 
-// Bully Gal Vharranne - Churg Elvek's mob
+// Bully Gal Vharranne - Churg Elvek's mob (Inherits Ranger progressions, fixed racials)
 new entry "LOW_VolosFate_Thugs_Ranged_01"
 type "Character"
 using "LOW_VolosFate_Thugs_Ranged_01"
 // data "Passives" "ColossusSlayer;FastMovement;AttackOfOpportunity;DarknessRules"
-data "Passives" "CX_Ranger_Boost;CX_Martial_Boost;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules;ColossusSlayer;FastMovement"
+data "Passives" "HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules;ColossusSlayer;FastMovement"
 
-// Dominica Arsets, Oliver Quarlic - The Gur / Gur Hunter Sharpshooter (Gather Your Allies summon)
+// Dominica Arsets, Oliver Quarlic - The Gur / Gur Hunter Sharpshooter (Gather Your Allies summon) (Inherits Ranger progressions, fixed racials)
 new entry "WYR_GurHunter_Ranged"
 type "Character"
 using "WYR_GurHunter_Ranged"
 // data "Passives" "Scar_Dunes_Gur;AttackOfOpportunity;DarknessRules"
-data "Passives" "CX_Ranger_Boost;CX_Martial_Boost;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules;Scar_Dunes_Gur"
+data "Passives" "HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules;Scar_Dunes_Gur"
 
 // "_Human"
-//  ├─ "Human_Rogue"
+//  ├─ "Human_Rogue"                                        --- (Has Rogue progressions)
 //  │   ├─ "Human_Cultist_Bhaal_NightBlade"
 //  │   │   ├─ "Human_Cultist_Bhaal_DeathsHead"
 //  │   │   │   ├─ "GLO_Orin"
@@ -3848,40 +3866,33 @@ data "Passives" "CX_Ranger_Boost;CX_Martial_Boost;HumanMilitia;HumanVersatility;
 //  │   │   │   └─ "LOW_UnholyAssassin"
 //  │   │   │       └─ "LOW_UnholyAssassin_Rycke"
 
-new entry "Human_Rogue"
-type "Character"
-using "Human_Rogue"
-// data "Passives" "AttackOfOpportunity;DarknessRules"
-data "Passives" "CX_Rogue_Boost;CX_Martial_Boost;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules"
-
-// Is there a reason why they remove NPC_Rogue progression? Idk but imma put it back in, consequences be damned
-
-// Sinister Hooded Man, Night Blade Vrylda, Night Blade Vinnia, Night Blade Klarv, Cilarea, Night Blade Hervyl, Night Blade Abraxa, Night Blade Dellinjah Dax, Night Blade Elda - Cult of Bhaal
+// Sinister Hooded Man, Night Blade Vrylda, Night Blade Vinnia, Night Blade Klarv, Cilarea, Night Blade Hervyl, Night Blade Abraxa, Night Blade Dellinjah Dax, Night Blade Elda - Cult of Bhaal (Added Rogue progressions)
 new entry "Human_Cultist_Bhaal_NightBlade"
 type "Character"
 using "Human_Cultist_Bhaal_NightBlade"
 // data "Passives" "AttackOfOpportunity;Darkvision;DarknessRules"
-data "Passives" "CX_Rogue_Boost;CX_Martial_Boost;HumanMilitia;HumanVersatility;AttackOfOpportunity;Darkvision;DarknessRules"
+data "Passives" "HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules;Darkvision"
 // data "Progressions" ""
 data "Progressions" "532203c2-7bcb-4162-9a7c-2bb20e227a30"
 
+// (Added Rogue progressions)
 new entry "Human_Cultist_Bhaal_DeathsHead"
 type "Character"
 using "Human_Cultist_Bhaal_DeathsHead"
 // data "Passives" "ExtraAttack;MagicResistance;MurderHungry;AttackOfOpportunity;Darkvision;DarknessRules"
-data "Passives" "CX_Rogue_Boost;CX_Martial_Boost;HumanMilitia;HumanVersatility;AttackOfOpportunity;Darkvision;DarknessRules;ExtraAttack;MagicResistance;MurderHungry"
+data "Passives" "HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules;Darkvision;ExtraAttack;MagicResistance;MurderHungry"
 // data "Progressions" ""
 data "Progressions" "532203c2-7bcb-4162-9a7c-2bb20e227a30"
 
-// Orin - Cult of Bhaal - HONOUR MODE INHERITANCE (YAAAAS YOU GO GIRL) 
+// Orin - Cult of Bhaal - HONOUR MODE INHERITANCE (YAAAAS YOU GO GIRL) (Has Rogue progressions, added Assassin subclass)
 new entry "GLO_Orin"
 type "Character"
 using "GLO_Orin"
 // data "Passives" "FastHands;MagicResistance;Surprise_Immunity;AttackOfOpportunity;Darkvision;DarknessRules;ImmutableForm"
 // data "Passives" "FastHands;MagicResistance;Surprise_Immunity;AttackOfOpportunity;Darkvision;DarknessRules;ImmutableForm;LegendaryAction_LOW_BhaalsRetribution_Orin"
-data "Passives" "CX_Rogue_Boost;CX_Martial_Boost;HumanMilitia;HumanVersatility;AttackOfOpportunity;Darkvision;DarknessRules;FastHands;MagicResistance;Surprise_Immunity;ImmutableForm;LegendaryAction_LOW_BhaalsRetribution_Orin"
+data "Passives" "CX_Rogue_Assassin_Boost;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules;Darkvision;FastHands;MagicResistance;Surprise_Immunity;ImmutableForm;LegendaryAction_LOW_BhaalsRetribution_Orin"
 
-// Strangler Luke - Cult of Bhaal (He has Monk progressions lol)
+// Strangler Luke - Cult of Bhaal (Has Monk progressions, added Open Hand subclass) //TODO: Drunken Master?
 new entry "LOW_Chasm_Strangler"
 type "Character"
 using "LOW_Chasm_Strangler"
@@ -3891,36 +3902,40 @@ data "Wisdom" "16"
 data "Charisma" "13"
 // data "SpellCastingAbility" "Charisma"
 data "SpellCastingAbility" "Wisdom"
+// data "Passives" "ExtraAttack;MagicResistance;MurderHungry;AttackOfOpportunity;Darkvision;DarknessRules"
+data "Passives" "CX_Monk_OpenHand_Boost;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules;Darkvision;ExtraAttack;MagicResistance;MurderHungry"
 
-// Cirian - Cult of Bhaal (one of the fellas who ambush you in the park)
+// Cirian - Cult of Bhaal (one of the fellas who ambush you in the park) (Inherits added Rogue progressions, fixed racials)
 new entry "LOW_Cultist_Bhaal_DeathsHead_Disguise"
 type "Character"
 using "LOW_Cultist_Bhaal_DeathsHead_Disguise"
 // data "Passives" "AttackOfOpportunity;DarknessRules;ExtraAttack;MagicResistance;Darkvision"
-data "Passives" "CX_Rogue_Boost;CX_Martial_Boost;HumanMilitia;HumanVersatility;AttackOfOpportunity;Darkvision;DarknessRules;ExtraAttack;MagicResistance"
+data "Passives" "HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules;Darkvision;ExtraAttack;MagicResistance"
 
-// Kevo Phogge - Cult of Bhaal (Actually a Ranger)
+// Kevo Phogge - Cult of Bhaal (Has Ranger progressions, fixed racials and spell casting modifier)
 new entry "LOW_MinscHideout_SluiceGuard_Ranger"
 type "Character"
 using "LOW_MinscHideout_SluiceGuard_Ranger"
 // data "SpellCastingAbility" "Intelligence" 
 data "SpellCastingAbility" "Wisdom"
 // data "Passives" "AttackOfOpportunity;DarknessRules"
-data "Passives" "CX_Ranger_Boost;CX_Martial_Boost;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules"
+data "Passives" "HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules"
 
-// Unholy Assassin Mitchia - Cult of Bhaal
+// Unholy Assassin Mitchia - Cult of Bhaal (Inherits added Rogue progressions, added Assassin subclass, removed additional Sneak Attack charge)
 new entry "LOW_UnholyAssassin"
 type "Character"
 using "LOW_UnholyAssassin"
+// data "ActionResources" "ActionPoint:1;BonusActionPoint:1;Movement:12;ReactionActionPoint:1;SneakAttack_Charge:1"
+data "ActionResources" "ActionPoint:1;BonusActionPoint:1;Movement:12;ReactionActionPoint:1"
 // data "Passives" "MagicResistance;MurderHungry;AttackOfOpportunity;Darkvision;DarknessRules"
-data "Passives" "CX_Rogue_Boost;CX_Martial_Boost;HumanMilitia;HumanVersatility;AttackOfOpportunity;Darkvision;DarknessRules;MagicResistance;MurderHungry"
+data "Passives" "CX_Rogue_Assassin_Boost;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules;Darkvision;MagicResistance;MurderHungry"
 
-// Unholy Assassin Rycke - Cult of Bhaal
+// Unholy Assassin Rycke - Cult of Bhaal (Inherits added Rogue progressions, added Assassin subclass)
 new entry "LOW_UnholyAssassin_Rycke"
 type "Character"
 using "LOW_UnholyAssassin_Rycke"
 // data "Passives" "MagicResistance;MurderHungry;AttackOfOpportunity;Darkvision;DarknessRules;ExtraAttack;FastHands;FightingStyle_TwoWeaponFighting;DualWielder_PassiveBonuses"
-data "Passives" "CX_Rogue_Boost;CX_Martial_Boost;HumanMilitia;HumanVersatility;AttackOfOpportunity;Darkvision;DarknessRules;MagicResistance;MurderHungry;ExtraAttack;FastHands;FightingStyle_TwoWeaponFighting;DualWielder_PassiveBonuses"
+data "Passives" "CX_Rogue_Assassin_Boost;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules;Darkvision;MagicResistance;MurderHungry;ExtraAttack;FastHands;FightingStyle_TwoWeaponFighting;DualWielder_PassiveBonuses"
 
 // "_Human"
 //  ├─ "Human_Rogue"
@@ -3928,53 +3943,48 @@ data "Passives" "CX_Rogue_Boost;CX_Martial_Boost;HumanMilitia;HumanVersatility;A
 //  │   │   ├─ "Human_Cultist_Bhaal_Invoker"
 //  │   │   │   └─ "LOW_Chasm_Sniper"
 //  │   │   ├─ "Human_Cultist_Bhaal_Reaper"
-//  │   │   └─ "LOW_MurderTribunal_Cultist_Ghost"
+//  │   │   └─ "LOW_MurderTribunal_Cultist_Ghost"   --- Tribunal Ghost (Ghosts so not giving human passives) (Inherits added Roge progressions)
 
-// Invoker of Bhaal Grice, Invoker of Bhaal Notar Esojac, Invoker of Bhaal Hivune, Invoker of Bhaal Horriss, Invoker of Bhaal Grimlark, Invoker of Bhaal Ellice - Cult of Bhaal (Wizard progressions to replace our added, and inherited, Rogue progressions)
+// Invoker of Bhaal Grice, Invoker of Bhaal Notar Esojac, Invoker of Bhaal Hivune, Invoker of Bhaal Horriss, Invoker of Bhaal Grimlark, Invoker of Bhaal Ellice - Cult of Bhaal (Wizard progressions to replace our added, and inherited, Rogue progressions, removed proprietary spell slots)
 new entry "Human_Cultist_Bhaal_Invoker"
 type "Character"
 using "Human_Cultist_Bhaal_Invoker"
+// data "ActionResources" "ActionPoint:1;BonusActionPoint:1;Movement:9;ReactionActionPoint:1;SpellSlot:4:4:3;SpellSlot:4:4:4"
+data "ActionResources" "ActionPoint:1;BonusActionPoint:1;Movement:9;ReactionActionPoint:1"
 // data "Passives" "AttackOfOpportunity;Darkvision;DarknessRules;FocusedConjuration;SpellSniper_Critical"
-data "Passives" "CX_Wizard_Boost;CX_Magic_Boost;CX_Spells_L4;CX_Spells_L5;CX_Spells_L5C;HumanMilitia;HumanVersatility;AttackOfOpportunity;Darkvision;DarknessRules;FocusedConjuration;SpellSniper_Critical"
+data "Passives" "CX_Spells_L4;CX_Spells_L5;CX_Spells_L5C;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules;Darkvision;FocusedConjuration;SpellSniper_Critical"
 // data "Progressions" "" 
 data "Progressions" "44bdbc5e-a003-4d61-87f0-5ced20d3804e"
 
-// Farlsyer of Bhaal Ghislev - Death's Gatekeeper, Cult of Bhaal (class boost doesn't matter since he doesn't actually fight back)
+// Farlsyer of Bhaal Ghislev - Death's Gatekeeper, Cult of Bhaal (not a combatant) (Inherits added Wizard progressions)
 new entry "LOW_Chasm_Sniper"
 type "Character"
 using "LOW_Chasm_Sniper"
 // data "Passives" "Alert;FocusedConjuration;MagicResistance;SpellSniper_Critical;AttackOfOpportunity;DarknessRules;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check;Ethereal;IncorporealMovement;TurnResistance"
-data "Passives" "CX_Wizard_Boost;CX_Magic_Boost;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules;Alert;FocusedConjuration;MagicResistance;SpellSniper_Critical;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check;Ethereal;IncorporealMovement;TurnResistance"
+data "Passives" "HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules;Alert;FocusedConjuration;MagicResistance;SpellSniper_Critical;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check;Ethereal;IncorporealMovement;TurnResistance"
 
-// Reapers of Bhaal - Cult of Bhaal (giving em their NPC_Rogue progression back)
+// Reapers of Bhaal - Cult of Bhaal (Added Rogue progressions, they're good candidates for Arcane Trickster so any subclass will do, fixed racials)
 new entry "Human_Cultist_Bhaal_Reaper"
 type "Character"
 using "Human_Cultist_Bhaal_Reaper"
 // data "Passives" "ExtraAttack;AttackOfOpportunity;DarknessRules;Darkvision"
-data "Passives" "CX_Rogue_Boost;CX_Martial_Boost;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules;Darkvision;ExtraAttack"
+data "Passives" "HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules;Darkvision;ExtraAttack"
 // data "Progressions" ""
 data "Progressions" "532203c2-7bcb-4162-9a7c-2bb20e227a30"
-
-// Tribunal Ghost (Ghosts so not giving human passives)
-new entry "LOW_MurderTribunal_Cultist_Ghost"
-type "Character"
-using "LOW_MurderTribunal_Cultist_Ghost"
-// data "Passives" "ImmuneToDisarm;AttackOfOpportunity;DarknessRules;Darkvision;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check;Ethereal"
-data "Passives" "CX_Rogue_Boost;CX_Martial_Boost;AttackOfOpportunity;DarknessRules;Darkvision;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check;Ethereal;ImmuneToDisarm"
 
 // "_Human"
 //  ├─ "Human_Rogue"
 //  │   ├─ "LOW_Guildhall_NineFingersKeene"
-//  │   ├─ "LOW_Guildhall_Swarm_Melee_Human"                --- Snapbone - Guild Bursar Guard, The Guild / Smilin' Ginna - Zhentarim
-//  │   ├─ "LOW_Guildhall_Swarm_Ranged_Human"               --- Unused
-//  │   └─ "LOW_QuenoraGrizly"                              --- Captain Grisly - Proprietor of the Blushing Mermaid
+//  │   ├─ "LOW_Guildhall_Swarm_Melee_Human"                --- Snapbone - Guild Bursar Guard, The Guild / Smilin' Ginna - Zhentarim (Inherits Rogue progressions)
+//  │   ├─ "LOW_Guildhall_Swarm_Ranged_Human"               --- Unused (Inherits Rogue progressions)
+//  │   └─ "LOW_QuenoraGrizly"                              --- Captain Grisly - Proprietor of the Blushing Mermaid (Inherits Rogue progressions) //TODO: Add Swashbuckler, not optional at all
 
-// Nine-Fingers "Holy Shit How Much Damage Do Her Daggers Do??" Keene
+// Nine-Fingers "Holy Shit How Much Damage Do Her Daggers Do??" Keene (Inherits Rogue progressions, added Thief subclass because it will likely fuck with her very unique approach to combat the least - and it's fitting enough)
 new entry "LOW_Guildhall_NineFingersKeene"
 type "Character"
 using "LOW_Guildhall_NineFingersKeene"
 // data "Passives" "LOW_Guildhall_IsolatedPrey;LOW_Guildhall_DaggerThrower;LOW_Guildhall_ExtraAttack_DaggerSpecialist;FastHands;Alert;AttackOfOpportunity;DarknessRules"
-data "Passives" "CX_Rogue_Boost;CX_Martial_Boost;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules;LOW_Guildhall_IsolatedPrey;LOW_Guildhall_DaggerThrower;LOW_Guildhall_ExtraAttack_DaggerSpecialist;FastHands;Alert"
+data "Passives" "CX_Rogue_Thief_Boost;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules;LOW_Guildhall_IsolatedPrey;LOW_Guildhall_DaggerThrower;LOW_Guildhall_ExtraAttack_DaggerSpecialist;FastHands;Alert"
 
 // "_Human"
 //  ├─ "Human_Cultist_Bane_BlackGauntlet"
@@ -4036,20 +4046,24 @@ data "Passives" "CX_Paladin_Oathbreaker_Boost;HumanMilitia;HumanVersatility;Atta
 //  ├─ "Human_Gondian_Caster"          
 //  ├─ "LOW_Sarevok"
 
-// Lu La Forza (Dead), Gondian Frell Olsin, Gondian Clore Falson - Church of Gond (Gondian unpaid interns in the Steel Watch Foundry)
+// Lu La Forza (Dead), Gondian Frell Olsin, Gondian Clore Falson - Church of Gond (Gondian unpaid interns in the Steel Watch Foundry) (Added Wizard progressions, fixed racials)
 new entry "Human_Gondian_Caster"
 type "Character"
 using "Human_Gondian_Caster"
 // data "Passives" "AttackOfOpportunity;DarknessRules"
-data "Passives" "CX_Wizard_Boost;CX_Magic_Boost;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules"
+data "Passives" "HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules"
+// data "Progressions" ""
+data "Progressions" "44bdbc5e-a003-4d61-87f0-5ced20d3804e"
 
-// Sarevok Anchev - Justice of the Murder Tribunal, Cult of Bhaal - HONOUR MODE INHERITANCE
+// Sarevok Anchev - Justice of the Murder Tribunal, Cult of Bhaal - HONOUR MODE INHERITANCE (Added Fighter progressions, added Champion subclass)
 new entry "LOW_Sarevok"
 type "Character"
 using "LOW_Sarevok"
 // data "Passives" "ExtraAttack;ImmuneToDisarm;Indomitable;Surprise_Immunity;DarknessRules;AttackOfOpportunity"
 // data "Passives" "ExtraAttack;ImmuneToDisarm;Indomitable;Surprise_Immunity;DarknessRules;AttackOfOpportunity;LegendaryAction_LOW_BhaalsRetribution_Sarevok"
-data "Passives" "CX_Fighter_Boost;CX_Martial_Boost;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules;ExtraAttack;ImmuneToDisarm;Indomitable;Surprise_Immunity;LegendaryAction_LOW_BhaalsRetribution_Sarevok"
+data "Passives" "CX_Fighter_Champion_Boost;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules;ExtraAttack;ImmuneToDisarm;Indomitable;Surprise_Immunity;LegendaryAction_LOW_BhaalsRetribution_Sarevok"
+// data "Progressions" ""
+data "Progressions" "0e6da493-5a37-423b-8c28-629462b22faa"
 
 // ==================================== Kobold ====================================
 
