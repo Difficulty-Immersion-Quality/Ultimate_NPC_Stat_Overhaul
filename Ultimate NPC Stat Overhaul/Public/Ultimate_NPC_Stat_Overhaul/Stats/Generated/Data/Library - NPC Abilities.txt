@@ -324,7 +324,7 @@ data "Requirements" ""
 data "RequirementConditions" "not Unarmed() and not HasStatus('WEAPON_BOND', GetActiveWeapon())"
 
 // ==================================== Ranger - Companion Summon ====================================
-
+//TODO: Yeah this doesn't work at all, gotta look at adding the NPC versions of these spells in some fashion. Maybe a passive that just summons it out of combat but checks for NPC versions of the spells.
 new entry "Target_RangersCompanion"
 type "SpellData"
 data "SpellType" "Target"
