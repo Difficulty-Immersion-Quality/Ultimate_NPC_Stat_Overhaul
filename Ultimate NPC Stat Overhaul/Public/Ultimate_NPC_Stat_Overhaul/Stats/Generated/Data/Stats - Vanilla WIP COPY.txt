@@ -350,7 +350,7 @@ data "Passives" "CX_Warlock_Fiend_Boost;CX_Spells_L4;CX_Spells_L4C;CX_Spells_L5;
 // data "Progressions" "44bdbc5e-a003-4d61-87f0-5ced20d3804e"
 data "Progressions" "51274504-865d-46d1-a3b6-c72e9384904a"
 
-// Rakath Glitterbeard - Head Banker of The Counting House (Swapping this Hipster to Sorcerer > Wizard progressions)
+// Rakath Glitterbeard - Head Banker of The Counting House (Swapping progressions from Wizard to custom Sorcerer progressions, added Storm Sorcery subclass)
 new entry "LOW_CountingHouse_HeadBanker"
 type "Character"
 using "LOW_CountingHouse_HeadBanker"
@@ -363,7 +363,7 @@ data "Passives" "CX_Sorcerer_StormSorcery_Boost;Dwarf_DwarvenResilience;AttackOf
 // data "Progressions" "44bdbc5e-a003-4d61-87f0-5ced20d3804e"
 data "Progressions" "2189a72d-6489-4621-8b2c-85d3e7df2f6f"
 
-// Hope (Has proper Cleric progressions)
+// Hope (Inherits Cleric progressions, added Life Domain subclass)
 new entry "LOW_Hope"
 type "Character"
 using "LOW_Hope"
@@ -484,7 +484,7 @@ data "Passives" "CX_Ranger_GloomStalker_Boost;Dwarf_DwarvenResilience;AttackOfOp
 //  │   ├─ "LOW_SerialKiller_Dolor"
 //  │   └─ "WYR_SharessCaress_Dwarf_Rogue"      --- (Inherits Rogue progressions)
 
-// (Has blank progressions, adding Rogue) (They use Charisma for casting)
+// (Added Rogue progressions)
 new entry "Dwarf_Cultist_Bhaal_NightBlade"
 type "Character"
 using "Dwarf_Cultist_Bhaal_NightBlade"
@@ -3866,7 +3866,7 @@ data "Passives" "HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules
 //  │   │   │   └─ "LOW_UnholyAssassin"
 //  │   │   │       └─ "LOW_UnholyAssassin_Rycke"
 
-// Sinister Hooded Man, Night Blade Vrylda, Night Blade Vinnia, Night Blade Klarv, Cilarea, Night Blade Hervyl, Night Blade Abraxa, Night Blade Dellinjah Dax, Night Blade Elda - Cult of Bhaal (Added Rogue progressions)
+// Sinister Hooded Man, Night Blade Vrylda, Night Blade Vinnia, Night Blade Klarv, Cilarea, Night Blade Hervyl, Night Blade Abraxa, Night Blade Dellinjah Dax, Night Blade Elda - Cult of Bhaal (Added Rogue progressions, fixed racials)
 new entry "Human_Cultist_Bhaal_NightBlade"
 type "Character"
 using "Human_Cultist_Bhaal_NightBlade"
@@ -3875,7 +3875,7 @@ data "Passives" "HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules
 // data "Progressions" ""
 data "Progressions" "532203c2-7bcb-4162-9a7c-2bb20e227a30"
 
-// (Added Rogue progressions)
+// (Added Rogue progressions, fixed racials)
 new entry "Human_Cultist_Bhaal_DeathsHead"
 type "Character"
 using "Human_Cultist_Bhaal_DeathsHead"
@@ -4294,12 +4294,14 @@ data "Progressions" "56db8107-e04c-4fe3-94f3-fd4acd44cd4a"
 //  │       │   ├─ "LOW_HouseOfHope_Tiefling_Debtor"
 //  │       │   └─ "Tiefling_Commoner_Cowering"         -- Unused
 
+// (Fixed racials)
 new entry "Tiefling_Child"
 type "Character"
 using "Tiefling_Child"
 // data "Passives" "Tiefling_HellishResistance;DarknessRules;Darkvision"
 data "Passives" "Tiefling_HellishResistance;AttackOfOpportunity;DarknessRules;Darkvision"
 
+// (Fixed racials)
 new entry "Tiefling_Commoner_Cowering"
 type "Character"
 using "Tiefling_Commoner_Cowering"
@@ -4307,142 +4309,153 @@ using "Tiefling_Commoner_Cowering"
 data "Passives" "Tiefling_HellishResistance;AttackOfOpportunity;DarknessRules;Darkvision"
 
 // "_Tiefling"
-//  ├─ "Tiefling_Caster"
-//  │   ├─ "CHA_Bandit_Tiefling_Caster"         -- Unused
+//  ├─ "Tiefling_Caster"                        --- (Has Wizard progressions)
+//  │   ├─ "CHA_Bandit_Tiefling_Caster"
 //  │   ├─ "GLO_Prodigy"
 //  │   ├─ "HAG_Masked_Wizard"
 //  │   ├─ "HAV_Harper_Tiefling_Caster"
 //  │   ├─ "HAV_RolandHologramSpeaker"
 //  │   ├─ "LOW_RolanProjection"
-//  │   ├─ "LOW_ShadowheartFriend"              -- Nocturne (Rennald) - Church of Shar
+//  │   ├─ "LOW_ShadowheartFriend"              --- Nocturne (Rennald) - Church of Shar (Inherits Wizard progressions)
 //  │   ├─ "SCE_FlamingFist_Tiefling_Caster"
 //  │   └─ "Tiefling_Bard"
-//  │       └─ "DEN_Refugees_Tiefling_Bard"
+//  │       └─ "DEN_Refugees_Tiefling_Bard"     --- Alfira (Inherits swapped Bard progressions)
 
-new entry "Tiefling_Caster"
-type "Character"
-using "Tiefling_Caster"
-// data "Passives" "Tiefling_HellishResistance;AttackOfOpportunity;DarknessRules;Darkvision"
-data "Passives" "CX_Magic_Boost;Tiefling_HellishResistance;AttackOfOpportunity;DarknessRules;Darkvision"
-
+// Unused (Fixed racials)
 new entry "CHA_Bandit_Tiefling_Caster"
 type "Character"
 using "CHA_Bandit_Tiefling_Caster"
 // data "Passives" "Tiefling_HellishResistance;DarknessRules;Darkvision"
-data "Passives" "CX_Wizard_Boost;CX_Magic_Boost;CX_Spells_L1;CX_Spells_L1C;Tiefling_HellishResistance;AttackOfOpportunity;DarknessRules;Darkvision"
+data "Passives" "CX_Spells_L1;CX_Spells_L1C;Tiefling_HellishResistance;AttackOfOpportunity;DarknessRules;Darkvision"
 
-// Rolan - Tiefling Refugees
+// Rolan - Tiefling Refugees (Swapped proprietary progressions for Wizard progressions, added Evocation subclass, added other proprietary buffs not associated with Evocation to a proprietary stat boost)
 new entry "GLO_Prodigy"
 type "Character"
 using "GLO_Prodigy"
 // data "Passives" "Tiefling_HellishResistance;AttackOfOpportunity;DarknessRules;Darkvision"
-data "Passives" "CX_Wizard_Boost;CX_Wizard_Evocation_Boost;CX_Magic_Boost;CX_Spells_L1;CX_Spells_L2;CX_Spells_L1C;Tiefling_HellishResistance;AttackOfOpportunity;DarknessRules;Darkvision"
+data "Passives" "CX_Wizard_Evocation_Boost;Tiefling_HellishResistance;AttackOfOpportunity;DarknessRules;Darkvision;Goon_Rolan_Boost"
+// data "Progressions" "07d9965e-a2c7-4033-9577-27e42f1911fc"
+data "Progressions" "44bdbc5e-a003-4d61-87f0-5ced20d3804e"
 
-// Mask of Servitude (Overgrown Tunnel) - one of Auntie Ethel's victims. Despite the name, character is really a Cleric
+// Mask of Servitude (Overgrown Tunnel) - one of Auntie Ethel's victims. (Swapped Wizard progressions for Cleric progressions, added Life Domain subclass, fixed racials)
 new entry "HAG_Masked_Wizard"
 type "Character"
 using "HAG_Masked_Wizard"
 // data "Passives" "AttackOfOpportunity;Tiefling_HellishResistance;DarknessRules;DarknessRules"
-data "Passives" "CX_Cleric_Boost;CX_Magic_Boost;Tiefling_HellishResistance;AttackOfOpportunity;DarknessRules;DarknessRules"
+data "Passives" "CX_Cleric_Life_Boost;Tiefling_HellishResistance;AttackOfOpportunity;DarknessRules;Darkvision"
+// data "Progressions" "44bdbc5e-a003-4d61-87f0-5ced20d3804e"
+data "Progressions" "36c3f8de-3293-4d7b-92bc-ceb3c569244b"
 
-// Harper Donner - Harpers
+// Harper Donner - Harpers (Swapped from Wizard progressions to custom Sorcerer progressions)
 new entry "HAV_Harper_Tiefling_Caster"
 type "Character"
 using "HAV_Harper_Tiefling_Caster"
+// data "Intelligence" "16"
+data "Intelligence" "12"
+// data "Charisma" "12"
+data "Charisma" "16"
+// data "SpellCastingAbility" "Intelligence"
+data "SpellCastingAbility" "Charisma"
 // data "Passives" "Tiefling_HellishResistance;AttackOfOpportunity;DarknessRules;Darkvision"
-data "Passives" "CX_Wizard_Boost;CX_Magic_Boost;CX_Spells_L1;CX_Spells_L2;CX_Spells_L3;Tiefling_HellishResistance;AttackOfOpportunity;DarknessRules;Darkvision"
+data "Passives" "CX_Spells_L1;CX_Spells_L2;CX_Spells_L3;Tiefling_HellishResistance;AttackOfOpportunity;DarknessRules;Darkvision"
+// data "Progressions" "44bdbc5e-a003-4d61-87f0-5ced20d3804e"
+data "Progressions" "2189a72d-6489-4621-8b2c-85d3e7df2f6f"
 
+// Swapped inheritence to Roland's entry
+new entry "HAV_RolandHologramSpeaker"
+type "Character"
+// using "Tiefling_Caster"
+using "GLO_Prodigy"
+
+// Swapped inheritence to Roland's entry
+new entry "LOW_RolanProjection"
+type "Character"
+// using "Tiefling_Caster"
+using "GLO_Prodigy"
+data "Vitality" "72"
+
+// Flaming Fist (Inherits Wizard progressions)
 new entry "SCE_FlamingFist_Tiefling_Caster"
 type "Character"
 using "SCE_FlamingFist_Tiefling_Caster"
-data "Vitality" "72"
 // data "Passives" "Tiefling_HellishResistance;AttackOfOpportunity;DarknessRules;Darkvision"
-data "Passives" "CX_Wizard_Boost;CX_Magic_Boost;CX_Spells_L2;CX_Spells_L3;CX_Spells_L4;Tiefling_HellishResistance;AttackOfOpportunity;DarknessRules;Darkvision"
+data "Passives" "CX_Spells_L2;CX_Spells_L3;CX_Spells_L4;Tiefling_HellishResistance;AttackOfOpportunity;DarknessRules;Darkvision"
 
-// Alfira (Does this mess with the Alfira Joins The Party mod? - Probably not, player progressions > NPC progressions pretty sure)
-new entry "DEN_Refugees_Tiefling_Bard"
+// (Swapped from Wizard progressions to Bard progressions)
+new entry "Tiefling_Bard"
 type "Character"
-using "DEN_Refugees_Tiefling_Bard"
+using "Tiefling_Bard"
 // data "Progressions" "44bdbc5e-a003-4d61-87f0-5ced20d3804e"
 data "Progressions" "cbe5059f-7a9f-4b98-be6a-07c9cd8e02c2"
-// data "Passives" "Tiefling_HellishResistance;AttackOfOpportunity;DarknessRules;Darkvision"
-data "Passives" "CX_Bard_Boost;CX_Magic_Boost;Tiefling_HellishResistance;AttackOfOpportunity;DarknessRules;Darkvision"
 
 // "_Tiefling"
-//  ├─ "Tiefling_Melee"
-//  │   ├─ "DEN_Memnos"
-//  │   ├─ "DEN_Refugees_Tiefling_Melee"
+//  ├─ "Tiefling_Melee"                             --- (Inherits Fighter progressions)
+//  │   ├─ "DEN_Memnos"                             --- Memnos - Tiefling refugees (Inherits Fighter progressions)
+//  │   ├─ "DEN_Refugees_Tiefling_Melee"            --- Tilses - Tiefling refugees (Inherits Fighter progressions)
 //  │   ├─ "DEN_TieflingLeader"
 //  │   ├─ "DEN_Trainer"
-//  │   ├─ "END_CityWatchMelee_Tiefling"
+//  │   ├─ "END_CityWatchMelee_Tiefling"            --- Watcher Guardian (Inherits Fighter progressions)
 //  │   ├─ "END_Hellrider_Paladin"
-//  │   ├─ "GLO_IrritatedTiefling"                  -- Guex
+//  │   ├─ "GLO_IrritatedTiefling"                  --- Guex - Tiefling refugees (Inherits Fighter progressions)
 //  │   ├─ "LOW_AradinThug_Fighter"
-//  │   ├─ "Tiefling_Cleric"
-//  │   │   └─ "END_Hellrider_Cleric"               -- Hellrider Cleric (Gather Your Allies summon)
+//  │   ├─ "Tiefling_Cleric"                        --- (Inherits Cleric progressions)
+//  │   │   └─ "END_Hellrider_Cleric"
 //  │   └─ "WYR_SmugglersCave_StoneLord_Tiefling"
 
-new entry "Tiefling_Melee"
-type "Character"
-using "Tiefling_Melee"
-// data "Passives" "Tiefling_HellishResistance;AttackOfOpportunity;DarknessRules;Darkvision"
-data "Passives" "CX_Fighter_Boost;CX_Martial_Boost;Tiefling_HellishResistance;AttackOfOpportunity;DarknessRules;Darkvision"
-
-// Zevlor - Tiefling Refugees
+// Zevlor - Tiefling Refugees (Inherits Paladin progressions, added Oath of Devotion subclass)
 new entry "DEN_TieflingLeader"
 type "Character"
 using "DEN_TieflingLeader"
 // data "Passives" "AttackOfOpportunity;DarknessRules;Tiefling_HellishResistance;FightingStyle_Defense;Tough"
-data "Passives" "CX_Paladin_Boost;CX_Paladin_Devotion_Boost;CX_Martial_Boost;Tiefling_HellishResistance;AttackOfOpportunity;DarknessRules;Darkvision;FightingStyle_Defense;Tough"
+data "Passives" "CX_Paladin_Devotion_Boost;Tiefling_HellishResistance;AttackOfOpportunity;DarknessRules;Darkvision;FightingStyle_Defense;Tough"
 
-// Watcher Guardian
-new entry "END_CityWatchMelee_Tiefling"
+// Asharak - Tiefling refugees (Inherits Fighter progressions, added Battle Master subclass)
+new entry "DEN_Trainer"
 type "Character"
-using "END_CityWatchMelee_Tiefling"
-// data "Passives" "AttackOfOpportunity;Tiefling_HellishResistance;DarknessRules;Darkvision;FightingStyle_GreatWeaponFighting;GreatWeaponMaster_BonusAttack;GreatWeaponMaster_BonusDamage"
-data "Passives" "CX_Fighter_Boost;CX_Martial_Boost;Tiefling_HellishResistance;AttackOfOpportunity;DarknessRules;Darkvision;FightingStyle_GreatWeaponFighting;GreatWeaponMaster_BonusAttack;GreatWeaponMaster_BonusDamage"
+using "DEN_Trainer"
+data "Passives" "Tiefling_HellishResistance;AttackOfOpportunity;DarknessRules;Darkvision"
+data "Passives" "CX_Fighter_BattleMaster_Boost;Tiefling_HellishResistance;AttackOfOpportunity;DarknessRules;Darkvision"
 
-// Helrider Paladin (Gather Your Allies summon)
+// Helrider Paladin (Gather Your Allies summon) (Inherits Paladin progressions, fixed spellcasting modifier)
 new entry "END_Hellrider_Paladin"
 type "Character"
 using "END_Hellrider_Paladin"
 // data "SpellCastingAbility" "Intelligence"
 data "SpellCastingAbility" "Charisma"
-// data "Passives" "Tiefling_HellishResistance;AttackOfOpportunity;DarknessRules;Darkvision"
-data "Passives" "CX_Paladin_Boost;CX_Martial_Boost;Tiefling_HellishResistance;AttackOfOpportunity;DarknessRules;Darkvision"
 
-// Devilish Qora - Aradin's mercenary crew
+// Devilish Qora - Aradin's mercenary crew (Inherits Fighter progressions, added Battle Master subclass)
 new entry "LOW_AradinThug_Fighter"
 type "Character"
 using "LOW_AradinThug_Fighter"
 // data "Passives" "AttackOfOpportunity;Tiefling_HellishResistance;DarknessRules;Darkvision;FightingStyle_TwoWeaponFighting;Riposte;ExtraAttack_2;DualWielder_PassiveBonuses"
-data "Passives" "CX_Fighter_Boost;CX_Martial_Boost;Tiefling_HellishResistance;AttackOfOpportunity;DarknessRules;Darkvision;ExtraAttack_2;FightingStyle_TwoWeaponFighting;Riposte;DualWielder_PassiveBonuses"
+data "Passives" "CX_Fighter_BattleMaster_Boost;Tiefling_HellishResistance;AttackOfOpportunity;DarknessRules;Darkvision;ExtraAttack_2;FightingStyle_TwoWeaponFighting;Riposte;DualWielder_PassiveBonuses"
 
-new entry "Tiefling_Cleric"
+// Hellrider Cleric (Gather Your Allies summon) (Inherits Cleric progressions, added Light Domain subclass)
+new entry "END_Hellrider_Cleric"
 type "Character"
-using "Tiefling_Cleric"
+using "END_Hellrider_Cleric"
 // data "Passives" "Tiefling_HellishResistance;AttackOfOpportunity;DarknessRules;Darkvision"
-data "Passives" "CX_Cleric_Boost;CX_Magic_Boost;Tiefling_HellishResistance;AttackOfOpportunity;DarknessRules;Darkvision"
+data "Passives" "CX_Cleric_Light_Boost;Tiefling_HellishResistance;AttackOfOpportunity;DarknessRules;Darkvision"
 
-// Cairos - Envoy of the Stone Lord, Envoys of the Stone Lord
+// Cairos (Caïros) - Envoy of the Stone Lord, Envoys of the Stone Lord (Inherits Fighter progressions, added Battlemaster subclass)
 new entry "WYR_SmugglersCave_StoneLord_Tiefling"
 type "Character"
 using "WYR_SmugglersCave_StoneLord_Tiefling"
 // data "Passives" "Tiefling_HellishResistance;AttackOfOpportunity;DarknessRules;Darkvision;Parry;Riposte;Indomitable"
-data "Passives" "CX_Fighter_Boost;CX_Martial_Boost;Tiefling_HellishResistance;AttackOfOpportunity;DarknessRules;Darkvision;Parry;Riposte;Indomitable"
+data "Passives" "CX_Fighter_BattleMaster_Boost;Tiefling_HellishResistance;AttackOfOpportunity;DarknessRules;Darkvision;Parry;Riposte;Indomitable"
 
 // "_Tiefling"
-//  ├─ "Tiefling_Ranger"
+//  ├─ "Tiefling_Ranger"                        --- (Inherits Ranger progressions)
 //  │   ├─ "CHA_Bandit_Tiefling_Ranger"
-//  │   │   └─ "CHA_Bandit_Tiefling_Ranger_B"   --- Nymessa - Tiefling Refugees
-//  │   ├─ "DEN_Arka"                           --- Arka - Tiefling Refugees
+//  │   │   └─ "CHA_Bandit_Tiefling_Ranger_B"   --- Nymessa - Tiefling Refugees (Inherits Ranger progressions and fixed racials)
+//  │   ├─ "DEN_Arka"                           --- Arka - Tiefling Refugees (Inherits Ranger progressions)
 //  │   ├─ "DEN_Refugees_Tiefling_Ranger"       --- Cerys, Rikka, Elegis, Lakrissa, Zorru, Kaldani - Tiefling Refugees
-//  │   ├─ "END_Inquisitor_Tiefling"            --- Inquisitor of the Absolute - Cult of the Absolute
-//  │   ├─ "GLO_ProdigySister"                  --- Lia - Tiefling Refugees
-//  │   ├─ "HAV_Harper_Tiefling_Ranger"         --- Harper Naysa, Harper Lumn - Harpers
-//  │   ├─ "MOO_Harper_Tiefling_Ranger"         --- Harper Olys - Harpers
-//  │   ├─ "MOO_PrisonWarden"
-//  │   └─ "PLA_ChokepointScout"                --- Ellyka
+//  │   ├─ "END_Inquisitor_Tiefling"            --- Inquisitor of the Absolute - Cult of the Absolute (Inherits Ranger progressions)
+//  │   ├─ "GLO_ProdigySister"                  --- Lia - Tiefling Refugees (Inherits Ranger progressions)
+//  │   ├─ "HAV_Harper_Tiefling_Ranger"         --- Harper Naysa, Harper Lumn - Harpers (Inherits Ranger progressions)
+//  │   ├─ "MOO_Harper_Tiefling_Ranger"         --- Harper Olys - Harpers (Inherits Ranger progressions)
+//  │   ├─ "MOO_PrisonWarden"                   --- The Warden - Cult of the Absolute (Inherits Ranger progressions)
+//  │   └─ "PLA_ChokepointScout"                --- Ellyka - Tiefling Refugees (Inherits Ranger progressions)
 
 new entry "Tiefling_Ranger"
 type "Character"
@@ -4450,32 +4463,19 @@ using "Tiefling_Ranger"
 // data "Passives" "Tiefling_HellishResistance;AttackOfOpportunity;DarknessRules;Darkvision"
 data "Passives" "CX_Ranger_Boost;CX_Martial_Boost;Tiefling_HellishResistance;AttackOfOpportunity;DarknessRules;Darkvision"
 
-// Damays
+// Damays - Tiefling refugees (Inherits Ranger progressions, fixed racials)
 new entry "CHA_Bandit_Tiefling_Ranger"
 type "Character"
 using "CHA_Bandit_Tiefling_Ranger"
 // data "Passives" "DarknessRules;Tiefling_HellishResistance"
-data "Passives" "CX_Ranger_Boost;CX_Martial_Boost;Tiefling_HellishResistance;AttackOfOpportunity;DarknessRules;Darkvision"
-
-// The Warden - Cult of the Absolute
-new entry "MOO_PrisonWarden"
-type "Character"
-using "MOO_PrisonWarden"
-// data "Passives" "AttackOfOpportunity;Tiefling_HellishResistance;DarknessRules;Darkvision;Mobile_PassiveBonuses;Mobile_CounterAttackOfOpportunity;Mobile_DashAcrossDifficultTerrain;FightingStyle_Archery"
-data "Passives" "CX_Ranger_Boost;CX_Martial_Boost;Tiefling_HellishResistance;AttackOfOpportunity;;DarknessRules;Darkvision;Mobile_PassiveBonuses;Mobile_CounterAttackOfOpportunity;Mobile_DashAcrossDifficultTerrain;FightingStyle_Archery"
+data "Passives" "Tiefling_HellishResistance;AttackOfOpportunity;DarknessRules;Darkvision"
 
 // "_Tiefling"
-//  └─ "Tiefling_Rogue"
-//      ├─ "END_Zhentarim_Tiefling"                 --- "Zhentmodeus" (Gather Your Allies summon)
+//  └─ "Tiefling_Rogue"                             --- (Has Rogue progressions)
+//      ├─ "END_Zhentarim_Tiefling"                 --- "Zhentmodeus" (Gather Your Allies summon) (Inherits Rogue progressions)
 //      └─ "Tiefling_Cultist_Bhaal_NightBlade"
-//          ├─ "Tiefling_Cultist_Bhaal_DeathsHead"
-//          └─ "Tiefling_Cultist_Bhaal_Reaper"
-
-new entry "Tiefling_Rogue"
-type "Character"
-using "Tiefling_Rogue"
-// data "Passives" "Tiefling_HellishResistance;AttackOfOpportunity;DarknessRules;Darkvision"
-data "Passives" "CX_Rogue_Boost;CX_Martial_Boost;Tiefling_HellishResistance;AttackOfOpportunity;DarknessRules;Darkvision"
+//          ├─ "Tiefling_Cultist_Bhaal_DeathsHead"  --- Reaper of Bhaal (Inherits added Rogue progressions)
+//          └─ "Tiefling_Cultist_Bhaal_Reaper"      --- Reaper of Bhaal (Inherits added Rogue progressions)
 
 // (Restored Rogue progressions)
 new entry "Tiefling_Cultist_Bhaal_NightBlade"
@@ -4483,18 +4483,6 @@ type "Character"
 using "Tiefling_Cultist_Bhaal_NightBlade"
 // data "Progressions" ""
 data "Progressions" "532203c2-7bcb-4162-9a7c-2bb20e227a30"
-
-new entry "Tiefling_Cultist_Bhaal_DeathsHead"
-type "Character"
-using "Tiefling_Cultist_Bhaal_DeathsHead"
-// data "Passives" "ExtraAttack;MagicResistance;MurderHungry;Tiefling_HellishResistance;AttackOfOpportunity;Darkvision;DarknessRules"
-data "Passives" "CX_Rogue_Boost;CX_Martial_Boost;Tiefling_HellishResistance;AttackOfOpportunity;Darkvision;DarknessRules;ExtraAttack;MagicResistance;MurderHungry"
-
-new entry "Tiefling_Cultist_Bhaal_Reaper"
-type "Character"
-using "Tiefling_Cultist_Bhaal_Reaper"
-// data "Passives" "ExtraAttack;Tiefling_HellishResistance;DarknessRules;AttackOfOpportunity;Darkvision"
-data "Passives" "CX_Rogue_Boost;CX_Martial_Boost;Tiefling_HellishResistance;AttackOfOpportunity;Darkvision;DarknessRules;ExtraAttack"
 
 // "_Tiefling"
 //  ├─ "FlamingFist_Tiefling"                           --- Unused
@@ -4551,7 +4539,7 @@ new entry "FlamingFist_Tiefling_Ranger"
 type "Character"
 using "FlamingFist_Tiefling_Ranger"
 // data "Passives" "Tiefling_HellishResistance;AttackOfOpportunity;DarknessRules;Darkvision"
-data "Passives" "CX_Ranger_Boost;CX_Martial_Boost;Tiefling_HellishResistance;AttackOfOpportunity;DarknessRules;Darkvision;Goon_NPC_Flaming_Fist_Boosts;FightingStyle_Archery;CrossbowExpert_PointBlank"
+data "Passives" "Tiefling_HellishResistance;AttackOfOpportunity;DarknessRules;Darkvision;Goon_NPC_Flaming_Fist_Boosts;FightingStyle_Archery;CrossbowExpert_PointBlank"
 // data "Progressions" "6cae475a-383f-11ed-a261-0242ac120002"
 data "Progressions" "f0ede459-8b86-48fd-ac11-4432573566a5"
 
@@ -4567,7 +4555,7 @@ using "MOO_FanaticOfTheAbsolute_Tiefling"
 // data "Passives" "Tiefling_HellishResistance;AttackOfOpportunity;DarknessRules;Darkvision"
 data "Passives" "CX_Spells_L4C;Tiefling_HellishResistance;AttackOfOpportunity;DarknessRules;Darkvision"
 
-// (Has Paladin progressions) 
+// (Has Paladin progressions, added Oathbreaker subclass) 
 new entry "MOO_ZealotOfTheAbsolute_Tiefling"
 type "Character"
 using "MOO_ZealotOfTheAbsolute_Tiefling"
