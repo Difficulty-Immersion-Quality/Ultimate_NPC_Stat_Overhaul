@@ -4570,87 +4570,98 @@ data "Passives" "CX_Paladin_Oathbreaker_Boost;Tiefling_HellishResistance;AttackO
 //      ├─ "ApostleOfMyrkul"
 //      ├─ "Brewer"
 //      ├─ "CrawlingClaw"
-//      ├─ "DarkJusticiar_Melee"
-//      │   ├─ "DarkJusticiar_Boss"
-//      │   ├─ "DarkJusticiar_Caster"
-//      │   │   ├─ "LOW_HouseOfGrief_Cultist_Caster"
-//      │   │   └─ "SHA_LastJusticiar_Lyrthindor"
-//      │   ├─ "DarkJusticiar_Melee_Summon"
-//      │   ├─ "DarkJusticiar_Ranger"
-//      │   │   ├─ "DarkJusticiar_Ranger_Summon"
-//      │   │   └─ "TWN_DarkJusticiar_Intelligence"
-//      │   ├─ "LOW_HouseOfGrief_Cultist_Melee"
-//      │   ├─ "SHA_InitialJusticiar"
-//      │   ├─ "TWN_DarkJusticiar_Charisma"
-//      │   └─ "TWN_DarkJusticiar_Wisdom"
+//      ├─ "DarkJusticiar_Melee"                              -- Justiciar Avengers in Gauntlet of Shar (Inherits Fighter progression)
+//      │   ├─ "DarkJusticiar_Boss"                           -- Unused (Inherits Fighter progression)
+//      │   ├─ "DarkJusticiar_Caster"                         -- Justiciar Nightweavers in Gauntlet of Shar (Inherits Wizard progression)
+//      │   │   ├─ "LOW_HouseOfGrief_Cultist_Caster"          -- Mirie; Sharran Fidelians in House of Grief (Inherits Wizard progression)
+//      │   │   └─ "SHA_LastJusticiar_Lyrthindor"             -- Lyrthindor (Gauntlet of Shar) (Inherits Cleric progression)
+//      │   ├─ "DarkJusticiar_Melee_Summon"                   -- Justiciar Avengers that spawn from Umbral Tremors (Inherits Fighter progression)
+//      │   ├─ "DarkJusticiar_Ranger"                         -- Justiciar Soulhunters in Gauntlet of Shar (Inherits Ranger progression)
+//      │   │   ├─ "DarkJusticiar_Ranger_Summon"              -- Justiciar Soulhunters that spawn from Umbral Tremors (Inherits Ranger progression)
+//      │   │   └─ "TWN_DarkJusticiar_Intelligence"           -- Intelligent Sentinel under shrine to Shar in Reithwin (Inherits Wizard progression)
+//      │   ├─ "LOW_HouseOfGrief_Cultist_Melee"               -- Sharran Novice summons from Gather Your Allies (Inherits Fighter progression) (Why is this here????)
+//      │   ├─ "SHA_InitialJusticiar"                         -- (Inherits Fighter progression)
+//      │   ├─ "TWN_DarkJusticiar_Charisma"                   -- Charisma Sentinel under shrine to Shar in Reithwin (Inherits Paladin progression)
+//      │   └─ "TWN_DarkJusticiar_Wisdom"                     -- Wisdom Sentinel under shrine to Shar in Reithwin (Inherits Cleric progression)
 
+// Justiciar Avengers in Gauntlet of Shar (Gave Fighter progressions)
 new entry "DarkJusticiar_Melee"
 type "Character"
 using "DarkJusticiar_Melee"
-// data "Passives" "ExtraAttack;LivingShadow;SunlightSensitivity;SHA_VisionOfShar;AttackOfOpportunity;Darkvision;DarknessRules;Darkvision"
-data "Passives" "CX_Fighter_Boost;CX_Martial_Boost;AttackOfOpportunity;Darkvision;DarknessRules;Darkvision;ExtraAttack;LivingShadow;SunlightSensitivity;SHA_VisionOfShar"
+// data "Progressions" ""
+data "Progressions" "0e6da493-5a37-423b-8c28-629462b22faa"
 
-// Justiciar Crusader Owltalon, Justiciar Crusader Nightmist - Church of Shar (They're actually Elves)
-new entry "DarkJusticiar_Boss"
-type "Character"
-using "DarkJusticiar_Boss"
-// data "Passives" "ExtraAttack;SHA_DarkVengeance;SHA_VisionOfShar;LivingShadow;SunlightSensitivity;AttackOfOpportunity;Darkvision;DarknessRules"
-data "Passives" "CX_Fighter_Boost;CX_Martial_Boost;FeyAncestry;AttackOfOpportunity;Darkvision;DarknessRules;ExtraAttack;SHA_DarkVengeance;SHA_VisionOfShar;LivingShadow;SunlightSensitivity"
-
+// Justiciar Nightweavers in Gauntlet of Shar (Gave Wizard progressions)
 new entry "DarkJusticiar_Caster"
 type "Character"
 using "DarkJusticiar_Caster"
 // data "Passives" "AttackOfOpportunity;Darkvision;DarknessRules;LOW_HouseOfGrief_Cultists_Sight;"
-data "Passives" "CX_Wizard_Boost;CX_Magic_Boost;CX_Spells_L3;CX_Spells_L4;CX_Spells_L3C;CX_Spells_L4C;AttackOfOpportunity;Darkvision;DarknessRules;LOW_HouseOfGrief_Cultists_Sight"
+data "Passives" "CX_Spells_L3;CX_Spells_L4;CX_Spells_L3C;CX_Spells_L4C;AttackOfOpportunity;Darkvision;DarknessRules;LOW_HouseOfGrief_Cultists_Sight"
+// data "Progressions" ""
+data "Progressions" "44bdbc5e-a003-4d61-87f0-5ced20d3804e"
 
-// Mirie; Sharran Fidelians in House of Grief (Human AND Elf); summons for Gather Your Allies
+// Mirie; Sharran Fidelians in House of Grief (Human AND Elf); summons for Gather Your Allies (Gave Wizard progressions)
 // Gonna omit racial passives for now as this entry is used for multiple races
 new entry "LOW_HouseOfGrief_Cultist_Caster"
 type "Character"
 using "LOW_HouseOfGrief_Cultist_Caster"
 // data "Passives" "AttackOfOpportunity;Darkvision;DarknessRules;LOW_HouseOfGrief_Cultists_Sight;"
-data "Passives" "CX_Wizard_Boost;CX_Magic_Boost;CX_Spells_L4;AttackOfOpportunity;Darkvision;DarknessRules;LOW_HouseOfGrief_Cultists_Sight;"
+data "Passives" "CX_Spells_L4;AttackOfOpportunity;Darkvision;DarknessRules;LOW_HouseOfGrief_Cultists_Sight;"
+// data "Progressions" ""
+data "Progressions" "44bdbc5e-a003-4d61-87f0-5ced20d3804e"
 
-// Lyrthindor, the rat guy
-// Doesn't really have a set class but gonna put him down as a martial-focused Cleric, kinda like War Cleric (he uses Wisdom after all)
+// Lyrthindor, the rat guy (making a Trickery Cleric)
 new entry "SHA_LastJusticiar_Lyrthindor"
 type "Character"
 using "SHA_LastJusticiar_Lyrthindor"
 // data "Passives" "SHA_VisionOfShar;SHA_Lyrthindor_UnlockExtraSpellSlots;AttackOfOpportunity;Darkvision;DarknessRules"
-data "Passives" "CX_Cleric_Boost;CX_Cleric_Trickery_Boost;CX_Magic_Boost;CX_Martial_Boost;AttackOfOpportunity;Darkvision;DarknessRules;SHA_VisionOfShar;SHA_Lyrthindor_UnlockExtraSpellSlots;"
+data "Passives" "CX_Cleric_Trickery_Boost;CX_Martial_Boost;AttackOfOpportunity;Darkvision;DarknessRules;SHA_VisionOfShar;SHA_Lyrthindor_UnlockExtraSpellSlots;"
+// data "Progressions" ""
+data "Progressions" "36c3f8de-3293-4d7b-92bc-ceb3c569244b"
 
+// Justiciar Soulhunters in Gauntlet of Shar (Inherits Ranger progression)
 new entry "DarkJusticiar_Ranger"
 type "Character"
 using "DarkJusticiar_Ranger"
-// No progression, so directly giving spell slots to use Ranger spells
-// data "ActionResources" "ActionPoint:1;BonusActionPoint:1;Movement:9;ReactionActionPoint:1"
-data "ActionResources" "ActionPoint:1;BonusActionPoint:1;Movement:9;ReactionActionPoint:1;SpellSlot:1:1:4;SpellSlot:2:2:3;SpellSlot:3:3:2"
 // data "SpellCastingAbility" "Intelligence"
 data "SpellCastingAbility" "Wisdom"
-// data "Passives" "ExtraAttack;LivingShadow;SunlightSensitivity;SHA_VisionOfShar;ShadowStealth;AttackOfOpportunity;Darkvision;DarknessRules"
-data "Passives" "CX_Ranger_Boost;CX_Martial_Boost;AttackOfOpportunity;Darkvision;DarknessRules;ExtraAttack;LivingShadow;SunlightSensitivity;SHA_VisionOfShar;ShadowStealth"
+// data "Progressions" ""
+data "Progressions" "f0ede459-8b86-48fd-ac11-4432573566a5"
 
-// Intelligent Sentinel (secret shrine to Shar underneath Reithwin town square)
+// Intelligent Sentinel (secret shrine to Shar underneath Reithwin town square) (Inherits Wizard progression)
 new entry "TWN_DarkJusticiar_Intelligence"
 type "Character"
 using "TWN_DarkJusticiar_Intelligence"
 // data "Passives" "TWN_PlaquePuzzle_Intelligence;SunlightSensitivity;SHA_VisionOfShar;LivingShadow;AttackOfOpportunity;Darkvision;DarknessRules"
-data "Passives" "CX_Wizard_Boost;CX_Wizard_Necromancy_Boost;CX_Magic_Boost;CX_Spells_L4;AttackOfOpportunity;Darkvision;DarknessRules;TWN_PlaquePuzzle_Intelligence;SunlightSensitivity;SHA_VisionOfShar;LivingShadow;"
+data "Passives" "CX_Wizard_Necromancy_Boost;CX_Spells_L4;AttackOfOpportunity;Darkvision;DarknessRules;TWN_PlaquePuzzle_Intelligence;SunlightSensitivity;SHA_VisionOfShar;LivingShadow;"
+// data "Progressions" ""
+data "Progressions" "44bdbc5e-a003-4d61-87f0-5ced20d3804e"
 
-// Charisma Sentinel (secret shrine to Shar underneath Reithwin town square)
+// A unique Justiciar Avenger in Gauntlet of Shar but not sure who this actually is. Progressions were overwritten to nothing in vanilla stats entry, even though what its inheritance tree meant it didn't have any progressions anyway, so gave Fighter progression back
+new entry "SHA_InitialJusticiar"
+type "Character"
+using "SHA_InitialJusticiar"
+// data "Progressions" ""
+data "Progressions" "0e6da493-5a37-423b-8c28-629462b22faa"
+
+// Charisma Sentinel (secret shrine to Shar underneath Reithwin town square) (Inherits Paladin progression)
 // Changing from Oathbreaker to Vengeance boost because this guy's supposed to be a Dark Justiciar of Shar, so no oaths being broken (yes oath != god, but for simplicity's sake let's assume breaking oath = breaking oath to your god)
 new entry "TWN_DarkJusticiar_Charisma"
 type "Character"
 using "TWN_DarkJusticiar_Charisma"
 // data "Passives" "TWN_PlaquePuzzle_Charisma;SunlightSensitivity;SHA_VisionOfShar;LivingShadow;AttackOfOpportunity;Darkvision;DarknessRules"
-data "Passives" "CX_Paladin_Boost;CX_Paladin_Vengeance_Boost;CX_Martial_Boost;AttackOfOpportunity;Darkvision;DarknessRules;TWN_PlaquePuzzle_Charisma;SunlightSensitivity;SHA_VisionOfShar;LivingShadow;"
+data "Passives" "CX_Paladin_Vengeance_Boost;AttackOfOpportunity;Darkvision;DarknessRules;TWN_PlaquePuzzle_Charisma;SunlightSensitivity;SHA_VisionOfShar;LivingShadow;"
+// data "Progressions" ""
+data "Progressions" "8726b2c4-edc0-4905-b82f-60a4baba0733"
 
-// Wise Sentinel (secret shrine to Shar underneath Reithwin town square)
+// Wise Sentinel (secret shrine to Shar underneath Reithwin town square) (Inherits Cleric progression)
 new entry "TWN_DarkJusticiar_Wisdom"
 type "Character"
 using "TWN_DarkJusticiar_Wisdom"
 // data "Passives" "TWN_PlaquePuzzle_Wisdom;SunlightSensitivity;SHA_VisionOfShar;LivingShadow;AttackOfOpportunity;Darkvision;DarknessRules"
-data "Passives" "CX_Cleric_Boost;CX_Cleric_Trickery_Boost;CX_Magic_Boost;AttackOfOpportunity;Darkvision;DarknessRules;TWN_PlaquePuzzle_Wisdom;SunlightSensitivity;SHA_VisionOfShar;LivingShadow;"
+data "Passives" "CX_Cleric_Trickery_Boost;AttackOfOpportunity;Darkvision;DarknessRules;TWN_PlaquePuzzle_Wisdom;SunlightSensitivity;SHA_VisionOfShar;LivingShadow;"
+// data "Progressions" ""
+data "Progressions" "36c3f8de-3293-4d7b-92bc-ceb3c569244b"
 
 // "_Undead"
 //  ├─ "FloatingHead"
