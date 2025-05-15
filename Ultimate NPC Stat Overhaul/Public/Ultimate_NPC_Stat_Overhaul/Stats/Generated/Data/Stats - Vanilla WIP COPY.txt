@@ -4130,12 +4130,11 @@ data "SpellCastingAbility" "Wisdom"
 data "Progressions" "f0ede459-8b86-48fd-ac11-4432573566a5"
 
 // ==================================== Sahuagin ===================================
-// Keeping Wild Magic for Sahuaging wherever applicable because it's funny
 
 // "_Base"
 //  ├─ "_Humanoid"
 //  │   ├─ "Sahuagin"
-//  │   │   ├─ "LOW_IronThrone_Sahuagin"
+//  │   │   ├─ "LOW_IronThrone_Sahuagin"        --- Unused (Inherits added Martial boost)
 //  │   │   ├─ "Sahuagin_Champion"
 //  │   │   │   └─ "END_SahuaginAlly_Champion"
 //  │   │   ├─ "Sahuagin_Melee"
@@ -4143,55 +4142,64 @@ data "Progressions" "f0ede459-8b86-48fd-ac11-4432573566a5"
 //  │   │   │   └─ "END_SahuaginAlly_Ranged"
 //  │   │   └─ "Sahuagin_Warlock"
 
+// (Added Martial boost for the basic boys)
 new entry "Sahuagin"
 type "Character"
 using "Sahuagin"
 // data "Passives" "BloodFrenzy_Sahuagin;AttackOfOpportunity;DarknessRules"
 data "Passives" "CX_Martial_Boost;BloodFrenzy_Sahuagin;AttackOfOpportunity;DarknessRules"
 
-new entry "LOW_IronThrone_Sahuagin"
-type "Character"
-using "LOW_IronThrone_Sahuagin"
-// data "Passives" "BloodFrenzy_Sahuagin;ExtraAttack;AttackOfOpportunity;DarknessRules"
-data "Passives" "CX_Fighter_Boost;CX_Martial_Boost;BloodFrenzy_Sahuagin;AttackOfOpportunity;DarknessRules;ExtraAttack"
-
+// Sahuagin Champion (Added Barbarian progressions, added Berserker subclass)
 new entry "Sahuagin_Champion"
 type "Character"
 using "Sahuagin_Champion"
 // data "Passives" "BloodFrenzy_Sahuagin;ExtraAttack;AttackOfOpportunity;DarknessRules"
-data "Passives" "CX_Barbarian_Boost;CX_Barbarian_WildMagic_Boost;CX_Martial_Boost;BloodFrenzy_Sahuagin;AttackOfOpportunity;DarknessRules;ExtraAttack"
+data "Passives" "CX_Barbarian_Berserker_Boost;BloodFrenzy_Sahuagin;AttackOfOpportunity;DarknessRules;ExtraAttack"
+// data "Progressions" ""
+data "Progressions" "56db8107-e04c-4fe3-94f3-fd4acd44cd4a"
 
-// Champion of Mahkloompah (summon from during Confront the Elder Brain; technically not part of Gather Your Allies)
+// Champion of Mahkloompah (summon from during Confront the Elder Brain; technically not part of Gather Your Allies) (Added Paladin progressions, letting it keep the extra spell slots)
 new entry "END_SahuaginAlly_Champion"
 type "Character"
 using "END_SahuaginAlly_Champion"
-// data "Passives" "BloodFrenzy_Sahuagin;ExtraAttack;AttackOfOpportunity;DarknessRules;Smite_Divine_NPC;Smite_Divine_2_NPC"
-data "Passives" "CX_Paladin_Boost;CX_Martial_Boost;BloodFrenzy_Sahuagin;AttackOfOpportunity;DarknessRules;ExtraAttack;Smite_Divine_NPC;Smite_Divine_2_NPC"
+// data "Progressions" ""
+data "Progressions" "8726b2c4-edc0-4905-b82f-60a4baba0733"
 
+// (Added Fighter progressions, added Champion subclass)
 new entry "Sahuagin_Melee"
 type "Character"
 using "Sahuagin_Melee"
 // data "Passives" "BloodFrenzy_Sahuagin;ExtraAttack;AttackOfOpportunity;DarknessRules"
-data "Passives" "CX_Fighter_Boost;CX_Martial_Boost;BloodFrenzy_Sahuagin;AttackOfOpportunity;DarknessRules;ExtraAttack"
+data "Passives" "CX_Fighter_Champion_Boost;BloodFrenzy_Sahuagin;AttackOfOpportunity;DarknessRules;ExtraAttack"
+// data "Progressions" ""
+data "Progressions" "0e6da493-5a37-423b-8c28-629462b22faa"
 
+// (Added Rogue progressions, added Assassin subclass)
 new entry "Sahuagin_Ranged"
 type "Character"
 using "Sahuagin_Ranged"
 // data "Passives" "BloodFrenzy_Sahuagin;ExtraAttack;AttackOfOpportunity;DarknessRules"
-data "Passives" "CX_Ranger_Boost;CX_Martial_Boost;BloodFrenzy_Sahuagin;AttackOfOpportunity;DarknessRules;ExtraAttack"
+data "Passives" "CX_Rogue_Assassin_Boost;BloodFrenzy_Sahuagin;AttackOfOpportunity;DarknessRules;ExtraAttack"
+// data "Progressions" ""
+data "Progressions" "532203c2-7bcb-4162-9a7c-2bb20e227a30"
 
 // Devotee of Mahkloompah (summon from during Confront the Elder Brain; technically not part of Gather Your Allies)
 new entry "END_SahuaginAlly_Ranged"
 type "Character"
 using "END_SahuaginAlly_Ranged"
 // data "Passives" "BloodFrenzy_Sahuagin;ExtraAttack;AttackOfOpportunity;DarknessRules;Sharpshooter_AllIn;Sharpshooter_Bonuses"
-data "Passives" "CX_Ranger_Boost;CX_Martial_Boost;BloodFrenzy_Sahuagin;AttackOfOpportunity;DarknessRules;ExtraAttack;Sharpshooter_AllIn;Sharpshooter_Bonuses"
+data "Passives" "CX_Rogue_Assassin_Boost;BloodFrenzy_Sahuagin;AttackOfOpportunity;DarknessRules;ExtraAttack;Sharpshooter_AllIn;Sharpshooter_Bonuses"
+// data "Progressions" ""
+data "Progressions" "532203c2-7bcb-4162-9a7c-2bb20e227a30"
 
+// Unused (Added Warlock progressions, added Great Old One subclass)
 new entry "Sahuagin_Warlock"
 type "Character"
 using "Sahuagin_Warlock"
 // data "Passives" "BloodFrenzy_Sahuagin;ExtraAttack;AttackOfOpportunity;DarknessRules"
-data "Passives" "CX_Warlock_Boost;CX_Magic_Boost;BloodFrenzy_Sahuagin;AttackOfOpportunity;DarknessRules;ExtraAttack"
+data "Passives" "CX_Warlock_GreatOldOne_Boost;BloodFrenzy_Sahuagin;AttackOfOpportunity;DarknessRules;ExtraAttack"
+// data "Progressions" ""
+data "Progressions" "51274504-865d-46d1-a3b6-c72e9384904a"
 
 // ==================================== Kuo-toa ====================================
 // Keeping Wild Magic for Kuo-toa wherever applicable because it's funny
