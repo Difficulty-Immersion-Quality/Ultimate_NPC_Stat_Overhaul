@@ -12,7 +12,14 @@ Ext.Osiris.RegisterListener("LevelGameplayStarted", 2, "after", function(level, 
 
                     if charLevel >= unlockLevel then
                         local stored = assigned[charID]
-                        local charName = Osi.GetDisplayName(charID) or "Unknown"
+
+                        local charName = "Unknown"
+                        local entityObj = Ext.Entity.Get(charID)
+                        if entityObj and entityObj.DisplayName and entityObj.DisplayName.NameKey and entityObj.DisplayName.NameKey.Handle then
+                            charName = Ext.Loca.GetTranslatedString(entityObj.DisplayName.NameKey.Handle.Handle) or "Unknown"
+                        else
+                            charName = Osi.GetDisplayName(charID) or "Unknown"
+                        end
 
                         local found
                         for _, subclass in ipairs(data.SubclassTable) do
@@ -24,22 +31,22 @@ Ext.Osiris.RegisterListener("LevelGameplayStarted", 2, "after", function(level, 
 
                         if stored and found and stored ~= found then
                             assigned[charID] = found
-                            Ext.Utils.Print(string.format("[SUBCLASS] Mismatch for %s (%s). Updated stored subclass to: %s", charName, charID, found))
+                            Ext.Utils.Print(string.format("[Ultimate NPC Stat Overhaul] Subclass mismatch detected for %s (%s). Updating stored subclass: %s", charName, charID, found))
 
                         elseif stored and not found then
                             Osi.AddPassive(charID, stored)
-                            Ext.Utils.Print(string.format("[SUBCLASS] Reapplied stored subclass to %s (%s): %s", charName, charID, stored))
+                            Ext.Utils.Print(string.format("[Ultimate NPC Stat Overhaul] Stored subclasss not found for %s (%s). Applying: %s", charName, charID, stored))
 
                         elseif not stored and found then
                             assigned[charID] = found
-                            Ext.Utils.Print(string.format("[SUBCLASS] Found subclass on %s (%s), storing: %s", charName, charID, found))
+                            Ext.Utils.Print(string.format("[Ultimate NPC Stat Overhaul] Found existing subclass on %s (%s). Storing: %s", charName, charID, found))
 
                         elseif not stored and not found then
                             local roll = math.random(1, #data.SubclassTable)
                             local selected = data.SubclassTable[roll]
                             assigned[charID] = selected
                             Osi.AddPassive(charID, selected)
-                            Ext.Utils.Print(string.format("[SUBCLASS] Assigned new subclass to %s (%s): %s", charName, charID, selected))
+                            Ext.Utils.Print(string.format("[Ultimate NPC Stat Overhaul] Rolled random subclass for %s (%s). Storing: %s", charName, charID, selected))
                         end
                     end
                 end
