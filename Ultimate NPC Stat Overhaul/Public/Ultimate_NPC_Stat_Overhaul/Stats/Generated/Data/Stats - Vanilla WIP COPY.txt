@@ -4570,28 +4570,28 @@ data "Passives" "CX_Paladin_Oathbreaker_Boost;Tiefling_HellishResistance;AttackO
 //      ├─ "ApostleOfMyrkul"
 //      ├─ "Brewer"
 //      ├─ "CrawlingClaw"
-//      ├─ "DarkJusticiar_Melee"                              -- Justiciar Avengers in Gauntlet of Shar (Inherits Fighter progression)
-//      │   ├─ "DarkJusticiar_Boss"                           -- Unused (Inherits Fighter progression)
-//      │   ├─ "DarkJusticiar_Caster"                         -- Justiciar Nightweavers in Gauntlet of Shar (Inherits Wizard progression)
-//      │   │   ├─ "LOW_HouseOfGrief_Cultist_Caster"          -- Mirie; Sharran Fidelians in House of Grief (Inherits Wizard progression)
-//      │   │   └─ "SHA_LastJusticiar_Lyrthindor"             -- Lyrthindor (Gauntlet of Shar) (Inherits Cleric progression)
+//      ├─ "DarkJusticiar_Melee"                              -- Justiciar Avengers in Gauntlet of Shar (Added Fighter progression)
+//      │   ├─ "DarkJusticiar_Boss"                           -- Unused (Added Fighter progression)
+//      │   ├─ "DarkJusticiar_Caster"                         -- Justiciar Nightweavers in Gauntlet of Shar (Added Wizard progression)
+//      │   │   ├─ "LOW_HouseOfGrief_Cultist_Caster"          -- Mirie; Sharran Fidelians in House of Grief (Added Wizard progression)
+//      │   │   └─ "SHA_LastJusticiar_Lyrthindor"             -- Lyrthindor (Gauntlet of Shar) (Added Cleric progression)
 //      │   ├─ "DarkJusticiar_Melee_Summon"                   -- Justiciar Avengers that spawn from Umbral Tremors (Inherits Fighter progression)
-//      │   ├─ "DarkJusticiar_Ranger"                         -- Justiciar Soulhunters in Gauntlet of Shar (Inherits Ranger progression)
+//      │   ├─ "DarkJusticiar_Ranger"                         -- Justiciar Soulhunters in Gauntlet of Shar (Added Ranger progression)
 //      │   │   ├─ "DarkJusticiar_Ranger_Summon"              -- Justiciar Soulhunters that spawn from Umbral Tremors (Inherits Ranger progression)
-//      │   │   └─ "TWN_DarkJusticiar_Intelligence"           -- Intelligent Sentinel under shrine to Shar in Reithwin (Inherits Wizard progression)
+//      │   │   └─ "TWN_DarkJusticiar_Intelligence"           -- Intelligent Sentinel under shrine to Shar in Reithwin (Added Wizard progression)
 //      │   ├─ "LOW_HouseOfGrief_Cultist_Melee"               -- Sharran Novice summons from Gather Your Allies (Inherits Fighter progression) (Why is this here????)
-//      │   ├─ "SHA_InitialJusticiar"                         -- (Inherits Fighter progression)
-//      │   ├─ "TWN_DarkJusticiar_Charisma"                   -- Charisma Sentinel under shrine to Shar in Reithwin (Inherits Paladin progression)
-//      │   └─ "TWN_DarkJusticiar_Wisdom"                     -- Wisdom Sentinel under shrine to Shar in Reithwin (Inherits Cleric progression)
+//      │   ├─ "SHA_InitialJusticiar"                         -- (Added Fighter progression)
+//      │   ├─ "TWN_DarkJusticiar_Charisma"                   -- Charisma Sentinel under shrine to Shar in Reithwin (Added Paladin progression)
+//      │   └─ "TWN_DarkJusticiar_Wisdom"                     -- Wisdom Sentinel under shrine to Shar in Reithwin (Added Cleric progression)
 
-// Justiciar Avengers in Gauntlet of Shar (Gave Fighter progressions)
+// Justiciar Avengers in Gauntlet of Shar (Added Fighter progressions)
 new entry "DarkJusticiar_Melee"
 type "Character"
 using "DarkJusticiar_Melee"
 // data "Progressions" ""
 data "Progressions" "0e6da493-5a37-423b-8c28-629462b22faa"
 
-// Justiciar Nightweavers in Gauntlet of Shar (Gave Wizard progressions)
+// Justiciar Nightweavers in Gauntlet of Shar (Added Wizard progressions)
 new entry "DarkJusticiar_Caster"
 type "Character"
 using "DarkJusticiar_Caster"
@@ -4600,7 +4600,7 @@ data "Passives" "CX_Spells_L3;CX_Spells_L4;CX_Spells_L3C;CX_Spells_L4C;AttackOfO
 // data "Progressions" ""
 data "Progressions" "44bdbc5e-a003-4d61-87f0-5ced20d3804e"
 
-// Mirie; Sharran Fidelians in House of Grief (Human AND Elf); summons for Gather Your Allies (Gave Wizard progressions)
+// Mirie; Sharran Fidelians in House of Grief (Human AND Elf); summons for Gather Your Allies (Added Wizard progressions)
 // Gonna omit racial passives for now as this entry is used for multiple races
 new entry "LOW_HouseOfGrief_Cultist_Caster"
 type "Character"
@@ -4619,7 +4619,7 @@ data "Passives" "CX_Cleric_Trickery_Boost;CX_Martial_Boost;AttackOfOpportunity;D
 // data "Progressions" ""
 data "Progressions" "36c3f8de-3293-4d7b-92bc-ceb3c569244b"
 
-// Justiciar Soulhunters in Gauntlet of Shar (Inherits Ranger progression)
+// Justiciar Soulhunters in Gauntlet of Shar (Added Ranger progression)
 new entry "DarkJusticiar_Ranger"
 type "Character"
 using "DarkJusticiar_Ranger"
@@ -4628,7 +4628,7 @@ data "SpellCastingAbility" "Wisdom"
 // data "Progressions" ""
 data "Progressions" "f0ede459-8b86-48fd-ac11-4432573566a5"
 
-// Intelligent Sentinel (secret shrine to Shar underneath Reithwin town square) (Inherits Wizard progression)
+// Intelligent Sentinel (secret shrine to Shar underneath Reithwin town square) (Added Wizard progression)
 new entry "TWN_DarkJusticiar_Intelligence"
 type "Character"
 using "TWN_DarkJusticiar_Intelligence"
@@ -4644,7 +4644,7 @@ using "SHA_InitialJusticiar"
 // data "Progressions" ""
 data "Progressions" "0e6da493-5a37-423b-8c28-629462b22faa"
 
-// Charisma Sentinel (secret shrine to Shar underneath Reithwin town square) (Inherits Paladin progression)
+// Charisma Sentinel (secret shrine to Shar underneath Reithwin town square) (Added Paladin progression)
 // Changing from Oathbreaker to Vengeance boost because this guy's supposed to be a Dark Justiciar of Shar, so no oaths being broken (yes oath != god, but for simplicity's sake let's assume breaking oath = breaking oath to your god)
 new entry "TWN_DarkJusticiar_Charisma"
 type "Character"
@@ -4654,7 +4654,7 @@ data "Passives" "CX_Paladin_Vengeance_Boost;AttackOfOpportunity;Darkvision;Darkn
 // data "Progressions" ""
 data "Progressions" "8726b2c4-edc0-4905-b82f-60a4baba0733"
 
-// Wise Sentinel (secret shrine to Shar underneath Reithwin town square) (Inherits Cleric progression)
+// Wise Sentinel (secret shrine to Shar underneath Reithwin town square) (Added Cleric progression)
 new entry "TWN_DarkJusticiar_Wisdom"
 type "Character"
 using "TWN_DarkJusticiar_Wisdom"
