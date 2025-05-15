@@ -11,5 +11,5 @@ local opts = {
     DontCache = false
 }
 Ext.Vars.RegisterModVariable(ModuleUUID, "AssignedSubclasses", opts)
-Ext.Require("Server/_Core.lua")
 Ext.Require("Server/_Subclasses.lua")
+Ext.Require("Server/_Core.lua")

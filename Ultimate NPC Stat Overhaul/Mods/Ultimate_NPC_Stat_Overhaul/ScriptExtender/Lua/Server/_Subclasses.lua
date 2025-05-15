@@ -1,4 +1,4 @@
-local ClassData = {
+ClassData = {
     Barbarian = {
         MainPassive = "CX_Barbarian_Boost",
         SubclassTable = {
