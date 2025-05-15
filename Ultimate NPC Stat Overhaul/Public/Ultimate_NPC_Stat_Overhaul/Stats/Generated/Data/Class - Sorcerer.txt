@@ -36,7 +36,7 @@
     data "StatusType" "BOOST"
     using "GOON_NPC_SORCERER_PROGRESSION_TEMPLATE"
     data "StackPriority" "1"
-    data "Passives" "UnlockedSpellSlotLevel1"
+    data "Passives" "CX_Magic_Boost;UnlockedSpellSlotLevel1"
     data "Boosts" ""
 
     // <node id="Progression">
