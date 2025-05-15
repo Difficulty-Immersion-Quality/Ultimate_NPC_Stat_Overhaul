@@ -4214,49 +4214,64 @@ data "Progressions" "51274504-865d-46d1-a3b6-c72e9384904a"
 //  |   │   ├─ "TWN_KuoToa_champ"
 //  │   │   ├─ "TWN_KuoToa_melee"
 
-// Proselyte of Mahkloompah (summon from during Confront the Elder Brain; technically not part of Gather Your Allies)
+// (Added Martial boost)
+new entry "Kuotoa"
+type "Character"
+using "Kuotoa"
+// data "Passives" "SunlightSensitivity;AttackOfOpportunity;Darkvision;DarknessRules"
+data "Passives" "CX_Martial_Boost;SunlightSensitivity;AttackOfOpportunity;Darkvision;DarknessRules"
+
+// Proselyte of Mahkloompah (summon from during Confront the Elder Brain; technically not part of Gather Your Allies) (Added Barbarian progressions, added Wild Magic subclass)
 new entry "END_KuotoaAlly_Melee"
 type "Character"
 using "END_KuotoaAlly_Melee"
 // data "Passives" "SunlightSensitivity;AttackOfOpportunity;Darkvision;DarknessRules;Evasion"
-data "Passives" "CX_Barbarian_Boost;CX_Barbarian_WildMagic_Boost;CX_Martial_Boost;SunlightSensitivity;AttackOfOpportunity;Darkvision;DarknessRules;Evasion"
+data "Passives" "CX_Barbarian_WildMagic_Boost;SunlightSensitivity;AttackOfOpportunity;Darkvision;DarknessRules;Evasion"
+// data "Progressions" ""
+data "Progressions" "56db8107-e04c-4fe3-94f3-fd4acd44cd4a"
 
-// Pooldripp the Zealous
+// Pooldripp the Zealous (Swapped Wizard progressions for Warlock progressions, added Great Old One subclass)
 new entry "Kuotoa_Caster"
 type "Character"
 using "Kuotoa_Caster"
 // data "Passives" "SunlightSensitivity;AttackOfOpportunity;Darkvision;DarknessRules"
-data "Passives" "CX_Wizard_Boost;CX_Magic_Boost;SunlightSensitivity;AttackOfOpportunity;Darkvision;DarknessRules"
+data "Passives" "CX_Warlock_GreatOldOne_Boost;SunlightSensitivity;AttackOfOpportunity;Darkvision;DarknessRules"
+// data "Progressions" "44bdbc5e-a003-4d61-87f0-5ced20d3804e"
+data "Progressions" "51274504-865d-46d1-a3b6-c72e9384904a"
 
-// Kuo-Toa Hunter/Skirmisher (Giving NPC_Ranger progression)
+// Kuo-Toa Hunter/Skirmisher (Added Ranger progressions, added Hunter subclass)
 new entry "Kuotoa_Ranger"
 type "Character"
 using "Kuotoa_Ranger"
 // data "Passives" "SunlightSensitivity;AttackOfOpportunity;Darkvision;DarknessRules"
-data "Passives" "CX_Ranger_Boost;CX_Martial_Boost;SunlightSensitivity;AttackOfOpportunity;Darkvision;DarknessRules"
+data "Passives" "CX_Ranger_Hunter_Boost;SunlightSensitivity;AttackOfOpportunity;Darkvision;DarknessRules"
 // data "Progressions" ""
 data "Progressions" "f0ede459-8b86-48fd-ac11-4432573566a5"
 
-// Cursed Kuo-Toa (archers)
+// Cursed Kuo-Toa (Inherits added Ranger progressions, added Hunter subclass)
 new entry "TWN_KuoToa_ranger"
 type "Character"
 using "TWN_KuoToa_ranger"
 // data "Passives" "SunlightSensitivity;AttackOfOpportunity;Darkvision;DarknessRules;TWN_KuoToa_Storm"
-data "Passives" "CX_Ranger_Boost;CX_Martial_Boost;SunlightSensitivity;AttackOfOpportunity;Darkvision;DarknessRules;TWN_KuoToa_Storm"
+data "Passives" "CX_Ranger_Hunter_Boost;SunlightSensitivity;AttackOfOpportunity;Darkvision;DarknessRules;TWN_KuoToa_Storm"
 
-// Cursed Kuo-Toa (melee)
+// Cursed Kuo-Toa (Added Barbarian progressions, added Wild Magic subclass)
 new entry "TWN_KuoToa_melee"
 type "Character"
 using "TWN_KuoToa_melee"
 // data "Passives" "SunlightSensitivity;AttackOfOpportunity;Darkvision;DarknessRules;TWN_KuoToa_Storm"
-data "Passives" "CX_Barbarian_Boost;CX_Barbarian_WildMagic_Boost;CX_Martial_Boost;SunlightSensitivity;AttackOfOpportunity;Darkvision;DarknessRules;TWN_KuoToa_Storm"
+data "Passives" "CX_Barbarian_WildMagic_Boost;SunlightSensitivity;AttackOfOpportunity;Darkvision;DarknessRules;TWN_KuoToa_Storm"
+// data "Progressions" ""
+data "Progressions" "56db8107-e04c-4fe3-94f3-fd4acd44cd4a"
 
-// Cursed Kuo-Toa Chief (two of em)
+// Cursed Kuo-Toa Chief (Added Barbarian progressions, added Wild Magic subclass)
 new entry "TWN_KuoToa_champ"
 type "Character"
 using "TWN_KuoToa_champ"
 // data "Passives" "SunlightSensitivity;AttackOfOpportunity;Darkvision;DarknessRules;TWN_KuoToa_Storm"
-data "Passives" "CX_Barbarian_Boost;CX_Barbarian_WildMagic_Boost;CX_Martial_Boost;SunlightSensitivity;AttackOfOpportunity;Darkvision;DarknessRules;TWN_KuoToa_Storm"
+data "Passives" "CX_Barbarian_WildMagic_Boost;SunlightSensitivity;AttackOfOpportunity;Darkvision;DarknessRules;TWN_KuoToa_Storm"
+// data "Progressions" ""
+data "Progressions" "56db8107-e04c-4fe3-94f3-fd4acd44cd4a"
 
 // ==================================== Tiefling ====================================
 
