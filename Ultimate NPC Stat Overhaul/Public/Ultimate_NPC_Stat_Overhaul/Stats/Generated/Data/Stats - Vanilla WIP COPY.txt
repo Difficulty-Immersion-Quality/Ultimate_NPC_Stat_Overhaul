@@ -4,21 +4,34 @@
 // Formatting is made consistent to be more digestable where possible
 // By searching the racials in VSC you will be able to see at a glance the separation
 
-// Not every entry is present, the primary reason for this file's existence is passive fields, and often they're inherited desireably
 // Inhteritance trees are provided as a reference to easily fetch entries from https://bg3.norbyte.dev for further customisation
-// The sibling entries are generally clumped together to make customisation more accessible
+// The sibling entries are generally clumped together in inheritence order to make customisation more accessible
 
-// All racials including Attack of Opportunity should be perpetuated appropriately across all entries, no matter how benign
-// Spellcasting modifiers and highest mental ability score should be reflecting their class archetype if one is designated
-// Flaming Fist "Casters" should have both CX_Wizard_Boost and CX_Magic_Boost
-// Flaming Fist "Clerics" should have both CX_Cleric_Boost and CX_Magic_Boost
+// All racials including Attack of Opportunity should be perpetuated appropriately across all entries, no matter how benign.
+// Spellcasting modifiers and highest mental ability score should be reflecting their class archetype if one is designated.
 // Entries with itterations for every race should be the same. E.g. MOO_Acolyte, MOO_Fanatic and MOO_Zealot having the same Cleric/Paladin adjustments.
 
-// CX_Martial_Boost is a new field intended to mirror CX_Magic_Boost. These are given to grunt type characters in addition to other caster class archetypes. The idea here is that there's entries which may not warrent full class archetypes, these generic passives are a mid-way solution, but also allow more generic buffs to be removed from the class based configurations.
+// CX_Martial_Boost is a new field intended to mirror CX_Magic_Boost. The idea here is that there's entries which may not warrent full class archetypes, these generic passives are a mid-way solution, but also allow more generic buffs to be removed from the class based configurations as they're present inside of progressions for classes and subclasses, infrequently being assigned to exceptions.
 
-// Generic buffs: CX_Magic_Boost / CX_Martial_Boost
-// Class archetypes: CX_Barbarian_Boost;CX_Barbarian_Berserker_Boost / CX_Bard_Boost / CX_Cleric_Boost / CX_Druid_Boost;CX_Druid_Moon_Boost / CX_Fighter_Boost / CX_Monk_Boost / CX_Paladin_Boost;CX_Paladin_Oathbreaker_Boost / CX_Ranger_Boost;CX_Ranger_Hunter_Boost / CX_Rogue_Boost / CX_Sorcerer_Boost / CX_Warlock_Boost / CX_Wizard_Boost
-// Spells: CX_Spells_L1, CX_Spells_L1C / CX_Spells_L2, CX_Spells_L2C / CX_Spells_L3, CX_Spells_L3C / CX_Spells_L4, CX_Spells_L4C / CX_Spells_L5, CX_Spells_L5C / CX_Spells_L6, CX_Spells_L6C
+// ARCHETYPE PASSIVES:
+// "CX_Magic_Boost" / "CX_Martial_Boost"
+
+// CLASS AND SUBCLASS PASSIVES: 
+// "CX_Barbarian_Boost" - "CX_Barbarian_Berserker_Boost" / "CX_Barbarian_WildMagic_Boost" / "CX_Barbarian_Wildheart_Boost"
+// "CX_Bard_Boost" - "CX_Bard_Lore_Boost" / "CX_Bard_Swords_Boost" / "CX_Bard_Valor_Boost"
+// "CX_Cleric_Boost" - "CX_Cleric_Knowledge_Boost" / "CX_Cleric_Life_Boost" / "CX_Cleric_Light_Boost" / "CX_Cleric_Nature_Boost" / "CX_Cleric_Trickery_Boost" /"CX_Cleric_Tempest_Boost" / "CX_Cleric_War_Boost"
+// "CX_Druid_Boost" - "CX_Druid_Land_Boost" / "CX_Druid_Moon_Boost" / "CX_Druid_Spores_Boost"
+// "CX_Fighter_Boost" - "CX_Fighter_BattleMaster_Boost" / "CX_Fighter_Champion_Boost" / "CX_Fighter_EldritchKnight_Boost"
+// "CX_Monk_Boost" - "CX_Monk_FourElements_Boost" / "CX_Monk_OpenHand_Boost" / "CX_Monk_Shadow_Boost"
+// "CX_Paladin_Boost" - "CX_Paladin_Ancients_Boost" / "CX_Paladin_Devotion_Boost" / "CX_Paladin_Vengeance_Boost" / "CX_Paladin_Oathbreaker_Boost"
+// "CX_Ranger_Boost" - "CX_Ranger_BeastMaster_Boost" / "CX_Ranger_GloomStalker_Boost" / "CX_Ranger_Hunter_Boost"
+// "CX_Rogue_Boost" - "CX_Rogue_ArcaneTrickster_Boost" / "CX_Rogue_Assassin_Boost" / "CX_Rogue_Thief_Boost"
+// "CX_Sorcerer_Boost" - "CX_Sorcerer_DraconicBloodline_Boost" / "CX_Sorcerer_WildMagic_Boost" / "CX_Sorcerer_StormSorcery_Boost"
+// "CX_Warlock_Boost" - "CX_Warlock_Archfey_Boost" / "CX_Warlock_Fiend_Boost" / "CX_Warlock_GreatOldOne_Boost"
+// "CX_Wizard_Boost" - "CX_Wizard_Abjuration_Boost" / "CX_Wizard_Conjuration_Boost" / "CX_Wizard_Divination_Boost" / "CX_Wizard_Enchantment_Boost" /"CX_Wizard_Evocation_Boost" / "CX_Wizard_Illusion_Boost" / "CX_Wizard_Necromancy_Boost" / "CX_Wizard_Transmutation_Boost"
+
+// SPELL PASSIVES:
+// CX_Spells_L1, CX_Spells_L1C / CX_Spells_L2, CX_Spells_L2C / CX_Spells_L3, CX_Spells_L3C / CX_Spells_L4, CX_Spells_L4C / CX_Spells_L5, CX_Spells_L5C / CX_Spells_L6, CX_Spells_L6C
 
 // ==================================== Other ====================================
 
@@ -34,7 +47,7 @@ using "Bandit"
 // data "Passives" "AttackOfOpportunity;DarknessRules"
 data "Passives" "CX_Martial_Boost;AttackOfOpportunity;DarknessRules"
 
-// Fighter progressions
+// Unused (Added Fighter progressions)
 new entry "Bandit_Captain"
 type "Character"
 using "Bandit_Captain"
@@ -48,6 +61,7 @@ data "Progressions" "0e6da493-5a37-423b-8c28-629462b22faa"
 //  │   ├─ "Commoner"
 //  │   │   └─ "CRA_MindflayerThrall_Commoner_Halfling"
 
+// Unused (Fixed racials)
 new entry "CRA_MindflayerThrall_Commoner_Halfling"
 type "Character"
 using "CRA_MindflayerThrall_Commoner_Halfling"
@@ -58,6 +72,7 @@ data "Passives" "Halfling_Lucky;Halfling_Brave;AttackOfOpportunity;DarknessRules
 //  ├─ "_Humanoid"
 //  │   └─ "Drow"
 
+// Unused ("_Elf_Drow" is the real entry) (Fixed racials)
 new entry "Drow"
 type "Character"
 using "Drow"
@@ -68,10 +83,12 @@ data "Passives" "FeyAncestry;AttackOfOpportunity;DarknessRules;SuperiorDarkvisio
 //  ├─ "_Humanoid"
 //  │   └─ "Meazel"
 
-// Optional - Maybe making Meazels Assassin Rogues isn't the best idea... or it's the best idea
+// Meazels (Maybe making Meazels Assassin Rogues isn't the best idea... or it's the best idea) (Added Rogue progressions, added Assassin subclass)
 new entry "Meazel"
 type "Character"
 using "Meazel"
+// data "SpellCastingAbility" "Dexterity"
+data "SpellCastingAbility" "Intelligence"
 // data "Passives" "AttackOfOpportunity;DarknessRules;Darkvision;ShadowTeleport_Meazel"
 data "Passives" "CX_Rogue_Assassin_Boost;AttackOfOpportunity;DarknessRules;Darkvision;ShadowTeleport_Meazel"
 // data "Progressions" ""
@@ -105,21 +122,21 @@ data "Progressions" "532203c2-7bcb-4162-9a7c-2bb20e227a30"
 //  │   │       └─ "HAG_Mayrina"
 //  │   │           └─ "HAG_Mayrina_Polymorph"
 
-// Mayrina
+// Mayrina (Fixed racials)
 new entry "HAG_SurrogateMother"
 type "Character"
 using "HAG_SurrogateMother"
 // data "Passives" ""
 data "Passives" "HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules"
 
-// "Mayrina"
+// "Mayrina" (Fixed racials)
 new entry "HAG_Mayrina"
 type "Character"
 using "HAG_Mayrina"
 // data "Passives" ""
 data "Passives" "HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules"
 
-// "Mayrina"
+// "Mayrina" (Fixed racials)
 new entry "HAG_Mayrina_Polymorph"
 type "Character"
 using "HAG_Mayrina_Polymorph"
@@ -128,9 +145,10 @@ data "Passives" "HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules
 
 // "_Base"
 //  ├─ "_Humanoid"
-//  │   ├─ "DEVONLY"
+//  │   ├─ "DEVONLY"    --- Unused
 //  │   ├─ "Guard"
 
+// Unused? (Added Martial boost)
 new entry "Guard"
 type "Character"
 using "Guard"
@@ -140,10 +158,18 @@ data "Passives" "CX_Martial_Boost;AttackOfOpportunity;DarknessRules"
 // "_Base"
 //  ├─ "_Humanoid"
 //  │   ├─ "Werewolf"
-//  │   │   ├─ "LOW_CazadorPalace_Ritual_Werewolf"  --- Predator Werewolf
-//  │   │   └─ "Werewolf_Strong"                    --- Unused
+//  │   │   ├─ "LOW_CazadorPalace_Ritual_Werewolf"  --- Predator Werewolf (Inherits added Martial boost)
+//  │   │   └─ "Werewolf_Strong"                    --- Unused (Inherits added Martial boost)
 //  │   ├─ "_FlamingFist"                           --- Unused
 
+// Cazador's Dawgs (Added Martial boost)
+new entry "Werewolf"
+type "Character"
+using "Werewolf"
+// data "Passives" "Werewolf_Rage;Multiattack_Werewolf;AttackOfOpportunity;DarknessRules"
+data "Passives" "CX_Martial_Boost;Werewolf_Rage;Multiattack_Werewolf;AttackOfOpportunity;DarknessRules"
+
+// Unused (Added Martial boost)
 new entry "_FlamingFist"
 type "Character"
 using "_FlamingFist"
@@ -174,7 +200,7 @@ using "Bugbear"
 // data "Progressions" ""
 data "Progressions" "56db8107-e04c-4fe3-94f3-fd4acd44cd4a"
 
-// Hairy Henry - Skull Lasher, Cult of Myrkul (Added Fighter progressions)
+// Hairy Henry - Skull Lasher, Cult of Myrkul (Added Fighter progressions, added Eldritch Knight subclass)
 new entry "Bugbear_Cultist_Myrkul_SkullLasher"
 type "Character"
 using "Bugbear_Cultist_Myrkul_SkullLasher"
@@ -183,7 +209,7 @@ data "Passives" "CX_Fighter_EldritchKnight_Boost;Brute_Bugbear;AttackOfOpportuni
 // data "Progressions" ""
 data "Progressions" "0e6da493-5a37-423b-8c28-629462b22faa"
 
-// Chop - Cult of the Absolute (Added Rogue progressions)
+// Chop - Cult of the Absolute (Added Rogue progressions, added Assassin subclass)
 new entry "COL_Butcher"
 type "Character"
 using "COL_Butcher"
@@ -192,7 +218,7 @@ data "Passives" "CX_Rogue_Assassin_Boost;Brute_Bugbear;AttackOfOpportunity;Darkv
 // data "Progressions" ""
 data "Progressions" "532203c2-7bcb-4162-9a7c-2bb20e227a30"
 
-// Bugbear Assassin (Added Rogue progressions, Assassin subclass fitting)
+// Bugbear Assassin (Added Rogue progressions, added Assassin subclass)
 new entry "DEN_BugbearNinja"
 type "Character"
 using "DEN_BugbearNinja"
@@ -201,7 +227,7 @@ data "Passives" "CX_Rogue_Assassin_Boost;Brute_Bugbear;AttackOfOpportunity;Darkv
 // data "Progressions" ""
 data "Progressions" "532203c2-7bcb-4162-9a7c-2bb20e227a30"
 
-// (Added Barbarian progressions)
+// (Added Barbarian progressions, added Berserker subclass)
 new entry "DEN_BugbearRaider"
 type "Character"
 using "DEN_BugbearRaider"
@@ -210,7 +236,7 @@ data "Passives" "CX_Barbarian_Berserker_Boost;Brute_Bugbear;AttackOfOpportunity;
 // data "Progressions" ""
 data "Progressions" "56db8107-e04c-4fe3-94f3-fd4acd44cd4a"
 
-// Lann Tarv - Armourer to the Absolute, Cult of the Absolute (Added Paladin progressions, Oathbreaker subclass fitting)
+// Lann Tarv - Armourer to the Absolute, Cult of the Absolute (Added Paladin progressions, added Oathbreaker subclass)
 new entry "MOO_BugbearMerchant"
 type "Character"
 using "MOO_BugbearMerchant"
@@ -226,25 +252,24 @@ data "Passives" "CX_Paladin_Oathbreaker_Boost;CX_Martial_Boost;Brute_Bugbear;Att
 data "Progressions" "8726b2c4-edc0-4905-b82f-60a4baba0733"
 
 // ==================================== Dragonborn ====================================
-
-// Bard Dragonborn nutsacks have appropriate progressions
+// TODO: Review Dragonborn templates and entries to see if adding ancestry breath attacks and resistances is necessary
 
 // "_Base"
 //  └─ "_Humanoid"
 //      ├─ "_Dragonborn"
-//      │   ├─ "Dragonborn_Bard"                                --- Lyrux Goldthroat - The Guild
-//      │   │   ├─ "DEN_Bard_Backup"                            --- Quil Grootslang
-//      │   │   └─ "WYR_Circus_Dragonborn_Red_Bard"             --- Medrash - Circus of the Last Days
-//      │   ├─ "Dragonborn_Cleric"
-//      │   │   └─ "LOW_AradinThug_Cleric"                      --- Prayerboy Zoryxx
+//      │   ├─ "Dragonborn_Bard"                                --- Lyrux Goldthroat - The Guild (Has Bard progressions)
+//      │   │   ├─ "DEN_Bard_Backup"                            --- Quil Grootslang (Inherits Bard progressions)
+//      │   │   └─ "WYR_Circus_Dragonborn_Red_Bard"             --- Medrash - Circus of the Last Days (Inherits Bard progressions)
+//      │   ├─ "Dragonborn_Cleric"                              --- (Has Cleric progressions)
+//      │   │   └─ "LOW_AradinThug_Cleric"                      --- Prayerboy Zoryxx (Inherits Bard progressions)
 //      ├─ "Dragonborn_Melee"
-//      │   ├─ "Dragonborn_Barbarian"                           --- (Has proper progressions)
-//      │   │   └─ "LOW_HagSurvivor_Dragonborn_Green_Barbarian" --- Inku Neza - Member of the Dead Eyes
+//      │   ├─ "Dragonborn_Barbarian"                           --- (Has Barbarian progressions)
+//      │   │   └─ "LOW_HagSurvivor_Dragonborn_Green_Barbarian" --- Inku Neza - Member of the Dead Eyes (Inherits Barbarian progressions)
 //      │   ├─ "LOW_Abazigal"
-//      │   ├─ "LOW_Dragonborn_Gold_Havkelaag"                  --- Unused
-//      │   ├─ "LOW_HagSurvivor_Dragonborn_Silver_Melee"        --- Unused
+//      │   ├─ "LOW_Dragonborn_Gold_Havkelaag"                  --- Unused (Inherits added Fighter progressions)
+//      │   ├─ "LOW_HagSurvivor_Dragonborn_Silver_Melee"        --- Unused (Inherits added Fighter progressions)
 //      │   ├─ "WYR_MessHallBodyguard_06"
-//      │   └─ "WYR_Rivington_Armor_Shopkeeper"                 --- Exxvikyap - Gyldro Angleiron's shop assistant
+//      │   └─ "WYR_Rivington_Armor_Shopkeeper"                 --- Exxvikyap - Gyldro Angleiron's shop assistant (Inherits added Fighter progressions)
 
 // Gold Dragonborn Fighter (Added Fighter progressions)
 new entry "Dragonborn_Melee"
@@ -253,27 +278,27 @@ using "Dragonborn_Melee"
 // data "Progressions" ""
 data "Progressions" "0e6da493-5a37-423b-8c28-629462b22faa"
 
-// Echo of Abazigal - Bhaalspawn
+// Echo of Abazigal - Bhaalspawn (Inherits added Fighter progressions, added Battlemaster subclass)
 new entry "LOW_Abazigal"
 type "Character"
 using "LOW_Abazigal"
 // data "Passives" "Ethereal;TurnResistance;IncorporealMovement;AttackOfOpportunity;DarknessRules;Darkvision;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check;Metamagic_Distant_NPC"
-data "Passives" "CX_Fighter_BattleMaster_Boost;CX_Magic_Boost;AttackOfOpportunity;DarknessRules;Darkvision;Ethereal;TurnResistance;IncorporealMovement;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check;Metamagic_Distant_NPC"
+data "Passives" "CX_Fighter_BattleMaster_Boost;AttackOfOpportunity;DarknessRules;Darkvision;Ethereal;TurnResistance;IncorporealMovement;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check;Metamagic_Distant_NPC"
 
-// Lady Oberon's Bodyguard (Has Fighter progressions, make him a proper Battlemaster instead of stinky SuperiorityDie)
+// Lady Oberon's Bodyguard (Has Fighter progressions, added Battle Master subclass, removed additional superiority dice)
 new entry "WYR_MessHallBodyguard_06"
 type "Character"
 using "WYR_MessHallBodyguard_06"
 // data "ActionResources" "ActionPoint:1;BonusActionPoint:1;Movement:9;ReactionActionPoint:1;SuperiorityDie:5"
 data "ActionResources" "ActionPoint:1;BonusActionPoint:1;Movement:9;ReactionActionPoint:1"
 // data "Passives" "AttackOfOpportunity;DarknessRules"
-data "Passives" "CX_Fighter_BattleMaster_Boost;CX_Martial_Boost;AttackOfOpportunity;DarknessRules"
+data "Passives" "CX_Fighter_BattleMaster_Boost;AttackOfOpportunity;DarknessRules"
 
 // "_Dragonborn"
-//  ├─ "Dragonborn_Ranger"                        --- (Has proper progressions)
+//  ├─ "Dragonborn_Ranger"                        --- (Has Ranger progressions)
 //  │   └─ "WYR_SmugglersCave_Dragonborn_Ranger"
 
-// Old Flake-Eyes - Envoys of the Stone Lord (Properly a Hunter)
+// Old Flake-Eyes - Envoys of the Stone Lord (Inherits Ranger progressions, added Hunter subclass)
 new entry "WYR_SmugglersCave_Dragonborn_Ranger"
 type "Character"
 using "WYR_SmugglersCave_Dragonborn_Ranger"
@@ -281,18 +306,18 @@ using "WYR_SmugglersCave_Dragonborn_Ranger"
 data "Passives" "CX_Ranger_Hunter_Boost;AttackOfOpportunity;DarknessRules;DraconicAncestry_Copper;ElementalAffinity_Damage;NaturalExplorer_WastelandWander_Poison;FavoredEnemy_MageBreaker;ColossusSlayer;EscapeTheHorde;SteelWill;MultiattackDefense"
 
 // "_Dragonborn"
-//  ├─ "Dragonborn_Rogue"                           --- Unused
-//  ├─ "MOO_FanaticOfTheAbsolute_Dragonborn"        --- Unused
-//  └─ "MOO_ZealotOfTheAbsolute_Dragonborn"         --- Unused
+//  ├─ "Dragonborn_Rogue"                           --- Unused (Has Rogue progressions)
+//  ├─ "MOO_FanaticOfTheAbsolute_Dragonborn"
+//  └─ "MOO_ZealotOfTheAbsolute_Dragonborn"
 
-// (Has Cleric progressions)
+// Unused (Has Cleric progressions)
 new entry "MOO_FanaticOfTheAbsolute_Dragonborn"
 type "Character"
 using "MOO_FanaticOfTheAbsolute_Dragonborn"
 // data "Passives" "AttackOfOpportunity;DarknessRules"
 data "Passives" "CX_Spells_L4C;AttackOfOpportunity;DarknessRules"
 
-// (Has Paladin progressions)
+// Unused (Has Paladin progressions, added Oathbreaker subclass)
 new entry "MOO_ZealotOfTheAbsolute_Dragonborn"
 type "Character"
 using "MOO_ZealotOfTheAbsolute_Dragonborn"
@@ -311,12 +336,14 @@ data "Passives" "CX_Paladin_Oathbreaker_Boost;AttackOfOpportunity;DarknessRules;
 //  │   │   │   ├─ "LOW_HouseOfHope_Dwarf_Debtor"
 //  │   │   │   └─ "TUT_Victim_Dwarf"               --- Unused
 
+// (Fixed racials)
 new entry "Dwarf_Commoner_Cowering"
 type "Character"
 using "Dwarf_Commoner_Cowering"
 // data "Passives" "Dwarf_DwarvenResilience;Darkvision;DarknessRules"
 data "Passives" "Dwarf_DwarvenResilience;AttackOfOpportunity;Darkvision;DarknessRules"
 
+// (Fixed racials)
 new entry "TUT_Victim_Dwarf"
 type "Character"
 using "TUT_Victim_Dwarf"
@@ -326,20 +353,20 @@ data "Passives" "Dwarf_DwarvenResilience;AttackOfOpportunity;Darkvision;Darkness
 // "_Base"
 //  ├─ "_Humanoid"
 //  │   ├─ "_Dwarf"
-//  │   │   ├─ "Dwarf_Caster"                               --- (Has proper progressions + spellcasting mod)
-//  │   │   │   ├─ "Dwarf_Bard"                             --- (Has proper progressions + spellcasting mod)
-//  │   │   │   │   └─ "LOW_HagSurvivor_Dwarf_Bard"         --- Hiero Lue - Member of the Dead Eyes, The Guild (double agent)
-//  │   │   │   ├─ "Dwarf_Druid"                            --- (Has proper progressions + spellcasting mod)
-//  │   │   │   │   └─ "DEN_Apprentice"                     --- Nettie
+//  │   │   ├─ "Dwarf_Caster"                               --- (Has Wizard progresions)
+//  │   │   │   ├─ "Dwarf_Bard"                             --- (Has Bard progressions
+//  │   │   │   │   └─ "LOW_HagSurvivor_Dwarf_Bard"         --- Hiero Lue - Member of the Dead Eyes, The Guild (double agent) (Inherits Bard progressions)
+//  │   │   │   ├─ "Dwarf_Druid"                            --- (Has Druid progressions)
+//  │   │   │   │   └─ "DEN_Apprentice"                     --- Nettie (Inherits Druid progressions)
 //  │   │   │   ├─ "GOB_Dwarf_Warlock"
-//  │   │   │   │   ├─ "LOW_DevilsFee_Helsik"               --- Helsik - Mammon's Picklock - Latchkeeper of the Nine Hells (Has Warlock progressions)
-//  │   │   │   │   └─ "LOW_TheLodge_Warlock"               --- Delverdenn - Society of Brilliance (Inherits Warlock progressions)
+//  │   │   │   │   ├─ "LOW_DevilsFee_Helsik"
+//  │   │   │   │   └─ "LOW_TheLodge_Warlock"
 //  │   │   │   ├─ "LOW_CountingHouse_HeadBanker"
 //  │   │   │   ├─ "LOW_Hope"
 //  │   │   │   ├─ "LOW_HouseOfGrief_Cultist_Caster_Dwarf"  --- Unused
 //  │   │   │   └─ "LOW_NecromancerStaff"
 
-// Korrilla - Agent of Raphael (Swapp Wizard progressions for Warlock progressions, Fiend is an obvious subclass choice)
+// Korrilla - Agent of Raphael (Swapped Wizard progressions for Warlock progressions, added Pact of the Fiend subclass)
 new entry "GOB_Dwarf_Warlock"
 type "Character"
 using "GOB_Dwarf_Warlock"
@@ -350,7 +377,22 @@ data "Passives" "CX_Warlock_Fiend_Boost;CX_Spells_L4;CX_Spells_L4C;CX_Spells_L5;
 // data "Progressions" "44bdbc5e-a003-4d61-87f0-5ced20d3804e"
 data "Progressions" "51274504-865d-46d1-a3b6-c72e9384904a"
 
-// Rakath Glitterbeard - Head Banker of The Counting House (Swapping progressions from Wizard to custom Sorcerer progressions, added Storm Sorcery subclass)
+// Helsik - Mammon's Picklock - Latchkeeper of the Nine Hells (Has Warlock progressions, added Pact of the Fiend subclass)
+new entry "LOW_DevilsFee_Helsik"
+type "Character"
+using "LOW_DevilsFee_Helsik"
+// data "Passives" "AttackOfOpportunity;DarknessRules;Darkvision;Dwarf_DwarvenResilience;LOW_DevilsFee_Bounty;AgonizingBlast;RepellingBlast;DevilsSight;EldritchSpear;DarkOnesOwnLuck"
+data "Passives" "CX_Warlock_Fiend_Boost;Dwarf_DwarvenResilience;AttackOfOpportunity;Darkvision;DarknessRules;LOW_DevilsFee_Bounty;AgonizingBlast;RepellingBlast;DevilsSight;EldritchSpear;DarkOnesOwnLuck"
+
+// Delverdenn - Society of Brilliance (Inherits Warlock progressions, removing extra spell slots)
+new entry "LOW_TheLodge_Warlock"
+type "Character"
+using "LOW_TheLodge_Warlock"
+data "SpellCastingAbility" "Charisma"
+// data "ActionResources" "ActionPoint:1;BonusActionPoint:1;Movement:9;ReactionActionPoint:1;SpellSlot:2:2:5;"
+data "ActionResources" "ActionPoint:1;BonusActionPoint:1;Movement:9;ReactionActionPoint:1"
+
+// Rakath Glitterbeard - Head Banker of The Counting House (Swapped progressions from Wizard to custom Sorcerer progressions, added Storm Sorcery subclass)
 new entry "LOW_CountingHouse_HeadBanker"
 type "Character"
 using "LOW_CountingHouse_HeadBanker"
@@ -370,7 +412,7 @@ using "LOW_Hope"
 // data "Passives" "AttackOfOpportunity;DarknessRules;Darkvision;Dwarf_DwarvenResilience;DiscipleOfLife;BlessedHealer;LOW_HoH_Hope_DeathWard"
 data "Passives" "CX_Cleric_Life_Boost;Dwarf_DwarvenResilience;AttackOfOpportunity;Darkvision;DarknessRules;DiscipleOfLife;BlessedHealer;LOW_HoH_Hope_DeathWard"
 
-// Cordrane the Recent (Inherits Wizard progressions)
+// Cordrane the Recent (Inherits Wizard progressions, added Necromancy School subclass)
 new entry "LOW_NecromancerStaff"
 type "Character"
 using "LOW_NecromancerStaff"
@@ -382,7 +424,7 @@ data "Passives" "CX_Wizard_Necromancy_Boost;Dwarf_DwarvenResilience;AttackOfOppo
 //  ├─ "Dwarf_Hill_Cultist_Bane_Fist"
 //  ├─ "Dwarf_Hill_Cultist_Bane_IronConsul"
 
-// Black Gauntlet of Bane - Cult of Bane (Has Cleric progressions, adding War Domain subclass)
+// Black Gauntlet of Bane - Cult of Bane (Has Cleric progressions, added War Domain subclass)
 new entry "Dwarf_Hill_Cultist_Bane_BlackGauntlet"
 type "Character"
 using "Dwarf_Hill_Cultist_Bane_BlackGauntlet"
@@ -396,7 +438,7 @@ using "Dwarf_Hill_Cultist_Bane_Fist"
 // data "Progressions" ""
 data "Progressions" "0e6da493-5a37-423b-8c28-629462b22faa"
 
-// Iron Consul of Bane - Cult of Bane (Added Fighter progressions, dudes in charge should be Battle Masters)
+// Iron Consul of Bane - Cult of Bane (Added Fighter progressions, added Battle Master subclass)
 new entry "Dwarf_Hill_Cultist_Bane_IronConsul"
 type "Character"
 using "Dwarf_Hill_Cultist_Bane_IronConsul"
@@ -406,8 +448,8 @@ data "Passives" "CX_Fighter_BattleMaster_Boost;Dwarf_DwarvenResilience;AttackOfO
 data "Progressions" "0e6da493-5a37-423b-8c28-629462b22faa"
 
 // "_Dwarf"
-//  ├─ "Dwarf_Melee"                                ---- (Has Fighter progressions)
-//  │   ├─ "Dwarf_Cleric"                           ---- (Has Cleric progressions)
+//  ├─ "Dwarf_Melee"                                --- (Has Fighter progressions)
+//  │   ├─ "Dwarf_Cleric"                           --- (Has Cleric progressions)
 //  │   │   ├─ "TWN_RegretfulHunter"                --- Unimplemented character?
 //  │   │   └─ "WYR_OpenHandTemple_Dwarf_Cleric"    --- Brother Clements (Inherits Cleric progressions)
 //  │   ├─ "END_CityWatchMelee_Dwarf"               --- Watcher Guardian (Gather Your Allies summon) (Inherits Fighter progressions)
@@ -424,7 +466,7 @@ data "Progressions" "0e6da493-5a37-423b-8c28-629462b22faa"
 //  │   ├─ "WYR_Flophouse_Dwarf_Melee"              --- Ffion Goldgrind (dead)
 //  │   └─ "WYR_SharessCaress_Dwarf_Melee"          --- Sauceman Chorizo, chef (lmao) (Inherits Fighter progressions)
 
-// Baelen Bonecloak (Inherits Fighter progressions, make him a Champion because it's the most brain-dead wife-beating of the subclasses)
+// Baelen Bonecloak (Inherits Fighter progressions, added Champion subclass because it's the most brain-dead wife-beating of the subclasses)
 new entry "GLO_Baelen"
 type "Character"
 using "GLO_Baelen"
@@ -432,7 +474,7 @@ using "GLO_Baelen"
 data "Passives" "CX_Fighter_Champion_Boost;Dwarf_DwarvenResilience;AttackOfOpportunity;Darkvision;DarknessRules"
 
 // "_Dwarf"
-//  ├─ "Dwarf_Ranger"                                   --- (Has Ranger progressions)
+//  ├─ "Dwarf_Ranger"                                   --- Entharl Danthelon - Harpers (+ generic) (Has Ranger progressions)
 //  │   ├─ "CRA_MindflayerThrall_Ranger_Dwarf"
 //  │   ├─ "GLO_Derryth"                                --- (Inherits Ranger progressions)
 //  │   ├─ "LOW_CazadorsPalace_GuardTower_Dwarf_Ranger" --- (Inherits Ranger progressions)
@@ -446,28 +488,21 @@ data "Passives" "CX_Fighter_Champion_Boost;Dwarf_DwarvenResilience;AttackOfOppor
 //  │   └─"WYR_SmugglersCave_Dwarf_Ranger"
 //  │       └─ "WYR_SmugglersCave_Dwarf_Ranger_2"
 
-// Entharl Danthelon - Harpers (+ generic)
-new entry "Dwarf_Ranger"
-type "Character"
-using "Dwarf_Ranger"
-// data "Passives" "Dwarf_DwarvenResilience;AttackOfOpportunity;Darkvision;DarknessRules"
-data "Passives" "CX_Ranger_Boost;CX_Martial_Boost;Dwarf_DwarvenResilience;AttackOfOpportunity;Darkvision;DarknessRules"
-
-// (Inherits Ranger progressions)
+// (Inherits Ranger progressions, fixed racials)
 new entry "CRA_MindflayerThrall_Ranger_Dwarf"
 type "Character"
 using "CRA_MindflayerThrall_Ranger_Dwarf"
 // data "Passives" "Dwarf_DwarvenResilience;Darkvision;DarknessRules"
 data "Passives" "Dwarf_DwarvenResilience;AttackOfOpportunity;Darkvision;DarknessRules"
 
-// Funglesby - Envoys of the Stone Lord (Inherits Ranger progressions)
+// Funglesby - Envoys of the Stone Lord (Inherits Ranger progressions, added Beast Master subclass)
 new entry "WYR_SmugglersCave_Dwarf_Ranger"
 type "Character"
 using "WYR_SmugglersCave_Dwarf_Ranger"
 // data "Passives" "Dwarf_DwarvenResilience;AttackOfOpportunity;Darkvision;DarknessRules;NaturalExplorer_WastelandWander_Poison;FavoredEnemy_MageBreaker;CompanionsBond;ExceptionalTraining"
 data "Passives" "CX_Ranger_BeastMaster_Boost;Dwarf_DwarvenResilience;AttackOfOpportunity;Darkvision;DarknessRules;NaturalExplorer_WastelandWander_Poison;FavoredEnemy_MageBreaker;CompanionsBond;ExceptionalTraining"
 
-// (not a bug) Bug Bludgeon - The Guild (Inherits Ranger progressions)
+// (not a bug) Bug Bludgeon - The Guild (Inherits Ranger progressions, added Gloomstalker subclass)
 new entry "WYR_SmugglersCave_Dwarf_Ranger_2"
 type "Character"
 using "WYR_SmugglersCave_Dwarf_Ranger_2"
@@ -491,28 +526,28 @@ using "Dwarf_Cultist_Bhaal_NightBlade"
 // data "Progressions" ""
 data "Progressions" "532203c2-7bcb-4162-9a7c-2bb20e227a30"
 
-// Death's Head of Bhaal (Inherits Rogue progressions) (AttackOfOpportunitys typo)
+// Death's Head of Bhaal (Inherits Rogue progressions, fixed racials
 new entry "Dwarf_Cultist_Bhaal_DeathsHead"
 type "Character"
 using "Dwarf_Cultist_Bhaal_DeathsHead"
 // data "Passives" "ExtraAttack;MurderHungry;MagicResistance;Dwarf_DwarvenResilience;AttackOfOpportunitys;Darkvision;DarknessRules"
 data "Passives" "Dwarf_DwarvenResilience;AttackOfOpportunity;Darkvision;DarknessRules;ExtraAttack;MurderHungry;MagicResistance"
 
-// (Inherits Rogue progressions)
+// (Inherits Rogue progressions, added Thief subclass)
 new entry "FOR_Dwarf_Cultist_Zariel_Rogue"
 type "Character"
 using "FOR_Dwarf_Cultist_Zariel_Rogue"
 // data "Passives" "FastHands;SecondStoryWork;Dwarf_DwarvenResilience;AttackOfOpportunity;Darkvision;DarknessRules"
 data "Passives" "CX_Rogue_Thief_Boost;Dwarf_DwarvenResilience;AttackOfOpportunity;Darkvision;DarknessRules;FastHands;SecondStoryWork"
 
-// Lady Lockjaw - Nine-Fingers' Bodyguard, The Guild (Inherits Rogue progressions)
+// Lady Lockjaw - Nine-Fingers' Bodyguard, The Guild (Inherits Rogue progressions, added Thief subclass)
 new entry "LOW_Guildhall_LadyLockjaw"
 type "Character"
 using "LOW_Guildhall_LadyLockjaw"
 // data "Passives" "FastHands;AttackOfOpportunity;DarknessRules;Darkvision;Dwarf_DwarvenResilience"
 data "Passives" "CX_Rogue_Thief_Boost;Dwarf_DwarvenResilience;AttackOfOpportunity;Darkvision;DarknessRules;FastHands"
 
-// Dolor - Cult of Bhaal --- "S_LOW_Dolor_55837c0f-0171-4020-a4a3-dd6de7ffc134" (Inherits Rogue progressions)
+// Dolor - Cult of Bhaal --- "S_LOW_Dolor_55837c0f-0171-4020-a4a3-dd6de7ffc134" (Inherits Rogue progressions, added Assassin subclass)
 new entry "LOW_SerialKiller_Dolor"
 type "Character"
 using "LOW_SerialKiller_Dolor"
@@ -586,7 +621,7 @@ using "MOO_FanaticOfTheAbsolute_Dwarf"
 // data "Passives" "Dwarf_DwarvenResilience;AttackOfOpportunity;Darkvision;DarknessRules"
 data "Passives" "CX_Spells_L4C;Dwarf_DwarvenResilience;AttackOfOpportunity;Darkvision;DarknessRules"
 
-// Zealot Arden, Zealot of the Absolute - Cult of the Absolute (Has Paladin progressions)
+// Zealot Arden, Zealot of the Absolute - Cult of the Absolute (Has Paladin progressions, added Oathbreaker subclass)
 new entry "MOO_ZealotOfTheAbsolute_Dwarf"
 type "Character"
 using "MOO_ZealotOfTheAbsolute_Dwarf"
@@ -601,6 +636,7 @@ data "Passives" "CX_Paladin_Oathbreaker_Boost;Dwarf_DwarvenResilience;AttackOfOp
 //  │   └─ "Dwarf_Duergar_Commoner_Cowering"
 //  ├─ "Dwarf_Duergar_Cultist_Bane_Fist"
 
+// (Fixed racials)
 new entry "Dwarf_Duergar_Commoner_Cowering"
 type "Character"
 using "Dwarf_Duergar_Commoner_Cowering"
@@ -617,11 +653,11 @@ data "Progressions" "0e6da493-5a37-423b-8c28-629462b22faa"
 // "_Dwarf"
 //  ├─ "_Dwarf_Duergar"
 //  │   ├─ "Dwarf_Duergar_Caster"
-//  │   │   ├─ "Dwarf_Duergar_MindMaster"   --- (I dunno wot)
+//  │   │   ├─ "Dwarf_Duergar_MindMaster"   --- Unused (Inherits Wizard progressions)
 //  │   │   ├─ "LOW_TheLodge_Bard"
 //  │   │   ├─ "UND_AlchemistArgram"        --- Alchemist Argram - Novice of the Absolute, Cult of the Absolute (Inherits Wizard progressions)
 //  │   │   ├─ "UND_Danna"                  --- Danna, Clan Flameshade (Inherits Wizard progressions)
-//  │   │   ├─ "UND_Gravvar"                --- ???
+//  │   │   ├─ "UND_Gravvar"                --- Unused (Inherits Wizard progressions)
 //  │   │   └─ "UND_KC_Duergar_Caster"
 //  │   │       ├─ "LOW_TheLodge_Havkelaag"
 //  │   │       └─ "UND_KC_Dunnol"          --- Mind Master Dunnol - Novice of the Absolute, Cult of the Absolute (Inherits Wizard progressions)
@@ -649,7 +685,7 @@ using "UND_KC_Duergar_Caster"
 // data "Passives" "Dwarf_DwarvenResilience;Duergar_DuergarResilience;SunlightSensitivity;AttackOfOpportunity;SuperiorDarkvision;DarknessRules"
 data "Passives" "CX_Spells_L1;CX_Spells_L2;CX_Spells_L3;CX_Spells_L2C;Dwarf_DwarvenResilience;Duergar_DuergarResilience;SunlightSensitivity;AttackOfOpportunity;SuperiorDarkvision;DarknessRules"
 
-// Havkelaag - Society of Brilliance (Added custom Sorcerer progressions)
+// Havkelaag - Society of Brilliance (Added custom Sorcerer progressions, added Draconic Bloodline subclass, removed additional spell slots)
 new entry "LOW_TheLodge_Havkelaag"
 type "Character"
 using "LOW_TheLodge_Havkelaag"
@@ -659,8 +695,10 @@ data "Intelligence" "11"
 data "Charisma" "18"
 // data "SpellCastingAbility" "Intelligence"
 data "SpellCastingAbility" "Charisma"
+// data "ActionResources" "ActionPoint:1;BonusActionPoint:1;Movement:7.5;ReactionActionPoint:1;SpellSlot:4:4:1;SpellSlot:3:3:2;SpellSlot:3:3:3;SpellSlot:3:3:4;SpellSlot:2:2:5;SpellSlot:1:1:6;"
+data "ActionResources" "ActionPoint:1;BonusActionPoint:1;Movement:7.5;ReactionActionPoint:1"
 // data "Passives" "AttackOfOpportunity;DarknessRules;SuperiorDarkvision;Dwarf_DwarvenResilience;Duergar_DuergarResilience;SunlightSensitivity;DraconicResilience;ElementalAffinity_Damage;DraconicAncestry_Silver"
-data "Passives" "CX_Spells_L1;CX_Spells_L2;CX_Spells_L3;CX_Spells_L2C;Dwarf_DwarvenResilience;Duergar_DuergarResilience;SunlightSensitivity;AttackOfOpportunity;SuperiorDarkvision;DarknessRules;DraconicResilience;ElementalAffinity_Damage;DraconicAncestry_Silver"
+data "Passives" "CX_Sorcerer_DraconicBloodline_Boost;CX_Spells_L1;CX_Spells_L2;CX_Spells_L3;CX_Spells_L2C;Dwarf_DwarvenResilience;Duergar_DuergarResilience;SunlightSensitivity;AttackOfOpportunity;SuperiorDarkvision;DarknessRules;DraconicResilience;ElementalAffinity_Damage;DraconicAncestry_Silver"
 // data "Progressions" ""
 data "Progressions" "2189a72d-6489-4621-8b2c-85d3e7df2f6f"
 
@@ -683,8 +721,8 @@ data "Progressions" "2189a72d-6489-4621-8b2c-85d3e7df2f6f"
 //  │   ├─ "UND_KC_Duergar_Melee"                       --- Bonna, Viss, Stonemason Kith, Ward Magmar, Herdmaster Skarjall - Clan Flameshade (Inherits Fighter progressions)
 //  │   │   └─ "UND_KC_Brithvar"                        --- Elder Brithvar - Clan Flameshade (Inherits Fighter progressions)
 //  │   ├─ "UND_LoneDuergar"
-//  │   └─ "UND_RottingDuergar"                         --- ??? (Inherits Fighter progressions)
-//  │       └─ "UND_RottingDuergar_Ranged"              --- ??? (Inherits Fighter progressions)
+//  │   └─ "UND_RottingDuergar"                         --- Unused (Inherits Fighter progressions)
+//  │       └─ "UND_RottingDuergar_Ranged"              --- Unused (Inherits Fighter progressions)
 
 // Duergar Cleric (Has Cleric progressions)
 new entry "Dwarf_Duergar_Cleric"
@@ -715,7 +753,7 @@ data "Charisma" "12"
 // data "Passives" "AttackOfOpportunity;DarknessRules;Dwarf_DwarvenResilience;Duergar_DuergarResilience;SunlightSensitivity;SuperiorDarkvision;Duergar_DuergarResilience;DualWielder_PassiveBonuses"
 data "Passives" "CX_Fighter_EldritchKnight_Boost;Dwarf_DwarvenResilience;Duergar_DuergarResilience;SunlightSensitivity;AttackOfOpportunity;SuperiorDarkvision;DarknessRules;DualWielder_PassiveBonuses"
 
-// Gekh Coal - Duergar Slave-Hunter, Cult of the Absolute (Has Wizard progressions, definitely a Necromancer, gets Martial boost too because he's a big axe wielding giga chad)
+// Gekh Coal - Duergar Slave-Hunter, Cult of the Absolute (Has Wizard progressions, added Necromancy School subclass, gets Martial boost too because he's a big axe wielding giga chad)
 new entry "UND_LoneDuergar"
 type "Character"
 using "UND_LoneDuergar"
@@ -728,8 +766,8 @@ data "Passives" "CX_Wizard_Necromancy_Boost;CX_Martial_Boost;Dwarf_DwarvenResili
 //  │   ├─ "Dwarf_Duergar_Ranger_Strong"                --- (Inherits Ranger progressions)
 //  │   │   ├─ "Dwarf_Duergar_Ranger_StoneGuard"        --- Ranged Stone Guard (Inherits Ranger progressions)
 //  │   │   │   └─ "UND_KC_Duergar_Ranger_StoneGuard"   --- (Inherits Ranger progressions)
-//  │   │   │       └─ "UND_KC_Kur"                     --- Kur - Clan Flameshade = "S_UND_DuergarRebelBored_30fb7e6e-40d2-4e77-b5ea-887f8eb345c9"
-//  │   │   └─ "UND_KC_DuergarSpiderMaster"             --- Murmath - Novice of the Absolute, Cult of the Absolute = "S_UND_DuergarLoyalPatroller_01_a38319cb-c9ed-460a-bba2-1788d1cad20c"
+//  │   │   │       └─ "UND_KC_Kur"                     --- Kur - Clan Flameshade (Inherits Ranger progressions)
+//  │   │   └─ "UND_KC_DuergarSpiderMaster"
 //  │   ├─ "UND_Duergar_Alchemist"                      --- (Inherits Ranger progressions)
 //  │   ├─ "UND_Duergar_Ranger"                         --- Holvik - Cult of the Absolute = "S_UND_LoneDuergar_Squad_Ranged_9c792a46-8a05-43fb-8efa-63d234dbcc6a" (Inherits Ranger progressions)
 //  │   └─ "UND_KC_Duergar_Ranger"                      --- (Inherits Ranger progressions)
@@ -744,9 +782,16 @@ using "CHA_BanditInterior_Duergar_Ranger"
 // data "Passives" "DarknessRules;Darkvision;Duergar_DuergarResilience;SunlightSensitivity;AdditionalSpellSlot_Level_1;"
 data "Passives" "Dwarf_DwarvenResilience;Duergar_DuergarResilience;SunlightSensitivity;AttackOfOpportunity;SuperiorDarkvision;DarknessRules;AdditionalSpellSlot_Level_1;"
 
+// Murmath - Novice of the Absolute, Cult of the Absolute (Inherits Ranger progressions, added Beast Master subclass)
+new entry "UND_KC_DuergarSpiderMaster"
+type "Character"
+using "UND_KC_DuergarSpiderMaster"
+// data "Passives" "Dwarf_DwarvenResilience;Duergar_DuergarResilience;SunlightSensitivity;AttackOfOpportunity;SuperiorDarkvision;DarknessRules"
+data "Passives" "CX_Ranger_BeastMaster_Boost;Dwarf_DwarvenResilience;Duergar_DuergarResilience;SunlightSensitivity;AttackOfOpportunity;SuperiorDarkvision;DarknessRules"
+
 // "_Dwarf"
 //  ├─ "Dwarf_Duergar_Rogue"                --- (Has Rogue progressions)
-//  │   └─ "UND_KC_Duergar_Rogue"           --- Gergerann - Clan Flameshade = "S_UND_DuergarRebelMason_02_6b07558b-09ef-449c-8dd2-b0c2cbe809f1" (Inherits Rogue progressions)
+//  │   └─ "UND_KC_Duergar_Rogue"           --- Gergerann - Clan Flameshade (Inherits Rogue progressions)
 //  ├─ "MOO_AcolyteOfTheAbsolute_Duergar"   --- Acolyte Belub - Cult of the Absolute (Has Cleric progressions) 
 //  ├─ "MOO_FanaticOfTheAbsolute_Duergar"
 //  ├─ "MOO_ZealotOfTheAbsolute_Duergar"
@@ -758,7 +803,7 @@ using "MOO_FanaticOfTheAbsolute_Duergar"
 // data "Passives" "Dwarf_DwarvenResilience;Duergar_DuergarResilience;SunlightSensitivity;AttackOfOpportunity;SuperiorDarkvision;DarknessRules"
 data "Passives" "CX_Spells_L4C;Dwarf_DwarvenResilience;Duergar_DuergarResilience;SunlightSensitivity;AttackOfOpportunity;SuperiorDarkvision;DarknessRules"
 
-// (Has Paladin progressions)
+// (Has Paladin progressions, added Oathbreaker subclass)
 new entry "MOO_ZealotOfTheAbsolute_Duergar"
 type "Character"
 using "MOO_ZealotOfTheAbsolute_Duergar"
@@ -779,7 +824,7 @@ data "Passives" "CX_Paladin_Oathbreaker_Boost;Dwarf_DwarvenResilience;Duergar_Du
 //  │   │   │   └─ "LOW_Guildhall_LadyRabies"
 
 // TODO: Multiclass Rogue Thief/Barb.
-// Lady Flux - Nine-Fingers' Bodyguard, The Guild (Inherits Barbarian progressions, definitely a Widlheart Barbarian)
+// Lady Flux - Nine-Fingers' Bodyguard, The Guild (Inherits Barbarian progressions, added Widlheart subclass)
 new entry "LOW_Guildhall_LadyRabies"
 type "Character"
 using "LOW_Guildhall_LadyRabies"
@@ -807,7 +852,7 @@ data "Passives" "CX_Barbarian_Wildheart_Boost;FeyAncestry;AttackOfOpportunity;Da
 //  │   ├─ "WYR_Lucretious"
 //  │   └─ "WYR_SharessCaress_Elf_Caster"                   --- (Inherits Wizard progressions)
 
-// Quelenna - Overgrown Ruin Looters "S_CHA_Exterior_Bandit_Caster_01_0f4300f6-0e1e-4d6c-a582-5da588d64ea7" (Inherits Wizard progressions)
+// Quelenna - Overgrown Ruin Looters (Inherits Wizard progressions, fixed racials)
 new entry "CHA_Bandit_Elf_Caster"
 type "Character"
 using "CHA_Bandit_Elf_Caster"
@@ -821,12 +866,12 @@ using "GLO_CounsellorFlorrick"
 // data "Passives" "AttackOfOpportunity;FeyAncestry;DarknessRules;Darkvision;Resilient_Constitution"
 data "Passives" "CX_Spells_L1;CX_Spells_L2;CX_Spells_L3;CX_Spells_L2C;CX_Spells_L3C;FeyAncestry;AttackOfOpportunity;DarknessRules;Darkvision;Resilient_Constitution"
 
-// Lorin (Has Wizard progressions)
+// Lorin (Has Wizard progressions, fixed racials, removed extra spellslot passive)
 new entry "HAG_Victim_Mage"
 type "Character"
 using "HAG_Victim_Mage"
 // data "Passives" "AttackOfOpportunity;DarknessRules;AdditionalSpellSlot_Level_3"
-data "Passives" "FeyAncestry;AttackOfOpportunity;DarknessRules;Darkvision;AdditionalSpellSlot_Level_3"
+data "Passives" "FeyAncestry;AttackOfOpportunity;DarknessRules;Darkvision"
 
 // Harper Tumeril - Harpers (Inherits Wizard progressions)
 new entry "HAV_Harper_Elf_Caster"
@@ -864,7 +909,7 @@ data "SpellCastingAbility" "Charisma"
 // data "Progressions" "44bdbc5e-a003-4d61-87f0-5ced20d3804e"
 data "Progressions" "2189a72d-6489-4621-8b2c-85d3e7df2f6f"
 
-// Lucretious - Bringer of the Night, Circus of the Last Days (Inherits Wizard progressions, Necromancer 4 sure)
+// Lucretious - Bringer of the Night, Circus of the Last Days (Inherits Wizard progressions, added Necromancer subclass)
 new entry "WYR_Lucretious"
 type "Character"
 using "WYR_Lucretious"
@@ -880,6 +925,7 @@ data "Passives" "CX_Wizard_Necromancy_Boost;CX_Spells_L5C;FeyAncestry;AttackOfOp
 //  │   ├─ "TUT_Victim_Elf"
 //  │   └─ "WYR_VampireSpawns_Elf"          --- Dalyria & Petras - Vampire Spawn (Isn't this just unused?)
 
+// (Fixed racials)
 new entry "Elf_Commoner_Cowering"
 type "Character"
 using "Elf_Commoner_Cowering"
@@ -922,7 +968,7 @@ data "Passives" "FeyAncestry;AttackOfOpportunity;DarknessRules;Darkvision"
 //  │   │   └─ "SCL_Caravan_Ambusher_Branthos"          --- Harper Branthos (Inherits Fighter progressions)
 //  │   └─ "SHA_Nightsong"
 
-// Aylin - The Nightsong, Singer of Sorrows, Sword of the Moonmaiden, Daughter of Selûne (Has Paladin progressions)
+// Aylin - The Nightsong, Singer of Sorrows, Sword of the Moonmaiden, Daughter of Selûne (Has Paladin progressions, added Vengeance subclass)
 new entry "SHA_Nightsong"
 type "Character"
 using "SHA_Nightsong"
@@ -941,7 +987,7 @@ data "Passives" "CX_Paladin_Vengeance_Boost;AttackOfOpportunity;DarknessRules;Ex
 //  │   ├─ "WYR_MessHallBodyguard_03"               --- Lady Durinbold's Attendant (Inherits Ranger progressions)
 //  │   └─ "WYR_SmugglersCave_Elf_Ranger"
 
-// Archer Velicia - Harpers, The Guild (undercover) (Inherits Ranger progressions, definitely a Gloom Stalker)
+// Archer Velicia - Harpers, The Guild (undercover) (Inherits Ranger progressions, added Gloom Stalker subclass)
 new entry "WYR_SmugglersCave_Elf_Ranger"
 type "Character"
 using "WYR_SmugglersCave_Elf_Ranger"
@@ -1027,7 +1073,7 @@ using "MOO_FanaticOfTheAbsolute_Elf"
 // data "Passives" "FeyAncestry;AttackOfOpportunity;DarknessRules;Darkvision"
 data "Passives" "CX_Spells_L4C;FeyAncestry;AttackOfOpportunity;DarknessRules;Darkvision"
 
-// (Has Paladin progressions) 
+// (Has Paladin progressions, added Oathbreaker subclass) 
 new entry "MOO_ZealotOfTheAbsolute_Elf"
 type "Character"
 using "MOO_ZealotOfTheAbsolute_Elf"
@@ -1066,7 +1112,7 @@ using "MOO_FanaticOfTheAbsolute_WoodElf"
 // data "Passives" "FeyAncestry;AttackOfOpportunity;DarknessRules;Darkvision"
 data "Passives" "CX_Spells_L4C;FeyAncestry;AttackOfOpportunity;DarknessRules;Darkvision"
 
-// (Has Paladin progressions) 
+// (Has Paladin progressions, added Oathbreaker subclass) 
 new entry "MOO_ZealotOfTheAbsolute_WoodElf"
 type "Character"
 using "MOO_ZealotOfTheAbsolute_WoodElf"
@@ -1223,7 +1269,7 @@ using "MOO_FanaticOfTheAbsolute_Drow"
 // data "Passives" "FeyAncestry;SunlightSensitivity;AttackOfOpportunity;DarknessRules;Darkvision"
 data "Passives" "CX_Spells_L4C;FeyAncestry;AttackOfOpportunity;DarknessRules;SuperiorDarkvision;SunlightSensitivity;"
 
-// Zealot Soreni, Zealot Niram, Zealot Rylveth, Zealot Zira - Cult of the Absolute (Has Paladin progressions) 
+// Zealot Soreni, Zealot Niram, Zealot Rylveth, Zealot Zira - Cult of the Absolute (Has Paladin progressions, added Oathbreaker subclass) 
 new entry "MOO_ZealotOfTheAbsolute_Drow"
 type "Character"
 using "MOO_ZealotOfTheAbsolute_Drow"
@@ -1754,7 +1800,7 @@ using "MOO_FanaticOfTheAbsolute_Gnome"
 // data "Passives" "Gnome_Cunning;Gnome_Speed;AttackOfOpportunity;DarknessRules;Darkvision"
 data "Passives" "CX_Spells_L4C;Gnome_Cunning;Gnome_Speed;AttackOfOpportunity;DarknessRules;Darkvision"
 
-// (Has Paladin progressions) 
+// (Has Paladin progressions, added Oathbreaker subclass) 
 new entry "MOO_ZealotOfTheAbsolute_Gnome"
 type "Character"
 using "MOO_ZealotOfTheAbsolute_Gnome"
@@ -2020,7 +2066,7 @@ data "DefaultBoosts" "Skill(Stealth, 6); BlockRegainHP(Undead;Construct)"
 // data "Progressions" ""
 data "Progressions" "f0ede459-8b86-48fd-ac11-4432573566a5"
 
-// Beastmaster Zurk - Cult of the Absolute (Inherits Ranger progressions, could go either way as a Fighter or Ranger, but Beastmaster is pretty fitting for a dude summoning animals)
+// Beastmaster Zurk - Cult of the Absolute (Inherits added Ranger progressions, added Beast Master subclass)
 new entry "GOB_BeastMaster"
 type "Character"
 using "GOB_BeastMaster"
@@ -2322,7 +2368,7 @@ data "Passives" "CX_Ranger_BeastMaster_Boost;FeyAncestry;HumanMilitia;AttackOfOp
 //  │   ├─ "MOO_FanaticOfTheAbsolute_HalfElf"
 //  │   └─ "MOO_ZealotOfTheAbsolute_HalfElf"
 
-//  (Added Fighter progressions, dudes in charge should be Battle Masters)
+//  (Added Fighter progressions, added Battle Master subclass)
 new entry "HalfElf_Cultist_Bane_IronConsul"
 type "Character"
 using "HalfElf_Cultist_Bane_IronConsul"
@@ -2345,7 +2391,7 @@ using "MOO_FanaticOfTheAbsolute_HalfElf"
 // data "Passives" "FeyAncestry;AttackOfOpportunity;Darkvision;DarknessRules"
 data "Passives" "CX_Spells_L4C;FeyAncestry;HumanMilitia;AttackOfOpportunity;Darkvision;DarknessRules"
 
-// Zealot Iogar - Cult of the Absolute (Has Paladin progressions)
+// Zealot Iogar - Cult of the Absolute (Has Paladin progressions, added Oathbreaker subclass)
 new entry "MOO_ZealotOfTheAbsolute_HalfElf"
 type "Character"
 using "MOO_ZealotOfTheAbsolute_HalfElf"
@@ -2539,7 +2585,7 @@ data "Passives" "SavageAttacks;RelentlessEndurance;AttackOfOpportunity;Darkvisio
 // data "Progressions" ""
 data "Progressions" "0e6da493-5a37-423b-8c28-629462b22faa"
 
-// Iron Consul Nuff, Iron Consul Chadd, Iron Consul Marten the Hammer, Iron Consul Underbite Yoonce - Cult of Bane (Added Fighter progressions, dudes in charge should be Battle Masters)
+// Iron Consul Nuff, Iron Consul Chadd, Iron Consul Marten the Hammer, Iron Consul Underbite Yoonce - Cult of Bane (Added Fighter progressions, added Battle Master subclass)
 new entry "HalfOrc_Cultist_Bane_IronConsul"
 type "Character"
 using "HalfOrc_Cultist_Bane_IronConsul"
@@ -2560,7 +2606,7 @@ using "MOO_FanaticOfTheAbsolute_HalfOrc"
 // data "Passives" "AttackOfOpportunity;DarknessRules"
 data "Passives" "CX_Spells_L4C;SavageAttacks;RelentlessEndurance;AttackOfOpportunity;Darkvision;DarknessRules"
 
-// Zealot Nadi, Zealot Munish - Cult of the Absolute (Has Paladin progressions) 
+// Zealot Nadi, Zealot Munish - Cult of the Absolute (Has Paladin progressions, added Oathbreaker subclass) 
 new entry "MOO_ZealotOfTheAbsolute_HalfOrc"
 type "Character"
 using "MOO_ZealotOfTheAbsolute_HalfOrc"
@@ -2805,7 +2851,7 @@ using "MOO_FanaticOfTheAbsolute_Halfling"
 // data "Passives" "Halfling_Lucky;Halfling_Brave;AttackOfOpportunity;DarknessRules"
 data "Passives" "CX_Spells_L4C;Halfling_Lucky;Halfling_Brave;AttackOfOpportunity;DarknessRules"
 
-// Zealot Brinn - Cult of the Absolute (Has Paladin progressions)
+// Zealot Brinn - Cult of the Absolute (Has Paladin progressions, added Oathbreaker subclass)
 new entry "MOO_ZealotOfTheAbsolute_Halfling"
 type "Character"
 using "MOO_ZealotOfTheAbsolute_Halfling"
@@ -3732,7 +3778,7 @@ data "Vitality" "48"
 // data "SpellCastingAbility" "Intelligence"
 data "SpellCastingAbility" "Wisdom"
 // data "Progressions" "0e6da493-5a37-423b-8c28-629462b22faa"
-data "Progressions" "f0ede459-8b86-48fd-11ac-32443557a566"
+data "Progressions" "f0ede459-8b86-48fd-ac11-4432573566a5"
 // data "ArmorType" "ScaleMail"
 data "ArmorType" "Leather"
 // data "Passives" "AttackOfOpportunity;DarknessRules"
@@ -4007,7 +4053,7 @@ data "Passives" "HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules
 // data "Progressions" ""
 data "Progressions" "0e6da493-5a37-423b-8c28-629462b22faa"
 
-// Feloguard Liadan, Iron Consul Jaxbock, Guard Wulf, Iron Consul Lo, Iron Consul Stalwart, Iron Consul Garmin, Guard Hertvor Dremble, Iron Consul Malik the Cruel - Cult of Bane (Added Fighter progressions, dudes in charge should be Battle Masters)
+// Feloguard Liadan, Iron Consul Jaxbock, Guard Wulf, Iron Consul Lo, Iron Consul Stalwart, Iron Consul Garmin, Guard Hertvor Dremble, Iron Consul Malik the Cruel - Cult of Bane (Added Fighter progressions, added Battle Master subclass)
 new entry "Human_Cultist_Bane_IronConsul"
 type "Character"
 using "Human_Cultist_Bane_IronConsul"
@@ -4035,7 +4081,7 @@ using "MOO_FanaticOfTheAbsolute_Human"
 // data "Passives" "AttackOfOpportunity;DarknessRules"
 data "Passives" "CX_Spells_L4C;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules"
 
-// Zealot of the Absolute, Zealot Renan, Zealot Krizt, Zealot Bennel, Zealot Klen, Zealot Malik, Zealot Falla, Dead Cultist, Dead Zealot of the Absolute - Cult of the Absolute (Has Paladin progressions) 
+// Zealot of the Absolute, Zealot Renan, Zealot Krizt, Zealot Bennel, Zealot Klen, Zealot Malik, Zealot Falla, Dead Cultist, Dead Zealot of the Absolute - Cult of the Absolute (Has Paladin progressions, added Oathbreaker subclass) 
 new entry "MOO_ZealotOfTheAbsolute_Human"
 type "Character"
 using "MOO_ZealotOfTheAbsolute_Human"

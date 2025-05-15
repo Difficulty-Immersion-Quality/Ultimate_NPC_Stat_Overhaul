@@ -17,10 +17,10 @@
     data "Boosts" "ActionResource(SuperiorityDie,4,0);Ability(Strength,3);Ability(Constitution,2)"
 
 // ==================================== "NPC_FlamingFist_Melee_Cleric", "NPC_FlamingFist_Melee_Ranger", "NPC_FlamingFist_Melee_Defender", "NPC_FlamingFist_Melee_Attacker" ====================================
-// level 6
-// "FightingStyle_Protection" // Defenders, Clerics
-// "FightingStyle_Archery;CrossbowExpert_PointBlank" // Rangers
-// "FightingStyle_GreatWeaponFighting;PhalanxFormation_Duergar;Riposte" // Attackers
+    // level 6
+    // "FightingStyle_Protection" // Defenders, Clerics
+    // "FightingStyle_Archery;CrossbowExpert_PointBlank" // Rangers
+    // "FightingStyle_GreatWeaponFighting;PhalanxFormation_Duergar;Riposte" // Attackers
 
     new entry "Goon_NPC_Flaming_Fist_Boosts"
     type "PassiveData"
