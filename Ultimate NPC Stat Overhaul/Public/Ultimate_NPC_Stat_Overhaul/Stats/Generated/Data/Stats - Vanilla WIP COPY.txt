@@ -4713,7 +4713,7 @@ data "Progressions" "36c3f8de-3293-4d7b-92bc-ceb3c569244b"
 //  ├─ "FloatingHead"
 //  │   └─ "TWN_TollCollector_Visage"
 //  ├─ "GLO_Jergal"
-//  ├─ "GLO_Oathbreaker_Paladin"
+//  ├─ "GLO_Oathbreaker_Paladin"                              -- Oathbreaker Knight (added Paladin progressions and Oathbreaker subclass)
 //  ├─ "Ghost"
 //  │   ├─ "LOW_Houndmaster"
 //  │   ├─ "LOW_OskarsBeloved_Mummy"
@@ -4753,51 +4753,15 @@ data "Progressions" "36c3f8de-3293-4d7b-92bc-ceb3c569244b"
 //  │       ├─ "SCL_Oliver_Mom"
 //  │       │   └─ "SCL_Oliver_Mom_NoShadowblend"
 //  │       └─ "Wraith_Lakeside"
-//  ├─ "Skeleton"
-//  │   ├─ "FOR_Thay_Skeleton_Melee"
-//  │   ├─ "LOW_CazadorPalace_Kennel_Skeleton"
-//  │   ├─ "LOW_HouseOfHope_Skeleton_Debtor"
-//  │   ├─ "SHA_Skeleton_Melee"
-//  │   ├─ "Skeleton_Blood"
-//  │   ├─ "Skeleton_Caster"
-//  │   │   ├─ "CHA_Skeleton_Caster"
-//  │   │   ├─ "LOW_CazadorPalace_Ritual_Skeleton"
-//  │   │   ├─ "LOW_DamnedKnight_Caster"
-//  │   │   ├─ "SHA_Skeleton_Caster"
-//  │   │   ├─ "WYR_Circus_Skeletons"
-//  │   │   └─ "WYR_Wyrmsway_Skeleton_Mage"
-//  │   ├─ "Skeleton_Giant"
-//  │   │   ├─ "LOW_KidNecromancer_GiantSkeleton"
-//  │   │   ├─ "SHA_Skeleton_Giant"
-//  │   │   └─ "Skeleton_Giant_Cultist_Myrkul_DeathShepherd"
-//  │   ├─ "Skeleton_Hound"
-//  │   ├─ "Skeleton_Necromite"
-//  │   │   └─ "Skeleton_Necromite_NoXP"
-//  │   ├─ "Skeleton_Ranger"
-//  │   │   ├─ "AnimateDead_Skeleton"
-//  │   │   ├─ "FOR_Thay_Skeleton_Ranger"
-//  │   │   ├─ "SHA_Skeleton_Ranger"
-//  │   │   ├─ "Skeleton_Tadpoled_Ranger"
-//  │   │   ├─ "UND_Skeleton_Ranged"
-//  │   │   └─ "WYR_Wyrmsway_Skeleton_Ranged"
-//  │   ├─ "Skeleton_Strong"
-//  │   │   ├─ "CHA_Skeleton_Strong"
-//  │   │   ├─ "LOW_DamnedKnight_Melee"
-//  │   │   └─ "LOW_DeathKnight"
-//  │   │       └─ "LOW_DeathKnight_Weak"
-//  │   ├─ "Skeleton_Tadpoled_Melee"
-//  │   ├─ "UND_Skeleton_Melee"
-//  │   └─ "WYR_Wyrmsway_Skeleton_Melee"
-//  │       └─ "WYR_Wyrmsway_Skeleton_Hero"
 //  ├─ "Spectre"
 //  │   └─ "LOW_Spectre"
 //  ├─ "Surgeon"
-//  ├─ "Surgeon_Nurse"
-//  │   └─ "Surgeon_Nurse_Summon"
+//  ├─ "Surgeon_Nurse"                                    -- Zealous Assistants (nurses in Reithwin Hospital) (added Rogue progressions)
+//  │   └─ "Surgeon_Nurse_Summon"                         -- Unused
 //  ├─ "TollCollector"
 //  ├─ "Vampire"
-//  │   ├─ "GLO_Cazador"
-//  │   └─ "Vampire_Spawn"
+//  │   ├─ "GLO_Cazador"                                  -- Cazador (has Wizard progressions, added Necromancy subclass)
+//  │   └─ "Vampire_Spawn"                                -- Various vampire spawn in Cazador's palace (including Astarion's siblings but also others such as the chamberlain and prisoners). Did not touch this entry
 //  ├─ "Zombie"
 //  │   ├─ "AnimateDead_Zombie"
 //  │   ├─ "AnimateDead_Zombie__Horde"
@@ -4820,56 +4784,69 @@ data "Progressions" "36c3f8de-3293-4d7b-92bc-ceb3c569244b"
 //  │       └─ "LOW_Thay_Summon_Zombie_Greater"
 //  └─ "_Undead_Gustav"
 
-// Nurses in Reithwin Hospital - HONOUR MODE INHERITANCE
+// Zealous Assistants (urses in Reithwin Hospital) - HONOUR MODE INHERITANCE (Added Rogue progressions)
 new entry "Surgeon_Nurse"
 type "Character"
 using "Surgeon_Nurse"
 // data "Passives" "AttackOfOpportunity;DarknessRules;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check"
 // data "Passives" "TWN_Hospital_Nurse_Honor_Technical;AttackOfOpportunity;DarknessRules;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check"
-data "Passives" "CX_Rogue_Boost;CX_Martial_Boost;AttackOfOpportunity;DarknessRules;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check;TWN_Hospital_Nurse_Honor_Technical"
+data "Passives" "AttackOfOpportunity;DarknessRules;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check;TWN_Hospital_Nurse_Honor_Technical"
+// data "Progressions" ""
+data "Progressions" "532203c2-7bcb-4162-9a7c-2bb20e227a30"
 
+// Oathbreaker Knight, Custodian of the Fallen (Added Paladin progressions, added Oathbreaker subclass)
 new entry "GLO_Oathbreaker_Paladin"
 type "Character"
 using "GLO_Oathbreaker_Paladin"
 // data "Passives" "AttackOfOpportunity;DarknessRules;Darkvision;ExtraAttack;TurnResistance;FightingStyle_GreatWeaponFighting;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check;"
-data "Passives" "CX_Paladin_Boost;CX_Paladin_Oathbreaker_Boost;CX_Martial_Boost;AttackOfOpportunity;DarknessRules;Darkvision;ExtraAttack;TurnResistance;FightingStyle_GreatWeaponFighting;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check"
+data "Passives" "CX_Paladin_Oathbreaker_Boost;AttackOfOpportunity;DarknessRules;Darkvision;ExtraAttack;TurnResistance;FightingStyle_GreatWeaponFighting;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check"
+// data "Progressions" ""
+data "Progressions" "8726b2c4-edc0-4905-b82f-60a4baba0733"
 
-// Cazador - HONOUR MODE INHERITANCE
+// Cazador - HONOUR MODE INHERITANCE (Has Wizard progressions, added Necromancy subclass and CX_Martial_Boost, as he also does melee attacks)
 new entry "GLO_Cazador"
 type "Character"
 using "GLO_Cazador"
 // data "Passives" "Alert;ExtraAttack_2;AttackOfOpportunity;DarknessRules;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check;DamageDealtRecently"
 // data "Passives" "Alert;ExtraAttack_2;AttackOfOpportunity;DarknessRules;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check;DamageDealtRecently;LegendaryAction_LOW_Cazador_BatSwarm;LegendaryAction_LOW_Cazador_BatSwarm_Block;"
-data "Passives" "CX_Wizard_Boost;CX_Wizard_Necromancy_Boost;CX_Magic_Boost;CX_Martial_Boost;CX_Spells_L6;CX_Spells_L6C;AttackOfOpportunity;DarknessRules;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check;DamageDealtRecently;Alert;ExtraAttack_2;LegendaryAction_LOW_Cazador_BatSwarm;LegendaryAction_LOW_Cazador_BatSwarm_Block;"
+data "Passives" "CX_Wizard_Necromancy_Boost;CX_Martial_Boost;CX_Spells_L6;CX_Spells_L6C;AttackOfOpportunity;DarknessRules;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check;DamageDealtRecently;Alert;ExtraAttack_2;LegendaryAction_LOW_Cazador_BatSwarm;LegendaryAction_LOW_Cazador_BatSwarm_Block;"
 
 // Skeletons are the most relevant Undead category for CX class boosts
+
 // "_Undead"
 //  ├─ "Skeleton"
-//  │   ├─ "FOR_Thay_Skeleton_Melee"
+//  │   ├─ "FOR_Thay_Skeleton_Melee"                               -- Robust Guardian (Added Fighter progressions)
 //  │   ├─ "LOW_CazadorPalace_Kennel_Skeleton"
 //  │   ├─ "LOW_HouseOfHope_Skeleton_Debtor"
-//  │   ├─ "SHA_Skeleton_Melee"
+//  │   ├─ "SHA_Skeleton_Melee"                                    -- Apostate Defender (Added Fighter progressions)
 //  │   ├─ "Skeleton_Blood"
 //  │   ├─ "Skeleton_Giant"
 //  │   │   ├─ "LOW_KidNecromancer_GiantSkeleton"
-//  │   │   ├─ "SHA_Skeleton_Giant"
-//  │   │   └─ "Skeleton_Giant_Cultist_Myrkul_DeathShepherd"
+//  │   │   ├─ "SHA_Skeleton_Giant"                                -- Apostate Destroyer (Added Paladin progressions, added Oathbreaker subclass)
+//  │   │   └─ "Skeleton_Giant_Cultist_Myrkul_DeathShepherd"       -- Garret Dortmell  / Death Shepherds (Added Fighter progressions, added Champion subclass)
 //  │   ├─ "Skeleton_Hound"
-//  │   ├─ "Skeleton_Necromite"
+//  │   ├─ "Skeleton_Necromite"                                    
 //  │   │   └─ "Skeleton_Necromite_NoXP"
 
-// Robust Guardian
+// Robust Guardian - in Graverobber's Cave (Added Fighter progressions)
 new entry "FOR_Thay_Skeleton_Melee"
 type "Character"
 using "FOR_Thay_Skeleton_Melee"
 // data "Passives" "FightingStyle_Dueling;AttackOfOpportunity;Darkvision;DarknessRules;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check"
-data "Passives" "CX_Fighter_Boost;CX_Martial_Boost;FightingStyle_Dueling;AttackOfOpportunity;Darkvision;DarknessRules;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check"
+data "Passives" "FightingStyle_Dueling;AttackOfOpportunity;Darkvision;DarknessRules;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check"
+// data "Progressions" ""
+data "Progressions" "0e6da493-5a37-423b-8c28-629462b22faa"
 
+// Apostate Defender - renimated skeletons if fighting Balthazar in the Shadowfell (Added Fighter progressions)
 new entry "SHA_Skeleton_Melee"
 type "Character"
 using "SHA_Skeleton_Melee"
+// data "SpellCastingAbility" "Intelligence"
+data "SpelLCastingAbility" "Charisma"
 // data "PathInfluence" "BloodElectrified,100;BloodFrozen,30;Lava,700;Fire,40;HolyFire,40;Hellfire,100;PoisonCloud,40;WyvernPoison,40;DrowPoisonCloud,40;PurpleWormPoison,40;SerpentVenom,40;InvisibleGithAcid,70;CloudkillCloud,40;MaliceCloud,70;CrawlerMucusCloud,70;WaterElectrified,100;WaterFrozen,30;Grease,30;Web,30;Vines,40;SporeBlackCloud,100;WaterCloudElectrified,40;SporeGreenCloud,40;Acid,30;CausticBrine,40;DarknessCloud,30;FogCloud,30;Mud,30;Oil,30;Poison,30;SpikeGrowth,40;SporePinkCloud,40;StinkingCloud,40"
 data "PathInfluence" "BloodElectrified,100;BloodFrozen,30;Lava,700;Fire,40;HolyFire,40;Hellfire,100;PoisonCloud,40;WyvernPoison,40;DrowPoisonCloud,40;PurpleWormPoison,40;SerpentVenom,40;InvisibleGithAcid,70;CloudkillCloud,40;Cloudkill6Cloud,40;MaliceCloud,70;CrawlerMucusCloud,70;WaterElectrified,100;WaterFrozen,30;Grease,30;Web,30;Vines,40;SporeBlackCloud,100;WaterCloudElectrified,40;SporeGreenCloud,40;Acid,30;CausticBrine,40;DarknessCloud,30;FogCloud,30;Mud,30;Oil,30;Poison,30;SpikeGrowth,40;SporePinkCloud,40;StinkingCloud,40"
+// data "Progressions" ""
+data "Progressions" "8726b2c4-edc0-4905-b82f-60a4baba0733"
 
 new entry "Skeleton_Giant"
 type "Character"
@@ -4877,34 +4854,35 @@ using "Skeleton_Giant"
 // data "Passives" "ExtraAttack;BlockVerbalSpellcasting;AttackOfOpportunity;DarknessRules;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check;SkeletonDeath_Check"
 data "Passives" "CX_Barbarian_Boost;CX_Martial_Boost;ExtraAttack;BlockVerbalSpellcasting;AttackOfOpportunity;DarknessRules;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check;SkeletonDeath_Check"
 
-// Apostate Destroyer
-// Read this as prostrate destroyer and did a small double take
+// Apostate Destroyer - reanimated skeletons if fighting Balthazar in the Shadowfell (Added Paladin progressions, added Oathbreaker subclass - they have Aura of Hate already in vanilla)
 new entry "SHA_Skeleton_Giant"
 type "Character"
 using "SHA_Skeleton_Giant"
 // data "PathInfluence" "BloodElectrified,100;BloodFrozen,30;Lava,700;Fire,40;HolyFire,40;Hellfire,100;PoisonCloud,40;WyvernPoison,40;DrowPoisonCloud,40;PurpleWormPoison,40;SerpentVenom,40;InvisibleGithAcid,70;CloudkillCloud,40;MaliceCloud,70;CrawlerMucusCloud,70;WaterElectrified,100;WaterFrozen,30;Grease,30;Web,30;Vines,40;SporeBlackCloud,100;WaterCloudElectrified,40;SporeGreenCloud,40;Acid,30;CausticBrine,40;DarknessCloud,30;FogCloud,30;Mud,30;Oil,30;Poison,30;SpikeGrowth,40;SporePinkCloud,40;StinkingCloud,40"
 data "PathInfluence" "BloodElectrified,100;BloodFrozen,30;Lava,700;Fire,40;HolyFire,40;Hellfire,100;PoisonCloud,40;WyvernPoison,40;DrowPoisonCloud,40;PurpleWormPoison,40;SerpentVenom,40;InvisibleGithAcid,70;CloudkillCloud,40;Cloudkill6Cloud,40;MaliceCloud,70;CrawlerMucusCloud,70;WaterElectrified,100;WaterFrozen,30;Grease,30;Web,30;Vines,40;SporeBlackCloud,100;WaterCloudElectrified,40;SporeGreenCloud,40;Acid,30;CausticBrine,40;DarknessCloud,30;FogCloud,30;Mud,30;Oil,30;Poison,30;SpikeGrowth,40;SporePinkCloud,40;StinkingCloud,40"
 // data "Passives" "AttackOfOpportunity;DarknessRules;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check"
-data "Passives" "CX_Barbarian_Boost;CX_Martial_Boost;AttackOfOpportunity;DarknessRules;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check"
+data "Passives" "CX_Paladin_Oathbreaker_Boost;AttackOfOpportunity;DarknessRules;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check"
 
-// Garret Dortmell - Nina Dortmell's dead (resurrectable) brother / Death Shephards
+// Garret Dortmell - Nina Dortmell's dead (resurrectable) brother / Death Shepherds (Added Fighter progressions, added Champion subclass to ensure they don't get rolled the EK subclass due to being unable to cast spells)
 new entry "Skeleton_Giant_Cultist_Myrkul_DeathShepherd"
 type "Character"
 using "Skeleton_Giant_Cultist_Myrkul_DeathShepherd"
 // data "Passives" "BlockVerbalSpellcasting;SkeletonDeath_Check;AttackOfOpportunity;DarknessRules;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check"
-data "Passives" "CX_Fighter_Boost;CX_Martial_Boost;BlockVerbalSpellcasting;SkeletonDeath_Check;AttackOfOpportunity;DarknessRules;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check"
+data "Passives" "CX_Fighter_Champion_Boost;BlockVerbalSpellcasting;SkeletonDeath_Check;AttackOfOpportunity;DarknessRules;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check"
+// data "Progressions" ""
+data "Progressions" "8726b2c4-edc0-4905-b82f-60a4baba0733"
 
 // "_Undead"
 //  ├─ "Skeleton"
-//  │   ├─ "Skeleton_Ranger"
+//  │   ├─ "Skeleton_Ranger"                      -- (Added Ranger progressions)
 //  │   │   ├─ "AnimateDead_Skeleton"
-//  │   │   ├─ "FOR_Thay_Skeleton_Ranger"
-//  │   │   ├─ "SHA_Skeleton_Ranger"
-//  │   │   ├─ "Skeleton_Tadpoled_Ranger"
-//  │   │   ├─ "UND_Skeleton_Ranged"
-//  │   │   └─ "WYR_Wyrmsway_Skeleton_Ranged"
+//  │   │   ├─ "FOR_Thay_Skeleton_Ranger"         -- Agile Guardians (Inherits Ranger progressions)
+//  │   │   ├─ "SHA_Skeleton_Ranger"              -- Apostate Sentinels (Inherits Ranger progressions)
+//  │   │   ├─ "Skeleton_Tadpoled_Ranger"         -- Unused
+//  │   │   ├─ "UND_Skeleton_Ranged"              -- Unused
+//  │   │   └─ "WYR_Wyrmsway_Skeleton_Ranged"     -- Fallen Rangers (Has Ranger progressions)
 
-// (Add Ranger progressions and use Wisdom for casting; Both Wisdom and Intelligence are pretty bad so spellcasting ability doesn't really matter)
+// (Add Ranger progressions and use Wisdom for casting; both Wisdom and Intelligence are pretty bad so spellcasting ability doesn't really matter, also has BlockVerbalSpellcasting passive anyway)
 new entry "Skeleton_Ranger"
 type "Character"
 using "Skeleton_Ranger"
@@ -4915,6 +4893,7 @@ data "Passives" "CX_Ranger_Boost;CX_Martial_Boost;AttackOfOpportunity;Darkvision
 // data "Progressions" ""
 data "Progressions" "f0ede459-8b86-48fd-ac11-4432573566a5"
 
+// Apostate Sentinels - reanimated skeletons if fighting Balthazar in the Shadowfell (Inherits Ranger progressions)
 new entry "SHA_Skeleton_Ranger"
 type "Character"
 // using "Skeleton_Ranger"
@@ -4922,37 +4901,46 @@ using "SHA_Skeleton_Ranger"
 // data "PathInfluence" "BloodElectrified,100;BloodFrozen,30;Lava,700;Fire,40;HolyFire,40;Hellfire,100;PoisonCloud,40;WyvernPoison,40;DrowPoisonCloud,40;PurpleWormPoison,40;SerpentVenom,40;InvisibleGithAcid,70;CloudkillCloud,40;MaliceCloud,70;CrawlerMucusCloud,70;WaterElectrified,100;WaterFrozen,30;Grease,30;Web,30;Vines,40;SporeBlackCloud,100;WaterCloudElectrified,40;SporeGreenCloud,40;Acid,30;CausticBrine,40;DarknessCloud,30;FogCloud,30;Mud,30;Oil,30;Poison,30;SpikeGrowth,40;SporePinkCloud,40;StinkingCloud,40"
 data "PathInfluence" "BloodElectrified,100;BloodFrozen,30;Lava,700;Fire,40;HolyFire,40;Hellfire,100;PoisonCloud,40;WyvernPoison,40;DrowPoisonCloud,40;PurpleWormPoison,40;SerpentVenom,40;InvisibleGithAcid,70;CloudkillCloud,40;Cloudkill6Cloud,40;MaliceCloud,70;CrawlerMucusCloud,70;WaterElectrified,100;WaterFrozen,30;Grease,30;Web,30;Vines,40;SporeBlackCloud,100;WaterCloudElectrified,40;SporeGreenCloud,40;Acid,30;CausticBrine,40;DarknessCloud,30;FogCloud,30;Mud,30;Oil,30;Poison,30;SpikeGrowth,40;SporePinkCloud,40;StinkingCloud,40"
 
-new entry "FOR_Thay_Skeleton_Ranger"
-type "Character"
-using "FOR_Thay_Skeleton_Ranger"
-// data "Passives" "FightingStyle_Archery;FastMovement;AttackOfOpportunity;Darkvision;DarknessRules;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check"
-data "Passives" "CX_Ranger_Boost;CX_Martial_Boost;FightingStyle_Archery;FastMovement;AttackOfOpportunity;Darkvision;DarknessRules;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check"
-
 // "_Undead"
 //  ├─ "Skeleton"
 //  │   ├─ "Skeleton_Strong"
-//  │   │   ├─ "CHA_Skeleton_Strong"
-//  │   │   ├─ "LOW_DamnedKnight_Melee"
-//  │   │   └─ "LOW_DeathKnight"
-//  │   │       └─ "LOW_DeathKnight_Weak"
-//  │   ├─ "Skeleton_Tadpoled_Melee"
-//  │   ├─ "UND_Skeleton_Melee"
-//  │   └─ "WYR_Wyrmsway_Skeleton_Melee"
-//  │       └─ "WYR_Wyrmsway_Skeleton_Hero"
+//  │   │   ├─ "CHA_Skeleton_Strong"              -- Entombed Warrior (Added Fighter progressions)
+//  │   │   ├─ "LOW_DamnedKnight_Melee"           -- Fallen Champion (Added Fighter progressions, added Champion subclass)
+//  │   │   └─ "LOW_DeathKnight"                  -- Death Knights (That Which Guards, Stalker Svignee) (Added Paladin progressions, added Oathbreaker subclass)
+//  │   │       └─ "LOW_DeathKnight_Weak"         -- Death Knights (That Which Lurks, That Which Watches) (Inherits Paladin progressions, added Oathbreaker subclass)
+//  │   ├─ "Skeleton_Tadpoled_Melee"              -- Unused
+//  │   ├─ "UND_Skeleton_Melee"                   -- Unused
+//  │   └─ "WYR_Wyrmsway_Skeleton_Melee"          -- Fallen Fighter (Has Fighter progressions)
+//  │       └─ "WYR_Wyrmsway_Skeleton_Hero"       -- (Inherits Fighter progressions)
 
+// (Added Fighter progressions, added Battle Master subclass)
 new entry "Skeleton_Strong"
 type "Character"
 using "Skeleton_Strong"
 // data "Passives" "BlockVerbalSpellcasting;SkeletonDeath_Check;AttackOfOpportunity;Darkvision;DarknessRules;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check"
-data "Passives" "CX_Fighter_Boost;CX_Martial_Boost;AttackOfOpportunity;Darkvision;DarknessRules;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check;BlockVerbalSpellcasting;SkeletonDeath_Check"
+data "Passives" "CX_Fighter_BattleMaster_Boost;AttackOfOpportunity;Darkvision;DarknessRules;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check;BlockVerbalSpellcasting;SkeletonDeath_Check"
+// data "Progressions" ""
+data "Progressions" "0e6da493-5a37-423b-8c28-629462b22faa"
 
-// Entombed Warrior
+// Entombed Warrior (Added Fighter progressions)
 new entry "CHA_Skeleton_Strong"
 type "Character"
 using "CHA_Skeleton_Strong"
 // data "Passives" "DarknessRules;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check"
-data "Passives" "CX_Fighter_Boost;CX_Martial_Boost;AttackOfOpportunity;DarknessRules;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check"
+data "Passives" "AttackOfOpportunity;DarknessRules;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check"
+// data "Progressions" ""
+data "Progressions" "0e6da493-5a37-423b-8c28-629462b22faa"
 
+// Fallen Champion (Added Fighter progressions, added Champion subclass)
+new entry "LOW_DamnedKnight_Melee"
+type "Character"
+using "LOW_DamnedKnight_Melee"
+// data "Passives" "AttackOfOpportunity;DarknessRules;Darkvision;BlockVerbalSpellcasting;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check"
+data "Passives" "CX_Fighter_Champion_Boost;AttackOfOpportunity;DarknessRules;Darkvision;BlockVerbalSpellcasting;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check"
+// data "Progressions" ""
+data "Progressions" "0e6da493-5a37-423b-8c28-629462b22faa"
+
+// Death Knights (That Which Guards, Stalker Svignee) (Added Paladin progressions, added Oathbreaker subclass)
 new entry "LOW_DeathKnight"
 type "Character"
 using "LOW_DeathKnight"
@@ -4963,6 +4951,7 @@ data "Progressions" "8726b2c4-edc0-4905-b82f-60a4baba0733"
 // data "Passives" "AttackOfOpportunity;DarknessRules;Darkvision;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check;MagicResistance;Parry;ExtraAttack_2;NecroticAttacks_DeathKnight;Riposte;HellfireDamagePierce_Technical"
 data "Passives" "CX_Paladin_Oathbreaker_Boost;AttackOfOpportunity;DarknessRules;Darkvision;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check;MagicResistance;Parry;ExtraAttack_2;NecroticAttacks_DeathKnight;Riposte;HellfireDamagePierce_Technical"
 
+// Death Knights (That Which Lurks, That Which Watches) (Inherits Paladin progressions, added Oathbreaker subclass)
 new entry "LOW_DeathKnight_Weak"
 type "Character"
 using "LOW_DeathKnight_Weak"
@@ -4971,83 +4960,57 @@ data "Passives" "CX_Paladin_Oathbreaker_Boost;AttackOfOpportunity;DarknessRules;
 
 // "_Undead"
 //  ├─ "Skeleton"
-//  │   ├─ "Skeleton_Caster"
-//  │   │   ├─ "CHA_Skeleton_Caster"
+//  │   ├─ "Skeleton_Caster"                          -- (Has Wizard progressions, added level 1 spell boosts)
+//  │   │   ├─ "CHA_Skeleton_Caster"                  -- Entombed Scribes (Inherits Wizard progressions, added level 1 spell boosts, AoO, and darkvision)
 //  │   │   ├─ "LOW_CazadorPalace_Ritual_Skeleton"
-//  │   │   ├─ "LOW_DamnedKnight_Caster"
-//  │   │   ├─ "SHA_Skeleton_Caster"
+//  │   │   ├─ "LOW_DamnedKnight_Caster"              -- Unused
+//  │   │   ├─ "SHA_Skeleton_Caster"                  -- Apostate Librarians (Inherits Wizard progressions, added level 4 spell boosts)
 //  │   │   ├─ "WYR_Circus_Skeletons"
-//  │   │   └─ "WYR_Wyrmsway_Skeleton_Mage"
+//  │   │   └─ "WYR_Wyrmsway_Skeleton_Mage"           -- Fallen Wizards (Inherits Wizard progressions, added level 5 spell boosts)
 
+// (Has Wizard progressions, added level 1 spell boosts) (how many spells are actually affected by BlockVerbalSpellcasting? Would be the end of the world to remove it from skeleton spellcasters?)
 new entry "Skeleton_Caster"
 type "Character"
 using "Skeleton_Caster"
 // data "Passives" "AttackOfOpportunity;Darkvision;DarknessRules;BlockVerbalSpellcasting;SkeletonDeath_Check;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check"
-data "Passives" "CX_Wizard_Boost;CX_Magic_Boost;CX_Spells_L1;CX_Spells_L1C;AttackOfOpportunity;Darkvision;DarknessRules;BlockVerbalSpellcasting;SkeletonDeath_Check;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check"
+data "Passives" "CX_Spells_L1;CX_Spells_L1C;AttackOfOpportunity;Darkvision;DarknessRules;BlockVerbalSpellcasting;SkeletonDeath_Check;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check"
 
-// Chatterteeth - part of Cazador fight
+// Entombed Scribes (Inherits Wizard progressions, added level 1 spell boosts, AoO, and darkvision)
+new entry "Skeleton_Caster"
+type "Character"
+using "Skeleton_Caster"
+// data "Passives" "DarknessRules;BlockVerbalSpellcasting;SkeletonDeath_Check;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check"
+data "Passives" "CX_Spells_L1;CX_Spells_L1C;AttackOfOpportunity;Darkvision;DarknessRules;BlockVerbalSpellcasting;SkeletonDeath_Check;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check"
+
+// Chatterteeth - part of Cazador fight (Inherits Wizard progressions, added Necromancy subclass and level 6 spell boosts)
 new entry "LOW_CazadorPalace_Ritual_Skeleton"
 type "Character"
 using "LOW_CazadorPalace_Ritual_Skeleton"
 // data "Passives" "AttackOfOpportunity;DarknessRules;Darkvision;Talkative;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check"
-data "Passives" "CX_Wizard_Boost;CX_Wizard_Necromancy_Boost;CX_Magic_Boost;CX_Spells_L6;CX_Spells_L6C;AttackOfOpportunity;DarknessRules;Darkvision;Talkative;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check"
+data "Passives" "CX_Wizard_Necromancy_Boost;CX_Spells_L6;CX_Spells_L6C;AttackOfOpportunity;DarknessRules;Darkvision;Talkative;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check"
 
+// Unused (Inherits Wizard progressions, added level 5 spell boosts)
 new entry "LOW_DamnedKnight_Caster"
 type "Character"
 using "LOW_DamnedKnight_Caster"
 // data "Passives" "AttackOfOpportunity;DarknessRules;Darkvision;BlockVerbalSpellcasting;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check"
-data "Passives" "CX_Wizard_Boost;CX_Wizard_Necromancy_Boost;CX_Magic_Boost;CX_Spells_L5;CX_Spells_L5C;AttackOfOpportunity;DarknessRules;Darkvision;BlockVerbalSpellcasting;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check"
+data "Passives" "CX_Spells_L5;CX_Spells_L5C;AttackOfOpportunity;DarknessRules;Darkvision;BlockVerbalSpellcasting;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check"
 
+// Apostate Librarians (Inherits Wizard progressions, added level 4 spell boosts)
 new entry "SHA_Skeleton_Caster"
 type "Character"
 using "SHA_Skeleton_Caster"
 // data "PathInfluence" "BloodElectrified,100;BloodFrozen,30;Lava,700;Fire,40;HolyFire,40;Hellfire,100;PoisonCloud,40;WyvernPoison,40;DrowPoisonCloud,40;PurpleWormPoison,40;SerpentVenom,40;InvisibleGithAcid,70;CloudkillCloud,40;MaliceCloud,70;CrawlerMucusCloud,70;WaterElectrified,100;WaterFrozen,30;Grease,30;Web,30;Vines,40;SporeBlackCloud,100;WaterCloudElectrified,40;SporeGreenCloud,40;Acid,30;CausticBrine,40;DarknessCloud,30;FogCloud,30;Mud,30;Oil,30;Poison,30;SpikeGrowth,40;SporePinkCloud,40;StinkingCloud,40"
 data "PathInfluence" "BloodElectrified,100;BloodFrozen,30;Lava,700;Fire,40;HolyFire,40;Hellfire,100;PoisonCloud,40;WyvernPoison,40;DrowPoisonCloud,40;PurpleWormPoison,40;SerpentVenom,40;InvisibleGithAcid,70;CloudkillCloud,40;Cloudkill6Cloud,40;MaliceCloud,70;CrawlerMucusCloud,70;WaterElectrified,100;WaterFrozen,30;Grease,30;Web,30;Vines,40;SporeBlackCloud,100;WaterCloudElectrified,40;SporeGreenCloud,40;Acid,30;CausticBrine,40;DarknessCloud,30;FogCloud,30;Mud,30;Oil,30;Poison,30;SpikeGrowth,40;SporePinkCloud,40;StinkingCloud,40"
+// data "Passives" "AttackOfOpportunity;DarknessRules;Darkvision;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check"
+data "Passives" "CX_Spells_L4;CX_Spells_L4C;AttackOfOpportunity;DarknessRules;Darkvision;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check"
 
+// Fallen Wizards (Inherits Wizard progressions, added level 5 spell boosts)
 new entry "WYR_Wyrmsway_Skeleton_Mage"
 type "Character"
 using "WYR_Wyrmsway_Skeleton_Mage"
 // data "Passives" "AttackOfOpportunity;DarknessRules;Darkvision;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check"
-data "Passives" "CX_Wizard_Boost;CX_Magic_Boost;CX_Spells_L3;CX_Spells_L3C;AttackOfOpportunity;DarknessRules;Darkvision;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check"
-
-new entry "WYR_Wyrmsway_Skeleton_Ranged"
-type "Character"
-using "WYR_Wyrmsway_Skeleton_Ranged"
-// data "Passives" "AttackOfOpportunity;DarknessRules;Darkvision;BlockVerbalSpellcasting;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check"
-data "Passives" "CX_Ranger_Boost;CX_Martial_Boost;AttackOfOpportunity;DarknessRules;Darkvision;BlockVerbalSpellcasting;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check"
-
-new entry "LOW_DamnedKnight_Melee"
-type "Character"
-using "LOW_DamnedKnight_Melee"
-// data "Passives" "AttackOfOpportunity;DarknessRules;Darkvision;BlockVerbalSpellcasting;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check"
-data "Passives" "CX_Fighter_Boost;CX_Martial_Boost;AttackOfOpportunity;DarknessRules;Darkvision;BlockVerbalSpellcasting;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check"
-
-// Could also give NPC_Paladin progression (currently has no progression) but probably doesn't matter with the CX_Paladin_Boost;CX_Paladin_Oathbreaker_Boost covering most of it, and already being directly given spell slots
-new entry "LOW_DeathKnight"
-type "Character"
-using "LOW_DeathKnight"
-// data "Progressions" ""
-data "Progressions" "8726b2c4-edc0-4905-b82f-60a4baba0733"
-// data "Passives" "AttackOfOpportunity;DarknessRules;Darkvision;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check;MagicResistance;Parry;ExtraAttack_2;NecroticAttacks_DeathKnight;Riposte;HellfireDamagePierce_Technical"
-data "Passives" "CX_Paladin_Boost;CX_Paladin_Oathbreaker_Boost;CX_Martial_Boost;AttackOfOpportunity;DarknessRules;Darkvision;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check;MagicResistance;Parry;ExtraAttack_2;NecroticAttacks_DeathKnight;Riposte;HellfireDamagePierce_Technical"
-
-new entry "Skeleton_Tadpoled_Melee"
-type "Character"
-using "Skeleton_Tadpoled_Melee"
-// data "Passives" "AttackOfOpportunity;DarknessRules;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check;SkeletonDeath_Check"
-data "Passives" "CX_Fighter_Boost;CX_Martial_Boost;AttackOfOpportunity;DarknessRules;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check;SkeletonDeath_Check"
-
-new entry "UND_Skeleton_Melee"
-type "Character"
-using "UND_Skeleton_Melee"
-// data "Passives" "AttackOfOpportunity;DarknessRules;Darkvision;BlockVerbalSpellcasting;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check"
-data "Passives" "CX_Fighter_Boost;CX_Martial_Boost;AttackOfOpportunity;DarknessRules;Darkvision;BlockVerbalSpellcasting;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check"
-
-new entry "WYR_Wyrmsway_Skeleton_Melee"
-type "Character"
-using "WYR_Wyrmsway_Skeleton_Melee"
-// data "Passives" "AttackOfOpportunity;DarknessRules;Darkvision;BlockVerbalSpellcasting;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check"
-data "Passives" "CX_Fighter_Boost;CX_Martial_Boost;AttackOfOpportunity;DarknessRules;Darkvision;BlockVerbalSpellcasting;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check"
+data "Passives" "CX_Spells_L5;CX_Spells_L5C;AttackOfOpportunity;DarknessRules;Darkvision;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check"
 
 // ==================================== Fiend ====================================
 // "_Base"
