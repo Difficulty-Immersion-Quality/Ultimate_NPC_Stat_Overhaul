@@ -4,3 +4,8 @@ function GoonCharacterLevelEqualTo(value, entity)
     entity = entity or context.Target
     return ConditionResult(entity.Level == value)
 end
+
+function GoonCharacterLevelEqualToOrGreaterThan(value, entity)
+    entity = entity or context.Target
+    return ConditionResult(entity.Level >= value)
+end

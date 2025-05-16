@@ -3,8 +3,8 @@
     new entry "Goon_Aradin_Boost"
     type "PassiveData"
     data "Properties" "IsHidden"
-    data "StatsFunctorContext" "OnCreate;OnStatusApplied;OnStatusRemoved"
-    data "StatsFunctors" "IF(CharacterLevelGreaterThan(7,GetOwner(context.Source))):ApplyStatus(GOON_ARADIN_BOOST,100,-1)"
+    data "StatsFunctorContext" "OnCreate;OnStatusApplied;OnStatusRemoved;OnCombatStarted;OnTurn"
+    data "StatsFunctors" "IF(GoonCharacterLevelEqualToOrGreaterThan(7)):ApplyStatus(GOON_ARADIN_BOOST,100,-1)"
 
     new entry "GOON_ARADIN_BOOST"
     type "StatusData"
@@ -17,6 +17,7 @@
     data "Boosts" "ActionResource(SuperiorityDie,4,0);Ability(Strength,3);Ability(Constitution,2)"
 
 // ==================================== "NPC_FlamingFist_Melee_Cleric", "NPC_FlamingFist_Melee_Ranger", "NPC_FlamingFist_Melee_Defender", "NPC_FlamingFist_Melee_Attacker" ====================================
+//TODO: Split the class based boosts and fix the StatsFunctors same as subclasses
     // level 6
     // "FightingStyle_Protection" // Defenders, Clerics
     // "FightingStyle_Archery;CrossbowExpert_PointBlank" // Rangers
@@ -205,8 +206,8 @@
     new entry "Goon_RoahMoonglow_Boost"
     type "PassiveData"
     data "Properties" "IsHidden"
-    data "StatsFunctorContext" "OnCreate;OnStatusApplied;OnStatusRemoved"
-    data "StatsFunctors" "IF(CharacterLevelGreaterThan(4,GetOwner(context.Source)) and not CharacterLevelGreaterThan(6,GetOwner(context.Source))):ApplyStatus(GOON_ROAHMOONGLOW_BOOST_LVL_4,100,-1);IF(CharacterLevelGreaterThan(6,GetOwner(context.Source)) and not CharacterLevelGreaterThan(8,GetOwner(context.Source))):ApplyStatus(GOON_ROAHMOONGLOW_BOOST_LVL_7,100,-1);IF(CharacterLevelGreaterThan(8,GetOwner(context.Source)) and not CharacterLevelGreaterThan(9,GetOwner(context.Source))):ApplyStatus(GOON_ROAHMOONGLOW_BOOST_LVL_9,100,-1);IF(CharacterLevelGreaterThan(9,GetOwner(context.Source)) and not CharacterLevelGreaterThan(10,GetOwner(context.Source))):ApplyStatus(GOON_ROAHMOONGLOW_BOOST_LVL_10,100,-1);IF(CharacterLevelGreaterThan(10,GetOwner(context.Source))):ApplyStatus(GOON_ROAHMOONGLOW_BOOST_LVL_11,100,-1)"
+    data "StatsFunctorContext" "OnCreate;OnStatusApplied;OnStatusRemoved;OnCombatStarted;OnTurn"
+    data "StatsFunctors" "IF(GoonCharacterLevelEqualToOrGreaterThan(4) and not GoonCharacterLevelEqualToOrGreaterThan(7)):ApplyStatus(GOON_ROAHMOONGLOW_BOOST_LVL_4,100,-1);IF(GoonCharacterLevelEqualToOrGreaterThan(7) and not GoonCharacterLevelEqualToOrGreaterThan(9)):ApplyStatus(GOON_ROAHMOONGLOW_BOOST_LVL_7,100,-1);IF(GoonCharacterLevelEqualTo(9)):ApplyStatus(GOON_ROAHMOONGLOW_BOOST_LVL_9,100,-1);IF(GoonCharacterLevelEqualTo(10)):ApplyStatus(GOON_ROAHMOONGLOW_BOOST_LVL_10,100,-1);IF(GoonCharacterLevelEqualToOrGreaterThan(11)):ApplyStatus(GOON_ROAHMOONGLOW_BOOST_LVL_11,100,-1)"
 
 // Template
     new entry "GOON_ROAHMOONGLOW_BOOST_TEMPLATE"
@@ -264,8 +265,8 @@
     new entry "Goon_ZenoviaDawg_Boost"
     type "PassiveData"
     data "Properties" "IsHidden"
-    data "StatsFunctorContext" "OnCreate;OnStatusApplied;OnStatusRemoved"
-    data "StatsFunctors" "IF(CharacterLevelGreaterThan(7,GetOwner(context.Source))):ApplyStatus(GOON_ZENOVIADAWG_BOOST_LVL_9,100,-1)"
+    data "StatsFunctorContext" "OnCreate;OnStatusApplied;OnStatusRemoved;OnCombatStarted;OnTurn"
+    data "StatsFunctors" "IF(GoonCharacterLevelEqualToOrGreaterThan(9)):ApplyStatus(GOON_ZENOVIADAWG_BOOST_LVL_9,100,-1)"
 
 // Template
     new entry "GOON_ZENOVIADAWG_BOOST_TEMPLATE"
@@ -291,8 +292,8 @@
     new entry "Goon_Rolan_Boost"
     type "PassiveData"
     data "Properties" "IsHidden"
-    data "StatsFunctorContext" "OnCreate;OnStatusApplied;OnStatusRemoved"
-    data "StatsFunctors" "IF(not CharacterLevelGreaterThan(1,GetOwner(context.Source))):ApplyStatus(GOON_ROLAN_BOOST_LVL_1,100,-1);IF(CharacterLevelGreaterThan(3,GetOwner(context.Source)) and not CharacterLevelGreaterThan(6,GetOwner(context.Source))):ApplyStatus(GOON_ROLAN_BOOST_LVL_4,100,-1);IF(CharacterLevelGreaterThan(6,GetOwner(context.Source))):ApplyStatus(GOON_ROLAN_BOOST_LVL_7,100,-1)"
+    data "StatsFunctorContext" "OnCreate;OnStatusApplied;OnStatusRemoved;OnCombatStarted;OnTurn"
+    data "StatsFunctors" "IF(GoonCharacterLevelEqualToOrGreaterThan(1) and not GoonCharacterLevelEqualToOrGreaterThan(4)):ApplyStatus(GOON_ROLAN_BOOST_LVL_1,100,-1);IF(GoonCharacterLevelEqualToOrGreaterThan(4) and not GoonCharacterLevelEqualToOrGreaterThan(7)):ApplyStatus(GOON_ROLAN_BOOST_LVL_4,100,-1);IF(GoonCharacterLevelEqualToOrGreaterThan(7)):ApplyStatus(GOON_ROLAN_BOOST_LVL_7,100,-1)"
 
 // Template
     new entry "GOON_ROLAN_BOOST_TEMPLATE"
