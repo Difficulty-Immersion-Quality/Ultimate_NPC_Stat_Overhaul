@@ -34,3 +34,14 @@
     data "Description" "hb2f5c3eag43a7g4f82g89d8g10640b01212b;1"
     data "StatusPropertyFlags" "DisableOverhead;DisableCombatlog;DisablePortraitIndicator"
     data "OnApplyFunctors" "IF(SavingThrow(Ability.Constitution,15)):RegainHitPoints(1)"
+
+// ==================================== Spectators: Unpetrification Ray ====================================
+    // Make the Spectator remove petrification from Drow within 9m (30ft) of the original target. Should probably take 3 rounds of combat to release them all.
+
+    new entry "Target_UND_Spectator_UnpetrifyingRay"
+    type "SpellData"
+    data "SpellType" "Target"
+    // using "Target_ParalyzingRay_Spectator"
+    using "Target_UND_Spectator_UnpetrifyingRay"
+    // data "AreaRadius" ""
+    data "AreaRadius" "9"
