@@ -45,3 +45,27 @@
     using "Target_UND_Spectator_UnpetrifyingRay"
     // data "AreaRadius" ""
     data "AreaRadius" "9"
+
+// ==================================== Auntie Ethel: Anti-Cheese Door Unlocker ====================================
+
+    new entry "Goon_Ethel_Unlocker"
+    type "PassiveData"
+    data "Properties" "IsHidden"
+    data "StatsFunctorContext" "OnCreate;OnCombatStarted;OnTurn"
+    data "StatsFunctors" "IF(not HasStatus('GOON_ETHEL_UNLOCKER')):ApplyStatus(GOON_ETHEL_UNLOCKER,100,-1)"
+
+    new entry "GOON_ETHEL_UNLOCKER"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    data "StatusPropertyFlags" "DisableOverhead;DisableCombatlog;DisablePortraitIndicator;ApplyToDead;IgnoreResting"
+    data "AuraRadius" "2"
+    //data "TargetConditions" "Item() and (Locked() or Tagged('KNOCK_TARGET')) and not Tagged('KNOCKBLOCK') and not HasStatus('ARCANE_LOCK')"
+    data "AuraStatuses" "TARGET:IF(Item() and (Locked() or Tagged('KNOCK_TARGET'))):ApplyStatus(GOON_ETHEL_UNLOCKER_TECHNICAL)"
+
+    new entry "GOON_ETHEL_UNLOCKER_TECHNICAL"
+    type "StatusData"
+    data "StatusType" "BOOST"
+    data "StatusPropertyFlags" "DisableOverhead;DisableCombatlog;DisablePortraitIndicator;ApplyToDead;IgnoreResting"
+    data "OnApplyFunctors" "Unlock()"
+    data "TickType" "StartTurn"
+    data "TickFunctors" "Unlock()"
