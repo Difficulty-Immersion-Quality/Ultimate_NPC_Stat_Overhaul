@@ -28,6 +28,7 @@
                     <attribute id="UUID" type="guid" value="3d568fee-41cd-48cd-9496-267f814dd5f0"/>
                 </node>
                 <node id="Progression">
+                <!-- Primal Knowledge Eexpansion optional feature not added -->
                     <attribute id="Boosts" type="LSString" value="ActionResource(Rage,1,0)"/>
                     <attribute id="Level" type="uint8" value="3"/>
                     <attribute id="Name" type="LSString" value="NPC_Barbarian"/>
@@ -61,7 +62,8 @@
                 <node id="Progression">
                     <attribute id="Level" type="uint8" value="7"/>
                     <attribute id="Name" type="LSString" value="NPC_Barbarian"/>
-                    <attribute id="PassivesAdded" type="LSString" value="FeralInstinct"/>
+                    <!-- InstinctivePounce Expansion optional feature added -->
+                    <attribute id="PassivesAdded" type="LSString" value="FeralInstinct;InstinctivePounce"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
                     <attribute id="TableUUID" type="guid" value="56db8107-e04c-4fe3-94f3-fd4acd44cd4a"/>
                     <attribute id="UUID" type="guid" value="cef40504-f10b-4f96-9a6b-0afd63e6189a"/>
