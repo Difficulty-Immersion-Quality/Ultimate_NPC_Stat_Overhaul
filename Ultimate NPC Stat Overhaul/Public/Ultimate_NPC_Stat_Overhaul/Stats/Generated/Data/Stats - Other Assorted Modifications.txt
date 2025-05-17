@@ -48,21 +48,21 @@
 
 // ==================================== Auntie Ethel: Anti-Cheese Door Unlocker ====================================
 
-    new entry "Goon_Ethel_Unlocker"
+    new entry "Goon_NPC_Ethel_Unlocker"
     type "PassiveData"
     data "Properties" "IsHidden"
     data "StatsFunctorContext" "OnCreate;OnCombatStarted;OnTurn"
-    data "StatsFunctors" "IF(not HasStatus('GOON_ETHEL_UNLOCKER')):ApplyStatus(GOON_ETHEL_UNLOCKER,100,-1)"
+    data "StatsFunctors" "IF(not HasStatus('GOON_NPC_ETHEL_UNLOCKER')):ApplyStatus(GOON_NPC_ETHEL_UNLOCKER,100,-1)"
 
-    new entry "GOON_ETHEL_UNLOCKER"
+    new entry "GOON_NPC_ETHEL_UNLOCKER"
     type "StatusData"
     data "StatusType" "BOOST"
     data "StatusPropertyFlags" "DisableOverhead;DisableCombatlog;DisablePortraitIndicator;ApplyToDead;IgnoreResting"
     data "AuraRadius" "2"
     //data "TargetConditions" "Item() and (Locked() or Tagged('KNOCK_TARGET')) and not Tagged('KNOCKBLOCK') and not HasStatus('ARCANE_LOCK')"
-    data "AuraStatuses" "TARGET:IF(Item() and (Locked() or Tagged('KNOCK_TARGET'))):ApplyStatus(GOON_ETHEL_UNLOCKER_TECHNICAL)"
+    data "AuraStatuses" "TARGET:IF(Item() and (Locked() or Tagged('KNOCK_TARGET'))):ApplyStatus(GOON_NPC_ETHEL_UNLOCKER_TECHNICAL)"
 
-    new entry "GOON_ETHEL_UNLOCKER_TECHNICAL"
+    new entry "GOON_NPC_ETHEL_UNLOCKER_TECHNICAL"
     type "StatusData"
     data "StatusType" "BOOST"
     data "StatusPropertyFlags" "DisableOverhead;DisableCombatlog;DisablePortraitIndicator;ApplyToDead;IgnoreResting"
