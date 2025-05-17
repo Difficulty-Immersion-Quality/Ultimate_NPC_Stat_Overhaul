@@ -1,3 +1,10 @@
+// "Origin" progressions, may not touch at all
+// "NPC_Halsin"
+// "NPC_Minthara"
+// "NPC_Minsc"
+// "NPC_Jaheria"
+// "Phasm" - Strange Ox?
+
 // ==================================== "NPC_Aradin" ====================================
 
     new entry "Goon_NPC_Aradin_Boost"
@@ -15,8 +22,6 @@
     data "StackType" "Ignore"
     data "RemoveConditions" "not HasPassive('Goon_NPC_Aradin_Boost')"
     data "Boosts" "ActionResource(SuperiorityDie,4,0);Ability(Strength,3);Ability(Constitution,2)"
-
-// ==================================== "NPC_Halsin" ====================================
 
 // ==================================== "NPC_RoahMoonglow" ====================================
 
