@@ -1,3 +1,4 @@
+//TODO: This shit
 // "Origin" progressions, may not touch at all
 // "NPC_Halsin"
 // "NPC_Minthara"
