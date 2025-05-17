@@ -47,29 +47,6 @@ data "Description" "hd5818987ga072g4e8dgb314g97ab96f230cd;1"
 data "Boosts" "Proficiency(SimpleWeapons);Proficiency(MartialWeapons)"
 data "Icon" "Spell_Abjuration_WardingBond"
 
-// ==================================== Sorcerer ====================================
-
-    new entry "CX_Sorcerer_DraconicBloodline_Boost"
-    type "PassiveData"
-    data "DisplayName" "h14f8ccc9g8bbag4546g9028g5a5c65f8ec0c;1"
-    data "Description" "h1f8b691fgd951g49a3g8ca1g6cfa70cce02a;1"
-    data "Icon" "PassiveFeature_DraconicResilience"
-    data "Boosts" ""
-
-    new entry "CX_Sorcerer_WildMagic_Boost"
-    type "PassiveData"
-    data "DisplayName" "h87889658gdef3g42aeg9edag5de1784ae854;1"
-    data "Description" "h1077e020g23b7g40e7gaba7ge569d2c18331;1"
-    data "Icon" "Skill_Sorcerer_Passive_TidesOfChaos"
-    data "Boosts" ""
-
-    new entry "CX_Sorcerer_StormSorcery_Boost"
-    type "PassiveData"
-    data "DisplayName" "heaf07b0cgbb00g4462g8990g7b40b4ae36c0;1"
-    data "Description" "he7ee7064g55bfg4b5bga7a2g0f049b35f91e;1"
-    data "Icon" "Action_TempestuousMagic"
-    data "Boosts" ""
-
 // ===================================================== Original CX Spell Passives =====================================================
 
 new entry "CX_Spells_L1"
