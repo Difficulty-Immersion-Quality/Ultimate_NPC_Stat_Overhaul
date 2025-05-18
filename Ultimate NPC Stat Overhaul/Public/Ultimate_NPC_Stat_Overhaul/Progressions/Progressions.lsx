@@ -1771,7 +1771,7 @@
                     <attribute id="Boosts" type="LSString" value="ActionResource(SpellSlot,2,3);ActionResource(SorceryPoint,1,0)"/>
                     <attribute id="Level" type="uint8" value="5"/>
                     <attribute id="Name" type="LSString" value="NPC_Sorcerer"/>
-                    <!-- MagicalGuidance is an OPTIONAL EXPANSION FEATURE -->
+                    <!-- MagicalGuidance Expansion optional feature added -->
                     <attribute id="PassivesAdded" type="LSString" value="UnlockedSpellSlotLevel3;MagicalGuidance"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
                     <!-- <attribute id="Selectors" type="LSString" value="SelectSpells(dcbaf2ae-1f45-453e-ab83-cd154f8277a4,1,2,SorcererSpell)"/> -->
