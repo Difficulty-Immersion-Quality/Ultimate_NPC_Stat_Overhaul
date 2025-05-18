@@ -987,6 +987,7 @@
                     <attribute id="Boosts" type="LSString" value="ActionResource(KiPoint,1,0)"/>
                     <attribute id="Level" type="uint8" value="2"/>
                     <attribute id="Name" type="LSString" value="NPC_Monk"/>
+                    <!-- DedicatedWeapon Expansion optional feature added -->
                     <!-- <attribute id="PassivesAdded" type="LSString" value="UnarmoredMovement_1"/> -->
                     <attribute id="PassivesAdded" type="LSString" value="UnarmoredMovement_1;DedicatedWeapon"/>
                     <!-- <attribute id="Selectors" type="LSString" value=""/> -->
@@ -1000,6 +1001,7 @@
                     <attribute id="Boosts" type="LSString" value="ActionResource(KiPoint,1,0);ActionResource(DeflectMissiles_Charge,1,0)"/>
                     <attribute id="Level" type="uint8" value="3"/>
                     <attribute id="Name" type="LSString" value="NPC_Monk"/>
+                    <!-- KiFueledAttack Expansion optional feature added -->
                     <!-- <attribute id="PassivesAdded" type="LSString" value="DeflectMissiles"/> -->
                     <attribute id="PassivesAdded" type="LSString" value="DeflectMissiles;KiFueledAttack"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
@@ -1011,6 +1013,7 @@
                     <attribute id="Boosts" type="LSString" value="ActionResource(KiPoint,1,0)"/>
                     <attribute id="Level" type="uint8" value="4"/>
                     <attribute id="Name" type="LSString" value="NPC_Monk"/>
+                    <!-- QuickenedHealing Expansion optional feature added -->
                     <!-- <attribute id="PassivesAdded" type="LSString" value="SlowFall"/> -->
                     <attribute id="PassivesAdded" type="LSString" value="SlowFall;QuickenedHealing"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
@@ -1021,6 +1024,7 @@
                     <attribute id="Boosts" type="LSString" value="ActionResource(KiPoint,1,0)"/>
                     <attribute id="Level" type="uint8" value="5"/>
                     <attribute id="Name" type="LSString" value="NPC_Monk"/>
+                    <!-- FocusedAim Expansion optional feature added -->
                     <!-- <attribute id="PassivesAdded" type="LSString" value="ExtraAttack"/> -->
                     <attribute id="PassivesAdded" type="LSString" value="ExtraAttack;FocusedAim"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
