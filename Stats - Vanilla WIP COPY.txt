@@ -1293,11 +1293,11 @@ data "Passives" "CX_Paladin_Oathbreaker_Boost;FeyAncestry;AttackOfOpportunity;Da
 //  ├─ "_Humanoid"
 //  │   ├─ "_Giants"
 //  │   │   ├─ "Ogre"
-//  │   │   │   ├─ "CAMP_MintharaAmbush_Ogre"
+//  │   │   │   ├─ "CAMP_MintharaAmbush_Ogre"   --- (Inherits Barbarian progressions, inherits Berserker subclass)
 //  │   │   │   ├─ "FOR_OgreCaptain"
-//  │   │   │   ├─ "FOR_OgreMate"               --- Buthir
-//  │   │   │   ├─ "FOR_OgreMercenary"          --- Chock, Fank
-//  │   │   │   ├─ "GOB_Ogre_Bodyguard"         --- Polma - Bodyguard of the High Priestess, Cult of the Absolute
+//  │   │   │   ├─ "FOR_OgreMate"               --- Buthir (Inherits Barbarian progressions, inherits Berserker subclass)
+//  │   │   │   ├─ "FOR_OgreMercenary"          --- Chock, Fank (Inherits Barbarian progressions, inherits Berserker subclass)
+//  │   │   │   ├─ "GOB_Ogre_Bodyguard"         --- Polma - Bodyguard of the High Priestess, Cult of the Absolute (Inherits Barbarian progressions, inherits Berserker subclass)
 //  │   │   │   └─ "Test_Combat"
 //  │   │   │       ├─ "END_SaferoomHelper"
 //  │   │   │       ├─ "Test_Throwing_Medium"
@@ -2474,7 +2474,7 @@ data "Passives" "CX_Wizard_Evocation_Boost;CX_Spells_L1;CX_Spells_L2;CX_Spells_L
 //  │   ├─ "END_CityWatchMelee_HalfOrc"
 //  │   ├─ "HalfOrc_Barbarian"                              --- (Has Barbarian progressions)
 //  │   │   ├─ "SCL_DriderCaravan_Bedi"
-//  │   │   └─ TWN_Morgue_ShadowCursed_HalfOrc_Barbarian"   --- Shadow-Cursed Half-Orc (Inherits Barbarian progressions)
+//  │   │   └─ "TWN_Morgue_ShadowCursed_HalfOrc_Barbarian"   --- Shadow-Cursed Half-Orc (Inherits Barbarian progressions)
 //  │   ├─ "HalfOrc_Paladin"                                --- (Has Paladin progressions)
 //  │   ├─ "LOW_Bartender_Half_Orc_Melee"                   --- Unused (Inherits Fighter progressions)
 //  │   ├─ "LOW_BlushingMermaid_Patron_HalfOrc_Melee"       --- Slog (Inherits Fighter progressions)
@@ -4215,7 +4215,6 @@ data "SpellCastingAbility" "Wisdom"
 data "Progressions" "f0ede459-8b86-48fd-ac11-4432573566a5"
 
 // ==================================== Sahuagin ===================================
-
 // "_Base"
 //  ├─ "_Humanoid"
 //  │   ├─ "Sahuagin"
@@ -4236,14 +4235,14 @@ data "SpellCastingAbility" "Intelligence"
 // data "Passives" "BloodFrenzy_Sahuagin;AttackOfOpportunity;DarknessRules"
 data "Passives" "CX_Martial_Boost;BloodFrenzy_Sahuagin;AttackOfOpportunity;DarknessRules"
 
-// Sahuagin Champion (Added Barbarian progressions, added Berserker subclass)
+// (Added Fighter progressions, added Champion subclass)
 new entry "Sahuagin_Champion"
 type "Character"
 using "Sahuagin_Champion"
 // data "Passives" "BloodFrenzy_Sahuagin;ExtraAttack;AttackOfOpportunity;DarknessRules"
 data "Passives" "CX_Barbarian_Berserker_Boost;BloodFrenzy_Sahuagin;AttackOfOpportunity;DarknessRules;ExtraAttack"
 // data "Progressions" ""
-data "Progressions" "56db8107-e04c-4fe3-94f3-fd4acd44cd4a"
+data "Progressions" "0e6da493-5a37-423b-8c28-629462b22faa"
 
 // Champion of Mahkloompah (summon from during Confront the Elder Brain; technically not part of Gather Your Allies) (Added Paladin progressions, letting it keep the extra spell slots)
 new entry "END_SahuaginAlly_Champion"
@@ -4256,8 +4255,8 @@ data "Progressions" "8726b2c4-edc0-4905-b82f-60a4baba0733"
 new entry "Sahuagin_Melee"
 type "Character"
 using "Sahuagin_Melee"
-// data "Passives" "BloodFrenzy_Sahuagin;ExtraAttack;AttackOfOpportunity;DarknessRules"
-data "Passives" "CX_Fighter_Champion_Boost;BloodFrenzy_Sahuagin;AttackOfOpportunity;DarknessRules;ExtraAttack"
+// data "Passives" "BloodFrenzy_Sahuagin;AttackOfOpportunity;DarknessRules"
+data "Passives" "CX_Fighter_Champion_Boost;BloodFrenzy_Sahuagin;AttackOfOpportunity;DarknessRules"
 // data "Progressions" ""
 data "Progressions" "0e6da493-5a37-423b-8c28-629462b22faa"
 
@@ -4265,6 +4264,8 @@ data "Progressions" "0e6da493-5a37-423b-8c28-629462b22faa"
 new entry "Sahuagin_Ranged"
 type "Character"
 using "Sahuagin_Ranged"
+// data "SpellCastingAbility" "Dexterity"
+data "SpellCastingAbility" "Intelligence"
 // data "Passives" "BloodFrenzy_Sahuagin;ExtraAttack;AttackOfOpportunity;DarknessRules"
 data "Passives" "CX_Rogue_Assassin_Boost;BloodFrenzy_Sahuagin;AttackOfOpportunity;DarknessRules;ExtraAttack"
 // data "Progressions" ""
@@ -4321,10 +4322,10 @@ data "Progressions" "56db8107-e04c-4fe3-94f3-fd4acd44cd4a"
 new entry "Kuotoa_Caster"
 type "Character"
 using "Kuotoa_Caster"
-// data "Intelligence" "11"
+// data "Intelligence" "13"
 data "Intelligence" "8"
 // data "Charisma" "8"
-data "Charisma" "12"
+data "Charisma" "13"
 // data "SpellCastingAbility" "Intelligence"
 data "SpellCastingAbility" "Charisma"
 // data "Passives" "SunlightSensitivity;AttackOfOpportunity;Darkvision;DarknessRules"
@@ -4530,23 +4531,17 @@ using "WYR_SmugglersCave_StoneLord_Tiefling"
 data "Passives" "CX_Fighter_BattleMaster_Boost;Tiefling_HellishResistance;AttackOfOpportunity;DarknessRules;Darkvision;Parry;Riposte;Indomitable"
 
 // "_Tiefling"
-//  ├─ "Tiefling_Ranger"                        --- (Inherits Ranger progressions)
+//  ├─ "Tiefling_Ranger"                        --- (Has Ranger progressions)
 //  │   ├─ "CHA_Bandit_Tiefling_Ranger"
 //  │   │   └─ "CHA_Bandit_Tiefling_Ranger_B"   --- Nymessa - Tiefling Refugees (Inherits Ranger progressions and fixed racials)
 //  │   ├─ "DEN_Arka"                           --- Arka - Tiefling Refugees (Inherits Ranger progressions)
-//  │   ├─ "DEN_Refugees_Tiefling_Ranger"       --- Cerys, Rikka, Elegis, Lakrissa, Zorru, Kaldani - Tiefling Refugees
+//  │   ├─ "DEN_Refugees_Tiefling_Ranger"       --- Cerys, Rikka, Elegis, Lakrissa, Zorru, Kaldani - Tiefling Refugees (Inherits Ranger progressions)
 //  │   ├─ "END_Inquisitor_Tiefling"            --- Inquisitor of the Absolute - Cult of the Absolute (Inherits Ranger progressions)
 //  │   ├─ "GLO_ProdigySister"                  --- Lia - Tiefling Refugees (Inherits Ranger progressions)
 //  │   ├─ "HAV_Harper_Tiefling_Ranger"         --- Harper Naysa, Harper Lumn - Harpers (Inherits Ranger progressions)
 //  │   ├─ "MOO_Harper_Tiefling_Ranger"         --- Harper Olys - Harpers (Inherits Ranger progressions)
 //  │   ├─ "MOO_PrisonWarden"                   --- The Warden - Cult of the Absolute (Inherits Ranger progressions)
 //  │   └─ "PLA_ChokepointScout"                --- Ellyka - Tiefling Refugees (Inherits Ranger progressions)
-
-new entry "Tiefling_Ranger"
-type "Character"
-using "Tiefling_Ranger"
-// data "Passives" "Tiefling_HellishResistance;AttackOfOpportunity;DarknessRules;Darkvision"
-data "Passives" "CX_Ranger_Boost;CX_Martial_Boost;Tiefling_HellishResistance;AttackOfOpportunity;DarknessRules;Darkvision"
 
 // Damays - Tiefling refugees (Inherits Ranger progressions, fixed racials)
 new entry "CHA_Bandit_Tiefling_Ranger"
@@ -4706,12 +4701,12 @@ data "Passives" "CX_Spells_L4;AttackOfOpportunity;Darkvision;DarknessRules;LOW_H
 // data "Progressions" ""
 data "Progressions" "44bdbc5e-a003-4d61-87f0-5ced20d3804e"
 
-// Lyrthindor, the rat guy (Added Cleric progressions, added Trickery Domain subclass)
+// Lyrthindor, the rat guy (Added Cleric progressions, added Trickery Domain subclass, added Mini Boss boost)
 new entry "SHA_LastJusticiar_Lyrthindor"
 type "Character"
 using "SHA_LastJusticiar_Lyrthindor"
 // data "Passives" "SHA_VisionOfShar;SHA_Lyrthindor_UnlockExtraSpellSlots;AttackOfOpportunity;Darkvision;DarknessRules"
-data "Passives" "CX_Cleric_Trickery_Boost;CX_Martial_Boost;AttackOfOpportunity;Darkvision;DarknessRules;SHA_VisionOfShar;SHA_Lyrthindor_UnlockExtraSpellSlots;"
+data "Passives" "CX_MiniBoss_Boost;CX_Cleric_Trickery_Boost;CX_Martial_Boost;AttackOfOpportunity;Darkvision;DarknessRules;SHA_VisionOfShar;SHA_Lyrthindor_UnlockExtraSpellSlots;"
 // data "Progressions" ""
 data "Progressions" "36c3f8de-3293-4d7b-92bc-ceb3c569244b"
 
@@ -4958,8 +4953,6 @@ data "Passives" "CX_Boss_Boost;CX_Wizard_Necromancy_Boost;CX_Martial_Boost;CX_Sp
 new entry "FOR_Thay_Skeleton_Melee"
 type "Character"
 using "FOR_Thay_Skeleton_Melee"
-// data "Passives" "FightingStyle_Dueling;AttackOfOpportunity;Darkvision;DarknessRules;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check"
-data "Passives" "FightingStyle_Dueling;AttackOfOpportunity;Darkvision;DarknessRules;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check"
 // data "Progressions" ""
 data "Progressions" "0e6da493-5a37-423b-8c28-629462b22faa"
 
@@ -4974,11 +4967,12 @@ data "PathInfluence" "BloodElectrified,100;BloodFrozen,30;Lava,700;Fire,40;HolyF
 // data "Progressions" ""
 data "Progressions" "8726b2c4-edc0-4905-b82f-60a4baba0733"
 
+// (Added Barbarian progressions)
 new entry "Skeleton_Giant"
 type "Character"
 using "Skeleton_Giant"
-// data "Passives" "ExtraAttack;BlockVerbalSpellcasting;AttackOfOpportunity;DarknessRules;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check;SkeletonDeath_Check"
-data "Passives" "CX_Barbarian_Boost;CX_Martial_Boost;ExtraAttack;BlockVerbalSpellcasting;AttackOfOpportunity;DarknessRules;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check;SkeletonDeath_Check"
+// data "Progressions" ""
+data "Progressions" "56db8107-e04c-4fe3-94f3-fd4acd44cd4a"
 
 // Apostate Destroyer - reanimated skeletons if fighting Balthazar in the Shadowfell (Added Paladin progressions, added Oathbreaker subclass - they have Aura of Hate already in vanilla)
 new entry "SHA_Skeleton_Giant"
@@ -5018,6 +5012,14 @@ data "SpellCastingAbility" "Wisdom"
 data "Passives" "CX_Ranger_Boost;CX_Martial_Boost;AttackOfOpportunity;Darkvision;DarknessRules;BlockVerbalSpellcasting;SkeletonDeath_Check;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check"
 // data "Progressions" ""
 data "Progressions" "f0ede459-8b86-48fd-ac11-4432573566a5"
+// data "Proficiency Group" "Longbows;Shortbows;LightArmor;SimpleWeapons"
+data "Proficiency Group" "Longbows;Shortbows;HeavyCrossbows;LightCrossbows;HandCrossbows;LightArmor;SimpleWeapons"
+
+new entry "SHA_Skeleton_Ranger"
+type "Character"
+using "SHA_Skeleton_Ranger"
+// data "Proficiency Group" "Longbows;Shortbows;LightArmor;SimpleWeapons"
+data "Proficiency Group" "Longbows;Shortbows;HeavyCrossbows;LightCrossbows;HandCrossbows;LightArmor;SimpleWeapons"
 
 // Apostate Sentinels - reanimated skeletons if fighting Balthazar in the Shadowfell (Inherits Ranger progressions)
 new entry "SHA_Skeleton_Ranger"
@@ -5277,7 +5279,7 @@ data "Progressions" "0e6da493-5a37-423b-8c28-629462b22faa"
 
 // "_Base"
 //  ├─ "_Ooze"
-//  │   ├─ "Ooze_Gray"
+//  │   ├─ "Ooze_Gray"                  --- Unused
 //  │   └─ "Ooze_Jelly_Ochre"
 //  │       ├─ "HAV_Phasm"
 //  │       ├─ "LOW_GreaseWizard_Ooze"
@@ -5302,9 +5304,9 @@ data "PathInfluence" "BloodElectrified,100;BloodFrozen,30;Lava,700;Fire,40;HolyF
 //  │   ├─ "Bulette"
 //  │   │   └─ "Test_Hits"
 //  │   ├─ "DisplacerBeast"
-//  │   ├─ "Doppelganger"                      -- Doppelgangers (Added Rogue progressions)
-//  │   │   ├─ "LOW_NotJaheira"                -- Fake Jaheira Doppelganger (Inherits Rogue progressions)
-//  │   │   └─ "WYR_DG_Dribbles"               -- Dribbles (Inherits Rogue progressions)
+//  │   ├─ "Doppelganger"                      --- Doppelgangers (Added Rogue progressions)
+//  │   │   ├─ "LOW_NotJaheira"                --- Fake Jaheira Doppelganger (Inherits Rogue progressions, inherits Assassin subclass)
+//  │   │   └─ "WYR_DG_Dribbles"
 //  │   ├─ "Drider"
 //  │   │   └─ "SCL_DriderCaravan_Drider"
 //  │   ├─ "Ettercap"
@@ -5312,8 +5314,8 @@ data "PathInfluence" "BloodElectrified,100;BloodFrozen,30;Lava,700;Fire,40;HolyF
 //  │   ├─ "Harpy"
 //  │   ├─ "HookHorror"
 //  │   ├─ "Mimic"
-//  │   ├─ "Minotaur"                          -- Minotaurs (Added Barbarian progressions)
-//  │   │   └─ "LOW_DevilsFee_Minotaur"        -- Gilded Minotaurs (summoned by Helsik) (Inherits Barbarian progressions)
+//  │   ├─ "Minotaur"                          --- Minotaurs (Added Barbarian progressions)
+//  │   │   └─ "LOW_DevilsFee_Minotaur"        --- Gilded Minotaurs (summoned by Helsik) (Inherits Barbarian progressions)
 
 // Bulette - Predator of the Dark - HONOUR MODE INHERITANCE (Added Boss boost)
 new entry "Bulette"
@@ -5323,16 +5325,23 @@ using "Bulette"
 // data "Passives" "DefaultStatus_Bulette_DiamondScales;LegendaryAction_Bulette_DiamondScalesBurst;PreferredTarget_Bulette;AttackOfOpportunity;Darkvision;DarknessRules"
 data "Passives" "CX_Boss_Boost;DefaultStatus_Bulette_DiamondScales;LegendaryAction_Bulette_DiamondScalesBurst;PreferredTarget_Bulette;AttackOfOpportunity;Darkvision;DarknessRules"
 
-// Doppelgangers (Added Rogue progressions, added Assassin subclass) (Added "LOW_Guildhall_SneakyRiposte" too I guess)
+// Doppelgangers (Added Rogue progressions, added Assassin subclass)
 new entry "Doppelganger"
 type "Character"
 using "Doppelganger"
 // data "DefaultBoosts" "ProficiencyBonus(SavingThrow, Dexterity); BlockRegainHP(Undead;Construct)"
 data "DefaultBoosts" "ProficiencyBonus(SavingThrow, Dexterity);ProficiencyBonus(SavingThrow, Intelligence);BlockRegainHP(Undead;Construct)"
+// data "Passives" "Multiattack_Doppelganger;AttackOfOpportunity;Darkvision;DarknessRules"
+data "Passives" "CX_Rogue_Assassin_Boost;AttackOfOpportunity;Darkvision;DarknessRules;Multiattack_Doppelganger"
 // data "Progressions" ""
 data "Progressions" "532203c2-7bcb-4162-9a7c-2bb20e227a30"
-// data "Passives" "Multiattack_Doppelganger;AttackOfOpportunity;Darkvision;DarknessRules"
-data "Passives" "CX_Rogue_Assassin_Boost;AttackOfOpportunity;Darkvision;DarknessRules;Multiattack_Doppelganger;LOW_Guildhall_SneakyRiposte"
+
+// Dribbles (Inherits Rogue progressions, inherits Assassin subclass)
+new entry "WYR_DG_Dribbles"
+type "Character"
+using "WYR_DG_Dribbles"
+// data "DefaultBoosts" "ProficiencyBonus(SavingThrow, Strength); ProficiencyBonus(SavingThrow, Dexterity); BlockRegainHP(Undead;Construct)"
+data "DefaultBoosts" "ProficiencyBonus(SavingThrow, Strength); ProficiencyBonus(SavingThrow, Dexterity); ProficiencyBonus(SavingThrow, Intelligence); BlockRegainHP(Undead;Construct)"
 
 // Kar'niss - Light of the Absolute - HONOUR MODE INHERITANCE (Added Fighter progressions, added Champion subclass, added Boss boost)
 new entry "SCL_DriderCaravan_Drider"
@@ -5397,7 +5406,7 @@ new entry "FOR_Owlbear_Daddy"
 type "Character"
 using "FOR_Owlbear_Daddy"
 // data "Passives" "Multiattack_Owlbear;AttackOfOpportunity;Darkvision;DarknessRules;FOR_Owlbear_Daddy_Rage_Passive"
-data "Passives" "CX_MiniBoss_Boost;Multiattack_Owlbear;AttackOfOpportunity;Darkvision;DarknessRules;FOR_Owlbear_Daddy_Rage_Passive"
+data "Passives" "CX_Boss_Boost;Multiattack_Owlbear;AttackOfOpportunity;Darkvision;DarknessRules;FOR_Owlbear_Daddy_Rage_Passive"
 
 // Shadow Plush (Oliver summon) (Added Boss boost)
 new entry "TWN_Oliver_MischievousOwlbear"
@@ -5458,7 +5467,6 @@ using "WoodWoad"
 data "PathInfluence" "BloodElectrified,100;BloodFrozen,30;Lava,700;Fire,40;HolyFire,40;Hellfire,100;PoisonCloud,70;WyvernPoison,70;DrowPoisonCloud,70;PurpleWormPoison,70;SerpentVenom,70;InvisibleGithAcid,70;CloudkillCloud,70;Cloudkill6Cloud,70;MaliceCloud,70;CrawlerMucusCloud,70;WaterElectrified,100;WaterFrozen,30;Grease,30;Web,30;SporeBlackCloud,100;WaterCloudElectrified,40;SporeGreenCloud,40;Acid,30;CausticBrine,40;DarknessCloud,30;FogCloud,30;Mud,30;Oil,30;Poison,30;SpikeGrowth,40;SporePinkCloud,40;StinkingCloud,40"
 
 // ==================================== Aberration ====================================
-
 // "_Base"
 //  ├─ "_Aberration"
 //  │   ├─ "Beholder"
@@ -5588,8 +5596,7 @@ using "END_Daisy"
 // data "Passives" "AttackOfOpportunity;DarknessRules;MagicResistance;TAD_Charm"
 data "Passives" "CX_Martial_Boost;CX_Magic_Boost;AttackOfOpportunity;DarknessRules;MagicResistance;TAD_Charm"
 
-// ==================================== Construct ====================================
-
+// ==================================== Constructs ====================================
 // "_Base"
 //  ├─ "_Construct"
 //  │   ├─ "AnimatedArmor"
@@ -5598,34 +5605,33 @@ data "Passives" "CX_Martial_Boost;CX_Magic_Boost;AttackOfOpportunity;DarknessRul
 //  │   ├─ "Automaton"
 //  │   │   └─ "AdamantineGolem"
 //  │   │       └─ "UND_AdamantineGolem"
-//  │   ├─ "Cannon_Nautiloid"
-//  │   │   └─ "END_NautiloidCannon"
-//  │   ├─ "CheeseWheel_Polymorph"
-//  │   ├─ "FleshGolem"
-//  │   ├─ "FlyingBook"
-//  │   ├─ "Halberd_Coins"
-//  │   ├─ "SHA_TrapJunction_Thief"
-//  │   ├─ "Scarecrow"
-//  │   ├─ "ScryingEye"
-//  │   │   ├─ "CRE_DaisyWisp"
-//  │   │   └─ "ScryingEye_Dev"
-//  │   ├─ "Statue_Animated"
-//  │   ├─ "Steel_Watcher"
-//  │   │   ├─ "Steel_Watcher_Biped"
-//  │   │   │   └─ "Steel_Watcher_Biped_Hellfire"
-//  │   │   └─ "Steel_Watcher_Quadruped"
-//  │   └─ "UND_ArcaneTurret"
-//  │       ├─ "CRE_Turret"
-//  │       └─ "LOW_RamazithTower_ArcaneTurret"
+//  │   │           └─"MMM_GRYM2" (Copies the whole entry and overwrites nothing)
 
+// (Added Fighter progressions, added Champion subclass, really don't want to give these guys spells lol)
+new entry "AnimatedArmor"
+type "Character"
+using "AnimatedArmor"
+// data "SpellCastingAbility" "Dexterity"
+data "SpellCastingAbility" "Intelligence"
+// data "Passives" "ExtraAttack;AntimagicSusceptibility;AttackOfOpportunity;Darkvision;DarknessRules"
+data "Passives" "CX_Fighter_Champion_Boost;ExtraAttack;AntimagicSusceptibility;AttackOfOpportunity;Darkvision;DarknessRules"
+// data "Progressions" ""
+data "Progressions" "0e6da493-5a37-423b-8c28-629462b22faa"
 
-// Bernard - Guardian of the Enchanted Tower - HONOUR MODE INHERITANCE (Added Fighter progressions, added Champion subclass, added Boss boost) ("Projectile_ChainStaticBolt" requires Strength, so not changing the casting ability)
+// (Inherits added Fighter progressions, added Champion subclass)
+new entry "TWN_ShadowAnimatedArmour"
+type "Character"
+using "TWN_ShadowAnimatedArmour"
+// data "Passives" "AttackOfOpportunity;DarknessRules;Darkvision;ExtraAttack;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check;TWN_AasimarSurvivor_SpawnShadow"
+data "Passives" "CX_Fighter_Champion_Boost;ExtraAttack;AntimagicSusceptibility;AttackOfOpportunity;Darkvision;DarknessRules;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check;TWN_AasimarSurvivor_SpawnShadow"
+
+// Bernard - Guardian of the Enchanted Tower - HONOUR MODE INHERITANCE (Added Fighter progressions, added Champion subclass, added Boss boost, added ImmuneToDisarm) ("Projectile_ChainStaticBolt" requires Strength, so not changing the casting ability)
 new entry "Automaton"
 type "Character"
 using "Automaton"
 // data "Passives" "Multiattack_Automaton;AttackOfOpportunity;DarknessRules"
 // data "Passives" "Multiattack_Automaton;AttackOfOpportunity;DarknessRules;LegendaryAction_Automaton_ChainStaticBolt"
-data "Passives" "CX_Boss_Boost;CX_Fighter_Champion_Boost;Multiattack_Automaton;AttackOfOpportunity;DarknessRules;LegendaryAction_Automaton_ChainStaticBolt"
+data "Passives" "CX_Boss_Boost;CX_Fighter_Champion_Boost;Multiattack_Automaton;AttackOfOpportunity;DarknessRules;LegendaryAction_Automaton_ChainStaticBolt;ImmuneToDisarm"
 // data "Progressions" ""
 data "Progressions" "0e6da493-5a37-423b-8c28-629462b22faa"
 
@@ -5633,6 +5639,8 @@ data "Progressions" "0e6da493-5a37-423b-8c28-629462b22faa"
 new entry "UND_AdamantineGolem"
 type "Character"
 using "UND_AdamantineGolem"
+// data "DefaultBoosts" "Attribute(Grounded); ProficiencyBonus(SavingThrow, Dexterity); ProficiencyBonus(SavingThrow, Wisdom); BlockRegainHP(Undead;Living)"
+data "DefaultBoosts" "Attribute(Grounded);ProficiencyBonus(SavingThrow,Strength);ProficiencyBonus(SavingThrow,Dexterity);ProficiencyBonus(SavingThrow,Wisdom);BlockRegainHP(Undead;Living)"
 // data "Passives" "AttackOfOpportunity;DarknessRules;Darkvision;UND_AdamantineGolem_Aggro;UND_AdamantineGolem_Heat"
 // data "Passives" "AttackOfOpportunity;DarknessRules;Darkvision;UND_AdamantineGolem_Aggro;UND_AdamantineGolem_Heat;LegendaryAction_AdamantineGolem_KineticArmor"
 data "Passives" "CX_Boss_Boost;AttackOfOpportunity;DarknessRules;Darkvision;UND_AdamantineGolem_Aggro;UND_AdamantineGolem_Heat;LegendaryAction_AdamantineGolem_KineticArmor"
@@ -5645,12 +5653,35 @@ data "Progressions" ""
 new entry "MMM_GRYM2"
 type "Character"
 using "MMM_GRYM2"
+// data "DefaultBoosts" "Attribute(Grounded); ProficiencyBonus(SavingThrow, Dexterity); ProficiencyBonus(SavingThrow, Wisdom); BlockRegainHP(Undead;Living)"
+data "DefaultBoosts" "Attribute(Grounded);ProficiencyBonus(SavingThrow,Strength);ProficiencyBonus(SavingThrow,Dexterity);ProficiencyBonus(SavingThrow,Wisdom);BlockRegainHP(Undead;Living)"
 // data "Passives" "AttackOfOpportunity;DarknessRules;Darkvision;UND_AdamantineGolem_Aggro;UND_AdamantineGolem_Heat;LegendaryAction_AdamantineGolem_KineticArmor"
 data "Passives" "CX_Boss_Boost;AttackOfOpportunity;DarknessRules;Darkvision;UND_AdamantineGolem_Aggro;UND_AdamantineGolem_Heat;LegendaryAction_AdamantineGolem_KineticArmor"
 // data "PathInfluence" "BloodElectrified,100;BloodFrozen,30;PoisonCloud,70;WyvernPoison,70;DrowPoisonCloud,70;PurpleWormPoison,70;SerpentVenom,70;InvisibleGithAcid,70;CloudkillCloud,70;MaliceCloud,70;CrawlerMucusCloud,70;WaterElectrified,100;WaterFrozen,30;Grease,30;Web,30;Vines,40;SporeBlackCloud,100;WaterCloudElectrified,40;SporeGreenCloud,40;Acid,30;CausticBrine,40;DarknessCloud,30;FogCloud,30;Mud,30;Oil,30;Poison,30;SpikeGrowth,40;SporePinkCloud,40;StinkingCloud,40"
 data "PathInfluence" "BloodElectrified,100;BloodFrozen,30;PoisonCloud,70;WyvernPoison,70;DrowPoisonCloud,70;PurpleWormPoison,70;SerpentVenom,70;InvisibleGithAcid,70;CloudkillCloud,70;Cloudkill6Cloud,70;MaliceCloud,70;CrawlerMucusCloud,70;WaterElectrified,100;WaterFrozen,30;Grease,30;Web,30;Vines,40;SporeBlackCloud,100;WaterCloudElectrified,40;SporeGreenCloud,40;Acid,30;CausticBrine,40;DarknessCloud,30;FogCloud,30;Mud,30;Oil,30;Poison,30;SpikeGrowth,40;SporePinkCloud,40;StinkingCloud,40"
 // data "Progressions" "0e6da493-5a37-423b-8c28-629462b22faa"
 data "Progressions" ""
+
+// "_Construct"
+//  ├─ "Cannon_Nautiloid"
+//  │   └─ "END_NautiloidCannon"
+//  ├─ "CheeseWheel_Polymorph"
+//  ├─ "FleshGolem"
+//  ├─ "FlyingBook"
+//  ├─ "Halberd_Coins"
+//  ├─ "SHA_TrapJunction_Thief"
+//  ├─ "Scarecrow"
+//  ├─ "ScryingEye"
+//  │   ├─ "CRE_DaisyWisp"
+//  │   └─ "ScryingEye_Dev"
+//  ├─ "Statue_Animated"
+//  ├─ "Steel_Watcher"
+//  │   ├─ "Steel_Watcher_Biped"
+//  │   │   └─ "Steel_Watcher_Biped_Hellfire"
+//  │   └─ "Steel_Watcher_Quadruped"
+//  └─ "UND_ArcaneTurret"
+//      ├─ "CRE_Turret"
+//      └─ "LOW_RamazithTower_ArcaneTurret"
 
 // Steel Watcher Titan - Gortash's Magnum Opus - HONOUR MODE INHERITANCE (Added Boss boost)
 new entry "Steel_Watcher_Quadruped"
@@ -5755,9 +5786,12 @@ data "Passives" "CX_Boss_Boost;Multiattack_SteelWatcherTitan;ImmutableExistance;
 //  │       ├─ "LOW_IronThrone_Mizora_FiendishSpiders"
 //  │       └─ "Spider_Tiny_Underdark"
 
+// (Increasing movement speed of all spiders except little ones)
 new entry "Spider_Giant"
 type "Character"
 using "Spider_Giant"
+// data "ActionResources" "ActionPoint:1;BonusActionPoint:1;Movement:9;ReactionActionPoint:1"
+data "ActionResources" "ActionPoint:1;BonusActionPoint:1;Movement:12;ReactionActionPoint:1"
 // data "PathInfluence" "BloodElectrified,100;BloodFrozen,30;Lava,700;Fire,40;HolyFire,40;Hellfire,100;PoisonCloud,70;WyvernPoison,70;DrowPoisonCloud,70;PurpleWormPoison,70;SerpentVenom,70;InvisibleGithAcid,70;CloudkillCloud,70;MaliceCloud,70;CrawlerMucusCloud,70;WaterElectrified,100;WaterFrozen,30;Grease,30;Vines,40;SporeBlackCloud,100;WaterCloudElectrified,40;SporeGreenCloud,40;Acid,30;CausticBrine,40;DarknessCloud,30;FogCloud,30;Mud,30;Oil,30;Poison,30;SpikeGrowth,40;SporePinkCloud,40;StinkingCloud,40"
 data "PathInfluence" "BloodElectrified,100;BloodFrozen,30;Lava,700;Fire,40;HolyFire,40;Hellfire,100;PoisonCloud,70;WyvernPoison,70;DrowPoisonCloud,70;PurpleWormPoison,70;SerpentVenom,70;InvisibleGithAcid,70;CloudkillCloud,70;Cloudkill6Cloud,70;MaliceCloud,70;CrawlerMucusCloud,70;WaterElectrified,100;WaterFrozen,30;Grease,30;Vines,40;SporeBlackCloud,100;WaterCloudElectrified,40;SporeGreenCloud,40;Acid,30;CausticBrine,40;DarknessCloud,30;FogCloud,30;Mud,30;Oil,30;Poison,30;SpikeGrowth,40;SporePinkCloud,40;StinkingCloud,40"
 
@@ -5783,12 +5817,21 @@ using "Spider_Phase_Queen"
 // data "Passives" "SpiderWalk;AttackOfOpportunity;Darkvision;DarknessRules;LegendaryAction_FOR_SpiderQueen;FOR_SpiderQueen_SeeInvis"
 data "Passives" "CX_Boss_Boost;SpiderWalk;AttackOfOpportunity;Darkvision;DarknessRules;LegendaryAction_FOR_SpiderQueen;FOR_SpiderQueen_SeeInvis"
 
-// Added See Invisibility to the Phase Spiderlings too 
+// Added See Invisibility to the Phase Spiderlings too (Reverting inherited movement speed for tiny spiders)
 new entry "Spider_Phase_Tiny"
 type "Character"
 using "Spider_Phase_Tiny"
+// data "ActionResources" "ActionPoint:1;BonusActionPoint:1;Movement:12;ReactionActionPoint:1"
+data "ActionResources" "ActionPoint:1;BonusActionPoint:1;Movement:9;ReactionActionPoint:1"
 // data "Passives" "SpiderWalk;AttackOfOpportunity;Darkvision;DarknessRules;"
 data "Passives" "SpiderWalk;AttackOfOpportunity;Darkvision;DarknessRules;FOR_SpiderQueen_SeeInvis"
+
+// (Reverting inherited movement speed for tiny spiders)
+new entry "Spider_Tiny"
+type "Character"
+using "Spider_Tiny"
+// data "ActionResources" "ActionPoint:1;BonusActionPoint:1;Movement:12;ReactionActionPoint:1"
+data "ActionResources" "ActionPoint:1;BonusActionPoint:1;Movement:9;ReactionActionPoint:1"
 
 // "_Beast"
 //  ├─ "Wolf"
@@ -5890,6 +5933,7 @@ data "Passives" "SpiderWalk;AttackOfOpportunity;Darkvision;DarknessRules;FOR_Spi
 //  │   ├─ "MinorIllusion"
 //  │   ├─ "SpiritualWeapon_Greataxe"
 //  │   │   ├─ "SpiritualWeapon_Greatsword"
+//  │   │   │   └─ "CRE_Githyanki_Inquisitor_VlaakithsMindSword"
 //  │   │   ├─ "SpiritualWeapon_Halberd"
 //  │   │   ├─ "SpiritualWeapon_Maul"
 //  │   │   ├─ "SpiritualWeapon_Spear"
@@ -5916,22 +5960,17 @@ data "Passives" "AttackOfOpportunity;DarknessRules;ImmuneToDisarm;DispelEvilAndG
 // Moonlight Sliver (Added Paladin progressions, added Devotion subclass, added Mini Boss boost)
 new entry "LOW_RamazithsTower_Nightsong_Shard"
 type "Character"
-// using "Deva"
 using "LOW_RamazithsTower_Nightsong_Shard"
-// data "PersonalStatusImmunities" "SG_Charmed;SG_Frightened"
-data "PersonalStatusImmunities" "SG_Charmed;SG_Frightened;SG_DifficultTerrain;SG_Exhausted;SG_Poisoned;SG_Sleeping"
 // data "Passives" "AttackOfOpportunity;DarknessRules;ImmuneToDisarm;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check;MagicResistance;LOW_RamazithsTower_Nightsong_Deva_Interrupt;DivineHealth;"
 data "Passives" "CX_MiniBoss_Boost;CX_Paladin_Devotion_Boost;AttackOfOpportunity;DarknessRules;ImmuneToDisarm;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check;MagicResistance;LOW_RamazithsTower_Nightsong_Deva_Interrupt;DivineHealth"
 
 new entry "FlamingSphere"
 type "Character"
-// using "_Summons"
 using "FlamingSphere"
 // data "PathInfluence" "BloodElectrified,100;BloodFrozen,30;Lava,700;HolyFire,40;PoisonCloud,70;WyvernPoison,70;DrowPoisonCloud,70;PurpleWormPoison,70;SerpentVenom,70;InvisibleGithAcid,70;CloudkillCloud,70;MaliceCloud,70;CrawlerMucusCloud,70;WaterElectrified,100;WaterFrozen,30;Grease,30;Web,30;Vines,40;SporeBlackCloud,100;WaterCloudElectrified,40;SporeGreenCloud,40;Acid,30;CausticBrine,40;DarknessCloud,30;FogCloud,30;Mud,30;Oil,30;Poison,30;SpikeGrowth,40;SporePinkCloud,40;StinkingCloud,40"
 data "PathInfluence" "BloodElectrified,100;BloodFrozen,30;Lava,700;HolyFire,40;PoisonCloud,70;WyvernPoison,70;DrowPoisonCloud,70;PurpleWormPoison,70;SerpentVenom,70;InvisibleGithAcid,70;CloudkillCloud,70;Cloudkill6Cloud,70;MaliceCloud,70;CrawlerMucusCloud,70;WaterElectrified,100;WaterFrozen,30;Grease,30;Web,30;Vines,40;SporeBlackCloud,100;WaterCloudElectrified,40;SporeGreenCloud,40;Acid,30;CausticBrine,40;DarknessCloud,30;FogCloud,30;Mud,30;Oil,30;Poison,30;SpikeGrowth,40;SporePinkCloud,40;StinkingCloud,40"
 
 // ==================================== Dragons ====================================
-
 // "_Dragon"
 //  ├─ "Dragon_AdultRed"
 //  │   ├─ "INT_Dragon"                             --- Unused
