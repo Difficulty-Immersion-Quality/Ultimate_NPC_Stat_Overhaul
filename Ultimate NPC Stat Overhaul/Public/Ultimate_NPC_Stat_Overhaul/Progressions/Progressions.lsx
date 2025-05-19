@@ -28,6 +28,7 @@
                     <attribute id="UUID" type="guid" value="3d568fee-41cd-48cd-9496-267f814dd5f0"/>
                 </node>
                 <node id="Progression">
+                <!-- Primal Knowledge Eexpansion optional feature not added -->
                     <attribute id="Boosts" type="LSString" value="ActionResource(Rage,1,0)"/>
                     <attribute id="Level" type="uint8" value="3"/>
                     <attribute id="Name" type="LSString" value="NPC_Barbarian"/>
@@ -61,7 +62,8 @@
                 <node id="Progression">
                     <attribute id="Level" type="uint8" value="7"/>
                     <attribute id="Name" type="LSString" value="NPC_Barbarian"/>
-                    <attribute id="PassivesAdded" type="LSString" value="FeralInstinct"/>
+                    <!-- InstinctivePounce Expansion optional feature added -->
+                    <attribute id="PassivesAdded" type="LSString" value="FeralInstinct;InstinctivePounce"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
                     <attribute id="TableUUID" type="guid" value="56db8107-e04c-4fe3-94f3-fd4acd44cd4a"/>
                     <attribute id="UUID" type="guid" value="cef40504-f10b-4f96-9a6b-0afd63e6189a"/>
@@ -191,8 +193,9 @@
                     <attribute id="Boosts" type="LSString" value="ActionResource(SpellSlot,1,1)"/>
                     <attribute id="Level" type="uint8" value="2"/>
                     <attribute id="Name" type="LSString" value="NPC_Bard"/>
+                    <!-- MagicalInspiration Eexpansion optional feature added -->
                     <!-- <attribute id="PassivesAdded" type="LSString" value=""/> -->
-                    <attribute id="PassivesAdded" type="LSString" value="JackOfAllTrades"/>
+                    <attribute id="PassivesAdded" type="LSString" value="JackOfAllTrades;MagicalInspiration"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
                     <attribute id="Selectors" type="LSString" value="SelectSpells(dcb45167-86bd-4297-9b9d-c295be51af5b,1,1,BardSpells)"/> <!-- UnlockSpell(Shout_SongOfRest,AddChildren) -->
                     <attribute id="TableUUID" type="guid" value="cbe5059f-7a9f-4b98-be6a-07c9cd8e02c2"/>
@@ -388,11 +391,16 @@
                     <attribute id="UUID" type="guid" value="1ad594c1-e06f-40f6-bb1d-765add46584a"/>
                 </node>
                 <node id="Progression">
-                    <attribute id="Boosts" type="LSString" value="ActionResource(SpellSlot,1,1);ActionResource(ChannelDivinity,1,0)"/>
+                    <!-- DivinePowerPoint Expansion optional feature added (resource for HarnessDivinePower) -->
+                    <!-- <attribute id="Boosts" type="LSString" value="ActionResource(SpellSlot,1,1);ActionResource(ChannelDivinity,1,0)"/> -->
+                    <attribute id="Boosts" type="LSString" value="ActionResource(SpellSlot,1,1);ActionResource(ChannelDivinity,1,0);ActionResource(DivinePowerPoint,1,0)"/>
                     <attribute id="Level" type="uint8" value="2"/>
                     <attribute id="Name" type="LSString" value="NPC_Cleric"/>
-                    <attribute id="Selectors" type="LSString" value="AddSpells(239cc7cc-f642-4ddc-b091-498d81612c51,,,,AlwaysPrepared)"/> <!-- UnlockSpell(Shout_TurnUndead,AddChildren) -->
+                    <!-- HarnessDivinePower Expansion optional feature added -->
+                    <!-- <attribute id="PassivesAdded" type="LSString" value=""/> -->
+                    <attribute id="PassivesAdded" type="LSString" value="HarnessDivinePower"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="Selectors" type="LSString" value="AddSpells(239cc7cc-f642-4ddc-b091-498d81612c51,,,,AlwaysPrepared)"/> <!-- UnlockSpell(Shout_TurnUndead,AddChildren) -->
                     <attribute id="TableUUID" type="guid" value="36c3f8de-3293-4d7b-92bc-ceb3c569244b"/>
                     <attribute id="UUID" type="guid" value="fdcda349-5a31-42ad-9e87-21ad862608a5"/>
                 </node>
@@ -428,7 +436,9 @@
                     <attribute id="UUID" type="guid" value="8de94ff3-3420-4732-ab3e-14acf936d823"/>
                 </node>
                 <node id="Progression">
-                    <attribute id="Boosts" type="LSString" value="ActionResource(SpellSlot,1,3);ActionResource(ChannelDivinity,1,0)"/>
+                    <!-- DivinePowerPoint Expansion optional feature added (resource for HarnessDivinePower) -->
+                    <!-- <attribute id="Boosts" type="LSString" value="ActionResource(SpellSlot,1,3);ActionResource(ChannelDivinity,1,0)"/> -->
+                    <attribute id="Boosts" type="LSString" value="ActionResource(SpellSlot,1,3);ActionResource(ChannelDivinity,1,0);ActionResource(DivinePowerPoint,1,0)"/>
                     <attribute id="Level" type="uint8" value="6"/>
                     <attribute id="Name" type="LSString" value="NPC_Cleric"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
@@ -532,7 +542,9 @@
                     <attribute id="UUID" type="guid" value="0cfcfac8-8307-42d3-8047-38279119dc34"/>
                 </node>
                 <node id="Progression">
-                    <attribute id="Boosts" type="LSString" value="ActionResource(SpellSlot,1,5);ActionResource(ChannelDivinity,1,0)"/>
+                    <!-- DivinePowerPoint Expansion optional feature added (resource for HarnessDivinePower) -->
+                    <!-- <attribute id="Boosts" type="LSString" value="ActionResource(SpellSlot,1,5);ActionResource(ChannelDivinity,1,0)"/> -->
+                    <attribute id="Boosts" type="LSString" value="ActionResource(SpellSlot,1,5);ActionResource(ChannelDivinity,1,0);ActionResource(DivinePowerPoint,1,0)"/>
                     <attribute id="Level" type="uint8" value="18"/>
                     <attribute id="Name" type="LSString" value="NPC_Cleric"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
@@ -975,6 +987,7 @@
                     <attribute id="Boosts" type="LSString" value="ActionResource(KiPoint,1,0)"/>
                     <attribute id="Level" type="uint8" value="2"/>
                     <attribute id="Name" type="LSString" value="NPC_Monk"/>
+                    <!-- DedicatedWeapon Expansion optional feature added -->
                     <!-- <attribute id="PassivesAdded" type="LSString" value="UnarmoredMovement_1"/> -->
                     <attribute id="PassivesAdded" type="LSString" value="UnarmoredMovement_1;DedicatedWeapon"/>
                     <!-- <attribute id="Selectors" type="LSString" value=""/> -->
@@ -988,6 +1001,7 @@
                     <attribute id="Boosts" type="LSString" value="ActionResource(KiPoint,1,0);ActionResource(DeflectMissiles_Charge,1,0)"/>
                     <attribute id="Level" type="uint8" value="3"/>
                     <attribute id="Name" type="LSString" value="NPC_Monk"/>
+                    <!-- KiFueledAttack Expansion optional feature added -->
                     <!-- <attribute id="PassivesAdded" type="LSString" value="DeflectMissiles"/> -->
                     <attribute id="PassivesAdded" type="LSString" value="DeflectMissiles;KiFueledAttack"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
@@ -999,6 +1013,7 @@
                     <attribute id="Boosts" type="LSString" value="ActionResource(KiPoint,1,0)"/>
                     <attribute id="Level" type="uint8" value="4"/>
                     <attribute id="Name" type="LSString" value="NPC_Monk"/>
+                    <!-- QuickenedHealing Expansion optional feature added -->
                     <!-- <attribute id="PassivesAdded" type="LSString" value="SlowFall"/> -->
                     <attribute id="PassivesAdded" type="LSString" value="SlowFall;QuickenedHealing"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
@@ -1009,6 +1024,7 @@
                     <attribute id="Boosts" type="LSString" value="ActionResource(KiPoint,1,0)"/>
                     <attribute id="Level" type="uint8" value="5"/>
                     <attribute id="Name" type="LSString" value="NPC_Monk"/>
+                    <!-- FocusedAim Expansion optional feature added -->
                     <!-- <attribute id="PassivesAdded" type="LSString" value="ExtraAttack"/> -->
                     <attribute id="PassivesAdded" type="LSString" value="ExtraAttack;FocusedAim"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
@@ -1169,11 +1185,13 @@
                     <attribute id="UUID" type="guid" value="ba895540-fb26-4c85-9024-fe15c9a832ec"/>
                 </node>
                 <node id="Progression">
-                    <attribute id="Boosts" type="LSString" value="ActionResource(SpellSlot,2,1)"/>
+                    <!-- DivinePowerPoint Expansion optional feature added (resource for HarnessDivinePower) -->
+                    <attribute id="Boosts" type="LSString" value="ActionResource(SpellSlot,2,1);ActionResource(DivinePowerPoint,1,0)"/>
                     <attribute id="Level" type="uint8" value="2"/>
                     <attribute id="Name" type="LSString" value="NPC_Paladin"/>
+                    <!-- HarnessDivinePower Expansion optional feature added -->
                     <!-- <attribute id="PassivesAdded" type="LSString" value="Smite_Divine_NPC"/> -->
-                    <attribute id="PassivesAdded" type="LSString" value="Smite_Divine_NPC;UnlockedSpellSlotLevel1"/>
+                    <attribute id="PassivesAdded" type="LSString" value="Smite_Divine_NPC;UnlockedSpellSlotLevel1;HarnessDivinePower"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
                     <!-- <attribute id="Selectors" type="LSString" value="AddSpells(58aef51d-a46c-44c8-8bed-df90870eb55f,,,,AlwaysPrepared);AddSpells(c6288ac5-c68b-40ed-bbdd-2ff388575831);SelectPassives(f8ebba38-932a-4c64-ae55-3df23e2f60fa,1,FightingStyle)"/> -->
                     <attribute id="Selectors" type="LSString" value="AddSpells(58aef51d-a46c-44c8-8bed-df90870eb55f,,,,AlwaysPrepared)"/> <!-- UnlockSpell(Target_Smite_Divine,AddChildren);UnlockSpell(Target_Smite_Divine_Unlock,AddChildren);UnlockSpell(Target_Smite_Divine_Critical_Unlock,AddChildren) -->
@@ -1210,6 +1228,9 @@
                     <attribute id="UUID" type="guid" value="50e571ec-3dfa-4f2a-8f03-2812b29934c7"/>
                 </node>
                 <node id="Progression">
+                    <!-- DivinePowerPoint Expansion optional feature added (resource for HarnessDivinePower) -->
+                    <!-- <attribute id="Boosts" type="LSString" value=""/> -->
+                    <attribute id="Boosts" type="LSString" value="ActionResource(DivinePowerPoint,1,0)"/>
                     <attribute id="Level" type="uint8" value="6"/>
                     <attribute id="Name" type="LSString" value="NPC_Paladin"/>
                     <!-- <attribute id="PassivesAdded" type="LSString" value=""/> -->
@@ -1318,6 +1339,9 @@
                     <attribute id="UUID" type="guid" value="d844c857-6e8d-45c3-b8fc-3e4d3cff3b3c"/>
                 </node>
                 <node id="Progression">
+                    <!-- DivinePowerPoint Expansion optional feature added (resource for HarnessDivinePower) -->
+                    <!-- <attribute id="Boosts" type="LSString" value=""/> -->
+                    <attribute id="Boosts" type="LSString" value="ActionResource(DivinePowerPoint,1,0)"/>
                     <attribute id="Level" type="uint8" value="18"/>
                     <attribute id="Name" type="LSString" value="NPC_Paladin"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
@@ -1747,7 +1771,8 @@
                     <attribute id="Boosts" type="LSString" value="ActionResource(SpellSlot,2,3);ActionResource(SorceryPoint,1,0)"/>
                     <attribute id="Level" type="uint8" value="5"/>
                     <attribute id="Name" type="LSString" value="NPC_Sorcerer"/>
-                    <attribute id="PassivesAdded" type="LSString" value="UnlockedSpellSlotLevel3"/>
+                    <!-- MagicalGuidance Expansion optional feature added -->
+                    <attribute id="PassivesAdded" type="LSString" value="UnlockedSpellSlotLevel3;MagicalGuidance"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
                     <!-- <attribute id="Selectors" type="LSString" value="SelectSpells(dcbaf2ae-1f45-453e-ab83-cd154f8277a4,1,2,SorcererSpell)"/> -->
                     <attribute id="TableUUID" type="guid" value="2189a72d-6489-4621-8b2c-85d3e7df2f6f"/>

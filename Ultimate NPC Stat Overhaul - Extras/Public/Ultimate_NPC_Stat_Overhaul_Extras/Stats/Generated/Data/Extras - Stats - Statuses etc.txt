@@ -1,0 +1,38 @@
+// ==================================== Grym ====================================
+
+new entry "UND_ADAMANTINEGOLEM_DEFAULT"
+type "StatusData"
+data "StatusType" "BOOST"
+using "UND_ADAMANTINEGOLEM_DEFAULT"
+// data "Boosts" "MovementSpeedLimit(Walk);Resistance(Bludgeoning, Immune);Resistance(Cold, Immune);Resistance(Thunder, Immune);Resistance(Piercing, Immune);Resistance(Slashing, Immune);Resistance(Force, Immune);Resistance(Acid, Immune)"
+data "Boosts" "MovementSpeedLimit(Walk);Resistance(Bludgeoning, Resistant);Resistance(Cold, Immune);Resistance(Thunder, Immune);Resistance(Piercing, Immune);Resistance(Slashing, Immune);Resistance(Force, Immune);Resistance(Acid, Resistant)"
+
+// ==================================== Inquisitor Ch'r'ai W'wargaz: nerfs to his damage and AC debuff he puts on players ====================================
+
+// Nerfs Psychic damage per Mindsteal Link from 1d4 to 1 
+new entry "CRE_MINDSTEAL_LINK_SOURCE"
+type "StatusData"
+data "StatusType" "BOOST"
+using "CRE_MINDSTEAL_LINK_SOURCE"
+// data "DescriptionParams" "1;DealDamage(1d4, Psychic)"
+data "DescriptionParams" "1;DealDamage(1,Psychic)"
+// data "Boosts" "AC(1);CharacterWeaponDamage(1d4, Psychic)"
+data "Boosts" "AC(1);CharacterWeaponDamage(1,Psychic)"
+
+// Reduces AC decrease from 2 to 1
+new entry "CRE_MINDSTEAL_LINK_TARGET"
+type "StatusData"
+data "StatusType" "BOOST"
+using "CRE_MINDSTEAL_LINK_TARGET"
+// data "DescriptionParams" "2"
+data "DescriptionParams" "1"
+// data "Boosts" "Resistance(Psychic, Vulnerable); AC(-2);"
+data "Boosts" "Resistance(Psychic, Vulnerable);AC(-1);"
+
+// Description change for the spell
+new entry "Projectile_CRE_GithyankiInquisitor_Mindsteal_Link"
+type "SpellData"
+data "SpellType" "Projectile"
+using "Projectile_CRE_GithyankiInquisitor_Mindsteal_Link"
+// data "ExtraDescriptionParams" "1;DealDamage(1d4,Psychic);2"
+data "ExtraDescriptionParams" "1;DealDamage(1,Psychic);1"

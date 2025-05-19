@@ -5,7 +5,7 @@
 // By searching the racials in VSC you will be able to see at a glance the separation
 
 // Inhteritance trees are provided as a reference to easily fetch entries from https://bg3.norbyte.dev for further customisation
-// The sibling entries are generally clumped together in inheritence order to make customisation more accessible
+// The sibling entries are generally clumped together in inheritance order to make customisation more accessible
 
 // All racials including Attack of Opportunity should be perpetuated appropriately across all entries, no matter how benign.
 // Spellcasting modifiers and highest mental ability score should be reflecting their class archetype if one is designated.
@@ -32,6 +32,8 @@
 
 // SPELL PASSIVES:
 // CX_Spells_L1, CX_Spells_L1C / CX_Spells_L2, CX_Spells_L2C / CX_Spells_L3, CX_Spells_L3C / CX_Spells_L4, CX_Spells_L4C / CX_Spells_L5, CX_Spells_L5C / CX_Spells_L6, CX_Spells_L6C
+
+//TODO: Make sure no NEW entries from Honour Mode are missing from inheritance trees, e.g. "FOR_Owlbear_Daddy"
 
 // ==================================== Other ====================================
 
@@ -569,7 +571,7 @@ new entry "FlamingFist_Dwarf_Caster"
 type "Character"
 using "FlamingFist_Dwarf_Caster"
 // data "Passives" "Dwarf_DwarvenResilience;AttackOfOpportunity;Darkvision;DarknessRules"
-data "Passives" "CX_Spells_L1;CX_Spells_L1C;Dwarf_DwarvenResilience;AttackOfOpportunity;Darkvision;DarknessRules;Goon_NPC_Flaming_Fist_Boosts"
+data "Passives" "Goon_NPC_Flaming_Fist_Caster_Boosts;CX_Spells_L1;CX_Spells_L1C;Dwarf_DwarvenResilience;AttackOfOpportunity;Darkvision;DarknessRules"
 // data "Progressions" "7417c0c0-383f-11ed-a261-0242ac120002"
 data "Progressions" "44bdbc5e-a003-4d61-87f0-5ced20d3804e"
 
@@ -578,7 +580,7 @@ new entry "FlamingFist_Dwarf_Cleric"
 type "Character"
 using "FlamingFist_Dwarf_Cleric"
 // data "Passives" "Dwarf_DwarvenResilience;AttackOfOpportunity;Darkvision;DarknessRules"
-data "Passives" "Dwarf_DwarvenResilience;AttackOfOpportunity;Darkvision;DarknessRules;Goon_NPC_Flaming_Fist_Boosts;FightingStyle_Protection"
+data "Passives" "Goon_NPC_Flaming_Fist_Cleric_Boosts;Dwarf_DwarvenResilience;AttackOfOpportunity;Darkvision;DarknessRules"
 // data "Progressions" "70c3eb7e-383f-11ed-a261-0242ac120002"
 data "Progressions" "36c3f8de-3293-4d7b-92bc-ceb3c569244b"
 
@@ -587,7 +589,7 @@ new entry "FlamingFist_Dwarf_Melee_Attacker"
 type "Character"
 using "FlamingFist_Dwarf_Melee_Attacker"
 // data "Passives" "Dwarf_DwarvenResilience;AttackOfOpportunity;Darkvision;DarknessRules"
-data "Passives" "Dwarf_DwarvenResilience;AttackOfOpportunity;Darkvision;DarknessRules;Goon_NPC_Flaming_Fist_Boosts;FightingStyle_GreatWeaponFighting;PhalanxFormation_Duergar;Riposte"
+data "Passives" "Goon_NPC_Flaming_Fist_Attacker_Boosts;Dwarf_DwarvenResilience;AttackOfOpportunity;Darkvision;DarknessRules"
 // data "Progressions" "51d47904-383f-11ed-a261-0242ac120002"
 data "Progressions" "0e6da493-5a37-423b-8c28-629462b22faa"
 
@@ -596,7 +598,7 @@ new entry "FlamingFist_Dwarf_Melee_Defender"
 type "Character"
 using "FlamingFist_Dwarf_Melee_Defender"
 // data "Passives" "Dwarf_DwarvenResilience;AttackOfOpportunity;Darkvision;DarknessRules"
-data "Passives" "Dwarf_DwarvenResilience;AttackOfOpportunity;Darkvision;DarknessRules;Goon_NPC_Flaming_Fist_Boosts;FightingStyle_Protection"
+data "Passives" "Goon_NPC_Flaming_Fist_Defender_Boosts;Dwarf_DwarvenResilience;AttackOfOpportunity;Darkvision;DarknessRules"
 // data "Progressions" "5885fa7a-383f-11ed-a261-0242ac120002"
 data "Progressions" "0e6da493-5a37-423b-8c28-629462b22faa"
 
@@ -605,7 +607,7 @@ new entry "FlamingFist_Dwarf_Ranger"
 type "Character"
 using "FlamingFist_Dwarf_Ranger"
 // data "Passives" "Dwarf_DwarvenResilience;AttackOfOpportunity;Darkvision;DarknessRules"
-data "Passives" "Dwarf_DwarvenResilience;AttackOfOpportunity;Darkvision;DarknessRules;Goon_NPC_Flaming_Fist_Boosts;FightingStyle_Archery;CrossbowExpert_PointBlank"
+data "Passives" "Goon_NPC_Flaming_Fist_Ranger_Boosts;Dwarf_DwarvenResilience;AttackOfOpportunity;Darkvision;DarknessRules"
 // data "Progressions" "6cae475a-383f-11ed-a261-0242ac120002"
 data "Progressions" "f0ede459-8b86-48fd-ac11-4432573566a5"
 
@@ -836,7 +838,7 @@ data "Passives" "CX_Barbarian_Wildheart_Boost;FeyAncestry;AttackOfOpportunity;Da
 //  │   ├─ "CHA_Bandit_Elf_Caster"
 //  │   ├─ "Elf_Druid"                                      --- (Has Druid progressions)
 //  │   │   ├─ "DEN_Druids_Elf_Druid"                       --- (Inherits Druid progressions)
-//  │   │   ├─ "DEN_ShadowDruid_Boss"                       --- Kagha - Archdruid, Circle of the Emerald Grove (Inherits Druid progressions)
+//  │   │   ├─ "DEN_ShadowDruid_Boss"
 //  │   │   └─ "LOW_HarperConfrontation_Captain"            --- Captain Leafsong - Harpers (Inherits Druid progressions)
 //  │   ├─ "GLO_CounsellorFlorrick"
 //  │   ├─ "GLO_Desire"                                     --- (Has Wizard progressions)
@@ -858,6 +860,14 @@ type "Character"
 using "CHA_Bandit_Elf_Caster"
 // data "Passives" "FeyAncestry;DarknessRules;Darkvision"
 data "Passives" "CX_Spells_L1;CX_Spells_L1C;FeyAncestry;AttackOfOpportunity;DarknessRules;Darkvision"
+
+//TODO: Custom legendary action?
+// Kagha - Archdruid, Circle of the Emerald Grove (Inherits Druid progressions, added Boss boost)
+new entry "DEN_ShadowDruid_Boss"
+type "Character"
+using "DEN_ShadowDruid_Boss"
+// data "Passives" "FeyAncestry;AttackOfOpportunity;DarknessRules;Darkvision"
+data "Passives" "CX_Boss_Boost;FeyAncestry;AttackOfOpportunity;DarknessRules;Darkvision"
 
 // Counsellor Florrick - Advisor to the Archduke (Inherits Wizard progressions)
 new entry "GLO_CounsellorFlorrick"
@@ -968,12 +978,12 @@ data "Passives" "FeyAncestry;AttackOfOpportunity;DarknessRules;Darkvision"
 //  │   │   └─ "SCL_Caravan_Ambusher_Branthos"          --- Harper Branthos (Inherits Fighter progressions)
 //  │   └─ "SHA_Nightsong"
 
-// Aylin - The Nightsong, Singer of Sorrows, Sword of the Moonmaiden, Daughter of Selûne (Has Paladin progressions, added Vengeance subclass)
+// Aylin - The Nightsong, Singer of Sorrows, Sword of the Moonmaiden, Daughter of Selûne (Has Paladin progressions, added Vengeance subclass, added Boss boost)
 new entry "SHA_Nightsong"
 type "Character"
 using "SHA_Nightsong"
 // data "Passives" "AttackOfOpportunity;DarknessRules;ExtraAttack;"
-data "Passives" "CX_Paladin_Vengeance_Boost;AttackOfOpportunity;DarknessRules;ExtraAttack"
+data "Passives" "CX_Boss_Boost;CX_Paladin_Vengeance_Boost;AttackOfOpportunity;DarknessRules;ExtraAttack"
 
 // "_Elf"
 //  ├─ "Elf_Monk"                                   --- (Has Monk progressions)
@@ -1020,7 +1030,7 @@ new entry "FlamingFist_Elf_Caster"
 type "Character"
 using "FlamingFist_Elf_Caster"
 // data "Passives" "FeyAncestry;AttackOfOpportunity;DarknessRules;Darkvision"
-data "Passives" "CX_Spells_L1;CX_Spells_L1C;FeyAncestry;AttackOfOpportunity;DarknessRules;Darkvision"
+data "Passives" "Goon_NPC_Flaming_Fist_Caster_Boosts;CX_Spells_L1;CX_Spells_L1C;FeyAncestry;AttackOfOpportunity;DarknessRules;Darkvision"
 // data "Progressions" "7417c0c0-383f-11ed-a261-0242ac120002"
 data "Progressions" "44bdbc5e-a003-4d61-87f0-5ced20d3804e"
 
@@ -1029,7 +1039,7 @@ new entry "FlamingFist_Elf_Cleric"
 type "Character"
 using "FlamingFist_Elf_Cleric"
 // data "Passives" "FeyAncestry;AttackOfOpportunity;DarknessRules;Darkvision"
-data "Passives" "FeyAncestry;AttackOfOpportunity;DarknessRules;Darkvision;Goon_NPC_Flaming_Fist_Boosts;FightingStyle_Protection"
+data "Passives" "Goon_NPC_Flaming_Fist_Cleric_Boosts;FeyAncestry;AttackOfOpportunity;DarknessRules;Darkvision"
 // data "Progressions" "70c3eb7e-383f-11ed-a261-0242ac120002"
 data "Progressions" "36c3f8de-3293-4d7b-92bc-ceb3c569244b"
 
@@ -1038,7 +1048,7 @@ new entry "FlamingFist_Elf_Melee_Attacker"
 type "Character"
 using "FlamingFist_Elf_Melee_Attacker"
 // data "Passives" "FeyAncestry;AttackOfOpportunity;DarknessRules;Darkvision"
-data "Passives" "FeyAncestry;AttackOfOpportunity;DarknessRules;Darkvision;Goon_NPC_Flaming_Fist_Boosts;FightingStyle_GreatWeaponFighting;PhalanxFormation_Duergar;Riposte"
+data "Passives" "Goon_NPC_Flaming_Fist_Attacker_Boosts;FeyAncestry;AttackOfOpportunity;DarknessRules;Darkvision"
 // data "Progressions" "51d47904-383f-11ed-a261-0242ac120002"
 data "Progressions" "0e6da493-5a37-423b-8c28-629462b22faa"
 
@@ -1047,7 +1057,7 @@ new entry "FlamingFist_Elf_Melee_Defender"
 type "Character"
 using "FlamingFist_Elf_Melee_Defender"
 // data "Passives" "FeyAncestry;AttackOfOpportunity;DarknessRules;Darkvision"
-data "Passives" "FeyAncestry;AttackOfOpportunity;DarknessRules;Darkvision;Goon_NPC_Flaming_Fist_Boosts;FightingStyle_Protection"
+data "Passives" "Goon_NPC_Flaming_Fist_Defender_Boosts;FeyAncestry;AttackOfOpportunity;DarknessRules;Darkvision"
 // data "Progressions" "5885fa7a-383f-11ed-a261-0242ac120002"
 data "Progressions" "0e6da493-5a37-423b-8c28-629462b22faa"
 
@@ -1056,7 +1066,7 @@ new entry "FlamingFist_Elf_Ranger"
 type "Character"
 using "FlamingFist_Elf_Ranger"
 // data "Passives" "FeyAncestry;AttackOfOpportunity;DarknessRules;Darkvision"
-data "Passives" "FeyAncestry;AttackOfOpportunity;DarknessRules;Darkvision;Goon_NPC_Flaming_Fist_Boosts;FightingStyle_Archery;CrossbowExpert_PointBlank"
+data "Passives" "Goon_NPC_Flaming_Fist_Ranger_Boosts;FeyAncestry;AttackOfOpportunity;DarknessRules;Darkvision"
 // data "Progressions" "6cae475a-383f-11ed-a261-0242ac120002"
 data "Progressions" "f0ede459-8b86-48fd-ac11-4432573566a5"
 
@@ -1080,12 +1090,13 @@ using "MOO_ZealotOfTheAbsolute_Elf"
 // data "Passives" "AttackOfOpportunity;FeyAncestry;DarknessRules;Darkvision;FightingStyle_GreatWeaponFighting"
 data "Passives" "CX_Paladin_Oathbreaker_Boost;FeyAncestry;AttackOfOpportunity;DarknessRules;Darkvision;FightingStyle_GreatWeaponFighting"
 
-// Ketheric Thorm - Chosen of Myrkul - NO HONOUR MODE PASSIVES (Inherits Paladin progressions) 
+//TODO: Add custom Legendary actions to Ketheric Thorm
+// Ketheric Thorm - Chosen of Myrkul - NO HONOUR MODE INHERITANCE PASSIVES (Inherits Paladin progressions, added Oathbreaker subclass, added Boss boost) 
 new entry "SCL_Ketheric"
 type "Character"
 using "SCL_Ketheric"
 // data "Passives" "AttackOfOpportunity;FeyAncestry;DarknessRules;Darkvision;ExtraAttack;FightingStyle_Defense;ImmutableForm"
-data "Passives" "CX_Paladin_Oathbreaker_Boost;FeyAncestry;AttackOfOpportunity;DarknessRules;Darkvision;ExtraAttack;FightingStyle_Defense;ImmutableForm"
+data "Passives" "CX_Boss_Boost;CX_Paladin_Oathbreaker_Boost;FeyAncestry;AttackOfOpportunity;DarknessRules;Darkvision;ExtraAttack;FightingStyle_Defense;ImmutableForm"
 
 // "_Elf"
 //  ├─ "_Elf_ShadarKai"
@@ -1157,13 +1168,13 @@ using "Elf_Drow_Caster"
 // data "Passives" "FeyAncestry;SunlightSensitivity;AttackOfOpportunity;DarknessRules;Darkvision"
 data "Passives" "FeyAncestry;AttackOfOpportunity;DarknessRules;SuperiorDarkvision;SunlightSensitivity"
 
-// Viconia DeVir - Mother Superior of Shar - HONOUR MODE INHERITANCE (Has Cleric progressions)
+// Viconia DeVir - Mother Superior of Shar - HONOUR MODE INHERITANCE (Has Cleric progressions, added Trickery Domain subclass, added Boss boost)
 new entry "LOW_HouseOfGrief_Viconia"
 type "Character"
 using "LOW_HouseOfGrief_Viconia"
 // data "Passives" "AttackOfOpportunity;FeyAncestry;SunlightSensitivity;DarknessRules;Darkvision;LOW_HouseOfGrief_Cultists_Melee;LOW_HouseOfGrief_Cultists_Sight;LOW_HouseOfGrief_Viconia_Heart_Empowered;MagicResistance;"
 // data "Passives" "AttackOfOpportunity;FeyAncestry;SunlightSensitivity;DarknessRules;Darkvision;LOW_HouseOfGrief_Cultists_Melee;LOW_HouseOfGrief_Cultists_Sight;LOW_HouseOfGrief_Viconia_Heart_Empowered;MagicResistance;LegendaryAction_LOW_Viconia_DarkSentinel;LegendaryAction_LOW_Viconia_HeartWrench;LOW_Viconia_UmbralResonance"
-data "Passives" "CX_Cleric_Trickery_Boost;CX_Spells_L5;CX_Spells_L5C;CX_Spells_L6;CX_Spells_L6C;FeyAncestry;AttackOfOpportunity;DarknessRules;SuperiorDarkvision;SunlightSensitivity;MagicResistance;LOW_HouseOfGrief_Cultists_Melee;LOW_HouseOfGrief_Cultists_Sight;LOW_HouseOfGrief_Viconia_Heart_Empowered;LegendaryAction_LOW_Viconia_DarkSentinel;LegendaryAction_LOW_Viconia_HeartWrench;LOW_Viconia_UmbralResonance"
+data "Passives" "CX_Boss_Boost;CX_Cleric_Trickery_Boost;CX_Spells_L5;CX_Spells_L5C;CX_Spells_L6;CX_Spells_L6C;FeyAncestry;AttackOfOpportunity;DarknessRules;SuperiorDarkvision;SunlightSensitivity;MagicResistance;LOW_HouseOfGrief_Cultists_Melee;LOW_HouseOfGrief_Cultists_Sight;LOW_HouseOfGrief_Viconia_Heart_Empowered;LegendaryAction_LOW_Viconia_DarkSentinel;LegendaryAction_LOW_Viconia_HeartWrench;LOW_Viconia_UmbralResonance"
 
 // Echo of Sendai - Bhaalspawn (Replaced Wizard progressions with Cleric progressions. In BG2 she's a mutliclass Wizard/Cleric, but progressions aside all of her stats and spells support Cleric more in BG3; she even has Wisdom for her spellcasting ability)
 new entry "LOW_Sendai"
@@ -1210,13 +1221,13 @@ using "HAG_Masked_Fighter"
 // data "Passives" "AttackOfOpportunity;DarknessRules;HAG_MaskOfVengeance"
 data "Passives" "FeyAncestry;AttackOfOpportunity;DarknessRules;SuperiorDarkvision;SunlightSensitivity;HAG_MaskOfVengeance"
 
-// Nere - True Soul of the Absolute - HONOUR MODE INHERITANCE (Inherits Fighter progressions, 100% a top g super sigma Eldritch Knight on god fr fr. Absolute's University don't let the matrix get you down.)
+// Nere - True Soul of the Absolute - HONOUR MODE INHERITANCE (Inherits Fighter progressions, 100% a top g super sigma Eldritch Knight on god fr fr. Absolute's University don't let the matrix get you down. Added Boss boost)
 new entry "UND_Nere"
 type "Character"
 using "UND_Nere"
 // data "Passives" "Muscular_Athletics;AttackOfOpportunity;ExtraAttack;SunlightSensitivity;FeyAncestry;DarknessRules;Darkvision;AdditionalSpellSlot_Level_1; AdditionalSpellSlot_Level_1; AdditionalSpellSlot_Level_1; AdditionalSpellSlot_Level_1; AdditionalSpellSlot_Level_2; AdditionalSpellSlot_Level_2"
 // data "Passives" "Muscular_Athletics;AttackOfOpportunity;ExtraAttack;SunlightSensitivity;FeyAncestry;DarknessRules;Darkvision;AdditionalSpellSlot_Level_1; AdditionalSpellSlot_Level_1; AdditionalSpellSlot_Level_1; AdditionalSpellSlot_Level_1; AdditionalSpellSlot_Level_2; AdditionalSpellSlot_Level_2;LegendaryAction_UND_Nere_PsychicMirror"
-data "Passives" "CX_Fighter_EldritchKnight_Boost;CX_Spells_L2;CX_Spells_L3C;FeyAncestry;AttackOfOpportunity;DarknessRules;SuperiorDarkvision;SunlightSensitivity;DualWielder_BonusAC;DualWielder_PassiveBonuses;ExtraAttack;Muscular_Athletics;AdditionalSpellSlot_Level_1;AdditionalSpellSlot_Level_1;AdditionalSpellSlot_Level_1;AdditionalSpellSlot_Level_1;AdditionalSpellSlot_Level_2;AdditionalSpellSlot_Level_2;LegendaryAction_UND_Nere_PsychicMirror"
+data "Passives" "CX_Boss_Boost;CX_Fighter_EldritchKnight_Boost;CX_Spells_L2;CX_Spells_L3C;FeyAncestry;AttackOfOpportunity;DarknessRules;SuperiorDarkvision;SunlightSensitivity;DualWielder_BonusAC;DualWielder_PassiveBonuses;ExtraAttack;Muscular_Athletics;AdditionalSpellSlot_Level_1;AdditionalSpellSlot_Level_1;AdditionalSpellSlot_Level_1;AdditionalSpellSlot_Level_1;AdditionalSpellSlot_Level_2;AdditionalSpellSlot_Level_2;LegendaryAction_UND_Nere_PsychicMirror"
 
 // "_Elf_Drow"
 //  ├─ "Elf_Drow_Ranger"
@@ -1282,11 +1293,11 @@ data "Passives" "CX_Paladin_Oathbreaker_Boost;FeyAncestry;AttackOfOpportunity;Da
 //  ├─ "_Humanoid"
 //  │   ├─ "_Giants"
 //  │   │   ├─ "Ogre"
-//  │   │   │   ├─ "CAMP_MintharaAmbush_Ogre"
+//  │   │   │   ├─ "CAMP_MintharaAmbush_Ogre"   --- (Inherits Barbarian progressions, inherits Berserker subclass)
 //  │   │   │   ├─ "FOR_OgreCaptain"
-//  │   │   │   ├─ "FOR_OgreMate"               --- Buthir
-//  │   │   │   ├─ "FOR_OgreMercenary"          --- Chock, Fank
-//  │   │   │   ├─ "GOB_Ogre_Bodyguard"         --- Polma - Bodyguard of the High Priestess, Cult of the Absolute
+//  │   │   │   ├─ "FOR_OgreMate"               --- Buthir (Inherits Barbarian progressions, inherits Berserker subclass)
+//  │   │   │   ├─ "FOR_OgreMercenary"          --- Chock, Fank (Inherits Barbarian progressions, inherits Berserker subclass)
+//  │   │   │   ├─ "GOB_Ogre_Bodyguard"         --- Polma - Bodyguard of the High Priestess, Cult of the Absolute (Inherits Barbarian progressions, inherits Berserker subclass)
 //  │   │   │   └─ "Test_Combat"
 //  │   │   │       ├─ "END_SaferoomHelper"
 //  │   │   │       ├─ "Test_Throwing_Medium"
@@ -1343,19 +1354,19 @@ using "Githyanki_Teenager"
 // data "Passives" "AttackOfOpportunity;DarknessRules"
 data "Passives" "CX_Martial_Boost;AttackOfOpportunity;DarknessRules"
 
-// Ptaris, Githyanki Prodigy - HONOUR MODE INHERITANCE (I don't really know what to do with this guy, added custom Sorcerer progressions and Storm Sorcery subclass)
+// Ptaris, Githyanki Prodigy - HONOUR MODE INHERITANCE (I don't really know what to do with this guy, added custom Sorcerer progressions and Storm Sorcery subclass, added Boss boost)
 new entry "LOW_Githyanki_Prodigy"
 type "Character"
 using "LOW_Githyanki_Prodigy"
 // data "Passives" "AttackOfOpportunity;DarknessRules;LOW_GithProdigy_ReactiveDisplacement;LOW_GithProdigy_PsionicSkin;LOW_GithProdigy_UnnaturalGrowth"
 // data "Passives" "AttackOfOpportunity;DarknessRules;LOW_GithProdigy_ReactiveDisplacement;LOW_GithProdigy_PsionicSkin;LOW_GithProdigy_UnnaturalGrowth;LegendaryAction_LOW_GithyankiProdigy_PacifyingAura"
-data "Passives" "CX_Sorcerer_StormSorcery_Boost;AttackOfOpportunity;DarknessRules;LOW_GithProdigy_ReactiveDisplacement;LOW_GithProdigy_PsionicSkin;LOW_GithProdigy_UnnaturalGrowth;LegendaryAction_LOW_GithyankiProdigy_PacifyingAura"
+data "Passives" "CX_Boss_Boost;CX_Sorcerer_StormSorcery_Boost;AttackOfOpportunity;DarknessRules;LOW_GithProdigy_ReactiveDisplacement;LOW_GithProdigy_PsionicSkin;LOW_GithProdigy_UnnaturalGrowth;LegendaryAction_LOW_GithyankiProdigy_PacifyingAura"
 // data "Progressions" ""
 data "Progressions" "2189a72d-6489-4621-8b2c-85d3e7df2f6f"
 
 // "_Githyanki"
 //  ├─ "Githyanki_Caster"                       --- (Has Wizard progressions)
-//  │   ├─ "CRE_AstralPlane_GithMage"           --- Unused
+//  │   ├─ "CRE_AstralPlane_GithMage"
 //  │   ├─ "CRE_Githyanki_Ghustil"              --- Ghustil Stornugoss, doctor in the creche (Inherits Wizard progressions)
 //  │   ├─ "CRE_Githyanki_Inquisitor"
 //  │   ├─ "Githyanki_GateMaster"               --- Gate Master Zyrlak, Gate Master Ri'zel (Inherits Wizard progressions)
@@ -1367,20 +1378,20 @@ data "Progressions" "2189a72d-6489-4621-8b2c-85d3e7df2f6f"
 //  │   ├─ "PLA_Githyanki_Caster"               --- Unused (Inherits Wizard progressions)
 //  │   └─ "TWN_Githyanki_Warlock"
 
-// (Added Wizard progressions)
+// Unused (Added Wizard progressions)
 new entry "CRE_AstralPlane_GithMage"
 type "Character"
 using "CRE_AstralPlane_GithMage"
 // data "Progressions" ""
 data "Progressions" "44bdbc5e-a003-4d61-87f0-5ced20d3804e"
 
-// Ch'r'ai W'wargaz - HONOUR MODE INHERITANCE (Swapped Wizard progressions for Fighter, and made him an Eldritch Knight)
+// Ch'r'ai W'wargaz - HONOUR MODE INHERITANCE (Swapped Wizard progressions for Fighter, added Eldritch Knight subclass, added Boss boost)
 new entry "CRE_Githyanki_Inquisitor"
 type "Character"
 using "CRE_Githyanki_Inquisitor"
 // data "Passives" "ExtraAttack;Parry_Githyanki;AttackOfOpportunity;DarknessRules;Surprise_Immunity;Parry_Githyanki_EquipTrigger"
 // data "Passives" "ExtraAttack;Parry_Githyanki;AttackOfOpportunity;DarknessRules;Surprise_Immunity;Parry_Githyanki_EquipTrigger;LegendaryAction_Interrupt_CRE_GithyankiInquisitor_VlaakithsMindSword"
-data "Passives" "CX_Fighter_EldritchKnight_Boost;AttackOfOpportunity;DarknessRules;ExtraAttack;Parry_Githyanki;Parry_Githyanki_EquipTrigger;Surprise_Immunity;LegendaryAction_Interrupt_CRE_GithyankiInquisitor_VlaakithsMindSword"
+data "Passives" "CX_Boss_Boost;CX_Fighter_EldritchKnight_Boost;AttackOfOpportunity;DarknessRules;ExtraAttack;Parry_Githyanki;Parry_Githyanki_EquipTrigger;Surprise_Immunity;LegendaryAction_Interrupt_CRE_GithyankiInquisitor_VlaakithsMindSword"
 // data "Progressions" "44bdbc5e-a003-4d61-87f0-5ced20d3804e"
 data "Progressions" "0e6da493-5a37-423b-8c28-629462b22faa"
 
@@ -1427,13 +1438,14 @@ data "Passives" "CX_Fighter_EldritchKnight_Boost;CX_Spells_L1;CX_Spells_L2;CX_Sp
 // data "Progressions" "44bdbc5e-a003-4d61-87f0-5ced20d3804e"
 data "Progressions" "0e6da493-5a37-423b-8c28-629462b22faa"
 
-// Ch'r'ai Tska'an - HONOUR MODE INHERITANCE (Has Warlock progressions)
+// TODO: She is definitely an Undead Patron Warlock, but that's not a thing, so maybe a custom one should be added. It's big scope creep.
+// Ch'r'ai Tska'an - HONOUR MODE INHERITANCE (Has Warlock progressions, added Great Old One subclass because it's the most fitting of vanilla options, added Boss boost)
 new entry "TWN_Githyanki_Warlock"
 type "Character"
 using "TWN_Githyanki_Warlock"
 // data "Passives" "AgonizingBlast;RepellingBlast;DevilsSight;WarMagic_Githyanki;AttackOfOpportunity;DarknessRules"
 // data "Passives" "AgonizingBlast_VlaakithKillers_Technical;DevilsSight;WarMagic_Githyanki;AttackOfOpportunity;DarknessRules;LegendaryAction_TWN_VlaakithsKillers_SoulSyphon"
-data "Passives" "AttackOfOpportunity;DarknessRules;WarMagic_Githyanki;DevilsSight;AgonizingBlast_VlaakithKillers_Technical;LegendaryAction_TWN_VlaakithsKillers_SoulSyphon"
+data "Passives" "CX_Boss_Boost;CX_Warlock_GreatOldOne_Boost;AttackOfOpportunity;DarknessRules;WarMagic_Githyanki;DevilsSight;AgonizingBlast_VlaakithKillers_Technical;LegendaryAction_TWN_VlaakithsKillers_SoulSyphon"
 
 // "_Githyanki"
 //  ├─ "Githyanki_Gishra_Melee"
@@ -1477,7 +1489,7 @@ using "CRE_AstralPlane_GithRaider"
 // data "Progressions" ""
 data "Progressions" "0e6da493-5a37-423b-8c28-629462b22faa"
 
-// Kith'rak Voss (Inherits Fighter progressions, making him an Eldritch Knight)
+// Kith'rak Voss (Inherits Fighter progressions, added Eldritch Knight subclass)
 new entry "GLO_Voss"
 type "Character"
 using "GLO_Voss"
@@ -1491,22 +1503,23 @@ using "Githyanki_Warrior_Strong"
 // data "Passives" "ExtraAttack;AttackOfOpportunity;DarknessRules"
 data "Passives" "AttackOfOpportunity;DarknessRules;ExtraAttack;Parry_Githyanki;Parry_Githyanki_EquipTrigger"
 
-// Ch'r'ai Har'rak, Paladin of Vlaakith - HONOUR MODE INHERITANCE (Added Paladin progressions, definitely a Vengeance Paladin of the vanilla options)
+// Ch'r'ai Har'rak, Paladin of Vlaakith - HONOUR MODE INHERITANCE (Added Paladin progressions, added Oath of Vengeance subclass, added Boss boost)
 new entry "LOW_Githyanki_Paladin"
 type "Character"
 using "LOW_Githyanki_Paladin"
 // data "Passives" "AttackOfOpportunity;DarknessRules;ExtraAttack;Parry_Githyanki_Supreme;FightingStyle_Defense;Parry_Githyanki_Supreme_EquipTrigger"
 // data "Passives" "AttackOfOpportunity;DarknessRules;ExtraAttack;Parry_Githyanki_Supreme;FightingStyle_Defense;Parry_Githyanki_Supreme_EquipTrigger;LegendaryAction_LOW_GithyankiPaladin_VlaakithsCry"
-data "Passives" "CX_Paladin_Vengeance_Boost;AttackOfOpportunity;DarknessRules;ExtraAttack;Parry_Githyanki_Supreme;Parry_Githyanki_Supreme_EquipTrigger;FightingStyle_Defense;LegendaryAction_LOW_GithyankiPaladin_VlaakithsCry"
+data "Passives" "CX_Boss_Boost;CX_Paladin_Vengeance_Boost;AttackOfOpportunity;DarknessRules;ExtraAttack;Parry_Githyanki_Supreme;Parry_Githyanki_Supreme_EquipTrigger;FightingStyle_Defense;LegendaryAction_LOW_GithyankiPaladin_VlaakithsCry"
 // data "Progressions" ""
 data "Progressions" "8726b2c4-edc0-4905-b82f-60a4baba0733"
 
-// Sarth Baretha - Warrior of the One Sky (Inherits Fighter progressions) (Added "Surprise_Immunity"???)
+// TODO: Custom Legendary action
+// Sarth Baretha - Warrior of the One Sky (Inherits Fighter progressions, added Battle Master subclass, added Boss boost) (Added "Surprise_Immunity"???)
 new entry "PLA_Githyanki_Captain"
 type "Character"
 using "PLA_Githyanki_Captain"
 // data "Passives" "ExtraAttack;Parry_Githyanki;AttackOfOpportunity;DarknessRules;Parry_Githyanki_EquipTrigger"
-data "Passives" "CX_Fighter_BattleMaster_Boost;AttackOfOpportunity;DarknessRules;Parry_Githyanki;Parry_Githyanki_EquipTrigger;Surprise_Immunity"
+data "Passives" "CX_Boss_Boost;CX_Fighter_BattleMaster_Boost;AttackOfOpportunity;DarknessRules;Parry_Githyanki;Parry_Githyanki_EquipTrigger;Surprise_Immunity"
 
 // "_Githyanki"
 //  ├─ "Githyanki_Ranger"                       --- (Has Ranger progressions)
@@ -1561,12 +1574,13 @@ data "Passives" "CX_Monk_OpenHand_Boost;AttackOfOpportunity;DarknessRules;Monk_S
 //  │   │   ├─ "Gnoll_Flind"        --- Flind - Gnoll Warlord
 //  │   │   └─ "Gnoll_Hunter"
 
-// Flind (Added Barbarian progressions, and Berserker subclass)
+//TODO: Custom legendary action?
+// Flind (Added Barbarian progressions, and Berserker subclass, added Boss boost)
 new entry "Gnoll_Flind"
 type "Character"
 using "Gnoll_Flind"
 // data "Passives" "ImmuneToDisarm;AttackOfOpportunity;Darkvision;DarknessRules"
-data "Passives" "CX_Barbarian_Berserker_Boost;AttackOfOpportunity;Darkvision;DarknessRules;ImmuneToDisarm"
+data "Passives" "CX_Boss_Boost;CX_Barbarian_Berserker_Boost;AttackOfOpportunity;Darkvision;DarknessRules;ImmuneToDisarm"
 // data "Progressions" ""
 data "Progressions" "56db8107-e04c-4fe3-94f3-fd4acd44cd4a"
 
@@ -1608,7 +1622,7 @@ new entry "FlamingFist_Gnome_Caster"
 type "Character"
 using "FlamingFist_Gnome_Caster"
 // data "Passives" "Gnome_Cunning;Gnome_Speed;AttackOfOpportunity;DarknessRules;Darkvision"
-data "Passives" "CX_Spells_L1;CX_Spells_L1C;Gnome_Cunning;Gnome_Speed;AttackOfOpportunity;DarknessRules;Darkvision"
+data "Passives" "Goon_NPC_Flaming_Fist_Caster_Boosts;CX_Spells_L1;CX_Spells_L1C;Gnome_Cunning;Gnome_Speed;AttackOfOpportunity;DarknessRules;Darkvision"
 // data "Progressions" "7417c0c0-383f-11ed-a261-0242ac120002"
 data "Progressions" "44bdbc5e-a003-4d61-87f0-5ced20d3804e"
 
@@ -1617,7 +1631,7 @@ new entry "FlamingFist_Gnome_Cleric"
 type "Character"
 using "FlamingFist_Gnome_Cleric"
 // data "Passives" "Gnome_Cunning;Gnome_Speed;AttackOfOpportunity;DarknessRules;Darkvision"
-data "Passives" "Gnome_Cunning;Gnome_Speed;AttackOfOpportunity;DarknessRules;Darkvision;Goon_NPC_Flaming_Fist_Boosts;FightingStyle_Protection"
+data "Passives" "Goon_NPC_Flaming_Fist_Cleric_Boosts;Gnome_Cunning;Gnome_Speed;AttackOfOpportunity;DarknessRules;Darkvision"
 // data "Progressions" "70c3eb7e-383f-11ed-a261-0242ac120002"
 data "Progressions" "36c3f8de-3293-4d7b-92bc-ceb3c569244b"
 
@@ -1626,7 +1640,7 @@ new entry "FlamingFist_Gnome_Melee_Attacker"
 type "Character"
 using "FlamingFist_Gnome_Melee_Attacker"
 // data "Passives" "Gnome_Cunning;Gnome_Speed;AttackOfOpportunity;DarknessRules;Darkvision"
-data "Passives" "Gnome_Cunning;Gnome_Speed;AttackOfOpportunity;DarknessRules;Darkvision;Goon_NPC_Flaming_Fist_Boosts;FightingStyle_GreatWeaponFighting;PhalanxFormation_Duergar;Riposte"
+data "Passives" "Goon_NPC_Flaming_Fist_Attacker_Boosts;;Gnome_Cunning;Gnome_Speed;AttackOfOpportunity;DarknessRules;Darkvision"
 // data "Progressions" "51d47904-383f-11ed-a261-0242ac120002"
 data "Progressions" "0e6da493-5a37-423b-8c28-629462b22faa"
 
@@ -1635,18 +1649,18 @@ new entry "FlamingFist_Gnome_Melee_Defender"
 type "Character"
 using "FlamingFist_Gnome_Melee_Defender"
 // data "Passives" "Gnome_Cunning;Gnome_Speed;AttackOfOpportunity;DarknessRules;Darkvision"
-data "Passives" "Gnome_Cunning;Gnome_Speed;AttackOfOpportunity;DarknessRules;Darkvision;Goon_NPC_Flaming_Fist_Boosts;FightingStyle_Protection"
+data "Passives" "Goon_NPC_Flaming_Fist_Defender_Boosts;Gnome_Cunning;Gnome_Speed;AttackOfOpportunity;DarknessRules;Darkvision"
 // data "Progressions" "5885fa7a-383f-11ed-a261-0242ac120002"
 data "Progressions" "0e6da493-5a37-423b-8c28-629462b22faa"
 
-// Gauntlet Devella Fountainhead - Constable of the Flaming Fist (Swapped from Fighter progressions to Paladin, Devotion subclass feels right)
+// Gauntlet Devella Fountainhead - Constable of the Flaming Fist (Swapped from Fighter progressions to Paladin, added Devotion subclass)
 new entry "LOW_DevellaFountainHead"
 type "Character"
 using "LOW_DevellaFountainHead"
 // data "DefaultBoosts" "ActionResource(SpellSlot,4,1);ActionResource(SpellSlot,3,2);ActionResource(SpellSlot,3,3);ActionResource(ChannelOath,1,0);"
 data "DefaultBoosts" ""
 // data "Passives" "AttackOfOpportunity;DarknessRules;Darkvision;Gnome_Cunning;Gnome_Speed;ImprovedDivineSmite"
-data "Passives" "CX_Paladin_Devotion_Boost;Gnome_Cunning;Gnome_Speed;AttackOfOpportunity;DarknessRules;Darkvision;ImprovedDivineSmite;Goon_NPC_Flaming_Fist_Boosts;FightingStyle_GreatWeaponFighting"
+data "Passives" "Goon_NPC_Flaming_Fist_Defender_Boosts;CX_Paladin_Devotion_Boost;Gnome_Cunning;Gnome_Speed;AttackOfOpportunity;DarknessRules;Darkvision;ImprovedDivineSmite"
 // data "Progressions" "5885fa7a-383f-11ed-a261-0242ac120002"
 data "Progressions" "8726b2c4-edc0-4905-b82f-60a4baba0733"
 
@@ -1655,7 +1669,7 @@ new entry "FlamingFist_Gnome_Ranger"
 type "Character"
 using "FlamingFist_Gnome_Ranger"
 // data "Passives" "Gnome_Cunning;Gnome_Speed;AttackOfOpportunity;DarknessRules;Darkvision"
-data "Passives" "Gnome_Cunning;Gnome_Speed;AttackOfOpportunity;DarknessRules;Darkvision;Goon_NPC_Flaming_Fist_Boosts;FightingStyle_Archery;CrossbowExpert_PointBlank"
+data "Passives" "Goon_NPC_Flaming_Fist_Ranger_Boosts;Gnome_Cunning;Gnome_Speed;AttackOfOpportunity;DarknessRules;Darkvision"
 // data "Progressions" "6cae475a-383f-11ed-a261-0242ac120002"
 data "Progressions" "f0ede459-8b86-48fd-ac11-4432573566a5"
 
@@ -1913,14 +1927,14 @@ data "DefaultBoosts" "BlockRegainHP(Undead;Construct)"
 // data "Passives" "Darkvision;DarknessRules"
 data "Passives" "CX_Spells_L1;CX_Spells_L1C;AttackOfOpportunity;Darkvision;DarknessRules"
 
-// True Soul Gut - High Priestess of the Absolute, Cult of the Absolute (Swapped Wizard progressions for Cleric progressions, let her keep the inherited spell slots from Goblin_Caster because she's a boss and it may have been intentional design)
+// True Soul Gut - High Priestess of the Absolute, Cult of the Absolute (Swapped Wizard progressions for Cleric progressions, added Boss boost, let her keep the inherited spell slots from Goblin_Caster because she's a boss and it may have been intentional design)
 new entry "GOB_Priestess"
 type "Character"
 using "GOB_Priestess"
 // data "DefaultBoosts" "BlockRegainHP(Undead;Construct)"
 data "DefaultBoosts" "ActionResource(SpellSlot,3,1); BlockRegainHP(Undead;Construct)"
 // data "Passives" "AttackOfOpportunity;Darkvision;DarknessRules"
-data "Passives" "CX_Spells_L1;CX_Spells_L2;CX_Spells_L2C;AttackOfOpportunity;Darkvision;DarknessRules"
+data "Passives" "CX_Boss_Boost;CX_Spells_L1;CX_Spells_L2;CX_Spells_L2C;AttackOfOpportunity;Darkvision;DarknessRules"
 // data "Progressions" "44bdbc5e-a003-4d61-87f0-5ced20d3804e"
 data "Progressions" "36c3f8de-3293-4d7b-92bc-ceb3c569244b"
 
@@ -2143,7 +2157,7 @@ new entry "FlamingFist_HalfElf_Caster"
 type "Character"
 using "FlamingFist_HalfElf_Caster"
 // data "Passives" "FeyAncestry;AttackOfOpportunity;Darkvision;DarknessRules"
-data "Passives" "CX_Spells_L1;CX_Spells_L1C;FeyAncestry;HumanMilitia;AttackOfOpportunity;Darkvision;DarknessRules"
+data "Passives" "Goon_NPC_Flaming_Fist_Caster_Boosts;CX_Spells_L1;CX_Spells_L1C;FeyAncestry;HumanMilitia;AttackOfOpportunity;Darkvision;DarknessRules"
 // data "Progressions" "7417c0c0-383f-11ed-a261-0242ac120002"
 data "Progressions" "44bdbc5e-a003-4d61-87f0-5ced20d3804e"
 
@@ -2152,7 +2166,7 @@ new entry "FlamingFist_HalfElf_Cleric"
 type "Character"
 using "FlamingFist_HalfElf_Cleric"
 // data "Passives" "FeyAncestry;AttackOfOpportunity;Darkvision;DarknessRules"
-data "Passives" "FeyAncestry;HumanMilitia;AttackOfOpportunity;Darkvision;DarknessRules;Goon_NPC_Flaming_Fist_Boosts;FightingStyle_Protection"
+data "Passives" "Goon_NPC_Flaming_Fist_Cleric_Boosts;FeyAncestry;HumanMilitia;AttackOfOpportunity;Darkvision;DarknessRules"
 // data "Progressions" "70c3eb7e-383f-11ed-a261-0242ac120002"
 data "Progressions" "36c3f8de-3293-4d7b-92bc-ceb3c569244b"
 
@@ -2161,7 +2175,7 @@ new entry "FlamingFist_HalfElf_Melee_Attacker"
 type "Character"
 using "FlamingFist_HalfElf_Melee_Attacker"
 // data "Passives" "FeyAncestry;AttackOfOpportunity;Darkvision;DarknessRules"
-data "Passives" "FeyAncestry;HumanMilitia;AttackOfOpportunity;Darkvision;DarknessRules;Goon_NPC_Flaming_Fist_Boosts;FightingStyle_GreatWeaponFighting;PhalanxFormation_Duergar;Riposte"
+data "Passives" "Goon_NPC_Flaming_Fist_Attacker_Boosts;FeyAncestry;HumanMilitia;AttackOfOpportunity;Darkvision;DarknessRules"
 // data "Progressions" "51d47904-383f-11ed-a261-0242ac120002"
 data "Progressions" "0e6da493-5a37-423b-8c28-629462b22faa"
 
@@ -2170,7 +2184,7 @@ new entry "FlamingFist_HalfElf_Melee_Defender"
 type "Character"
 using "FlamingFist_HalfElf_Melee_Defender"
 // data "Passives" "FeyAncestry;AttackOfOpportunity;Darkvision;DarknessRules"
-data "Passives" "FeyAncestry;HumanMilitia;AttackOfOpportunity;Darkvision;DarknessRules;Goon_NPC_Flaming_Fist_Boosts;FightingStyle_Protection"
+data "Passives" "Goon_NPC_Flaming_Fist_Defender_Boosts;FeyAncestry;HumanMilitia;AttackOfOpportunity;Darkvision;DarknessRules"
 // data "Progressions" "5885fa7a-383f-11ed-a261-0242ac120002"
 data "Progressions" "0e6da493-5a37-423b-8c28-629462b22faa"
 
@@ -2179,7 +2193,7 @@ new entry "FlamingFist_HalfElf_Ranger"
 type "Character"
 using "FlamingFist_HalfElf_Ranger"
 // data "Passives" "FeyAncestry;AttackOfOpportunity;Darkvision;DarknessRules"
-data "Passives" "FeyAncestry;HumanMilitia;AttackOfOpportunity;Darkvision;DarknessRules;Goon_NPC_Flaming_Fist_Boosts;FightingStyle_Archery;CrossbowExpert_PointBlank"
+data "Passives" "Goon_NPC_Flaming_Fist_Ranger_Boosts;FeyAncestry;HumanMilitia;AttackOfOpportunity;Darkvision;DarknessRules"
 // data "Progressions" "6cae475a-383f-11ed-a261-0242ac120002"
 data "Progressions" "f0ede459-8b86-48fd-ac11-4432573566a5"
 
@@ -2221,14 +2235,14 @@ using "LOW_Guildhall_LadyCroup"
 // data "Passives" "FastHands;FightingStyle_Archery;AttackOfOpportunity;FeyAncestry;DarknessRules;Darkvision"
 data "Passives" "FeyAncestry;HumanMilitia;AttackOfOpportunity;Darkvision;DarknessRules;FastHands;FightingStyle_Archery"
 
-// Aelis Siryasius (Replaced Wizard progressions with custom Sorcerer progressions, Draconic Bloodline subclass too ofc)
+// Aelis Siryasius (Swapped Wizard progressions for custom Sorcerer progressions, added Draconic Bloodline subclass, added Boss boost)
 new entry "LOW_Sewers_Dragonborn_Red_Evocation_Wizard"
 type "Character"
 using "LOW_Sewers_Dragonborn_Red_Evocation_Wizard"
 // data "PathInfluence" "BloodElectrified,100;BloodFrozen,30;Lava,700;HolyFire,40;Hellfire,100;PoisonCloud,70;WyvernPoison,70;DrowPoisonCloud,70;PurpleWormPoison,70;SerpentVenom,70;InvisibleGithAcid,70;CloudkillCloud,70;MaliceCloud,70;CrawlerMucusCloud,70;WaterElectrified,100;WaterFrozen,30;Web,30;Vines,40;SporeBlackCloud,100;WaterCloudElectrified,40;SporeGreenCloud,40;Acid,30;CausticBrine,40;DarknessCloud,30;FogCloud,30;Mud,30;Oil,30;Poison,30;SpikeGrowth,40;SporePinkCloud,40;StinkingCloud,40"
 data "PathInfluence" "BloodElectrified,100;BloodFrozen,30;Lava,700;HolyFire,40;Hellfire,100;PoisonCloud,70;WyvernPoison,70;DrowPoisonCloud,70;PurpleWormPoison,70;SerpentVenom,70;InvisibleGithAcid,70;CloudkillCloud,70;Cloudkill6Cloud,70;MaliceCloud,70;CrawlerMucusCloud,70;WaterElectrified,100;WaterFrozen,30;Web,30;Vines,40;SporeBlackCloud,100;WaterCloudElectrified,40;SporeGreenCloud,40;Acid,30;CausticBrine,40;DarknessCloud,30;FogCloud,30;Mud,30;Oil,30;Poison,30;SpikeGrowth,40;SporePinkCloud,40;StinkingCloud,40"
 // data "Passives" "AttackOfOpportunity;FeyAncestry;DarknessRules;Darkvision;SunlightSensitivity;DraconicAncestry_Red;DraconicResilience;LOW_GreaseWizard_ElementalAffinity;"
-data "Passives" "CX_Sorcerer_DraconicBloodline_Boost;FeyAncestry;HumanMilitia;AttackOfOpportunity;Darkvision;DarknessRules;SunlightSensitivity;DraconicAncestry_Red;DraconicResilience;LOW_GreaseWizard_ElementalAffinity;Goon_Metamagic_Quickened_NPC;Goon_Metamagic_Heightened_NPC"
+data "Passives" "CX_Boss_Boost;CX_Sorcerer_DraconicBloodline_Boost;FeyAncestry;HumanMilitia;AttackOfOpportunity;Darkvision;DarknessRules;SunlightSensitivity;DraconicAncestry_Red;DraconicResilience;LOW_GreaseWizard_ElementalAffinity;Goon_Metamagic_Quickened_NPC;Goon_Metamagic_Heightened_NPC"
 // data "Progressions" "44bdbc5e-a003-4d61-87f0-5ced20d3804e"
 data "Progressions" "2189a72d-6489-4621-8b2c-85d3e7df2f6f"
 
@@ -2296,7 +2310,7 @@ data "Progressions" "f0ede459-8b86-48fd-ac11-4432573566a5"
 //  │   ├─ "LOW_FlorrickGoon_Melee" 
 //  │   ├─ "WYR_Flophouse_HalfElf_Melee" 
 
-// Isobel Thorm - Selûne (Do we even wanna give her AoO - does it break Sanctuary?) (Inherits Cleric progressions)
+// Isobel Thorm - Selûne (Do we even wanna give her AoO - does it break Sanctuary?) (Inherits Cleric progressions, added Light Domain subclass)
 new entry "HAV_Isobel"
 type "Character"
 using "HAV_Isobel"
@@ -2317,12 +2331,12 @@ using "HalfElf_Fighter_Rogue"
 // data "Progressions" "ed2393af-0e4d-4ada-ab99-d389f81285d0"
 data "Progressions" "0e6da493-5a37-423b-8c28-629462b22faa"
 
-// Zenovia Dawg - Rivington Rats, The Guild (Inherits Fighter progressions, added her previous stuff from NPC_Fighter_Rogue as a passive unlock "Goon_ZenoviaDawg__Boost")
+// Zenovia Dawg - Rivington Rats, The Guild (Inherits Fighter progressions, added her previous stuff from NPC_Fighter_Rogue as a passive unlock "Goon_NPC_ZenoviaDawg__Boost")
 new entry "WYR_MerchantsHouse_HalfElf_Figher_Rogue"
 type "Character"
 using "WYR_MerchantsHouse_HalfElf_Figher_Rogue"
 // data "Passives" "FeyAncestry;AttackOfOpportunity;Darkvision;DarknessRules"
-data "Passives" "FeyAncestry;HumanMilitia;AttackOfOpportunity;Darkvision;DarknessRules;Goon_ZenoviaDawg_Boost"
+data "Passives" "Goon_NPC_ZenoviaDawg_Boost;FeyAncestry;HumanMilitia;AttackOfOpportunity;Darkvision;DarknessRules"
 
 // Pollo the Muscle - Retinue under Florrick (Inherits Fighter progressions, Battle Master subclass)
 new entry "LOW_FlorrickGoon_Melee"
@@ -2436,14 +2450,15 @@ using "LOW_JaheirasEldestSon"
 // data "Passives" "AttackOfOpportunity;DarknessRules;WildStrike;PrimalStrike;WildStrike_2"
 data "Passives" "SavageAttacks;RelentlessEndurance;AttackOfOpportunity;Darkvision;DarknessRules;WildStrike;PrimalStrike;WildStrike_2"
 
-// Disciple Z'rell - Cult of the Absolute (Added Warlock progressions, Fiend subclass, removed her generic spell slots)
+//TODO: Create custom legendary action
+// Disciple Z'rell - Cult of the Absolute (Added Warlock progressions, Fiend subclass, removed her generic spell slots, added Boss boost)
 new entry "MOO_Executioner"
 type "Character"
 using "MOO_Executioner"
 // data "DefaultBoosts" "ProficiencyBonus(SavingThrow,Constitution); ProficiencyBonus(SavingThrow,Wisdom); ActionResource(SpellSlot,1,1); ActionResource(SpellSlot,1,2); ActionResource(SpellSlot,1,3); ActionResource(SpellSlot,1,4); ActionResource(SpellSlot,1,5); BlockRegainHP(Undead;Construct)"
 data "DefaultBoosts" "ProficiencyBonus(SavingThrow,Constitution); ProficiencyBonus(SavingThrow,Wisdom); BlockRegainHP(Undead;Construct)"
 // data "Passives" "AttackOfOpportunity;DarknessRules;DarkOnesBlessing;AgonizingBlast;TAD_PsionicBacklash"
-data "Passives" "CX_Warlock_Fiend_Boost;SavageAttacks;RelentlessEndurance;AttackOfOpportunity;Darkvision;DarknessRules;DarkOnesBlessing;AgonizingBlast;TAD_PsionicBacklash"
+data "Passives" "CX_Boss_Boost;CX_Warlock_Fiend_Boost;SavageAttacks;RelentlessEndurance;AttackOfOpportunity;Darkvision;DarknessRules;DarkOnesBlessing;AgonizingBlast;TAD_PsionicBacklash"
 // data "Progressions" ""
 data "Progressions" "51274504-865d-46d1-a3b6-c72e9384904a"
 
@@ -2459,7 +2474,7 @@ data "Passives" "CX_Wizard_Evocation_Boost;CX_Spells_L1;CX_Spells_L2;CX_Spells_L
 //  │   ├─ "END_CityWatchMelee_HalfOrc"
 //  │   ├─ "HalfOrc_Barbarian"                              --- (Has Barbarian progressions)
 //  │   │   ├─ "SCL_DriderCaravan_Bedi"
-//  │   │   └─ TWN_Morgue_ShadowCursed_HalfOrc_Barbarian"   --- Shadow-Cursed Half-Orc (Inherits Barbarian progressions)
+//  │   │   └─ "TWN_Morgue_ShadowCursed_HalfOrc_Barbarian"   --- Shadow-Cursed Half-Orc (Inherits Barbarian progressions)
 //  │   ├─ "HalfOrc_Paladin"                                --- (Has Paladin progressions)
 //  │   ├─ "LOW_Bartender_Half_Orc_Melee"                   --- Unused (Inherits Fighter progressions)
 //  │   ├─ "LOW_BlushingMermaid_Patron_HalfOrc_Melee"       --- Slog (Inherits Fighter progressions)
@@ -2648,7 +2663,7 @@ new entry "FlamingFist_Halfling_Caster"
 type "Character"
 using "FlamingFist_Halfling_Caster"
 // data "Passives" "Halfling_Lucky;Halfling_Brave;AttackOfOpportunity;DarknessRules"
-data "Passives" "CX_Spells_L1;CX_Spells_L1C;Halfling_Lucky;Halfling_Brave;AttackOfOpportunity;DarknessRules"
+data "Passives" "Goon_NPC_Flaming_Fist_Caster_Boosts;CX_Spells_L1;CX_Spells_L1C;Halfling_Lucky;Halfling_Brave;AttackOfOpportunity;DarknessRules"
 // data "Progressions" "7417c0c0-383f-11ed-a261-0242ac120002"
 data "Progressions" "44bdbc5e-a003-4d61-87f0-5ced20d3804e"
 
@@ -2657,7 +2672,7 @@ new entry "FlamingFist_Halfling_Cleric"
 type "Character"
 using "FlamingFist_Halfling_Cleric"
 // data "Passives" "Halfling_Lucky;Halfling_Brave;AttackOfOpportunity;DarknessRules"
-data "Passives" "Halfling_Lucky;Halfling_Brave;AttackOfOpportunity;DarknessRules;Goon_NPC_Flaming_Fist_Boosts;FightingStyle_Protection"
+data "Passives" "Goon_NPC_Flaming_Fist_Cleric_Boosts;Halfling_Lucky;Halfling_Brave;AttackOfOpportunity;DarknessRules"
 // data "Progressions" "70c3eb7e-383f-11ed-a261-0242ac120002"
 data "Progressions" "36c3f8de-3293-4d7b-92bc-ceb3c569244b"
 
@@ -2666,7 +2681,7 @@ new entry "FlamingFist_Halfling_Melee_Attacker"
 type "Character"
 using "FlamingFist_Halfling_Melee_Attacker"
 // data "Passives" "Halfling_Lucky;Halfling_Brave;AttackOfOpportunity;DarknessRules"
-data "Passives" "Halfling_Lucky;Halfling_Brave;AttackOfOpportunity;DarknessRules;Goon_NPC_Flaming_Fist_Boosts;FightingStyle_GreatWeaponFighting;PhalanxFormation_Duergar;Riposte"
+data "Passives" "Goon_NPC_Flaming_Fist_Attacker_Boosts;Halfling_Lucky;Halfling_Brave;AttackOfOpportunity;DarknessRules"
 // data "Progressions" "51d47904-383f-11ed-a261-0242ac120002"
 data "Progressions" "0e6da493-5a37-423b-8c28-629462b22faa"
 
@@ -2675,7 +2690,7 @@ new entry "FlamingFist_Halfling_Melee_Defender"
 type "Character"
 using "FlamingFist_Halfling_Melee_Defender"
 // data "Passives" "Halfling_Lucky;Halfling_Brave;AttackOfOpportunity;DarknessRules"
-data "Passives" "Halfling_Lucky;Halfling_Brave;AttackOfOpportunity;DarknessRules;Goon_NPC_Flaming_Fist_Boosts;FightingStyle_Protection"
+data "Passives" "Goon_NPC_Flaming_Fist_Defender_Boosts;Halfling_Lucky;Halfling_Brave;AttackOfOpportunity;DarknessRules"
 // data "Progressions" "5885fa7a-383f-11ed-a261-0242ac120002"
 data "Progressions" "0e6da493-5a37-423b-8c28-629462b22faa"
 
@@ -2684,7 +2699,7 @@ new entry "FlamingFist_Halfling_Ranger"
 type "Character"
 using "FlamingFist_Halfling_Ranger"
 // data "Passives" "Halfling_Lucky;Halfling_Brave;AttackOfOpportunity;DarknessRules"
-data "Passives" "Halfling_Lucky;Halfling_Brave;AttackOfOpportunity;DarknessRules;Goon_NPC_Flaming_Fist_Boosts;FightingStyle_Archery;CrossbowExpert_PointBlank"
+data "Passives" "Goon_NPC_Flaming_Fist_Ranger_Boosts;Halfling_Lucky;Halfling_Brave;AttackOfOpportunity;DarknessRules"
 // data "Progressions" "6cae475a-383f-11ed-a261-0242ac120002"
 data "Progressions" "f0ede459-8b86-48fd-ac11-4432573566a5"
 
@@ -2787,7 +2802,7 @@ data "Charisma" "16"
 // data "SpellCastingAbility" "Intelligence"
 data "SpellCastingAbility" "Charisma"
 // data "Passives" "Alert;Halfling_Lucky;Halfling_Brave;AttackOfOpportunity;DarknessRules"
-data "Passives" "CX_Bard_Boost;CX_Magic_Boost;Halfling_Lucky;Halfling_Brave;AttackOfOpportunity;DarknessRules;Alert;Goon_RoahMoonglow_Boost"
+data "Passives" "Goon_NPC_RoahMoonglow_Boost;CX_Bard_Boost;CX_Magic_Boost;Halfling_Lucky;Halfling_Brave;AttackOfOpportunity;DarknessRules;Alert"
 // data "Progressions" "2c3411ae-806b-11ed-a1eb-0242ac120002"
 data "Progressions" "cbe5059f-7a9f-4b98-be6a-07c9cd8e02c2"
 
@@ -2886,13 +2901,13 @@ using "Hobgoblin_Boss"
 // data "Progressions" ""
 data "Progressions" "0e6da493-5a37-423b-8c28-629462b22faa"
 
-// Dror Ragzlin - HONOUR MODE INHERITANCE (Replaced added and inherited Fighter progressions with Barbarian progressions, all subclasses seem on theme enough)
+// Dror Ragzlin - HONOUR MODE INHERITANCE (Swapped added and inherited Fighter progressions with Barbarian progressions, all subclasses seem on theme enough, added Boss boost)
 new entry "GOB_Hobgoblin_Boss"
 type "Character"
 using "GOB_Hobgoblin_Boss"
 // data "Passives" "AttackOfOpportunity;DarknessRules;Darkvision;MartialAdvantage;UnarmouredDefence_Barbarian;"
 // data "Passives" "AttackOfOpportunity;DarknessRules;Darkvision;MartialAdvantage;UnarmouredDefence_Barbarian;LegendaryAction_GOB_Dror;"
-data "Passives" "MartialAdvantage;AttackOfOpportunity;Darkvision;DarknessRules;UnarmouredDefence_Barbarian;LegendaryAction_GOB_Dror"
+data "Passives" "CX_Boss_Boost;MartialAdvantage;AttackOfOpportunity;Darkvision;DarknessRules;UnarmouredDefence_Barbarian;LegendaryAction_GOB_Dror"
 // data "Progressions" "0e6da493-5a37-423b-8c28-629462b22faa"
 data "Progressions" "56db8107-e04c-4fe3-94f3-fd4acd44cd4a"
 
@@ -2999,7 +3014,7 @@ new entry "FlamingFist_Human_Caster"
 type "Character"
 using "FlamingFist_Human_Caster"
 // data "Passives" "AttackOfOpportunity;DarknessRules"
-data "Passives" "CX_Spells_L1;CX_Spells_L1C;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules"
+data "Passives" "Goon_NPC_Flaming_Fist_Caster_Boosts;CX_Spells_L1;CX_Spells_L1C;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules"
 // data "Progressions" "7417c0c0-383f-11ed-a261-0242ac120002"
 data "Progressions" "44bdbc5e-a003-4d61-87f0-5ced20d3804e"
 
@@ -3008,7 +3023,7 @@ new entry "FlamingFist_Human_Cleric"
 type "Character"
 using "FlamingFist_Human_Cleric"
 // data "Passives" "AttackOfOpportunity;DarknessRules"
-data "Passives" "HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules;Goon_NPC_Flaming_Fist_Boosts;FightingStyle_Protection"
+data "Passives" "Goon_NPC_Flaming_Fist_Cleric_Boosts;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules"
 // data "Progressions" "70c3eb7e-383f-11ed-a261-0242ac120002"
 data "Progressions" "36c3f8de-3293-4d7b-92bc-ceb3c569244b"
 
@@ -3017,7 +3032,7 @@ new entry "FlamingFist_Human_Melee_Attacker"
 type "Character"
 using "FlamingFist_Human_Melee_Attacker"
 // data "Passives" "AttackOfOpportunity;DarknessRules"
-data "Passives" "HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules"
+data "Passives" "Goon_NPC_Flaming_Fist_Attacker_Boosts;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules"
 // data "Progressions" "51d47904-383f-11ed-a261-0242ac120002"
 data "Progressions" "0e6da493-5a37-423b-8c28-629462b22faa"
 
@@ -3027,7 +3042,7 @@ new entry "LOW_LiaraPortyr"
 type "Character"
 using "LOW_LiaraPortyr"
 // data "Passives" "AttackOfOpportunity;DarknessRules;LOW_LiaraPortyr_Brave"
-data "Passives" "HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules;LOW_LiaraPortyr_Brave;Goon_NPC_Flaming_Fist_Boosts;FightingStyle_GreatWeaponFighting;PhalanxFormation_Duergar;Riposte"
+data "Passives" "Goon_NPC_Flaming_Fist_Attacker_Boosts;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules;LOW_LiaraPortyr_Brave"
 // data "Progressions" "51d47904-383f-11ed-a261-0242ac120002"
 data "Progressions" "0e6da493-5a37-423b-8c28-629462b22faa"
 
@@ -3036,7 +3051,7 @@ new entry "FlamingFist_Human_Melee_Defender"
 type "Character"
 using "FlamingFist_Human_Melee_Defender"
 // data "Passives" "AttackOfOpportunity;DarknessRules"
-data "Passives" "HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules;Goon_NPC_Flaming_Fist_Boosts;FightingStyle_Protection"
+data "Passives" "Goon_NPC_Flaming_Fist_Defender_Boosts;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules"
 // data "Progressions" "5885fa7a-383f-11ed-a261-0242ac120002"
 data "Progressions" "0e6da493-5a37-423b-8c28-629462b22faa"
 
@@ -3045,7 +3060,7 @@ new entry "FlamingFist_Human_Ranger"
 type "Character"
 using "FlamingFist_Human_Ranger"
 // data "Passives" "AttackOfOpportunity;DarknessRules"
-data "Passives" "HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules;Goon_NPC_Flaming_Fist_Boosts;FightingStyle_Archery;CrossbowExpert_PointBlank"
+data "Passives" "Goon_NPC_Flaming_Fist_Ranger_Boosts;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules"
 // data "Progressions" "6cae475a-383f-11ed-a261-0242ac120002"
 data "Progressions" "f0ede459-8b86-48fd-ac11-4432573566a5"
 
@@ -3292,9 +3307,9 @@ data "Passives" "CX_Wizard_Evocation_Boost;CX_Spells_L6;CX_Spells_L6C;HumanMilit
 //  │   ├─ "LOW_HouseOfGrief_Cultist_Caster_Human"
 //  │   ├─ "LOW_Human_FelogyrFireworks_AlchemichalWorker"
 //  │   ├─ "LOW_RamazithsTower_Lorroakan"
-//  │   ├─ "LOW_RamazithsTower_Projection"                  --- Lorroakan's Projection
-//  │   ├─ "LOW_RamazithsTower_PuzzleGuardian"              --- Lorroakan's Projection
-//  │   ├─ "LOW_RamazithsTower_PuzzleGuardian_Punisher"     --- Lorroakan's Projection
+//  │   ├─ "LOW_RamazithsTower_Projection"
+//  │   ├─ "LOW_RamazithsTower_PuzzleGuardian"
+//  │   ├─ "LOW_RamazithsTower_PuzzleGuardian_Punisher"
 //  │   ├─ "LOW_StormshoreTabernacle_Gods"
 //  │   ├─ "LOW_Tolna"                                      --- Tolna Tome-Monger - merchant in Sorcerous Sundries (Inherits Wizard progressions)
 
@@ -3342,12 +3357,34 @@ data "Progressions" "51274504-865d-46d1-b6a3-2ec784934a90"
 // data "Passives" "AttackOfOpportunity;DarknessRules"
 data "Passives" "CX_Warlock_Boost;CX_Magic_Boost;CX_Spells_L3;CX_Spells_L2C;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules"
 
-// Lorroakan (Inherits Wizard progressions, added Evocation School subclass) (Due to his usage of Elemental Retort removing Attack Of Opportunity is wise)
+//TODO: Custom Legendary actions for Lorroakan
+// Lorroakan (Inherits Wizard progressions, added Evocation School subclass, added Boss boost) (Due to his usage of Elemental Retort removing Attack Of Opportunity is wise)
 new entry "LOW_RamazithsTower_Lorroakan"
 type "Character"
 using "LOW_RamazithsTower_Lorroakan"
 // data "Passives" "DarknessRules;LOW_RamazithsTower_ElementalSiphon;LOW_RamazithsTower_ElementalRebuke;SculptSpells;PotentCantrip;EmpoweredEvocation"
-data "Passives" "CX_Wizard_Evocation_Boost;CX_Spells_L5;CX_Spells_L6;CX_Spells_L6C;HumanMilitia;HumanVersatility;DarknessRules;LOW_RamazithsTower_ElementalSiphon;LOW_RamazithsTower_ElementalRebuke;SculptSpells;PotentCantrip;EmpoweredEvocation"
+data "Passives" "CX_Boss_Boost;CX_Wizard_Evocation_Boost;CX_Spells_L5;CX_Spells_L6;CX_Spells_L6C;HumanMilitia;HumanVersatility;DarknessRules;LOW_RamazithsTower_ElementalSiphon;LOW_RamazithsTower_ElementalRebuke;SculptSpells;PotentCantrip;EmpoweredEvocation"
+
+// Lorroakan's Projection (Making it inherit from Lorroakan instead of Human_Caster)
+new entry "LOW_RamazithsTower_Projection"
+type "Character"
+// using "Human_Caster"
+using "LOW_RamazithsTower_Lorroakan"
+data "Vitality" "74"
+
+// Lorroakan's Projection (Making it inherit from Lorroakan instead of Human_Caster)
+new entry "LOW_RamazithsTower_PuzzleGuardian"
+type "Character"
+// using "Human_Caster"
+using "LOW_RamazithsTower_Lorroakan"
+data "Vitality" "74"
+
+// Lorroakan's Projection (Making it inherit from Lorroakan instead of Human_Caster)
+new entry "LOW_RamazithsTower_PuzzleGuardian_Punisher"
+type "Character"
+// using "Human_Caster"
+using "LOW_RamazithsTower_Lorroakan"
+data "Vitality" "74"
 
 // God shrines in Stormshore Tabernacle - (Removing inheritance from Human_Caster)
 new entry "LOW_StormshoreTabernacle_Gods"
@@ -3401,22 +3438,22 @@ data "Wisdom" "16"
 // data "Progressions" "44bdbc5e-a003-4d61-87f0-5ced20d3804e"
 data "Progressions" "36c3f8de-3293-4d7b-92bc-ceb3c569244b"
 
-// Balthazar - Commander of the Reborn Dead - HONOUR MODE INHERITANCE (Added Wizard progressions, added Necromancy School subclass)
+// Balthazar - Commander of the Reborn Dead - HONOUR MODE INHERITANCE (Added Wizard progressions, added Necromancy School subclass, added Boss boost)
 new entry "SHA_Necromancer"
 type "Character"
 using "SHA_Necromancer"
 // data "Passives" "Alert;GrimHarvest;GraveMagic;TurnResistance;ImmuneToControlUndead;AttackOfOpportunity;DarknessRules"
 // data "Passives" "Alert;GrimHarvest;GraveMagic;TurnResistance;ImmuneToControlUndead;AttackOfOpportunity;DarknessRules;LegendaryAction_SHA_Necromancer_SpectralForm;LegendaryAction_SHA_Necromancer_LandOfTheDead;LegendaryAction_SHA_Necromancer_SpectralForm_Technical"
-data "Passives" "CX_Wizard_Necromancy_Boost;CX_Spells_L4;CX_Spells_L5;CX_Spells_L5C;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules;Alert;GrimHarvest;GraveMagic;TurnResistance;ImmuneToControlUndead;LegendaryAction_SHA_Necromancer_SpectralForm;LegendaryAction_SHA_Necromancer_LandOfTheDead;LegendaryAction_SHA_Necromancer_SpectralForm_Technical"
+data "Passives" "CX_Boss_Boost;CX_Wizard_Necromancy_Boost;CX_Spells_L4;CX_Spells_L5;CX_Spells_L5C;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules;Alert;GrimHarvest;GraveMagic;TurnResistance;ImmuneToControlUndead;LegendaryAction_SHA_Necromancer_SpectralForm;LegendaryAction_SHA_Necromancer_LandOfTheDead;LegendaryAction_SHA_Necromancer_SpectralForm_Technical"
 // data "Progressions" ""
 data "Progressions" "44bdbc5e-a003-4d61-87f0-5ced20d3804e"
 
-// Lord Enver Gortash - Archduke Nominee (His legendary/honour mode stuff is not added directly to the character entry) (Swapped Wizard progressions to Rogue progressions, added Arcane Trickster subclass)
+// Lord Enver Gortash - Archduke Nominee - NO HONOUR MODE INHERITANCE (His Legendary actions and stuff is not added directly to the character entry) (Swapped Wizard progressions to Rogue progressions, added Arcane Trickster subclass, added Boss boost)
 new entry "WYR_Gortash"
 type "Character"
 using "WYR_Gortash"
 // data "Passives" "DarkDevotion;MagicResistance;CrossbowExpert_PointBlank;ImmuneToDisarm;AttackOfOpportunity;DarknessRules;WYR_Gortash_Gortane"
-data "Passives" "CX_Rogue_ArcaneTrickster_Boost;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules;WYR_Gortash_Gortane;DarkDevotion;MagicResistance;CrossbowExpert_PointBlank;ImmuneToDisarm"
+data "Passives" "CX_Boss_Boost;CX_Rogue_ArcaneTrickster_Boost;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules;WYR_Gortash_Gortane;DarkDevotion;MagicResistance;CrossbowExpert_PointBlank;ImmuneToDisarm"
 // data "Progressions" "44bdbc5e-a003-4d61-87f0-5ced20d3804e"
 data "Progressions" "532203c2-7bcb-4162-9a7c-2bb20e227a30"
 
@@ -3474,7 +3511,7 @@ new entry "DEN_Adventurer_Leader"
 type "Character"
 using "DEN_Adventurer_Leader"
 // data "Passives" "AttackOfOpportunity;DarknessRules"
-data "Passives" "HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules;Goon_Aradin_Boost"
+data "Passives" "Goon_NPC_Aradin_Boost;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules"
 // data "Progressions" "9eaa6333-f907-4c16-aa48-cf6d46c1b351"
 data "Progressions" "0e6da493-5a37-423b-8c28-629462b22faa"
 
@@ -3495,12 +3532,13 @@ data "SpellCastingAbility" "Charisma"
 // data "Passives" "AttackOfOpportunity;DarknessRules"
 data "Passives" "CX_Paladin_Oathbreaker_Boost;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules"
 
-// Fist Marcus "Marcus Falgor" - Agent of the Absolute, Cult of the Absolute (Inherits Fighter progressions) (Doesn't have legendary actions or anything despite being a boss)
+//TODO: Custom legendary action?
+// Fist Marcus "Marcus Falgor" - Agent of the Absolute, Cult of the Absolute (Inherits Fighter progressions, added Champion subclass, added Boss boost)
 new entry "HAV_Marcus"
 type "Character"
 using "HAV_Marcus"
 // data "Passives" "GreatWeaponMaster_BonusAttack;DarkDevotion;FeralInstinct;AttackOfOpportunity;DarknessRules"
-data "Passives" "HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules;GreatWeaponMaster_BonusAttack;DarkDevotion;FeralInstinct"
+data "Passives" "CX_Boss_Boost;CX_Fighter_Champion_Boost;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules;GreatWeaponMaster_BonusAttack;DarkDevotion;FeralInstinct"
 
 // Shadow-Cursed Zealot (Halsin portal defense) (Swapped from Fighter progressions to Paladin progressions, added Oathbreaker subclass. They are in death what they were in life, highest mental stat is Char.)
 new entry "HAV_ShadowCursed_Warrior_Human_Melee"
@@ -3930,13 +3968,13 @@ data "Passives" "HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules
 // data "Progressions" ""
 data "Progressions" "532203c2-7bcb-4162-9a7c-2bb20e227a30"
 
-// Orin - Cult of Bhaal - HONOUR MODE INHERITANCE (YAAAAS YOU GO GIRL) (Has Rogue progressions, added Assassin subclass)
+// Orin - Cult of Bhaal - HONOUR MODE INHERITANCE (YAAAAS YOU GO GIRL) (Has Rogue progressions, added Assassin subclass, added Boss boost)
 new entry "GLO_Orin"
 type "Character"
 using "GLO_Orin"
 // data "Passives" "FastHands;MagicResistance;Surprise_Immunity;AttackOfOpportunity;Darkvision;DarknessRules;ImmutableForm"
 // data "Passives" "FastHands;MagicResistance;Surprise_Immunity;AttackOfOpportunity;Darkvision;DarknessRules;ImmutableForm;LegendaryAction_LOW_BhaalsRetribution_Orin"
-data "Passives" "CX_Rogue_Assassin_Boost;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules;Darkvision;FastHands;MagicResistance;Surprise_Immunity;ImmutableForm;LegendaryAction_LOW_BhaalsRetribution_Orin"
+data "Passives" "CX_Boss_Boost;CX_Rogue_Assassin_Boost;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules;Darkvision;FastHands;MagicResistance;Surprise_Immunity;ImmutableForm;LegendaryAction_LOW_BhaalsRetribution_Orin"
 
 // Strangler Luke - Cult of Bhaal (Has Monk progressions, added Open Hand subclass) //TODO: Drunken Master?
 new entry "LOW_Chasm_Strangler"
@@ -4025,12 +4063,13 @@ data "Progressions" "532203c2-7bcb-4162-9a7c-2bb20e227a30"
 //  │   ├─ "LOW_Guildhall_Swarm_Ranged_Human"               --- Unused (Inherits Rogue progressions)
 //  │   └─ "LOW_QuenoraGrizly"                              --- Captain Grisly - Proprietor of the Blushing Mermaid (Inherits Rogue progressions) //TODO: Add Swashbuckler, not optional at all
 
-// Nine-Fingers "Holy Shit How Much Damage Do Her Daggers Do??" Keene (Inherits Rogue progressions, added Thief subclass because it will likely fuck with her very unique approach to combat the least - and it's fitting enough)
+//TODO: Custom legendary action?
+// Nine-Fingers "Holy Shit How Much Damage Do Her Daggers Do??" Keene (Inherits Rogue progressions, added Thief subclass because it will likely fuck with her very unique approach to combat the least; and it's fitting enough, added Boss boost)
 new entry "LOW_Guildhall_NineFingersKeene"
 type "Character"
 using "LOW_Guildhall_NineFingersKeene"
 // data "Passives" "LOW_Guildhall_IsolatedPrey;LOW_Guildhall_DaggerThrower;LOW_Guildhall_ExtraAttack_DaggerSpecialist;FastHands;Alert;AttackOfOpportunity;DarknessRules"
-data "Passives" "CX_Rogue_Thief_Boost;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules;LOW_Guildhall_IsolatedPrey;LOW_Guildhall_DaggerThrower;LOW_Guildhall_ExtraAttack_DaggerSpecialist;FastHands;Alert"
+data "Passives" "CX_Boss_Boost;CX_Rogue_Thief_Boost;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules;LOW_Guildhall_IsolatedPrey;LOW_Guildhall_DaggerThrower;LOW_Guildhall_ExtraAttack_DaggerSpecialist;FastHands;Alert"
 
 // "_Human"
 //  ├─ "Human_Cultist_Bane_BlackGauntlet"
@@ -4101,13 +4140,13 @@ data "Passives" "HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules
 // data "Progressions" ""
 data "Progressions" "44bdbc5e-a003-4d61-87f0-5ced20d3804e"
 
-// Sarevok Anchev - Justice of the Murder Tribunal, Cult of Bhaal - HONOUR MODE INHERITANCE (Added Fighter progressions, added Champion subclass)
+// Sarevok Anchev - Justice of the Murder Tribunal, Cult of Bhaal - HONOUR MODE INHERITANCE (Added Fighter progressions, added Champion subclass, added Boss boost)
 new entry "LOW_Sarevok"
 type "Character"
 using "LOW_Sarevok"
 // data "Passives" "ExtraAttack;ImmuneToDisarm;Indomitable;Surprise_Immunity;DarknessRules;AttackOfOpportunity"
 // data "Passives" "ExtraAttack;ImmuneToDisarm;Indomitable;Surprise_Immunity;DarknessRules;AttackOfOpportunity;LegendaryAction_LOW_BhaalsRetribution_Sarevok"
-data "Passives" "CX_Fighter_Champion_Boost;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules;ExtraAttack;ImmuneToDisarm;Indomitable;Surprise_Immunity;LegendaryAction_LOW_BhaalsRetribution_Sarevok"
+data "Passives" "CX_Boss_Boost;CX_Fighter_Champion_Boost;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules;ExtraAttack;ImmuneToDisarm;Indomitable;Surprise_Immunity;LegendaryAction_LOW_BhaalsRetribution_Sarevok"
 // data "Progressions" ""
 data "Progressions" "0e6da493-5a37-423b-8c28-629462b22faa"
 
@@ -4176,7 +4215,6 @@ data "SpellCastingAbility" "Wisdom"
 data "Progressions" "f0ede459-8b86-48fd-ac11-4432573566a5"
 
 // ==================================== Sahuagin ===================================
-
 // "_Base"
 //  ├─ "_Humanoid"
 //  │   ├─ "Sahuagin"
@@ -4197,14 +4235,14 @@ data "SpellCastingAbility" "Intelligence"
 // data "Passives" "BloodFrenzy_Sahuagin;AttackOfOpportunity;DarknessRules"
 data "Passives" "CX_Martial_Boost;BloodFrenzy_Sahuagin;AttackOfOpportunity;DarknessRules"
 
-// Sahuagin Champion (Added Barbarian progressions, added Berserker subclass)
+// (Added Fighter progressions, added Champion subclass)
 new entry "Sahuagin_Champion"
 type "Character"
 using "Sahuagin_Champion"
 // data "Passives" "BloodFrenzy_Sahuagin;ExtraAttack;AttackOfOpportunity;DarknessRules"
 data "Passives" "CX_Barbarian_Berserker_Boost;BloodFrenzy_Sahuagin;AttackOfOpportunity;DarknessRules;ExtraAttack"
 // data "Progressions" ""
-data "Progressions" "56db8107-e04c-4fe3-94f3-fd4acd44cd4a"
+data "Progressions" "0e6da493-5a37-423b-8c28-629462b22faa"
 
 // Champion of Mahkloompah (summon from during Confront the Elder Brain; technically not part of Gather Your Allies) (Added Paladin progressions, letting it keep the extra spell slots)
 new entry "END_SahuaginAlly_Champion"
@@ -4217,8 +4255,8 @@ data "Progressions" "8726b2c4-edc0-4905-b82f-60a4baba0733"
 new entry "Sahuagin_Melee"
 type "Character"
 using "Sahuagin_Melee"
-// data "Passives" "BloodFrenzy_Sahuagin;ExtraAttack;AttackOfOpportunity;DarknessRules"
-data "Passives" "CX_Fighter_Champion_Boost;BloodFrenzy_Sahuagin;AttackOfOpportunity;DarknessRules;ExtraAttack"
+// data "Passives" "BloodFrenzy_Sahuagin;AttackOfOpportunity;DarknessRules"
+data "Passives" "CX_Fighter_Champion_Boost;BloodFrenzy_Sahuagin;AttackOfOpportunity;DarknessRules"
 // data "Progressions" ""
 data "Progressions" "0e6da493-5a37-423b-8c28-629462b22faa"
 
@@ -4226,6 +4264,8 @@ data "Progressions" "0e6da493-5a37-423b-8c28-629462b22faa"
 new entry "Sahuagin_Ranged"
 type "Character"
 using "Sahuagin_Ranged"
+// data "SpellCastingAbility" "Dexterity"
+data "SpellCastingAbility" "Intelligence"
 // data "Passives" "BloodFrenzy_Sahuagin;ExtraAttack;AttackOfOpportunity;DarknessRules"
 data "Passives" "CX_Rogue_Assassin_Boost;BloodFrenzy_Sahuagin;AttackOfOpportunity;DarknessRules;ExtraAttack"
 // data "Progressions" ""
@@ -4282,10 +4322,10 @@ data "Progressions" "56db8107-e04c-4fe3-94f3-fd4acd44cd4a"
 new entry "Kuotoa_Caster"
 type "Character"
 using "Kuotoa_Caster"
-// data "Intelligence" "11"
+// data "Intelligence" "13"
 data "Intelligence" "8"
 // data "Charisma" "8"
-data "Charisma" "12"
+data "Charisma" "13"
 // data "SpellCastingAbility" "Intelligence"
 data "SpellCastingAbility" "Charisma"
 // data "Passives" "SunlightSensitivity;AttackOfOpportunity;Darkvision;DarknessRules"
@@ -4379,7 +4419,7 @@ new entry "GLO_Prodigy"
 type "Character"
 using "GLO_Prodigy"
 // data "Passives" "Tiefling_HellishResistance;AttackOfOpportunity;DarknessRules;Darkvision"
-data "Passives" "CX_Wizard_Evocation_Boost;Tiefling_HellishResistance;AttackOfOpportunity;DarknessRules;Darkvision;Goon_Rolan_Boost"
+data "Passives" "Goon_NPC_Rolan_Boost;CX_Wizard_Evocation_Boost;Tiefling_HellishResistance;AttackOfOpportunity;DarknessRules;Darkvision"
 // data "Progressions" "07d9965e-a2c7-4033-9577-27e42f1911fc"
 data "Progressions" "44bdbc5e-a003-4d61-87f0-5ced20d3804e"
 
@@ -4407,13 +4447,13 @@ data "Passives" "CX_Spells_L1;CX_Spells_L2;CX_Spells_L3;Tiefling_HellishResistan
 // data "Progressions" "44bdbc5e-a003-4d61-87f0-5ced20d3804e"
 data "Progressions" "2189a72d-6489-4621-8b2c-85d3e7df2f6f"
 
-// Swapped inheritence to Roland's entry
+// Swapped inheritance to Roland's entry
 new entry "HAV_RolandHologramSpeaker"
 type "Character"
 // using "Tiefling_Caster"
 using "GLO_Prodigy"
 
-// Swapped inheritence to Roland's entry
+// Swapped inheritance to Roland's entry
 new entry "LOW_RolanProjection"
 type "Character"
 // using "Tiefling_Caster"
@@ -4491,23 +4531,17 @@ using "WYR_SmugglersCave_StoneLord_Tiefling"
 data "Passives" "CX_Fighter_BattleMaster_Boost;Tiefling_HellishResistance;AttackOfOpportunity;DarknessRules;Darkvision;Parry;Riposte;Indomitable"
 
 // "_Tiefling"
-//  ├─ "Tiefling_Ranger"                        --- (Inherits Ranger progressions)
+//  ├─ "Tiefling_Ranger"                        --- (Has Ranger progressions)
 //  │   ├─ "CHA_Bandit_Tiefling_Ranger"
 //  │   │   └─ "CHA_Bandit_Tiefling_Ranger_B"   --- Nymessa - Tiefling Refugees (Inherits Ranger progressions and fixed racials)
 //  │   ├─ "DEN_Arka"                           --- Arka - Tiefling Refugees (Inherits Ranger progressions)
-//  │   ├─ "DEN_Refugees_Tiefling_Ranger"       --- Cerys, Rikka, Elegis, Lakrissa, Zorru, Kaldani - Tiefling Refugees
+//  │   ├─ "DEN_Refugees_Tiefling_Ranger"       --- Cerys, Rikka, Elegis, Lakrissa, Zorru, Kaldani - Tiefling Refugees (Inherits Ranger progressions)
 //  │   ├─ "END_Inquisitor_Tiefling"            --- Inquisitor of the Absolute - Cult of the Absolute (Inherits Ranger progressions)
 //  │   ├─ "GLO_ProdigySister"                  --- Lia - Tiefling Refugees (Inherits Ranger progressions)
 //  │   ├─ "HAV_Harper_Tiefling_Ranger"         --- Harper Naysa, Harper Lumn - Harpers (Inherits Ranger progressions)
 //  │   ├─ "MOO_Harper_Tiefling_Ranger"         --- Harper Olys - Harpers (Inherits Ranger progressions)
 //  │   ├─ "MOO_PrisonWarden"                   --- The Warden - Cult of the Absolute (Inherits Ranger progressions)
 //  │   └─ "PLA_ChokepointScout"                --- Ellyka - Tiefling Refugees (Inherits Ranger progressions)
-
-new entry "Tiefling_Ranger"
-type "Character"
-using "Tiefling_Ranger"
-// data "Passives" "Tiefling_HellishResistance;AttackOfOpportunity;DarknessRules;Darkvision"
-data "Passives" "CX_Ranger_Boost;CX_Martial_Boost;Tiefling_HellishResistance;AttackOfOpportunity;DarknessRules;Darkvision"
 
 // Damays - Tiefling refugees (Inherits Ranger progressions, fixed racials)
 new entry "CHA_Bandit_Tiefling_Ranger"
@@ -4549,7 +4583,7 @@ new entry "FlamingFist_Tiefling_Caster"
 type "Character"
 using "FlamingFist_Tiefling_Caster"
 // data "Passives" "Tiefling_HellishResistance;AttackOfOpportunity;DarknessRules;Darkvision"
-data "Passives" "CX_Spells_L1;CX_Spells_L1C;Tiefling_HellishResistance;AttackOfOpportunity;DarknessRules;Darkvision"
+data "Passives" "Goon_NPC_Flaming_Fist_Caster_Boosts;CX_Spells_L1;CX_Spells_L1C;Tiefling_HellishResistance;AttackOfOpportunity;DarknessRules;Darkvision"
 // data "Progressions" "7417c0c0-383f-11ed-a261-0242ac120002"
 data "Progressions" "44bdbc5e-a003-4d61-87f0-5ced20d3804e"
 
@@ -4558,7 +4592,7 @@ new entry "FlamingFist_Tiefling_Cleric"
 type "Character"
 using "FlamingFist_Tiefling_Cleric"
 // data "Passives" "Tiefling_HellishResistance;AttackOfOpportunity;DarknessRules;Darkvision"
-data "Passives" "Tiefling_HellishResistance;AttackOfOpportunity;DarknessRules;Darkvision;Goon_NPC_Flaming_Fist_Boosts;FightingStyle_Protection"
+data "Passives" "Goon_NPC_Flaming_Fist_Cleric_Boosts;Tiefling_HellishResistance;AttackOfOpportunity;DarknessRules;Darkvision"
 // data "Progressions" "70c3eb7e-383f-11ed-a261-0242ac120002"
 data "Progressions" "36c3f8de-3293-4d7b-92bc-ceb3c569244b"
 
@@ -4567,7 +4601,7 @@ new entry "FlamingFist_Tiefling_Melee_Attacker"
 type "Character"
 using "FlamingFist_Tiefling_Melee_Attacker"
 // data "Passives" "Tiefling_HellishResistance;AttackOfOpportunity;DarknessRules;Darkvision"
-data "Passives" "Tiefling_HellishResistance;AttackOfOpportunity;DarknessRules;Darkvision;Goon_NPC_Flaming_Fist_Boosts;FightingStyle_GreatWeaponFighting;PhalanxFormation_Duergar;Riposte"
+data "Passives" "Goon_NPC_Flaming_Fist_Attacker_Boosts;Tiefling_HellishResistance;AttackOfOpportunity;DarknessRules;Darkvision"
 // data "Progressions" "51d47904-383f-11ed-a261-0242ac120002"
 data "Progressions" "0e6da493-5a37-423b-8c28-629462b22faa"
 
@@ -4576,7 +4610,7 @@ new entry "FlamingFist_Tiefling_Melee_Defender"
 type "Character"
 using "FlamingFist_Tiefling_Melee_Defender"
 // data "Passives" "Tiefling_HellishResistance;AttackOfOpportunity;DarknessRules;Darkvision"
-data "Passives" "Tiefling_HellishResistance;AttackOfOpportunity;DarknessRules;Darkvision;Goon_NPC_Flaming_Fist_Boosts;FightingStyle_Protection"
+data "Passives" "Goon_NPC_Flaming_Fist_Defender_Boosts;Tiefling_HellishResistance;AttackOfOpportunity;DarknessRules;Darkvision"
 // data "Progressions" "5885fa7a-383f-11ed-a261-0242ac120002"
 data "Progressions" "0e6da493-5a37-423b-8c28-629462b22faa"
 
@@ -4585,7 +4619,7 @@ new entry "FlamingFist_Tiefling_Ranger"
 type "Character"
 using "FlamingFist_Tiefling_Ranger"
 // data "Passives" "Tiefling_HellishResistance;AttackOfOpportunity;DarknessRules;Darkvision"
-data "Passives" "Tiefling_HellishResistance;AttackOfOpportunity;DarknessRules;Darkvision;Goon_NPC_Flaming_Fist_Boosts;FightingStyle_Archery;CrossbowExpert_PointBlank"
+data "Passives" "Goon_NPC_Flaming_Fist_Ranger_Boosts;Tiefling_HellishResistance;AttackOfOpportunity;DarknessRules;Darkvision"
 // data "Progressions" "6cae475a-383f-11ed-a261-0242ac120002"
 data "Progressions" "f0ede459-8b86-48fd-ac11-4432573566a5"
 
@@ -4613,22 +4647,32 @@ data "Passives" "CX_Paladin_Oathbreaker_Boost;Tiefling_HellishResistance;AttackO
 
 // "_Base"
 //  └─ "_Undead"
-//      ├─ "ApostleOfMyrkul"
+//      ├─ "ApostleOfMyrkul"    --- Apostle of Myrkul - Visage of the Dead God (Unused because it's actually just Ketheric right?)
 //      ├─ "Brewer"
 //      ├─ "CrawlingClaw"
-//      ├─ "DarkJusticiar_Melee"                              -- Justiciar Avengers in Gauntlet of Shar (Added Fighter progression)
-//      │   ├─ "DarkJusticiar_Boss"                           -- Unused (Added Fighter progression)
-//      │   ├─ "DarkJusticiar_Caster"                         -- Justiciar Nightweavers in Gauntlet of Shar (Added Wizard progression)
-//      │   │   ├─ "LOW_HouseOfGrief_Cultist_Caster"          -- Mirie; Sharran Fidelians in House of Grief (Added Wizard progression)
-//      │   │   └─ "SHA_LastJusticiar_Lyrthindor"             -- Lyrthindor (Gauntlet of Shar) (Added Cleric progression)
-//      │   ├─ "DarkJusticiar_Melee_Summon"                   -- Justiciar Avengers that spawn from Umbral Tremors (Inherits Fighter progression)
-//      │   ├─ "DarkJusticiar_Ranger"                         -- Justiciar Soulhunters in Gauntlet of Shar (Added Ranger progression)
-//      │   │   ├─ "DarkJusticiar_Ranger_Summon"              -- Justiciar Soulhunters that spawn from Umbral Tremors (Inherits Ranger progression)
-//      │   │   └─ "TWN_DarkJusticiar_Intelligence"           -- Intelligent Sentinel under shrine to Shar in Reithwin (Added Wizard progression)
-//      │   ├─ "LOW_HouseOfGrief_Cultist_Melee"               -- Sharran Novice summons from Gather Your Allies (Inherits Fighter progression) (Why is this here????)
-//      │   ├─ "SHA_InitialJusticiar"                         -- (Added Fighter progression)
-//      │   ├─ "TWN_DarkJusticiar_Charisma"                   -- Charisma Sentinel under shrine to Shar in Reithwin (Added Paladin progression)
-//      │   └─ "TWN_DarkJusticiar_Wisdom"                     -- Wisdom Sentinel under shrine to Shar in Reithwin (Added Cleric progression)
+
+// Thisobald Thorm - Wretched Distiller - HONOUR MODE INHERITANCE (Added Martial boost, added Boss boost)
+new entry "Brewer"
+type "Character"
+using "Brewer"
+// data "Passives" "ExtraAttack;TurnResistance;ImmuneToControlUndead;AttackOfOpportunity;DarknessRules;Darkvision;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check"
+// data "Passives" "ExtraAttack;TurnResistance;ImmuneToControlUndead;AttackOfOpportunity;DarknessRules;Darkvision;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check;LegendaryAction_MixChangeExplosion_Brewer"
+data "Passives" "CX_Boss_Boost;CX_Martial_Boost;ExtraAttack;TurnResistance;ImmuneToControlUndead;AttackOfOpportunity;DarknessRules;Darkvision;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check;LegendaryAction_MixChangeExplosion_Brewer"
+
+// "_Undead"
+//  ├─ "DarkJusticiar_Melee"                              --- Justiciar Avengers in Gauntlet of Shar (Added Fighter progression)
+//  │   ├─ "DarkJusticiar_Boss"                           --- Unused (Added Fighter progression)
+//  │   ├─ "DarkJusticiar_Caster"                         --- Justiciar Nightweavers in Gauntlet of Shar (Added Wizard progression)
+//  │   │   ├─ "LOW_HouseOfGrief_Cultist_Caster"          --- Mirie; Sharran Fidelians in House of Grief (Added Wizard progression)
+//  │   │   └─ "SHA_LastJusticiar_Lyrthindor"             --- Lyrthindor (Gauntlet of Shar) (Added Cleric progression)
+//  │   ├─ "DarkJusticiar_Melee_Summon"                   --- Justiciar Avengers that spawn from Umbral Tremors (Inherits Fighter progression)
+//  │   ├─ "DarkJusticiar_Ranger"                         --- Justiciar Soulhunters in Gauntlet of Shar (Added Ranger progression)
+//  │   │   ├─ "DarkJusticiar_Ranger_Summon"              --- Justiciar Soulhunters that spawn from Umbral Tremors (Inherits Ranger progression)
+//  │   │   └─ "TWN_DarkJusticiar_Intelligence"           --- Intelligent Sentinel under shrine to Shar in Reithwin (Added Wizard progression)
+//  │   ├─ "LOW_HouseOfGrief_Cultist_Melee"               --- Sharran Novice summons from Gather Your Allies (Inherits Fighter progression) (Why is this here????)
+//  │   ├─ "SHA_InitialJusticiar"                         --- (Added Fighter progression)
+//  │   ├─ "TWN_DarkJusticiar_Charisma"                   --- Charisma Sentinel under shrine to Shar in Reithwin (Added Paladin progression)
+//  │   └─ "TWN_DarkJusticiar_Wisdom"                     --- Wisdom Sentinel under shrine to Shar in Reithwin (Added Cleric progression)
 
 // Justiciar Avengers in Gauntlet of Shar (Added Fighter progressions)
 new entry "DarkJusticiar_Melee"
@@ -4648,6 +4692,7 @@ data "Progressions" "44bdbc5e-a003-4d61-87f0-5ced20d3804e"
 
 // Mirie; Sharran Fidelians in House of Grief (Human AND Elf); summons for Gather Your Allies (Added Wizard progressions)
 // Gonna omit racial passives for now as this entry is used for multiple races
+//TODO: Fix the above somehow
 new entry "LOW_HouseOfGrief_Cultist_Caster"
 type "Character"
 using "LOW_HouseOfGrief_Cultist_Caster"
@@ -4656,12 +4701,12 @@ data "Passives" "CX_Spells_L4;AttackOfOpportunity;Darkvision;DarknessRules;LOW_H
 // data "Progressions" ""
 data "Progressions" "44bdbc5e-a003-4d61-87f0-5ced20d3804e"
 
-// Lyrthindor, the rat guy (making a Trickery Cleric)
+// Lyrthindor, the rat guy (Added Cleric progressions, added Trickery Domain subclass, added Mini Boss boost)
 new entry "SHA_LastJusticiar_Lyrthindor"
 type "Character"
 using "SHA_LastJusticiar_Lyrthindor"
 // data "Passives" "SHA_VisionOfShar;SHA_Lyrthindor_UnlockExtraSpellSlots;AttackOfOpportunity;Darkvision;DarknessRules"
-data "Passives" "CX_Cleric_Trickery_Boost;CX_Martial_Boost;AttackOfOpportunity;Darkvision;DarknessRules;SHA_VisionOfShar;SHA_Lyrthindor_UnlockExtraSpellSlots;"
+data "Passives" "CX_MiniBoss_Boost;CX_Cleric_Trickery_Boost;CX_Martial_Boost;AttackOfOpportunity;Darkvision;DarknessRules;SHA_VisionOfShar;SHA_Lyrthindor_UnlockExtraSpellSlots;"
 // data "Progressions" ""
 data "Progressions" "36c3f8de-3293-4d7b-92bc-ceb3c569244b"
 
@@ -4700,7 +4745,7 @@ data "Passives" "CX_Paladin_Vengeance_Boost;AttackOfOpportunity;Darkvision;Darkn
 // data "Progressions" ""
 data "Progressions" "8726b2c4-edc0-4905-b82f-60a4baba0733"
 
-// Wise Sentinel (secret shrine to Shar underneath Reithwin town square) (Added Cleric progression)
+// Wise Sentinel (secret shrine to Shar underneath Reithwin town square) (Added Cleric progression, added Trickery Domain subclass)
 new entry "TWN_DarkJusticiar_Wisdom"
 type "Character"
 using "TWN_DarkJusticiar_Wisdom"
@@ -4712,8 +4757,8 @@ data "Progressions" "36c3f8de-3293-4d7b-92bc-ceb3c569244b"
 // "_Undead"
 //  ├─ "FloatingHead"
 //  │   └─ "TWN_TollCollector_Visage"
-//  ├─ "GLO_Jergal"
-//  ├─ "GLO_Oathbreaker_Paladin"                              -- Oathbreaker Knight (added Paladin progressions and Oathbreaker subclass)
+//  ├─ "GLO_Jergal"                             --- Withers
+//  ├─ "GLO_Oathbreaker_Paladin"
 //  ├─ "Ghost"
 //  │   ├─ "LOW_Houndmaster"
 //  │   ├─ "LOW_OskarsBeloved_Mummy"
@@ -4722,6 +4767,25 @@ data "Progressions" "36c3f8de-3293-4d7b-92bc-ceb3c569244b"
 //  │   │   └─ "LOW_Raphael_SoulSummon"
 //  │   ├─ "LOW_OskarsBeloved_Poltergeist"
 //  │   └─ "LOW_OskarsBeloved_Spirit"
+
+//TODO: "FloatingHead" has more passives
+// Visage of Cowardice; Visage of Greed; Visage of Guilt; Visage of Heartlessness; Visage of Obedience; Visage of Regret - Gerringothe Thorm adds (Added Mini Boss boost)
+new entry "TWN_TollCollector_Visage"
+type "Character"
+using "TWN_TollCollector_Visage"
+// data "Passives" "AttackOfOpportunity;DarknessRules;Darkvision;TWN_TC_Visage_CursedGold"
+data "Passives" "CX_MiniBoss_Boost;AttackOfOpportunity;DarknessRules;Darkvision;TWN_TC_Visage_CursedGold"
+
+// Oathbreaker Knight, Custodian of the Fallen (Added Paladin progressions, added Oathbreaker subclass)
+new entry "GLO_Oathbreaker_Paladin"
+type "Character"
+using "GLO_Oathbreaker_Paladin"
+// data "Passives" "AttackOfOpportunity;DarknessRules;Darkvision;ExtraAttack;TurnResistance;FightingStyle_GreatWeaponFighting;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check;"
+data "Passives" "CX_Paladin_Oathbreaker_Boost;AttackOfOpportunity;DarknessRules;Darkvision;ExtraAttack;TurnResistance;FightingStyle_GreatWeaponFighting;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check"
+// data "Progressions" ""
+data "Progressions" "8726b2c4-edc0-4905-b82f-60a4baba0733"
+
+// "_Undead"
 //  ├─ "Ghoul"
 //  │   ├─ "AnimateDead_Ghoul"
 //  │   │   └─ "WakeTheDead_Ghoul"
@@ -4736,6 +4800,16 @@ data "Progressions" "36c3f8de-3293-4d7b-92bc-ceb3c569244b"
 //  ├─ "Mummy"
 //  │   ├─ "LOW_FatherCarrion"
 //  │   └─ "Mummy_CreateUndead"
+
+// Mystic Carrion - HONOUR MODE INHERITANCE (Added Boss boost, added Magic boost, added Martial boost) (Has a handful of substantial abilities without a resource limit, no need to cram a class in)
+new entry "LOW_FatherCarrion"
+type "Character"
+using "LOW_FatherCarrion"
+// data "Passives" "AttackOfOpportunity;DarknessRules;MagicResistance;TurnResistance;Darkvision;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check;Multiattack_Mummy;ImmuneToDisarm;"
+// data "Passives" "AttackOfOpportunity;DarknessRules;MagicResistance;TurnResistance;Darkvision;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check;Multiattack_Mummy;ImmuneToDisarm;LegendaryAction_LOW_FatherCarrion_SpiritParade"
+data "Passives" "CX_Boss_Boost;CX_Magic_Boost;CX_Martial_Boost;AttackOfOpportunity;DarknessRules;MagicResistance;TurnResistance;Darkvision;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check;Multiattack_Mummy;ImmuneToDisarm;LegendaryAction_LOW_FatherCarrion_SpiritParade"
+
+// "_Undead"
 //  ├─ "Shadow"
 //  │   ├─ "LOW_Sewer_HeadlessGhost"
 //  │   ├─ "SCL_Oliver"
@@ -4753,15 +4827,81 @@ data "Progressions" "36c3f8de-3293-4d7b-92bc-ceb3c569244b"
 //  │       ├─ "SCL_Oliver_Mom"
 //  │       │   └─ "SCL_Oliver_Mom_NoShadowblend"
 //  │       └─ "Wraith_Lakeside"
+
+// Shadow Friend (Oliver summon) (Added Mini Boss boost)
+new entry "TWN_Oliver_MischievousShadow"
+type "Character"
+using "TWN_Oliver_MischievousShadow"
+// data "Passives" "AttackOfOpportunity;SunlightWeakness;DarknessRules;Darkvision;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check;Ethereal"
+data "Passives" "CX_MiniBoss_Boost;AttackOfOpportunity;SunlightWeakness;DarknessRules;Darkvision;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check;Ethereal"
+
+// Daddy - Strongest Daddy Ever! (Oliver summon) (Added Boss boost)
+new entry "SCL_Oliver_Dad"
+type "Character"
+using "SCL_Oliver_Dad"
+// data "Passives" "AuraOfVileOblivion_Technical;VileOblivion;Ethereal;SunlightSensitivity;AttackOfOpportunity;Darkvision;DarknessRules;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check"
+data "Passives" "CX_Boss_Boost;AuraOfVileOblivion_Technical;VileOblivion;Ethereal;SunlightSensitivity;AttackOfOpportunity;Darkvision;DarknessRules;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check"
+
+// Mummy - Best Mummy Ever! (Oliver summon) (Added Boss boost)
+new entry "SCL_Oliver_Mom"
+type "Character"
+using "SCL_Oliver_Mom"
+// data "Passives" "AuraOfVileOblivion_Technical;VileOblivion;Ethereal;SunlightSensitivity;AttackOfOpportunity;Darkvision;DarknessRules;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check"
+data "Passives" "CX_Boss_Boost;AuraOfVileOblivion_Technical;VileOblivion;Ethereal;SunlightSensitivity;AttackOfOpportunity;Darkvision;DarknessRules;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check"
+
+// Oliver - Shadowed Spirit of the Land - HONOUR MODE INHERITANCE
+new entry "SCL_Oliver"
+type "Character"
+using "SCL_Oliver"
+// data "Passives" "Surprise_Immunity;SunlightWeakness;AttackOfOpportunity;Darkvision;DarknessRules;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check"
+// data "Passives" "Surprise_Immunity;SunlightWeakness;AttackOfOpportunity;Darkvision;DarknessRules;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check;LegendaryAction_Oliver_Cursedome"
+data "Passives" "Surprise_Immunity;SunlightWeakness;AttackOfOpportunity;Darkvision;DarknessRules;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check;LegendaryAction_Oliver_Cursedome"
+
+
+// "_Undead"
 //  ├─ "Spectre"
 //  │   └─ "LOW_Spectre"
 //  ├─ "Surgeon"
-//  ├─ "Surgeon_Nurse"                                    -- Zealous Assistants (nurses in Reithwin Hospital) (added Rogue progressions)
+//  ├─ "Surgeon_Nurse"
 //  │   └─ "Surgeon_Nurse_Summon"                         -- Unused
 //  ├─ "TollCollector"
 //  ├─ "Vampire"
 //  │   ├─ "GLO_Cazador"                                  -- Cazador (has Wizard progressions, added Necromancy subclass)
 //  │   └─ "Vampire_Spawn"                                -- Various vampire spawn in Cazador's palace (including Astarion's siblings but also others such as the chamberlain and prisoners). Did not touch this entry
+
+// Malus Thorm - HONOUR MODE INHERITANCE (Added Rogue progressions, added Assassin subclass, added Boss boost)
+new entry "Surgeon"
+type "Character"
+using "Surgeon"
+// data "SpellCastingAbility" "Dexterity"
+data "SpellCastingAbility" "Intelligence"
+// data "Passives" "TurnResistance;MagicResistance;Multiattack_Surgeon;AttackOfOpportunity;DarknessRules;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check"
+// data "Passives" "LegendaryAction_Surgeon_MindScreech;LegendaryAction_Surgeon_GrapplingArm;TurnResistance;MagicResistance;Multiattack_Surgeon;AttackOfOpportunity;DarknessRules;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check"
+data "Passives" "CX_Boss_Boost;CX_Rogue_Assassin_Boost;LegendaryAction_Surgeon_MindScreech;LegendaryAction_Surgeon_GrapplingArm;TurnResistance;MagicResistance;Multiattack_Surgeon;AttackOfOpportunity;DarknessRules;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check"
+// data "Progressions" ""
+data "Progressions" "532203c2-7bcb-4162-9a7c-2bb20e227a30"
+
+// Zealous Assistants (Nurses in Reithwin Hospital) - HONOUR MODE INHERITANCE (Added Rogue progressions, added Assassin subclass, added Mini Boss boost)
+new entry "Surgeon_Nurse"
+type "Character"
+using "Surgeon_Nurse"
+// data "Passives" "AttackOfOpportunity;DarknessRules;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check"
+// data "Passives" "TWN_Hospital_Nurse_Honor_Technical;AttackOfOpportunity;DarknessRules;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check"
+data "Passives" "CX_MiniBoss_Boost;CX_Rogue_Assassin_Boost;AttackOfOpportunity;DarknessRules;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check;TWN_Hospital_Nurse_Honor_Technical"
+// data "Progressions" ""
+data "Progressions" "532203c2-7bcb-4162-9a7c-2bb20e227a30"
+
+// Gerringothe Thorm - Accursed Keeper of Coins - HONOUR MODE INHERITANCE (Added Boss boost, added Martial boost)
+new entry "TollCollector"
+type "Character"
+using "TollCollector"
+// data "SpellCastingAbility" "Dexterity"
+data "SpellCastingAbility" "Intelligence"
+// data "Passives" "Alert;TollCollector_Armor;FastHands;TurnResistance;ImmuneToControlUndead;AttackOfOpportunity;DarknessRules;Darkvision;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check"
+// data "Passives" "Alert;TollCollector_Armor;FastHands;TurnResistance;ImmuneToControlUndead;AttackOfOpportunity;DarknessRules;Darkvision;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check;LegendaryAction_MidasWrath_TollCollector"
+data "Passives" "CX_Boss_Boost;CX_Martial_Boost;Alert;TollCollector_Armor;FastHands;TurnResistance;ImmuneToControlUndead;AttackOfOpportunity;DarknessRules;Darkvision;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check;LegendaryAction_MidasWrath_TollCollector"
+
+// "_Undead"
 //  ├─ "Zombie"
 //  │   ├─ "AnimateDead_Zombie"
 //  │   ├─ "AnimateDead_Zombie__Horde"
@@ -4784,32 +4924,13 @@ data "Progressions" "36c3f8de-3293-4d7b-92bc-ceb3c569244b"
 //  │       └─ "LOW_Thay_Summon_Zombie_Greater"
 //  └─ "_Undead_Gustav"
 
-// Zealous Assistants (urses in Reithwin Hospital) - HONOUR MODE INHERITANCE (Added Rogue progressions)
-new entry "Surgeon_Nurse"
-type "Character"
-using "Surgeon_Nurse"
-// data "Passives" "AttackOfOpportunity;DarknessRules;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check"
-// data "Passives" "TWN_Hospital_Nurse_Honor_Technical;AttackOfOpportunity;DarknessRules;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check"
-data "Passives" "AttackOfOpportunity;DarknessRules;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check;TWN_Hospital_Nurse_Honor_Technical"
-// data "Progressions" ""
-data "Progressions" "532203c2-7bcb-4162-9a7c-2bb20e227a30"
-
-// Oathbreaker Knight, Custodian of the Fallen (Added Paladin progressions, added Oathbreaker subclass)
-new entry "GLO_Oathbreaker_Paladin"
-type "Character"
-using "GLO_Oathbreaker_Paladin"
-// data "Passives" "AttackOfOpportunity;DarknessRules;Darkvision;ExtraAttack;TurnResistance;FightingStyle_GreatWeaponFighting;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check;"
-data "Passives" "CX_Paladin_Oathbreaker_Boost;AttackOfOpportunity;DarknessRules;Darkvision;ExtraAttack;TurnResistance;FightingStyle_GreatWeaponFighting;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check"
-// data "Progressions" ""
-data "Progressions" "8726b2c4-edc0-4905-b82f-60a4baba0733"
-
-// Cazador - HONOUR MODE INHERITANCE (Has Wizard progressions, added Necromancy subclass and CX_Martial_Boost, as he also does melee attacks)
+// Cazador Szarr - Vampire Lord - HONOUR MODE INHERITANCE (Has Wizard progressions, added Necromancy subclass, added Martial boost as he also does melee attacks)
 new entry "GLO_Cazador"
 type "Character"
 using "GLO_Cazador"
 // data "Passives" "Alert;ExtraAttack_2;AttackOfOpportunity;DarknessRules;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check;DamageDealtRecently"
 // data "Passives" "Alert;ExtraAttack_2;AttackOfOpportunity;DarknessRules;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check;DamageDealtRecently;LegendaryAction_LOW_Cazador_BatSwarm;LegendaryAction_LOW_Cazador_BatSwarm_Block;"
-data "Passives" "CX_Wizard_Necromancy_Boost;CX_Martial_Boost;CX_Spells_L6;CX_Spells_L6C;AttackOfOpportunity;DarknessRules;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check;DamageDealtRecently;Alert;ExtraAttack_2;LegendaryAction_LOW_Cazador_BatSwarm;LegendaryAction_LOW_Cazador_BatSwarm_Block;"
+data "Passives" "CX_Boss_Boost;CX_Wizard_Necromancy_Boost;CX_Martial_Boost;CX_Spells_L6;CX_Spells_L6C;AttackOfOpportunity;DarknessRules;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check;DamageDealtRecently;Alert;ExtraAttack_2;LegendaryAction_LOW_Cazador_BatSwarm;LegendaryAction_LOW_Cazador_BatSwarm_Block;"
 
 // Skeletons are the most relevant Undead category for CX class boosts
 
@@ -4832,8 +4953,6 @@ data "Passives" "CX_Wizard_Necromancy_Boost;CX_Martial_Boost;CX_Spells_L6;CX_Spe
 new entry "FOR_Thay_Skeleton_Melee"
 type "Character"
 using "FOR_Thay_Skeleton_Melee"
-// data "Passives" "FightingStyle_Dueling;AttackOfOpportunity;Darkvision;DarknessRules;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check"
-data "Passives" "FightingStyle_Dueling;AttackOfOpportunity;Darkvision;DarknessRules;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check"
 // data "Progressions" ""
 data "Progressions" "0e6da493-5a37-423b-8c28-629462b22faa"
 
@@ -4848,11 +4967,12 @@ data "PathInfluence" "BloodElectrified,100;BloodFrozen,30;Lava,700;Fire,40;HolyF
 // data "Progressions" ""
 data "Progressions" "8726b2c4-edc0-4905-b82f-60a4baba0733"
 
+// (Added Barbarian progressions)
 new entry "Skeleton_Giant"
 type "Character"
 using "Skeleton_Giant"
-// data "Passives" "ExtraAttack;BlockVerbalSpellcasting;AttackOfOpportunity;DarknessRules;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check;SkeletonDeath_Check"
-data "Passives" "CX_Barbarian_Boost;CX_Martial_Boost;ExtraAttack;BlockVerbalSpellcasting;AttackOfOpportunity;DarknessRules;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check;SkeletonDeath_Check"
+// data "Progressions" ""
+data "Progressions" "56db8107-e04c-4fe3-94f3-fd4acd44cd4a"
 
 // Apostate Destroyer - reanimated skeletons if fighting Balthazar in the Shadowfell (Added Paladin progressions, added Oathbreaker subclass - they have Aura of Hate already in vanilla)
 new entry "SHA_Skeleton_Giant"
@@ -4892,6 +5012,14 @@ data "SpellCastingAbility" "Wisdom"
 data "Passives" "CX_Ranger_Boost;CX_Martial_Boost;AttackOfOpportunity;Darkvision;DarknessRules;BlockVerbalSpellcasting;SkeletonDeath_Check;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check"
 // data "Progressions" ""
 data "Progressions" "f0ede459-8b86-48fd-ac11-4432573566a5"
+// data "Proficiency Group" "Longbows;Shortbows;LightArmor;SimpleWeapons"
+data "Proficiency Group" "Longbows;Shortbows;HeavyCrossbows;LightCrossbows;HandCrossbows;LightArmor;SimpleWeapons"
+
+new entry "SHA_Skeleton_Ranger"
+type "Character"
+using "SHA_Skeleton_Ranger"
+// data "Proficiency Group" "Longbows;Shortbows;LightArmor;SimpleWeapons"
+data "Proficiency Group" "Longbows;Shortbows;HeavyCrossbows;LightCrossbows;HandCrossbows;LightArmor;SimpleWeapons"
 
 // Apostate Sentinels - reanimated skeletons if fighting Balthazar in the Shadowfell (Inherits Ranger progressions)
 new entry "SHA_Skeleton_Ranger"
@@ -5012,6 +5140,45 @@ using "WYR_Wyrmsway_Skeleton_Mage"
 // data "Passives" "AttackOfOpportunity;DarknessRules;Darkvision;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check"
 data "Passives" "CX_Spells_L5;CX_Spells_L5C;AttackOfOpportunity;DarknessRules;Darkvision;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check"
 
+// ==================================== Fey ====================================
+// "_Base"
+//  ├─ "_Fey"
+//  │   ├─ "Dryad"
+//  │   ├─ "Hag_Green"
+//  │   │   └─ "HAG_AuntieEthel"
+//  │   │       └─ "HAG_AuntieEthel_Double"
+//  │   ├─ "Meenlock"
+//  │   ├─ "RedCap"
+//  │   │   ├─ "LOW_BlushingMermaid_Redcap_Melee"
+//  │   │   │   └─ "LOW_HagsSurvivors_Jatlo"
+//  │   │   ├─ "RedCap_Caster"
+//  │   │   │   └─ "LOW_BlushingMermaid_Redcap_Caster"
+//  │   │   └─ "UND_BOOOAL"
+//  │   └─ "_Fey_Gustav"
+
+// Auntie Ethel - Trader of Quirks and Sundries, Sister of the Seeing Pearl - HONOUR MODE INHERITANCE (Added Magic boost, added Boss boost) (Added hacky "Goon_Ethel_Unlocker" so she probably can't be cheesed in the fireplace anymore, added to her doubles too just incase I make it a visible passive)
+new entry "HAG_AuntieEthel"
+type "Character"
+using "HAG_AuntieEthel"
+// data "Passives" "AttackOfOpportunity;DarknessRules;Darkvision;Alert;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check"
+// data "Passives" "AttackOfOpportunity;DarknessRules;Darkvision;Alert;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check;LegendaryAction_HAG_Counterswap"
+data "Passives" "Goon_NPC_Ethel_Unlocker;CX_Boss_Boost;CX_Magic_Boost;AttackOfOpportunity;DarknessRules;Darkvision;Alert;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check;LegendaryAction_HAG_Counterswap"
+
+new entry "HAG_AuntieEthel_Double"
+type "Character"
+using "HAG_AuntieEthel_Double"
+// data "Passives" "AttackOfOpportunity;DarknessRules;Darkvision;Alert;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check;LegendaryAction_HAG_Counterswap_Double"
+data "Passives" "Goon_NPC_Ethel_Unlocker;CX_Boss_Boost;CX_Magic_Boost;AttackOfOpportunity;DarknessRules;Darkvision;Alert;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check;LegendaryAction_HAG_Counterswap_Double"
+
+// BOOOAL (Added Rogue boost, added Assassin subclass, added Boss boost)
+new entry "UND_BOOOAL"
+type "Character"
+using "UND_BOOOAL"
+// data "Passives" "AttackOfOpportunity;BloodThirsty_Redcap;DarknessRules;Darkvision;Multiattack_Redcap;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check"
+data "Passives" "CX_Boss_Boost;CX_Rogue_Assassin_Boost;AttackOfOpportunity;BloodThirsty_Redcap;DarknessRules;Darkvision;Multiattack_Redcap;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check"
+// data "Progressions" ""
+data "Progressions" "532203c2-7bcb-4162-9a7c-2bb20e227a30"
+
 // ==================================== Fiend ====================================
 // "_Base"
 //  ├─ "_Fiend"
@@ -5022,52 +5189,72 @@ data "Passives" "CX_Spells_L5;CX_Spells_L5C;AttackOfOpportunity;DarknessRules;Da
 //  │   │   ├─ "LOW_HouseOfHope_Cambion"
 //  │   │   └─ "TUT_Cambion_NoCrits"
 //  │   │       └─ "TUT_CambionCommander"
-//  │   ├─ "Incubus"
-//  │   ├─ "_Demon"
-//  │   │   ├─ "Balor"
-//  │   │   ├─ "Manes"
-//  │   │   ├─ "Quasit"
-//  │   │   │   └─ "Chain_Quasit"
-//  │   │   │       └─ "FOR_QuasitSummon"
-//  │   │   └─ "Vrock"
-//  │   └─ "_Devil"
-//  │       ├─ "Devil_Barbed"
-//  │       ├─ "Devil_Bearded"
-//  │       ├─ "Devil_Bone"
-//  │       ├─ "Devil_Chain"
-//  │       ├─ "Devil_Horned"
-//  │       │   └─ "LOW_Monitor_BeastForm"
-//  │       ├─ "Devil_Ice"
-//  │       ├─ "Devil_Spined"
-//  │       ├─ "Erinyes"
-//  │       ├─ "Imp"
-//  │       │   ├─ "Butler"
-//  │       │   ├─ "Chain_Imp"
-//  │       │   ├─ "Imp_Weak"
-//  │       │   │   ├─ "Imp_Crippled"
-//  │       │   │   ├─ "Imp_Weak_NoXP"
-//  │       │   │   └─ "TUT_Imp_NerfedSightRange"
-//  │       │   │       └─ "TUT_Imp_NerfedSightRange_02"
-//  │       │   ├─ "LOW_DevilsFee_Imp"
-//  │       │   │   └─ "LOW_DevilsFee_Imp_Ally"
-//  │       │   ├─ "LOW_PlagueShip_Imp"
-//  │       │   ├─ "LOW_Raphael_Imp"
-//  │       │   ├─ "TWN_Brewer_Imp_Acid"
-//  │       │   ├─ "TWN_Brewer_Imp_Cold"
-//  │       │   ├─ "TWN_Brewer_Imp_Fire"
-//  │       │   ├─ "TWN_Brewer_Imp_Lightning"
-//  │       │   └─ "TWN_Brewer_Imp_Poison"
-//  │       ├─ "Lemure"
-//  │       ├─ "Merregon"                                  -- Merregons (Added Fighter progressions)
-//  │       │   └─ "LOW_HouseOfHope_Merregon"              -- House of Hope Merregons (Inherits Fighter progressions)
-//  │       └─ "Orthon"                                   
 
-// Raphael - Master of the House
+// Raphael - Master of the House - HONOUR MODE INHERITANCE (Added Magic boost, added Boss boost) (Has a lot of very specific and powerful stuff, not worth hamfisting a class archetype into him)
 new entry "GLO_Raphael"
 type "Character"
 using "GLO_Raphael"
+// data "Passives" "AttackOfOpportunity;DarknessRules;Darkvision;FiendishBlessing;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check;MagicResistance;DevilsSight;LOW_Raphael_SoulSiphon_Passive;LOW_Raphael_SoulSiphon_Passive_2;LOW_Raphael_SoulSiphon_Passive_3;LOW_Raphael_SoulSiphon_Passive_4;LOW_Raphael_SoulSiphon_Passive_5;LOW_Raphael_SoulSiphon_Passive_6;LOW_Raphael_SoulSiphon_Passive_7;LOW_Raphael_SoulSiphon_Passive_8;LOW_Raphael_SoulSiphon_Passive_9;LOW_Raphael_Reaper;MAG_Infernal_Plate_Armor_Passive;LOW_Raphael_Set_Pillar_Status;LOW_Raphael_ArchfiendWill;"
+// data "Passives" "LegendaryAction_LOW_Raphael;AttackOfOpportunity;DarknessRules;Darkvision;FiendishBlessing;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check;MagicResistance;DevilsSight;LOW_Raphael_SoulSiphon_Passive;LOW_Raphael_SoulSiphon_Passive_2;LOW_Raphael_SoulSiphon_Passive_3;LOW_Raphael_SoulSiphon_Passive_4;LOW_Raphael_SoulSiphon_Passive_5;LOW_Raphael_SoulSiphon_Passive_6;LOW_Raphael_SoulSiphon_Passive_7;LOW_Raphael_SoulSiphon_Passive_8;LOW_Raphael_SoulSiphon_Passive_9;LOW_Raphael_Reaper;MAG_Infernal_Plate_Armor_Passive;LOW_Raphael_Set_Pillar_Status;LOW_Raphael_ArchfiendWill;"
+data "Passives" "CX_Boss_Boost;CX_Magic_Boost;LegendaryAction_LOW_Raphael;AttackOfOpportunity;DarknessRules;Darkvision;FiendishBlessing;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check;MagicResistance;DevilsSight;LOW_Raphael_SoulSiphon_Passive;LOW_Raphael_SoulSiphon_Passive_2;LOW_Raphael_SoulSiphon_Passive_3;LOW_Raphael_SoulSiphon_Passive_4;LOW_Raphael_SoulSiphon_Passive_5;LOW_Raphael_SoulSiphon_Passive_6;LOW_Raphael_SoulSiphon_Passive_7;LOW_Raphael_SoulSiphon_Passive_8;LOW_Raphael_SoulSiphon_Passive_9;LOW_Raphael_Reaper;MAG_Infernal_Plate_Armor_Passive;LOW_Raphael_Set_Pillar_Status;LOW_Raphael_ArchfiendWill"
 // data "PathInfluence" "BloodElectrified,100;BloodFrozen,30;Lava,700;HolyFire,40;PoisonCloud,70;WyvernPoison,70;DrowPoisonCloud,70;PurpleWormPoison,70;SerpentVenom,70;InvisibleGithAcid,70;CloudkillCloud,70;MaliceCloud,70;CrawlerMucusCloud,70;WaterElectrified,100;WaterFrozen,30;Grease,30;Web,30;Vines,40;SporeBlackCloud,100;WaterCloudElectrified,40;SporeGreenCloud,40;Acid,30;CausticBrine,40;DarknessCloud,30;FogCloud,30;Mud,30;Oil,30;Poison,30;SpikeGrowth,40;SporePinkCloud,40;StinkingCloud,40"
 data "PathInfluence" "BloodElectrified,100;BloodFrozen,30;Lava,700;HolyFire,40;PoisonCloud,70;WyvernPoison,70;DrowPoisonCloud,70;PurpleWormPoison,70;SerpentVenom,70;InvisibleGithAcid,70;CloudkillCloud,70;Cloudkill6Cloud,70;MaliceCloud,70;CrawlerMucusCloud,70;WaterElectrified,100;WaterFrozen,30;Grease,30;Web,30;Vines,40;SporeBlackCloud,100;WaterCloudElectrified,40;SporeGreenCloud,40;Acid,30;CausticBrine,40;DarknessCloud,30;FogCloud,30;Mud,30;Oil,30;Poison,30;SpikeGrowth,40;SporePinkCloud,40;StinkingCloud,40"
+
+// Raphael's Ascended Fiend Form - HONOUR MODE INHERITANCE (Added Martial boost, added Magic boost added Boss boost)
+new entry "LOW_Raphael_Monster_Form_Stats"
+type "Character"
+using "LOW_Raphael_Monster_Form_Stats"
+// data "Passives" "AttackOfOpportunity;DarknessRules;Darkvision;FiendishBlessing;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check;MagicResistance;DevilsSight;LOW_Raphael_SoulSiphon_Passive;LOW_Raphael_SoulSiphon_Passive_2;LOW_Raphael_SoulSiphon_Passive_3;LOW_Raphael_SoulSiphon_Passive_4;LOW_Raphael_SoulSiphon_Passive_5;LOW_Raphael_SoulSiphon_Passive_6;LOW_Raphael_SoulSiphon_Passive_7;LOW_Raphael_SoulSiphon_Passive_8;LOW_Raphael_SoulSiphon_Passive_9;LOW_Raphael_Reaper;MAG_Infernal_Plate_Armor_Passive;LOW_Raphael_Set_Pillar_Status;LOW_Raphael_ArchfiendWill;"
+// data "Passives" "LegendaryAction_LOW_Raphael;AttackOfOpportunity;DarknessRules;Darkvision;FiendishBlessing;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check;MagicResistance;DevilsSight;LOW_Raphael_SoulSiphon_Passive;LOW_Raphael_SoulSiphon_Passive_2;LOW_Raphael_SoulSiphon_Passive_3;LOW_Raphael_SoulSiphon_Passive_4;LOW_Raphael_SoulSiphon_Passive_5;LOW_Raphael_SoulSiphon_Passive_6;LOW_Raphael_SoulSiphon_Passive_7;LOW_Raphael_SoulSiphon_Passive_8;LOW_Raphael_SoulSiphon_Passive_9;LOW_Raphael_Reaper;MAG_Infernal_Plate_Armor_Passive;LOW_Raphael_Set_Pillar_Status;LOW_Raphael_ArchfiendWill;"
+data "Passives" "CX_Boss_Boost;CX_Martial_Boost;CX_Magic_Boost;LegendaryAction_LOW_Raphael_Ascended;AttackOfOpportunity;DarknessRules;Darkvision;FiendishBlessing;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check;MagicResistance;DevilsSight;LOW_Raphael_SoulSiphon_Passive;LOW_Raphael_SoulSiphon_Passive_2;LOW_Raphael_SoulSiphon_Passive_3;LOW_Raphael_SoulSiphon_Passive_4;LOW_Raphael_SoulSiphon_Passive_5;LOW_Raphael_SoulSiphon_Passive_6;LOW_Raphael_SoulSiphon_Passive_7;LOW_Raphael_SoulSiphon_Passive_8;LOW_Raphael_SoulSiphon_Passive_9;LOW_Raphael_Reaper;MAG_Infernal_Plate_Armor_Passive;LOW_Raphael_Set_Pillar_Status;LOW_Raphael_ArchfiendWill"
+
+// Commander Zhalk (Added Martial Boost, added Boss boost, AND added "ImmuneToDisarm")
+new entry "TUT_CambionCommander"
+type "Character"
+using "TUT_CambionCommander"
+// data "Passives" "DarknessRules;Darkvision;FiendishBlessing;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check"
+data "Passives" "CX_Boss_Boost;CX_Martial_Boost;DarknessRules;Darkvision;FiendishBlessing;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check;ImmuneToDisarm"
+
+// "_Fiend"
+//  ├─ "Incubus"
+//  ├─ "_Demon"
+//  │   ├─ "Balor"
+//  │   ├─ "Manes"
+//  │   ├─ "Quasit"
+//  │   │   └─ "Chain_Quasit"
+//  │   │       └─ "FOR_QuasitSummon"
+//  │   └─ "Vrock"
+//  ├─ "_Devil"
+//  │   ├─ "Devil_Barbed"
+//  │   ├─ "Devil_Bearded"
+//  │   ├─ "Devil_Bone"
+//  │   ├─ "Devil_Chain"
+//  │   ├─ "Devil_Horned"
+//  │   │   └─ "LOW_Monitor_BeastForm"
+//  │   ├─ "Devil_Ice"
+//  │   ├─ "Devil_Spined"
+//  │   ├─ "Erinyes"
+//  │   ├─ "Imp"
+//  │   │   ├─ "Butler"
+//  │   │   ├─ "Chain_Imp"
+//  │   │   ├─ "Imp_Weak"
+//  │   │   │   ├─ "Imp_Crippled"
+//  │   │   │   ├─ "Imp_Weak_NoXP"
+//  │   │   │   └─ "TUT_Imp_NerfedSightRange"
+//  │   │   │       └─ "TUT_Imp_NerfedSightRange_02"
+//  │   │   ├─ "LOW_DevilsFee_Imp"
+//  │   │   │   └─ "LOW_DevilsFee_Imp_Ally"
+//  │   │   ├─ "LOW_PlagueShip_Imp"
+//  │   │   ├─ "LOW_Raphael_Imp"
+//  │   │   ├─ "TWN_Brewer_Imp_Acid"
+//  │   │   ├─ "TWN_Brewer_Imp_Cold"
+//  │   │   ├─ "TWN_Brewer_Imp_Fire"
+//  │   │   ├─ "TWN_Brewer_Imp_Lightning"
+//  │   │   └─ "TWN_Brewer_Imp_Poison"
+//  │   ├─ "Lemure"
+//  │   ├─ "Merregon"                                  -- Merregons (Added Fighter progressions)
+//  │   │   └─ "LOW_HouseOfHope_Merregon"              -- House of Hope Merregons (Inherits Fighter progressions)
+//  │   └─ "Orthon"                                   
 
 // Merregons (Added Fighter progressions)
 new entry "Merregon"
@@ -5078,11 +5265,21 @@ data "Passives" "AttackOfOpportunity;DevilsSight;DarknessRules;MagicResistance;E
 // data "Progressions" ""
 data "Progressions" "0e6da493-5a37-423b-8c28-629462b22faa"
 
+// Yurgir - HONOUR MODE INHERITANCE (Added Rogue progressions, added Assassin subclass, added Boss boost)
+new entry "Orthon"
+type "Character"
+using "Orthon"
+// data "Passives" "DevilsSight;ExplosiveRetribution;MagicResistance;AttackOfOpportunity;Darkvision;DarknessRules"
+// data "Passives" "DevilsSight;ExplosiveRetribution;MagicResistance;AttackOfOpportunity;Darkvision;DarknessRules;LegendaryAction_SHA_Orthon;"
+data "Passives" "CX_Boss_Boost;CX_Rogue_Assassin_Boost;DevilsSight;ExplosiveRetribution;MagicResistance;AttackOfOpportunity;Darkvision;DarknessRules;LegendaryAction_SHA_Orthon;"
+// data "Progressions" ""
+data "Progressions" "0e6da493-5a37-423b-8c28-629462b22faa"
+
 // ==================================== Oozes ====================================
 
 // "_Base"
 //  ├─ "_Ooze"
-//  │   ├─ "Ooze_Gray"
+//  │   ├─ "Ooze_Gray"                  --- Unused
 //  │   └─ "Ooze_Jelly_Ochre"
 //  │       ├─ "HAV_Phasm"
 //  │       ├─ "LOW_GreaseWizard_Ooze"
@@ -5107,9 +5304,9 @@ data "PathInfluence" "BloodElectrified,100;BloodFrozen,30;Lava,700;Fire,40;HolyF
 //  │   ├─ "Bulette"
 //  │   │   └─ "Test_Hits"
 //  │   ├─ "DisplacerBeast"
-//  │   ├─ "Doppelganger"                      -- Doppelgangers (Added Rogue progressions)
-//  │   │   ├─ "LOW_NotJaheira"                -- Fake Jaheira Doppelganger (Inherits Rogue progressions)
-//  │   │   └─ "WYR_DG_Dribbles"               -- Dribbles (Inherits Rogue progressions)
+//  │   ├─ "Doppelganger"                      --- Doppelgangers (Added Rogue progressions)
+//  │   │   ├─ "LOW_NotJaheira"                --- Fake Jaheira Doppelganger (Inherits Rogue progressions, inherits Assassin subclass)
+//  │   │   └─ "WYR_DG_Dribbles"
 //  │   ├─ "Drider"
 //  │   │   └─ "SCL_DriderCaravan_Drider"
 //  │   ├─ "Ettercap"
@@ -5117,44 +5314,44 @@ data "PathInfluence" "BloodElectrified,100;BloodFrozen,30;Lava,700;Fire,40;HolyF
 //  │   ├─ "Harpy"
 //  │   ├─ "HookHorror"
 //  │   ├─ "Mimic"
-//  │   ├─ "Minotaur"                          -- Minotaurs (Added Barbarian progressions)
-//  │   │   └─ "LOW_DevilsFee_Minotaur"        -- Gilded Minotaurs (summoned by Helsik) (Inherits Barbarian progressions)
-//  │   ├─ "Owlbear"
-//  │   │   ├─ "FOR_Owlbear"
-//  │   │   ├─ "Owlbear_Armoured"
-//  │   │   ├─ "Owlbear_Cub"
-//  │   │   ├─ "Owlbear_Wildshape_10"
-//  │   │   ├─ "Owlbear_Wildshape_12"
-//  │   │   ├─ "Owlbear_Wildshape_8"
-//  │   │   ├─ "TWN_Oliver_MischievousOwlbear"
-//  │   │   └─ "Wildshape_Owlbear"
-//  │   │       └─ "Wildshape_Owlbear_8"
-//  │   │           └─ "Wildshape_Owlbear_10"
-//  │   │               └─ "Wildshape_Owlbear_12"
-//  │   ├─ "Shadow_Mastiff"
-//  │   │   ├─ "SCL_Oliver_Dog"
-//  │   │   └─ "Shadow_Mastiff_Alpha"
-//  │   │       └─ "WYR_Dribbles_FeyMastiff"
-//  │   ├─ "Slayer"
-//  │   │   └─ "Slayer_Player_10"
-//  │   │       └─ "GLO_Orin_Slayer"
-//  │   ├─ "Worg"
-//  │   │   ├─ "Companion_Worg"
-//  │   │   ├─ "DEN_Worg"
-//  │   │   ├─ "Worg_Cruel"
-//  │   │   └─ "Worg_Lesser"
-//  │   └─ "_Monstrosity_Gustav"
+//  │   ├─ "Minotaur"                          --- Minotaurs (Added Barbarian progressions)
+//  │   │   └─ "LOW_DevilsFee_Minotaur"        --- Gilded Minotaurs (summoned by Helsik) (Inherits Barbarian progressions)
 
-// Doppelgangers (Added Rogue progressions)
+// Bulette - Predator of the Dark - HONOUR MODE INHERITANCE (Added Boss boost)
+new entry "Bulette"
+type "Character"
+using "Bulette"
+// data "Passives" "PreferredTarget_Bulette;AttackOfOpportunity;Darkvision;DarknessRules"
+// data "Passives" "DefaultStatus_Bulette_DiamondScales;LegendaryAction_Bulette_DiamondScalesBurst;PreferredTarget_Bulette;AttackOfOpportunity;Darkvision;DarknessRules"
+data "Passives" "CX_Boss_Boost;DefaultStatus_Bulette_DiamondScales;LegendaryAction_Bulette_DiamondScalesBurst;PreferredTarget_Bulette;AttackOfOpportunity;Darkvision;DarknessRules"
+
+// Doppelgangers (Added Rogue progressions, added Assassin subclass)
 new entry "Doppelganger"
 type "Character"
 using "Doppelganger"
 // data "DefaultBoosts" "ProficiencyBonus(SavingThrow, Dexterity); BlockRegainHP(Undead;Construct)"
 data "DefaultBoosts" "ProficiencyBonus(SavingThrow, Dexterity);ProficiencyBonus(SavingThrow, Intelligence);BlockRegainHP(Undead;Construct)"
+// data "Passives" "Multiattack_Doppelganger;AttackOfOpportunity;Darkvision;DarknessRules"
+data "Passives" "CX_Rogue_Assassin_Boost;AttackOfOpportunity;Darkvision;DarknessRules;Multiattack_Doppelganger"
 // data "Progressions" ""
 data "Progressions" "532203c2-7bcb-4162-9a7c-2bb20e227a30"
-// data "Passives" "Multiattack_Doppelganger;AttackOfOpportunity;Darkvision;DarknessRules"
-data "Passives" "CX_Rogue_Assassin_Boost;AttackOfOpportunity;Darkvision;DarknessRules;Multiattack_Doppelganger;LOW_Guildhall_SneakyRiposte"
+
+// Dribbles (Inherits Rogue progressions, inherits Assassin subclass)
+new entry "WYR_DG_Dribbles"
+type "Character"
+using "WYR_DG_Dribbles"
+// data "DefaultBoosts" "ProficiencyBonus(SavingThrow, Strength); ProficiencyBonus(SavingThrow, Dexterity); BlockRegainHP(Undead;Construct)"
+data "DefaultBoosts" "ProficiencyBonus(SavingThrow, Strength); ProficiencyBonus(SavingThrow, Dexterity); ProficiencyBonus(SavingThrow, Intelligence); BlockRegainHP(Undead;Construct)"
+
+// Kar'niss - Light of the Absolute - HONOUR MODE INHERITANCE (Added Fighter progressions, added Champion subclass, added Boss boost)
+new entry "SCL_DriderCaravan_Drider"
+type "Character"
+using "SCL_DriderCaravan_Drider"
+// data "Passives" "Multiattack_Drider;ImprovedCritical;DarkDevotion;DualWielder_PassiveBonuses;SpiderWalk;Alert;AttackOfOpportunity;SunlightSensitivity;Darkvision;DarknessRules"
+// data "Passives" "Multiattack_Drider;ImprovedCritical;DarkDevotion;DualWielder_PassiveBonuses;SpiderWalk;Alert;AttackOfOpportunity;SunlightSensitivity;Darkvision;DarknessRules;LegendaryAction_SCL_Drider_PsionicVengeance;"
+data "Passives" "CX_Boss_Boost;CX_Fighter_Champion_Boost;Multiattack_Drider;ImprovedCritical;DarkDevotion;DualWielder_PassiveBonuses;SpiderWalk;Alert;AttackOfOpportunity;SunlightSensitivity;Darkvision;DarknessRules;LegendaryAction_SCL_Drider_PsionicVengeance"
+// data "Progressions" ""
+data "Progressions" "0e6da493-5a37-423b-8c28-629462b22faa"
 
 new entry "Ettercap"
 type "Character"
@@ -5162,20 +5359,61 @@ using "Ettercap"
 // data "PathInfluence" "BloodElectrified,100;BloodFrozen,30;Lava,700;Fire,40;HolyFire,40;Hellfire,100;PoisonCloud,70;WyvernPoison,70;DrowPoisonCloud,70;PurpleWormPoison,70;SerpentVenom,70;InvisibleGithAcid,70;CloudkillCloud,70;MaliceCloud,70;CrawlerMucusCloud,70;WaterElectrified,100;WaterFrozen,30;Grease,30;Vines,40;SporeBlackCloud,100;WaterCloudElectrified,40;SporeGreenCloud,40;Acid,30;CausticBrine,40;DarknessCloud,30;FogCloud,30;Mud,30;Oil,30;Poison,30;SpikeGrowth,40;SporePinkCloud,40;StinkingCloud,40"
 data "PathInfluence" "BloodElectrified,100;BloodFrozen,30;Lava,700;Fire,40;HolyFire,40;Hellfire,100;PoisonCloud,70;WyvernPoison,70;DrowPoisonCloud,70;PurpleWormPoison,70;SerpentVenom,70;InvisibleGithAcid,70;CloudkillCloud,70;Cloudkill6Cloud,70;MaliceCloud,70;CrawlerMucusCloud,70;WaterElectrified,100;WaterFrozen,30;Grease,30;Vines,40;SporeBlackCloud,100;WaterCloudElectrified,40;SporeGreenCloud,40;Acid,30;CausticBrine,40;DarknessCloud,30;FogCloud,30;Mud,30;Oil,30;Poison,30;SpikeGrowth,40;SporePinkCloud,40;StinkingCloud,40"
 
-new entry "Harpy"
-type "Character"
-using "Harpy"
-// data "Passives" "Multiattack_Harpy;AttackOfOpportunity;DarknessRules"
-data "Passives" "Multiattack_Harpy;AttackOfOpportunity;DarknessRules;Goon_Fall_Damage_Resistance"
-
-// Minotaurs (Added Barbarian progressions) (did you mean to also give them Alert?)
+// Minotaurs (Added Barbarian progressions)
 new entry "Minotaur"
 type "Character"
 using "Minotaur"
-// data "Passives" "Muscular_Athletics;AttackOfOpportunity;Darkvision;DarknessRules"
-data "Passives" "Alert;Muscular_Athletics;AttackOfOpportunity;Darkvision;DarknessRules"
 // data "Progressions" ""
 data "Progressions" "56db8107-e04c-4fe3-94f3-fd4acd44cd4a"
+
+// "_Monstrosity"
+//  ├─ "Owlbear"
+//  │   ├─ "FOR_Owlbear"
+//  │   │   └─ "FOR_Owlbear_Daddy"
+//  │   ├─ "Owlbear_Armoured"
+//  │   ├─ "Owlbear_Cub"
+//  │   ├─ "Owlbear_Wildshape_10"
+//  │   ├─ "Owlbear_Wildshape_12"
+//  │   ├─ "Owlbear_Wildshape_8"
+//  │   ├─ "TWN_Oliver_MischievousOwlbear"
+//  │   └─ "Wildshape_Owlbear"
+//  │       └─ "Wildshape_Owlbear_8"
+//  │           └─ "Wildshape_Owlbear_10"
+//  │               └─ "Wildshape_Owlbear_12"
+//  ├─ "Shadow_Mastiff"
+//  │   ├─ "SCL_Oliver_Dog"
+//  │   └─ "Shadow_Mastiff_Alpha"
+//  │       └─ "WYR_Dribbles_FeyMastiff"
+//  ├─ "Slayer"
+//  │   └─ "Slayer_Player_10"
+//  │       └─ "GLO_Orin_Slayer"
+//  ├─ "Worg"
+//  │   ├─ "Companion_Worg"
+//  │   ├─ "DEN_Worg"
+//  │   ├─ "Worg_Cruel"
+//  │   └─ "Worg_Lesser"
+//  └─ "_Monstrosity_Gustav"
+
+// Owlbear Mother - HONOUR MODE INHERITANCE (Added Boss boost)
+new entry "FOR_Owlbear"
+type "Character"
+using "FOR_Owlbear"
+// data "Passives" "Multiattack_Owlbear;AttackOfOpportunity;Darkvision;DarknessRules;LegendaryAction_FOR_Owlbear;"
+data "Passives" "CX_Boss_Boost;Multiattack_Owlbear;AttackOfOpportunity;Darkvision;DarknessRules;LegendaryAction_FOR_Owlbear"
+
+// Owlbear Daddy - HONOUR MODE INHERITANCE (Added Mini Boss boost)
+new entry "FOR_Owlbear_Daddy"
+type "Character"
+using "FOR_Owlbear_Daddy"
+// data "Passives" "Multiattack_Owlbear;AttackOfOpportunity;Darkvision;DarknessRules;FOR_Owlbear_Daddy_Rage_Passive"
+data "Passives" "CX_Boss_Boost;Multiattack_Owlbear;AttackOfOpportunity;Darkvision;DarknessRules;FOR_Owlbear_Daddy_Rage_Passive"
+
+// Shadow Plush (Oliver summon) (Added Boss boost)
+new entry "TWN_Oliver_MischievousOwlbear"
+type "Character"
+using "TWN_Oliver_MischievousOwlbear"
+// data "Passives" "AttackOfOpportunity;SunlightWeakness;DarknessRules;Darkvision;Ethereal"
+data "Passives" "CX_Boss_Boost;AttackOfOpportunity;SunlightWeakness;DarknessRules;Darkvision;Ethereal"
 
 // ==================================== Plant ====================================
 
@@ -5208,6 +5446,14 @@ data "Progressions" "56db8107-e04c-4fe3-94f3-fd4acd44cd4a"
 //  │   │   └─ "Myconid_Sprout"
 //  │   └─ "_Plant_Gustav"
 
+// Shadow-Cursed Shambling Mound - HONOUR MODE INHERITANCE (Added Boss boost)
+new entry "ShamblingMound_Dark"
+type "Character"
+using "ShamblingMound_Dark"
+// data "Passives" "Devour_ShamblingMound;SuperiorDarkvision;AttackOfOpportunity;DarknessRules;Surprise_Immunity"
+// data "Passives" "LegendaryAction_ShamblingMound_OverwhelmingGrowth;Devour_ShamblingMound;SuperiorDarkvision;AttackOfOpportunity;DarknessRules;Surprise_Immunity"
+data "Passives" "CX_Boss_Boost;LegendaryAction_ShamblingMound_OverwhelmingGrowth;Devour_ShamblingMound;SuperiorDarkvision;AttackOfOpportunity;DarknessRules;Surprise_Immunity"
+
 new entry "_Myconid"
 type "Character"
 using "_Myconid"
@@ -5221,7 +5467,6 @@ using "WoodWoad"
 data "PathInfluence" "BloodElectrified,100;BloodFrozen,30;Lava,700;Fire,40;HolyFire,40;Hellfire,100;PoisonCloud,70;WyvernPoison,70;DrowPoisonCloud,70;PurpleWormPoison,70;SerpentVenom,70;InvisibleGithAcid,70;CloudkillCloud,70;Cloudkill6Cloud,70;MaliceCloud,70;CrawlerMucusCloud,70;WaterElectrified,100;WaterFrozen,30;Grease,30;Web,30;SporeBlackCloud,100;WaterCloudElectrified,40;SporeGreenCloud,40;Acid,30;CausticBrine,40;DarknessCloud,30;FogCloud,30;Mud,30;Oil,30;Poison,30;SpikeGrowth,40;SporePinkCloud,40;StinkingCloud,40"
 
 // ==================================== Aberration ====================================
-
 // "_Base"
 //  ├─ "_Aberration"
 //  │   ├─ "Beholder"
@@ -5231,40 +5476,56 @@ data "PathInfluence" "BloodElectrified,100;BloodFrozen,30;Lava,700;Fire,40;HolyF
 //  │   │   └─ "NetherBrain"
 //  │   │       └─ "END_Netherbrain"
 //  │   │           └─ "END_Netherbrain_Face"
-//  │   ├─ "KillerReplica_Base"              -- Countermeasures (Already have respective class progressions except Sorcerer and Wizard)
-//  │   │   ├─ "KillerReplica_Barbarian"
-//  │   │   ├─ "KillerReplica_Bard"
-//  │   │   ├─ "KillerReplica_Cleric"
-//  │   │   ├─ "KillerReplica_Druid"
-//  │   │   ├─ "KillerReplica_Fighter"
-//  │   │   ├─ "KillerReplica_Monk"
-//  │   │   ├─ "KillerReplica_Paladin"
-//  │   │   ├─ "KillerReplica_Ranger"
-//  │   │   ├─ "KillerReplica_Rogue"
-//  │   │   ├─ "KillerReplica_Sorcerer"       -- Countermeasure - Sorcerer (Swapped Wizard progressions for Sorcerer)
-//  │   │   ├─ "KillerReplica_Warlock"        -- Countermeasure - Warlock (Swapped Wizard progressions for Warlock)
-//  │   │   └─ "KillerReplica_Wizard"
-//  │   ├─ "MindFlayer"
-//  │   │   ├─ "END_Daisy"
-//  │   │   ├─ "INT_Emperor"
-//  │   │   ├─ "MindFlayer_Arcanist"
-//  │   │   ├─ "MindFlayer_Caster"
-//  │   │   ├─ "MindFlayer_Lich"
-//  │   │   ├─ "MindFlayer_Player"
-//  │   │   ├─ "MindFlayer_Weak"
-//  │   │   │   └─ "CRA_Escape_Mindflayer"
-//  │   │   ├─ "TUT_HelmMindflayer"
-//  │   │   └─ "UND_SOB_Mindflayer"
+//  │   ├─ "Flumph"
+//  │   │   └─ "Flumph_Wildmagic"
+//  │   ├─ "IntellectDevourer"
+//  │   │   ├─ "CRA_IntellectDevourer_Weak"
+//  │   │   ├─ "END_IntellectDevourer"
+//  │   │   ├─ "IntellectDevourer_Explosive"
+//  │   │   ├─ "IntellectDevourer_US"
+//  │   │   ├─ "TUT_IntellectDevourer"
+//  │   │   └─ "TUT_IntellectDevourer_Companion"
+//  │   │       └─ "TUT_IntellectDevourer_Companion_Lobotomized"
 
-
-new entry "Spectator"
+// The Netherbrain - NO HONOUR MODE INHERITANCE (Added Boss boost, fixed racials)
+new entry "NetherBrain"
 type "Character"
-using "Spectator"
-// data "PathInfluence" "PoisonCloud,70;CloudkillCloud,70;MaliceCloud,70;CrawlerMucusCloud,70;SporeBlackCloud,100;SporeGreenCloud,40;DarknessCloud,30;FogCloud,30;SporePinkCloud,40;StinkingCloud,40;WaterCloudElectrified,40"
-data "PathInfluence" "PoisonCloud,70;CloudkillCloud,70;Cloudkill6Cloud,70;MaliceCloud,70;CrawlerMucusCloud,70;SporeBlackCloud,100;SporeGreenCloud,40;DarknessCloud,30;FogCloud,30;SporePinkCloud,40;StinkingCloud,40;WaterCloudElectrified,40"
+using "NetherBrain"
+// data "Passives" "DarknessRules"
+data "Passives" "CX_Boss_Boost;Blindsight;DarknessRules"
 
-// Countermeasures - Netherbrain fight if siding with the Emperor
-// Countermeasure - Sorcerer (swapped Wizard progressions for Sorcerer)
+// The Netherbrain - NO HONOUR MODE INHERITANCE (Added Boss boost, fixed racials)
+new entry "END_Netherbrain"
+type "Character"
+using "END_Netherbrain"
+// data "Passives" "DarknessRules;END_Netherbrain_LowHp;PsionicRebuke_Netherbrain"
+data "Passives" "CX_Boss_Boost;Blindsight;DarknessRules;END_Netherbrain_LowHp;PsionicRebuke_Netherbrain"
+
+// The Netherbrain - HONOUR MODE INHERITANCE (Added Boss boost, fixed racials) (This entry gets "UnlockSpell(Target_AbsoluteAegis_Netherbrain)" via DefaultBoosts on Honour Mode)
+new entry "END_Netherbrain_Face"
+type "Character"
+using "END_Netherbrain_Face"
+// data "DefaultBoosts" "ProficiencyBonus(SavingThrow,Wisdom); ProficiencyBonus(SavingThrow,Charisma); ProficiencyBonus(SavingThrow,Intelligence); ProficiencyBonus(SavingThrow,Constitution); Detach(); CanShootThrough(true); StatusImmunity(SG_Blinded); IgnoreSurfaceCover(SurfaceDarknessCloud); BlockRegainHP(Undead;Construct); UnlockSpell(Target_AbsoluteAegis_Netherbrain);"
+data "DefaultBoosts" "ProficiencyBonus(SavingThrow,Wisdom); ProficiencyBonus(SavingThrow,Charisma); ProficiencyBonus(SavingThrow,Intelligence); ProficiencyBonus(SavingThrow,Constitution); Detach(); CanShootThrough(true); StatusImmunity(SG_Blinded); IgnoreSurfaceCover(SurfaceDarknessCloud); BlockRegainHP(Undead;Construct); UnlockSpell(Target_AbsoluteAegis_Netherbrain)"
+// data "Passives" "DarknessRules;END_Netherbrain_LowHp;PsionicRebuke_Netherbrain"
+data "Passives" "CX_Boss_Boost;Blindsight;DarknessRules;END_Netherbrain_LowHp;PsionicRebuke_Netherbrain"
+
+// "_Aberration"
+//  ├─ "KillerReplica_Base"             --- Countermeasures - Netherbrain fight if siding with the Emperor
+//  │   ├─ "KillerReplica_Barbarian"    --- (Has Barbarian progressions)
+//  │   ├─ "KillerReplica_Bard"         --- (Has Bard progressions)
+//  │   ├─ "KillerReplica_Cleric"       --- (Has Cleric progressions)
+//  │   ├─ "KillerReplica_Druid"        --- (Has Druid progressions)
+//  │   ├─ "KillerReplica_Fighter"      --- (Has Fighter progressions)
+//  │   ├─ "KillerReplica_Monk"         --- (Has Monk progressions)
+//  │   ├─ "KillerReplica_Paladin"      --- (Has Paladin progressions)
+//  │   ├─ "KillerReplica_Ranger"       --- (Has Ranger progressions)
+//  │   ├─ "KillerReplica_Rogue"        --- (Has Rogue progressions)
+//  │   ├─ "KillerReplica_Sorcerer"
+//  │   ├─ "KillerReplica_Warlock"
+//  │   └─ "KillerReplica_Wizard"
+
+// Countermeasure - Sorcerer (Swapped Wizard progressions for custom Sorcerer progressions)
 new entry "KillerReplica_Sorcerer"
 type "Character"
 using "KillerReplica_Sorcerer"
@@ -5273,17 +5534,60 @@ data "Passives" "CX_Spells_L6;CX_Spells_L6C;AttackOfOpportunity;DarknessRules;TA
 // data "Progressions" "44bdbc5e-a003-4d61-87f0-5ced20d3804e"
 data "Progressions" "2189a72d-6489-4621-8b2c-85d3e7df2f6f"
 
+// Countermeasure - Warlock (Swapped Wizard progressions for Warlock progressions)
 new entry "KillerReplica_Warlock"
 type "Character"
 using "KillerReplica_Warlock"
 // data "Progressions" "44bdbc5e-a003-4d61-87f0-5ced20d3804e"
 data "Progressions" "51274504-865d-46d1-a3b6-c72e9384904a"
 
+// Countermeasure - Wizard (Has Wizard progressions)
 new entry "KillerReplica_Wizard"
 type "Character"
 using "KillerReplica_Wizard"
 // data "Passives" "MagicResistance;AttackOfOpportunity;DarknessRules"
 data "Passives" "CX_Spells_L6;CX_Spells_L6C;AttackOfOpportunity;DarknessRules;MagicResistance"
+
+// "_Aberration"
+//  ├─ "MindFlayer"
+//  │   ├─ "END_Daisy"
+//  │   ├─ "INT_Emperor"
+//  │   ├─ "MindFlayer_Arcanist"
+//  │   ├─ "MindFlayer_Caster"
+//  │   ├─ "MindFlayer_Lich"
+//  │   ├─ "MindFlayer_Player"
+//  │   ├─ "MindFlayer_Weak"
+//  │   │   └─ "CRA_Escape_Mindflayer"
+//  │   ├─ "TUT_HelmMindflayer"
+//  │   └─ "UND_SOB_Mindflayer"
+//  ├─ "MindFlayer_Tadpole"
+//  ├─ "Sharn"
+//  ├─ "Spectator"
+//  │   └─ "Spectator_Strong"
+//  ├─ "Tentacle_Netherbrain"
+//  ├─ "VampireSquid"
+//  ├─ "VampireSquid_Tentacle"
+//  └─ "_Aberration_Gustav"
+
+// Spectator (Underdark) - HONOUR MODE INHERITANCE //TODO: Add these Honour Mode difficulty statuses into a passive instead?
+new entry "Spectator"
+type "Character"
+using "_Aberration"
+// data "PathInfluence" "PoisonCloud,70;CloudkillCloud,70;MaliceCloud,70;CrawlerMucusCloud,70;SporeBlackCloud,100;SporeGreenCloud,40;DarknessCloud,30;FogCloud,30;SporePinkCloud,40;StinkingCloud,40;WaterCloudElectrified,40"
+data "PathInfluence" "PoisonCloud,70;CloudkillCloud,70;Cloudkill6Cloud,70;MaliceCloud,70;CrawlerMucusCloud,70;SporeBlackCloud,100;SporeGreenCloud,40;DarknessCloud,30;FogCloud,30;SporePinkCloud,40;StinkingCloud,40;WaterCloudElectrified,40"
+// data "DifficultyStatuses" "STATUS_EASY: HEALTHREDUCTION_EASYMODE; STATUS_HARD: HEALTHBOOST_HARDCORE"
+data "DifficultyStatuses" "STATUS_EASY: HEALTHREDUCTION_EASYMODE; STATUS_HARD: HEALTHBOOST_HARDCORE; STATUS_HARD: SPECTATOR_EYEBEAM_INTERRUPT_AURA; STATUS_HARD: LEGENDARYACTION_SPECTATOR_EYEBEAMNOVA"
+
+// House of Hope Prison Spectators; Iron Flask variant - HONOUR MODE INHERITANCE
+new entry "Spectator_Strong"
+type "Character"
+using "Spectator_Strong"
+// data "Strength" "14"
+data "Strength" "19"
+// data "Intelligence" "13"
+data "Intelligence" "20"
+// data "DifficultyStatuses" "STATUS_EASY: HEALTHREDUCTION_EASYMODE; STATUS_HARD: HEALTHBOOST_HARDCORE"
+data "DifficultyStatuses" "STATUS_EASY: HEALTHREDUCTION_EASYMODE; STATUS_HARD: HEALTHBOOST_HARDCORE; STATUS_HARD: SPECTATOR_EYEBEAM_INTERRUPT_AURA; STATUS_HARD: LEGENDARYACTION_SPECTATOR_EYEBEAMNOVA"
 
 // Dream Guardians - Netherbrain fight if siding with Orpheus
 new entry "END_Daisy"
@@ -5292,8 +5596,7 @@ using "END_Daisy"
 // data "Passives" "AttackOfOpportunity;DarknessRules;MagicResistance;TAD_Charm"
 data "Passives" "CX_Martial_Boost;CX_Magic_Boost;AttackOfOpportunity;DarknessRules;MagicResistance;TAD_Charm"
 
-// ==================================== Construct ====================================
-
+// ==================================== Constructs ====================================
 // "_Base"
 //  ├─ "_Construct"
 //  │   ├─ "AnimatedArmor"
@@ -5302,39 +5605,91 @@ data "Passives" "CX_Martial_Boost;CX_Magic_Boost;AttackOfOpportunity;DarknessRul
 //  │   ├─ "Automaton"
 //  │   │   └─ "AdamantineGolem"
 //  │   │       └─ "UND_AdamantineGolem"
-//  │   ├─ "Cannon_Nautiloid"
-//  │   │   └─ "END_NautiloidCannon"
-//  │   ├─ "CheeseWheel_Polymorph"
-//  │   ├─ "FleshGolem"
-//  │   ├─ "FlyingBook"
-//  │   ├─ "Halberd_Coins"
-//  │   ├─ "SHA_TrapJunction_Thief"
-//  │   ├─ "Scarecrow"
-//  │   ├─ "ScryingEye"
-//  │   │   ├─ "CRE_DaisyWisp"
-//  │   │   └─ "ScryingEye_Dev"
-//  │   ├─ "Statue_Animated"
-//  │   ├─ "Steel_Watcher"
-//  │   │   ├─ "Steel_Watcher_Biped"
-//  │   │   │   └─ "Steel_Watcher_Biped_Hellfire"
-//  │   │   └─ "Steel_Watcher_Quadruped"
-//  │   └─ "UND_ArcaneTurret"
-//  │       ├─ "CRE_Turret"
-//  │       └─ "LOW_RamazithTower_ArcaneTurret"
+//  │   │           └─"MMM_GRYM2" (Copies the whole entry and overwrites nothing)
 
-// Grym
+// (Added Fighter progressions, added Champion subclass, really don't want to give these guys spells lol)
+new entry "AnimatedArmor"
+type "Character"
+using "AnimatedArmor"
+// data "SpellCastingAbility" "Dexterity"
+data "SpellCastingAbility" "Intelligence"
+// data "Passives" "ExtraAttack;AntimagicSusceptibility;AttackOfOpportunity;Darkvision;DarknessRules"
+data "Passives" "CX_Fighter_Champion_Boost;ExtraAttack;AntimagicSusceptibility;AttackOfOpportunity;Darkvision;DarknessRules"
+// data "Progressions" ""
+data "Progressions" "0e6da493-5a37-423b-8c28-629462b22faa"
+
+// (Inherits added Fighter progressions, added Champion subclass)
+new entry "TWN_ShadowAnimatedArmour"
+type "Character"
+using "TWN_ShadowAnimatedArmour"
+// data "Passives" "AttackOfOpportunity;DarknessRules;Darkvision;ExtraAttack;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check;TWN_AasimarSurvivor_SpawnShadow"
+data "Passives" "CX_Fighter_Champion_Boost;ExtraAttack;AntimagicSusceptibility;AttackOfOpportunity;Darkvision;DarknessRules;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check;TWN_AasimarSurvivor_SpawnShadow"
+
+// Bernard - Guardian of the Enchanted Tower - HONOUR MODE INHERITANCE (Added Fighter progressions, added Champion subclass, added Boss boost, added ImmuneToDisarm) ("Projectile_ChainStaticBolt" requires Strength, so not changing the casting ability)
+new entry "Automaton"
+type "Character"
+using "Automaton"
+// data "Passives" "Multiattack_Automaton;AttackOfOpportunity;DarknessRules"
+// data "Passives" "Multiattack_Automaton;AttackOfOpportunity;DarknessRules;LegendaryAction_Automaton_ChainStaticBolt"
+data "Passives" "CX_Boss_Boost;CX_Fighter_Champion_Boost;Multiattack_Automaton;AttackOfOpportunity;DarknessRules;LegendaryAction_Automaton_ChainStaticBolt;ImmuneToDisarm"
+// data "Progressions" ""
+data "Progressions" "0e6da493-5a37-423b-8c28-629462b22faa"
+
+// Grym - Eternal Protector of the Forge - HONOUR MODE INHERITANCE (Removed added and inherited Fighter progressions, added Boss boost)
 new entry "UND_AdamantineGolem"
 type "Character"
 using "UND_AdamantineGolem"
+// data "DefaultBoosts" "Attribute(Grounded); ProficiencyBonus(SavingThrow, Dexterity); ProficiencyBonus(SavingThrow, Wisdom); BlockRegainHP(Undead;Living)"
+data "DefaultBoosts" "Attribute(Grounded);ProficiencyBonus(SavingThrow,Strength);ProficiencyBonus(SavingThrow,Dexterity);ProficiencyBonus(SavingThrow,Wisdom);BlockRegainHP(Undead;Living)"
+// data "Passives" "AttackOfOpportunity;DarknessRules;Darkvision;UND_AdamantineGolem_Aggro;UND_AdamantineGolem_Heat"
+// data "Passives" "AttackOfOpportunity;DarknessRules;Darkvision;UND_AdamantineGolem_Aggro;UND_AdamantineGolem_Heat;LegendaryAction_AdamantineGolem_KineticArmor"
+data "Passives" "CX_Boss_Boost;AttackOfOpportunity;DarknessRules;Darkvision;UND_AdamantineGolem_Aggro;UND_AdamantineGolem_Heat;LegendaryAction_AdamantineGolem_KineticArmor"
 // data "PathInfluence" "BloodElectrified,100;BloodFrozen,30;PoisonCloud,70;WyvernPoison,70;DrowPoisonCloud,70;PurpleWormPoison,70;SerpentVenom,70;InvisibleGithAcid,70;CloudkillCloud,70;MaliceCloud,70;CrawlerMucusCloud,70;WaterElectrified,100;WaterFrozen,30;Grease,30;Web,30;Vines,40;SporeBlackCloud,100;WaterCloudElectrified,40;SporeGreenCloud,40;Acid,30;CausticBrine,40;DarknessCloud,30;FogCloud,30;Mud,30;Oil,30;Poison,30;SpikeGrowth,40;SporePinkCloud,40;StinkingCloud,40"
 data "PathInfluence" "BloodElectrified,100;BloodFrozen,30;PoisonCloud,70;WyvernPoison,70;DrowPoisonCloud,70;PurpleWormPoison,70;SerpentVenom,70;InvisibleGithAcid,70;CloudkillCloud,70;Cloudkill6Cloud,70;MaliceCloud,70;CrawlerMucusCloud,70;WaterElectrified,100;WaterFrozen,30;Grease,30;Web,30;Vines,40;SporeBlackCloud,100;WaterCloudElectrified,40;SporeGreenCloud,40;Acid,30;CausticBrine,40;DarknessCloud,30;FogCloud,30;Mud,30;Oil,30;Poison,30;SpikeGrowth,40;SporePinkCloud,40;StinkingCloud,40"
+// data "Progressions" "0e6da493-5a37-423b-8c28-629462b22faa"
+data "Progressions" ""
 
-// Grym 2.0 (Many More Monsters mod)
+// Grym 2.0 (Many More Monsters mod) HONOUR MODE INHERITANCE (Removed added and inherited Fighter progressions, added Boss boost)
 new entry "MMM_GRYM2"
 type "Character"
 using "MMM_GRYM2"
+// data "DefaultBoosts" "Attribute(Grounded); ProficiencyBonus(SavingThrow, Dexterity); ProficiencyBonus(SavingThrow, Wisdom); BlockRegainHP(Undead;Living)"
+data "DefaultBoosts" "Attribute(Grounded);ProficiencyBonus(SavingThrow,Strength);ProficiencyBonus(SavingThrow,Dexterity);ProficiencyBonus(SavingThrow,Wisdom);BlockRegainHP(Undead;Living)"
+// data "Passives" "AttackOfOpportunity;DarknessRules;Darkvision;UND_AdamantineGolem_Aggro;UND_AdamantineGolem_Heat;LegendaryAction_AdamantineGolem_KineticArmor"
+data "Passives" "CX_Boss_Boost;AttackOfOpportunity;DarknessRules;Darkvision;UND_AdamantineGolem_Aggro;UND_AdamantineGolem_Heat;LegendaryAction_AdamantineGolem_KineticArmor"
 // data "PathInfluence" "BloodElectrified,100;BloodFrozen,30;PoisonCloud,70;WyvernPoison,70;DrowPoisonCloud,70;PurpleWormPoison,70;SerpentVenom,70;InvisibleGithAcid,70;CloudkillCloud,70;MaliceCloud,70;CrawlerMucusCloud,70;WaterElectrified,100;WaterFrozen,30;Grease,30;Web,30;Vines,40;SporeBlackCloud,100;WaterCloudElectrified,40;SporeGreenCloud,40;Acid,30;CausticBrine,40;DarknessCloud,30;FogCloud,30;Mud,30;Oil,30;Poison,30;SpikeGrowth,40;SporePinkCloud,40;StinkingCloud,40"
 data "PathInfluence" "BloodElectrified,100;BloodFrozen,30;PoisonCloud,70;WyvernPoison,70;DrowPoisonCloud,70;PurpleWormPoison,70;SerpentVenom,70;InvisibleGithAcid,70;CloudkillCloud,70;Cloudkill6Cloud,70;MaliceCloud,70;CrawlerMucusCloud,70;WaterElectrified,100;WaterFrozen,30;Grease,30;Web,30;Vines,40;SporeBlackCloud,100;WaterCloudElectrified,40;SporeGreenCloud,40;Acid,30;CausticBrine,40;DarknessCloud,30;FogCloud,30;Mud,30;Oil,30;Poison,30;SpikeGrowth,40;SporePinkCloud,40;StinkingCloud,40"
+// data "Progressions" "0e6da493-5a37-423b-8c28-629462b22faa"
+data "Progressions" ""
+
+// "_Construct"
+//  ├─ "Cannon_Nautiloid"
+//  │   └─ "END_NautiloidCannon"
+//  ├─ "CheeseWheel_Polymorph"
+//  ├─ "FleshGolem"
+//  ├─ "FlyingBook"
+//  ├─ "Halberd_Coins"
+//  ├─ "SHA_TrapJunction_Thief"
+//  ├─ "Scarecrow"
+//  ├─ "ScryingEye"
+//  │   ├─ "CRE_DaisyWisp"
+//  │   └─ "ScryingEye_Dev"
+//  ├─ "Statue_Animated"
+//  ├─ "Steel_Watcher"
+//  │   ├─ "Steel_Watcher_Biped"
+//  │   │   └─ "Steel_Watcher_Biped_Hellfire"
+//  │   └─ "Steel_Watcher_Quadruped"
+//  └─ "UND_ArcaneTurret"
+//      ├─ "CRE_Turret"
+//      └─ "LOW_RamazithTower_ArcaneTurret"
+
+// Steel Watcher Titan - Gortash's Magnum Opus - HONOUR MODE INHERITANCE (Added Boss boost)
+new entry "Steel_Watcher_Quadruped"
+type "Character"
+using "Steel_Watcher_Quadruped"
+// data "Passives" "Multiattack_SteelWatcherTitan;ImmutableExistance;MagicResistance;AttackOfOpportunity;Darkvision;DarknessRules;HellfireDamagePierce_Technical;Surprise_Immunity"
+// data "Passives" "Multiattack_SteelWatcherTitan;ImmutableExistance;MagicResistance;AttackOfOpportunity;Darkvision;DarknessRules;HellfireDamagePierce_Technical;Surprise_Immunity;DefaultStatus_SteelWatcherTitan_HonourVisuals"
+data "Passives" "CX_Boss_Boost;Multiattack_SteelWatcherTitan;ImmutableExistance;MagicResistance;AttackOfOpportunity;Darkvision;DarknessRules;HellfireDamagePierce_Technical;Surprise_Immunity;DefaultStatus_SteelWatcherTitan_HonourVisuals"
 
 // ==================================== Beast ====================================
 // "_Base"
@@ -5405,112 +5760,38 @@ data "PathInfluence" "BloodElectrified,100;BloodFrozen,30;PoisonCloud,70;WyvernP
 //  │   │   └─ "PLA_DyingHyena_Healthy"
 //  │   ├─ "Mastiff"
 //  │   ├─ "Snake_Viper"
-//  │   ├─ "Spider_Giant"
-//  │   │   ├─ "Spider_GiantWolf"
-//  │   │   │   └─ "Companion_GiantSpider"
-//  │   │   │       └─ "Companion_GiantSpider_5"
-//  │   │   │           └─ "Companion_GiantSpider_7"
-//  │   │   │               └─ "Companion_GiantSpider_8"
-//  │   │   │                   └─ "Companion_GiantSpider_11"
-//  │   │   ├─ "Spider_Giant_Ranged"
-//  │   │   ├─ "Spider_Giant_Wildshape"
-//  │   │   │   └─ "Spider_Giant_Wildshape_4"
-//  │   │   │       └─ "Spider_Giant_Wildshape_6"
-//  │   │   │           └─ "Spider_Giant_Wildshape_8"
-//  │   │   │               └─ "Spider_Giant_Wildshape_10"
-//  │   │   │                   └─ "Spider_Giant_Wildshape_12"
-//  │   │   ├─ "Spider_Phase"
-//  │   │   │   ├─ "Spider_Phase_Queen"
-//  │   │   │   └─ "Spider_Phase_Tiny"
-//  │   │   ├─ "Spider_Sword"
-//  │   │   └─ "Spider_Tiny"
-//  │   │       ├─ "CRA_Spider_Tiny"
-//  │   │       ├─ "Familiar_Spider"
-//  │   │       ├─ "LOW_IronThrone_Mizora_FiendishSpiders"
-//  │   │       └─ "Spider_Tiny_Underdark"
-//  │   ├─ "Wolf"
-//  │   │   ├─ "Companion_Wolf"
-//  │   │   │   └─ "Companion_Wolf_5"
-//  │   │   │       └─ "Companion_Wolf_7"
-//  │   │   │           └─ "Companion_Wolf_8"
-//  │   │   │               └─ "Companion_Wolf_11"
-//  │   │   │                   └─ "LOW_BasiliskGate_Companion_Wolf_11"
-//  │   │   ├─ "FOR_CourierDog"
-//  │   │   ├─ "Wolf_Dire"
-//  │   │   │   ├─ "CRE_Githyanki_Captain_Wolf"
-//  │   │   │   ├─ "LOW_CazadorPalace_Ritual_Wolf_Dire"
-//  │   │   │   └─ "Wolf_Dire_Wildshape"
-//  │   │   │       └─ "Wolf_Dire_Wildshape_4"
-//  │   │   │           └─ "Wolf_Dire_Wildshape_6"
-//  │   │   │               └─ "Wolf_Dire_Wildshape_8"
-//  │   │   │                   └─ "Wolf_Dire_Wildshape_10"
-//  │   │   │                       └─ "Wolf_Dire_Wildshape_12"
-//  │   │   └─ "Wolf_Wildshape"
-//  │   ├─ "_Beast_Gustav"
-//  │   └─ "_Critter"
-//  │       ├─ "BlueJay"
-//  │       │   └─ "BlueJay_Polymorph"
-//  │       ├─ "Cat"
-//  │       │   ├─ "Familiar_Cat"
-//  │       │   ├─ "Panther"
-//  │       │   │   └─ "Wildshape_Panther"
-//  │       │   │       └─ "Wildshape_Panther_8"
-//  │       │   │           └─ "Wildshape_Panther_10"
-//  │       │   │               └─ "Wildshape_Panther_12"
-//  │       │   ├─ "Tressym"
-//  │       │   └─ "Wildshape_SaberTooth_Tiger"
-//  │       │       └─ "Wildshape_SaberTooth_Tiger_10"
-//  │       │           └─ "Wildshape_SaberTooth_Tiger_12"
-//  │       ├─ "Chicken"
-//  │       ├─ "Crab"
-//  │       │   ├─ "Familiar_Crab"
-//  │       │   └─ "LOW_HagSurvivor_Crab"
-//  │       ├─ "Deer"
-//  │       ├─ "Dog"
-//  │       │   ├─ "Dog_Ghost"
-//  │       │   ├─ "FindFamiliar_Dog"
-//  │       │   └─ "RED_WarDog"
-//  │       ├─ "Eagle"
-//  │       ├─ "Frog"
-//  │       │   ├─ "Familiar_Frog"
-//  │       │   └─ "HAG_MurderFrog"
-//  │       ├─ "Gremishka"
-//  │       ├─ "MiniatureGiantSpaceHamster_Boo"
-//  │       ├─ "Ox"
-//  │       ├─ "Pig"
-//  │       ├─ "Rat"
-//  │       │   ├─ "Familiar_Rat"
-//  │       │   ├─ "LOW_Prison_TraderRat"
-//  │       │   ├─ "Rat_Combatant"
-//  │       │   │   ├─ "Rat_Narcoleptic"
-//  │       │   │   ├─ "Rat_Vampire"
-//  │       │   │   └─ "Rat_Wounding"
-//  │       │   ├─ "Rat_Cranium"
-//  │       │   └─ "Rat_Giant"
-//  │       ├─ "Raven"
-//  │       │   ├─ "Familiar_Raven"
-//  │       │   ├─ "Raven_Dire"
-//  │       │   │   ├─ "Companion_Raven"
-//  │       │   │   │   ├─ "Companion_Raven_5"
-//  │       │   │   │   │   └─ "Companion_Raven_7"
-//  │       │   │   │   │       └─ "Companion_Raven_8"
-//  │       │   │   │   │           └─ "Companion_Raven_11"
-//  │       │   │   │   └─ "Companion_Raven_Flock"
-//  │       │   │   ├─ "LOW_MinscHideout_SluiceGuard_Ranger_Crow"
-//  │       │   │   └─ "Raven_Dire_Wildshape"
-//  │       │   ├─ "Raven_ShadowCursed"
-//  │       │   │   └─ "Raven_ShadowCursed_Lakeside"
-//  │       │   └─ "SCL_HeWhoWas_Raven"
-//  │       ├─ "Sheep"
-//  │       │   └─ "WYR_MysterySpawn"
-//  │       ├─ "Squirrel"
-//  │       ├─ "Vulture"
-//  │       │   └─ "Vulture_Giant"
-//  │       └─ "_Critter_Gustav"
 
+// "_Beast"
+//  ├─ "Spider_Giant"
+//  │   ├─ "Spider_GiantWolf"
+//  │   │   └─ "Companion_GiantSpider"
+//  │   │       └─ "Companion_GiantSpider_5"
+//  │   │           └─ "Companion_GiantSpider_7"
+//  │   │               └─ "Companion_GiantSpider_8"
+//  │   │                   └─ "Companion_GiantSpider_11"
+//  │   ├─ "Spider_Giant_Ranged"
+//  │   ├─ "Spider_Giant_Wildshape"
+//  │   │   └─ "Spider_Giant_Wildshape_4"
+//  │   │       └─ "Spider_Giant_Wildshape_6"
+//  │   │           └─ "Spider_Giant_Wildshape_8"
+//  │   │               └─ "Spider_Giant_Wildshape_10"
+//  │   │                   └─ "Spider_Giant_Wildshape_12"
+//  │   ├─ "Spider_Phase"
+//  │   │   ├─ "Spider_Phase_Queen"
+//  │   │   └─ "Spider_Phase_Tiny"
+//  │   ├─ "Spider_Sword"
+//  │   └─ "Spider_Tiny"
+//  │       ├─ "CRA_Spider_Tiny"
+//  │       ├─ "Familiar_Spider"
+//  │       ├─ "LOW_IronThrone_Mizora_FiendishSpiders"
+//  │       └─ "Spider_Tiny_Underdark"
+
+// (Increasing movement speed of all spiders except little ones)
 new entry "Spider_Giant"
 type "Character"
 using "Spider_Giant"
+// data "ActionResources" "ActionPoint:1;BonusActionPoint:1;Movement:9;ReactionActionPoint:1"
+data "ActionResources" "ActionPoint:1;BonusActionPoint:1;Movement:12;ReactionActionPoint:1"
 // data "PathInfluence" "BloodElectrified,100;BloodFrozen,30;Lava,700;Fire,40;HolyFire,40;Hellfire,100;PoisonCloud,70;WyvernPoison,70;DrowPoisonCloud,70;PurpleWormPoison,70;SerpentVenom,70;InvisibleGithAcid,70;CloudkillCloud,70;MaliceCloud,70;CrawlerMucusCloud,70;WaterElectrified,100;WaterFrozen,30;Grease,30;Vines,40;SporeBlackCloud,100;WaterCloudElectrified,40;SporeGreenCloud,40;Acid,30;CausticBrine,40;DarknessCloud,30;FogCloud,30;Mud,30;Oil,30;Poison,30;SpikeGrowth,40;SporePinkCloud,40;StinkingCloud,40"
 data "PathInfluence" "BloodElectrified,100;BloodFrozen,30;Lava,700;Fire,40;HolyFire,40;Hellfire,100;PoisonCloud,70;WyvernPoison,70;DrowPoisonCloud,70;PurpleWormPoison,70;SerpentVenom,70;InvisibleGithAcid,70;CloudkillCloud,70;Cloudkill6Cloud,70;MaliceCloud,70;CrawlerMucusCloud,70;WaterElectrified,100;WaterFrozen,30;Grease,30;Vines,40;SporeBlackCloud,100;WaterCloudElectrified,40;SporeGreenCloud,40;Acid,30;CausticBrine,40;DarknessCloud,30;FogCloud,30;Mud,30;Oil,30;Poison,30;SpikeGrowth,40;SporePinkCloud,40;StinkingCloud,40"
 
@@ -5519,6 +5800,121 @@ type "Character"
 using "Spider_Giant_Ranged"
 // data "PathInfluence" "BloodElectrified,100;BloodFrozen,30;Lava,700;Fire,40;HolyFire,40;Hellfire,100;PoisonCloud,70;WyvernPoison,70;DrowPoisonCloud,70;PurpleWormPoison,70;SerpentVenom,70;InvisibleGithAcid,70;CloudkillCloud,70;MaliceCloud,70;CrawlerMucusCloud,70;WaterElectrified,100;WaterFrozen,30;Grease,30;Vines,40;SporeBlackCloud,100;WaterCloudElectrified,40;SporeGreenCloud,40;Acid,30;CausticBrine,40;DarknessCloud,30;FogCloud,30;Mud,30;Oil,30;Poison,30;SpikeGrowth,40;SporePinkCloud,40;StinkingCloud,40"
 data "PathInfluence" "BloodElectrified,100;BloodFrozen,30;Lava,700;Fire,40;HolyFire,40;Hellfire,100;PoisonCloud,70;WyvernPoison,70;DrowPoisonCloud,70;PurpleWormPoison,70;SerpentVenom,70;InvisibleGithAcid,70;CloudkillCloud,70;Cloudkill6Cloud,70;MaliceCloud,70;CrawlerMucusCloud,70;WaterElectrified,100;WaterFrozen,30;Grease,30;Vines,40;SporeBlackCloud,100;WaterCloudElectrified,40;SporeGreenCloud,40;Acid,30;CausticBrine,40;DarknessCloud,30;FogCloud,30;Mud,30;Oil,30;Poison,30;SpikeGrowth,40;SporePinkCloud,40;StinkingCloud,40"
+
+// Phase Spider - HONOUR MODE INHERITENCE
+new entry "Spider_Phase"
+type "Character"
+using "Spider_Phase"
+// data "Passives" "SpiderWalk;AttackOfOpportunity;Darkvision;DarknessRules"
+// data "Passives" "SpiderWalk;AttackOfOpportunity;Darkvision;DarknessRules;FOR_SpiderQueen_SeeInvis"
+data "Passives" "SpiderWalk;AttackOfOpportunity;Darkvision;DarknessRules;FOR_SpiderQueen_SeeInvis"
+
+// Phase Spider Matriarch - Predator of the Ethereal Plane - HONOUR MODE INHERITANCE
+new entry "Spider_Phase_Queen"
+type "Character"
+using "Spider_Phase_Queen"
+// data "Passives" "SpiderWalk;AttackOfOpportunity;Darkvision;DarknessRules"
+// data "Passives" "SpiderWalk;AttackOfOpportunity;Darkvision;DarknessRules;LegendaryAction_FOR_SpiderQueen;FOR_SpiderQueen_SeeInvis"
+data "Passives" "CX_Boss_Boost;SpiderWalk;AttackOfOpportunity;Darkvision;DarknessRules;LegendaryAction_FOR_SpiderQueen;FOR_SpiderQueen_SeeInvis"
+
+// Added See Invisibility to the Phase Spiderlings too (Reverting inherited movement speed for tiny spiders)
+new entry "Spider_Phase_Tiny"
+type "Character"
+using "Spider_Phase_Tiny"
+// data "ActionResources" "ActionPoint:1;BonusActionPoint:1;Movement:12;ReactionActionPoint:1"
+data "ActionResources" "ActionPoint:1;BonusActionPoint:1;Movement:9;ReactionActionPoint:1"
+// data "Passives" "SpiderWalk;AttackOfOpportunity;Darkvision;DarknessRules;"
+data "Passives" "SpiderWalk;AttackOfOpportunity;Darkvision;DarknessRules;FOR_SpiderQueen_SeeInvis"
+
+// (Reverting inherited movement speed for tiny spiders)
+new entry "Spider_Tiny"
+type "Character"
+using "Spider_Tiny"
+// data "ActionResources" "ActionPoint:1;BonusActionPoint:1;Movement:12;ReactionActionPoint:1"
+data "ActionResources" "ActionPoint:1;BonusActionPoint:1;Movement:9;ReactionActionPoint:1"
+
+// "_Beast"
+//  ├─ "Wolf"
+//  │   ├─ "Companion_Wolf"
+//  │   │   └─ "Companion_Wolf_5"
+//  │   │       └─ "Companion_Wolf_7"
+//  │   │           └─ "Companion_Wolf_8"
+//  │   │               └─ "Companion_Wolf_11"
+//  │   │                   └─ "LOW_BasiliskGate_Companion_Wolf_11"
+//  │   ├─ "FOR_CourierDog"
+//  │   ├─ "Wolf_Dire"
+//  │   │   ├─ "CRE_Githyanki_Captain_Wolf"
+//  │   │   ├─ "LOW_CazadorPalace_Ritual_Wolf_Dire"
+//  │   │   └─ "Wolf_Dire_Wildshape"
+//  │   │       └─ "Wolf_Dire_Wildshape_4"
+//  │   │           └─ "Wolf_Dire_Wildshape_6"
+//  │   │               └─ "Wolf_Dire_Wildshape_8"
+//  │   │                   └─ "Wolf_Dire_Wildshape_10"
+//  │   │                       └─ "Wolf_Dire_Wildshape_12"
+//  │   └─ "Wolf_Wildshape"
+
+// "_Beast"
+//  ├─ "_Beast_Gustav"
+//  ├─ "_Critter"
+//  │   ├─ "BlueJay"
+//  │   │   └─ "BlueJay_Polymorph"
+//  │   ├─ "Cat"
+//  │   │   ├─ "Familiar_Cat"
+//  │   │   ├─ "Panther"
+//  │   │   │   └─ "Wildshape_Panther"
+//  │   │   │       └─ "Wildshape_Panther_8"
+//  │   │   │           └─ "Wildshape_Panther_10"
+//  │   │   │               └─ "Wildshape_Panther_12"
+//  │   │   ├─ "Tressym"
+//  │   │   └─ "Wildshape_SaberTooth_Tiger"
+//  │   │       └─ "Wildshape_SaberTooth_Tiger_10"
+//  │   │           └─ "Wildshape_SaberTooth_Tiger_12"
+//  │   ├─ "Chicken"
+//  │   ├─ "Crab"
+//  │   │   ├─ "Familiar_Crab"
+//  │   │   └─ "LOW_HagSurvivor_Crab"
+//  │   ├─ "Deer"
+//  │   ├─ "Dog"
+//  │   │   ├─ "Dog_Ghost"
+//  │   │   ├─ "FindFamiliar_Dog"
+//  │   │   └─ "RED_WarDog"
+//  │   ├─ "Eagle"
+//  │   ├─ "Frog"
+//  │   │   ├─ "Familiar_Frog"
+//  │   │   └─ "HAG_MurderFrog"
+//  │   ├─ "Gremishka"
+//  │   ├─ "MiniatureGiantSpaceHamster_Boo"
+//  │   ├─ "Ox"
+//  │   ├─ "Pig"
+//  │   ├─ "Rat"
+//  │   │   ├─ "Familiar_Rat"
+//  │   │   ├─ "LOW_Prison_TraderRat"
+//  │   │   ├─ "Rat_Combatant"
+//  │   │   │   ├─ "Rat_Narcoleptic"
+//  │   │   │   ├─ "Rat_Vampire"
+//  │   │   │   └─ "Rat_Wounding"
+//  │   │   ├─ "Rat_Cranium"
+//  │   │   └─ "Rat_Giant"
+//  │   ├─ "Raven"
+//  │   │   ├─ "Familiar_Raven"
+//  │   │   ├─ "Raven_Dire"
+//  │   │   │   ├─ "Companion_Raven"
+//  │   │   │   │   ├─ "Companion_Raven_5"
+//  │   │   │   │   │   └─ "Companion_Raven_7"
+//  │   │   │   │   │       └─ "Companion_Raven_8"
+//  │   │   │   │   │           └─ "Companion_Raven_11"
+//  │   │   │   │   └─ "Companion_Raven_Flock"
+//  │   │   │   ├─ "LOW_MinscHideout_SluiceGuard_Ranger_Crow"
+//  │   │   │   └─ "Raven_Dire_Wildshape"
+//  │   │   ├─ "Raven_ShadowCursed"
+//  │   │   │   └─ "Raven_ShadowCursed_Lakeside"
+//  │   │   └─ "SCL_HeWhoWas_Raven"
+//  │   ├─ "Sheep"
+//  │   │   └─ "WYR_MysterySpawn"
+//  │   ├─ "Squirrel"
+//  │   ├─ "Vulture"
+//  │   │   └─ "Vulture_Giant"
+//  │   └─ "_Critter_Gustav"
 
 // ==================================== Summons ====================================
 
@@ -5537,30 +5933,70 @@ data "PathInfluence" "BloodElectrified,100;BloodFrozen,30;Lava,700;Fire,40;HolyF
 //  │   ├─ "MinorIllusion"
 //  │   ├─ "SpiritualWeapon_Greataxe"
 //  │   │   ├─ "SpiritualWeapon_Greatsword"
+//  │   │   │   └─ "CRE_Githyanki_Inquisitor_VlaakithsMindSword"
 //  │   │   ├─ "SpiritualWeapon_Halberd"
 //  │   │   ├─ "SpiritualWeapon_Maul"
 //  │   │   ├─ "SpiritualWeapon_Spear"
 //  │   │   └─ "SpiritualWeapon_Trident"
 //  │   └─ "_Summons_Gustav"
 
-// Slivers
+// Deva (Fixed racials)
+new entry "Deva"
+type "Character"
+using "Deva"
+// data "PersonalStatusImmunities" "SG_Charmed;FEARED"
+data "PersonalStatusImmunities" "SG_Charmed;SG_Frightened"
+// data "Passives" "AttackOfOpportunity;DarknessRules;ImmuneToDisarm;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check"
+data "Passives" "AttackOfOpportunity;DarknessRules;ImmuneToDisarm;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check;DivineHealth"
+
+// Deva (Fixed racials)
+new entry "Deva_PlanarAlly"
+type "Character"
+using "Deva_PlanarAlly"
+// data "PersonalStatusImmunities" "SG_Charmed;FEARED"
+data "PersonalStatusImmunities" "SG_Charmed;SG_Frightened"
+data "Passives" "AttackOfOpportunity;DarknessRules;ImmuneToDisarm;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check;DivineHealth;ShortResting"
+
+// Moonlight Sliver (Added Paladin progressions, added Devotion subclass, added Mini Boss boost)
 new entry "LOW_RamazithsTower_Nightsong_Shard"
 type "Character"
-// using "Deva"
 using "LOW_RamazithsTower_Nightsong_Shard"
-// data "PersonalStatusImmunities" "SG_Charmed;SG_Frightened"
-data "PersonalStatusImmunities" "SG_Charmed;SG_Frightened;SG_DifficultTerrain;SG_Exhausted;SG_Poisoned;SG_Sleeping"
 // data "Passives" "AttackOfOpportunity;DarknessRules;ImmuneToDisarm;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check;MagicResistance;LOW_RamazithsTower_Nightsong_Deva_Interrupt;DivineHealth;"
-data "Passives" "CX_Paladin_Boost;CX_Paladin_Devotion_Boost;CX_Martial_Boost;AttackOfOpportunity;DarknessRules;ImmuneToDisarm;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check;MagicResistance;LOW_RamazithsTower_Nightsong_Deva_Interrupt;DivineHealth"
+data "Passives" "CX_MiniBoss_Boost;CX_Paladin_Devotion_Boost;AttackOfOpportunity;DarknessRules;ImmuneToDisarm;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check;MagicResistance;LOW_RamazithsTower_Nightsong_Deva_Interrupt;DivineHealth"
 
 new entry "FlamingSphere"
 type "Character"
-// using "_Summons"
 using "FlamingSphere"
 // data "PathInfluence" "BloodElectrified,100;BloodFrozen,30;Lava,700;HolyFire,40;PoisonCloud,70;WyvernPoison,70;DrowPoisonCloud,70;PurpleWormPoison,70;SerpentVenom,70;InvisibleGithAcid,70;CloudkillCloud,70;MaliceCloud,70;CrawlerMucusCloud,70;WaterElectrified,100;WaterFrozen,30;Grease,30;Web,30;Vines,40;SporeBlackCloud,100;WaterCloudElectrified,40;SporeGreenCloud,40;Acid,30;CausticBrine,40;DarknessCloud,30;FogCloud,30;Mud,30;Oil,30;Poison,30;SpikeGrowth,40;SporePinkCloud,40;StinkingCloud,40"
 data "PathInfluence" "BloodElectrified,100;BloodFrozen,30;Lava,700;HolyFire,40;PoisonCloud,70;WyvernPoison,70;DrowPoisonCloud,70;PurpleWormPoison,70;SerpentVenom,70;InvisibleGithAcid,70;CloudkillCloud,70;Cloudkill6Cloud,70;MaliceCloud,70;CrawlerMucusCloud,70;WaterElectrified,100;WaterFrozen,30;Grease,30;Web,30;Vines,40;SporeBlackCloud,100;WaterCloudElectrified,40;SporeGreenCloud,40;Acid,30;CausticBrine,40;DarknessCloud,30;FogCloud,30;Mud,30;Oil,30;Poison,30;SpikeGrowth,40;SporePinkCloud,40;StinkingCloud,40"
 
+// ==================================== Dragons ====================================
+// "_Dragon"
+//  ├─ "Dragon_AdultRed"
+//  │   ├─ "INT_Dragon"                             --- Unused
+//  │   │   └─ "INT_Dragon_Proxy"                   --- Unused
+//  │   └─ "LOW_VossSewers_Red_Dragonborn_Qdenos"   --- Qudenos (Dragonborn form)
+//  └─ "Dragon_Bronze"                              --- (Used just for Ansur's flashback cutscene template?)
+//      ├─ "Dragon_BronzeSkeletal"
+//      └─ "Dragon_BronzeSkeletal_Proxy"            --- Ansur's body parts
+
+// Qudenos (Dragon form), Dominated Red Dragon - Githyanki Draconic Cohort (Added Boss boost)
+new entry "Dragon_AdultRed"
+type "Character"
+using "Dragon_AdultRed"
+// data "Passives" "MagicResistance;AttackOfOpportunity;Darkvision;DarknessRules"
+data "Passives" "CX_Boss_Boost;MagicResistance;AttackOfOpportunity;Darkvision;DarknessRules"
+
+// Ansur - Heart of the Gate, The Waiting Storm, The One Who Roars (Added Boss boost)
+new entry "Dragon_BronzeSkeletal"
+type "Character"
+using "Dragon_BronzeSkeletal"
+// data "Passives" "TurnResistance;MagicResistance;ImmutableForm;AttackOfOpportunity;DarknessRules"
+data "Passives" "CX_Boss_Boost;TurnResistance;MagicResistance;ImmutableForm;AttackOfOpportunity;DarknessRules"
+
 // ==================================== Elementals ====================================
+// Wiki quote: Lorroakan's myrmidons have weaker weapons compared to other myrmidons encountered throughout the game. They don't have innate elemental damage components and are not enchanced. The unique weapon abilities aren't changed.
+//TODO: If the above is true undo it
 
 // "_Base"
 // ├─ "_Elemental"
