@@ -51,3 +51,34 @@
     // Sorcerer - 2189a72d-6489-4621-8b2c-85d3e7df2f6f
     // Warlock - 51274504-865d-46d1-a3b6-c72e9384904a
     // Wizard - 44bdbc5e-a003-4d61-87f0-5ced20d3804e
+
+
+//     CX_Cleric_War_Boost;
+
+//      (Added Fighter progressions, dudes in charge should be Battle Masters)
+
+//      CX_Fighter_BattleMaster_Boost;
+
+// (Progressions swapped from "NPC_FlamingFist_Melee_Caster" to "NPC_Wizard", proprietary progression boosts added via stats)
+
+// Goon_NPC_Flaming_Fist_Boosts
+
+// // data "Progressions" ""
+// data "Progressions" "XXXXX"
+
+// // data "Progressions" ""
+// data "Progressions" "0e6da493-5a37-423b-8c28-629462b22faa"
+
+// CX_Boss_Boost
+
+// CX_MiniBoss_Boost
+
+// CX_Boss_Boost;CX_Martial_Boost
+
+
+
+// Goon_NPC_Flaming_Fist_Attacker_Boosts;
+// Goon_NPC_Flaming_Fist_Defender_Boosts;
+// Goon_NPC_Flaming_Fist_Cleric_Boosts;
+// Goon_NPC_Flaming_Fist_Caster_Boosts;
+// Goon_NPC_Flaming_Fist_Ranger_Boosts;
