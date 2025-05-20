@@ -5148,12 +5148,12 @@ data "Passives" "CX_Spells_L5;CX_Spells_L5C;AttackOfOpportunity;DarknessRules;Da
 //  │   │   └─ "HAG_AuntieEthel"
 //  │   │       └─ "HAG_AuntieEthel_Double"
 //  │   ├─ "Meenlock"
-//  │   ├─ "RedCap"
-//  │   │   ├─ "LOW_BlushingMermaid_Redcap_Melee"
-//  │   │   │   └─ "LOW_HagsSurvivors_Jatlo"
-//  │   │   ├─ "RedCap_Caster"
-//  │   │   │   └─ "LOW_BlushingMermaid_Redcap_Caster"
-//  │   │   └─ "UND_BOOOAL"
+//  │   ├─ "RedCap"                                             -- Redcaps (Added Fighter progressions)           
+//  │   │   ├─ "LOW_BlushingMermaid_Redcap_Melee"               -- Redcap Boatswains (Added Rogue progressions)
+//  │   │   │   └─ "LOW_HagsSurvivors_Jatlo"                    -- Jatlo (Added Rogue progressions)
+//  │   │   ├─ "RedCap_Caster"                                  -- Redcap Blood Sages (Added Warlock progressions)                                                  
+//  │   │   │   └─ "LOW_BlushingMermaid_Redcap_Caster"          -- Redcap Mystic Cannoneers (Inherits Warlock progressions)
+//  │   │   └─ "UND_BOOOAL"                                     -- BOOOAL (Added Fighter progressions)
 //  │   └─ "_Fey_Gustav"
 
 // Auntie Ethel - Trader of Quirks and Sundries, Sister of the Seeing Pearl - HONOUR MODE INHERITANCE (Added Magic boost, added Boss boost) (Added hacky "Goon_Ethel_Unlocker" so she probably can't be cheesed in the fireplace anymore, added to her doubles too just incase I make it a visible passive)
@@ -5170,14 +5170,70 @@ using "HAG_AuntieEthel_Double"
 // data "Passives" "AttackOfOpportunity;DarknessRules;Darkvision;Alert;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check;LegendaryAction_HAG_Counterswap_Double"
 data "Passives" "Goon_NPC_Ethel_Unlocker;CX_Boss_Boost;CX_Magic_Boost;AttackOfOpportunity;DarknessRules;Darkvision;Alert;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check;LegendaryAction_HAG_Counterswap_Double"
 
-// BOOOAL (Added Rogue boost, added Assassin subclass, added Boss boost)
+// Redcap (Act 1) (Added Fighter progressions - Rogue don't work because their sickles aren't Finesse)
+new entry "RedCap"
+type "Character"
+using "RedCap"
+// data "Progressions" ""
+data "Progressions" "0e6da493-5a37-423b-8c28-629462b22faa"
+
+// Redcap Boatswains (Act 3) (Added Rogue progressions - these guys wield scimitars, which are Finesse. Changing their class makes an inconsistency with Act 1, but it's fine because Rogue fits pirate theme better anyway)
+new entry "LOW_BlushingMermaid_Redcap_Melee"
+type "Character"
+using "LOW_BlushingMermaid_Redcap_Melee"
+// data "Strength" "18"
+data "Strength" "13"
+// data "Dexterity" "13"
+data "Dexterity" "18"
+// data "SpellCastingAbility" "Strength"
+data "SpellCastingAbility" "Dexterity"
+// data "Progressions" ""
+data "Progressions" "532203c2-7bcb-4162-9a7c-2bb20e227a30"
+data "Passives" "AttackOfOpportunity;BloodThirsty_Redcap;DarknessRules;Darkvision;Multiattack_Redcap;LOW_BlushingMermaid_Redcap_Buff;LOW_BlushingMermaid_Redcap_Alcohol;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check"
+
+// Jatlo - Redcap spy in the Anti-Hag Support Group (Added Rogue progressions - inherits same character template as the Redcap Boatswains)
+new entry "LOW_HagsSurvivors_Jatlo"
+type "Character"
+using "LOW_HagsSurvivors_Jatlo"
+// data "Dexterity" "16"
+data "Dexterity" "20"
+// data "Progressions" ""
+data "Progressions" "532203c2-7bcb-4162-9a7c-2bb20e227a30"
+
+// Redcap Blood Sages (Act 1) (Added Warlock progressiosn)
+new entry "RedCap_Caster"
+type "Character"
+using "new entry "RedCap_Caster"
+// data "Wisdom" "14"
+data "Wisdom" "12"
+// data "Charisma" "9"
+data "Charisma" "14"
+// data "SpellCastingAbility" "Wisdom"
+data "SpellCastingAbility" "Charisma"
+// data "Progressions" ""
+data "Progressions" "51274504-865d-46d1-a3b6-c72e9384904a"
+// data "Passives" "AttackOfOpportunity;Darkvision;DarknessRules;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check"
+data "Passives" "CX_Warlock_Archfey_Boost;AttackOfOpportunity;Darkvision;DarknessRules;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check"
+
+// Redcap Mystic Cannoneers (Act 3) (Inherits Warlock progressions)
+new entry "LOW_BlushingMermaid_Redcap_Caster"
+type "Character"
+using "LOW_BlushingMermaid_Redcap_Caster"
+// data "Wisdom" "16"
+data "Wisdom" "14"
+// data "Charisma" "9"
+data "Charisma" "16"
+// data "Passives" "AttackOfOpportunity;DarknessRules;Darkvision;LOW_BlushingMermaid_Redcap_Buff;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check"
+data "Passives" "CX_Warlock_Archfey_Boost;;DarknessRules;Darkvision;LOW_BlushingMermaid_Redcap_Buff;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check"
+
+// BOOOAL (Added Fighter progressions, added Boss boost)
 new entry "UND_BOOOAL"
 type "Character"
 using "UND_BOOOAL"
 // data "Passives" "AttackOfOpportunity;BloodThirsty_Redcap;DarknessRules;Darkvision;Multiattack_Redcap;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check"
 data "Passives" "CX_Boss_Boost;CX_Rogue_Assassin_Boost;AttackOfOpportunity;BloodThirsty_Redcap;DarknessRules;Darkvision;Multiattack_Redcap;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check"
 // data "Progressions" ""
-data "Progressions" "532203c2-7bcb-4162-9a7c-2bb20e227a30"
+data "Progressions" "0e6da493-5a37-423b-8c28-629462b22faa"
 
 // ==================================== Fiend ====================================
 // "_Base"
