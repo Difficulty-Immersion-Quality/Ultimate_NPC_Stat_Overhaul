@@ -197,7 +197,8 @@
                     <!-- <attribute id="PassivesAdded" type="LSString" value=""/> -->
                     <attribute id="PassivesAdded" type="LSString" value="JackOfAllTrades;MagicalInspiration"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
-                    <attribute id="Selectors" type="LSString" value="SelectSpells(dcb45167-86bd-4297-9b9d-c295be51af5b,1,1,BardSpells)"/> <!-- UnlockSpell(Shout_SongOfRest,AddChildren) -->
+                    <!-- <attribute id="Selectors" type="LSString" value="SelectSpells(dcb45167-86bd-4297-9b9d-c295be51af5b,1,1,BardSpells);AddSpells(80225e21-5acd-4122-b779-488dae33a31c)" /> -->
+                    <attribute id="Selectors" type="LSString" value="AddSpells(80225e21-5acd-4122-b779-488dae33a31c)" /> <!-- UnlockSpell(Shout_SongOfRest,AddChildren) -->
                     <attribute id="TableUUID" type="guid" value="cbe5059f-7a9f-4b98-be6a-07c9cd8e02c2"/>
                     <attribute id="UUID" type="guid" value="8a8e3467-05fc-4b83-8b85-5a7cf4a3d218"/>
                 </node>
