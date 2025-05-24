@@ -5312,14 +5312,21 @@ data "Passives" "CX_Boss_Boost;CX_Martial_Boost;DarknessRules;Darkvision;Fiendis
 //  │   │   └─ "LOW_HouseOfHope_Merregon"              -- House of Hope Merregons (Inherits Fighter progressions)
 //  │   └─ "Orthon"                                   
 
-// Merregons (Added Fighter progressions)
+// Merregons (Added Fighter progressions, added Champion subclass - no Battle Master manoeuver animations))
 new entry "Merregon"
 type "Character"
 using "Merregon"
 // data "Passives" "ExtraAttack;MagicResistance;DevilsSight;AttackOfOpportunity;DarknessRules"
-data "Passives" "AttackOfOpportunity;DevilsSight;DarknessRules;MagicResistance;ExtraAttack"
+data "Passives" "CX_Fighter_Champion_Boost;AttackOfOpportunity;DevilsSight;DarknessRules;MagicResistance;ExtraAttack"
 // data "Progressions" ""
 data "Progressions" "0e6da493-5a37-423b-8c28-629462b22faa"
+
+// Vengeful Merregons (Inherits Fighter progressions, added Champion subclass)
+new entry "LOW_HouseOfHope_Merregon"
+type "Character"
+using "LOW_HouseOfHope_Merregon"
+// data "Passives" "AttackOfOpportunity;DarknessRules;DevilsSight;ExtraAttack;MagicResistance;LOW_HouseOfHope_Merregon_Fire;LOW_HouseOfHope_Weapon"
+data "Passives" "CX_Fighter_Champion_Boost;AttackOfOpportunity;DarknessRules;DevilsSight;ExtraAttack;MagicResistance;LOW_HouseOfHope_Merregon_Fire;LOW_HouseOfHope_Weapon"
 
 // Yurgir - HONOUR MODE INHERITANCE (Added Rogue progressions, added Assassin subclass, added Boss boost)
 new entry "Orthon"
