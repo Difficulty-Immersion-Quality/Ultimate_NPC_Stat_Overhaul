@@ -1035,8 +1035,15 @@ data "Passives" "CX_Paladin_Boost;CX_Paladin_Oathbreaker_Boost;Dwarf_DwarvenResi
 // "_Base"
 //  ├─ "_Humanoid"
 //  │   ├─ "_Elf"
-//  │   │   ├─ "Elf_Barbarian"                  --- (Uses Barbarian progressions)
+//  │   │   ├─ "Elf_Barbarian"                  --- (Has Barbarian progressions)
 //  │   │   │   └─ "LOW_Guildhall_LadyRabies"
+
+// (Has Barbarian progressions)
+new entry "Elf_Barbarian"
+type "Character"
+using "Elf_Barbarian"
+// data "Passives" "FeyAncestry;AttackOfOpportunity;DarknessRules;Darkvision"
+data "Passives" "CX_Barbarian_Boost;FeyAncestry;AttackOfOpportunity;DarknessRules;Darkvision"
 
 // TODO: Multiclass Rogue Thief/Barb.
 // Lady Flux - Nine-Fingers' Bodyguard, The Guild (Inherits Barbarian progressions, added Widlheart subclass)
@@ -1044,14 +1051,14 @@ new entry "LOW_Guildhall_LadyRabies"
 type "Character"
 using "LOW_Guildhall_LadyRabies"
 // data "Passives" "LOW_Guildhall_AdaptableSneakAttacks;FastHands;GreatWeaponMaster_BonusDamage;SavageAttacker;AttackOfOpportunity;FeyAncestry;DarknessRules;Darkvision"
-data "Passives" "CX_Barbarian_Wildheart_Boost;FeyAncestry;AttackOfOpportunity;DarknessRules;Darkvision;FastHands;GreatWeaponMaster_BonusDamage;SavageAttacker;LOW_Guildhall_AdaptableSneakAttacks"
+data "Passives" "CX_Barbarian_Boost;CX_Barbarian_Wildheart_Boost;FeyAncestry;AttackOfOpportunity;DarknessRules;Darkvision;FastHands;GreatWeaponMaster_BonusDamage;SavageAttacker;LOW_Guildhall_AdaptableSneakAttacks"
 
 // "_Elf"
 //  ├─ "Elf_Caster"                                         --- (Has Wizard progressions)
 //  │   ├─ "CHA_Bandit_Elf_Caster"
 //  │   ├─ "Elf_Druid"                                      --- (Has Druid progressions)
 //  │   │   ├─ "DEN_Druids_Elf_Druid"                       --- (Inherits Druid progressions)
-//  │   │   ├─ "DEN_ShadowDruid_Boss"
+//  │   │   ├─ "DEN_ShadowDruid_Boss"                       --- Kagha (Inherits Druid progressions)
 //  │   │   └─ "LOW_HarperConfrontation_Captain"            --- Captain Leafsong - Harpers (Inherits Druid progressions)
 //  │   ├─ "GLO_CounsellorFlorrick"
 //  │   ├─ "GLO_Desire"                                     --- (Has Wizard progressions)
@@ -1067,12 +1074,26 @@ data "Passives" "CX_Barbarian_Wildheart_Boost;FeyAncestry;AttackOfOpportunity;Da
 //  │   ├─ "WYR_Lucretious"
 //  │   └─ "WYR_SharessCaress_Elf_Caster"                   --- (Inherits Wizard progressions)
 
+//(Has Wizard progressions)
+new entry "Elf_Caster"
+type "Character"
+using "Elf_Caster"
+// data "Passives" "FeyAncestry;AttackOfOpportunity;DarknessRules;Darkvision"
+data "Passives" "CX_Wizard_Boost;FeyAncestry;AttackOfOpportunity;DarknessRules;Darkvision"
+
 // Quelenna - Overgrown Ruin Looters (Inherits Wizard progressions, fixed racials)
 new entry "CHA_Bandit_Elf_Caster"
 type "Character"
 using "CHA_Bandit_Elf_Caster"
 // data "Passives" "FeyAncestry;DarknessRules;Darkvision"
-data "Passives" "CX_Spells_L1;CX_Spells_L1C;FeyAncestry;AttackOfOpportunity;DarknessRules;Darkvision"
+data "Passives" "CX_Wizard_Boost;CX_Spells_L1;CX_Spells_L1C;FeyAncestry;AttackOfOpportunity;DarknessRules;Darkvision"
+
+// (Has Druid progressions)
+new entry "Elf_Druid"
+type "Character"
+using "Elf_Druid"
+// data "Passives" "FeyAncestry;AttackOfOpportunity;DarknessRules;Darkvision"
+data "Passives" "CX_Druid_Boost;FeyAncestry;AttackOfOpportunity;DarknessRules;Darkvision"
 
 //TODO: Custom legendary action?
 // Kagha - Archdruid, Circle of the Emerald Grove (Inherits Druid progressions, added Boss boost)
@@ -1080,42 +1101,42 @@ new entry "DEN_ShadowDruid_Boss"
 type "Character"
 using "DEN_ShadowDruid_Boss"
 // data "Passives" "FeyAncestry;AttackOfOpportunity;DarknessRules;Darkvision"
-data "Passives" "CX_Boss_Boost;FeyAncestry;AttackOfOpportunity;DarknessRules;Darkvision"
+data "Passives" "CX_Boss_Boost;CX_Druid_Boost;FeyAncestry;AttackOfOpportunity;DarknessRules;Darkvision"
 
 // Counsellor Florrick - Advisor to the Archduke (Inherits Wizard progressions)
 new entry "GLO_CounsellorFlorrick"
 type "Character"
 using "GLO_CounsellorFlorrick"
 // data "Passives" "AttackOfOpportunity;FeyAncestry;DarknessRules;Darkvision;Resilient_Constitution"
-data "Passives" "CX_Spells_L1;CX_Spells_L2;CX_Spells_L3;CX_Spells_L2C;CX_Spells_L3C;FeyAncestry;AttackOfOpportunity;DarknessRules;Darkvision;Resilient_Constitution"
+data "Passives" "CX_Wizard_Boost;CX_Spells_L1;CX_Spells_L2;CX_Spells_L3;CX_Spells_L2C;CX_Spells_L3C;FeyAncestry;AttackOfOpportunity;DarknessRules;Darkvision;Resilient_Constitution"
 
 // Lorin (Has Wizard progressions, fixed racials, removed extra spellslot passive)
 new entry "HAG_Victim_Mage"
 type "Character"
 using "HAG_Victim_Mage"
 // data "Passives" "AttackOfOpportunity;DarknessRules;AdditionalSpellSlot_Level_3"
-data "Passives" "FeyAncestry;AttackOfOpportunity;DarknessRules;Darkvision"
+data "Passives" "CX_Wizard_Boost;FeyAncestry;AttackOfOpportunity;DarknessRules;Darkvision"
 
 // Harper Tumeril - Harpers (Inherits Wizard progressions)
 new entry "HAV_Harper_Elf_Caster"
 type "Character"
 using "HAV_Harper_Elf_Caster"
 // data "Passives" "FeyAncestry;AttackOfOpportunity;DarknessRules;Darkvision"
-data "Passives" "CX_Spells_L1;CX_Spells_L2;CX_Spells_L3;FeyAncestry;AttackOfOpportunity;DarknessRules;Darkvision"
+data "Passives" "CX_Wizard_Boost;CX_Spells_L1;CX_Spells_L2;CX_Spells_L3;FeyAncestry;AttackOfOpportunity;DarknessRules;Darkvision"
 
 // Sharran Fidelian Gloommask - Church of Shar (Inherits Wizard progressions)
 new entry "LOW_HouseOfGrief_Cultist_Caster_Elf"
 type "Character"
 using "LOW_HouseOfGrief_Cultist_Caster_Elf"
 // data "Passives" "FeyAncestry;AttackOfOpportunity;DarknessRules;Darkvision;LOW_HouseOfGrief_Cultists_Sight;LOW_HouseOfGrief_Cultists_Melee;"
-data "Passives" "CX_Spells_L4;FeyAncestry;AttackOfOpportunity;DarknessRules;Darkvision;LOW_HouseOfGrief_Cultists_Sight;LOW_HouseOfGrief_Cultists_Melee"
+data "Passives" "CX_Wizard_Boost;CX_Spells_L4;FeyAncestry;AttackOfOpportunity;DarknessRules;Darkvision;LOW_HouseOfGrief_Cultists_Sight;LOW_HouseOfGrief_Cultists_Melee"
 
 // Echo of Illasera - Illasera the Quick, Bhaalspawn (Despite being a Fighter/Mage in BG2, and a "caster" in BG3, she was essentially an intro/tutorial enemy and was cut down a lot in original design. Rogue is fitting for both her theme and to add diversity to the echoes, Arcane Trickster because she was a half caster; and she does have a dagger thankfully.)
 new entry "LOW_Illasera"
 type "Character"
 using "LOW_Illasera"
 // data "Passives" "Ethereal;TurnResistance;IncorporealMovement;AttackOfOpportunity;FeyAncestry;DarknessRules;Darkvision;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check;Metamagic_Distant_NPC"
-data "Passives" "CX_Rogue_ArcaneTrickster_Boost;CX_Spells_L3;AttackOfOpportunity;FeyAncestry;DarknessRules;Darkvision;Ethereal;TurnResistance;IncorporealMovement;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check;Metamagic_Distant_NPC"
+data "Passives" "CX_Rogue_Boost;CX_Rogue_ArcaneTrickster_Boost;CX_Spells_L3;AttackOfOpportunity;FeyAncestry;DarknessRules;Darkvision;Ethereal;TurnResistance;IncorporealMovement;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check;Metamagic_Distant_NPC"
 // data "Progressions" "44bdbc5e-a003-4d61-87f0-5ced20d3804e"
 data "Progressions" "532203c2-7bcb-4162-9a7c-2bb20e227a30"
 
@@ -1129,6 +1150,8 @@ data "Intelligence" "14"
 data "Charisma" "18"
 // data "SpellCastingAbility" "Intelligence"
 data "SpellCastingAbility" "Charisma"
+// data "Passives" "FeyAncestry;AttackOfOpportunity;DarknessRules;Darkvision;DraconicResilience;DraconicAncestry_Green;Metamagic_Distant_NPC;ElementalAffinity_Resistance_Check;ElementalAffinity_Damage"
+data "Passives" "CX_Sorcerer_Boost;FeyAncestry;AttackOfOpportunity;DarknessRules;Darkvision;DraconicResilience;DraconicAncestry_Green;Metamagic_Distant_NPC;ElementalAffinity_Resistance_Check;ElementalAffinity_Damage"
 // data "Progressions" "44bdbc5e-a003-4d61-87f0-5ced20d3804e"
 data "Progressions" "2189a72d-6489-4621-8b2c-85d3e7df2f6f"
 
@@ -1137,7 +1160,7 @@ new entry "WYR_Lucretious"
 type "Character"
 using "WYR_Lucretious"
 // data "Passives" "FeyAncestry;AttackOfOpportunity;DarknessRules;Darkvision;GrimHarvest"
-data "Passives" "CX_Wizard_Necromancy_Boost;CX_Spells_L5C;FeyAncestry;AttackOfOpportunity;DarknessRules;Darkvision;GrimHarvest"
+data "Passives" "CX_Wizard_Boost;CX_Wizard_Necromancy_Boost;CX_Spells_L5C;FeyAncestry;AttackOfOpportunity;DarknessRules;Darkvision;GrimHarvest"
 
 // "_Elf"
 //  ├─ "Elf_Child"
@@ -1191,12 +1214,82 @@ data "Passives" "FeyAncestry;AttackOfOpportunity;DarknessRules;Darkvision"
 //  │   │   └─ "SCL_Caravan_Ambusher_Branthos"          --- Harper Branthos (Inherits Fighter progressions)
 //  │   └─ "SHA_Nightsong"
 
+// (Has Fighter progressions)
+new entry "Elf_Melee"
+type "Character"
+using "Elf_Melee"
+// data "Passives" "FeyAncestry;AttackOfOpportunity;DarknessRules;Darkvision"
+data "Passives" "CX_Fighter_Boost;FeyAncestry;AttackOfOpportunity;DarknessRules;Darkvision"
+
+// Watchman (summon from Gather Your Allies) (Inherits Fighter progressions)
+new entry "END_CityWatchMelee_Elf"
+type "Character"
+using "END_CityWatchMelee_Elf"
+// data "Passives" "AttackOfOpportunity;FeyAncestry;DarknessRules;Darkvision;FightingStyle_GreatWeaponFighting;GreatWeaponMaster_BonusAttack;GreatWeaponMaster_BonusDamage"
+data "Passives" "CX_Fighter_Boost;FeyAncestry;AttackOfOpportunity;DarknessRules;Darkvision;FightingStyle_GreatWeaponFighting;GreatWeaponMaster_BonusAttack;GreatWeaponMaster_BonusDamage"
+
+// (Has Cleric progressions)
+new entry "Elf_Cleric"
+type "Character"
+using "Elf_Cleric"
+// data "Passives" "FeyAncestry;AttackOfOpportunity;DarknessRules;Darkvision"
+data "Passives" "CX_Cleric_Boost;FeyAncestry;AttackOfOpportunity;DarknessRules;Darkvision"
+
+// (Inherits Cleric progressions)
+new entry "SHA_ClericOfShar"
+type "Character"
+using "SHA_ClericOfShar"
+// data "Passives" "DevilsSight;FeyAncestry;AttackOfOpportunity;DarknessRules;Darkvision"
+data "Passives" "CX_Cleric_Boost;FeyAncestry;AttackOfOpportunity;DarknessRules;Darkvision;DevilsSight"
+
+// Fist Cyril - Flaming Fist (Inherits Fighter progressions)
+new entry "HAV_FlamingFist_Elf_Melee"
+type "Character"
+using "HAV_FlamingFist_Elf_Melee"
+// data "Passives" "FeyAncestry;AttackOfOpportunity;DarknessRules;Darkvision"
+data "Passives" "CX_Fighter_Boost;FeyAncestry;AttackOfOpportunity;DarknessRules;Darkvision"
+
+// Shadow-Cursed Flaming Fist (Halsin portal defense) (Inherits Fighter progressions)
+new entry "HAV_ShadowCursed_FlamingFist_Elf_Melee"
+type "Character"
+using "HAV_ShadowCursed_FlamingFist_Elf_Melee"
+// data "Passives" "FeyAncestry;AttackOfOpportunity;DarknessRules;Darkvision"
+data "Passives" "CX_Fighter_Boost;FeyAncestry;AttackOfOpportunity;DarknessRules;Darkvision"
+
+// Sharran Novice Dollay, Sharran Novice Dohna - Church of Shar (Inherits Fighter progressions)
+new entry "LOW_HouseOfGrief_Cultist_Melee_Elf"
+type "Character"
+using "LOW_HouseOfGrief_Cultist_Melee_Elf"
+// data "Passives" "FeyAncestry;AttackOfOpportunity;DarknessRules;Darkvision;LOW_HouseOfGrief_Cultists_Sight;LOW_HouseOfGrief_Cultists_Melee;"
+data "Passives" "CX_Fighter_Boost;AttackOfOpportunity;DarknessRules;Darkvision;LOW_HouseOfGrief_Cultists_Sight;LOW_HouseOfGrief_Cultists_Melee"
+
+// Justiciar Crusader Owltalon, Justiciar Crusader Nightmist - Church of Shar (Inherits Fighter progressions)
+new entry "LOW_HouseOfGrief_Justiciar"
+type "Character"
+using "LOW_HouseOfGrief_Justiciar"
+// data "Passives" "FeyAncestry;AttackOfOpportunity;DarknessRules;Darkvision;SHA_DarkVengeance;ExtraAttack;LOW_HouseOfGrief_Cultists_Melee;LOW_HouseOfGrief_Cultists_Sight"
+data "Passives" "CX_Fighter_Boost;FeyAncestry;AttackOfOpportunity;DarknessRules;Darkvision;SHA_DarkVengeance;ExtraAttack;LOW_HouseOfGrief_Cultists_Melee;LOW_HouseOfGrief_Cultists_Sight"
+
+// Flaming Fist (Inherits Fighter progressions)
+new entry "SCE_FlamingFist_Elf_Melee"
+type "Character"
+using "SCE_FlamingFist_Elf_Melee"
+// data "Passives" "FeyAncestry;AttackOfOpportunity;DarknessRules;Darkvision"
+data "Passives" "CX_Fighter_Boost;FeyAncestry;AttackOfOpportunity;DarknessRules;Darkvision"
+
+// Shadow-Cursed Harper (Inherits Fighter progressions)
+new entry "SCL_Harper_Elf_Melee"
+type "Character"
+using "SCL_Harper_Elf_Melee"
+// data "Passives" "FeyAncestry;AttackOfOpportunity;DarknessRules;Darkvision"
+data "Passives" "CX_Fighter_Boost;FeyAncestry;AttackOfOpportunity;DarknessRules;Darkvision"
+
 // Aylin - The Nightsong, Singer of Sorrows, Sword of the Moonmaiden, Daughter of Selûne (Has Paladin progressions, added Vengeance subclass, added Boss boost)
 new entry "SHA_Nightsong"
 type "Character"
 using "SHA_Nightsong"
 // data "Passives" "AttackOfOpportunity;DarknessRules;ExtraAttack;"
-data "Passives" "CX_Boss_Boost;CX_Paladin_Vengeance_Boost;AttackOfOpportunity;DarknessRules;ExtraAttack"
+data "Passives" "CX_Boss_Boost;CX_Paladin_Boost;CX_Paladin_Vengeance_Boost;AttackOfOpportunity;DarknessRules;ExtraAttack"
 
 // "_Elf"
 //  ├─ "Elf_Monk"                                   --- (Has Monk progressions)
@@ -1210,12 +1303,40 @@ data "Passives" "CX_Boss_Boost;CX_Paladin_Vengeance_Boost;AttackOfOpportunity;Da
 //  │   ├─ "WYR_MessHallBodyguard_03"               --- Lady Durinbold's Attendant (Inherits Ranger progressions)
 //  │   └─ "WYR_SmugglersCave_Elf_Ranger"
 
+// (Has Monk progressions)
+new entry "Elf_Monk"
+type "Character"
+using "Elf_Monk"
+// data "Passives" "FeyAncestry;AttackOfOpportunity;DarknessRules;Darkvision"
+data "Passives" "CX_Monk_Boost;FeyAncestry;AttackOfOpportunity;DarknessRules;Darkvision"
+
+// (Has Ranger progressions)
+new entry "Elf_Ranger"
+type "Character"
+using "Elf_Ranger"
+// data "Passives" "FeyAncestry;AttackOfOpportunity;DarknessRules;Darkvision"
+data "Passives" "CX_Ranger_Boost;FeyAncestry;AttackOfOpportunity;DarknessRules;Darkvision"
+
+// Harper Archer - Harpers (Gather Your Allies summon) (Inherits Ranger progressions)
+new entry "END_HarperRanger_Elf"
+type "Character"
+using "END_HarperRanger_Elf"
+// data "Passives" "FeyAncestry;AttackOfOpportunity;DarknessRules;Darkvision;FightingStyle_Archery"
+data "Passives" "CX_Ranger_Boost;FeyAncestry;AttackOfOpportunity;DarknessRules;Darkvision;FightingStyle_Archery"
+
+// Lady Durinbold's Attendant (Inherits Ranger progressions)
+new entry "WYR_MessHallBodyguard_03"
+type "Character"
+using "WYR_MessHallBodyguard_03"
+// data "Passives" "AttackOfOpportunity;FeyAncestry;DarknessRules;Darkvision;MultiattackDefense"
+data "Passives" "CX_Ranger_Boost;FeyAncestry;AttackOfOpportunity;DarknessRules;Darkvision;MultiattackDefense"
+
 // Archer Velicia - Harpers, The Guild (undercover) (Inherits Ranger progressions, added Gloom Stalker subclass)
 new entry "WYR_SmugglersCave_Elf_Ranger"
 type "Character"
 using "WYR_SmugglersCave_Elf_Ranger"
 // data "Passives" "FeyAncestry;AttackOfOpportunity;DarknessRules;Darkvision;FavoredEnemy_RangerKnight;NaturalExplorer_WastelandWander_Cold;DreadAmbusher;"
-data "Passives" "CX_Ranger_GloomStalker_Boost;FeyAncestry;AttackOfOpportunity;DarknessRules;Darkvision;FavoredEnemy_RangerKnight;NaturalExplorer_WastelandWander_Cold;DreadAmbusher"
+data "Passives" "CX_Ranger_Boost;CX_Ranger_GloomStalker_Boost;FeyAncestry;AttackOfOpportunity;DarknessRules;Darkvision;FavoredEnemy_RangerKnight;NaturalExplorer_WastelandWander_Cold;DreadAmbusher"
 
 // "_Elf"
 //  ├─ "Elf_Rogue"                              --- (Has Rogue progressions)
@@ -1223,6 +1344,13 @@ data "Passives" "CX_Ranger_GloomStalker_Boost;FeyAncestry;AttackOfOpportunity;Da
 //  │   ├─ "LOW_Guildhall_BossTrinoda"          --- Unused (Has Rogue progressions)
 //  │   ├─ "LOW_Guildhall_Swarm_Melee_Elf"      --- Carlorina the Wolf - Zhentarim (Inherits Rogue progressions)
 //  │   └─ "LOW_Guildhall_Swarm_Ranged_Elf"     --- Follgast - Zhentarim (Inherits Rogue progressions)
+
+// (Has Rogue progressions)
+new entry "Elf_Rogue"
+type "Character"
+using "Elf_Rogue"
+// data "Passives" "FeyAncestry;AttackOfOpportunity;DarknessRules;Darkvision"
+data "Passives" "CX_Rogue_Boost;FeyAncestry;AttackOfOpportunity;DarknessRules;Darkvision"
 
 // "_Elf"
 //  ├─ "FlamingFist_Elf"
@@ -1243,7 +1371,7 @@ new entry "FlamingFist_Elf_Caster"
 type "Character"
 using "FlamingFist_Elf_Caster"
 // data "Passives" "FeyAncestry;AttackOfOpportunity;DarknessRules;Darkvision"
-data "Passives" "Goon_NPC_Flaming_Fist_Caster_Boosts;CX_Spells_L1;CX_Spells_L1C;FeyAncestry;AttackOfOpportunity;DarknessRules;Darkvision"
+data "Passives" "CX_Wizard_Boost;Goon_NPC_Flaming_Fist_Caster_Boosts;CX_Spells_L1;CX_Spells_L1C;FeyAncestry;AttackOfOpportunity;DarknessRules;Darkvision"
 // data "Progressions" "7417c0c0-383f-11ed-a261-0242ac120002"
 data "Progressions" "44bdbc5e-a003-4d61-87f0-5ced20d3804e"
 
@@ -1252,7 +1380,7 @@ new entry "FlamingFist_Elf_Cleric"
 type "Character"
 using "FlamingFist_Elf_Cleric"
 // data "Passives" "FeyAncestry;AttackOfOpportunity;DarknessRules;Darkvision"
-data "Passives" "Goon_NPC_Flaming_Fist_Cleric_Boosts;FeyAncestry;AttackOfOpportunity;DarknessRules;Darkvision"
+data "Passives" "CX_Cleric_Boost;Goon_NPC_Flaming_Fist_Cleric_Boosts;FeyAncestry;AttackOfOpportunity;DarknessRules;Darkvision"
 // data "Progressions" "70c3eb7e-383f-11ed-a261-0242ac120002"
 data "Progressions" "36c3f8de-3293-4d7b-92bc-ceb3c569244b"
 
@@ -1261,7 +1389,7 @@ new entry "FlamingFist_Elf_Melee_Attacker"
 type "Character"
 using "FlamingFist_Elf_Melee_Attacker"
 // data "Passives" "FeyAncestry;AttackOfOpportunity;DarknessRules;Darkvision"
-data "Passives" "Goon_NPC_Flaming_Fist_Attacker_Boosts;FeyAncestry;AttackOfOpportunity;DarknessRules;Darkvision"
+data "Passives" "CX_Fighter_Boost;Goon_NPC_Flaming_Fist_Attacker_Boosts;FeyAncestry;AttackOfOpportunity;DarknessRules;Darkvision"
 // data "Progressions" "51d47904-383f-11ed-a261-0242ac120002"
 data "Progressions" "0e6da493-5a37-423b-8c28-629462b22faa"
 
@@ -1270,7 +1398,7 @@ new entry "FlamingFist_Elf_Melee_Defender"
 type "Character"
 using "FlamingFist_Elf_Melee_Defender"
 // data "Passives" "FeyAncestry;AttackOfOpportunity;DarknessRules;Darkvision"
-data "Passives" "Goon_NPC_Flaming_Fist_Defender_Boosts;FeyAncestry;AttackOfOpportunity;DarknessRules;Darkvision"
+data "Passives" "CX_Fighter_Boost;Goon_NPC_Flaming_Fist_Defender_Boosts;FeyAncestry;AttackOfOpportunity;DarknessRules;Darkvision"
 // data "Progressions" "5885fa7a-383f-11ed-a261-0242ac120002"
 data "Progressions" "0e6da493-5a37-423b-8c28-629462b22faa"
 
@@ -1279,7 +1407,7 @@ new entry "FlamingFist_Elf_Ranger"
 type "Character"
 using "FlamingFist_Elf_Ranger"
 // data "Passives" "FeyAncestry;AttackOfOpportunity;DarknessRules;Darkvision"
-data "Passives" "Goon_NPC_Flaming_Fist_Ranger_Boosts;FeyAncestry;AttackOfOpportunity;DarknessRules;Darkvision"
+data "Passives" "CX_Ranger_Boost;Goon_NPC_Flaming_Fist_Ranger_Boosts;FeyAncestry;AttackOfOpportunity;DarknessRules;Darkvision"
 // data "Progressions" "6cae475a-383f-11ed-a261-0242ac120002"
 data "Progressions" "f0ede459-8b86-48fd-ac11-4432573566a5"
 
@@ -1289,19 +1417,26 @@ data "Progressions" "f0ede459-8b86-48fd-ac11-4432573566a5"
 //  ├─ "MOO_ZealotOfTheAbsolute_Elf"
 //  ├─ "SCL_Ketheric"
 
+// Acolyte Kimmeral - Cult of the Absolute (Has Cleric progressions) 
+new entry "MOO_AcolyteOfTheAbsolute_Elf"
+type "Character"
+using "MOO_AcolyteOfTheAbsolute_Elf"
+// data "Passives" "FeyAncestry;AttackOfOpportunity;DarknessRules;Darkvision"
+data "Passives" "CX_Cleric_Boost;FeyAncestry;AttackOfOpportunity;DarknessRules;Darkvision"
+
 // Adept of the Absolute (unused?) (Has Cleric progressions) 
 new entry "MOO_FanaticOfTheAbsolute_Elf"
 type "Character"
 using "MOO_FanaticOfTheAbsolute_Elf"
 // data "Passives" "FeyAncestry;AttackOfOpportunity;DarknessRules;Darkvision"
-data "Passives" "CX_Spells_L4C;FeyAncestry;AttackOfOpportunity;DarknessRules;Darkvision"
+data "Passives" "CX_Cleric_Boost;CX_Spells_L4C;FeyAncestry;AttackOfOpportunity;DarknessRules;Darkvision"
 
 // (Has Paladin progressions, added Oathbreaker subclass) 
 new entry "MOO_ZealotOfTheAbsolute_Elf"
 type "Character"
 using "MOO_ZealotOfTheAbsolute_Elf"
 // data "Passives" "AttackOfOpportunity;FeyAncestry;DarknessRules;Darkvision;FightingStyle_GreatWeaponFighting"
-data "Passives" "CX_Paladin_Oathbreaker_Boost;FeyAncestry;AttackOfOpportunity;DarknessRules;Darkvision;FightingStyle_GreatWeaponFighting"
+data "Passives" "CX_Paladin_Boost;CX_Paladin_Oathbreaker_Boost;FeyAncestry;AttackOfOpportunity;DarknessRules;Darkvision;FightingStyle_GreatWeaponFighting"
 
 //TODO: Add custom Legendary actions to Ketheric Thorm
 // Ketheric Thorm - Chosen of Myrkul - NO HONOUR MODE INHERITANCE PASSIVES (Inherits Paladin progressions, added Oathbreaker subclass, added Boss boost) 
@@ -1309,7 +1444,7 @@ new entry "SCL_Ketheric"
 type "Character"
 using "SCL_Ketheric"
 // data "Passives" "AttackOfOpportunity;FeyAncestry;DarknessRules;Darkvision;ExtraAttack;FightingStyle_Defense;ImmutableForm"
-data "Passives" "CX_Boss_Boost;CX_Paladin_Oathbreaker_Boost;FeyAncestry;AttackOfOpportunity;DarknessRules;Darkvision;ExtraAttack;FightingStyle_Defense;ImmutableForm"
+data "Passives" "CX_Boss_Boost;CX_Paladin_Boost;CX_Paladin_Oathbreaker_Boost;FeyAncestry;AttackOfOpportunity;DarknessRules;Darkvision;ExtraAttack;FightingStyle_Defense;ImmutableForm"
 
 // "_Elf"
 //  ├─ "_Elf_ShadarKai"
@@ -1317,31 +1452,73 @@ data "Passives" "CX_Boss_Boost;CX_Paladin_Oathbreaker_Boost;FeyAncestry;AttackOf
 //  │   │   └─ "SCL_HeWhoWas"       --- He Who Was - Shadar-Kai Gloom Weaver (Inherits Ranger progressions)
 //  │   └─ "Elf_ShadarKai_Rogue"    --- Shadar-Kai Assassin (unused template) (Has Rogue progressions)          
 
+// (Has Ranger progressions)     
+new entry "Elf_ShadarKai_Ranger"
+type "Character"
+using "Elf_ShadarKai_Ranger"
+// data "Passives" "FeyAncestry;AttackOfOpportunity;DarknessRules;Darkvision"
+data "Passives" "CX_Ranger_Boost;FeyAncestry;AttackOfOpportunity;DarknessRules;Darkvision"
+
+// He Who Was - Shadar-Kai Gloom Weaver (Inherits Ranger progressions)
+new entry "SCL_HeWhoWas"
+type "Character"
+using "SCL_HeWhoWas"
+// data "Passives" "ExtraAttack;MistyEscape_ShadarKai_GloomWeaver;FeyAncestry;AttackOfOpportunity;Darkvision;DarknessRules"
+data "Passives" "CX_Ranger_Boost;FeyAncestry;AttackOfOpportunity;DarknessRules;Darkvision;ExtraAttack;MistyEscape_ShadarKai_GloomWeaver"
+
+// Shadar-Kai Assassin (unused template) (Has Rogue progressions)     
+new entry "Elf_ShadarKai_Rogue"
+type "Character"
+using "Elf_ShadarKai_Rogue"
+// data "Passives" "FeyAncestry;AttackOfOpportunity;DarknessRules;Darkvision"
+data "Passives" "CX_Rogue_Boost;FeyAncestry;AttackOfOpportunity;DarknessRules;Darkvision"
+
 // "_Elf"
 //  └─ "_Elf_Wood"
 //      ├─ "Elf_Wood_Caster"                    --- (Has Wizard progressions)
 //      │   └─ "Elf_Wood_Druid"                 --- (Has Druid progressions)
 //      │       └─ "DEN_Druids_Elf_Wood_Druid"  --- Jeorna, Inwe - Circle of the Emerald Grove (Inherits Druid progressions)
 
+// (Has Wizard progressions)
+new entry "Elf_Wood_Caster"
+type "Character"
+using "Elf_Wood_Caster"
+// data "Passives" "FeyAncestry;AttackOfOpportunity;DarknessRules;Darkvision"
+data "Passives" "CX_Wizard_Boost;FeyAncestry;AttackOfOpportunity;DarknessRules;Darkvision"
+
+// (Has Druid progressions)
+new entry "Elf_Wood_Druid"
+type "Character"
+using "Elf_Wood_Druid"
+// data "Passives" "FeyAncestry;AttackOfOpportunity;DarknessRules;Darkvision"
+data "Passives" "CX_Druid_Boost;FeyAncestry;AttackOfOpportunity;DarknessRules;Darkvision"
+
 // "_Elf"
 //  └─ "_Elf_Wood"
 //      ├─ "MOO_AcolyteOfTheAbsolute_WoodElf"   --- (Has Cleric progressions) 
-//      ├─ "MOO_FanaticOfTheAbsolute_WoodElf"
-//      └─ "MOO_ZealotOfTheAbsolute_WoodElf"
+//      ├─ "MOO_FanaticOfTheAbsolute_WoodElf"   --- (Has Cleric progressions) 
+//      └─ "MOO_ZealotOfTheAbsolute_WoodElf"    --- (Has Paladin progressions)
+
+// (Has Cleric progressions) 
+// new entry "MOO_AcolyteOfTheAbsolute_WoodElf"
+type "Character"
+using "MOO_AcolyteOfTheAbsolute_WoodElf"
+// data "Passives" "FeyAncestry;AttackOfOpportunity;DarknessRules;Darkvision"
+data "Passives" "CX_Cleric_Boost;FeyAncestry;AttackOfOpportunity;DarknessRules;Darkvision"
 
 // (Has Cleric progressions) 
 new entry "MOO_FanaticOfTheAbsolute_WoodElf"
 type "Character"
 using "MOO_FanaticOfTheAbsolute_WoodElf"
 // data "Passives" "FeyAncestry;AttackOfOpportunity;DarknessRules;Darkvision"
-data "Passives" "CX_Spells_L4C;FeyAncestry;AttackOfOpportunity;DarknessRules;Darkvision"
+data "Passives" "CX_Cleric_Boost;CX_Spells_L4C;FeyAncestry;AttackOfOpportunity;DarknessRules;Darkvision"
 
 // (Has Paladin progressions, added Oathbreaker subclass) 
 new entry "MOO_ZealotOfTheAbsolute_WoodElf"
 type "Character"
 using "MOO_ZealotOfTheAbsolute_WoodElf"
 // data "Passives" "AttackOfOpportunity;FeyAncestry;DarknessRules;Darkvision;FightingStyle_GreatWeaponFighting"
-data "Passives" "CX_Paladin_Oathbreaker_Boost;FeyAncestry;AttackOfOpportunity;DarknessRules;Darkvision;FightingStyle_GreatWeaponFighting"
+data "Passives" "CX_Paladin_Boost;CX_Paladin_Oathbreaker_Boost;FeyAncestry;AttackOfOpportunity;DarknessRules;Darkvision;FightingStyle_GreatWeaponFighting"
 
 // ==================================== Elf - Drow ====================================
 
@@ -1367,10 +1544,10 @@ using "Elf_Drow_Commoner_Cowering"
 data "Passives" "FeyAncestry;AttackOfOpportunity;DarknessRules;SuperiorDarkvision;SunlightSensitivity"
 
 // "_Elf_Drow"
-//  ├─ "Elf_Drow_Caster"
-//  │   ├─ "LOW_HouseOfGrief_Viconia"
-//  │   ├─ "LOW_Sendai"
-//  │   ├─ "LOW_TheLodge_Scientist"
+//  ├─ "Elf_Drow_Caster"                        --- (Has Wizard progressions)
+//  │   ├─ "LOW_HouseOfGrief_Viconia"           --- Viconia DeVir - Mother Superior of Shar (Has Cleric progressions)
+//  │   ├─ "LOW_Sendai"                         --- Echo of Sendai - Bhaalspawn (Replaced Wizard progressions with Cleric progressions)
+//  │   ├─ "LOW_TheLodge_Scientist"             --- (Professor Limeleech - Society of Brilliance (Inherits Wizard progressions)
 //  │   ├─ "UND_HookHorrorHermit"               --- (Inherits Wizard progressions)
 //  │   └─ "UND_PetrifiedDrow_Drow_Caster"      --- Unused (Inherits Wizard progressions)
 
@@ -1379,7 +1556,7 @@ new entry "Elf_Drow_Caster"
 type "Character"
 using "Elf_Drow_Caster"
 // data "Passives" "FeyAncestry;SunlightSensitivity;AttackOfOpportunity;DarknessRules;Darkvision"
-data "Passives" "FeyAncestry;AttackOfOpportunity;DarknessRules;SuperiorDarkvision;SunlightSensitivity"
+data "Passives" "CX_Wizard_Boost;FeyAncestry;AttackOfOpportunity;DarknessRules;SuperiorDarkvision;SunlightSensitivity"
 
 // Viconia DeVir - Mother Superior of Shar - HONOUR MODE INHERITANCE (Has Cleric progressions, added Trickery Domain subclass, added Boss boost)
 new entry "LOW_HouseOfGrief_Viconia"
@@ -1387,30 +1564,30 @@ type "Character"
 using "LOW_HouseOfGrief_Viconia"
 // data "Passives" "AttackOfOpportunity;FeyAncestry;SunlightSensitivity;DarknessRules;Darkvision;LOW_HouseOfGrief_Cultists_Melee;LOW_HouseOfGrief_Cultists_Sight;LOW_HouseOfGrief_Viconia_Heart_Empowered;MagicResistance;"
 // data "Passives" "AttackOfOpportunity;FeyAncestry;SunlightSensitivity;DarknessRules;Darkvision;LOW_HouseOfGrief_Cultists_Melee;LOW_HouseOfGrief_Cultists_Sight;LOW_HouseOfGrief_Viconia_Heart_Empowered;MagicResistance;LegendaryAction_LOW_Viconia_DarkSentinel;LegendaryAction_LOW_Viconia_HeartWrench;LOW_Viconia_UmbralResonance"
-data "Passives" "CX_Boss_Boost;CX_Cleric_Trickery_Boost;CX_Spells_L5;CX_Spells_L5C;CX_Spells_L6;CX_Spells_L6C;FeyAncestry;AttackOfOpportunity;DarknessRules;SuperiorDarkvision;SunlightSensitivity;MagicResistance;LOW_HouseOfGrief_Cultists_Melee;LOW_HouseOfGrief_Cultists_Sight;LOW_HouseOfGrief_Viconia_Heart_Empowered;LegendaryAction_LOW_Viconia_DarkSentinel;LegendaryAction_LOW_Viconia_HeartWrench;LOW_Viconia_UmbralResonance"
+data "Passives" "CX_Boss_Boost;CX_Cleric_Boost;CX_Cleric_Trickery_Boost;CX_Spells_L5;CX_Spells_L5C;CX_Spells_L6;CX_Spells_L6C;FeyAncestry;AttackOfOpportunity;DarknessRules;SuperiorDarkvision;SunlightSensitivity;MagicResistance;LOW_HouseOfGrief_Cultists_Melee;LOW_HouseOfGrief_Cultists_Sight;LOW_HouseOfGrief_Viconia_Heart_Empowered;LegendaryAction_LOW_Viconia_DarkSentinel;LegendaryAction_LOW_Viconia_HeartWrench;LOW_Viconia_UmbralResonance"
 
 // Echo of Sendai - Bhaalspawn (Replaced Wizard progressions with Cleric progressions. In BG2 she's a mutliclass Wizard/Cleric, but progressions aside all of her stats and spells support Cleric more in BG3; she even has Wisdom for her spellcasting ability)
 new entry "LOW_Sendai"
 type "Character"
 using "LOW_Sendai"
 // data "Passives" "Ethereal;TurnResistance;IncorporealMovement;AttackOfOpportunity;FeyAncestry;SunlightSensitivity;DarknessRules;Darkvision;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check;Metamagic_Distant_NPC"
-data "Passives" "CX_Cleric_War_Boost;CX_Spells_L5C;CX_Spells_L6C;FeyAncestry;AttackOfOpportunity;DarknessRules;SuperiorDarkvision;SunlightSensitivity;Ethereal;TurnResistance;IncorporealMovement;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check;Metamagic_Distant_NPC"
+data "Passives" "CX_Cleric_Boost; CX_Cleric_War_Boost;CX_Spells_L5C;CX_Spells_L6C;FeyAncestry;AttackOfOpportunity;DarknessRules;SuperiorDarkvision;SunlightSensitivity;Ethereal;TurnResistance;IncorporealMovement;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check;Metamagic_Distant_NPC"
 // data "Progressions" "44bdbc5e-a003-4d61-87f0-5ced20d3804e"
 data "Progressions" "36c3f8de-3293-4d7b-92bc-ceb3c569244b"
 
-// Professor Limeleech - Society of Brilliance (Has Wizard progressions, gives Transmutation vibes with shapeshifting and what not)
+// Professor Limeleech - Society of Brilliance (Inherits Wizard progressions, gives Transmutation vibes with shapeshifting and what not)
 new entry "LOW_TheLodge_Scientist"
 type "Character"
 using "LOW_TheLodge_Scientist"
 // data "Passives" "FeyAncestry;SunlightSensitivity;AttackOfOpportunity;DarknessRules;Darkvision"
-data "Passives" "CX_Wizard_Transmutation_Boost;FeyAncestry;AttackOfOpportunity;DarknessRules;SuperiorDarkvision;SunlightSensitivity"
+data "Passives" "CX_Wizard_Boost;CX_Wizard_Transmutation_Boost;FeyAncestry;AttackOfOpportunity;DarknessRules;SuperiorDarkvision;SunlightSensitivity"
 
 // "_Elf_Drow"
-//  ├─ "Elf_Drow_Melee"
-//  │   ├─ "Elf_Drow_Cleric"
+//  ├─ "Elf_Drow_Melee"                                 --- (Has Fighter progressions)
+//  │   ├─ "Elf_Drow_Cleric"                            --- (Has Cleric progressions)
 //  │   │   └─ "WYR_OpenHandTemple_Elf_Drow_Cleric"     --- Unused
-//  │   ├─ "HAG_Masked_Fighter"
-//  │   ├─ "UND_Nere"
+//  │   ├─ "HAG_Masked_Fighter"                         --- Mask of Vengeane (Overgrown Tunnel) (Inherits Fighter progressions)
+//  │   ├─ "UND_Nere"                                   --- Nere - True Soul of the Absolute (Inherits Fighter progressions)
 //  │   └─ "UND_PetrifiedDrow_Drow_Melee"
 
 // (Has Fighter progressions)
@@ -1418,21 +1595,21 @@ new entry "Elf_Drow_Melee"
 type "Character"
 using "Elf_Drow_Melee"
 // data "Passives" "DarknessRules;DualWielder_BonusAC;DualWielder_PassiveBonuses;FeyAncestry;SunlightSensitivity;AttackOfOpportunity;Darkvision"
-data "Passives" "FeyAncestry;AttackOfOpportunity;DarknessRules;SuperiorDarkvision;SunlightSensitivity;DualWielder_BonusAC;DualWielder_PassiveBonuses"
+data "Passives" "CX_Fighter_Boost;FeyAncestry;AttackOfOpportunity;DarknessRules;SuperiorDarkvision;SunlightSensitivity;DualWielder_BonusAC;DualWielder_PassiveBonuses"
 
 // (Has Cleric progressions)
 new entry "Elf_Drow_Cleric"
 type "Character"
 using "Elf_Drow_Cleric"
 // data "Passives" "FeyAncestry;SunlightSensitivity;AttackOfOpportunity;DarknessRules;Darkvision"
-data "Passives" "FeyAncestry;AttackOfOpportunity;DarknessRules;SuperiorDarkvision;SunlightSensitivity;"
+data "Passives" "CX_Cleric_Boost;FeyAncestry;AttackOfOpportunity;DarknessRules;SuperiorDarkvision;SunlightSensitivity;"
 
 // Mask of Vengeance (Overgrown Tunnel) - (Auntie Ethel victim) (Inherits Fighter progressions)
 new entry "HAG_Masked_Fighter"
 type "Character"
 using "HAG_Masked_Fighter"
 // data "Passives" "AttackOfOpportunity;DarknessRules;HAG_MaskOfVengeance"
-data "Passives" "FeyAncestry;AttackOfOpportunity;DarknessRules;SuperiorDarkvision;SunlightSensitivity;HAG_MaskOfVengeance"
+data "Passives" "CX_Fighter_Boost;FeyAncestry;AttackOfOpportunity;DarknessRules;SuperiorDarkvision;SunlightSensitivity;HAG_MaskOfVengeance"
 
 // Nere - True Soul of the Absolute - HONOUR MODE INHERITANCE (Inherits Fighter progressions, 100% a top g super sigma Eldritch Knight on god fr fr. Absolute's University don't let the matrix get you down. Added Boss boost)
 new entry "UND_Nere"
@@ -1440,7 +1617,7 @@ type "Character"
 using "UND_Nere"
 // data "Passives" "Muscular_Athletics;AttackOfOpportunity;ExtraAttack;SunlightSensitivity;FeyAncestry;DarknessRules;Darkvision;AdditionalSpellSlot_Level_1; AdditionalSpellSlot_Level_1; AdditionalSpellSlot_Level_1; AdditionalSpellSlot_Level_1; AdditionalSpellSlot_Level_2; AdditionalSpellSlot_Level_2"
 // data "Passives" "Muscular_Athletics;AttackOfOpportunity;ExtraAttack;SunlightSensitivity;FeyAncestry;DarknessRules;Darkvision;AdditionalSpellSlot_Level_1; AdditionalSpellSlot_Level_1; AdditionalSpellSlot_Level_1; AdditionalSpellSlot_Level_1; AdditionalSpellSlot_Level_2; AdditionalSpellSlot_Level_2;LegendaryAction_UND_Nere_PsychicMirror"
-data "Passives" "CX_Boss_Boost;CX_Fighter_EldritchKnight_Boost;CX_Spells_L2;CX_Spells_L3C;FeyAncestry;AttackOfOpportunity;DarknessRules;SuperiorDarkvision;SunlightSensitivity;DualWielder_BonusAC;DualWielder_PassiveBonuses;ExtraAttack;Muscular_Athletics;AdditionalSpellSlot_Level_1;AdditionalSpellSlot_Level_1;AdditionalSpellSlot_Level_1;AdditionalSpellSlot_Level_1;AdditionalSpellSlot_Level_2;AdditionalSpellSlot_Level_2;LegendaryAction_UND_Nere_PsychicMirror"
+data "Passives" "CX_Boss_Boost;CX_Fighter_Boost;CX_Fighter_EldritchKnight_Boost;CX_Spells_L2;CX_Spells_L3C;FeyAncestry;AttackOfOpportunity;DarknessRules;SuperiorDarkvision;SunlightSensitivity;DualWielder_BonusAC;DualWielder_PassiveBonuses;ExtraAttack;Muscular_Athletics;AdditionalSpellSlot_Level_1;AdditionalSpellSlot_Level_1;AdditionalSpellSlot_Level_1;AdditionalSpellSlot_Level_1;AdditionalSpellSlot_Level_2;AdditionalSpellSlot_Level_2;LegendaryAction_UND_Nere_PsychicMirror"
 
 // "_Elf_Drow"
 //  ├─ "Elf_Drow_Ranger"
@@ -1454,17 +1631,17 @@ new entry "Elf_Drow_Ranger"
 type "Character"
 using "Elf_Drow_Ranger"
 // data "Passives" "FeyAncestry;SunlightSensitivity;AttackOfOpportunity;DarknessRules;Darkvision"
-data "Passives" "FeyAncestry;AttackOfOpportunity;DarknessRules;SuperiorDarkvision;SunlightSensitivity"
+data "Passives" "CX_Ranger_Boost;FeyAncestry;AttackOfOpportunity;DarknessRules;SuperiorDarkvision;SunlightSensitivity"
 
 // (Inherits Ranger progressions)
 new entry "UND_PetrifiedDrow_Champion"
 type "Character"
 using "UND_PetrifiedDrow_Champion"
 // data "Passives" "AttackOfOpportunity;SunlightSensitivity;DarknessRules;AdditionalSpellSlot_Level_2;AdditionalSpellSlot_Level_2; "
-data "Passives" "FeyAncestry;AttackOfOpportunity;DarknessRules;SuperiorDarkvision;SunlightSensitivity;AdditionalSpellSlot_Level_2;AdditionalSpellSlot_Level_2"
+data "Passives" "CX_Ranger_Boost;eyAncestry;AttackOfOpportunity;DarknessRules;SuperiorDarkvision;SunlightSensitivity;AdditionalSpellSlot_Level_2;AdditionalSpellSlot_Level_2"
 
 // "_Elf_Drow"
-//  ├─ "Elf_Drow_Rogue"
+//  ├─ "Elf_Drow_Rogue"         --- (Has Rogue progressions)
 //  │   ├─ "HAG_Masked_Rogue"   --- Unused (Inherits Rogue progressions)
 //  │   └─ "MOO_InfernalVendor" --- Araj Oblodra (Inherits Rogue progressions)
 
@@ -1473,32 +1650,40 @@ new entry "Elf_Drow_Rogue"
 type "Character"
 using "Elf_Drow_Rogue"
 // data "Passives" "FeyAncestry;SunlightSensitivity;AttackOfOpportunity;DarknessRules;Darkvision"
-data "Passives" "FeyAncestry;AttackOfOpportunity;DarknessRules;SuperiorDarkvision;SunlightSensitivity"
+data "Passives" "CX_Rogue_Boost;FeyAncestry;AttackOfOpportunity;DarknessRules;SuperiorDarkvision;SunlightSensitivity"
 
+// (Inherits Rogue progressions)
 new entry "HAG_Masked_Rogue"
 type "Character"
 using "HAG_Masked_Rogue"
 // data "Passives" "AttackOfOpportunity;DarknessRules;DualWielder_PassiveBonuses;SunlightSensitivity;DarknessRules;"
-data "Passives" "FeyAncestry;AttackOfOpportunity;DarknessRules;SuperiorDarkvision;SunlightSensitivity;DualWielder_PassiveBonuses"
+data "Passives" "CX_Rogue_Boost;FeyAncestry;AttackOfOpportunity;DarknessRules;SuperiorDarkvision;SunlightSensitivity;DualWielder_PassiveBonuses"
 
 // "_Elf_Drow"
 //  ├─ "MOO_AcolyteOfTheAbsolute_Drow"  --- (Has Cleric progressions) 
-//  ├─ "MOO_FanaticOfTheAbsolute_Drow"
-//  └─ "MOO_ZealotOfTheAbsolute_Drow"
+//  ├─ "MOO_FanaticOfTheAbsolute_Drow"  --- (Has Cleric progressions)
+//  └─ "MOO_ZealotOfTheAbsolute_Drow"   --- (Has Paladin progressions)
+
+// (Has Cleric progressions) 
+new entry "MOO_AcolyteOfTheAbsolute_Drow"
+type "Character"
+using "MOO_AcolyteOfTheAbsolute_Drow"
+// data "Passives" "FeyAncestry;SunlightSensitivity;AttackOfOpportunity;DarknessRules;Darkvision"
+data "Passives" "CX_Cleric_Boost;FeyAncestry;AttackOfOpportunity;DarknessRules;SuperiorDarkvision;SunlightSensitivity"
 
 // Adept Dorikel, Adept Furek - Cult of the Absolute (Has Cleric progressions) 
 new entry "MOO_FanaticOfTheAbsolute_Drow"
 type "Character"
 using "MOO_FanaticOfTheAbsolute_Drow"
 // data "Passives" "FeyAncestry;SunlightSensitivity;AttackOfOpportunity;DarknessRules;Darkvision"
-data "Passives" "CX_Spells_L4C;FeyAncestry;AttackOfOpportunity;DarknessRules;SuperiorDarkvision;SunlightSensitivity;"
+data "Passives" "CX_Cleric_Boost;CX_Spells_L4C;FeyAncestry;AttackOfOpportunity;DarknessRules;SuperiorDarkvision;SunlightSensitivity;"
 
 // Zealot Soreni, Zealot Niram, Zealot Rylveth, Zealot Zira - Cult of the Absolute (Has Paladin progressions, added Oathbreaker subclass) 
 new entry "MOO_ZealotOfTheAbsolute_Drow"
 type "Character"
 using "MOO_ZealotOfTheAbsolute_Drow"
 // data "Passives" "AttackOfOpportunity;FeyAncestry;SunlightSensitivity;DarknessRules;Darkvision;FightingStyle_GreatWeaponFighting"
-data "Passives" "CX_Paladin_Oathbreaker_Boost;FeyAncestry;AttackOfOpportunity;DarknessRules;SuperiorDarkvision;SunlightSensitivity;FightingStyle_GreatWeaponFighting"
+data "Passives" "CX_Paladin_Boost;CX_Paladin_Oathbreaker_Boost;FeyAncestry;AttackOfOpportunity;DarknessRules;SuperiorDarkvision;SunlightSensitivity;FightingStyle_GreatWeaponFighting"
 
 // ==================================== Giants ====================================
 
