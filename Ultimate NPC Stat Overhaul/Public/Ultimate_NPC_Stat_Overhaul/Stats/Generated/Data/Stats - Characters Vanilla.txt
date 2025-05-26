@@ -1689,8 +1689,8 @@ data "Passives" "CX_Paladin_Boost;CX_Paladin_Oathbreaker_Boost;FeyAncestry;Attac
 
 // "_Base"
 //  ├─ "_Humanoid"
-//  │   ├─ "_Giants"
-//  │   │   ├─ "Ogre"
+//  │   ├─ "_Giants"                            --- (Added Barbarian progressions, added Berserker subclass)
+//  │   │   ├─ "Ogre"                           --- (Inherits Barbarian progressions, added Berserker subclass)
 //  │   │   │   ├─ "CAMP_MintharaAmbush_Ogre"   --- (Inherits Barbarian progressions, inherits Berserker subclass)
 //  │   │   │   ├─ "FOR_OgreCaptain"
 //  │   │   │   ├─ "FOR_OgreMate"               --- Buthir (Inherits Barbarian progressions, inherits Berserker subclass)
@@ -1708,7 +1708,7 @@ new entry "_Giants"
 type "Character"
 using "_Giants"
 // data "Passives" "AttackOfOpportunity;DarknessRules"
-data "Passives" "CX_Barbarian_Berserker_Boost;AttackOfOpportunity;DarknessRules"
+data "Passives" "CX_Barbarian_Boost;CX_Barbarian_Berserker_Boost;AttackOfOpportunity;DarknessRules"
 // data "Progressions" ""
 data "Progressions" "56db8107-e04c-4fe3-94f3-fd4acd44cd4a"
 
@@ -1726,7 +1726,7 @@ new entry "FOR_OgreCaptain"
 type "Character"
 using "FOR_OgreCaptain"
 // data "Passives" "OgreCurse;AttackOfOpportunity;Darkvision;DarknessRules"
-data "Passives" "CX_Martial_Boost;AttackOfOpportunity;DarknessRules;Darkvision;OgreCurse"
+data "Passives" "CX_Wizard_Boost;CX_Martial_Boost;AttackOfOpportunity;DarknessRules;Darkvision;OgreCurse"
 
 // ==================================== Githyanki ====================================
 
@@ -1737,7 +1737,7 @@ data "Passives" "CX_Martial_Boost;AttackOfOpportunity;DarknessRules;Darkvision;O
 //  │   │   ├─ "Githyanki_Commoner"
 //  │   │   │   ├─ "Githyanki_Commoner_Cowering"
 //  │   │   │   ├─ "Githyanki_Teenager"
-//  │   │   │   └─ "LOW_Githyanki_Prodigy"
+//  │   │   │   └─ "LOW_Githyanki_Prodigy"                  --- Ptaris, Githyanki Prodigy (Added Sorcerer progressions)
 //  │   │   │       └─ "LOW_Githyanki_Prodigy_MentalImage"  --- Ptaris' Mental Images
 
 new entry "Githyanki_Commoner_Cowering"
@@ -1758,23 +1758,30 @@ type "Character"
 using "LOW_Githyanki_Prodigy"
 // data "Passives" "AttackOfOpportunity;DarknessRules;LOW_GithProdigy_ReactiveDisplacement;LOW_GithProdigy_PsionicSkin;LOW_GithProdigy_UnnaturalGrowth"
 // data "Passives" "AttackOfOpportunity;DarknessRules;LOW_GithProdigy_ReactiveDisplacement;LOW_GithProdigy_PsionicSkin;LOW_GithProdigy_UnnaturalGrowth;LegendaryAction_LOW_GithyankiProdigy_PacifyingAura"
-data "Passives" "CX_Boss_Boost;CX_Sorcerer_StormSorcery_Boost;AttackOfOpportunity;DarknessRules;LOW_GithProdigy_ReactiveDisplacement;LOW_GithProdigy_PsionicSkin;LOW_GithProdigy_UnnaturalGrowth;LegendaryAction_LOW_GithyankiProdigy_PacifyingAura"
+data "Passives" "CX_Boss_Boost;CX_Sorcerer_Boost;CX_Sorcerer_StormSorcery_Boost;AttackOfOpportunity;DarknessRules;LOW_GithProdigy_ReactiveDisplacement;LOW_GithProdigy_PsionicSkin;LOW_GithProdigy_UnnaturalGrowth;LegendaryAction_LOW_GithyankiProdigy_PacifyingAura"
 // data "Progressions" ""
 data "Progressions" "2189a72d-6489-4621-8b2c-85d3e7df2f6f"
 
 // "_Githyanki"
 //  ├─ "Githyanki_Caster"                       --- (Has Wizard progressions)
-//  │   ├─ "CRE_AstralPlane_GithMage"
+//  │   ├─ "CRE_AstralPlane_GithMage"           --- Unused (Added Wizard progressions)
 //  │   ├─ "CRE_Githyanki_Ghustil"              --- Ghustil Stornugoss, doctor in the creche (Inherits Wizard progressions)
-//  │   ├─ "CRE_Githyanki_Inquisitor"
+//  │   ├─ "CRE_Githyanki_Inquisitor"           --- Ch'r'ai W'wargaz (Swapped Wizard progressions for Fighter)
 //  │   ├─ "Githyanki_GateMaster"               --- Gate Master Zyrlak, Gate Master Ri'zel (Inherits Wizard progressions)
-//  │   ├─ "Githyanki_Gish"
-//  │   │   ├─ "CRE_Githyanki_Captain"
-//  │   │   ├─ "CRE_Githyanki_Varsh"
-//  │   │   └─ "Githyanki_Gish_Strong"
-//  │   ├─ "Githyanki_IntelligenceOfficer"
+//  │   ├─ "Githyanki_Gish"                     --- Gish Far'aag, Gish Yy'rul, Gish Umr'a'ac, Gish For'reth - Crèche Y'llek / A'jak'nir Jeera - Quartermistress, Crèche Y'llek (Swapped Wizard progressions for Fighter)
+//  │   │   ├─ "CRE_Githyanki_Captain"          --- Kith'rak Therezzyn - Commander of Crèche Y'llek, Crèche Y'llek (Inherits Fighter progressions swapped from Wizard)
+//  │   │   ├─ "CRE_Githyanki_Varsh"            --- Varsh Ko'kuu - Custodian of the Hatchery, Crèche Y'llek (Inherits Fighter progressions swapped from Wizard)
+//  │   │   └─ "Githyanki_Gish_Strong"          --- Veteran Gish Ghush'ins, Veteran Gish Zhendila (Inherits Fighter progressions swapped from Wizard)
+//  │   ├─ "Githyanki_IntelligenceOfficer"      --- Ardent Kur'ashk, Ardent Qu'th, Ardent Jhe'rezath, Ardent Vraalsith, Ardent G'nuril, Ardent Lin'a'an - Crèche Y'llek (Swapped Wizard progressions for Fighter)
 //  │   ├─ "PLA_Githyanki_Caster"               --- Unused (Inherits Wizard progressions)
-//  │   └─ "TWN_Githyanki_Warlock"
+//  │   └─ "TWN_Githyanki_Warlock"              --- Ch'r'ai Tska'an (Added Warlock progressions)
+
+// (Has Wizard progressions)
+new entry "Githyanki_Caster"
+type "Character"
+using "Githyanki_Caster"
+// data "Passives" "AttackOfOpportunity;DarknessRules"
+data "Passives" "CX_Wizard_Boost;AttackOfOpportunity;DarknessRules"
 
 // Unused (Added Wizard progressions)
 new entry "CRE_AstralPlane_GithMage"
@@ -1789,7 +1796,7 @@ type "Character"
 using "CRE_Githyanki_Inquisitor"
 // data "Passives" "ExtraAttack;Parry_Githyanki;AttackOfOpportunity;DarknessRules;Surprise_Immunity;Parry_Githyanki_EquipTrigger"
 // data "Passives" "ExtraAttack;Parry_Githyanki;AttackOfOpportunity;DarknessRules;Surprise_Immunity;Parry_Githyanki_EquipTrigger;LegendaryAction_Interrupt_CRE_GithyankiInquisitor_VlaakithsMindSword"
-data "Passives" "CX_Boss_Boost;CX_Fighter_EldritchKnight_Boost;AttackOfOpportunity;DarknessRules;ExtraAttack;Parry_Githyanki;Parry_Githyanki_EquipTrigger;Surprise_Immunity;LegendaryAction_Interrupt_CRE_GithyankiInquisitor_VlaakithsMindSword"
+data "Passives" "CX_Boss_Boost;CX_Fighter_Boost;CX_Fighter_EldritchKnight_Boost;AttackOfOpportunity;DarknessRules;ExtraAttack;Parry_Githyanki;Parry_Githyanki_EquipTrigger;Surprise_Immunity;LegendaryAction_Interrupt_CRE_GithyankiInquisitor_VlaakithsMindSword"
 // data "Progressions" "44bdbc5e-a003-4d61-87f0-5ced20d3804e"
 data "Progressions" "0e6da493-5a37-423b-8c28-629462b22faa"
 
@@ -1798,7 +1805,7 @@ new entry "Githyanki_Gish"
 type "Character"
 using "Githyanki_Gish"
 // data "Passives" "WarMagic_Githyanki;AttackOfOpportunity;DarknessRules"
-data "Passives" "CX_Fighter_EldritchKnight_Boost;CX_Spells_L1;CX_Spells_L2;CX_Spells_L3;AttackOfOpportunity;DarknessRules;WarMagic_Githyanki"
+data "Passives" "CX_Fighter_Boost;CX_Fighter_EldritchKnight_Boost;CX_Spells_L1;CX_Spells_L2;CX_Spells_L3;AttackOfOpportunity;DarknessRules;WarMagic_Githyanki"
 // data "Progressions" "44bdbc5e-a003-4d61-87f0-5ced20d3804e"
 data "Progressions" "0e6da493-5a37-423b-8c28-629462b22faa"
 
@@ -1807,23 +1814,23 @@ new entry "CRE_Githyanki_Captain"
 type "Character"
 using "CRE_Githyanki_Captain"
 // data "Passives" "WarMagic_Githyanki;Parry_Githyanki;AttackOfOpportunity;DarknessRules;Surprise_Immunity;Parry_Githyanki_EquipTrigger"
-data "Passives" "CX_Fighter_EldritchKnight_Boost;AttackOfOpportunity;DarknessRules;WarMagic_Githyanki;Parry_Githyanki;Parry_Githyanki_EquipTrigger;Surprise_Immunity"
+data "Passives" "CX_Fighter_Boost;CX_Fighter_EldritchKnight_Boost;AttackOfOpportunity;DarknessRules;WarMagic_Githyanki;Parry_Githyanki;Parry_Githyanki_EquipTrigger;Surprise_Immunity"
 // data "Progressions" ""
 data "Progressions" "0e6da493-5a37-423b-8c28-629462b22faa"
 
-// Varsh Ko'kuu - Custodian of the Hatchery, Crèche Y'llek (Inherits the Fighter progressions swapped for Wizard progressions)
+// Varsh Ko'kuu - Custodian of the Hatchery, Crèche Y'llek (Inherits the Fighter progressions swapped from Wizard progressions)
 new entry "CRE_Githyanki_Varsh"
 type "Character"
 using "CRE_Githyanki_Varsh"
 // data "Passives" "WarMagic_Githyanki;AttackOfOpportunity;DarknessRules"
-data "Passives" "CX_Fighter_EldritchKnight_Boost;Alert;CX_Spells_L1;CX_Spells_L2;CX_Spells_L3;CX_Spells_L3C;AttackOfOpportunity;DarknessRules;WarMagic_Githyanki"
+data "Passives" "CX_Fighter_Boost;CX_Fighter_EldritchKnight_Boost;Alert;CX_Spells_L1;CX_Spells_L2;CX_Spells_L3;CX_Spells_L3C;AttackOfOpportunity;DarknessRules;WarMagic_Githyanki"
 
 // Veteran Gish Ghush'ins, Veteran Gish Zhendila - Githyanki (Faction) (Added Fighter progressions, and made an Eldritch Knight because ofc)
 new entry "Githyanki_Gish_Strong"
 type "Character"
 using "Githyanki_Gish_Strong"
 // data "Passives" "WarMagic_Githyanki;AttackOfOpportunity;DarknessRules"
-data "Passives" "CX_Fighter_EldritchKnight_Boost;CX_Spells_L3;CX_Spells_L4;CX_Spells_L4C;CX_Spells_L5;CX_Spells_L5C;AttackOfOpportunity;DarknessRules;WarMagic_Githyanki"
+data "Passives" "CX_Fighter_Boost;CX_Fighter_EldritchKnight_Boost;CX_Spells_L3;CX_Spells_L4;CX_Spells_L4C;CX_Spells_L5;CX_Spells_L5C;AttackOfOpportunity;DarknessRules;WarMagic_Githyanki"
 // data "Progressions" ""
 data "Progressions" "0e6da493-5a37-423b-8c28-629462b22faa"
 
@@ -1832,7 +1839,7 @@ new entry "Githyanki_IntelligenceOfficer"
 type "Character"
 using "Githyanki_IntelligenceOfficer"
 // data "Passives" "ExtraAttack;AttackOfOpportunity;DarknessRules;"
-data "Passives" "CX_Fighter_EldritchKnight_Boost;CX_Spells_L1;CX_Spells_L2;CX_Spells_L3;CX_Spells_L3C;AttackOfOpportunity;DarknessRules;ExtraAttack"
+data "Passives" "CX_Fighter_Boost;CX_Fighter_EldritchKnight_Boost;CX_Spells_L1;CX_Spells_L2;CX_Spells_L3;CX_Spells_L3C;AttackOfOpportunity;DarknessRules;ExtraAttack"
 // data "Progressions" "44bdbc5e-a003-4d61-87f0-5ced20d3804e"
 data "Progressions" "0e6da493-5a37-423b-8c28-629462b22faa"
 
@@ -1843,40 +1850,49 @@ type "Character"
 using "TWN_Githyanki_Warlock"
 // data "Passives" "AgonizingBlast;RepellingBlast;DevilsSight;WarMagic_Githyanki;AttackOfOpportunity;DarknessRules"
 // data "Passives" "AgonizingBlast_VlaakithKillers_Technical;DevilsSight;WarMagic_Githyanki;AttackOfOpportunity;DarknessRules;LegendaryAction_TWN_VlaakithsKillers_SoulSyphon"
-data "Passives" "CX_Boss_Boost;CX_Warlock_GreatOldOne_Boost;AttackOfOpportunity;DarknessRules;WarMagic_Githyanki;DevilsSight;AgonizingBlast_VlaakithKillers_Technical;LegendaryAction_TWN_VlaakithsKillers_SoulSyphon"
+data "Passives" "CX_Boss_Boost;CX_Warlock_Boost;CX_Warlock_GreatOldOne_Boost;AttackOfOpportunity;DarknessRules;WarMagic_Githyanki;DevilsSight;AgonizingBlast_VlaakithKillers_Technical;LegendaryAction_TWN_VlaakithsKillers_SoulSyphon"
 
 // "_Githyanki"
-//  ├─ "Githyanki_Gishra_Melee"
-//  │   ├─ "Githyanki_Gishra_Caster"
+//  ├─ "Githyanki_Gishra_Melee"                         --- (Has Monk progressions, added Open Hand subclass)
+//  │   ├─ "Githyanki_Gishra_Caster"                    --- (Inherits Monk progressions, added Four Elements subclass)
 //  │   └─ "INT_Githyanki_Gishra_Lieutenant"            --- Prelate Lir'i'c - Chief of Orpheus' Honour Guard, Warriors of the Comet (Inherits Monk progressions, and the CX_Monk_OpenHand_Boost)
 //  ├─ "Githyanki_Melee"                                --- Ancient Githyanki Warrior, Decapitated Gith (Has Fighter progressions)
 //  │   ├─ "CRE_AstralPlane_GithCaptain"                --- Unused
 //  │   ├─ "CRE_AstralPlane_GithRaider"                 --- Unused
-//  │   ├─ "GLO_Voss"
+//  │   ├─ "GLO_Voss"                                   --- Kith'rak Voss (Inherits Fighter progressions, added Eldritch Knight subclass, added Boss boost)
 //  │   ├─ "Githyanki_Warrior"                          --- Shadow-Cursed Githyanki Warrior, + loads of characters (Inherits Fighter progressions)
-//  │   │   ├─ "Githyanki_Warrior_Strong"
-//  │   │   ├─ "LOW_Githyanki_Paladin"
-//  │   │   └─ "PLA_Githyanki_Captain"
+//  │   │   ├─ "Githyanki_Warrior_Strong"               --- Veteran Warrior Ma'athal, Veteran Warrior Bradi'ith (Inherits Fighter progressions)
+//  │   │   ├─ "LOW_Githyanki_Paladin"                  --- Ch'r'ai Har'rak, Paladin of Vlaakith - HONOUR MODE INHERITANCE (Added Paladin progressions, added Oath of Vengeance subclass, added Boss boost)
+//  │   │   └─ "PLA_Githyanki_Captain"                  --- Sarth Baretha - Warrior of the One Sky (Inherits Fighter progressions, added Battle Master subclass, added Boss boost)
 //  │   └─ "HAV_ShadowCursed_Warrior_Githyanki_Melee"   --- Shadow-Cursed Githyanki Warrior (Halsin portal defense) (Inherits Fighter progressions)
 
-// (Has Monk progressions)
+// (Has Monk progressions, added Open Hand subclass)
 new entry "Githyanki_Gishra_Melee"
 type "Character"
 using "Githyanki_Gishra_Melee"
 // data "Passives" "PsychicStrikes_Githyanki;AttackOfOpportunity;DarknessRules"
-data "Passives" "CX_Monk_OpenHand_Boost;PsychicStrikes_Githyanki;AttackOfOpportunity;DarknessRules"
+data "Passives" "CX_Monk_Boost;CX_Monk_OpenHand_Boost;PsychicStrikes_Githyanki;AttackOfOpportunity;DarknessRules"
 
-// (Inherits Monk progressions)
+// (Inherits Monk progressions, added Four Elements subclass))
 new entry "Githyanki_Gishra_Caster"
 type "Character"
 using "Githyanki_Gishra_Caster"
 // data "Passives" "PsychicStrikes_Githyanki;Gishra_ArchetypeChange_Githyanki;AttackOfOpportunity;DarknessRules"
-data "Passives" "CX_Monk_FourElements_Boost;AttackOfOpportunity;DarknessRules;PsychicStrikes_Githyanki;Gishra_ArchetypeChange_Githyanki"
+data "Passives" "CX_Monk_Boost;CX_Monk_FourElements_Boost;AttackOfOpportunity;DarknessRules;PsychicStrikes_Githyanki;Gishra_ArchetypeChange_Githyanki"
+
+// Ancient Githyanki Warrior, Decapitated Gith
+new entry "Githyanki_Melee"
+type "Character"
+using "Githyanki_Melee"
+// data "Passives" "AttackOfOpportunity;DarknessRules"
+data "Passives" "CX_Fighter_Boost;AttackOfOpportunity;DarknessRules"
 
 // (Added Fighter progressions)
 new entry "CRE_AstralPlane_GithCaptain"
 type "Character"
 using "CRE_AstralPlane_GithCaptain"
+// data "Passives" "ExtraAttack;AttackOfOpportunity;DarknessRules"
+data "Passives" "CX_Fighter_Boost;;AttackOfOpportunity;DarknessRules;ExtraAttack"
 // data "Progressions" ""
 data "Progressions" "0e6da493-5a37-423b-8c28-629462b22faa"
 
@@ -1884,22 +1900,31 @@ data "Progressions" "0e6da493-5a37-423b-8c28-629462b22faa"
 new entry "CRE_AstralPlane_GithRaider"
 type "Character"
 using "CRE_AstralPlane_GithRaider"
+// data "Passives" "AttackOfOpportunity;DarknessRules"
+data "Passives" "CX_Fighter_Boost;AttackOfOpportunity;DarknessRules"
 // data "Progressions" ""
 data "Progressions" "0e6da493-5a37-423b-8c28-629462b22faa"
 
-// Kith'rak Voss (Inherits Fighter progressions, added Eldritch Knight subclass)
+// Kith'rak Voss (Inherits Fighter progressions, added Eldritch Knight subclass, added Boss boost)
 new entry "GLO_Voss"
 type "Character"
 using "GLO_Voss"
 // data "Passives" "AttackOfOpportunity;DarknessRules;PsychicStrikes_Githyanki;Parry_Githyanki_Supreme;Parry_Githyanki_Supreme_EquipTrigger"
-data "Passives" "CX_Fighter_EldritchKnight_Boost;AttackOfOpportunity;DarknessRules;PsychicStrikes_Githyanki;Parry_Githyanki_Supreme;Parry_Githyanki_Supreme_EquipTrigger"
+data "Passives" "CX_Boss_Boost;CX_Fighter_Boost;CX_Fighter_EldritchKnight_Boost;AttackOfOpportunity;DarknessRules;PsychicStrikes_Githyanki;Parry_Githyanki_Supreme;Parry_Githyanki_Supreme_EquipTrigger"
+
+// Shadow-Cursed Githyanki Warrior, + loads of characters (Inherits Fighter progressions)
+new entry "Githyanki_Warrior"
+type "Character"
+using "Githyanki_Warrior"
+// data "Passives" "ExtraAttack;Parry_Githyanki;AttackOfOpportunity;DarknessRules;Parry_Githyanki_EquipTrigger"
+data "Passives" "CX_Fighter_Boost;AttackOfOpportunity;DarknessRules;ExtraAttack;Parry_Githyanki;Parry_Githyanki_EquipTrigger"
 
 // Veteran Warrior Ma'athal, Veteran Warrior Bradi'ith (Inherits Fighter progressions) (Added "Parry_Githyanki;Parry_Githyanki_EquipTrigger")
 new entry "Githyanki_Warrior_Strong"
 type "Character"
 using "Githyanki_Warrior_Strong"
 // data "Passives" "ExtraAttack;AttackOfOpportunity;DarknessRules"
-data "Passives" "AttackOfOpportunity;DarknessRules;ExtraAttack;Parry_Githyanki;Parry_Githyanki_EquipTrigger"
+data "Passives" "CX_Fighter_Boost;AttackOfOpportunity;DarknessRules;ExtraAttack;Parry_Githyanki;Parry_Githyanki_EquipTrigger"
 
 // Ch'r'ai Har'rak, Paladin of Vlaakith - HONOUR MODE INHERITANCE (Added Paladin progressions, added Oath of Vengeance subclass, added Boss boost)
 new entry "LOW_Githyanki_Paladin"
@@ -1907,7 +1932,7 @@ type "Character"
 using "LOW_Githyanki_Paladin"
 // data "Passives" "AttackOfOpportunity;DarknessRules;ExtraAttack;Parry_Githyanki_Supreme;FightingStyle_Defense;Parry_Githyanki_Supreme_EquipTrigger"
 // data "Passives" "AttackOfOpportunity;DarknessRules;ExtraAttack;Parry_Githyanki_Supreme;FightingStyle_Defense;Parry_Githyanki_Supreme_EquipTrigger;LegendaryAction_LOW_GithyankiPaladin_VlaakithsCry"
-data "Passives" "CX_Boss_Boost;CX_Paladin_Vengeance_Boost;AttackOfOpportunity;DarknessRules;ExtraAttack;Parry_Githyanki_Supreme;Parry_Githyanki_Supreme_EquipTrigger;FightingStyle_Defense;LegendaryAction_LOW_GithyankiPaladin_VlaakithsCry"
+data "Passives" "CX_Boss_Boost;CX_Paladin_Boost;CX_Paladin_Vengeance_Boost;AttackOfOpportunity;DarknessRules;ExtraAttack;Parry_Githyanki_Supreme;Parry_Githyanki_Supreme_EquipTrigger;FightingStyle_Defense;LegendaryAction_LOW_GithyankiPaladin_VlaakithsCry"
 // data "Progressions" ""
 data "Progressions" "8726b2c4-edc0-4905-b82f-60a4baba0733"
 
@@ -1917,18 +1942,32 @@ new entry "PLA_Githyanki_Captain"
 type "Character"
 using "PLA_Githyanki_Captain"
 // data "Passives" "ExtraAttack;Parry_Githyanki;AttackOfOpportunity;DarknessRules;Parry_Githyanki_EquipTrigger"
-data "Passives" "CX_Boss_Boost;CX_Fighter_BattleMaster_Boost;AttackOfOpportunity;DarknessRules;Parry_Githyanki;Parry_Githyanki_EquipTrigger;Surprise_Immunity"
+data "Passives" "CX_Boss_Boost;CX_Fighter_Boost;CX_Fighter_BattleMaster_Boost;AttackOfOpportunity;DarknessRules;Parry_Githyanki;Parry_Githyanki_EquipTrigger;Surprise_Immunity"
+
+// Shadow-Cursed Githyanki Warrior (Halsin portal defense) (Inherits Fighter progressions)
+new entry "HAV_ShadowCursed_Warrior_Githyanki_Melee"
+type "Character"
+using "HAV_ShadowCursed_Warrior_Githyanki_Melee"
+// data "Passives" "AttackOfOpportunity;DarknessRules"
+data "Passives" "CX_Fighter_Boost;AttackOfOpportunity;DarknessRules"
 
 // "_Githyanki"
 //  ├─ "Githyanki_Ranger"                       --- (Has Ranger progressions)
-//  │   ├─ "Githyanki_Raider"
-//  │   │   ├─ "CRE_Githyanki_Savarsh"
+//  │   ├─ "Githyanki_Raider"                   --- Githyanki raiders (Has Fighter progressions, added Battle Master subclass - they're all very much ranged Battle Masters)
+//  │   │   ├─ "CRE_Githyanki_Savarsh"          --- Sa'varsh Kethk - Warfare Instructor, Crèche Y'llek (Inherits Fighter progressions, he's very much a ranged Battle Master)
 //  │   │   └─ "Githyanki_Raider_Strong"
 //  │   └─ "PLA_Githyanki_Ranger"               --- (Inherits Ranger progressions)
 //  ├─ "Githyanki_Rogue"                        --- (Has Rogue progressions)
 //  │   ├─ "CRE_AstralPlane_GithRogue"          --- Unused
 //  │   └─ "PLA_Githyanki_Rogue"                --- Unused (Inherits Rogue progressions)
-//  └─ "INT_Orpheus"
+//  └─ "INT_Orpheus"                            --- Orpheus - The Prince of the Comet (Has Monk progressions, added Open Hand subclass)
+
+// (Has Ranger progressions)
+new entry "Githyanki_Ranger"
+type "Character"
+using "Githyanki_Ranger"
+// data "Passives" "AttackOfOpportunity;DarknessRules"
+data "Passives" "CX_Ranger_Boost;AttackOfOpportunity;DarknessRules"
 
 // Raider Helag, Raider Un'n, Raider Chy'raagh, Raider G'r'ath, Raider Ra'gur, Raider Jy'ir, Raider Ahu'u'rag, Raider Kyrr'a'ath, Raider Zastri, Raider Add'ath, Raider Zar'an, Raider Chost (Has Fighter progressions, they're all very much ranged Battle Masters)
 new entry "Githyanki_Raider"
@@ -1942,14 +1981,28 @@ new entry "CRE_Githyanki_Savarsh"
 type "Character"
 using "CRE_Githyanki_Savarsh"
 // data "Passives" "ExtraAttack;CrossbowExpert_PointBlank;CrossbowExpert_Wounding;AttackOfOpportunity;DarknessRules"
-data "Passives" "CX_Fighter_BattleMaster_Boost;AttackOfOpportunity;DarknessRules;ExtraAttack;CrossbowExpert_PointBlank;CrossbowExpert_Wounding;Alert"
+data "Passives" "CX_Fighter_Boost; CX_Fighter_BattleMaster_Boost;AttackOfOpportunity;DarknessRules;ExtraAttack;CrossbowExpert_PointBlank;CrossbowExpert_Wounding;Alert"
+
+// (Inherits Ranger progressions)
+new entry "PLA_Githyanki_Ranger"
+type "Character"
+using "PLA_Githyanki_Ranger"
+// data "Passives" "AttackOfOpportunity;DarknessRules;ExtraAttack"
+data "Passives" "CX_Ranger_Boost;AttackOfOpportunity;DarknessRules;ExtraAttack"
+
+// (Has Rogue progressions)
+new entry "Githyanki_Rogue"
+type "Character"
+using "Githyanki_Rogue"
+// data "Passives" "AttackOfOpportunity;DarknessRules"
+data "Passives" "CX_Rogue_Boost;AttackOfOpportunity;DarknessRules"
 
 // (Added Rogue progressions, and Thief subclass)
 new entry "CRE_AstralPlane_GithRogue"
 type "Character"
 using "CRE_AstralPlane_GithRogue"
 // data "Passives" "FastHands;AttackOfOpportunity;DarknessRules"
-data "Passives" "CX_Rogue_Thief_Boost;AttackOfOpportunity;DarknessRules;FastHands"
+data "Passives" "CX_Rogue_Boost;CX_Rogue_Thief_Boost;AttackOfOpportunity;DarknessRules;FastHands"
 // data "Progressions" ""
 data "Progressions" "532203c2-7bcb-4162-9a7c-2bb20e227a30"
 
@@ -1958,7 +2011,7 @@ new entry "INT_Orpheus"
 type "Character"
 using "INT_Orpheus"
 // data "Passives" "AttackOfOpportunity;DarknessRules;Monk_SoundSwitch;Ki;FlurryOfBlowsUnlock;PsychicStrikes_Githyanki"
-data "Passives" "CX_Monk_OpenHand_Boost;AttackOfOpportunity;DarknessRules;Monk_SoundSwitch;Ki;FlurryOfBlowsUnlock;PsychicStrikes_Githyanki"
+data "Passives" "CX_Monk_Boost;CX_Monk_OpenHand_Boost;AttackOfOpportunity;DarknessRules;Monk_SoundSwitch;Ki;FlurryOfBlowsUnlock;PsychicStrikes_Githyanki"
 
 // ==================================== Gnolls ====================================
 
@@ -1969,7 +2022,7 @@ data "Passives" "CX_Monk_OpenHand_Boost;AttackOfOpportunity;DarknessRules;Monk_S
 //  │   │   │   └─ "Gnoll_Newborn"
 //  │   │   ├─ "Gnoll_Fang"
 //  │   │   ├─ "Gnoll_FleshGnawer"
-//  │   │   ├─ "Gnoll_Flind"        --- Flind - Gnoll Warlord
+//  │   │   ├─ "Gnoll_Flind"        --- Flind - Gnoll Warlord (Added Barbarian progressions, added Berserker subclass, added Boss boost)
 //  │   │   └─ "Gnoll_Hunter"
 
 //TODO: Custom legendary action?
@@ -1978,7 +2031,7 @@ new entry "Gnoll_Flind"
 type "Character"
 using "Gnoll_Flind"
 // data "Passives" "ImmuneToDisarm;AttackOfOpportunity;Darkvision;DarknessRules"
-data "Passives" "CX_Boss_Boost;CX_Barbarian_Berserker_Boost;AttackOfOpportunity;Darkvision;DarknessRules;ImmuneToDisarm"
+data "Passives" "CX_Boss_Boost;CX_Barbarian_Boost;CX_Barbarian_Berserker_Boost;AttackOfOpportunity;Darkvision;DarknessRules;ImmuneToDisarm"
 // data "Progressions" ""
 data "Progressions" "56db8107-e04c-4fe3-94f3-fd4acd44cd4a"
 
@@ -2002,12 +2055,12 @@ data "Passives" "Gnome_Cunning;Gnome_Speed;AttackOfOpportunity;DarknessRules;Dar
 
 // "_Gnome"
 //  ├─ "FlamingFist_Gnome"
-//  │   ├─ "FlamingFist_Gnome_Caster"
-//  │   ├─ "FlamingFist_Gnome_Cleric"
-//  │   ├─ "FlamingFist_Gnome_Melee_Attacker"
-//  │   ├─ "FlamingFist_Gnome_Melee_Defender"
-//  │   │   └─ "LOW_DevellaFountainHead"
-//  │   └─ "FlamingFist_Gnome_Ranger"
+//  │   ├─ "FlamingFist_Gnome_Caster"            -- Fist Reynash - Flaming Fist (Progressions swapped from "NPC_FlamingFist_Melee_Caster" to "NPC_Wizard", proprietary progression boosts added via stats)
+//  │   ├─ "FlamingFist_Gnome_Cleric"            -- Manip Edenosa - Flaming Fist, Cult of the Absolute (Progressions swapped from "NPC_FlamingFist_Melee_Cleric" to "NPC_Cleric", proprietary progression boosts added via stats)
+//  │   ├─ "FlamingFist_Gnome_Melee_Attacker"    -- (Progressions swapped from "NPC_FlamingFist_Melee_Attacker" to "NPC_Fighter", proprietary progression boosts added via stats)
+//  │   ├─ "FlamingFist_Gnome_Melee_Defender"    -- (Progressions swapped from "NPC_FlamingFist_Melee_Defender" to "NPC_Fighter", proprietary progression boosts added via stats)
+//  │   │   └─ "LOW_DevellaFountainHead"         -- Gauntlet Devella Fountainhead - Constable of the Flaming Fist (Swapped from Fighter progressions to Paladin, added Devotion subclass)
+//  │   └─ "FlamingFist_Gnome_Ranger"            -- (Progressions swapped from "NPC_FlamingFist_Melee_Ranger" to "NPC_Ranger", proprietary progression boosts added via stats)
 
 new entry "FlamingFist_Gnome"
 type "Character"
@@ -2020,16 +2073,16 @@ new entry "FlamingFist_Gnome_Caster"
 type "Character"
 using "FlamingFist_Gnome_Caster"
 // data "Passives" "Gnome_Cunning;Gnome_Speed;AttackOfOpportunity;DarknessRules;Darkvision"
-data "Passives" "Goon_NPC_Flaming_Fist_Caster_Boosts;CX_Spells_L1;CX_Spells_L1C;Gnome_Cunning;Gnome_Speed;AttackOfOpportunity;DarknessRules;Darkvision"
+data "Passives" "CX_Wizard_Boost;Goon_NPC_Flaming_Fist_Caster_Boosts;CX_Spells_L1;CX_Spells_L1C;Gnome_Cunning;Gnome_Speed;AttackOfOpportunity;DarknessRules;Darkvision"
 // data "Progressions" "7417c0c0-383f-11ed-a261-0242ac120002"
 data "Progressions" "44bdbc5e-a003-4d61-87f0-5ced20d3804e"
 
-// Manip Edenosa - Flaming Fist, Cult of the Absolute (Progressions swapped from "NPC_FlamingFist_Melee_Cleric" to "NPC_Cleric", proprietary progression boosts added via stats))
+// Manip Edenosa - Flaming Fist, Cult of the Absolute (Progressions swapped from "NPC_FlamingFist_Melee_Cleric" to "NPC_Cleric", proprietary progression boosts added via stats)
 new entry "FlamingFist_Gnome_Cleric"
 type "Character"
 using "FlamingFist_Gnome_Cleric"
 // data "Passives" "Gnome_Cunning;Gnome_Speed;AttackOfOpportunity;DarknessRules;Darkvision"
-data "Passives" "Goon_NPC_Flaming_Fist_Cleric_Boosts;Gnome_Cunning;Gnome_Speed;AttackOfOpportunity;DarknessRules;Darkvision"
+data "Passives" "CX_Cleric_Boost;Goon_NPC_Flaming_Fist_Cleric_Boosts;Gnome_Cunning;Gnome_Speed;AttackOfOpportunity;DarknessRules;Darkvision"
 // data "Progressions" "70c3eb7e-383f-11ed-a261-0242ac120002"
 data "Progressions" "36c3f8de-3293-4d7b-92bc-ceb3c569244b"
 
@@ -2038,7 +2091,7 @@ new entry "FlamingFist_Gnome_Melee_Attacker"
 type "Character"
 using "FlamingFist_Gnome_Melee_Attacker"
 // data "Passives" "Gnome_Cunning;Gnome_Speed;AttackOfOpportunity;DarknessRules;Darkvision"
-data "Passives" "Goon_NPC_Flaming_Fist_Attacker_Boosts;;Gnome_Cunning;Gnome_Speed;AttackOfOpportunity;DarknessRules;Darkvision"
+data "Passives" "CX_Fighter_Boost;Goon_NPC_Flaming_Fist_Attacker_Boosts;;Gnome_Cunning;Gnome_Speed;AttackOfOpportunity;DarknessRules;Darkvision"
 // data "Progressions" "51d47904-383f-11ed-a261-0242ac120002"
 data "Progressions" "0e6da493-5a37-423b-8c28-629462b22faa"
 
@@ -2047,7 +2100,7 @@ new entry "FlamingFist_Gnome_Melee_Defender"
 type "Character"
 using "FlamingFist_Gnome_Melee_Defender"
 // data "Passives" "Gnome_Cunning;Gnome_Speed;AttackOfOpportunity;DarknessRules;Darkvision"
-data "Passives" "Goon_NPC_Flaming_Fist_Defender_Boosts;Gnome_Cunning;Gnome_Speed;AttackOfOpportunity;DarknessRules;Darkvision"
+data "Passives" "CX_Fighter_Boost;Goon_NPC_Flaming_Fist_Defender_Boosts;Gnome_Cunning;Gnome_Speed;AttackOfOpportunity;DarknessRules;Darkvision"
 // data "Progressions" "5885fa7a-383f-11ed-a261-0242ac120002"
 data "Progressions" "0e6da493-5a37-423b-8c28-629462b22faa"
 
@@ -2058,7 +2111,7 @@ using "LOW_DevellaFountainHead"
 // data "DefaultBoosts" "ActionResource(SpellSlot,4,1);ActionResource(SpellSlot,3,2);ActionResource(SpellSlot,3,3);ActionResource(ChannelOath,1,0);"
 data "DefaultBoosts" ""
 // data "Passives" "AttackOfOpportunity;DarknessRules;Darkvision;Gnome_Cunning;Gnome_Speed;ImprovedDivineSmite"
-data "Passives" "Goon_NPC_Flaming_Fist_Defender_Boosts;CX_Paladin_Devotion_Boost;Gnome_Cunning;Gnome_Speed;AttackOfOpportunity;DarknessRules;Darkvision;ImprovedDivineSmite"
+data "Passives" "CX_Paladin_Boost;Goon_NPC_Flaming_Fist_Defender_Boosts;CX_Paladin_Devotion_Boost;Gnome_Cunning;Gnome_Speed;AttackOfOpportunity;DarknessRules;Darkvision;ImprovedDivineSmite"
 // data "Progressions" "5885fa7a-383f-11ed-a261-0242ac120002"
 data "Progressions" "8726b2c4-edc0-4905-b82f-60a4baba0733"
 
@@ -2067,7 +2120,7 @@ new entry "FlamingFist_Gnome_Ranger"
 type "Character"
 using "FlamingFist_Gnome_Ranger"
 // data "Passives" "Gnome_Cunning;Gnome_Speed;AttackOfOpportunity;DarknessRules;Darkvision"
-data "Passives" "Goon_NPC_Flaming_Fist_Ranger_Boosts;Gnome_Cunning;Gnome_Speed;AttackOfOpportunity;DarknessRules;Darkvision"
+data "Passives" "CX_Ranger_Boost;Goon_NPC_Flaming_Fist_Ranger_Boosts;Gnome_Cunning;Gnome_Speed;AttackOfOpportunity;DarknessRules;Darkvision"
 // data "Progressions" "6cae475a-383f-11ed-a261-0242ac120002"
 data "Progressions" "f0ede459-8b86-48fd-ac11-4432573566a5"
 
@@ -2086,12 +2139,33 @@ data "Progressions" "f0ede459-8b86-48fd-ac11-4432573566a5"
 //  ├─ "Gnome_Gondian_Caster"                           --- Basically all the Gondians (Inherits Wizard progressions)
 //  │   └─ "LOW_SteelWatchFoundry_ZannerToobin"         --- Gondian Zanner Toobin - Church of Gond
 
+// (Has Wizard progressions)
+new entry "Gnome_Caster"
+type "Character"
+using "Gnome_Caster"
+// data "Passives" "Gnome_Cunning;Gnome_Speed;AttackOfOpportunity;DarknessRules;Darkvision"
+data "Passives" "CX_Wizard_Boost;Gnome_Cunning;Gnome_Speed;AttackOfOpportunity;DarknessRules;Darkvision"
+
+// (Has Bard progressions)
+new entry "Gnome_Bard"
+type "Character"
+using "Gnome_Bard"
+// data "Passives" "Gnome_Cunning;Gnome_Speed;AttackOfOpportunity;DarknessRules;Darkvision"
+data "Passives" "CX_Bard_Boost;Gnome_Cunning;Gnome_Speed;AttackOfOpportunity;DarknessRules;Darkvision"
+
+// (Has Druid progressions)
+new entry "Gnome_Druid"
+type "Character"
+using "Gnome_Druid"
+// data "Passives" "Gnome_Cunning;Gnome_Speed;AttackOfOpportunity;DarknessRules;Darkvision"
+data "Passives" "CX_Druid_Boost;Gnome_Cunning;Gnome_Speed;AttackOfOpportunity;DarknessRules;Darkvision"
+
 // Tahan - Circle of the Emerald Grove (Inherits Druid progressions) (Gnome_Speed added)
 new entry "DEN_Tahan"
 type "Character"
 using "DEN_Tahan"
 // data "Passives" "AttackOfOpportunity;DarknessRules;Darkvision;Gnome_Cunning;AdditionalSpellSlot_Level_2;AdditionalSpellSlot_Level_2;"
-data "Passives" "Gnome_Cunning;Gnome_Speed;AttackOfOpportunity;DarknessRules;Darkvision;AdditionalSpellSlot_Level_2;AdditionalSpellSlot_Level_2"
+data "Passives" "CX_Druid_Boost;Gnome_Cunning;Gnome_Speed;AttackOfOpportunity;DarknessRules;Darkvision;AdditionalSpellSlot_Level_2;AdditionalSpellSlot_Level_2"
 
 // Jivin Mizzrym - Member of the Dead Eyes (Swapped Wizard progressions for Warlock progressions)
 new entry "LOW_HagSurvivor_Gnome_Caster"
@@ -2103,6 +2177,8 @@ data "Intelligence" "12"
 data "Charisma" "18"
 // data "SpellCastingAbility" "Intelligence"
 data "SpellCastingAbility" "Charisma"
+// data "Passives" "Gnome_Cunning;Gnome_Speed;AttackOfOpportunity;DarknessRules;Darkvision"
+data "Passives" "CX_Warlock_Boost;Gnome_Cunning;Gnome_Speed;AttackOfOpportunity;DarknessRules;Darkvision"
 // data "Progressions" "44bdbc5e-a003-4d61-87f0-5ced20d3804e"
 data "Progressions" "51274504-865d-46d1-a3b6-c72e9384904a"
 
@@ -2111,14 +2187,14 @@ new entry "LOW_HouseOfGrief_Cultist_Caster_Gnome"
 type "Character"
 using "LOW_HouseOfGrief_Cultist_Caster_Gnome"
 // data "Passives" "Gnome_Cunning;Gnome_Speed;AttackOfOpportunity;DarknessRules;Darkvision;LOW_HouseOfGrief_Cultists_Sight;LOW_HouseOfGrief_Cultists_Melee;"
-data "Passives" "CX_Spells_L4;Gnome_Cunning;Gnome_Speed;AttackOfOpportunity;DarknessRules;Darkvision;LOW_HouseOfGrief_Cultists_Sight;LOW_HouseOfGrief_Cultists_Melee"
+data "Passives" "CX_Wizard_Boost;CX_Spells_L4;Gnome_Cunning;Gnome_Speed;AttackOfOpportunity;DarknessRules;Darkvision;LOW_HouseOfGrief_Cultists_Sight;LOW_HouseOfGrief_Cultists_Melee"
 
 // Questioner Jasin, Questioner Sumera - Cult of the Absolute (Swapped Wizard progressions for Warlock progressions, already has Char Spellcasting Ability, fixed racials)
 new entry "MOO_MindTorturer"
 type "Character"
 using "MOO_MindTorturer"
 // data "Passives" "AttackOfOpportunity;DarknessRules;Darkvision;Gnome_Cunning;Gnome_Speed;RepellingBlast;DreadfulWord"
-data "Passives" "Gnome_Cunning;Gnome_Speed;DeepGnome_StoneCamouflage;AttackOfOpportunity;SuperiorDarkvision;DarknessRules;RepellingBlast;DreadfulWord"
+data "Passives" "CX_Warlock_Boost;Gnome_Cunning;Gnome_Speed;DeepGnome_StoneCamouflage;AttackOfOpportunity;SuperiorDarkvision;DarknessRules;RepellingBlast;DreadfulWord"
 // data "Progressions" "44bdbc5e-a003-4d61-87f0-5ced20d3804e"
 data "Progressions" "51274504-865d-46d1-a3b6-c72e9384904a"
 
@@ -2127,7 +2203,14 @@ new entry "UND_KC_Gnome_Deep_Caster"
 type "Character"
 using "UND_KC_Gnome_Deep_Caster"
 // data "Passives" "Gnome_Cunning;Gnome_Speed;AttackOfOpportunity;DarknessRules;Darkvision"
-data "Passives" "Gnome_Cunning;Gnome_Speed;DeepGnome_StoneCamouflage;AttackOfOpportunity;SuperiorDarkvision;DarknessRules"
+data "Passives" "CX_Wizard_Boost;Gnome_Cunning;Gnome_Speed;DeepGnome_StoneCamouflage;AttackOfOpportunity;SuperiorDarkvision;DarknessRules"
+
+// Basically all the Gondians (Has Wizard progressions)
+new entry "Gnome_Gondian_Caster"
+type "Character"
+using "Gnome_Gondian_Caster"
+// data "Passives" "Gnome_Cunning;Gnome_Speed;AttackOfOpportunity;DarknessRules;Darkvision"
+data "Passives" "CX_Wizard_Boost;Gnome_Cunning;Gnome_Speed;AttackOfOpportunity;DarknessRules;Darkvision"
 
 // "_Gnome"
 //  ├─ "Gnome_Melee"                                --- (Inherits Fighter progressions)
@@ -2142,31 +2225,80 @@ data "Passives" "Gnome_Cunning;Gnome_Speed;DeepGnome_StoneCamouflage;AttackOfOpp
 //  │   └─ "MOO_GnomePrisoner"                      --- Nimble - Clan Ironhand (Inherits Fighter progressions)
 //  │       └─ "MOO_GnomePrisoner_Leader"           --- Wulbren Bongle - Clan Ironhand (Inherits Fighter progressions)
 
+// (Inherits Fighter progressions)
+new entry "Gnome_Melee"
+type "Character"
+using "Gnome_Melee"
+// data "Passives" "Gnome_Cunning;Gnome_Speed;AttackOfOpportunity;DarknessRules;Darkvision"
+data "Passives" "CX_Fighter_Boost;Gnome_Cunning;Gnome_Speed;AttackOfOpportunity;DarknessRules;Darkvision"
+
 // Gimblebock - Overgrown Ruin Looters (Inherits Fighter progressions)
 new entry "CHA_Bandit_Gnome_Melee"
 type "Character"
 // using "Gnome_Melee"
 using "CHA_Bandit_Gnome_Melee"
 // data "Passives" "Gnome_Cunning;Gnome_Speed;DarknessRules;Darkvision"
-data "Passives" "Gnome_Cunning;Gnome_Speed;AttackOfOpportunity;DarknessRules;Darkvision"
+data "Passives" "CX_Fighter_Boost;Gnome_Cunning;Gnome_Speed;AttackOfOpportunity;DarknessRules;Darkvision"
+
+// Vicar Humbletoes - Guardian of the Stormshore Tabernacle (Has Cleric progressions)
+new entry "Gnome_Cleric"
+type "Character"
+using "Gnome_Cleric"
+// data "Passives" "Gnome_Cunning;Gnome_Speed;AttackOfOpportunity;DarknessRules;Darkvision"
+data "Passives" "CX_Cleric_Boost;Gnome_Cunning;Gnome_Speed;AttackOfOpportunity;DarknessRules;Darkvision"
+
+// (Inherits Fighter progressions)
+new entry "HAV_FlamingFist_Gnome_Melee"
+type "Character"
+using "HAV_FlamingFist_Gnome_Melee"
+// data "Passives" "Gnome_Cunning;Gnome_Speed;AttackOfOpportunity;DarknessRules;Darkvision"
+data "Passives" "CX_Fighter_Boost;Gnome_Cunning;Gnome_Speed;AttackOfOpportunity;DarknessRules;Darkvision"
+
+// Harper Essius - Harpers (Inherits Fighter progressions)
+new entry "HAV_Harper_Gnome_Melee"
+type "Character"
+using "HAV_Harper_Gnome_Melee"
+// data "Passives" "Gnome_Cunning;Gnome_Speed;AttackOfOpportunity;DarknessRules;Darkvision"
+data "Passives" "CX_Fighter_Boost;Gnome_Cunning;Gnome_Speed;AttackOfOpportunity;DarknessRules;Darkvision"
+
+// Lobo Denysse, Baff Elkhorn, Bearclaw - Aradin's mercenary crew (Has Barbarian progressions)
+new entry "LOW_AradinThug_Barbarian"
+type "Character"
+using "LOW_AradinThug_Barbarian"
+// data "Passives" "AttackOfOpportunity;DarknessRules;Darkvision;Gnome_Cunning;Gnome_Speed;UnarmouredDefence_Barbarian;BrutalCritical;RelentlessRage"
+data "Passives" "CX_Barbarian_Boost;Gnome_Cunning;Gnome_Speed;AttackOfOpportunity;DarknessRules;Darkvision;UnarmouredDefence_Barbarian;BrutalCritical;RelentlessRage"
 
 // Sharran Novice, Garrigan (Inherits Fighter progressions)
 new entry "LOW_HouseOfGrief_Cultist_Melee_Gnome"
 type "Character"
 using "LOW_HouseOfGrief_Cultist_Melee_Gnome"
 // data "Passives" "Gnome_Cunning;Gnome_Speed;AttackOfOpportunity;DarknessRules;Darkvision;LOW_HouseOfGrief_Cultists_Sight;LOW_HouseOfGrief_Cultists_Melee;"
-data "Passives" "CX_Fighter_Boost;CX_Martial_Boost;Gnome_Cunning;Gnome_Speed;AttackOfOpportunity;DarknessRules;Darkvision;LOW_HouseOfGrief_Cultists_Sight;LOW_HouseOfGrief_Cultists_Melee"
+data "Passives" "CX_Fighter_Boost;Gnome_Cunning;Gnome_Speed;AttackOfOpportunity;DarknessRules;Darkvision;LOW_HouseOfGrief_Cultists_Sight;LOW_HouseOfGrief_Cultists_Melee"
+
+// Fist Helena - Flaming Fist (Inherits Fighter progressions)
+new entry "MOO_FlamingFist_Gnome_Melee"
+type "Character"
+using "MOO_FlamingFist_Gnome_Melee"
+// data "Passives" "Gnome_Cunning;Gnome_Speed;AttackOfOpportunity;DarknessRules;Darkvision"
+data "Passives" "CX_Fighter_Boost;Gnome_Cunning;Gnome_Speed;AttackOfOpportunity;DarknessRules;Darkvision"
 
 // "_Gnome"
 //  ├─ "Gnome_Monk"                 --- (Has Monk progressions)
-//  │   └─ "LOW_Guildhall_Phase"
+//  │   └─ "LOW_Guildhall_Phase"    --- Phase - Zhentarim (Inherits Monk progressions, definitely Shadow subclass)
 
-// Phase - Zhentarim (Inherits Monk Progressions, definitely Shadow subclass)
+// (Has Monk progressions)
+new entry "Gnome_Monk"
+type "Character"
+using "Gnome_Monk"
+// data "Passives" "Gnome_Cunning;Gnome_Speed;AttackOfOpportunity;DarknessRules;Darkvision"
+data "Passives" "CX_Monk_Boost;Gnome_Cunning;Gnome_Speed;AttackOfOpportunity;DarknessRules;Darkvision"
+
+// Phase - Zhentarim (Inherits Monk progressions, definitely Shadow subclass)
 new entry "LOW_Guildhall_Phase"
 type "Character"
 using "LOW_Guildhall_Phase"
 // data "Passives" "FastHands;AttackOfOpportunity;DarknessRules;Darkvision;Gnome_Cunning;Gnome_Speed"
-data "Passives" "CX_Monk_Shadow_Boost;Gnome_Cunning;Gnome_Speed;AttackOfOpportunity;DarknessRules;Darkvision;FastHands"
+data "Passives" "CX_Monk_progressions:CX_Monk_Shadow_Boost;Gnome_Cunning;Gnome_Speed;AttackOfOpportunity;DarknessRules;Darkvision;FastHands"
 
 // "_Gnome"
 //  ├─ "Gnome_Ranger"                           --- (Has Ranger progressions)
@@ -2178,12 +2310,34 @@ data "Passives" "CX_Monk_Shadow_Boost;Gnome_Cunning;Gnome_Speed;AttackOfOpportun
 //  │   ├─ "MOO_GnomePrisoner_Ranged"           --- Nickels - Clan Ironhand (Inherits Ranger progressions)
 //  │   └─ "WYR_MessHallBodyguard_08"           --- Lord Shattershield's Attendant (Inherits Ranger progressions)
 
+// (Has Ranger progressions)
+new entry "Gnome_Ranger"
+type "Character"
+using "Gnome_Ranger"
+// data "Passives" "Gnome_Cunning;Gnome_Speed;AttackOfOpportunity;DarknessRules;Darkvision"
+data "Passives" "CX_Ranger_Boost;Gnome_Cunning;Gnome_Speed;AttackOfOpportunity;DarknessRules;Darkvision"
+
 // Warryn - Overgrown Ruin Looters (Has Rogue progressions, not a Ranger)
 new entry "CHA_Bandit_Gnome_Ranger"
 type "Character"
 using "CHA_Bandit_Gnome_Ranger"
 // data "Passives" "Gnome_Cunning;Gnome_Speed;DarknessRules;Darkvision"
-data "Passives" "Gnome_Cunning;Gnome_Speed;AttackOfOpportunity;DarknessRules;Darkvision"
+data "Passives" "CX_Rogue_Boost;Gnome_Cunning;Gnome_Speed;AttackOfOpportunity;DarknessRules;Darkvision"
+
+// Mino - Circle of the Emerald Grove (Inherits Ranger progressions, but also giving Druid class boost and Moon subclass)
+new entry "DEN_Druids_Gnome_Ranger"
+type "Character"
+using "DEN_Druids_Gnome_Ranger"
+// data "Passives" "Gnome_Cunning;Gnome_Speed;AttackOfOpportunity;DarknessRules;Darkvision"
+data "Passives" "CX_Druid_Boost;CX_Druid_Moon_Boost;CX_Ranger_Boost;Gnome_Cunning;Gnome_Speed;AttackOfOpportunity;DarknessRules;Darkvision"
+
+// Lord Shattershield's Attendant (Inherits Ranger progressions)
+new entry "WYR_MessHallBodyguard_08"
+type "Character"
+using "WYR_MessHallBodyguard_08"
+// data "Passives" "AttackOfOpportunity;DarknessRules;Darkvision;Gnome_Cunning;Gnome_Speed;FightingStyle_TwoWeaponFighting;CrossbowExpert_PointBlank"
+data "Passives" "CX_Ranger_Boost;Gnome_Cunning;Gnome_Speed;AttackOfOpportunity;DarknessRules;Darkvision;FightingStyle_TwoWeaponFighting;CrossbowExpert_PointBlank"
+
 
 // "_Gnome"
 //  ├─ "Gnome_Rogue"                            --- (Has Rogue progressions)
@@ -2193,31 +2347,45 @@ data "Passives" "Gnome_Cunning;Gnome_Speed;AttackOfOpportunity;DarknessRules;Dar
 //  │   ├─ "LOW_Guildhall_Swarm_Ranged_Gnome"   --- (Inherits Rogue progressions)
 //  │   └─ "WYR_SmugglersCave_Guild_Gnome"      --- Farlin - Envoy of Nine-Fingers, The Guild (Inherits Rogue progressions)
 
+// (Has Rogue progressions)
+new entry "Gnome_Rogue"
+type "Character"
+using "Gnome_Rogue"
+// data "Passives" "Gnome_Cunning;Gnome_Speed;AttackOfOpportunity;DarknessRules;Darkvision"
+data "Passives" "CX_Rogue_Boost;Gnome_Cunning;Gnome_Speed;AttackOfOpportunity;DarknessRules;Darkvision"
+
 // Fishbait Arno - Zhentarim (Inherits Rogue progressions, definitely a Thief)
 new entry "LOW_Guildhall_FishbaitArno"
 type "Character"
 using "LOW_Guildhall_FishbaitArno"
 // data "Passives" "FastHands;AttackOfOpportunity;DarknessRules;Darkvision;Gnome_Cunning;Gnome_Speed"
-data "Passives" "CX_Rogue_Thief_Boost;Gnome_Cunning;Gnome_Speed;AttackOfOpportunity;DarknessRules;Darkvision;FastHands"
+data "Passives" "CX_Rogue_Boost;CX_Rogue_Thief_Boost;Gnome_Cunning;Gnome_Speed;AttackOfOpportunity;DarknessRules;Darkvision;FastHands"
 
 // "_Gnome"
 //  ├─ "MOO_AcolyteOfTheAbsolute_Gnome"     --- (Has Cleric progressions) 
-//  ├─ "MOO_FanaticOfTheAbsolute_Gnome"
-//  └─ "MOO_ZealotOfTheAbsolute_Gnome"
+//  ├─ "MOO_FanaticOfTheAbsolute_Gnome"     --- (Has Cleric progressions) 
+//  └─ "MOO_ZealotOfTheAbsolute_Gnome"      --- (Has Paladin progressions, added Oathbreaker subclass) 
+
+// (Has Cleric progressions)
+new entry "MOO_AcolyteOfTheAbsolute_Gnome"
+type "Character"
+using "MOO_AcolyteOfTheAbsolute_Gnome"
+// data "Passives" "Gnome_Cunning;Gnome_Speed;AttackOfOpportunity;DarknessRules;Darkvision"
+data "Passives" "CX_Cleric_Boost;Gnome_Cunning;Gnome_Speed;AttackOfOpportunity;DarknessRules;Darkvision"
 
 // (Has Cleric progressions) 
 new entry "MOO_FanaticOfTheAbsolute_Gnome"
 type "Character"
 using "MOO_FanaticOfTheAbsolute_Gnome"
 // data "Passives" "Gnome_Cunning;Gnome_Speed;AttackOfOpportunity;DarknessRules;Darkvision"
-data "Passives" "CX_Spells_L4C;Gnome_Cunning;Gnome_Speed;AttackOfOpportunity;DarknessRules;Darkvision"
+data "Passives" "CX_Cleric_Boost;CX_Spells_L4C;Gnome_Cunning;Gnome_Speed;AttackOfOpportunity;DarknessRules;Darkvision"
 
 // (Has Paladin progressions, added Oathbreaker subclass) 
 new entry "MOO_ZealotOfTheAbsolute_Gnome"
 type "Character"
 using "MOO_ZealotOfTheAbsolute_Gnome"
 // data "Passives" "AttackOfOpportunity;DarknessRules;Darkvision;Gnome_Cunning;Gnome_Speed;FightingStyle_GreatWeaponFighting"
-data "Passives" "CX_Paladin_Oathbreaker_Boost;Gnome_Cunning;Gnome_Speed;AttackOfOpportunity;DarknessRules;Darkvision;FightingStyle_GreatWeaponFighting"
+data "Passives" "CX_Paladin_Boost;CX_Paladin_Oathbreaker_Boost;Gnome_Cunning;Gnome_Speed;AttackOfOpportunity;DarknessRules;Darkvision;FightingStyle_GreatWeaponFighting"
 
 // "_Gnome"
 //  └─ "_Gnome_Deep"
@@ -2236,24 +2404,40 @@ data "Passives" "Gnome_Cunning;Gnome_Speed;DeepGnome_StoneCamouflage;AttackOfOpp
 //  └─ "_Gnome_Deep"
 //      ├─ "Gnome_Deep_Caster"                  --- (Has Wizard progressions)
 //      │   ├─ "GLO_HiddenGnome"                --- Philomeen - Clan Ironhand
-//      │   ├─ "LOW_TheLodge_Doctor"
+//      │   ├─ "LOW_TheLodge_Doctor"            --- Doctor Moorcombe - Society of Brilliance (Inherits Wizard progressions, do be a Necromancer)
 //      │   └─ "WYR_IronHand_Gnome_Deep_Caster" --- Dulbers Frint - Clan Ironhand (Inherits Wizard progressions)
-//      ├─ "Gnome_Deep_Melee"                   --- 
+//      ├─ "Gnome_Deep_Melee"                   --- (Added Fighter progressions)
 //      │   └─ "WYR_IronHand_Gnome_Deep_Melee"  --- Hogi Nuners, Gipkins Jared - Clan Ironhand (Inherits added Fighter progressions)
 //      └─ "Gnome_Deep_Ranger"
 //          └─ "WYR_IronHand_Gnome_Deep_Ranger" --- Bumpnagel - Clan Ironhand (Inherits added Ranger progressions)
+
+// (Has Wizard progressions)
+new entry "Gnome_Deep_Caster"
+type "Character"
+using "Gnome_Deep_Caster"
+// data "Passives" "Gnome_Cunning;Gnome_Speed;DeepGnome_StoneCamouflage;AttackOfOpportunity;SuperiorDarkvision;DarknessRules"
+data "Passives" "CX_Wizard_Boost;Gnome_Cunning;Gnome_Speed;DeepGnome_StoneCamouflage;AttackOfOpportunity;SuperiorDarkvision;DarknessRules"
 
 // Doctor Moorcombe - Society of Brilliance (Inherits Wizard progressions, do be a Necromancer)
 new entry "LOW_TheLodge_Doctor"
 type "Character"
 using "LOW_TheLodge_Doctor"
 // data "Passives" "AttackOfOpportunity;DarknessRules;SuperiorDarkvision;Gnome_Cunning;Gnome_Speed;DeepGnome_StoneCamouflage;GrimHarvest"
-data "Passives" "CX_Wizard_Necromancy_Boost;Gnome_Cunning;Gnome_Speed;DeepGnome_StoneCamouflage;AttackOfOpportunity;SuperiorDarkvision;DarknessRules;GrimHarvest"
+data "Passives" "CX_Wizard_Boost;CX_Wizard_Necromancy_Boost;Gnome_Cunning;Gnome_Speed;DeepGnome_StoneCamouflage;AttackOfOpportunity;SuperiorDarkvision;DarknessRules;GrimHarvest"
+
+// Dulbers Frint - Clan Ironhand (Inherits Wizard progressions)
+new entry "WYR_IronHand_Gnome_Deep_Caster"
+type "Character"
+using "WYR_IronHand_Gnome_Deep_Caster"
+// data "Passives" "Gnome_Cunning;Gnome_Speed;DeepGnome_StoneCamouflage;AttackOfOpportunity;SuperiorDarkvision;DarknessRules"
+data "Passives" "CX_Wizard_Boost;Gnome_Cunning;Gnome_Speed;DeepGnome_StoneCamouflage;AttackOfOpportunity;SuperiorDarkvision;DarknessRules"
 
 // (Added Fighter progressions)
 new entry "Gnome_Deep_Melee"
 type "Character"
 using "Gnome_Deep_Melee"
+// data "Passives" "Gnome_Cunning;Gnome_Speed;DeepGnome_StoneCamouflage;AttackOfOpportunity;SuperiorDarkvision;DarknessRules"
+data "Passives" "CX_Fighter_Boost;Gnome_Cunning;Gnome_Speed;DeepGnome_StoneCamouflage;AttackOfOpportunity;SuperiorDarkvision;DarknessRules"
 // data "Progressions" ""
 data "Progressions" "0e6da493-5a37-423b-8c28-629462b22faa"
 
@@ -2261,6 +2445,8 @@ data "Progressions" "0e6da493-5a37-423b-8c28-629462b22faa"
 new entry "Gnome_Deep_Ranger"
 type "Character"
 using "Gnome_Deep_Ranger"
+// data "Passives" "Gnome_Cunning;Gnome_Speed;DeepGnome_StoneCamouflage;AttackOfOpportunity;SuperiorDarkvision;DarknessRules"
+data "Passives" "CX_Ranger_Boost;Gnome_Cunning;Gnome_Speed;DeepGnome_StoneCamouflage;AttackOfOpportunity;SuperiorDarkvision;DarknessRules"
 // data "Progressions" ""
 data "Progressions" "f0ede459-8b86-48fd-ac11-4432573566a5"
 
@@ -5622,7 +5808,7 @@ data "Wisdom" "14"
 // data "Charisma" "9"
 data "Charisma" "16"
 // data "Passives" "AttackOfOpportunity;DarknessRules;Darkvision;LOW_BlushingMermaid_Redcap_Buff;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check"
-data "Passives" "CX_Warlock_Archfey_Boost;;DarknessRules;Darkvision;LOW_BlushingMermaid_Redcap_Buff;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check"
+data "Passives" "CX_Warlock_Archfey_Boost;DarknessRules;Darkvision;LOW_BlushingMermaid_Redcap_Buff;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check"
 
 // BOOOAL (Added Fighter progressions, added Boss boost)
 new entry "UND_BOOOAL"
