@@ -6,7 +6,7 @@
 //                               //
 ///////////////////////////////////
 
-// Hobgoblin leader for the kobolds (Given Barbarian progressions)
+// Hobgoblin leader for the kobolds (Added Barbarian progressions)
 // UCL_Barbarian;UCL_Berserker;UCL_Generic_Str_Asi
 new entry "EO_Kobold_Leader"
 type "Character"
@@ -14,9 +14,9 @@ using "EO_Kobold_Leader"
 // data "Progressions" "ae343448-6fce-40b2-8eb7-b5e4316dff58;5be7823a-4611-4bb5-a2ba-cc60be806378;4f22dd35-542c-4aa0-a790-b6c93c3e252f"
 data "Progressions" "56db8107-e04c-4fe3-94f3-fd4acd44cd4a;ae343448-6fce-40b2-8eb7-b5e4316dff58;5be7823a-4611-4bb5-a2ba-cc60be806378;4f22dd35-542c-4aa0-a790-b6c93c3e252f"
 // data "Passives" "Alert;MartialAdvantage;AttackOfOpportunity;Darkvision;DarknessRules"
-data "Passives" "CX_Barbarian_Berserker_Boost;AttackOfOpportunity;Darkvision;DarknessRules;Alert;MartialAdvantage"
+data "Passives" "CX_Barbarian_Boost;CX_Barbarian_Berserker_Boost;CX_Martial_Boost;AttackOfOpportunity;Darkvision;DarknessRules;Alert;MartialAdvantage"
 
-// (Given Ranger progressions)
+// (Added Ranger progressions)
 // UCL_Ranger;UCL_BeastMaster;UCL_2_FightingStyle_Defence;UCL_Generic_Str_Asi
 new entry "EO_Bugbear_Ranger"
 type "Character"
@@ -24,9 +24,9 @@ using "EO_Bugbear_Ranger"
 // data "Progressions" "06762adc-24d9-4689-8d09-8dfa9182dd4b;a2e24907-b783-4cf7-b240-0e2ce563a256;a9b4a6ab-736c-4727-99f7-9ee4444fb8e1;4f22dd35-542c-4aa0-a790-b6c93c3e252f"
 data "Progressions" "f0ede459-8b86-48fd-ac11-4432573566a5;06762adc-24d9-4689-8d09-8dfa9182dd4b;a2e24907-b783-4cf7-b240-0e2ce563a256;a9b4a6ab-736c-4727-99f7-9ee4444fb8e1;4f22dd35-542c-4aa0-a790-b6c93c3e252f"
 // data "Passives" "Brute_Bugbear;AttackOfOpportunity;Darkvision;DarknessRules"
-data "Passives" "CX_Ranger_BeastMaster_Boost;Brute_Bugbear;AttackOfOpportunity;Darkvision;DarknessRules"
+data "Passives" "CX_Ranger_BeastMaster_Boost;CX_Martial_Boost;Brute_Bugbear;AttackOfOpportunity;Darkvision;DarknessRules"
 
-// (Given Warlock progressions)
+// (Added Warlock progressions)
 // UCL_Warlock;UCL_GreatOldOne;UCL_Familiar;UCL_EldritchBlaster_1;UCL_Generic_Cha_Asi
 new entry "EO_WLD_GOO_Warlock"
 type "Character"
@@ -34,18 +34,18 @@ using "EO_WLD_GOO_Warlock"
 // data "Progressions" "f34419b6-a50a-46c2-9eb9-28264fd71c55;ffa87dcf-3390-437c-8075-74c2ad37e3e2;4318cdb8-c4fe-404f-a703-5ba88baaf65c;2919cea5-a0c1-46e8-9774-4c9f03ba3d5f;b40ab293-676f-41d4-919e-bf1f36643548"
 data "Progressions" "51274504-865d-46d1-a3b6-c72e9384904a;f34419b6-a50a-46c2-9eb9-28264fd71c55;ffa87dcf-3390-437c-8075-74c2ad37e3e2;4318cdb8-c4fe-404f-a703-5ba88baaf65c;2919cea5-a0c1-46e8-9774-4c9f03ba3d5f;b40ab293-676f-41d4-919e-bf1f36643548"
 // data "Passives" "Gnome_Cunning;Gnome_Speed;DeepGnome_StoneCamouflage;SuperiorDarkvision;DarknessRules"
-data "Passives" "CX_Warlock_GreatOldOne_Boost;Gnome_Cunning;Gnome_Speed;DeepGnome_StoneCamouflage;SuperiorDarkvision;DarknessRules"
+data "Passives" "CX_Warlock_GreatOldOne_Boost;CX_Magic_Boost;Gnome_Cunning;Gnome_Speed;DeepGnome_StoneCamouflage;SuperiorDarkvision;DarknessRules"
 
-// (Given Fighter progressions)
+// (Added Fighter progressions)
 // UCL_Fighter;UCL_EldritchKnight;UCL_1_FightingStyle_GreatWeaponFighting;UCL_Fighter_ActionSurge_Melee;UCL_Fighter_TwoHander
 new entry "EO_Justiciar_Eldritch_Fighter"
 type "Character"
 using "EO_Justiciar_Eldritch_Fighter"
 // data "Progressions" "1c4c6006-0b49-4dac-954a-5a83b815a695;b1316370-2f3d-4f0a-9c09-55e165d17adc;f59de40e-deb6-42e8-820a-e41976ca4deb;e6be4ef3-c002-425e-903e-8595df5c5049;b01ff88f-ca24-4d55-b9ba-1b8b835cc2b6"
 data "Progressions" "0e6da493-5a37-423b-8c28-629462b22faa;1c4c6006-0b49-4dac-954a-5a83b815a695;b1316370-2f3d-4f0a-9c09-55e165d17adc;f59de40e-deb6-42e8-820a-e41976ca4deb;e6be4ef3-c002-425e-903e-8595df5c5049;b01ff88f-ca24-4d55-b9ba-1b8b835cc2b6"
-data "Passives" "CX_Fighter_EldritchKnight_Boost;HumanMilitia;HumanVersatility;AttackOfOpportunity;Darkvision;DarknessRules;SHA_DarkVengeance;SHA_VisionOfShar;LivingShadow;SunlightSensitivity;"
+data "Passives" "CX_Fighter_EldritchKnight_Boost;CX_Martial_Boost;CX_Magic_Boost;HumanMilitia;HumanVersatility;AttackOfOpportunity;Darkvision;DarknessRules;SHA_DarkVengeance;SHA_VisionOfShar;LivingShadow;SunlightSensitivity;"
 
-// (Given Ranger progressions)
+// (Added Ranger progressions)
 // UCL_Ranger;UCL_GloomStalker;UCL_2_FightingStyle_Defence;UCL_Generic_Str_Asi
 new entry "EO_DefiledTemple_Gloomstalker_Ranger"
 type "Character"
@@ -53,9 +53,9 @@ using "EO_DefiledTemple_Gloomstalker_Ranger"
 // data "Progressions" "06762adc-24d9-4689-8d09-8dfa9182dd4b;7dcf10d4-1137-4642-a623-c450c06ab1a9;a9b4a6ab-736c-4727-99f7-9ee4444fb8e1;4f22dd35-542c-4aa0-a790-b6c93c3e252f"
 data "Progressions" "f0ede459-8b86-48fd-ac11-4432573566a5;06762adc-24d9-4689-8d09-8dfa9182dd4b;7dcf10d4-1137-4642-a623-c450c06ab1a9;a9b4a6ab-736c-4727-99f7-9ee4444fb8e1;4f22dd35-542c-4aa0-a790-b6c93c3e252f"
 // data "Passives" "LOW_HouseOfGrief_Cultists_Melee;LOW_HouseOfGrief_Cultists_Sight;AttackOfOpportunity;DarknessRules"
-data "Passives" "CX_Ranger_Hunter_Boost;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules;LOW_HouseOfGrief_Cultists_Melee;LOW_HouseOfGrief_Cultists_Sight"
+data "Passives" "CX_Ranger_Hunter_Boost;CX_Martial_Boost;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules;LOW_HouseOfGrief_Cultists_Melee;LOW_HouseOfGrief_Cultists_Sight"
 
-// (Given Cleric progressions)
+// (Added Cleric progressions)
 // UCL_Cleric;UCL_TrickeryDomain;UCL_Generic_Str_Asi
 new entry "EO_DefiledTemple_Trickery_Cleric"
 type "Character"
@@ -63,7 +63,7 @@ using "EO_DefiledTemple_Trickery_Cleric"
 // data "Progressions" "4577e872-7f55-448b-a6c4-bb3f5a3738b6;7b8f76a2-8e55-4ca4-abd5-7c69f3256cac;4f22dd35-542c-4aa0-a790-b6c93c3e252f"
 data "Progressions" "36c3f8de-3293-4d7b-92bc-ceb3c569244b;4577e872-7f55-448b-a6c4-bb3f5a3738b6;7b8f76a2-8e55-4ca4-abd5-7c69f3256cac;4f22dd35-542c-4aa0-a790-b6c93c3e252f"
 // data "Passives" "LOW_HouseOfGrief_Cultists_Melee;LOW_HouseOfGrief_Cultists_Sight;AttackOfOpportunity;Darkvision;DarknessRules;Darkvision"
-data "Passives" "CX_Cleric_Trickery_Boost;AttackOfOpportunity;Darkvision;DarknessRules;Darkvision;LOW_HouseOfGrief_Cultists_Melee;LOW_HouseOfGrief_Cultists_Sight"
+data "Passives" "CX_Cleric_Trickery_Boost;CX_Martial_Boost;AttackOfOpportunity;Darkvision;DarknessRules;Darkvision;LOW_HouseOfGrief_Cultists_Melee;LOW_HouseOfGrief_Cultists_Sight"
 
 ///////////////////////////////////
 //                               //
@@ -71,25 +71,25 @@ data "Passives" "CX_Cleric_Trickery_Boost;AttackOfOpportunity;Darkvision;Darknes
 //                               //
 ///////////////////////////////////
 
-// (Given Rogue progressions)
+// (Added Rogue progressions)
 // UCL_Rogue;UCL_Assassin;UCL_Generic_Dex_Asi
 new entry "EO_UND_Duergar_Assassin_Rogue"
 type "Character"
 using "EO_UND_Duergar_Assassin_Rogue"
 // data "Progressions" "4356e226-3b97-46c6-9e16-2b8f302ab42f;999c38da-0409-4368-84b0-84b500e7365d;defed003-fb89-41b8-b59f-a57dae9e50de"
 data "Progressions" "532203c2-7bcb-4162-9a7c-2bb20e227a30;4356e226-3b97-46c6-9e16-2b8f302ab42f;999c38da-0409-4368-84b0-84b500e7365d;defed003-fb89-41b8-b59f-a57dae9e50de"
-data "Passives" "CX_Rogue_Assassin_Boost;Dwarf_DwarvenResilience;Duergar_DuergarResilience;SunlightSensitivity;AttackOfOpportunity;SuperiorDarkvision;DarknessRules"
+data "Passives" "CX_Rogue_Boost;CX_Rogue_Assassin_Boost;CX_Martial_Boost;Dwarf_DwarvenResilience;Duergar_DuergarResilience;SunlightSensitivity;AttackOfOpportunity;SuperiorDarkvision;DarknessRules"
 
-// (Given Ranger progressions)
+// (Added Ranger progressions)
 // UCL_Ranger;UCL_BeastMaster;UCL_2_FightingStyle_Archery;UCL_Familiar;UCL_Generic_Sharpshooter
 new entry "EO_UND_Beastmaster_Ranger"
 type "Character"
 using "EO_UND_Beastmaster_Ranger"
 // data "Progressions" "06762adc-24d9-4689-8d09-8dfa9182dd4b;a2e24907-b783-4cf7-b240-0e2ce563a256;7fa893da-ef8a-458c-a2cf-9de5a0fb0ef4;4318cdb8-c4fe-404f-a703-5ba88baaf65c;85ffe605-411e-4f1b-b40b-ebbf2a5372f3"
 data "Progressions" "f0ede459-8b86-48fd-ac11-4432573566a5;06762adc-24d9-4689-8d09-8dfa9182dd4b;a2e24907-b783-4cf7-b240-0e2ce563a256;7fa893da-ef8a-458c-a2cf-9de5a0fb0ef4;4318cdb8-c4fe-404f-a703-5ba88baaf65c;85ffe605-411e-4f1b-b40b-ebbf2a5372f3"
-data "Passives" "CX_Ranger_BeastMaster_Boost;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules;Darkvision"
+data "Passives" "CX_Ranger_BeastMaster_Boost;CX_Martial_Boost;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules;Darkvision"
 
-// (Given Wizard progressions)
+// (Added Wizard progressions)
 // UCL_Wizard;UCL_EvocationSchool;UCL_Wizard_FireShield_Warm;UCL_WarCaster_Int
 new entry "EO_UND_Evocation_Wizard"
 type "Character"
@@ -97,9 +97,9 @@ using "EO_UND_Evocation_Wizard"
 // data "Progressions" "06762adc-24d9-4689-8d09-8dfa9182dd4b;a2e24907-b783-4cf7-b240-0e2ce563a256;7fa893da-ef8a-458c-a2cf-9de5a0fb0ef4;4318cdb8-c4fe-404f-a703-5ba88baaf65c;85ffe605-411e-4f1b-b40b-ebbf2a5372f3"
 data "Progressions" "44bdbc5e-a003-4d61-87f0-5ced20d3804e;06762adc-24d9-4689-8d09-8dfa9182dd4b;a2e24907-b783-4cf7-b240-0e2ce563a256;7fa893da-ef8a-458c-a2cf-9de5a0fb0ef4;4318cdb8-c4fe-404f-a703-5ba88baaf65c;85ffe605-411e-4f1b-b40b-ebbf2a5372f3"
 // data "Passives" "FeyAncestry;SunlightSensitivity;AttackOfOpportunity;DarknessRules;Darkvision"
-data "Passives" "CX_Wizard_Evocation_Boost;CX_Spells_L2;CX_Spells_L3;CX_Spells_L2C;FeyAncestry;SunlightSensitivity;AttackOfOpportunity;DarknessRules;Darkvision"
+data "Passives" "CX_Wizard_Evocation_Boost;CX_Magic_Boost;CX_Spells_L2;CX_Spells_L3;CX_Spells_L2C;FeyAncestry;SunlightSensitivity;AttackOfOpportunity;DarknessRules;Darkvision"
 
-// (Given Sorcerer progressions)
+// (Added Sorcerer progressions)
 // UCL_Sorcerer;UCL_DraconicBloodline;UCL_DraconicBloodline_White;UCL_Generic_Cha_Asi
 new entry "EO_UND_Duergar_Draconic_Sorcerer"
 type "Character"
@@ -107,9 +107,9 @@ using "EO_UND_Duergar_Draconic_Sorcerer"
 // data "Progressions" "e93883b2-b593-4101-9c97-d6b8c454c053;348f783f-d3b8-4a05-9bc7-b13217990a50;4e68dd42-6acf-409f-843f-4f5753df284e;b40ab293-676f-41d4-919e-bf1f36643548"
 data "Progressions" "2189a72d-6489-4621-8b2c-85d3e7df2f6f;e93883b2-b593-4101-9c97-d6b8c454c053;348f783f-d3b8-4a05-9bc7-b13217990a50;4e68dd42-6acf-409f-843f-4f5753df284e;b40ab293-676f-41d4-919e-bf1f36643548"
 // data "Passives" "UCL_Quickened_Handler;Dwarf_DwarvenResilience;Duergar_DuergarResilience;SunlightSensitivity;AttackOfOpportunity;SuperiorDarkvision;DarknessRules"
-data "Passives" "CX_Sorcerer_Draconic_Boost;CX_Spells_L3;CX_Spells_L4;Dwarf_DwarvenResilience;Duergar_DuergarResilience;SunlightSensitivity;AttackOfOpportunity;SuperiorDarkvision;DarknessRules;UCL_Quickened_Handler"
+data "Passives" "CX_Sorcerer_Draconic_Boost;CX_Magic_Boost;CX_Spells_L3;CX_Spells_L4;Dwarf_DwarvenResilience;Duergar_DuergarResilience;SunlightSensitivity;AttackOfOpportunity;SuperiorDarkvision;DarknessRules;UCL_Quickened_Handler"
 
-// (Given Fighter progressions)
+// (Added Fighter progressions)
 // UCL_Fighter;UCL_Champion;UCL_1_FightingStyle_GreatWeaponFighting;UCL_Fighter_ActionSurge_Melee;UCL_Fighter_TwoHander
 new entry "EO_UND_Duergar_Champion_Fighter"
 type "Character"
@@ -117,9 +117,9 @@ using "EO_UND_Duergar_Champion_Fighter"
 // data "Progressions" "1c4c6006-0b49-4dac-954a-5a83b815a695;658e5cdc-c04a-47df-9edd-8c1eec8a7ec2;f59de40e-deb6-42e8-820a-e41976ca4deb;e6be4ef3-c002-425e-903e-8595df5c5049;b01ff88f-ca24-4d55-b9ba-1b8b835cc2b6"
 data "Progressions" "0e6da493-5a37-423b-8c28-629462b22faa;1c4c6006-0b49-4dac-954a-5a83b815a695;658e5cdc-c04a-47df-9edd-8c1eec8a7ec2;f59de40e-deb6-42e8-820a-e41976ca4deb;e6be4ef3-c002-425e-903e-8595df5c5049;b01ff88f-ca24-4d55-b9ba-1b8b835cc2b6"
 // data "Passives" "Dwarf_DwarvenResilience;Duergar_DuergarResilience;SunlightSensitivity;AttackOfOpportunity;SuperiorDarkvision;DarknessRules"
-data "Passives" "CX_Fighter_Champion_Boost;Dwarf_DwarvenResilience;Duergar_DuergarResilience;SunlightSensitivity;AttackOfOpportunity;SuperiorDarkvision;DarknessRules"
+data "Passives" "CX_Fighter_Champion_Boost;CX_Martial_Boost;Dwarf_DwarvenResilience;Duergar_DuergarResilience;SunlightSensitivity;AttackOfOpportunity;SuperiorDarkvision;DarknessRules"
 
-// (Given Ranger progressions)
+// (Added Ranger progressions)
 // UCL_Ranger;UCL_GloomStalker;UCL_2_FightingStyle_Archery;UCL_Generic_Dex_Asi
 new entry "EO_UND_Duergar_Gloomstalker_Ranger"
 type "Character"
@@ -127,9 +127,9 @@ using "EO_UND_Duergar_Gloomstalker_Ranger"
 // data "Progressions" "06762adc-24d9-4689-8d09-8dfa9182dd4b;7dcf10d4-1137-4642-a623-c450c06ab1a9;7fa893da-ef8a-458c-a2cf-9de5a0fb0ef4;defed003-fb89-41b8-b59f-a57dae9e50de"
 data "Progressions" "f0ede459-8b86-48fd-ac11-4432573566a5;06762adc-24d9-4689-8d09-8dfa9182dd4b;7dcf10d4-1137-4642-a623-c450c06ab1a9;7fa893da-ef8a-458c-a2cf-9de5a0fb0ef4;defed003-fb89-41b8-b59f-a57dae9e50de"
 // data "Passives" "Dwarf_DwarvenResilience;Duergar_DuergarResilience;SunlightSensitivity;AttackOfOpportunity;SuperiorDarkvision;DarknessRules"
-data "Passives" "CX_Ranger_Hunter_Boost;Dwarf_DwarvenResilience;Duergar_DuergarResilience;SunlightSensitivity;AttackOfOpportunity;SuperiorDarkvision;DarknessRules"
+data "Passives" "CX_Ranger_Hunter_Boost;CX_Martial_Boost;Dwarf_DwarvenResilience;Duergar_DuergarResilience;SunlightSensitivity;AttackOfOpportunity;SuperiorDarkvision;DarknessRules"
 
-// (Given Ranger progressions)
+// (Added Ranger progressions)
 // UCL_Ranger;UCL_Hunter;UCL_2_FightingStyle_Archery;UCL_Generic_CrossbowExpert
 new entry "EO_UND_Hunter_Ranger"
 type "Character"
@@ -137,7 +137,7 @@ using "EO_UND_Hunter_Ranger"
 // data "Progressions" "06762adc-24d9-4689-8d09-8dfa9182dd4b;7839dbea-69da-441f-9668-f91a904ee6b5;7fa893da-ef8a-458c-a2cf-9de5a0fb0ef4;d9c06a14-30a1-4b3d-adc8-5915d776c8a3"
 data "Progressions" "f0ede459-8b86-48fd-ac11-4432573566a5;06762adc-24d9-4689-8d09-8dfa9182dd4b;7839dbea-69da-441f-9668-f91a904ee6b5;7fa893da-ef8a-458c-a2cf-9de5a0fb0ef4;d9c06a14-30a1-4b3d-adc8-5915d776c8a3"
 // data "Passives" "HumanMilitia;FeyAncestry;AttackOfOpportunity;SunlightSensitivity;DarknessRules;Darkvision"
-data "Passives" "CX_Ranger_Hunter_Boost;HumanMilitia;FeyAncestry;AttackOfOpportunity;SunlightSensitivity;DarknessRules;Darkvision"
+data "Passives" "CX_Ranger_Hunter_Boost;CX_Martial_Boost;HumanMilitia;FeyAncestry;AttackOfOpportunity;SunlightSensitivity;DarknessRules;Darkvision"
 
 ///////////////////////////////////
 //                               //
@@ -145,7 +145,7 @@ data "Passives" "CX_Ranger_Hunter_Boost;HumanMilitia;FeyAncestry;AttackOfOpportu
 //                               //
 ///////////////////////////////////
 
-// (Given Druid progressions)
+// (Added Druid progressions)
 // UCL_Druid;UCL_CircleOfTheSpores;UCL_Generic_Wis_Asi
 new entry "EO_CRE_Spore_Druid"
 type "Character"
@@ -153,9 +153,9 @@ using "EO_CRE_Spore_Druid"
 // data "Progressions" "d3af8a04-c768-487d-bf32-13828fd51f09;a3842d6e-15ba-4ca9-8ea9-6334daa8e566;181bb485-b676-4e66-8a46-3f7aa1e31415"
 data "Progressions" "7e76da16-650c-4a6e-85b0-f9e23a7f5a60;d3af8a04-c768-487d-bf32-13828fd51f09;a3842d6e-15ba-4ca9-8ea9-6334daa8e566;181bb485-b676-4e66-8a46-3f7aa1e31415"
 // data "Passives" "Gnome_Cunning;Gnome_Speed;AttackOfOpportunity;DarknessRules;Darkvision"
-data "Passives" "CX_Druid_Spores_Boost;Gnome_Cunning;Gnome_Speed;AttackOfOpportunity;DarknessRules;Darkvision"
+data "Passives" "CX_Druid_Spores_Boost;CX_Magic_Boost;Gnome_Cunning;Gnome_Speed;AttackOfOpportunity;DarknessRules;Darkvision"
 
-// (Given Barbarian progressions)
+// (Added Barbarian progressions)
 // UCL_Barbarian;UCL_TotemWarriorPath;UCL_TotemWarriorPath_Elk;UCL_Generic_TwoHander
 new entry "EO_CRE_ElkHeart_Barbarian"
 type "Character"
@@ -163,9 +163,9 @@ using "EO_CRE_ElkHeart_Barbarian"
 // data "Progressions" "ae343448-6fce-40b2-8eb7-b5e4316dff58;31d636c6-b955-4e68-a6e7-79d7302453b9;7ccd0334-3564-405f-92ca-806d5a7ff501;36d19089-578d-474f-bfa0-b37f14a138c8"
 data "Progressions" "56db8107-e04c-4fe3-94f3-fd4acd44cd4a;ae343448-6fce-40b2-8eb7-b5e4316dff58;31d636c6-b955-4e68-a6e7-79d7302453b9;7ccd0334-3564-405f-92ca-806d5a7ff501;36d19089-578d-474f-bfa0-b37f14a138c8"
 // data "Passives" "AttackOfOpportunity;HumanMilitia;HumanVersatility;DarknessRules"
-data "Passives" "CX_Barbarian_Berserker_Boost;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules"
+data "Passives" "CX_Barbarian_Boost;CX_Barbarian_Berserker_Boost;CX_Martial_Boost;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules"
 
-// (Given Druid progressions)
+// (Added Druid progressions)
 // UCL_Druid;UCL_CircleOfTheMoon;UCL_Generic_TavernBrawler_Wis
 new entry "EO_CRE_Moon_Druid"
 type "Character"
@@ -173,9 +173,9 @@ using "EO_CRE_Moon_Druid"
 // data "Progressions" "d3af8a04-c768-487d-bf32-13828fd51f09;ac4510fc-ceee-4a0a-873d-b0f7b8808d94;809d2014-01df-40b4-bada-f5b727a63c30"
 data "Progressions" "7e76da16-650c-4a6e-85b0-f9e23a7f5a60;d3af8a04-c768-487d-bf32-13828fd51f09;ac4510fc-ceee-4a0a-873d-b0f7b8808d94;809d2014-01df-40b4-bada-f5b727a63c30"
 // data "Passives" "AttackOfOpportunity;DarknessRules"
-data "Passives" "CX_Druid_Moon_Boost;Tiefling_HellishResistance;AttackOfOpportunity;DarknessRules"
+data "Passives" "CX_Druid_Moon_Boost;CX_Magic_Boost;Tiefling_HellishResistance;AttackOfOpportunity;DarknessRules"
 
-// (Given Ranger progressions)
+// (Added Ranger progressions)
 // UCL_Ranger;UCL_Hunter;UCL_2_FightingStyle_Archery;UCL_Generic_CrossbowExpert
 new entry "EO_CRE_GithRaider_Corrupted_Hunter_Ranger"
 type "Character"
@@ -183,9 +183,9 @@ using "EO_CRE_GithRaider_Corrupted_Hunter_Ranger"
 // data "Progressions" "06762adc-24d9-4689-8d09-8dfa9182dd4b;7839dbea-69da-441f-9668-f91a904ee6b5;7fa893da-ef8a-458c-a2cf-9de5a0fb0ef4;d9c06a14-30a1-4b3d-adc8-5915d776c8a3"
 data "Progressions" "f0ede459-8b86-48fd-ac11-4432573566a5;06762adc-24d9-4689-8d09-8dfa9182dd4b;7839dbea-69da-441f-9668-f91a904ee6b5;7fa893da-ef8a-458c-a2cf-9de5a0fb0ef4;d9c06a14-30a1-4b3d-adc8-5915d776c8a3"
 // data "Passives" "AttackOfOpportunity;DarknessRules"
-data "Passives" "CX_Ranger_Hunter_Boost;AttackOfOpportunity;DarknessRules;ExtraAttack;CrossbowExpert_PointBlank;CrossbowExpert_Wounding"
+data "Passives" "CX_Ranger_Hunter_Boost;CX_Martial_Boost;AttackOfOpportunity;DarknessRules;ExtraAttack;CrossbowExpert_PointBlank;CrossbowExpert_Wounding"
 
-// (Given Ranger progressions)
+// (Added Ranger progressions)
 // UCL_Ranger;UCL_Hunter;UCL_2_FightingStyle_Archery;UCL_Generic_Sharpshooter
 new entry "EO_CRE_GithRaider_Hunter_Ranger"
 type "Character"
@@ -193,9 +193,9 @@ using "EO_CRE_GithRaider_Hunter_Ranger"
 // data "Progressions" "06762adc-24d9-4689-8d09-8dfa9182dd4b;7839dbea-69da-441f-9668-f91a904ee6b5;7fa893da-ef8a-458c-a2cf-9de5a0fb0ef4;85ffe605-411e-4f1b-b40b-ebbf2a5372f3"
 data "Progressions" "f0ede459-8b86-48fd-ac11-4432573566a5;06762adc-24d9-4689-8d09-8dfa9182dd4b;7839dbea-69da-441f-9668-f91a904ee6b5;7fa893da-ef8a-458c-a2cf-9de5a0fb0ef4;85ffe605-411e-4f1b-b40b-ebbf2a5372f3"
 // data "Passives" "AttackOfOpportunity;DarknessRules"
-data "Passives" "CX_Ranger_Hunter_Boost;AttackOfOpportunity;DarknessRules;ExtraAttack;CrossbowExpert_PointBlank;CrossbowExpert_Wounding"
+data "Passives" "CX_Ranger_Hunter_Boost;CX_Martial_Boost;AttackOfOpportunity;DarknessRules;ExtraAttack;CrossbowExpert_PointBlank;CrossbowExpert_Wounding"
 
-// (Given Fighter progressions)
+// (Added Fighter progressions)
 // UCL_Fighter;UCL_BattleMaster;UCL_1_FightingStyle_Archery;UCL_Fighter_ActionSurge_Ranged;UCL_Fighter_Sharpshooter
 new entry "EO_CRE_GithRaider_Battlemaster_Fighter"
 type "Character"
@@ -203,9 +203,9 @@ using "EO_CRE_GithRaider_Battlemaster_Fighter"
 // data "Progressions" "1c4c6006-0b49-4dac-954a-5a83b815a695;6ff11c41-24ae-47a7-b969-036b1a75c386;0ed759fc-4856-4568-9405-929d731899dd;52ce2956-83da-4ed2-9107-1ca8db0d9e91;faf76e6f-3c7e-44fe-9a41-3ad79e4914af"
 data "Progressions" "0e6da493-5a37-423b-8c28-629462b22faa;1c4c6006-0b49-4dac-954a-5a83b815a695;6ff11c41-24ae-47a7-b969-036b1a75c386;0ed759fc-4856-4568-9405-929d731899dd;52ce2956-83da-4ed2-9107-1ca8db0d9e91;faf76e6f-3c7e-44fe-9a41-3ad79e4914af"
 // data "Passives" "AttackOfOpportunity;DarknessRules"
-data "Passives" "CX_Fighter_BattleMaster_Boost;AttackOfOpportunity;DarknessRules;ExtraAttack;CrossbowExpert_PointBlank;CrossbowExpert_Wounding"
+data "Passives" "CX_Fighter_BattleMaster_Boost;CX_Martial_Boost;CX_Magic_Boost;AttackOfOpportunity;DarknessRules;ExtraAttack;CrossbowExpert_PointBlank;CrossbowExpert_Wounding"
 
-// (Given Fighter progressions)
+// (Added Fighter progressions)
 // UCL_Fighter;UCL_EldritchKnight;UCL_1_FightingStyle_GreatWeaponFighting;UCL_Fighter_ActionSurge_Melee;UCL_Fighter_Warcaster_TwoHand
 new entry "EO_CRE_GithGish_EldritchKnight_Fighter"
 type "Character"
@@ -213,9 +213,9 @@ using "EO_CRE_GithGish_EldritchKnight_Fighter"
 // data "Progressions" "1c4c6006-0b49-4dac-954a-5a83b815a695;b1316370-2f3d-4f0a-9c09-55e165d17adc;f59de40e-deb6-42e8-820a-e41976ca4deb;e6be4ef3-c002-425e-903e-8595df5c5049;5a2f9fc6-b05d-4fc6-93d4-3052c8292397"
 data "Progressions" "0e6da493-5a37-423b-8c28-629462b22faa;1c4c6006-0b49-4dac-954a-5a83b815a695;b1316370-2f3d-4f0a-9c09-55e165d17adc;f59de40e-deb6-42e8-820a-e41976ca4deb;e6be4ef3-c002-425e-903e-8595df5c5049;5a2f9fc6-b05d-4fc6-93d4-3052c8292397"
 // data "Passives" "WarMagic_Githyanki;AttackOfOpportunity;DarknessRules"
-data "Passives" "CX_Fighter_EldritchKnight_Boost;CX_Spells_L1;CX_Spells_L2;CX_Spells_L3;AttackOfOpportunity;DarknessRules;WarMagic_Githyanki"
+data "Passives" "CX_Fighter_EldritchKnight_Boost;CX_Martial_Boost;CX_Magic_Boost;CX_Spells_L1;CX_Spells_L2;CX_Spells_L3;AttackOfOpportunity;DarknessRules;WarMagic_Githyanki"
 
-// (Given Fighter progressions)
+// (Added Fighter progressions)
 // UCL_Fighter;UCL_BattleMaster;UCL_1_FightingStyle_GreatWeaponFighting;UCL_Fighter_ActionSurge_Melee;UCL_Fighter_TwoHander
 new entry "EO_CRE_GithCaptain_Battlemaster_Fighter"
 type "Character"
@@ -223,9 +223,9 @@ using "EO_CRE_GithCaptain_Battlemaster_Fighter"
 // data "Progressions" "1c4c6006-0b49-4dac-954a-5a83b815a695;b1316370-2f3d-4f0a-9c09-55e165d17adc;f59de40e-deb6-42e8-820a-e41976ca4deb;e6be4ef3-c002-425e-903e-8595df5c5049;5a2f9fc6-b05d-4fc6-93d4-3052c8292397"
 data "Progressions" "0e6da493-5a37-423b-8c28-629462b22faa;1c4c6006-0b49-4dac-954a-5a83b815a695;b1316370-2f3d-4f0a-9c09-55e165d17adc;f59de40e-deb6-42e8-820a-e41976ca4deb;e6be4ef3-c002-425e-903e-8595df5c5049;5a2f9fc6-b05d-4fc6-93d4-3052c8292397"
 // data "Passives" "AttackOfOpportunity;DarknessRules"
-data "Passives" "CX_Fighter_BattleMaster_Boost;AttackOfOpportunity;DarknessRules;ExtraAttack;Parry_Githyanki;Parry_Githyanki_EquipTrigger"
+data "Passives" "CX_Fighter_BattleMaster_Boost;CX_Martial_Boost;AttackOfOpportunity;DarknessRules;ExtraAttack;Parry_Githyanki;Parry_Githyanki_EquipTrigger"
 
-// (Given Cleric progressions)
+// (Added Cleric progressions)
 // UCL_Cleric;UCL_WarDomain;UCL_Generic_Str_Asi
 new entry "EO_CRE_GithTenant_War_Cleric"
 type "Character"
@@ -233,9 +233,9 @@ using "EO_CRE_GithTenant_War_Cleric"
 // data "Progressions" "4577e872-7f55-448b-a6c4-bb3f5a3738b6;f1de97de-081b-428b-a83b-2eb1c3069886;4f22dd35-542c-4aa0-a790-b6c93c3e252f"
 data "Progressions" "36c3f8de-3293-4d7b-92bc-ceb3c569244b;4577e872-7f55-448b-a6c4-bb3f5a3738b6;f1de97de-081b-428b-a83b-2eb1c3069886;4f22dd35-542c-4aa0-a790-b6c93c3e252f"
 // data "Passives" "Parry_Githyanki_EquipTrigger;AttackOfOpportunity;DarknessRules"
-data "Passives" "CX_Cleric_Trickery_Boost;AttackOfOpportunity;DarknessRules;WarMagic_Githyanki;Parry_Githyanki;Parry_Githyanki_EquipTrigger;Surprise_Immunity"
+data "Passives" "CX_Cleric_Trickery_Boost;CX_Magic_Boost;AttackOfOpportunity;DarknessRules;WarMagic_Githyanki;Parry_Githyanki;Parry_Githyanki_EquipTrigger;Surprise_Immunity"
 
-// (Given Paladin progressions)
+// (Added Paladin progressions)
 // UCL_Paladin;UCL_Ancients;UCL_2_FightingStyle_GreatWeaponFighting;UCL_Generic_Str_Asi;UCL_Bonus_Hp
 new entry "EO_Lathanders_Image_Ancient_Paladin"
 type "Character"
@@ -243,17 +243,17 @@ using "EO_Lathanders_Image_Ancient_Paladin"
 // data "Progressions" "14599945-cb3d-461a-9937-8691ac8923ed;ba5b3a18-3c5f-4fd0-977c-701653edfd36;69eae9b0-d17e-429c-9b61-03145d645d0b;4f22dd35-542c-4aa0-a790-b6c93c3e252f;16f7e7c4-f39d-4902-a782-9ca68444e01d"
 data "Progressions" "8726b2c4-edc0-4905-b82f-60a4baba0733;14599945-cb3d-461a-9937-8691ac8923ed;ba5b3a18-3c5f-4fd0-977c-701653edfd36;69eae9b0-d17e-429c-9b61-03145d645d0b;4f22dd35-542c-4aa0-a790-b6c93c3e252f;16f7e7c4-f39d-4902-a782-9ca68444e01d"
 // data "Passives" "AttackOfOpportunity;Alert;HumanMilitia;HumanVersatility;ExtraAttack;DarknessRules"
-data "Passives" "CX_Paladin_Ancients_Boost;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules;Alert;ExtraAttack"
+data "Passives" "CX_Paladin_Ancients_Boost;CX_Martial_Boost;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules;Alert;ExtraAttack"
 
-// (Given Fighter progressions)
+// (Added Fighter progressions)
 // UCL_Fighter;UCL_EldritchKnight;UCL_1_FightingStyle_Dueling;UCL_Fighter_ActionSurge_Melee;UCL_Generic_Str_Asi
 new entry "EO_Lathander_Guard_Eldritch_Fighter"
 type "Character"
 using "EO_Lathander_Guard_Eldritch_Fighter"
 // data "Passives" "AttackOfOpportunity;HumanMilitia;HumanVersatility;DarknessRules"
-data "Passives" "CX_Fighter_EldritchKnight_Boost;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules"
+data "Passives" "CX_Fighter_EldritchKnight_Boost;CX_Martial_Boost;CX_Magic_Boost;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules"
 
-// (Given Cleric progressions)
+// (Added Cleric progressions)
 // UCL_Cleric;UCL_LightDomain;UCL_Warcaster_Wis
 new entry "EO_Lathander_Guard_Light_Cleric"
 type "Character"
@@ -261,7 +261,7 @@ using "EO_Lathander_Guard_Light_Cleric"
 // data "Progressions" "4577e872-7f55-448b-a6c4-bb3f5a3738b6;55d4818d-3191-42ef-9719-a66b4ff29811;61ae4889-e080-4e29-a6a9-a68c240744bf"
 data "Progressions" "36c3f8de-3293-4d7b-92bc-ceb3c569244b;4577e872-7f55-448b-a6c4-bb3f5a3738b6;55d4818d-3191-42ef-9719-a66b4ff29811;61ae4889-e080-4e29-a6a9-a68c240744bf"
 // data "Passives" "AttackOfOpportunity;HumanMilitia;HumanVersatility;DarknessRules"
-data "Passives" "CX_Cleric_Light_Boost;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules"
+data "Passives" "CX_Cleric_Light_Boost;CX_Magic_Boost;;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules"
 
 ///////////////////////////////////
 //                               //
@@ -281,9 +281,9 @@ new entry "EO_Skeleton_Melee"
 type "Character"
 using "EO_Skeleton_Melee"
 // data "Passives" "ImmuneToDisarm;SkeletonDeath_Check;AttackOfOpportunity;Darkvision;DarknessRules;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check"
-data "Passives" "CX_Fighter_BattleMaster_Boost;ImmuneToDisarm;SkeletonDeath_Check;AttackOfOpportunity;Darkvision;DarknessRules;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check"
+data "Passives" "CX_Fighter_BattleMaster_Boost;CX_Martial_Boost;;ImmuneToDisarm;SkeletonDeath_Check;AttackOfOpportunity;Darkvision;DarknessRules;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check"
 
-// (Given Wizard progressions)
+// (Added Wizard progressions)
 // UCL_Wizard;UCL_NecromancySchool;UCL_Wizard_FireShield_Chill;UCL_WarCaster_Int
 new entry "EO_SCL_Necromancer_Wizard_7"
 type "Character"
@@ -291,9 +291,9 @@ using "EO_SCL_Necromancer_Wizard_7"
 // data "Progressions" "7eefd2dd-5aab-4349-9c22-7c38afe133c4;20c3aeb1-8a5c-4a62-8a21-78b488c3bca8;585820e7-5836-494b-8ee3-ed26673f5821;82f2fa2c-0ac8-458a-b1a3-2d82cd4f6639"
 data "Progressions" "44bdbc5e-a003-4d61-87f0-5ced20d3804e;7eefd2dd-5aab-4349-9c22-7c38afe133c4;20c3aeb1-8a5c-4a62-8a21-78b488c3bca8;585820e7-5836-494b-8ee3-ed26673f5821;82f2fa2c-0ac8-458a-b1a3-2d82cd4f6639"
 // data "Passives" "FeyAncestry;AttackOfOpportunity;DarknessRules;Darkvision"
-data "Passives" "CX_Wizard_Necromancy_Boost;FeyAncestry;AttackOfOpportunity;DarknessRules;Darkvision"
+data "Passives" "CX_Wizard_Necromancy_Boost;CX_Magic_Boost;FeyAncestry;AttackOfOpportunity;DarknessRules;Darkvision"
 
-// (Given Sorcerer progressions)
+// (Added Sorcerer progressions)
 // UCL_Sorcerer;UCL_DraconicBloodline;UCL_DraconicBloodline_Blue;UCL_Generic_Cha_Asi
 new entry "EO_Windego"
 type "Character"
@@ -301,9 +301,9 @@ using "EO_Windego"
 // data "Progressions" "e93883b2-b593-4101-9c97-d6b8c454c053;348f783f-d3b8-4a05-9bc7-b13217990a50;7680ac46-02fa-4109-97cc-51348846a162;b40ab293-676f-41d4-919e-bf1f36643548"
 data "Progressions" "2189a72d-6489-4621-8b2c-85d3e7df2f6f;e93883b2-b593-4101-9c97-d6b8c454c053;348f783f-d3b8-4a05-9bc7-b13217990a50;7680ac46-02fa-4109-97cc-51348846a162;b40ab293-676f-41d4-919e-bf1f36643548"
 // data "Passives" "UCL_Metamagic_Heightened_NPC;Ethereal;Darkvision;IncorporealMovement;AttackOfOpportunity;DarknessRules;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check"
-data "Passives" "CX_Sorcerer_Draconic_Boost;UCL_Metamagic_Heightened_NPC;Ethereal;Darkvision;IncorporealMovement;AttackOfOpportunity;DarknessRules;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check"
+data "Passives" "CX_Sorcerer_Draconic_Boost;CX_Magic_Boost;;UCL_Metamagic_Heightened_NPC;Ethereal;Darkvision;IncorporealMovement;AttackOfOpportunity;DarknessRules;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check"
 
-// (Given Monk progressions)
+// (Added Monk progressions)
 // UCL_FourElements_Thief;UCL_Bonus_Hp
 new entry "EO_Monk_FourElements_Thief"
 type "Character"
@@ -311,7 +311,7 @@ using "EO_Monk_FourElements_Thief"
 // data "Progressions" "3c756b75-579d-4a6e-9248-4a660261c524;16f7e7c4-f39d-4902-a782-9ca68444e01d"
 data "Progressions" "878630d0-136a-4dc9-aa2a-a0a123d3a107;3c756b75-579d-4a6e-9248-4a660261c524;16f7e7c4-f39d-4902-a782-9ca68444e01d"
 // data "Passives" "UCL_Haste;Surprise_Immunity;FeyAncestry;AttackOfOpportunity;Darkvision;DarknessRules"
-data "Passives" "CX_Monk_FourElements_Boost;FeyAncestry;AttackOfOpportunity;Darkvision;DarknessRules;UCL_Haste;Surprise_Immunity;"
+data "Passives" "CX_Monk_FourElements_Boost;CX_Martial_Boost;FeyAncestry;AttackOfOpportunity;Darkvision;DarknessRules;UCL_Haste;Surprise_Immunity;"
 
 new entry "EO_SkullLord"
 type "Character"
@@ -319,7 +319,7 @@ using "Skeleton_Caster"
 // data "Passives" "Evasion;LandsStride_DifficultTerrain;TurnResistance;EmpoweredEvocation;PotentCantrip;SculptSpells;DevilsSight;SkeletonDeath_Check;AttackOfOpportunity;DarknessRules;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check"
 data "Passives" "CX_Martial_Boost;AttackOfOpportunity;DarknessRules;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check;Evasion;LandsStride_DifficultTerrain;TurnResistance;EmpoweredEvocation;PotentCantrip;SculptSpells;DevilsSight;SkeletonDeath_Check"
 
-// (Given Cleric progressions)
+// (Added Cleric progressions)
 // UCL_Cleric;UCL_WarDomain;UCL_Generic_Str_Asi
 new entry "EO_SCL_Cutlist_War_Cleric"
 type "Character"
@@ -327,9 +327,9 @@ using "EO_SCL_Cutlist_War_Cleric"
 // data "Progressions" "4577e872-7f55-448b-a6c4-bb3f5a3738b6;f1de97de-081b-428b-a83b-2eb1c3069886;4f22dd35-542c-4aa0-a790-b6c93c3e252f"
 data "Progressions" "36c3f8de-3293-4d7b-92bc-ceb3c569244b;4577e872-7f55-448b-a6c4-bb3f5a3738b6;f1de97de-081b-428b-a83b-2eb1c3069886;4f22dd35-542c-4aa0-a790-b6c93c3e252f"
 // data "Passives" "UCL_LightInfusedWeapons;TAD_Charm;FeyAncestry;SunlightSensitivity;AttackOfOpportunity;DarknessRules;Darkvision"
-data "Passives" "CX_Cleric_War_Boost;FeyAncestry;SunlightSensitivity;AttackOfOpportunity;DarknessRules;Darkvision;UCL_LightInfusedWeapons;TAD_Charm"
+data "Passives" "CX_Cleric_War_Boost;CX_Martial_Boost;CX_Magic_Boost;FeyAncestry;SunlightSensitivity;AttackOfOpportunity;DarknessRules;Darkvision;UCL_LightInfusedWeapons;TAD_Charm"
 
-// (Given Sorcerer progressions)
+// (Added Sorcerer progressions)
 // UCL_Sorcerer;UCL_WildMagic;UCL_Generic_Cha_Asi
 new entry "EO_SCL_Cutlist_WildMagic_Sorcerer"
 type "Character"
@@ -337,9 +337,9 @@ using "EO_SCL_Cutlist_WildMagic_Sorcerer"
 // data "Progressions" "e93883b2-b593-4101-9c97-d6b8c454c053;a84b7bc9-88f4-4861-9bcb-77a2fd17cd12;b40ab293-676f-41d4-919e-bf1f36643548"
 data "Progressions" "2189a72d-6489-4621-8b2c-85d3e7df2f6f;e93883b2-b593-4101-9c97-d6b8c454c053;a84b7bc9-88f4-4861-9bcb-77a2fd17cd12;b40ab293-676f-41d4-919e-bf1f36643548"
 // data "Passives" "UCL_Metamagic_Heightened_NPC;TAD_Charm;Halfling_Lucky;Halfling_Brave;AttackOfOpportunity;DarknessRules"
-data "Passives" "CX_Sorcerer_WildMagic_Boost;Halfling_Lucky;Halfling_Brave;AttackOfOpportunity;DarknessRules;UCL_Metamagic_Heightened_NPC;TAD_Charm"
+data "Passives" "CX_Sorcerer_WildMagic_Boost;CX_Magic_Boost;Halfling_Lucky;Halfling_Brave;AttackOfOpportunity;DarknessRules;UCL_Metamagic_Heightened_NPC;TAD_Charm"
 
-// (Given Paladin progressions)
+// (Added Paladin progressions)
 // UCL_Paladin;UCL_Ancients;UCL_2_FightingStyle_GreatWeaponFighting;UCL_Generic_TwoHander
 new entry "EO_SCL_Harper_Devotion_Paladin"
 type "Character"
@@ -347,9 +347,9 @@ using "EO_SCL_Harper_Devotion_Paladin"
 // data "Progressions" "14599945-cb3d-461a-9937-8691ac8923ed;3835c8ee-0200-4dd2-a6c2-fd4c518dd5f4;69eae9b0-d17e-429c-9b61-03145d645d0b;36d19089-578d-474f-bfa0-b37f14a138c8"
 data "Progressions" "8726b2c4-edc0-4905-b82f-60a4baba0733;14599945-cb3d-461a-9937-8691ac8923ed;3835c8ee-0200-4dd2-a6c2-fd4c518dd5f4;69eae9b0-d17e-429c-9b61-03145d645d0b;36d19089-578d-474f-bfa0-b37f14a138c8"
 // data "Passives" "AttackOfOpportunity;Tiefling_HellishResistance;DarknessRules;Darkvision"
-data "Passives" "CX_Paladin_Ancients_Boost;Tiefling_HellishResistanceAttackOfOpportunity;DarknessRules;Darkvision"
+data "Passives" "CX_Paladin_Ancients_Boost;CX_Martial_Boost;Tiefling_HellishResistanceAttackOfOpportunity;DarknessRules;Darkvision"
 
-// (Given Ranger progressions)
+// (Added Ranger progressions)
 // UCL_Ranger;UCL_BeastMaster;UCL_2_FightingStyle_Archery;UCL_Familiar;UCL_Generic_Sharpshooter
 new entry "EO_SCL_Harper_Beastmaster_Ranger"
 type "Character"
@@ -357,9 +357,9 @@ using "EO_SCL_Harper_Beastmaster_Ranger"
 // data "Progressions" "06762adc-24d9-4689-8d09-8dfa9182dd4b;a2e24907-b783-4cf7-b240-0e2ce563a256;7fa893da-ef8a-458c-a2cf-9de5a0fb0ef4;4318cdb8-c4fe-404f-a703-5ba88baaf65c;85ffe605-411e-4f1b-b40b-ebbf2a5372f3"
 data "Progressions" "f0ede459-8b86-48fd-ac11-4432573566a5;06762adc-24d9-4689-8d09-8dfa9182dd4b;a2e24907-b783-4cf7-b240-0e2ce563a256;7fa893da-ef8a-458c-a2cf-9de5a0fb0ef4;4318cdb8-c4fe-404f-a703-5ba88baaf65c;85ffe605-411e-4f1b-b40b-ebbf2a5372f3"
 // data "Passives" "FeyAncestry;AttackOfOpportunity;DarknessRules;Darkvision"
-data "Passives" "CX_Ranger_BeastMaster_Boost;FeyAncestry;AttackOfOpportunity;DarknessRules;Darkvision"
+data "Passives" "CX_Ranger_BeastMaster_Boost;CX_Martial_Boost;FeyAncestry;AttackOfOpportunity;DarknessRules;Darkvision"
 
-// (Given Warlock progressions)
+// (Added Warlock progressions)
 // UCL_Warlock;UCL_Archfey;UCL_Familiar;UCL_EldritchBlaster_2;UCL_Generic_Cha_Asi
 new entry "EO_SCL_Archfey_Warlock"
 type "Character"
@@ -367,18 +367,18 @@ using "EO_SCL_Archfey_Warlock"
 // data "Progressions" "f34419b6-a50a-46c2-9eb9-28264fd71c55;a80c1ba4-e6a7-46fe-9bc8-d8fbfdf0866b;4318cdb8-c4fe-404f-a703-5ba88baaf65c;4b87365a-69a3-4863-8d2f-4f30f630cbeb;b40ab293-676f-41d4-919e-bf1f36643548"
 data "Progressions" "51274504-865d-46d1-a3b6-c72e9384904a;f34419b6-a50a-46c2-9eb9-28264fd71c55;a80c1ba4-e6a7-46fe-9bc8-d8fbfdf0866b;4318cdb8-c4fe-404f-a703-5ba88baaf65c;4b87365a-69a3-4863-8d2f-4f30f630cbeb;b40ab293-676f-41d4-919e-bf1f36643548"
 // data "Passives" "HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules"
-data "Passives" "CX_Warlock_Archfey_Boost;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules"
+data "Passives" "CX_Warlock_Archfey_Boost;CX_Magic_Boost;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules"
 
-// (Given Warlock progressions)
+// (Added Warlock progressions)
 // UCL_Warlock;UCL_Fathomless;UCL_Familiar;UCL_EldritchBlaster_2;UCL_Generic_Cha_Asi
-// Note that this NPC is given Fathomless progressions from the mod, but roulette will still give it another vanilla subclass boost. Currently no way to exclude NPCs from rolling a subclass
+// Note that this NPC is Added Fathomless progressions from the mod, but roulette will still give it another vanilla subclass boost. Currently no way to exclude NPCs from rolling a subclass
 new entry "EO_SCL_Fathomless_Warlock"
 type "Character"
 using "EO_SCL_Fathomless_Warlock"
 // data "Progressions" "f34419b6-a50a-46c2-9eb9-28264fd71c55;9c4763f3-c485-4572-9991-b0f5385d61ce;4318cdb8-c4fe-404f-a703-5ba88baaf65c;4b87365a-69a3-4863-8d2f-4f30f630cbeb;b40ab293-676f-41d4-919e-bf1f36643548"
 data "Progressions" "51274504-865d-46d1-a3b6-c72e9384904a;f34419b6-a50a-46c2-9eb9-28264fd71c55;9c4763f3-c485-4572-9991-b0f5385d61ce;4318cdb8-c4fe-404f-a703-5ba88baaf65c;4b87365a-69a3-4863-8d2f-4f30f630cbeb;b40ab293-676f-41d4-919e-bf1f36643548"
 // data "Passives" "TAD_Charm;Darkvision;RelentlessEndurance;SavageAttacks;AttackOfOpportunity;DarknessRules"
-data "Passives" "AttackOfOpportunity;DarknessRules;TAD_Charm;Darkvision;RelentlessEndurance;SavageAttacks"
+data "Passives" "CX_Magic_Boost;AttackOfOpportunity;DarknessRules;TAD_Charm;Darkvision;RelentlessEndurance;SavageAttacks"
 
 // UCL_Bloodhunter;UCL_Bloodhunter_ProfaneSoul_Fathomless;UCL_CrimsonRite_Frozen;UCL_2_FightingStyle_Archery;UCL_Generic_Sharpshooter
 new entry "EO_SCL_Profane_Bloodhunter"
@@ -401,7 +401,7 @@ using "EO_SCL_Mutant_Bloodhunter"
 // data "Passives" "UCL_WizardBane_OnCombatStart;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules;Darkvision"
 data "Passives" "CX_Martial_Boost;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules;Darkvision;UCL_WizardBane_OnCombatStart"
 
-// (Given Cleric progressions)
+// (Added Cleric progressions)
 // UCL_Cleric;UCL_TrickeryDomain;UCL_Warcaster_Wis;UCL_Bonus_Hp
 new entry "EO_SCL_WingedCommander_Trickery_Cleric"
 type "Character"
@@ -409,9 +409,9 @@ using "EO_SCL_WingedCommander_Trickery_Cleric"
 // data "Progressions" "4577e872-7f55-448b-a6c4-bb3f5a3738b6;7b8f76a2-8e55-4ca4-abd5-7c69f3256cac;61ae4889-e080-4e29-a6a9-a68c240744bf;16f7e7c4-f39d-4902-a782-9ca68444e01d"
 data "Progressions" "36c3f8de-3293-4d7b-92bc-ceb3c569244b;4577e872-7f55-448b-a6c4-bb3f5a3738b6;7b8f76a2-8e55-4ca4-abd5-7c69f3256cac;61ae4889-e080-4e29-a6a9-a68c240744bf;16f7e7c4-f39d-4902-a782-9ca68444e01d"
 // data "Passives" "UCL_BrewerPoison_OnCombatStart;Alert;TAD_PsionicBacklash;TAD_LuckOfTheFarRealms;TAD_DrainAbility;TAD_Charm;AttackOfOpportunity;DarknessRules;Darkvision"
-data "Passives" "CX_Cleric_Trickery_Boost;AttackOfOpportunity;DarknessRules;Darkvision;UCL_BrewerPoison_OnCombatStart;Alert;TAD_PsionicBacklash;TAD_LuckOfTheFarRealms;TAD_DrainAbility;TAD_Charm"
+data "Passives" "CX_Cleric_Trickery_Boost;CX_Magic_Boost;AttackOfOpportunity;DarknessRules;Darkvision;UCL_BrewerPoison_OnCombatStart;Alert;TAD_PsionicBacklash;TAD_LuckOfTheFarRealms;TAD_DrainAbility;TAD_Charm"
 
-// // (Given Cleric progressions)
+// // (Added Cleric progressions)
 // UCL_Cleric;UCL_TrickeryDomain;UCL_Warcaster_Wis
 new entry "EO_SCL_WingedCommander_Illusion"
 type "Character"
@@ -419,9 +419,9 @@ using "EO_SCL_WingedCommander_Illusion"
 // data "Progressions" "4577e872-7f55-448b-a6c4-bb3f5a3738b6;7b8f76a2-8e55-4ca4-abd5-7c69f3256cac;61ae4889-e080-4e29-a6a9-a68c240744bf"
 data "Progressions" "36c3f8de-3293-4d7b-92bc-ceb3c569244b;4577e872-7f55-448b-a6c4-bb3f5a3738b6;7b8f76a2-8e55-4ca4-abd5-7c69f3256cac;61ae4889-e080-4e29-a6a9-a68c240744bf"
 // data "Passives" "UCL_BrewerPoison_OnCombatStart;AttackOfOpportunity;DarknessRules;Darkvision"
-data "Passives" "CX_Cleric_Trickery_Boost;AttackOfOpportunity;DarknessRules;Darkvision;UCL_BrewerPoison_OnCombatStart;"
+data "Passives" "CX_Cleric_Trickery_Boost;CX_Magic_Boost;AttackOfOpportunity;DarknessRules;Darkvision;UCL_BrewerPoison_OnCombatStart;"
 
-// (Given Wizard progressions)
+// (Added Wizard progressions)
 // UCL_Wizard;UCL_NecromancySchool;UCL_Wizard_FireShield_Chill;UCL_WarCaster_Int
 new entry "EO_SCL_Necromancer_Wizard_9"
 type "Character"
@@ -429,9 +429,9 @@ using "EO_SCL_Necromancer_Wizard_9"
 // data "Progressions" "7eefd2dd-5aab-4349-9c22-7c38afe133c4;20c3aeb1-8a5c-4a62-8a21-78b488c3bca8;585820e7-5836-494b-8ee3-ed26673f5821;82f2fa2c-0ac8-458a-b1a3-2d82cd4f6639"
 data "Progressions" "44bdbc5e-a003-4d61-87f0-5ced20d3804e;7eefd2dd-5aab-4349-9c22-7c38afe133c4;20c3aeb1-8a5c-4a62-8a21-78b488c3bca8;585820e7-5836-494b-8ee3-ed26673f5821;82f2fa2c-0ac8-458a-b1a3-2d82cd4f6639"
 // data "Passives" "TAD_Charm;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules;Darkvision"
-data "Passives" "CX_Wizard_Necromancy_Boost;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules;Darkvision;TAD_Charm"
+data "Passives" "CX_Wizard_Necromancy_Boost;CX_Magic_Boost;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules;Darkvision;TAD_Charm"
 
-// (Given Druid progressions)
+// (Added Druid progressions)
 // UCL_Druid;UCL_CircleOfTheSpores;UCL_Warcaster_Wis
 new entry "EO_SCL_Spore_Druid"
 type "Character"
@@ -439,9 +439,9 @@ using "EO_SCL_Spore_Druid"
 // data "Progressions" "7eefd2dd-5aab-4349-9c22-7c38afe133c4;20c3aeb1-8a5c-4a62-8a21-78b488c3bca8;585820e7-5836-494b-8ee3-ed26673f5821;82f2fa2c-0ac8-458a-b1a3-2d82cd4f6639"
 data "Progressions" "7e76da16-650c-4a6e-85b0-f9e23a7f5a60;7eefd2dd-5aab-4349-9c22-7c38afe133c4;20c3aeb1-8a5c-4a62-8a21-78b488c3bca8;585820e7-5836-494b-8ee3-ed26673f5821;82f2fa2c-0ac8-458a-b1a3-2d82cd4f6639"
 // data "Passives" "TAD_Charm;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules;Darkvision"
-data "Passives" "CX_Druid_Spores_Boost;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules;Darkvision;TAD_Charm"
+data "Passives" "CX_Druid_Spores_Boost;CX_Magic_Boost;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules;Darkvision;TAD_Charm"
 
-// (Given Wizard progressions)
+// (Added Wizard progressions)
 // UCL_Wizard;UCL_BladesingingSchool;UCL_Wizard_FireShield_Warm;UCL_Mobile_WarCaster
 new entry "EO_SCL_Bladesinger_Wizard"
 type "Character"
@@ -449,9 +449,9 @@ using "EO_SCL_Bladesinger_Wizard"
 // data "Progressions" "7eefd2dd-5aab-4349-9c22-7c38afe133c4;ea47cc9f-e900-45a9-8c17-186730251946;bcd44f73-cadc-4caf-a213-1287c3af7b56;6c0f42ea-069d-42cd-b9cd-5a9b926927e2"
 data "Progressions" "44bdbc5e-a003-4d61-87f0-5ced20d3804e;7eefd2dd-5aab-4349-9c22-7c38afe133c4;ea47cc9f-e900-45a9-8c17-186730251946;bcd44f73-cadc-4caf-a213-1287c3af7b56;6c0f42ea-069d-42cd-b9cd-5a9b926927e2"
 // data "Passives" "UCL_DrowPoison_OnCombatStart;TAD_Charm;FeyAncestry;AttackOfOpportunity;DarknessRules;Darkvision"
-data "Passives" "FeyAncestry;AttackOfOpportunity;DarknessRules;Darkvision;UCL_DrowPoison_OnCombatStart;TAD_Charm"
+data "Passives" "CX_Martial_Boost;CX_Magic_Boost;FeyAncestry;AttackOfOpportunity;DarknessRules;Darkvision;UCL_DrowPoison_OnCombatStart;TAD_Charm"
 
-// (Given Bard progressions)
+// (Added Bard progressions)
 // UCL_Bard;UCL_SwordsCollege;UCL_3_FightingStyle_Dueling;UCL_WarCaster_Cha
 new entry "EO_SCL_Sword_Bard"
 type "Character"
@@ -459,9 +459,9 @@ using "EO_SCL_Sword_Bard"
 // data "Progressions" "ef851978-e229-4b50-afd2-8a4e80c5b4a1;2375ac5d-f13b-4a8b-8f1d-da0141cc9b79;3504d210-747c-4efa-9957-6ec94dcdcf81;6bbf9cb8-ff20-4f15-b4c4-171742213498"
 data "Progressions" "cbe5059f-7a9f-4b98-be6a-07c9cd8e02c2;ef851978-e229-4b50-afd2-8a4e80c5b4a1;2375ac5d-f13b-4a8b-8f1d-da0141cc9b79;3504d210-747c-4efa-9957-6ec94dcdcf81;6bbf9cb8-ff20-4f15-b4c4-171742213498"
 // data "Passives" "UCL_SerpentVenom_OnCombatStart;TAD_Charm;FeyAncestry;AttackOfOpportunity;DarknessRules;Darkvision"
-data "Passives" "CX_Bard_Swords_Boost;FeyAncestry;AttackOfOpportunity;DarknessRules;Darkvision;UCL_SerpentVenom_OnCombatStart;TAD_Charm"
+data "Passives" "CX_Bard_Swords_Boost;CX_Martial_Boost;CX_Magic_Boost;FeyAncestry;AttackOfOpportunity;DarknessRules;Darkvision;UCL_SerpentVenom_OnCombatStart;TAD_Charm"
 
-// (Given Ranger progressions)
+// (Added Ranger progressions)
 // UCL_GloomStalker_Assassin;UCL_2_FightingStyle_TwoWeaponFighting;UCL_Generic_Dex_Asi
 new entry "EO_SCL_Bhaal_Gloomstalker_Assassin"
 type "Character"
@@ -469,9 +469,9 @@ using "EO_SCL_Bhaal_Gloomstalker_Assassin"
 // data "Progressions" "0dee541e-da49-439b-aac3-568a61be4fb4;5b91e529-a3bb-4fcd-bd59-de914b46f2fa;defed003-fb89-41b8-b59f-a57dae9e50de"
 data "Progressions" "f0ede459-8b86-48fd-ac11-4432573566a5;0dee541e-da49-439b-aac3-568a61be4fb4;5b91e529-a3bb-4fcd-bd59-de914b46f2fa;defed003-fb89-41b8-b59f-a57dae9e50de"
 // data "Passives" "UCL_FrostOil_OnCombatStart;TAD_Charm;TAD_DrainAbility;MurderHungry;Tiefling_HellishResistance;AttackOfOpportunity;SuperiorDarkvision;DarknessRules"
-data "Passives" "CX_Ranger_GloomStalker_Boost;Tiefling_HellishResistance;AttackOfOpportunity;SuperiorDarkvision;DarknessRules;UCL_FrostOil_OnCombatStart;TAD_Charm;TAD_DrainAbility;MurderHungry"
+data "Passives" "CX_Ranger_GloomStalker_Boost;CX_Martial_Boost;Tiefling_HellishResistance;AttackOfOpportunity;SuperiorDarkvision;DarknessRules;UCL_FrostOil_OnCombatStart;TAD_Charm;TAD_DrainAbility;MurderHungry"
 
-// (Given Cleric progressions)
+// (Added Cleric progressions)
 // UCL_Cleric;UCL_DeathDomain;UCL_Warcaster_Wis
 // In the absence of the actual CX_Cleric_Death_Boost passive being implemented, putting War for now as a placeholder since Death is also a relatively martial/melee focused Cleric subclass
 new entry "EO_SCL_Myrkul_Death_Cleric"
@@ -480,7 +480,7 @@ using "EO_SCL_Myrkul_Death_Cleric"
 // data "Progressions" "4577e872-7f55-448b-a6c4-bb3f5a3738b6;a2a89b3b-945c-4fb0-a8a5-dd682206e3ab;61ae4889-e080-4e29-a6a9-a68c240744bf"
 data "Progressions" "36c3f8de-3293-4d7b-92bc-ceb3c569244b;4577e872-7f55-448b-a6c4-bb3f5a3738b6;a2a89b3b-945c-4fb0-a8a5-dd682206e3ab;61ae4889-e080-4e29-a6a9-a68c240744bf"
 // data "Passives" "UCL_FrostOil_OnCombatStart;TAD_DrainAbility;TAD_Charm;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules"
-data "Passives" "CX_Cleric_War_Boost;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules;UCL_FrostOil_OnCombatStart;TAD_DrainAbility;TAD_Charm"
+data "Passives" "CX_Cleric_War_Boost;CX_Martial_Boost;CX_Magic_Boost;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules;UCL_FrostOil_OnCombatStart;TAD_DrainAbility;TAD_Charm"
 
 // UCL_Artificer;UCL_BattleSmith;UCL_Artificer_Generic_Infusion;UCL_Int_Sharpshooter
 new entry "EO_SCL_Banite_Artificer"
