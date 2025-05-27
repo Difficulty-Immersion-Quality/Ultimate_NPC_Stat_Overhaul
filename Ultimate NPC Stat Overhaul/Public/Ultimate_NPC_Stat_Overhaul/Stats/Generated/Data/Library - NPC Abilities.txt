@@ -1,6 +1,102 @@
 // ==================================== Barbarian - Rage ====================================
 // In the progressions the original rage is removed and replaced with "Shout_Rage_Frenzy". We can replicate this via "CombatAIOverrideSpell", to force the AI to use the coolest Rage they have. We also prevent them from rage spamming, by checking if they already have an active rage. This is important when using mods such as "Dynamic Wildheart Barbarian" by Armarui.
 
+// Ogre stuff // TODO: Not ghetto ass implementations to avoid busted animations
+new entry "RageUnlock"
+type "PassiveData"
+using "RageUnlock"
+// data "Boosts" "UnlockSpell(Shout_Rage)"
+data "Boosts" "IF(not Tagged('OGRE')):UnlockSpell(Shout_Rage)"
+
+new entry "RageFrenzyUnlock"
+type "PassiveData"
+using "RageFrenzyUnlock"
+// data "Boosts" "UnlockSpell(Shout_Rage_Frenzy)"
+data "Boosts" "IF(not Tagged('OGRE')):UnlockSpell(Shout_Rage_Frenzy)"
+
+new entry "Goon_Woman_Ogre_Strong_And_Kinda_Hot_When_She_Rages_Skibidi_Rizz_Up_Her_Swamp_Ongfr"
+type "PassiveData"
+data "Properties" "IsHidden"
+// Buthir's Wrath
+data "DisplayName" "h6b5fc06cga008g4daaga6bcgf0001f71a482;1"
+// Buthir is enraged! &lt;LSTag Tooltip="Strength"&gt;Strength&lt;/LSTag&gt; increased by 4, &lt;LSTag Tooltip="ArmourClass"&gt;Armour Class&lt;/LSTag&gt; reduced by 2.
+data "Description" "he4f084d0g0bbcg4b59g8d01g38e0786dff09;1"
+data "Icon" "statIcons_ButhirsWrath"
+data "BoostContext" "OnStatusApplied;OnStatusRemoved"
+data "BoostConditions" "StatusHasStatusGroup(context.StatusId, 'SG_Rage') and not StatusId('FOR_OGRE_ENRAGE',context.Source) and not StatusId('GOB_OGRE_ENRAGE',context.Source)"
+data "Boosts" "Ability(Strength, 4);AC(-2)"
+
+new entry "Goon_Woman_Ogre_Strong_And_Kinda_Hot_When_She_Rages_Skibidi_Rizz_Up_Her_Swamp_Ongfr_2"
+type "PassiveData"
+// data "Properties" "IsHidden"
+// Polma's Wrath
+data "DisplayName" "h027cb16egeb92g4fdagb7f3g2537ced5437b;1"
+// Polma is enraged! &lt;LSTag Tooltip="Strength"&gt;Strength&lt;/LSTag&gt; increased by 4, &lt;LSTag Tooltip="ArmourClass"&gt;Armour Class&lt;/LSTag&gt; reduced by 2.
+data "Description" "h5448bf3bgcb5fg4146gb50fg987baf4c9272;1"
+data "Icon" "statIcons_ButhirsWrath"
+data "BoostContext" "OnStatusApplied;OnStatusRemoved"
+// data "BoostConditions" "HasStatus('SG_Rage') and not HasStatus('FOR_OGRE_ENRAGE') and not HasStatus('GOB_OGRE_ENRAGE')"
+// data "StatsFunctors" "ApplyStatus(GOON_WOMAN_OGRE_ANGRY,100,-1)"
+data "Boosts" "IF(HasStatus('SG_Rage') and not HasStatus('FOR_OGRE_ENRAGE') and not HasStatus('GOB_OGRE_ENRAGE')):Ability(Strength, 4);IF(HasStatus('SG_Rage') and not HasStatus('FOR_OGRE_ENRAGE') and not HasStatus('GOB_OGRE_ENRAGE')):AC(-2)"
+
+// new entry "GOON_WOMAN_OGRE_ANGRY"
+// type "StatusData"
+// data "StatusType" "BOOST"
+// // Polma's Wrath
+// data "DisplayName" "h027cb16egeb92g4fdagb7f3g2537ced5437b;1"
+// // Polma is enraged! &lt;LSTag Tooltip="Strength"&gt;Strength&lt;/LSTag&gt; increased by 4, &lt;LSTag Tooltip="ArmourClass"&gt;Armour Class&lt;/LSTag&gt; reduced by 2.
+// data "Description" "h5448bf3bgcb5fg4146gb50fg987baf4c9272;1"
+// data "Boosts" "Ability(Strength, 4);AC(-2)"
+// data "RemoveConditions" "not HasStatus('SG_Rage') or HasStatus('FOR_OGRE_ENRAGE') or HasStatus('GOB_OGRE_ENRAGE')"
+// data "RemoveEvents" "OnStatusApplied;OnStatusRemoved"
+
+new entry "Goon_Rage_Ogre_Passive"
+type "PassiveData"
+data "Properties" "IsHidden"
+data "Boosts" "IF(not HasPassive('CX_Barbarian_Berserker_Boost',context.Source)):UnlockSpell(Goon_Shout_Rage_Ogre);IF(HasPassive('CX_Barbarian_Berserker_Boost',context.Source)):UnlockSpell(Goon_Shout_Rage_Frenzy_Ogre)"
+
+new entry "Goon_Rage_Ogre_Passive"
+type "PassiveData"
+data "Properties" "IsHidden"
+data "Boosts" "IF(not HasPassive('CX_Barbarian_Berserker_Boost',context.Source)):UnlockSpell(Goon_Shout_Rage_Ogre);IF(HasPassive('CX_Barbarian_Berserker_Boost',context.Source)):UnlockSpell(Goon_Shout_Rage_Frenzy_Ogre)"
+
+new entry "Goon_Shout_Rage_Ogre"
+type "SpellData"
+data "SpellType" "Shout"
+using "Shout_Rage"
+data "SpellProperties" "AI_IGNORE:ApplyStatus(GOON_RAGE_OGRE,100,10);ApplyStatus(RAGE_MUTE,100,10);AI_ONLY:IF(HasActionResource('ActionPoint', 1, 0, false)):ApplyStatus(AI_HELPER_RAGE,100,1)"
+data "SpellAnimation" "5e57443f-284e-47b2-915e-5b6417db269c,,;d8b7f668-db2b-43b0-9707-5da2ed2cf27e,,;7521e279-1bb3-4105-b32d-8206234836a3,,;d172e037-7041-4352-9a20-5f4b185f9ef1,,;5bcdefbb-2194-46c2-ac77-0b2d8472a5f7,,;,,;,,;,,;,,"
+data "RequirementConditions" "not HasStatus('SG_Rage') and not HasStatus('CALM_EMOTIONS')"
+data "CombatAIOverrideSpell" ""
+
+new entry "GOON_RAGE_OGRE"
+type "StatusData"
+data "StatusType" "BOOST"
+using "RAGE"
+// data "Boosts" "Tag(VFX_RAGE);UnlockSpell(Shout_EndRage);Attribute(ForceMainhandAlternativeEquipBones);"
+data "Boosts" "Tag(VFX_RAGE);UnlockSpell(Shout_EndRage)"
+// data "DynamicAnimationTag" "b6aa23c3-c96d-42d5-8ffa-8d441d18faa7"
+data "DynamicAnimationTag" ""
+
+// Ogre stuff
+new entry "Goon_Shout_Rage_Frenzy_Ogre"
+type "SpellData"
+data "SpellType" "Shout"
+using "Shout_Rage_Frenzy"
+data "SpellProperties" "AI_IGNORE:ApplyStatus(GOON_RAGE_FRENZY_OGRE,100,10);AI_ONLY:IF(HasActionResource('ActionPoint', 1, 0, false)):ApplyStatus(AI_HELPER_RAGE,100,1)"
+data "SpellAnimation" "5e57443f-284e-47b2-915e-5b6417db269c,,;d8b7f668-db2b-43b0-9707-5da2ed2cf27e,,;7521e279-1bb3-4105-b32d-8206234836a3,,;d172e037-7041-4352-9a20-5f4b185f9ef1,,;5bcdefbb-2194-46c2-ac77-0b2d8472a5f7,,;,,;,,;,,;,,"
+data "RequirementConditions" "not HasStatus('SG_Rage') and not HasStatus('CALM_EMOTIONS')"
+data "CombatAIOverrideSpell" ""
+
+new entry "GOON_RAGE_FRENZY_OGRE"
+type "StatusData"
+data "StatusType" "BOOST"
+using "RAGE_FRENZY"
+// data "Boosts" "Tag(VFX_RAGE);BlockSpellCast();UnlockSpell(Shout_EndRage);Attribute(ForceMainhandAlternativeEquipBones);UnlockSpell(Throw_ImprovisedWeaponBerserker);IF(HasPassive('MindlessRage',context.Source)):StatusImmunity(SG_Frightened);IF(HasPassive('MindlessRage',context.Source)):StatusImmunity(SG_Charmed)"
+data "Boosts" "Tag(VFX_RAGE);BlockSpellCast();UnlockSpell(Shout_EndRage);UnlockSpell(Throw_ImprovisedWeaponBerserker);IF(HasPassive('MindlessRage',context.Source)):StatusImmunity(SG_Frightened);IF(HasPassive('MindlessRage',context.Source)):StatusImmunity(SG_Charmed)"
+// data "DynamicAnimationTag" "b6aa23c3-c96d-42d5-8ffa-8d441d18faa7"
+data "DynamicAnimationTag" ""
+
 // Basic Rage
 new entry "Shout_Rage"
 type "SpellData"
