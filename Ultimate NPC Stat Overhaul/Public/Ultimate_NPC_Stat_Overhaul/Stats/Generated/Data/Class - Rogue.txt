@@ -60,7 +60,7 @@
     data "StatusType" "BOOST"
     using "GOON_NPC_ROGUE_PROGRESSION_TEMPLATE"
     data "StackPriority" "1"
-    data "Passives" "SneakAttack_Unlock;CX_Martial_Boost"
+    data "Passives" "SneakAttack_Unlock;CX_Martial_Boost;Goon_Finesse_Overwrite"
     data "Boosts" "Tag(ROGUE);ProficiencyBonus(SavingThrow,Dexterity);ProficiencyBonus(SavingThrow,Intelligence);Proficiency(LightArmor);Proficiency(SimpleWeapons);Proficiency(HandCrossbows);Proficiency(Longswords);Proficiency(Rapiers);Proficiency(Shortswords);ActionResource(SneakAttack_Charge,1,0)"
 
     new entry "GOON_NPC_ROGUE_LVL_2"
@@ -68,7 +68,7 @@
     data "StatusType" "BOOST"
     using "GOON_NPC_ROGUE_PROGRESSION_TEMPLATE"
     data "StackPriority" "2"
-    data "Passives" "SneakAttack_Unlock;CX_Martial_Boost"
+    data "Passives" "SneakAttack_Unlock;CX_Martial_Boost;Goon_Finesse_Overwrite"
     data "Boosts" "Tag(ROGUE);ProficiencyBonus(SavingThrow,Dexterity);ProficiencyBonus(SavingThrow,Intelligence);Proficiency(LightArmor);Proficiency(SimpleWeapons);Proficiency(HandCrossbows);Proficiency(Longswords);Proficiency(Rapiers);Proficiency(Shortswords);ActionResource(SneakAttack_Charge,1,0);UnlockSpell(Shout_Hide_BonusAction,AddChildren);UnlockSpell(Shout_Dash_CunningAction,AddChildren);UnlockSpell(Shout_Disengage_CunningAction,AddChildren)"
 
     new entry "GOON_NPC_ROGUE_LVL_3"
@@ -88,7 +88,7 @@
     data "StatusType" "BOOST"
     using "GOON_NPC_ROGUE_PROGRESSION_TEMPLATE"
     data "StackPriority" "5"
-    data "Passives" "SneakAttack_Unlock;CX_Martial_Boost;UncannyDodge"
+    data "Passives" "SneakAttack_Unlock;CX_Martial_Boost;Goon_Finesse_Overwrite;UncannyDodge"
     data "Boosts" "Tag(ROGUE);ProficiencyBonus(SavingThrow,Dexterity);ProficiencyBonus(SavingThrow,Intelligence);Proficiency(LightArmor);Proficiency(SimpleWeapons);Proficiency(HandCrossbows);Proficiency(Longswords);Proficiency(Rapiers);Proficiency(Shortswords);ActionResource(SneakAttack_Charge,1,0);UnlockSpell(Shout_Hide_BonusAction,AddChildren);UnlockSpell(Shout_Dash_CunningAction,AddChildren);UnlockSpell(Shout_Disengage_CunningAction,AddChildren)"
 
     new entry "GOON_NPC_ROGUE_LVL_6"
@@ -102,7 +102,7 @@
     data "StatusType" "BOOST"
     using "GOON_NPC_ROGUE_PROGRESSION_TEMPLATE"
     data "StackPriority" "7"
-    data "Passives" "SneakAttack_Unlock;CX_Martial_Boost;UncannyDodge;Evasion"
+    data "Passives" "SneakAttack_Unlock;CX_Martial_Boost;Goon_Finesse_Overwrite;UncannyDodge;Evasion"
     data "Boosts" "Tag(ROGUE);ProficiencyBonus(SavingThrow,Dexterity);ProficiencyBonus(SavingThrow,Intelligence);Proficiency(LightArmor);Proficiency(SimpleWeapons);Proficiency(HandCrossbows);Proficiency(Longswords);Proficiency(Rapiers);Proficiency(Shortswords);ActionResource(SneakAttack_Charge,1,0);UnlockSpell(Shout_Hide_BonusAction,AddChildren);UnlockSpell(Shout_Dash_CunningAction,AddChildren);UnlockSpell(Shout_Disengage_CunningAction,AddChildren)"
 
     new entry "GOON_NPC_ROGUE_LVL_8"
@@ -128,7 +128,7 @@
     data "StatusType" "BOOST"
     using "GOON_NPC_ROGUE_PROGRESSION_TEMPLATE"
     data "StackPriority" "11"
-    data "Passives" "SneakAttack_Unlock;CX_Martial_Boost;UncannyDodge;Evasion;ReliableTalent"
+    data "Passives" "SneakAttack_Unlock;CX_Martial_Boost;Goon_Finesse_Overwrite;UncannyDodge;Evasion;ReliableTalent"
     data "Boosts" "Tag(ROGUE);ProficiencyBonus(SavingThrow,Dexterity);ProficiencyBonus(SavingThrow,Intelligence);Proficiency(LightArmor);Proficiency(SimpleWeapons);Proficiency(HandCrossbows);Proficiency(Longswords);Proficiency(Rapiers);Proficiency(Shortswords);ActionResource(SneakAttack_Charge,1,0);UnlockSpell(Shout_Hide_BonusAction,AddChildren);UnlockSpell(Shout_Dash_CunningAction,AddChildren);UnlockSpell(Shout_Disengage_CunningAction,AddChildren)"
 
     new entry "GOON_NPC_ROGUE_LVL_12"
@@ -149,7 +149,7 @@
     data "StatusType" "BOOST"
     using "GOON_NPC_ROGUE_PROGRESSION_TEMPLATE"
     data "StackPriority" "14"
-    data "Passives" "SneakAttack_Unlock;CX_Martial_Boost;UncannyDodge;Evasion;ReliableTalent;Blindsense"
+    data "Passives" "SneakAttack_Unlock;CX_Martial_Boost;Goon_Finesse_Overwrite;UncannyDodge;Evasion;ReliableTalent;Blindsense"
     data "Boosts" "Tag(ROGUE);ProficiencyBonus(SavingThrow,Dexterity);ProficiencyBonus(SavingThrow,Intelligence);Proficiency(LightArmor);Proficiency(SimpleWeapons);Proficiency(HandCrossbows);Proficiency(Longswords);Proficiency(Rapiers);Proficiency(Shortswords);ActionResource(SneakAttack_Charge,1,0);UnlockSpell(Shout_Hide_BonusAction,AddChildren);UnlockSpell(Shout_Dash_CunningAction,AddChildren);UnlockSpell(Shout_Disengage_CunningAction,AddChildren)"
 
     new entry "GOON_NPC_ROGUE_LVL_15"
@@ -157,7 +157,7 @@
     data "StatusType" "BOOST"
     using "GOON_NPC_ROGUE_PROGRESSION_TEMPLATE"
     data "StackPriority" "15"
-    data "Passives" "SneakAttack_Unlock;CX_Martial_Boost;UncannyDodge;Evasion;ReliableTalent;Blindsense"
+    data "Passives" "SneakAttack_Unlock;CX_Martial_Boost;Goon_Finesse_Overwrite;UncannyDodge;Evasion;ReliableTalent;Blindsense"
     data "Boosts" "Tag(ROGUE);ProficiencyBonus(SavingThrow,Dexterity);ProficiencyBonus(SavingThrow,Intelligence);Proficiency(LightArmor);Proficiency(SimpleWeapons);Proficiency(HandCrossbows);Proficiency(Longswords);Proficiency(Rapiers);Proficiency(Shortswords);ActionResource(SneakAttack_Charge,1,0);UnlockSpell(Shout_Hide_BonusAction,AddChildren);UnlockSpell(Shout_Dash_CunningAction,AddChildren);UnlockSpell(Shout_Disengage_CunningAction,AddChildren);ProficiencyBonus(SavingThrow,Wisdom)"
 
     new entry "GOON_NPC_ROGUE_LVL_16"
@@ -177,7 +177,7 @@
     data "StatusType" "BOOST"
     using "GOON_NPC_ROGUE_PROGRESSION_TEMPLATE"
     data "StackPriority" "18"
-    data "Passives" "SneakAttack_Unlock;CX_Martial_Boost;UncannyDodge;Evasion;ReliableTalent;Blindsense;Elusive"
+    data "Passives" "SneakAttack_Unlock;CX_Martial_Boost;Goon_Finesse_Overwrite;UncannyDodge;Evasion;ReliableTalent;Blindsense;Elusive"
     data "Boosts" "Tag(ROGUE);ProficiencyBonus(SavingThrow,Dexterity);ProficiencyBonus(SavingThrow,Intelligence);Proficiency(LightArmor);Proficiency(SimpleWeapons);Proficiency(HandCrossbows);Proficiency(Longswords);Proficiency(Rapiers);Proficiency(Shortswords);ActionResource(SneakAttack_Charge,1,0);UnlockSpell(Shout_Hide_BonusAction,AddChildren);UnlockSpell(Shout_Dash_CunningAction,AddChildren);UnlockSpell(Shout_Disengage_CunningAction,AddChildren);ProficiencyBonus(SavingThrow,Wisdom)"
 
     new entry "GOON_NPC_ROGUE_LVL_19"
@@ -191,7 +191,7 @@
     data "StatusType" "BOOST"
     using "GOON_NPC_ROGUE_PROGRESSION_TEMPLATE"
     data "StackPriority" "20"
-    data "Passives" "SneakAttack_Unlock;CX_Martial_Boost;UncannyDodge;Evasion;ReliableTalent;Blindsense;Elusive;StrokeOfLuck;StrokeOfLuck_AbilityCheck"
+    data "Passives" "SneakAttack_Unlock;CX_Martial_Boost;Goon_Finesse_Overwrite;UncannyDodge;Evasion;ReliableTalent;Blindsense;Elusive;StrokeOfLuck;StrokeOfLuck_AbilityCheck"
     data "Boosts" "Tag(ROGUE);ProficiencyBonus(SavingThrow,Dexterity);ProficiencyBonus(SavingThrow,Intelligence);Proficiency(LightArmor);Proficiency(SimpleWeapons);Proficiency(HandCrossbows);Proficiency(Longswords);Proficiency(Rapiers);Proficiency(Shortswords);ActionResource(SneakAttack_Charge,1,0);UnlockSpell(Shout_Hide_BonusAction,AddChildren);UnlockSpell(Shout_Dash_CunningAction,AddChildren);UnlockSpell(Shout_Disengage_CunningAction,AddChildren);ProficiencyBonus(SavingThrow,Wisdom);ActionResource(StrokeOfLuck,1,0)"
 
 // ==================================== Subclass: Arcane Trickster ====================================
