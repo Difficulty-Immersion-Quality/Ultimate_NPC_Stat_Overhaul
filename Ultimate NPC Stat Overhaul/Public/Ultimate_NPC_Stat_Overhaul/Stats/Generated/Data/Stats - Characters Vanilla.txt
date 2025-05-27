@@ -124,6 +124,24 @@ data "Progressions" "532203c2-7bcb-4162-9a7c-2bb20e227a30"
 //  │   │       └─ "HAG_Mayrina"
 //  │   │           └─ "HAG_Mayrina_Polymorph"
 
+new entry "Commoner_Child"
+type "Character"
+using "Commoner_Child"
+// data "Passives" "AttackOfOpportunity;DarknessRules"
+data "Passives" "HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules"
+
+new entry "HAG_Brother_001"
+type "Character"
+using "HAG_Brother_001"
+// data "Passives" "AttackOfOpportunity;DarknessRules"
+data "Passives" "HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules"
+
+new entry "HAG_Brother_002"
+type "Character"
+using "HAG_Brother_002"
+// data "Passives" "AttackOfOpportunity;DarknessRules"
+data "Passives" "HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules"
+
 // Mayrina (Fixed racials)
 new entry "HAG_SurrogateMother"
 type "Character"
@@ -1295,9 +1313,9 @@ data "Passives" "CX_Paladin_Oathbreaker_Boost;FeyAncestry;AttackOfOpportunity;Da
 //  │   │   ├─ "Ogre"
 //  │   │   │   ├─ "CAMP_MintharaAmbush_Ogre"   --- (Inherits Barbarian progressions, inherits Berserker subclass)
 //  │   │   │   ├─ "FOR_OgreCaptain"
-//  │   │   │   ├─ "FOR_OgreMate"               --- Buthir (Inherits Barbarian progressions, inherits Berserker subclass)
+//  │   │   │   ├─ "FOR_OgreMate"
 //  │   │   │   ├─ "FOR_OgreMercenary"          --- Chock, Fank (Inherits Barbarian progressions, inherits Berserker subclass)
-//  │   │   │   ├─ "GOB_Ogre_Bodyguard"         --- Polma - Bodyguard of the High Priestess, Cult of the Absolute (Inherits Barbarian progressions, inherits Berserker subclass)
+//  │   │   │   ├─ "GOB_Ogre_Bodyguard"
 //  │   │   │   └─ "Test_Combat"
 //  │   │   │       ├─ "END_SaferoomHelper"
 //  │   │   │       ├─ "Test_Throwing_Medium"
@@ -1310,7 +1328,7 @@ new entry "_Giants"
 type "Character"
 using "_Giants"
 // data "Passives" "AttackOfOpportunity;DarknessRules"
-data "Passives" "CX_Barbarian_Berserker_Boost;AttackOfOpportunity;DarknessRules"
+data "Passives" "CX_Barbarian_Berserker_Boost;AttackOfOpportunity;DarknessRules;Goon_Rage_Ogre_Passive"
 // data "Progressions" ""
 data "Progressions" "56db8107-e04c-4fe3-94f3-fd4acd44cd4a"
 
@@ -1321,7 +1339,7 @@ using "Ogre"
 // data "SpellCastingAbility" "Strength"
 data "SpellCastingAbility" "Intelligence"
 // data "Passives" "OgreCurse;AttackOfOpportunity;Darkvision;DarknessRules"
-data "Passives" "CX_Barbarian_Berserker_Boost;AttackOfOpportunity;DarknessRules;Darkvision;OgreCurse"
+data "Passives" "CX_Barbarian_Berserker_Boost;AttackOfOpportunity;DarknessRules;Darkvision;OgreCurse;Goon_Rage_Ogre_Passive"
 
 // Lump the Enlightened (Has Wizard progressions, adding Martial boost)
 new entry "FOR_OgreCaptain"
@@ -1329,6 +1347,20 @@ type "Character"
 using "FOR_OgreCaptain"
 // data "Passives" "OgreCurse;AttackOfOpportunity;Darkvision;DarknessRules"
 data "Passives" "CX_Martial_Boost;AttackOfOpportunity;DarknessRules;Darkvision;OgreCurse"
+
+// Buthir (Inherits Barbarian progressions, inherits Berserker subclass) (Her boosts from proprietary rage are added to all other rages)
+new entry "FOR_OgreMate"
+type "Character"
+using "FOR_OgreMate"
+// data "Passives" "OgreCurse;AttackOfOpportunity;Darkvision;DarknessRules"
+data "Passives" "CX_Barbarian_Berserker_Boost;AttackOfOpportunity;DarknessRules;Darkvision;OgreCurse;Goon_Rage_Ogre_Passive;Goon_Woman_Ogre_Strong_And_Kinda_Hot_When_She_Rages_Skibidi_Rizz_Up_Her_Swamp_Ongfr"
+
+// Polma - Bodyguard of the High Priestess, Cult of the Absolute (Inherits Barbarian progressions, inherits Berserker subclass) (Her boosts from proprietary rage are added to all other rages)
+new entry "GOB_Ogre_Bodyguard"
+type "Character"
+using "GOB_Ogre_Bodyguard"
+// data "Passives" "OgreCurse;AttackOfOpportunity;Darkvision;DarknessRules"
+data "Passives" "CX_Barbarian_Berserker_Boost;AttackOfOpportunity;DarknessRules;Darkvision;OgreCurse;Goon_Rage_Ogre_Passive;Goon_Woman_Ogre_Strong_And_Kinda_Hot_When_She_Rages_Skibidi_Rizz_Up_Her_Swamp_Ongfr_2"
 
 // ==================================== Githyanki ====================================
 
@@ -1763,7 +1795,7 @@ data "Passives" "CX_Fighter_Boost;CX_Martial_Boost;Gnome_Cunning;Gnome_Speed;Att
 //  ├─ "Gnome_Monk"                 --- (Has Monk progressions)
 //  │   └─ "LOW_Guildhall_Phase"
 
-// Phase - Zhentarim (Inherits Monk Progressions, definitely Shadow subclass)
+// Phase - Zhentarim (Inherits Monk progressions, definitely Shadow subclass)
 new entry "LOW_Guildhall_Phase"
 type "Character"
 using "LOW_Guildhall_Phase"
@@ -4961,7 +4993,7 @@ new entry "SHA_Skeleton_Melee"
 type "Character"
 using "SHA_Skeleton_Melee"
 // data "SpellCastingAbility" "Intelligence"
-data "SpelLCastingAbility" "Charisma"
+data "SpellCastingAbility" "Charisma"
 // data "PathInfluence" "BloodElectrified,100;BloodFrozen,30;Lava,700;Fire,40;HolyFire,40;Hellfire,100;PoisonCloud,40;WyvernPoison,40;DrowPoisonCloud,40;PurpleWormPoison,40;SerpentVenom,40;InvisibleGithAcid,70;CloudkillCloud,40;MaliceCloud,70;CrawlerMucusCloud,70;WaterElectrified,100;WaterFrozen,30;Grease,30;Web,30;Vines,40;SporeBlackCloud,100;WaterCloudElectrified,40;SporeGreenCloud,40;Acid,30;CausticBrine,40;DarknessCloud,30;FogCloud,30;Mud,30;Oil,30;Poison,30;SpikeGrowth,40;SporePinkCloud,40;StinkingCloud,40"
 data "PathInfluence" "BloodElectrified,100;BloodFrozen,30;Lava,700;Fire,40;HolyFire,40;Hellfire,100;PoisonCloud,40;WyvernPoison,40;DrowPoisonCloud,40;PurpleWormPoison,40;SerpentVenom,40;InvisibleGithAcid,70;CloudkillCloud,40;Cloudkill6Cloud,40;MaliceCloud,70;CrawlerMucusCloud,70;WaterElectrified,100;WaterFrozen,30;Grease,30;Web,30;Vines,40;SporeBlackCloud,100;WaterCloudElectrified,40;SporeGreenCloud,40;Acid,30;CausticBrine,40;DarknessCloud,30;FogCloud,30;Mud,30;Oil,30;Poison,30;SpikeGrowth,40;SporePinkCloud,40;StinkingCloud,40"
 // data "Progressions" ""
@@ -5149,7 +5181,7 @@ data "Passives" "CX_Spells_L5;CX_Spells_L5C;AttackOfOpportunity;DarknessRules;Da
 //  │   │       └─ "HAG_AuntieEthel_Double"
 //  │   ├─ "Meenlock"
 //  │   ├─ "RedCap"
-//  │   │   ├─ "LOW_BlushingMermaid_Redcap_Melee"
+//  │   │   ├─ "LOW_BlushingMermaid_Redcap_Melee"       --- Redcap Boatswains (Act 3) (Inherits added Rogue progressions) //TODO: Make them Swashbucklers.
 //  │   │   │   └─ "LOW_HagsSurvivors_Jatlo"
 //  │   │   ├─ "RedCap_Caster"
 //  │   │   │   └─ "LOW_BlushingMermaid_Redcap_Caster"
@@ -5170,7 +5202,57 @@ using "HAG_AuntieEthel_Double"
 // data "Passives" "AttackOfOpportunity;DarknessRules;Darkvision;Alert;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check;LegendaryAction_HAG_Counterswap_Double"
 data "Passives" "Goon_NPC_Ethel_Unlocker;CX_Boss_Boost;CX_Magic_Boost;AttackOfOpportunity;DarknessRules;Darkvision;Alert;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check;LegendaryAction_HAG_Counterswap_Double"
 
-// BOOOAL (Added Rogue boost, added Assassin subclass, added Boss boost)
+// Redcap (Act 1) (Added Rogue progressions, added Finesse overwrite passive to enable Sneak Attack)
+new entry "RedCap"
+type "Character"
+using "RedCap"
+// data "Strength" "18"
+data "Strength" "13"
+// data "Dexterity" "13"
+data "Dexterity" "18"
+// data "Intelligence" "10"
+data "Intelligence" "12"
+// data "Wisdom" "12"
+data "Wisdom" "10"
+// data "SpellCastingAbility" "Strength"
+data "SpellCastingAbility" "Intelligence"
+// data "Progressions" ""
+data "Progressions" "532203c2-7bcb-4162-9a7c-2bb20e227a30"
+
+// Jatlo - Redcap spy in the Anti-Hag Support Group (Inherits added Rogue progressions) //TODO: Make him a Swashbuckler.
+new entry "LOW_HagsSurvivors_Jatlo"
+type "Character"
+using "LOW_HagsSurvivors_Jatlo"
+// data "Dexterity" "16"
+data "Dexterity" "20"
+
+// Redcap Blood Sages (Act 1) (Added Warlock progressiosn, added The Archfey subclass)
+new entry "RedCap_Caster"
+type "Character"
+using "RedCap_Caster"
+// data "Wisdom" "14"
+data "Wisdom" "12"
+// data "Charisma" "9"
+data "Charisma" "14"
+// data "SpellCastingAbility" "Wisdom"
+data "SpellCastingAbility" "Charisma"
+// data "Progressions" ""
+data "Progressions" "51274504-865d-46d1-a3b6-c72e9384904a"
+// data "Passives" "AttackOfOpportunity;Darkvision;DarknessRules;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check"
+data "Passives" "CX_Warlock_Archfey_Boost;AttackOfOpportunity;Darkvision;DarknessRules;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check"
+
+// Redcap Mystic Cannoneers (Act 3) (Inherits Warlock progressions, added The Archfey subclass)
+new entry "LOW_BlushingMermaid_Redcap_Caster"
+type "Character"
+using "LOW_BlushingMermaid_Redcap_Caster"
+// data "Wisdom" "16"
+data "Wisdom" "14"
+// data "Charisma" "9"
+data "Charisma" "16"
+// data "Passives" "AttackOfOpportunity;DarknessRules;Darkvision;LOW_BlushingMermaid_Redcap_Buff;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check"
+data "Passives" "CX_Warlock_Archfey_Boost;DarknessRules;Darkvision;LOW_BlushingMermaid_Redcap_Buff;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check"
+
+// BOOOAL (Added Rogue boost, added Assassin subclass, added Boss boost, added Finesse overwrite passive to enable Sneak Attack)
 new entry "UND_BOOOAL"
 type "Character"
 using "UND_BOOOAL"
@@ -5256,14 +5338,21 @@ data "Passives" "CX_Boss_Boost;CX_Martial_Boost;DarknessRules;Darkvision;Fiendis
 //  │   │   └─ "LOW_HouseOfHope_Merregon"              -- House of Hope Merregons (Inherits Fighter progressions)
 //  │   └─ "Orthon"                                   
 
-// Merregons (Added Fighter progressions)
+// Merregons (Added Fighter progressions, added Champion subclass. Doesn't have Battle Master manoeuver animations.)
 new entry "Merregon"
 type "Character"
 using "Merregon"
 // data "Passives" "ExtraAttack;MagicResistance;DevilsSight;AttackOfOpportunity;DarknessRules"
-data "Passives" "AttackOfOpportunity;DevilsSight;DarknessRules;MagicResistance;ExtraAttack"
+data "Passives" "CX_Fighter_Champion_Boost;AttackOfOpportunity;DevilsSight;DarknessRules;MagicResistance;ExtraAttack"
 // data "Progressions" ""
 data "Progressions" "0e6da493-5a37-423b-8c28-629462b22faa"
+
+// Vengeful Merregons (Inherits Fighter progressions, added Champion subclass)
+new entry "LOW_HouseOfHope_Merregon"
+type "Character"
+using "LOW_HouseOfHope_Merregon"
+// data "Passives" "AttackOfOpportunity;DarknessRules;DevilsSight;ExtraAttack;MagicResistance;LOW_HouseOfHope_Merregon_Fire;LOW_HouseOfHope_Weapon"
+data "Passives" "CX_Fighter_Champion_Boost;AttackOfOpportunity;DarknessRules;DevilsSight;ExtraAttack;MagicResistance;LOW_HouseOfHope_Merregon_Fire;LOW_HouseOfHope_Weapon"
 
 // Yurgir - HONOUR MODE INHERITANCE (Added Rogue progressions, added Assassin subclass, added Boss boost)
 new entry "Orthon"
