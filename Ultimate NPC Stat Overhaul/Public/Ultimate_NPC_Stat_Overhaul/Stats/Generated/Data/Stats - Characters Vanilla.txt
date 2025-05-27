@@ -5574,7 +5574,7 @@ data "Passives" "CX_Spells_L6;CX_Spells_L6C;AttackOfOpportunity;DarknessRules;Ma
 // Spectator (Underdark) - HONOUR MODE INHERITANCE //TODO: Add these Honour Mode difficulty statuses into a passive instead?
 new entry "Spectator"
 type "Character"
-using "_Aberration"
+using "Spectator"
 // data "PathInfluence" "PoisonCloud,70;CloudkillCloud,70;MaliceCloud,70;CrawlerMucusCloud,70;SporeBlackCloud,100;SporeGreenCloud,40;DarknessCloud,30;FogCloud,30;SporePinkCloud,40;StinkingCloud,40;WaterCloudElectrified,40"
 data "PathInfluence" "PoisonCloud,70;CloudkillCloud,70;Cloudkill6Cloud,70;MaliceCloud,70;CrawlerMucusCloud,70;SporeBlackCloud,100;SporeGreenCloud,40;DarknessCloud,30;FogCloud,30;SporePinkCloud,40;StinkingCloud,40;WaterCloudElectrified,40"
 // data "DifficultyStatuses" "STATUS_EASY: HEALTHREDUCTION_EASYMODE; STATUS_HARD: HEALTHBOOST_HARDCORE"
