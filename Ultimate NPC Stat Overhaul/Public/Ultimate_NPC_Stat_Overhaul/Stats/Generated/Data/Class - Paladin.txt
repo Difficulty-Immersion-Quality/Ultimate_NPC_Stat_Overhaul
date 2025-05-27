@@ -19,8 +19,8 @@
     // data "Icon" "Action_Paladin_InquisitorsMight"
     data "Icon" "PassiveFeature_ImprovedDivineSmite"
     data "Boosts" ""
-    data "StatsFunctorContext" "OnCreate;OnStatusApplied;OnStatusRemoved;OnCombatStarted;OnTurn"
-    data "Conditions" "(not HasPassive('Goon_Paladin_NPC_Progressions'))"
+    data "StatsFunctorContext" "OnCreate;OnCombatStarted;OnTurn"
+    data "Conditions" "not HasPassive('Goon_Paladin_NPC_Progressions',context.Source)"
     data "StatsFunctors" "IF(GoonCharacterLevelEqualTo(1)):ApplyStatus(GOON_NPC_SOMETHING_LVL_1,100,-1);IF(GoonCharacterLevelEqualTo(2)):ApplyStatus(GOON_NPC_SOMETHING_LVL_2,100,-1);IF(GoonCharacterLevelEqualTo(3)):ApplyStatus(GOON_NPC_SOMETHING_LVL_3,100,-1);IF(GoonCharacterLevelEqualTo(4)):ApplyStatus(GOON_NPC_SOMETHING_LVL_4,100,-1);IF(GoonCharacterLevelEqualTo(5)):ApplyStatus(GOON_NPC_SOMETHING_LVL_5,100,-1);IF(GoonCharacterLevelEqualTo(6)):ApplyStatus(GOON_NPC_SOMETHING_LVL_6,100,-1);IF(GoonCharacterLevelEqualTo(7)):ApplyStatus(GOON_NPC_SOMETHING_LVL_7,100,-1);IF(GoonCharacterLevelEqualTo(8)):ApplyStatus(GOON_NPC_SOMETHING_LVL_8,100,-1);IF(GoonCharacterLevelEqualTo(9)):ApplyStatus(GOON_NPC_SOMETHING_LVL_9,100,-1);IF(GoonCharacterLevelEqualTo(10)):ApplyStatus(GOON_NPC_SOMETHING_LVL_10,100,-1);IF(GoonCharacterLevelEqualTo(11)):ApplyStatus(GOON_NPC_SOMETHING_LVL_11,100,-1);IF(GoonCharacterLevelEqualTo(12)):ApplyStatus(GOON_NPC_SOMETHING_LVL_12,100,-1);IF(GoonCharacterLevelEqualTo(13)):ApplyStatus(GOON_NPC_SOMETHING_LVL_13,100,-1);IF(GoonCharacterLevelEqualTo(14)):ApplyStatus(GOON_NPC_SOMETHING_LVL_14,100,-1);IF(GoonCharacterLevelEqualTo(15)):ApplyStatus(GOON_NPC_SOMETHING_LVL_15,100,-1);IF(GoonCharacterLevelEqualTo(16)):ApplyStatus(GOON_NPC_SOMETHING_LVL_16,100,-1);IF(GoonCharacterLevelEqualTo(17)):ApplyStatus(GOON_NPC_SOMETHING_LVL_17,100,-1);IF(GoonCharacterLevelEqualTo(18)):ApplyStatus(GOON_NPC_SOMETHING_LVL_18,100,-1);IF(GoonCharacterLevelEqualTo(19)):ApplyStatus(GOON_NPC_SOMETHING_LVL_19,100,-1);IF(GoonCharacterLevelEqualToOrGreaterThan(20)):ApplyStatus(GOON_NPC_SOMETHING_LVL_20,100,-1)"
 
 // Template
@@ -31,7 +31,7 @@
     data "RemoveEvents" "OnStatusApplied;OnStatusRemoved"
     data "StackId" "GOON_NPC_PALADIN_PROGRESSION_TEMPLATE"
     data "StackType" "Ignore"
-    data "RemoveConditions" "not HasPassive('CX_Paladin_Boost') or HasPassive('Goon_Paladin_NPC_Progressions')"
+    data "RemoveConditions" "not HasPassive('CX_Paladin_Boost',context.Source) or HasPassive('Goon_Paladin_NPC_Progressions',context.Source)"
 
 // Progression statuses
     new entry "GOON_NPC_PALADIN_LVL_1_MULTICLASS"
@@ -42,7 +42,15 @@
     data "Passives" ""
     data "Boosts" ""
 
-    // *Reference field for multiclass*
+    // <node id="Progression">
+    // 	<attribute id="Boosts" type="LSString" value="Proficiency(LightArmor);Proficiency(MediumArmor);Proficiency(Shields);Proficiency(SimpleWeapons);Proficiency(MartialWeapons);ActionResource(LayOnHandsCharge,3,0);ActionResource(ChannelOath,1,0)" />
+    // 	<attribute id="IsMulticlass" type="bool" value="True" />
+    // 	<attribute id="Level" type="uint8" value="1" />
+    // 	<attribute id="Name" type="LSString" value="Paladin" />
+    // 	<attribute id="ProgressionType" type="uint8" value="0" />
+    // 	<attribute id="Selectors" type="LSString" value="AddSpells(fb407d81-3a05-46f1-9153-0fb27dce95b6,,,,AlwaysPrepared)" />
+    // 	<attribute id="TableUUID" type="guid" value="ba2afe85-acba-4ea1-a238-2b4543f47821" />
+    // 	<attribute id="UUID" type="guid" value="1f5396ad-65e3-4ed5-a339-d76b11af96ea" />
 
     new entry "GOON_NPC_PALADIN_LVL_1"
     type "StatusData"
@@ -205,8 +213,8 @@
     data "Description" "h74725b1fg6ed2g42bcg885eg722d3c8802fe;1"
     data "Icon" "Action_Paladin_HealingRadiance"
     data "Boosts" ""
-    data "StatsFunctorContext" "OnCreate;OnStatusApplied;OnStatusRemoved;OnCombatStarted;OnTurn"
-    data "Conditions" ""
+    data "StatsFunctorContext" "OnCreate;OnCombatStarted;OnTurn"
+    data "Conditions" "not HasPassive('Goon_Paladin_NPC_Progressions',context.Source)"
     data "StatsFunctors" "IF(GoonCharacterLevelEqualTo(1) or HasStatus('GOON_NPC_SOMETHING_LVL_1')):ApplyStatus(GOON_NPC_PALADIN_ANCIENTS_LVL_1,100,-1);IF(GoonCharacterLevelEqualTo(2) or HasStatus('GOON_NPC_SOMETHING_LVL_2')):ApplyStatus(GOON_NPC_PALADIN_ANCIENTS_LVL_2,100,-1);IF(GoonCharacterLevelEqualTo(3) or HasStatus('GOON_NPC_SOMETHING_LVL_3')):ApplyStatus(GOON_NPC_PALADIN_ANCIENTS_LVL_3,100,-1);IF(GoonCharacterLevelEqualTo(4) or HasStatus('GOON_NPC_SOMETHING_LVL_4')):ApplyStatus(GOON_NPC_PALADIN_ANCIENTS_LVL_4,100,-1);IF(GoonCharacterLevelEqualTo(5) or HasStatus('GOON_NPC_SOMETHING_LVL_5')):ApplyStatus(GOON_NPC_PALADIN_ANCIENTS_LVL_5,100,-1);IF(GoonCharacterLevelEqualTo(6) or HasStatus('GOON_NPC_SOMETHING_LVL_6')):ApplyStatus(GOON_NPC_PALADIN_ANCIENTS_LVL_6,100,-1);IF(GoonCharacterLevelEqualTo(7) or HasStatus('GOON_NPC_SOMETHING_LVL_7')):ApplyStatus(GOON_NPC_PALADIN_ANCIENTS_LVL_7,100,-1);IF(GoonCharacterLevelEqualTo(8) or HasStatus('GOON_NPC_SOMETHING_LVL_8')):ApplyStatus(GOON_NPC_PALADIN_ANCIENTS_LVL_8,100,-1);IF(GoonCharacterLevelEqualTo(9) or HasStatus('GOON_NPC_SOMETHING_LVL_9')):ApplyStatus(GOON_NPC_PALADIN_ANCIENTS_LVL_9,100,-1);IF(GoonCharacterLevelEqualTo(10) or HasStatus('GOON_NPC_SOMETHING_LVL_10')):ApplyStatus(GOON_NPC_PALADIN_ANCIENTS_LVL_10,100,-1);IF(GoonCharacterLevelEqualTo(11) or HasStatus('GOON_NPC_SOMETHING_LVL_11')):ApplyStatus(GOON_NPC_PALADIN_ANCIENTS_LVL_11,100,-1);IF(GoonCharacterLevelEqualTo(12) or HasStatus('GOON_NPC_SOMETHING_LVL_12')):ApplyStatus(GOON_NPC_PALADIN_ANCIENTS_LVL_12,100,-1);IF(GoonCharacterLevelEqualTo(13) or HasStatus('GOON_NPC_SOMETHING_LVL_13')):ApplyStatus(GOON_NPC_PALADIN_ANCIENTS_LVL_13,100,-1);IF(GoonCharacterLevelEqualTo(14) or HasStatus('GOON_NPC_SOMETHING_LVL_14')):ApplyStatus(GOON_NPC_PALADIN_ANCIENTS_LVL_14,100,-1);IF(GoonCharacterLevelEqualTo(15) or HasStatus('GOON_NPC_SOMETHING_LVL_15')):ApplyStatus(GOON_NPC_PALADIN_ANCIENTS_LVL_15,100,-1);IF(GoonCharacterLevelEqualTo(16) or HasStatus('GOON_NPC_SOMETHING_LVL_16')):ApplyStatus(GOON_NPC_PALADIN_ANCIENTS_LVL_16,100,-1);IF(GoonCharacterLevelEqualTo(17) or HasStatus('GOON_NPC_SOMETHING_LVL_17')):ApplyStatus(GOON_NPC_PALADIN_ANCIENTS_LVL_17,100,-1);IF(GoonCharacterLevelEqualTo(18) or HasStatus('GOON_NPC_SOMETHING_LVL_18')):ApplyStatus(GOON_NPC_PALADIN_ANCIENTS_LVL_18,100,-1);IF(GoonCharacterLevelEqualTo(19) or HasStatus('GOON_NPC_SOMETHING_LVL_19')):ApplyStatus(GOON_NPC_PALADIN_ANCIENTS_LVL_19,100,-1);IF(GoonCharacterLevelEqualToOrGreaterThan(20) or HasStatus('GOON_NPC_SOMETHING_LVL_20')):ApplyStatus(GOON_NPC_PALADIN_ANCIENTS_LVL_20,100,-1)"
 
 // Template
@@ -217,7 +225,7 @@
     data "RemoveEvents" "OnStatusApplied;OnStatusRemoved"
     data "StackId" "GOON_NPC_PALADIN_ANCIENTS_PROGRESSION_TEMPLATE"
     data "StackType" "Ignore"
-    data "RemoveConditions" "not HasPassive('CX_Paladin_Ancients_Boost')"
+    data "RemoveConditions" "not HasPassive('CX_Paladin_Ancients_Boost',context.Source)"
 
 // Progression statuses
     new entry "GOON_NPC_PALADIN_ANCIENTS_LVL_1"
@@ -440,8 +448,8 @@
     data "Description" "hd41ebf55g11bfg459egbda2g7af1996ef3cf;1"
     data "Icon" "Action_Paladin_SacredWeapon"
     data "Boosts" ""
-    data "StatsFunctorContext" "OnCreate;OnStatusApplied;OnStatusRemoved;OnCombatStarted;OnTurn"
-    data "Conditions" ""
+    data "StatsFunctorContext" "OnCreate;OnCombatStarted;OnTurn"
+    data "Conditions" "not HasPassive('Goon_Paladin_NPC_Progressions',context.Source)"
     data "StatsFunctors" "IF(GoonCharacterLevelEqualTo(1) or HasStatus('GOON_NPC_SOMETHING_LVL_1')):ApplyStatus(GOON_NPC_PALADIN_DEVOTION_LVL_1,100,-1);IF(GoonCharacterLevelEqualTo(2) or HasStatus('GOON_NPC_SOMETHING_LVL_2')):ApplyStatus(GOON_NPC_PALADIN_DEVOTION_LVL_2,100,-1);IF(GoonCharacterLevelEqualTo(3) or HasStatus('GOON_NPC_SOMETHING_LVL_3')):ApplyStatus(GOON_NPC_PALADIN_DEVOTION_LVL_3,100,-1);IF(GoonCharacterLevelEqualTo(4) or HasStatus('GOON_NPC_SOMETHING_LVL_4')):ApplyStatus(GOON_NPC_PALADIN_DEVOTION_LVL_4,100,-1);IF(GoonCharacterLevelEqualTo(5) or HasStatus('GOON_NPC_SOMETHING_LVL_5')):ApplyStatus(GOON_NPC_PALADIN_DEVOTION_LVL_5,100,-1);IF(GoonCharacterLevelEqualTo(6) or HasStatus('GOON_NPC_SOMETHING_LVL_6')):ApplyStatus(GOON_NPC_PALADIN_DEVOTION_LVL_6,100,-1);IF(GoonCharacterLevelEqualTo(7) or HasStatus('GOON_NPC_SOMETHING_LVL_7')):ApplyStatus(GOON_NPC_PALADIN_DEVOTION_LVL_7,100,-1);IF(GoonCharacterLevelEqualTo(8) or HasStatus('GOON_NPC_SOMETHING_LVL_8')):ApplyStatus(GOON_NPC_PALADIN_DEVOTION_LVL_8,100,-1);IF(GoonCharacterLevelEqualTo(9) or HasStatus('GOON_NPC_SOMETHING_LVL_9')):ApplyStatus(GOON_NPC_PALADIN_DEVOTION_LVL_9,100,-1);IF(GoonCharacterLevelEqualTo(10) or HasStatus('GOON_NPC_SOMETHING_LVL_10')):ApplyStatus(GOON_NPC_PALADIN_DEVOTION_LVL_10,100,-1);IF(GoonCharacterLevelEqualTo(11) or HasStatus('GOON_NPC_SOMETHING_LVL_11')):ApplyStatus(GOON_NPC_PALADIN_DEVOTION_LVL_11,100,-1);IF(GoonCharacterLevelEqualTo(12) or HasStatus('GOON_NPC_SOMETHING_LVL_12')):ApplyStatus(GOON_NPC_PALADIN_DEVOTION_LVL_12,100,-1);IF(GoonCharacterLevelEqualTo(13) or HasStatus('GOON_NPC_SOMETHING_LVL_13')):ApplyStatus(GOON_NPC_PALADIN_DEVOTION_LVL_13,100,-1);IF(GoonCharacterLevelEqualTo(14) or HasStatus('GOON_NPC_SOMETHING_LVL_14')):ApplyStatus(GOON_NPC_PALADIN_DEVOTION_LVL_14,100,-1);IF(GoonCharacterLevelEqualTo(15) or HasStatus('GOON_NPC_SOMETHING_LVL_15')):ApplyStatus(GOON_NPC_PALADIN_DEVOTION_LVL_15,100,-1);IF(GoonCharacterLevelEqualTo(16) or HasStatus('GOON_NPC_SOMETHING_LVL_16')):ApplyStatus(GOON_NPC_PALADIN_DEVOTION_LVL_16,100,-1);IF(GoonCharacterLevelEqualTo(17) or HasStatus('GOON_NPC_SOMETHING_LVL_17')):ApplyStatus(GOON_NPC_PALADIN_DEVOTION_LVL_17,100,-1);IF(GoonCharacterLevelEqualTo(18) or HasStatus('GOON_NPC_SOMETHING_LVL_18')):ApplyStatus(GOON_NPC_PALADIN_DEVOTION_LVL_18,100,-1);IF(GoonCharacterLevelEqualTo(19) or HasStatus('GOON_NPC_SOMETHING_LVL_19')):ApplyStatus(GOON_NPC_PALADIN_DEVOTION_LVL_19,100,-1);IF(GoonCharacterLevelEqualToOrGreaterThan(20) or HasStatus('GOON_NPC_SOMETHING_LVL_20')):ApplyStatus(GOON_NPC_PALADIN_DEVOTION_LVL_20,100,-1)"
 
 // Template
@@ -452,7 +460,7 @@
     data "RemoveEvents" "OnStatusApplied;OnStatusRemoved"
     data "StackId" "GOON_NPC_PALADIN_DEVOTION_PROGRESSION_TEMPLATE"
     data "StackType" "Ignore"
-    data "RemoveConditions" "not HasPassive('CX_Paladin_Devotion_Boost')"
+    data "RemoveConditions" "not HasPassive('CX_Paladin_Devotion_Boost',context.Source)"
 
 // Progression statuses
     new entry "GOON_NPC_PALADIN_DEVOTION_LVL_1"
@@ -675,8 +683,8 @@
     data "Description" "hcedd322eg85bdg4ba6gae85gd39a68f4caa0;1"
     data "Icon" "Action_Paladin_InquisitorsMight"
     data "Boosts" ""
-    data "StatsFunctorContext" "OnCreate;OnStatusApplied;OnStatusRemoved;OnCombatStarted;OnTurn"
-    data "Conditions" ""
+    data "StatsFunctorContext" "OnCreate;OnCombatStarted;OnTurn"
+    data "Conditions" "not HasPassive('Goon_Paladin_NPC_Progressions',context.Source)"
     data "StatsFunctors" "IF(GoonCharacterLevelEqualTo(1) or HasStatus('GOON_NPC_SOMETHING_LVL_1')):ApplyStatus(GOON_NPC_PALADIN_VENGEANCE_LVL_1,100,-1);IF(GoonCharacterLevelEqualTo(2) or HasStatus('GOON_NPC_SOMETHING_LVL_2')):ApplyStatus(GOON_NPC_PALADIN_VENGEANCE_LVL_2,100,-1);IF(GoonCharacterLevelEqualTo(3) or HasStatus('GOON_NPC_SOMETHING_LVL_3')):ApplyStatus(GOON_NPC_PALADIN_VENGEANCE_LVL_3,100,-1);IF(GoonCharacterLevelEqualTo(4) or HasStatus('GOON_NPC_SOMETHING_LVL_4')):ApplyStatus(GOON_NPC_PALADIN_VENGEANCE_LVL_4,100,-1);IF(GoonCharacterLevelEqualTo(5) or HasStatus('GOON_NPC_SOMETHING_LVL_5')):ApplyStatus(GOON_NPC_PALADIN_VENGEANCE_LVL_5,100,-1);IF(GoonCharacterLevelEqualTo(6) or HasStatus('GOON_NPC_SOMETHING_LVL_6')):ApplyStatus(GOON_NPC_PALADIN_VENGEANCE_LVL_6,100,-1);IF(GoonCharacterLevelEqualTo(7) or HasStatus('GOON_NPC_SOMETHING_LVL_7')):ApplyStatus(GOON_NPC_PALADIN_VENGEANCE_LVL_7,100,-1);IF(GoonCharacterLevelEqualTo(8) or HasStatus('GOON_NPC_SOMETHING_LVL_8')):ApplyStatus(GOON_NPC_PALADIN_VENGEANCE_LVL_8,100,-1);IF(GoonCharacterLevelEqualTo(9) or HasStatus('GOON_NPC_SOMETHING_LVL_9')):ApplyStatus(GOON_NPC_PALADIN_VENGEANCE_LVL_9,100,-1);IF(GoonCharacterLevelEqualTo(10) or HasStatus('GOON_NPC_SOMETHING_LVL_10')):ApplyStatus(GOON_NPC_PALADIN_VENGEANCE_LVL_10,100,-1);IF(GoonCharacterLevelEqualTo(11) or HasStatus('GOON_NPC_SOMETHING_LVL_11')):ApplyStatus(GOON_NPC_PALADIN_VENGEANCE_LVL_11,100,-1);IF(GoonCharacterLevelEqualTo(12) or HasStatus('GOON_NPC_SOMETHING_LVL_12')):ApplyStatus(GOON_NPC_PALADIN_VENGEANCE_LVL_12,100,-1);IF(GoonCharacterLevelEqualTo(13) or HasStatus('GOON_NPC_SOMETHING_LVL_13')):ApplyStatus(GOON_NPC_PALADIN_VENGEANCE_LVL_13,100,-1);IF(GoonCharacterLevelEqualTo(14) or HasStatus('GOON_NPC_SOMETHING_LVL_14')):ApplyStatus(GOON_NPC_PALADIN_VENGEANCE_LVL_14,100,-1);IF(GoonCharacterLevelEqualTo(15) or HasStatus('GOON_NPC_SOMETHING_LVL_15')):ApplyStatus(GOON_NPC_PALADIN_VENGEANCE_LVL_15,100,-1);IF(GoonCharacterLevelEqualTo(16) or HasStatus('GOON_NPC_SOMETHING_LVL_16')):ApplyStatus(GOON_NPC_PALADIN_VENGEANCE_LVL_16,100,-1);IF(GoonCharacterLevelEqualTo(17) or HasStatus('GOON_NPC_SOMETHING_LVL_17')):ApplyStatus(GOON_NPC_PALADIN_VENGEANCE_LVL_17,100,-1);IF(GoonCharacterLevelEqualTo(18) or HasStatus('GOON_NPC_SOMETHING_LVL_18')):ApplyStatus(GOON_NPC_PALADIN_VENGEANCE_LVL_18,100,-1);IF(GoonCharacterLevelEqualTo(19) or HasStatus('GOON_NPC_SOMETHING_LVL_19')):ApplyStatus(GOON_NPC_PALADIN_VENGEANCE_LVL_19,100,-1);IF(GoonCharacterLevelEqualToOrGreaterThan(20) or HasStatus('GOON_NPC_SOMETHING_LVL_20')):ApplyStatus(GOON_NPC_PALADIN_VENGEANCE_LVL_20,100,-1)"
 
 // Template
@@ -687,7 +695,7 @@
     data "RemoveEvents" "OnStatusApplied;OnStatusRemoved"
     data "StackId" "GOON_NPC_PALADIN_VENGEANCE_PROGRESSION_TEMPLATE"
     data "StackType" "Ignore"
-    data "RemoveConditions" "not HasPassive('CX_Paladin_Vengeance_Boost')"
+    data "RemoveConditions" "not HasPassive('CX_Paladin_Vengeance_Boost',context.Source)"
 
 // Progression statuses
     new entry "GOON_NPC_PALADIN_VENGEANCE_LVL_1"
@@ -910,8 +918,8 @@
     data "Description" "h529feb44gb9e2g445dg988cg1311742dc8bc;1"
     data "Icon" "Action_Paladin_DreadfulAspect"
     data "Boosts" ""
-    data "StatsFunctorContext" "OnCreate;OnStatusApplied;OnStatusRemoved;OnCombatStarted;OnTurn"
-    data "Conditions" ""
+    data "StatsFunctorContext" "OnCreate;OnCombatStarted;OnTurn"
+    data "Conditions" "not HasPassive('Goon_Paladin_NPC_Progressions',context.Source)"
     data "StatsFunctors" "IF(GoonCharacterLevelEqualTo(1) or HasStatus('GOON_NPC_SOMETHING_LVL_1')):ApplyStatus(GOON_NPC_PALADIN_OATHBREAKER_LVL_1,100,-1);IF(GoonCharacterLevelEqualTo(2) or HasStatus('GOON_NPC_SOMETHING_LVL_2')):ApplyStatus(GOON_NPC_PALADIN_OATHBREAKER_LVL_2,100,-1);IF(GoonCharacterLevelEqualTo(3) or HasStatus('GOON_NPC_SOMETHING_LVL_3')):ApplyStatus(GOON_NPC_PALADIN_OATHBREAKER_LVL_3,100,-1);IF(GoonCharacterLevelEqualTo(4) or HasStatus('GOON_NPC_SOMETHING_LVL_4')):ApplyStatus(GOON_NPC_PALADIN_OATHBREAKER_LVL_4,100,-1);IF(GoonCharacterLevelEqualTo(5) or HasStatus('GOON_NPC_SOMETHING_LVL_5')):ApplyStatus(GOON_NPC_PALADIN_OATHBREAKER_LVL_5,100,-1);IF(GoonCharacterLevelEqualTo(6) or HasStatus('GOON_NPC_SOMETHING_LVL_6')):ApplyStatus(GOON_NPC_PALADIN_OATHBREAKER_LVL_6,100,-1);IF(GoonCharacterLevelEqualTo(7) or HasStatus('GOON_NPC_SOMETHING_LVL_7')):ApplyStatus(GOON_NPC_PALADIN_OATHBREAKER_LVL_7,100,-1);IF(GoonCharacterLevelEqualTo(8) or HasStatus('GOON_NPC_SOMETHING_LVL_8')):ApplyStatus(GOON_NPC_PALADIN_OATHBREAKER_LVL_8,100,-1);IF(GoonCharacterLevelEqualTo(9) or HasStatus('GOON_NPC_SOMETHING_LVL_9')):ApplyStatus(GOON_NPC_PALADIN_OATHBREAKER_LVL_9,100,-1);IF(GoonCharacterLevelEqualTo(10) or HasStatus('GOON_NPC_SOMETHING_LVL_10')):ApplyStatus(GOON_NPC_PALADIN_OATHBREAKER_LVL_10,100,-1);IF(GoonCharacterLevelEqualTo(11) or HasStatus('GOON_NPC_SOMETHING_LVL_11')):ApplyStatus(GOON_NPC_PALADIN_OATHBREAKER_LVL_11,100,-1);IF(GoonCharacterLevelEqualTo(12) or HasStatus('GOON_NPC_SOMETHING_LVL_12')):ApplyStatus(GOON_NPC_PALADIN_OATHBREAKER_LVL_12,100,-1);IF(GoonCharacterLevelEqualTo(13) or HasStatus('GOON_NPC_SOMETHING_LVL_13')):ApplyStatus(GOON_NPC_PALADIN_OATHBREAKER_LVL_13,100,-1);IF(GoonCharacterLevelEqualTo(14) or HasStatus('GOON_NPC_SOMETHING_LVL_14')):ApplyStatus(GOON_NPC_PALADIN_OATHBREAKER_LVL_14,100,-1);IF(GoonCharacterLevelEqualTo(15) or HasStatus('GOON_NPC_SOMETHING_LVL_15')):ApplyStatus(GOON_NPC_PALADIN_OATHBREAKER_LVL_15,100,-1);IF(GoonCharacterLevelEqualTo(16) or HasStatus('GOON_NPC_SOMETHING_LVL_16')):ApplyStatus(GOON_NPC_PALADIN_OATHBREAKER_LVL_16,100,-1);IF(GoonCharacterLevelEqualTo(17) or HasStatus('GOON_NPC_SOMETHING_LVL_17')):ApplyStatus(GOON_NPC_PALADIN_OATHBREAKER_LVL_17,100,-1);IF(GoonCharacterLevelEqualTo(18) or HasStatus('GOON_NPC_SOMETHING_LVL_18')):ApplyStatus(GOON_NPC_PALADIN_OATHBREAKER_LVL_18,100,-1);IF(GoonCharacterLevelEqualTo(19) or HasStatus('GOON_NPC_SOMETHING_LVL_19')):ApplyStatus(GOON_NPC_PALADIN_OATHBREAKER_LVL_19,100,-1);IF(GoonCharacterLevelEqualToOrGreaterThan(20) or HasStatus('GOON_NPC_SOMETHING_LVL_20')):ApplyStatus(GOON_NPC_PALADIN_OATHBREAKER_LVL_20,100,-1)"
 
 // Template
@@ -922,7 +930,7 @@
     data "RemoveEvents" "OnStatusApplied;OnStatusRemoved"
     data "StackId" "GOON_NPC_PALADIN_OATHBREAKER_PROGRESSION_TEMPLATE"
     data "StackType" "Ignore"
-    data "RemoveConditions" "not HasPassive('CX_Paladin_Oathbreaker_Boost')"
+    data "RemoveConditions" "not HasPassive('CX_Paladin_Oathbreaker_Boost',context.Source)"
 
 // Progression statuses
     new entry "GOON_NPC_PALADIN_OATHBREAKER_LVL_1"

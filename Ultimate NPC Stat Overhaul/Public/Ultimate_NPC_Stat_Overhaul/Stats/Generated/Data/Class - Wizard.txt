@@ -17,8 +17,8 @@
     data "Description" "he480cbbbg8bbeg4bb9gb3c2g8929f117fd2b;1"
     data "Icon" "PassiveFeature_ImprovedAbjuration"
     data "Boosts" ""
-    data "StatsFunctorContext" "OnCreate;OnStatusApplied;OnStatusRemoved;OnCombatStarted;OnTurn"
-    data "Conditions" "(not HasPassive('Goon_Wizard_NPC_Progressions'))"
+    data "StatsFunctorContext" "OnCreate;OnCombatStarted;OnTurn"
+    data "Conditions" "not HasPassive('Goon_Wizard_NPC_Progressions',context.Source)"
     data "StatsFunctors" "IF(GoonCharacterLevelEqualTo(1)):ApplyStatus(GOON_NPC_WIZARD_LVL_1,100,-1);IF(GoonCharacterLevelEqualTo(2)):ApplyStatus(GOON_NPC_WIZARD_LVL_2,100,-1);IF(GoonCharacterLevelEqualTo(3)):ApplyStatus(GOON_NPC_WIZARD_LVL_3,100,-1);IF(GoonCharacterLevelEqualTo(4)):ApplyStatus(GOON_NPC_WIZARD_LVL_4,100,-1);IF(GoonCharacterLevelEqualTo(5)):ApplyStatus(GOON_NPC_WIZARD_LVL_5,100,-1);IF(GoonCharacterLevelEqualTo(6)):ApplyStatus(GOON_NPC_WIZARD_LVL_6,100,-1);IF(GoonCharacterLevelEqualTo(7)):ApplyStatus(GOON_NPC_WIZARD_LVL_7,100,-1);IF(GoonCharacterLevelEqualTo(8)):ApplyStatus(GOON_NPC_WIZARD_LVL_8,100,-1);IF(GoonCharacterLevelEqualTo(9)):ApplyStatus(GOON_NPC_WIZARD_LVL_9,100,-1);IF(GoonCharacterLevelEqualTo(10)):ApplyStatus(GOON_NPC_WIZARD_LVL_10,100,-1);IF(GoonCharacterLevelEqualTo(11)):ApplyStatus(GOON_NPC_WIZARD_LVL_11,100,-1);IF(GoonCharacterLevelEqualTo(12)):ApplyStatus(GOON_NPC_WIZARD_LVL_12,100,-1);IF(GoonCharacterLevelEqualTo(13)):ApplyStatus(GOON_NPC_WIZARD_LVL_13,100,-1);IF(GoonCharacterLevelEqualTo(14)):ApplyStatus(GOON_NPC_WIZARD_LVL_14,100,-1);IF(GoonCharacterLevelEqualTo(15)):ApplyStatus(GOON_NPC_WIZARD_LVL_15,100,-1);IF(GoonCharacterLevelEqualTo(16)):ApplyStatus(GOON_NPC_WIZARD_LVL_16,100,-1);IF(GoonCharacterLevelEqualTo(17)):ApplyStatus(GOON_NPC_WIZARD_LVL_17,100,-1);IF(GoonCharacterLevelEqualTo(18)):ApplyStatus(GOON_NPC_WIZARD_LVL_18,100,-1);IF(GoonCharacterLevelEqualTo(19)):ApplyStatus(GOON_NPC_WIZARD_LVL_19,100,-1);IF(GoonCharacterLevelEqualToOrGreaterThan(20)):ApplyStatus(GOON_NPC_WIZARD_LVL_20,100,-1)"
 
 // Template
@@ -29,7 +29,7 @@
     data "RemoveEvents" "OnStatusApplied;OnStatusRemoved"
     data "StackId" "GOON_NPC_WIZARD_PROGRESSION_TEMPLATE"
     data "StackType" "Ignore"
-    data "RemoveConditions" "not HasPassive('CX_Wizard_Boost') or HasPassive('Goon_Wizard_NPC_Progressions')"
+    data "RemoveConditions" "not HasPassive('CX_Wizard_Boost',context.Source) or HasPassive('Goon_Wizard_NPC_Progressions',context.Source)"
 
 // Progression statuses
     new entry "GOON_NPC_WIZARD_LVL_1_MULTICLASS"
@@ -214,8 +214,8 @@
     data "Description" "h421dcedegb396g4298g829eg7ec6ca4116e8;1"
     data "Icon" "PassiveFeature_ProjectedWard"
     data "Boosts" ""
-    data "StatsFunctorContext" "OnCreate;OnStatusApplied;OnStatusRemoved;OnCombatStarted;OnTurn"
-    data "Conditions" ""
+    data "StatsFunctorContext" "OnCreate;OnCombatStarted;OnTurn"
+    data "Conditions" "not HasPassive('Goon_Wizard_NPC_Progressions',context.Source)"
     data "StatsFunctors" "IF(GoonCharacterLevelEqualTo(1) or HasStatus('GOON_NPC_WIZARD_LVL_1')):ApplyStatus(GOON_NPC_WIZARD_ABJURATION_LVL_1,100,-1);IF(GoonCharacterLevelEqualTo(2) or HasStatus('GOON_NPC_WIZARD_LVL_2')):ApplyStatus(GOON_NPC_WIZARD_ABJURATION_LVL_2,100,-1);IF(GoonCharacterLevelEqualTo(3) or HasStatus('GOON_NPC_WIZARD_LVL_3')):ApplyStatus(GOON_NPC_WIZARD_ABJURATION_LVL_3,100,-1);IF(GoonCharacterLevelEqualTo(4) or HasStatus('GOON_NPC_WIZARD_LVL_4')):ApplyStatus(GOON_NPC_WIZARD_ABJURATION_LVL_4,100,-1);IF(GoonCharacterLevelEqualTo(5) or HasStatus('GOON_NPC_WIZARD_LVL_5')):ApplyStatus(GOON_NPC_WIZARD_ABJURATION_LVL_5,100,-1);IF(GoonCharacterLevelEqualTo(6) or HasStatus('GOON_NPC_WIZARD_LVL_6')):ApplyStatus(GOON_NPC_WIZARD_ABJURATION_LVL_6,100,-1);IF(GoonCharacterLevelEqualTo(7) or HasStatus('GOON_NPC_WIZARD_LVL_7')):ApplyStatus(GOON_NPC_WIZARD_ABJURATION_LVL_7,100,-1);IF(GoonCharacterLevelEqualTo(8) or HasStatus('GOON_NPC_WIZARD_LVL_8')):ApplyStatus(GOON_NPC_WIZARD_ABJURATION_LVL_8,100,-1);IF(GoonCharacterLevelEqualTo(9) or HasStatus('GOON_NPC_WIZARD_LVL_9')):ApplyStatus(GOON_NPC_WIZARD_ABJURATION_LVL_9,100,-1);IF(GoonCharacterLevelEqualTo(10) or HasStatus('GOON_NPC_WIZARD_LVL_10')):ApplyStatus(GOON_NPC_WIZARD_ABJURATION_LVL_10,100,-1);IF(GoonCharacterLevelEqualTo(11) or HasStatus('GOON_NPC_WIZARD_LVL_11')):ApplyStatus(GOON_NPC_WIZARD_ABJURATION_LVL_11,100,-1);IF(GoonCharacterLevelEqualTo(12) or HasStatus('GOON_NPC_WIZARD_LVL_12')):ApplyStatus(GOON_NPC_WIZARD_ABJURATION_LVL_12,100,-1);IF(GoonCharacterLevelEqualTo(13) or HasStatus('GOON_NPC_WIZARD_LVL_13')):ApplyStatus(GOON_NPC_WIZARD_ABJURATION_LVL_13,100,-1);IF(GoonCharacterLevelEqualTo(14) or HasStatus('GOON_NPC_WIZARD_LVL_14')):ApplyStatus(GOON_NPC_WIZARD_ABJURATION_LVL_14,100,-1);IF(GoonCharacterLevelEqualTo(15) or HasStatus('GOON_NPC_WIZARD_LVL_15')):ApplyStatus(GOON_NPC_WIZARD_ABJURATION_LVL_15,100,-1);IF(GoonCharacterLevelEqualTo(16) or HasStatus('GOON_NPC_WIZARD_LVL_16')):ApplyStatus(GOON_NPC_WIZARD_ABJURATION_LVL_16,100,-1);IF(GoonCharacterLevelEqualTo(17) or HasStatus('GOON_NPC_WIZARD_LVL_17')):ApplyStatus(GOON_NPC_WIZARD_ABJURATION_LVL_17,100,-1);IF(GoonCharacterLevelEqualTo(18) or HasStatus('GOON_NPC_WIZARD_LVL_18')):ApplyStatus(GOON_NPC_WIZARD_ABJURATION_LVL_18,100,-1);IF(GoonCharacterLevelEqualTo(19) or HasStatus('GOON_NPC_WIZARD_LVL_19')):ApplyStatus(GOON_NPC_WIZARD_ABJURATION_LVL_19,100,-1);IF(GoonCharacterLevelEqualToOrGreaterThan(20) or HasStatus('GOON_NPC_WIZARD_LVL_20')):ApplyStatus(GOON_NPC_WIZARD_ABJURATION_LVL_20,100,-1)"
 
 // Template
@@ -226,7 +226,7 @@
     data "RemoveEvents" "OnStatusApplied;OnStatusRemoved"
     data "StackId" "GOON_NPC_WIZARD_ABJURATION_PROGRESSION_TEMPLATE"
     data "StackType" "Ignore"
-    data "RemoveConditions" "not HasPassive('CX_Wizard_Abjuration_Boost')"
+    data "RemoveConditions" "not HasPassive('CX_Wizard_Abjuration_Boost',context.Source)"
 
 // Progression statuses
     new entry "GOON_NPC_WIZARD_ABJURATION_LVL_1"
@@ -523,8 +523,8 @@
     data "Description" "h23bfbf7eg3e48g409fga9b1gbe367aef1724;1"
     data "Icon" "Spell_Conjuration_MageHand"
     data "Boosts" ""
-    data "StatsFunctorContext" "OnCreate;OnStatusApplied;OnStatusRemoved;OnCombatStarted;OnTurn"
-    data "Conditions" ""
+    data "StatsFunctorContext" "OnCreate;OnCombatStarted;OnTurn"
+    data "Conditions" "not HasPassive('Goon_Wizard_NPC_Progressions',context.Source)"
     data "StatsFunctors" "IF(GoonCharacterLevelEqualTo(1) or HasStatus('GOON_NPC_WIZARD_LVL_1')):ApplyStatus(GOON_NPC_WIZARD_CONJURATION_LVL_1,100,-1);IF(GoonCharacterLevelEqualTo(2) or HasStatus('GOON_NPC_WIZARD_LVL_2')):ApplyStatus(GOON_NPC_WIZARD_CONJURATION_LVL_2,100,-1);IF(GoonCharacterLevelEqualTo(3) or HasStatus('GOON_NPC_WIZARD_LVL_3')):ApplyStatus(GOON_NPC_WIZARD_CONJURATION_LVL_3,100,-1);IF(GoonCharacterLevelEqualTo(4) or HasStatus('GOON_NPC_WIZARD_LVL_4')):ApplyStatus(GOON_NPC_WIZARD_CONJURATION_LVL_4,100,-1);IF(GoonCharacterLevelEqualTo(5) or HasStatus('GOON_NPC_WIZARD_LVL_5')):ApplyStatus(GOON_NPC_WIZARD_CONJURATION_LVL_5,100,-1);IF(GoonCharacterLevelEqualTo(6) or HasStatus('GOON_NPC_WIZARD_LVL_6')):ApplyStatus(GOON_NPC_WIZARD_CONJURATION_LVL_6,100,-1);IF(GoonCharacterLevelEqualTo(7) or HasStatus('GOON_NPC_WIZARD_LVL_7')):ApplyStatus(GOON_NPC_WIZARD_CONJURATION_LVL_7,100,-1);IF(GoonCharacterLevelEqualTo(8) or HasStatus('GOON_NPC_WIZARD_LVL_8')):ApplyStatus(GOON_NPC_WIZARD_CONJURATION_LVL_8,100,-1);IF(GoonCharacterLevelEqualTo(9) or HasStatus('GOON_NPC_WIZARD_LVL_9')):ApplyStatus(GOON_NPC_WIZARD_CONJURATION_LVL_9,100,-1);IF(GoonCharacterLevelEqualTo(10) or HasStatus('GOON_NPC_WIZARD_LVL_10')):ApplyStatus(GOON_NPC_WIZARD_CONJURATION_LVL_10,100,-1);IF(GoonCharacterLevelEqualTo(11) or HasStatus('GOON_NPC_WIZARD_LVL_11')):ApplyStatus(GOON_NPC_WIZARD_CONJURATION_LVL_11,100,-1);IF(GoonCharacterLevelEqualTo(12) or HasStatus('GOON_NPC_WIZARD_LVL_12')):ApplyStatus(GOON_NPC_WIZARD_CONJURATION_LVL_12,100,-1);IF(GoonCharacterLevelEqualTo(13) or HasStatus('GOON_NPC_WIZARD_LVL_13')):ApplyStatus(GOON_NPC_WIZARD_CONJURATION_LVL_13,100,-1);IF(GoonCharacterLevelEqualTo(14) or HasStatus('GOON_NPC_WIZARD_LVL_14')):ApplyStatus(GOON_NPC_WIZARD_CONJURATION_LVL_14,100,-1);IF(GoonCharacterLevelEqualTo(15) or HasStatus('GOON_NPC_WIZARD_LVL_15')):ApplyStatus(GOON_NPC_WIZARD_CONJURATION_LVL_15,100,-1);IF(GoonCharacterLevelEqualTo(16) or HasStatus('GOON_NPC_WIZARD_LVL_16')):ApplyStatus(GOON_NPC_WIZARD_CONJURATION_LVL_16,100,-1);IF(GoonCharacterLevelEqualTo(17) or HasStatus('GOON_NPC_WIZARD_LVL_17')):ApplyStatus(GOON_NPC_WIZARD_CONJURATION_LVL_17,100,-1);IF(GoonCharacterLevelEqualTo(18) or HasStatus('GOON_NPC_WIZARD_LVL_18')):ApplyStatus(GOON_NPC_WIZARD_CONJURATION_LVL_18,100,-1);IF(GoonCharacterLevelEqualTo(19) or HasStatus('GOON_NPC_WIZARD_LVL_19')):ApplyStatus(GOON_NPC_WIZARD_CONJURATION_LVL_19,100,-1);IF(GoonCharacterLevelEqualToOrGreaterThan(20) or HasStatus('GOON_NPC_WIZARD_LVL_20')):ApplyStatus(GOON_NPC_WIZARD_CONJURATION_LVL_20,100,-1)"
 
 // Template
@@ -535,7 +535,7 @@
     data "RemoveEvents" "OnStatusApplied;OnStatusRemoved"
     data "StackId" "GOON_NPC_WIZARD_CONJURATION_PROGRESSION_TEMPLATE"
     data "StackType" "Ignore"
-    data "RemoveConditions" "not HasPassive('CX_Wizard_Conjuration_Boost')"
+    data "RemoveConditions" "not HasPassive('CX_Wizard_Conjuration_Boost',context.Source)"
 
 // Progression statuses
     new entry "GOON_NPC_WIZARD_CONJURATION_LVL_1"
@@ -827,8 +827,8 @@
     data "Description" "he0cc5350g71e6g4b06g9ae0ge266c9976799;1"
     data "Icon" "PassiveFeature_Portent"
     data "Boosts" ""
-    data "StatsFunctorContext" "OnCreate;OnStatusApplied;OnStatusRemoved;OnCombatStarted;OnTurn"
-    data "Conditions" ""
+    data "StatsFunctorContext" "OnCreate;OnCombatStarted;OnTurn"
+    data "Conditions" "not HasPassive('Goon_Wizard_NPC_Progressions',context.Source)"
     data "StatsFunctors" "IF(GoonCharacterLevelEqualTo(1) or HasStatus('GOON_NPC_WIZARD_LVL_1')):ApplyStatus(GOON_NPC_WIZARD_DIVINATION_LVL_1,100,-1);IF(GoonCharacterLevelEqualTo(2) or HasStatus('GOON_NPC_WIZARD_LVL_2')):ApplyStatus(GOON_NPC_WIZARD_DIVINATION_LVL_2,100,-1);IF(GoonCharacterLevelEqualTo(3) or HasStatus('GOON_NPC_WIZARD_LVL_3')):ApplyStatus(GOON_NPC_WIZARD_DIVINATION_LVL_3,100,-1);IF(GoonCharacterLevelEqualTo(4) or HasStatus('GOON_NPC_WIZARD_LVL_4')):ApplyStatus(GOON_NPC_WIZARD_DIVINATION_LVL_4,100,-1);IF(GoonCharacterLevelEqualTo(5) or HasStatus('GOON_NPC_WIZARD_LVL_5')):ApplyStatus(GOON_NPC_WIZARD_DIVINATION_LVL_5,100,-1);IF(GoonCharacterLevelEqualTo(6) or HasStatus('GOON_NPC_WIZARD_LVL_6')):ApplyStatus(GOON_NPC_WIZARD_DIVINATION_LVL_6,100,-1);IF(GoonCharacterLevelEqualTo(7) or HasStatus('GOON_NPC_WIZARD_LVL_7')):ApplyStatus(GOON_NPC_WIZARD_DIVINATION_LVL_7,100,-1);IF(GoonCharacterLevelEqualTo(8) or HasStatus('GOON_NPC_WIZARD_LVL_8')):ApplyStatus(GOON_NPC_WIZARD_DIVINATION_LVL_8,100,-1);IF(GoonCharacterLevelEqualTo(9) or HasStatus('GOON_NPC_WIZARD_LVL_9')):ApplyStatus(GOON_NPC_WIZARD_DIVINATION_LVL_9,100,-1);IF(GoonCharacterLevelEqualTo(10) or HasStatus('GOON_NPC_WIZARD_LVL_10')):ApplyStatus(GOON_NPC_WIZARD_DIVINATION_LVL_10,100,-1);IF(GoonCharacterLevelEqualTo(11) or HasStatus('GOON_NPC_WIZARD_LVL_11')):ApplyStatus(GOON_NPC_WIZARD_DIVINATION_LVL_11,100,-1);IF(GoonCharacterLevelEqualTo(12) or HasStatus('GOON_NPC_WIZARD_LVL_12')):ApplyStatus(GOON_NPC_WIZARD_DIVINATION_LVL_12,100,-1);IF(GoonCharacterLevelEqualTo(13) or HasStatus('GOON_NPC_WIZARD_LVL_13')):ApplyStatus(GOON_NPC_WIZARD_DIVINATION_LVL_13,100,-1);IF(GoonCharacterLevelEqualTo(14) or HasStatus('GOON_NPC_WIZARD_LVL_14')):ApplyStatus(GOON_NPC_WIZARD_DIVINATION_LVL_14,100,-1);IF(GoonCharacterLevelEqualTo(15) or HasStatus('GOON_NPC_WIZARD_LVL_15')):ApplyStatus(GOON_NPC_WIZARD_DIVINATION_LVL_15,100,-1);IF(GoonCharacterLevelEqualTo(16) or HasStatus('GOON_NPC_WIZARD_LVL_16')):ApplyStatus(GOON_NPC_WIZARD_DIVINATION_LVL_16,100,-1);IF(GoonCharacterLevelEqualTo(17) or HasStatus('GOON_NPC_WIZARD_LVL_17')):ApplyStatus(GOON_NPC_WIZARD_DIVINATION_LVL_17,100,-1);IF(GoonCharacterLevelEqualTo(18) or HasStatus('GOON_NPC_WIZARD_LVL_18')):ApplyStatus(GOON_NPC_WIZARD_DIVINATION_LVL_18,100,-1);IF(GoonCharacterLevelEqualTo(19) or HasStatus('GOON_NPC_WIZARD_LVL_19')):ApplyStatus(GOON_NPC_WIZARD_DIVINATION_LVL_19,100,-1);IF(GoonCharacterLevelEqualToOrGreaterThan(20) or HasStatus('GOON_NPC_WIZARD_LVL_20')):ApplyStatus(GOON_NPC_WIZARD_DIVINATION_LVL_20,100,-1)"
 
 // Template
@@ -839,7 +839,7 @@
     data "RemoveEvents" "OnStatusApplied;OnStatusRemoved"
     data "StackId" "GOON_NPC_WIZARD_DIVINATION_PROGRESSION_TEMPLATE"
     data "StackType" "Ignore"
-    data "RemoveConditions" "not HasPassive('CX_Wizard_Divination_Boost')"
+    data "RemoveConditions" "not HasPassive('CX_Wizard_Divination_Boost',context.Source)"
 
 // Progression statuses
     new entry "GOON_NPC_WIZARD_DIVINATION_LVL_1"
@@ -1132,8 +1132,8 @@
     data "Description" "h485a0feagcf2dg4617g85c9g97ba638e9e47;1"
     data "Icon" "Action_HypnoticGaze"
     data "Boosts" ""
-    data "StatsFunctorContext" "OnCreate;OnStatusApplied;OnStatusRemoved;OnCombatStarted;OnTurn"
-    data "Conditions" ""
+    data "StatsFunctorContext" "OnCreate;OnCombatStarted;OnTurn"
+    data "Conditions" "not HasPassive('Goon_Wizard_NPC_Progressions',context.Source)"
     data "StatsFunctors" "IF(GoonCharacterLevelEqualTo(1) or HasStatus('GOON_NPC_WIZARD_LVL_1')):ApplyStatus(GOON_NPC_WIZARD_ENCHANTMENT_LVL_1,100,-1);IF(GoonCharacterLevelEqualTo(2) or HasStatus('GOON_NPC_WIZARD_LVL_2')):ApplyStatus(GOON_NPC_WIZARD_ENCHANTMENT_LVL_2,100,-1);IF(GoonCharacterLevelEqualTo(3) or HasStatus('GOON_NPC_WIZARD_LVL_3')):ApplyStatus(GOON_NPC_WIZARD_ENCHANTMENT_LVL_3,100,-1);IF(GoonCharacterLevelEqualTo(4) or HasStatus('GOON_NPC_WIZARD_LVL_4')):ApplyStatus(GOON_NPC_WIZARD_ENCHANTMENT_LVL_4,100,-1);IF(GoonCharacterLevelEqualTo(5) or HasStatus('GOON_NPC_WIZARD_LVL_5')):ApplyStatus(GOON_NPC_WIZARD_ENCHANTMENT_LVL_5,100,-1);IF(GoonCharacterLevelEqualTo(6) or HasStatus('GOON_NPC_WIZARD_LVL_6')):ApplyStatus(GOON_NPC_WIZARD_ENCHANTMENT_LVL_6,100,-1);IF(GoonCharacterLevelEqualTo(7) or HasStatus('GOON_NPC_WIZARD_LVL_7')):ApplyStatus(GOON_NPC_WIZARD_ENCHANTMENT_LVL_7,100,-1);IF(GoonCharacterLevelEqualTo(8) or HasStatus('GOON_NPC_WIZARD_LVL_8')):ApplyStatus(GOON_NPC_WIZARD_ENCHANTMENT_LVL_8,100,-1);IF(GoonCharacterLevelEqualTo(9) or HasStatus('GOON_NPC_WIZARD_LVL_9')):ApplyStatus(GOON_NPC_WIZARD_ENCHANTMENT_LVL_9,100,-1);IF(GoonCharacterLevelEqualTo(10) or HasStatus('GOON_NPC_WIZARD_LVL_10')):ApplyStatus(GOON_NPC_WIZARD_ENCHANTMENT_LVL_10,100,-1);IF(GoonCharacterLevelEqualTo(11) or HasStatus('GOON_NPC_WIZARD_LVL_11')):ApplyStatus(GOON_NPC_WIZARD_ENCHANTMENT_LVL_11,100,-1);IF(GoonCharacterLevelEqualTo(12) or HasStatus('GOON_NPC_WIZARD_LVL_12')):ApplyStatus(GOON_NPC_WIZARD_ENCHANTMENT_LVL_12,100,-1);IF(GoonCharacterLevelEqualTo(13) or HasStatus('GOON_NPC_WIZARD_LVL_13')):ApplyStatus(GOON_NPC_WIZARD_ENCHANTMENT_LVL_13,100,-1);IF(GoonCharacterLevelEqualTo(14) or HasStatus('GOON_NPC_WIZARD_LVL_14')):ApplyStatus(GOON_NPC_WIZARD_ENCHANTMENT_LVL_14,100,-1);IF(GoonCharacterLevelEqualTo(15) or HasStatus('GOON_NPC_WIZARD_LVL_15')):ApplyStatus(GOON_NPC_WIZARD_ENCHANTMENT_LVL_15,100,-1);IF(GoonCharacterLevelEqualTo(16) or HasStatus('GOON_NPC_WIZARD_LVL_16')):ApplyStatus(GOON_NPC_WIZARD_ENCHANTMENT_LVL_16,100,-1);IF(GoonCharacterLevelEqualTo(17) or HasStatus('GOON_NPC_WIZARD_LVL_17')):ApplyStatus(GOON_NPC_WIZARD_ENCHANTMENT_LVL_17,100,-1);IF(GoonCharacterLevelEqualTo(18) or HasStatus('GOON_NPC_WIZARD_LVL_18')):ApplyStatus(GOON_NPC_WIZARD_ENCHANTMENT_LVL_18,100,-1);IF(GoonCharacterLevelEqualTo(19) or HasStatus('GOON_NPC_WIZARD_LVL_19')):ApplyStatus(GOON_NPC_WIZARD_ENCHANTMENT_LVL_19,100,-1);IF(GoonCharacterLevelEqualToOrGreaterThan(20) or HasStatus('GOON_NPC_WIZARD_LVL_20')):ApplyStatus(GOON_NPC_WIZARD_ENCHANTMENT_LVL_20,100,-1)"
 
 // Template
@@ -1144,7 +1144,7 @@
     data "RemoveEvents" "OnStatusApplied;OnStatusRemoved"
     data "StackId" "GOON_NPC_WIZARD_ENCHANTMENT_PROGRESSION_TEMPLATE"
     data "StackType" "Ignore"
-    data "RemoveConditions" "not HasPassive('CX_Wizard_Enchantment_Boost')"
+    data "RemoveConditions" "not HasPassive('CX_Wizard_Enchantment_Boost',context.Source)"
 
 // Progression statuses
     new entry "GOON_NPC_WIZARD_ENCHANTMENT_LVL_1"
@@ -1437,10 +1437,8 @@
     data "Description" "h2fa7fcd1g44dfg4020g867fgbaa7d958bc92;1"
     data "Icon" "PassiveFeature_SculptSpells"
     data "Boosts" ""
-    data "StatsFunctorContext" "OnCreate;OnStatusApplied;OnStatusRemoved"
-    data "Conditions" ""
-    data "StatsFunctorContext" "OnCreate;OnStatusApplied;OnStatusRemoved;OnCombatStarted;OnTurn"
-    data "Conditions" ""
+    data "StatsFunctorContext" "OnCreate;OnCombatStarted;OnTurn"
+    data "Conditions" "not HasPassive('Goon_Wizard_NPC_Progressions',context.Source)"
     data "StatsFunctors" "IF(GoonCharacterLevelEqualTo(1) or HasStatus('GOON_NPC_WIZARD_LVL_1')):ApplyStatus(GOON_NPC_WIZARD_EVOCATION_LVL_1,100,-1);IF(GoonCharacterLevelEqualTo(2) or HasStatus('GOON_NPC_WIZARD_LVL_2')):ApplyStatus(GOON_NPC_WIZARD_EVOCATION_LVL_2,100,-1);IF(GoonCharacterLevelEqualTo(3) or HasStatus('GOON_NPC_WIZARD_LVL_3')):ApplyStatus(GOON_NPC_WIZARD_EVOCATION_LVL_3,100,-1);IF(GoonCharacterLevelEqualTo(4) or HasStatus('GOON_NPC_WIZARD_LVL_4')):ApplyStatus(GOON_NPC_WIZARD_EVOCATION_LVL_4,100,-1);IF(GoonCharacterLevelEqualTo(5) or HasStatus('GOON_NPC_WIZARD_LVL_5')):ApplyStatus(GOON_NPC_WIZARD_EVOCATION_LVL_5,100,-1);IF(GoonCharacterLevelEqualTo(6) or HasStatus('GOON_NPC_WIZARD_LVL_6')):ApplyStatus(GOON_NPC_WIZARD_EVOCATION_LVL_6,100,-1);IF(GoonCharacterLevelEqualTo(7) or HasStatus('GOON_NPC_WIZARD_LVL_7')):ApplyStatus(GOON_NPC_WIZARD_EVOCATION_LVL_7,100,-1);IF(GoonCharacterLevelEqualTo(8) or HasStatus('GOON_NPC_WIZARD_LVL_8')):ApplyStatus(GOON_NPC_WIZARD_EVOCATION_LVL_8,100,-1);IF(GoonCharacterLevelEqualTo(9) or HasStatus('GOON_NPC_WIZARD_LVL_9')):ApplyStatus(GOON_NPC_WIZARD_EVOCATION_LVL_9,100,-1);IF(GoonCharacterLevelEqualTo(10) or HasStatus('GOON_NPC_WIZARD_LVL_10')):ApplyStatus(GOON_NPC_WIZARD_EVOCATION_LVL_10,100,-1);IF(GoonCharacterLevelEqualTo(11) or HasStatus('GOON_NPC_WIZARD_LVL_11')):ApplyStatus(GOON_NPC_WIZARD_EVOCATION_LVL_11,100,-1);IF(GoonCharacterLevelEqualTo(12) or HasStatus('GOON_NPC_WIZARD_LVL_12')):ApplyStatus(GOON_NPC_WIZARD_EVOCATION_LVL_12,100,-1);IF(GoonCharacterLevelEqualTo(13) or HasStatus('GOON_NPC_WIZARD_LVL_13')):ApplyStatus(GOON_NPC_WIZARD_EVOCATION_LVL_13,100,-1);IF(GoonCharacterLevelEqualTo(14) or HasStatus('GOON_NPC_WIZARD_LVL_14')):ApplyStatus(GOON_NPC_WIZARD_EVOCATION_LVL_14,100,-1);IF(GoonCharacterLevelEqualTo(15) or HasStatus('GOON_NPC_WIZARD_LVL_15')):ApplyStatus(GOON_NPC_WIZARD_EVOCATION_LVL_15,100,-1);IF(GoonCharacterLevelEqualTo(16) or HasStatus('GOON_NPC_WIZARD_LVL_16')):ApplyStatus(GOON_NPC_WIZARD_EVOCATION_LVL_16,100,-1);IF(GoonCharacterLevelEqualTo(17) or HasStatus('GOON_NPC_WIZARD_LVL_17')):ApplyStatus(GOON_NPC_WIZARD_EVOCATION_LVL_17,100,-1);IF(GoonCharacterLevelEqualTo(18) or HasStatus('GOON_NPC_WIZARD_LVL_18')):ApplyStatus(GOON_NPC_WIZARD_EVOCATION_LVL_18,100,-1);IF(GoonCharacterLevelEqualTo(19) or HasStatus('GOON_NPC_WIZARD_LVL_19')):ApplyStatus(GOON_NPC_WIZARD_EVOCATION_LVL_19,100,-1);IF(GoonCharacterLevelEqualToOrGreaterThan(20) or HasStatus('GOON_NPC_WIZARD_LVL_20')):ApplyStatus(GOON_NPC_WIZARD_EVOCATION_LVL_20,100,-1)"
 
 // Template
@@ -1451,7 +1449,7 @@
     data "RemoveEvents" "OnStatusApplied;OnStatusRemoved"
     data "StackId" "GOON_NPC_WIZARD_EVOCATION_PROGRESSION_TEMPLATE"
     data "StackType" "Ignore"
-    data "RemoveConditions" "not HasPassive('CX_Wizard_Evocation_Boost')"
+    data "RemoveConditions" "not HasPassive('CX_Wizard_Evocation_Boost',context.Source)"
 
 // Progression statuses
     new entry "GOON_NPC_WIZARD_EVOCATION_LVL_1"
@@ -1748,8 +1746,8 @@
     data "Description" "h13a1d527g8e69g4243g8f75gd10d9cd1ba4e;1"
     data "Icon" "PassiveFeature_ImprovedMinorIllusion"
     data "Boosts" ""
-    data "StatsFunctorContext" "OnCreate;OnStatusApplied;OnStatusRemoved;OnCombatStarted;OnTurn"
-    data "Conditions" ""
+    data "StatsFunctorContext" "OnCreate;OnCombatStarted;OnTurn"
+    data "Conditions" "not HasPassive('Goon_Wizard_NPC_Progressions',context.Source)"
     data "StatsFunctors" "IF(GoonCharacterLevelEqualTo(1) or HasStatus('GOON_NPC_WIZARD_LVL_1')):ApplyStatus(GOON_NPC_WIZARD_ILLUSION_LVL_1,100,-1);IF(GoonCharacterLevelEqualTo(2) or HasStatus('GOON_NPC_WIZARD_LVL_2')):ApplyStatus(GOON_NPC_WIZARD_ILLUSION_LVL_2,100,-1);IF(GoonCharacterLevelEqualTo(3) or HasStatus('GOON_NPC_WIZARD_LVL_3')):ApplyStatus(GOON_NPC_WIZARD_ILLUSION_LVL_3,100,-1);IF(GoonCharacterLevelEqualTo(4) or HasStatus('GOON_NPC_WIZARD_LVL_4')):ApplyStatus(GOON_NPC_WIZARD_ILLUSION_LVL_4,100,-1);IF(GoonCharacterLevelEqualTo(5) or HasStatus('GOON_NPC_WIZARD_LVL_5')):ApplyStatus(GOON_NPC_WIZARD_ILLUSION_LVL_5,100,-1);IF(GoonCharacterLevelEqualTo(6) or HasStatus('GOON_NPC_WIZARD_LVL_6')):ApplyStatus(GOON_NPC_WIZARD_ILLUSION_LVL_6,100,-1);IF(GoonCharacterLevelEqualTo(7) or HasStatus('GOON_NPC_WIZARD_LVL_7')):ApplyStatus(GOON_NPC_WIZARD_ILLUSION_LVL_7,100,-1);IF(GoonCharacterLevelEqualTo(8) or HasStatus('GOON_NPC_WIZARD_LVL_8')):ApplyStatus(GOON_NPC_WIZARD_ILLUSION_LVL_8,100,-1);IF(GoonCharacterLevelEqualTo(9) or HasStatus('GOON_NPC_WIZARD_LVL_9')):ApplyStatus(GOON_NPC_WIZARD_ILLUSION_LVL_9,100,-1);IF(GoonCharacterLevelEqualTo(10) or HasStatus('GOON_NPC_WIZARD_LVL_10')):ApplyStatus(GOON_NPC_WIZARD_ILLUSION_LVL_10,100,-1);IF(GoonCharacterLevelEqualTo(11) or HasStatus('GOON_NPC_WIZARD_LVL_11')):ApplyStatus(GOON_NPC_WIZARD_ILLUSION_LVL_11,100,-1);IF(GoonCharacterLevelEqualTo(12) or HasStatus('GOON_NPC_WIZARD_LVL_12')):ApplyStatus(GOON_NPC_WIZARD_ILLUSION_LVL_12,100,-1);IF(GoonCharacterLevelEqualTo(13) or HasStatus('GOON_NPC_WIZARD_LVL_13')):ApplyStatus(GOON_NPC_WIZARD_ILLUSION_LVL_13,100,-1);IF(GoonCharacterLevelEqualTo(14) or HasStatus('GOON_NPC_WIZARD_LVL_14')):ApplyStatus(GOON_NPC_WIZARD_ILLUSION_LVL_14,100,-1);IF(GoonCharacterLevelEqualTo(15) or HasStatus('GOON_NPC_WIZARD_LVL_15')):ApplyStatus(GOON_NPC_WIZARD_ILLUSION_LVL_15,100,-1);IF(GoonCharacterLevelEqualTo(16) or HasStatus('GOON_NPC_WIZARD_LVL_16')):ApplyStatus(GOON_NPC_WIZARD_ILLUSION_LVL_16,100,-1);IF(GoonCharacterLevelEqualTo(17) or HasStatus('GOON_NPC_WIZARD_LVL_17')):ApplyStatus(GOON_NPC_WIZARD_ILLUSION_LVL_17,100,-1);IF(GoonCharacterLevelEqualTo(18) or HasStatus('GOON_NPC_WIZARD_LVL_18')):ApplyStatus(GOON_NPC_WIZARD_ILLUSION_LVL_18,100,-1);IF(GoonCharacterLevelEqualTo(19) or HasStatus('GOON_NPC_WIZARD_LVL_19')):ApplyStatus(GOON_NPC_WIZARD_ILLUSION_LVL_19,100,-1);IF(GoonCharacterLevelEqualToOrGreaterThan(20) or HasStatus('GOON_NPC_WIZARD_LVL_20')):ApplyStatus(GOON_NPC_WIZARD_ILLUSION_LVL_20,100,-1)"
 
 // Template
@@ -1760,7 +1758,7 @@
     data "RemoveEvents" "OnStatusApplied;OnStatusRemoved"
     data "StackId" "GOON_NPC_WIZARD_ILLUSION_PROGRESSION_TEMPLATE"
     data "StackType" "Ignore"
-    data "RemoveConditions" "not HasPassive('CX_Wizard_Illusion_Boost')"
+    data "RemoveConditions" "not HasPassive('CX_Wizard_Illusion_Boost',context.Source)"
 
 // Progression statuses
     new entry "GOON_NPC_WIZARD_ILLUSION_LVL_1"
@@ -2053,8 +2051,8 @@
     data "Description" "hcffab35fg6567g4cd3ga4eeg568c65b1bbd7;1"
     data "Icon" "PassiveFeature_UndeadThralls_ExtraSummon"
     data "Boosts" ""
-    data "StatsFunctorContext" "OnCreate;OnStatusApplied;OnStatusRemoved;OnCombatStarted;OnTurn"
-    data "Conditions" ""
+    data "StatsFunctorContext" "OnCreate;OnCombatStarted;OnTurn"
+    data "Conditions" "not HasPassive('Goon_Wizard_NPC_Progressions',context.Source)"
     data "StatsFunctors" "IF(GoonCharacterLevelEqualTo(1) or HasStatus('GOON_NPC_WIZARD_LVL_1')):ApplyStatus(GOON_NPC_WIZARD_NECROMANCY_LVL_1,100,-1);IF(GoonCharacterLevelEqualTo(2) or HasStatus('GOON_NPC_WIZARD_LVL_2')):ApplyStatus(GOON_NPC_WIZARD_NECROMANCY_LVL_2,100,-1);IF(GoonCharacterLevelEqualTo(3) or HasStatus('GOON_NPC_WIZARD_LVL_3')):ApplyStatus(GOON_NPC_WIZARD_NECROMANCY_LVL_3,100,-1);IF(GoonCharacterLevelEqualTo(4) or HasStatus('GOON_NPC_WIZARD_LVL_4')):ApplyStatus(GOON_NPC_WIZARD_NECROMANCY_LVL_4,100,-1);IF(GoonCharacterLevelEqualTo(5) or HasStatus('GOON_NPC_WIZARD_LVL_5')):ApplyStatus(GOON_NPC_WIZARD_NECROMANCY_LVL_5,100,-1);IF(GoonCharacterLevelEqualTo(6) or HasStatus('GOON_NPC_WIZARD_LVL_6')):ApplyStatus(GOON_NPC_WIZARD_NECROMANCY_LVL_6,100,-1);IF(GoonCharacterLevelEqualTo(7) or HasStatus('GOON_NPC_WIZARD_LVL_7')):ApplyStatus(GOON_NPC_WIZARD_NECROMANCY_LVL_7,100,-1);IF(GoonCharacterLevelEqualTo(8) or HasStatus('GOON_NPC_WIZARD_LVL_8')):ApplyStatus(GOON_NPC_WIZARD_NECROMANCY_LVL_8,100,-1);IF(GoonCharacterLevelEqualTo(9) or HasStatus('GOON_NPC_WIZARD_LVL_9')):ApplyStatus(GOON_NPC_WIZARD_NECROMANCY_LVL_9,100,-1);IF(GoonCharacterLevelEqualTo(10) or HasStatus('GOON_NPC_WIZARD_LVL_10')):ApplyStatus(GOON_NPC_WIZARD_NECROMANCY_LVL_10,100,-1);IF(GoonCharacterLevelEqualTo(11) or HasStatus('GOON_NPC_WIZARD_LVL_11')):ApplyStatus(GOON_NPC_WIZARD_NECROMANCY_LVL_11,100,-1);IF(GoonCharacterLevelEqualTo(12) or HasStatus('GOON_NPC_WIZARD_LVL_12')):ApplyStatus(GOON_NPC_WIZARD_NECROMANCY_LVL_12,100,-1);IF(GoonCharacterLevelEqualTo(13) or HasStatus('GOON_NPC_WIZARD_LVL_13')):ApplyStatus(GOON_NPC_WIZARD_NECROMANCY_LVL_13,100,-1);IF(GoonCharacterLevelEqualTo(14) or HasStatus('GOON_NPC_WIZARD_LVL_14')):ApplyStatus(GOON_NPC_WIZARD_NECROMANCY_LVL_14,100,-1);IF(GoonCharacterLevelEqualTo(15) or HasStatus('GOON_NPC_WIZARD_LVL_15')):ApplyStatus(GOON_NPC_WIZARD_NECROMANCY_LVL_15,100,-1);IF(GoonCharacterLevelEqualTo(16) or HasStatus('GOON_NPC_WIZARD_LVL_16')):ApplyStatus(GOON_NPC_WIZARD_NECROMANCY_LVL_16,100,-1);IF(GoonCharacterLevelEqualTo(17) or HasStatus('GOON_NPC_WIZARD_LVL_17')):ApplyStatus(GOON_NPC_WIZARD_NECROMANCY_LVL_17,100,-1);IF(GoonCharacterLevelEqualTo(18) or HasStatus('GOON_NPC_WIZARD_LVL_18')):ApplyStatus(GOON_NPC_WIZARD_NECROMANCY_LVL_18,100,-1);IF(GoonCharacterLevelEqualTo(19) or HasStatus('GOON_NPC_WIZARD_LVL_19')):ApplyStatus(GOON_NPC_WIZARD_NECROMANCY_LVL_19,100,-1);IF(GoonCharacterLevelEqualToOrGreaterThan(20) or HasStatus('GOON_NPC_WIZARD_LVL_20')):ApplyStatus(GOON_NPC_WIZARD_NECROMANCY_LVL_20,100,-1)"
 
 // Template
@@ -2065,7 +2063,7 @@
     data "RemoveEvents" "OnStatusApplied;OnStatusRemoved"
     data "StackId" "GOON_NPC_WIZARD_NECROMANCY_PROGRESSION_TEMPLATE"
     data "StackType" "Ignore"
-    data "RemoveConditions" "not HasPassive('CX_Wizard_Necromancy_Boost')"
+    data "RemoveConditions" "not HasPassive('CX_Wizard_Necromancy_Boost',context.Source)"
 
 // Progression statuses
     new entry "GOON_NPC_WIZARD_NECROMANCY_LVL_1"
@@ -2359,8 +2357,8 @@
     data "Description" "hab88cc43g1f03g47e1g823bga96d7b5b06cf;1"
     data "Icon" "PassiveFeature_ExperimentalAlchemy"
     data "Boosts" ""
-    data "StatsFunctorContext" "OnCreate;OnStatusApplied;OnStatusRemoved;OnCombatStarted;OnTurn"
-    data "Conditions" ""
+    data "StatsFunctorContext" "OnCreate;OnCombatStarted;OnTurn"
+    data "Conditions" "not HasPassive('Goon_Wizard_NPC_Progressions',context.Source)"
     data "StatsFunctors" "IF(GoonCharacterLevelEqualTo(1) or HasStatus('GOON_NPC_WIZARD_LVL_1')):ApplyStatus(GOON_NPC_WIZARD_TRANSMUTATION_LVL_1,100,-1);IF(GoonCharacterLevelEqualTo(2) or HasStatus('GOON_NPC_WIZARD_LVL_2')):ApplyStatus(GOON_NPC_WIZARD_TRANSMUTATION_LVL_2,100,-1);IF(GoonCharacterLevelEqualTo(3) or HasStatus('GOON_NPC_WIZARD_LVL_3')):ApplyStatus(GOON_NPC_WIZARD_TRANSMUTATION_LVL_3,100,-1);IF(GoonCharacterLevelEqualTo(4) or HasStatus('GOON_NPC_WIZARD_LVL_4')):ApplyStatus(GOON_NPC_WIZARD_TRANSMUTATION_LVL_4,100,-1);IF(GoonCharacterLevelEqualTo(5) or HasStatus('GOON_NPC_WIZARD_LVL_5')):ApplyStatus(GOON_NPC_WIZARD_TRANSMUTATION_LVL_5,100,-1);IF(GoonCharacterLevelEqualTo(6) or HasStatus('GOON_NPC_WIZARD_LVL_6')):ApplyStatus(GOON_NPC_WIZARD_TRANSMUTATION_LVL_6,100,-1);IF(GoonCharacterLevelEqualTo(7) or HasStatus('GOON_NPC_WIZARD_LVL_7')):ApplyStatus(GOON_NPC_WIZARD_TRANSMUTATION_LVL_7,100,-1);IF(GoonCharacterLevelEqualTo(8) or HasStatus('GOON_NPC_WIZARD_LVL_8')):ApplyStatus(GOON_NPC_WIZARD_TRANSMUTATION_LVL_8,100,-1);IF(GoonCharacterLevelEqualTo(9) or HasStatus('GOON_NPC_WIZARD_LVL_9')):ApplyStatus(GOON_NPC_WIZARD_TRANSMUTATION_LVL_9,100,-1);IF(GoonCharacterLevelEqualTo(10) or HasStatus('GOON_NPC_WIZARD_LVL_10')):ApplyStatus(GOON_NPC_WIZARD_TRANSMUTATION_LVL_10,100,-1);IF(GoonCharacterLevelEqualTo(11) or HasStatus('GOON_NPC_WIZARD_LVL_11')):ApplyStatus(GOON_NPC_WIZARD_TRANSMUTATION_LVL_11,100,-1);IF(GoonCharacterLevelEqualTo(12) or HasStatus('GOON_NPC_WIZARD_LVL_12')):ApplyStatus(GOON_NPC_WIZARD_TRANSMUTATION_LVL_12,100,-1);IF(GoonCharacterLevelEqualTo(13) or HasStatus('GOON_NPC_WIZARD_LVL_13')):ApplyStatus(GOON_NPC_WIZARD_TRANSMUTATION_LVL_13,100,-1);IF(GoonCharacterLevelEqualTo(14) or HasStatus('GOON_NPC_WIZARD_LVL_14')):ApplyStatus(GOON_NPC_WIZARD_TRANSMUTATION_LVL_14,100,-1);IF(GoonCharacterLevelEqualTo(15) or HasStatus('GOON_NPC_WIZARD_LVL_15')):ApplyStatus(GOON_NPC_WIZARD_TRANSMUTATION_LVL_15,100,-1);IF(GoonCharacterLevelEqualTo(16) or HasStatus('GOON_NPC_WIZARD_LVL_16')):ApplyStatus(GOON_NPC_WIZARD_TRANSMUTATION_LVL_16,100,-1);IF(GoonCharacterLevelEqualTo(17) or HasStatus('GOON_NPC_WIZARD_LVL_17')):ApplyStatus(GOON_NPC_WIZARD_TRANSMUTATION_LVL_17,100,-1);IF(GoonCharacterLevelEqualTo(18) or HasStatus('GOON_NPC_WIZARD_LVL_18')):ApplyStatus(GOON_NPC_WIZARD_TRANSMUTATION_LVL_18,100,-1);IF(GoonCharacterLevelEqualTo(19) or HasStatus('GOON_NPC_WIZARD_LVL_19')):ApplyStatus(GOON_NPC_WIZARD_TRANSMUTATION_LVL_19,100,-1);IF(GoonCharacterLevelEqualToOrGreaterThan(20) or HasStatus('GOON_NPC_WIZARD_LVL_20')):ApplyStatus(GOON_NPC_WIZARD_TRANSMUTATION_LVL_20,100,-1)"
 
 // Template
@@ -2371,7 +2369,7 @@
     data "RemoveEvents" "OnStatusApplied;OnStatusRemoved"
     data "StackId" "GOON_NPC_WIZARD_TRANSMUTATION_PROGRESSION_TEMPLATE"
     data "StackType" "Ignore"
-    data "RemoveConditions" "not HasPassive('CX_Wizard_Transmutation_Boost')"
+    data "RemoveConditions" "not HasPassive('CX_Wizard_Transmutation_Boost',context.Source)"
 
 // Progression statuses
     new entry "GOON_NPC_WIZARD_TRANSMUTATION_LVL_1"
