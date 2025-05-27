@@ -28,7 +28,7 @@ data "Boosts" "Ability(Strength, 4);AC(-2)"
 
 new entry "Goon_Woman_Ogre_Strong_And_Kinda_Hot_When_She_Rages_Skibidi_Rizz_Up_Her_Swamp_Ongfr_2"
 type "PassiveData"
-// data "Properties" "IsHidden"
+data "Properties" "IsHidden"
 // Polma's Wrath
 data "DisplayName" "h027cb16egeb92g4fdagb7f3g2537ced5437b;1"
 // Polma is enraged! &lt;LSTag Tooltip="Strength"&gt;Strength&lt;/LSTag&gt; increased by 4, &lt;LSTag Tooltip="ArmourClass"&gt;Armour Class&lt;/LSTag&gt; reduced by 2.
