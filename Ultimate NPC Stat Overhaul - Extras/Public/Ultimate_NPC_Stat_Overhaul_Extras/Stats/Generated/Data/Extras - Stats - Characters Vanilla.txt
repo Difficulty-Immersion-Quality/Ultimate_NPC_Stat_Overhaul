@@ -506,7 +506,28 @@ new entry "Ogre"
 type "Character"
 using "Ogre"
 // data "Passives" "OgreCurse;AttackOfOpportunity;Darkvision;DarknessRules"
-data "Passives" "CX_Barbarian_Berserker_Boost;AttackOfOpportunity;DarknessRules;Darkvision;OgreCurse;FullSwing_Passive;Mod_Titans_Reach"
+data "Passives" "CX_Barbarian_Berserker_Boost;AttackOfOpportunity;DarknessRules;Darkvision;OgreCurse;Goon_Rage_Ogre_Passive;FullSwing_Passive;Mod_Titans_Reach"
+
+// Lump the Enlightened (Has Wizard progressions, adding Martial boost)
+new entry "FOR_OgreCaptain"
+type "Character"
+using "FOR_OgreCaptain"
+// data "Passives" "OgreCurse;AttackOfOpportunity;Darkvision;DarknessRules"
+data "Passives" "CX_Martial_Boost;AttackOfOpportunity;DarknessRules;Darkvision;OgreCurse;FullSwing_Passive;Mod_Titans_Reach"
+
+// Buthir (Inherits Barbarian progressions, inherits Berserker subclass) (Her boosts from proprietary rage are added to all other rages)
+new entry "FOR_OgreMate"
+type "Character"
+using "FOR_OgreMate"
+// data "Passives" "OgreCurse;AttackOfOpportunity;Darkvision;DarknessRules"
+data "Passives" "CX_Barbarian_Berserker_Boost;AttackOfOpportunity;DarknessRules;Darkvision;OgreCurse;Goon_Rage_Ogre_Passive;Goon_Woman_Ogre_Strong_And_Kinda_Hot_When_She_Rages_Skibidi_Rizz_Up_Her_Swamp_Ongfr;FullSwing_Passive;Mod_Titans_Reach"
+
+// Polma - Bodyguard of the High Priestess, Cult of the Absolute (Inherits Barbarian progressions, inherits Berserker subclass) (Her boosts from proprietary rage are added to all other rages)
+new entry "GOB_Ogre_Bodyguard"
+type "Character"
+using "GOB_Ogre_Bodyguard"
+// data "Passives" "OgreCurse;AttackOfOpportunity;Darkvision;DarknessRules"
+data "Passives" "CX_Barbarian_Berserker_Boost;AttackOfOpportunity;DarknessRules;Darkvision;OgreCurse;Goon_Rage_Ogre_Passive;Goon_Woman_Ogre_Strong_And_Kinda_Hot_When_She_Rages_Skibidi_Rizz_Up_Her_Swamp_Ongfr_2;FullSwing_Passive;Mod_Titans_Reach"
 
 // ==================================== Monstrosities ====================================
 // "_Base"

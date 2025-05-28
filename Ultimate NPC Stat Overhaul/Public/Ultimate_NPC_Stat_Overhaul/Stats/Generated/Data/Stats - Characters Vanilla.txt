@@ -1328,7 +1328,7 @@ new entry "_Giants"
 type "Character"
 using "_Giants"
 // data "Passives" "AttackOfOpportunity;DarknessRules"
-data "Passives" "CX_Barbarian_Berserker_Boost;AttackOfOpportunity;DarknessRules;Goon_Rage_Ogre_Passive"
+data "Passives" "CX_Barbarian_Berserker_Boost;AttackOfOpportunity;DarknessRules"
 // data "Progressions" ""
 data "Progressions" "56db8107-e04c-4fe3-94f3-fd4acd44cd4a"
 
