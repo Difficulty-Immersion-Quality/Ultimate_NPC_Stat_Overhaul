@@ -472,7 +472,14 @@ data "PersonalStatusImmunities" "SG_Charmed;SG_Frightened;SG_DifficultTerrain;SG
 data "Passives" "CX_Paladin_Vengeance_Boost;AttackOfOpportunity;DarknessRules;ImmuneToDisarm;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check;MagicResistance;LOW_RamazithsTower_Nightsong_Deva_Interrupt;DivineHealth;Mod_Titans_Reach;FullSwing_Passive;FrontFace_Radiant_Feat;Radiant_Strike_Lightbringerfeat;Feat_two_lightorbs;featRadiatingOrb_Ring_Passlight;RadiatingOrb_ArmorLightff;PotentCantrip;NPC_CbD;ArmyArcana"
 data "NecroticResistance" "Resistant"
 
-// Mind-Claw of Tu'narath - W'wargaz summons in Crèche Y'llek
+// All other Spiritual Weapon summons inherit from Greataxe
+new entry "SpiritualWeapon_Greataxe"
+type "Character"
+using "SpiritualWeapon_Greataxe"
+// data "ActionResources" "BonusActionPoint:1;Movement:6"
+data "ActionResources" "BonusActionPoint:1;Movement:9"
+
+// Mind-Claw of Tu'narath - W'wargaz summons in Crèche Y'llek (Doesn't inherit 9 movement, has 12 movement)
 new entry "CRE_Githyanki_Inquisitor_VlaakithsMindSword"
 type "Character"
 using "CRE_Githyanki_Inquisitor_VlaakithsMindSword"
