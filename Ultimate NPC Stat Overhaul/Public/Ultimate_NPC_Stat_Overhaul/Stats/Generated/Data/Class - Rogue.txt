@@ -341,6 +341,7 @@
     //     <attribute id="TableUUID" type="guid" value="7205dbe2-5eef-4cd6-ad7f-45b3dc254f78"/>
     //     <attribute id="UUID" type="guid" value="530341bc-d996-49ee-a63d-e1007fccad90"/>
 
+    // Bug Fix: There's a bug in vanilla where it gives 2 level 1 spellslots instead of a single level 2 spellslot
     new entry "GOON_NPC_ROGUE_ARCANETRICKSTER_LVL_10"
     type "StatusData"
     data "StatusType" "BOOST"
