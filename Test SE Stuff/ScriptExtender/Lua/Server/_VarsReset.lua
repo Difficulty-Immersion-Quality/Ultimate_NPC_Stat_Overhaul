@@ -1,12 +1,8 @@
-function Timestamp()
-    return "[" .. tostring(Osi.GetGameTime()) .. "]"
-end
-
 function Goon_DebugForceReapply()
-    print(Timestamp(), "== Manual Debug Force Reapply ==")
+    Logger:BasicDebug("== Manual Debug Force Reapply ==")
 
     if not LevelBoostTables then
-        print(Timestamp(), "[ERROR] LevelBoostTables is nil!")
+        Logger:BasicError("[ERROR] LevelBoostTables is nil!")
         return
     end
 
@@ -16,25 +12,25 @@ function Goon_DebugForceReapply()
             local name = Osi.GetDisplayName(charID) or "Unknown"
             local level = Osi.GetLevel(charID) or 0
 
-            print(Timestamp(), "[CHARACTER]", name, "(", charID, ") | Level:", level)
+            Logger:BasicInfo("[CHARACTER] %s (%s) | Level: %s", name, charID, level)
 
             for classPassive, classFunction in pairs(LevelBoostTables) do
                 if HasPassive(charID, classPassive) then
-                    print(Timestamp(), "  [CLASS DETECTED]", classPassive)
+                    Logger:BasicInfo("  [CLASS DETECTED] %s", classPassive)
 
                     -- Force wipe and reapply
                     Mods[ModTable].PersistentVars[charID] = {}
 
-                    print(Timestamp(), "  [ROULETTE] Running class function...")
+                    Logger:BasicDebug("  [ROULETTE] Running class function...")
                     classFunction(charID)
 
-                    print(Timestamp(), "  [LEVEL BOOSTS] Reapplying boosts...")
+                    Logger:BasicDebug("  [LEVEL BOOSTS] Reapplying boosts...")
                     ApplyLevelBasedBoosts(charID)
 
-                    print(Timestamp(), "  [PASSIVES] Reapplying persistent passives...")
+                    Logger:BasicDebug("  [PASSIVES] Reapplying persistent passives...")
                     ApplyPersistantVars(charID)
 
-                    print(Timestamp(), "  [COMPLETE] All reapplication done for", name)
+                    Logger:BasicInfo("  [COMPLETE] All reapplication done for %s", name)
                     break -- Stop checking further class passives
                 end
             end
@@ -42,10 +38,9 @@ function Goon_DebugForceReapply()
     end
 
     -- Print the entire PersistentVars table for debug
-    print(Timestamp(), "[DEBUG] Full PersistentVars Table:")
-    Ext.Utils.PrintLuaTable(Mods[ModTable].PersistentVars)
+    Logger:BasicDebug("[DEBUG] Full PersistentVars Table:", Ext.Json.Stringify(Mods[ModTable].PersistentVars))
 
-    print(Timestamp(), "== Manual Debug Force Reapply Complete ==")
+    Logger:BasicDebug("== Manual Debug Force Reapply Complete ==")
 end
 
 Ext.RegisterConsoleCommand("Goon_DebugForceReapply", function()

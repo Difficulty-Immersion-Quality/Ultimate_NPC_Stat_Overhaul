@@ -31,22 +31,22 @@ Ext.Osiris.RegisterListener("LevelGameplayStarted", 2, "after", function(level, 
 
                         if stored and found and stored ~= found then
                             assigned[charID] = found
-                            Ext.Utils.Print(string.format("[Ultimate NPC Stat Overhaul] Subclass mismatch detected for %s (%s). Updating stored subclass: %s", charName, charID, found))
+                            Logger:BasicDebug("Subclass mismatch detected for %s (%s). Updating stored subclass: %s", charName, charID, found)
 
                         elseif stored and not found then
                             Osi.AddPassive(charID, stored)
-                            Ext.Utils.Print(string.format("[Ultimate NPC Stat Overhaul] Stored subclasss not found for %s (%s). Applying: %s", charName, charID, stored))
+                            Logger:BasicDebug("Stored subclasss not found for %s (%s). Applying: %s", charName, charID, stored)
 
                         elseif not stored and found then
                             assigned[charID] = found
-                            Ext.Utils.Print(string.format("[Ultimate NPC Stat Overhaul] Found existing subclass on %s (%s). Storing: %s", charName, charID, found))
+                            Logger:BasicDebug("Found existing subclass on %s (%s). Storing: %s", charName, charID, found)
 
                         elseif not stored and not found then
                             local roll = math.random(1, #data.SubclassTable)
                             local selected = data.SubclassTable[roll]
                             assigned[charID] = selected
                             Osi.AddPassive(charID, selected)
-                            Ext.Utils.Print(string.format("[Ultimate NPC Stat Overhaul] Rolled random subclass for %s (%s). Storing: %s", charName, charID, selected))
+                            Logger:BasicDebug("Rolled random subclass for %s (%s). Storing: %s", charName, charID, selected)
                         end
                     end
                 end
