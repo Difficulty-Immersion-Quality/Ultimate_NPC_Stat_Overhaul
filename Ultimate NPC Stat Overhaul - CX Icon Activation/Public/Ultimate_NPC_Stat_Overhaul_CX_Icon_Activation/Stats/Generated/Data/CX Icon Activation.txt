@@ -1,0 +1,8 @@
+// ===================================================== Main passives =====================================================
+
+// Main passive, no real reason to be visible
+new entry "CX_PASSIVE"
+type "PassiveData"
+using "CX_PASSIVE"
+// data "Properties" "IsHidden"
+data "Properties" ""

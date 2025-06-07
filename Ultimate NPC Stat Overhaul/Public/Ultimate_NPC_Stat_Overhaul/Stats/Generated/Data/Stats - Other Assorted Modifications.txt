@@ -1,0 +1,143 @@
+// ==================================== Make downed players a preferred target for AI ====================================
+
+new entry "DOWNED"
+type "StatusData"
+data "StatusType" "DOWNED"
+using "DOWNED"
+// data "Boosts" "AbilityFailedSavingThrow(Strength);AbilityFailedSavingThrow(Dexterity);CriticalHit(AttackTarget,Success,Always,2.5);IF(not DistanceToTargetGreaterThan(3)):Advantage(AttackTarget);IF(DistanceToTargetGreaterThan(3)):Disadvantage(AttackTarget);StatusImmunity(SG_Prone);StatusImmunity(SG_Condition);StatusImmunity(SHOCKWAVE)"
+data "Boosts" "AbilityFailedSavingThrow(Strength);AbilityFailedSavingThrow(Dexterity);CriticalHit(AttackTarget,Success,Always,2.5);IF(not DistanceToTargetGreaterThan(3)):Advantage(AttackTarget);IF(DistanceToTargetGreaterThan(3)):Disadvantage(AttackTarget);StatusImmunity(SG_Prone);StatusImmunity(SG_Condition);StatusImmunity(SHOCKWAVE);Tag(AI_PREFERRED_TARGET)"
+
+// ==================================== Dame Aylin: Give here automatic self-revive a saving throw ====================================
+
+new entry "SHA_NightsongResurrection"
+type "PassiveData"
+using "SHA_NightsongResurrection"
+// Blessed with the favour of a goddess, Nightsong cannot be permanently killed. When unconscious, the start of her turn she recovers 1 <LSTag Tooltip="HitPoints">hit point</LSTag>. 
+// data "Description" "h193b7ee8g5a0bg4d44g93dega35d0a6530f8;1"
+// Blessed with the favour of a goddess, Nightsong cannot be permanently killed. When unconscious, Nightsong can regain 1 &lt;LSTag Tooltip="HitPoints"&gt;hit point&lt;/LSTag&gt; if she succeeds a &lt;LSTag Tooltip="Constitution"&gt;Constitution&lt;/LSTag&gt; &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throw&lt;/LSTag&gt; at the beginning of her turn.
+data "Description" "hb2f5c3eag43a7g4f82g89d8g10640b01212b;1"
+
+new entry "GLO_NIGHTSONGRESURRECTION_DOWNED"
+type "StatusData"
+data "StatusType" "DOWNED"
+// using "DOWNED"
+using "GLO_NIGHTSONGRESURRECTION_DOWNED"
+// data "TickFunctors" "RegainHitPoints(1)"
+data "TickFunctors" "ApplyStatus(GOON_NIGHTSONGRESURRECTION_TECHNICAL,100,0)"
+
+new entry "GOON_NIGHTSONGRESURRECTION_TECHNICAL"
+type "StatusData"
+data "StatusType" "DOWNED"
+// Child of the Moonmaiden
+data "DisplayName" "hc929021bg2701g44aegbcf0g19299216768d;2"
+// Blessed with the favour of a goddess, Nightsong cannot be permanently killed. When unconscious, Nightsong can regain 1 &lt;LSTag Tooltip="HitPoints"&gt;hit point&lt;/LSTag&gt; if she succeeds a &lt;LSTag Tooltip="Constitution"&gt;Constitution&lt;/LSTag&gt; &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throw&lt;/LSTag&gt; at the beginning of her turn.
+data "Description" "hb2f5c3eag43a7g4f82g89d8g10640b01212b;1"
+data "StatusPropertyFlags" "DisableOverhead;DisableCombatlog;DisablePortraitIndicator"
+data "OnApplyFunctors" "IF(SavingThrow(Ability.Constitution,15)):RegainHitPoints(1)"
+
+// ==================================== Spectators: Unpetrification Ray ====================================
+// Make the Spectator remove petrification from Drow within 9m (30ft) of the original target. Should probably take 3 rounds of combat to release them all.
+
+new entry "Target_UND_Spectator_UnpetrifyingRay"
+type "SpellData"
+data "SpellType" "Target"
+// using "Target_ParalyzingRay_Spectator"
+using "Target_UND_Spectator_UnpetrifyingRay"
+// data "AreaRadius" ""
+data "AreaRadius" "9"
+
+// ==================================== Auntie Ethel: Anti-Cheese Door Unlocker ====================================
+
+new entry "Goon_NPC_Ethel_Unlocker"
+type "PassiveData"
+data "Properties" "IsHidden"
+data "StatsFunctorContext" "OnCreate;OnCombatStarted;OnTurn"
+data "StatsFunctors" "IF(not HasStatus('GOON_NPC_ETHEL_UNLOCKER')):ApplyStatus(GOON_NPC_ETHEL_UNLOCKER,100,-1)"
+
+new entry "GOON_NPC_ETHEL_UNLOCKER"
+type "StatusData"
+data "StatusType" "BOOST"
+data "StatusPropertyFlags" "DisableOverhead;DisableCombatlog;DisablePortraitIndicator;ApplyToDead;IgnoreResting"
+data "AuraRadius" "2"
+//data "TargetConditions" "Item() and (Locked() or Tagged('KNOCK_TARGET')) and not Tagged('KNOCKBLOCK') and not HasStatus('ARCANE_LOCK')"
+data "AuraStatuses" "TARGET:IF(Item() and (Locked() or Tagged('KNOCK_TARGET'))):ApplyStatus(GOON_NPC_ETHEL_UNLOCKER_TECHNICAL)"
+
+new entry "GOON_NPC_ETHEL_UNLOCKER_TECHNICAL"
+type "StatusData"
+data "StatusType" "BOOST"
+data "StatusPropertyFlags" "DisableOverhead;DisableCombatlog;DisablePortraitIndicator;ApplyToDead;IgnoreResting"
+data "OnApplyFunctors" "Unlock()"
+data "TickType" "StartTurn"
+data "TickFunctors" "Unlock()"
+
+// ==================================== Add a safeguard to the goblin extra attack shit so they don't go crazy if given proper Extra Attack ====================================
+
+new entry "GOB_Boss_RecklessAttack"
+type "PassiveData"
+// using "ExtraAttack"
+using "GOB_Boss_RecklessAttack"
+// data "EnabledConditions" "not Tagged('EXTRA_ATTACK_BLOCKED')"
+data "EnabledConditions" "not Tagged('EXTRA_ATTACK_BLOCKED') and not HasPassive('ExtraAttack') and not HasPassive('ExtraAttack_2')"
+
+// ==================================== Gerringothe Thorm - Accursed Keeper of Coins ====================================
+// Bug Fix: Listed appropriate damage for Gerringothe Thorm's Headbutt.
+
+new entry "Target_Headbutt_TollCollector_Face"
+type "SpellData"
+data "SpellType" "Target"
+using "Target_Headbutt_TollCollector_Face"
+data "TooltipDamageList" "DealDamage(2d4+UnarmedMeleeAbilityModifier,Bludgeoning)"
+
+// ==================================== Malus Thorm - Shar's Scalpel ====================================
+// Bug Fix: Added missing 40% or less HP threshold for Malus Thorm's Multiattack to be usable.
+// Changes: Made the threshold 60% instead.
+
+new entry "Target_Multiattack_Surgeon"
+type "SpellData"
+data "SpellType" "Target"
+// using "Target_Multiattack"
+using "Target_Multiattack_Surgeon"
+// data "RequirementConditions" "HasHPPercentageEqualOrLessThan(40,context.Source)"
+data "RequirementConditions" "HasHPPercentageEqualOrLessThan(60,context.Source)"
+
+new entry "Multiattack_Surgeon"
+type "PassiveData"
+using "Multiattack_Surgeon"
+// Malus Thorm can &lt;LSTag Type="Spell" Tooltip="Target_Multiattack_Surgeon"&gt;Multiattack&lt;/LSTag&gt; if his &lt;LSTag Tooltip="HitPoints"&gt;hit points&lt;/LSTag&gt; are at 40% or less.
+// data "Description" "h0e220109gede8g427cg88d2g4375734e1d14;1"
+// Malus Thorm can &lt;LSTag Type="Spell" Tooltip="Target_Multiattack_Surgeon"&gt;Multiattack&lt;/LSTag&gt; if his &lt;LSTag Tooltip="HitPoints"&gt;hit points&lt;/LSTag&gt; are at 60% or less.
+data "Description" "h71acc892g62a3g4915ga463g01ca37c6054f;1"
+
+// ==================================== Cranium Rats ====================================
+// Bug Fix: Infectious Madness no longer incorrectly shows that it's been applied to the Cranium Rat.
+
+new entry "Confusion_CraniumRat"
+type "PassiveData"
+using "Confusion_CraniumRat"
+data "TooltipSave" "Intelligence"
+// data "StatsFunctors" "IF(not SavingThrow(Ability.Intelligence, 13, false, false, context.Source)):ApplyStatus(SWAP,CONFUSION,100,2)"
+data "StatsFunctors" "ApplyStatus(SWAP,GOON_CONFUSION_CRANIUMRAT_TECHNICAL, 100, 0)"
+
+new entry "GOON_CONFUSION_CRANIUMRAT_TECHNICAL"
+type "StatusData"
+data "StatusType" "BOOST"
+// Infectious Madness
+data "DisplayName" "h5884480eg58d2g44e7gb3c0gaa718a4b1e37;2"
+// After the cranium rat takes damage, the attacker must make an Intelligence &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throw&lt;/LSTag&gt; or become &lt;LSTag Type="Status" Tooltip="CONFUSION"&gt;Confused&lt;/LSTag&gt;.
+data "Description" "hf9b5891agf335g4eb4g8b1egd40761af40db;6"
+data "StatusPropertyFlags" "DisableOverhead;DisableCombatlog;DisablePortraitIndicator"
+data "OnApplyRoll" "not SavingThrow(Ability.Intelligence,13)"
+data "OnApplySuccess" "ApplyStatus(CONFUSION, 100, 2)"
+
+// ==================================== Mummy ====================================
+// Bug Fix: Multiattack: Frightened now functions with all conditions in the SG_Frightened status group.
+
+new entry "Target_Multiattack_Mummy"
+type "SpellData"
+data "SpellType" "Target"
+// using "Target_Multiattack"
+using "Target_Multiattack_Mummy"
+// data "TargetConditions" "not Self() and not Dead() and HasStatus('FRIGHTENED')"
+data "TargetConditions" "not Self() and not Dead() and HasStatus('SG_Frightened')"
+// data "CycleConditions" "Character() and Enemy() and not Dead()"
+data "CycleConditions" "Character() and Enemy() and not Dead() and HasStatus('SG_Frightened')"
