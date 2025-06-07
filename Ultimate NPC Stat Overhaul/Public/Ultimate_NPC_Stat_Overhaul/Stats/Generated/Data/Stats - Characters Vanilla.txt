@@ -5100,7 +5100,7 @@ data "Passives" "CX_Fighter_Champion_Boost;AttackOfOpportunity;DarknessRules;Dar
 // data "Progressions" ""
 data "Progressions" "0e6da493-5a37-423b-8c28-629462b22faa"
 
-// Death Knights (That Which Guards, Stalker Svignee) (Added Paladin progressions, added Oathbreaker subclass)
+// Death Knights (That Which Guards, Stalker Svignee) (Added Paladin progressions, added Oathbreaker subclass, added Mini Boss boost)
 new entry "LOW_DeathKnight"
 type "Character"
 using "LOW_DeathKnight"
@@ -5109,14 +5109,14 @@ data "PersonalStatusImmunities" "SG_Poisoned;BLEEDING;SG_Sleeping;GAPING_WOUND;C
 // data "Progressions" ""
 data "Progressions" "8726b2c4-edc0-4905-b82f-60a4baba0733"
 // data "Passives" "AttackOfOpportunity;DarknessRules;Darkvision;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check;MagicResistance;Parry;ExtraAttack_2;NecroticAttacks_DeathKnight;Riposte;HellfireDamagePierce_Technical"
-data "Passives" "CX_Paladin_Oathbreaker_Boost;AttackOfOpportunity;DarknessRules;Darkvision;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check;MagicResistance;Parry;ExtraAttack_2;NecroticAttacks_DeathKnight;Riposte;HellfireDamagePierce_Technical"
+data "Passives" "CX_MiniBoss_Boost;CX_Paladin_Oathbreaker_Boost;AttackOfOpportunity;DarknessRules;Darkvision;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check;MagicResistance;Parry;ExtraAttack_2;NecroticAttacks_DeathKnight;Riposte;HellfireDamagePierce_Technical"
 
-// Death Knights (That Which Lurks, That Which Watches) (Inherits Paladin progressions, added Oathbreaker subclass)
+// Death Knights (That Which Lurks, That Which Watches) (Inherits Paladin progressions, added Oathbreaker subclass, added Mini Boss boost)
 new entry "LOW_DeathKnight_Weak"
 type "Character"
 using "LOW_DeathKnight_Weak"
 // data "Passives" "AttackOfOpportunity;DarknessRules;Darkvision;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check;MagicResistance;Parry;ExtraAttack;Riposte"
-data "Passives" "CX_Paladin_Oathbreaker_Boost;AttackOfOpportunity;DarknessRules;Darkvision;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check;MagicResistance;Parry;ExtraAttack;Riposte"
+data "Passives" "CX_MiniBoss_Boost;CX_Paladin_Oathbreaker_Boost;AttackOfOpportunity;DarknessRules;Darkvision;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check;MagicResistance;Parry;ExtraAttack;Riposte"
 
 // "_Undead"
 //  ├─ "Skeleton"
