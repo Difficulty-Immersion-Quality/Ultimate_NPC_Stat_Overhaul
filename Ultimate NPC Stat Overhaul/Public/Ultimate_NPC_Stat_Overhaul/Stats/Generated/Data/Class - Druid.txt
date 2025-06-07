@@ -16,9 +16,9 @@
     data "Description" "hc19cb29fgce35g4253g810fge4b35ebb2168;1"
     data "Icon" "Skill_Druid_WildShape"
     data "Boosts" ""
-    data "StatsFunctorContext" "OnCreate;OnStatusApplied;OnStatusRemoved"
-    data "Conditions" "(not HasPassive('Goon_Druid_NPC_Progressions'))"
-    data "StatsFunctors" "IF(not CharacterLevelGreaterThan(1, GetOwner(context.Source))):ApplyStatus(GOON_NPC_DRUID_LVL_1,100,-1);IF(CharacterLevelGreaterThan(1, GetOwner(context.Source)) and not CharacterLevelGreaterThan(2, GetOwner(context.Source))):ApplyStatus(GOON_NPC_DRUID_LVL_2,100,-1);IF(CharacterLevelGreaterThan(2, GetOwner(context.Source)) and not CharacterLevelGreaterThan(3, GetOwner(context.Source))):ApplyStatus(GOON_NPC_DRUID_LVL_3,100,-1);IF(CharacterLevelGreaterThan(3, GetOwner(context.Source)) and not CharacterLevelGreaterThan(4, GetOwner(context.Source))):ApplyStatus(GOON_NPC_DRUID_LVL_4,100,-1);IF(CharacterLevelGreaterThan(4, GetOwner(context.Source)) and not CharacterLevelGreaterThan(5, GetOwner(context.Source))):ApplyStatus(GOON_NPC_DRUID_LVL_5,100,-1);IF(CharacterLevelGreaterThan(5, GetOwner(context.Source)) and not CharacterLevelGreaterThan(6, GetOwner(context.Source))):ApplyStatus(GOON_NPC_DRUID_LVL_6,100,-1);IF(CharacterLevelGreaterThan(6, GetOwner(context.Source)) and not CharacterLevelGreaterThan(7, GetOwner(context.Source))):ApplyStatus(GOON_NPC_DRUID_LVL_7,100,-1);IF(CharacterLevelGreaterThan(7, GetOwner(context.Source)) and not CharacterLevelGreaterThan(8, GetOwner(context.Source))):ApplyStatus(GOON_NPC_DRUID_LVL_8,100,-1);IF(CharacterLevelGreaterThan(8, GetOwner(context.Source)) and not CharacterLevelGreaterThan(9, GetOwner(context.Source))):ApplyStatus(GOON_NPC_DRUID_LVL_9,100,-1);IF(CharacterLevelGreaterThan(9, GetOwner(context.Source)) and not CharacterLevelGreaterThan(10, GetOwner(context.Source))):ApplyStatus(GOON_NPC_DRUID_LVL_10,100,-1);IF(CharacterLevelGreaterThan(10, GetOwner(context.Source)) and not CharacterLevelGreaterThan(11, GetOwner(context.Source))):ApplyStatus(GOON_NPC_DRUID_LVL_11,100,-1);IF(CharacterLevelGreaterThan(11, GetOwner(context.Source)) and not CharacterLevelGreaterThan(12, GetOwner(context.Source))):ApplyStatus(GOON_NPC_DRUID_LVL_12,100,-1);IF(CharacterLevelGreaterThan(12, GetOwner(context.Source)) and not CharacterLevelGreaterThan(13, GetOwner(context.Source))):ApplyStatus(GOON_NPC_DRUID_LVL_13,100,-1);IF(CharacterLevelGreaterThan(13, GetOwner(context.Source)) and not CharacterLevelGreaterThan(14, GetOwner(context.Source))):ApplyStatus(GOON_NPC_DRUID_LVL_14,100,-1);IF(CharacterLevelGreaterThan(14, GetOwner(context.Source)) and not CharacterLevelGreaterThan(15, GetOwner(context.Source))):ApplyStatus(GOON_NPC_DRUID_LVL_15,100,-1);IF(CharacterLevelGreaterThan(15, GetOwner(context.Source)) and not CharacterLevelGreaterThan(16, GetOwner(context.Source))):ApplyStatus(GOON_NPC_DRUID_LVL_16,100,-1);IF(CharacterLevelGreaterThan(16, GetOwner(context.Source)) and not CharacterLevelGreaterThan(17, GetOwner(context.Source))):ApplyStatus(GOON_NPC_DRUID_LVL_17,100,-1);IF(CharacterLevelGreaterThan(17, GetOwner(context.Source)) and not CharacterLevelGreaterThan(18, GetOwner(context.Source))):ApplyStatus(GOON_NPC_DRUID_LVL_18,100,-1);IF(CharacterLevelGreaterThan(18, GetOwner(context.Source)) and not CharacterLevelGreaterThan(19, GetOwner(context.Source))):ApplyStatus(GOON_NPC_DRUID_LVL_19,100,-1);IF(CharacterLevelGreaterThan(19, GetOwner(context.Source))):ApplyStatus(GOON_NPC_DRUID_LVL_20,100,-1)"
+    data "StatsFunctorContext" "OnCreate;OnCombatStarted;OnTurn"
+    data "Conditions" "not HasPassive('Goon_Druid_NPC_Progressions',context.Source)"
+    data "StatsFunctors" "IF(GoonCharacterLevelEqualTo(1)):ApplyStatus(GOON_NPC_DRUID_LVL_1,100,-1);IF(GoonCharacterLevelEqualTo(2)):ApplyStatus(GOON_NPC_DRUID_LVL_2,100,-1);IF(GoonCharacterLevelEqualTo(3)):ApplyStatus(GOON_NPC_DRUID_LVL_3,100,-1);IF(GoonCharacterLevelEqualTo(4)):ApplyStatus(GOON_NPC_DRUID_LVL_4,100,-1);IF(GoonCharacterLevelEqualTo(5)):ApplyStatus(GOON_NPC_DRUID_LVL_5,100,-1);IF(GoonCharacterLevelEqualTo(6)):ApplyStatus(GOON_NPC_DRUID_LVL_6,100,-1);IF(GoonCharacterLevelEqualTo(7)):ApplyStatus(GOON_NPC_DRUID_LVL_7,100,-1);IF(GoonCharacterLevelEqualTo(8)):ApplyStatus(GOON_NPC_DRUID_LVL_8,100,-1);IF(GoonCharacterLevelEqualTo(9)):ApplyStatus(GOON_NPC_DRUID_LVL_9,100,-1);IF(GoonCharacterLevelEqualTo(10)):ApplyStatus(GOON_NPC_DRUID_LVL_10,100,-1);IF(GoonCharacterLevelEqualTo(11)):ApplyStatus(GOON_NPC_DRUID_LVL_11,100,-1);IF(GoonCharacterLevelEqualTo(12)):ApplyStatus(GOON_NPC_DRUID_LVL_12,100,-1);IF(GoonCharacterLevelEqualTo(13)):ApplyStatus(GOON_NPC_DRUID_LVL_13,100,-1);IF(GoonCharacterLevelEqualTo(14)):ApplyStatus(GOON_NPC_DRUID_LVL_14,100,-1);IF(GoonCharacterLevelEqualTo(15)):ApplyStatus(GOON_NPC_DRUID_LVL_15,100,-1);IF(GoonCharacterLevelEqualTo(16)):ApplyStatus(GOON_NPC_DRUID_LVL_16,100,-1);IF(GoonCharacterLevelEqualTo(17)):ApplyStatus(GOON_NPC_DRUID_LVL_17,100,-1);IF(GoonCharacterLevelEqualTo(18)):ApplyStatus(GOON_NPC_DRUID_LVL_18,100,-1);IF(GoonCharacterLevelEqualTo(19)):ApplyStatus(GOON_NPC_DRUID_LVL_19,100,-1);IF(GoonCharacterLevelEqualToOrGreaterThan(20)):ApplyStatus(GOON_NPC_DRUID_LVL_20,100,-1)"
 
 // Template
     new entry "GOON_NPC_DRUID_PROGRESSION_TEMPLATE"
@@ -28,7 +28,7 @@
     data "RemoveEvents" "OnStatusApplied;OnStatusRemoved"
     data "StackId" "GOON_NPC_DRUID_PROGRESSION_TEMPLATE"
     data "StackType" "Ignore"
-    data "RemoveConditions" "not HasPassive('CX_Druid_Boost') or HasStatus('Goon_Druid_NPC_Progressions')"
+    data "RemoveConditions" "not HasPassive('CX_Druid_Boost',context.Source) or HasPassive('Goon_Druid_NPC_Progressions',context.Source)"
 
 // Progression statuses
     new entry "GOON_NPC_DRUID_LVL_1_MULTICLASS"
@@ -36,7 +36,7 @@
     data "StatusType" "BOOST"
     using "GOON_NPC_DRUID_PROGRESSION_TEMPLATE"
     data "StackPriority" "1"
-    data "Passives" "UnlockedSpellSlotLevel1;CX_Magic_Boost;CX_Magic_Boost"
+    data "Passives" "UnlockedSpellSlotLevel1;CX_Magic_Boost"
     data "Boosts" "Tag(DRUID);Proficiency(LightArmor);Proficiency(MediumArmor);Proficiency(Shields)"
 
     // <node id="Progression">
@@ -54,7 +54,7 @@
     data "StatusType" "BOOST"
     using "GOON_NPC_DRUID_PROGRESSION_TEMPLATE"
     data "StackPriority" "1"
-    data "Passives" "UnlockedSpellSlotLevel1;CX_Magic_Boost;CX_Magic_Boost"
+    data "Passives" "UnlockedSpellSlotLevel1;CX_Magic_Boost"
     data "Boosts" "Tag(DRUID);ActionResource(SpellSlot,2,1);ProficiencyBonus(SavingThrow,Wisdom);ProficiencyBonus(SavingThrow,Intelligence);Proficiency(LightArmor);Proficiency(MediumArmor);Proficiency(Shields);Proficiency(Clubs);Proficiency(Daggers);Proficiency(Javelins);Proficiency(Maces);Proficiency(Quarterstaffs);Proficiency(Scimitars);Proficiency(Sickles);Proficiency(Spears)"
 
     new entry "GOON_NPC_DRUID_LVL_2"
@@ -212,9 +212,9 @@
     data "Description" "h5e05e75cgb6feg48f9gada3g4e13802f3dd9;1"
     data "Icon" "Skill_Druid_NaturalRecovery"
     data "Boosts" ""
-    data "StatsFunctorContext" "OnCreate;OnStatusApplied;OnStatusRemoved"
-    data "Conditions" ""
-    data "StatsFunctors" "IF(not ClassLevelHigherOrEqualThan(2,'NPC_DRUID') or HasStatus('GOON_NPC_DRUID_LVL_1')):ApplyStatus(GOON_NPC_DRUID_LAND_LVL_1,100,-1);IF(ClassLevelHigherOrEqualThan(2,'NPC_DRUID') and not ClassLevelHigherOrEqualThan(3,'NPC_DRUID') or HasStatus('GOON_NPC_DRUID_LVL_2')):ApplyStatus(GOON_NPC_DRUID_LAND_LVL_2,100,-1);IF(ClassLevelHigherOrEqualThan(3,'NPC_DRUID') and not ClassLevelHigherOrEqualThan(4,'NPC_DRUID') or HasStatus('GOON_NPC_DRUID_LVL_3')):ApplyStatus(GOON_NPC_DRUID_LAND_LVL_3,100,-1);IF(ClassLevelHigherOrEqualThan(4,'NPC_DRUID') and not ClassLevelHigherOrEqualThan(5,'NPC_DRUID') or HasStatus('GOON_NPC_DRUID_LVL_4')):ApplyStatus(GOON_NPC_DRUID_LAND_LVL_4,100,-1);IF(ClassLevelHigherOrEqualThan(5,'NPC_DRUID') and not ClassLevelHigherOrEqualThan(6,'NPC_DRUID') or HasStatus('GOON_NPC_DRUID_LVL_5')):ApplyStatus(GOON_NPC_DRUID_LAND_LVL_5,100,-1);IF(ClassLevelHigherOrEqualThan(6,'NPC_DRUID') and not ClassLevelHigherOrEqualThan(7,'NPC_DRUID') or HasStatus('GOON_NPC_DRUID_LVL_6')):ApplyStatus(GOON_NPC_DRUID_LAND_LVL_6,100,-1);IF(ClassLevelHigherOrEqualThan(7,'NPC_DRUID') and not ClassLevelHigherOrEqualThan(8,'NPC_DRUID') or HasStatus('GOON_NPC_DRUID_LVL_7')):ApplyStatus(GOON_NPC_DRUID_LAND_LVL_7,100,-1);IF(ClassLevelHigherOrEqualThan(8,'NPC_DRUID') and not ClassLevelHigherOrEqualThan(9,'NPC_DRUID') or HasStatus('GOON_NPC_DRUID_LVL_8')):ApplyStatus(GOON_NPC_DRUID_LAND_LVL_8,100,-1);IF(ClassLevelHigherOrEqualThan(9,'NPC_DRUID') and not ClassLevelHigherOrEqualThan(10,'NPC_DRUID') or HasStatus('GOON_NPC_DRUID_LVL_9')):ApplyStatus(GOON_NPC_DRUID_LAND_LVL_9,100,-1);IF(ClassLevelHigherOrEqualThan(10,'NPC_DRUID') and not ClassLevelHigherOrEqualThan(11,'NPC_DRUID') or HasStatus('GOON_NPC_DRUID_LVL_10')):ApplyStatus(GOON_NPC_DRUID_LAND_LVL_10,100,-1);IF(ClassLevelHigherOrEqualThan(11,'NPC_DRUID') and not ClassLevelHigherOrEqualThan(12,'NPC_DRUID') or HasStatus('GOON_NPC_DRUID_LVL_11')):ApplyStatus(GOON_NPC_DRUID_LAND_LVL_11,100,-1);IF(ClassLevelHigherOrEqualThan(12,'NPC_DRUID') and not ClassLevelHigherOrEqualThan(13,'NPC_DRUID') or HasStatus('GOON_NPC_DRUID_LVL_12')):ApplyStatus(GOON_NPC_DRUID_LAND_LVL_12,100,-1);IF(ClassLevelHigherOrEqualThan(13,'NPC_DRUID') and not ClassLevelHigherOrEqualThan(14,'NPC_DRUID') or HasStatus('GOON_NPC_DRUID_LVL_13')):ApplyStatus(GOON_NPC_DRUID_LAND_LVL_13,100,-1);IF(ClassLevelHigherOrEqualThan(14,'NPC_DRUID') and not ClassLevelHigherOrEqualThan(15,'NPC_DRUID') or HasStatus('GOON_NPC_DRUID_LVL_14')):ApplyStatus(GOON_NPC_DRUID_LAND_LVL_14,100,-1);IF(ClassLevelHigherOrEqualThan(15,'NPC_DRUID') and not ClassLevelHigherOrEqualThan(16,'NPC_DRUID') or HasStatus('GOON_NPC_DRUID_LVL_15')):ApplyStatus(GOON_NPC_DRUID_LAND_LVL_15,100,-1);IF(ClassLevelHigherOrEqualThan(16,'NPC_DRUID') and not ClassLevelHigherOrEqualThan(17,'NPC_DRUID') or HasStatus('GOON_NPC_DRUID_LVL_16')):ApplyStatus(GOON_NPC_DRUID_LAND_LVL_16,100,-1);IF(ClassLevelHigherOrEqualThan(17,'NPC_DRUID') and not ClassLevelHigherOrEqualThan(18,'NPC_DRUID') or HasStatus('GOON_NPC_DRUID_LVL_17')):ApplyStatus(GOON_NPC_DRUID_LAND_LVL_17,100,-1);IF(ClassLevelHigherOrEqualThan(18,'NPC_DRUID') and not ClassLevelHigherOrEqualThan(19,'NPC_DRUID') or HasStatus('GOON_NPC_DRUID_LVL_18')):ApplyStatus(GOON_NPC_DRUID_LAND_LVL_18,100,-1);IF(ClassLevelHigherOrEqualThan(19,'NPC_DRUID') and not ClassLevelHigherOrEqualThan(20,'NPC_DRUID') or HasStatus('GOON_NPC_DRUID_LVL_19')):ApplyStatus(GOON_NPC_DRUID_LAND_LVL_19,100,-1);IF(ClassLevelHigherOrEqualThan(20,'NPC_DRUID') or HasStatus('GOON_NPC_DRUID_LVL_20')):ApplyStatus(GOON_NPC_DRUID_LAND_LVL_20,100,-1)"
+    data "StatsFunctorContext" "OnCreate;OnCombatStarted;OnTurn"
+    data "Conditions" "not HasPassive('Goon_Druid_NPC_Progressions',context.Source)"
+    data "StatsFunctors" "IF(GoonCharacterLevelEqualTo(1) or HasStatus('GOON_NPC_DRUID_LVL_1')):ApplyStatus(GOON_NPC_DRUID_LAND_LVL_1,100,-1);IF(GoonCharacterLevelEqualTo(2) or HasStatus('GOON_NPC_DRUID_LVL_2')):ApplyStatus(GOON_NPC_DRUID_LAND_LVL_2,100,-1);IF(GoonCharacterLevelEqualTo(3) or HasStatus('GOON_NPC_DRUID_LVL_3')):ApplyStatus(GOON_NPC_DRUID_LAND_LVL_3,100,-1);IF(GoonCharacterLevelEqualTo(4) or HasStatus('GOON_NPC_DRUID_LVL_4')):ApplyStatus(GOON_NPC_DRUID_LAND_LVL_4,100,-1);IF(GoonCharacterLevelEqualTo(5) or HasStatus('GOON_NPC_DRUID_LVL_5')):ApplyStatus(GOON_NPC_DRUID_LAND_LVL_5,100,-1);IF(GoonCharacterLevelEqualTo(6) or HasStatus('GOON_NPC_DRUID_LVL_6')):ApplyStatus(GOON_NPC_DRUID_LAND_LVL_6,100,-1);IF(GoonCharacterLevelEqualTo(7) or HasStatus('GOON_NPC_DRUID_LVL_7')):ApplyStatus(GOON_NPC_DRUID_LAND_LVL_7,100,-1);IF(GoonCharacterLevelEqualTo(8) or HasStatus('GOON_NPC_DRUID_LVL_8')):ApplyStatus(GOON_NPC_DRUID_LAND_LVL_8,100,-1);IF(GoonCharacterLevelEqualTo(9) or HasStatus('GOON_NPC_DRUID_LVL_9')):ApplyStatus(GOON_NPC_DRUID_LAND_LVL_9,100,-1);IF(GoonCharacterLevelEqualTo(10) or HasStatus('GOON_NPC_DRUID_LVL_10')):ApplyStatus(GOON_NPC_DRUID_LAND_LVL_10,100,-1);IF(GoonCharacterLevelEqualTo(11) or HasStatus('GOON_NPC_DRUID_LVL_11')):ApplyStatus(GOON_NPC_DRUID_LAND_LVL_11,100,-1);IF(GoonCharacterLevelEqualTo(12) or HasStatus('GOON_NPC_DRUID_LVL_12')):ApplyStatus(GOON_NPC_DRUID_LAND_LVL_12,100,-1);IF(GoonCharacterLevelEqualTo(13) or HasStatus('GOON_NPC_DRUID_LVL_13')):ApplyStatus(GOON_NPC_DRUID_LAND_LVL_13,100,-1);IF(GoonCharacterLevelEqualTo(14) or HasStatus('GOON_NPC_DRUID_LVL_14')):ApplyStatus(GOON_NPC_DRUID_LAND_LVL_14,100,-1);IF(GoonCharacterLevelEqualTo(15) or HasStatus('GOON_NPC_DRUID_LVL_15')):ApplyStatus(GOON_NPC_DRUID_LAND_LVL_15,100,-1);IF(GoonCharacterLevelEqualTo(16) or HasStatus('GOON_NPC_DRUID_LVL_16')):ApplyStatus(GOON_NPC_DRUID_LAND_LVL_16,100,-1);IF(GoonCharacterLevelEqualTo(17) or HasStatus('GOON_NPC_DRUID_LVL_17')):ApplyStatus(GOON_NPC_DRUID_LAND_LVL_17,100,-1);IF(GoonCharacterLevelEqualTo(18) or HasStatus('GOON_NPC_DRUID_LVL_18')):ApplyStatus(GOON_NPC_DRUID_LAND_LVL_18,100,-1);IF(GoonCharacterLevelEqualTo(19) or HasStatus('GOON_NPC_DRUID_LVL_19')):ApplyStatus(GOON_NPC_DRUID_LAND_LVL_19,100,-1);IF(GoonCharacterLevelEqualToOrGreaterThan(20) or HasStatus('GOON_NPC_DRUID_LVL_20')):ApplyStatus(GOON_NPC_DRUID_LAND_LVL_20,100,-1)"
 
 // Template
     new entry "GOON_DRUID_LAND_PROGRESSION_TEMPLATE"
@@ -224,7 +224,7 @@
     data "RemoveEvents" "OnStatusApplied;OnStatusRemoved"
     data "StackId" "GOON_DRUID_LAND_PROGRESSION_TEMPLATE"
     data "StackType" "Ignore"
-    data "RemoveConditions" "not HasPassive('CX_Druid_Land_Boost')"
+    data "RemoveConditions" "not HasPassive('CX_Druid_Land_Boost',context.Source)"
 
 // Progression statuses
     new entry "GOON_NPC_DRUID_LAND_LVL_1"
@@ -246,7 +246,7 @@
     using "GOON_DRUID_LAND_PROGRESSION_TEMPLATE"
     data "StackPriority" "2"
     data "Passives" ""
-    data "Boosts" "ActionResource(NaturalRecoveryPoint,1,0);ActionResource(WildShape,2,0);UnlockSpell(Shout_WildShape);UnlockSpell(Shout_WildShape_Badger);UnlockSpell(Shout_WildShape_Spider);UnlockSpell(Shout_WildShape_Wolf_Dire);UnlockSpell(Shout_WildShape_Cat);UnlockSpell(Shout_NaturalRecovery)"
+    data "Boosts" "ActionResource(NaturalRecoveryPoint,1,0);ActionResource(WildShape,2,0);UnlockSpell(Shout_WildShape,AddChildren);UnlockSpell(Shout_WildShape_Badger,AddChildren);UnlockSpell(Shout_WildShape_Spider,AddChildren);UnlockSpell(Shout_WildShape_Wolf_Dire,AddChildren);UnlockSpell(Shout_WildShape_Cat,AddChildren);UnlockSpell(Shout_NaturalRecovery,AddChildren)"
 
     // <node id="Progression">
     //     <attribute id="Boosts" type="LSString" value="ActionResource(NaturalRecoveryPoint,1,0);ActionResource(WildShape,2,0)"/>
@@ -263,7 +263,7 @@
     using "GOON_DRUID_LAND_PROGRESSION_TEMPLATE"
     data "StackPriority" "3"
     data "Passives" ""
-    data "Boosts" "ActionResource(NaturalRecoveryPoint,2,0);ActionResource(WildShape,2,0);UnlockSpell(Shout_WildShape);UnlockSpell(Shout_WildShape_Badger);UnlockSpell(Shout_WildShape_Spider);UnlockSpell(Shout_WildShape_Wolf_Dire);UnlockSpell(Shout_WildShape_Cat);UnlockSpell(Shout_NaturalRecovery)"
+    data "Boosts" "ActionResource(NaturalRecoveryPoint,2,0);ActionResource(WildShape,2,0);UnlockSpell(Shout_WildShape,AddChildren);UnlockSpell(Shout_WildShape_Badger,AddChildren);UnlockSpell(Shout_WildShape_Spider,AddChildren);UnlockSpell(Shout_WildShape_Wolf_Dire,AddChildren);UnlockSpell(Shout_WildShape_Cat,AddChildren);UnlockSpell(Shout_NaturalRecovery,AddChildren)"
 
     // <node id="Progression">
     //     <attribute id="Boosts" type="LSString" value="ActionResource(NaturalRecoveryPoint,1,0)"/>
@@ -280,7 +280,7 @@
     using "GOON_DRUID_LAND_PROGRESSION_TEMPLATE"
     data "StackPriority" "4"
     data "Passives" ""
-    data "Boosts" "ActionResource(NaturalRecoveryPoint,2,0);ActionResource(WildShape,2,0);UnlockSpell(Shout_WildShape);UnlockSpell(Shout_WildShape_Badger);UnlockSpell(Shout_WildShape_Spider);UnlockSpell(Shout_WildShape_Wolf_Dire);UnlockSpell(Shout_WildShape_Cat);UnlockSpell(Shout_NaturalRecovery);UnlockSpell(Shout_WildShape_DeepRothe)"
+    data "Boosts" "ActionResource(NaturalRecoveryPoint,2,0);ActionResource(WildShape,2,0);UnlockSpell(Shout_WildShape,AddChildren);UnlockSpell(Shout_WildShape_Badger,AddChildren);UnlockSpell(Shout_WildShape_Spider,AddChildren);UnlockSpell(Shout_WildShape_Wolf_Dire,AddChildren);UnlockSpell(Shout_WildShape_Cat,AddChildren);UnlockSpell(Shout_NaturalRecovery,AddChildren);UnlockSpell(Shout_WildShape_DeepRothe,AddChildren)"
 
     // <node id="Progression">
     //     <attribute id="Level" type="uint8" value="4"/>
@@ -296,7 +296,7 @@
     using "GOON_DRUID_LAND_PROGRESSION_TEMPLATE"
     data "StackPriority" "5"
     data "Passives" ""
-    data "Boosts" "ActionResource(NaturalRecoveryPoint,3,0);ActionResource(WildShape,2,0);UnlockSpell(Shout_WildShape);UnlockSpell(Shout_WildShape_Badger);UnlockSpell(Shout_WildShape_Spider);UnlockSpell(Shout_WildShape_Wolf_Dire);UnlockSpell(Shout_WildShape_Cat);UnlockSpell(Shout_NaturalRecovery);UnlockSpell(Shout_WildShape_DeepRothe)"
+    data "Boosts" "ActionResource(NaturalRecoveryPoint,3,0);ActionResource(WildShape,2,0);UnlockSpell(Shout_WildShape,AddChildren);UnlockSpell(Shout_WildShape_Badger,AddChildren);UnlockSpell(Shout_WildShape_Spider,AddChildren);UnlockSpell(Shout_WildShape_Wolf_Dire,AddChildren);UnlockSpell(Shout_WildShape_Cat,AddChildren);UnlockSpell(Shout_NaturalRecovery,AddChildren);UnlockSpell(Shout_WildShape_DeepRothe,AddChildren)"
 
     // <node id="Progression">
     //     <attribute id="Boosts" type="LSString" value="ActionResource(NaturalRecoveryPoint,1,0)"/>
@@ -313,7 +313,7 @@
     using "GOON_DRUID_LAND_PROGRESSION_TEMPLATE"
     data "StackPriority" "6"
     data "Passives" "LandsStride_DifficultTerrain;LandsStride_Surfaces;LandsStride_Advantage"
-    data "Boosts" "ActionResource(NaturalRecoveryPoint,3,0);ActionResource(WildShape,2,0);UnlockSpell(Shout_WildShape);UnlockSpell(Shout_WildShape_Badger);UnlockSpell(Shout_WildShape_Spider);UnlockSpell(Shout_WildShape_Wolf_Dire);UnlockSpell(Shout_WildShape_Cat);UnlockSpell(Shout_NaturalRecovery);UnlockSpell(Shout_WildShape_DeepRothe);UnlockSpell(Shout_Wildshape_Panther);UnlockSpell(Shout_WildShape_Owlbear)"
+    data "Boosts" "ActionResource(NaturalRecoveryPoint,3,0);ActionResource(WildShape,2,0);UnlockSpell(Shout_WildShape,AddChildren);UnlockSpell(Shout_WildShape_Badger,AddChildren);UnlockSpell(Shout_WildShape_Spider,AddChildren);UnlockSpell(Shout_WildShape_Wolf_Dire,AddChildren);UnlockSpell(Shout_WildShape_Cat,AddChildren);UnlockSpell(Shout_NaturalRecovery,AddChildren);UnlockSpell(Shout_WildShape_DeepRothe,AddChildren);UnlockSpell(Shout_Wildshape_Panther,AddChildren);UnlockSpell(Shout_WildShape_Owlbear,AddChildren)"
 
     // <node id="Progression">
     //     <attribute id="Level" type="uint8" value="6"/>
@@ -330,7 +330,7 @@
     using "GOON_DRUID_LAND_PROGRESSION_TEMPLATE"
     data "StackPriority" "7"
     data "Passives" "LandsStride_DifficultTerrain;LandsStride_Surfaces;LandsStride_Advantage"
-    data "Boosts" "ActionResource(NaturalRecoveryPoint,4,0);ActionResource(WildShape,2,0);UnlockSpell(Shout_WildShape);UnlockSpell(Shout_WildShape_Badger);UnlockSpell(Shout_WildShape_Spider);UnlockSpell(Shout_WildShape_Wolf_Dire);UnlockSpell(Shout_WildShape_Cat);UnlockSpell(Shout_NaturalRecovery);UnlockSpell(Shout_WildShape_DeepRothe);UnlockSpell(Shout_Wildshape_Panther);UnlockSpell(Shout_WildShape_Owlbear)"
+    data "Boosts" "ActionResource(NaturalRecoveryPoint,4,0);ActionResource(WildShape,2,0);UnlockSpell(Shout_WildShape,AddChildren);UnlockSpell(Shout_WildShape_Badger,AddChildren);UnlockSpell(Shout_WildShape_Spider,AddChildren);UnlockSpell(Shout_WildShape_Wolf_Dire,AddChildren);UnlockSpell(Shout_WildShape_Cat,AddChildren);UnlockSpell(Shout_NaturalRecovery,AddChildren);UnlockSpell(Shout_WildShape_DeepRothe,AddChildren);UnlockSpell(Shout_Wildshape_Panther,AddChildren);UnlockSpell(Shout_WildShape_Owlbear,AddChildren)"
 
     // <node id="Progression">
     //     <attribute id="Boosts" type="LSString" value="ActionResource(NaturalRecoveryPoint,1,0)"/>
@@ -353,7 +353,7 @@
     using "GOON_DRUID_LAND_PROGRESSION_TEMPLATE"
     data "StackPriority" "9"
     data "Passives" "LandsStride_DifficultTerrain;LandsStride_Surfaces;LandsStride_Advantage"
-    data "Boosts" "ActionResource(NaturalRecoveryPoint,5,0);ActionResource(WildShape,2,0);UnlockSpell(Shout_WildShape);UnlockSpell(Shout_WildShape_Badger);UnlockSpell(Shout_WildShape_Spider);UnlockSpell(Shout_WildShape_Wolf_Dire);UnlockSpell(Shout_WildShape_Cat);UnlockSpell(Shout_NaturalRecovery);UnlockSpell(Shout_WildShape_DeepRothe);UnlockSpell(Shout_Wildshape_Panther);UnlockSpell(Shout_WildShape_Owlbear)"
+    data "Boosts" "ActionResource(NaturalRecoveryPoint,5,0);ActionResource(WildShape,2,0);UnlockSpell(Shout_WildShape,AddChildren);UnlockSpell(Shout_WildShape_Badger,AddChildren);UnlockSpell(Shout_WildShape_Spider,AddChildren);UnlockSpell(Shout_WildShape_Wolf_Dire,AddChildren);UnlockSpell(Shout_WildShape_Cat,AddChildren);UnlockSpell(Shout_NaturalRecovery,AddChildren);UnlockSpell(Shout_WildShape_DeepRothe,AddChildren);UnlockSpell(Shout_Wildshape_Panther,AddChildren);UnlockSpell(Shout_WildShape_Owlbear,AddChildren)"
 
     // <node id="Progression">
     //     <attribute id="Boosts" type="LSString" value="ActionResource(NaturalRecoveryPoint,1,0)"/>
@@ -370,7 +370,7 @@
     using "GOON_DRUID_LAND_PROGRESSION_TEMPLATE"
     data "StackPriority" "10"
     data "Passives" "LandsStride_DifficultTerrain;LandsStride_Surfaces;LandsStride_Advantage;NaturesWard"
-    data "Boosts" "ActionResource(NaturalRecoveryPoint,5,0);ActionResource(WildShape,2,0);UnlockSpell(Shout_WildShape);UnlockSpell(Shout_WildShape_Badger);UnlockSpell(Shout_WildShape_Spider);UnlockSpell(Shout_WildShape_Wolf_Dire);UnlockSpell(Shout_WildShape_Cat);UnlockSpell(Shout_NaturalRecovery);UnlockSpell(Shout_WildShape_DeepRothe);UnlockSpell(Shout_Wildshape_Panther);UnlockSpell(Shout_WildShape_Owlbear)"
+    data "Boosts" "ActionResource(NaturalRecoveryPoint,5,0);ActionResource(WildShape,2,0);UnlockSpell(Shout_WildShape,AddChildren);UnlockSpell(Shout_WildShape_Badger,AddChildren);UnlockSpell(Shout_WildShape_Spider,AddChildren);UnlockSpell(Shout_WildShape_Wolf_Dire,AddChildren);UnlockSpell(Shout_WildShape_Cat,AddChildren);UnlockSpell(Shout_NaturalRecovery,AddChildren);UnlockSpell(Shout_WildShape_DeepRothe,AddChildren);UnlockSpell(Shout_Wildshape_Panther,AddChildren);UnlockSpell(Shout_WildShape_Owlbear,AddChildren)"
 
     // <node id="Progression">
     //     <attribute id="Level" type="uint8" value="10"/>
@@ -387,7 +387,7 @@
     using "GOON_DRUID_LAND_PROGRESSION_TEMPLATE"
     data "StackPriority" "11"
     data "Passives" "LandsStride_DifficultTerrain;LandsStride_Surfaces;LandsStride_Advantage;NaturesWard"
-    data "Boosts" "ActionResource(NaturalRecoveryPoint,6,0);ActionResource(WildShape,2,0);UnlockSpell(Shout_WildShape);UnlockSpell(Shout_WildShape_Badger);UnlockSpell(Shout_WildShape_Spider);UnlockSpell(Shout_WildShape_Wolf_Dire);UnlockSpell(Shout_WildShape_Cat);UnlockSpell(Shout_NaturalRecovery);UnlockSpell(Shout_WildShape_DeepRothe);UnlockSpell(Shout_Wildshape_Panther);UnlockSpell(Shout_WildShape_Owlbear)"
+    data "Boosts" "ActionResource(NaturalRecoveryPoint,6,0);ActionResource(WildShape,2,0);UnlockSpell(Shout_WildShape,AddChildren);UnlockSpell(Shout_WildShape_Badger,AddChildren);UnlockSpell(Shout_WildShape_Spider,AddChildren);UnlockSpell(Shout_WildShape_Wolf_Dire,AddChildren);UnlockSpell(Shout_WildShape_Cat,AddChildren);UnlockSpell(Shout_NaturalRecovery,AddChildren);UnlockSpell(Shout_WildShape_DeepRothe,AddChildren);UnlockSpell(Shout_Wildshape_Panther,AddChildren);UnlockSpell(Shout_WildShape_Owlbear,AddChildren)"
 
     // <node id="Progression">
     //     <attribute id="Boosts" type="LSString" value="ActionResource(NaturalRecoveryPoint,1,0)"/>
@@ -410,7 +410,7 @@
     using "GOON_DRUID_LAND_PROGRESSION_TEMPLATE"
     data "StackPriority" "13"
     data "Passives" "LandsStride_DifficultTerrain;LandsStride_Surfaces;LandsStride_Advantage;NaturesWard"
-    data "Boosts" "ActionResource(NaturalRecoveryPoint,7,0);ActionResource(WildShape,2,0);UnlockSpell(Shout_WildShape);UnlockSpell(Shout_WildShape_Badger);UnlockSpell(Shout_WildShape_Spider);UnlockSpell(Shout_WildShape_Wolf_Dire);UnlockSpell(Shout_WildShape_Cat);UnlockSpell(Shout_NaturalRecovery);UnlockSpell(Shout_WildShape_DeepRothe);UnlockSpell(Shout_Wildshape_Panther);UnlockSpell(Shout_WildShape_Owlbear)"
+    data "Boosts" "ActionResource(NaturalRecoveryPoint,7,0);ActionResource(WildShape,2,0);UnlockSpell(Shout_WildShape,AddChildren);UnlockSpell(Shout_WildShape_Badger,AddChildren);UnlockSpell(Shout_WildShape_Spider,AddChildren);UnlockSpell(Shout_WildShape_Wolf_Dire,AddChildren);UnlockSpell(Shout_WildShape_Cat,AddChildren);UnlockSpell(Shout_NaturalRecovery,AddChildren);UnlockSpell(Shout_WildShape_DeepRothe,AddChildren);UnlockSpell(Shout_Wildshape_Panther,AddChildren);UnlockSpell(Shout_WildShape_Owlbear,AddChildren)"
     
     // <node id="Progression">
     //     <attribute id="Boosts" type="LSString" value="ActionResource(NaturalRecoveryPoint,1,0)"/>
@@ -426,7 +426,7 @@
     using "GOON_DRUID_LAND_PROGRESSION_TEMPLATE"
     data "StackPriority" "14"
     data "Passives" "LandsStride_DifficultTerrain;LandsStride_Surfaces;LandsStride_Advantage;NaturesWard;NaturesSanctuary"
-    data "Boosts" "ActionResource(NaturalRecoveryPoint,7,0);ActionResource(WildShape,2,0);UnlockSpell(Shout_WildShape);UnlockSpell(Shout_WildShape_Badger);UnlockSpell(Shout_WildShape_Spider);UnlockSpell(Shout_WildShape_Wolf_Dire);UnlockSpell(Shout_WildShape_Cat);UnlockSpell(Shout_NaturalRecovery);UnlockSpell(Shout_WildShape_DeepRothe);UnlockSpell(Shout_Wildshape_Panther);UnlockSpell(Shout_WildShape_Owlbear)"
+    data "Boosts" "ActionResource(NaturalRecoveryPoint,7,0);ActionResource(WildShape,2,0);UnlockSpell(Shout_WildShape,AddChildren);UnlockSpell(Shout_WildShape_Badger,AddChildren);UnlockSpell(Shout_WildShape_Spider,AddChildren);UnlockSpell(Shout_WildShape_Wolf_Dire,AddChildren);UnlockSpell(Shout_WildShape_Cat,AddChildren);UnlockSpell(Shout_NaturalRecovery,AddChildren);UnlockSpell(Shout_WildShape_DeepRothe,AddChildren);UnlockSpell(Shout_Wildshape_Panther,AddChildren);UnlockSpell(Shout_WildShape_Owlbear,AddChildren)"
     
     // <node id="Progression">
     //     <attribute id="Level" type="uint8" value="14"/>
@@ -442,7 +442,7 @@
     using "GOON_DRUID_LAND_PROGRESSION_TEMPLATE"
     data "StackPriority" "15"
     data "Passives" "LandsStride_DifficultTerrain;LandsStride_Surfaces;LandsStride_Advantage;NaturesWard;NaturesSanctuary"
-    data "Boosts" "ActionResource(NaturalRecoveryPoint,8,0);ActionResource(WildShape,2,0);UnlockSpell(Shout_WildShape);UnlockSpell(Shout_WildShape_Badger);UnlockSpell(Shout_WildShape_Spider);UnlockSpell(Shout_WildShape_Wolf_Dire);UnlockSpell(Shout_WildShape_Cat);UnlockSpell(Shout_NaturalRecovery);UnlockSpell(Shout_WildShape_DeepRothe);UnlockSpell(Shout_Wildshape_Panther);UnlockSpell(Shout_WildShape_Owlbear)"
+    data "Boosts" "ActionResource(NaturalRecoveryPoint,8,0);ActionResource(WildShape,2,0);UnlockSpell(Shout_WildShape,AddChildren);UnlockSpell(Shout_WildShape_Badger,AddChildren);UnlockSpell(Shout_WildShape_Spider,AddChildren);UnlockSpell(Shout_WildShape_Wolf_Dire,AddChildren);UnlockSpell(Shout_WildShape_Cat,AddChildren);UnlockSpell(Shout_NaturalRecovery,AddChildren);UnlockSpell(Shout_WildShape_DeepRothe,AddChildren);UnlockSpell(Shout_Wildshape_Panther,AddChildren);UnlockSpell(Shout_WildShape_Owlbear,AddChildren)"
     
     // <node id="Progression">
     //     <attribute id="Boosts" type="LSString" value="ActionResource(NaturalRecoveryPoint,1,0)"/>
@@ -464,7 +464,7 @@
     using "GOON_DRUID_LAND_PROGRESSION_TEMPLATE"
     data "StackPriority" "17"
     data "Passives" "LandsStride_DifficultTerrain;LandsStride_Surfaces;LandsStride_Advantage;NaturesWard;NaturesSanctuary"
-    data "Boosts" "ActionResource(NaturalRecoveryPoint,9,0);ActionResource(WildShape,2,0);UnlockSpell(Shout_WildShape);UnlockSpell(Shout_WildShape_Badger);UnlockSpell(Shout_WildShape_Spider);UnlockSpell(Shout_WildShape_Wolf_Dire);UnlockSpell(Shout_WildShape_Cat);UnlockSpell(Shout_NaturalRecovery);UnlockSpell(Shout_WildShape_DeepRothe);UnlockSpell(Shout_Wildshape_Panther);UnlockSpell(Shout_WildShape_Owlbear)"
+    data "Boosts" "ActionResource(NaturalRecoveryPoint,9,0);ActionResource(WildShape,2,0);UnlockSpell(Shout_WildShape,AddChildren);UnlockSpell(Shout_WildShape_Badger,AddChildren);UnlockSpell(Shout_WildShape_Spider,AddChildren);UnlockSpell(Shout_WildShape_Wolf_Dire,AddChildren);UnlockSpell(Shout_WildShape_Cat,AddChildren);UnlockSpell(Shout_NaturalRecovery,AddChildren);UnlockSpell(Shout_WildShape_DeepRothe,AddChildren);UnlockSpell(Shout_Wildshape_Panther,AddChildren);UnlockSpell(Shout_WildShape_Owlbear,AddChildren)"
     
     // <node id="Progression">
     //     <attribute id="Boosts" type="LSString" value="ActionResource(NaturalRecoveryPoint,1,0)"/>
@@ -486,7 +486,7 @@
     using "GOON_DRUID_LAND_PROGRESSION_TEMPLATE"
     data "StackPriority" "19"
     data "Passives" "LandsStride_DifficultTerrain;LandsStride_Surfaces;LandsStride_Advantage;NaturesWard;NaturesSanctuary"
-    data "Boosts" "ActionResource(NaturalRecoveryPoint,10,0);ActionResource(WildShape,2,0);UnlockSpell(Shout_WildShape);UnlockSpell(Shout_WildShape_Badger);UnlockSpell(Shout_WildShape_Spider);UnlockSpell(Shout_WildShape_Wolf_Dire);UnlockSpell(Shout_WildShape_Cat);UnlockSpell(Shout_NaturalRecovery);UnlockSpell(Shout_WildShape_DeepRothe);UnlockSpell(Shout_Wildshape_Panther);UnlockSpell(Shout_WildShape_Owlbear)"
+    data "Boosts" "ActionResource(NaturalRecoveryPoint,10,0);ActionResource(WildShape,2,0);UnlockSpell(Shout_WildShape,AddChildren);UnlockSpell(Shout_WildShape_Badger,AddChildren);UnlockSpell(Shout_WildShape_Spider,AddChildren);UnlockSpell(Shout_WildShape_Wolf_Dire,AddChildren);UnlockSpell(Shout_WildShape_Cat,AddChildren);UnlockSpell(Shout_NaturalRecovery,AddChildren);UnlockSpell(Shout_WildShape_DeepRothe,AddChildren);UnlockSpell(Shout_Wildshape_Panther,AddChildren);UnlockSpell(Shout_WildShape_Owlbear,AddChildren)"
     
     // <node id="Progression">
     //     <attribute id="Boosts" type="LSString" value="ActionResource(NaturalRecoveryPoint,1,0)"/>
@@ -510,9 +510,9 @@
     data "Description" "h654778cegbf88g49adgb407gcb0cc8299dc0"
     data "Icon" "Skill_Druid_WildShape"
     data "Boosts" ""
-    data "StatsFunctorContext" "OnCreate;OnStatusApplied;OnStatusRemoved"
-    data "Conditions" ""
-    data "StatsFunctors" "IF(not ClassLevelHigherOrEqualThan(2,'NPC_DRUID') or HasStatus('GOON_NPC_DRUID_LVL_1')):ApplyStatus(GOON_NPC_DRUID_MOON_LVL_1,100,-1);IF(ClassLevelHigherOrEqualThan(2,'NPC_DRUID') and not ClassLevelHigherOrEqualThan(3,'NPC_DRUID') or HasStatus('GOON_NPC_DRUID_LVL_2')):ApplyStatus(GOON_NPC_DRUID_MOON_LVL_2,100,-1);IF(ClassLevelHigherOrEqualThan(3,'NPC_DRUID') and not ClassLevelHigherOrEqualThan(4,'NPC_DRUID') or HasStatus('GOON_NPC_DRUID_LVL_3')):ApplyStatus(GOON_NPC_DRUID_MOON_LVL_3,100,-1);IF(ClassLevelHigherOrEqualThan(4,'NPC_DRUID') and not ClassLevelHigherOrEqualThan(5,'NPC_DRUID') or HasStatus('GOON_NPC_DRUID_LVL_4')):ApplyStatus(GOON_NPC_DRUID_MOON_LVL_4,100,-1);IF(ClassLevelHigherOrEqualThan(5,'NPC_DRUID') and not ClassLevelHigherOrEqualThan(6,'NPC_DRUID') or HasStatus('GOON_NPC_DRUID_LVL_5')):ApplyStatus(GOON_NPC_DRUID_MOON_LVL_5,100,-1);IF(ClassLevelHigherOrEqualThan(6,'NPC_DRUID') and not ClassLevelHigherOrEqualThan(7,'NPC_DRUID') or HasStatus('GOON_NPC_DRUID_LVL_6')):ApplyStatus(GOON_NPC_DRUID_MOON_LVL_6,100,-1);IF(ClassLevelHigherOrEqualThan(7,'NPC_DRUID') and not ClassLevelHigherOrEqualThan(8,'NPC_DRUID') or HasStatus('GOON_NPC_DRUID_LVL_7')):ApplyStatus(GOON_NPC_DRUID_MOON_LVL_7,100,-1);IF(ClassLevelHigherOrEqualThan(8,'NPC_DRUID') and not ClassLevelHigherOrEqualThan(9,'NPC_DRUID') or HasStatus('GOON_NPC_DRUID_LVL_8')):ApplyStatus(GOON_NPC_DRUID_MOON_LVL_8,100,-1);IF(ClassLevelHigherOrEqualThan(9,'NPC_DRUID') and not ClassLevelHigherOrEqualThan(10,'NPC_DRUID') or HasStatus('GOON_NPC_DRUID_LVL_9')):ApplyStatus(GOON_NPC_DRUID_MOON_LVL_9,100,-1);IF(ClassLevelHigherOrEqualThan(10,'NPC_DRUID') and not ClassLevelHigherOrEqualThan(11,'NPC_DRUID') or HasStatus('GOON_NPC_DRUID_LVL_10')):ApplyStatus(GOON_NPC_DRUID_MOON_LVL_10,100,-1);IF(ClassLevelHigherOrEqualThan(11,'NPC_DRUID') and not ClassLevelHigherOrEqualThan(12,'NPC_DRUID') or HasStatus('GOON_NPC_DRUID_LVL_11')):ApplyStatus(GOON_NPC_DRUID_MOON_LVL_11,100,-1);IF(ClassLevelHigherOrEqualThan(12,'NPC_DRUID') and not ClassLevelHigherOrEqualThan(13,'NPC_DRUID') or HasStatus('GOON_NPC_DRUID_LVL_12')):ApplyStatus(GOON_NPC_DRUID_MOON_LVL_12,100,-1);IF(ClassLevelHigherOrEqualThan(13,'NPC_DRUID') and not ClassLevelHigherOrEqualThan(14,'NPC_DRUID') or HasStatus('GOON_NPC_DRUID_LVL_13')):ApplyStatus(GOON_NPC_DRUID_MOON_LVL_13,100,-1);IF(ClassLevelHigherOrEqualThan(14,'NPC_DRUID') and not ClassLevelHigherOrEqualThan(15,'NPC_DRUID') or HasStatus('GOON_NPC_DRUID_LVL_14')):ApplyStatus(GOON_NPC_DRUID_MOON_LVL_14,100,-1);IF(ClassLevelHigherOrEqualThan(15,'NPC_DRUID') and not ClassLevelHigherOrEqualThan(16,'NPC_DRUID') or HasStatus('GOON_NPC_DRUID_LVL_15')):ApplyStatus(GOON_NPC_DRUID_MOON_LVL_15,100,-1);IF(ClassLevelHigherOrEqualThan(16,'NPC_DRUID') and not ClassLevelHigherOrEqualThan(17,'NPC_DRUID') or HasStatus('GOON_NPC_DRUID_LVL_16')):ApplyStatus(GOON_NPC_DRUID_MOON_LVL_16,100,-1);IF(ClassLevelHigherOrEqualThan(17,'NPC_DRUID') and not ClassLevelHigherOrEqualThan(18,'NPC_DRUID') or HasStatus('GOON_NPC_DRUID_LVL_17')):ApplyStatus(GOON_NPC_DRUID_MOON_LVL_17,100,-1);IF(ClassLevelHigherOrEqualThan(18,'NPC_DRUID') and not ClassLevelHigherOrEqualThan(19,'NPC_DRUID') or HasStatus('GOON_NPC_DRUID_LVL_18')):ApplyStatus(GOON_NPC_DRUID_MOON_LVL_18,100,-1);IF(ClassLevelHigherOrEqualThan(19,'NPC_DRUID') and not ClassLevelHigherOrEqualThan(20,'NPC_DRUID') or HasStatus('GOON_NPC_DRUID_LVL_19')):ApplyStatus(GOON_NPC_DRUID_MOON_LVL_19,100,-1);IF(ClassLevelHigherOrEqualThan(20,'NPC_DRUID') or HasStatus('GOON_NPC_DRUID_LVL_20')):ApplyStatus(GOON_NPC_DRUID_MOON_LVL_20,100,-1)"
+    data "StatsFunctorContext" "OnCreate;OnCombatStarted;OnTurn"
+    data "Conditions" "not HasPassive('Goon_Druid_NPC_Progressions',context.Source)"
+    data "StatsFunctors" "IF(GoonCharacterLevelEqualTo(1) or HasStatus('GOON_NPC_DRUID_LVL_1')):ApplyStatus(GOON_NPC_DRUID_MOON_LVL_1,100,-1);IF(GoonCharacterLevelEqualTo(2) or HasStatus('GOON_NPC_DRUID_LVL_2')):ApplyStatus(GOON_NPC_DRUID_MOON_LVL_2,100,-1);IF(GoonCharacterLevelEqualTo(3) or HasStatus('GOON_NPC_DRUID_LVL_3')):ApplyStatus(GOON_NPC_DRUID_MOON_LVL_3,100,-1);IF(GoonCharacterLevelEqualTo(4) or HasStatus('GOON_NPC_DRUID_LVL_4')):ApplyStatus(GOON_NPC_DRUID_MOON_LVL_4,100,-1);IF(GoonCharacterLevelEqualTo(5) or HasStatus('GOON_NPC_DRUID_LVL_5')):ApplyStatus(GOON_NPC_DRUID_MOON_LVL_5,100,-1);IF(GoonCharacterLevelEqualTo(6) or HasStatus('GOON_NPC_DRUID_LVL_6')):ApplyStatus(GOON_NPC_DRUID_MOON_LVL_6,100,-1);IF(GoonCharacterLevelEqualTo(7) or HasStatus('GOON_NPC_DRUID_LVL_7')):ApplyStatus(GOON_NPC_DRUID_MOON_LVL_7,100,-1);IF(GoonCharacterLevelEqualTo(8) or HasStatus('GOON_NPC_DRUID_LVL_8')):ApplyStatus(GOON_NPC_DRUID_MOON_LVL_8,100,-1);IF(GoonCharacterLevelEqualTo(9) or HasStatus('GOON_NPC_DRUID_LVL_9')):ApplyStatus(GOON_NPC_DRUID_MOON_LVL_9,100,-1);IF(GoonCharacterLevelEqualTo(10) or HasStatus('GOON_NPC_DRUID_LVL_10')):ApplyStatus(GOON_NPC_DRUID_MOON_LVL_10,100,-1);IF(GoonCharacterLevelEqualTo(11) or HasStatus('GOON_NPC_DRUID_LVL_11')):ApplyStatus(GOON_NPC_DRUID_MOON_LVL_11,100,-1);IF(GoonCharacterLevelEqualTo(12) or HasStatus('GOON_NPC_DRUID_LVL_12')):ApplyStatus(GOON_NPC_DRUID_MOON_LVL_12,100,-1);IF(GoonCharacterLevelEqualTo(13) or HasStatus('GOON_NPC_DRUID_LVL_13')):ApplyStatus(GOON_NPC_DRUID_MOON_LVL_13,100,-1);IF(GoonCharacterLevelEqualTo(14) or HasStatus('GOON_NPC_DRUID_LVL_14')):ApplyStatus(GOON_NPC_DRUID_MOON_LVL_14,100,-1);IF(GoonCharacterLevelEqualTo(15) or HasStatus('GOON_NPC_DRUID_LVL_15')):ApplyStatus(GOON_NPC_DRUID_MOON_LVL_15,100,-1);IF(GoonCharacterLevelEqualTo(16) or HasStatus('GOON_NPC_DRUID_LVL_16')):ApplyStatus(GOON_NPC_DRUID_MOON_LVL_16,100,-1);IF(GoonCharacterLevelEqualTo(17) or HasStatus('GOON_NPC_DRUID_LVL_17')):ApplyStatus(GOON_NPC_DRUID_MOON_LVL_17,100,-1);IF(GoonCharacterLevelEqualTo(18) or HasStatus('GOON_NPC_DRUID_LVL_18')):ApplyStatus(GOON_NPC_DRUID_MOON_LVL_18,100,-1);IF(GoonCharacterLevelEqualTo(19) or HasStatus('GOON_NPC_DRUID_LVL_19')):ApplyStatus(GOON_NPC_DRUID_MOON_LVL_19,100,-1);IF(GoonCharacterLevelEqualToOrGreaterThan(20) or HasStatus('GOON_NPC_DRUID_LVL_20')):ApplyStatus(GOON_NPC_DRUID_MOON_LVL_20,100,-1)"
 
 // Template
     new entry "GOON_NPC_DRUID_MOON_PROGRESSION_TEMPLATE"
@@ -522,7 +522,7 @@
     data "RemoveEvents" "OnStatusApplied;OnStatusRemoved"
     data "StackId" "GOON_NPC_DRUID_MOON_PROGRESSION_TEMPLATE"
     data "StackType" "Ignore"
-    data "RemoveConditions" "not HasPassive('CX_Druid_Moon_Boost')"
+    data "RemoveConditions" "not HasPassive('CX_Druid_Moon_Boost',context.Source)"
 
 // Progression statuses
     new entry "GOON_NPC_DRUID_MOON_LVL_1"
@@ -539,7 +539,7 @@
     using "GOON_NPC_DRUID_MOON_PROGRESSION_TEMPLATE"
     data "StackPriority" "2"
     data "Passives" "WildShape_Combat"
-    data "Boosts" "ActionResource(WildShape,2,0);UnlockSpell(Shout_WildShape_Combat);UnlockSpell(Shout_WildShape_Combat_Badger);UnlockSpell(Shout_WildShape_Combat_Spider);UnlockSpell(Shout_WildShape_Combat_Wolf_Dire);UnlockSpell(Shout_WildShape_Combat_Cat);UnlockSpell(Shout_WildShape_Combat_Bear_Polar)"
+    data "Boosts" "ActionResource(WildShape,2,0);UnlockSpell(Shout_WildShape_Combat,AddChildren);UnlockSpell(Shout_WildShape_Combat_Badger,AddChildren);UnlockSpell(Shout_WildShape_Combat_Spider,AddChildren);UnlockSpell(Shout_WildShape_Combat_Wolf_Dire,AddChildren);UnlockSpell(Shout_WildShape_Combat_Cat,AddChildren);UnlockSpell(Shout_WildShape_Combat_Bear_Polar,AddChildren)"
 
     // <node id="Progression">
     //     <attribute id="Boosts" type="LSString" value="ActionResource(WildShape,2,0)"/>
@@ -563,7 +563,7 @@
     using "GOON_NPC_DRUID_MOON_PROGRESSION_TEMPLATE"
     data "StackPriority" "4"
     data "Passives" "WildShape_Combat"
-    data "Boosts" "ActionResource(WildShape,2,0);UnlockSpell(Shout_WildShape_Combat);UnlockSpell(Shout_WildShape_Combat_Badger);UnlockSpell(Shout_WildShape_Combat_Spider);UnlockSpell(Shout_WildShape_Combat_Wolf_Dire);UnlockSpell(Shout_WildShape_Combat_Cat);UnlockSpell(Shout_WildShape_Combat_Bear_Polar);UnlockSpell(Shout_WildShape_Combat_DeepRothe);UnlockSpell(Shout_WildShape_Combat_Raven)"
+    data "Boosts" "ActionResource(WildShape,2,0);UnlockSpell(Shout_WildShape_Combat,AddChildren);UnlockSpell(Shout_WildShape_Combat_Badger,AddChildren);UnlockSpell(Shout_WildShape_Combat_Spider,AddChildren);UnlockSpell(Shout_WildShape_Combat_Wolf_Dire,AddChildren);UnlockSpell(Shout_WildShape_Combat_Cat,AddChildren);UnlockSpell(Shout_WildShape_Combat_Bear_Polar,AddChildren);UnlockSpell(Shout_WildShape_Combat_DeepRothe,AddChildren);UnlockSpell(Shout_WildShape_Combat_Raven,AddChildren)"
 
     // <node id="Progression">
     //     <attribute id="Level" type="uint8" value="4"/>
@@ -585,7 +585,7 @@
     using "GOON_NPC_DRUID_MOON_PROGRESSION_TEMPLATE"
     data "StackPriority" "6"
     data "Passives" "WildShape_Combat;PrimalStrike"
-    data "Boosts" "ActionResource(WildShape,2,0);UnlockSpell(Shout_WildShape_Combat);UnlockSpell(Shout_WildShape_Combat_Badger);UnlockSpell(Shout_WildShape_Combat_Spider);UnlockSpell(Shout_WildShape_Combat_Wolf_Dire);UnlockSpell(Shout_WildShape_Combat_Cat);UnlockSpell(Shout_WildShape_Combat_Bear_Polar);UnlockSpell(Shout_WildShape_Combat_DeepRothe);UnlockSpell(Shout_WildShape_Combat_Raven);UnlockSpell(Shout_Wildshape_Combat_Panther);UnlockSpell(Shout_WildShape_Combat_Owlbear)"
+    data "Boosts" "ActionResource(WildShape,2,0);UnlockSpell(Shout_WildShape_Combat,AddChildren);UnlockSpell(Shout_WildShape_Combat_Badger,AddChildren);UnlockSpell(Shout_WildShape_Combat_Spider,AddChildren);UnlockSpell(Shout_WildShape_Combat_Wolf_Dire,AddChildren);UnlockSpell(Shout_WildShape_Combat_Cat,AddChildren);UnlockSpell(Shout_WildShape_Combat_Bear_Polar,AddChildren);UnlockSpell(Shout_WildShape_Combat_DeepRothe,AddChildren);UnlockSpell(Shout_WildShape_Combat_Raven,AddChildren);UnlockSpell(Shout_Wildshape_Combat_Panther,AddChildren);UnlockSpell(Shout_WildShape_Combat_Owlbear,AddChildren)"
 
     // <node id="Progression">
     //     <attribute id="Level" type="uint8" value="6"/>
@@ -608,7 +608,7 @@
     using "GOON_NPC_DRUID_MOON_PROGRESSION_TEMPLATE"
     data "StackPriority" "8"
     data "Passives" "WildShape_Combat;PrimalStrike"
-    data "Boosts" "ActionResource(WildShape,2,0);UnlockSpell(Shout_WildShape_Combat);UnlockSpell(Shout_WildShape_Combat_Badger);UnlockSpell(Shout_WildShape_Combat_Spider);UnlockSpell(Shout_WildShape_Combat_Wolf_Dire);UnlockSpell(Shout_WildShape_Combat_Cat);UnlockSpell(Shout_WildShape_Combat_Bear_Polar);UnlockSpell(Shout_WildShape_Combat_DeepRothe);UnlockSpell(Shout_WildShape_Combat_Raven);UnlockSpell(Shout_Wildshape_Combat_Panther);UnlockSpell(Shout_WildShape_Combat_Owlbear);UnlockSpell(Shout_Wildshape_Combat_SaberTooth_Tiger)"
+    data "Boosts" "ActionResource(WildShape,2,0);UnlockSpell(Shout_WildShape_Combat,AddChildren);UnlockSpell(Shout_WildShape_Combat_Badger,AddChildren);UnlockSpell(Shout_WildShape_Combat_Spider,AddChildren);UnlockSpell(Shout_WildShape_Combat_Wolf_Dire,AddChildren);UnlockSpell(Shout_WildShape_Combat_Cat,AddChildren);UnlockSpell(Shout_WildShape_Combat_Bear_Polar,AddChildren);UnlockSpell(Shout_WildShape_Combat_DeepRothe,AddChildren);UnlockSpell(Shout_WildShape_Combat_Raven,AddChildren);UnlockSpell(Shout_Wildshape_Combat_Panther,AddChildren);UnlockSpell(Shout_WildShape_Combat_Owlbear,AddChildren);UnlockSpell(Shout_Wildshape_Combat_SaberTooth_Tiger,AddChildren)"
 
     // <node id="Progression">
     //     <attribute id="Level" type="uint8" value="8"/>
@@ -630,7 +630,7 @@
     using "GOON_NPC_DRUID_MOON_PROGRESSION_TEMPLATE"
     data "StackPriority" "10"
     data "Passives" "WildShape_Combat;PrimalStrike"
-    data "Boosts" "ActionResource(WildShape,2,0);UnlockSpell(Shout_WildShape_Combat);UnlockSpell(Shout_WildShape_Combat_Badger);UnlockSpell(Shout_WildShape_Combat_Spider);UnlockSpell(Shout_WildShape_Combat_Wolf_Dire);UnlockSpell(Shout_WildShape_Combat_Cat);UnlockSpell(Shout_WildShape_Combat_Bear_Polar);UnlockSpell(Shout_WildShape_Combat_DeepRothe);UnlockSpell(Shout_WildShape_Combat_Raven);UnlockSpell(Shout_Wildshape_Combat_Panther);UnlockSpell(Shout_WildShape_Combat_Owlbear);UnlockSpell(Shout_Wildshape_Combat_SaberTooth_Tiger);UnlockSpell(Shout_WildShape_Combat_Dilophosaurus);UnlockSpell(Shout_WildShape_Combat_Myrmidon_Air);UnlockSpell(Shout_WildShape_Combat_Myrmidon_Earth);UnlockSpell(Shout_WildShape_Combat_Myrmidon_Fire);UnlockSpell(Shout_WildShape_Combat_Myrmidon_Water)"
+    data "Boosts" "ActionResource(WildShape,2,0);UnlockSpell(Shout_WildShape_Combat,AddChildren);UnlockSpell(Shout_WildShape_Combat_Badger,AddChildren);UnlockSpell(Shout_WildShape_Combat_Spider,AddChildren);UnlockSpell(Shout_WildShape_Combat_Wolf_Dire,AddChildren);UnlockSpell(Shout_WildShape_Combat_Cat,AddChildren);UnlockSpell(Shout_WildShape_Combat_Bear_Polar,AddChildren);UnlockSpell(Shout_WildShape_Combat_DeepRothe,AddChildren);UnlockSpell(Shout_WildShape_Combat_Raven,AddChildren);UnlockSpell(Shout_Wildshape_Combat_Panther,AddChildren);UnlockSpell(Shout_WildShape_Combat_Owlbear,AddChildren);UnlockSpell(Shout_Wildshape_Combat_SaberTooth_Tiger,AddChildren);UnlockSpell(Shout_WildShape_Combat_Dilophosaurus,AddChildren);UnlockSpell(Shout_WildShape_Combat_Myrmidon_Air,AddChildren);UnlockSpell(Shout_WildShape_Combat_Myrmidon_Earth,AddChildren);UnlockSpell(Shout_WildShape_Combat_Myrmidon_Fire,AddChildren);UnlockSpell(Shout_WildShape_Combat_Myrmidon_Water,AddChildren)"
 
     // <node id="Progression">
     //     <attribute id="Level" type="uint8" value="10"/>
@@ -665,7 +665,7 @@
     using "GOON_NPC_DRUID_MOON_PROGRESSION_TEMPLATE"
     data "StackPriority" "14"
     data "Passives" "WildShape_Combat;PrimalStrike;ThousandForms"
-    data "Boosts" "ActionResource(WildShape,2,0);UnlockSpell(Shout_WildShape_Combat);UnlockSpell(Shout_WildShape_Combat_Badger);UnlockSpell(Shout_WildShape_Combat_Spider);UnlockSpell(Shout_WildShape_Combat_Wolf_Dire);UnlockSpell(Shout_WildShape_Combat_Cat);UnlockSpell(Shout_WildShape_Combat_Bear_Polar);UnlockSpell(Shout_WildShape_Combat_DeepRothe);UnlockSpell(Shout_WildShape_Combat_Raven);UnlockSpell(Shout_Wildshape_Combat_Panther);UnlockSpell(Shout_WildShape_Combat_Owlbear);UnlockSpell(Shout_Wildshape_Combat_SaberTooth_Tiger);UnlockSpell(Shout_WildShape_Combat_Dilophosaurus);UnlockSpell(Shout_WildShape_Combat_Myrmidon_Air);UnlockSpell(Shout_WildShape_Combat_Myrmidon_Earth);UnlockSpell(Shout_WildShape_Combat_Myrmidon_Fire);UnlockSpell(Shout_WildShape_Combat_Myrmidon_Water)"
+    data "Boosts" "ActionResource(WildShape,2,0);UnlockSpell(Shout_WildShape_Combat,AddChildren);UnlockSpell(Shout_WildShape_Combat_Badger,AddChildren);UnlockSpell(Shout_WildShape_Combat_Spider,AddChildren);UnlockSpell(Shout_WildShape_Combat_Wolf_Dire,AddChildren);UnlockSpell(Shout_WildShape_Combat_Cat,AddChildren);UnlockSpell(Shout_WildShape_Combat_Bear_Polar,AddChildren);UnlockSpell(Shout_WildShape_Combat_DeepRothe,AddChildren);UnlockSpell(Shout_WildShape_Combat_Raven,AddChildren);UnlockSpell(Shout_Wildshape_Combat_Panther,AddChildren);UnlockSpell(Shout_WildShape_Combat_Owlbear,AddChildren);UnlockSpell(Shout_Wildshape_Combat_SaberTooth_Tiger,AddChildren);UnlockSpell(Shout_WildShape_Combat_Dilophosaurus,AddChildren);UnlockSpell(Shout_WildShape_Combat_Myrmidon_Air,AddChildren);UnlockSpell(Shout_WildShape_Combat_Myrmidon_Earth,AddChildren);UnlockSpell(Shout_WildShape_Combat_Myrmidon_Fire,AddChildren);UnlockSpell(Shout_WildShape_Combat_Myrmidon_Water,AddChildren)"
 
     // <node id="Progression">
     //     <attribute id="Level" type="uint8" value="14"/>
@@ -719,9 +719,9 @@
     data "Description" "h5872faaag78ffg4f03g99cbgcda17b06d423"
     data "Icon" "Action_SymbioticEntity"
     data "Boosts" ""
-    data "StatsFunctorContext" "OnCreate;OnStatusApplied;OnStatusRemoved"
-    data "Conditions" ""
-    data "StatsFunctors" "IF(not ClassLevelHigherOrEqualThan(2,'NPC_DRUID') or HasStatus('GOON_NPC_DRUID_LVL_1')):ApplyStatus(GOON_NPC_DRUID_SPORE_LVL_1,100,-1);IF(ClassLevelHigherOrEqualThan(2,'NPC_DRUID') and not ClassLevelHigherOrEqualThan(3,'NPC_DRUID') or HasStatus('GOON_NPC_DRUID_LVL_2')):ApplyStatus(GOON_NPC_DRUID_SPORE_LVL_2,100,-1);IF(ClassLevelHigherOrEqualThan(3,'NPC_DRUID') and not ClassLevelHigherOrEqualThan(4,'NPC_DRUID') or HasStatus('GOON_NPC_DRUID_LVL_3')):ApplyStatus(GOON_NPC_DRUID_SPORE_LVL_3,100,-1);IF(ClassLevelHigherOrEqualThan(4,'NPC_DRUID') and not ClassLevelHigherOrEqualThan(5,'NPC_DRUID') or HasStatus('GOON_NPC_DRUID_LVL_4')):ApplyStatus(GOON_NPC_DRUID_SPORE_LVL_4,100,-1);IF(ClassLevelHigherOrEqualThan(5,'NPC_DRUID') and not ClassLevelHigherOrEqualThan(6,'NPC_DRUID') or HasStatus('GOON_NPC_DRUID_LVL_5')):ApplyStatus(GOON_NPC_DRUID_SPORE_LVL_5,100,-1);IF(ClassLevelHigherOrEqualThan(6,'NPC_DRUID') and not ClassLevelHigherOrEqualThan(7,'NPC_DRUID') or HasStatus('GOON_NPC_DRUID_LVL_6')):ApplyStatus(GOON_NPC_DRUID_SPORE_LVL_6,100,-1);IF(ClassLevelHigherOrEqualThan(7,'NPC_DRUID') and not ClassLevelHigherOrEqualThan(8,'NPC_DRUID') or HasStatus('GOON_NPC_DRUID_LVL_7')):ApplyStatus(GOON_NPC_DRUID_SPORE_LVL_7,100,-1);IF(ClassLevelHigherOrEqualThan(8,'NPC_DRUID') and not ClassLevelHigherOrEqualThan(9,'NPC_DRUID') or HasStatus('GOON_NPC_DRUID_LVL_8')):ApplyStatus(GOON_NPC_DRUID_SPORE_LVL_8,100,-1);IF(ClassLevelHigherOrEqualThan(9,'NPC_DRUID') and not ClassLevelHigherOrEqualThan(10,'NPC_DRUID') or HasStatus('GOON_NPC_DRUID_LVL_9')):ApplyStatus(GOON_NPC_DRUID_SPORE_LVL_9,100,-1);IF(ClassLevelHigherOrEqualThan(10,'NPC_DRUID') and not ClassLevelHigherOrEqualThan(11,'NPC_DRUID') or HasStatus('GOON_NPC_DRUID_LVL_10')):ApplyStatus(GOON_NPC_DRUID_SPORE_LVL_10,100,-1);IF(ClassLevelHigherOrEqualThan(11,'NPC_DRUID') and not ClassLevelHigherOrEqualThan(12,'NPC_DRUID') or HasStatus('GOON_NPC_DRUID_LVL_11')):ApplyStatus(GOON_NPC_DRUID_SPORE_LVL_11,100,-1);IF(ClassLevelHigherOrEqualThan(12,'NPC_DRUID') and not ClassLevelHigherOrEqualThan(13,'NPC_DRUID') or HasStatus('GOON_NPC_DRUID_LVL_12')):ApplyStatus(GOON_NPC_DRUID_SPORE_LVL_12,100,-1);IF(ClassLevelHigherOrEqualThan(13,'NPC_DRUID') and not ClassLevelHigherOrEqualThan(14,'NPC_DRUID') or HasStatus('GOON_NPC_DRUID_LVL_13')):ApplyStatus(GOON_NPC_DRUID_SPORE_LVL_13,100,-1);IF(ClassLevelHigherOrEqualThan(14,'NPC_DRUID') and not ClassLevelHigherOrEqualThan(15,'NPC_DRUID') or HasStatus('GOON_NPC_DRUID_LVL_14')):ApplyStatus(GOON_NPC_DRUID_SPORE_LVL_14,100,-1);IF(ClassLevelHigherOrEqualThan(15,'NPC_DRUID') and not ClassLevelHigherOrEqualThan(16,'NPC_DRUID') or HasStatus('GOON_NPC_DRUID_LVL_15')):ApplyStatus(GOON_NPC_DRUID_SPORE_LVL_15,100,-1);IF(ClassLevelHigherOrEqualThan(16,'NPC_DRUID') and not ClassLevelHigherOrEqualThan(17,'NPC_DRUID') or HasStatus('GOON_NPC_DRUID_LVL_16')):ApplyStatus(GOON_NPC_DRUID_SPORE_LVL_16,100,-1);IF(ClassLevelHigherOrEqualThan(17,'NPC_DRUID') and not ClassLevelHigherOrEqualThan(18,'NPC_DRUID') or HasStatus('GOON_NPC_DRUID_LVL_17')):ApplyStatus(GOON_NPC_DRUID_SPORE_LVL_17,100,-1);IF(ClassLevelHigherOrEqualThan(18,'NPC_DRUID') and not ClassLevelHigherOrEqualThan(19,'NPC_DRUID') or HasStatus('GOON_NPC_DRUID_LVL_18')):ApplyStatus(GOON_NPC_DRUID_SPORE_LVL_18,100,-1);IF(ClassLevelHigherOrEqualThan(19,'NPC_DRUID') and not ClassLevelHigherOrEqualThan(20,'NPC_DRUID') or HasStatus('GOON_NPC_DRUID_LVL_19')):ApplyStatus(GOON_NPC_DRUID_SPORE_LVL_19,100,-1);IF(ClassLevelHigherOrEqualThan(20,'NPC_DRUID') or HasStatus('GOON_NPC_DRUID_LVL_20')):ApplyStatus(GOON_NPC_DRUID_SPORE_LVL_20,100,-1)"
+    data "StatsFunctorContext" "OnCreate;OnCombatStarted;OnTurn"
+    data "Conditions" "not HasPassive('Goon_Druid_NPC_Progressions',context.Source)"
+    data "StatsFunctors" "IF(GoonCharacterLevelEqualTo(1) or HasStatus('GOON_NPC_DRUID_LVL_1')):ApplyStatus(GOON_NPC_DRUID_SPORE_LVL_1,100,-1);IF(GoonCharacterLevelEqualTo(2) or HasStatus('GOON_NPC_DRUID_LVL_2')):ApplyStatus(GOON_NPC_DRUID_SPORE_LVL_2,100,-1);IF(GoonCharacterLevelEqualTo(3) or HasStatus('GOON_NPC_DRUID_LVL_3')):ApplyStatus(GOON_NPC_DRUID_SPORE_LVL_3,100,-1);IF(GoonCharacterLevelEqualTo(4) or HasStatus('GOON_NPC_DRUID_LVL_4')):ApplyStatus(GOON_NPC_DRUID_SPORE_LVL_4,100,-1);IF(GoonCharacterLevelEqualTo(5) or HasStatus('GOON_NPC_DRUID_LVL_5')):ApplyStatus(GOON_NPC_DRUID_SPORE_LVL_5,100,-1);IF(GoonCharacterLevelEqualTo(6) or HasStatus('GOON_NPC_DRUID_LVL_6')):ApplyStatus(GOON_NPC_DRUID_SPORE_LVL_6,100,-1);IF(GoonCharacterLevelEqualTo(7) or HasStatus('GOON_NPC_DRUID_LVL_7')):ApplyStatus(GOON_NPC_DRUID_SPORE_LVL_7,100,-1);IF(GoonCharacterLevelEqualTo(8) or HasStatus('GOON_NPC_DRUID_LVL_8')):ApplyStatus(GOON_NPC_DRUID_SPORE_LVL_8,100,-1);IF(GoonCharacterLevelEqualTo(9) or HasStatus('GOON_NPC_DRUID_LVL_9')):ApplyStatus(GOON_NPC_DRUID_SPORE_LVL_9,100,-1);IF(GoonCharacterLevelEqualTo(10) or HasStatus('GOON_NPC_DRUID_LVL_10')):ApplyStatus(GOON_NPC_DRUID_SPORE_LVL_10,100,-1);IF(GoonCharacterLevelEqualTo(11) or HasStatus('GOON_NPC_DRUID_LVL_11')):ApplyStatus(GOON_NPC_DRUID_SPORE_LVL_11,100,-1);IF(GoonCharacterLevelEqualTo(12) or HasStatus('GOON_NPC_DRUID_LVL_12')):ApplyStatus(GOON_NPC_DRUID_SPORE_LVL_12,100,-1);IF(GoonCharacterLevelEqualTo(13) or HasStatus('GOON_NPC_DRUID_LVL_13')):ApplyStatus(GOON_NPC_DRUID_SPORE_LVL_13,100,-1);IF(GoonCharacterLevelEqualTo(14) or HasStatus('GOON_NPC_DRUID_LVL_14')):ApplyStatus(GOON_NPC_DRUID_SPORE_LVL_14,100,-1);IF(GoonCharacterLevelEqualTo(15) or HasStatus('GOON_NPC_DRUID_LVL_15')):ApplyStatus(GOON_NPC_DRUID_SPORE_LVL_15,100,-1);IF(GoonCharacterLevelEqualTo(16) or HasStatus('GOON_NPC_DRUID_LVL_16')):ApplyStatus(GOON_NPC_DRUID_SPORE_LVL_16,100,-1);IF(GoonCharacterLevelEqualTo(17) or HasStatus('GOON_NPC_DRUID_LVL_17')):ApplyStatus(GOON_NPC_DRUID_SPORE_LVL_17,100,-1);IF(GoonCharacterLevelEqualTo(18) or HasStatus('GOON_NPC_DRUID_LVL_18')):ApplyStatus(GOON_NPC_DRUID_SPORE_LVL_18,100,-1);IF(GoonCharacterLevelEqualTo(19) or HasStatus('GOON_NPC_DRUID_LVL_19')):ApplyStatus(GOON_NPC_DRUID_SPORE_LVL_19,100,-1);IF(GoonCharacterLevelEqualToOrGreaterThan(20) or HasStatus('GOON_NPC_DRUID_LVL_20')):ApplyStatus(GOON_NPC_DRUID_SPORE_LVL_20,100,-1)"
 
 // Template
     new entry "GOON_NPC_DRUID_SPORE_PROGRESSION_TEMPLATE"
@@ -731,7 +731,7 @@
     data "RemoveEvents" "OnStatusApplied;OnStatusRemoved"
     data "StackId" "GOON_NPC_DRUID_SPORE_PROGRESSION_TEMPLATE"
     data "StackType" "Ignore"
-    data "RemoveConditions" "not HasPassive('CX_Druid_Spores_Boost')"
+    data "RemoveConditions" "not HasPassive('CX_Druid_Spores_Boost',context.Source)"
 
 // Progression statuses
     new entry "GOON_NPC_DRUID_SPORE_LVL_1"
@@ -746,7 +746,7 @@
     using "GOON_NPC_DRUID_SPORE_PROGRESSION_TEMPLATE"
     data "StackPriority" "2"
     data "Passives" ""
-    data "Boosts" "ActionResource(WildShape,2,0);UnlockSpell(Shout_WildShape);UnlockSpell(Shout_WildShape_Badger);UnlockSpell(Shout_WildShape_Spider);UnlockSpell(Shout_WildShape_Wolf_Dire);UnlockSpell(Shout_WildShape_Cat);UnlockSpell(Target_HaloOfSpores);UnlockSpell(Shout_SymbioticEntity);UnlockSpell(Target_ChillTouch,AddChildren)"
+    data "Boosts" "ActionResource(WildShape,2,0);UnlockSpell(Shout_WildShape,AddChildren);UnlockSpell(Shout_WildShape_Badger,AddChildren);UnlockSpell(Shout_WildShape_Spider,AddChildren);UnlockSpell(Shout_WildShape_Wolf_Dire,AddChildren);UnlockSpell(Shout_WildShape_Cat,AddChildren);UnlockSpell(Target_HaloOfSpores,AddChildren);UnlockSpell(Shout_SymbioticEntity,AddChildren);UnlockSpell(Target_ChillTouch,AddChildren)"
 
     // <node id="Progression">
     //     <attribute id="Boosts" type="LSString" value="ActionResource(WildShape,2,0)"/>
@@ -763,7 +763,7 @@
     using "GOON_NPC_DRUID_SPORE_PROGRESSION_TEMPLATE"
     data "StackPriority" "3"
     data "Passives" ""
-    data "Boosts" "ActionResource(WildShape,2,0);UnlockSpell(Shout_WildShape);UnlockSpell(Shout_WildShape_Badger);UnlockSpell(Shout_WildShape_Spider);UnlockSpell(Shout_WildShape_Wolf_Dire);UnlockSpell(Shout_WildShape_Cat);UnlockSpell(Target_HaloOfSpores);UnlockSpell(Shout_SymbioticEntity);UnlockSpell(Target_ChillTouch,AddChildren);UnlockSpell(Target_Blindness,AddChildren);UnlockSpell(Shout_DetectThoughts,AddChildren)"
+    data "Boosts" "ActionResource(WildShape,2,0);UnlockSpell(Shout_WildShape,AddChildren);UnlockSpell(Shout_WildShape_Badger,AddChildren);UnlockSpell(Shout_WildShape_Spider,AddChildren);UnlockSpell(Shout_WildShape_Wolf_Dire,AddChildren);UnlockSpell(Shout_WildShape_Cat,AddChildren);UnlockSpell(Target_HaloOfSpores,AddChildren);UnlockSpell(Shout_SymbioticEntity,AddChildren);UnlockSpell(Target_ChillTouch,AddChildren);UnlockSpell(Target_Blindness,AddChildren);UnlockSpell(Shout_DetectThoughts,AddChildren)"
 
     // <node id="Progression">
     //     <attribute id="Level" type="uint8" value="3"/>
@@ -779,7 +779,7 @@
     using "GOON_NPC_DRUID_SPORE_PROGRESSION_TEMPLATE"
     data "StackPriority" "4"
     data "Passives" ""
-    data "Boosts" "ActionResource(WildShape,2,0);UnlockSpell(Shout_WildShape);UnlockSpell(Shout_WildShape_Badger);UnlockSpell(Shout_WildShape_Spider);UnlockSpell(Shout_WildShape_Wolf_Dire);UnlockSpell(Shout_WildShape_Cat);UnlockSpell(Target_HaloOfSpores);UnlockSpell(Shout_SymbioticEntity);UnlockSpell(Target_ChillTouch,AddChildren);UnlockSpell(Target_Blindness,AddChildren);UnlockSpell(Shout_DetectThoughts,AddChildren);UnlockSpell(Shout_WildShape_DeepRothe)"
+    data "Boosts" "ActionResource(WildShape,2,0);UnlockSpell(Shout_WildShape,AddChildren);UnlockSpell(Shout_WildShape_Badger,AddChildren);UnlockSpell(Shout_WildShape_Spider,AddChildren);UnlockSpell(Shout_WildShape_Wolf_Dire,AddChildren);UnlockSpell(Shout_WildShape_Cat,AddChildren);UnlockSpell(Target_HaloOfSpores,AddChildren);UnlockSpell(Shout_SymbioticEntity,AddChildren);UnlockSpell(Target_ChillTouch,AddChildren);UnlockSpell(Target_Blindness,AddChildren);UnlockSpell(Shout_DetectThoughts,AddChildren);UnlockSpell(Shout_WildShape_DeepRothe,AddChildren)"
 
     // <node id="Progression">
     //     <attribute id="Level" type="uint8" value="4"/>
@@ -795,7 +795,7 @@
     using "GOON_NPC_DRUID_SPORE_PROGRESSION_TEMPLATE"
     data "StackPriority" "5"
     data "Passives" ""
-    data "Boosts" "ActionResource(WildShape,2,0);UnlockSpell(Shout_WildShape);UnlockSpell(Shout_WildShape_Badger);UnlockSpell(Shout_WildShape_Spider);UnlockSpell(Shout_WildShape_Wolf_Dire);UnlockSpell(Shout_WildShape_Cat);UnlockSpell(Target_HaloOfSpores);UnlockSpell(Shout_SymbioticEntity);UnlockSpell(Target_ChillTouch,AddChildren);UnlockSpell(Target_Blindness,AddChildren);UnlockSpell(Shout_DetectThoughts,AddChildren);UnlockSpell(Shout_WildShape_DeepRothe);UnlockSpell(Target_AnimateDead);UnlockSpell(Target_GaseousForm)"
+    data "Boosts" "ActionResource(WildShape,2,0);UnlockSpell(Shout_WildShape,AddChildren);UnlockSpell(Shout_WildShape_Badger,AddChildren);UnlockSpell(Shout_WildShape_Spider,AddChildren);UnlockSpell(Shout_WildShape_Wolf_Dire,AddChildren);UnlockSpell(Shout_WildShape_Cat,AddChildren);UnlockSpell(Target_HaloOfSpores,AddChildren);UnlockSpell(Shout_SymbioticEntity,AddChildren);UnlockSpell(Target_ChillTouch,AddChildren);UnlockSpell(Target_Blindness,AddChildren);UnlockSpell(Shout_DetectThoughts,AddChildren);UnlockSpell(Shout_WildShape_DeepRothe,AddChildren);UnlockSpell(Target_AnimateDead,AddChildren);UnlockSpell(Target_GaseousForm,AddChildren)"
 
     // <node id="Progression">
     //     <attribute id="Level" type="uint8" value="5"/>
@@ -811,7 +811,7 @@
     using "GOON_NPC_DRUID_SPORE_PROGRESSION_TEMPLATE"
     data "StackPriority" "6"
     data "Passives" "FungalInfestation"
-    data "Boosts" "ActionResource(WildShape,2,0);UnlockSpell(Shout_WildShape);UnlockSpell(Shout_WildShape_Badger);UnlockSpell(Shout_WildShape_Spider);UnlockSpell(Shout_WildShape_Wolf_Dire);UnlockSpell(Shout_WildShape_Cat);UnlockSpell(Target_HaloOfSpores);UnlockSpell(Shout_SymbioticEntity);UnlockSpell(Target_ChillTouch,AddChildren);UnlockSpell(Target_Blindness,AddChildren);UnlockSpell(Shout_DetectThoughts,AddChildren);UnlockSpell(Shout_WildShape_DeepRothe);UnlockSpell(Target_AnimateDead,AddChildren);UnlockSpell(Target_GaseousForm,AddChildren);ActionResource(FungalInfestationCharge,4,0);UnlockSpell(Shout_Wildshape_Panther);UnlockSpell(Shout_WildShape_Owlbear);UnlockSpell(Target_FungalInfestation)"
+    data "Boosts" "ActionResource(WildShape,2,0);UnlockSpell(Shout_WildShape,AddChildren);UnlockSpell(Shout_WildShape_Badger,AddChildren);UnlockSpell(Shout_WildShape_Spider,AddChildren);UnlockSpell(Shout_WildShape_Wolf_Dire,AddChildren);UnlockSpell(Shout_WildShape_Cat,AddChildren);UnlockSpell(Target_HaloOfSpores,AddChildren);UnlockSpell(Shout_SymbioticEntity,AddChildren);UnlockSpell(Target_ChillTouch,AddChildren);UnlockSpell(Target_Blindness,AddChildren);UnlockSpell(Shout_DetectThoughts,AddChildren);UnlockSpell(Shout_WildShape_DeepRothe,AddChildren);UnlockSpell(Target_AnimateDead,AddChildren);UnlockSpell(Target_GaseousForm,AddChildren);ActionResource(FungalInfestationCharge,4,0);UnlockSpell(Shout_Wildshape_Panther,AddChildren);UnlockSpell(Shout_WildShape_Owlbear,AddChildren);UnlockSpell(Target_FungalInfestation,AddChildren)"
 
     // <node id="Progression">
     //     <attribute id="Boosts" type="LSString" value="ActionResource(FungalInfestationCharge,4,0)"/>
@@ -829,7 +829,7 @@
     using "GOON_NPC_DRUID_SPORE_PROGRESSION_TEMPLATE"
     data "StackPriority" "7"
     data "Passives" "FungalInfestation"
-    data "Boosts" "ActionResource(WildShape,2,0);UnlockSpell(Shout_WildShape);UnlockSpell(Shout_WildShape_Badger);UnlockSpell(Shout_WildShape_Spider);UnlockSpell(Shout_WildShape_Wolf_Dire);UnlockSpell(Shout_WildShape_Cat);UnlockSpell(Target_HaloOfSpores);UnlockSpell(Shout_SymbioticEntity);UnlockSpell(Target_ChillTouch,AddChildren);UnlockSpell(Target_Blindness,AddChildren);UnlockSpell(Shout_DetectThoughts,AddChildren);UnlockSpell(Shout_WildShape_DeepRothe);UnlockSpell(Target_AnimateDead,AddChildren);UnlockSpell(Target_GaseousForm,AddChildren);ActionResource(FungalInfestationCharge,4,0);UnlockSpell(Shout_Wildshape_Panther);UnlockSpell(Shout_WildShape_Owlbear);UnlockSpell(Target_FungalInfestation);UnlockSpell(Target_Blight,AddChildren);UnlockSpell(Target_Confusion,AddChildren)"
+    data "Boosts" "ActionResource(WildShape,2,0);UnlockSpell(Shout_WildShape,AddChildren);UnlockSpell(Shout_WildShape_Badger,AddChildren);UnlockSpell(Shout_WildShape_Spider,AddChildren);UnlockSpell(Shout_WildShape_Wolf_Dire,AddChildren);UnlockSpell(Shout_WildShape_Cat,AddChildren);UnlockSpell(Target_HaloOfSpores,AddChildren);UnlockSpell(Shout_SymbioticEntity,AddChildren);UnlockSpell(Target_ChillTouch,AddChildren);UnlockSpell(Target_Blindness,AddChildren);UnlockSpell(Shout_DetectThoughts,AddChildren);UnlockSpell(Shout_WildShape_DeepRothe,AddChildren);UnlockSpell(Target_AnimateDead,AddChildren);UnlockSpell(Target_GaseousForm,AddChildren);ActionResource(FungalInfestationCharge,4,0);UnlockSpell(Shout_Wildshape_Panther,AddChildren);UnlockSpell(Shout_WildShape_Owlbear,AddChildren);UnlockSpell(Target_FungalInfestation,AddChildren);UnlockSpell(Target_Blight,AddChildren);UnlockSpell(Target_Confusion,AddChildren)"
 
     // <node id="Progression">
     //     <attribute id="Level" type="uint8" value="7"/>
@@ -851,7 +851,7 @@
     using "GOON_NPC_DRUID_SPORE_PROGRESSION_TEMPLATE"
     data "StackPriority" "9"
     data "Passives" "FungalInfestation"
-    data "Boosts" "ActionResource(WildShape,2,0);UnlockSpell(Shout_WildShape);UnlockSpell(Shout_WildShape_Badger);UnlockSpell(Shout_WildShape_Spider);UnlockSpell(Shout_WildShape_Wolf_Dire);UnlockSpell(Shout_WildShape_Cat);UnlockSpell(Target_HaloOfSpores);UnlockSpell(Shout_SymbioticEntity);UnlockSpell(Target_ChillTouch,AddChildren);UnlockSpell(Target_Blindness,AddChildren);UnlockSpell(Shout_DetectThoughts,AddChildren);UnlockSpell(Shout_WildShape_DeepRothe);UnlockSpell(Target_AnimateDead,AddChildren);UnlockSpell(Target_GaseousForm,AddChildren);ActionResource(FungalInfestationCharge,4,0);UnlockSpell(Shout_Wildshape_Panther);UnlockSpell(Shout_WildShape_Owlbear);UnlockSpell(Target_FungalInfestation);UnlockSpell(Target_Blight,AddChildren);UnlockSpell(Target_Confusion,AddChildren);UnlockSpell(Target_Cloudkill,AddChildren);UnlockSpell(Target_Contagion,AddChildren)"
+    data "Boosts" "ActionResource(WildShape,2,0);UnlockSpell(Shout_WildShape,AddChildren);UnlockSpell(Shout_WildShape_Badger,AddChildren);UnlockSpell(Shout_WildShape_Spider,AddChildren);UnlockSpell(Shout_WildShape_Wolf_Dire,AddChildren);UnlockSpell(Shout_WildShape_Cat,AddChildren);UnlockSpell(Target_HaloOfSpores,AddChildren);UnlockSpell(Shout_SymbioticEntity,AddChildren);UnlockSpell(Target_ChillTouch,AddChildren);UnlockSpell(Target_Blindness,AddChildren);UnlockSpell(Shout_DetectThoughts,AddChildren);UnlockSpell(Shout_WildShape_DeepRothe,AddChildren);UnlockSpell(Target_AnimateDead,AddChildren);UnlockSpell(Target_GaseousForm,AddChildren);ActionResource(FungalInfestationCharge,4,0);UnlockSpell(Shout_Wildshape_Panther,AddChildren);UnlockSpell(Shout_WildShape_Owlbear,AddChildren);UnlockSpell(Target_FungalInfestation,AddChildren);UnlockSpell(Target_Blight,AddChildren);UnlockSpell(Target_Confusion,AddChildren);UnlockSpell(Target_Cloudkill,AddChildren);UnlockSpell(Target_Contagion,AddChildren)"
 
     // <node id="Progression">
     //     <attribute id="Level" type="uint8" value="9"/>
@@ -867,7 +867,7 @@
     using "GOON_NPC_DRUID_SPORE_PROGRESSION_TEMPLATE"
     data "StackPriority" "10"
     data "Passives" "FungalInfestation;SpreadingSpores"
-    data "Boosts" "ActionResource(WildShape,2,0);UnlockSpell(Shout_WildShape);UnlockSpell(Shout_WildShape_Badger);UnlockSpell(Shout_WildShape_Spider);UnlockSpell(Shout_WildShape_Wolf_Dire);UnlockSpell(Shout_WildShape_Cat);UnlockSpell(Target_HaloOfSpores);UnlockSpell(Shout_SymbioticEntity);UnlockSpell(Target_ChillTouch,AddChildren);UnlockSpell(Target_Blindness,AddChildren);UnlockSpell(Shout_DetectThoughts,AddChildren);UnlockSpell(Shout_WildShape_DeepRothe);UnlockSpell(Target_AnimateDead,AddChildren);UnlockSpell(Target_GaseousForm,AddChildren);ActionResource(FungalInfestationCharge,4,0);UnlockSpell(Shout_Wildshape_Panther);UnlockSpell(Shout_WildShape_Owlbear);UnlockSpell(Target_FungalInfestation);UnlockSpell(Target_Blight,AddChildren);UnlockSpell(Target_Confusion,AddChildren);UnlockSpell(Target_Cloudkill,AddChildren);UnlockSpell(Target_Contagion,AddChildren);UnlockSpell(Shout_WildShape_Dilophosaurus)"
+    data "Boosts" "ActionResource(WildShape,2,0);UnlockSpell(Shout_WildShape,AddChildren);UnlockSpell(Shout_WildShape_Badger,AddChildren);UnlockSpell(Shout_WildShape_Spider,AddChildren);UnlockSpell(Shout_WildShape_Wolf_Dire,AddChildren);UnlockSpell(Shout_WildShape_Cat,AddChildren);UnlockSpell(Target_HaloOfSpores,AddChildren);UnlockSpell(Shout_SymbioticEntity,AddChildren);UnlockSpell(Target_ChillTouch,AddChildren);UnlockSpell(Target_Blindness,AddChildren);UnlockSpell(Shout_DetectThoughts,AddChildren);UnlockSpell(Shout_WildShape_DeepRothe,AddChildren);UnlockSpell(Target_AnimateDead,AddChildren);UnlockSpell(Target_GaseousForm,AddChildren);ActionResource(FungalInfestationCharge,4,0);UnlockSpell(Shout_Wildshape_Panther,AddChildren);UnlockSpell(Shout_WildShape_Owlbear,AddChildren);UnlockSpell(Target_FungalInfestation,AddChildren);UnlockSpell(Target_Blight,AddChildren);UnlockSpell(Target_Confusion,AddChildren);UnlockSpell(Target_Cloudkill,AddChildren);UnlockSpell(Target_Contagion,AddChildren);UnlockSpell(Shout_WildShape_Dilophosaurus,AddChildren)"
 
     // <node id="Progression">
     //     <attribute id="Level" type="uint8" value="10"/>
@@ -903,7 +903,7 @@
     using "GOON_NPC_DRUID_SPORE_PROGRESSION_TEMPLATE"
     data "StackPriority" "14"
     data "Passives" "FungalInfestation;SpreadingSpores;FungalBody"
-    data "Boosts" "ActionResource(WildShape,2,0);UnlockSpell(Shout_WildShape);UnlockSpell(Shout_WildShape_Badger);UnlockSpell(Shout_WildShape_Spider);UnlockSpell(Shout_WildShape_Wolf_Dire);UnlockSpell(Shout_WildShape_Cat);UnlockSpell(Target_HaloOfSpores);UnlockSpell(Shout_SymbioticEntity);UnlockSpell(Target_ChillTouch,AddChildren);UnlockSpell(Target_Blindness,AddChildren);UnlockSpell(Shout_DetectThoughts,AddChildren);UnlockSpell(Shout_WildShape_DeepRothe);UnlockSpell(Target_AnimateDead,AddChildren);UnlockSpell(Target_GaseousForm,AddChildren);ActionResource(FungalInfestationCharge,4,0);UnlockSpell(Shout_Wildshape_Panther);UnlockSpell(Shout_WildShape_Owlbear);UnlockSpell(Target_FungalInfestation);UnlockSpell(Target_Blight,AddChildren);UnlockSpell(Target_Confusion,AddChildren);UnlockSpell(Target_Cloudkill,AddChildren);UnlockSpell(Target_Contagion,AddChildren);UnlockSpell(Shout_WildShape_Dilophosaurus)"
+    data "Boosts" "ActionResource(WildShape,2,0);UnlockSpell(Shout_WildShape,AddChildren);UnlockSpell(Shout_WildShape_Badger,AddChildren);UnlockSpell(Shout_WildShape_Spider,AddChildren);UnlockSpell(Shout_WildShape_Wolf_Dire,AddChildren);UnlockSpell(Shout_WildShape_Cat,AddChildren);UnlockSpell(Target_HaloOfSpores,AddChildren);UnlockSpell(Shout_SymbioticEntity,AddChildren);UnlockSpell(Target_ChillTouch,AddChildren);UnlockSpell(Target_Blindness,AddChildren);UnlockSpell(Shout_DetectThoughts,AddChildren);UnlockSpell(Shout_WildShape_DeepRothe,AddChildren);UnlockSpell(Target_AnimateDead,AddChildren);UnlockSpell(Target_GaseousForm,AddChildren);ActionResource(FungalInfestationCharge,4,0);UnlockSpell(Shout_Wildshape_Panther,AddChildren);UnlockSpell(Shout_WildShape_Owlbear,AddChildren);UnlockSpell(Target_FungalInfestation,AddChildren);UnlockSpell(Target_Blight,AddChildren);UnlockSpell(Target_Confusion,AddChildren);UnlockSpell(Target_Cloudkill,AddChildren);UnlockSpell(Target_Contagion,AddChildren);UnlockSpell(Shout_WildShape_Dilophosaurus,AddChildren)"
 
     // <node id="Progression">
     //     <attribute id="Level" type="uint8" value="14"/>
