@@ -14,6 +14,7 @@ using "RageFrenzyUnlock"
 // data "Boosts" "UnlockSpell(Shout_Rage_Frenzy)"
 data "Boosts" "IF(not Tagged('OGRE')):UnlockSpell(Shout_Rage_Frenzy)"
 
+// TODO: The two following passives are just scrambled drafts that don't work
 new entry "Goon_Woman_Ogre_Strong_And_Kinda_Hot_When_She_Rages_Skibidi_Rizz_Up_Her_Swamp_Ongfr"
 type "PassiveData"
 data "Properties" "IsHidden"
@@ -49,11 +50,6 @@ data "Boosts" "IF(HasStatus('SG_Rage') and not HasStatus('FOR_OGRE_ENRAGE') and 
 // data "Boosts" "Ability(Strength, 4);AC(-2)"
 // data "RemoveConditions" "not HasStatus('SG_Rage') or HasStatus('FOR_OGRE_ENRAGE') or HasStatus('GOB_OGRE_ENRAGE')"
 // data "RemoveEvents" "OnStatusApplied;OnStatusRemoved"
-
-new entry "Goon_Rage_Ogre_Passive"
-type "PassiveData"
-data "Properties" "IsHidden"
-data "Boosts" "IF(not HasPassive('CX_Barbarian_Berserker_Boost',context.Source)):UnlockSpell(Goon_Shout_Rage_Ogre);IF(HasPassive('CX_Barbarian_Berserker_Boost',context.Source)):UnlockSpell(Goon_Shout_Rage_Frenzy_Ogre)"
 
 new entry "Goon_Rage_Ogre_Passive"
 type "PassiveData"
