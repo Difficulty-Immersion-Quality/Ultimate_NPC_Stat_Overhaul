@@ -2268,11 +2268,11 @@
                     <attribute id="UUID" type="guid" value="83f84349-de5b-479a-9e3a-153bde7c77a9"/>
                 </node>
                 <node id="Progression">
-                    <attribute id="Boosts" type="LSString" value="ActionResource(SpellSlot,1,7)"/>
+                    <attribute id="Boosts" type="LSString" value="ActionResource(SpellSlot,1,7);ActionResource(SignatureSpells_Freecast,1,0)"/>
                     <attribute id="Level" type="uint8" value="20"/>
                     <attribute id="Name" type="LSString" value="NPC_Wizard"/>
+                    <attribute id="PassivesAdded" type="LSString" value="SignatureSpells;SignatureSpells_Spells;SignatureSpells_Spells_2;SignatureSpells_Spells_3"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
-                    <!-- <attribute id="Selectors" type="LSString" value="SelectPassives(ec16c6d2-5316-46e7-9ed6-bedf5d4169b2,2,SignatureSpells)"/> -->
                     <attribute id="TableUUID" type="guid" value="44bdbc5e-a003-4d61-87f0-5ced20d3804e"/>
                     <attribute id="UUID" type="guid" value="93a60cc8-801d-4768-a33e-53b67ec2eaa5"/>
                 </node>
