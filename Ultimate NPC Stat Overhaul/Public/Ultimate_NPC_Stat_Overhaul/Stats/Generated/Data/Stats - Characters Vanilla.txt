@@ -1521,12 +1521,12 @@ using "CRE_AstralPlane_GithRaider"
 // data "Progressions" ""
 data "Progressions" "0e6da493-5a37-423b-8c28-629462b22faa"
 
-// Kith'rak Voss (Inherits Fighter progressions, added Eldritch Knight subclass)
+// Kith'rak Voss (Inherits Fighter progressions, added Eldritch Knight subclass, AND added "ImmuneToDisarm" to prevent getting the Silver Sword and sequence breaking Lae'zel's dialogue)
 new entry "GLO_Voss"
 type "Character"
 using "GLO_Voss"
 // data "Passives" "AttackOfOpportunity;DarknessRules;PsychicStrikes_Githyanki;Parry_Githyanki_Supreme;Parry_Githyanki_Supreme_EquipTrigger"
-data "Passives" "CX_Fighter_EldritchKnight_Boost;AttackOfOpportunity;DarknessRules;PsychicStrikes_Githyanki;Parry_Githyanki_Supreme;Parry_Githyanki_Supreme_EquipTrigger"
+data "Passives" "CX_Fighter_EldritchKnight_Boost;AttackOfOpportunity;DarknessRules;PsychicStrikes_Githyanki;Parry_Githyanki_Supreme;Parry_Githyanki_Supreme_EquipTrigger;ImmuneToDisarm"
 
 // Veteran Warrior Ma'athal, Veteran Warrior Bradi'ith (Inherits Fighter progressions) (Added "Parry_Githyanki;Parry_Githyanki_EquipTrigger")
 new entry "Githyanki_Warrior_Strong"
@@ -6082,6 +6082,7 @@ type "Character"
 using "Deva_PlanarAlly"
 // data "PersonalStatusImmunities" "SG_Charmed;FEARED"
 data "PersonalStatusImmunities" "SG_Charmed;SG_Frightened"
+// data "Passives" "AttackOfOpportunity;DarknessRules;ImmuneToDisarm;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check;ShortResting"
 data "Passives" "AttackOfOpportunity;DarknessRules;ImmuneToDisarm;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check;DivineHealth;ShortResting"
 
 // Moonlight Sliver (Added Paladin progressions, added Devotion subclass, added Mini Boss boost)
