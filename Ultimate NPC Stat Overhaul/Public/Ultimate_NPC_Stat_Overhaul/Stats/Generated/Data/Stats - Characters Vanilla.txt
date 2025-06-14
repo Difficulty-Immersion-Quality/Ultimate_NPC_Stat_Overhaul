@@ -1526,7 +1526,7 @@ new entry "GLO_Voss"
 type "Character"
 using "GLO_Voss"
 // data "Passives" "AttackOfOpportunity;DarknessRules;PsychicStrikes_Githyanki;Parry_Githyanki_Supreme;Parry_Githyanki_Supreme_EquipTrigger"
-data "Passives" "CX_Fighter_EldritchKnight_Boost;AttackOfOpportunity;DarknessRules;PsychicStrikes_Githyanki;Parry_Githyanki_Supreme;Parry_Githyanki_Supreme_EquipTrigger;ImmuneToDisarm"
+data "Passives" "CX_Boss_Boost;CX_Fighter_EldritchKnight_Boost;AttackOfOpportunity;DarknessRules;PsychicStrikes_Githyanki;Parry_Githyanki_Supreme;Parry_Githyanki_Supreme_EquipTrigger;ImmuneToDisarm"
 
 // Veteran Warrior Ma'athal, Veteran Warrior Bradi'ith (Inherits Fighter progressions) (Added "Parry_Githyanki;Parry_Githyanki_EquipTrigger")
 new entry "Githyanki_Warrior_Strong"
@@ -3562,7 +3562,7 @@ using "FOR_Human_Cultist_Zariel_Paladin"
 // data "SpellCastingAbility" "Intelligence"
 data "SpellCastingAbility" "Charisma"
 // data "Passives" "AttackOfOpportunity;DarknessRules"
-data "Passives" "CX_Paladin_Oathbreaker_Boost;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules"
+data "Passives" "CX_Boss_Boost;CX_Paladin_Oathbreaker_Boost;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules"
 
 //TODO: Custom legendary action?
 // Fist Marcus "Marcus Falgor" - Agent of the Absolute, Cult of the Absolute (Inherits Fighter progressions, added Champion subclass, added Boss boost)
