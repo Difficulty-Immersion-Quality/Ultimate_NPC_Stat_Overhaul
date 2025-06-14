@@ -437,7 +437,7 @@ data "UseCosts" ""
 new entry "Goon_Finesse_Overwrite"
 type "PassiveData"
 data "Properties" "IsHidden"
-data "StatsFunctorContext" "OnCreate;OnEquip;OnTurn;OnAttack"
+data "StatsFunctorContext" "OnTurn;OnAttack"
 data "StatsFunctors" "IF(not HasWeaponProperty(WeaponProperties.Finesse, GetActiveWeapon(context.Target, true))):ApplyEquipmentStatus(MeleeMainHand,GOON_FINESSE_OVERWRITE,100,1);IF(not HasWeaponProperty(WeaponProperties.Finesse, GetActiveWeapon(context.Target, false))):ApplyEquipmentStatus(OffHand,GOON_FINESSE_OVERWRITE,100,1)"
 
 new entry "GOON_FINESSE_OVERWRITE"
