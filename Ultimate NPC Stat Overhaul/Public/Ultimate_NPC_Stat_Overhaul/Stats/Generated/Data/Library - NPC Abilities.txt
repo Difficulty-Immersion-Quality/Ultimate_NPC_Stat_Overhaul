@@ -221,6 +221,23 @@ data "CombatAIOverrideSpell" ""
 // data "RequirementConditions" "not HasStatus('RAGE_TOTEM_WOLF') and not HasStatus('CALM_EMOTIONS')"
 data "RequirementConditions" "not HasStatus('SG_Rage') and not HasStatus('CALM_EMOTIONS') and not HasPassive('Goon_Rage_Ogre_Passive',context.Source)"
 
+// Giant
+new entry "Shout_Rage_Giant"
+type "SpellData"
+data "SpellType" "Shout"
+// using "Shout_Rage"
+using "Shout_Rage_Giant"
+data "CombatAIOverrideSpell" "Shout_Rage_Giant_AI"
+
+new entry "Shout_Rage_Giant_AI"
+type "SpellData"
+data "SpellType" "Shout"
+using "Shout_Rage_Giant"
+// data "CombatAIOverrideSpell" "Shout_Rage_Giant_AI"
+data "CombatAIOverrideSpell" ""
+// data "RequirementConditions" "not HasStatus('SG_Rage') and not HasStatus('CALM_EMOTIONS')"
+data "RequirementConditions" "not HasStatus('SG_Rage') and not HasStatus('CALM_EMOTIONS') and not HasPassive('Goon_Rage_Ogre_Passive',context.Source)"
+
 // ==================================== Barbarian - Intimidating Presence ====================================
 
 // Giving Intimidating Presence a bonus action cost (since it's not worth the action) and per battle cooldown (so NPCs don't just spam it)
