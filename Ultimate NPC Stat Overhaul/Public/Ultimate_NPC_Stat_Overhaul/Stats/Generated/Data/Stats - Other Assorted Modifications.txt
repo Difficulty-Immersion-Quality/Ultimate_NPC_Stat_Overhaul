@@ -151,3 +151,48 @@ data "SpellType" "Target"
 using "Target_LOW_FatherCarrion_FatherOfTheDead"
 // data "TargetConditions" "Character() and not Dead() and Tagged('UNDEAD') and not HasStatus('LOW_FATHERCARRION_FATHEROFTHEDEAD')"
 data "TargetConditions" "Character() and not Dead() and not Player() and Tagged('UNDEAD') and not HasStatus('LOW_FATHERCARRION_FATHEROFTHEDEAD')"
+
+// ==================================== Djinni - Drunken Inhale ====================================
+// Bug Fix: When the spell fails it deals half of 4d8 Poison damage, instead of quartering the damage by dealing half of 2d8.
+
+new entry "Zone_Inhale_Djinni"
+type "SpellData"
+data "SpellType" "Zone"
+// using "Zone_Thunderwave"
+using "Zone_Inhale_Djinni"
+// data "SpellFail" "DealDamage((2d8)/2,Poison,Magical);"
+data "SpellFail" "DealDamage((4d8)/2,Poison,Magical)"
+
+// ==================================== Yurgir - Concussive Burst / Gortash - Thunderthoom!  ====================================
+// Bug Fix: TooltipAttackSave swapped from Constituion to MeleeWeaponAttack.
+
+new entry "Zone_ConcussiveBlast_Orthon"
+type "SpellData"
+data "SpellType" "Zone"
+// using "Zone_Thunderwave"
+using "Zone_ConcussiveBlast_Orthon"
+// data "TooltipAttackSave" "Constitution"
+data "TooltipAttackSave" "MeleeWeaponAttack"
+
+// ==================================== Cursed Skull - Grave Repulsion  ====================================
+// Bug Fix: Description now states the appropriate knockback distance of 8m, instead of 15m.
+
+new entry "Zone_LOW_OskarsBeloved_ObjectThunderwave"
+type "SpellData"
+data "SpellType" "Zone"
+// using "Zone_Thunderwave_2"
+using "Zone_LOW_OskarsBeloved_ObjectThunderwave"
+// data "DescriptionParams" "Distance(15)"
+data "DescriptionParams" "Distance(8)"
+
+// ==================================== Thisobald Thorm - Roaring Belch  ====================================
+// Bug Fix: When the spell fails it no longer deals Thunder damage, instead dealing Bludgeoning damage, same as if it was a success. The tooltip now shows Bludgeoning damage instead of Thunder.
+
+new entry "Zone_Belch_Physical_Brewer"
+type "SpellData"
+data "SpellType" "Zone"
+using "Zone_Belch_Physical_Brewer"
+// data "SpellFail" "DealDamage((3d10)/2+4,Thunder,Magical)"
+data "SpellFail" "DealDamage((3d10)/2+4,Bludgeoning,Magical)"
+// data "TooltipDamageList" "DealDamage(3d10+4,Thunder)"
+data "TooltipDamageList" "DealDamage(3d10+4,Bludgeoning)"
