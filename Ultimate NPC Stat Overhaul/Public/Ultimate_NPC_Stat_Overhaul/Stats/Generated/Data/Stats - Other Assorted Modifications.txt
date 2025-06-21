@@ -71,13 +71,15 @@ data "TickType" "StartTurn"
 data "TickFunctors" "Unlock()"
 
 // ==================================== Add a safeguard to the goblin extra attack shit so they don't go crazy if given proper Extra Attack ====================================
+// TODO: Adjust tooltip so it states in some capacity that it only works without Extra Attack.
+// TODO: Thirsting Blade and proper checks.
 
 new entry "GOB_Boss_RecklessAttack"
 type "PassiveData"
 // using "ExtraAttack"
 using "GOB_Boss_RecklessAttack"
 // data "EnabledConditions" "not Tagged('EXTRA_ATTACK_BLOCKED')"
-data "EnabledConditions" "not Tagged('EXTRA_ATTACK_BLOCKED') and not HasPassive('ExtraAttack') and not HasPassive('ExtraAttack_2')"
+data "EnabledConditions" "not Tagged('EXTRA_ATTACK_BLOCKED') and not HasPassive('ExtraAttack') and not HasPassive('ExtraAttack_2') and not HasPassive('ExtraAttack_3')"
 
 // ==================================== Gerringothe Thorm - Accursed Keeper of Coins ====================================
 // Bug Fix: Listed appropriate damage for Gerringothe Thorm's Headbutt.
@@ -196,3 +198,74 @@ using "Zone_Belch_Physical_Brewer"
 data "SpellFail" "DealDamage((3d10)/2+4,Bludgeoning,Magical)"
 // data "TooltipDamageList" "DealDamage(3d10+4,Thunder)"
 data "TooltipDamageList" "DealDamage(3d10+4,Bludgeoning)"
+
+// ==================================== Fire Myrmidon - Cinderous Swipe  ====================================
+// Bug Fix: Damage is now properly reduced by Evasion, Shield Master: Block and any other CanAreaDamageEvade effects.
+
+new entry "Zone_RangedSwipe_Myrmidon_Fire"
+type "SpellData"
+data "SpellType" "Zone"
+// using "Zone_BurningHands"
+using "Zone_RangedSwipe_Myrmidon_Fire"
+// data "SpellSuccess" "IF(not HasEvasion()):DealDamage(2d6,Fire,Magical);DealDamage(MainMeleeWeapon, MainWeaponDamageType);IF(HasEvasion()):DealDamage((2d6)/2, Fire,Magical)"
+data "SpellSuccess" "DealDamage(2d6,Fire,Magical);DealDamage(MainMeleeWeapon, MainWeaponDamageType)"
+// data "SpellFlags" "IsHarmful;Wildshape"
+data "SpellFlags" "IsHarmful;Wildshape;CanAreaDamageEvade"
+
+// ==================================== Wildshape: Fire Myrmidon - Cinderous Swipe ====================================
+// Bug Fix: Damage is now properly reduced by Evasion, Shield Master: Block and any other CanAreaDamageEvade effects.
+// Bug Fix: Damage increased from 1d6 Fire to 2d6 Fire, same as the NPC entry.
+
+new entry "Zone_RangedSwipe_Wildshape_Myrmidon_Fire"
+type "SpellData"
+data "SpellType" "Zone"
+using "Zone_RangedSwipe_Wildshape_Myrmidon_Fire"
+// data "SpellSuccess" "IF(not HasEvasion()):DealDamage(1d6, Fire,Magical);DealDamage(MainMeleeWeapon, MainWeaponDamageType);IF(HasEvasion()):DealDamage((1d6)/2, Fire,Magical)"
+data "SpellSuccess" "DealDamage(2d6,Fire,Magical);DealDamage(MainMeleeWeapon, MainWeaponDamageType)"
+// data "SpellFail" "DealDamage((1d6)/2, Fire,Magical);DealDamage(MainMeleeWeapon/2, MainWeaponDamageType)"
+data "SpellFail" "DealDamage((2d6)/2, Fire,Magical);DealDamage(MainMeleeWeapon/2, MainWeaponDamageType)"
+
+// ==================================== Dawnbreaker (Trap) - Break of Dawn ====================================
+// Bug Fix: Tooltip no longer states that targets take halved damage on a successful Saving Throw.
+
+new entry "Zone_CRE_PulseTrap_Blast"
+type "SpellData"
+data "SpellType" "Zone"
+// using "Zone_Thunderwave"
+using "Zone_CRE_PulseTrap_Blast"
+// data "TooltipOnSave" "f762efbb-f8f1-493e-b248-2de1567b4bd2"
+data "TooltipOnSave" ""
+
+// ==================================== Owlbear - Call Consort ====================================
+// Bug Fix: She will still summon her mate even if she's Invisible, for whatever reason.
+// Changes: Now checks for all Silenced conditions, not just "SILENCED" itself.
+
+new entry "Interrupt_FOR_Owlbear_CallConsort"
+type "InterruptData"
+// using "Interrupt_LEGENDARY_ACTIONS"
+using "Interrupt_FOR_Owlbear_CallConsort"
+// data "Conditions" "IsAbleToReact(context.Observer) and Enemy(context.Source,context.Observer) and HasFunctor(StatsFunctorType.DealDamage) and IsHit() and not AnyEntityIsItem() and HasLastAttackTriggered() and not HasStatus('SILENCED',context.Observer)"
+data "Conditions" "IsAbleToReact(context.Observer) and Enemy(context.Source,context.Observer) and HasFunctor(StatsFunctorType.DealDamage) and IsHit() and not AnyEntityIsItem() and HasLastAttackTriggered() and not Goon_HasSilencedCondition(context.Observer)"
+data "InterruptFlags" "InterruptWhileInvisible"
+
+// ==================================== Auntie Ethel - Healing Pearl ====================================
+// TODO: Maybe turn those other conditions into a themed function too.
+
+new entry "LOW_HAG_MUSHROOM_HEALINGPEARL"
+type "StatusData"
+data "StatusType" "BOOST"
+using "LOW_HAG_MUSHROOM_HEALINGPEARL"
+// data "TickFunctors" "IF(not HasStatus('BURNING') and not HasStatus('SEARING_SMITE') and HasHPPercentageWithoutTemporaryHPEqualOrLessThan(99)):RegainHitPoints(100);IF(HasStatus('BURNING')):RemoveStatus('BURNING');IF(HasStatus('SEARING_SMITE')):RemoveStatus('SEARING_SMITE');IF(not HasStatus('BURNING') and not HasStatus('SEARING_SMITE') and not HasStatus('CHILL_TOUCH') and not HasStatus('WRAITHS_EMBRACE') and not HasStatus('CURSE_MUMMY') and not HasStatus('LOW_HAG_MUSHROOM_VFX')):ApplyStatus(LOW_HAG_MUSHROOM_VFX,100,-1);"
+data "TickFunctors" "IF(not Goon_HasBurningCondition() and HasHPPercentageWithoutTemporaryHPEqualOrLessThan(99)):RegainHitPoints(100);IF(HasStatus('Goon_SG_Burning')):RemoveStatus('Goon_SG_Burning');IF(not Goon_HasBurningCondition() and not HasStatus('CHILL_TOUCH') and not HasStatus('WRAITHS_EMBRACE') and not HasStatus('CURSE_MUMMY') and not HasStatus('LOW_HAG_MUSHROOM_VFX')):ApplyStatus(LOW_HAG_MUSHROOM_VFX,100,-1)"
+
+// ==================================== Harpy - Luring Song ====================================
+// Changes: Now checks for all Silenced conditions, not just "SILENCED" itself.
+
+new entry "LURING_SONG_AURA"
+type "StatusData"
+data "StatusType" "BOOST"
+using "LURING_SONG_AURA"
+// data "AuraStatuses" "TARGET:IF(Character() and not HasStatus('SILENCED') and Tagged('HUMANOID') and not Tagged('HARPY') and not Dead() and Enemy()):ApplyStatus(LURING_SONG_AURA_VICTIM);TARGET:IF(Character() and Tagged('HARPY') and not Dead()):ApplyStatus(LURING_SONG_AURA_LISTENER);"
+data "AuraStatuses" "TARGET:IF(Character() and not Goon_HasDeafenedCondition() and Tagged('HUMANOID') and not Tagged('HARPY') and not Dead() and Enemy()):ApplyStatus(LURING_SONG_AURA_VICTIM); TARGET:IF(Character() and Tagged('HARPY') and not Goon_HasDeafenedCondition() and not Dead()):ApplyStatus(LURING_SONG_AURA_LISTENER)"
+// data "RemoveConditions" "HasStatus('SILENCED')"
+data "RemoveConditions" "Goon_HasSilencedCondition()"
