@@ -432,6 +432,30 @@ data "Requirements" ""
 // data "RequirementConditions" "not Unarmed()"
 data "RequirementConditions" "not Unarmed() and not HasStatus('WEAPON_BOND', GetActiveWeapon())"
 
+// ==================================== Paladin - Smite ====================================
+// Pretty redundant stuff overall.
+
+new entry "Interrupt_Smite_Divine_NPC"
+type "InterruptData"
+using "Interrupt_Smite_Divine_NPC"
+data "Conditions" "(Player(context.Observer) or not IsInvisibleState(context.Observer)) and IsAbleToReact(context.Observer) and not Item() and IsMeleeAttack() and not IsDivineSmite() and Self(context.Source,context.Observer) and HasDamageEffectFlag(DamageFlags.Hit) and IsWeaponAttack() and not IsCritical() and not IsKillingBlow() and not AnyEntityIsItem()"
+data "InterruptFlags" "InterruptWhileInvisible"
+
+new entry "Interrupt_Smite_Divine_7_NPC "
+type "InterruptData"
+using "Interrupt_Smite_Divine_4"
+data "Cost" "SpellSlotsGroup:1:1:7"
+
+new entry "Interrupt_Smite_Divine_8_NPC "
+type "InterruptData"
+using "Interrupt_Smite_Divine_4"
+data "Cost" "SpellSlotsGroup:1:1:8"
+
+new entry "Interrupt_Smite_Divine_9_NPC "
+type "InterruptData"
+using "Interrupt_Smite_Divine_4"
+data "Cost" "SpellSlotsGroup:1:1:9"
+
 // ==================================== Ranger - Companion Summon ====================================
 //TODO: Yeah this doesn't work at all, gotta look at adding the NPC versions of these spells in some fashion. Maybe a passive that just summons it out of combat but checks for NPC versions of the spells.
 new entry "Target_RangersCompanion"

@@ -269,3 +269,12 @@ using "LURING_SONG_AURA"
 data "AuraStatuses" "TARGET:IF(Character() and not Goon_HasDeafenedCondition() and Tagged('HUMANOID') and not Tagged('HARPY') and not Dead() and Enemy()):ApplyStatus(LURING_SONG_AURA_VICTIM); TARGET:IF(Character() and Tagged('HARPY') and not Goon_HasDeafenedCondition() and not Dead()):ApplyStatus(LURING_SONG_AURA_LISTENER)"
 // data "RemoveConditions" "HasStatus('SILENCED')"
 data "RemoveConditions" "Goon_HasSilencedCondition()"
+
+// ==================================== Lorroakan - Elemental Retort ====================================
+// Bug Fix: He will still react even if Invisible, for whatever reason.
+
+new entry "Interrupt_LOW_RamazithsTower_ElementalRebuke"
+type "InterruptData"
+// using "Interrupt_LOW_RamazithsTower_Deva_Flame"
+using "Interrupt_LOW_RamazithsTower_ElementalRebuke"
+data "InterruptFlags" "InterruptWhileInvisible"
