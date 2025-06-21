@@ -278,3 +278,32 @@ type "InterruptData"
 // using "Interrupt_LOW_RamazithsTower_Deva_Flame"
 using "Interrupt_LOW_RamazithsTower_ElementalRebuke"
 data "InterruptFlags" "InterruptWhileInvisible"
+
+// ==================================== Counterspell (Mindflayer) ====================================
+// Bug Fix: Now works with more non-hostile and non-spellcasting restricted Polymorphs.
+
+new entry "Interrupt_CounterSpell_MindFlayer"
+type "InterruptData"
+// using "Interrupt_Counterspell"
+using "Interrupt_CounterSpell_MindFlayer"
+// data "EnableCondition" "HasActionResource('Interupt_CounterSpell_MindFlayer', 1, 0, false, false, context.Source) and (not HasStatus('SG_Polymorph') or Tagged('MINDFLAYER') or HasAnyStatus({'SG_Disguise','WILDSHAPE_STARRY_ARCHER_PLAYER','WILDSHAPE_STARRY_CHALICE_PLAYER','WILDSHAPE_STARRY_DRAGON_PLAYER'}));"
+data "EnableCondition" "HasActionResource('Interupt_CounterSpell_MindFlayer', 1, 0, false, false, context.Source) and (not HasStatus('SG_Polymorph') or Goon_IsUnrestrictedPolymorphStatus())"
+
+// ==================================== Shield (Mindflayer) ====================================
+// Bug Fix: Now works with more non-hostile and non-spellcasting restricted Polymorphs.
+
+new entry "Interrupt_Shield_Mindflayer"
+type "InterruptData"
+// using "Interrupt_Shield_Wizard"
+using "Interrupt_Shield_Mindflayer"
+// data "EnableCondition" "HasActionResource('Interupt_Shield_MindFlayer', 1, 0, false, false, context.Source) and (not HasStatus('SG_Polymorph') or Tagged('MINDFLAYER') or HasAnyStatus({'SG_Disguise','WILDSHAPE_STARRY_ARCHER_PLAYER','WILDSHAPE_STARRY_CHALICE_PLAYER','WILDSHAPE_STARRY_DRAGON_PLAYER'}));"
+data "EnableCondition" "HasActionResource('Interupt_Shield_MindFlayer', 1, 0, false, false, context.Source) and (not HasStatus('SG_Polymorph') or Goon_IsUnrestrictedPolymorphStatus())"
+
+// ==================================== Legendary Resistance ====================================
+// Bug Fix: Now works with more non-hostile and non-spellcasting restricted Polymorphs.
+
+new entry "Interrupt_LegendaryResistance"
+type "InterruptData"
+using "Interrupt_LegendaryResistance"
+// data "EnableCondition" "not HasStatus('SG_Polymorph') or Tagged('MINDFLAYER') or HasAnyStatus({'SG_Disguise','WILDSHAPE_STARRY_ARCHER_PLAYER','WILDSHAPE_STARRY_CHALICE_PLAYER','WILDSHAPE_STARRY_DRAGON_PLAYER'});"
+data "EnableCondition" "not HasStatus('SG_Polymorph') or Goon_IsUnrestrictedPolymorphStatus()"
