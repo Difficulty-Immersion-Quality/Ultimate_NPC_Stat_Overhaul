@@ -5261,6 +5261,22 @@ data "Passives" "CX_Boss_Boost;CX_Rogue_Assassin_Boost;AttackOfOpportunity;Blood
 // data "Progressions" ""
 data "Progressions" "532203c2-7bcb-4162-9a7c-2bb20e227a30"
 
+// ==================================== Celestial ====================================
+// "_Base"
+//  ├─ "_Celestial"
+//  │   └─ "Hollyphant"
+//  │       └─ "PlanarAlly_Hollyphant"  -- (Inherits added Cleric progressions and Light Domain subclass)
+
+// Valeria - Sleuth of Helm (Added Cleric progressions, added Light Domain subclass)
+// TODO: See if the animations are fucked (they probably are)
+new entry "Hollyphant"
+type "Character"
+using "_Celestial"
+// data "Passives" "AttackOfOpportunity;DarknessRules;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check"
+data "Passives" "CX_Cleric_Light_Boost;AttackOfOpportunity;DarknessRules;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check"
+// data "Progressions" ""
+data "Progressions" "36c3f8de-3293-4d7b-92bc-ceb3c569244b"
+
 // ==================================== Fiend ====================================
 // "_Base"
 //  ├─ "_Fiend"
