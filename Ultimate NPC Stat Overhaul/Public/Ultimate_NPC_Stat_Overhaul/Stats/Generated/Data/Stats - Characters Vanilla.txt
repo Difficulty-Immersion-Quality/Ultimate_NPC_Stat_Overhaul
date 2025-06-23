@@ -386,14 +386,14 @@ data "Passives" "Dwarf_DwarvenResilience;AttackOfOpportunity;Darkvision;Darkness
 //  │   │   │   ├─ "LOW_HouseOfGrief_Cultist_Caster_Dwarf"  --- Unused
 //  │   │   │   └─ "LOW_NecromancerStaff"
 
-// Korrilla - Agent of Raphael (Swapped Wizard progressions for Warlock progressions, added Pact of the Fiend subclass)
+// Korrilla - Agent of Raphael (Swapped Wizard progressions for Warlock progressions, added Pact of the Fiend subclass, added Mini Boss boost)
 new entry "GOB_Dwarf_Warlock"
 type "Character"
 using "GOB_Dwarf_Warlock"
 // data "SpellCastingAbility" "Intelligence"
 data "SpellCastingAbility" "Charisma"
 // data "Passives" "Dwarf_DwarvenResilience;AttackOfOpportunity;Darkvision;DarknessRules"
-data "Passives" "CX_Warlock_Fiend_Boost;CX_Spells_L4;CX_Spells_L4C;CX_Spells_L5;CX_Spells_L5C;Dwarf_DwarvenResilience;AttackOfOpportunity;Darkvision;DarknessRules"
+data "Passives" "CX_MiniBoss_Boost;CX_Warlock_Fiend_Boost;CX_Spells_L4;CX_Spells_L4C;CX_Spells_L5;CX_Spells_L5C;Dwarf_DwarvenResilience;AttackOfOpportunity;Darkvision;DarknessRules"
 // data "Progressions" "44bdbc5e-a003-4d61-87f0-5ced20d3804e"
 data "Progressions" "51274504-865d-46d1-a3b6-c72e9384904a"
 
@@ -5272,13 +5272,13 @@ data "Progressions" "532203c2-7bcb-4162-9a7c-2bb20e227a30"
 //  │   │   └─ "TUT_Cambion_NoCrits"
 //  │   │       └─ "TUT_CambionCommander"
 
-// Raphael - Master of the House - HONOUR MODE INHERITANCE (Added Magic boost, added Boss boost) (Has a lot of very specific and powerful stuff, not worth hamfisting a class archetype into him)
+// Raphael - Master of the House - HONOUR MODE INHERITANCE (Added Magic boost, added Boss boost, added "ImmuneToDisarm") (Has a lot of very specific and powerful stuff, not worth hamfisting a class archetype into him)
 new entry "GLO_Raphael"
 type "Character"
 using "GLO_Raphael"
 // data "Passives" "AttackOfOpportunity;DarknessRules;Darkvision;FiendishBlessing;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check;MagicResistance;DevilsSight;LOW_Raphael_SoulSiphon_Passive;LOW_Raphael_SoulSiphon_Passive_2;LOW_Raphael_SoulSiphon_Passive_3;LOW_Raphael_SoulSiphon_Passive_4;LOW_Raphael_SoulSiphon_Passive_5;LOW_Raphael_SoulSiphon_Passive_6;LOW_Raphael_SoulSiphon_Passive_7;LOW_Raphael_SoulSiphon_Passive_8;LOW_Raphael_SoulSiphon_Passive_9;LOW_Raphael_Reaper;MAG_Infernal_Plate_Armor_Passive;LOW_Raphael_Set_Pillar_Status;LOW_Raphael_ArchfiendWill;"
 // data "Passives" "LegendaryAction_LOW_Raphael;AttackOfOpportunity;DarknessRules;Darkvision;FiendishBlessing;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check;MagicResistance;DevilsSight;LOW_Raphael_SoulSiphon_Passive;LOW_Raphael_SoulSiphon_Passive_2;LOW_Raphael_SoulSiphon_Passive_3;LOW_Raphael_SoulSiphon_Passive_4;LOW_Raphael_SoulSiphon_Passive_5;LOW_Raphael_SoulSiphon_Passive_6;LOW_Raphael_SoulSiphon_Passive_7;LOW_Raphael_SoulSiphon_Passive_8;LOW_Raphael_SoulSiphon_Passive_9;LOW_Raphael_Reaper;MAG_Infernal_Plate_Armor_Passive;LOW_Raphael_Set_Pillar_Status;LOW_Raphael_ArchfiendWill;"
-data "Passives" "CX_Boss_Boost;CX_Magic_Boost;LegendaryAction_LOW_Raphael;AttackOfOpportunity;DarknessRules;Darkvision;FiendishBlessing;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check;MagicResistance;DevilsSight;LOW_Raphael_SoulSiphon_Passive;LOW_Raphael_SoulSiphon_Passive_2;LOW_Raphael_SoulSiphon_Passive_3;LOW_Raphael_SoulSiphon_Passive_4;LOW_Raphael_SoulSiphon_Passive_5;LOW_Raphael_SoulSiphon_Passive_6;LOW_Raphael_SoulSiphon_Passive_7;LOW_Raphael_SoulSiphon_Passive_8;LOW_Raphael_SoulSiphon_Passive_9;LOW_Raphael_Reaper;MAG_Infernal_Plate_Armor_Passive;LOW_Raphael_Set_Pillar_Status;LOW_Raphael_ArchfiendWill"
+data "Passives" "CX_Boss_Boost;CX_Magic_Boost;LegendaryAction_LOW_Raphael;AttackOfOpportunity;DarknessRules;Darkvision;FiendishBlessing;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check;MagicResistance;DevilsSight;LOW_Raphael_SoulSiphon_Passive;LOW_Raphael_SoulSiphon_Passive_2;LOW_Raphael_SoulSiphon_Passive_3;LOW_Raphael_SoulSiphon_Passive_4;LOW_Raphael_SoulSiphon_Passive_5;LOW_Raphael_SoulSiphon_Passive_6;LOW_Raphael_SoulSiphon_Passive_7;LOW_Raphael_SoulSiphon_Passive_8;LOW_Raphael_SoulSiphon_Passive_9;LOW_Raphael_Reaper;MAG_Infernal_Plate_Armor_Passive;LOW_Raphael_Set_Pillar_Status;LOW_Raphael_ArchfiendWill;ImmuneToDisarm"
 // data "PathInfluence" "BloodElectrified,100;BloodFrozen,30;Lava,700;HolyFire,40;PoisonCloud,70;WyvernPoison,70;DrowPoisonCloud,70;PurpleWormPoison,70;SerpentVenom,70;InvisibleGithAcid,70;CloudkillCloud,70;MaliceCloud,70;CrawlerMucusCloud,70;WaterElectrified,100;WaterFrozen,30;Grease,30;Web,30;Vines,40;SporeBlackCloud,100;WaterCloudElectrified,40;SporeGreenCloud,40;Acid,30;CausticBrine,40;DarknessCloud,30;FogCloud,30;Mud,30;Oil,30;Poison,30;SpikeGrowth,40;SporePinkCloud,40;StinkingCloud,40"
 data "PathInfluence" "BloodElectrified,100;BloodFrozen,30;Lava,700;HolyFire,40;PoisonCloud,70;WyvernPoison,70;DrowPoisonCloud,70;PurpleWormPoison,70;SerpentVenom,70;InvisibleGithAcid,70;CloudkillCloud,70;Cloudkill6Cloud,70;MaliceCloud,70;CrawlerMucusCloud,70;WaterElectrified,100;WaterFrozen,30;Grease,30;Web,30;Vines,40;SporeBlackCloud,100;WaterCloudElectrified,40;SporeGreenCloud,40;Acid,30;CausticBrine,40;DarknessCloud,30;FogCloud,30;Mud,30;Oil,30;Poison,30;SpikeGrowth,40;SporePinkCloud,40;StinkingCloud,40"
 
