@@ -996,12 +996,12 @@ data "Passives" "FeyAncestry;AttackOfOpportunity;DarknessRules;Darkvision"
 //  │   │   └─ "SCL_Caravan_Ambusher_Branthos"          --- Harper Branthos (Inherits Fighter progressions)
 //  │   └─ "SHA_Nightsong"
 
-// Aylin - The Nightsong, Singer of Sorrows, Sword of the Moonmaiden, Daughter of Selûne (Has Paladin progressions, added Vengeance subclass, added Boss boost)
+// Aylin - The Nightsong, Singer of Sorrows, Sword of the Moonmaiden, Daughter of Selûne (Has Paladin progressions, added Vengeance subclass, added Boss boost, added "ImmuneToDisarm")
 new entry "SHA_Nightsong"
 type "Character"
 using "SHA_Nightsong"
 // data "Passives" "AttackOfOpportunity;DarknessRules;ExtraAttack;"
-data "Passives" "CX_Boss_Boost;CX_Paladin_Vengeance_Boost;AttackOfOpportunity;DarknessRules;ExtraAttack"
+data "Passives" "CX_Boss_Boost;CX_Paladin_Vengeance_Boost;AttackOfOpportunity;DarknessRules;ExtraAttack;ImmuneToDisarm"
 
 // "_Elf"
 //  ├─ "Elf_Monk"                                   --- (Has Monk progressions)
@@ -4079,7 +4079,7 @@ using "LOW_Chasm_Sniper"
 // data "Passives" "Alert;FocusedConjuration;MagicResistance;SpellSniper_Critical;AttackOfOpportunity;DarknessRules;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check;Ethereal;IncorporealMovement;TurnResistance"
 data "Passives" "HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules;Alert;FocusedConjuration;MagicResistance;SpellSniper_Critical;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check;Ethereal;IncorporealMovement;TurnResistance"
 
-// Reapers of Bhaal - Cult of Bhaal (Added Rogue progressions, they're good candidates for Arcane Trickster so any subclass will do, fixed racials)
+// Reaper of Bhaal - Cult of Bhaal (Added Rogue progressions, they're good candidates for Arcane Trickster so any subclass will do, fixed racials)
 new entry "Human_Cultist_Bhaal_Reaper"
 type "Character"
 using "Human_Cultist_Bhaal_Reaper"
