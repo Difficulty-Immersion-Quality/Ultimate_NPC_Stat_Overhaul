@@ -495,6 +495,7 @@ data "Boosts" "WeaponProperty(Finesse)"
 // data "RemoveEvents" "OnSourceDeath"
 
 // ==================================== Sorcerer - NPC Metamagic Passives ====================================
+// TODO: Way cooler implementation for AI metamagic.
 
 // Temporary workaround just to add metamagic to NPCs, copying the approach from Utut used in Encounters Overhaul (just making them default toggled on)
 new entry "Goon_Metamagic_Careful_NPC"
