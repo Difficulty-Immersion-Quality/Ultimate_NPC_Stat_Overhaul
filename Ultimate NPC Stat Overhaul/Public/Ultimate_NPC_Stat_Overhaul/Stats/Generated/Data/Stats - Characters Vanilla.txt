@@ -1239,13 +1239,13 @@ using "HAG_Masked_Fighter"
 // data "Passives" "AttackOfOpportunity;DarknessRules;HAG_MaskOfVengeance"
 data "Passives" "FeyAncestry;AttackOfOpportunity;DarknessRules;SuperiorDarkvision;SunlightSensitivity;HAG_MaskOfVengeance"
 
-// Nere - True Soul of the Absolute - HONOUR MODE INHERITANCE (Inherits Fighter progressions, 100% a top g super sigma Eldritch Knight on god fr fr. Absolute's University don't let the matrix get you down. Added Boss boost)
+// Nere - True Soul of the Absolute - HONOUR MODE INHERITANCE (Inherits Fighter progressions, 100% a top g super sigma Eldritch Knight on god fr fr. Absolute's University don't let the matrix get you down. Added Boss boost) (Custom spell slot passive added to allow stacking. Not needed for level 1 slots as the Eldritch Knight boosts take care of that.)
 new entry "UND_Nere"
 type "Character"
 using "UND_Nere"
 // data "Passives" "Muscular_Athletics;AttackOfOpportunity;ExtraAttack;SunlightSensitivity;FeyAncestry;DarknessRules;Darkvision;AdditionalSpellSlot_Level_1; AdditionalSpellSlot_Level_1; AdditionalSpellSlot_Level_1; AdditionalSpellSlot_Level_1; AdditionalSpellSlot_Level_2; AdditionalSpellSlot_Level_2"
 // data "Passives" "Muscular_Athletics;AttackOfOpportunity;ExtraAttack;SunlightSensitivity;FeyAncestry;DarknessRules;Darkvision;AdditionalSpellSlot_Level_1; AdditionalSpellSlot_Level_1; AdditionalSpellSlot_Level_1; AdditionalSpellSlot_Level_1; AdditionalSpellSlot_Level_2; AdditionalSpellSlot_Level_2;LegendaryAction_UND_Nere_PsychicMirror"
-data "Passives" "CX_Boss_Boost;CX_Fighter_EldritchKnight_Boost;CX_Spells_L2;CX_Spells_L3C;FeyAncestry;AttackOfOpportunity;DarknessRules;SuperiorDarkvision;SunlightSensitivity;DualWielder_BonusAC;DualWielder_PassiveBonuses;ExtraAttack;Muscular_Athletics;AdditionalSpellSlot_Level_1;AdditionalSpellSlot_Level_1;AdditionalSpellSlot_Level_1;AdditionalSpellSlot_Level_1;AdditionalSpellSlot_Level_2;AdditionalSpellSlot_Level_2;LegendaryAction_UND_Nere_PsychicMirror"
+data "Passives" "CX_Boss_Boost;CX_Fighter_EldritchKnight_Boost;CX_Spells_L2;CX_Spells_L3C;FeyAncestry;AttackOfOpportunity;DarknessRules;SuperiorDarkvision;SunlightSensitivity;DualWielder_BonusAC;DualWielder_PassiveBonuses;ExtraAttack;Muscular_Athletics;AdditionalSpellSlot_Level_1;AdditionalSpellSlot_Level_1;AdditionalSpellSlot_Level_1;AdditionalSpellSlot_Level_1;AdditionalSpellSlot_Level_2;Goon_AdditionalSpellSlot_Level_2;LegendaryAction_UND_Nere_PsychicMirror"
 
 // "_Elf_Drow"
 //  ├─ "Elf_Drow_Ranger"
@@ -1720,12 +1720,12 @@ data "Progressions" "f0ede459-8b86-48fd-ac11-4432573566a5"
 //  ├─ "Gnome_Gondian_Caster"                           --- Basically all the Gondians (Inherits Wizard progressions)
 //  │   └─ "LOW_SteelWatchFoundry_ZannerToobin"         --- Gondian Zanner Toobin - Church of Gond
 
-// Tahan - Circle of the Emerald Grove (Inherits Druid progressions) (Gnome_Speed added)
+// Tahan - Circle of the Emerald Grove (Inherits Druid progressions) (Gnome_Speed added) (Custom spell slot passive added to allow stacking)
 new entry "DEN_Tahan"
 type "Character"
 using "DEN_Tahan"
 // data "Passives" "AttackOfOpportunity;DarknessRules;Darkvision;Gnome_Cunning;AdditionalSpellSlot_Level_2;AdditionalSpellSlot_Level_2;"
-data "Passives" "Gnome_Cunning;Gnome_Speed;AttackOfOpportunity;DarknessRules;Darkvision;AdditionalSpellSlot_Level_2;AdditionalSpellSlot_Level_2"
+data "Passives" "Gnome_Cunning;Gnome_Speed;AttackOfOpportunity;DarknessRules;Darkvision;AdditionalSpellSlot_Level_2;Goon_AdditionalSpellSlot_Level_2"
 
 // Jivin Mizzrym - Member of the Dead Eyes (Swapped Wizard progressions for Warlock progressions)
 new entry "LOW_HagSurvivor_Gnome_Caster"
