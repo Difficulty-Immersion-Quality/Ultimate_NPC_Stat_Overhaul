@@ -46,7 +46,7 @@
     using "GOON_NPC_FLAMING_FIST_ATTACKER_BOOSTS_TEMPLATE"
     data "StackPriority" "4"
     data "Passives" ""
-    data "Boosts" "IncreaseMaxHP(21)Ability(Strength,1)Ability(Constitution,1)"
+    data "Boosts" "IncreaseMaxHP(21);Ability(Strength,1);Ability(Constitution,1)"
 
     new entry "GOON_NPC_FLAMING_FIST_ATTACKER_BOOSTS_LVL_5"
     type "StatusData"
@@ -54,7 +54,7 @@
     using "GOON_NPC_FLAMING_FIST_ATTACKER_BOOSTS_TEMPLATE"
     data "StackPriority" "5"
     data "Passives" ""
-    data "Boosts" "IncreaseMaxHP(28)Ability(Strength,1)Ability(Constitution,1)"
+    data "Boosts" "IncreaseMaxHP(28);Ability(Strength,1);Ability(Constitution,1)"
 
     new entry "GOON_NPC_FLAMING_FIST_ATTACKER_BOOSTS_LVL_6"
     type "StatusData"
@@ -62,7 +62,7 @@
     using "GOON_NPC_FLAMING_FIST_ATTACKER_BOOSTS_TEMPLATE"
     data "StackPriority" "6"
     data "Passives" "FightingStyle_GreatWeaponFighting;PhalanxFormation_Duergar;Riposte"
-    data "Boosts" "IncreaseMaxHP(35)Ability(Strength,2)Ability(Constitution,2)"
+    data "Boosts" "IncreaseMaxHP(35);Ability(Strength,2);Ability(Constitution,2)"
 
     new entry "GOON_NPC_FLAMING_FIST_ATTACKER_BOOSTS_LVL_7"
     type "StatusData"
@@ -70,7 +70,7 @@
     using "GOON_NPC_FLAMING_FIST_ATTACKER_BOOSTS_TEMPLATE"
     data "StackPriority" "7"
     data "Passives" "FightingStyle_GreatWeaponFighting;PhalanxFormation_Duergar;Riposte"
-    data "Boosts" "IncreaseMaxHP(42)Ability(Strength,2)Ability(Constitution,2)"
+    data "Boosts" "IncreaseMaxHP(42);Ability(Strength,2);Ability(Constitution,2)"
 
     new entry "GOON_NPC_FLAMING_FIST_ATTACKER_BOOSTS_LVL_8"
     type "StatusData"
@@ -78,7 +78,7 @@
     using "GOON_NPC_FLAMING_FIST_ATTACKER_BOOSTS_TEMPLATE"
     data "StackPriority" "8"
     data "Passives" "FightingStyle_GreatWeaponFighting;PhalanxFormation_Duergar;Riposte"
-    data "Boosts" "IncreaseMaxHP(49)Ability(Strength,3)Ability(Constitution,3)"
+    data "Boosts" "IncreaseMaxHP(49);Ability(Strength,3);Ability(Constitution,3)"
 
     new entry "GOON_NPC_FLAMING_FIST_ATTACKER_BOOSTS_LVL_9"
     type "StatusData"
@@ -86,7 +86,7 @@
     using "GOON_NPC_FLAMING_FIST_ATTACKER_BOOSTS_TEMPLATE"
     data "StackPriority" "9"
     data "Passives" "FightingStyle_GreatWeaponFighting;PhalanxFormation_Duergar;Riposte"
-    data "Boosts" "IncreaseMaxHP(56)Ability(Strength,3)Ability(Constitution,3)"
+    data "Boosts" "IncreaseMaxHP(56);Ability(Strength,3);Ability(Constitution,3)"
 
     new entry "GOON_NPC_FLAMING_FIST_ATTACKER_BOOSTS_LVL_10"
     type "StatusData"
@@ -94,7 +94,7 @@
     using "GOON_NPC_FLAMING_FIST_ATTACKER_BOOSTS_TEMPLATE"
     data "StackPriority" "10"
     data "Passives" "FightingStyle_GreatWeaponFighting;PhalanxFormation_Duergar;Riposte"
-    data "Boosts" "IncreaseMaxHP(63)Ability(Strength,3)Ability(Constitution,3)"
+    data "Boosts" "IncreaseMaxHP(63);Ability(Strength,3);Ability(Constitution,3)"
 
     new entry "GOON_NPC_FLAMING_FIST_ATTACKER_BOOSTS_LVL_11"
     type "StatusData"
@@ -102,7 +102,7 @@
     using "GOON_NPC_FLAMING_FIST_ATTACKER_BOOSTS_TEMPLATE"
     data "StackPriority" "11"
     data "Passives" "FightingStyle_GreatWeaponFighting;PhalanxFormation_Duergar;Riposte"
-    data "Boosts" "IncreaseMaxHP(70)Ability(Strength,3)Ability(Constitution,3)"
+    data "Boosts" "IncreaseMaxHP(70);Ability(Strength,3);Ability(Constitution,3)"
 
     new entry "GOON_NPC_FLAMING_FIST_ATTACKER_BOOSTS_LVL_12"
     type "StatusData"
@@ -110,7 +110,7 @@
     using "GOON_NPC_FLAMING_FIST_ATTACKER_BOOSTS_TEMPLATE"
     data "StackPriority" "12"
     data "Passives" "FightingStyle_GreatWeaponFighting;PhalanxFormation_Duergar;Riposte"
-    data "Boosts" "IncreaseMaxHP(77)Ability(Strength,3)Ability(Constitution,3)"
+    data "Boosts" "IncreaseMaxHP(77);Ability(Strength,3);Ability(Constitution,3)"
 
     new entry "GOON_NPC_FLAMING_FIST_ATTACKER_BOOSTS_LVL_13"
     type "StatusData"
@@ -118,7 +118,7 @@
     using "GOON_NPC_FLAMING_FIST_ATTACKER_BOOSTS_TEMPLATE"
     data "StackPriority" "13"
     data "Passives" "FightingStyle_GreatWeaponFighting;PhalanxFormation_Duergar;Riposte"
-    data "Boosts" "IncreaseMaxHP(84)Ability(Strength,3)Ability(Constitution,3)"
+    data "Boosts" "IncreaseMaxHP(84);Ability(Strength,3);Ability(Constitution,3)"
 
     new entry "GOON_NPC_FLAMING_FIST_ATTACKER_BOOSTS_LVL_14"
     type "StatusData"
@@ -126,7 +126,7 @@
     using "GOON_NPC_FLAMING_FIST_ATTACKER_BOOSTS_TEMPLATE"
     data "StackPriority" "14"
     data "Passives" "FightingStyle_GreatWeaponFighting;PhalanxFormation_Duergar;Riposte"
-    data "Boosts" "IncreaseMaxHP(91)Ability(Strength,3)Ability(Constitution,3)"
+    data "Boosts" "IncreaseMaxHP(91);Ability(Strength,3);Ability(Constitution,3)"
 
     new entry "GOON_NPC_FLAMING_FIST_ATTACKER_BOOSTS_LVL_15"
     type "StatusData"
@@ -134,7 +134,7 @@
     using "GOON_NPC_FLAMING_FIST_ATTACKER_BOOSTS_TEMPLATE"
     data "StackPriority" "15"
     data "Passives" "FightingStyle_GreatWeaponFighting;PhalanxFormation_Duergar;Riposte"
-    data "Boosts" "IncreaseMaxHP(98)Ability(Strength,3)Ability(Constitution,3)"
+    data "Boosts" "IncreaseMaxHP(98);Ability(Strength,3);Ability(Constitution,3)"
 
     new entry "GOON_NPC_FLAMING_FIST_ATTACKER_BOOSTS_LVL_16"
     type "StatusData"
@@ -142,7 +142,7 @@
     using "GOON_NPC_FLAMING_FIST_ATTACKER_BOOSTS_TEMPLATE"
     data "StackPriority" "16"
     data "Passives" "FightingStyle_GreatWeaponFighting;PhalanxFormation_Duergar;Riposte"
-    data "Boosts" "IncreaseMaxHP(105)Ability(Strength,3)Ability(Constitution,3)"
+    data "Boosts" "IncreaseMaxHP(105);Ability(Strength,3);Ability(Constitution,3)"
 
     new entry "GOON_NPC_FLAMING_FIST_ATTACKER_BOOSTS_LVL_17"
     type "StatusData"
@@ -150,7 +150,7 @@
     using "GOON_NPC_FLAMING_FIST_ATTACKER_BOOSTS_TEMPLATE"
     data "StackPriority" "17"
     data "Passives" "FightingStyle_GreatWeaponFighting;PhalanxFormation_Duergar;Riposte"
-    data "Boosts" "IncreaseMaxHP(112)Ability(Strength,3)Ability(Constitution,3)"
+    data "Boosts" "IncreaseMaxHP(112);Ability(Strength,3);Ability(Constitution,3)"
 
     new entry "GOON_NPC_FLAMING_FIST_ATTACKER_BOOSTS_LVL_18"
     type "StatusData"
@@ -158,7 +158,7 @@
     using "GOON_NPC_FLAMING_FIST_ATTACKER_BOOSTS_TEMPLATE"
     data "StackPriority" "18"
     data "Passives" "FightingStyle_GreatWeaponFighting;PhalanxFormation_Duergar;Riposte"
-    data "Boosts" "IncreaseMaxHP(105)Ability(Strength,3)Ability(Constitution,3)"
+    data "Boosts" "IncreaseMaxHP(105);Ability(Strength,3);Ability(Constitution,3)"
 
     new entry "GOON_NPC_FLAMING_FIST_ATTACKER_BOOSTS_LVL_19"
     type "StatusData"
@@ -166,7 +166,7 @@
     using "GOON_NPC_FLAMING_FIST_ATTACKER_BOOSTS_TEMPLATE"
     data "StackPriority" "19"
     data "Passives" "FightingStyle_GreatWeaponFighting;PhalanxFormation_Duergar;Riposte"
-    data "Boosts" "IncreaseMaxHP(112)Ability(Strength,3)Ability(Constitution,3)"
+    data "Boosts" "IncreaseMaxHP(112);Ability(Strength,3);Ability(Constitution,3)"
 
     new entry "GOON_NPC_FLAMING_FIST_ATTACKER_BOOSTS_LVL_20"
     type "StatusData"
@@ -174,7 +174,7 @@
     using "GOON_NPC_FLAMING_FIST_ATTACKER_BOOSTS_TEMPLATE"
     data "StackPriority" "20"
     data "Passives" "FightingStyle_GreatWeaponFighting;PhalanxFormation_Duergar;Riposte"
-    data "Boosts" "IncreaseMaxHP(119)Ability(Strength,3)Ability(Constitution,3)"
+    data "Boosts" "IncreaseMaxHP(119);Ability(Strength,3);Ability(Constitution,3)"
 
 // ==================================== "NPC_FlamingFist_Melee_Caster" ====================================
 
@@ -580,7 +580,7 @@
     using "GOON_NPC_FLAMING_FIST_DEFENDER_BOOSTS_TEMPLATE"
     data "StackPriority" "4"
     data "Passives" ""
-    data "Boosts" "IncreaseMaxHP(21)Ability(Strength,1)Ability(Constitution,1)"
+    data "Boosts" "IncreaseMaxHP(21);Ability(Strength,1);Ability(Constitution,1)"
 
     new entry "GOON_NPC_FLAMING_FIST_DEFENDER_BOOSTS_LVL_5"
     type "StatusData"
@@ -588,7 +588,7 @@
     using "GOON_NPC_FLAMING_FIST_DEFENDER_BOOSTS_TEMPLATE"
     data "StackPriority" "5"
     data "Passives" ""
-    data "Boosts" "IncreaseMaxHP(28)Ability(Strength,1)Ability(Constitution,1)"
+    data "Boosts" "IncreaseMaxHP(28);Ability(Strength,1);Ability(Constitution,1)"
 
     new entry "GOON_NPC_FLAMING_FIST_DEFENDER_BOOSTS_LVL_6"
     type "StatusData"
@@ -596,7 +596,7 @@
     using "GOON_NPC_FLAMING_FIST_DEFENDER_BOOSTS_TEMPLATE"
     data "StackPriority" "6"
     data "Passives" "FightingStyle_Protection"
-    data "Boosts" "IncreaseMaxHP(35)Ability(Strength,2)Ability(Constitution,2)"
+    data "Boosts" "IncreaseMaxHP(35);Ability(Strength,2);Ability(Constitution,2)"
 
     new entry "GOON_NPC_FLAMING_FIST_DEFENDER_BOOSTS_LVL_7"
     type "StatusData"
@@ -604,7 +604,7 @@
     using "GOON_NPC_FLAMING_FIST_DEFENDER_BOOSTS_TEMPLATE"
     data "StackPriority" "7"
     data "Passives" "FightingStyle_Protection"
-    data "Boosts" "IncreaseMaxHP(42)Ability(Strength,2)Ability(Constitution,2)"
+    data "Boosts" "IncreaseMaxHP(42);Ability(Strength,2);Ability(Constitution,2)"
 
     new entry "GOON_NPC_FLAMING_FIST_DEFENDER_BOOSTS_LVL_8"
     type "StatusData"
@@ -612,7 +612,7 @@
     using "GOON_NPC_FLAMING_FIST_DEFENDER_BOOSTS_TEMPLATE"
     data "StackPriority" "8"
     data "Passives" "FightingStyle_Protection"
-    data "Boosts" "IncreaseMaxHP(49)Ability(Strength,3)Ability(Constitution,3)"
+    data "Boosts" "IncreaseMaxHP(49);Ability(Strength,3);Ability(Constitution,3)"
 
     new entry "GOON_NPC_FLAMING_FIST_DEFENDER_BOOSTS_LVL_9"
     type "StatusData"
@@ -620,7 +620,7 @@
     using "GOON_NPC_FLAMING_FIST_DEFENDER_BOOSTS_TEMPLATE"
     data "StackPriority" "9"
     data "Passives" "FightingStyle_Protection"
-    data "Boosts" "IncreaseMaxHP(56)Ability(Strength,3)Ability(Constitution,3)"
+    data "Boosts" "IncreaseMaxHP(56);Ability(Strength,3);Ability(Constitution,3)"
 
     new entry "GOON_NPC_FLAMING_FIST_DEFENDER_BOOSTS_LVL_10"
     type "StatusData"
@@ -628,7 +628,7 @@
     using "GOON_NPC_FLAMING_FIST_DEFENDER_BOOSTS_TEMPLATE"
     data "StackPriority" "10"
     data "Passives" "FightingStyle_Protection"
-    data "Boosts" "IncreaseMaxHP(63)Ability(Strength,3)Ability(Constitution,3)"
+    data "Boosts" "IncreaseMaxHP(63);Ability(Strength,3);Ability(Constitution,3)"
 
     new entry "GOON_NPC_FLAMING_FIST_DEFENDER_BOOSTS_LVL_11"
     type "StatusData"
@@ -636,7 +636,7 @@
     using "GOON_NPC_FLAMING_FIST_DEFENDER_BOOSTS_TEMPLATE"
     data "StackPriority" "11"
     data "Passives" "FightingStyle_Protection"
-    data "Boosts" "IncreaseMaxHP(70)Ability(Strength,3)Ability(Constitution,3)"
+    data "Boosts" "IncreaseMaxHP(70);Ability(Strength,3);Ability(Constitution,3)"
 
     new entry "GOON_NPC_FLAMING_FIST_DEFENDER_BOOSTS_LVL_12"
     type "StatusData"
@@ -644,7 +644,7 @@
     using "GOON_NPC_FLAMING_FIST_DEFENDER_BOOSTS_TEMPLATE"
     data "StackPriority" "12"
     data "Passives" "FightingStyle_Protection"
-    data "Boosts" "IncreaseMaxHP(77)Ability(Strength,3)Ability(Constitution,3)"
+    data "Boosts" "IncreaseMaxHP(77);Ability(Strength,3);Ability(Constitution,3)"
 
     new entry "GOON_NPC_FLAMING_FIST_DEFENDER_BOOSTS_LVL_13"
     type "StatusData"
@@ -652,7 +652,7 @@
     using "GOON_NPC_FLAMING_FIST_DEFENDER_BOOSTS_TEMPLATE"
     data "StackPriority" "13"
     data "Passives" "FightingStyle_Protection"
-    data "Boosts" "IncreaseMaxHP(84)Ability(Strength,3)Ability(Constitution,3)"
+    data "Boosts" "IncreaseMaxHP(84);Ability(Strength,3);Ability(Constitution,3)"
 
     new entry "GOON_NPC_FLAMING_FIST_DEFENDER_BOOSTS_LVL_14"
     type "StatusData"
@@ -660,7 +660,7 @@
     using "GOON_NPC_FLAMING_FIST_DEFENDER_BOOSTS_TEMPLATE"
     data "StackPriority" "14"
     data "Passives" "FightingStyle_Protection"
-    data "Boosts" "IncreaseMaxHP(91)Ability(Strength,3)Ability(Constitution,3)"
+    data "Boosts" "IncreaseMaxHP(91);Ability(Strength,3);Ability(Constitution,3)"
 
     new entry "GOON_NPC_FLAMING_FIST_DEFENDER_BOOSTS_LVL_15"
     type "StatusData"
@@ -668,7 +668,7 @@
     using "GOON_NPC_FLAMING_FIST_DEFENDER_BOOSTS_TEMPLATE"
     data "StackPriority" "15"
     data "Passives" "FightingStyle_Protection"
-    data "Boosts" "IncreaseMaxHP(98)Ability(Strength,3)Ability(Constitution,3)"
+    data "Boosts" "IncreaseMaxHP(98);Ability(Strength,3);Ability(Constitution,3)"
 
     new entry "GOON_NPC_FLAMING_FIST_DEFENDER_BOOSTS_LVL_16"
     type "StatusData"
@@ -676,7 +676,7 @@
     using "GOON_NPC_FLAMING_FIST_DEFENDER_BOOSTS_TEMPLATE"
     data "StackPriority" "16"
     data "Passives" "FightingStyle_Protection"
-    data "Boosts" "IncreaseMaxHP(105)Ability(Strength,3)Ability(Constitution,3)"
+    data "Boosts" "IncreaseMaxHP(105);Ability(Strength,3);Ability(Constitution,3)"
 
     new entry "GOON_NPC_FLAMING_FIST_DEFENDER_BOOSTS_LVL_17"
     type "StatusData"
@@ -684,7 +684,7 @@
     using "GOON_NPC_FLAMING_FIST_DEFENDER_BOOSTS_TEMPLATE"
     data "StackPriority" "17"
     data "Passives" "FightingStyle_Protection"
-    data "Boosts" "IncreaseMaxHP(112)Ability(Strength,3)Ability(Constitution,3)"
+    data "Boosts" "IncreaseMaxHP(112);Ability(Strength,3);Ability(Constitution,3)"
 
     new entry "GOON_NPC_FLAMING_FIST_DEFENDER_BOOSTS_LVL_18"
     type "StatusData"
@@ -692,7 +692,7 @@
     using "GOON_NPC_FLAMING_FIST_DEFENDER_BOOSTS_TEMPLATE"
     data "StackPriority" "18"
     data "Passives" "FightingStyle_Protection"
-    data "Boosts" "IncreaseMaxHP(105)Ability(Strength,3)Ability(Constitution,3)"
+    data "Boosts" "IncreaseMaxHP(105);Ability(Strength,3);Ability(Constitution,3)"
 
     new entry "GOON_NPC_FLAMING_FIST_DEFENDER_BOOSTS_LVL_19"
     type "StatusData"
@@ -700,7 +700,7 @@
     using "GOON_NPC_FLAMING_FIST_DEFENDER_BOOSTS_TEMPLATE"
     data "StackPriority" "19"
     data "Passives" "FightingStyle_Protection"
-    data "Boosts" "IncreaseMaxHP(112)Ability(Strength,3)Ability(Constitution,3)"
+    data "Boosts" "IncreaseMaxHP(112);Ability(Strength,3);Ability(Constitution,3)"
 
     new entry "GOON_NPC_FLAMING_FIST_DEFENDER_BOOSTS_LVL_20"
     type "StatusData"
@@ -708,7 +708,7 @@
     using "GOON_NPC_FLAMING_FIST_DEFENDER_BOOSTS_TEMPLATE"
     data "StackPriority" "20"
     data "Passives" "FightingStyle_Protection"
-    data "Boosts" "IncreaseMaxHP(119)Ability(Strength,3)Ability(Constitution,3)"
+    data "Boosts" "IncreaseMaxHP(119);Ability(Strength,3);Ability(Constitution,3)"
 
 // ==================================== "NPC_FlamingFist_Melee_Ranger" ====================================
 
