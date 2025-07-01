@@ -256,7 +256,7 @@ type "StatusData"
 data "StatusType" "BOOST"
 using "LOW_HAG_MUSHROOM_HEALINGPEARL"
 // data "TickFunctors" "IF(not HasStatus('BURNING') and not HasStatus('SEARING_SMITE') and HasHPPercentageWithoutTemporaryHPEqualOrLessThan(99)):RegainHitPoints(100);IF(HasStatus('BURNING')):RemoveStatus('BURNING');IF(HasStatus('SEARING_SMITE')):RemoveStatus('SEARING_SMITE');IF(not HasStatus('BURNING') and not HasStatus('SEARING_SMITE') and not HasStatus('CHILL_TOUCH') and not HasStatus('WRAITHS_EMBRACE') and not HasStatus('CURSE_MUMMY') and not HasStatus('LOW_HAG_MUSHROOM_VFX')):ApplyStatus(LOW_HAG_MUSHROOM_VFX,100,-1);"
-data "TickFunctors" "IF(not Goon_HasBurningCondition() and HasHPPercentageWithoutTemporaryHPEqualOrLessThan(99)):RegainHitPoints(100);IF(HasStatus('Goon_SG_Burning')):RemoveStatus('Goon_SG_Burning');IF(not Goon_HasBurningCondition() and not HasStatus('CHILL_TOUCH') and not HasStatus('WRAITHS_EMBRACE') and not HasStatus('CURSE_MUMMY') and not HasStatus('LOW_HAG_MUSHROOM_VFX')):ApplyStatus(LOW_HAG_MUSHROOM_VFX,100,-1)"
+data "TickFunctors" "IF(not Goon_HasBurningConditionOrTag() and HasHPPercentageWithoutTemporaryHPEqualOrLessThan(99)):RegainHitPoints(100);IF(HasStatus('SG_Burning')):RemoveStatus('SG_Burning');IF(not Goon_HasBurningConditionOrTag() and not HasStatus('CHILL_TOUCH') and not HasStatus('WRAITHS_EMBRACE') and not HasStatus('CURSE_MUMMY') and not HasStatus('LOW_HAG_MUSHROOM_VFX')):ApplyStatus(LOW_HAG_MUSHROOM_VFX,100,-1)"
 
 // ==================================== Harpy - Luring Song ====================================
 // Changes: Now checks for all Silenced conditions, not just "SILENCED" itself.
