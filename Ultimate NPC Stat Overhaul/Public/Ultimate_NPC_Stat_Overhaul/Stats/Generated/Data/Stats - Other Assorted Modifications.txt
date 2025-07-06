@@ -118,9 +118,9 @@ type "PassiveData"
 using "Confusion_CraniumRat"
 data "TooltipSave" "Intelligence"
 // data "StatsFunctors" "IF(not SavingThrow(Ability.Intelligence, 13, false, false, context.Source)):ApplyStatus(SWAP,CONFUSION,100,2)"
-data "StatsFunctors" "ApplyStatus(SWAP,GOON_CONFUSION_CRANIUMRAT_TECHNICAL, 100, 0)"
+data "StatsFunctors" "ApplyStatus(SWAP,GOON_CONFUSION_CRANIUMRAT_TECHNICAL_APPLIER, 100, 0)"
 
-new entry "GOON_CONFUSION_CRANIUMRAT_TECHNICAL"
+new entry "GOON_CONFUSION_CRANIUMRAT_TECHNICAL_APPLIER"
 type "StatusData"
 data "StatusType" "BOOST"
 // Infectious Madness
@@ -245,7 +245,7 @@ type "InterruptData"
 // using "Interrupt_LEGENDARY_ACTIONS"
 using "Interrupt_FOR_Owlbear_CallConsort"
 // data "Conditions" "IsAbleToReact(context.Observer) and Enemy(context.Source,context.Observer) and HasFunctor(StatsFunctorType.DealDamage) and IsHit() and not AnyEntityIsItem() and HasLastAttackTriggered() and not HasStatus('SILENCED',context.Observer)"
-data "Conditions" "IsAbleToReact(context.Observer) and Enemy(context.Source,context.Observer) and HasFunctor(StatsFunctorType.DealDamage) and IsHit() and not AnyEntityIsItem() and HasLastAttackTriggered() and not Goon_HasSilencedCondition(context.Observer)"
+data "Conditions" "IsAbleToReact(context.Observer) and Enemy(context.Source,context.Observer) and HasFunctor(StatsFunctorType.DealDamage) and IsHit() and not AnyEntityIsItem() and HasLastAttackTriggered() and not HasStatus('SG_Silenced',context.Observer)"
 data "InterruptFlags" "InterruptWhileInvisible"
 
 // ==================================== Auntie Ethel - Healing Pearl ====================================
@@ -256,7 +256,7 @@ type "StatusData"
 data "StatusType" "BOOST"
 using "LOW_HAG_MUSHROOM_HEALINGPEARL"
 // data "TickFunctors" "IF(not HasStatus('BURNING') and not HasStatus('SEARING_SMITE') and HasHPPercentageWithoutTemporaryHPEqualOrLessThan(99)):RegainHitPoints(100);IF(HasStatus('BURNING')):RemoveStatus('BURNING');IF(HasStatus('SEARING_SMITE')):RemoveStatus('SEARING_SMITE');IF(not HasStatus('BURNING') and not HasStatus('SEARING_SMITE') and not HasStatus('CHILL_TOUCH') and not HasStatus('WRAITHS_EMBRACE') and not HasStatus('CURSE_MUMMY') and not HasStatus('LOW_HAG_MUSHROOM_VFX')):ApplyStatus(LOW_HAG_MUSHROOM_VFX,100,-1);"
-data "TickFunctors" "IF(not Goon_HasBurningConditionOrTag() and HasHPPercentageWithoutTemporaryHPEqualOrLessThan(99)):RegainHitPoints(100);IF(HasStatus('SG_Burning')):RemoveStatus('SG_Burning');IF(not Goon_HasBurningConditionOrTag() and not HasStatus('CHILL_TOUCH') and not HasStatus('WRAITHS_EMBRACE') and not HasStatus('CURSE_MUMMY') and not HasStatus('LOW_HAG_MUSHROOM_VFX')):ApplyStatus(LOW_HAG_MUSHROOM_VFX,100,-1)"
+data "TickFunctors" "IF(not Goon_HasBurningConditionOrTag() and HasHPPercentageWithoutTemporaryHPEqualOrLessThan(99)):RegainHitPoints(100);IF(HasStatus('SG_Burning')):RemoveStatus(SG_Burning);IF(not Goon_HasBurningConditionOrTag() and not HasStatus('CHILL_TOUCH') and not HasStatus('WRAITHS_EMBRACE') and not HasStatus('CURSE_MUMMY') and not HasStatus('LOW_HAG_MUSHROOM_VFX')):ApplyStatus(LOW_HAG_MUSHROOM_VFX,100,-1)"
 
 // ==================================== Harpy - Luring Song ====================================
 // Changes: Now checks for all Silenced conditions, not just "SILENCED" itself.
@@ -266,9 +266,9 @@ type "StatusData"
 data "StatusType" "BOOST"
 using "LURING_SONG_AURA"
 // data "AuraStatuses" "TARGET:IF(Character() and not HasStatus('SILENCED') and Tagged('HUMANOID') and not Tagged('HARPY') and not Dead() and Enemy()):ApplyStatus(LURING_SONG_AURA_VICTIM);TARGET:IF(Character() and Tagged('HARPY') and not Dead()):ApplyStatus(LURING_SONG_AURA_LISTENER);"
-data "AuraStatuses" "TARGET:IF(Character() and not Goon_HasDeafenedCondition() and Tagged('HUMANOID') and not Tagged('HARPY') and not Dead() and Enemy()):ApplyStatus(LURING_SONG_AURA_VICTIM); TARGET:IF(Character() and Tagged('HARPY') and not Goon_HasDeafenedCondition() and not Dead()):ApplyStatus(LURING_SONG_AURA_LISTENER)"
+data "AuraStatuses" "TARGET:IF(Character() and not HasStatus('SG_Deafened') and Tagged('HUMANOID') and not Tagged('HARPY') and not Dead() and Enemy()):ApplyStatus(LURING_SONG_AURA_VICTIM); TARGET:IF(Character() and Tagged('HARPY') and not HasStatus('SG_Deafened') and not Dead()):ApplyStatus(LURING_SONG_AURA_LISTENER)"
 // data "RemoveConditions" "HasStatus('SILENCED')"
-data "RemoveConditions" "Goon_HasSilencedCondition()"
+data "RemoveConditions" "HasStatus('SG_Silenced')"
 
 // ==================================== Lorroakan - Elemental Retort ====================================
 // Bug Fix: He will still react even if Invisible, for whatever reason.
