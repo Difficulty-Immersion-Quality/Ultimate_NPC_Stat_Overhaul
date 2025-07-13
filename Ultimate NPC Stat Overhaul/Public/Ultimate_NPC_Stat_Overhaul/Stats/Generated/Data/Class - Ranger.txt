@@ -675,13 +675,23 @@
     new entry "GOON_NPC_RANGER_GLOOMSTALKER_LVL_13"
     type "StatusData"
     data "StatusType" "BOOST"
-    using "GOON_NPC_RANGER_GLOOMSTALKER_LVL_11"
+    using "GOON_NPC_RANGER_GLOOMSTALKER_PROGRESSION_TEMPLATE"
     data "StackPriority" "13"
+    data "Passives" "DreadAmbusher;SuperiorDarkvision;IronMind;StalkersFlurry"
+    data "Boosts" "UnlockSpell(Shout_Hide_DreadAmbusher,AddChildren);UnlockSpell(Shout_UmbralCloak,AddChildren);UnlockSpell(Shout_DisguiseSelf,AddChildren);UnlockSpell(Target_MistyStep,AddChildren);UnlockSpell(Zone_Fear,AddChildren);UnlockSpell(Target_Invisibility_Greater,AddChildren)"
+
+    // <node id="Progression">
+    //     <attribute id="Level" type="uint8" value="13"/>
+    //     <attribute id="Name" type="LSString" value="GloomStalker"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="Selectors" type="LSString" value="AddSpells(4cf1272a-9701-4d07-a4be-b381da8aa46b)"/>
+    //     <attribute id="TableUUID" type="guid" value="caa60bb8-8ca3-4871-b034-e10a6bc8ca29"/>
+    //     <attribute id="UUID" type="guid" value="20856fe1-67fb-41df-8347-4d81958677a5"/>
     
     new entry "GOON_NPC_RANGER_GLOOMSTALKER_LVL_14"
     type "StatusData"
     data "StatusType" "BOOST"
-    using "GOON_NPC_RANGER_GLOOMSTALKER_LVL_11"
+    using "GOON_NPC_RANGER_GLOOMSTALKER_LVL_13"
     data "StackPriority" "14"
     
     new entry "GOON_NPC_RANGER_GLOOMSTALKER_LVL_15"
@@ -690,7 +700,7 @@
     using "GOON_NPC_RANGER_GLOOMSTALKER_PROGRESSION_TEMPLATE"
     data "StackPriority" "15"
     data "Passives" "DreadAmbusher;SuperiorDarkvision;IronMind;StalkersFlurry;ShadowyDodge"
-    data "Boosts" "UnlockSpell(Shout_Hide_DreadAmbusher,AddChildren);UnlockSpell(Shout_UmbralCloak,AddChildren);UnlockSpell(Shout_DisguiseSelf,AddChildren);UnlockSpell(Target_MistyStep,AddChildren);UnlockSpell(Zone_Fear,AddChildren)"
+    data "Boosts" "UnlockSpell(Shout_Hide_DreadAmbusher,AddChildren);UnlockSpell(Shout_UmbralCloak,AddChildren);UnlockSpell(Shout_DisguiseSelf,AddChildren);UnlockSpell(Target_MistyStep,AddChildren);UnlockSpell(Zone_Fear,AddChildren);UnlockSpell(Target_Invisibility_Greater,AddChildren)"
 
     // <node id="Progression">
     //     <attribute id="Level" type="uint8" value="15"/>
@@ -709,25 +719,35 @@
     new entry "GOON_NPC_RANGER_GLOOMSTALKER_LVL_17"
     type "StatusData"
     data "StatusType" "BOOST"
-    using "GOON_NPC_RANGER_GLOOMSTALKER_LVL_15"
+    using "GOON_NPC_RANGER_GLOOMSTALKER_PROGRESSION_TEMPLATE"
     data "StackPriority" "17"
+    data "Passives" "DreadAmbusher;SuperiorDarkvision;IronMind;StalkersFlurry;ShadowyDodge"
+    data "Boosts" "UnlockSpell(Shout_Hide_DreadAmbusher,AddChildren);UnlockSpell(Shout_UmbralCloak,AddChildren);UnlockSpell(Shout_DisguiseSelf,AddChildren);UnlockSpell(Target_MistyStep,AddChildren);UnlockSpell(Zone_Fear,AddChildren);UnlockSpell(Target_Invisibility_Greater,AddChildren);UnlockSpell(Target_Seeming,AddChildren)"
+
+    // <node id="Progression">
+    //     <attribute id="Level" type="uint8" value="17"/>
+    //     <attribute id="Name" type="LSString" value="GloomStalker"/>
+    //     <attribute id="ProgressionType" type="uint8" value="1"/>
+    //     <attribute id="Selectors" type="LSString" value="AddSpells(142e7213-f483-49a1-b946-59a44751678d)"/>
+    //     <attribute id="TableUUID" type="guid" value="caa60bb8-8ca3-4871-b034-e10a6bc8ca29"/>
+    //     <attribute id="UUID" type="guid" value="3be80cb8-03c0-46e8-a04d-fb149c61b5c8"/>
     
     new entry "GOON_NPC_RANGER_GLOOMSTALKER_LVL_18"
     type "StatusData"
     data "StatusType" "BOOST"
-    using "GOON_NPC_RANGER_GLOOMSTALKER_LVL_15"
+    using "GOON_NPC_RANGER_GLOOMSTALKER_LVL_17"
     data "StackPriority" "18"
     
     new entry "GOON_NPC_RANGER_GLOOMSTALKER_LVL_19"
     type "StatusData"
     data "StatusType" "BOOST"
-    using "GOON_NPC_RANGER_GLOOMSTALKER_LVL_15"
+    using "GOON_NPC_RANGER_GLOOMSTALKER_LVL_17"
     data "StackPriority" "19"
     
     new entry "GOON_NPC_RANGER_GLOOMSTALKER_LVL_20"
     type "StatusData"
     data "StatusType" "BOOST"
-    using "GOON_NPC_RANGER_GLOOMSTALKER_LVL_15"
+    using "GOON_NPC_RANGER_GLOOMSTALKER_LVL_17"
     data "StackPriority" "20"
 
 // ==================================== Subclass: Hunter ====================================
