@@ -112,6 +112,7 @@ data "Description" "h71acc892g62a3g4915ga463g01ca37c6054f;1"
 
 // ==================================== Cranium Rats ====================================
 // Bug Fix: Infectious Madness no longer incorrectly shows that it's been applied to the Cranium Rat.
+// Bug Fix: Infectious Madness can apply to more than one character. (Redundant)
 
 new entry "Confusion_CraniumRat"
 type "PassiveData"
@@ -238,7 +239,7 @@ data "TooltipOnSave" ""
 
 // ==================================== Owlbear - Call Consort ====================================
 // Bug Fix: She will still summon her mate even if she's Invisible, for whatever reason.
-// Changes: Now checks for all Silenced conditions, not just "SILENCED" itself.
+// Changes: Now checks for all Silenced conditions, not just the base Silenced condition.
 
 new entry "Interrupt_FOR_Owlbear_CallConsort"
 type "InterruptData"
@@ -249,6 +250,7 @@ data "Conditions" "IsAbleToReact(context.Observer) and Enemy(context.Source,cont
 data "InterruptFlags" "InterruptWhileInvisible"
 
 // ==================================== Auntie Ethel - Healing Pearl ====================================
+// Bug Fix: Now checks for all Burning conditions, not just the base Burning condition
 // TODO: Maybe turn those other conditions into a themed function too.
 
 new entry "LOW_HAG_MUSHROOM_HEALINGPEARL"
@@ -259,7 +261,7 @@ using "LOW_HAG_MUSHROOM_HEALINGPEARL"
 data "TickFunctors" "IF(not Goon_HasBurningConditionOrTag() and HasHPPercentageWithoutTemporaryHPEqualOrLessThan(99)):RegainHitPoints(100);IF(HasStatus('SG_Burning')):RemoveStatus(SG_Burning);IF(not Goon_HasBurningConditionOrTag() and not HasStatus('CHILL_TOUCH') and not HasStatus('WRAITHS_EMBRACE') and not HasStatus('CURSE_MUMMY') and not HasStatus('LOW_HAG_MUSHROOM_VFX')):ApplyStatus(LOW_HAG_MUSHROOM_VFX,100,-1)"
 
 // ==================================== Harpy - Luring Song ====================================
-// Changes: Now checks for all Silenced conditions, not just "SILENCED" itself.
+// Changes: Now checks for all Silenced conditions, not just the base Silenced condition.
 
 new entry "LURING_SONG_AURA"
 type "StatusData"
@@ -280,7 +282,7 @@ using "Interrupt_LOW_RamazithsTower_ElementalRebuke"
 data "InterruptFlags" "InterruptWhileInvisible"
 
 // ==================================== Counterspell (Mindflayer) ====================================
-// Bug Fix: Now works with more non-hostile and non-spellcasting restricted Polymorphs.
+// Bug Fix: Can be used while under the effects of more non-hostile and non-spellcasting restricted Polymorphs.
 
 new entry "Interrupt_CounterSpell_MindFlayer"
 type "InterruptData"
@@ -290,7 +292,7 @@ using "Interrupt_CounterSpell_MindFlayer"
 data "EnableCondition" "HasActionResource('Interupt_CounterSpell_MindFlayer', 1, 0, false, false, context.Source) and (not HasStatus('SG_Polymorph') or Goon_IsUnrestrictedPolymorphStatus())"
 
 // ==================================== Shield (Mindflayer) ====================================
-// Bug Fix: Now works with more non-hostile and non-spellcasting restricted Polymorphs.
+// Bug Fix: Can be used while under the effects of more non-hostile and non-spellcasting restricted Polymorphs.
 
 new entry "Interrupt_Shield_Mindflayer"
 type "InterruptData"
@@ -300,7 +302,7 @@ using "Interrupt_Shield_Mindflayer"
 data "EnableCondition" "HasActionResource('Interupt_Shield_MindFlayer', 1, 0, false, false, context.Source) and (not HasStatus('SG_Polymorph') or Goon_IsUnrestrictedPolymorphStatus())"
 
 // ==================================== Legendary Resistance ====================================
-// Bug Fix: Now works with more non-hostile and non-spellcasting restricted Polymorphs.
+// Bug Fix: Can be used while under the effects of more non-hostile and non-spellcasting restricted Polymorphs.
 
 new entry "Interrupt_LegendaryResistance"
 type "InterruptData"
