@@ -438,7 +438,7 @@ data "RequirementConditions" "not Unarmed() and not HasStatus('WEAPON_BOND', Get
 new entry "Interrupt_Smite_Divine_NPC"
 type "InterruptData"
 using "Interrupt_Smite_Divine_NPC"
-data "Conditions" "(Player(context.Observer) or not IsInvisibleState(context.Observer)) and IsAbleToReact(context.Observer) and not Item() and IsMeleeAttack() and not IsDivineSmite() and Self(context.Source,context.Observer) and HasDamageEffectFlag(DamageFlags.Hit) and IsWeaponAttack() and not IsCritical() and not IsKillingBlow() and not AnyEntityIsItem()"
+data "Conditions" "(Player(context.Observer) or not HasStatus('SG_Invisible',context.Observer)) and IsAbleToReact(context.Observer) and not Item() and IsMeleeAttack() and not IsDivineSmite() and Self(context.Source,context.Observer) and HasDamageEffectFlag(DamageFlags.Hit) and IsWeaponAttack() and not IsCritical() and not IsKillingBlow() and not AnyEntityIsItem()"
 data "InterruptFlags" "InterruptWhileInvisible"
 
 new entry "Interrupt_Smite_Divine_7_NPC "
