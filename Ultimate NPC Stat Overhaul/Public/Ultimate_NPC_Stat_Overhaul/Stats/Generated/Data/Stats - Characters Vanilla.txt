@@ -1717,8 +1717,8 @@ data "Progressions" "f0ede459-8b86-48fd-ac11-4432573566a5"
 //  │   ├─ "LOW_HouseOfGrief_Cultist_Caster_Gnome"
 //  │   ├─ "MOO_MindTorturer"
 //  │   └─ "UND_KC_Gnome_Deep_Caster"
-//  ├─ "Gnome_Gondian_Caster"                           --- Basically all the Gondians (Inherits Wizard progressions)
-//  │   └─ "LOW_SteelWatchFoundry_ZannerToobin"         --- Gondian Zanner Toobin - Church of Gond
+//  ├─ "Gnome_Gondian_Caster"
+//  │   └─ "LOW_SteelWatchFoundry_ZannerToobin"         --- Gondian Zanner Toobin - Church of Gond (Inherits added Wizard progressions)
 
 // Tahan - Circle of the Emerald Grove (Inherits Druid progressions) (Gnome_Speed added) (Custom spell slot passive added to allow stacking)
 new entry "DEN_Tahan"
@@ -1762,6 +1762,14 @@ type "Character"
 using "UND_KC_Gnome_Deep_Caster"
 // data "Passives" "Gnome_Cunning;Gnome_Speed;AttackOfOpportunity;DarknessRules;Darkvision"
 data "Passives" "Gnome_Cunning;Gnome_Speed;DeepGnome_StoneCamouflage;AttackOfOpportunity;SuperiorDarkvision;DarknessRules"
+
+// Basically all the Gondians (Added Wizard progressions, removed spell slots that just mirrored having progressions)
+new entry "Gnome_Gondian_Caster"
+type "Character"
+using "Gnome_Gondian_Caster"
+// data "ActionResources" "ActionPoint:1;BonusActionPoint:1;Movement:7.5;ReactionActionPoint:1;SpellSlot:4:4:1;SpellSlot:3:3:2;SpellSlot:1:1:3"
+data "ActionResources" "ActionPoint:1;BonusActionPoint:1;Movement:7.5;ReactionActionPoint:1"
+data "Progressions" "44bdbc5e-a003-4d61-87f0-5ced20d3804e"
 
 // "_Gnome"
 //  ├─ "Gnome_Melee"                                --- (Inherits Fighter progressions)
