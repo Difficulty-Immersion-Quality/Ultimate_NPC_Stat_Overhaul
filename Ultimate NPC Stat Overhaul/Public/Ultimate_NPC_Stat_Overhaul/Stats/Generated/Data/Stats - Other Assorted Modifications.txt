@@ -238,7 +238,7 @@ using "Zone_CRE_PulseTrap_Blast"
 data "TooltipOnSave" ""
 
 // ==================================== Owlbear - Call Consort ====================================
-// Bug Fix: She will still summon her mate even if she's Invisible, for whatever reason.
+// Bug Fix: Interrupt can be used while Invisible.
 // Changes: Now checks for all Silenced conditions, not just the base Silenced condition.
 
 new entry "Interrupt_FOR_Owlbear_CallConsort"
@@ -273,7 +273,7 @@ data "AuraStatuses" "TARGET:IF(Character() and not HasStatus('SG_Deafened') and 
 data "RemoveConditions" "HasStatus('SG_Silenced')"
 
 // ==================================== Lorroakan - Elemental Retort ====================================
-// Bug Fix: He will still react even if Invisible, for whatever reason.
+// Bug Fix: Interrupt can be used while Invisible.
 
 new entry "Interrupt_LOW_RamazithsTower_ElementalRebuke"
 type "InterruptData"
@@ -309,3 +309,22 @@ type "InterruptData"
 using "Interrupt_LegendaryResistance"
 // data "EnableCondition" "not HasStatus('SG_Polymorph') or Tagged('MINDFLAYER') or HasAnyStatus({'SG_Disguise','WILDSHAPE_STARRY_ARCHER_PLAYER','WILDSHAPE_STARRY_CHALICE_PLAYER','WILDSHAPE_STARRY_DRAGON_PLAYER'});"
 data "EnableCondition" "not HasStatus('SG_Polymorph') or Goon_IsUnrestrictedPolymorphStatus()"
+
+// ==================================== Gortash - Tyrannical Branding ====================================
+// Bug Fix: Interrupt can be used while Invisible.
+// Bug Fix: Interrupt cannot target entities with any Invisibility conditions, instead of just the base Invisibility condition.
+
+new entry "Interrupt_WYR_DivineBeckoning_Gortash"
+type "InterruptData"
+using "Interrupt_WYR_DivineBeckoning_Gortash"
+// Tyrannical Branding
+// data "DisplayName" "hfd6d842eg4595g4f08gb137gc8eba3f8bfe5;2"
+// Place a &lt;LSTag Type="Status" Tooltip="WYR_DIVINEBECKONING_GORTASH"&gt;Tyrant's Curse&lt;/LSTag&gt; on a target.
+// data "Description" "h5e141e72gc683g46efg81bdg30b16293a63d;2"
+// data "InterruptContext" "OnCastHit"
+// data "InterruptContextScope" "Self"
+// data "Conditions" "IsAbleToReact(context.Observer) and Enemy(context.Source,context.Observer) and not HasStatus('INVISIBILITY') and not AnyEntityIsItem() and HasLastAttackTriggered()"
+data "Conditions" "IsAbleToReact(context.Observer) and Enemy(context.Source,context.Observer) and not HasStatus('SG_Invisible') and not AnyEntityIsItem() and HasLastAttackTriggered()"
+// data "Properties" "UseSpell(OBSERVER_SOURCE,Target_WYR_DivineBeckoning_Gortash,true,true,true,,true)"
+// data "InterruptDefaultValue" "Enabled"
+data "InterruptFlags" "InterruptWhileInvisible"
