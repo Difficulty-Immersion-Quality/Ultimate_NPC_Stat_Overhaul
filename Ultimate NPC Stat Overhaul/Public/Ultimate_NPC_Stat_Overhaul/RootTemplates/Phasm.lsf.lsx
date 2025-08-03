@@ -4,7 +4,7 @@
 	<region id="Templates">
 		<node id="Templates">
 			<children>
-				<!-- Zlorb (Strange Ox) is now a a Phasm, in addition to an Ooze. -->
+				<!-- Zlorb (Strange Ox) is now a Phasm, in addition to an Ooze. -->
 				<node id="GameObjects">
 					<attribute id="AnubisConfigName" type="FixedString" value="DefaultMonster" />
 					<attribute id="Archetype" type="FixedString" value="beast" />
