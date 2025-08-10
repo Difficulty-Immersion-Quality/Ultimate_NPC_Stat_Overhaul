@@ -4528,7 +4528,7 @@ data "Progressions" "cbe5059f-7a9f-4b98-be6a-07c9cd8e02c2"
 //  │   │   └─ "END_Hellrider_Cleric"
 //  │   └─ "WYR_SmugglersCave_StoneLord_Tiefling"
 
-// Zevlor - Tiefling Refugees (Inherits Paladin progressions, added Oath of Devotion subclass)
+// Zevlor - Tiefling Refugees (Inherits Paladin progressions, added Oath of Devotion subclass, fixed racials)
 new entry "DEN_TieflingLeader"
 type "Character"
 using "DEN_TieflingLeader"
@@ -4539,7 +4539,7 @@ data "Passives" "CX_Paladin_Devotion_Boost;Tiefling_HellishResistance;AttackOfOp
 new entry "DEN_Trainer"
 type "Character"
 using "DEN_Trainer"
-data "Passives" "Tiefling_HellishResistance;AttackOfOpportunity;DarknessRules;Darkvision"
+// data "Passives" "Tiefling_HellishResistance;AttackOfOpportunity;DarknessRules;Darkvision"
 data "Passives" "CX_Fighter_BattleMaster_Boost;Tiefling_HellishResistance;AttackOfOpportunity;DarknessRules;Darkvision"
 
 // Helrider Paladin (Gather Your Allies summon) (Inherits Paladin progressions, fixed spellcasting modifier)
