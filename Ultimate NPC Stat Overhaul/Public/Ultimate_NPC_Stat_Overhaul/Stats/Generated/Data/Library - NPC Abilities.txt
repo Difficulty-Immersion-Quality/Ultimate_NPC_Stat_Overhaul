@@ -489,7 +489,7 @@ data "DisplayName" "h33cb5ef3g9a7dg4cc8g8f51gadb6b5903f43;1"
 // The previous wielder of this weapon controlled it with grace, for a moment you wonder how they did it...
 data "Description" "h9818df81gd782g452agb982gee152a4ddfea;1"
 data "Icon" "PassiveFeature_DefensiveDualist"
-data "StatusPropertyFlags" "DisableCombatlog;IgnoreResting"
+data "StatusPropertyFlags" "DisableOverhead;DisableCombatlog;IgnoreResting"
 data "StackId" "GOON_FINESSE_OVERWRITE"
 data "Boosts" "WeaponProperty(Finesse)"
 // data "RemoveEvents" "OnSourceDeath"
