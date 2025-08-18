@@ -1569,7 +1569,7 @@
                     <attribute id="Level" type="uint8" value="1"/>
                     <attribute id="Name" type="LSString" value="NPC_Rogue"/>
                     <!-- <attribute id="PassivesAdded" type="LSString" value=""/> -->
-                    <attribute id="PassivesAdded" type="LSString" value="SneakAttack_Unlock;Goon_Rogue_NPC_Progressions;CX_Rogue_Boost;CX_Martial_Boost;;Goon_Finesse_Overwrite"/>
+                    <attribute id="PassivesAdded" type="LSString" value="SneakAttack_Unlock;Goon_Rogue_NPC_Progressions;CX_Rogue_Boost;CX_Martial_Boost;Goon_Finesse_Overwrite"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
                     <!-- <attribute id="Selectors" type="LSString" value="SelectSkills(a1c2b712-2ed6-4e5b-820f-c5db654fe006,4);AddSpells(d84379aa-8bd1-41e5-a21c-242669151fae);SelectSkillsExpertise(f974ebd6-3725-4b90-bb5c-2b647d41615d,2);SelectAbilityBonus(b9149c8e-52c8-46e5-9cb6-fc39301c05fe,AbilityBonus,2,1)"/> -->
                     <attribute id="TableUUID" type="guid" value="532203c2-7bcb-4162-9a7c-2bb20e227a30"/>
