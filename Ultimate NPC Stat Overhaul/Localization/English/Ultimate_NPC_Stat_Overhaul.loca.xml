@@ -301,4 +301,9 @@
 	<!-- "Multiattack_Surgeon" --> <content contentuid="h71acc892g62a3g4915ga463g01ca37c6054f" version="1">Malus Thorm can &lt;LSTag Type="Spell" Tooltip="Target_Multiattack_Surgeon"&gt;Multiattack&lt;/LSTag&gt; if his &lt;LSTag Tooltip="HitPoints"&gt;hit points&lt;/LSTag&gt; are at 60% or less.</content>
 	<!-- "GOON_FINESSE_OVERWRITE" --> <content contentuid="h33cb5ef3g9a7dg4cc8g8f51gadb6b5903f43" version="1">Brutish Finesse</content>
 	<!-- "GOON_FINESSE_OVERWRITE" --> <content contentuid="h9818df81gd782g452agb982gee152a4ddfea" version="1">The previous wielder of this weapon controlled it with grace, for a moment you wonder how they did it...</content>
+	<!-- "FinishingStrike" --> <content contentuid="h870ed340gd2afg486fg8be8g65230780dbff" version="1">Finishing Strike</content>
+	<!--  --> <content contentuid="" version="1"></content>
+	<!--  --> <content contentuid="" version="1"></content>
+	<!--  --> <content contentuid="" version="1"></content>
+	<!--  --> <content contentuid="" version="1"></content>
 </contentList>
