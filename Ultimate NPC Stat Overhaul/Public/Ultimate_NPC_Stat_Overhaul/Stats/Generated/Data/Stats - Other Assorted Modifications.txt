@@ -57,7 +57,7 @@ data "StatsFunctors" "IF(not HasStatus('GOON_NPC_ETHEL_UNLOCKER')):ApplyStatus(G
 new entry "GOON_NPC_ETHEL_UNLOCKER"
 type "StatusData"
 data "StatusType" "BOOST"
-data "StatusPropertyFlags" "DisableOverhead;DisableCombatlog;DisablePortraitIndicator;ApplyToDead;IgnoreResting"
+data "StatusPropertyFlags" "DisableOverhead;DisableCombatlog;DisablePortraitIndicator;IgnoreResting"
 data "AuraRadius" "2"
 //data "TargetConditions" "Item() and (Locked() or Tagged('KNOCK_TARGET')) and not Tagged('KNOCKBLOCK') and not HasStatus('ARCANE_LOCK')"
 data "AuraStatuses" "TARGET:IF(Item() and (Locked() or Tagged('KNOCK_TARGET'))):ApplyStatus(GOON_NPC_ETHEL_UNLOCKER_TECHNICAL)"
