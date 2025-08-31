@@ -11,7 +11,7 @@
     new entry "Goon_NPC_Aradin_Boost"
     type "PassiveData"
     data "Properties" "IsHidden"
-    data "StatsFunctorContext" "OnCreate;OnEquip;OnStatusApplied;OnStatusRemoved;OnCombatStarted;OnTurn;OnDamaged;OnDamage;OnAttacked;OnAttack"
+    data "StatsFunctorContext" "OnCreate;OnStatusApplied;OnStatusRemoved;OnCombatStarted;OnTurn;OnAttacked;OnDamaged"
     data "StatsFunctors" "IF(GoonCharacterLevelEqualToOrGreaterThan(7)):ApplyStatus(GOON_NPC_ARADIN_BOOST,100,-1)"
 
     new entry "GOON_NPC_ARADIN_BOOST"
@@ -29,7 +29,7 @@
     new entry "Goon_NPC_RoahMoonglow_Boost"
     type "PassiveData"
     data "Properties" "IsHidden"
-    data "StatsFunctorContext" "OnCreate;OnEquip;OnStatusApplied;OnStatusRemoved;OnCombatStarted;OnTurn;OnDamaged;OnDamage;OnAttacked;OnAttack"
+    data "StatsFunctorContext" "OnCreate;OnStatusApplied;OnStatusRemoved;OnCombatStarted;OnTurn;OnAttacked;OnDamaged"
     data "StatsFunctors" "IF(GoonCharacterLevelEqualToOrGreaterThan(4) and not GoonCharacterLevelEqualToOrGreaterThan(7)):ApplyStatus(GOON_NPC_ROAHMOONGLOW_BOOST_LVL_4,100,-1);IF(GoonCharacterLevelEqualToOrGreaterThan(7) and not GoonCharacterLevelEqualToOrGreaterThan(9)):ApplyStatus(GOON_NPC_ROAHMOONGLOW_BOOST_LVL_7,100,-1);IF(GoonCharacterLevelEqualTo(9)):ApplyStatus(GOON_NPC_ROAHMOONGLOW_BOOST_LVL_9,100,-1);IF(GoonCharacterLevelEqualTo(10)):ApplyStatus(GOON_NPC_ROAHMOONGLOW_BOOST_LVL_10,100,-1);IF(GoonCharacterLevelEqualToOrGreaterThan(11)):ApplyStatus(GOON_NPC_ROAHMOONGLOW_BOOST_LVL_11,100,-1)"
 
 // Template
@@ -88,7 +88,7 @@
     new entry "Goon_NPC_ZenoviaDawg_Boost"
     type "PassiveData"
     data "Properties" "IsHidden"
-    data "StatsFunctorContext" "OnCreate;OnEquip;OnStatusApplied;OnStatusRemoved;OnCombatStarted;OnTurn;OnDamaged;OnDamage;OnAttacked;OnAttack"
+    data "StatsFunctorContext" "OnCreate;OnStatusApplied;OnStatusRemoved;OnCombatStarted;OnTurn;OnAttacked;OnDamaged"
     data "StatsFunctors" "IF(GoonCharacterLevelEqualToOrGreaterThan(9)):ApplyStatus(GOON_NPC_ZENOVIADAWG_BOOST_LVL_9,100,-1)"
 
 // Progression statuses
@@ -109,7 +109,7 @@
     new entry "Goon_NPC_Rolan_Boost"
     type "PassiveData"
     data "Properties" "IsHidden"
-    data "StatsFunctorContext" "OnCreate;OnEquip;OnStatusApplied;OnStatusRemoved;OnCombatStarted;OnTurn;OnDamaged;OnDamage;OnAttacked;OnAttack"
+    data "StatsFunctorContext" "OnCreate;OnStatusApplied;OnStatusRemoved;OnCombatStarted;OnTurn;OnAttacked;OnDamaged"
     data "StatsFunctors" "IF(GoonCharacterLevelEqualToOrGreaterThan(1) and not GoonCharacterLevelEqualToOrGreaterThan(4)):ApplyStatus(GOON_NPC_ROLAN_BOOST_LVL_1,100,-1);IF(GoonCharacterLevelEqualToOrGreaterThan(4) and not GoonCharacterLevelEqualToOrGreaterThan(7)):ApplyStatus(GOON_NPC_ROLAN_BOOST_LVL_4,100,-1);IF(GoonCharacterLevelEqualToOrGreaterThan(7)):ApplyStatus(GOON_NPC_ROLAN_BOOST_LVL_7,100,-1)"
 
 // Template
