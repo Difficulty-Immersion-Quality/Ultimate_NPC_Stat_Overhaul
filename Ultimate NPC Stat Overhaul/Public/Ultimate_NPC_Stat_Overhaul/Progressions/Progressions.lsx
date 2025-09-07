@@ -2277,8 +2277,8 @@
                     <attribute id="UUID" type="guid" value="93a60cc8-801d-4768-a33e-53b67ec2eaa5"/>
                 </node>
             <!-- FLAMING FIST - MELEE ATTACKER -->
-                <!-- <node id="Progression">
-                    <attribute id="Boosts" type="LSString" value="ProficiencyBonus(SavingThrow,Strength);ProficiencyBonus(SavingThrow,Constitution)"/>
+                <node id="Progression">
+                    <!-- <attribute id="Boosts" type="LSString" value="ProficiencyBonus(SavingThrow,Strength);ProficiencyBonus(SavingThrow,Constitution)"/> -->
                     <attribute id="Level" type="uint8" value="1"/>
                     <attribute id="Name" type="LSString" value="NPC_FlamingFist_Melee_Attacker"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
@@ -2286,7 +2286,7 @@
                     <attribute id="UUID" type="guid" value="4f5c0abd-6611-4303-893b-8d3230323632"/>
                 </node>
                 <node id="Progression">
-                    <attribute id="Boosts" type="LSString" value="IncreaseMaxHP(7);"/>
+                    <attribute id="Boosts" type="LSString" value="IncreaseMaxHP(7)"/>
                     <attribute id="Level" type="uint8" value="2"/>
                     <attribute id="Name" type="LSString" value="NPC_FlamingFist_Melee_Attacker"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
@@ -2294,7 +2294,8 @@
                     <attribute id="UUID" type="guid" value="e118972a-029c-4aa7-8bad-c51ae6cefe91"/>
                 </node>
                 <node id="Progression">
-                    <attribute id="Boosts" type="LSString" value="IncreaseMaxHP(7);ActionResource(SuperiorityDie,4,0);"/>
+                    <!-- <attribute id="Boosts" type="LSString" value="IncreaseMaxHP(7);ActionResource(SuperiorityDie,4,0);"/> -->
+                    <attribute id="Boosts" type="LSString" value="IncreaseMaxHP(7)"/>
                     <attribute id="Level" type="uint8" value="3"/>
                     <attribute id="Name" type="LSString" value="NPC_FlamingFist_Melee_Attacker"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
@@ -2302,7 +2303,7 @@
                     <attribute id="UUID" type="guid" value="131890d2-d83b-4b9f-8e18-2a4bc23e3a88"/>
                 </node>
                 <node id="Progression">
-                    <attribute id="Boosts" type="LSString" value="IncreaseMaxHP(7);Ability(Strength,1);Ability(Constitution,1);"/>
+                    <attribute id="Boosts" type="LSString" value="IncreaseMaxHP(7);Ability(Strength,1);Ability(Constitution,1)"/>
                     <attribute id="Level" type="uint8" value="4"/>
                     <attribute id="Name" type="LSString" value="NPC_FlamingFist_Melee_Attacker"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
@@ -2310,25 +2311,27 @@
                     <attribute id="UUID" type="guid" value="c4d213c4-70c7-4d08-b164-e218df5c3c77"/>
                 </node>
                 <node id="Progression">
-                    <attribute id="Boosts" type="LSString" value="IncreaseMaxHP(7);"/>
+                    <attribute id="Boosts" type="LSString" value="IncreaseMaxHP(7)"/>
                     <attribute id="Level" type="uint8" value="5"/>
                     <attribute id="Name" type="LSString" value="NPC_FlamingFist_Melee_Attacker"/>
-                    <attribute id="PassivesAdded" type="LSString" value="ExtraAttack"/>
+                    <!-- <attribute id="PassivesAdded" type="LSString" value="ExtraAttack"/> -->
                     <attribute id="ProgressionType" type="uint8" value="0"/>
                     <attribute id="TableUUID" type="guid" value="51d47904-383f-11ed-a261-0242ac120002"/>
                     <attribute id="UUID" type="guid" value="a8d4eb1c-3633-43b8-a99b-fca34ea04bc7"/>
                 </node>
                 <node id="Progression">
-                    <attribute id="Boosts" type="LSString" value="IncreaseMaxHP(7);Ability(Strength,1);Ability(Constitution,1);"/>
+                    <attribute id="Boosts" type="LSString" value="IncreaseMaxHP(7);Ability(Strength,1);Ability(Constitution,1)"/>
                     <attribute id="Level" type="uint8" value="6"/>
                     <attribute id="Name" type="LSString" value="NPC_FlamingFist_Melee_Attacker"/>
+                    <!-- TODO: Do these stay with Lab usage? -->
                     <attribute id="PassivesAdded" type="LSString" value="FightingStyle_GreatWeaponFighting;PhalanxFormation_Duergar;Riposte"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
                     <attribute id="TableUUID" type="guid" value="51d47904-383f-11ed-a261-0242ac120002"/>
                     <attribute id="UUID" type="guid" value="ee78f5b7-833d-4a8d-9a6c-5b881eef8067"/>
                 </node>
                 <node id="Progression">
-                    <attribute id="Boosts" type="LSString" value="IncreaseMaxHP(7);ActionResource(SuperiorityDie,1,0);"/>
+                    <!-- <attribute id="Boosts" type="LSString" value="IncreaseMaxHP(7);ActionResource(SuperiorityDie,1,0);"/> -->
+                    <attribute id="Boosts" type="LSString" value="IncreaseMaxHP(7)"/>
                     <attribute id="Level" type="uint8" value="7"/>
                     <attribute id="Name" type="LSString" value="NPC_FlamingFist_Melee_Attacker"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
@@ -2336,7 +2339,7 @@
                     <attribute id="UUID" type="guid" value="5e3989c7-d3c0-48bb-9b93-d0d23cb7bc6e"/>
                 </node>
                 <node id="Progression">
-                    <attribute id="Boosts" type="LSString" value="IncreaseMaxHP(7);Ability(Strength,1);Ability(Constitution,1);"/>
+                    <attribute id="Boosts" type="LSString" value="IncreaseMaxHP(7);Ability(Strength,1);Ability(Constitution,1)"/>
                     <attribute id="Level" type="uint8" value="8"/>
                     <attribute id="Name" type="LSString" value="NPC_FlamingFist_Melee_Attacker"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
@@ -2344,7 +2347,7 @@
                     <attribute id="UUID" type="guid" value="a461cc05-da5b-4d13-b89b-55c752bd112f"/>
                 </node>
                 <node id="Progression">
-                    <attribute id="Boosts" type="LSString" value="IncreaseMaxHP(7);"/>
+                    <attribute id="Boosts" type="LSString" value="IncreaseMaxHP(7)"/>
                     <attribute id="Level" type="uint8" value="9"/>
                     <attribute id="Name" type="LSString" value="NPC_FlamingFist_Melee_Attacker"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
@@ -2352,7 +2355,7 @@
                     <attribute id="UUID" type="guid" value="b4113910-6147-47e9-aa88-019036b952f0"/>
                 </node>
                 <node id="Progression">
-                    <attribute id="Boosts" type="LSString" value="IncreaseMaxHP(7);"/>
+                    <attribute id="Boosts" type="LSString" value="IncreaseMaxHP(7)"/>
                     <attribute id="Level" type="uint8" value="10"/>
                     <attribute id="Name" type="LSString" value="NPC_FlamingFist_Melee_Attacker"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
@@ -2360,26 +2363,91 @@
                     <attribute id="UUID" type="guid" value="d2c38c8c-a9b1-48f6-8246-6232f34fd65a"/>
                 </node>
                 <node id="Progression">
-                    <attribute id="Boosts" type="LSString" value="IncreaseMaxHP(7);"/>
+                    <attribute id="Boosts" type="LSString" value="IncreaseMaxHP(7)"/>
                     <attribute id="Level" type="uint8" value="11"/>
                     <attribute id="Name" type="LSString" value="NPC_FlamingFist_Melee_Attacker"/>
-                    <attribute id="PassivesAdded" type="LSString" value="ExtraAttack_2"/>
-                    <attribute id="PassivesRemoved" type="LSString" value="ExtraAttack"/>
+                    <!-- <attribute id="PassivesAdded" type="LSString" value="ExtraAttack_2"/>
+                    <attribute id="PassivesRemoved" type="LSString" value="ExtraAttack"/> -->
                     <attribute id="ProgressionType" type="uint8" value="0"/>
                     <attribute id="TableUUID" type="guid" value="51d47904-383f-11ed-a261-0242ac120002"/>
                     <attribute id="UUID" type="guid" value="fc063f39-7574-43e3-bba0-d8c56bf68708"/>
                 </node>
                 <node id="Progression">
-                    <attribute id="Boosts" type="LSString" value="IncreaseMaxHP(7);"/>
+                    <attribute id="Boosts" type="LSString" value="IncreaseMaxHP(7)"/>
                     <attribute id="Level" type="uint8" value="12"/>
                     <attribute id="Name" type="LSString" value="NPC_FlamingFist_Melee_Attacker"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
                     <attribute id="TableUUID" type="guid" value="51d47904-383f-11ed-a261-0242ac120002"/>
                     <attribute id="UUID" type="guid" value="a56ee5ec-e9b8-47ed-83b8-6fbff771a2cc"/>
-                </node> -->
+                </node>
+            <!-- FLAMING FIST - MELEE ATTACKER - 13-20 -->
+                <node id="Progression">
+                    <attribute id="Boosts" type="LSString" value="IncreaseMaxHP(7)"/>
+                    <attribute id="Level" type="uint8" value="13"/>
+                    <attribute id="Name" type="LSString" value="NPC_FlamingFist_Melee_Attacker"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="51d47904-383f-11ed-a261-0242ac120002"/>
+                    <attribute id="UUID" type="guid" value="d75117df-8f4f-443e-99d8-9e4a0fad5549"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Boosts" type="LSString" value="IncreaseMaxHP(7)"/>
+                    <attribute id="Level" type="uint8" value="14"/>
+                    <attribute id="Name" type="LSString" value="NPC_FlamingFist_Melee_Attacker"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="51d47904-383f-11ed-a261-0242ac120002"/>
+                    <attribute id="UUID" type="guid" value="c7d99c4f-1c3f-47d7-8521-2bf37b29b1ea"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Boosts" type="LSString" value="IncreaseMaxHP(7)"/>
+                    <attribute id="Level" type="uint8" value="15"/>
+                    <attribute id="Name" type="LSString" value="NPC_FlamingFist_Melee_Attacker"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="51d47904-383f-11ed-a261-0242ac120002"/>
+                    <attribute id="UUID" type="guid" value="bb9f351b-cf0b-4783-9639-d445f0c82ed8"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Boosts" type="LSString" value="IncreaseMaxHP(7)"/>
+                    <attribute id="Level" type="uint8" value="16"/>
+                    <attribute id="Name" type="LSString" value="NPC_FlamingFist_Melee_Attacker"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="51d47904-383f-11ed-a261-0242ac120002"/>
+                    <attribute id="UUID" type="guid" value="89e1a6c8-17c5-430f-b585-78a159fbf289"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Boosts" type="LSString" value="IncreaseMaxHP(7)"/>
+                    <attribute id="Level" type="uint8" value="17"/>
+                    <attribute id="Name" type="LSString" value="NPC_FlamingFist_Melee_Attacker"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="51d47904-383f-11ed-a261-0242ac120002"/>
+                    <attribute id="UUID" type="guid" value="a3c5f7fb-936f-4531-a4ae-912792e385cb"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Boosts" type="LSString" value="IncreaseMaxHP(7)"/>
+                    <attribute id="Level" type="uint8" value="18"/>
+                    <attribute id="Name" type="LSString" value="NPC_FlamingFist_Melee_Attacker"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="51d47904-383f-11ed-a261-0242ac120002"/>
+                    <attribute id="UUID" type="guid" value="d3fa26d9-a954-4e8c-b9fc-fc7c3dd09cc2"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Boosts" type="LSString" value="IncreaseMaxHP(7)"/>
+                    <attribute id="Level" type="uint8" value="19"/>
+                    <attribute id="Name" type="LSString" value="NPC_FlamingFist_Melee_Attacker"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="51d47904-383f-11ed-a261-0242ac120002"/>
+                    <attribute id="UUID" type="guid" value="1cda283d-4673-4f23-8e5b-14348194dcfe"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Boosts" type="LSString" value="IncreaseMaxHP(7)"/>
+                    <attribute id="Level" type="uint8" value="20"/>
+                    <attribute id="Name" type="LSString" value="NPC_FlamingFist_Melee_Attacker"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="51d47904-383f-11ed-a261-0242ac120002"/>
+                    <attribute id="UUID" type="guid" value="04611297-91c8-4af0-afd8-214574ad5fdd"/>
+                </node>
             <!-- FLAMING FIST - MELEE DEFENDER -->
-                <!-- <node id="Progression">
-                    <attribute id="Boosts" type="LSString" value="ProficiencyBonus(SavingThrow,Strength);ProficiencyBonus(SavingThrow,Constitution)"/>
+                <node id="Progression">
+                    <!-- <attribute id="Boosts" type="LSString" value="ProficiencyBonus(SavingThrow,Strength);ProficiencyBonus(SavingThrow,Constitution)"/> -->
                     <attribute id="Level" type="uint8" value="1"/>
                     <attribute id="Name" type="LSString" value="NPC_FlamingFist_Melee_Defender"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
@@ -2387,7 +2455,7 @@
                     <attribute id="UUID" type="guid" value="d64a3faf-db6c-4f09-b462-fd881e55f00c"/>
                 </node>
                 <node id="Progression">
-                    <attribute id="Boosts" type="LSString" value="IncreaseMaxHP(7);"/>
+                    <attribute id="Boosts" type="LSString" value="IncreaseMaxHP(7)"/>
                     <attribute id="Level" type="uint8" value="2"/>
                     <attribute id="Name" type="LSString" value="NPC_FlamingFist_Melee_Defender"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
@@ -2395,7 +2463,8 @@
                     <attribute id="UUID" type="guid" value="5adf327b-c5f4-4243-bd51-6d628bb69140"/>
                 </node>
                 <node id="Progression">
-                    <attribute id="Boosts" type="LSString" value="IncreaseMaxHP(7);ActionResource(SuperiorityDie,4,0);"/>
+                    <!-- <attribute id="Boosts" type="LSString" value="IncreaseMaxHP(7);ActionResource(SuperiorityDie,4,0)"/> -->
+                    <attribute id="Boosts" type="LSString" value="IncreaseMaxHP(7)"/>
                     <attribute id="Level" type="uint8" value="3"/>
                     <attribute id="Name" type="LSString" value="NPC_FlamingFist_Melee_Defender"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
@@ -2403,7 +2472,7 @@
                     <attribute id="UUID" type="guid" value="e6760ecd-fee0-4720-a890-0a5d43914ec5"/>
                 </node>
                 <node id="Progression">
-                    <attribute id="Boosts" type="LSString" value="IncreaseMaxHP(7);Ability(Strength,1);Ability(Constitution,1);"/>
+                    <attribute id="Boosts" type="LSString" value="IncreaseMaxHP(7);Ability(Strength,1);Ability(Constitution,1)"/>
                     <attribute id="Level" type="uint8" value="4"/>
                     <attribute id="Name" type="LSString" value="NPC_FlamingFist_Melee_Defender"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
@@ -2411,25 +2480,27 @@
                     <attribute id="UUID" type="guid" value="c2c3c950-2e9f-4da8-9869-c9657f51ac25"/>
                 </node>
                 <node id="Progression">
-                    <attribute id="Boosts" type="LSString" value="IncreaseMaxHP(7);"/>
+                    <attribute id="Boosts" type="LSString" value="IncreaseMaxHP(7)"/>
                     <attribute id="Level" type="uint8" value="5"/>
                     <attribute id="Name" type="LSString" value="NPC_FlamingFist_Melee_Defender"/>
-                    <attribute id="PassivesAdded" type="LSString" value="ExtraAttack"/>
+                    <!-- <attribute id="PassivesAdded" type="LSString" value="ExtraAttack"/> -->
                     <attribute id="ProgressionType" type="uint8" value="0"/>
                     <attribute id="TableUUID" type="guid" value="5885fa7a-383f-11ed-a261-0242ac120002"/>
                     <attribute id="UUID" type="guid" value="493eeb0e-7f16-40cd-9cb2-e9313d2ff2a8"/>
                 </node>
                 <node id="Progression">
-                    <attribute id="Boosts" type="LSString" value="IncreaseMaxHP(7);Ability(Strength,1);Ability(Constitution,1);"/>
+                    <attribute id="Boosts" type="LSString" value="IncreaseMaxHP(7);Ability(Strength,1);Ability(Constitution,1)"/>
                     <attribute id="Level" type="uint8" value="6"/>
                     <attribute id="Name" type="LSString" value="NPC_FlamingFist_Melee_Defender"/>
+                    <!-- TODO: Do these stay with Lab usage? -->
                     <attribute id="PassivesAdded" type="LSString" value="FightingStyle_Protection"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
                     <attribute id="TableUUID" type="guid" value="5885fa7a-383f-11ed-a261-0242ac120002"/>
                     <attribute id="UUID" type="guid" value="7e60ed8d-1e54-4b49-bf9f-b021aff28138"/>
                 </node>
                 <node id="Progression">
-                    <attribute id="Boosts" type="LSString" value="IncreaseMaxHP(7);ActionResource(SuperiorityDie,1,0);"/>
+                    <!-- <attribute id="Boosts" type="LSString" value="IncreaseMaxHP(7);ActionResource(SuperiorityDie,1,0);"/> -->
+                    <attribute id="Boosts" type="LSString" value="IncreaseMaxHP(7)"/>
                     <attribute id="Level" type="uint8" value="7"/>
                     <attribute id="Name" type="LSString" value="NPC_FlamingFist_Melee_Defender"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
@@ -2437,7 +2508,7 @@
                     <attribute id="UUID" type="guid" value="00f69d2f-9b59-4c7d-a257-39a85efda181"/>
                 </node>
                 <node id="Progression">
-                    <attribute id="Boosts" type="LSString" value="IncreaseMaxHP(7);Ability(Strength,1);Ability(Constitution,1);"/>
+                    <attribute id="Boosts" type="LSString" value="IncreaseMaxHP(7);Ability(Strength,1);Ability(Constitution,1)"/>
                     <attribute id="Level" type="uint8" value="8"/>
                     <attribute id="Name" type="LSString" value="NPC_FlamingFist_Melee_Defender"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
@@ -2445,7 +2516,7 @@
                     <attribute id="UUID" type="guid" value="7ffab24e-2363-4c85-81af-ed42ee0cff08"/>
                 </node>
                 <node id="Progression">
-                    <attribute id="Boosts" type="LSString" value="IncreaseMaxHP(7);"/>
+                    <attribute id="Boosts" type="LSString" value="IncreaseMaxHP(7)"/>
                     <attribute id="Level" type="uint8" value="9"/>
                     <attribute id="Name" type="LSString" value="NPC_FlamingFist_Melee_Defender"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
@@ -2453,7 +2524,7 @@
                     <attribute id="UUID" type="guid" value="9fcb654d-7118-49b5-b015-ad603db9af6c"/>
                 </node>
                 <node id="Progression">
-                    <attribute id="Boosts" type="LSString" value="IncreaseMaxHP(7);"/>
+                    <attribute id="Boosts" type="LSString" value="IncreaseMaxHP(7)"/>
                     <attribute id="Level" type="uint8" value="10"/>
                     <attribute id="Name" type="LSString" value="NPC_FlamingFist_Melee_Defender"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
@@ -2461,26 +2532,91 @@
                     <attribute id="UUID" type="guid" value="4e46440c-2fb0-4228-ba60-bcfbc77ec6c8"/>
                 </node>
                 <node id="Progression">
-                    <attribute id="Boosts" type="LSString" value="IncreaseMaxHP(7);"/>
+                    <attribute id="Boosts" type="LSString" value="IncreaseMaxHP(7)"/>
                     <attribute id="Level" type="uint8" value="11"/>
                     <attribute id="Name" type="LSString" value="NPC_FlamingFist_Melee_Defender"/>
-                    <attribute id="PassivesAdded" type="LSString" value="ExtraAttack_2"/>
-                    <attribute id="PassivesRemoved" type="LSString" value="ExtraAttack"/>
+                    <!-- <attribute id="PassivesAdded" type="LSString" value="ExtraAttack_2"/>
+                    <attribute id="PassivesRemoved" type="LSString" value="ExtraAttack"/> -->
                     <attribute id="ProgressionType" type="uint8" value="0"/>
                     <attribute id="TableUUID" type="guid" value="5885fa7a-383f-11ed-a261-0242ac120002"/>
                     <attribute id="UUID" type="guid" value="1d10ed8d-0152-434f-8932-e7f2825504e2"/>
                 </node>
                 <node id="Progression">
-                    <attribute id="Boosts" type="LSString" value="IncreaseMaxHP(7);"/>
+                    <attribute id="Boosts" type="LSString" value="IncreaseMaxHP(7)"/>
                     <attribute id="Level" type="uint8" value="12"/>
                     <attribute id="Name" type="LSString" value="NPC_FlamingFist_Melee_Defender"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
                     <attribute id="TableUUID" type="guid" value="5885fa7a-383f-11ed-a261-0242ac120002"/>
                     <attribute id="UUID" type="guid" value="fddd443d-0ee5-4e9a-9512-c70c4f187d06"/>
-                </node> -->
+                </node>
+            <!-- FLAMING FIST - MELEE DEFENDER - 13-20 -->
+                <node id="Progression">
+                    <attribute id="Boosts" type="LSString" value="IncreaseMaxHP(7)"/>
+                    <attribute id="Level" type="uint8" value="13"/>
+                    <attribute id="Name" type="LSString" value="NPC_FlamingFist_Melee_Defender"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="5885fa7a-383f-11ed-a261-0242ac120002"/>
+                    <attribute id="UUID" type="guid" value="a8983bcd-427b-4bc4-978a-a95fd6634b08"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Boosts" type="LSString" value="IncreaseMaxHP(7)"/>
+                    <attribute id="Level" type="uint8" value="14"/>
+                    <attribute id="Name" type="LSString" value="NPC_FlamingFist_Melee_Defender"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="5885fa7a-383f-11ed-a261-0242ac120002"/>
+                    <attribute id="UUID" type="guid" value="a1eb9751-27a1-4758-a19a-ea520ed33be0"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Boosts" type="LSString" value="IncreaseMaxHP(7)"/>
+                    <attribute id="Level" type="uint8" value="15"/>
+                    <attribute id="Name" type="LSString" value="NPC_FlamingFist_Melee_Defender"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="5885fa7a-383f-11ed-a261-0242ac120002"/>
+                    <attribute id="UUID" type="guid" value="d312d587-237a-46a9-82d6-cc0f2b9a2dcc"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Boosts" type="LSString" value="IncreaseMaxHP(7)"/>
+                    <attribute id="Level" type="uint8" value="16"/>
+                    <attribute id="Name" type="LSString" value="NPC_FlamingFist_Melee_Defender"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="5885fa7a-383f-11ed-a261-0242ac120002"/>
+                    <attribute id="UUID" type="guid" value="63bcad3e-69e8-4e20-9c55-49170267ad4b"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Boosts" type="LSString" value="IncreaseMaxHP(7)"/>
+                    <attribute id="Level" type="uint8" value="17"/>
+                    <attribute id="Name" type="LSString" value="NPC_FlamingFist_Melee_Defender"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="5885fa7a-383f-11ed-a261-0242ac120002"/>
+                    <attribute id="UUID" type="guid" value="a4a2a30c-2223-4955-b8dd-fffd59c86697"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Boosts" type="LSString" value="IncreaseMaxHP(7)"/>
+                    <attribute id="Level" type="uint8" value="18"/>
+                    <attribute id="Name" type="LSString" value="NPC_FlamingFist_Melee_Defender"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="5885fa7a-383f-11ed-a261-0242ac120002"/>
+                    <attribute id="UUID" type="guid" value="fc3466e1-e741-4f75-816f-7de5359fddd3"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Boosts" type="LSString" value="IncreaseMaxHP(7)"/>
+                    <attribute id="Level" type="uint8" value="19"/>
+                    <attribute id="Name" type="LSString" value="NPC_FlamingFist_Melee_Defender"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="5885fa7a-383f-11ed-a261-0242ac120002"/>
+                    <attribute id="UUID" type="guid" value="10c58e50-48f4-4ca0-87d8-c6e3efc8c9f8"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Boosts" type="LSString" value="IncreaseMaxHP(7)"/>
+                    <attribute id="Level" type="uint8" value="20"/>
+                    <attribute id="Name" type="LSString" value="NPC_FlamingFist_Melee_Defender"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="5885fa7a-383f-11ed-a261-0242ac120002"/>
+                    <attribute id="UUID" type="guid" value="74ff68e6-1ad3-4446-9ddb-54fb9b5ba51d"/>
+                </node>
             <!-- FLAMING FIST - MELEE RANGER -->
-                <!-- <node id="Progression">
-                    <attribute id="Boosts" type="LSString" value="ProficiencyBonus(SavingThrow,Strength);ProficiencyBonus(SavingThrow,Dexterity);Proficiency(LightArmor);Proficiency(MediumArmor);Proficiency(Shields);Proficiency(SimpleWeapons);Proficiency(MartialWeapons)"/>
+                <node id="Progression">
+                    <!-- <attribute id="Boosts" type="LSString" value="ProficiencyBonus(SavingThrow,Strength);ProficiencyBonus(SavingThrow,Dexterity);Proficiency(LightArmor);Proficiency(MediumArmor);Proficiency(Shields);Proficiency(SimpleWeapons);Proficiency(MartialWeapons)"/> -->
                     <attribute id="Level" type="uint8" value="1"/>
                     <attribute id="Name" type="LSString" value="NPC_FlamingFist_Melee_Ranger"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
@@ -2488,7 +2624,8 @@
                     <attribute id="UUID" type="guid" value="5fff2494-7cdf-4e6a-8c11-262da9208c5f"/>
                 </node>
                 <node id="Progression">
-                    <attribute id="Boosts" type="LSString" value="IncreaseMaxHP(6);ActionResource(SpellSlot,2,1);"/>
+                    <!-- <attribute id="Boosts" type="LSString" value="IncreaseMaxHP(6);ActionResource(SpellSlot,2,1);"/> -->
+                    <attribute id="Boosts" type="LSString" value="IncreaseMaxHP(6)"/>
                     <attribute id="Level" type="uint8" value="2"/>
                     <attribute id="Name" type="LSString" value="NPC_FlamingFist_Melee_Ranger"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
@@ -2496,7 +2633,8 @@
                     <attribute id="UUID" type="guid" value="778569fc-af9d-4dbb-9121-e0a244d73250"/>
                 </node>
                 <node id="Progression">
-                    <attribute id="Boosts" type="LSString" value="IncreaseMaxHP(6);ActionResource(SpellSlot,1,1);"/>
+                    <!-- <attribute id="Boosts" type="LSString" value="IncreaseMaxHP(6);ActionResource(SpellSlot,1,1);"/> -->
+                    <attribute id="Boosts" type="LSString" value="IncreaseMaxHP(6)"/>
                     <attribute id="Level" type="uint8" value="3"/>
                     <attribute id="Name" type="LSString" value="NPC_FlamingFist_Melee_Ranger"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
@@ -2504,7 +2642,8 @@
                     <attribute id="UUID" type="guid" value="bea867a1-90ed-4ba7-95b4-648560e2c595"/>
                 </node>
                 <node id="Progression">
-                    <attribute id="Boosts" type="LSString" value="IncreaseMaxHP(6);"/>
+                    <!-- <attribute id="Boosts" type="LSString" value="IncreaseMaxHP(6);"/> -->
+                    <attribute id="Boosts" type="LSString" value="IncreaseMaxHP(6)"/>
                     <attribute id="Level" type="uint8" value="4"/>
                     <attribute id="Name" type="LSString" value="NPC_FlamingFist_Melee_Ranger"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
@@ -2512,7 +2651,8 @@
                     <attribute id="UUID" type="guid" value="4512b40c-49d7-4178-9a3a-185279897107"/>
                 </node>
                 <node id="Progression">
-                    <attribute id="Boosts" type="LSString" value="IncreaseMaxHP(6);ActionResource(SpellSlot,1,1);ActionResource(SpellSlot,2,2);"/>
+                    <!-- <attribute id="Boosts" type="LSString" value="IncreaseMaxHP(6);ActionResource(SpellSlot,1,1);ActionResource(SpellSlot,2,2);"/> -->
+                    <attribute id="Boosts" type="LSString" value="IncreaseMaxHP(6)"/>
                     <attribute id="Level" type="uint8" value="5"/>
                     <attribute id="Name" type="LSString" value="NPC_FlamingFist_Melee_Ranger"/>
                     <attribute id="PassivesAdded" type="LSString" value="ExtraAttack"/>
@@ -2521,16 +2661,18 @@
                     <attribute id="UUID" type="guid" value="9a0d09e6-3f03-416b-82ba-c166cdaed3ec"/>
                 </node>
                 <node id="Progression">
-                    <attribute id="Boosts" type="LSString" value="IncreaseMaxHP(6);"/>
+                    <!-- <attribute id="Boosts" type="LSString" value="IncreaseMaxHP(6);"/> -->
+                    <attribute id="Boosts" type="LSString" value="IncreaseMaxHP(6)"/>
                     <attribute id="Level" type="uint8" value="6"/>
                     <attribute id="Name" type="LSString" value="NPC_FlamingFist_Melee_Ranger"/>
-                    <attribute id="PassivesAdded" type="LSString" value="FightingStyle_Archery;CrossbowExpert_PointBlank;"/>
+                    <attribute id="PassivesAdded" type="LSString" value="FightingStyle_Archery;CrossbowExpert_PointBlank"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
                     <attribute id="TableUUID" type="guid" value="6cae475a-383f-11ed-a261-0242ac120002"/>
                     <attribute id="UUID" type="guid" value="97c81999-b60d-4397-a2f2-03cc7b521523"/>
                 </node>
                 <node id="Progression">
-                    <attribute id="Boosts" type="LSString" value="IncreaseMaxHP(6);ActionResource(SpellSlot,1,2);"/>
+                    <!-- <attribute id="Boosts" type="LSString" value="IncreaseMaxHP(6);ActionResource(SpellSlot,1,2);"/> -->
+                    <attribute id="Boosts" type="LSString" value="IncreaseMaxHP(6)"/>
                     <attribute id="Level" type="uint8" value="7"/>
                     <attribute id="Name" type="LSString" value="NPC_FlamingFist_Melee_Ranger"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
@@ -2546,7 +2688,8 @@
                     <attribute id="UUID" type="guid" value="ccd1d773-c49f-49d6-b31a-8eecc6373f93"/>
                 </node>
                 <node id="Progression">
-                    <attribute id="Boosts" type="LSString" value="IncreaseMaxHP(6);ActionResource(SpellSlot,2,3);"/>
+                    <!-- <attribute id="Boosts" type="LSString" value="IncreaseMaxHP(6);ActionResource(SpellSlot,2,3);"/> -->
+                    <attribute id="Boosts" type="LSString" value="IncreaseMaxHP(6)"/>
                     <attribute id="Level" type="uint8" value="9"/>
                     <attribute id="Name" type="LSString" value="NPC_FlamingFist_Melee_Ranger"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
@@ -2554,7 +2697,8 @@
                     <attribute id="UUID" type="guid" value="99d9beaa-6291-4e55-b346-0b692181d0ee"/>
                 </node>
                 <node id="Progression">
-                    <attribute id="Boosts" type="LSString" value="IncreaseMaxHP(6);"/>
+                    <!-- <attribute id="Boosts" type="LSString" value="IncreaseMaxHP(6);"/> -->
+                    <attribute id="Boosts" type="LSString" value="IncreaseMaxHP(6)"/>
                     <attribute id="Level" type="uint8" value="10"/>
                     <attribute id="Name" type="LSString" value="NPC_FlamingFist_Melee_Ranger"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
@@ -2562,7 +2706,8 @@
                     <attribute id="UUID" type="guid" value="b157e456-6553-4a7b-88eb-212bc9255b16"/>
                 </node>
                 <node id="Progression">
-                    <attribute id="Boosts" type="LSString" value="IncreaseMaxHP(6);ActionResource(SpellSlot,1,3);"/>
+                    <!-- <attribute id="Boosts" type="LSString" value="IncreaseMaxHP(6);ActionResource(SpellSlot,1,3);"/> -->
+                    <attribute id="Boosts" type="LSString" value="IncreaseMaxHP(6)"/>
                     <attribute id="Level" type="uint8" value="11"/>
                     <attribute id="Name" type="LSString" value="NPC_FlamingFist_Melee_Ranger"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
@@ -2570,16 +2715,82 @@
                     <attribute id="UUID" type="guid" value="e8d0b03a-c41b-4e63-9aea-1c86903aea26"/>
                 </node>
                 <node id="Progression">
-                    <attribute id="Boosts" type="LSString" value="IncreaseMaxHP(6);"/>
+                    <!-- <attribute id="Boosts" type="LSString" value="IncreaseMaxHP(6);"/> -->
+                    <attribute id="Boosts" type="LSString" value="IncreaseMaxHP(6)"/>
                     <attribute id="Level" type="uint8" value="12"/>
                     <attribute id="Name" type="LSString" value="NPC_FlamingFist_Melee_Ranger"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
                     <attribute id="TableUUID" type="guid" value="6cae475a-383f-11ed-a261-0242ac120002"/>
                     <attribute id="UUID" type="guid" value="a6759075-588e-4b84-a526-095b70898cdf"/>
-                </node> -->
+                </node>
+            <!-- FLAMING FIST - MELEE RANGER 13-20 -->
+                <node id="Progression">
+                    <attribute id="Boosts" type="LSString" value="IncreaseMaxHP(6)"/>
+                    <attribute id="Level" type="uint8" value="13"/>
+                    <attribute id="Name" type="LSString" value="NPC_FlamingFist_Melee_Ranger"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="6cae475a-383f-11ed-a261-0242ac120002"/>
+                    <attribute id="UUID" type="guid" value="269a0ef5-1bb1-4cc2-8dd9-438ffbe6c0a2"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Boosts" type="LSString" value="IncreaseMaxHP(6)"/>
+                    <attribute id="Level" type="uint8" value="14"/>
+                    <attribute id="Name" type="LSString" value="NPC_FlamingFist_Melee_Ranger"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="6cae475a-383f-11ed-a261-0242ac120002"/>
+                    <attribute id="UUID" type="guid" value="0252656d-4214-414c-a27c-530c2f9e64fd"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Boosts" type="LSString" value="IncreaseMaxHP(6)"/>
+                    <attribute id="Level" type="uint8" value="15"/>
+                    <attribute id="Name" type="LSString" value="NPC_FlamingFist_Melee_Ranger"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="6cae475a-383f-11ed-a261-0242ac120002"/>
+                    <attribute id="UUID" type="guid" value="908370c9-02ad-451d-8cce-38183c6d09ce"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Boosts" type="LSString" value="IncreaseMaxHP(6)"/>
+                    <attribute id="Level" type="uint8" value="16"/>
+                    <attribute id="Name" type="LSString" value="NPC_FlamingFist_Melee_Ranger"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="6cae475a-383f-11ed-a261-0242ac120002"/>
+                    <attribute id="UUID" type="guid" value="8cda6b40-0640-4bcb-ad2d-d5296ac228f0"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Boosts" type="LSString" value="IncreaseMaxHP(6)"/>
+                    <attribute id="Level" type="uint8" value="17"/>
+                    <attribute id="Name" type="LSString" value="NPC_FlamingFist_Melee_Ranger"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="6cae475a-383f-11ed-a261-0242ac120002"/>
+                    <attribute id="UUID" type="guid" value="b056f444-d93f-4e60-b4f1-690181fe0ad0"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Boosts" type="LSString" value="IncreaseMaxHP(6)"/>
+                    <attribute id="Level" type="uint8" value="18"/>
+                    <attribute id="Name" type="LSString" value="NPC_FlamingFist_Melee_Ranger"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="6cae475a-383f-11ed-a261-0242ac120002"/>
+                    <attribute id="UUID" type="guid" value="3932187f-35cf-4748-8646-821da50b9519"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Boosts" type="LSString" value="IncreaseMaxHP(6)"/>
+                    <attribute id="Level" type="uint8" value="19"/>
+                    <attribute id="Name" type="LSString" value="NPC_FlamingFist_Melee_Ranger"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="6cae475a-383f-11ed-a261-0242ac120002"/>
+                    <attribute id="UUID" type="guid" value="4ab5f5ef-1e70-4a0e-9bb3-047324e0837c"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Boosts" type="LSString" value="IncreaseMaxHP(6)"/>
+                    <attribute id="Level" type="uint8" value="20"/>
+                    <attribute id="Name" type="LSString" value="NPC_FlamingFist_Melee_Ranger"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="6cae475a-383f-11ed-a261-0242ac120002"/>
+                    <attribute id="UUID" type="guid" value="e6188172-2101-4738-807e-80e608144ee7"/>
+                </node>
             <!-- FLAMING FIST - MELEE CLERIC -->
-                <!-- <node id="Progression">
-                    <attribute id="Boosts" type="LSString" value="ProficiencyBonus(SavingThrow,Wisdom);ProficiencyBonus(SavingThrow,Charisma);ActionResource(SpellSlot,2,1);"/>
+                <node id="Progression">
+                    <!-- <attribute id="Boosts" type="LSString" value="ProficiencyBonus(SavingThrow,Wisdom);ProficiencyBonus(SavingThrow,Charisma);ActionResource(SpellSlot,2,1);"/> -->
                     <attribute id="Level" type="uint8" value="1"/>
                     <attribute id="Name" type="LSString" value="NPC_FlamingFist_Melee_Cleric"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
@@ -2587,7 +2798,8 @@
                     <attribute id="UUID" type="guid" value="84187594-9a5e-4607-beaa-bedbe0d5390a"/>
                 </node>
                 <node id="Progression">
-                    <attribute id="Boosts" type="LSString" value="IncreaseMaxHP(6);ActionResource(SpellSlot,1,1);ActionResource(ChannelDivinity,1,0);"/>
+                    <!-- <attribute id="Boosts" type="LSString" value="IncreaseMaxHP(6);ActionResource(SpellSlot,1,1);ActionResource(ChannelDivinity,1,0);"/> -->
+                    <attribute id="Boosts" type="LSString" value="IncreaseMaxHP(6)"/>
                     <attribute id="Level" type="uint8" value="2"/>
                     <attribute id="Name" type="LSString" value="NPC_FlamingFist_Melee_Cleric"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
@@ -2595,7 +2807,8 @@
                     <attribute id="UUID" type="guid" value="3448f81e-b171-42f0-873f-9d7246b5614d"/>
                 </node>
                 <node id="Progression">
-                    <attribute id="Boosts" type="LSString" value="IncreaseMaxHP(6);ActionResource(SpellSlot,1,1);ActionResource(SpellSlot,2,2);"/>
+                    <!-- <attribute id="Boosts" type="LSString" value="IncreaseMaxHP(6);ActionResource(SpellSlot,1,1);ActionResource(SpellSlot,2,2);"/> -->
+                    <attribute id="Boosts" type="LSString" value="IncreaseMaxHP(6)"/>
                     <attribute id="Level" type="uint8" value="3"/>
                     <attribute id="Name" type="LSString" value="NPC_FlamingFist_Melee_Cleric"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
@@ -2603,7 +2816,8 @@
                     <attribute id="UUID" type="guid" value="a3ab6937-97db-4582-a471-846d233a1bb1"/>
                 </node>
                 <node id="Progression">
-                    <attribute id="Boosts" type="LSString" value="IncreaseMaxHP(6);Ability(Wisdom,2);ActionResource(SpellSlot,1,2);"/>
+                    <!-- <attribute id="Boosts" type="LSString" value="IncreaseMaxHP(6);Ability(Wisdom,2);ActionResource(SpellSlot,1,2);"/> -->
+                    <attribute id="Boosts" type="LSString" value="IncreaseMaxHP(6)"/>
                     <attribute id="Level" type="uint8" value="4"/>
                     <attribute id="Name" type="LSString" value="NPC_FlamingFist_Melee_Cleric"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
@@ -2611,7 +2825,8 @@
                     <attribute id="UUID" type="guid" value="7195ac9f-d766-412a-964f-f83558fecd85"/>
                 </node>
                 <node id="Progression">
-                    <attribute id="Boosts" type="LSString" value="IncreaseMaxHP(6);ActionResource(SpellSlot,2,3);"/>
+                    <!-- <attribute id="Boosts" type="LSString" value="IncreaseMaxHP(6);ActionResource(SpellSlot,2,3);"/> -->
+                    <attribute id="Boosts" type="LSString" value="IncreaseMaxHP(6)"/>
                     <attribute id="Level" type="uint8" value="5"/>
                     <attribute id="Name" type="LSString" value="NPC_FlamingFist_Melee_Cleric"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
@@ -2619,16 +2834,18 @@
                     <attribute id="UUID" type="guid" value="94b8b66c-eae3-4901-939e-29205ddb261e"/>
                 </node>
                 <node id="Progression">
-                    <attribute id="Boosts" type="LSString" value="IncreaseMaxHP(6);ActionResource(SpellSlot,1,3);ActionResource(ChannelDivinity,1,0)"/>
+                    <!-- <attribute id="Boosts" type="LSString" value="IncreaseMaxHP(6);ActionResource(SpellSlot,1,3);ActionResource(ChannelDivinity,1,0)"/> -->
+                    <attribute id="Boosts" type="LSString" value="IncreaseMaxHP(6)"/>
                     <attribute id="Level" type="uint8" value="6"/>
                     <attribute id="Name" type="LSString" value="NPC_FlamingFist_Melee_Cleric"/>
-                    <attribute id="PassivesAdded" type="LSString" value="FightingStyle_Protection;"/>
+                    <attribute id="PassivesAdded" type="LSString" value="FightingStyle_Protection"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
                     <attribute id="TableUUID" type="guid" value="70c3eb7e-383f-11ed-a261-0242ac120002"/>
                     <attribute id="UUID" type="guid" value="24575691-7d8e-468a-9eaf-4c28d3732920"/>
                 </node>
                 <node id="Progression">
-                    <attribute id="Boosts" type="LSString" value="IncreaseMaxHP(6);ActionResource(SpellSlot,1,4);"/>
+                    <!-- <attribute id="Boosts" type="LSString" value="IncreaseMaxHP(6);ActionResource(SpellSlot,1,4);"/> -->
+                    <attribute id="Boosts" type="LSString" value="IncreaseMaxHP(6)"/>
                     <attribute id="Level" type="uint8" value="7"/>
                     <attribute id="Name" type="LSString" value="NPC_FlamingFist_Melee_Cleric"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
@@ -2636,7 +2853,8 @@
                     <attribute id="UUID" type="guid" value="4a25284c-a4ea-46c6-8c48-04707d7f908f"/>
                 </node>
                 <node id="Progression">
-                    <attribute id="Boosts" type="LSString" value="IncreaseMaxHP(6);Ability(Constitution,2);ActionResource(SpellSlot,1,4);"/>
+                    <!-- <attribute id="Boosts" type="LSString" value="IncreaseMaxHP(6);Ability(Constitution,2);ActionResource(SpellSlot,1,4);"/> -->
+                    <attribute id="Boosts" type="LSString" value="IncreaseMaxHP(6)"/>
                     <attribute id="Level" type="uint8" value="8"/>
                     <attribute id="Name" type="LSString" value="NPC_FlamingFist_Melee_Cleric"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
@@ -2644,7 +2862,8 @@
                     <attribute id="UUID" type="guid" value="06388b88-eda4-424d-aad1-074c0ad02d49"/>
                 </node>
                 <node id="Progression">
-                    <attribute id="Boosts" type="LSString" value="IncreaseMaxHP(6);ActionResource(SpellSlot,1,4);ActionResource(SpellSlot,1,5);"/>
+                    <!-- <attribute id="Boosts" type="LSString" value="IncreaseMaxHP(6);ActionResource(SpellSlot,1,4);ActionResource(SpellSlot,1,5);"/> -->
+                    <attribute id="Boosts" type="LSString" value="IncreaseMaxHP(6)"/>
                     <attribute id="Level" type="uint8" value="9"/>
                     <attribute id="Name" type="LSString" value="NPC_FlamingFist_Melee_Cleric"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
@@ -2652,7 +2871,8 @@
                     <attribute id="UUID" type="guid" value="f4c99907-c00d-4ce7-b7bb-a814312267c5"/>
                 </node>
                 <node id="Progression">
-                    <attribute id="Boosts" type="LSString" value="IncreaseMaxHP(6);ActionResource(SpellSlot,1,5);"/>
+                    <!-- <attribute id="Boosts" type="LSString" value="IncreaseMaxHP(6);ActionResource(SpellSlot,1,5);"/> -->
+                    <attribute id="Boosts" type="LSString" value="IncreaseMaxHP(6)"/>
                     <attribute id="Level" type="uint8" value="10"/>
                     <attribute id="Name" type="LSString" value="NPC_FlamingFist_Melee_Cleric"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
@@ -2660,7 +2880,8 @@
                     <attribute id="UUID" type="guid" value="b7aff85e-e326-425d-ac98-eb207a88e141"/>
                 </node>
                 <node id="Progression">
-                    <attribute id="Boosts" type="LSString" value="IncreaseMaxHP(6);ActionResource(SpellSlot,1,6);"/>
+                    <!-- <attribute id="Boosts" type="LSString" value="IncreaseMaxHP(6);ActionResource(SpellSlot,1,6);"/> -->
+                    <attribute id="Boosts" type="LSString" value="IncreaseMaxHP(6)"/>
                     <attribute id="Level" type="uint8" value="11"/>
                     <attribute id="Name" type="LSString" value="NPC_FlamingFist_Melee_Cleric"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
@@ -2668,16 +2889,82 @@
                     <attribute id="UUID" type="guid" value="e2b61f5c-605e-4b5d-a0cb-4e2aa877b1f9"/>
                 </node>
                 <node id="Progression">
-                    <attribute id="Boosts" type="LSString" value="IncreaseMaxHP(6);"/>
+                    <!-- <attribute id="Boosts" type="LSString" value="IncreaseMaxHP(6);"/> -->
+                    <attribute id="Boosts" type="LSString" value="IncreaseMaxHP(6)"/>
                     <attribute id="Level" type="uint8" value="12"/>
                     <attribute id="Name" type="LSString" value="NPC_FlamingFist_Melee_Cleric"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
                     <attribute id="TableUUID" type="guid" value="70c3eb7e-383f-11ed-a261-0242ac120002"/>
                     <attribute id="UUID" type="guid" value="e5b8be4a-98a2-4f82-9ea5-27f9296e095c"/>
-                </node> -->
+                </node>
+            <!-- FLAMING FIST - MELEE CLERIC 13-20 -->
+                <node id="Progression">
+                    <attribute id="Boosts" type="LSString" value="IncreaseMaxHP(6)"/>
+                    <attribute id="Level" type="uint8" value="13"/>
+                    <attribute id="Name" type="LSString" value="NPC_FlamingFist_Melee_Cleric"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="70c3eb7e-383f-11ed-a261-0242ac120002"/>
+                    <attribute id="UUID" type="guid" value="a5ca708e-33e6-4218-b3b6-6be874d98a5a"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Boosts" type="LSString" value="IncreaseMaxHP(6)"/>
+                    <attribute id="Level" type="uint8" value="14"/>
+                    <attribute id="Name" type="LSString" value="NPC_FlamingFist_Melee_Cleric"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="70c3eb7e-383f-11ed-a261-0242ac120002"/>
+                    <attribute id="UUID" type="guid" value="7fb31bb6-09d2-4b35-b490-f89333a63329"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Boosts" type="LSString" value="IncreaseMaxHP(6)"/>
+                    <attribute id="Level" type="uint8" value="15"/>
+                    <attribute id="Name" type="LSString" value="NPC_FlamingFist_Melee_Cleric"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="70c3eb7e-383f-11ed-a261-0242ac120002"/>
+                    <attribute id="UUID" type="guid" value="d8b4ab39-d9d0-476b-b3c5-291fc6b28f4c"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Boosts" type="LSString" value="IncreaseMaxHP(6)"/>
+                    <attribute id="Level" type="uint8" value="16"/>
+                    <attribute id="Name" type="LSString" value="NPC_FlamingFist_Melee_Cleric"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="70c3eb7e-383f-11ed-a261-0242ac120002"/>
+                    <attribute id="UUID" type="guid" value="d05c2fba-cafc-4aed-b008-e48ce17b062c"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Boosts" type="LSString" value="IncreaseMaxHP(6)"/>
+                    <attribute id="Level" type="uint8" value="17"/>
+                    <attribute id="Name" type="LSString" value="NPC_FlamingFist_Melee_Cleric"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="70c3eb7e-383f-11ed-a261-0242ac120002"/>
+                    <attribute id="UUID" type="guid" value="b96080fc-d5fa-4b25-a4bc-d1f0523c13ad"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Boosts" type="LSString" value="IncreaseMaxHP(6)"/>
+                    <attribute id="Level" type="uint8" value="18"/>
+                    <attribute id="Name" type="LSString" value="NPC_FlamingFist_Melee_Cleric"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="70c3eb7e-383f-11ed-a261-0242ac120002"/>
+                    <attribute id="UUID" type="guid" value="b96080fc-d5fa-4b25-a4bc-d1f0523c13ad"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Boosts" type="LSString" value="IncreaseMaxHP(6)"/>
+                    <attribute id="Level" type="uint8" value="19"/>
+                    <attribute id="Name" type="LSString" value="NPC_FlamingFist_Melee_Cleric"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="70c3eb7e-383f-11ed-a261-0242ac120002"/>
+                    <attribute id="UUID" type="guid" value="dd17ed2e-6d30-4d46-87cd-f30148075aa1"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Boosts" type="LSString" value="IncreaseMaxHP(6)"/>
+                    <attribute id="Level" type="uint8" value="20"/>
+                    <attribute id="Name" type="LSString" value="NPC_FlamingFist_Melee_Cleric"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="70c3eb7e-383f-11ed-a261-0242ac120002"/>
+                    <attribute id="UUID" type="guid" value="18d90e48-eacc-4650-b26f-faf15862b4e9"/>
+                </node>
             <!-- FLAMING FIST - MELEE CASTER -->
-                <!-- <node id="Progression">
-                    <attribute id="Boosts" type="LSString" value="ProficiencyBonus(SavingThrow,Intelligence);ProficiencyBonus(SavingThrow,Wisdom);ActionResource(SpellSlot,2,1)"/>
+                <node id="Progression">
+                    <!-- <attribute id="Boosts" type="LSString" value="ProficiencyBonus(SavingThrow,Intelligence);ProficiencyBonus(SavingThrow,Wisdom);ActionResource(SpellSlot,2,1)"/> -->
                     <attribute id="Level" type="uint8" value="1"/>
                     <attribute id="Name" type="LSString" value="NPC_FlamingFist_Melee_Caster"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
@@ -2685,7 +2972,8 @@
                     <attribute id="UUID" type="guid" value="36672dc1-614e-49f3-aa58-2f2dff6fca2a"/>
                 </node>
                 <node id="Progression">
-                    <attribute id="Boosts" type="LSString" value="IncreaseMaxHP(4);ActionResource(SpellSlot,1,1);"/>
+                    <!-- <attribute id="Boosts" type="LSString" value="IncreaseMaxHP(4);ActionResource(SpellSlot,1,1);"/> -->
+                    <attribute id="Boosts" type="LSString" value="IncreaseMaxHP(4)"/>
                     <attribute id="Level" type="uint8" value="2"/>
                     <attribute id="Name" type="LSString" value="NPC_FlamingFist_Melee_Caster"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
@@ -2693,7 +2981,8 @@
                     <attribute id="UUID" type="guid" value="26680e1e-61e3-4897-b403-8e33115f93c4"/>
                 </node>
                 <node id="Progression">
-                    <attribute id="Boosts" type="LSString" value="IncreaseMaxHP(4);ActionResource(SpellSlot,1,1);ActionResource(SpellSlot,2,2);"/>
+                    <!-- <attribute id="Boosts" type="LSString" value="IncreaseMaxHP(4);ActionResource(SpellSlot,1,1);ActionResource(SpellSlot,2,2);"/> -->
+                    <attribute id="Boosts" type="LSString" value="IncreaseMaxHP(4)"/>
                     <attribute id="Level" type="uint8" value="3"/>
                     <attribute id="Name" type="LSString" value="NPC_FlamingFist_Melee_Caster"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
@@ -2701,7 +2990,8 @@
                     <attribute id="UUID" type="guid" value="ab425a86-872e-4d71-af0d-4cca6784487d"/>
                 </node>
                 <node id="Progression">
-                    <attribute id="Boosts" type="LSString" value="IncreaseMaxHP(4);Ability(Intelligence,2);ActionResource(SpellSlot,1,2);"/>
+                    <!-- <attribute id="Boosts" type="LSString" value="IncreaseMaxHP(4);Ability(Intelligence,2);ActionResource(SpellSlot,1,2);"/> -->
+                    <attribute id="Boosts" type="LSString" value="IncreaseMaxHP(4)"/>
                     <attribute id="Level" type="uint8" value="4"/>
                     <attribute id="Name" type="LSString" value="NPC_FlamingFist_Melee_Caster"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
@@ -2709,7 +2999,8 @@
                     <attribute id="UUID" type="guid" value="fd940061-dd1a-4c1e-966a-fabb04b91ce5"/>
                 </node>
                 <node id="Progression">
-                    <attribute id="Boosts" type="LSString" value="IncreaseMaxHP(4);ActionResource(SpellSlot,2,3);"/>
+                    <!-- <attribute id="Boosts" type="LSString" value="IncreaseMaxHP(4);ActionResource(SpellSlot,2,3);"/> -->
+                    <attribute id="Boosts" type="LSString" value="IncreaseMaxHP(4)"/>
                     <attribute id="Level" type="uint8" value="5"/>
                     <attribute id="Name" type="LSString" value="NPC_FlamingFist_Melee_Caster"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
@@ -2717,7 +3008,8 @@
                     <attribute id="UUID" type="guid" value="f09a020e-01ec-42d0-9714-bfdf907c2c4f"/>
                 </node>
                 <node id="Progression">
-                    <attribute id="Boosts" type="LSString" value="IncreaseMaxHP(4);ActionResource(SpellSlot,1,3);"/>
+                    <!-- <attribute id="Boosts" type="LSString" value="IncreaseMaxHP(4);ActionResource(SpellSlot,1,3);"/> -->
+                    <attribute id="Boosts" type="LSString" value="IncreaseMaxHP(4)"/>
                     <attribute id="Level" type="uint8" value="6"/>
                     <attribute id="Name" type="LSString" value="NPC_FlamingFist_Melee_Caster"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
@@ -2725,7 +3017,8 @@
                     <attribute id="UUID" type="guid" value="78c4d0cf-eecc-41ca-9200-809c37bf1077"/>
                 </node>
                 <node id="Progression">
-                    <attribute id="Boosts" type="LSString" value="IncreaseMaxHP(4);ActionResource(SpellSlot,1,4);"/>
+                    <!-- <attribute id="Boosts" type="LSString" value="IncreaseMaxHP(4);ActionResource(SpellSlot,1,4);"/> -->
+                    <attribute id="Boosts" type="LSString" value="IncreaseMaxHP(4)"/>
                     <attribute id="Level" type="uint8" value="7"/>
                     <attribute id="Name" type="LSString" value="NPC_FlamingFist_Melee_Caster"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
@@ -2733,7 +3026,8 @@
                     <attribute id="UUID" type="guid" value="de8274df-341c-49c0-a0e5-0d2c8f12772f"/>
                 </node>
                 <node id="Progression">
-                    <attribute id="Boosts" type="LSString" value="IncreaseMaxHP(4);Ability(Constitution,2);ActionResource(SpellSlot,1,4);"/>
+                    <!-- <attribute id="Boosts" type="LSString" value="IncreaseMaxHP(4);Ability(Constitution,2);ActionResource(SpellSlot,1,4);"/> -->
+                    <attribute id="Boosts" type="LSString" value="IncreaseMaxHP(4)"/>
                     <attribute id="Level" type="uint8" value="8"/>
                     <attribute id="Name" type="LSString" value="NPC_FlamingFist_Melee_Caster"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
@@ -2741,7 +3035,8 @@
                     <attribute id="UUID" type="guid" value="9ce25941-24a2-4602-90a4-3b9c9d4322a7"/>
                 </node>
                 <node id="Progression">
-                    <attribute id="Boosts" type="LSString" value="IncreaseMaxHP(4);ActionResource(SpellSlot,1,4);ActionResource(SpellSlot,1,5);"/>
+                    <!-- <attribute id="Boosts" type="LSString" value="IncreaseMaxHP(4);ActionResource(SpellSlot,1,4);ActionResource(SpellSlot,1,5);"/> -->
+                    <attribute id="Boosts" type="LSString" value="IncreaseMaxHP(4)"/>
                     <attribute id="Level" type="uint8" value="9"/>
                     <attribute id="Name" type="LSString" value="NPC_FlamingFist_Melee_Caster"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
@@ -2749,7 +3044,8 @@
                     <attribute id="UUID" type="guid" value="4ae4821c-2d1d-4fbf-8e5e-49169eb0821d"/>
                 </node>
                 <node id="Progression">
-                    <attribute id="Boosts" type="LSString" value="IncreaseMaxHP(4);ActionResource(SpellSlot,1,5);"/>
+                    <!-- <attribute id="Boosts" type="LSString" value="IncreaseMaxHP(4);ActionResource(SpellSlot,1,5);"/> -->
+                    <attribute id="Boosts" type="LSString" value="IncreaseMaxHP(4)"/>
                     <attribute id="Level" type="uint8" value="10"/>
                     <attribute id="Name" type="LSString" value="NPC_FlamingFist_Melee_Caster"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
@@ -2757,7 +3053,8 @@
                     <attribute id="UUID" type="guid" value="3d27e2fa-92e4-4818-8dd9-fa8466fb877e"/>
                 </node>
                 <node id="Progression">
-                    <attribute id="Boosts" type="LSString" value="IncreaseMaxHP(4);ActionResource(SpellSlot,1,6);"/>
+                    <!-- <attribute id="Boosts" type="LSString" value="IncreaseMaxHP(4);ActionResource(SpellSlot,1,6);"/> -->
+                    <attribute id="Boosts" type="LSString" value="IncreaseMaxHP(4)"/>
                     <attribute id="Level" type="uint8" value="11"/>
                     <attribute id="Name" type="LSString" value="NPC_FlamingFist_Melee_Caster"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
@@ -2765,15 +3062,81 @@
                     <attribute id="UUID" type="guid" value="cc05cf1a-4f66-43af-94f5-b1cbe50fe43e"/>
                 </node>
                 <node id="Progression">
-                    <attribute id="Boosts" type="LSString" value="IncreaseMaxHP(4);"/>
+                    <!-- <attribute id="Boosts" type="LSString" value="IncreaseMaxHP(4);"/> -->
+                    <attribute id="Boosts" type="LSString" value="IncreaseMaxHP(4)"/>
                     <attribute id="Level" type="uint8" value="12"/>
                     <attribute id="Name" type="LSString" value="NPC_FlamingFist_Melee_Caster"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
                     <attribute id="TableUUID" type="guid" value="7417c0c0-383f-11ed-a261-0242ac120002"/>
                     <attribute id="UUID" type="guid" value="c7576e88-43fd-41d8-a229-cbd9375ba680"/>
-                </node> -->
+                </node>
+            <!-- FLAMING FIST - MELEE CASTER 13-20 -->
+                <node id="Progression">
+                    <attribute id="Boosts" type="LSString" value="IncreaseMaxHP(4)"/>
+                    <attribute id="Level" type="uint8" value="13"/>
+                    <attribute id="Name" type="LSString" value="NPC_FlamingFist_Melee_Caster"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="7417c0c0-383f-11ed-a261-0242ac120002"/>
+                    <attribute id="UUID" type="guid" value="c47d1a82-56d6-4320-b450-b432cbb3f9d2"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Boosts" type="LSString" value="IncreaseMaxHP(4)"/>
+                    <attribute id="Level" type="uint8" value="14"/>
+                    <attribute id="Name" type="LSString" value="NPC_FlamingFist_Melee_Caster"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="7417c0c0-383f-11ed-a261-0242ac120002"/>
+                    <attribute id="UUID" type="guid" value="db60f772-8d72-4656-83b9-1b8848ba106c"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Boosts" type="LSString" value="IncreaseMaxHP(4)"/>
+                    <attribute id="Level" type="uint8" value="15"/>
+                    <attribute id="Name" type="LSString" value="NPC_FlamingFist_Melee_Caster"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="7417c0c0-383f-11ed-a261-0242ac120002"/>
+                    <attribute id="UUID" type="guid" value="6b8a2a75-c62a-455e-b553-a530ba2c1ed8"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Boosts" type="LSString" value="IncreaseMaxHP(4)"/>
+                    <attribute id="Level" type="uint8" value="16"/>
+                    <attribute id="Name" type="LSString" value="NPC_FlamingFist_Melee_Caster"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="7417c0c0-383f-11ed-a261-0242ac120002"/>
+                    <attribute id="UUID" type="guid" value="aaa022c8-2989-49f7-9d6a-806a9edd5532"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Boosts" type="LSString" value="IncreaseMaxHP(4)"/>
+                    <attribute id="Level" type="uint8" value="17"/>
+                    <attribute id="Name" type="LSString" value="NPC_FlamingFist_Melee_Caster"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="7417c0c0-383f-11ed-a261-0242ac120002"/>
+                    <attribute id="UUID" type="guid" value="793d3b3c-13d5-490e-aab1-bee06482010d"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Boosts" type="LSString" value="IncreaseMaxHP(4)"/>
+                    <attribute id="Level" type="uint8" value="18"/>
+                    <attribute id="Name" type="LSString" value="NPC_FlamingFist_Melee_Caster"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="7417c0c0-383f-11ed-a261-0242ac120002"/>
+                    <attribute id="UUID" type="guid" value="7e89d70a-2576-4703-a93b-f805eba449f4"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Boosts" type="LSString" value="IncreaseMaxHP(4)"/>
+                    <attribute id="Level" type="uint8" value="19"/>
+                    <attribute id="Name" type="LSString" value="NPC_FlamingFist_Melee_Caster"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="7417c0c0-383f-11ed-a261-0242ac120002"/>
+                    <attribute id="UUID" type="guid" value="cf485d47-9b00-47b7-9d19-9d0fee53e2c1"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Boosts" type="LSString" value="IncreaseMaxHP(4)"/>
+                    <attribute id="Level" type="uint8" value="20"/>
+                    <attribute id="Name" type="LSString" value="NPC_FlamingFist_Melee_Caster"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="7417c0c0-383f-11ed-a261-0242ac120002"/>
+                    <attribute id="UUID" type="guid" value="0e54b93f-1579-47c2-961a-272d130059a2"/>
+                </node>
             <!-- FIGHTER/ROGUE - MULTICLASS -->
-                <!-- <node id="Progression">
+                <node id="Progression">
                     <attribute id="Level" type="uint8" value="1"/>
                     <attribute id="Name" type="LSString" value="NPC_Fighter_Rogue"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
@@ -2823,10 +3186,12 @@
                     <attribute id="UUID" type="guid" value="342d49c7-2675-463c-80cb-880cdb847d5b"/>
                 </node>
                 <node id="Progression">
-                    <attribute id="Boosts" type="LSString" value="IncreaseMaxHP(33);Proficiency(LightArmor);Proficiency(MediumArmor);Proficiency(Shields);Proficiency(SimpleWeapons);Proficiency(MartialWeapons);ActionResource(SuperiorityDie,3,0)"/>
+                    <!-- <attribute id="Boosts" type="LSString" value="IncreaseMaxHP(33);Proficiency(LightArmor);Proficiency(MediumArmor);Proficiency(Shields);Proficiency(SimpleWeapons);Proficiency(MartialWeapons);ActionResource(SuperiorityDie,3,0)"/> -->
+                    <attribute id="Boosts" type="LSString" value="IncreaseMaxHP(33)"/>
                     <attribute id="Level" type="uint8" value="8"/>
                     <attribute id="Name" type="LSString" value="NPC_Fighter_Rogue"/>
-                    <attribute id="PassivesAdded" type="LSString" value="ExtraAttack;SecondStoryWork"/>
+                    <!-- <attribute id="PassivesAdded" type="LSString" value="ExtraAttack;SecondStoryWork"/> -->
+                    <attribute id="PassivesAdded" type="LSString" value="SecondStoryWork"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
                     <attribute id="TableUUID" type="guid" value="ed2393af-0e4d-4ada-ab99-d389f81285d0"/>
                     <attribute id="UUID" type="guid" value="11355ae2-eac1-4734-a12a-4bbeb0870e2e"/>
@@ -2858,7 +3223,259 @@
                     <attribute id="ProgressionType" type="uint8" value="0"/>
                     <attribute id="TableUUID" type="guid" value="ed2393af-0e4d-4ada-ab99-d389f81285d0"/>
                     <attribute id="UUID" type="guid" value="6b8343e6-4be1-4b62-87e5-2455702dc94d"/>
-                </node> -->
+                </node>
+            <!-- ROLAN -->
+                <node id="Progression">
+                    <!-- <attribute id="Boosts" type="LSString" value="ActionResource(SpellSlot,2,1);ProficiencyBonus(SavingThrow,Intelligence);ProficiencyBonus(SavingThrow,Wisdom);Proficiency(Daggers);Proficiency(Quarterstaffs);Proficiency(LightCrossbows);" /> -->
+                    <attribute id="Level" type="uint8" value="1" />
+                    <attribute id="Name" type="LSString" value="NPC_Rolan" />
+                    <attribute id="PassivesAdded" type="LSString" value="DEN_Rolan_DefaultSpells" />
+                    <attribute id="ProgressionType" type="uint8" value="0" />
+                    <attribute id="TableUUID" type="guid" value="07d9965e-a2c7-4033-9577-27e42f1911fc" />
+                    <attribute id="UUID" type="guid" value="08ab7179-b8c3-4048-891a-ded4a520f861" />
+                </node>
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="2" />
+                    <attribute id="Name" type="LSString" value="NPC_Rolan" />
+                    <attribute id="ProgressionType" type="uint8" value="0" />
+                    <attribute id="TableUUID" type="guid" value="07d9965e-a2c7-4033-9577-27e42f1911fc" />
+                    <attribute id="UUID" type="guid" value="c9c3a3e9-9f95-4491-a6d8-f4a5899012f1" />
+                </node>
+                <node id="Progression">
+                    <!-- <attribute id="Boosts" type="LSString" value="ActionResource(SpellSlot,2,1);ActionResource(SpellSlot,2,2)" /> -->
+                    <attribute id="Level" type="uint8" value="3" />
+                    <attribute id="Name" type="LSString" value="NPC_Rolan" />
+                    <!-- <attribute id="PassivesAdded" type="LSString" value="SculptSpells" /> -->
+                    <attribute id="ProgressionType" type="uint8" value="0" />
+                    <attribute id="TableUUID" type="guid" value="07d9965e-a2c7-4033-9577-27e42f1911fc" />
+                    <attribute id="UUID" type="guid" value="e5428c31-fe43-4516-a03c-cbaab75e1442" />
+                </node>
+                <node id="Progression">
+                    <attribute id="Boosts" type="LSString" value="IncreaseMaxHP(24)" />
+                    <attribute id="Level" type="uint8" value="4" />
+                    <attribute id="Name" type="LSString" value="NPC_Rolan" />
+                    <attribute id="ProgressionType" type="uint8" value="0" />
+                    <attribute id="TableUUID" type="guid" value="07d9965e-a2c7-4033-9577-27e42f1911fc" />
+                    <attribute id="UUID" type="guid" value="570832a0-d207-4a21-b686-2d0f8e6141db" />
+                </node>
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="5" />
+                    <attribute id="Name" type="LSString" value="NPC_Rolan" />
+                    <attribute id="ProgressionType" type="uint8" value="0" />
+                    <attribute id="TableUUID" type="guid" value="07d9965e-a2c7-4033-9577-27e42f1911fc" />
+                    <attribute id="UUID" type="guid" value="edb9c4bb-e944-4046-8b76-9467256787a2" />
+                </node>
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="6" />
+                    <attribute id="Name" type="LSString" value="NPC_Rolan" />
+                    <!-- <attribute id="PassivesAdded" type="LSString" value="PotentCantrip" /> -->
+                    <attribute id="ProgressionType" type="uint8" value="0" />
+                    <attribute id="TableUUID" type="guid" value="07d9965e-a2c7-4033-9577-27e42f1911fc" />
+                    <attribute id="UUID" type="guid" value="f30cfedc-5c9e-46ce-9d21-5b0adfe5b739" />
+                </node>
+                <node id="Progression">
+                    <!-- <attribute id="Boosts" type="LSString" value="ActionResource(SpellSlot,1,2);ActionResource(SpellSlot,3,3);ActionResource(SpellSlot,2,4);ActionResource(SpellSlot,1,5);IncreaseMaxHP(7)" /> -->
+                    <attribute id="Boosts" type="LSString" value="IncreaseMaxHP(7);ActionResource(SpellSlot,1,4);ActionResource(SpellSlot,1,5)" />
+                    <attribute id="Level" type="uint8" value="7" />
+                    <attribute id="Name" type="LSString" value="NPC_Rolan" />
+                    <attribute id="PassivesAdded" type="LSString" value="LOW_Rolan_SignatureSpells" />
+                    <attribute id="PassivesRemoved" type="LSString" value="DEN_Rolan_DefaultSpells" />
+                    <attribute id="ProgressionType" type="uint8" value="0" />
+                    <attribute id="TableUUID" type="guid" value="07d9965e-a2c7-4033-9577-27e42f1911fc" />
+                    <attribute id="UUID" type="guid" value="081dc917-7f6e-4fab-b087-2c9268e2f153" />
+                </node>
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="10" />
+                    <attribute id="Name" type="LSString" value="NPC_Rolan" />
+                    <!-- <attribute id="PassivesAdded" type="LSString" value="EmpoweredEvocation" /> -->
+                    <attribute id="ProgressionType" type="uint8" value="0" />
+                    <attribute id="TableUUID" type="guid" value="07d9965e-a2c7-4033-9577-27e42f1911fc" />
+                    <attribute id="UUID" type="guid" value="80a57d0b-5d4e-4b35-87ee-d073a572a4c5" />
+                </node>
+            <!-- ROAH MOONGLOW -->
+                <node id="Progression">
+                    <!-- <attribute id="Boosts" type="LSString" value="ActionResource(BardicInspiration,3,0,d6);ProficiencyBonus(SavingThrow,Dexterity);ProficiencyBonus(SavingThrow,Charisma);Proficiency(MusicalInstrument);Attribute(UseMusicalInstrumentForCasting);ActionResource(SpellSlot,4,1);" /> -->
+                    <attribute id="Level" type="uint8" value="1" />
+                    <attribute id="Name" type="LSString" value="NPC_RoahMoonglow" />
+                    <!-- <attribute id="PassivesAdded" type="LSString" value="BardicInspiration;BardSpellcasting" /> -->
+                    <attribute id="ProgressionType" type="uint8" value="0" />
+                    <attribute id="TableUUID" type="guid" value="2c3411ae-806b-11ed-a1eb-0242ac120002" />
+                    <attribute id="UUID" type="guid" value="653135b3-edb9-4b79-a736-78a4cbfad2d2" />
+                </node>
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="2" />
+                    <attribute id="Name" type="LSString" value="NPC_RoahMoonglow" />
+                    <attribute id="ProgressionType" type="uint8" value="0" />
+                    <attribute id="TableUUID" type="guid" value="2c3411ae-806b-11ed-a1eb-0242ac120002" />
+                    <attribute id="UUID" type="guid" value="20b62ee9-f075-43e9-99ba-8d88e31fbc47" />
+                </node>
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="3" />
+                    <attribute id="Name" type="LSString" value="NPC_RoahMoonglow" />
+                    <attribute id="ProgressionType" type="uint8" value="0" />
+                    <attribute id="TableUUID" type="guid" value="2c3411ae-806b-11ed-a1eb-0242ac120002" />
+                    <attribute id="UUID" type="guid" value="07b7b9ac-91b4-4acb-af72-f5cdac224692" />
+                </node>
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="4" />
+                    <attribute id="Name" type="LSString" value="NPC_RoahMoonglow" />
+                    <attribute id="ProgressionType" type="uint8" value="0" />
+                    <attribute id="TableUUID" type="guid" value="2c3411ae-806b-11ed-a1eb-0242ac120002" />
+                    <attribute id="UUID" type="guid" value="0891d698-6e70-44bc-9aee-d353b94b7ccd" />
+                </node>
+                <node id="Progression">
+                    <!-- <attribute id="Boosts" type="LSString" value="ActionResourceOverride(BardicInspiration,0,0,d6);ActionResource(BardicInspiration,4,0,d8);ActionResourceOverride(SpellSlot,0,1);ActionResourceOverride(SpellSlot,0,2);ActionResource(SpellSlot,3,3);ActionResource(SpellSlot,2,4);Ability(Dexterity,2);Ability(Charisma,2);IncreaseMaxHP(32)" /> -->
+                    <attribute id="Boosts" type="LSString" value="IncreaseMaxHP(32);Ability(Dexterity,2);Ability(Charisma,2)" />
+                    <attribute id="Level" type="uint8" value="5" />
+                    <attribute id="Name" type="LSString" value="NPC_RoahMoonglow" />
+                    <!-- <attribute id="PassivesAdded" type="LSString" value="FontOfInspiration;BardicInspiration_d8" /> -->
+                    <attribute id="ProgressionType" type="uint8" value="0" />
+                    <attribute id="TableUUID" type="guid" value="2c3411ae-806b-11ed-a1eb-0242ac120002" />
+                    <attribute id="UUID" type="guid" value="e758dda6-2dae-4760-bd5c-cf4ec3a09c49" />
+                </node>
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="6" />
+                    <attribute id="Name" type="LSString" value="NPC_RoahMoonglow" />
+                    <attribute id="ProgressionType" type="uint8" value="0" />
+                    <attribute id="TableUUID" type="guid" value="2c3411ae-806b-11ed-a1eb-0242ac120002" />
+                    <attribute id="UUID" type="guid" value="174ec801-b029-4c22-b406-953bde08e7ff" />
+                </node>
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="7" />
+                    <attribute id="Name" type="LSString" value="NPC_RoahMoonglow" />
+                    <attribute id="PassivesAdded" type="LSString" value="Evasion" />
+                    <attribute id="ProgressionType" type="uint8" value="0" />
+                    <attribute id="TableUUID" type="guid" value="2c3411ae-806b-11ed-a1eb-0242ac120002" />
+                    <attribute id="UUID" type="guid" value="07dfc400-be1f-4873-bf62-6a4c2c32c38f" />
+                </node>
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="8" />
+                    <attribute id="Name" type="LSString" value="NPC_RoahMoonglow" />
+                    <attribute id="ProgressionType" type="uint8" value="0" />
+                    <attribute id="TableUUID" type="guid" value="2c3411ae-806b-11ed-a1eb-0242ac120002" />
+                    <attribute id="UUID" type="guid" value="36e7d954-0a42-4fde-81aa-e717d656ade8" />
+                </node>
+                <node id="Progression">
+                    <!-- <attribute id="Boosts" type="LSString" value="ActionResourceOverride(SpellSlot,0,3);ActionResource(SpellSlot,2,5);ActionResource(SpellSlot,1,6);Ability(Dexterity,3);Ability(Charisma,2);IncreaseMaxHP(36);UnlockSpellVariant(SpellId('Target_Bane'),ModifyUseCosts(Add,SorceryPoint,1,0));UnlockSpellVariant(SpellId('Target_FaerieFire'),ModifyUseCosts(Add,SorceryPoint,1,0))" /> -->
+                    <attribute id="Boosts" type="LSString" value="IncreaseMaxHP(36);Ability(Dexterity,3);Ability(Charisma,2);UnlockSpellVariant(SpellId('Target_Bane'),ModifyUseCosts(Add,SorceryPoint,1,0));UnlockSpellVariant(SpellId('Target_FaerieFire'),ModifyUseCosts(Add,SorceryPoint,1,0))" />
+                    <attribute id="Level" type="uint8" value="9" />
+                    <attribute id="Name" type="LSString" value="NPC_RoahMoonglow" />
+                    <attribute id="ProgressionType" type="uint8" value="0" />
+                    <attribute id="TableUUID" type="guid" value="2c3411ae-806b-11ed-a1eb-0242ac120002" />
+                    <attribute id="UUID" type="guid" value="4b7a126a-a7b8-4c4c-96cb-aa8079d3f2eb" />
+                </node>
+                <node id="Progression">
+                    <!-- <attribute id="Boosts" type="LSString" value="ActionResourceOverride(BardicInspiration,6,0,d8)" /> -->
+                    <attribute id="Boosts" type="LSString" value="ActionResource(BardicInspiration,1,0)" />
+                    <attribute id="Level" type="uint8" value="10" />
+                    <attribute id="Name" type="LSString" value="NPC_RoahMoonglow" />
+                    <!-- <attribute id="PassivesAdded" type="LSString" value="BardicInspiration_d10" /> -->
+                    <attribute id="ProgressionType" type="uint8" value="0" />
+                    <attribute id="TableUUID" type="guid" value="2c3411ae-806b-11ed-a1eb-0242ac120002" />
+                    <attribute id="UUID" type="guid" value="11ed920d-c401-4c05-8b28-9d7727a1c14c" />
+                </node>
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="11" />
+                    <attribute id="Name" type="LSString" value="NPC_RoahMoonglow" />
+                    <attribute id="PassivesAdded" type="LSString" value="ReliableTalent" />
+                    <attribute id="ProgressionType" type="uint8" value="0" />
+                    <attribute id="TableUUID" type="guid" value="2c3411ae-806b-11ed-a1eb-0242ac120002" />
+                    <attribute id="UUID" type="guid" value="9a383580-2bba-46fe-97a0-043d01f6d124" />
+                </node>
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="12" />
+                    <attribute id="Name" type="LSString" value="NPC_RoahMoonglow" />
+                    <attribute id="ProgressionType" type="uint8" value="0" />
+                    <attribute id="TableUUID" type="guid" value="2c3411ae-806b-11ed-a1eb-0242ac120002" />
+                    <attribute id="UUID" type="guid" value="84fca008-bfc8-4d65-b684-2abb0ccba12b" />
+                </node>
+            <!-- ARADIN -->
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="1" />
+                    <attribute id="Name" type="LSString" value="NPC_Aradin" />
+                    <attribute id="ProgressionType" type="uint8" value="0" />
+                    <attribute id="TableUUID" type="guid" value="9eaa6333-f907-4c16-aa48-cf6d46c1b351" />
+                    <attribute id="UUID" type="guid" value="de43ebc2-241f-4d98-9937-b8858a016d8f" />
+                </node>
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="2" />
+                    <attribute id="Name" type="LSString" value="NPC_Aradin" />
+                    <attribute id="ProgressionType" type="uint8" value="0" />
+                    <attribute id="TableUUID" type="guid" value="9eaa6333-f907-4c16-aa48-cf6d46c1b351" />
+                    <attribute id="UUID" type="guid" value="ada873bb-ba54-40f2-b983-9db19f85274d" />
+                </node>
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="3" />
+                    <attribute id="Name" type="LSString" value="NPC_Aradin" />
+                    <attribute id="ProgressionType" type="uint8" value="0" />
+                    <attribute id="TableUUID" type="guid" value="9eaa6333-f907-4c16-aa48-cf6d46c1b351" />
+                    <attribute id="UUID" type="guid" value="87ce1f36-a954-4147-aaf8-69bd855ab48f" />
+                </node>
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="4" />
+                    <attribute id="Name" type="LSString" value="NPC_Aradin" />
+                    <attribute id="ProgressionType" type="uint8" value="0" />
+                    <attribute id="TableUUID" type="guid" value="9eaa6333-f907-4c16-aa48-cf6d46c1b351" />
+                    <attribute id="UUID" type="guid" value="b639647e-1e93-44f7-ac34-3d8d07a1c094" />
+                </node>
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="5" />
+                    <attribute id="Name" type="LSString" value="NPC_Aradin" />
+                    <attribute id="ProgressionType" type="uint8" value="0" />
+                    <attribute id="TableUUID" type="guid" value="9eaa6333-f907-4c16-aa48-cf6d46c1b351" />
+                    <attribute id="UUID" type="guid" value="469bc52a-6f2b-4f93-9d8f-5032afd2c700" />
+                </node>
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="6" />
+                    <attribute id="Name" type="LSString" value="NPC_Aradin" />
+                    <attribute id="ProgressionType" type="uint8" value="0" />
+                    <attribute id="TableUUID" type="guid" value="9eaa6333-f907-4c16-aa48-cf6d46c1b351" />
+                    <attribute id="UUID" type="guid" value="398f9ef7-fa4a-4edf-98f6-38e93ad4cb60" />
+                </node>
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="7" />
+                    <attribute id="Name" type="LSString" value="NPC_Aradin" />
+                    <attribute id="ProgressionType" type="uint8" value="0" />
+                    <attribute id="TableUUID" type="guid" value="9eaa6333-f907-4c16-aa48-cf6d46c1b351" />
+                    <attribute id="UUID" type="guid" value="df5d17a8-65df-4903-9eb4-8a684bd5e773" />
+                </node>
+                <node id="Progression">
+                    <attribute id="Boosts" type="LSString" value="ActionResource(SuperiorityDie,4,0);Ability(Strength,3);Ability(Constitution,2)" />
+                    <attribute id="Level" type="uint8" value="8" />
+                    <attribute id="Name" type="LSString" value="NPC_Aradin" />
+                    <!-- <attribute id="PassivesAdded" type="LSString" value="ExtraAttack" /> -->
+                    <attribute id="ProgressionType" type="uint8" value="0" />
+                    <attribute id="TableUUID" type="guid" value="9eaa6333-f907-4c16-aa48-cf6d46c1b351" />
+                    <attribute id="UUID" type="guid" value="52d5b294-4951-4a5d-97e1-66fd3441151a" />
+                </node>
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="9" />
+                    <attribute id="Name" type="LSString" value="NPC_Aradin" />
+                    <attribute id="ProgressionType" type="uint8" value="0" />
+                    <attribute id="TableUUID" type="guid" value="9eaa6333-f907-4c16-aa48-cf6d46c1b351" />
+                    <attribute id="UUID" type="guid" value="01f2886e-2e24-4d7a-a90d-93b9ec6988c2" />
+                </node>
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="10" />
+                    <attribute id="Name" type="LSString" value="NPC_Aradin" />
+                    <attribute id="ProgressionType" type="uint8" value="0" />
+                    <attribute id="TableUUID" type="guid" value="9eaa6333-f907-4c16-aa48-cf6d46c1b351" />
+                    <attribute id="UUID" type="guid" value="63c89285-8229-45cf-ad89-3c7065e06b3d" />
+                </node>
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="11" />
+                    <attribute id="Name" type="LSString" value="NPC_Aradin" />
+                    <attribute id="ProgressionType" type="uint8" value="0" />
+                    <attribute id="TableUUID" type="guid" value="9eaa6333-f907-4c16-aa48-cf6d46c1b351" />
+                    <attribute id="UUID" type="guid" value="3084242a-979b-4434-aad3-a7004785efcc" />
+                </node>
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="12" />
+                    <attribute id="Name" type="LSString" value="NPC_Aradin" />
+                    <attribute id="ProgressionType" type="uint8" value="0" />
+                    <attribute id="TableUUID" type="guid" value="9eaa6333-f907-4c16-aa48-cf6d46c1b351" />
+                    <attribute id="UUID" type="guid" value="2b4a358d-4478-43f4-94e3-697a310dee75" />
+                </node>
             </children>
         </node>
     </region>
