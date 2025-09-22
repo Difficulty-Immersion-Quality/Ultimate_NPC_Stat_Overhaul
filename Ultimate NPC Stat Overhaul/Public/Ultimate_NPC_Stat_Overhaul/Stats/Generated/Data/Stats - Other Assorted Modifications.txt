@@ -413,3 +413,12 @@ data "DescriptionParams" "DealDamage(4d6,Necrotic);RegainHitPoints(,)"
 // data "StatusEffect" "6d293bd2-1258-4c4f-a006-bfc41628d893"
 // data "StatusEffectOnTurn" "fa4ffb93-faa2-4524-ba01-c060d1e45667"
 // data "EndEffect" "ebb1a68e-f541-49b1-b7db-3d7c6c9560b9"
+
+// ==================================== "UND_Nere" ====================================
+// Bug Fix: Nere and Tahan get gimped on spell slots in Patch #8 because passives no longer stack.
+
+    new entry "Goon_AdditionalSpellSlot_Level_2"
+    type "PassiveData"
+    using "AdditionalSpellSlot_Level_2"
+    data "Properties" "IsHidden"
+    data "Boosts" "ActionResource(SpellSlot,1,2)"

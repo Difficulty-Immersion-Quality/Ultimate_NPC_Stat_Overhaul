@@ -117,11 +117,11 @@
 	<content contentuid="hefce9befgc089g4b04g9393g1ec534347dea" version="1">! Subclass: Battle Master Fighter</content>
 	<content contentuid="hdbe7301eg8093g461fgaa19g99bf294c1819" version="1">A paragon of tactical superiority, who can employ a wide array of combat manoeuvres to dominate every fight. They gain Battle Master Fighter progressions in addition to boosts from configuration.</content>
 
-	<content contentuid="h56b56a6ag0de5g45e9g8845g97dae05491b3" version="1">! Subclass: Eldritch Knight Fighter</content>
-	<content contentuid="h5c580e8ag700cg4159gbc2dg145ea47b7f8b" version="1">A warrior of spell and sword who weaves incantations to supplement their martial expertise. They gain Eldritch Knight Fighter progressions in addition to boosts from configuration.</content>
-
 	<content contentuid="haa6f223cg7130g434egb18ag82be10976ef1" version="1">! Subclass: Champion Fighter</content>
 	<content contentuid="hd11661ccgc093g4932gbfd9g2c60088eebb6" version="1">A Fighter who perfects the fundamentals of combat, turning every strike into a display of raw mastery. They gain Champion Fighter progressions in addition to boosts from configuration.</content>
+
+	<content contentuid="h56b56a6ag0de5g45e9g8845g97dae05491b3" version="1">! Subclass: Eldritch Knight Fighter</content>
+	<content contentuid="h5c580e8ag700cg4159gbc2dg145ea47b7f8b" version="1">A warrior of spell and sword who weaves incantations to supplement their martial expertise. They gain Eldritch Knight Fighter progressions in addition to boosts from configuration.</content>
 
 <!-- MONK -->
 	<content contentuid="h5f6db4dfgb3b4g4289g937bg039af3d0b1f8" version="1">! Class: Monk</content>
@@ -304,9 +304,10 @@
 	<!-- "FinishingStrike" --> <content contentuid="h870ed340gd2afg486fg8be8g65230780dbff" version="1">Finishing Strike</content>
 	<!-- "SHA_NECROMANCER_LANDOFTHEDEAD_AURA" --> <content contentuid="hb1ac7425gc22fg47a7g9d60g30793696a8be" version="1">This fragment of Myrkul's realm restores [1] to Undead and deals [2] to living creatures at the end of their turns in the area. Additonally, living creatures have halved &lt;LSTag Tooltip="MovementSpeed"&gt;movement speed&lt;/LSTag&gt; and cannot regain[3].</content>
 	<!-- "SHA_NECROMANCER_LANDOFTHEDEAD_AURA_DEBUFF" --> <content contentuid="h55c5a489gaf11g4ed8g8698gf5832282fe1c" version="1">This living creature takes [1] at the end of every turn, has halved &lt;LSTag Tooltip="MovementSpeed"&gt;movement speed&lt;/LSTag&gt; and cannot regain[2] while it is within &lt;LSTag Type="Status" Tooltip="SHA_NECROMANCER_LANDOFTHEDEAD_AURA"&gt;The Dead Wastes&lt;/LSTag&gt;.</content>
-	<!--  --> <content contentuid="" version="1"></content>
-	<!--  --> <content contentuid="" version="1"></content>
-	<!--  --> <content contentuid="" version="1"></content>
+
+	<!-- "" --> <content contentuid="" version="1"></content>
+	<!-- "" --> <content contentuid="" version="1"></content>
+	<!-- "" --> <content contentuid="" version="1"></content>
 
 	<!--  --> <content contentuid="he9aeb7bfg8ad9g47b4g99aeg6baca837d9b4" version="1">BUH</content>
 </contentList>

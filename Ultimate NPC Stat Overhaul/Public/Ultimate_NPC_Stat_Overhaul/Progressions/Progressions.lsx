@@ -1664,14 +1664,14 @@
                 <!-- ROGUE: Expansion 13-20 -->
                 <node id="Progression">
                     <attribute id="Level" type="uint8" value="13"/>
-                    <attribute id="Name" type="LSString" value="Rogue"/>
+                    <attribute id="Name" type="LSString" value="NPC_Rogue"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
                     <attribute id="TableUUID" type="guid" value="532203c2-7bcb-4162-9a7c-2bb20e227a30"/>
                     <attribute id="UUID" type="guid" value="1da330b7-978f-4800-857f-f07e043ba22f"/>
                 </node>
                 <node id="Progression">
                     <attribute id="Level" type="uint8" value="14"/>
-                    <attribute id="Name" type="LSString" value="Rogue"/>
+                    <attribute id="Name" type="LSString" value="NPC_Rogue"/>
                     <attribute id="PassivesAdded" type="LSString" value="Blindsense"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
                     <attribute id="TableUUID" type="guid" value="532203c2-7bcb-4162-9a7c-2bb20e227a30"/>
@@ -1680,7 +1680,7 @@
                 <node id="Progression">
                     <attribute id="Boosts" type="LSString" value="ProficiencyBonus(SavingThrow,Wisdom)"/>
                     <attribute id="Level" type="uint8" value="15"/>
-                    <attribute id="Name" type="LSString" value="Rogue"/>
+                    <attribute id="Name" type="LSString" value="NPC_Rogue"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
                     <attribute id="TableUUID" type="guid" value="532203c2-7bcb-4162-9a7c-2bb20e227a30"/>
                     <attribute id="UUID" type="guid" value="19f42215-d890-4779-a36a-d4d84fea2c53"/>
@@ -1688,21 +1688,21 @@
                 <node id="Progression">
                     <!-- <attribute id="AllowImprovement" type="bool" value="true"/> -->
                     <attribute id="Level" type="uint8" value="16"/>
-                    <attribute id="Name" type="LSString" value="Rogue"/>
+                    <attribute id="Name" type="LSString" value="NPC_Rogue"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
                     <attribute id="TableUUID" type="guid" value="532203c2-7bcb-4162-9a7c-2bb20e227a30"/>
                     <attribute id="UUID" type="guid" value="aaba3ff1-e7c1-4e98-b4e5-925a4368f558"/>
                 </node>
                 <node id="Progression">
                     <attribute id="Level" type="uint8" value="17"/>
-                    <attribute id="Name" type="LSString" value="Rogue"/>
+                    <attribute id="Name" type="LSString" value="NPC_Rogue"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
                     <attribute id="TableUUID" type="guid" value="532203c2-7bcb-4162-9a7c-2bb20e227a30"/>
                     <attribute id="UUID" type="guid" value="785b9f0b-940b-4b11-8844-dcc94b1e1f93"/>
                 </node>
                 <node id="Progression">
                     <attribute id="Level" type="uint8" value="18"/>
-                    <attribute id="Name" type="LSString" value="Rogue"/>
+                    <attribute id="Name" type="LSString" value="NPC_Rogue"/>
                     <attribute id="PassivesAdded" type="LSString" value="Elusive"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
                     <attribute id="TableUUID" type="guid" value="532203c2-7bcb-4162-9a7c-2bb20e227a30"/>
@@ -1711,7 +1711,7 @@
                 <node id="Progression">
                     <!-- <attribute id="AllowImprovement" type="bool" value="true"/> -->
                     <attribute id="Level" type="uint8" value="19"/>
-                    <attribute id="Name" type="LSString" value="Rogue"/>
+                    <attribute id="Name" type="LSString" value="NPC_Rogue"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
                     <attribute id="TableUUID" type="guid" value="532203c2-7bcb-4162-9a7c-2bb20e227a30"/>
                     <attribute id="UUID" type="guid" value="35de9c27-733d-415f-a50c-838c6e73fb5d"/>
@@ -1719,7 +1719,7 @@
                 <node id="Progression">
                     <attribute id="Boosts" type="LSString" value="ActionResource(StrokeOfLuck,1,0)"/>
                     <attribute id="Level" type="uint8" value="20"/>
-                    <attribute id="Name" type="LSString" value="Rogue"/>
+                    <attribute id="Name" type="LSString" value="NPC_Rogue"/>
                     <attribute id="PassivesAdded" type="LSString" value="StrokeOfLuck;StrokeOfLuck_AbilityCheck"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
                     <attribute id="TableUUID" type="guid" value="532203c2-7bcb-4162-9a7c-2bb20e227a30"/>
