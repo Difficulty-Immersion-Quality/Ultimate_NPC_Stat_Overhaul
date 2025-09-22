@@ -1384,7 +1384,7 @@ new entry "Githyanki_Teenager"
 type "Character"
 using "Githyanki_Teenager"
 // data "Passives" "AttackOfOpportunity;DarknessRules"
-data "Passives" "AttackOfOpportunity;DarknessRules"
+data "Passives" "CX_Martial_Boost;AttackOfOpportunity;DarknessRules"
 
 // Ptaris, Githyanki Prodigy - HONOUR MODE INHERITANCE (I don't really know what to do with this guy, added custom Sorcerer progressions and Storm Sorcery subclass, added Boss boost)
 new entry "LOW_Githyanki_Prodigy"
