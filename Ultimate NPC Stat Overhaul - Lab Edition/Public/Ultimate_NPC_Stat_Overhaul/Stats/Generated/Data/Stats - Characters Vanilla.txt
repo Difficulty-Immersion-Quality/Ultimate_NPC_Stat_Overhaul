@@ -47,7 +47,7 @@ new entry "Bandit"
 type "Character"
 using "Bandit"
 // data "Passives" "AttackOfOpportunity;DarknessRules"
-data "Passives" "CX_Martial_Boost;AttackOfOpportunity;DarknessRules"
+data "Passives" "AttackOfOpportunity;DarknessRules"
 
 // Unused (Added Fighter progressions)
 new entry "Bandit_Captain"
@@ -173,7 +173,7 @@ new entry "Guard"
 type "Character"
 using "Guard"
 // data "Passives" "AttackOfOpportunity;DarknessRules"
-data "Passives" "CX_Martial_Boost;AttackOfOpportunity;DarknessRules"
+data "Passives" "AttackOfOpportunity;DarknessRules"
 
 // "_Base"
 //  ├─ "_Humanoid"
@@ -187,14 +187,14 @@ new entry "Werewolf"
 type "Character"
 using "Werewolf"
 // data "Passives" "Werewolf_Rage;Multiattack_Werewolf;AttackOfOpportunity;DarknessRules"
-data "Passives" "CX_Martial_Boost;Werewolf_Rage;Multiattack_Werewolf;AttackOfOpportunity;DarknessRules"
+data "Passives" "Werewolf_Rage;Multiattack_Werewolf;AttackOfOpportunity;DarknessRules"
 
 // Unused (Added Martial boost)
 new entry "_FlamingFist"
 type "Character"
 using "_FlamingFist"
 // data "Passives" "AttackOfOpportunity;DarknessRules"
-data "Passives" "CX_Martial_Boost;AttackOfOpportunity;DarknessRules"
+data "Passives" "AttackOfOpportunity;DarknessRules"
 
 // "_Base"
 //  ├─ "_Humanoid"
@@ -267,7 +267,7 @@ data "Charisma" "12"
 // data "SpellCastingAbility" "Intelligence"
 data "SpellCastingAbility" "Charisma"
 // data "Passives" "AttackOfOpportunity;Darkvision;DarknessRules;Brute_Bugbear;ExtraAttack"
-data "Passives" "CX_Paladin_Oathbreaker_Boost;CX_Martial_Boost;Brute_Bugbear;AttackOfOpportunity;Darkvision;DarknessRules;ExtraAttack"
+data "Passives" "CX_Paladin_Oathbreaker_Boost;Brute_Bugbear;AttackOfOpportunity;Darkvision;DarknessRules;ExtraAttack"
 // data "Progressions" ""
 data "Progressions" "8726b2c4-edc0-4905-b82f-60a4baba0733"
 
@@ -778,7 +778,7 @@ new entry "UND_LoneDuergar"
 type "Character"
 using "UND_LoneDuergar"
 // data "Passives" "Dwarf_DwarvenResilience;Duergar_DuergarResilience;SunlightSensitivity;AttackOfOpportunity;SuperiorDarkvision;DarknessRules;GrimHarvest"
-data "Passives" "CX_Wizard_Necromancy_Boost;CX_Martial_Boost;Dwarf_DwarvenResilience;Duergar_DuergarResilience;SunlightSensitivity;AttackOfOpportunity;SuperiorDarkvision;DarknessRules;GrimHarvest"
+data "Passives" "CX_Wizard_Necromancy_Boost;Dwarf_DwarvenResilience;Duergar_DuergarResilience;SunlightSensitivity;AttackOfOpportunity;SuperiorDarkvision;DarknessRules;GrimHarvest"
 
 // "_Dwarf"
 //  ├─ "Dwarf_Duergar_Ranger"                           --- (Has Ranger progressions)
@@ -1041,7 +1041,7 @@ new entry "FlamingFist_Elf"
 type "Character"
 using "FlamingFist_Elf"
 // data "Passives" "FeyAncestry;AttackOfOpportunity;DarknessRules;Darkvision"
-data "Passives" "CX_Martial_Boost;FeyAncestry;AttackOfOpportunity;DarknessRules;Darkvision"
+data "Passives" "FeyAncestry;AttackOfOpportunity;DarknessRules;Darkvision"
 
 // ("NPC_FlamingFist_Melee_Caster" to "NPC_Wizard")
 new entry "FlamingFist_Elf_Caster"
@@ -1346,7 +1346,7 @@ new entry "FOR_OgreCaptain"
 type "Character"
 using "FOR_OgreCaptain"
 // data "Passives" "OgreCurse;AttackOfOpportunity;Darkvision;DarknessRules"
-data "Passives" "CX_Martial_Boost;AttackOfOpportunity;DarknessRules;Darkvision;OgreCurse"
+data "Passives" "AttackOfOpportunity;DarknessRules;Darkvision;OgreCurse"
 
 // Buthir (Inherits Barbarian progressions, inherits Berserker subclass) (Her boosts from proprietary rage are added to all other rages)
 new entry "FOR_OgreMate"
@@ -1384,7 +1384,7 @@ new entry "Githyanki_Teenager"
 type "Character"
 using "Githyanki_Teenager"
 // data "Passives" "AttackOfOpportunity;DarknessRules"
-data "Passives" "CX_Martial_Boost;AttackOfOpportunity;DarknessRules"
+data "Passives" "AttackOfOpportunity;DarknessRules"
 
 // Ptaris, Githyanki Prodigy - HONOUR MODE INHERITANCE (I don't really know what to do with this guy, added custom Sorcerer progressions and Storm Sorcery subclass, added Boss boost)
 new entry "LOW_Githyanki_Prodigy"
@@ -1647,7 +1647,7 @@ new entry "FlamingFist_Gnome"
 type "Character"
 using "FlamingFist_Gnome"
 // data "Passives" "Gnome_Cunning;Gnome_Speed;AttackOfOpportunity;DarknessRules;Darkvision"
-data "Passives" "CX_Martial_Boost;Gnome_Cunning;Gnome_Speed;AttackOfOpportunity;DarknessRules;Darkvision"
+data "Passives" "Gnome_Cunning;Gnome_Speed;AttackOfOpportunity;DarknessRules;Darkvision"
 
 // Fist Reynash - Flaming Fist ("NPC_FlamingFist_Melee_Caster" to "NPC_Wizard")
 new entry "FlamingFist_Gnome_Caster"
@@ -1797,7 +1797,7 @@ new entry "LOW_HouseOfGrief_Cultist_Melee_Gnome"
 type "Character"
 using "LOW_HouseOfGrief_Cultist_Melee_Gnome"
 // data "Passives" "Gnome_Cunning;Gnome_Speed;AttackOfOpportunity;DarknessRules;Darkvision;LOW_HouseOfGrief_Cultists_Sight;LOW_HouseOfGrief_Cultists_Melee;"
-data "Passives" "CX_Fighter_Boost;CX_Martial_Boost;Gnome_Cunning;Gnome_Speed;AttackOfOpportunity;DarknessRules;Darkvision;LOW_HouseOfGrief_Cultists_Sight;LOW_HouseOfGrief_Cultists_Melee"
+data "Passives" "CX_Fighter_Boost;Gnome_Cunning;Gnome_Speed;AttackOfOpportunity;DarknessRules;Darkvision;LOW_HouseOfGrief_Cultists_Sight;LOW_HouseOfGrief_Cultists_Melee"
 
 // "_Gnome"
 //  ├─ "Gnome_Monk"                 --- (Has Monk progressions)
@@ -2004,7 +2004,7 @@ new entry "Goblin_Melee"
 type "Character"
 using "Goblin_Melee"
 // data "Passives" "AttackOfOpportunity;Darkvision;DarknessRules"
-data "Passives" "CX_Martial_Boost;AttackOfOpportunity;Darkvision;DarknessRules"
+data "Passives" "AttackOfOpportunity;Darkvision;DarknessRules"
 
 // (Added Fighter progressions)
 new entry "DEN_Goblin_Melee"
@@ -2015,7 +2015,7 @@ data "Passives" "AttackOfOpportunity;Darkvision;DarknessRules"
 // data "Progressions" ""
 data "Progressions" "0e6da493-5a37-423b-8c28-629462b22faa"
 
-// Goblin Sapper (Inherits CX_Martial_Boost)
+// Goblin Sapper
 new entry "GOB_GoblinSapper"
 type "Character"
 using "GOB_GoblinSapper"
@@ -2086,19 +2086,19 @@ data "Progressions" "0e6da493-5a37-423b-8c28-629462b22faa"
 //  │       └─ "SCL_DriderCaravan_Goblin_Ranger"
 //  └─ "_Goblins_Gustav"                            --- Unused
 
-// Goblin Tracker, Dead Goblin Raider, Tracker Nik-Nuk, Tracker Slice, Sharp-Eye Sneem, Tracker Rindle, Tracker Puli, Tracker Tozad - Cult of the Absolute (Added CX_Martial_Boost, these dudes are just full on grunts)
+// Goblin Tracker, Dead Goblin Raider, Tracker Nik-Nuk, Tracker Slice, Sharp-Eye Sneem, Tracker Rindle, Tracker Puli, Tracker Tozad - Cult of the Absolute
 new entry "Goblin_Ranger"
 type "Character"
 using "Goblin_Ranger"
 // data "Passives" "AttackOfOpportunity;Darkvision;DarknessRules"
-data "Passives" "CX_Martial_Boost;AttackOfOpportunity;Darkvision;DarknessRules"
+data "Passives" "AttackOfOpportunity;Darkvision;DarknessRules"
 
-// Goblin Tracker (Added CX_Martial_Boost, these dudes are just full on grunts)
+// Goblin Tracker
 new entry "DEN_Goblin_Archer"
 type "Character"
 using "DEN_Goblin_Archer"
 // data "Passives" "Darkvision;DarknessRules"
-data "Passives" "CX_Martial_Boost;AttackOfOpportunity;Darkvision;DarknessRules"
+data "Passives" "AttackOfOpportunity;Darkvision;DarknessRules"
 
 // Tracker Tak - Cult of the Absolute (Turned into a real Bard, somewhat subjective and for variety because they just have an instrument and proficiency)
 new entry "GOB_Goblin_Ranger_Bard"
@@ -2190,7 +2190,7 @@ new entry "FlamingFist_HalfElf"
 type "Character"
 using "FlamingFist_HalfElf"
 // data "Passives" "FeyAncestry;AttackOfOpportunity;Darkvision;DarknessRules"
-data "Passives" "CX_Martial_Boost;FeyAncestry;HumanMilitia;AttackOfOpportunity;Darkvision;DarknessRules"
+data "Passives" "FeyAncestry;HumanMilitia;AttackOfOpportunity;Darkvision;DarknessRules"
 
 // ("NPC_FlamingFist_Melee_Caster" to "NPC_Wizard")
 new entry "FlamingFist_HalfElf_Caster"
@@ -2355,7 +2355,7 @@ new entry "HAV_Isobel"
 type "Character"
 using "HAV_Isobel"
 // data "Passives" "PotentSpellcasting;AttackOfOpportunity;FeyAncestry;DarknessRules;Darkvision"
-data "Passives" "CX_Cleric_Light_Boost;CX_Magic_Boost;FeyAncestry;HumanMilitia;AttackOfOpportunity;Darkvision;DarknessRules;PotentSpellcasting"
+data "Passives" "CX_Cleric_Light_Boost;FeyAncestry;HumanMilitia;AttackOfOpportunity;Darkvision;DarknessRules;PotentSpellcasting"
 
 // Brother Donnick, Church of Ilmater (Inherits Cleric progressions, added Life Domain Subclass)
 new entry "WYR_OpenHandTemple_HalfElf_Cleric"
@@ -2583,12 +2583,12 @@ using "WYR_DanthelonShop_HalfOrc_Melee"
 // data "Progressions" "0e6da493-5a37-423b-8c28-629462b22faa"
 data "Progressions" "56db8107-e04c-4fe3-94f3-fd4acd44cd4a"
 
-// Manifestation of Tyranny - Gortash summon (Doesn't have progressions, leaving it like that and just adding CX_Martial_Boost, has very simple abilities, punching and shoving)
+// Manifestation of Tyranny - Gortash summon
 new entry "WYR_Gortash_ManifestationOfTyranny"
 type "Character"
 using "WYR_Gortash_ManifestationOfTyranny"
 // data "Passives" "AttackOfOpportunity;DarknessRules;Ethereal"
-data "Passives" "CX_Martial_Boost;SavageAttacks;RelentlessEndurance;AttackOfOpportunity;Darkvision;DarknessRules;Ethereal"
+data "Passives" "SavageAttacks;RelentlessEndurance;AttackOfOpportunity;Darkvision;DarknessRules;Ethereal"
 
 // Lady Durinbold's Bodyguard (Inherits Fighter progressions, removing her Superiority Dice as she'll get them if recieving Battle Master)
 new entry "WYR_MessHallBodyguard_07"
@@ -2696,7 +2696,7 @@ new entry "FlamingFist_Halfling"
 type "Character"
 using "FlamingFist_Halfling"
 // data "Passives" "Halfling_Lucky;Halfling_Brave;AttackOfOpportunity;DarknessRules"
-data "Passives" "CX_Martial_Boost;Halfling_Lucky;Halfling_Brave;AttackOfOpportunity;DarknessRules"
+data "Passives" "Halfling_Lucky;Halfling_Brave;AttackOfOpportunity;DarknessRules"
 
 // ("NPC_FlamingFist_Melee_Caster" to "NPC_Wizard")
 new entry "FlamingFist_Halfling_Caster"
@@ -2761,7 +2761,7 @@ new entry "Halfling_Caster"
 type "Character"
 using "Halfling_Caster"
 // data "Passives" "Halfling_Lucky;Halfling_Brave;AttackOfOpportunity;DarknessRules"
-data "Passives" "CX_Magic_Boost;Halfling_Lucky;Halfling_Brave;AttackOfOpportunity;DarknessRules"
+data "Passives" "Halfling_Lucky;Halfling_Brave;AttackOfOpportunity;DarknessRules"
 
 // Ironfinger - Skull Lasher, Cult of Myrkul (Inherits Wizard progressions, Cahoot felt Necromancy was the vibe)
 new entry "Halfling_Cultist_Myrkul_SkullLasher"
@@ -2932,7 +2932,7 @@ using "Hobgoblin"
 // data "DarkvisionRange" "16"
 data "DarkvisionRange" "9"
 // data "Passives" "MartialAdvantage;AttackOfOpportunity;Darkvision;DarknessRules"
-data "Passives" "CX_Martial_Boost;MartialAdvantage;AttackOfOpportunity;Darkvision;DarknessRules"
+data "Passives" "MartialAdvantage;AttackOfOpportunity;Darkvision;DarknessRules"
 
 // (Added Fighter progressions)
 new entry "Hobgoblin_Boss"
@@ -3047,7 +3047,7 @@ new entry "FlamingFist_Human"
 type "Character"
 using "FlamingFist_Human"
 // data "Passives" "AttackOfOpportunity;DarknessRules"
-data "Passives" "CX_Martial_Boost;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules"
+data "Passives" "HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules"
 
 // Flaming Fist Wizard ("NPC_FlamingFist_Melee_Caster" to "NPC_Wizard")
 new entry "FlamingFist_Human_Caster"
@@ -3245,14 +3245,14 @@ data "Progressions" "36c3f8de-3293-4d7b-92bc-ceb3c569244b"
 new entry "Human_Cultist_Umberlee_FloodTide"
 type "Character"
 using "Human_Cultist_Umberlee_FloodTide"
-data "Passives" "CX_Cleric_Tempest_Boost;CX_Martial_Boost;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules;DualWielder_BonusAC;DualWielder_PassiveBonuses;ImmuneToWadableWater;MagicResistance"
+data "Passives" "CX_Cleric_Tempest_Boost;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules;DualWielder_BonusAC;DualWielder_PassiveBonuses;ImmuneToWadableWater;MagicResistance"
 
 // Savage Seawind: Seawind Tinsy Ralpp, Seawind Dulse, Seawind Raheni, Seawind Star Stolitti, Holli Dylford, Seawind Flan Hawser, Seawind Slow-Boat Drubella - Church of Umberlee (Inherits swapped Cleric progressions, added Martial boost)
 new entry "Human_Cultist_Umberlee_SavageSeawind"
 type "Character"
 using "Human_Cultist_Umberlee_SavageSeawind"
 // data "Passives" "Riposte;SavageAttacker;ImmuneToWadableWater;AttackOfOpportunity;DarknessRules"
-data "Passives" "CX_Cleric_Tempest_Boost;CX_Martial_Boost;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules;Riposte;SavageAttacker;ImmuneToWadableWater"
+data "Passives" "CX_Cleric_Tempest_Boost;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules;Riposte;SavageAttacker;ImmuneToWadableWater"
 
 // "_Human"
 //  ├─ "Human_Caster"
@@ -3395,7 +3395,7 @@ data "SpellCastingAbility" "Charisma"
 // data "Progressions" "44bdbc5e-a003-4d61-87f0-5ced20d3804e"
 data "Progressions" "51274504-865d-46d1-b6a3-2ec784934a90"
 // data "Passives" "AttackOfOpportunity;DarknessRules"
-data "Passives" "CX_Warlock_Boost;CX_Magic_Boost;CX_Spells_L3;CX_Spells_L2C;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules"
+data "Passives" "CX_Warlock_Boost;CX_Spells_L3;CX_Spells_L2C;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules"
 
 //TODO: Custom Legendary actions for Lorroakan
 // Lorroakan (Inherits Wizard progressions, added Evocation School subclass, added Boss boost) (Due to his usage of Elemental Retort removing Attack Of Opportunity is wise)
@@ -3451,7 +3451,7 @@ new entry "LOW_Undercellar_Entrance_Human_Caster"
 type "Character"
 using "LOW_Undercellar_Entrance_Human_Caster"
 // data "Passives" "AttackOfOpportunity;DarknessRules"
-data "Passives" "CX_Magic_Boost;CX_Spells_L5;CX_Spells_L5C;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules"
+data "Passives" "CX_Spells_L5;CX_Spells_L5C;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules"
 
 // Salazon - Zhentarim (Guy guarding entrance to the Zhentarim hideout beneath Waukeen's Rest) (Inherits Wizard progressions. Cahoot: Keeping Evocation boost because his introduction is threatening to blow up the place with fire)
 new entry "PLA_Zhent_Recruit_Human_Caster"
@@ -3730,7 +3730,7 @@ new entry "WYR_GurHunter_Melee_Strong"
 type "Character"
 using "WYR_GurHunter_Melee_Strong"
 // data "Passives" "Scar_Fury_Gur;AttackOfOpportunity;DarknessRules"
-data "Passives" "CX_Fighter_Boost;CX_Martial_Boost;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules;Scar_Fury_Gur"
+data "Passives" "CX_Fighter_Boost;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules;Scar_Fury_Gur"
 
 // "_Human"
 //  ├─ "Human_Melee"
@@ -3839,7 +3839,7 @@ new entry "LOW_VolosFate_Thugs_Melee_03"
 type "Character"
 using "LOW_VolosFate_Thugs_Melee_03"
 // data "Passives" "Overwhelm;AttackOfOpportunity;DarknessRules"
-data "Passives" "CX_Fighter_Boost;CX_Martial_Boost;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules;Overwhelm"
+data "Passives" "CX_Fighter_Boost;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules;Overwhelm"
 
 // Skywin - Harpers (This stat block is completely fucked in vanilla lol. Elf Ranger with Human Fighter stats. Using stats for HAV_Harper_Elf_Ranger as partial reference for her)
 new entry "SCL_Caravan_Ambusher_Skywin"
@@ -3893,7 +3893,7 @@ new entry "Human_Ranger"
 type "Character"
 using "Human_Ranger"
 // data "Passives" "AttackOfOpportunity;DarknessRules"
-data "Passives" "CX_Ranger_Boost;CX_Martial_Boost;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules"
+data "Passives" "CX_Ranger_Boost;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules"
 
 // Unused (Inherits Ranger progressions, fixed racials)
 new entry "CHA_Bandit_Human_Ranger"
@@ -4137,7 +4137,7 @@ new entry "Human_Cultist_Bane_IronConsul"
 type "Character"
 using "Human_Cultist_Bane_IronConsul"
 // data "Passives" "ExtraAttack;Tactical_Discipline;AttackOfOpportunity;DarknessRules"
-data "Passives" "CX_Fighter_Boost;CX_Martial_Boost;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules;ExtraAttack;Tactical_Discipline"
+data "Passives" "CX_Fighter_Boost;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules;ExtraAttack;Tactical_Discipline"
 // data "Progressions" ""
 data "Progressions" "0e6da493-5a37-423b-8c28-629462b22faa"
 
@@ -4273,7 +4273,7 @@ using "Sahuagin"
 // data "SpellCastingAbility" "Strength"
 data "SpellCastingAbility" "Intelligence"
 // data "Passives" "BloodFrenzy_Sahuagin;AttackOfOpportunity;DarknessRules"
-data "Passives" "CX_Martial_Boost;BloodFrenzy_Sahuagin;AttackOfOpportunity;DarknessRules"
+data "Passives" "BloodFrenzy_Sahuagin;AttackOfOpportunity;DarknessRules"
 
 // (Added Fighter progressions, added Champion subclass)
 new entry "Sahuagin_Champion"
@@ -4347,7 +4347,7 @@ new entry "Kuotoa"
 type "Character"
 using "Kuotoa"
 // data "Passives" "SunlightSensitivity;AttackOfOpportunity;Darkvision;DarknessRules"
-data "Passives" "CX_Martial_Boost;SunlightSensitivity;AttackOfOpportunity;Darkvision;DarknessRules"
+data "Passives" "SunlightSensitivity;AttackOfOpportunity;Darkvision;DarknessRules"
 
 // Proselyte of Mahkloompah (summon from during Confront the Elder Brain; technically not part of Gather Your Allies) (Added Barbarian progressions, added Wild Magic subclass)
 new entry "END_KuotoaAlly_Melee"
@@ -4616,7 +4616,7 @@ new entry "FlamingFist_Tiefling"
 type "Character"
 using "FlamingFist_Tiefling"
 // data "Passives" "Tiefling_HellishResistance;AttackOfOpportunity;DarknessRules;Darkvision"
-data "Passives" "CX_Martial_Boost;Tiefling_HellishResistance;AttackOfOpportunity;DarknessRules;Darkvision"
+data "Passives" "Tiefling_HellishResistance;AttackOfOpportunity;DarknessRules;Darkvision"
 
 // ("NPC_FlamingFist_Melee_Caster" to "NPC_Wizard")
 new entry "FlamingFist_Tiefling_Caster"
@@ -4697,7 +4697,7 @@ type "Character"
 using "Brewer"
 // data "Passives" "ExtraAttack;TurnResistance;ImmuneToControlUndead;AttackOfOpportunity;DarknessRules;Darkvision;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check"
 // data "Passives" "ExtraAttack;TurnResistance;ImmuneToControlUndead;AttackOfOpportunity;DarknessRules;Darkvision;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check;LegendaryAction_MixChangeExplosion_Brewer"
-data "Passives" "CX_Boss_Boost;CX_Martial_Boost;ExtraAttack;TurnResistance;ImmuneToControlUndead;AttackOfOpportunity;DarknessRules;Darkvision;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check;LegendaryAction_MixChangeExplosion_Brewer"
+data "Passives" "CX_Boss_Boost;ExtraAttack;TurnResistance;ImmuneToControlUndead;AttackOfOpportunity;DarknessRules;Darkvision;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check;LegendaryAction_MixChangeExplosion_Brewer"
 
 // "_Undead"
 //  ├─ "DarkJusticiar_Melee"                              --- Justiciar Avengers in Gauntlet of Shar (Added Fighter progression)
@@ -4746,7 +4746,7 @@ new entry "SHA_LastJusticiar_Lyrthindor"
 type "Character"
 using "SHA_LastJusticiar_Lyrthindor"
 // data "Passives" "SHA_VisionOfShar;SHA_Lyrthindor_UnlockExtraSpellSlots;AttackOfOpportunity;Darkvision;DarknessRules"
-data "Passives" "CX_MiniBoss_Boost;CX_Cleric_Trickery_Boost;CX_Martial_Boost;AttackOfOpportunity;Darkvision;DarknessRules;SHA_VisionOfShar;SHA_Lyrthindor_UnlockExtraSpellSlots;"
+data "Passives" "CX_MiniBoss_Boost;CX_Cleric_Trickery_Boost;AttackOfOpportunity;Darkvision;DarknessRules;SHA_VisionOfShar;SHA_Lyrthindor_UnlockExtraSpellSlots;"
 // data "Progressions" ""
 data "Progressions" "36c3f8de-3293-4d7b-92bc-ceb3c569244b"
 
@@ -4847,7 +4847,7 @@ type "Character"
 using "LOW_FatherCarrion"
 // data "Passives" "AttackOfOpportunity;DarknessRules;MagicResistance;TurnResistance;Darkvision;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check;Multiattack_Mummy;ImmuneToDisarm;"
 // data "Passives" "AttackOfOpportunity;DarknessRules;MagicResistance;TurnResistance;Darkvision;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check;Multiattack_Mummy;ImmuneToDisarm;LegendaryAction_LOW_FatherCarrion_SpiritParade"
-data "Passives" "CX_Boss_Boost;CX_Magic_Boost;CX_Martial_Boost;AttackOfOpportunity;DarknessRules;MagicResistance;TurnResistance;Darkvision;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check;Multiattack_Mummy;ImmuneToDisarm;LegendaryAction_LOW_FatherCarrion_SpiritParade"
+data "Passives" "CX_Boss_Boost;AttackOfOpportunity;DarknessRules;MagicResistance;TurnResistance;Darkvision;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check;Multiattack_Mummy;ImmuneToDisarm;LegendaryAction_LOW_FatherCarrion_SpiritParade"
 
 // "_Undead"
 //  ├─ "Shadow"
@@ -4939,7 +4939,7 @@ using "TollCollector"
 data "SpellCastingAbility" "Intelligence"
 // data "Passives" "Alert;TollCollector_Armor;FastHands;TurnResistance;ImmuneToControlUndead;AttackOfOpportunity;DarknessRules;Darkvision;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check"
 // data "Passives" "Alert;TollCollector_Armor;FastHands;TurnResistance;ImmuneToControlUndead;AttackOfOpportunity;DarknessRules;Darkvision;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check;LegendaryAction_MidasWrath_TollCollector"
-data "Passives" "CX_Boss_Boost;CX_Martial_Boost;Alert;TollCollector_Armor;FastHands;TurnResistance;ImmuneToControlUndead;AttackOfOpportunity;DarknessRules;Darkvision;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check;LegendaryAction_MidasWrath_TollCollector"
+data "Passives" "CX_Boss_Boost;Alert;TollCollector_Armor;FastHands;TurnResistance;ImmuneToControlUndead;AttackOfOpportunity;DarknessRules;Darkvision;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check;LegendaryAction_MidasWrath_TollCollector"
 
 // "_Undead"
 //  ├─ "Zombie"
@@ -4970,7 +4970,7 @@ type "Character"
 using "GLO_Cazador"
 // data "Passives" "Alert;ExtraAttack_2;AttackOfOpportunity;DarknessRules;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check;DamageDealtRecently"
 // data "Passives" "Alert;ExtraAttack_2;AttackOfOpportunity;DarknessRules;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check;DamageDealtRecently;LegendaryAction_LOW_Cazador_BatSwarm;LegendaryAction_LOW_Cazador_BatSwarm_Block;"
-data "Passives" "CX_Boss_Boost;CX_Wizard_Necromancy_Boost;CX_Martial_Boost;CX_Spells_L6;CX_Spells_L6C;AttackOfOpportunity;DarknessRules;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check;DamageDealtRecently;Alert;ExtraAttack_2;LegendaryAction_LOW_Cazador_BatSwarm;LegendaryAction_LOW_Cazador_BatSwarm_Block;"
+data "Passives" "CX_Boss_Boost;CX_Wizard_Necromancy_Boost;CX_Spells_L6;CX_Spells_L6C;AttackOfOpportunity;DarknessRules;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check;DamageDealtRecently;Alert;ExtraAttack_2;LegendaryAction_LOW_Cazador_BatSwarm;LegendaryAction_LOW_Cazador_BatSwarm_Block;"
 
 // Skeletons are the most relevant Undead category for CX class boosts
 
@@ -5049,7 +5049,7 @@ using "Skeleton_Ranger"
 // data "SpellCastingAbility" "Intelligence"
 data "SpellCastingAbility" "Wisdom"
 // data "Passives" "BlockVerbalSpellcasting;SkeletonDeath_Check;AttackOfOpportunity;Darkvision;DarknessRules;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check"
-data "Passives" "CX_Ranger_Boost;CX_Martial_Boost;AttackOfOpportunity;Darkvision;DarknessRules;BlockVerbalSpellcasting;SkeletonDeath_Check;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check"
+data "Passives" "CX_Ranger_Boost;AttackOfOpportunity;Darkvision;DarknessRules;BlockVerbalSpellcasting;SkeletonDeath_Check;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check"
 // data "Progressions" ""
 data "Progressions" "f0ede459-8b86-48fd-ac11-4432573566a5"
 // data "Proficiency Group" "Longbows;Shortbows;LightArmor;SimpleWeapons"
@@ -5202,13 +5202,13 @@ type "Character"
 using "HAG_AuntieEthel"
 // data "Passives" "AttackOfOpportunity;DarknessRules;Darkvision;Alert;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check"
 // data "Passives" "AttackOfOpportunity;DarknessRules;Darkvision;Alert;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check;LegendaryAction_HAG_Counterswap"
-data "Passives" "Goon_NPC_Ethel_Unlocker;CX_Boss_Boost;CX_Magic_Boost;AttackOfOpportunity;DarknessRules;Darkvision;Alert;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check;LegendaryAction_HAG_Counterswap"
+data "Passives" "Goon_NPC_Ethel_Unlocker;CX_Boss_Boost;AttackOfOpportunity;DarknessRules;Darkvision;Alert;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check;LegendaryAction_HAG_Counterswap"
 
 new entry "HAG_AuntieEthel_Double"
 type "Character"
 using "HAG_AuntieEthel_Double"
 // data "Passives" "AttackOfOpportunity;DarknessRules;Darkvision;Alert;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check;LegendaryAction_HAG_Counterswap_Double"
-data "Passives" "Goon_NPC_Ethel_Unlocker;CX_Boss_Boost;CX_Magic_Boost;AttackOfOpportunity;DarknessRules;Darkvision;Alert;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check;LegendaryAction_HAG_Counterswap_Double"
+data "Passives" "Goon_NPC_Ethel_Unlocker;CX_Boss_Boost;AttackOfOpportunity;DarknessRules;Darkvision;Alert;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check;LegendaryAction_HAG_Counterswap_Double"
 
 // Redcap (Act 1) (Added Rogue progressions, added Finesse overwrite passive to enable Sneak Attack)
 new entry "RedCap"
@@ -5302,7 +5302,7 @@ type "Character"
 using "GLO_Raphael"
 // data "Passives" "AttackOfOpportunity;DarknessRules;Darkvision;FiendishBlessing;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check;MagicResistance;DevilsSight;LOW_Raphael_SoulSiphon_Passive;LOW_Raphael_SoulSiphon_Passive_2;LOW_Raphael_SoulSiphon_Passive_3;LOW_Raphael_SoulSiphon_Passive_4;LOW_Raphael_SoulSiphon_Passive_5;LOW_Raphael_SoulSiphon_Passive_6;LOW_Raphael_SoulSiphon_Passive_7;LOW_Raphael_SoulSiphon_Passive_8;LOW_Raphael_SoulSiphon_Passive_9;LOW_Raphael_Reaper;MAG_Infernal_Plate_Armor_Passive;LOW_Raphael_Set_Pillar_Status;LOW_Raphael_ArchfiendWill;"
 // data "Passives" "LegendaryAction_LOW_Raphael;AttackOfOpportunity;DarknessRules;Darkvision;FiendishBlessing;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check;MagicResistance;DevilsSight;LOW_Raphael_SoulSiphon_Passive;LOW_Raphael_SoulSiphon_Passive_2;LOW_Raphael_SoulSiphon_Passive_3;LOW_Raphael_SoulSiphon_Passive_4;LOW_Raphael_SoulSiphon_Passive_5;LOW_Raphael_SoulSiphon_Passive_6;LOW_Raphael_SoulSiphon_Passive_7;LOW_Raphael_SoulSiphon_Passive_8;LOW_Raphael_SoulSiphon_Passive_9;LOW_Raphael_Reaper;MAG_Infernal_Plate_Armor_Passive;LOW_Raphael_Set_Pillar_Status;LOW_Raphael_ArchfiendWill;"
-data "Passives" "CX_Boss_Boost;CX_Magic_Boost;LegendaryAction_LOW_Raphael;AttackOfOpportunity;DarknessRules;Darkvision;FiendishBlessing;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check;MagicResistance;DevilsSight;LOW_Raphael_SoulSiphon_Passive;LOW_Raphael_SoulSiphon_Passive_2;LOW_Raphael_SoulSiphon_Passive_3;LOW_Raphael_SoulSiphon_Passive_4;LOW_Raphael_SoulSiphon_Passive_5;LOW_Raphael_SoulSiphon_Passive_6;LOW_Raphael_SoulSiphon_Passive_7;LOW_Raphael_SoulSiphon_Passive_8;LOW_Raphael_SoulSiphon_Passive_9;LOW_Raphael_Reaper;MAG_Infernal_Plate_Armor_Passive;LOW_Raphael_Set_Pillar_Status;LOW_Raphael_ArchfiendWill;ImmuneToDisarm"
+data "Passives" "CX_Boss_Boost;LegendaryAction_LOW_Raphael;AttackOfOpportunity;DarknessRules;Darkvision;FiendishBlessing;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check;MagicResistance;DevilsSight;LOW_Raphael_SoulSiphon_Passive;LOW_Raphael_SoulSiphon_Passive_2;LOW_Raphael_SoulSiphon_Passive_3;LOW_Raphael_SoulSiphon_Passive_4;LOW_Raphael_SoulSiphon_Passive_5;LOW_Raphael_SoulSiphon_Passive_6;LOW_Raphael_SoulSiphon_Passive_7;LOW_Raphael_SoulSiphon_Passive_8;LOW_Raphael_SoulSiphon_Passive_9;LOW_Raphael_Reaper;MAG_Infernal_Plate_Armor_Passive;LOW_Raphael_Set_Pillar_Status;LOW_Raphael_ArchfiendWill;ImmuneToDisarm"
 // data "PathInfluence" "BloodElectrified,100;BloodFrozen,30;Lava,700;HolyFire,40;PoisonCloud,70;WyvernPoison,70;DrowPoisonCloud,70;PurpleWormPoison,70;SerpentVenom,70;InvisibleGithAcid,70;CloudkillCloud,70;MaliceCloud,70;CrawlerMucusCloud,70;WaterElectrified,100;WaterFrozen,30;Grease,30;Web,30;Vines,40;SporeBlackCloud,100;WaterCloudElectrified,40;SporeGreenCloud,40;Acid,30;CausticBrine,40;DarknessCloud,30;FogCloud,30;Mud,30;Oil,30;Poison,30;SpikeGrowth,40;SporePinkCloud,40;StinkingCloud,40"
 data "PathInfluence" "BloodElectrified,100;BloodFrozen,30;Lava,700;HolyFire,40;PoisonCloud,70;WyvernPoison,70;DrowPoisonCloud,70;PurpleWormPoison,70;SerpentVenom,70;InvisibleGithAcid,70;CloudkillCloud,70;Cloudkill6Cloud,70;MaliceCloud,70;CrawlerMucusCloud,70;WaterElectrified,100;WaterFrozen,30;Grease,30;Web,30;Vines,40;SporeBlackCloud,100;WaterCloudElectrified,40;SporeGreenCloud,40;Acid,30;CausticBrine,40;DarknessCloud,30;FogCloud,30;Mud,30;Oil,30;Poison,30;SpikeGrowth,40;SporePinkCloud,40;StinkingCloud,40"
 
@@ -5312,14 +5312,14 @@ type "Character"
 using "LOW_Raphael_Monster_Form_Stats"
 // data "Passives" "AttackOfOpportunity;DarknessRules;Darkvision;FiendishBlessing;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check;MagicResistance;DevilsSight;LOW_Raphael_SoulSiphon_Passive;LOW_Raphael_SoulSiphon_Passive_2;LOW_Raphael_SoulSiphon_Passive_3;LOW_Raphael_SoulSiphon_Passive_4;LOW_Raphael_SoulSiphon_Passive_5;LOW_Raphael_SoulSiphon_Passive_6;LOW_Raphael_SoulSiphon_Passive_7;LOW_Raphael_SoulSiphon_Passive_8;LOW_Raphael_SoulSiphon_Passive_9;LOW_Raphael_Reaper;MAG_Infernal_Plate_Armor_Passive;LOW_Raphael_Set_Pillar_Status;LOW_Raphael_ArchfiendWill;"
 // data "Passives" "LegendaryAction_LOW_Raphael;AttackOfOpportunity;DarknessRules;Darkvision;FiendishBlessing;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check;MagicResistance;DevilsSight;LOW_Raphael_SoulSiphon_Passive;LOW_Raphael_SoulSiphon_Passive_2;LOW_Raphael_SoulSiphon_Passive_3;LOW_Raphael_SoulSiphon_Passive_4;LOW_Raphael_SoulSiphon_Passive_5;LOW_Raphael_SoulSiphon_Passive_6;LOW_Raphael_SoulSiphon_Passive_7;LOW_Raphael_SoulSiphon_Passive_8;LOW_Raphael_SoulSiphon_Passive_9;LOW_Raphael_Reaper;MAG_Infernal_Plate_Armor_Passive;LOW_Raphael_Set_Pillar_Status;LOW_Raphael_ArchfiendWill;"
-data "Passives" "CX_Boss_Boost;CX_Martial_Boost;CX_Magic_Boost;LegendaryAction_LOW_Raphael_Ascended;AttackOfOpportunity;DarknessRules;Darkvision;FiendishBlessing;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check;MagicResistance;DevilsSight;LOW_Raphael_SoulSiphon_Passive;LOW_Raphael_SoulSiphon_Passive_2;LOW_Raphael_SoulSiphon_Passive_3;LOW_Raphael_SoulSiphon_Passive_4;LOW_Raphael_SoulSiphon_Passive_5;LOW_Raphael_SoulSiphon_Passive_6;LOW_Raphael_SoulSiphon_Passive_7;LOW_Raphael_SoulSiphon_Passive_8;LOW_Raphael_SoulSiphon_Passive_9;LOW_Raphael_Reaper;MAG_Infernal_Plate_Armor_Passive;LOW_Raphael_Set_Pillar_Status;LOW_Raphael_ArchfiendWill"
+data "Passives" "CX_Boss_Boost;LegendaryAction_LOW_Raphael_Ascended;AttackOfOpportunity;DarknessRules;Darkvision;FiendishBlessing;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check;MagicResistance;DevilsSight;LOW_Raphael_SoulSiphon_Passive;LOW_Raphael_SoulSiphon_Passive_2;LOW_Raphael_SoulSiphon_Passive_3;LOW_Raphael_SoulSiphon_Passive_4;LOW_Raphael_SoulSiphon_Passive_5;LOW_Raphael_SoulSiphon_Passive_6;LOW_Raphael_SoulSiphon_Passive_7;LOW_Raphael_SoulSiphon_Passive_8;LOW_Raphael_SoulSiphon_Passive_9;LOW_Raphael_Reaper;MAG_Infernal_Plate_Armor_Passive;LOW_Raphael_Set_Pillar_Status;LOW_Raphael_ArchfiendWill"
 
 // Commander Zhalk (Added Martial Boost, added Boss boost, AND added "ImmuneToDisarm")
 new entry "TUT_CambionCommander"
 type "Character"
 using "TUT_CambionCommander"
 // data "Passives" "DarknessRules;Darkvision;FiendishBlessing;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check"
-data "Passives" "CX_Boss_Boost;CX_Martial_Boost;DarknessRules;Darkvision;FiendishBlessing;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check;ImmuneToDisarm"
+data "Passives" "CX_Boss_Boost;DarknessRules;Darkvision;FiendishBlessing;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check;ImmuneToDisarm"
 
 // "_Fiend"
 //  ├─ "Incubus"
@@ -5709,7 +5709,7 @@ new entry "END_Daisy"
 type "Character"
 using "END_Daisy"
 // data "Passives" "AttackOfOpportunity;DarknessRules;MagicResistance;TAD_Charm"
-data "Passives" "CX_Martial_Boost;CX_Magic_Boost;AttackOfOpportunity;DarknessRules;MagicResistance;TAD_Charm"
+data "Passives" "AttackOfOpportunity;DarknessRules;MagicResistance;TAD_Charm"
 
 // ==================================== Constructs ====================================
 // "_Base"
