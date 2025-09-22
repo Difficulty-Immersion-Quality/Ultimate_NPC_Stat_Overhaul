@@ -19,7 +19,7 @@
 // CLASS AND SUBCLASS PASSIVES: 
 // "CX_Barbarian_Boost" - "CX_Barbarian_Berserker_Boost" / "CX_Barbarian_WildMagic_Boost" / "CX_Barbarian_Wildheart_Boost"
 // "CX_Bard_Boost" - "CX_Bard_Lore_Boost" / "CX_Bard_Swords_Boost" / "CX_Bard_Valor_Boost"
-// "CX_Cleric_Boost" - "CX_Cleric_Knowledge_Boost" / "CX_Cleric_Life_Boost" / "CX_Cleric_Light_Boost" / "CX_Cleric_Nature_Boost" / "CX_Cleric_Trickery_Boost" /"CX_Cleric_Tempest_Boost" / "CX_Cleric_War_Boost"
+// "CX_Cleric_Boost" - "CX_Cleric_Life_Boost" / "CX_Cleric_Light_Boost" / "CX_Cleric_Knowledge_Boost" / "CX_Cleric_Nature_Boost" / "CX_Cleric_Trickery_Boost" /"CX_Cleric_Tempest_Boost" / "CX_Cleric_War_Boost"
 // "CX_Druid_Boost" - "CX_Druid_Land_Boost" / "CX_Druid_Moon_Boost" / "CX_Druid_Spores_Boost"
 // "CX_Fighter_Boost" - "CX_Fighter_BattleMaster_Boost" / "CX_Fighter_Champion_Boost" / "CX_Fighter_EldritchKnight_Boost"
 // "CX_Monk_Boost" - "CX_Monk_FourElements_Boost" / "CX_Monk_OpenHand_Boost" / "CX_Monk_Shadow_Boost"
@@ -892,7 +892,7 @@ new entry "GLO_CounsellorFlorrick"
 type "Character"
 using "GLO_CounsellorFlorrick"
 // data "Passives" "AttackOfOpportunity;FeyAncestry;DarknessRules;Darkvision;Resilient_Constitution"
-data "Passives" "CX_Spells_L1;CX_Spells_L2;CX_Spells_L3;CX_Spells_L2C;CX_Spells_L3C;FeyAncestry;AttackOfOpportunity;DarknessRules;Darkvision;Resilient_Constitution"
+data "Passives" "CX_MiniBoss_Boost;CX_Spells_L1;CX_Spells_L2;CX_Spells_L3;CX_Spells_L2C;CX_Spells_L3C;FeyAncestry;AttackOfOpportunity;DarknessRules;Darkvision;Resilient_Constitution"
 
 // Lorin (Has Wizard progressions, fixed racials, removed extra spellslot passive)
 new entry "HAG_Victim_Mage"

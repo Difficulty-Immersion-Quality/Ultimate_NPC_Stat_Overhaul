@@ -138,14 +138,18 @@ data "Icon" "PassiveFeature_WrathOfTheStorm_Thunder"
 
 new entry "LAB_Progression_Cleric_Trickery"
 type "PassiveData"
+// ! Subclass: Trickery Domain Cleric
 data "DisplayName" "h62ef7e5dg444dg4771ga160g2efbe9caa201;1"
+// A Cleric who bends perception and fate, hiding divine purpose behind clever lies.
 data "Description" "h4a2efd9egffa1g447eg9519g59d2e559fc5e;1"
 data "Properties" "Highlighted"
 data "Icon" "Action_Cleric_BlessingOfTheTrickster"
 
 new entry "LAB_Progression_Cleric_War"
 type "PassiveData"
+// ! Subclass: War Domain Cleric
 data "DisplayName" "h2bb139d2gd9d4g450cgb665ge6980000f6fa;1"
+// A Cleric who thrives in battle, calling upon divine might to strike hard and stand firm.
 data "Description" "h80a67d37gafe5g46c5g8e35g6a6211f74415;1"
 data "Properties" "Highlighted"
 data "Icon" "PassiveFeature_WarPriest"
