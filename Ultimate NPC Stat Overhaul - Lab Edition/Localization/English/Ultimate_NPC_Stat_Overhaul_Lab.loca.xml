@@ -8,6 +8,9 @@
 	<!-- "LAB_Progression_Barbarian_Berserker" --> <content contentuid="h7fb10ed8gcd0ag4e02g909fg5a9433f5cebc" version="1">! Subclass: Berserker Barbarian</content>
 	<!-- "LAB_Progression_Barbarian_Berserker" --> <content contentuid="h28f5bbd1ge7ddg492egb781gbf7d0d1b0be7" version="1">A Barbarian who follows a path of untrammelled fury and thrills in the chaos of battle, regardless of their own well-being.</content>
 
+	<!-- "LAB_Progression_Barbarian_Giant" --> <content contentuid="he278d0e8g64c5g4f2bg8b3eg81e0a083f938" version="1">! Subclass: Giant Barbarian</content>
+	<!-- "LAB_Progression_Barbarian_Giant" --> 	<content contentuid="h7d8376fcg2ebeg400fg93b0gb56fb8e2ace1" version="1">A Barbarian who invokes their elemental might and size by drawing strength from the primal giants.</content>
+
 	<!-- "LAB_Progression_Barbarian_WildMagic" --> <content contentuid="h3b4ca2edgd773g4765ga420gf434555cc1f1" version="1">! Subclass: Wild Magic Barbarian</content>
 	<!-- "LAB_Progression_Barbarian_WildMagic" --> <content contentuid="h344dfc77g19d4g4999g87a7g6b27338790d7" version="1">A Barbarian suffused with the wild influence of arcane power waiting to be released.</content>
 
@@ -18,6 +21,9 @@
 
 	<!-- "LAB_Progression_Bard" --> <content contentuid="h3b2a32d0gf5bdg4994g8a0agbc545ff76f16" version="1">! Class: Bard</content>
 	<!-- "LAB_Progression_Bard" --> <content contentuid="h01fa41a8g0349g4d61gac86g3475d0e98ded" version="1">A character with a versatile skillset, who blends artistry, trickery, and spellcraft.</content>
+
+	<!-- "LAB_Progression_Bard_Glamour" --> <content contentuid="h525a89bag11abg497bga06bgdda580f69842" version="1">! Subclass: College of Glamour Bard</content>
+	<!-- "LAB_Progression_Bard_Glamour" --> <content contentuid="hce0583eag9b9dg47b2gb06eg3085ddc5eefd" version="1">A Bard who mastered their craft under the tutelage of fey creatures and can harness their captivating magic to charm their foes.</content>
 
 	<!-- "LAB_Progression_Bard_Lore" --> <content contentuid="h3bcbbd77gfc41g49ebga568g0cbf6a43e9ed" version="1">! Subclass: College of Lore Bard</content>
 	<!-- "LAB_Progression_Bard_Lore" --> <content contentuid="hc1899b1fgf6aag44c7g8ec9ga7ed8d2cd3b0" version="1">A Bard who blends magic, wit, and scholarship into a versatile and unpredictable force.</content>
@@ -32,6 +38,9 @@
 
 	<!-- "LAB_Progression_Cleric" --> <content contentuid="he6acc5c5gd23bg4c8dgb60cg3de3da611c9f" version="1">! Class: Cleric</content>
 	<!-- "LAB_Progression_Cleric" --> <content contentuid="hdc223953g447cg47f5gada1g3d26f4158e54" version="1">A character of faith, channeling divine magic both to aid and harm.</content>
+
+	<!-- "LAB_Progression_Cleric_Death" --> <content contentuid="hfd97b520g6eadg4f7dgbd47g49e9119d2359" version="1">! Subclass: Death Domain Cleric</content>
+	<!-- "LAB_Progression_Cleric_Death" --> <content contentuid="h17f6e1a5g6f7dg4af9g8b41g8b94524c617f" version="1">A Cleric who nourishes their faith on the forces that create the dead, giving rise to the undead.</content>
 
 	<!-- "LAB_Progression_Cleric_Life" --> <content contentuid="he573d2b7gbb53g4996gb795g1623ccf40749" version="1">! Subclass: Life Domain Cleric</content>
 	<!-- "LAB_Progression_Cleric_Life" --> <content contentuid="h748bb452ge0bbg4d70gb473g5f16915c5a1c" version="1">A Cleric who nurtures and protects, channeling radiant energy to heal and uplift.</content>
@@ -68,10 +77,16 @@
 	<!-- "LAB_Progression_Druid_Spores" --> <content contentuid="h407e27feg0d73g483dgbed5gb58542ff0cca" version="1">! Subclass: Circle of the Spores Druid</content>
 	<!-- "LAB_Progression_Druid_Spores" --> <content contentuid="h5872faaag78ffg4f03g99cbgcda17b06d423" version="1">A Druid who uses fungal growth and decay to augment themselves and harm their foes.</content>
 
+	<!-- "LAB_Progression_Druid_Stars" --> 	<content contentuid="h3c509123g2d68g469aga198g25d6a25261f4" version="1">! Subclass: Circle of the Stars Druid</content>
+	<!-- "LAB_Progression_Druid_Stars" --> 	<content contentuid="h6f1dc210g58e6g4c94g93c7g116b555c6354" version="1">A Druid who is guided by the infinite mysteries of the cosmos, using their understanding of the stars to enhance their druidic magic.</content>
+
 <!-- FIGHTER -->
 
 	<!-- "LAB_Progression_Fighter" --> <content contentuid="h6d12a72egfab9g4f45gae31g5d4491dd2b6b" version="1">! Class: Fighter</content>
 	<!-- "LAB_Progression_Fighter" --> <content contentuid="h5e48ac49gaae0g4a00g8c47g03b6fca54a3c" version="1">A character who has mastered weapons and tactics, excelling in martial combat.</content>
+
+	<!-- "LAB_Progression_Fighter_ArcaneArcher" --> <content contentuid="ha7114a77g5690g413bg8bcfg823002a4c268" version="1">! Subclass: Arcane Archer Fighter</content>
+	<!-- "LAB_Progression_Fighter_ArcaneArcher" --> <content contentuid="ha7114a77g5690g413bg8bcfg823002a4c268" version="1">An archer who studied a unique elven method of archery that weaves magic into attacks to produce supernatural effects.</content>
 
 	<!-- "LAB_Progression_Fighter_BattleMaster" --> <content contentuid="hefce9befgc089g4b04g9393g1ec534347dea" version="1">! Subclass: Battle Master Fighter</content>
 	<!-- "LAB_Progression_Fighter_BattleMaster" --> <content contentuid="hdbe7301eg8093g461fgaa19g99bf294c1819" version="1">A paragon of tactical superiority, who can employ a wide array of combat manoeuvres to dominate every fight.</content>
@@ -86,6 +101,9 @@
 
 	<!-- "LAB_Progression_Monk" --> <content contentuid="h5f6db4dfgb3b4g4289g937bg039af3d0b1f8" version="1">! Class: Monk</content>
 	<!-- "LAB_Progression_Monk" --> <content contentuid="h2456c053g4d3fg4c2ag89fag9ea0f0bb2e1d" version="1">A character who disciplines body and spirit, moving with speed, precision, and inner focus.</content>
+
+	<!-- "LAB_Progression_Monk_DrunkenMaster" --> <content contentuid="hbf273c63ge7f1g4d73gba18g5098892fd766" version="1">! Subclass: Way of the Drunken Master Monk</content>
+	<!-- "LAB_Progression_Monk_DrunkenMaster" --> <content contentuid="hfecfef07g1459g43d4gba71g965751120d69" version="1">A Monk who frustrates foes with carefully executed movements concealed beneath a facade of incompetence.</content>
 
 	<!-- "LAB_Progression_Monk_FourElements" --> <content contentuid="h9d7e8339ga648g4afeg8e86gc903fd093317" version="1">! Subclass: Way of the Four Elements Monk</content>
 	<!-- "LAB_Progression_Monk_FourElements" --> <content contentuid="hc901b2c6gb064g43d7g899cg1638fa8453b3" version="1">A Monk who uses their ki to bend the elements to their will.</content>
@@ -103,6 +121,9 @@
 
 	<!-- "LAB_Progression_Paladin_Ancients" --> <content contentuid="he08960f8gf689g41e6gbfc2gec7059617d8c" version="1">! Class: Oath of the Ancients Paladin</content>
 	<!-- "LAB_Progression_Paladin_Ancients" --> <content contentuid="h74725b1fg6ed2g42bcg885eg722d3c8802fe" version="1">A Paladin who defends the light of life and beauty, standing against despair and decay.</content>
+
+	<!-- "LAB_Progression_Paladin_Crown" --> <content contentuid="h1189ac1ageb55g4e95g95a2g2b2bf6b9b667" version="1">! Class: Oath of the Crown Paladin</content>
+	<!-- "LAB_Progression_Paladin_Crown" -->	<content contentuid="he2afa2dagaee4g4a22g9c47g13568b3ec01d" version="1">A Paladin who is sworn to the ideals of civilization and is dedicated to the just laws that hold society together.</content>
 
 	<!-- "LAB_Progression_Paladin_Devotion" --> <content contentuid="h08fb1797g13bfg412dga764gc3087601ba95" version="1">! Subclass: Oath of Devotion Paladin</content>
 	<!-- "LAB_Progression_Paladin_Devotion" --> <content contentuid="hd41ebf55g11bfg459egbda2g7af1996ef3cf" version="1">A Paladin who acts with honour and virtue to protect the weak and pursue the greater good.</content>
@@ -127,6 +148,9 @@
 	<!-- "LAB_Progression_Ranger_Hunter" --> <content contentuid="h54d41724g9946g4399gadd8gd5aeb1490f44" version="1">! Subclass: Hunter Ranger</content>
 	<!-- "LAB_Progression_Ranger_Hunter" --> <content contentuid="hf1e55b72g2b2cg44fagaa04g147842765b7c" version="1">A Ranger who excels at slaying the most dangerous prey.</content>
 
+	<!-- "LAB_Progression_Ranger_Swarmkeeper" --> <content contentuid="h145f23f8gca3ag4a38gafa0gaa0c3a91657b" version="1">! Subclass: Swarmkeeper Ranger</content>
+	<!-- "LAB_Progression_Ranger_Swarmkeeper" --> <content contentuid="h8d55816cg6c03g477cg850eg1951f56d9014" version="1">A Ranger who has formed a magical bond with a swarm of nature spirits.</content>
+
 <!-- ROGUE -->
 
 	<!-- "LAB_Progression_Rogue" --> <content contentuid="h8ac0402fgb1fbg439bgb720g741bc0484c6a" version="1">! Class: Rogue</content>
@@ -137,6 +161,9 @@
 
 	<!-- "LAB_Progression_Rogue_Assassin" --> <content contentuid="hd110f5cdg6c51g43bdg8555gfd5c8ed9dc43" version="1">! Subclass: Assassin Rogue</content>
 	<!-- "LAB_Progression_Rogue_Assassin" --> <content contentuid="h7cdc4536gc8cdg4c24gad5cg1b97c084f97b" version="1">A Rogue who blends disguise, poison, and precision to eliminate targets before they're aware.</content>
+
+	<!-- "LAB_Progression_Rogue_Swashbuckler" --> <content contentuid="hfa729a7cg691fg4bccga2c3g6027fb7bbfe8" version="1">! Subclass: Swashbuckler Rogue</content>
+	<!-- "LAB_Progression_Rogue_Swashbuckler" --> <content contentuid="h0953be5dg83d6g4d9eg96cag61173ba377a7" version="1">A Rogue whose training in the art of the blade allows them to excel in single combat, relying on speed, elegance, and charm in equal parts.</content>
 
 	<!-- "LAB_Progression_Rogue_Thief" --> <content contentuid="h269458f8gf4aag43b7g8289g6620b62050a8" version="1">! Subclass: Thief Rogue</content>
 	<!-- "LAB_Progression_Rogue_Thief" --> <content contentuid="h0041fb7egb83fg4399ga1cagc07b3f2bb1b2" version="1">A Rogue who turns nimbleness and nerve into an unmatched edge in any situation.</content>
@@ -151,6 +178,9 @@
 
 	<!-- "LAB_Progression_Sorcerer_WildMagic" --> <content contentuid="h87889658gdef3g42aeg9edag5de1784ae854" version="1">! Subclass: Wild Magic Sorcerer</content>
 	<!-- "LAB_Progression_Sorcerer_WildMagic" --> <content contentuid="h1077e020g23b7g40e7gaba7ge569d2c18331" version="1">A Sorcerer whose spells sometimes twist reality in strange and unexpected ways.</content>
+
+	<!-- "LAB_Progression_Sorcerer_Shadow" --> <content contentuid="h29ccfdd1g9f0fg458cga1e2g92789b8681fb" version="1">! Subclass: Shadow Sorcerer</content>
+	<!-- "LAB_Progression_Sorcerer_Shadow" --> <content contentuid="hfe79831eg783ag4e14gb808g0d12934b67c7" version="1">A Sorcerer siphons their powers from the Shadowfell itself.</content>
 
 	<!-- "LAB_Progression_Sorcerer_StormSorcery" --> <content contentuid="heaf07b0cgbb00g4462g8990g7b40b4ae36c0" version="1">! Subclass: Storm Sorcery Sorcerer</content>
 	<!-- "LAB_Progression_Sorcerer_StormSorcery" --> <content contentuid="he7ee7064g55bfg4b5bga7a2g0f049b35f91e" version="1">A Sorcerer whose presence crackles with thunder and fury, a living conduit of the storm's wrath.</content>
@@ -169,6 +199,9 @@
 	<!-- "LAB_Progression_Warlock_GreatOldOne" --> <content contentuid="hbd91b70fgdebeg4f12g8bd8g2c0f863d3656" version="1">! Subclass: The Great Old One Warlock</content>
 	<!-- "LAB_Progression_Warlock_GreatOldOne" --> <content contentuid="h1843d056gfbaag473eg8a99g0d5bea998fce" version="1">A Warlock who touches the mind of an unknowable entity, speaking secrets not meant for mortals.</content>
 
+	<!-- "LAB_Progression_Warlock_Hexblade" --> <content contentuid="he23b591eg88e0g4dbcgbbe8g7a6084022a3e" version="1">! Subclass: The Hexblade Warlock</content>
+	<!-- "LAB_Progression_Warlock_Hexblade" --> <content contentuid="hbe1a1a11g091bg4e78gbfecg310bc8f9a69a" version="1">A Warlock who made a pact with a mysterious entity from the Shadowfell, which anifests in sentient magic weapons carved from the stuff of shadows.</content>
+
 <!-- WIZARD -->
 
 	<!-- "LAB_Progression_Wizard" --> <content contentuid="hda3c8533gc225g4f6cgb65fg22e6f4ea9deb" version="1">! Class: Wizard</content>
@@ -176,6 +209,9 @@
 
 	<!-- "LAB_Progression_Wizard_Abjuration" --> <content contentuid="h8505ff22gb614g4657g8915g81a1561d0160" version="1">! Subclass: Abjuration School Wizard</content>
 	<!-- "LAB_Progression_Wizard_Abjuration" --> <content contentuid="h421dcedegb396g4298g829eg7ec6ca4116e8" version="1">A Wizard who masters wards and barriers, standing firm against magical and mundane threats.</content>
+
+	<!-- "LAB_Progression_Wizard_Bladesinging" --> <content contentuid="hcb2127edgf010g4d7bg8399gd4a50d7a5c72" version="1">! Subclass: Bladesinging School Wizard</content>
+	<!-- "LAB_Progression_Wizard_Bladesinging" --> <content contentuid="hdd08a8d1geee4g4b6fg8e1bg705757476330" version="1">A Wizard who has mastered swordplay and wizardry, combining the elegant manoeuvres of a warrior with the devastating magics of a mage.</content>
 
 	<!-- "LAB_Progression_Wizard_Conjuration" --> <content contentuid="h805c3f38g7da2g4c54ga216g30bd5086ee8a" version="1">! Subclass: Conjuration School Wizard</content>
 	<!-- "LAB_Progression_Wizard_Conjuration" --> <content contentuid="h23bfbf7eg3e48g409fga9b1gbe367aef1724" version="1">A Wizard who summons creatures and objects from thin air, commanding forces from across the planes.</content>
