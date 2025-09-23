@@ -246,7 +246,7 @@ data "Icon" "GenericIcon_Intent_Buff"
 new entry "LAB_Progression_Fighter_ArcaneArcher"
 type "PassiveData"
 // ! Subclass: Arcane Archer Fighter
-data "DisplayName" "ha7114a77g5690g413bg8bcfg823002a4c268;1"
+data "DisplayName" "h76269a31gd4bfg4f90g9531gec3cf1f33a5d;1"
 // An archer who studied a unique elven method of archery that weaves magic into attacks to produce supernatural effects.
 data "Description" "ha7114a77g5690g413bg8bcfg823002a4c268;1"
 data "Properties" "Highlighted"
