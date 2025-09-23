@@ -11,8 +11,8 @@
                     <attribute id="Level" type="uint8" value="1"/>
                     <attribute id="Name" type="LSString" value="NPC_Barbarian"/>
                     <!-- <attribute id="PassivesAdded" type="LSString" value="UnarmouredDefence_Barbarian"/> -->
-                    <!-- <attribute id="PassivesAdded" type="LSString" value="RageUnlock;UnarmouredDefence_Barbarian;Rage_Armour_Message;Rage_NoHeavyArmour_VFX;Goon_Barbarian_NPC_Progressions;CX_Barbarian_Boost;CX_Martial_Boost"/> -->
-                    <attribute id="PassivesAdded" type="LSString" value="Goon_Barbarian_NPC_Progressions"/>
+                    <!-- <attribute id="PassivesAdded" type="LSString" value="RageUnlock;UnarmouredDefence_Barbarian;Rage_Armour_Message;Rage_NoHeavyArmour_VFX;LAB_Progression_Barbarian"/> -->
+                    <attribute id="PassivesAdded" type="LSString" value="LAB_Progression_Barbarian"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
                     <!-- <attribute id="Selectors" type="LSString" value="SelectSkills(233793b3-838a-4d4e-9d68-1e0a1089aba5,2);SelectAbilityBonus(b9149c8e-52c8-46e5-9cb6-fc39301c05fe,AbilityBonus,2,1)"/> -->
                     <attribute id="TableUUID" type="guid" value="56db8107-e04c-4fe3-94f3-fd4acd44cd4a"/>
@@ -183,8 +183,8 @@
                     <attribute id="Level" type="uint8" value="1"/>
                     <attribute id="Name" type="LSString" value="NPC_Bard"/>
                     <!-- <attribute id="PassivesAdded" type="LSString" value="BardicInspiration;BardSpellcasting"/> -->
-                    <!-- <attribute id="PassivesAdded" type="LSString" value="BardicInspiration;BardSpellcasting;UnlockedSpellSlotLevel1;Goon_Bard_NPC_Progressions;CX_Bard_Boost;CX_Magic_Boost"/> -->
-                    <attribute id="PassivesAdded" type="LSString" value="Goon_Bard_NPC_Progressions"/>
+                    <!-- <attribute id="PassivesAdded" type="LSString" value="BardicInspiration;BardSpellcasting;UnlockedSpellSlotLevel1;LAB_Progression_Bard"/> -->
+                    <attribute id="PassivesAdded" type="LSString" value="LAB_Progression_Bard"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
                     <!-- <attribute id="Selectors" type="LSString" value="SelectSkills(ed664663-93b9-4070-a54b-3c7b19c0e7b4,3);SelectSpells(61f79a30-2cac-4a7a-b5fe-50c89d307dd6,2,0,BardCantrip,,,AlwaysPrepared);SelectSpells(dcb45167-86bd-4297-9b9d-c295be51af5b,4,0,BardSpells);SelectEquipment(aab8c5b5-eacf-4867-8e5f-bd4de3a9132e,1,BardInstrument);SelectAbilityBonus(b9149c8e-52c8-46e5-9cb6-fc39301c05fe,AbilityBonus,2,1)"/> -->
                     <attribute id="TableUUID" type="guid" value="cbe5059f-7a9f-4b98-be6a-07c9cd8e02c2"/>
@@ -386,8 +386,8 @@
                     <attribute id="Level" type="uint8" value="1"/>
                     <attribute id="Name" type="LSString" value="NPC_Cleric"/>
                     <!-- <attribute id="PassivesAdded" type="LSString" value=""/> -->
-                    <!-- <attribute id="PassivesAdded" type="LSString" value="DomainSpells;UnlockedSpellSlotLevel1;Goon_Cleric_NPC_Progressions;CX_Cleric_Boost;CX_Magic_Boost"/> -->
-                    <attribute id="PassivesAdded" type="LSString" value="Goon_Cleric_NPC_Progressions"/>
+                    <!-- <attribute id="PassivesAdded" type="LSString" value="DomainSpells;UnlockedSpellSlotLevel1;LAB_Progression_Cleric"/> -->
+                    <attribute id="PassivesAdded" type="LSString" value="LAB_Progression_Cleric"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
                     <!-- <attribute id="Selectors" type="LSString" value="SelectSkills(6cb9d731-a518-46f0-b20e-9e2bf18e6acd,2);SelectSpells(2f43a103-5bf1-4534-b14f-663decc0c525,3,0,,,,AlwaysPrepared);AddSpells(269d1a3b-eed8-4131-8901-a562238f5289);SelectAbilityBonus(b9149c8e-52c8-46e5-9cb6-fc39301c05fe,AbilityBonus,2,1)"/> -->
                     <attribute id="TableUUID" type="guid" value="36c3f8de-3293-4d7b-92bc-ceb3c569244b"/>
@@ -578,8 +578,8 @@
                     <attribute id="Level" type="uint8" value="1"/>
                     <attribute id="Name" type="LSString" value="NPC_Druid"/>
                     <!-- <attribute id="PassivesAdded" type="LSString" value=""/> -->
-                    <!-- <attribute id="PassivesAdded" type="LSString" value="UnlockedSpellSlotLevel1;Goon_Druid_NPC_Progressions;CX_Druid_Boost;CX_Magic_Boost"/> -->
-                    <attribute id="PassivesAdded" type="LSString" value="Goon_Druid_NPC_Progressions"/>
+                    <!-- <attribute id="PassivesAdded" type="LSString" value="UnlockedSpellSlotLevel1;LAB_Progression_Druid"/> -->
+                    <attribute id="PassivesAdded" type="LSString" value="LAB_Progression_Druid"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
                     <!-- <attribute id="Selectors" type="LSString" value="SelectSkills(a3e28a89-3c36-4516-a1ed-c8061ba7f166,2);SelectSpells(b8faf12f-ca42-45c0-84f8-6951b526182a,2,0,,,,AlwaysPrepared);AddSpells(2cd54137-2fe5-4100-aad3-df64735a8145);SelectAbilityBonus(b9149c8e-52c8-46e5-9cb6-fc39301c05fe,AbilityBonus,2,1)"/> -->
                     <attribute id="TableUUID" type="guid" value="7e76da16-650c-4a6e-85b0-f9e23a7f5a60"/>
@@ -792,8 +792,8 @@
                     <attribute id="Level" type="uint8" value="1"/>
                     <attribute id="Name" type="LSString" value="NPC_Fighter"/>
                     <!-- <attribute id="PassivesAdded" type="LSString" value=""/> -->
-                    <!-- <attribute id="PassivesAdded" type="LSString" value="Goon_Fighter_NPC_Progressions;CX_Fighter_Boost;CX_Martial_Boost"/> -->
-                    <attribute id="PassivesAdded" type="LSString" value="Goon_Fighter_NPC_Progressions"/>
+                    <!-- <attribute id="PassivesAdded" type="LSString" value="LAB_Progression_Fighter"/> -->
+                    <attribute id="PassivesAdded" type="LSString" value="LAB_Progression_Fighter"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
                     <!-- <attribute id="Selectors" type="LSString" value="SelectSkills(6a4f8598-3a17-42d1-beac-d7ced582bafa,2);AddSpells(9e32fc2b-ce4f-47aa-b113-25cbdc025123);SelectPassives(da3203d8-750a-4de1-b8eb-1eccfccddf46,1,FightingStyle);SelectAbilityBonus(b9149c8e-52c8-46e5-9cb6-fc39301c05fe,AbilityBonus,2,1)"/> -->
                     <!-- <attribute id="Selectors" type="LSString" value="AddSpells(9e32fc2b-ce4f-47aa-b113-25cbdc025123)"/> --> <!-- UnlockSpell(Shout_SecondWind,AddChildren) -->
@@ -981,8 +981,8 @@
                     <attribute id="Level" type="uint8" value="1"/>
                     <attribute id="Name" type="LSString" value="NPC_Monk"/>
                     <!-- <attribute id="PassivesAdded" type="LSString" value="UnarmoredDefense_Monk;MartialArts_DextrousUnarmedAttacks;MartialArts_UnarmedDamage;MartialArts_BonusUnarmedStrike"/> -->
-                    <!-- <attribute id="PassivesAdded" type="LSString" value="UnarmoredDefense_Monk;MartialArts_DextrousUnarmedAttacks;MartialArts_UnarmedDamage;MartialArts_BonusUnarmedStrike;Monk_SoundSwitch;FlurryOfBlowsUnlock;Goon_Monk_NPC_Progressions;CX_Monk_Boost;CX_Martial_Boost"/> -->
-                    <attribute id="PassivesAdded" type="LSString" value="Goon_Monk_NPC_Progressions"/>
+                    <!-- <attribute id="PassivesAdded" type="LSString" value="UnarmoredDefense_Monk;MartialArts_DextrousUnarmedAttacks;MartialArts_UnarmedDamage;MartialArts_BonusUnarmedStrike;Monk_SoundSwitch;FlurryOfBlowsUnlock;LAB_Progression_Monk"/> -->
+                    <attribute id="PassivesAdded" type="LSString" value="LAB_Progression_Monk"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
                     <!-- <attribute id="Selectors" type="LSString" value="SelectSkills(5f1c7177-6e28-4a42-a7a5-cfaf4c31519c,2);SelectAbilityBonus(b9149c8e-52c8-46e5-9cb6-fc39301c05fe,AbilityBonus,2,1)"/> -->
                     <attribute id="TableUUID" type="guid" value="878630d0-136a-4dc9-aa2a-a0a123d3a107"/>
@@ -1183,8 +1183,8 @@
                     <attribute id="Level" type="uint8" value="1"/>
                     <attribute id="Name" type="LSString" value="NPC_Paladin"/>
                     <!-- <attribute id="PassivesAdded" type="LSString" value=""/> -->
-                    <!-- <attribute id="PassivesAdded" type="LSString" value="Goon_Paladin_NPC_Progressions;CX_Paladin_Boost;CX_Martial_Boost;CX_Magic_Boost"/> -->
-                    <attribute id="PassivesAdded" type="LSString" value="Goon_Paladin_NPC_Progressions"/>
+                    <!-- <attribute id="PassivesAdded" type="LSString" value="LAB_Progression_Paladin"/> -->
+                    <attribute id="PassivesAdded" type="LSString" value="LAB_Progression_Paladin"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
                     <!-- <attribute id="Selectors" type="LSString" value="SelectSkills(627af380-2bbb-4a9f-9571-5ec781a6daf4,2);AddSpells(fb407d81-3a05-46f1-9153-0fb27dce95b6,,,,AlwaysPrepared);SelectAbilityBonus(b9149c8e-52c8-46e5-9cb6-fc39301c05fe,AbilityBonus,2,1)"/> -->
                     <!-- <attribute id="Selectors" type="LSString" value="AddSpells(fb407d81-3a05-46f1-9153-0fb27dce95b6,,,,AlwaysPrepared)"/> --> <!-- UnlockSpell(Target_LayOnHands,AddChildren);UnlockSpell(Shout_DivineSense,AddChildren) -->
@@ -1241,6 +1241,7 @@
                     <attribute id="Level" type="uint8" value="6"/>
                     <attribute id="Name" type="LSString" value="NPC_Paladin"/>
                     <!-- <attribute id="PassivesAdded" type="LSString" value=""/> -->
+                    <!-- TODO: Put "Goon_Aura_Distribution_Passive" into config -->
                     <!-- <attribute id="PassivesAdded" type="LSString" value="Goon_Aura_Distribution_Passive"/> -->
                     <attribute id="ProgressionType" type="uint8" value="0"/>
                     <!-- <attribute id="Selectors" type="LSString" value="AddSpells(94db914d-95d0-484e-8a02-c0faa9d575a7,,,,AlwaysPrepared)"/> -->
@@ -1378,8 +1379,8 @@
                     <attribute id="Level" type="uint8" value="1"/>
                     <attribute id="Name" type="LSString" value="NPC_Ranger"/>
                     <!-- <attribute id="PassivesAdded" type="LSString" value=""/> -->
-                    <!-- <attribute id="PassivesAdded" type="LSString" value="Goon_Ranger_NPC_Progressions;CX_Ranger_Boost;CX_Martial_Boost;CX_Magic_Boost"/> -->
-                    <attribute id="PassivesAdded" type="LSString" value="Goon_Ranger_NPC_Progressions"/>
+                    <!-- <attribute id="PassivesAdded" type="LSString" value="LAB_Progression_Ranger"/> -->
+                    <attribute id="PassivesAdded" type="LSString" value="LAB_Progression_Ranger"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
                     <!-- <attribute id="Selectors" type="LSString" value="SelectSkills(9e31661e-4c14-499d-98ca-9e00b20faf07,3);SelectPassives(d0f13dda-eb37-41f5-aea5-2683f0229e2e,1,FavoredEnemy);SelectPassives(72c63024-60af-486e-a180-c7aeee5d77c1,1,NaturalExplorer);SelectAbilityBonus(b9149c8e-52c8-46e5-9cb6-fc39301c05fe,AbilityBonus,2,1)"/> -->
                     <attribute id="TableUUID" type="guid" value="f0ede459-8b86-48fd-ac11-4432573566a5"/>
@@ -1576,8 +1577,9 @@
                     <attribute id="Level" type="uint8" value="1"/>
                     <attribute id="Name" type="LSString" value="NPC_Rogue"/>
                     <!-- <attribute id="PassivesAdded" type="LSString" value=""/> -->
-                    <!-- <attribute id="PassivesAdded" type="LSString" value="SneakAttack_Unlock;Goon_Rogue_NPC_Progressions;CX_Rogue_Boost;CX_Martial_Boost;Goon_Finesse_Overwrite"/> -->
-                    <attribute id="PassivesAdded" type="LSString" value="Goon_Rogue_NPC_Progressions"/>
+                    <!-- TODO: Put "Goon_Finesse_Overwrite" into config -->
+                    <!-- <attribute id="PassivesAdded" type="LSString" value="SneakAttack_Unlock;LAB_Progression_Rogue;Goon_Finesse_Overwrite"/> -->
+                    <attribute id="PassivesAdded" type="LSString" value="LAB_Progression_Rogue"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
                     <!-- <attribute id="Selectors" type="LSString" value="SelectSkills(a1c2b712-2ed6-4e5b-820f-c5db654fe006,4);AddSpells(d84379aa-8bd1-41e5-a21c-242669151fae);SelectSkillsExpertise(f974ebd6-3725-4b90-bb5c-2b647d41615d,2);SelectAbilityBonus(b9149c8e-52c8-46e5-9cb6-fc39301c05fe,AbilityBonus,2,1)"/> -->
                     <attribute id="TableUUID" type="guid" value="532203c2-7bcb-4162-9a7c-2bb20e227a30"/>
@@ -1739,8 +1741,8 @@
                     <!-- <attribute id="Boosts" type="LSString" value="Tag(SORCERER);ActionResource(SpellSlot,2,1);ProficiencyBonus(SavingThrow,Constitution);ProficiencyBonus(SavingThrow,Charisma);Proficiency(Daggers);Proficiency(Quarterstaffs);Proficiency(LightCrossbows)"/> -->
                     <attribute id="Level" type="uint8" value="1"/>
                     <attribute id="Name" type="LSString" value="NPC_Sorcerer"/>
-                    <!-- <attribute id="PassivesAdded" type="LSString" value="Goon_Sorcerer_NPC_Progressions;CX_Sorcerer_Boost;CX_Magic_Boost;UnlockedSpellSlotLevel1"/> -->
-                    <attribute id="PassivesAdded" type="LSString" value="Goon_Sorcerer_NPC_Progressions"/>
+                    <!-- <attribute id="PassivesAdded" type="LSString" value="UnlockedSpellSlotLevel1;LAB_Progression_Sorcerer"/> -->
+                    <attribute id="PassivesAdded" type="LSString" value="LAB_Progression_Sorcerer"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
                     <!-- <attribute id="Selectors" type="LSString" value="SelectSkills(8743f14b-64de-4858-b056-50902a00df1a,2);SelectSpells(485a68b4-c678-4888-be63-4a702efbe391,4,0,SorcererCantrip,,,AlwaysPrepared);SelectSpells(92c4751f-6255-4f67-822c-a75d53830b27,2,0,SorcererSpell);SelectAbilityBonus(b9149c8e-52c8-46e5-9cb6-fc39301c05fe,AbilityBonus,2,1)"/> -->
                     <attribute id="TableUUID" type="guid" value="2189a72d-6489-4621-8b2c-85d3e7df2f6f"/>
@@ -1934,8 +1936,8 @@
                     <!-- <attribute id="Boosts" type="LSString" value="ActionResource(WarlockSpellSlot,1,1);ProficiencyBonus(SavingThrow,Wisdom);ProficiencyBonus(SavingThrow,Charisma);Proficiency(LightArmor);Proficiency(SimpleWeapons);"/> -->
                     <!-- <attribute id="Boosts" type="LSString" value="Tag(WARLOCK);ActionResource(WarlockSpellSlot,1,1);ProficiencyBonus(SavingThrow,Wisdom);ProficiencyBonus(SavingThrow,Charisma);Proficiency(LightArmor);Proficiency(SimpleWeapons)"/> -->
                     <!-- <attribute id="PassivesAdded" type="LSString" value=""/> -->
-                    <!-- <attribute id="PassivesAdded" type="LSString" value="UnlockedWarlockSpellSlotLevel1;Goon_Warlock_NPC_Progressions;CX_Warlock_Boost;CX_Magic_Boost"/> -->
-                    <attribute id="PassivesAdded" type="LSString" value="Goon_Warlock_NPC_Progressions"/>
+                    <!-- <attribute id="PassivesAdded" type="LSString" value="UnlockedWarlockSpellSlotLevel1;LAB_Progression_Warlock"/> -->
+                    <attribute id="PassivesAdded" type="LSString" value="LAB_Progression_Warlock"/>
                     <attribute id="Level" type="uint8" value="1"/>
                     <attribute id="Name" type="LSString" value="NPC_Warlock"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
@@ -2113,8 +2115,8 @@
                     <attribute id="Level" type="uint8" value="1"/>
                     <attribute id="Name" type="LSString" value="NPC_Wizard"/>
                     <!-- <attribute id="PassivesAdded" type="LSString" value=""/> -->
-                    <!-- <attribute id="PassivesAdded" type="LSString" value="Goon_Wizard_NPC_Progressions;CX_Wizard_Boost;CX_Magic_Boost;UnlockedSpellSlotLevel1"/> -->
-                    <attribute id="PassivesAdded" type="LSString" value="Goon_Wizard_NPC_Progressions"/>
+                    <!-- <attribute id="PassivesAdded" type="LSString" value="LAB_Progression_Wizard;UnlockedSpellSlotLevel1"/> -->
+                    <attribute id="PassivesAdded" type="LSString" value="LAB_Progression_Wizard"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
                     <!-- <attribute id="Selectors" type="LSString" value="SelectSkills(9f3a9f8d-f645-40b5-b36f-fb079b7b805e,2);SelectSpells(3cae2e56-9871-4cef-bba6-96845ea765fa,3,0,,,,AlwaysPrepared);SelectSpells(11f331b0-e8b7-473b-9d1f-19e8e4178d7d,6,0);AddSpells(34c3321d-75ab-4b50-a44d-cbac8705a360,,,,AlwaysPrepared);SelectAbilityBonus(b9149c8e-52c8-46e5-9cb6-fc39301c05fe,AbilityBonus,2,1)"/> -->
                     <!-- <attribute id="Selectors" type="LSString" value="AddSpells(34c3321d-75ab-4b50-a44d-cbac8705a360,,,,AlwaysPrepared)"/> --> <!-- UnlockSpell(Shout_ArcaneRecovery,AddChildren) -->
