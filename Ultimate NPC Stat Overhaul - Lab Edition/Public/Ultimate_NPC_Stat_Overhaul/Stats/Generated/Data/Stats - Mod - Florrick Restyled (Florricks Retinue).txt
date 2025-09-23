@@ -39,6 +39,7 @@
 // data "StepsType" "Metal"
 // data "DefaultBoosts" "ProficiencyBonus(SavingThrow, Wisdom); ProficiencyBonus(SavingThrow, Constitution); BlockRegainHP(Undead;Construct)"
 // data "ActionResources" "ActionPoint:1;BonusActionPoint:2;Movement:12;ReactionActionPoint:1"
+// TODO: Double ;;
 // data "Passives" "AttackOfOpportunity;DarknessRules;;ImprovedCombatSuperiority;Alert"
 // data "DifficultyStatuses" "STATUS_EASY: HEALTHBOOST_ALLIEDNPC_EASYMODE"
 

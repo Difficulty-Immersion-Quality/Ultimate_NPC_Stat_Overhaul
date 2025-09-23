@@ -28,7 +28,7 @@ new entry "Champion_of_Lath"
 type "Character"
 using "Champion_of_Lath"
 // data "Passives" "AttackOfOpportunity;DarknessRules;Darkvision;ExtraAttack;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check;ImmuneToDisarm;"
-data "Passives" "CX_Paladin_Devotion_Boost;;AttackOfOpportunity;DarknessRules;Darkvision;ExtraAttack;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check;ImmuneToDisarm;"
+data "Passives" "CX_Paladin_Devotion_Boost;AttackOfOpportunity;DarknessRules;Darkvision;ExtraAttack;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check;ImmuneToDisarm;"
 
 // (Has Fighter progressions)
 new entry "Redcap_Melee_under"
