@@ -315,7 +315,7 @@ data "Passives" "CX_Monk_FourElements_Boost;CX_Martial_Boost;FeyAncestry;AttackO
 
 new entry "EO_SkullLord"
 type "Character"
-using "Skeleton_Caster"
+using "EO_SkullLord"
 // data "Passives" "Evasion;LandsStride_DifficultTerrain;TurnResistance;EmpoweredEvocation;PotentCantrip;SculptSpells;DevilsSight;SkeletonDeath_Check;AttackOfOpportunity;DarknessRules;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check"
 data "Passives" "CX_Martial_Boost;AttackOfOpportunity;DarknessRules;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check;Evasion;LandsStride_DifficultTerrain;TurnResistance;EmpoweredEvocation;PotentCantrip;SculptSpells;DevilsSight;SkeletonDeath_Check"
 
