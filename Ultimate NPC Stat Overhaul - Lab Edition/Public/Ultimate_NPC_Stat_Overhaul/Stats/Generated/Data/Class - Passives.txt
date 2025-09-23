@@ -20,6 +20,15 @@ data "Description" "h28f5bbd1ge7ddg492egb781gbf7d0d1b0be7;1"
 data "Properties" "Highlighted"
 data "Icon" "Action_Barbarian_Frenzy"
 
+new entry "LAB_Progression_Barbarian_Giant"
+type "PassiveData"
+// ! Subclass: Giant Barbarian
+data "DisplayName" "he278d0e8g64c5g4f2bg8b3eg81e0a083f938;1"
+// A Barbarian who invokes their elemental might and size by drawing strength from the primal giants.
+data "Description" "h7d8376fcg2ebeg400fg93b0gb56fb8e2ace1;1"
+data "Properties" "Highlighted"
+data "Icon" "Action_GiantsRage"
+
 new entry "LAB_Progression_Barbarian_WildMagic"
 type "PassiveData"
 // ! Subclass: Wild Magic Barbarian
@@ -50,6 +59,15 @@ data "Properties" "Highlighted"
 data "Icon" "GenericIcon_Intent_Buff"
 
 // ==================================== Bard - Subclasses
+
+new entry "LAB_Progression_Bard_Glamour"
+type "PassiveData"
+// ! Subclass: College of Glamour Bard
+data "DisplayName" "h525a89bag11abg497bga06bgdda580f69842;1"
+// A Bard who mastered their craft under the tutelage of fey creatures and can harness their captivating magic to charm their foes.
+data "Description" "hce0583eag9b9dg47b2gb06eg3085ddc5eefd;1"
+data "Properties" "Highlighted"
+data "Icon" "Action_MantleOfInspiration"
 
 new entry "LAB_Progression_Bard_Lore"
 type "PassiveData"
@@ -90,6 +108,15 @@ data "Properties" "Highlighted"
 data "Icon" "GenericIcon_Intent_Buff"
 
 // ==================================== Cleric - Subclasses
+
+new entry "LAB_Progression_Cleric_Death"
+type "PassiveData"
+// ! Subclass: Death Domain Cleric
+data "DisplayName" "hfd97b520g6eadg4f7dgbd47g49e9119d2359;1"
+// A Cleric who nourishes their faith on the forces that create the dead, giving rise to the undead.
+data "Description" "h17f6e1a5g6f7dg4af9g8b41g8b94524c617f;1"
+data "Properties" "Highlighted"
+data "Icon" "PassiveFeature_Reaper"
 
 new entry "LAB_Progression_Cleric_Life"
 type "PassiveData"
@@ -194,6 +221,15 @@ data "Description" "h5872faaag78ffg4f03g99cbgcda17b06d423"
 data "Properties" "Highlighted"
 data "Icon" "Action_SymbioticEntity"
 
+new entry "LAB_Progression_Druid_Stars"
+type "PassiveData"
+// ! Subclass: Circle of the Stars Druid
+data "DisplayName" "h3c509123g2d68g469aga198g25d6a25261f4"
+// A Druid who is guided by the infinite mysteries of the cosmos, using their understanding of the stars to enhance their druidic magic.
+data "Description" "h6f1dc210g58e6g4c94g93c7g116b555c6354"
+data "Properties" "Highlighted"
+data "Icon" "PassiveFeature_StarMap"
+
 // ==================================== Fighter ====================================
 
 new entry "LAB_Progression_Fighter"
@@ -206,6 +242,15 @@ data "Properties" "Highlighted"
 data "Icon" "GenericIcon_Intent_Buff"
 
 // ==================================== Fighter - Subclasses
+
+new entry "LAB_Progression_Fighter_ArcaneArcher"
+type "PassiveData"
+// ! Subclass: Arcane Archer Fighter
+data "DisplayName" "ha7114a77g5690g413bg8bcfg823002a4c268;1"
+// An archer who studied a unique elven method of archery that weaves magic into attacks to produce supernatural effects.
+data "Description" "ha7114a77g5690g413bg8bcfg823002a4c268;1"
+data "Properties" "Highlighted"
+data "Icon" "PassiveFeature_MagicArrow"
 
 new entry "LAB_Progression_Fighter_BattleMaster"
 type "PassiveData"
@@ -246,6 +291,15 @@ data "Properties" "Highlighted"
 data "Icon" "GenericIcon_Intent_Buff"
 
 // ==================================== Monk - Subclasses
+
+new entry "LAB_Progression_Monk_DrunkenMaster"
+type "PassiveData"
+// ! Subclass: Way of the Drunken Master Monk
+data "DisplayName" "hbf273c63ge7f1g4d73gba18g5098892fd766;1"
+// A Monk who frustrates foes with carefully executed movements concealed beneath a facade of incompetence.
+data "Description" "hfecfef07g1459g43d4gba71g965751120d69;1"
+data "Properties" "Highlighted"
+data "Icon" "Action_Monk_IntoxicatingStrike"
 
 new entry "LAB_Progression_Monk_FourElements"
 type "PassiveData"
@@ -295,6 +349,15 @@ data "DisplayName" "he08960f8gf689g41e6gbfc2gec7059617d8c;1"
 data "Description" "h74725b1fg6ed2g42bcg885eg722d3c8802fe;1"
 data "Properties" "Highlighted"
 data "Icon" "Action_Paladin_HealingRadiance"
+
+new entry "LAB_Progression_Paladin_Crown"
+type "PassiveData"
+// ! Class: Oath of the Crown Paladin
+data "DisplayName" "h1189ac1ageb55g4e95g95a2g2b2bf6b9b667;1"
+// A Paladin who is sworn to the ideals of civilization and is dedicated to the just laws that hold society together.
+data "Description" "he2afa2dagaee4g4a22g9c47g13568b3ec01d;1"
+data "Properties" "Highlighted"
+data "Icon" "Action_RighteousClarity"
 
 new entry "LAB_Progression_Paladin_Devotion"
 type "PassiveData"
@@ -363,6 +426,15 @@ data "Description" "hf1e55b72g2b2cg44fagaa04g147842765b7c;1"
 data "Properties" "Highlighted"
 data "Icon" "Action_Multiattack_Volley"
 
+new entry "LAB_Progression_Ranger_Swarmkeeper"
+type "PassiveData"
+// ! Subclass: Swarmkeeper Ranger
+data "DisplayName" "h145f23f8gca3ag4a38gafa0gaa0c3a91657b;1"
+// A Ranger who has formed a magical bond with a swarm of nature spirits.
+data "Description" "h8d55816cg6c03g477cg850eg1951f56d9014;1"
+data "Properties" "Highlighted"
+data "Icon" "PassiveFeature_MightySwarm_Bees"
+
 // ==================================== Rogue ====================================
 
 new entry "LAB_Progression_Rogue"
@@ -393,6 +465,15 @@ data "DisplayName" "hd110f5cdg6c51g43bdg8555gfd5c8ed9dc43;1"
 data "Description" "h7cdc4536gc8cdg4c24gad5cg1b97c084f97b;1"
 data "Properties" "Highlighted"
 data "Icon" "PassiveFeature_Generic_Death"
+
+new entry "LAB_Progression_Rogue_Swashbuckler"
+type "PassiveData"
+// ! Subclass: Swashbuckler Rogue
+data "DisplayName" "hfa729a7cg691fg4bccga2c3g6027fb7bbfe8;1"
+// A Rogue whose training in the art of the blade allows them to excel in single combat, relying on speed, elegance, and charm in equal parts.
+data "Description" "h0953be5dg83d6g4d9eg96cag61173ba377a7;1"
+data "Properties" "Highlighted"
+data "Icon" "Action_DirtyTrick_Disarm"
 
 new entry "LAB_Progression_Rogue_Thief"
 type "PassiveData"
@@ -433,6 +514,15 @@ data "DisplayName" "h87889658gdef3g42aeg9edag5de1784ae854;1"
 data "Description" "h1077e020g23b7g40e7gaba7ge569d2c18331;1"
 data "Properties" "Highlighted"
 data "Icon" "Skill_Sorcerer_Passive_TidesOfChaos"
+
+new entry "LAB_Progression_Sorcerer_Shadow"
+type "PassiveData"
+// ! Subclass: Shadow Sorcerer
+data "DisplayName" "h29ccfdd1g9f0fg458cga1e2g92789b8681fb;1"
+// A Sorcerer siphons their powers from the Shadowfell itself.
+data "Description" "hfe79831eg783ag4e14gb808g0d12934b67c7;1"
+data "Properties" "Highlighted"
+data "Icon" "Spell_Darkness_SorceryPoints"
 
 new entry "LAB_Progression_Sorcerer_StormSorcery"
 type "PassiveData"
@@ -483,6 +573,15 @@ data "Description" "h1843d056gfbaag473eg8a99g0d5bea998fce;1"
 data "Properties" "Highlighted"
 data "Icon" "PassiveFeature_ClarifiedMortality"
 
+new entry "LAB_Progression_Warlock_Hexblade"
+type "PassiveData"
+// ! Subclass: The Hexblade Warlock
+data "DisplayName" "he23b591eg88e0g4dbcgbbe8g7a6084022a3e;1"
+// A Warlock who made a pact with a mysterious entity from the Shadowfell, which anifests in sentient magic weapons carved from the stuff of shadows.
+data "Description" "hbe1a1a11g091bg4e78gbfecg310bc8f9a69a;1"
+data "Properties" "Highlighted"
+data "Icon" "Action_HexbladesCurse"
+
 // ==================================== Wizard ====================================
 
 new entry "LAB_Progression_Wizard"
@@ -504,6 +603,15 @@ data "DisplayName" "h8505ff22gb614g4657g8915g81a1561d0160;1"
 data "Description" "h421dcedegb396g4298g829eg7ec6ca4116e8;1"
 data "Properties" "Highlighted"
 data "Icon" "PassiveFeature_ProjectedWard"
+
+new entry "LAB_Progression_Wizard_Bladesinging"
+type "PassiveData"
+// ! Subclass: Bladesinging School Wizard
+data "DisplayName" "hcb2127edgf010g4d7bg8399gd4a50d7a5c72;1"
+// A Wizard who has mastered swordplay and wizardry, combining the elegant manoeuvres of a warrior with the devastating magics of a mage.
+data "Description" "hdd08a8d1geee4g4b6fg8e1bg705757476330;1"
+data "Properties" "Highlighted"
+data "Icon" "Action_Bladesong"
 
 new entry "LAB_Progression_Wizard_Conjuration"
 type "PassiveData"
