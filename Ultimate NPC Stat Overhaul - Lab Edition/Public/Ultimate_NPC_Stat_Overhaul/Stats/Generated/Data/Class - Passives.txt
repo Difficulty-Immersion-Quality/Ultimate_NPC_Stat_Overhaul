@@ -343,7 +343,7 @@ data "Icon" "GenericIcon_Intent_Buff"
 
 new entry "LAB_Progression_Paladin_Ancients"
 type "PassiveData"
-// ! Class: Oath of the Ancients Paladin
+// ! Subclass: Oath of the Ancients Paladin
 data "DisplayName" "he08960f8gf689g41e6gbfc2gec7059617d8c;1"
 // A Paladin who defends the light of life and beauty, standing against despair and decay.
 data "Description" "h74725b1fg6ed2g42bcg885eg722d3c8802fe;1"
@@ -352,7 +352,7 @@ data "Icon" "Action_Paladin_HealingRadiance"
 
 new entry "LAB_Progression_Paladin_Crown"
 type "PassiveData"
-// ! Class: Oath of the Crown Paladin
+// ! Subclass: Oath of the Crown Paladin
 data "DisplayName" "h1189ac1ageb55g4e95g95a2g2b2bf6b9b667;1"
 // A Paladin who is sworn to the ideals of civilization and is dedicated to the just laws that hold society together.
 data "Description" "he2afa2dagaee4g4a22g9c47g13568b3ec01d;1"
