@@ -261,7 +261,7 @@ using "EO_Lathander_Guard_Light_Cleric"
 // data "Progressions" "4577e872-7f55-448b-a6c4-bb3f5a3738b6;55d4818d-3191-42ef-9719-a66b4ff29811;61ae4889-e080-4e29-a6a9-a68c240744bf"
 data "Progressions" "36c3f8de-3293-4d7b-92bc-ceb3c569244b;4577e872-7f55-448b-a6c4-bb3f5a3738b6;55d4818d-3191-42ef-9719-a66b4ff29811;61ae4889-e080-4e29-a6a9-a68c240744bf"
 // data "Passives" "AttackOfOpportunity;HumanMilitia;HumanVersatility;DarknessRules"
-data "Passives" "CX_Cleric_Light_Boost;CX_Magic_Boost;;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules"
+data "Passives" "CX_Cleric_Light_Boost;CX_Magic_Boost;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules"
 
 ///////////////////////////////////
 //                               //
@@ -281,7 +281,7 @@ new entry "EO_Skeleton_Melee"
 type "Character"
 using "EO_Skeleton_Melee"
 // data "Passives" "ImmuneToDisarm;SkeletonDeath_Check;AttackOfOpportunity;Darkvision;DarknessRules;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check"
-data "Passives" "CX_Fighter_BattleMaster_Boost;CX_Martial_Boost;;ImmuneToDisarm;SkeletonDeath_Check;AttackOfOpportunity;Darkvision;DarknessRules;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check"
+data "Passives" "CX_Fighter_BattleMaster_Boost;CX_Martial_Boost;ImmuneToDisarm;SkeletonDeath_Check;AttackOfOpportunity;Darkvision;DarknessRules;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check"
 
 // (Added Wizard progressions)
 // UCL_Wizard;UCL_NecromancySchool;UCL_Wizard_FireShield_Chill;UCL_WarCaster_Int
@@ -301,7 +301,7 @@ using "EO_Windego"
 // data "Progressions" "e93883b2-b593-4101-9c97-d6b8c454c053;348f783f-d3b8-4a05-9bc7-b13217990a50;7680ac46-02fa-4109-97cc-51348846a162;b40ab293-676f-41d4-919e-bf1f36643548"
 data "Progressions" "2189a72d-6489-4621-8b2c-85d3e7df2f6f;e93883b2-b593-4101-9c97-d6b8c454c053;348f783f-d3b8-4a05-9bc7-b13217990a50;7680ac46-02fa-4109-97cc-51348846a162;b40ab293-676f-41d4-919e-bf1f36643548"
 // data "Passives" "UCL_Metamagic_Heightened_NPC;Ethereal;Darkvision;IncorporealMovement;AttackOfOpportunity;DarknessRules;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check"
-data "Passives" "CX_Sorcerer_Draconic_Boost;CX_Magic_Boost;;UCL_Metamagic_Heightened_NPC;Ethereal;Darkvision;IncorporealMovement;AttackOfOpportunity;DarknessRules;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check"
+data "Passives" "CX_Sorcerer_Draconic_Boost;CX_Magic_Boost;UCL_Metamagic_Heightened_NPC;Ethereal;Darkvision;IncorporealMovement;AttackOfOpportunity;DarknessRules;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check"
 
 // (Added Monk progressions)
 // UCL_FourElements_Thief;UCL_Bonus_Hp
@@ -315,7 +315,7 @@ data "Passives" "CX_Monk_FourElements_Boost;CX_Martial_Boost;FeyAncestry;AttackO
 
 new entry "EO_SkullLord"
 type "Character"
-using "Skeleton_Caster"
+using "EO_SkullLord"
 // data "Passives" "Evasion;LandsStride_DifficultTerrain;TurnResistance;EmpoweredEvocation;PotentCantrip;SculptSpells;DevilsSight;SkeletonDeath_Check;AttackOfOpportunity;DarknessRules;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check"
 data "Passives" "CX_Martial_Boost;AttackOfOpportunity;DarknessRules;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check;Evasion;LandsStride_DifficultTerrain;TurnResistance;EmpoweredEvocation;PotentCantrip;SculptSpells;DevilsSight;SkeletonDeath_Check"
 
@@ -473,7 +473,7 @@ data "Passives" "CX_Ranger_GloomStalker_Boost;CX_Martial_Boost;Tiefling_HellishR
 
 // (Added Cleric progressions)
 // UCL_Cleric;UCL_DeathDomain;UCL_Warcaster_Wis
-// In the absence of the actual CX_Cleric_Death_Boost passive being implemented, putting War for now as a placeholder since Death is also a relatively martial/melee focused Cleric subclass
+// TODO: In the absence of the actual CX_Cleric_Death_Boost passive being implemented, putting War for now as a placeholder since Death is also a relatively martial/melee focused Cleric subclass
 new entry "EO_SCL_Myrkul_Death_Cleric"
 type "Character"
 using "EO_SCL_Myrkul_Death_Cleric"
