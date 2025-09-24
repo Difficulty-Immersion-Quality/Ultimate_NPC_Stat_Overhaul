@@ -5115,7 +5115,7 @@ data "Progressions" "532203c2-7bcb-4162-9a7c-2bb20e227a30"
 // TODO: See if the animations are fucked (they probably are)
 new entry "Hollyphant"
 type "Character"
-using "_Celestial"
+using "Hollyphant"
 // data "Passives" "AttackOfOpportunity;DarknessRules;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check"
 data "Passives" "LAB_Progression_Cleric_Light;AttackOfOpportunity;DarknessRules;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check"
 // data "Progressions" ""
