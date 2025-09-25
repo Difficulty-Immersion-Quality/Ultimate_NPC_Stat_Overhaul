@@ -1,0 +1,10 @@
+// ============================================================ Planescape ============================================================
+
+// Fall-From-Grace - Tanar'ri (swapped from Wizard progressions to Sorcerer - she already has Charisma casting ability anyway)
+new entry "Paitm_FallFromGrace"
+type "Character"
+using "Paitm_FallFromGrace"
+// data "XPReward" "810b5510-6748-4c8e-bef0-d990880ed1dd"
+data "XPReward" "2189a72d-6489-4621-8b2c-85d3e7df2f6f"
+
+// ============================================================ Spelljammer ============================================================
