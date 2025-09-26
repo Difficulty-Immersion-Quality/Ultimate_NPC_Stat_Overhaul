@@ -5,7 +5,7 @@ type "PassiveData"
 // ! Class: Barbarian
 data "DisplayName" "he67b6a65g03fcg431dga01cg0f2685168030;1"
 // A character who harnesses their fury to punish foes.
-data "Description" "h59b5144dgff16g41edg9da8gc79e81e92b69;1"
+data "Description" "h56c46609g72b6g4c39gb166g7f8617bc8a61;1"
 data "Properties" "Highlighted"
 data "Icon" "GenericIcon_Intent_Buff"
 
