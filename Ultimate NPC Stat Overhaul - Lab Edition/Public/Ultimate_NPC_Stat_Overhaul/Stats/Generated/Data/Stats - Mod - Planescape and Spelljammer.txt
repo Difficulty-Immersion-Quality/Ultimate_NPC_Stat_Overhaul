@@ -4,10 +4,7 @@
 new entry "Paitm_FallFromGrace"
 type "Character"
 using "Paitm_FallFromGrace"
-// data "XPReward" "810b5510-6748-4c8e-bef0-d990880ed1dd"
-data "XPReward" "2189a72d-6489-4621-8b2c-85d3e7df2f6f"
-
-// TODO: ^ That's not a progressions field dawg
-// It's a UUID, they all look the same to me. Can't be that big of a deal can it?
+// data "Progressions" "44bdbc5e-a003-4d61-87f0-5ced20d3804e"
+data "Progressions" "2189a72d-6489-4621-8b2c-85d3e7df2f6f"
 
 // ============================================================ Spelljammer ============================================================
