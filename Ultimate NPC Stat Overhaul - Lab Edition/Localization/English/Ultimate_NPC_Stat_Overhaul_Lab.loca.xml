@@ -234,6 +234,33 @@
 	<!-- "LAB_Progression_Wizard_Transmutation" --> <content contentuid="hca1ed09eg7eaeg4eebg8073g46e52fa6350f" version="1">! Subclass: Transmutation School Wizard</content>
 	<!-- "LAB_Progression_Wizard_Transmutation" --> <content contentuid="hab88cc43g1f03g47e1g823bga96d7b5b06cf" version="1">A Wizard who alters the fabric of existence, changing what is into what could be.</content>
 
+<!-- Mods - Subclasses for Vanilla Classes -->
+
+	<!-- "LAB_Progression_Fighter_PsiWarrior" --> <content contentuid="hdb61a7f2g09bbg4ccfg9378g49bef34ff329" version="1">! Subclass: Psi Warrior Fighter</content>
+	<!-- "LAB_Progression_Fighter_PsiWarrior" --> <content contentuid="h3e698fecg6d63g4faag918age83a1955490f" version="1">A Fighter who augments their physical might with psi-infused weapon strikes, telekinetic lashes, and barriers of mental force.</content>
+
+	<!-- "LAB_Progression_Paladin_Conquest" --> <content contentuid="hecca81a4g51eeg4ea8g80a5gf78124dcf6a8" version="1">! Subclass: Oath of Conquest Paladin</content>
+	<!-- "LAB_Progression_Paladin_Conquest" --> <content contentuid="hbd89843dg274fg4e8bga664gb7890ed0effa" version="1">A Paladin who seeks glory in battle and the subjugation of their enemies.</content>
+
+<!-- Mods - Modded Classes -->
+
+<!-- Artificer -->
+
+	<!-- "LAB_Progression_Artificer" --> <content contentuid="h4aea01f0ge171g4e52ga861g7817c068a57b" version="1">! Class: Artificer</content>
+	<!-- "LAB_Progression_Artificer" --> <content contentuid="h68145debg36b4g4aa3gaf07g1fdb5fa72b7c" version="1">A character who uses magic and ingenuity to unlock extraordinary capabilities in objects.</content>
+
+	<!-- "LAB_Progression_Artificer_Alchemist" --> <content contentuid="h8d108dacg32fdg4512g8e7dg820515d972d6" version="1">! Subclass: Artificer Alchemist</content>
+	<!-- "LAB_Progression_Artificer_Alchemist" --> <content contentuid="h7c8974ebge7c4g4f9dg8552g696f7284ff95" version="1">An Artificer who uses their alchemical creations to give life and ot leech it away.</content>
+
+	<!-- "LAB_Progression_Artificer_Armourer" --> <content contentuid="hcebea346g124cg49d7gade2g82fb93bc43a8" version="1">! Subclass: Artificer Armourer</content>
+	<!-- "LAB_Progression_Artificer_Armourer" --> <content contentuid="hd9837963g0f62g480eg9c5agb05361ecf40b" version="1">An Artificer who can modify and enhance armour to unleash potent attacks and generate a formidable defence.</content>
+
+	<!-- "LAB_Progression_Artificer_Artillerist" --> <content contentuid="h022bb857g6376g48b1ga9b5g235e00a4bf0d" version="1">! Subclass: Artificer Artillerist</content>
+	<!-- "LAB_Progression_Artificer_Artillerist" --> <content contentuid="h3a231135g8d9dg40abga763g5bc8d29c39b1" version="1">An Artificer who specializes in using magic to hurl energy, projectiles, and explosions on a battlefield.</content>
+
+	<!-- "LAB_Progression_Artificer_BattleSmith" --> <content contentuid="h9d765ccag59f6g409dg9ad1g4f6c779c9805" version="1">! Subclass: Artificer Battle Smith</content>
+	<!-- "LAB_Progression_Artificer_BattleSmith" --> <content contentuid="hcf3d8330ga37fg485bg8485gb523ddcc4d87" version="1">An Artificier who is an expert at defending others and repairing both materiel and personnel.</content>
+
 <!-- Other -->
 
 	<!-- "SHA_NightsongResurrection", "GOON_NIGHTSONGRESURRECTION_TECHNICAL" --> <content contentuid="hb2f5c3eag43a7g4f82g89d8g10640b01212b" version="1">Blessed with the favour of a goddess, Nightsong cannot be permanently killed. When unconscious, Nightsong can regain 1 &lt;LSTag Tooltip="HitPoints"&gt;hit point&lt;/LSTag&gt; if she succeeds a &lt;LSTag Tooltip="Constitution"&gt;Constitution&lt;/LSTag&gt; &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throw&lt;/LSTag&gt; at the beginning of her turn.</content>
