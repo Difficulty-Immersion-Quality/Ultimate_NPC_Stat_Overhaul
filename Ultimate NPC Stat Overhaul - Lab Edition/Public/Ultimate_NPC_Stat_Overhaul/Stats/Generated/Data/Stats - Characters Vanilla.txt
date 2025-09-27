@@ -1,32 +1,16 @@
 // ==================================== Readme ====================================
 
-// Formatting for passive lists is (generally) in order of CX boosts, then racials, followed by entry specific passives
 // Formatting is made consistent to be more digestable where possible
 // By searching the racials in VSC you will be able to see at a glance the separation
 
 // Inhteritance trees are provided as a reference to easily fetch entries from https://bg3.norbyte.dev for further customisation
 // The sibling entries are generally clumped together in inheritance order to make customisation more accessible
 
-// All racials including Attack of Opportunity should be perpetuated appropriately across all entries, no matter how benign.
-// Spellcasting modifiers and highest mental ability score should be reflecting their class archetype if one is designated.
-// Entries with itterations for every race should be the same. E.g. MOO_Acolyte, MOO_Fanatic and MOO_Zealot having the same Cleric/Paladin adjustments.
+// Attack of Opportunity passives as well as racial passives are given in the Lab config.
+// Class passives (used as markers by Lab) are given through progressions, and subclasses are either randomly or intentionally set in the Lab config.
+// SpellCastingAbility is set for classes in Lab as well, but keeping the stat changes in here, as well as any changes to highest ability to reflect changes to spellcasting ability
 
-// CLASS AND SUBCLASS PASSIVES: 
-// "LAB_Progression_Barbarian" - "LAB_Progression_Barbarian_Berserker" / "LAB_Progression_Barbarian_WildMagic" / "LAB_Progression_Barbarian_Wildheart"
-// "LAB_Progression_Bard" - "LAB_Progression_Bard_Lore" / "LAB_Progression_Bard_Swords" / "LAB_Progression_Bard_Valor"
-// "LAB_Progression_Cleric" - "LAB_Progression_Cleric_Life" / "LAB_Progression_Cleric_Light" / "LAB_Progression_Cleric_Knowledge" / "LAB_Progression_Cleric_Nature" /"LAB_Progression_Cleric_Tempest" / "LAB_Progression_Cleric_Trickery" / "LAB_Progression_Cleric_War"
-// "LAB_Progression_Druid" - "LAB_Progression_Druid_Land" / "LAB_Progression_Druid_Moon" / "LAB_Progression_Druid_Spores"
-// "LAB_Progression_Fighter" - "LAB_Progression_Fighter_BattleMaster" / "LAB_Progression_Fighter_Champion" / "LAB_Progression_Fighter_EldritchKnight"
-// "LAB_Progression_Monk" - "LAB_Progression_Monk_FourElements" / "LAB_Progression_Monk_OpenHand" / "LAB_Progression_Monk_Shadow"
-// "LAB_Progression_Paladin" - "LAB_Progression_Paladin_Ancients" / "LAB_Progression_Paladin_Devotion" / "LAB_Progression_Paladin_Vengeance" / "LAB_Progression_Paladin_Oathbreaker"
-// "LAB_Progression_Ranger" - "LAB_Progression_Ranger_BeastMaster" / "LAB_Progression_Ranger_GloomStalker" / "LAB_Progression_Ranger_Hunter"
-// "LAB_Progression_Rogue" - "LAB_Progression_Rogue_ArcaneTrickster" / "LAB_Progression_Rogue_Assassin" / "LAB_Progression_Rogue_Thief"
-// "LAB_Progression_Sorcerer" - "LAB_Progression_Sorcerer_DraconicBloodline" / "LAB_Progression_Sorcerer_WildMagic" / "LAB_Progression_Sorcerer_StormSorcery"
-// "LAB_Progression_Warlock" - "LAB_Progression_Warlock_Archfey" / "LAB_Progression_Warlock_Fiend" / "LAB_Progression_Warlock_GreatOldOne"
-// "LAB_Progression_Wizard" - "LAB_Progression_Wizard_Abjuration" / "LAB_Progression_Wizard_Conjuration" / "LAB_Progression_Wizard_Divination" / "LAB_Progression_Wizard_Enchantment" /"LAB_Progression_Wizard_Evocation" / "LAB_Progression_Wizard_Illusion" / "LAB_Progression_Wizard_Necromancy" / "LAB_Progression_Wizard_Transmutation"
-
-// SPELL PASSIVES:
-// CX_Spells_L1, CX_Spells_L1C / CX_Spells_L2, CX_Spells_L2C / CX_Spells_L3, CX_Spells_L3C / CX_Spells_L4, CX_Spells_L4C / CX_Spells_L5, CX_Spells_L5C / CX_Spells_L6, CX_Spells_L6C
+// Entries with iterations for every race should be the same. E.g. MOO_Acolyte, MOO_Fanatic and MOO_Zealot having the same Cleric/Paladin adjustments.
 
 //TODO: Make sure no NEW entries from Honour Mode are missing from inheritance trees, e.g. "FOR_Owlbear_Daddy"
 
@@ -38,56 +22,37 @@
 //  │   │   └─ "DEN_DruidServant"
 //  │   ├─ "Bandit_Captain"
 
-new entry "Bandit"
-type "Character"
-using "Bandit"
-// data "Passives" "AttackOfOpportunity;DarknessRules"
-data "Passives" "AttackOfOpportunity;DarknessRules"
-
 // Unused (Added Fighter progressions)
 new entry "Bandit_Captain"
 type "Character"
 using "Bandit_Captain"
-// data "Passives" "AttackOfOpportunity;DarknessRules"
-data "Passives" "AttackOfOpportunity;DarknessRules"
 // data "Progressions" ""
 data "Progressions" "0e6da493-5a37-423b-8c28-629462b22faa"
 
 // "_Base"
 //  ├─ "_Humanoid"
 //  │   ├─ "Commoner"
-//  │   │   └─ "CRA_MindflayerThrall_Commoner_Halfling"
+//  │   │   └─ "CRA_MindflayerThrall_Commoner_Halfling"         --- Unused
 
 // Unused (Fixed racials)
 new entry "CRA_MindflayerThrall_Commoner_Halfling"
 type "Character"
 using "CRA_MindflayerThrall_Commoner_Halfling"
-// data "Passives" "DarknessRules"
-data "Passives" "Halfling_Lucky;Halfling_Brave;AttackOfOpportunity;DarknessRules"
 
 // "_Base"
 //  ├─ "_Humanoid"
-//  │   └─ "Drow"
-
-// Unused ("_Elf_Drow" is the real entry) (Fixed racials)
-new entry "Drow"
-type "Character"
-using "Drow"
-// data "Passives" "AttackOfOpportunity;DarknessRules"
-data "Passives" "FeyAncestry;AttackOfOpportunity;DarknessRules;SuperiorDarkvision;SunlightSensitivity"
+//  │   └─ "Drow"       --- Unused
 
 // "_Base"
 //  ├─ "_Humanoid"
 //  │   └─ "Meazel"
 
-// Meazels (Maybe making Meazels Assassin Rogues isn't the best idea... or it's the best idea) (Added Rogue progressions, added Assassin subclass)
+// Meazels (Added Rogue progressions)
 new entry "Meazel"
 type "Character"
 using "Meazel"
 // data "SpellCastingAbility" "Dexterity"
 data "SpellCastingAbility" "Intelligence"
-// data "Passives" "AttackOfOpportunity;DarknessRules;Darkvision;ShadowTeleport_Meazel"
-data "Passives" "LAB_Progression_Rogue_Assassin;AttackOfOpportunity;DarknessRules;Darkvision;ShadowTeleport_Meazel"
 // data "Progressions" ""
 data "Progressions" "532203c2-7bcb-4162-9a7c-2bb20e227a30"
 
@@ -119,56 +84,10 @@ data "Progressions" "532203c2-7bcb-4162-9a7c-2bb20e227a30"
 //  │   │       └─ "HAG_Mayrina"
 //  │   │           └─ "HAG_Mayrina_Polymorph"
 
-new entry "Commoner_Child"
-type "Character"
-using "Commoner_Child"
-// data "Passives" "AttackOfOpportunity;DarknessRules"
-data "Passives" "HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules"
-
-new entry "HAG_Brother_001"
-type "Character"
-using "HAG_Brother_001"
-// data "Passives" "AttackOfOpportunity;DarknessRules"
-data "Passives" "HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules"
-
-new entry "HAG_Brother_002"
-type "Character"
-using "HAG_Brother_002"
-// data "Passives" "AttackOfOpportunity;DarknessRules"
-data "Passives" "HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules"
-
-// Mayrina (Fixed racials)
-new entry "HAG_SurrogateMother"
-type "Character"
-using "HAG_SurrogateMother"
-// data "Passives" ""
-data "Passives" "HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules"
-
-// "Mayrina" (Fixed racials)
-new entry "HAG_Mayrina"
-type "Character"
-using "HAG_Mayrina"
-// data "Passives" ""
-data "Passives" "HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules"
-
-// "Mayrina" (Fixed racials)
-new entry "HAG_Mayrina_Polymorph"
-type "Character"
-using "HAG_Mayrina_Polymorph"
-// data "Passives" ""
-data "Passives" "HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules"
-
 // "_Base"
 //  ├─ "_Humanoid"
 //  │   ├─ "DEVONLY"    --- Unused
 //  │   ├─ "Guard"
-
-// Unused? (Added Martial boost)
-new entry "Guard"
-type "Character"
-using "Guard"
-// data "Passives" "AttackOfOpportunity;DarknessRules"
-data "Passives" "AttackOfOpportunity;DarknessRules"
 
 // "_Base"
 //  ├─ "_Humanoid"
@@ -176,20 +95,6 @@ data "Passives" "AttackOfOpportunity;DarknessRules"
 //  │   │   ├─ "LOW_CazadorPalace_Ritual_Werewolf"  --- Predator Werewolf (Inherits added Martial boost)
 //  │   │   └─ "Werewolf_Strong"                    --- Unused (Inherits added Martial boost)
 //  │   ├─ "_FlamingFist"                           --- Unused
-
-// Cazador's Dawgs (Added Martial boost)
-new entry "Werewolf"
-type "Character"
-using "Werewolf"
-// data "Passives" "Werewolf_Rage;Multiattack_Werewolf;AttackOfOpportunity;DarknessRules"
-data "Passives" "Werewolf_Rage;Multiattack_Werewolf;AttackOfOpportunity;DarknessRules"
-
-// Unused (Added Martial boost)
-new entry "_FlamingFist"
-type "Character"
-using "_FlamingFist"
-// data "Passives" "AttackOfOpportunity;DarknessRules"
-data "Passives" "AttackOfOpportunity;DarknessRules"
 
 // "_Base"
 //  ├─ "_Humanoid"
@@ -215,43 +120,35 @@ using "Bugbear"
 // data "Progressions" ""
 data "Progressions" "56db8107-e04c-4fe3-94f3-fd4acd44cd4a"
 
-// Hairy Henry - Skull Lasher, Cult of Myrkul (Added Fighter progressions, added Eldritch Knight subclass)
+// Hairy Henry - Skull Lasher, Cult of Myrkul (Added Fighter progressions)
 new entry "Bugbear_Cultist_Myrkul_SkullLasher"
 type "Character"
 using "Bugbear_Cultist_Myrkul_SkullLasher"
-// data "Passives" "ExtraAttack;AttackOfOpportunity;DarknessRules"
-data "Passives" "LAB_Progression_Fighter_EldritchKnight;Brute_Bugbear;AttackOfOpportunity;Darkvision;DarknessRules;ExtraAttack"
 // data "Progressions" ""
 data "Progressions" "0e6da493-5a37-423b-8c28-629462b22faa"
 
-// Chop - Cult of the Absolute (Added Rogue progressions, added Assassin subclass)
+// Chop - Cult of the Absolute (Added Rogue progressions)
 new entry "COL_Butcher"
 type "Character"
 using "COL_Butcher"
-// data "Passives" "AttackOfOpportunity;Darkvision;DarknessRules;Brute_Bugbear;ExtraAttack"
-data "Passives" "LAB_Progression_Rogue_Assassin;Brute_Bugbear;AttackOfOpportunity;Darkvision;DarknessRules;ExtraAttack"
 // data "Progressions" ""
 data "Progressions" "532203c2-7bcb-4162-9a7c-2bb20e227a30"
 
-// Bugbear Assassin (Added Rogue progressions, added Assassin subclass)
+// Bugbear Assassin (Added Rogue progressions)
 new entry "DEN_BugbearNinja"
 type "Character"
 using "DEN_BugbearNinja"
-// data "Passives" "Brute_Bugbear;Darkvision;DarknessRules"
-data "Passives" "LAB_Progression_Rogue_Assassin;Brute_Bugbear;AttackOfOpportunity;Darkvision;DarknessRules"
 // data "Progressions" ""
 data "Progressions" "532203c2-7bcb-4162-9a7c-2bb20e227a30"
 
-// (Added Barbarian progressions, added Berserker subclass)
+// (Added Barbarian progressions)
 new entry "DEN_BugbearRaider"
 type "Character"
 using "DEN_BugbearRaider"
-// data "Passives" "Brute_Bugbear;Darkvision;DarknessRules"
-data "Passives" "LAB_Progression_Barbarian_Berserker;Brute_Bugbear;AttackOfOpportunity;Darkvision;DarknessRules"
 // data "Progressions" ""
 data "Progressions" "56db8107-e04c-4fe3-94f3-fd4acd44cd4a"
 
-// Lann Tarv - Armourer to the Absolute, Cult of the Absolute (Added Paladin progressions, added Oathbreaker subclass)
+// Lann Tarv - Armourer to the Absolute, Cult of the Absolute (Added Paladin progressions)
 new entry "MOO_BugbearMerchant"
 type "Character"
 using "MOO_BugbearMerchant"
@@ -261,8 +158,6 @@ data "Wisdom" "11"
 data "Charisma" "12"
 // data "SpellCastingAbility" "Intelligence"
 data "SpellCastingAbility" "Charisma"
-// data "Passives" "AttackOfOpportunity;Darkvision;DarknessRules;Brute_Bugbear;ExtraAttack"
-data "Passives" "LAB_Progression_Paladin_Oathbreaker;Brute_Bugbear;AttackOfOpportunity;Darkvision;DarknessRules;ExtraAttack"
 // data "Progressions" ""
 data "Progressions" "8726b2c4-edc0-4905-b82f-60a4baba0733"
 
