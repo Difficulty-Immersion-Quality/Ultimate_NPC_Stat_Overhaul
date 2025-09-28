@@ -1532,7 +1532,7 @@ data "Progressions" "6cae475a-383f-11ed-a261-0242ac120002;f0ede459-8b86-48fd-ac1
 //  │   ├─ "MOO_MindTorturer"
 //  │   └─ "UND_KC_Gnome_Deep_Caster"
 //  ├─ "Gnome_Gondian_Caster"
-//  │   └─ "LOW_SteelWatchFoundry_ZannerToobin"         --- Gondian Zanner Toobin - Church of Gond (Inherits added Wizard progressions)
+//  │   └─ "LOW_SteelWatchFoundry_ZannerToobin"         --- Gondian Zanner Toobin - Church of Gond (Inherits added Artificer progressions)
 
 // Tahan - Circle of the Emerald Grove (Inherits Druid progressions) (Gnome_Speed added) (Custom spell slot passive added to allow stacking)
 new entry "DEN_Tahan"
@@ -1570,13 +1570,13 @@ using "UND_KC_Gnome_Deep_Caster"
 // data "Passives" "Gnome_Cunning;Gnome_Speed;AttackOfOpportunity;DarknessRules;Darkvision"
 data "Passives" "Gnome_Cunning;Gnome_Speed;DeepGnome_StoneCamouflage;AttackOfOpportunity;SuperiorDarkvision;DarknessRules"
 
-// Basically all the Gondians (Added Wizard progressions, removed spell slots that just mirrored having progressions)
+// Basically all the Gondians (Added Artificer progressions, removed spell slots that just mirrored having progressions)
 new entry "Gnome_Gondian_Caster"
 type "Character"
 using "Gnome_Gondian_Caster"
 // data "ActionResources" "ActionPoint:1;BonusActionPoint:1;Movement:7.5;ReactionActionPoint:1;SpellSlot:4:4:1;SpellSlot:3:3:2;SpellSlot:1:1:3"
 data "ActionResources" "ActionPoint:1;BonusActionPoint:1;Movement:7.5;ReactionActionPoint:1"
-data "Progressions" "44bdbc5e-a003-4d61-87f0-5ced20d3804e"
+data "Progressions" "d4159206-4573-43c0-94c6-46acb87d57c1"
 
 // "_Gnome"
 //  ├─ "Gnome_Melee"                                --- (Inherits Fighter progressions)
@@ -3261,14 +3261,12 @@ data "Passives" "CX_Boss_Boost;LAB_Progression_Wizard_Necromancy;HumanMilitia;Hu
 // data "Progressions" ""
 data "Progressions" "44bdbc5e-a003-4d61-87f0-5ced20d3804e"
 
-// Lord Enver Gortash - Archduke Nominee - NO HONOUR MODE INHERITANCE (His Legendary actions and stuff is not added directly to the character entry) (Swapped Wizard progressions to Rogue progressions, added Arcane Trickster subclass, added Boss boost)
+// Lord Enver Gortash - Archduke Nominee - NO HONOUR MODE INHERITANCE (His Legendary actions and stuff is not added directly to the character entry) (Swapped Wizard progressions to Artificer progressions)
 new entry "WYR_Gortash"
 type "Character"
 using "WYR_Gortash"
-// data "Passives" "DarkDevotion;MagicResistance;CrossbowExpert_PointBlank;ImmuneToDisarm;AttackOfOpportunity;DarknessRules;WYR_Gortash_Gortane"
-data "Passives" "CX_Boss_Boost;LAB_Progression_Rogue_ArcaneTrickster;HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules;WYR_Gortash_Gortane;DarkDevotion;MagicResistance;CrossbowExpert_PointBlank;ImmuneToDisarm"
 // data "Progressions" "44bdbc5e-a003-4d61-87f0-5ced20d3804e"
-data "Progressions" "532203c2-7bcb-4162-9a7c-2bb20e227a30"
+data "Progressions" "d4159206-4573-43c0-94c6-46acb87d57c1"
 
 // Lord Portyr's Attendant (Swapped from Wizard progressions to Sorcerer progressions, because he has a twirled mustache) //TODO: Don't add metamagic directly to character entries
 new entry "WYR_MessHallBodyguard_09"
@@ -3944,14 +3942,12 @@ data "Passives" "LAB_Progression_Paladin_Oathbreaker;HumanMilitia;HumanVersatili
 //  ├─ "Human_Gondian_Caster"          
 //  ├─ "LOW_Sarevok"
 
-// Lu La Forza (Dead), Gondian Frell Olsin, Gondian Clore Falson - Church of Gond (Gondian unpaid interns in the Steel Watch Foundry) (Added Wizard progressions, fixed racials)
+// Lu La Forza (Dead), Gondian Frell Olsin, Gondian Clore Falson - Church of Gond (Gondian unpaid interns in the Steel Watch Foundry) (Added Gondian progressions)
 new entry "Human_Gondian_Caster"
 type "Character"
 using "Human_Gondian_Caster"
-// data "Passives" "AttackOfOpportunity;DarknessRules"
-data "Passives" "HumanMilitia;HumanVersatility;AttackOfOpportunity;DarknessRules"
 // data "Progressions" ""
-data "Progressions" "44bdbc5e-a003-4d61-87f0-5ced20d3804e"
+data "Progressions" "6b701f1f-c477-43f0-9afe-0e169f65fc7a"
 
 // Sarevok Anchev - Justice of the Murder Tribunal, Cult of Bhaal - HONOUR MODE INHERITANCE (Added Fighter progressions, added Champion subclass, added Boss boost)
 new entry "LOW_Sarevok"

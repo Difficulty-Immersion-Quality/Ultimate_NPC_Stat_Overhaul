@@ -68,7 +68,7 @@ new entry "LAB_Progression_Artificer_BattleSmith"
 type "PassiveData"
 // ! Subclass: Artificer Battle Smith
 data "DisplayName" "h9d765ccag59f6g409dg9ad1g4f6c779c9805;1"
-// An Artificier who is an expert at defending others and repairing both materiel and personnel.
+// An Artificer who is an expert at defending others and repairing both materiel and personnel.
 data "Description" "hcf3d8330ga37fg485bg8485gb523ddcc4d87;1"
 data "Properties" "Highlighted"
 data "Icon" "Skill_SteelDefender"
