@@ -1233,13 +1233,10 @@ using "CRE_AstralPlane_GithMage"
 // data "Progressions" ""
 data "Progressions" "44bdbc5e-a003-4d61-87f0-5ced20d3804e"
 
-// Ch'r'ai W'wargaz - HONOUR MODE INHERITANCE (Swapped Wizard progressions for Fighter, added Eldritch Knight subclass, added Boss boost)
+// Ch'r'ai W'wargaz - HONOUR MODE INHERITANCE (Swapped Wizard progressions for Fighter)
 new entry "CRE_Githyanki_Inquisitor"
 type "Character"
 using "CRE_Githyanki_Inquisitor"
-// data "Passives" "ExtraAttack;Parry_Githyanki;AttackOfOpportunity;DarknessRules;Surprise_Immunity;Parry_Githyanki_EquipTrigger"
-// data "Passives" "ExtraAttack;Parry_Githyanki;AttackOfOpportunity;DarknessRules;Surprise_Immunity;Parry_Githyanki_EquipTrigger;LegendaryAction_Interrupt_CRE_GithyankiInquisitor_VlaakithsMindSword"
-data "Passives" "CX_Boss_Boost;LAB_Progression_Fighter_EldritchKnight;AttackOfOpportunity;DarknessRules;ExtraAttack;Parry_Githyanki;Parry_Githyanki_EquipTrigger;Surprise_Immunity;LegendaryAction_Interrupt_CRE_GithyankiInquisitor_VlaakithsMindSword"
 // data "Progressions" "44bdbc5e-a003-4d61-87f0-5ced20d3804e"
 data "Progressions" "0e6da493-5a37-423b-8c28-629462b22faa"
 
@@ -1351,13 +1348,10 @@ using "Githyanki_Warrior_Strong"
 // data "Passives" "ExtraAttack;AttackOfOpportunity;DarknessRules"
 data "Passives" "AttackOfOpportunity;DarknessRules;ExtraAttack;Parry_Githyanki;Parry_Githyanki_EquipTrigger"
 
-// Ch'r'ai Har'rak, Paladin of Vlaakith - HONOUR MODE INHERITANCE (Added Paladin progressions, added Oath of Vengeance subclass, added Boss boost)
+// Ch'r'ai Har'rak, Paladin of Vlaakith - HONOUR MODE INHERITANCE (Added Paladin progressions)
 new entry "LOW_Githyanki_Paladin"
 type "Character"
 using "LOW_Githyanki_Paladin"
-// data "Passives" "AttackOfOpportunity;DarknessRules;ExtraAttack;Parry_Githyanki_Supreme;FightingStyle_Defense;Parry_Githyanki_Supreme_EquipTrigger"
-// data "Passives" "AttackOfOpportunity;DarknessRules;ExtraAttack;Parry_Githyanki_Supreme;FightingStyle_Defense;Parry_Githyanki_Supreme_EquipTrigger;LegendaryAction_LOW_GithyankiPaladin_VlaakithsCry"
-data "Passives" "CX_Boss_Boost;LAB_Progression_Paladin_Vengeance;AttackOfOpportunity;DarknessRules;ExtraAttack;Parry_Githyanki_Supreme;Parry_Githyanki_Supreme_EquipTrigger;FightingStyle_Defense;LegendaryAction_LOW_GithyankiPaladin_VlaakithsCry"
 // data "Progressions" ""
 data "Progressions" "8726b2c4-edc0-4905-b82f-60a4baba0733"
 
