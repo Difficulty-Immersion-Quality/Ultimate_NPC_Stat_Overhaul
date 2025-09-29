@@ -1,0 +1,152 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<save>
+    <version major="4" minor="0" revision="9" build="328" />
+    <region id="Progressions">
+        <node id="root">
+            <children>
+                <!-- ARTIFICER -->
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="1"/>
+                    <attribute id="Name" type="LSString" value="NPC_Artificer"/>
+                    <attribute id="PassivesAdded" type="LSString" value="LAB_Progression_Artificer"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="d4159206-4573-43c0-94c6-46acb87d57c1"/>
+                    <attribute id="UUID" type="guid" value="3f31cf84-53ef-4cef-bb7b-ddfd1241ca15"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="2"/>
+                    <attribute id="Name" type="LSString" value="NPC_Artificer"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="d4159206-4573-43c0-94c6-46acb87d57c1"/>
+                    <attribute id="UUID" type="guid" value="5620341a-ec17-4ca7-8222-5bfb9c2a6a51"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="3"/>
+                    <attribute id="Name" type="LSString" value="NPC_Artificer"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="d4159206-4573-43c0-94c6-46acb87d57c1"/>
+                    <attribute id="UUID" type="guid" value="50d3846d-4cb0-4eae-9c11-4a35e428ce7a"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="4"/>
+                    <attribute id="Name" type="LSString" value="NPC_Artificer"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="d4159206-4573-43c0-94c6-46acb87d57c1"/>
+                    <attribute id="UUID" type="guid" value="9c9f1783-71c9-4118-a23a-760838e27ae1"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="5"/>
+                    <attribute id="Name" type="LSString" value="NPC_Artificer"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="d4159206-4573-43c0-94c6-46acb87d57c1"/>
+                    <attribute id="UUID" type="guid" value="b3f62861-d6a6-4357-aee5-8ad8dd44bb03"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="6"/>
+                    <attribute id="Name" type="LSString" value="NPC_Artificer"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="d4159206-4573-43c0-94c6-46acb87d57c1"/>
+                    <attribute id="UUID" type="guid" value="9f1ddbfa-9959-4c58-b342-31436f78124b"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="7"/>
+                    <attribute id="Name" type="LSString" value="NPC_Artificer"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="d4159206-4573-43c0-94c6-46acb87d57c1"/>
+                    <attribute id="UUID" type="guid" value="40372b76-878a-4fc4-b20e-012f10774d4f"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="8"/>
+                    <attribute id="Name" type="LSString" value="NPC_Artificer"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="d4159206-4573-43c0-94c6-46acb87d57c1"/>
+                    <attribute id="UUID" type="guid" value="40372b76-878a-4fc4-b20e-012f10774d4f"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="9"/>
+                    <attribute id="Name" type="LSString" value="NPC_Artificer"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="d4159206-4573-43c0-94c6-46acb87d57c1"/>
+                    <attribute id="UUID" type="guid" value="2004595a-b833-48f5-b35e-498b9f2d2bf1"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="10"/>
+                    <attribute id="Name" type="LSString" value="NPC_Artificer"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="d4159206-4573-43c0-94c6-46acb87d57c1"/>
+                    <attribute id="UUID" type="guid" value="b691d37b-61a4-4bdd-a98b-dd238b75c80b"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="11"/>
+                    <attribute id="Name" type="LSString" value="NPC_Artificer"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="d4159206-4573-43c0-94c6-46acb87d57c1"/>
+                    <attribute id="UUID" type="guid" value="8d49fb69-558c-4862-8faf-d634cc70c2fb"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="12"/>
+                    <attribute id="Name" type="LSString" value="NPC_Artificer"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="d4159206-4573-43c0-94c6-46acb87d57c1"/>
+                    <attribute id="UUID" type="guid" value="eeed02ce-036f-48c4-aaac-bea8eee0fc76"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="13"/>
+                    <attribute id="Name" type="LSString" value="NPC_Artificer"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="d4159206-4573-43c0-94c6-46acb87d57c1"/>
+                    <attribute id="UUID" type="guid" value="db725305-6f2c-4101-8cf7-4c8f21bd8f4a"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="14"/>
+                    <attribute id="Name" type="LSString" value="NPC_Artificer"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="d4159206-4573-43c0-94c6-46acb87d57c1"/>
+                    <attribute id="UUID" type="guid" value="1cd6d610-d653-4a15-907a-b558cc436b77"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="15"/>
+                    <attribute id="Name" type="LSString" value="NPC_Artificer"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="d4159206-4573-43c0-94c6-46acb87d57c1"/>
+                    <attribute id="UUID" type="guid" value="5417ceba-22d6-4cc2-9b36-7bbdb6b2049d"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="16"/>
+                    <attribute id="Name" type="LSString" value="NPC_Artificer"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="d4159206-4573-43c0-94c6-46acb87d57c1"/>
+                    <attribute id="UUID" type="guid" value="4057e60e-92b9-4948-9549-4a313ef766de"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="17"/>
+                    <attribute id="Name" type="LSString" value="NPC_Artificer"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="d4159206-4573-43c0-94c6-46acb87d57c1"/>
+                    <attribute id="UUID" type="guid" value="4a2f7e8d-7e97-4d5e-b372-b223d16ccf8d"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="18"/>
+                    <attribute id="Name" type="LSString" value="NPC_Artificer"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="d4159206-4573-43c0-94c6-46acb87d57c1"/>
+                    <attribute id="UUID" type="guid" value="c2a8390c-be68-4fc9-b811-719ec1886d29"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="19"/>
+                    <attribute id="Name" type="LSString" value="NPC_Artificer"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="d4159206-4573-43c0-94c6-46acb87d57c1"/>
+                    <attribute id="UUID" type="guid" value="bddbadc5-69dc-4c60-95ab-bcea7c25b643"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="20"/>
+                    <attribute id="Name" type="LSString" value="NPC_Artificer"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="d4159206-4573-43c0-94c6-46acb87d57c1"/>
+                    <attribute id="UUID" type="guid" value="93001af1-eb46-4a31-a7cd-f655ff119df2"/>
+                </node>
+            </children>
+        </node>
+    </region>
+</save>
