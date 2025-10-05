@@ -220,7 +220,7 @@ data "Progressions" "d4159206-4573-43c0-94c6-46acb87d57c1"
 //  ├─ "Human_Gondian_Caster"          
 //  ├─ "LOW_Sarevok"
 
-// Lu La Forza (Dead), Gondian Frell Olsin, Gondian Clore Falson - Church of Gond (Gondian unpaid interns in the Steel Watch Foundry) (Base mod added Wizard progressions, now swapping to Artificer
+// Lu La Forza (Dead), Gondian Frell Olsin, Gondian Clore Falson - Church of Gond (Gondian unpaid interns in the Steel Watch Foundry) (Base mod added Wizard progressions, now swapping to Artificer)
 new entry "Human_Gondian_Caster"
 type "Character"
 using "Human_Gondian_Caster"
