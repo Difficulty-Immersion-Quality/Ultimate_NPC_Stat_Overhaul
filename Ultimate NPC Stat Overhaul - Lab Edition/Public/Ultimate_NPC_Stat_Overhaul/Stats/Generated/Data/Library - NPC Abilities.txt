@@ -1,0 +1,534 @@
+// ==================================== Barbarian - Rage ====================================
+// In the progressions the original rage is removed and replaced with "Shout_Rage_Frenzy". We can replicate this via "CombatAIOverrideSpell", to force the AI to use the coolest Rage they have. We also prevent them from rage spamming, by checking if they already have an active rage. This is important when using mods such as "Dynamic Wildheart Barbarian" by Armarui.
+
+// Ogre stuff // TODO: Not ghetto ass implementations to avoid busted animations
+new entry "RageUnlock"
+type "PassiveData"
+using "RageUnlock"
+// data "Boosts" "UnlockSpell(Shout_Rage)"
+data "Boosts" "IF(not Tagged('OGRE')):UnlockSpell(Shout_Rage)"
+
+new entry "RageFrenzyUnlock"
+type "PassiveData"
+using "RageFrenzyUnlock"
+// data "Boosts" "UnlockSpell(Shout_Rage_Frenzy)"
+data "Boosts" "IF(not Tagged('OGRE')):UnlockSpell(Shout_Rage_Frenzy)"
+
+// TODO: The two following passives are just scrambled drafts that don't work
+new entry "Goon_Woman_Ogre_Strong_And_Kinda_Hot_When_She_Rages_Skibidi_Rizz_Up_Her_Swamp_Ongfr"
+type "PassiveData"
+data "Properties" "IsHidden"
+// Buthir's Wrath
+data "DisplayName" "h6b5fc06cga008g4daaga6bcgf0001f71a482;1"
+// Buthir is enraged! &lt;LSTag Tooltip="Strength"&gt;Strength&lt;/LSTag&gt; increased by 4, &lt;LSTag Tooltip="ArmourClass"&gt;Armour Class&lt;/LSTag&gt; reduced by 2.
+data "Description" "he4f084d0g0bbcg4b59g8d01g38e0786dff09;1"
+data "Icon" "statIcons_ButhirsWrath"
+data "BoostContext" "OnStatusApplied;OnStatusRemoved"
+data "BoostConditions" "StatusHasStatusGroup(context.StatusId, 'SG_Rage') and not StatusId('FOR_OGRE_ENRAGE',context.Source) and not StatusId('GOB_OGRE_ENRAGE',context.Source)"
+data "Boosts" "Ability(Strength, 4);AC(-2)"
+
+new entry "Goon_Woman_Ogre_Strong_And_Kinda_Hot_When_She_Rages_Skibidi_Rizz_Up_Her_Swamp_Ongfr_2"
+type "PassiveData"
+data "Properties" "IsHidden"
+// Polma's Wrath
+data "DisplayName" "h027cb16egeb92g4fdagb7f3g2537ced5437b;1"
+// Polma is enraged! &lt;LSTag Tooltip="Strength"&gt;Strength&lt;/LSTag&gt; increased by 4, &lt;LSTag Tooltip="ArmourClass"&gt;Armour Class&lt;/LSTag&gt; reduced by 2.
+data "Description" "h5448bf3bgcb5fg4146gb50fg987baf4c9272;1"
+data "Icon" "statIcons_ButhirsWrath"
+data "BoostContext" "OnStatusApplied;OnStatusRemoved"
+// data "BoostConditions" "HasStatus('SG_Rage') and not HasStatus('FOR_OGRE_ENRAGE') and not HasStatus('GOB_OGRE_ENRAGE')"
+// data "StatsFunctors" "ApplyStatus(GOON_WOMAN_OGRE_ANGRY,100,-1)"
+data "Boosts" "IF(HasStatus('SG_Rage') and not HasStatus('FOR_OGRE_ENRAGE') and not HasStatus('GOB_OGRE_ENRAGE')):Ability(Strength, 4);IF(HasStatus('SG_Rage') and not HasStatus('FOR_OGRE_ENRAGE') and not HasStatus('GOB_OGRE_ENRAGE')):AC(-2)"
+
+// new entry "GOON_WOMAN_OGRE_ANGRY"
+// type "StatusData"
+// data "StatusType" "BOOST"
+// // Polma's Wrath
+// data "DisplayName" "h027cb16egeb92g4fdagb7f3g2537ced5437b;1"
+// // Polma is enraged! &lt;LSTag Tooltip="Strength"&gt;Strength&lt;/LSTag&gt; increased by 4, &lt;LSTag Tooltip="ArmourClass"&gt;Armour Class&lt;/LSTag&gt; reduced by 2.
+// data "Description" "h5448bf3bgcb5fg4146gb50fg987baf4c9272;1"
+// data "Boosts" "Ability(Strength, 4);AC(-2)"
+// data "RemoveConditions" "not HasStatus('SG_Rage') or HasStatus('FOR_OGRE_ENRAGE') or HasStatus('GOB_OGRE_ENRAGE')"
+// data "RemoveEvents" "OnStatusApplied;OnStatusRemoved"
+
+new entry "Goon_Rage_Ogre_Passive"
+type "PassiveData"
+data "Properties" "IsHidden"
+data "Boosts" "IF(not HasPassive('CX_Barbarian_Berserker_Boost',context.Source)):UnlockSpell(Goon_Shout_Rage_Ogre);IF(HasPassive('CX_Barbarian_Berserker_Boost',context.Source)):UnlockSpell(Goon_Shout_Rage_Frenzy_Ogre)"
+
+new entry "Goon_Shout_Rage_Ogre"
+type "SpellData"
+data "SpellType" "Shout"
+using "Shout_Rage"
+data "SpellProperties" "AI_IGNORE:ApplyStatus(GOON_RAGE_OGRE,100,10);ApplyStatus(RAGE_MUTE,100,10);AI_ONLY:IF(HasActionResource('ActionPoint', 1, 0, false)):ApplyStatus(AI_HELPER_RAGE,100,1)"
+data "SpellAnimation" "5e57443f-284e-47b2-915e-5b6417db269c,,;d8b7f668-db2b-43b0-9707-5da2ed2cf27e,,;7521e279-1bb3-4105-b32d-8206234836a3,,;d172e037-7041-4352-9a20-5f4b185f9ef1,,;5bcdefbb-2194-46c2-ac77-0b2d8472a5f7,,;,,;,,;,,;,,"
+data "RequirementConditions" "not HasStatus('SG_Rage') and not HasStatus('CALM_EMOTIONS')"
+data "CombatAIOverrideSpell" ""
+
+new entry "GOON_RAGE_OGRE"
+type "StatusData"
+data "StatusType" "BOOST"
+using "RAGE"
+// data "Boosts" "Tag(VFX_RAGE);UnlockSpell(Shout_EndRage);Attribute(ForceMainhandAlternativeEquipBones);"
+data "Boosts" "Tag(VFX_RAGE);UnlockSpell(Shout_EndRage)"
+// data "DynamicAnimationTag" "b6aa23c3-c96d-42d5-8ffa-8d441d18faa7"
+data "DynamicAnimationTag" ""
+
+// Ogre stuff
+new entry "Goon_Shout_Rage_Frenzy_Ogre"
+type "SpellData"
+data "SpellType" "Shout"
+using "Shout_Rage_Frenzy"
+data "SpellProperties" "AI_IGNORE:ApplyStatus(GOON_RAGE_FRENZY_OGRE,100,10);AI_ONLY:IF(HasActionResource('ActionPoint', 1, 0, false)):ApplyStatus(AI_HELPER_RAGE,100,1)"
+data "SpellAnimation" "5e57443f-284e-47b2-915e-5b6417db269c,,;d8b7f668-db2b-43b0-9707-5da2ed2cf27e,,;7521e279-1bb3-4105-b32d-8206234836a3,,;d172e037-7041-4352-9a20-5f4b185f9ef1,,;5bcdefbb-2194-46c2-ac77-0b2d8472a5f7,,;,,;,,;,,;,,"
+data "RequirementConditions" "not HasStatus('SG_Rage') and not HasStatus('CALM_EMOTIONS')"
+data "CombatAIOverrideSpell" ""
+
+new entry "GOON_RAGE_FRENZY_OGRE"
+type "StatusData"
+data "StatusType" "BOOST"
+using "RAGE_FRENZY"
+// data "Boosts" "Tag(VFX_RAGE);BlockSpellCast();UnlockSpell(Shout_EndRage);Attribute(ForceMainhandAlternativeEquipBones);UnlockSpell(Throw_ImprovisedWeaponBerserker);IF(HasPassive('MindlessRage',context.Source)):StatusImmunity(SG_Frightened);IF(HasPassive('MindlessRage',context.Source)):StatusImmunity(SG_Charmed)"
+data "Boosts" "Tag(VFX_RAGE);BlockSpellCast();UnlockSpell(Shout_EndRage);UnlockSpell(Throw_ImprovisedWeaponBerserker);IF(HasPassive('MindlessRage',context.Source)):StatusImmunity(SG_Frightened);IF(HasPassive('MindlessRage',context.Source)):StatusImmunity(SG_Charmed)"
+// data "DynamicAnimationTag" "b6aa23c3-c96d-42d5-8ffa-8d441d18faa7"
+data "DynamicAnimationTag" ""
+
+// Basic Rage
+new entry "Shout_Rage"
+type "SpellData"
+data "SpellType" "Shout"
+using "Shout_Rage"
+data "CombatAIOverrideSpell" "Shout_Rage_AI"
+
+new entry "Shout_Rage_AI"
+type "SpellData"
+data "SpellType" "Shout"
+using "Shout_Rage"
+// data "CombatAIOverrideSpell" "Shout_Rage_AI"
+data "CombatAIOverrideSpell" ""
+// data "RequirementConditions" "not HasStatus('RAGE') and not HasStatus('CALM_EMOTIONS')"
+data "RequirementConditions" "not HasStatus('SG_Rage') and not HasStatus('CALM_EMOTIONS') and not HasPassive('Goon_Rage_Ogre_Passive',context.Source)"
+
+// Berserker
+new entry "Shout_Rage_Frenzy"
+type "SpellData"
+data "SpellType" "Shout"
+using "Shout_Rage_Frenzy"
+data "CombatAIOverrideSpell" "Shout_Rage_Frenzy_AI"
+
+new entry "Shout_Rage_Frenzy_AI"
+type "SpellData"
+data "SpellType" "Shout"
+using "Shout_Rage_Frenzy"
+// data "CombatAIOverrideSpell" "Shout_Rage_Frenzy_AI"
+data "CombatAIOverrideSpell" ""
+// data "RequirementConditions" "not HasStatus('RAGE_FRENZY') and not HasStatus('CALM_EMOTIONS')"
+data "RequirementConditions" "not HasStatus('SG_Rage') and not HasStatus('CALM_EMOTIONS') and not HasPassive('Goon_Rage_Ogre_Passive',context.Source)"
+
+// Wild Magic
+new entry "Shout_Rage_WildMagic"
+type "SpellData"
+data "SpellType" "Shout"
+using "Shout_Rage_WildMagic"
+data "CombatAIOverrideSpell" "Shout_Rage_WildMagic_AI"
+
+new entry "Shout_Rage_WildMagic_AI"
+type "SpellData"
+data "SpellType" "Shout"
+using "Shout_Rage_WildMagic"
+// data "CombatAIOverrideSpell" "Shout_Rage_WildMagic_AI"
+data "CombatAIOverrideSpell" ""
+// data "RequirementConditions" "not HasStatus('RAGE') and not HasStatus('CALM_EMOTIONS')"
+data "RequirementConditions" "not HasStatus('SG_Rage') and not HasStatus('CALM_EMOTIONS') and not HasPassive('Goon_Rage_Ogre_Passive',context.Source)"
+
+// Wildheart - Bear
+new entry "Shout_Rage_Totem_Bear"
+type "SpellData"
+data "SpellType" "Shout"
+using "Shout_Rage_Totem_Bear"
+data "CombatAIOverrideSpell" "Shout_Rage_Totem_Bear_AI"
+
+new entry "Shout_Rage_Totem_Bear_AI"
+type "SpellData"
+data "SpellType" "Shout"
+using "Shout_Rage_Totem_Bear"
+// data "CombatAIOverrideSpell" "Shout_Rage_Totem_Bear_AI"
+data "CombatAIOverrideSpell" ""
+// data "RequirementConditions" "not HasStatus('RAGE_TOTEM_BEAR') and not HasStatus('CALM_EMOTIONS')"
+data "RequirementConditions" "not HasStatus('SG_Rage') and not HasStatus('CALM_EMOTIONS') and not HasPassive('Goon_Rage_Ogre_Passive',context.Source)"
+
+// Wildheart - Eagle
+new entry "Shout_Rage_Totem_Eagle"
+type "SpellData"
+data "SpellType" "Shout"
+using "Shout_Rage_Totem_Eagle"
+data "CombatAIOverrideSpell" "Shout_Rage_Totem_Eagle_AI"
+
+new entry "Shout_Rage_Totem_Eagle_AI"
+type "SpellData"
+data "SpellType" "Shout"
+using "Shout_Rage_Totem_Eagle"
+// data "CombatAIOverrideSpell" "Shout_Rage_Totem_Eagle_AI"
+data "CombatAIOverrideSpell" ""
+// data "RequirementConditions" "not HasStatus('RAGE_TOTEM_EAGLE') and not HasStatus('CALM_EMOTIONS')"
+data "RequirementConditions" "not HasStatus('SG_Rage') and not HasStatus('CALM_EMOTIONS') and not HasPassive('Goon_Rage_Ogre_Passive',context.Source)"
+
+// Wildheart - Elf
+new entry "Shout_Rage_Totem_Elk"
+type "SpellData"
+data "SpellType" "Shout"
+using "Shout_Rage_Totem_Elk"
+data "CombatAIOverrideSpell" "Shout_Rage_Totem_Elk_AI"
+
+new entry "Shout_Rage_Totem_Elk_AI"
+type "SpellData"
+data "SpellType" "Shout"
+using "Shout_Rage_Totem_Elk"
+// data "CombatAIOverrideSpell" "Shout_Rage_Totem_Elk_AI"
+data "CombatAIOverrideSpell" ""
+// data "RequirementConditions" "not HasStatus('RAGE_TOTEM_ELK') and not HasStatus('CALM_EMOTIONS')"
+data "RequirementConditions" "not HasStatus('SG_Rage') and not HasStatus('CALM_EMOTIONS') and not HasPassive('Goon_Rage_Ogre_Passive',context.Source)"
+
+// Wildheart - Tiger
+new entry "Shout_Rage_Totem_Tiger"
+type "SpellData"
+data "SpellType" "Shout"
+using "Shout_Rage_Totem_Tiger"
+data "CombatAIOverrideSpell" "Shout_Rage_Totem_Tiger_AI"
+
+new entry "Shout_Rage_Totem_Tiger_AI"
+type "SpellData"
+data "SpellType" "Shout"
+using "Shout_Rage_Totem_Tiger"
+// data "CombatAIOverrideSpell" "Shout_Rage_Totem_Tiger_AI"
+data "CombatAIOverrideSpell" ""
+// data "RequirementConditions" "not HasStatus('RAGE_TOTEM_TIGER') and not HasStatus('CALM_EMOTIONS')"
+data "RequirementConditions" "not HasStatus('SG_Rage') and not HasStatus('CALM_EMOTIONS') and not HasPassive('Goon_Rage_Ogre_Passive',context.Source)"
+
+// Wildheart - Wolf
+new entry "Shout_Rage_Totem_Wolf"
+type "SpellData"
+data "SpellType" "Shout"
+using "Shout_Rage_Totem_Wolf"
+data "CombatAIOverrideSpell" "Shout_Rage_Totem_Wolf_AI"
+
+new entry "Shout_Rage_Totem_Wolf_AI"
+type "SpellData"
+data "SpellType" "Shout"
+using "Shout_Rage_Totem_Wolf"
+// data "CombatAIOverrideSpell" "Shout_Rage_Totem_Wolf_AI"
+data "CombatAIOverrideSpell" ""
+// data "RequirementConditions" "not HasStatus('RAGE_TOTEM_WOLF') and not HasStatus('CALM_EMOTIONS')"
+data "RequirementConditions" "not HasStatus('SG_Rage') and not HasStatus('CALM_EMOTIONS') and not HasPassive('Goon_Rage_Ogre_Passive',context.Source)"
+
+// Giant
+new entry "Shout_Rage_Giant"
+type "SpellData"
+data "SpellType" "Shout"
+// using "Shout_Rage"
+using "Shout_Rage_Giant"
+data "CombatAIOverrideSpell" "Shout_Rage_Giant_AI"
+
+new entry "Shout_Rage_Giant_AI"
+type "SpellData"
+data "SpellType" "Shout"
+using "Shout_Rage_Giant"
+// data "CombatAIOverrideSpell" "Shout_Rage_Giant_AI"
+data "CombatAIOverrideSpell" ""
+// data "RequirementConditions" "not HasStatus('SG_Rage') and not HasStatus('CALM_EMOTIONS')"
+data "RequirementConditions" "not HasStatus('SG_Rage') and not HasStatus('CALM_EMOTIONS') and not HasPassive('Goon_Rage_Ogre_Passive',context.Source)"
+
+// ==================================== Barbarian - Intimidating Presence ====================================
+
+// Giving Intimidating Presence a bonus action cost (since it's not worth the action) and per battle cooldown (so NPCs don't just spam it)
+new entry "Target_IntimidatingPresence"
+type "SpellData"
+data "SpellType" "Target"
+using "Target_IntimidatingPresence"
+data "CombatAIOverrideSpell" "Target_IntimidatingPresence_AI"
+
+new entry "Target_IntimidatingPresence_AI"
+type "SpellData"
+data "SpellType" "Target"
+using "Target_IntimidatingPresence"
+// data "CombatAIOverrideSpell" "Target_IntimidatingPresence_AI"
+data "CombatAIOverrideSpell" ""
+// data "UseCosts" "ActionPoint:1"
+data "UseCosts" "BonusActionPoint:1"
+data "Cooldown" "OncePerCombat"
+
+new entry "Target_IntimidatingPresence_Maintain"
+type "SpellData"
+data "SpellType" "Target"
+// using "Target_IntimidatingPresence"
+using "Target_IntimidatingPresence_Maintain"
+data "CombatAIOverrideSpell" "Target_IntimidatingPresence_Maintain_AI"
+
+new entry "Target_IntimidatingPresence_Maintain_AI"
+type "SpellData"
+data "SpellType" "Target"
+using "Target_IntimidatingPresence_Maintain"
+// data "CombatAIOverrideSpell" "Target_IntimidatingPresence_Maintain_AI"
+data "CombatAIOverrideSpell" ""
+// data "UseCosts" "ActionPoint:1"
+data "UseCosts" "BonusActionPoint:1"
+data "Cooldown" "OncePerCombat"
+
+// ==================================== Bard - Bardic Inspiration ====================================
+
+new entry "Target_BardicInspiration"
+type "SpellData"
+data "SpellType" "Target"
+using "Target_BardicInspiration"
+data "CombatAIOverrideSpell" "Target_BardicInspiration_AI"
+
+new entry "Target_BardicInspiration_AI"
+type "SpellData"
+data "SpellType" "Shout"
+using "Target_BardicInspiration"
+// data "SpellProperties" "IF(not ClassLevelHigherOrEqualThan(5,'Bard')):ApplyStatus(BARDIC_INSPIRATION,100, -1);IF(ClassLevelHigherOrEqualThan(5,'Bard') and not ClassLevelHigherOrEqualThan(10,'Bard')):ApplyStatus(BARDIC_INSPIRATION_D8,100, -1);IF(ClassLevelHigherOrEqualThan(10,'Bard')):ApplyStatus(BARDIC_INSPIRATION_D10,100, -1);AI_ONLY:ApplyStatus(AI_HELPER_BARDIC_INSPIRATION,100,3)"
+data "SpellProperties" "IF(not ClassLevelHigherOrEqualThan(5,'NPC_Bard')):ApplyStatus(BARDIC_INSPIRATION,100, -1);IF(ClassLevelHigherOrEqualThan(5,'NPC_Bard') and not ClassLevelHigherOrEqualThan(10,'NPC_Bard') or HasStatus('GOON_NPC_BARD_LVL_5') or HasStatus('GOON_NPC_BARD_LVL_6') or HasStatus('GOON_NPC_BARD_LVL_7') or HasStatus('GOON_NPC_BARD_LVL_8') or HasStatus('GOON_NPC_BARD_LVL_9')):ApplyStatus(BARDIC_INSPIRATION_D8,100, -1);IF(ClassLevelHigherOrEqualThan(10,'NPC_Bard') and not ClassLevelHigherOrEqualThan(15,'NPC_Bard') or HasStatus('GOON_NPC_BARD_LVL_10') or HasStatus('GOON_NPC_BARD_LVL_11') or HasStatus('GOON_NPC_BARD_LVL_12') or HasStatus('GOON_NPC_BARD_LVL_13') or HasStatus('GOON_NPC_BARD_LVL_14')):ApplyStatus(BARDIC_INSPIRATION_D10,100, -1);IF(ClassLevelHigherOrEqualThan(15,'NPC_Bard') or HasStatus('GOON_NPC_BARD_LVL_15') or HasStatus('GOON_NPC_BARD_LVL_16') or HasStatus('GOON_NPC_BARD_LVL_17') or HasStatus('GOON_NPC_BARD_LVL_18') or HasStatus('GOON_NPC_BARD_LVL_19') or HasStatus('GOON_NPC_BARD_LVL_20')):ApplyStatus(BARDIC_INSPIRATION_D12,100, -1);AI_ONLY:ApplyStatus(AI_HELPER_BARDIC_INSPIRATION,100,3)"
+// data "TargetConditions" "Character() and not Enemy() and not Self() and not (HasStatus('BARDIC_INSPIRATION') or HasStatus('BARDIC_INSPIRATION_D8') or HasStatus('BARDIC_INSPIRATION_COMBAT') or HasStatus('BARDIC_INSPIRATION_COMBAT_D8'))"
+data "TargetConditions" "Character() and not Enemy() and not Self() and not (HasStatus('BARDIC_INSPIRATION') or HasStatus('BARDIC_INSPIRATION_D8') or HasStatus('BARDIC_INSPIRATION_D10') or HasStatus('BARDIC_INSPIRATION_D12') or HasStatus('BARDIC_INSPIRATION_COMBAT') or HasStatus('BARDIC_INSPIRATION_COMBAT_D8') or HasStatus('BARDIC_INSPIRATION_COMBAT_D10') or HasStatus('BARDIC_INSPIRATION_COMBAT_D12'))"
+data "RequirementConditions" "not HasPassive('CombatInspiration')"
+// data "CombatAIOverrideSpell" "Target_BardicInspiration_AI"
+data "CombatAIOverrideSpell" ""
+
+// ==================================== Druid - Fungal Infestation resource passives ====================================
+
+// Prevent breaking of Symbiotic Entity by shapeshifting needlessly
+new entry "Shout_WildShape"
+type "SpellData"
+data "SpellType" "Shout"
+using "Shout_WildShape"
+// data "RequirementConditions" "not HasStatus('WILDSHAPE_ACTIVE')"
+data "RequirementConditions" "not HasStatus('WILDSHAPE_ACTIVE') and not HasStatus('GOON_SYMBIOTIC_ENTITY_AI')"
+
+// Makes health scaling actually work for NPC progressions
+new entry "Shout_SymbioticEntity"
+type "SpellData"
+data "SpellType" "Shout"
+using "Shout_SymbioticEntity"
+data "CombatAIOverrideSpell" "Shout_SymbioticEntity_AI"
+
+new entry "Shout_SymbioticEntity_AI"
+type "SpellData"
+data "SpellType" "Shout"
+using "Shout_SymbioticEntity"
+// data "SpellProperties" "ApplyStatus(SYMBIOTIC_ENTITY,100,-1)"
+data "SpellProperties" "ApplyStatus(GOON_SYMBIOTIC_ENTITY_AI,100,-1)"
+// data "DescriptionParams" "GainTemporaryHitPoints(ClassLevel(Druid)*4);DealDamage(1d6,Necrotic)"
+data "DescriptionParams" "GainTemporaryHitPoints(ClassLevel(NPC_Druid)*4);DealDamage(1d6,Necrotic)"
+// data "CombatAIOverrideSpell" "Shout_SymbioticEntity_AI"
+data "CombatAIOverrideSpell" ""
+
+new entry "GOON_SYMBIOTIC_ENTITY_AI"
+type "StatusData"
+data "StatusType" "BOOST"
+using "SYMBIOTIC_ENTITY"
+// data "DescriptionParams" "GainTemporaryHitPoints(ClassLevel(Druid)*4);DealDamage(1d6,Necrotic)"
+data "DescriptionParams" "GainTemporaryHitPoints(ClassLevel(NPC_Druid)*4);DealDamage(1d6,Necrotic)"
+// data "Boosts" "TemporaryHP(ClassLevel(Druid)*4);CharacterWeaponDamage(1d6,Necrotic);IF(IsMeleeUnarmedAttack()):CharacterUnarmedDamage(1d6, Necrotic);IF(HasPassive('SpreadingSpores', context.Source)):UnlockSpell(Target_SpreadingSpores)"
+data "Boosts" "TemporaryHP(ClassLevel(NPC_Druid)*4);CharacterWeaponDamage(1d6,Necrotic);IF(IsMeleeUnarmedAttack()):CharacterUnarmedDamage(1d6, Necrotic);IF(HasPassive('SpreadingSpores', context.Source)):UnlockSpell(Target_SpreadingSpores)"
+
+new entry "ARP_FungalInfestation_1_1"
+type "PassiveData"
+data "Properties" "IsHidden"
+data "StatsFunctorContext" "OnCreate"
+data "StatsFunctors" "ApplyStatus(SELF,ARP_FUNGAL_INFESTATION_1_1,100,-1)"
+
+new entry "ARP_FungalInfestation_1_2"
+type "PassiveData"
+data "Properties" "IsHidden"
+data "StatsFunctorContext" "OnCreate"
+data "StatsFunctors" "ApplyStatus(SELF,ARP_FUNGAL_INFESTATION_2_1,100,-1)"
+
+new entry "ARP_FungalInfestation_1_3"
+type "PassiveData"
+data "Properties" "IsHidden"
+data "StatsFunctorContext" "OnCreate"
+data "StatsFunctors" "ApplyStatus(SELF,ARP_FUNGAL_INFESTATION_3_1,100,-1)"
+
+new entry "ARP_FungalInfestation_1_4"
+type "PassiveData"
+data "Properties" "IsHidden"
+data "StatsFunctorContext" "OnCreate"
+data "StatsFunctors" "ApplyStatus(SELF,ARP_FUNGAL_INFESTATION_4_1,100,-1)"
+
+new entry "ARP_FungalInfestation_1_5"
+type "PassiveData"
+data "Properties" "IsHidden"
+data "StatsFunctorContext" "OnCreate"
+data "StatsFunctors" "ApplyStatus(SELF,ARP_FUNGAL_INFESTATION_5_1,100,-1)"
+
+new entry "ARP_FUNGAL_INFESTATION_1_1"
+type "StatusData"
+data "StatusType" "BOOST"
+data "StackId" "ARP_FUNGAL_INFESTATION_1_1"
+data "StackType" "Ignore"
+data "StatusPropertyFlags" "DisableOverhead;DisableCombatlog;DisablePortraitIndicator;IgnoreResting;ApplyToDead"
+data "Boosts" "ActionResource(FungalInfestationCharge,1,1)"
+data "RemoveConditions" "not HasPassive('ARP_FungalInfestation_1_1')"
+data "RemoveEvents" "OnTurn;OnStatusApplied;OnStatusRemoved"
+
+new entry "ARP_FUNGAL_INFESTATION_2_1"
+type "StatusData"
+data "StatusType" "BOOST"
+data "StackId" "ARP_FUNGAL_INFESTATION_2_1"
+data "StackType" "Ignore"
+data "StatusPropertyFlags" "DisableOverhead;DisableCombatlog;DisablePortraitIndicator;IgnoreResting;ApplyToDead"
+data "Boosts" "ActionResource(FungalInfestationCharge,2,1)"
+data "RemoveConditions" "not HasPassive('ARP_FungalInfestation_1_2')"
+data "RemoveEvents" "OnTurn;OnStatusApplied;OnStatusRemoved"
+
+new entry "ARP_FUNGAL_INFESTATION_3_1"
+type "StatusData"
+data "StatusType" "BOOST"
+data "StackId" "ARP_FUNGAL_INFESTATION_3_1"
+data "StackType" "Ignore"
+data "StatusPropertyFlags" "DisableOverhead;DisableCombatlog;DisablePortraitIndicator;IgnoreResting;ApplyToDead"
+data "Boosts" "ActionResource(FungalInfestationCharge,3,1)"
+data "RemoveConditions" "not HasPassive('ARP_FungalInfestation_1_3')"
+data "RemoveEvents" "OnTurn;OnStatusApplied;OnStatusRemoved"
+
+new entry "ARP_FUNGAL_INFESTATION_4_1"
+type "StatusData"
+data "StatusType" "BOOST"
+data "StackId" "ARP_FUNGAL_INFESTATION_4_1"
+data "StackType" "Ignore"
+data "StatusPropertyFlags" "DisableOverhead;DisableCombatlog;DisablePortraitIndicator;IgnoreResting;ApplyToDead"
+data "Boosts" "ActionResource(FungalInfestationCharge,4,1)"
+data "RemoveConditions" "not HasPassive('ARP_FungalInfestation_1_4')"
+data "RemoveEvents" "OnTurn;OnStatusApplied;OnStatusRemoved"
+
+new entry "ARP_FUNGAL_INFESTATION_5_1"
+type "StatusData"
+data "StatusType" "BOOST"
+data "StackId" "ARP_FUNGAL_INFESTATION_5_1"
+data "StackType" "Ignore"
+data "StatusPropertyFlags" "DisableOverhead;DisableCombatlog;DisablePortraitIndicator;IgnoreResting;ApplyToDead"
+data "Boosts" "ActionResource(FungalInfestationCharge,5,1)"
+data "RemoveConditions" "not HasPassive('ARP_FungalInfestation_1_5')"
+data "RemoveEvents" "OnTurn;OnStatusApplied;OnStatusRemoved"
+
+// ==================================== Fighter - Eldritch Knight Bound Weapon ====================================
+
+new entry "Shout_WeaponBond"
+type "SpellData"
+data "SpellType" "Shout"
+using "Shout_WeaponBond"
+data "CombatAIOverrideSpell" "Shout_WeaponBond_AI"
+
+new entry "Shout_WeaponBond_AI"
+type "SpellData"
+data "SpellType" "Shout"
+using "Shout_WeaponBond"
+// data "CombatAIOverrideSpell" "Shout_WeaponBond_AI"
+data "CombatAIOverrideSpell" ""
+// data "UseCosts" "ActionPoint:1"
+data "UseCosts" ""
+// data "Requirements" "!Combat"
+data "Requirements" ""
+// data "RequirementConditions" "not Unarmed()"
+data "RequirementConditions" "not Unarmed() and not HasStatus('WEAPON_BOND', GetActiveWeapon())"
+
+// ==================================== Paladin - Smite ====================================
+// Pretty redundant stuff overall.
+
+new entry "Interrupt_Smite_Divine_NPC"
+type "InterruptData"
+using "Interrupt_Smite_Divine_NPC"
+data "Conditions" "(Player(context.Observer) or not HasStatus('SG_Invisible',context.Observer)) and IsAbleToReact(context.Observer) and not Item() and IsMeleeAttack() and not IsDivineSmite() and Self(context.Source,context.Observer) and HasDamageEffectFlag(DamageFlags.Hit) and IsWeaponAttack() and not IsCritical() and not IsKillingBlow() and not AnyEntityIsItem()"
+data "InterruptFlags" "InterruptWhileInvisible"
+
+new entry "Interrupt_Smite_Divine_7_NPC "
+type "InterruptData"
+using "Interrupt_Smite_Divine_4"
+data "Cost" "SpellSlotsGroup:1:1:7"
+
+new entry "Interrupt_Smite_Divine_8_NPC "
+type "InterruptData"
+using "Interrupt_Smite_Divine_4"
+data "Cost" "SpellSlotsGroup:1:1:8"
+
+new entry "Interrupt_Smite_Divine_9_NPC "
+type "InterruptData"
+using "Interrupt_Smite_Divine_4"
+data "Cost" "SpellSlotsGroup:1:1:9"
+
+// ==================================== Ranger - Companion Summon ====================================
+//TODO: Yeah this doesn't work at all, gotta look at adding the NPC versions of these spells in some fashion. Maybe a passive that just summons it out of combat but checks for NPC versions of the spells.
+new entry "Target_RangersCompanion"
+type "SpellData"
+data "SpellType" "Target"
+using "Target_RangersCompanion"
+data "CombatAIOverrideSpell" "Target_RangersCompanion_AI"
+
+new entry "Target_RangersCompanion_AI"
+type "SpellData"
+data "SpellType" "Shout"
+using "Target_RangersCompanion"
+// data "CombatAIOverrideSpell" "Target_RangersCompanion_AI"
+data "CombatAIOverrideSpell" ""
+// data "UseCosts" "ActionPoint:1"
+data "UseCosts" ""
+
+// ==================================== Rogue - Force weapon to be versatile (if needed) ====================================
+
+new entry "Goon_Finesse_Overwrite"
+type "PassiveData"
+data "Properties" "IsHidden"
+data "StatsFunctorContext" "OnTurn;OnAttack"
+data "StatsFunctors" "IF(not HasWeaponProperty(WeaponProperties.Finesse, GetActiveWeapon(context.Target, true))):ApplyEquipmentStatus(MeleeMainHand,GOON_FINESSE_OVERWRITE,100,1);IF(not HasWeaponProperty(WeaponProperties.Finesse, GetActiveWeapon(context.Target, false))):ApplyEquipmentStatus(OffHand,GOON_FINESSE_OVERWRITE,100,1)"
+
+new entry "GOON_FINESSE_OVERWRITE"
+type "StatusData"
+data "StatusType" "BOOST"
+// Brutish Finesse
+data "DisplayName" "h33cb5ef3g9a7dg4cc8g8f51gadb6b5903f43;1"
+// The previous wielder of this weapon controlled it with grace, for a moment you wonder how they did it...
+data "Description" "h9818df81gd782g452agb982gee152a4ddfea;1"
+data "Icon" "PassiveFeature_DefensiveDualist"
+data "StatusPropertyFlags" "DisableOverhead;DisableCombatlog;IgnoreResting"
+data "StackId" "GOON_FINESSE_OVERWRITE"
+data "Boosts" "WeaponProperty(Finesse)"
+// data "RemoveEvents" "OnSourceDeath"
+
+// ==================================== Sorcerer - NPC Metamagic Passives ====================================
+// TODO: Way cooler implementation for AI metamagic.
+
+// Temporary workaround just to add metamagic to NPCs, copying the approach from Utut used in Encounters Overhaul (just making them default toggled on)
+new entry "Goon_Metamagic_Careful_NPC"
+type "PassiveData"
+using "Metamagic_Careful"
+data "Properties" "IsToggled;ToggledDefaultAddToHotbar;MetaMagic;ToggledDefaultOn"
+data "ToggleOnEffect" ""
+data "ToggleOffContext" ""
+
+new entry "Goon_Metamagic_Extended_NPC"
+type "PassiveData"
+using "Metamagic_Extended"
+data "Properties" "IsToggled;ToggledDefaultAddToHotbar;MetaMagic;ToggledDefaultOn"
+data "ToggleOnEffect" ""
+data "ToggleOffContext" ""
+
+new entry "Goon_Metamagic_Quickened_NPC"
+type "PassiveData"
+using "Metamagic_Quickened"
+data "Properties" "IsToggled;ToggledDefaultAddToHotbar;MetaMagic;ToggledDefaultOn"
+data "ToggleOnEffect" ""
+data "ToggleOffContext" ""
+
+new entry "Goon_Metamagic_Heightened_NPC"
+type "PassiveData"
+using "Metamagic_Heightened"
+data "Properties" "IsToggled;ToggledDefaultAddToHotbar;MetaMagic;ToggledDefaultOn"
+data "ToggleOnEffect" ""
+data "ToggleOffContext" ""
+
+new entry "Goon_Metamagic_Subtle_NPC"
+type "PassiveData"
+using "Metamagic_Subtle"
+data "Properties" "IsToggled;ToggledDefaultAddToHotbar;MetaMagic;ToggledDefaultOn"
+data "ToggleOnEffect" ""
+data "ToggleOffContext" ""
