@@ -7,7 +7,7 @@ using "DOWNED"
 // data "Boosts" "AbilityFailedSavingThrow(Strength);AbilityFailedSavingThrow(Dexterity);CriticalHit(AttackTarget,Success,Always,2.5);IF(not DistanceToTargetGreaterThan(3)):Advantage(AttackTarget);IF(DistanceToTargetGreaterThan(3)):Disadvantage(AttackTarget);StatusImmunity(SG_Prone);StatusImmunity(SG_Condition);StatusImmunity(SHOCKWAVE)"
 data "Boosts" "AbilityFailedSavingThrow(Strength);AbilityFailedSavingThrow(Dexterity);CriticalHit(AttackTarget,Success,Always,2.5);IF(not DistanceToTargetGreaterThan(3)):Advantage(AttackTarget);IF(DistanceToTargetGreaterThan(3)):Disadvantage(AttackTarget);StatusImmunity(SG_Prone);StatusImmunity(SG_Condition);StatusImmunity(SHOCKWAVE);Tag(AI_PREFERRED_TARGET)"
 
-// ==================================== Dame Aylin: Give here automatic self-revive a saving throw ====================================
+// ==================================== Dame Aylin: Give her automatic self-revive a saving throw ====================================
 
 new entry "SHA_NightsongResurrection"
 type "PassiveData"
@@ -313,6 +313,7 @@ using "Interrupt_LegendaryResistance"
 // data "EnableCondition" "not HasStatus('SG_Polymorph') or Tagged('MINDFLAYER') or HasAnyStatus({'SG_Disguise','WILDSHAPE_STARRY_ARCHER_PLAYER','WILDSHAPE_STARRY_CHALICE_PLAYER','WILDSHAPE_STARRY_DRAGON_PLAYER'});"
 data "EnableCondition" "not HasStatus('SG_Polymorph') or Goon_IsUnrestrictedPolymorphStatus()"
 
+
 // ==================================== Gortash - Tyrannical Branding ====================================
 // Bug Fix: Interrupt can be used while Invisible.
 // Bug Fix: Interrupt cannot target entities with any Invisibility conditions, instead of just the base Invisibility condition.
@@ -334,7 +335,7 @@ data "InterruptFlags" "InterruptWhileInvisible"
 
 // ==================================== Kar'niss - Cull the Weak (at home) ====================================
 // Bug Fix: No longer functions as a damage rider and damage rider source, creating an infinite loop of damage being applied.
-// Changes: Renamed from Cull the Weak to Finishing Strike, after the name of the entry itself, just to distinguish it from the Illithid power.
+// Changes: Renamed from Cull the Weak to Finishing Strike, after the name of the entry itself, just to distinguish it from the Illithid power. Add OncePerAttack so it's no longer as strong with multiattack features
 
 new entry "FinishingStrike"
 type "PassiveData"
@@ -349,6 +350,7 @@ data "DisplayName" "h870ed340gd2afg486fg8be8g65230780dbff;1"
 data "DescriptionParams" "DealDamage(2d6,Slashing);50"
 // data "Icon" "GenericIcon_DamageType_Physical"
 // data "Properties" "Highlighted"
+data "Properties" "Highlighted;OncePerAttack"
 // data "StatsFunctorContext" "OnDamage"
 // data "Conditions" "HasHPPercentageWithoutTemporaryHPLessThan(50, context.Target) and Character()"
 // data "StatsFunctors" "DealDamage(2d6,Slashing)"
