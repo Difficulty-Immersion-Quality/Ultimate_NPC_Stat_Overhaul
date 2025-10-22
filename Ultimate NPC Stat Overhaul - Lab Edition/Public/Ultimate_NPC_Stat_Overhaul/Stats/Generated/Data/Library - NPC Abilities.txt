@@ -534,6 +534,15 @@ data "Boosts" "ActionResource(FungalInfestationCharge,5,1)"
 data "RemoveConditions" "not HasPassive('ARP_FungalInfestation_1_5')"
 data "RemoveEvents" "OnTurn;OnStatusApplied;OnStatusRemoved"
 
+// ==================================== Fighter - Prevent using Dash after using Action Surge ====================================
+
+new entry "Shout_Dash_NPC"
+type "SpellData"
+data "SpellType" "Shout"
+using "Shout_Dash_NPC"
+// data "RequirementConditions" "not HasStatus('DASH')"
+data "RequirementConditions" "not HasStatus('DASH') and not HasStatus('ACTION_SURGE')"
+
 // ==================================== Fighter - Eldritch Knight Bound Weapon ====================================
 
 new entry "Shout_WeaponBond"
