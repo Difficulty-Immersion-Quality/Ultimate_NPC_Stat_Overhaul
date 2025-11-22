@@ -313,7 +313,6 @@ using "Interrupt_LegendaryResistance"
 // data "EnableCondition" "not HasStatus('SG_Polymorph') or Tagged('MINDFLAYER') or HasAnyStatus({'SG_Disguise','WILDSHAPE_STARRY_ARCHER_PLAYER','WILDSHAPE_STARRY_CHALICE_PLAYER','WILDSHAPE_STARRY_DRAGON_PLAYER'});"
 data "EnableCondition" "not HasStatus('SG_Polymorph') or Goon_IsUnrestrictedPolymorphStatus()"
 
-
 // ==================================== Gortash - Tyrannical Branding ====================================
 // Bug Fix: Interrupt can be used while Invisible.
 // Bug Fix: Interrupt cannot target entities with any Invisibility conditions, instead of just the base Invisibility condition.
@@ -335,7 +334,9 @@ data "InterruptFlags" "InterruptWhileInvisible"
 
 // ==================================== Kar'niss - Cull the Weak (at home) ====================================
 // Bug Fix: No longer functions as a damage rider and damage rider source, creating an infinite loop of damage being applied.
-// Changes: Renamed from Cull the Weak to Finishing Strike, after the name of the entry itself, just to distinguish it from the Illithid power. Add OncePerAttack so it's no longer as strong with multiattack features
+// Changes: Renamed from Cull the Weak to Finishing Strike, after the name of the entry itself, just to distinguish it from the Illithid power.
+// Changes: Made it magical damage.
+// Changes: Added OncePerAttack so it's no longer as strong with multiattack features
 
 new entry "FinishingStrike"
 type "PassiveData"
@@ -354,7 +355,7 @@ data "Properties" "Highlighted;OncePerAttack"
 // data "StatsFunctorContext" "OnDamage"
 // data "Conditions" "HasHPPercentageWithoutTemporaryHPLessThan(50, context.Target) and Character()"
 // data "StatsFunctors" "DealDamage(2d6,Slashing)"
-data "StatsFunctors" "DealDamage(2d6,Slashing,,,0,,true,true)"
+data "StatsFunctors" "DealDamage(2d6,Slashing,Magical,,0,,true,true)"
 
 // ==================================== Balthazar - The Dead Wastes ====================================
 // Bug Fix: Descriptions for Balthazar's The Dead Wastes and Wasting Mortal conditions now properly reflect functionality.

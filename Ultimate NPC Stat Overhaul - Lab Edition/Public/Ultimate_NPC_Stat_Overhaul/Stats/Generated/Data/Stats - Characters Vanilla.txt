@@ -22,21 +22,43 @@
 //  │   │   └─ "DEN_DruidServant"
 //  │   ├─ "Bandit_Captain"
 
+// new entry "Bandit"
+// type "Character"
+// using "Bandit"
+// // data "Passives" "AttackOfOpportunity;DarknessRules"
+// data "Passives" "AttackOfOpportunity;DarknessRules"
+
 // Unused (Added Fighter progressions)
 new entry "Bandit_Captain"
 type "Character"
 using "Bandit_Captain"
+// // data "Passives" "AttackOfOpportunity;DarknessRules"
+// data "Passives" "AttackOfOpportunity;DarknessRules"
 // data "Progressions" ""
 data "Progressions" "0e6da493-5a37-423b-8c28-629462b22faa"
 
 // "_Base"
 //  ├─ "_Humanoid"
 //  │   ├─ "Commoner"
-//  │   │   └─ "CRA_MindflayerThrall_Commoner_Halfling"         --- Unused
+//  │   │   └─ "CRA_MindflayerThrall_Commoner_Halfling"
+
+// Unused (Fixed racials)
+// new entry "CRA_MindflayerThrall_Commoner_Halfling"
+// type "Character"
+// using "CRA_MindflayerThrall_Commoner_Halfling"
+// // data "Passives" "DarknessRules"
+// data "Passives" "Halfling_Lucky;Halfling_Brave;AttackOfOpportunity;DarknessRules"
 
 // "_Base"
 //  ├─ "_Humanoid"
-//  │   └─ "Drow"       --- Unused
+//  │   └─ "Drow"
+
+// Unused ("_Elf_Drow" is the real entry) (Fixed racials)
+// new entry "Drow"
+// type "Character"
+// using "Drow"
+// // data "Passives" "AttackOfOpportunity;DarknessRules"
+// data "Passives" "FeyAncestry;AttackOfOpportunity;DarknessRules;SuperiorDarkvision;SunlightSensitivity"
 
 // "_Base"
 //  ├─ "_Humanoid"
@@ -5713,6 +5735,8 @@ data "ProficiencyBonusScaling" "265d62c4-9b82-4ed6-9a86-da675b4ef8fe"
 //  │       ├─ "Familiar_Spider"
 //  │       ├─ "LOW_IronThrone_Mizora_FiendishSpiders"
 //  │       └─ "Spider_Tiny_Underdark"
+
+// TODO: Spiders should just be in Lab?
 
 // (Increasing movement speed of all spiders except little ones) (Fix UnarmedRangedAttackAbility, relevant for Companion_GiantSpider_11's Bursting Brood)
 new entry "Spider_Giant"
