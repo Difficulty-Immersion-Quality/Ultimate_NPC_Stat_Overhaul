@@ -1,4 +1,5 @@
 // ==================================== Extra Encounters and Minibosses ====================================
+// TODO: Deal with stat assigned passives below.
 
 // (Added Wizard progressions)
 new entry "Ilyn_Toth"
