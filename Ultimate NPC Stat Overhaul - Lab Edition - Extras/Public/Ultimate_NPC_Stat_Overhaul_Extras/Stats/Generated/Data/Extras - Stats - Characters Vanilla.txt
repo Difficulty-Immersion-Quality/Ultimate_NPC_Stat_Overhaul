@@ -1,0 +1,265 @@
+// ==================================== Aberration ====================================
+// "_Aberration"
+//  ├─ "MindFlayer"
+//  │   ├─ "END_Daisy"
+//  │   ├─ "INT_Emperor"
+//  │   ├─ "MindFlayer_Arcanist"
+//  │   ├─ "MindFlayer_Caster"
+//  │   ├─ "MindFlayer_Lich"
+//  │   ├─ "MindFlayer_Player"
+//  │   ├─ "MindFlayer_Weak"
+//  │   │   └─ "CRA_Escape_Mindflayer"
+//  │   ├─ "TUT_HelmMindflayer"
+//  │   └─ "UND_SOB_Mindflayer"
+//  ├─ "MindFlayer_Tadpole"
+//  ├─ "Sharn"
+//  ├─ "Spectator"
+//  │   └─ "Spectator_Strong"
+//  ├─ "Tentacle_Netherbrain"
+//  ├─ "VampireSquid"
+//  ├─ "VampireSquid_Tentacle"
+//  ├─  "_Aberration_Gustav"
+//  ├─ "KillerReplica_Base"             --- Countermeasures - Netherbrain fight if siding with the Emperor
+//  │   ├─ "KillerReplica_Barbarian"    --- (Has Barbarian progressions)
+//  │   ├─ "KillerReplica_Bard"         --- (Has Bard progressions)
+//  │   ├─ "KillerReplica_Cleric"       --- (Has Cleric progressions)
+//  │   ├─ "KillerReplica_Druid"        --- (Has Druid progressions)
+//  │   ├─ "KillerReplica_Fighter"      --- (Has Fighter progressions)
+//  │   ├─ "KillerReplica_Monk"         --- (Has Monk progressions)
+//  │   ├─ "KillerReplica_Paladin"      --- (Has Paladin progressions)
+//  │   ├─ "KillerReplica_Ranger"       --- (Has Ranger progressions)
+//  │   ├─ "KillerReplica_Rogue"        --- (Has Rogue progressions)
+//  │   ├─ "KillerReplica_Sorcerer"
+//  │   ├─ "KillerReplica_Warlock"
+//  │   └─ "KillerReplica_Wizard"
+
+// Emperor (Added Wizard progressions, make Enchantment subclass in config)
+new entry "INT_Emperor"
+type "Character"
+using "INT_Emperor"
+// data "ProficiencyBonus" ""
+data "ProficiencyBonus" "4"
+// data "Progressions" ""
+data "Progressions" "44bdbc5e-a003-4d61-87f0-5ced20d3804e"
+
+// ==================================== Constructs ====================================
+// "_Base"
+//  ├─ "_Construct"
+//  │   ├─ "AnimatedArmor"
+//  │   │   ├─ "LOW_RamazithsTower_Armour"
+//  │   │   └─ "TWN_ShadowAnimatedArmour"
+//  │   ├─ "Automaton"
+//  │   │   └─ "AdamantineGolem"
+//  │   │       └─ "UND_AdamantineGolem"
+//  │   │           └─"MMM_GRYM2" (Copies the whole entry and overwrites nothing)
+
+// Grym - Provide a baseline way to damage him through Acid and Bludgeoning (see Statuses stats file)
+new entry "UND_AdamantineGolem"
+type "Character"
+using "UND_AdamantineGolem"
+// // data "PersonalStatusImmunities" "PETRIFIED;SG_Charmed;SG_Frightened;PARALYZED;SG_Poisoned;UNCONSCIOUS;KNOCKED_OUT;BURNING;BURNING_LAVA;STUNNED;BLEEDING;GAPING_WOUND;CHEST_TRAUMA;DAZED;WILD_MAGIC_BURNING;DAZED;DIFFICULT_TERRAIN_LAVA"
+// data "PersonalStatusImmunities" "KNOCKED_OUT;GAPING_WOUND;CHEST_TRAUMA;BLEEDING;BARBED_ARROW;HAMSTRING;CRIPPLED;DAZED;SUFFOCATING;SG_Blinded;SG_Charmed;SG_Confused;SG_Disease;SG_Drunk;SG_Exhausted;SG_Frightened;SG_Paralyzed;SG_Poisoned;SG_Sleeping;SG_Taunted;SG_Unconscious;SURPRISED;SHOCKED;SHOCKED_SURFACE;RAY_OF_ENFEEBLEMENT;PETRIFIED;STUNNED;BURNING;BURNING_TRIAL;WILD_MAGIC_BURNING;BURNING_AZER;BURNING_TRAPWALL;BURNING_LAVA;DIFFICULT_TERRAIN_LAVA"
+// data "AcidResistance" "Resistant"
+data "AcidResistance" "None"
+
+// Many More Monsters - Grym 2.0
+new entry "MMM_GRYM2"
+type "Character"
+// using "AdamantineGolem"
+using "MMM_GRYM2"
+// // data "PersonalStatusImmunities" "PETRIFIED;SG_Charmed;SG_Frightened;PARALYZED;SG_Poisoned;UNCONSCIOUS;KNOCKED_OUT;BURNING;BURNING_LAVA;STUNNED;BLEEDING;GAPING_WOUND;CHEST_TRAUMA;DAZED;WILD_MAGIC_BURNING;DAZED;DIFFICULT_TERRAIN_LAVA"
+// data "PersonalStatusImmunities" "KNOCKED_OUT;GAPING_WOUND;CHEST_TRAUMA;BLEEDING;BARBED_ARROW;HAMSTRING;CRIPPLED;DAZED;SUFFOCATING;SG_Blinded;SG_Charmed;SG_Confused;SG_Disease;SG_Drunk;SG_Exhausted;SG_Frightened;SG_Paralyzed;SG_Poisoned;SG_Sleeping;SG_Taunted;SG_Unconscious;SURPRISED;SHOCKED;SHOCKED_SURFACE;RAY_OF_ENFEEBLEMENT;PETRIFIED;STUNNED;BURNING;BURNING_TRIAL;WILD_MAGIC_BURNING;BURNING_AZER;BURNING_TRAPWALL;BURNING_LAVA;DIFFICULT_TERRAIN_LAVA"
+// data "AcidResistance" "Resistant"
+data "AcidResistance" "None"
+
+// ==================================== Fiend ====================================
+// "_Base"
+//  ├─ "_Fiend"
+//  │   ├─ "Cambion"
+//  │   │   ├─ "Cambion_PlanarAlly"
+//  │   │   ├─ "GLO_Raphael"
+//  │   │   │   └─ "LOW_Raphael_Monster_Form_Stats"
+//  │   │   ├─ "LOW_HouseOfHope_Cambion"
+//  │   │   └─ "TUT_Cambion_NoCrits"
+//  │   │       └─ "TUT_CambionCommander"
+//  │   ├─ "Incubus"
+//  │   ├─ "_Demon"
+//  │   │   ├─ "Balor"
+//  │   │   ├─ "Manes"
+//  │   │   ├─ "Quasit"
+//  │   │   │   └─ "Chain_Quasit"
+//  │   │   │       └─ "FOR_QuasitSummon"
+//  │   │   └─ "Vrock"
+//  │   ├─ "_Devil"
+//  │   │   ├─ "Devil_Barbed"
+//  │   │   ├─ "Devil_Bearded"
+//  │   │   ├─ "Devil_Bone"
+//  │   │   ├─ "Devil_Chain"
+//  │   │   ├─ "Devil_Horned"
+//  │   │   │   └─ "LOW_Monitor_BeastForm"
+//  │   │   ├─ "Devil_Ice"
+//  │   │   ├─ "Devil_Spined"
+//  │   │   ├─ "Erinyes"
+//  │   │   ├─ "Imp"
+//  │   │   │   ├─ "Butler"
+//  │   │   │   ├─ "Chain_Imp"
+//  │   │   │   ├─ "Imp_Weak"
+//  │   │   │   │   ├─ "Imp_Crippled"
+//  │   │   │   │   ├─ "Imp_Weak_NoXP"
+//  │   │   │   │   └─ "TUT_Imp_NerfedSightRange"
+//  │   │   │   │       └─ "TUT_Imp_NerfedSightRange_02"
+//  │   │   │   ├─ "LOW_DevilsFee_Imp"
+//  │   │   │   │   └─ "LOW_DevilsFee_Imp_Ally"
+//  │   │   │   ├─ "LOW_PlagueShip_Imp"
+//  │   │   │   ├─ "LOW_Raphael_Imp"
+//  │   │   │   ├─ "TWN_Brewer_Imp_Acid"
+//  │   │   │   ├─ "TWN_Brewer_Imp_Cold"
+//  │   │   │   ├─ "TWN_Brewer_Imp_Fire"
+//  │   │   │   ├─ "TWN_Brewer_Imp_Lightning"
+//  │   │   │   └─ "TWN_Brewer_Imp_Poison"
+//  │   │   ├─ "Lemure"
+//  │   │   ├─ "Merregon"                                  -- Merregons (Added Fighter progressions)
+//  │   │   │   └─ "LOW_HouseOfHope_Merregon"              -- House of Hope Merregons (Inherits Fighter progressions)
+//  │   │   └─ "Orthon"                                   
+
+// Haarlep (added Bard progressions, make Lore subclass in config)
+new entry "Incubus"
+type "Character"
+using "Incubus"
+// data "Progressions" ""
+data "Progressions" "cbe5059f-7a9f-4b98-be6a-07c9cd8e02c2"
+
+// Vengeful Cambions (House of Hope) (Added Warlock progressions, add Fiend subclass in config, and give Pact of the Blade passives)
+new entry "LOW_HouseOfHope_Cambion"
+type "Character"
+using "LOW_HouseOfHope_Cambion"
+// data "Charisma" "16"
+data "Charisma" "20"
+// // data "Passives" "AttackOfOpportunity;DarknessRules;Darkvision;ExtraAttack;FiendishBlessing;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check;"
+// data "Passives" "CX_Warlock_Fiend_Boost;AttackOfOpportunity;DarknessRules;Darkvision;ExtraAttack;FiendishBlessing;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check;PactOfTheBlade;Goon_Pact_Blade_Passive;PP_AscendedPact_Text_Passive;PP_AP_Blade_Passive;PP_AP_BladeDeepened_Passive;PP_EverlastingPact_Text_Passive;PP_EP_Blade_Passive;PP_EP_Blade_Two_Passive"
+// data "Progressions" ""
+data "Progressions" "51274504-865d-46d1-a3b6-c72e9384904a"
+
+// ==================================== Gnoll ====================================
+// "_Base"
+//  ├─ "_Humanoid"
+//  │   ├─ "_Gnolls"
+//  │   │   ├─ "Gnoll"
+//  │   │   │   └─ "Gnoll_Newborn"
+//  │   │   ├─ "Gnoll_Fang"
+//  │   │   ├─ "Gnoll_FleshGnawer"
+//  │   │   ├─ "Gnoll_Flind"        --- Flind - Gnoll Warlord
+//  │   │   └─ "Gnoll_Hunter"
+
+// Gnoll Fang of Yeenoghu (Added Fighter progressions, make Champion subclass in config)
+new entry "Gnoll_Fang"
+type "Character"
+using "Gnoll_Fang"
+// data "Progressions" ""
+data "Progressions" "0e6da493-5a37-423b-8c28-629462b22faa"
+
+// Gnoll Flesh Gnawer (Added Barbarian progressions)
+new entry "Gnoll_FleshGnawer"
+type "Character"
+using "Gnoll_FleshGnawer"
+// data "Progressions" ""
+data "Progressions" "56db8107-e04c-4fe3-94f3-fd4acd44cd4a"
+
+// Gnoll Hunter (Added Ranger progressions, make Hunter subclass in config)
+new entry "Gnoll_Hunter"
+type "Character"
+using "Gnoll_Hunter"
+// data "Progressions" ""
+data "Progressions" "f0ede459-8b86-48fd-ac11-4432573566a5"
+
+// ==================================== Gnome ====================================
+// "_Gnome"
+//  ├─ "Gnome_Caster"                                   --- (Has Wizard progressions)
+//  │   ├─ "Gnome_Bard"                                 --- (Has Bard progressions)
+//  │   │   ├─ "WYR_Circus_Gnome_Bard"                  --- Calliope Blingsdorf, Circus of the Last Days (Inherits Bard progressions)
+//  │   │   └─ "WYR_MerchantsHouse_Gnome_Bard"          --- Dimples Backster - The Guild (Inherits Bard progressions)
+//  │   ├─ "Gnome_Druid"                                --- (Has Druid progressions)
+//  │   │   ├─ "DEN_Tahan"
+//  │   │   └─ "LOW_HarperConfrontation_Druid_Gnome"    --- Harper Sulian - Harpers (Inherits Druid progressions)
+//  │   ├─ "LOW_HagSurvivor_Gnome_Caster"
+//  │   ├─ "LOW_HouseOfGrief_Cultist_Caster_Gnome"      --- Sharran Fidelian (Inherits Wizard progressions)
+//  │   ├─ "MOO_MindTorturer"
+//  │   └─ "UND_KC_Gnome_Deep_Caster"
+//  ├─ "Gnome_Gondian_Caster"
+//  │   └─ "LOW_SteelWatchFoundry_ZannerToobin"         --- Gondian Zanner Toobin - Church of Gond (Inherits added Wizard progressions)
+
+// Basically all the Gondians (Base mod added Wizard progressions, now swapping to Artificer)
+new entry "Gnome_Gondian_Caster"
+type "Character"
+using "Gnome_Gondian_Caster"
+// data "Progressions" ""
+data "Progressions" "d4159206-4573-43c0-94c6-46acb87d57c1"
+
+// ==================================== Human ====================================
+// "_Human"
+//  ├─ "Human_Caster"
+//  │   ├─ "LOW_Undercellar_Entrance_Human_Caster"
+//  │   ├─ "MOO_TrapRezTarget"                              --- Balthazar's Apprentice & Corpse (Balthazar summon?)
+//  │   ├─ "PLA_Zhent_Recruit_Human_Caster"
+//  │   ├─ "SCE_FlamingFist_Human_Caster"
+//  │   ├─ "SCL_SeluneCleric"
+//  │   ├─ "SHA_Necromancer"
+//  │   ├─ "WYR_Gortash"
+//  │   ├─ "WYR_MessHallBodyguard_09"
+//  │   └─ "WYR_SmugglersCave_Human_Caster"
+//  │       └─ "WYR_SmugglersCave_Human_Caster_2"
+
+// Gortash (Progressions changed from Wizard to Rogue in base mod, now swapping to Artificer)
+new entry "WYR_Gortash"
+type "Character"
+using "WYR_Gortash"
+// data "Progressions" "44bdbc5e-a003-4d61-87f0-5ced20d3804e"
+data "Progressions" "d4159206-4573-43c0-94c6-46acb87d57c1"
+
+// "_Human"
+//  ├─ "Human_Gondian_Caster"          
+//  ├─ "LOW_Sarevok"
+
+// Lu La Forza (Dead), Gondian Frell Olsin, Gondian Clore Falson - Church of Gond (Gondian unpaid interns in the Steel Watch Foundry) (Base mod added Wizard progressions, now swapping to Artificer)
+new entry "Human_Gondian_Caster"
+type "Character"
+using "Human_Gondian_Caster"
+// data "Progressions" ""
+data "Progressions" "d4159206-4573-43c0-94c6-46acb87d57c1"
+
+// ==================================== Summons ====================================
+// "_Base"
+// ├─ "_Summons"
+// │   ├─ "Deva"
+// │   │   ├─ "Deva_PlanarAlly"
+// │   │   │   └─ "LOW_Stormshore_Tabernacle_Curse_Deva"
+// │   │   └─ "LOW_RamazithsTower_Nightsong_Shard"
+// │   ├─ "FlamingSphere"
+// │   │   └─ "LOW_Raphael_FlamingSphere"
+// │   ├─ "GraspingVine"
+// │   ├─ "GuardianOfFaith"
+// │   │   └─ "DisplacerBeast_Illusion"
+// │   ├─ "MageHand"
+// │   ├─ "MinorIllusion"
+// │   ├─ "SpiritualWeapon_Greataxe"
+// │   │   ├─ "SpiritualWeapon_Greatsword"
+// │   │   │   └─ "CRE_Githyanki_Inquisitor_VlaakithsMindSword"
+// │   │   ├─ "SpiritualWeapon_Halberd"
+// │   │   ├─ "SpiritualWeapon_Maul"
+// │   │   ├─ "SpiritualWeapon_Spear"
+// │   │   └─ "SpiritualWeapon_Trident"
+// │   └─ "_Summons_Gustav"
+
+// All other Spiritual Weapon summons inherit from Greataxe
+new entry "SpiritualWeapon_Greataxe"
+type "Character"
+using "SpiritualWeapon_Greataxe"
+// data "ActionResources" "BonusActionPoint:1;Movement:6"
+data "ActionResources" "BonusActionPoint:1;Movement:9"
+
+// Mind-Claw of Tu'narath - W'wargaz summons in Crèche Y'llek (Doesn't inherit 9 movement, has 12 movement)
+new entry "CRE_Githyanki_Inquisitor_VlaakithsMindSword"
+type "Character"
+using "CRE_Githyanki_Inquisitor_VlaakithsMindSword"
+// data "Vitality" "30"
+data "Vitality" "10"
