@@ -5684,7 +5684,7 @@ data "Passives" "CX_Spells_L6;CX_Spells_L6C;AttackOfOpportunity;DarknessRules;Ma
 //  ├─ "VampireSquid_Tentacle"
 //  └─ "_Aberration_Gustav"
 
-// Spectator (Underdark) - HONOUR MODE INHERITANCE //TODO: Add these Honour Mode difficulty statuses into a passive instead?
+// Spectator (Underdark) and High Hall - HONOUR MODE INHERITANCE //TODO: Add these Honour Mode difficulty statuses into a passive instead?
 new entry "Spectator"
 type "Character"
 using "Spectator"
