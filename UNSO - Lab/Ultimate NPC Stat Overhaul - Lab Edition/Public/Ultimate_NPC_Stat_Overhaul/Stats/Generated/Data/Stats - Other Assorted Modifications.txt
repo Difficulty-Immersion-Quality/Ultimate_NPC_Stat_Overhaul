@@ -7,6 +7,69 @@ using "DOWNED"
 // data "Boosts" "AbilityFailedSavingThrow(Strength);AbilityFailedSavingThrow(Dexterity);CriticalHit(AttackTarget,Success,Always,2.5);IF(not DistanceToTargetGreaterThan(3)):Advantage(AttackTarget);IF(DistanceToTargetGreaterThan(3)):Disadvantage(AttackTarget);StatusImmunity(SG_Prone);StatusImmunity(SG_Condition);StatusImmunity(SHOCKWAVE)"
 data "Boosts" "AbilityFailedSavingThrow(Strength);AbilityFailedSavingThrow(Dexterity);CriticalHit(AttackTarget,Success,Always,2.5);IF(not DistanceToTargetGreaterThan(3)):Advantage(AttackTarget);IF(DistanceToTargetGreaterThan(3)):Disadvantage(AttackTarget);StatusImmunity(SG_Prone);StatusImmunity(SG_Condition);StatusImmunity(SHOCKWAVE);Tag(AI_PREFERRED_TARGET)"
 
+// ==================================== Paladin ====================================
+// Make the aura passives from Expansion hidden. Passives without a DisplayName, Description or Icon but also no IsHidden property don't show up in the character sheet for players, but will appear as an empty row on the sheet for NPCs
+
+new entry "AuraOfProtection"
+type "PassiveData"
+using AuraOfProtection
+// data "Properties" ""
+data "Properties" "IsHidden"
+
+new entry "AuraOfProtection_2"
+type "PassiveData"
+using "AuraOfProtection_2"
+// data "Properties" ""
+data "Properties" "IsHidden"
+
+new entry "AuraOfCourage"
+type "PassiveData"
+using "AuraOfCourage"
+// data "Properties" ""
+data "Properties" "IsHidden"
+
+new entry "AuraOfCourage_2"
+type "PassiveData"
+using "AuraOfCourage_2"
+// data "Properties" ""
+data "Properties" "IsHidden"
+
+new entry "AuraOfHate"
+type "PassiveData"
+using "AuraOfHate"
+// data "Properties" ""
+data "Properties" "IsHidden"
+
+new entry "AuraOfHate_2"
+type "PassiveData"
+using "AuraOfHate_2"
+// data "Properties" ""
+data "Properties" "IsHidden"
+
+new entry "AuraOfWarding"
+type "PassiveData"
+using "AuraOfWarding"
+// data "Properties" ""
+data "Properties" "IsHidden"
+
+new entry "AuraOfWarding_2"
+type "PassiveData"
+using "AuraOfWarding_2"
+// data "Properties" ""
+data "Properties" "IsHidden"
+
+new entry "AuraOfDevotion"
+type "PassiveData"
+using "AuraOfDevotion"
+// data "Properties" ""
+data "Properties" "IsHidden"
+
+new entry "AuraOfDevotion_2"
+type "PassiveData"
+using "AuraOfDevotion_2"
+// data "Properties" ""
+data "Properties" "IsHidden"
+
 // ==================================== Dame Aylin: Give her automatic self-revive a saving throw ====================================
 
 new entry "SHA_NightsongResurrection"
