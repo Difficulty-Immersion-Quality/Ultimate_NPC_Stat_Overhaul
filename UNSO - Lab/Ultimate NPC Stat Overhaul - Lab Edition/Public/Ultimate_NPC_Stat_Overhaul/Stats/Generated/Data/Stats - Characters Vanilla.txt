@@ -4846,7 +4846,7 @@ data "SpellCastingAbility" "Charisma"
 // data "PathInfluence" "BloodElectrified,100;BloodFrozen,30;Lava,700;Fire,40;HolyFire,40;Hellfire,100;PoisonCloud,40;WyvernPoison,40;DrowPoisonCloud,40;PurpleWormPoison,40;SerpentVenom,40;InvisibleGithAcid,70;CloudkillCloud,40;MaliceCloud,70;CrawlerMucusCloud,70;WaterElectrified,100;WaterFrozen,30;Grease,30;Web,30;Vines,40;SporeBlackCloud,100;WaterCloudElectrified,40;SporeGreenCloud,40;Acid,30;CausticBrine,40;DarknessCloud,30;FogCloud,30;Mud,30;Oil,30;Poison,30;SpikeGrowth,40;SporePinkCloud,40;StinkingCloud,40"
 data "PathInfluence" "BloodElectrified,100;BloodFrozen,30;Lava,700;Fire,40;HolyFire,40;Hellfire,100;PoisonCloud,40;WyvernPoison,40;DrowPoisonCloud,40;PurpleWormPoison,40;SerpentVenom,40;InvisibleGithAcid,70;CloudkillCloud,40;Cloudkill6Cloud,40;MaliceCloud,70;CrawlerMucusCloud,70;WaterElectrified,100;WaterFrozen,30;Grease,30;Web,30;Vines,40;SporeBlackCloud,100;WaterCloudElectrified,40;SporeGreenCloud,40;Acid,30;CausticBrine,40;DarknessCloud,30;FogCloud,30;Mud,30;Oil,30;Poison,30;SpikeGrowth,40;SporePinkCloud,40;StinkingCloud,40"
 // data "Progressions" ""
-data "Progressions" "8726b2c4-edc0-4905-b82f-60a4baba0733"
+data "Progressions" "7d5877f0-e973-4a7a-b8d8-423fecadebb4"
 
 // (Added Barbarian progressions)
 new entry "Skeleton_Giant"
@@ -4871,7 +4871,7 @@ using "Skeleton_Giant_Cultist_Myrkul_DeathShepherd"
 // // data "Passives" "BlockVerbalSpellcasting;SkeletonDeath_Check;AttackOfOpportunity;DarknessRules;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check"
 // data "Passives" "LAB_Progression_Fighter_Champion;BlockVerbalSpellcasting;SkeletonDeath_Check;AttackOfOpportunity;DarknessRules;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check"
 // data "Progressions" ""
-data "Progressions" "8726b2c4-edc0-4905-b82f-60a4baba0733"
+data "Progressions" "7d5877f0-e973-4a7a-b8d8-423fecadebb4"
 
 // "_Undead"
 //  ├─ "Skeleton"
